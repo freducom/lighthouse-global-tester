@@ -7,7 +7,7 @@ After completing the local setup, you need to complete these steps on GitHub.com
 ### 1. Create GitHub Repository
 1. Go to https://github.com/new
 2. Repository name: `lighthouse-global-tester`
-3. Description: `Automated weekly Lighthouse performance testing for 110 major websites across 11 countries`
+3. Description: `Automated daily Lighthouse performance testing for 148 major websites across 14 countries`
 4. Set to **Public** (required for GitHub Pages)
 5. Don't initialize with README (we already have one)
 6. Click "Create repository"
@@ -52,7 +52,7 @@ git push -u origin main
 1. Go to "Actions" tab
 2. Click on "Lighthouse Performance Testing" workflow
 3. Click "Run workflow" → "Run workflow" to trigger manual test
-4. Wait for completion (~10-15 minutes for all 110 websites)
+4. Wait for completion (~5-7 minutes for daily batch of ~22 websites, or ~30 minutes for all 148 websites if using "test_all")
 
 ### 7. View Live Dashboard
 After the first successful run:
@@ -63,8 +63,8 @@ After the first successful run:
 
 ### Automated Daily Testing
 - **Schedule**: Every day at 2 AM UTC
-- **Process**: Tests 1/7th of websites daily (approximately 16 sites)
-- **Full Cycle**: All 110 websites tested over 7 days
+- **Process**: Tests 1/7th of websites daily (approximately 22 sites)
+- **Full Cycle**: All 148 websites tested over 7 days
 - **Output**: Updated database and regenerated website daily
 - **Deployment**: Automatic deployment to GitHub Pages
 - **Scalability**: Automatically adapts when new countries or domains are added
@@ -72,15 +72,15 @@ After the first successful run:
 ### Manual Testing
 - Trigger anytime via GitHub Actions "Run workflow" button
 - **Daily Batch**: Test today's portion (default behavior)
-- **Full Test**: Use "test_all" input to test all 110 websites at once
+- **Full Test**: Use "test_all" input to test all 148 websites at once
 - Same process as automated runs
 
 ### Testing Distribution by Day
-- **Sunday (Day 0)**: ~16 websites from early countries (US, UK, etc.)
-- **Monday (Day 1)**: ~16 websites from next batch
-- **Tuesday (Day 2)**: ~16 websites continuing the cycle
-- **Wednesday (Day 3)**: ~16 websites (Brazil, Japan, Canada shown in example)
-- **Thursday-Saturday**: Remaining websites in batches
+- **Sunday (Day 0)**: ~22 websites from early countries (US, UK, etc.)
+- **Monday (Day 1)**: ~22 websites from next batch (UK, Germany, India, Brazil)
+- **Tuesday (Day 2)**: ~22 websites continuing the cycle (Brazil, Japan, Canada)
+- **Wednesday (Day 3)**: ~22 websites (Canada, Australia, Russia)
+- **Thursday-Saturday**: Remaining websites in batches (~22 sites each, 16 on Saturday)
 - **Automatic Scaling**: When you add new countries/domains, they're automatically distributed
 
 ### Monitoring

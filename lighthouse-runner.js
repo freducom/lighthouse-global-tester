@@ -1,7 +1,19 @@
 const chromeLauncher = require('chrome-launcher');
-const lighthouse = require('lighthouse').default;
 
 class LighthouseRunner {
+  constructor() {
+    this.lighthouse = null;
+  }
+
+  async _initLighthouse() {
+    if (!this.lighthouse) {
+      // Use dynamic import for ESM module
+      const lighthouseModule = await import('lighthouse');
+      this.lighthouse = lighthouseModule.default || lighthouseModule;
+    }
+    return this.lighthouse;
+  }
+
   async runAudit(url) {
     let chrome;
     
@@ -30,6 +42,7 @@ class LighthouseRunner {
       };
 
       console.log(`Running Lighthouse audit for ${url}...`);
+      const lighthouse = await this._initLighthouse();
       const runnerResult = await lighthouse(url, options);
       
       if (!runnerResult || !runnerResult.lhr || !runnerResult.lhr.categories) {
