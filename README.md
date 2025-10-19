@@ -177,7 +177,6 @@ web-testing-app/
 ├── 📚 README.md                 # This documentation
 ├── .github/workflows/
 │   └── ⚡ lighthouse-tests.yml  # GitHub Actions automation
-├── src/                         # TypeScript source (future)
 └── website/                     # Generated static website
     ├── 🏠 index.html            # Homepage dashboard
     ├── 🌍 country-*.html        # Country-specific pages  
