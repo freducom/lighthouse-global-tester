@@ -50,6 +50,71 @@ class GlobalLighthouseTester {
     }
   }
 
+  async testDailyBatch(dayOfWeek) {
+    // Create a deterministic distribution of all domains across 7 days
+    // This ensures even distribution that adapts to new countries/domains
+    const totalDomains = this.allDomains.length;
+    const domainsPerDay = Math.ceil(totalDomains / 7);
+    
+    // Calculate which domains to test today
+    const startIndex = dayOfWeek * domainsPerDay;
+    const endIndex = Math.min(startIndex + domainsPerDay, totalDomains);
+    const todaysDomains = this.allDomains.slice(startIndex, endIndex);
+    
+    console.log(`\n📅 Daily Batch Testing - Day ${dayOfWeek} (${['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek]})`);
+    console.log(`🎯 Testing domains ${startIndex + 1}-${endIndex} of ${totalDomains} total domains`);
+    console.log(`📊 Today's batch: ${todaysDomains.length} websites`);
+    console.log(`Started at: ${new Date().toLocaleString()}`);
+    
+    const results = [];
+    let successCount = 0;
+    let failCount = 0;
+    
+    // Group domains by country for better logging
+    const domainsByCountry = {};
+    todaysDomains.forEach(({ url, country }) => {
+      if (!domainsByCountry[country]) {
+        domainsByCountry[country] = [];
+      }
+      domainsByCountry[country].push(url);
+    });
+    
+    console.log('\n🌍 Countries in today\'s batch:');
+    Object.entries(domainsByCountry).forEach(([country, domains]) => {
+      console.log(`   ${country}: ${domains.length} websites`);
+    });
+    
+    for (let i = 0; i < todaysDomains.length; i++) {
+      const { url, country } = todaysDomains[i];
+      console.log(`\n[${i + 1}/${todaysDomains.length}] Testing ${url} (${country})`);
+      
+      const result = await this.testWebsite(url, country);
+      if (result) {
+        results.push(result);
+        successCount++;
+      } else {
+        failCount++;
+      }
+      
+      // Wait 2 seconds between tests
+      if (i < todaysDomains.length - 1) {
+        console.log('⏳ Waiting 2 seconds...');
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
+    }
+    
+    console.log(`\n📊 Daily batch testing completed!`);
+    console.log(`✅ Successful: ${successCount}`);
+    console.log(`❌ Failed: ${failCount}`);
+    console.log(`🕐 Finished at: ${new Date().toLocaleString()}`);
+    
+    // Show which countries were tested today
+    const testedCountries = [...new Set(results.map(r => r.country))];
+    console.log(`🌍 Countries tested today: ${testedCountries.join(', ')}`);
+    
+    return results;
+  }
+
   async testAllWebsites() {
     console.log(`\n🚀 Starting Global Lighthouse tests for ${this.allDomains.length} websites across ${this.domainsByCountry.length} countries...`);
     console.log(`Started at: ${new Date().toLocaleString()}`);
@@ -214,12 +279,25 @@ async function main() {
   
   // Show available countries
   console.log('🌍 Available countries:', tester.getAvailableCountries().join(', '));
+  console.log(`📊 Total domains: ${tester.allDomains.length} across ${tester.domainsByCountry.length} countries`);
   
   // Check command line arguments
   const args = process.argv.slice(2);
   
   if (args.includes('--now')) {
     await tester.runNow();
+    process.exit(0);
+  } else if (args.includes('--daily-batch')) {
+    const dayIndex = args.indexOf('--daily-batch');
+    const dayOfWeek = parseInt(args[dayIndex + 1]);
+    
+    if (isNaN(dayOfWeek) || dayOfWeek < 0 || dayOfWeek > 6) {
+      console.error('❌ Invalid day of week. Use 0-6 (0=Sunday, 1=Monday, ..., 6=Saturday)');
+      process.exit(1);
+    }
+    
+    await tester.testDailyBatch(dayOfWeek);
+    await tester.showGlobalSummary();
     process.exit(0);
   } else if (args.includes('--country') && args[args.indexOf('--country') + 1]) {
     const country = args[args.indexOf('--country') + 1];

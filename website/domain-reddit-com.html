@@ -13,14 +13,14 @@
         <header class="header">
             <div class="breadcrumb">
                 <a href="index.html">🏠 Home</a> > 
-                <a href="country-global.html">🌍 Global</a> > 
+                <a href="country-united-states.html">🇺🇸 United States</a> > 
                 reddit.com
             </div>
             <h1>📊 reddit.com</h1>
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
-                <span class="country-tag">🌍 Global</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 4:31:59 PM</span>
+                <span class="country-tag">🇺🇸 United States</span>
+                <span class="last-scan">Last scanned: 10/19/2025, 6:08:36 PM</span>
             </div>
         </header>
 
@@ -49,9 +49,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -98,6 +98,52 @@
         </section>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":12,"url":"reddit.com","performance":56,"accessibility":74,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 16:31:59","country":"Unknown"},{"id":45,"url":"reddit.com","performance":56,"accessibility":74,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 18:08:36","country":"United States"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#ff6b35',
+                    backgroundColor: 'rgba(255, 107, 53, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#4285f4',
+                    backgroundColor: 'rgba(66, 133, 244, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#34a853',
+                    backgroundColor: 'rgba(52, 168, 83, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
     
 </body>
 </html>

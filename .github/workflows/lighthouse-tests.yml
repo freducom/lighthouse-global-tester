@@ -2,9 +2,15 @@ name: Lighthouse Performance Testing
 
 on:
   schedule:
-    # Run every Sunday at 2 AM UTC (weekly testing)
-    - cron: '0 2 * * 0'
+    # Run every day at 2 AM UTC (daily testing of 1/7th of websites)
+    - cron: '0 2 * * *'
   workflow_dispatch:  # Allow manual triggering
+    inputs:
+      test_all:
+        description: 'Test all websites (ignore daily rotation)'
+        required: false
+        default: 'false'
+        type: boolean
   push:
     branches: [ main ]
 
@@ -39,11 +45,19 @@ jobs:
           node migrate-db.js
           echo "Database initialized and migrated"
 
-      - name: Run Lighthouse tests for all countries
+      - name: Run Lighthouse tests for daily batch
         run: |
-          echo "Starting comprehensive lighthouse testing for all 110 websites..."
-          node global-tester.js
-          echo "Lighthouse testing completed for all countries"
+          if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
+            echo "🌍 Manual trigger: Testing all 110 websites across all countries..."
+            node global-tester.js
+          else
+            # Calculate day of week (0=Sunday, 1=Monday, ..., 6=Saturday)
+            DAY_OF_WEEK=$(date +%w)
+            echo "📅 Today is day $DAY_OF_WEEK of the week"
+            echo "🎯 Running daily batch testing (1/7th of websites)..."
+            node global-tester.js --daily-batch $DAY_OF_WEEK
+          fi
+          echo "✅ Lighthouse testing completed for today's batch"
 
       - name: Generate website
         run: |
@@ -73,10 +87,20 @@ jobs:
 
       - name: Generate test summary
         run: |
-          echo "## 🚀 Lighthouse Testing Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## 🚀 Daily Lighthouse Testing Summary" >> $GITHUB_STEP_SUMMARY
           echo "**Testing Date:** $(date)" >> $GITHUB_STEP_SUMMARY
-          echo "**Websites Tested:** 110 websites across 11 countries" >> $GITHUB_STEP_SUMMARY
-          echo "**Countries:** Finland, Japan, Global, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
+            echo "**Mode:** Manual full testing (all 110 websites)" >> $GITHUB_STEP_SUMMARY
+            echo "**Websites Tested:** All 110 websites across 11 countries" >> $GITHUB_STEP_SUMMARY
+          else
+            DAY_OF_WEEK=$(date +%w)
+            DAY_NAME=$(date +%A)
+            echo "**Mode:** Daily batch testing (Day $DAY_OF_WEEK - $DAY_NAME)" >> $GITHUB_STEP_SUMMARY
+            echo "**Daily Batch:** Approximately 1/7th of total websites (~16 sites)" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "**Countries Available:** Finland, Japan, Global, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany" >> $GITHUB_STEP_SUMMARY
           echo "**Database:** Updated with latest performance scores" >> $GITHUB_STEP_SUMMARY
           echo "**Website:** Deployed to GitHub Pages" >> $GITHUB_STEP_SUMMARY
           
@@ -88,5 +112,6 @@ jobs:
             console.log(scores.length);
           ")
           
-          echo "**Successful Tests:** $TOTAL_TESTS" >> $GITHUB_STEP_SUMMARY
+          echo "**Total Historical Tests:** $TOTAL_TESTS" >> $GITHUB_STEP_SUMMARY
+          echo "**Testing Schedule:** Daily at 2 AM UTC (distributed across week)" >> $GITHUB_STEP_SUMMARY
           echo "**Live Dashboard:** [View Performance Results](https://$(echo $GITHUB_REPOSITORY | sed 's/\//.github.io\//')/)" >> $GITHUB_STEP_SUMMARY

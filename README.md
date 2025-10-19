@@ -1,4 +1,11 @@
-# 🚀 Lighthouse Global Performance Tester
+# 🚀 Lightho- **🔄 Automated Testing**: Daily Lighthouse performance testing via GitHub Actions (1/7th of sites per day)
+- **🌍 Global Coverage**: 110 websites across 11 countries (Finland, Japan, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany, Global)
+- **📊 Beautiful Dashboard**: Facebook-style responsive web interface
+- **📈 Historical Tracking**: SQLite database with performance score history
+- **🎯 Comprehensive Metrics**: Performance, Accessibility, Best Practices, SEO, and PWA scores
+- **📱 Mobile Responsive**: Works perfectly on desktop, tablet, and mobile devices
+- **🚀 GitHub Integration**: Fully automated with GitHub Actions and Pages deployment
+- **⚡ Distributed Load**: Tests spread across 7 days for faster execution and more frequent updatesbal Performance Tester
 
 [![Lighthouse Tests](https://github.com/fredu/lighthouse-global-tester/actions/workflows/lighthouse-tests.yml/badge.svg)](https://github.com/fredu/lighthouse-global-tester/actions/workflows/lighthouse-tests.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://fredu.github.io/lighthouse-global-tester)
@@ -88,9 +95,11 @@ Visit `http://localhost:8080` to view the dashboard locally.
 |--------|-------------|
 | `npm start` | Run all lighthouse tests |
 | `npm test` | Run tests immediately (no scheduling) |
+| `npm run test-daily` | Run today's batch (1/7th of websites) |
 | `npm run generate` | Generate static website from database |
 | `npm run serve` | Serve website locally on port 8080 |
 | `npm run deploy` | Test all sites and generate website |
+| `npm run deploy-daily` | Test daily batch and generate website |
 | `npm run dev` | Generate and serve for local development |
 | `npm run migrate` | Initialize/migrate database |
 | `npm run query` | Interactive database query tool |
@@ -119,15 +128,19 @@ Visit `http://localhost:8080` to view the dashboard locally.
 
 ### GitHub Actions Workflow
 The system automatically:
-1. **Runs every Sunday at 2 AM UTC** using cron scheduling
-2. **Tests all 110 websites** across 11 countries using Lighthouse
-3. **Updates the SQLite database** with fresh performance data
-4. **Generates a new static website** with latest results
-5. **Deploys to GitHub Pages** for instant live updates
-6. **Provides detailed summaries** of each test run
+1. **Runs every day at 2 AM UTC** using cron scheduling
+2. **Tests 1/7th of websites daily** (approximately 16 sites) for distributed load
+3. **Completes full cycle weekly** - all 110 websites tested over 7 days
+4. **Updates the SQLite database** with fresh performance data
+5. **Generates a new static website** with latest results
+6. **Deploys to GitHub Pages** for instant live updates
+7. **Provides detailed summaries** of each test run
+8. **Scales automatically** when new countries or domains are added
 
 ### Manual Triggers
 - **Workflow Dispatch**: Trigger tests manually from GitHub Actions
+  - **Daily Batch**: Test today's portion (1/7th) of websites
+  - **Full Test**: Test all 110 websites at once (use "test_all" input)
 - **Push to Main**: Automatic deployment on code changes
 - **Local Testing**: Run and test locally before deployment
 

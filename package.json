@@ -17,12 +17,14 @@
   "scripts": {
     "start": "node global-tester.js",
     "test": "node global-tester.js --now",
+    "test-daily": "node global-tester.js --daily-batch",
     "test-country": "node global-tester.js --country",
     "summary": "node global-tester.js --summary",
     "query": "node query-scores.js",
     "generate": "node generate-website.js",
     "serve": "node serve-website.js",
     "deploy": "npm run test && npm run generate",
+    "deploy-daily": "npm run test-daily && npm run generate",
     "dev": "npm run generate && npm run serve",
     "migrate": "node migrate-db.js",
     "setup": "npm install && npm run migrate"

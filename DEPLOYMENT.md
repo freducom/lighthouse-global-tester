@@ -61,16 +61,27 @@ After the first successful run:
 
 ## 🎯 What Happens Next
 
-### Automated Weekly Testing
-- **Schedule**: Every Sunday at 2 AM UTC
-- **Process**: Tests all 110 websites across 11 countries
-- **Output**: Updated database and regenerated website
+### Automated Daily Testing
+- **Schedule**: Every day at 2 AM UTC
+- **Process**: Tests 1/7th of websites daily (approximately 16 sites)
+- **Full Cycle**: All 110 websites tested over 7 days
+- **Output**: Updated database and regenerated website daily
 - **Deployment**: Automatic deployment to GitHub Pages
+- **Scalability**: Automatically adapts when new countries or domains are added
 
 ### Manual Testing
 - Trigger anytime via GitHub Actions "Run workflow" button
-- Useful for testing after code changes
+- **Daily Batch**: Test today's portion (default behavior)
+- **Full Test**: Use "test_all" input to test all 110 websites at once
 - Same process as automated runs
+
+### Testing Distribution by Day
+- **Sunday (Day 0)**: ~16 websites from early countries (US, UK, etc.)
+- **Monday (Day 1)**: ~16 websites from next batch
+- **Tuesday (Day 2)**: ~16 websites continuing the cycle
+- **Wednesday (Day 3)**: ~16 websites (Brazil, Japan, Canada shown in example)
+- **Thursday-Saturday**: Remaining websites in batches
+- **Automatic Scaling**: When you add new countries/domains, they're automatically distributed
 
 ### Monitoring
 - Check Actions tab for run status
@@ -83,11 +94,26 @@ After the first successful run:
 Edit `.github/workflows/lighthouse-tests.yml`:
 ```yaml
 schedule:
-  # Every day at 3 AM UTC
-  - cron: '0 3 * * *'
+  # Every 6 hours (4 times per day)
+  - cron: '0 */6 * * *'
   
-  # Every Monday and Friday at 9 AM UTC  
-  - cron: '0 9 * * 1,5'
+  # Every Monday, Wednesday, Friday at 9 AM UTC  
+  - cron: '0 9 * * 1,3,5'
+  
+  # Keep daily at 2 AM UTC (recommended)
+  - cron: '0 2 * * *'
+```
+
+### Test Different Daily Batches Locally
+```bash
+# Test Sunday's batch (day 0)
+npm run test-daily -- 0
+
+# Test Wednesday's batch (day 3)  
+npm run test-daily -- 3
+
+# Test all websites (ignore daily rotation)
+npm test
 ```
 
 ### Add More Websites
@@ -115,7 +141,9 @@ Edit `domains.json` and add websites to appropriate country arrays:
 ✅ **Pages Enabled**: Settings configured for GitHub Actions source  
 ✅ **First Run Complete**: Initial test run finishes successfully  
 ✅ **Live Dashboard**: Website accessible at GitHub Pages URL  
-✅ **Weekly Schedule**: Automatic runs every Sunday  
+✅ **Daily Schedule**: Automatic runs every day at 2 AM UTC  
+✅ **Distributed Testing**: 1/7th of websites tested daily
+✅ **Auto-Scaling**: New countries/domains automatically distributed  
 
 ## 📞 Support
 
