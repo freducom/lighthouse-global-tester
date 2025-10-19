@@ -1,0 +1,92 @@
+name: Lighthouse Performance Testing
+
+on:
+  schedule:
+    # Run every Sunday at 2 AM UTC (weekly testing)
+    - cron: '0 2 * * 0'
+  workflow_dispatch:  # Allow manual triggering
+  push:
+    branches: [ main ]
+
+jobs:
+  lighthouse-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Chrome dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Setup database
+        run: |
+          node migrate-db.js
+          echo "Database initialized and migrated"
+
+      - name: Run Lighthouse tests for all countries
+        run: |
+          echo "Starting comprehensive lighthouse testing for all 110 websites..."
+          node global-tester.js
+          echo "Lighthouse testing completed for all countries"
+
+      - name: Generate website
+        run: |
+          echo "Generating static website with latest test results..."
+          node generate-website.js
+          echo "Website generation completed"
+
+      - name: Upload website artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-website
+          path: website/
+
+      - name: Upload database artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-database
+          path: lighthouse_scores.db
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./website
+          force_orphan: true
+
+      - name: Generate test summary
+        run: |
+          echo "## 🚀 Lighthouse Testing Summary" >> $GITHUB_STEP_SUMMARY
+          echo "**Testing Date:** $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "**Websites Tested:** 110 websites across 11 countries" >> $GITHUB_STEP_SUMMARY
+          echo "**Countries:** Finland, Japan, Global, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany" >> $GITHUB_STEP_SUMMARY
+          echo "**Database:** Updated with latest performance scores" >> $GITHUB_STEP_SUMMARY
+          echo "**Website:** Deployed to GitHub Pages" >> $GITHUB_STEP_SUMMARY
+          
+          # Count successful tests from database
+          TOTAL_TESTS=$(node -e "
+            const Database = require('./database.js');
+            const db = new Database();
+            const scores = db.getAllLatestScores();
+            console.log(scores.length);
+          ")
+          
+          echo "**Successful Tests:** $TOTAL_TESTS" >> $GITHUB_STEP_SUMMARY
+          echo "**Live Dashboard:** [View Performance Results](https://$(echo $GITHUB_REPOSITORY | sed 's/\//.github.io\//')/)" >> $GITHUB_STEP_SUMMARY

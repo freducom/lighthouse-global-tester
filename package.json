@@ -1,0 +1,36 @@
+{
+  "name": "lighthouse-global-tester",
+  "version": "1.0.0",
+  "description": "Automated weekly Lighthouse performance testing for 110 major websites across 11 countries with GitHub Pages deployment",
+  "main": "global-tester.js",
+  "homepage": "https://fredu.github.io/lighthouse-global-tester",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredu/lighthouse-global-tester.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fredu/lighthouse-global-tester/issues"
+  },
+  "author": "fredu",
+  "license": "MIT",
+  "keywords": ["lighthouse", "performance", "testing", "monitoring", "github-actions", "github-pages", "web-performance"],
+  "scripts": {
+    "start": "node global-tester.js",
+    "test": "node global-tester.js --now",
+    "test-country": "node global-tester.js --country",
+    "summary": "node global-tester.js --summary",
+    "query": "node query-scores.js",
+    "generate": "node generate-website.js",
+    "serve": "node serve-website.js",
+    "deploy": "npm run test && npm run generate",
+    "dev": "npm run generate && npm run serve",
+    "migrate": "node migrate-db.js",
+    "setup": "npm install && npm run migrate"
+  },
+  "dependencies": {
+    "lighthouse": "^10.4.0",
+    "chrome-launcher": "^0.15.2",
+    "sqlite3": "^5.1.6",
+    "node-cron": "^3.0.2"
+  }
+}
