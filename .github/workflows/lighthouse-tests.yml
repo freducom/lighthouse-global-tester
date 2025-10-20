@@ -24,6 +24,11 @@ jobs:
   lighthouse-tests:
     runs-on: ubuntu-latest
     
+    # Add environment for GitHub Pages deployment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     # Add concurrency to prevent multiple runs
     concurrency:
       group: lighthouse-tests
