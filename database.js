@@ -105,7 +105,7 @@ class Database {
   getScoresByCountry(country) {
     return new Promise((resolve, reject) => {
       this.db.all(`
-        SELECT url, country, performance, accessibility, best_practices, seo, pwa, test_date
+        SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
         FROM lighthouse_scores ls1
         WHERE country = ? AND test_date = (
           SELECT MAX(test_date) 
@@ -138,6 +138,7 @@ class Database {
         SELECT 
           latest.url,
           latest.country,
+          latest.industry,
           latest.performance as current_performance,
           latest.accessibility as current_accessibility,
           latest.best_practices as current_best_practices,
@@ -150,7 +151,7 @@ class Database {
           previous.seo as previous_seo,
           previous.pwa as previous_pwa
         FROM (
-          SELECT url, country, performance, accessibility, best_practices, seo, pwa, test_date
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
           FROM lighthouse_scores ls1
           WHERE test_date = (
             SELECT MAX(test_date) 

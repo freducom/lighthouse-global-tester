@@ -2,895 +2,2700 @@
   {
     "country": "United States",
     "top_domains": [
-      "google.com",
-      "youtube.com",
-      "facebook.com",
-      "amazon.com",
-      "x.com",
-      "wikipedia.org",
-      "instagram.com",
-      "yahoo.com",
-      "reddit.com",
-      "wordpress.com",
-      "bing.com",
-      "figma.com",
-      "apple.com"
+      {
+        "domain": "google.com",
+        "industry": "Search Engine"
+      },
+      {
+        "domain": "youtube.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "facebook.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "tesla.com",
+        "industry": "Automotive"
+      },
+      {
+        "domain": "berkshirehathaway.com",
+        "industry": "Finance"
+      },
+      {
+        "domain": "amazon.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "x.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "wikipedia.org",
+        "industry": "Media"
+      },
+      {
+        "domain": "instagram.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "yahoo.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "reddit.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "wordpress.com",
+        "industry": "Website editor"
+      },
+      {
+        "domain": "wordpress.org",
+        "industry": "Website editor"
+      },
+      {
+        "domain": "bing.com",
+        "industry": "Search Engine"
+      },
+      {
+        "domain": "figma.com",
+        "industry": "Website editor"
+      },
+      {
+        "domain": "apple.com",
+        "industry": "Technology"
+      }
     ]
   },
   {
     "country": "United Kingdom",
     "top_domains": [
-      "bbc.co.uk",
-      "dailymail.co.uk",
-      "theguardian.com",
-      "telegraph.co.uk",
-      "mirror.co.uk",
-      "independent.co.uk",
-      "sky.com",
-      "argos.co.uk",
-      "tfl.gov.uk",
-      "nhs.uk"
+      {
+        "domain": "bbc.co.uk",
+        "industry": "Media"
+      },
+      {
+        "domain": "dailymail.co.uk",
+        "industry": "Media"
+      },
+      {
+        "domain": "theguardian.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "telegraph.co.uk",
+        "industry": "Media"
+      },
+      {
+        "domain": "mirror.co.uk",
+        "industry": "Media"
+      },
+      {
+        "domain": "independent.co.uk",
+        "industry": "Media"
+      },
+      {
+        "domain": "sky.com",
+        "industry": "Telecom"
+      },
+      {
+        "domain": "argos.co.uk",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "tfl.gov.uk",
+        "industry": "Transportation"
+      },
+      {
+        "domain": "nhs.uk",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Germany",
     "top_domains": [
-      "bild.de",
-      "spiegel.de",
-      "focus.de",
-      "t-online.de",
-      "web.de",
-      "chip.de",
-      "zeit.de",
-      "heise.de",
-      "gmx.net",
-      "tagesschau.de"
+      {
+        "domain": "bild.de",
+        "industry": "Media"
+      },
+      {
+        "domain": "spiegel.de",
+        "industry": "Media"
+      },
+      {
+        "domain": "mercedes-benz.de",
+        "industry": "Automotive"
+      },
+      {
+        "domain": "bmw.de",
+        "industry": "Automotive"
+      },
+      {
+        "domain": "volkswagen.de",
+        "industry": "Automotive"
+      },
+      {
+        "domain": "focus.de",
+        "industry": "Media"
+      },
+      {
+        "domain": "t-online.de",
+        "industry": "Portal"
+      },
+      {
+        "domain": "web.de",
+        "industry": "Portal"
+      },
+      {
+        "domain": "chip.de",
+        "industry": "Media"
+      },
+      {
+        "domain": "zeit.de",
+        "industry": "Media"
+      },
+      {
+        "domain": "heise.de",
+        "industry": "Media"
+      },
+      {
+        "domain": "gmx.net",
+        "industry": "Portal"
+      },
+      {
+        "domain": "tagesschau.de",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "India",
     "top_domains": [
-      "flipkart.com",
-      "indiatimes.com",
-      "amazon.in",
-      "cricbuzz.com",
-      "moneycontrol.com",
-      "ndtv.com",
-      "hindustantimes.com",
-      "rediff.com",
-      "zee5.com",
-      "business-standard.com"
+      {
+        "domain": "flipkart.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "indiatimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "amazon.in",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "cricbuzz.com",
+        "industry": "Sports"
+      },
+      {
+        "domain": "moneycontrol.com",
+        "industry": "Finance"
+      },
+      {
+        "domain": "ndtv.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "hindustantimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "rediff.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "zee5.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "business-standard.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Brazil",
     "top_domains": [
-      "globo.com",
-      "uol.com.br",
-      "mercadolivre.com.br",
-      "americanas.com.br",
-      "g1.globo.com",
-      "r7.com",
-      "folha.uol.com.br",
-      "terra.com.br",
-      "abril.com.br",
-      "estadao.com.br"
+      {
+        "domain": "globo.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "uol.com.br",
+        "industry": "Portal"
+      },
+      {
+        "domain": "mercadolivre.com.br",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "americanas.com.br",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "g1.globo.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "r7.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "folha.uol.com.br",
+        "industry": "Media"
+      },
+      {
+        "domain": "terra.com.br",
+        "industry": "Portal"
+      },
+      {
+        "domain": "abril.com.br",
+        "industry": "Media"
+      },
+      {
+        "domain": "estadao.com.br",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Japan",
     "top_domains": [
-      "yahoo.co.jp",
-      "rakuten.co.jp",
-      "nicovideo.jp",
-      "goo.ne.jp",
-      "line.me",
-      "livedoor.jp",
-      "ameblo.jp",
-      "cookpad.com",
-      "pixiv.net",
-      "nhk.or.jp"
+      {
+        "domain": "yahoo.co.jp",
+        "industry": "Portal"
+      },
+      {
+        "domain": "rakuten.co.jp",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "nicovideo.jp",
+        "industry": "Media"
+      },
+      {
+        "domain": "goo.ne.jp",
+        "industry": "Search Engine"
+      },
+      {
+        "domain": "line.me",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "livedoor.jp",
+        "industry": "Portal"
+      },
+      {
+        "domain": "ameblo.jp",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "cookpad.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "pixiv.net",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "nhk.or.jp",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Canada",
     "top_domains": [
-      "cbc.ca",
-      "theweathernetwork.com",
-      "ctvnews.ca",
-      "globalnews.ca",
-      "toronto.ca",
-      "bankofcanada.ca",
-      "canada.ca",
-      "weatheroffice.gc.ca",
-      "hockeycanada.ca",
-      "timhortons.ca"
+      {
+        "domain": "cbc.ca",
+        "industry": "Media"
+      },
+      {
+        "domain": "theweathernetwork.com",
+        "industry": "Weather"
+      },
+      {
+        "domain": "ctvnews.ca",
+        "industry": "Media"
+      },
+      {
+        "domain": "globalnews.ca",
+        "industry": "Media"
+      },
+      {
+        "domain": "toronto.ca",
+        "industry": "Government"
+      },
+      {
+        "domain": "bankofcanada.ca",
+        "industry": "Finance"
+      },
+      {
+        "domain": "canada.ca",
+        "industry": "Government"
+      },
+      {
+        "domain": "weatheroffice.gc.ca",
+        "industry": "Weather"
+      },
+      {
+        "domain": "hockeycanada.ca",
+        "industry": "Sports"
+      },
+      {
+        "domain": "timhortons.ca",
+        "industry": "Food & Drink"
+      }
     ]
   },
   {
     "country": "Australia",
     "top_domains": [
-      "news.com.au",
-      "abc.net.au",
-      "smh.com.au",
-      "9news.com.au",
-      "seek.com.au",
-      "domain.com.au",
-      "realestate.com.au",
-      "bom.gov.au",
-      "australia.gov.au",
-      "my.gov.au"
+      {
+        "domain": "news.com.au",
+        "industry": "Media"
+      },
+      {
+        "domain": "abc.net.au",
+        "industry": "Media"
+      },
+      {
+        "domain": "smh.com.au",
+        "industry": "Media"
+      },
+      {
+        "domain": "9news.com.au",
+        "industry": "Media"
+      },
+      {
+        "domain": "seek.com.au",
+        "industry": "Jobs"
+      },
+      {
+        "domain": "domain.com.au",
+        "industry": "Real Estate"
+      },
+      {
+        "domain": "realestate.com.au",
+        "industry": "Real Estate"
+      },
+      {
+        "domain": "bom.gov.au",
+        "industry": "Weather"
+      },
+      {
+        "domain": "australia.gov.au",
+        "industry": "Government"
+      },
+      {
+        "domain": "my.gov.au",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Russia",
     "top_domains": [
-      "yandex.ru",
-      "vk.com",
-      "ok.ru",
-      "mail.ru",
-      "ozon.ru",
-      "rbc.ru",
-      "tass.ru",
-      "wildberries.ru",
-      "avito.ru",
-      "ria.ru"
+      {
+        "domain": "yandex.ru",
+        "industry": "Search Engine"
+      },
+      {
+        "domain": "vk.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "ok.ru",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "mail.ru",
+        "industry": "Portal"
+      },
+      {
+        "domain": "ozon.ru",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "rbc.ru",
+        "industry": "Media"
+      },
+      {
+        "domain": "tass.ru",
+        "industry": "Media"
+      },
+      {
+        "domain": "wildberries.ru",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "avito.ru",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "ria.ru",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "South Korea",
     "top_domains": [
-      "naver.com",
-      "daum.net",
-      "tistory.com",
-      "coupang.com",
-      "nate.com",
-      "chosun.com",
-      "hani.co.kr",
-      "yna.co.kr",
-      "zum.com",
-      "mk.co.kr"
+      {
+        "domain": "naver.com",
+        "industry": "Search Engine"
+      },
+      {
+        "domain": "daum.net",
+        "industry": "Portal"
+      },
+      {
+        "domain": "tistory.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "coupang.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "nate.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "chosun.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "hani.co.kr",
+        "industry": "Media"
+      },
+      {
+        "domain": "yna.co.kr",
+        "industry": "Media"
+      },
+      {
+        "domain": "zum.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "mk.co.kr",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Finland",
     "top_domains": [
-      "is.fi",
-      "flipsite.io",
-      "iltalehti.fi",
-      "yle.fi",
-      "hs.fi",
-      "tori.fi",
-      "mtv.fi",
-      "suomi24.fi",
-      "verkkokauppa.com",
-      "op.fi",
-      "helsinki.fi"
+      {
+        "domain": "is.fi",
+        "industry": "Media"
+      },
+      {
+        "domain": "flipsite.io",
+        "industry": "Website editor"
+      },
+      {
+        "domain": "emathstudio.com",
+        "industry": "Education"
+      },
+      {
+        "domain": "iltalehti.fi",
+        "industry": "Media"
+      },
+      {
+        "domain": "yle.fi",
+        "industry": "Media"
+      },
+      {
+        "domain": "hs.fi",
+        "industry": "Media"
+      },
+      {
+        "domain": "tori.fi",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "mtv.fi",
+        "industry": "Media"
+      },
+      {
+        "domain": "suomi24.fi",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "verkkokauppa.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "op.fi",
+        "industry": "Finance"
+      },
+      {
+        "domain": "helsinki.fi",
+        "industry": "Education"
+      }
     ]
   },
   {
     "country": "Israel",
     "top_domains": [
-      "wix.com",
-      "ynet.co.il",
-      "walla.co.il",
-      "mako.co.il",
-      "haaretz.co.il",
-      "globes.co.il",
-      "calcalist.co.il",
-      "themarker.com",
-      "sport5.co.il",
-      "gov.il",
-      "bizportal.co.il"
+      {
+        "domain": "wix.com",
+        "industry": "Software"
+      },
+      {
+        "domain": "ynet.co.il",
+        "industry": "Media"
+      },
+      {
+        "domain": "walla.co.il",
+        "industry": "Media"
+      },
+      {
+        "domain": "mako.co.il",
+        "industry": "Media"
+      },
+      {
+        "domain": "haaretz.co.il",
+        "industry": "Media"
+      },
+      {
+        "domain": "globes.co.il",
+        "industry": "Media"
+      },
+      {
+        "domain": "calcalist.co.il",
+        "industry": "Media"
+      },
+      {
+        "domain": "themarker.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "sport5.co.il",
+        "industry": "Sports"
+      },
+      {
+        "domain": "gov.il",
+        "industry": "Government"
+      },
+      {
+        "domain": "bizportal.co.il",
+        "industry": "Finance"
+      }
     ]
   },
   {
     "country": "Netherlands",
     "top_domains": [
-      "nu.nl",
-      "framer.com",
-      "telegraaf.nl",
-      "marktplaats.nl",
-      "ad.nl",
-      "ns.nl",
-      "bol.com",
-      "ing.nl",
-      "rabobank.nl",
-      "rijksoverheid.nl",
-      "weblog.nl"
+      {
+        "domain": "nu.nl",
+        "industry": "Media"
+      },
+      {
+        "domain": "framer.com",
+        "industry": "Website editor"
+      },
+      {
+        "domain": "telegraaf.nl",
+        "industry": "Media"
+      },
+      {
+        "domain": "marktplaats.nl",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "ad.nl",
+        "industry": "Media"
+      },
+      {
+        "domain": "ns.nl",
+        "industry": "Transportation"
+      },
+      {
+        "domain": "bol.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "ing.nl",
+        "industry": "Finance"
+      },
+      {
+        "domain": "rabobank.nl",
+        "industry": "Finance"
+      },
+      {
+        "domain": "rijksoverheid.nl",
+        "industry": "Government"
+      },
+      {
+        "domain": "weblog.nl",
+        "industry": "Social Media"
+      }
     ]
   },
   {
     "country": "Sweden",
     "top_domains": [
-      "aftonbladet.se",
-      "expressen.se",
-      "svt.se",
-      "dn.se",
-      "blocket.se",
-      "flashback.org",
-      "ica.se",
-      "coop.se",
-      "spotify.com",
-      "klarna.com",
-      "skatteverket.se",
-      "arbetsformedlingen.se"
+      {
+        "domain": "aftonbladet.se",
+        "industry": "Media"
+      },
+      {
+        "domain": "expressen.se",
+        "industry": "Media"
+      },
+      {
+        "domain": "svt.se",
+        "industry": "Media"
+      },
+      {
+        "domain": "dn.se",
+        "industry": "Media"
+      },
+      {
+        "domain": "blocket.se",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "flashback.org",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "ica.se",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "coop.se",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "spotify.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "klarna.com",
+        "industry": "Finance"
+      },
+      {
+        "domain": "skatteverket.se",
+        "industry": "Government"
+      },
+      {
+        "domain": "arbetsformedlingen.se",
+        "industry": "Government"
+      }
     ]
   },
-   {
+  {
     "country": "Ireland",
     "top_domains": [
-      "rte.ie",
-      "aib.ie",
-      "independent.ie",
-      "irishtimes.com",
-      "bankofireland.com",
-      "daa.ie",
-      "irishexaminer.com",
-      "thejournal.ie",
-      "tribune.ie",
-      "irishmirror.ie"
+      {
+        "domain": "rte.ie",
+        "industry": "Media"
+      },
+      {
+        "domain": "aib.ie",
+        "industry": "Finance"
+      },
+      {
+        "domain": "independent.ie",
+        "industry": "Media"
+      },
+      {
+        "domain": "irishtimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "bankofireland.com",
+        "industry": "Finance"
+      },
+      {
+        "domain": "daa.ie",
+        "industry": "Transportation"
+      },
+      {
+        "domain": "irishexaminer.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "thejournal.ie",
+        "industry": "Media"
+      },
+      {
+        "domain": "tribune.ie",
+        "industry": "Media"
+      },
+      {
+        "domain": "irishmirror.ie",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Austria",
     "top_domains": [
-      "orf.at",
-      "derstandard.at",
-      "krone.at",
-      "oe24.at",
-      "heute.at",
-      "kurier.at",
-      "willhaben.at",
-      "meinbezirk.at",
-      "salzburg24.at",
-      "vienna.at"
+      {
+        "domain": "orf.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "derstandard.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "krone.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "oe24.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "heute.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "kurier.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "willhaben.at",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "meinbezirk.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "salzburg24.at",
+        "industry": "Media"
+      },
+      {
+        "domain": "vienna.at",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Poland",
     "top_domains": [
-      "wp.pl",
-      "onet.pl",
-      "o2.pl",
-      "interia.pl",
-      "allegro.pl",
-      "gazeta.pl",
-      "olx.pl",
-      "aliorbank.pl",
-      "ing.pl",
-      "polsatnews.pl"
+      {
+        "domain": "wp.pl",
+        "industry": "Portal"
+      },
+      {
+        "domain": "onet.pl",
+        "industry": "Portal"
+      },
+      {
+        "domain": "o2.pl",
+        "industry": "Portal"
+      },
+      {
+        "domain": "interia.pl",
+        "industry": "Portal"
+      },
+      {
+        "domain": "allegro.pl",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "gazeta.pl",
+        "industry": "Media"
+      },
+      {
+        "domain": "olx.pl",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "aliorbank.pl",
+        "industry": "Finance"
+      },
+      {
+        "domain": "ing.pl",
+        "industry": "Finance"
+      },
+      {
+        "domain": "polsatnews.pl",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Norway",
     "top_domains": [
-      "vg.no",
-      "nrk.no",
-      "dagen.no",
-      "aftenposten.no",
-      "dagbladet.no",
-      "nettavisen.no",
-      "e24.no",
-      "dnb.no",
-      "schibsted.no",
-      "byavisa.no"
+      {
+        "domain": "vg.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "nrk.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "dagen.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "aftenposten.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "dagbladet.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "nettavisen.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "e24.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "dnb.no",
+        "industry": "Finance"
+      },
+      {
+        "domain": "schibsted.no",
+        "industry": "Media"
+      },
+      {
+        "domain": "byavisa.no",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Denmark",
     "top_domains": [
-      "tv2.dk",
-      "dr.dk",
-      "ekstrabladet.dk",
-      "bt.dk",
-      "mitid.dk",
-      "bold.dk",
-      "dmi.dk",
-      "db﻿a.dk",
-      "viaplay.dk",
-      "yousee.dk"
+      {
+        "domain": "tv2.dk",
+        "industry": "Media"
+      },
+      {
+        "domain": "dr.dk",
+        "industry": "Media"
+      },
+      {
+        "domain": "ekstrabladet.dk",
+        "industry": "Media"
+      },
+      {
+        "domain": "bt.dk",
+        "industry": "Media"
+      },
+      {
+        "domain": "mitid.dk",
+        "industry": "Government"
+      },
+      {
+        "domain": "bold.dk",
+        "industry": "Sports"
+      },
+      {
+        "domain": "dmi.dk",
+        "industry": "Weather"
+      },
+      {
+        "domain": "dba.dk",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "viaplay.dk",
+        "industry": "Media"
+      },
+      {
+        "domain": "yousee.dk",
+        "industry": "Telecom"
+      }
     ]
   },
   {
     "country": "Ukraine",
     "top_domains": [
-      "ukr.net",
-      "censor.net",
-      "pravda.com.ua",
-      "unian.ua",
-      "obozrevatel.com",
-      "gazeta.ua",
-      "tsn.ua",
-      "lb.ua",
-      "sport.ua",
-      "news.finance.ua"
+      {
+        "domain": "ukr.net",
+        "industry": "Portal"
+      },
+      {
+        "domain": "censor.net",
+        "industry": "Media"
+      },
+      {
+        "domain": "pravda.com.ua",
+        "industry": "Media"
+      },
+      {
+        "domain": "unian.ua",
+        "industry": "Media"
+      },
+      {
+        "domain": "obozrevatel.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "gazeta.ua",
+        "industry": "Media"
+      },
+      {
+        "domain": "tsn.ua",
+        "industry": "Media"
+      },
+      {
+        "domain": "lb.ua",
+        "industry": "Media"
+      },
+      {
+        "domain": "sport.ua",
+        "industry": "Sports"
+      },
+      {
+        "domain": "news.finance.ua",
+        "industry": "Finance"
+      }
     ]
   },
   {
     "country": "Hungary",
     "top_domains": [
-      "telex.hu",
-      "index.hu",
-      "24.hu",
-      "444.hu",
-      "origo.hu",
-      "hirkereso.hu",
-      "freemail.hu",
-      "arukereso.hu",
-      "nosalty.hu",
-      "portfolio.hu"
+      {
+        "domain": "telex.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "index.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "24.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "444.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "origo.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "hirkereso.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "freemail.hu",
+        "industry": "Portal"
+      },
+      {
+        "domain": "arukereso.hu",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "nosalty.hu",
+        "industry": "Media"
+      },
+      {
+        "domain": "portfolio.hu",
+        "industry": "Finance"
+      }
     ]
   },
   {
     "country": "Estonia",
     "top_domains": [
-      "delfi.ee",
-      "postimees.ee",
-      "swedbank.ee",
-      "ohtuleht.ee",
-      "eesti.ee",
-      "telia.ee",
-      "elisa.ee",
-      "kaubamaja.ee",
-      "euronics.ee",
-      "cvkeskus.ee"
+      {
+        "domain": "delfi.ee",
+        "industry": "Media"
+      },
+      {
+        "domain": "postimees.ee",
+        "industry": "Media"
+      },
+      {
+        "domain": "swedbank.ee",
+        "industry": "Finance"
+      },
+      {
+        "domain": "ohtuleht.ee",
+        "industry": "Media"
+      },
+      {
+        "domain": "eesti.ee",
+        "industry": "Government"
+      },
+      {
+        "domain": "telia.ee",
+        "industry": "Telecom"
+      },
+      {
+        "domain": "elisa.ee",
+        "industry": "Telecom"
+      },
+      {
+        "domain": "kaubamaja.ee",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "euronics.ee",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "cvkeskus.ee",
+        "industry": "Jobs"
+      }
     ]
   },
   {
     "country": "Lithuania",
     "top_domains": [
-      "delfi.lt",
-      "15min.lt",
-      "lrytas.lt",
-      "tv3.lt",
-      "vz.lt",
-      "manodaktaras.lt",
-      "autoplius.lt",
-      "kauno.diena.lt",
-      "alfa.lt",
-      "skelbiu.lt"
+      {
+        "domain": "delfi.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "15min.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "lrytas.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "tv3.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "vz.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "manodaktaras.lt",
+        "industry": "Government"
+      },
+      {
+        "domain": "autoplius.lt",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "kauno.diena.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "alfa.lt",
+        "industry": "Media"
+      },
+      {
+        "domain": "skelbiu.lt",
+        "industry": "Marketplace"
+      }
     ]
   },
   {
     "country": "Latvia",
     "top_domains": [
-      "delfi.lv",
-      "tvnet.lv",
-      "apollo.lv",
-      "skaties.lv",
-      "la.lv",
-      "nra.lv",
-      "lsm.lv",
-      "br24.lv",
-      "diena.lv",
-      "swh.lv"
+      {
+        "domain": "delfi.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "tvnet.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "apollo.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "skaties.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "la.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "nra.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "lsm.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "br24.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "diena.lv",
+        "industry": "Media"
+      },
+      {
+        "domain": "swh.lv",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Turkey",
     "top_domains": [
-      "trendyol.com",
-      "hepsiburada.com",
-      "hurriyet.com.tr",
-      "milliyet.com.tr",
-      "sabah.com.tr",
-      "ntv.com.tr",
-      "ekşi.com.tr",
-      "sahibinden.com",
-      "blogcu.com",
-      "kamuajans.com"
+      {
+        "domain": "trendyol.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "hepsiburada.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "hurriyet.com.tr",
+        "industry": "Media"
+      },
+      {
+        "domain": "milliyet.com.tr",
+        "industry": "Media"
+      },
+      {
+        "domain": "sabah.com.tr",
+        "industry": "Media"
+      },
+      {
+        "domain": "ntv.com.tr",
+        "industry": "Media"
+      },
+      {
+        "domain": "ekşi.com.tr",
+        "industry": "Media"
+      },
+      {
+        "domain": "sahibinden.com",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "blogcu.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "kamuajans.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Italy",
     "top_domains": [
-      "corriere.it",
-      "repubblica.it",
-      "gazzetta.it",
-      "ilfattoquotidiano.it",
-      "la7.it",
-      "tgcom24.mediaset.it",
-      "ansa.it",
-      "virgilio.it",
-      "subito.it",
-      "aranzulla.it"
+      {
+        "domain": "corriere.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "repubblica.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "gazzetta.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "ilfattoquotidiano.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "la7.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "tgcom24.mediaset.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "ansa.it",
+        "industry": "Media"
+      },
+      {
+        "domain": "virgilio.it",
+        "industry": "Portal"
+      },
+      {
+        "domain": "subito.it",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "aranzulla.it",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "New Zealand",
     "top_domains": [
-      "nzherald.co.nz",
-      "stuff.co.nz",
-      "1news.co.nz",
-      "odt.co.nz",
-      "trade-me.co.nz",
-      "co.nz",
-      "reservebank.govt.nz",
-      "newshub.co.nz",
-      "radiolive.co.nz",
-      "mightyape.co.nz"
+      {
+        "domain": "nzherald.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "stuff.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "1news.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "odt.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "trademe.co.nz",
+        "industry": "Marketplace"
+      },
+      {
+        "domain": "unknown.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "reservebank.govt.nz",
+        "industry": "Finance"
+      },
+      {
+        "domain": "newshub.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "radiolive.co.nz",
+        "industry": "Media"
+      },
+      {
+        "domain": "mightyape.co.nz",
+        "industry": "E-commerce"
+      }
     ]
   },
   {
     "country": "South Africa",
     "top_domains": [
-      "news24.com",
-      "iol.co.za",
-      "sowetanlive.co.za",
-      "timeslive.co.za",
-      "fin24.com",
-      "ewn.co.za",
-      "businesstech.co.za",
-      "netwerk24.com",
-      "superbalist.com",
-      "takealot.com"
+      {
+        "domain": "news24.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "iol.co.za",
+        "industry": "Media"
+      },
+      {
+        "domain": "sowetanlive.co.za",
+        "industry": "Media"
+      },
+      {
+        "domain": "timeslive.co.za",
+        "industry": "Media"
+      },
+      {
+        "domain": "fin24.com",
+        "industry": "Finance"
+      },
+      {
+        "domain": "ewn.co.za",
+        "industry": "Media"
+      },
+      {
+        "domain": "businesstech.co.za",
+        "industry": "Media"
+      },
+      {
+        "domain": "netwerk24.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "superbalist.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "takealot.com",
+        "industry": "E-commerce"
+      }
     ]
   },
   {
     "country": "Egypt",
     "top_domains": [
-      "yallakora.com",
-      "masrawy.com",
-      "youm7.com",
-      "elwatannews.com",
-      "akhbarelyom.com",
-      "almasryalyoum.com",
-      "syria.tv",  
-      "alwafd.org",
-      "arabic.rt.com.eg",
-      "dailynewsegypt.com"
+      {
+        "domain": "yallakora.com",
+        "industry": "Sports"
+      },
+      {
+        "domain": "masrawy.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "youm7.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "elwatannews.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "akhbarelyom.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "almasryalyoum.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "syria.tv",
+        "industry": "Media"
+      },
+      {
+        "domain": "alwafd.org",
+        "industry": "Non-profit"
+      },
+      {
+        "domain": "arabic.rt.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "dailynewsegypt.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Libya",
     "top_domains": [
-      "libya24.tv",
-      "alwasat.ly",
-      "libyaobserver.ly",
-      "alqudsco.org",  
-      "libyaherald.com",
-      "news.ly",
-      "libya-tv.com",
-      "akhbarlibya.com",
-      "alwasat.ly",
-      "aks-ly.com"
+      {
+        "domain": "libya24.tv",
+        "industry": "Media"
+      },
+      {
+        "domain": "alwasat.ly",
+        "industry": "Media"
+      },
+      {
+        "domain": "libyaobserver.ly",
+        "industry": "Media"
+      },
+      {
+        "domain": "alqudsco.org",
+        "industry": "Media"
+      },
+      {
+        "domain": "libyaherald.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "news.ly",
+        "industry": "Media"
+      },
+      {
+        "domain": "libya-tv.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "akhbarlibya.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "aks-ly.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Iran",
     "top_domains": [
-      "irna.ir",
-      "mehrnews.com",
-      "tasnimnews.com",
-      "yjc.ir",
-      "isna.ir",
-      "khabaronline.ir",
-      "irib.ir",
-      "iribnews.ir",
-      "tejaratnews.com",
-      "majzooban.org"
+      {
+        "domain": "irna.ir",
+        "industry": "Media"
+      },
+      {
+        "domain": "mehrnews.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "tasnimnews.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "yjc.ir",
+        "industry": "Media"
+      },
+      {
+        "domain": "isna.ir",
+        "industry": "Media"
+      },
+      {
+        "domain": "khabaronline.ir",
+        "industry": "Media"
+      },
+      {
+        "domain": "irib.ir",
+        "industry": "Media"
+      },
+      {
+        "domain": "iribnews.ir",
+        "industry": "Media"
+      },
+      {
+        "domain": "tejaratnews.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "majzooban.org",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Greece",
     "top_domains": [
-      "in.gr",
-      "katimerini.gr",
-      "naftemporiki.gr",
-      "news247.gr",
-      "skai.gr",
-      "zougla.gr",
-      "sport24.gr",
-      "ethnos.gr",
-      "alphatv.gr",
-      "gov.gr"
+      {
+        "domain": "in.gr",
+        "industry": "Portal"
+      },
+      {
+        "domain": "kathimerini.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "naftemporiki.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "news247.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "skai.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "zougla.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "sport24.gr",
+        "industry": "Sports"
+      },
+      {
+        "domain": "ethnos.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "alphatv.gr",
+        "industry": "Media"
+      },
+      {
+        "domain": "gov.gr",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Spain",
     "top_domains": [
-      "marca.com",
-      "elpais.com",
-      "20minutos.es",
-      "elmundo.es",
-      "abc.es",
-      "lavanguardia.com",
-      "eldiario.es",
-      "elespanol.com",
-      "elpais.com",
-      "cinco dias.com", 
-      "ideal.es"
+      {
+        "domain": "marca.com",
+        "industry": "Sports"
+      },
+      {
+        "domain": "elpais.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "20minutos.es",
+        "industry": "Media"
+      },
+      {
+        "domain": "elmundo.es",
+        "industry": "Media"
+      },
+      {
+        "domain": "abc.es",
+        "industry": "Media"
+      },
+      {
+        "domain": "lavanguardia.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "eldiario.es",
+        "industry": "Media"
+      },
+      {
+        "domain": "elespanol.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "cincodias.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "ideal.es",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "France",
     "top_domains": [
-      "lemonde.fr",
-      "lefigaro.fr",
-      "20minutes.fr",
-      "leparisien.fr",
-      "liberation.fr",
-      "franceinfo.fr",
-      "mediapart.fr",
-      "lesechos.fr",
-      "marieclaire.fr",
-      "lci.fr"
+      {
+        "domain": "lemonde.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "lefigaro.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "20minutes.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "leparisien.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "liberation.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "franceinfo.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "mediapart.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "lesechos.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "marieclaire.fr",
+        "industry": "Media"
+      },
+      {
+        "domain": "lci.fr",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Belgium",
     "top_domains": [
-      "hln.be",
-      "nieuwsblad.be",
-      "deredactie.be",
-      "vrt.be",
-      "rtbf.be",
-      "feest.be",
-      "gazetvanantwerpen.be",
-      "demorgen.be",
-      "lameuse.be",
-      "wiw.be"
+      {
+        "domain": "hln.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "nieuwsblad.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "deredactie.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "vrt.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "rtbf.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "feest.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "gazetvanantwerpen.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "demorgen.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "lameuse.be",
+        "industry": "Media"
+      },
+      {
+        "domain": "wiw.be",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Luxembourg",
     "top_domains": [
-      "wort.lu",
-      "tageblatt.lu",
-      "lusailuxembourg.lu",
-      "paperjam.lu",
-      "lafrontiere.lu",
-      "esch.lu",
-      "luxembourg.lu",
-      "deturbo.lu",
-      "news24.lu",
-      "myguinness.lu"
+      {
+        "domain": "wort.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "tageblatt.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "lusailuxembourg.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "paperjam.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "lafrontiere.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "esch.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "luxembourg.lu",
+        "industry": "Government"
+      },
+      {
+        "domain": "deturbo.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "news24.lu",
+        "industry": "Media"
+      },
+      {
+        "domain": "myguinness.lu",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Switzerland",
     "top_domains": [
-      "20min.ch",
-      "nzz.ch",
-      "blick.ch",
-      "tagesanzeiger.ch",
-      "watson.ch",
-      "letemps.ch",
-      "swissinfo.ch",
-      "tagesanzeiger.ch",
-      "rts.ch",
-      "studien.ch"
+      {
+        "domain": "20min.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "nzz.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "blick.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "tagesanzeiger.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "watson.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "letemps.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "swissinfo.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "rts.ch",
+        "industry": "Media"
+      },
+      {
+        "domain": "studien.ch",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Czechia",
     "top_domains": [
-      "seznam.cz",
-      "novinky.cz",
-      "aktualne.cz",
-      "idnes.cz",
-      "denik.cz",
-      "parlamentnilisty.cz",
-      "lidovky.cz",
-      "cz-invest.cz",
-      "ihned.cz",
-      "ceskatelevize.cz"
+      {
+        "domain": "seznam.cz",
+        "industry": "Search Engine"
+      },
+      {
+        "domain": "novinky.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "aktualne.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "idnes.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "denik.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "parlamentnilisty.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "lidovky.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "cz-invest.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "ihned.cz",
+        "industry": "Media"
+      },
+      {
+        "domain": "ceskatelevize.cz",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Slovakia",
     "top_domains": [
-      "aktuality.sk",
-      "pravda.sk",
-      "sme.sk",
-      "ta3.com",
-      "sport.sk",
-      "topky.sk",
-      "cas.sk",
-      "dennikn.sk",
-      "aktuality.sk",
-      "zive.sk"
+      {
+        "domain": "aktuality.sk",
+        "industry": "Media"
+      },
+      {
+        "domain": "pravda.sk",
+        "industry": "Media"
+      },
+      {
+        "domain": "sme.sk",
+        "industry": "Media"
+      },
+      {
+        "domain": "ta3.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "sport.sk",
+        "industry": "Sports"
+      },
+      {
+        "domain": "topky.sk",
+        "industry": "Media"
+      },
+      {
+        "domain": "cas.sk",
+        "industry": "Media"
+      },
+      {
+        "domain": "dennikn.sk",
+        "industry": "Media"
+      },
+      {
+        "domain": "zive.sk",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Malta",
     "top_domains": [
-      "timesofmalta.com",
-      "lovinmalta.com",
-      "malta-today.com.mt",
-      "maltatoday.com.mt",
-      "gozo.news",
-      "malta.com",
-      "maltaairbelt.com",
-      "meae.gov.mt",
-      "inspiremalta.com",
-      "foodforlife.com.mt"
+      {
+        "domain": "timesofmalta.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "lovinmalta.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "malta-today.com.mt",
+        "industry": "Media"
+      },
+      {
+        "domain": "maltatoday.com.mt",
+        "industry": "Media"
+      },
+      {
+        "domain": "gozo.news",
+        "industry": "Media"
+      },
+      {
+        "domain": "malta.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "maltaairbelt.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "meae.gov.mt",
+        "industry": "Government"
+      },
+      {
+        "domain": "inspiremalta.com",
+        "industry": "Non-profit"
+      },
+      {
+        "domain": "foodforlife.com.mt",
+        "industry": "Non-profit"
+      }
     ]
   },
   {
     "country": "China",
     "top_domains": [
-      "taobao.com",
-      "tmall.com",
-      "jd.com",
-      "qq.com",
-      "weibo.com",
-      "sohu.com",
-      "163.com",
-      "douyin.com",
-      "xiaohongshu.com",
-      "bilibili.com"
+      {
+        "domain": "taobao.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "tmall.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "jd.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "qq.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "weibo.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "sohu.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "163.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "douyin.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "xiaohongshu.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "bilibili.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Vietnam",
     "top_domains": [
-      "vnexpress.net",
-      "zing.vn",
-      "tuoitre.vn",
-      "dantri.com.vn",
-      "soha.vn",
-      "cafef.vn",
-      "24h.com.vn",
-      "vietnamnet.vn",
-      "giadinh.net.vn",
-      "kenh14.vn"
+      {
+        "domain": "vnexpress.net",
+        "industry": "Media"
+      },
+      {
+        "domain": "zing.vn",
+        "industry": "Media"
+      },
+      {
+        "domain": "tuoitre.vn",
+        "industry": "Media"
+      },
+      {
+        "domain": "dantri.com.vn",
+        "industry": "Media"
+      },
+      {
+        "domain": "soha.vn",
+        "industry": "Media"
+      },
+      {
+        "domain": "cafef.vn",
+        "industry": "Finance"
+      },
+      {
+        "domain": "24h.com.vn",
+        "industry": "Portal"
+      },
+      {
+        "domain": "vietnamnet.vn",
+        "industry": "Media"
+      },
+      {
+        "domain": "giadinh.net.vn",
+        "industry": "Media"
+      },
+      {
+        "domain": "kenh14.vn",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Thailand",
     "top_domains": [
-      "thaiall.com",
-      "mgronline.com",
-      "sanook.com",
-      "kapook.com",
-      "pantip.com",
-      "thairath.co.th",
-      "posttoday.com",
-      "nationtv.tv",
-      "khaosod.co.th",
-      "workpointtoday.com"
+      {
+        "domain": "thaiall.com",
+        "industry": "Education"
+      },
+      {
+        "domain": "mgronline.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "sanook.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "kapook.com",
+        "industry": "Portal"
+      },
+      {
+        "domain": "pantip.com",
+        "industry": "Social Media"
+      },
+      {
+        "domain": "thairath.co.th",
+        "industry": "Media"
+      },
+      {
+        "domain": "posttoday.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "nationtv.tv",
+        "industry": "Media"
+      },
+      {
+        "domain": "khaosod.co.th",
+        "industry": "Media"
+      },
+      {
+        "domain": "workpointtoday.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Malaysia",
     "top_domains": [
-      "malaysiakini.com",
-      "thestar.com.my",
-      "nst.com.my",
-      "bernama.com",
-      "mymoney.com.my",
-      "sinchew.com.my",
-      "utusan.com.my",
-      "thestar.com.my",
-      "freepress.com.my",
-      "themalaysianreserve.com"
+      {
+        "domain": "malaysiakini.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "thestar.com.my",
+        "industry": "Media"
+      },
+      {
+        "domain": "nst.com.my",
+        "industry": "Media"
+      },
+      {
+        "domain": "bernama.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "mymoney.com.my",
+        "industry": "Finance"
+      },
+      {
+        "domain": "sinchew.com.my",
+        "industry": "Media"
+      },
+      {
+        "domain": "utusan.com.my",
+        "industry": "Media"
+      },
+      {
+        "domain": "freepress.com.my",
+        "industry": "Media"
+      },
+      {
+        "domain": "themalaysianreserve.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Singapore",
     "top_domains": [
-      "straitstimes.com",
-      "todayonline.com",
-      "mothership.sg",
-      "asiaone.com",
-      "channelnewsasia.com",
-      "singaporetech.edu.sg",
-      "gov.sg",
-      "funzing.com",
-      "sgbic.org",
-      "buzzfeed.com.sg"
+      {
+        "domain": "straitstimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "todayonline.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "mothership.sg",
+        "industry": "Media"
+      },
+      {
+        "domain": "asiaone.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "channelnewsasia.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "singaporetech.edu.sg",
+        "industry": "Education"
+      },
+      {
+        "domain": "gov.sg",
+        "industry": "Government"
+      },
+      {
+        "domain": "funzing.com",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "sgbic.org",
+        "industry": "Non-profit"
+      },
+      {
+        "domain": "buzzfeed.com.sg",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Indonesia",
     "top_domains": [
-      "kompas.com",
-      "detik.com",
-      "tribunnews.com",
-      "okezone.com",
-      "liputan6.com",
-      "viva.co.id",
-      "suara.com",
-      "merdeka.com",
-      "tempo.co",
-      "kumparan.com"
+      {
+        "domain": "kompas.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "detik.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "tribunnews.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "okezone.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "liputan6.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "viva.co.id",
+        "industry": "Media"
+      },
+      {
+        "domain": "suara.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "merdeka.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "tempo.co",
+        "industry": "Media"
+      },
+      {
+        "domain": "kumparan.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Taiwan",
     "top_domains": [
-      "udn.com",
-      "appledaily.com.tw",
-      "ettoday.net",
-      "setn.com",
-      "yahoo.com.tw",
-      "chinatimes.com",
-      "ltn.com.tw",
-      "pts.org.tw",
-      "tvbs.com.tw",
-      "nkust.edu.tw"
+      {
+        "domain": "udn.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "appledaily.com.tw",
+        "industry": "Media"
+      },
+      {
+        "domain": "ettoday.net",
+        "industry": "Media"
+      },
+      {
+        "domain": "setn.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "yahoo.com.tw",
+        "industry": "Portal"
+      },
+      {
+        "domain": "chinatimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "ltn.com.tw",
+        "industry": "Media"
+      },
+      {
+        "domain": "pts.org.tw",
+        "industry": "Media"
+      },
+      {
+        "domain": "tvbs.com.tw",
+        "industry": "Media"
+      },
+      {
+        "domain": "nkust.edu.tw",
+        "industry": "Education"
+      }
     ]
   },
   {
     "country": "Peru",
     "top_domains": [
-      "rpp.pe",
-      "elpais.com.pe",
-      "americaeconomia.com.pe",
-      "gestion.pe",
-      "elcomercio.pe",
-      "larepublica.pe",
-      "peru21.pe",
-      "ojo.pe",
-      "diariocorreo.pe",
-      "trome.pe"
+      {
+        "domain": "rpp.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "elpais.com.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "americaeconomia.com.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "gestion.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "elcomercio.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "larepublica.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "peru21.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "ojo.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "diariocorreo.pe",
+        "industry": "Media"
+      },
+      {
+        "domain": "trome.pe",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Colombia",
     "top_domains": [
-      "eltiempo.com",
-      "elespectador.com",
-      "caracoltv.com",
-      "las2orillas.co",
-      "elcolombiano.com",
-      "publimetro.co",
-      "elespectador.co",
-      "portafolio.co",
-      "elbogotapost.com",
-      "diariodelcauca.com.co"
+      {
+        "domain": "eltiempo.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "elespectador.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "caracoltv.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "las2orillas.co",
+        "industry": "Media"
+      },
+      {
+        "domain": "elcolombiano.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "publimetro.co",
+        "industry": "Media"
+      },
+      {
+        "domain": "elespectador.co",
+        "industry": "Media"
+      },
+      {
+        "domain": "portafolio.co",
+        "industry": "Media"
+      },
+      {
+        "domain": "elbogotapost.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "diariodelcauca.com.co",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Costa Rica",
     "top_domains": [
-      "teletica.com", 
-      "nacion.com", 
-      "elfinancierocr.com", 
-      "laverdad.cr", 
-      "crhoy.com", 
-      "adondeircr.com", 
-      "amprensa.com", 
-      "universidad.ed.cr", 
-      "ict.go.cr", 
-      "mep.go.cr"
+      {
+        "domain": "teletica.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "nacion.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "elfinancierocr.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "laverdad.cr",
+        "industry": "Media"
+      },
+      {
+        "domain": "crhoy.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "adondeircr.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "amprensa.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "universidad.ed.cr",
+        "industry": "Education"
+      },
+      {
+        "domain": "ict.go.cr",
+        "industry": "Government"
+      },
+      {
+        "domain": "mep.go.cr",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Cuba",
     "top_domains": [
-      "granma.cu", 
-      "cubadebate.cu", 
-      "juventudrebelde.cu", 
-      "radiocubana.cu", 
-      "trabajadores.cu", 
-      "igemel.cu", 
-      "cubaeduca.cu", 
-      "prensa-latina.cu", 
-      "telecubanacan.cu", 
-      "cubavision.icrt.cu"
+      {
+        "domain": "granma.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "cubadebate.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "juventudrebelde.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "radiocubana.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "trabajadores.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "igemel.cu",
+        "industry": "Portal"
+      },
+      {
+        "domain": "cubaeduca.cu",
+        "industry": "Education"
+      },
+      {
+        "domain": "prensa-latina.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "telecubanacan.cu",
+        "industry": "Media"
+      },
+      {
+        "domain": "cubavision.icrt.cu",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Bolivia",
     "top_domains": [
-      "laprensa.com.bo", 
-      "pagina7.bo", 
-      "eldeber.com.bo", 
-      "opinion.com.bo", 
-      "correodelsur.com.bo", 
-      "unitel.bo", 
-      "reduno.com.bo", 
-      "sol.bo", 
-      "gob.bo", 
-      "minsap.gob.bo"
+      {
+        "domain": "laprensa.com.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "pagina7.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "eldeber.com.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "opinion.com.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "correodelsur.com.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "unitel.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "reduno.com.bo",
+        "industry": "Media"
+      },
+      {
+        "domain": "sol.bo",
+        "industry": "Portal"
+      },
+      {
+        "domain": "gob.bo",
+        "industry": "Government"
+      },
+      {
+        "domain": "minsap.gob.bo",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Chile",
     "top_domains": [
-      "latercera.com", 
-      "emol.com", 
-      "mercadolibre.cl", 
-      "t13.cl", 
-      "cooperativa.cl", 
-      "biobiochile.cl", 
-      "laprensaaustral.cl", 
-      "elmostrador.cl", 
-      "24horas.cl", 
-      "gob.cl"
+      {
+        "domain": "latercera.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "emol.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "mercadolibre.cl",
+        "industry": "E-commerce"
+      },
+      {
+        "domain": "t13.cl",
+        "industry": "Media"
+      },
+      {
+        "domain": "cooperativa.cl",
+        "industry": "Media"
+      },
+      {
+        "domain": "biobiochile.cl",
+        "industry": "Media"
+      },
+      {
+        "domain": "laprensaaustral.cl",
+        "industry": "Media"
+      },
+      {
+        "domain": "elmostrador.cl",
+        "industry": "Media"
+      },
+      {
+        "domain": "24horas.cl",
+        "industry": "Media"
+      },
+      {
+        "domain": "gob.cl",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Paraguay",
     "top_domains": [
-      "abc.com.py", 
-      "ultimahora.com.py", 
-      "lanacion.com.py", 
-      "hojaderouter.com.py", 
-      "paraguay.com", 
-      "sigloxxi.com.py", 
-      "npy.com.py", 
-      "gobierno.gob.py", 
-      "senatics.gov.py", 
-      "uip.gov.py"
+      {
+        "domain": "abc.com.py",
+        "industry": "Media"
+      },
+      {
+        "domain": "ultimahora.com.py",
+        "industry": "Media"
+      },
+      {
+        "domain": "lanacion.com.py",
+        "industry": "Media"
+      },
+      {
+        "domain": "hojaderouter.com.py",
+        "industry": "Media"
+      },
+      {
+        "domain": "paraguay.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "sigloxxi.com.py",
+        "industry": "Media"
+      },
+      {
+        "domain": "npy.com.py",
+        "industry": "Media"
+      },
+      {
+        "domain": "gobierno.gob.py",
+        "industry": "Government"
+      },
+      {
+        "domain": "senatics.gov.py",
+        "industry": "Government"
+      },
+      {
+        "domain": "uip.gov.py",
+        "industry": "Government"
+      }
     ]
   },
   {
     "country": "Uruguay",
     "top_domains": [
-      "elpais.com.uy", 
-      "subrayado.com.uy", 
-      "montevideo.com.uy", 
-      "bienestarparlamento.gub.uy", 
-      "latercera.uy", 
-      "busqueda.com.uy", 
-      "murciapress.com.uy", 
-      "theconversation.com.uy", 
-      "gub.uy", 
-      "uypress.net"
+      {
+        "domain": "elpais.com.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "subrayado.com.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "montevideo.com.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "bienestarparlamento.gub.uy",
+        "industry": "Government"
+      },
+      {
+        "domain": "latercera.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "busqueda.com.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "murciapress.com.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "theconversation.com.uy",
+        "industry": "Media"
+      },
+      {
+        "domain": "gub.uy",
+        "industry": "Government"
+      },
+      {
+        "domain": "uypress.net",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Zambia",
     "top_domains": [
-      "lusakatimes.com", 
-      "zambianobserver.com", 
-      "zambiareports.com", 
-      "zambianews365.com", 
-      "zambianbusinesstimes.com", 
-      "diggers.news", 
-      "times.co.zm", 
-      "zambia.co.zm", 
-      "zambiatoday.com", 
-      "zambiamonitor.com"
+      {
+        "domain": "lusakatimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "zambianobserver.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "zambiareports.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "zambianews365.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "zambianbusinesstimes.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "diggers.news",
+        "industry": "Media"
+      },
+      {
+        "domain": "times.co.zm",
+        "industry": "Media"
+      },
+      {
+        "domain": "zambia.co.zm",
+        "industry": "Portal"
+      },
+      {
+        "domain": "zambiatoday.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "zambiamonitor.com",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Kenya",
     "top_domains": [
-      "nation.africa", 
-      "standardmedia.co.ke", 
-      "citizen.digital", 
-      "kenyabuzz.com", 
-      "gathengi.africa", 
-      "kenyans.co.ke", 
-      "the-star.co.ke", 
-      "kenya.go.ke", 
-      "businessdailyafrica.com", 
-      "safaricom.co.ke"
+      {
+        "domain": "nation.africa",
+        "industry": "Media"
+      },
+      {
+        "domain": "standardmedia.co.ke",
+        "industry": "Media"
+      },
+      {
+        "domain": "citizen.digital",
+        "industry": "Media"
+      },
+      {
+        "domain": "kenyabuzz.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "gathengi.africa",
+        "industry": "Portal"
+      },
+      {
+        "domain": "kenyans.co.ke",
+        "industry": "Media"
+      },
+      {
+        "domain": "the-star.co.ke",
+        "industry": "Media"
+      },
+      {
+        "domain": "kenya.go.ke",
+        "industry": "Government"
+      },
+      {
+        "domain": "businessdailyafrica.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "safaricom.co.ke",
+        "industry": "Telecom"
+      }
     ]
   },
   {
     "country": "Angola",
     "top_domains": [
-      "expansao.ao", 
-      "jornal de Angola (jornaldeangola.ao)", 
-      "revolucao.ao", 
-      "novo jornal (novojornal.co.ao)", 
-      "angop.ao", 
-      "plataformaangola.com", 
-      "angola24horas.com", 
-      "tpa.sapo.ao", 
-      "minfin.gov.ao", 
-      "economico.co.ao"
+      {
+        "domain": "expansao.ao",
+        "industry": "Media"
+      },
+      {
+        "domain": "jornaldeangola(jornaldeangola.ao)",
+        "industry": "Media"
+      },
+      {
+        "domain": "revolucao.ao",
+        "industry": "Media"
+      },
+      {
+        "domain": "novojornal(novojornal.co.ao)",
+        "industry": "Media"
+      },
+      {
+        "domain": "angop.ao",
+        "industry": "Media"
+      },
+      {
+        "domain": "plataformaangola.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "angola24horas.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "tpa.sapo.ao",
+        "industry": "Media"
+      },
+      {
+        "domain": "minfin.gov.ao",
+        "industry": "Government"
+      },
+      {
+        "domain": "economico.co.ao",
+        "industry": "Media"
+      }
     ]
   },
   {
     "country": "Namibia",
     "top_domains": [
-      "namibian.com.na", 
-      "neweralive.na", 
-      "windhoekobserver.com.na", 
-      "informante.web.na", 
-      "economist.com.na", 
-      "observer24.com.na", 
-      "ncci.org.na", 
-      "gov.na", 
-      "travel-namibia.com", 
-      "tourism-namibia.com.na"
+      {
+        "domain": "namibian.com.na",
+        "industry": "Media"
+      },
+      {
+        "domain": "neweralive.na",
+        "industry": "Media"
+      },
+      {
+        "domain": "windhoekobserver.com.na",
+        "industry": "Media"
+      },
+      {
+        "domain": "informante.web.na",
+        "industry": "Media"
+      },
+      {
+        "domain": "economist.com.na",
+        "industry": "Media"
+      },
+      {
+        "domain": "observer24.com.na",
+        "industry": "Media"
+      },
+      {
+        "domain": "ncci.org.na",
+        "industry": "Non-profit"
+      },
+      {
+        "domain": "gov.na",
+        "industry": "Government"
+      },
+      {
+        "domain": "travel-namibia.com",
+        "industry": "Media"
+      },
+      {
+        "domain": "tourism-namibia.com.na",
+        "industry": "Media"
+      }
     ]
   }
 ]

@@ -17,13 +17,14 @@ class GlobalLighthouseTester {
       const domainsData = JSON.parse(fs.readFileSync('./domains.json', 'utf8'));
       this.domainsByCountry = domainsData;
       
-      // Flatten all domains with their countries
+      // Flatten all domains with their countries and industries
       this.allDomains = [];
       domainsData.forEach(countryData => {
-        countryData.top_domains.forEach(domain => {
+        countryData.top_domains.forEach(domainInfo => {
           this.allDomains.push({
-            url: domain,
-            country: countryData.country
+            url: domainInfo.domain,
+            country: countryData.country,
+            industry: domainInfo.industry
           });
         });
       });
@@ -35,7 +36,7 @@ class GlobalLighthouseTester {
     }
   }
 
-  async testWebsite(domain, country) {
+  async testWebsite(domain, country, industry) {
     try {
       console.log(`🔍 Testing ${domain} (${country})...`);
       const scores = await this.runner.runAudit(domain);
@@ -47,6 +48,7 @@ class GlobalLighthouseTester {
         return {
           url: domain,
           country,
+          industry,
           performance: 0,
           accessibility: 0,
           bestPractices: 0,
@@ -58,11 +60,11 @@ class GlobalLighthouseTester {
       }
       
       // Save successful results to database
-      await this.db.saveScore(domain, country, scores);
+      await this.db.saveScore(domain, country, industry, scores);
       
       console.log(`✅ ${domain}: P:${scores.performance}% A:${scores.accessibility}% BP:${scores.bestPractices}% SEO:${scores.seo}% PWA:${scores.pwa}%`);
       
-      return { url: domain, country, ...scores };
+      return { url: domain, country, industry, ...scores };
     } catch (error) {
       console.error(`❌ Failed to test ${domain}: ${error.message}`);
       
@@ -70,6 +72,7 @@ class GlobalLighthouseTester {
       return {
         url: domain,
         country,
+        industry,
         performance: 0,
         accessibility: 0,
         bestPractices: 0,
@@ -90,8 +93,12 @@ class GlobalLighthouseTester {
     // Get all domains
     const allDomains = [];
     for (const countryData of domains) {
-      for (const domain of countryData.top_domains) {
-        allDomains.push({ domain, country: countryData.country });
+      for (const domainInfo of countryData.top_domains) {
+        allDomains.push({ 
+          domain: domainInfo.domain, 
+          country: countryData.country,
+          industry: domainInfo.industry
+        });
       }
     }
     
@@ -115,8 +122,8 @@ class GlobalLighthouseTester {
     let successCount = 0;
     let failureCount = 0;
     
-    for (const { domain, country } of todaysDomains) {
-      const result = await this.testWebsite(domain, country);
+    for (const { domain, country, industry } of todaysDomains) {
+      const result = await this.testWebsite(domain, country, industry);
       results.push(result);
       
       if (result.failed) {
@@ -147,8 +154,12 @@ class GlobalLighthouseTester {
     // Get all domains
     const allDomains = [];
     for (const countryData of domains) {
-      for (const domain of countryData.top_domains) {
-        allDomains.push({ domain, country: countryData.country });
+      for (const domainInfo of countryData.top_domains) {
+        allDomains.push({ 
+          domain: domainInfo.domain, 
+          country: countryData.country,
+          industry: domainInfo.industry
+        });
       }
     }
     
@@ -177,8 +188,8 @@ class GlobalLighthouseTester {
     let successCount = 0;
     let failureCount = 0;
     
-    for (const { domain, country } of batchDomains) {
-      const result = await this.testWebsite(domain, country);
+    for (const { domain, country, industry } of batchDomains) {
+      const result = await this.testWebsite(domain, country, industry);
       results.push(result);
       
       if (result.failed) {
@@ -209,10 +220,10 @@ class GlobalLighthouseTester {
     let failCount = 0;
     
     for (let i = 0; i < this.allDomains.length; i++) {
-      const { url, country } = this.allDomains[i];
+      const { url, country, industry } = this.allDomains[i];
       console.log(`\n[${i + 1}/${this.allDomains.length}] Testing ${url} (${country})`);
       
-      const result = await this.testWebsite(url, country);
+      const result = await this.testWebsite(url, country, industry);
       results.push(result);
       
       if (result.failed) {
@@ -251,10 +262,10 @@ class GlobalLighthouseTester {
     
     const results = [];
     for (let i = 0; i < countryData.top_domains.length; i++) {
-      const domain = countryData.top_domains[i];
-      console.log(`[${i + 1}/${countryData.top_domains.length}] Testing ${domain}`);
+      const domainInfo = countryData.top_domains[i];
+      console.log(`[${i + 1}/${countryData.top_domains.length}] Testing ${domainInfo.domain}`);
       
-      const result = await this.testWebsite(domain, countryName);
+      const result = await this.testWebsite(domainInfo.domain, countryName, domainInfo.industry);
       if (result) {
         results.push(result);
       }
