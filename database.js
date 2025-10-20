@@ -119,6 +119,45 @@ class Database {
     });
   }
 
+  getLatestScoresWithTrends() {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        SELECT 
+          latest.url,
+          latest.country,
+          latest.performance as current_performance,
+          latest.accessibility as current_accessibility,
+          latest.best_practices as current_best_practices,
+          latest.seo as current_seo,
+          latest.pwa as current_pwa,
+          latest.test_date,
+          previous.performance as previous_performance,
+          previous.accessibility as previous_accessibility,
+          previous.best_practices as previous_best_practices,
+          previous.seo as previous_seo,
+          previous.pwa as previous_pwa
+        FROM (
+          SELECT url, country, performance, accessibility, best_practices, seo, pwa, test_date
+          FROM lighthouse_scores ls1
+          WHERE test_date = (
+            SELECT MAX(test_date) 
+            FROM lighthouse_scores ls2 
+            WHERE ls2.url = ls1.url
+          )
+        ) latest
+        LEFT JOIN (
+          SELECT url, performance, accessibility, best_practices, seo, pwa, test_date,
+                 ROW_NUMBER() OVER (PARTITION BY url ORDER BY test_date DESC) as rn
+          FROM lighthouse_scores
+        ) previous ON latest.url = previous.url AND previous.rn = 2
+        ORDER BY latest.country, latest.url
+      `, (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+  }
+
   close() {
     this.db.close();
   }

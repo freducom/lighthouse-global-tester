@@ -458,3 +458,20 @@ body {
         padding: 8px 6px;
     }
 }
+
+/* Trend arrows */
+.trend-arrow {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 4px;
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+.trend-up {
+    color: #42b883;
+}
+
+.trend-down {
+    color: #e74c3c;
+}

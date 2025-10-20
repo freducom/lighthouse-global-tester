@@ -9,6 +9,34 @@ class WebsiteGenerator {
     this.domainsData = JSON.parse(fs.readFileSync('./domains.json', 'utf8'));
   }
 
+  getTrend(current, previous) {
+    if (previous === null || previous === undefined) {
+      return 'none'; // No previous data
+    }
+    
+    const diff = current - previous;
+    if (diff > 0) {
+      return 'up';
+    } else if (diff < 0) {
+      return 'down';
+    } else {
+      return 'same';
+    }
+  }
+
+  getTrendArrow(trend) {
+    switch(trend) {
+      case 'up':
+        return '<span class="trend-arrow trend-up">↗</span>';
+      case 'down':
+        return '<span class="trend-arrow trend-down">↘</span>';
+      case 'same':
+      case 'none':
+      default:
+        return '';
+    }
+  }
+
   async generateWebsite() {
     console.log('🌐 Generating static website...');
     
@@ -29,12 +57,30 @@ class WebsiteGenerator {
   }
 
   async generateHomePage() {
-    const allScores = await this.db.getAllLatestScores();
+    const allScoresWithTrends = await this.db.getLatestScoresWithTrends();
     
-    if (allScores.length === 0) {
+    if (allScoresWithTrends.length === 0) {
       console.log('❌ No data found. Run lighthouse tests first.');
       return;
     }
+
+    // Convert to the expected format and add trend information
+    const allScores = allScoresWithTrends.map(row => ({
+      url: row.url,
+      country: row.country,
+      performance: row.current_performance,
+      accessibility: row.current_accessibility,
+      best_practices: row.current_best_practices,
+      seo: row.current_seo,
+      pwa: row.current_pwa,
+      test_date: row.test_date,
+      // Trend data
+      performance_trend: this.getTrend(row.current_performance, row.previous_performance),
+      accessibility_trend: this.getTrend(row.current_accessibility, row.previous_accessibility),
+      best_practices_trend: this.getTrend(row.current_best_practices, row.previous_best_practices),
+      seo_trend: this.getTrend(row.current_seo, row.previous_seo),
+      pwa_trend: this.getTrend(row.current_pwa, row.previous_pwa)
+    }));
 
     // Calculate statistics
     const stats = this.calculateGlobalStats(allScores);
@@ -144,7 +190,7 @@ class WebsiteGenerator {
                                 <td class="rank">#${index + 1}</td>
                                 <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
                                 <td><a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}</a></td>
-                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}%</td>
+                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}% ${this.getTrendArrow(site.performance_trend)}</td>
                                 <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
                                 <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
                                 <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
@@ -1112,6 +1158,23 @@ body {
     .results-table td {
         padding: 8px 6px;
     }
+}
+
+/* Trend arrows */
+.trend-arrow {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 4px;
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+.trend-up {
+    color: #42b883;
+}
+
+.trend-down {
+    color: #e74c3c;
 }
 `;
 

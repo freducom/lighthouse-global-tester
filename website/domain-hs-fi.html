@@ -20,14 +20,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇫🇮 Finland</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 4:52:10 PM</span>
+                <span class="last-scan">Last scanned: 10/19/2025, 8:15:25 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">36%</div>
+                <div class="stat-number poor">46%</div>
                 <div class="stat-description">Needs optimization</div>
             </div>
             <div class="stat-card accessibility">
@@ -49,9 +49,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -62,8 +62,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 36%"></div>
-                        <span class="score-text">36%</span>
+                        <div class="score-fill performance" style="width: 46%"></div>
+                        <span class="score-text">46%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,6 +103,52 @@
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":20,"url":"hs.fi","performance":36,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 16:52:10","country":"Finland"},{"id":176,"url":"hs.fi","performance":46,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 20:15:25","country":"Finland"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#ff6b35',
+                    backgroundColor: 'rgba(255, 107, 53, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#4285f4',
+                    backgroundColor: 'rgba(66, 133, 244, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#34a853',
+                    backgroundColor: 'rgba(52, 168, 83, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
     
 </body>
 </html>
