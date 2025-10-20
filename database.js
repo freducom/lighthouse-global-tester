@@ -107,6 +107,18 @@ class Database {
     });
   }
 
+  deleteByCountry(country) {
+    return new Promise((resolve, reject) => {
+      this.db.run(`
+        DELETE FROM lighthouse_scores 
+        WHERE country = ?
+      `, [country], function(err) {
+        if (err) reject(err);
+        else resolve(this.changes);
+      });
+    });
+  }
+
   close() {
     this.db.close();
   }
