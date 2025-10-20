@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil - Lighthouse Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="breadcrumb">
+                <a href="index.html">🏠 Home</a> > 🇧🇷 Brazil
+            </div>
+            <h1>🇧🇷 Brazil Performance</h1>
+            <p class="subtitle">3 websites analyzed</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card performance">
+                <h3>Average Performance</h3>
+                <div class="stat-number">58%</div>
+            </div>
+            <div class="stat-card accessibility">
+                <h3>Average Accessibility</h3>
+                <div class="stat-number">90%</div>
+            </div>
+            <div class="stat-card seo">
+                <h3>Average SEO</h3>
+                <div class="stat-number">97%</div>
+            </div>
+            <div class="stat-card best-practices">
+                <h3>Best Practices</h3>
+                <div class="stat-number">78%</div>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>🏅 Top Websites in Brazil</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search Brazil websites..." />
+            </div>
+            <div class="table-container">
+                <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Website</th>
+                            <th>Performance</th>
+                            <th>Accessibility</th>
+                            <th>SEO</th>
+                            <th>Best Practices</th>
+                            <th>PWA</th>
+                            <th>Last Scanned</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                            <tr class="site-row">
+                                <td class="rank">#1</td>
+                                <td><a href="domain-abril-com-br.html" class="domain-link">abril.com.br</a></td>
+                                <td class="score perf-good">81%</td>
+                                <td class="score acc-excellent">100%</td>
+                                <td class="score seo-excellent">100%</td>
+                                <td class="score bp-excellent">92%</td>
+                                <td class="score pwa-poor">33%</td>
+                                <td class="date">10/19/2025</td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank">#2</td>
+                                <td><a href="domain-estadao-com-br.html" class="domain-link">estadao.com.br</a></td>
+                                <td class="score perf-average">66%</td>
+                                <td class="score acc-excellent">91%</td>
+                                <td class="score seo-excellent">92%</td>
+                                <td class="score bp-good">83%</td>
+                                <td class="score pwa-poor">22%</td>
+                                <td class="date">10/19/2025</td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank">#3</td>
+                                <td><a href="domain-globo-com.html" class="domain-link">globo.com</a></td>
+                                <td class="score perf-poor">26%</td>
+                                <td class="score acc-good">80%</td>
+                                <td class="score seo-excellent">99%</td>
+                                <td class="score bp-average">58%</td>
+                                <td class="score pwa-good">78%</td>
+                                <td class="date">10/20/2025</td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>📊 Brazil Performance Data | 3 websites tested</p>
+            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const countryData = [{"url":"abril.com.br","country":"Brazil","performance":81,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 18:10:51"},{"url":"estadao.com.br","country":"Brazil","performance":66,"accessibility":91,"best_practices":83,"seo":92,"pwa":22,"test_date":"2025-10-19 18:11:08"},{"url":"globo.com","country":"Brazil","performance":26,"accessibility":80,"best_practices":58,"seo":99,"pwa":78,"test_date":"2025-10-20 03:35:24"}];
+        
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const filtered = countryData.filter(site => 
+                site.url.toLowerCase().includes(query)
+            );
+            
+            document.getElementById('tableBody').innerHTML = filtered.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank">#${index + 1}</td>
+                    <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
+                    <td class="score perf-${getScoreClass(site.performance)}">${site.performance}%</td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}">${site.accessibility}%</td>
+                    <td class="score seo-${getScoreClass(site.seo)}">${site.seo}%</td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}">${site.best_practices}%</td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}">${site.pwa}%</td>
+                    <td class="date">${new Date(site.test_date).toLocaleDateString()}</td>
+                </tr>
+            `).join('');
+        });
+        
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 70) return 'good';
+            if (score >= 50) return 'average';
+            return 'poor';
+        }
+    </script>
+</body>
+</html>
