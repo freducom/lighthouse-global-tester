@@ -66,6 +66,39 @@ jobs:
           fi
           echo "✅ Lighthouse testing completed for today's batch"
 
+      - name: Commit updated database
+        run: |
+          echo "Checking for database changes..."
+          
+          # Configure git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if database file has changes
+          if git diff --quiet lighthouse_scores.db; then
+            echo "📊 No database changes detected"
+          else
+            echo "💾 Database has been updated with new lighthouse scores"
+            
+            # Add and commit the updated database
+            git add lighthouse_scores.db
+            
+            # Create commit message with test summary
+            if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
+              COMMIT_MSG="Update database: Full lighthouse test results ($(date '+%Y-%m-%d %H:%M UTC'))"
+            else
+              DAY_OF_WEEK=$(date +%w)
+              COMMIT_MSG="Update database: Daily batch $((DAY_OF_WEEK + 1))/7 lighthouse results ($(date '+%Y-%m-%d %H:%M UTC'))"
+            fi
+            
+            git commit -m "$COMMIT_MSG"
+            
+            echo "📤 Pushing updated database to main branch..."
+            git push
+            
+            echo "✅ Database successfully updated and pushed to main branch"
+          fi
+
       - name: Generate website
         run: |
           echo "Generating static website with latest test results..."
