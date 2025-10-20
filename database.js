@@ -32,6 +32,19 @@ class Database {
 
   saveScore(url, country, scores) {
     return new Promise((resolve, reject) => {
+      const performance = scores.performance || 0;
+      const accessibility = scores.accessibility || 0;
+      const bestPractices = scores.bestPractices || 0;
+      const seo = scores.seo || 0;
+      const pwa = scores.pwa || 0;
+      
+      // Skip saving if all scores are 0 (failed test)
+      if (performance === 0 && accessibility === 0 && bestPractices === 0 && seo === 0 && pwa === 0) {
+        console.log(`⚠️ Skipping ${url} - all scores are 0 (test failed)`);
+        resolve(null); // Return null to indicate no save occurred
+        return;
+      }
+      
       const stmt = this.db.prepare(`
         INSERT INTO lighthouse_scores 
         (url, country, performance, accessibility, best_practices, seo, pwa)
@@ -41,11 +54,11 @@ class Database {
       stmt.run([
         url,
         country,
-        scores.performance || 0,
-        scores.accessibility || 0,
-        scores.bestPractices || 0,
-        scores.seo || 0,
-        scores.pwa || 0
+        performance,
+        accessibility,
+        bestPractices,
+        seo,
+        pwa
       ], function(err) {
         if (err) reject(err);
         else resolve(this.lastID);
@@ -154,6 +167,21 @@ class Database {
       `, (err, rows) => {
         if (err) reject(err);
         else resolve(rows);
+      });
+    });
+  }
+
+  removeZeroScoreEntries() {
+    return new Promise((resolve, reject) => {
+      this.db.run(`
+        DELETE FROM lighthouse_scores 
+        WHERE performance = 0 AND accessibility = 0 AND best_practices = 0 AND seo = 0 AND pwa = 0
+      `, function(err) {
+        if (err) reject(err);
+        else {
+          console.log(`🧹 Removed ${this.changes} zero-score entries from database`);
+          resolve(this.changes);
+        }
       });
     });
   }
