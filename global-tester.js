@@ -39,78 +39,102 @@ class GlobalLighthouseTester {
     try {
       console.log(`🔍 Testing ${domain} (${country})...`);
       const scores = await this.runner.runAudit(domain);
+      
+      // Check if the lighthouse runner returned error scores
+      if (scores.error) {
+        console.error(`❌ ${domain} failed with error: ${scores.errorMessage}`);
+        // Don't save error results to database
+        return {
+          url: domain,
+          country,
+          performance: 0,
+          accessibility: 0,
+          bestPractices: 0,
+          seo: 0,
+          pwa: 0,
+          failed: true,
+          errorMessage: scores.errorMessage
+        };
+      }
+      
+      // Save successful results to database
       await this.db.saveScore(domain, country, scores);
       
       console.log(`✅ ${domain}: P:${scores.performance}% A:${scores.accessibility}% BP:${scores.bestPractices}% SEO:${scores.seo}% PWA:${scores.pwa}%`);
       
       return { url: domain, country, ...scores };
     } catch (error) {
-      console.error(`❌ Failed to test ${domain}:`, error.message);
-      return null;
+      console.error(`❌ Failed to test ${domain}: ${error.message}`);
+      
+      // Return a failed result object instead of null to continue processing
+      return {
+        url: domain,
+        country,
+        performance: 0,
+        accessibility: 0,
+        bestPractices: 0,
+        seo: 0,
+        pwa: 0,
+        failed: true,
+        errorMessage: error.message.substring(0, 100)
+      };
     }
   }
 
-  async testDailyBatch(dayOfWeek) {
-    // Create a deterministic distribution of all domains across 7 days
-    // This ensures even distribution that adapts to new countries/domains
-    const totalDomains = this.allDomains.length;
-    const domainsPerDay = Math.ceil(totalDomains / 7);
+  async testDailyBatch() {
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, etc.
     
-    // Calculate which domains to test today
-    const startIndex = dayOfWeek * domainsPerDay;
-    const endIndex = Math.min(startIndex + domainsPerDay, totalDomains);
-    const todaysDomains = this.allDomains.slice(startIndex, endIndex);
+    // Load domains from JSON
+    const domains = JSON.parse(fs.readFileSync('./domains.json', 'utf8'));
     
-    console.log(`\n📅 Daily Batch Testing - Day ${dayOfWeek} (${['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek]})`);
-    console.log(`🎯 Testing domains ${startIndex + 1}-${endIndex} of ${totalDomains} total domains`);
-    console.log(`📊 Today's batch: ${todaysDomains.length} websites`);
-    console.log(`Started at: ${new Date().toLocaleString()}`);
-    
-    const results = [];
-    let successCount = 0;
-    let failCount = 0;
-    
-    // Group domains by country for better logging
-    const domainsByCountry = {};
-    todaysDomains.forEach(({ url, country }) => {
-      if (!domainsByCountry[country]) {
-        domainsByCountry[country] = [];
-      }
-      domainsByCountry[country].push(url);
-    });
-    
-    console.log('\n🌍 Countries in today\'s batch:');
-    Object.entries(domainsByCountry).forEach(([country, domains]) => {
-      console.log(`   ${country}: ${domains.length} websites`);
-    });
-    
-    for (let i = 0; i < todaysDomains.length; i++) {
-      const { url, country } = todaysDomains[i];
-      console.log(`\n[${i + 1}/${todaysDomains.length}] Testing ${url} (${country})`);
-      
-      const result = await this.testWebsite(url, country);
-      if (result) {
-        results.push(result);
-        successCount++;
-      } else {
-        failCount++;
-      }
-      
-      // Wait 2 seconds between tests
-      if (i < todaysDomains.length - 1) {
-        console.log('⏳ Waiting 2 seconds...');
-        await new Promise(resolve => setTimeout(resolve, 2000));
+    // Get all domains
+    const allDomains = [];
+    for (const [country, domainList] of Object.entries(domains)) {
+      for (const domain of domainList) {
+        allDomains.push({ domain, country });
       }
     }
     
-    console.log(`\n📊 Daily batch testing completed!`);
-    console.log(`✅ Successful: ${successCount}`);
-    console.log(`❌ Failed: ${failCount}`);
-    console.log(`🕐 Finished at: ${new Date().toLocaleString()}`);
+    // Sort domains alphabetically for consistent batching
+    allDomains.sort((a, b) => a.domain.localeCompare(b.domain));
     
-    // Show which countries were tested today
-    const testedCountries = [...new Set(results.map(r => r.country))];
-    console.log(`🌍 Countries tested today: ${testedCountries.join(', ')}`);
+    // Calculate total domains and batch size
+    const totalDomains = allDomains.length;
+    const batchSize = Math.ceil(totalDomains / 7);
+    
+    // Calculate which domains to test today
+    const startIndex = dayOfWeek * batchSize;
+    const endIndex = Math.min(startIndex + batchSize, totalDomains);
+    const todaysDomains = allDomains.slice(startIndex, endIndex);
+    
+    console.log(`\n📅 Today is ${today.toDateString()} (Day ${dayOfWeek})`);
+    console.log(`📊 Testing batch ${dayOfWeek + 1}/7: ${todaysDomains.length} domains (${startIndex + 1}-${endIndex} of ${totalDomains})`);
+    console.log(`🌍 Domains: ${todaysDomains.map(d => d.domain).join(', ')}\n`);
+    
+    const results = [];
+    let successCount = 0;
+    let failureCount = 0;
+    
+    for (const { domain, country } of todaysDomains) {
+      const result = await this.testWebsite(domain, country);
+      results.push(result);
+      
+      if (result.failed) {
+        failureCount++;
+      } else {
+        successCount++;
+      }
+      
+      // Add a small delay between tests to be nice to servers
+      await new Promise(resolve => setTimeout(resolve, 2000));
+    }
+    
+    console.log(`\n📊 Batch Summary: ${successCount} successful, ${failureCount} failed tests`);
+    if (failureCount > 0) {
+      const failedDomains = results.filter(r => r.failed).map(r => r.url);
+      console.log(`❌ Failed domains: ${failedDomains.join(', ')}`);
+    }
     
     return results;
   }
@@ -128,11 +152,12 @@ class GlobalLighthouseTester {
       console.log(`\n[${i + 1}/${this.allDomains.length}] Testing ${url} (${country})`);
       
       const result = await this.testWebsite(url, country);
-      if (result) {
-        results.push(result);
-        successCount++;
-      } else {
+      results.push(result);
+      
+      if (result.failed) {
         failCount++;
+      } else {
+        successCount++;
       }
       
       // Wait 2 seconds between tests
@@ -145,6 +170,10 @@ class GlobalLighthouseTester {
     console.log(`\n📊 Global testing completed!`);
     console.log(`✅ Successful: ${successCount}`);
     console.log(`❌ Failed: ${failCount}`);
+    if (failCount > 0) {
+      const failedDomains = results.filter(r => r.failed).map(r => r.url);
+      console.log(`❌ Failed domains: ${failedDomains.join(', ')}`);
+    }
     console.log(`🕐 Finished at: ${new Date().toLocaleString()}`);
     
     return results;
