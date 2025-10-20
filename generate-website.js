@@ -196,7 +196,7 @@ class WebsiteGenerator {
                                 <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
                                 <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
                                 <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
-                                <td class="date">${new Date(site.test_date).toLocaleDateString()}</td>
+                                <td class="date" data-date="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</td>
                             </tr>
                         `).join('')}
                     </tbody>
@@ -227,7 +227,33 @@ class WebsiteGenerator {
                 };
                 updateTimeElement.textContent = generationTime.toLocaleString(undefined, options);
             }
+            
+            // Format all dates according to user's browser locale
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    cell.textContent = date.toLocaleDateString();
+                }
+            });
         });
+        
+        // Format all dates according to user's browser locale
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
+        });
+        
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    cell.textContent = date.toLocaleDateString();
+                }
+            });
+        }
         
         // All sites data for search
         const allSites = ${JSON.stringify(allScores)};
@@ -257,7 +283,7 @@ class WebsiteGenerator {
                     <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
                     <td class="score bp-\${getScoreClass(site.best_practices)}">\${site.best_practices}%</td>
                     <td class="score pwa-\${getScoreClass(site.pwa)}">\${site.pwa}%</td>
-                    <td class="date">\${new Date(site.test_date).toLocaleDateString()}</td>
+                    <td class="date" data-date="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</td>
                 </tr>
             \`).join('');
         }
@@ -423,7 +449,7 @@ class WebsiteGenerator {
                                 <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
                                 <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
                                 <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
-                                <td class="date">${new Date(site.test_date).toLocaleDateString()}</td>
+                                <td class="date" data-date="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</td>
                             </tr>
                         `).join('')}
                     </tbody>
@@ -455,9 +481,12 @@ class WebsiteGenerator {
                     <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
                     <td class="score bp-\${getScoreClass(site.best_practices)}">\${site.best_practices}%</td>
                     <td class="score pwa-\${getScoreClass(site.pwa)}">\${site.pwa}%</td>
-                    <td class="date">\${new Date(site.test_date).toLocaleDateString()}</td>
+                    <td class="date" data-date="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</td>
                 </tr>
             \`).join('');
+            
+            // Re-format dates after updating content
+            formatAllDates();
         });
         
         function getScoreClass(score) {
