@@ -12,29 +12,29 @@
     <div class="container">
         <header class="header">
             <h1>🌍 Global Lighthouse Tracker</h1>
-            <p class="subtitle">Performance insights from 148 websites across 59 countries</p>
-            <div class="last-updated">Last updated: 10/20/2025, 3:35:34 PM</div>
+            <p class="subtitle">Performance insights from 205 websites across 59 countries</p>
+            <div class="last-updated" id="lastUpdated">Last updated: <span id="updateTime">Loading...</span></div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Global Performance</h3>
-                <div class="stat-number">45%</div>
+                <div class="stat-number">42%</div>
                 <div class="stat-trend">📊 Average across all sites</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number">79%</div>
+                <div class="stat-number">74%</div>
                 <div class="stat-trend">♿ Global accessibility score</div>
             </div>
             <div class="stat-card seo">
                 <h3>SEO Score</h3>
-                <div class="stat-number">84%</div>
+                <div class="stat-number">79%</div>
                 <div class="stat-trend">🔍 Search optimization</div>
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number">76%</div>
+                <div class="stat-number">70%</div>
                 <div class="stat-trend">✨ Code quality standards</div>
             </div>
         </div>
@@ -44,13 +44,13 @@
                 <h2>🏆 Best & Worst Performing Countries</h2>
                 <div class="country-comparison">
                     <div class="best-country">
-                        <h3>🥇 Best: United States</h3>
-                        <div class="country-score">61%</div>
+                        <h3>🥇 Best: France</h3>
+                        <div class="country-score">72%</div>
                         <p>Performance Leader</p>
                     </div>
                     <div class="worst-country">
-                        <h3>🔄 Needs Improvement: Russia</h3>
-                        <div class="country-score">28%</div>
+                        <h3>🔄 Needs Improvement: Turkey</h3>
+                        <div class="country-score">0%</div>
                         <p>Growth Opportunity</p>
                     </div>
                 </div>
@@ -60,8 +60,63 @@
                 <h2>🌍 Country Rankings</h2>
                 <div class="country-grid">
                     
-                        <a href="country-united-states.html" class="country-card">
+                        <a href="country-france.html" class="country-card">
                             <div class="country-rank">#1</div>
+                            <div class="country-flag">🇫🇷</div>
+                            <h3>France</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 72%</span>
+                                <span class="metric">A: 81%</span>
+                                <span class="metric">SEO: 100%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-peru.html" class="country-card">
+                            <div class="country-rank">#2</div>
+                            <div class="country-flag">🇵🇪</div>
+                            <h3>Peru</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 67%</span>
+                                <span class="metric">A: 80%</span>
+                                <span class="metric">SEO: 86%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-austria.html" class="country-card">
+                            <div class="country-rank">#3</div>
+                            <div class="country-flag">🇦🇹</div>
+                            <h3>Austria</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 64%</span>
+                                <span class="metric">A: 100%</span>
+                                <span class="metric">SEO: 87%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-ireland.html" class="country-card">
+                            <div class="country-rank">#4</div>
+                            <div class="country-flag">🇮🇪</div>
+                            <h3>Ireland</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 62%</span>
+                                <span class="metric">A: 91%</span>
+                                <span class="metric">SEO: 86%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-ukraine.html" class="country-card">
+                            <div class="country-rank">#5</div>
+                            <div class="country-flag">🇺🇦</div>
+                            <h3>Ukraine</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 62%</span>
+                                <span class="metric">A: 95%</span>
+                                <span class="metric">SEO: 91%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-united-states.html" class="country-card">
+                            <div class="country-rank">#6</div>
                             <div class="country-flag">🇺🇸</div>
                             <h3>United States</h3>
                             <div class="country-metrics">
@@ -71,30 +126,85 @@
                             </div>
                         </a>
                     
-                        <a href="country-india.html" class="country-card">
-                            <div class="country-rank">#2</div>
-                            <div class="country-flag">🇮🇳</div>
-                            <h3>India</h3>
+                        <a href="country-belgium.html" class="country-card">
+                            <div class="country-rank">#7</div>
+                            <div class="country-flag">🇧🇪</div>
+                            <h3>Belgium</h3>
                             <div class="country-metrics">
-                                <span class="metric">P: 54%</span>
-                                <span class="metric">A: 84%</span>
-                                <span class="metric">SEO: 90%</span>
+                                <span class="metric">P: 58%</span>
+                                <span class="metric">A: 94%</span>
+                                <span class="metric">SEO: 89%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-egypt.html" class="country-card">
+                            <div class="country-rank">#8</div>
+                            <div class="country-flag">🇪🇬</div>
+                            <h3>Egypt</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 57%</span>
+                                <span class="metric">A: 96%</span>
+                                <span class="metric">SEO: 100%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-finland.html" class="country-card">
+                            <div class="country-rank">#9</div>
+                            <div class="country-flag">🇫🇮</div>
+                            <h3>Finland</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 53%</span>
+                                <span class="metric">A: 93%</span>
+                                <span class="metric">SEO: 97%</span>
                             </div>
                         </a>
                     
                         <a href="country-germany.html" class="country-card">
-                            <div class="country-rank">#3</div>
+                            <div class="country-rank">#10</div>
                             <div class="country-flag">🇩🇪</div>
                             <h3>Germany</h3>
                             <div class="country-metrics">
+                                <span class="metric">P: 53%</span>
+                                <span class="metric">A: 90%</span>
+                                <span class="metric">SEO: 92%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-india.html" class="country-card">
+                            <div class="country-rank">#11</div>
+                            <div class="country-flag">🇮🇳</div>
+                            <h3>India</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 53%</span>
+                                <span class="metric">A: 85%</span>
+                                <span class="metric">SEO: 90%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-denmark.html" class="country-card">
+                            <div class="country-rank">#12</div>
+                            <div class="country-flag">🇩🇰</div>
+                            <h3>Denmark</h3>
+                            <div class="country-metrics">
                                 <span class="metric">P: 52%</span>
-                                <span class="metric">A: 91%</span>
+                                <span class="metric">A: 89%</span>
+                                <span class="metric">SEO: 94%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-hungary.html" class="country-card">
+                            <div class="country-rank">#13</div>
+                            <div class="country-flag">🇭🇺</div>
+                            <h3>Hungary</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 52%</span>
+                                <span class="metric">A: 71%</span>
                                 <span class="metric">SEO: 92%</span>
                             </div>
                         </a>
                     
                         <a href="country-netherlands.html" class="country-card">
-                            <div class="country-rank">#4</div>
+                            <div class="country-rank">#14</div>
                             <div class="country-flag">🇳🇱</div>
                             <h3>Netherlands</h3>
                             <div class="country-metrics">
@@ -105,7 +215,7 @@
                         </a>
                     
                         <a href="country-brazil.html" class="country-card">
-                            <div class="country-rank">#5</div>
+                            <div class="country-rank">#15</div>
                             <div class="country-flag">🇧🇷</div>
                             <h3>Brazil</h3>
                             <div class="country-metrics">
@@ -115,52 +225,129 @@
                             </div>
                         </a>
                     
-                        <a href="country-sweden.html" class="country-card">
-                            <div class="country-rank">#6</div>
-                            <div class="country-flag">🇸🇪</div>
-                            <h3>Sweden</h3>
+                        <a href="country-norway.html" class="country-card">
+                            <div class="country-rank">#16</div>
+                            <div class="country-flag">🇳🇴</div>
+                            <h3>Norway</h3>
                             <div class="country-metrics">
-                                <span class="metric">P: 49%</span>
-                                <span class="metric">A: 96%</span>
-                                <span class="metric">SEO: 96%</span>
-                            </div>
-                        </a>
-                    
-                        <a href="country-finland.html" class="country-card">
-                            <div class="country-rank">#7</div>
-                            <div class="country-flag">🇫🇮</div>
-                            <h3>Finland</h3>
-                            <div class="country-metrics">
-                                <span class="metric">P: 48%</span>
-                                <span class="metric">A: 93%</span>
-                                <span class="metric">SEO: 98%</span>
+                                <span class="metric">P: 46%</span>
+                                <span class="metric">A: 68%</span>
+                                <span class="metric">SEO: 71%</span>
                             </div>
                         </a>
                     
                         <a href="country-south-korea.html" class="country-card">
-                            <div class="country-rank">#8</div>
+                            <div class="country-rank">#17</div>
                             <div class="country-flag">🇰🇷</div>
                             <h3>South Korea</h3>
                             <div class="country-metrics">
-                                <span class="metric">P: 42%</span>
-                                <span class="metric">A: 78%</span>
+                                <span class="metric">P: 45%</span>
+                                <span class="metric">A: 77%</span>
                                 <span class="metric">SEO: 89%</span>
                             </div>
                         </a>
                     
                         <a href="country-australia.html" class="country-card">
-                            <div class="country-rank">#9</div>
+                            <div class="country-rank">#18</div>
                             <div class="country-flag">🇦🇺</div>
                             <h3>Australia</h3>
                             <div class="country-metrics">
-                                <span class="metric">P: 41%</span>
+                                <span class="metric">P: 44%</span>
                                 <span class="metric">A: 53%</span>
                                 <span class="metric">SEO: 74%</span>
                             </div>
                         </a>
                     
+                        <a href="country-estonia.html" class="country-card">
+                            <div class="country-rank">#19</div>
+                            <div class="country-flag">🇪🇪</div>
+                            <h3>Estonia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 44%</span>
+                                <span class="metric">A: 95%</span>
+                                <span class="metric">SEO: 88%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-slovakia.html" class="country-card">
+                            <div class="country-rank">#20</div>
+                            <div class="country-flag">🇸🇰</div>
+                            <h3>Slovakia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 44%</span>
+                                <span class="metric">A: 96%</span>
+                                <span class="metric">SEO: 91%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-sweden.html" class="country-card">
+                            <div class="country-rank">#21</div>
+                            <div class="country-flag">🇸🇪</div>
+                            <h3>Sweden</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 43%</span>
+                                <span class="metric">A: 88%</span>
+                                <span class="metric">SEO: 87%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-czechia.html" class="country-card">
+                            <div class="country-rank">#22</div>
+                            <div class="country-flag">🇨🇿</div>
+                            <h3>Czechia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 42%</span>
+                                <span class="metric">A: 28%</span>
+                                <span class="metric">SEO: 65%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-italy.html" class="country-card">
+                            <div class="country-rank">#23</div>
+                            <div class="country-flag">🇮🇹</div>
+                            <h3>Italy</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 42%</span>
+                                <span class="metric">A: 69%</span>
+                                <span class="metric">SEO: 86%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-kenya.html" class="country-card">
+                            <div class="country-rank">#24</div>
+                            <div class="country-flag">🇰🇪</div>
+                            <h3>Kenya</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 42%</span>
+                                <span class="metric">A: 84%</span>
+                                <span class="metric">SEO: 93%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-costa-rica.html" class="country-card">
+                            <div class="country-rank">#25</div>
+                            <div class="country-flag">🇨🇷</div>
+                            <h3>Costa Rica</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 40%</span>
+                                <span class="metric">A: 88%</span>
+                                <span class="metric">SEO: 97%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-vietnam.html" class="country-card">
+                            <div class="country-rank">#26</div>
+                            <div class="country-flag">🇻🇳</div>
+                            <h3>Vietnam</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 40%</span>
+                                <span class="metric">A: 78%</span>
+                                <span class="metric">SEO: 93%</span>
+                            </div>
+                        </a>
+                    
                         <a href="country-united-kingdom.html" class="country-card">
-                            <div class="country-rank">#10</div>
+                            <div class="country-rank">#27</div>
                             <div class="country-flag">🇬🇧</div>
                             <h3>United Kingdom</h3>
                             <div class="country-metrics">
@@ -170,19 +357,52 @@
                             </div>
                         </a>
                     
+                        <a href="country-china.html" class="country-card">
+                            <div class="country-rank">#28</div>
+                            <div class="country-flag">🇨🇳</div>
+                            <h3>China</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 38%</span>
+                                <span class="metric">A: 62%</span>
+                                <span class="metric">SEO: 85%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-switzerland.html" class="country-card">
+                            <div class="country-rank">#29</div>
+                            <div class="country-flag">🇨🇭</div>
+                            <h3>Switzerland</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 38%</span>
+                                <span class="metric">A: 77%</span>
+                                <span class="metric">SEO: 79%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-spain.html" class="country-card">
+                            <div class="country-rank">#30</div>
+                            <div class="country-flag">🇪🇸</div>
+                            <h3>Spain</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 37%</span>
+                                <span class="metric">A: 55%</span>
+                                <span class="metric">SEO: 59%</span>
+                            </div>
+                        </a>
+                    
                         <a href="country-canada.html" class="country-card">
-                            <div class="country-rank">#11</div>
+                            <div class="country-rank">#31</div>
                             <div class="country-flag">🇨🇦</div>
                             <h3>Canada</h3>
                             <div class="country-metrics">
-                                <span class="metric">P: 38%</span>
+                                <span class="metric">P: 36%</span>
                                 <span class="metric">A: 75%</span>
                                 <span class="metric">SEO: 70%</span>
                             </div>
                         </a>
                     
                         <a href="country-israel.html" class="country-card">
-                            <div class="country-rank">#12</div>
+                            <div class="country-rank">#32</div>
                             <div class="country-flag">🇮🇱</div>
                             <h3>Israel</h3>
                             <div class="country-metrics">
@@ -192,25 +412,179 @@
                             </div>
                         </a>
                     
+                        <a href="country-indonesia.html" class="country-card">
+                            <div class="country-rank">#33</div>
+                            <div class="country-flag">🇮🇩</div>
+                            <h3>Indonesia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 34%</span>
+                                <span class="metric">A: 79%</span>
+                                <span class="metric">SEO: 93%</span>
+                            </div>
+                        </a>
+                    
                         <a href="country-japan.html" class="country-card">
-                            <div class="country-rank">#13</div>
+                            <div class="country-rank">#34</div>
                             <div class="country-flag">🇯🇵</div>
                             <h3>Japan</h3>
                             <div class="country-metrics">
                                 <span class="metric">P: 33%</span>
                                 <span class="metric">A: 48%</span>
-                                <span class="metric">SEO: 54%</span>
+                                <span class="metric">SEO: 53%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-namibia.html" class="country-card">
+                            <div class="country-rank">#35</div>
+                            <div class="country-flag">🇳🇦</div>
+                            <h3>Namibia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 33%</span>
+                                <span class="metric">A: 76%</span>
+                                <span class="metric">SEO: 91%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-lithuania.html" class="country-card">
+                            <div class="country-rank">#36</div>
+                            <div class="country-flag">🇱🇹</div>
+                            <h3>Lithuania</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 31%</span>
+                                <span class="metric">A: 82%</span>
+                                <span class="metric">SEO: 91%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-latvia.html" class="country-card">
+                            <div class="country-rank">#37</div>
+                            <div class="country-flag">🇱🇻</div>
+                            <h3>Latvia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 28%</span>
+                                <span class="metric">A: 60%</span>
+                                <span class="metric">SEO: 89%</span>
                             </div>
                         </a>
                     
                         <a href="country-russia.html" class="country-card">
-                            <div class="country-rank">#14</div>
+                            <div class="country-rank">#38</div>
                             <div class="country-flag">🇷🇺</div>
                             <h3>Russia</h3>
                             <div class="country-metrics">
                                 <span class="metric">P: 28%</span>
                                 <span class="metric">A: 61%</span>
                                 <span class="metric">SEO: 73%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-colombia.html" class="country-card">
+                            <div class="country-rank">#39</div>
+                            <div class="country-flag">🇨🇴</div>
+                            <h3>Colombia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 26%</span>
+                                <span class="metric">A: 67%</span>
+                                <span class="metric">SEO: 68%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-bolivia.html" class="country-card">
+                            <div class="country-rank">#40</div>
+                            <div class="country-flag">🇧🇴</div>
+                            <h3>Bolivia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 22%</span>
+                                <span class="metric">A: 46%</span>
+                                <span class="metric">SEO: 45%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-new-zealand.html" class="country-card">
+                            <div class="country-rank">#41</div>
+                            <div class="country-flag">🇳🇿</div>
+                            <h3>New Zealand</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 21%</span>
+                                <span class="metric">A: 41%</span>
+                                <span class="metric">SEO: 42%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-zambia.html" class="country-card">
+                            <div class="country-rank">#42</div>
+                            <div class="country-flag">🇿🇲</div>
+                            <h3>Zambia</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 21%</span>
+                                <span class="metric">A: 86%</span>
+                                <span class="metric">SEO: 86%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-angola.html" class="country-card">
+                            <div class="country-rank">#43</div>
+                            <div class="country-flag">🇦🇴</div>
+                            <h3>Angola</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 0%</span>
+                                <span class="metric">A: 0%</span>
+                                <span class="metric">SEO: 0%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-chile.html" class="country-card">
+                            <div class="country-rank">#44</div>
+                            <div class="country-flag">🇨🇱</div>
+                            <h3>Chile</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 0%</span>
+                                <span class="metric">A: 0%</span>
+                                <span class="metric">SEO: 0%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-cuba.html" class="country-card">
+                            <div class="country-rank">#45</div>
+                            <div class="country-flag">🇨🇺</div>
+                            <h3>Cuba</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 0%</span>
+                                <span class="metric">A: 0%</span>
+                                <span class="metric">SEO: 0%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-luxembourg.html" class="country-card">
+                            <div class="country-rank">#46</div>
+                            <div class="country-flag">🇱🇺</div>
+                            <h3>Luxembourg</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 0%</span>
+                                <span class="metric">A: 0%</span>
+                                <span class="metric">SEO: 0%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-taiwan.html" class="country-card">
+                            <div class="country-rank">#47</div>
+                            <div class="country-flag">🇹🇼</div>
+                            <h3>Taiwan</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 0%</span>
+                                <span class="metric">A: 0%</span>
+                                <span class="metric">SEO: 0%</span>
+                            </div>
+                        </a>
+                    
+                        <a href="country-turkey.html" class="country-card">
+                            <div class="country-rank">#48</div>
+                            <div class="country-flag">🇹🇷</div>
+                            <h3>Turkey</h3>
+                            <div class="country-metrics">
+                                <span class="metric">P: 0%</span>
+                                <span class="metric">A: 0%</span>
+                                <span class="metric">SEO: 0%</span>
                             </div>
                         </a>
                     
@@ -221,7 +595,7 @@
         <section class="section">
             <h2>🏅 Global Top 10 Websites</h2>
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search among all 148 websites..." />
+                <input type="text" id="searchInput" placeholder="🔍 Search among all 205 websites..." />
             </div>
             <div class="table-container">
                 <table class="results-table" id="resultsTable">
@@ -244,12 +618,12 @@
                                 <td class="rank">#1</td>
                                 <td><a href="domain-flipsite-io.html" class="domain-link">flipsite.io</a></td>
                                 <td><a href="country-finland.html" class="country-link">🇫🇮 Finland</a></td>
-                                <td class="score perf-excellent">100% </td>
+                                <td class="score perf-excellent">97% <span class="trend-arrow trend-down">↘</span></td>
                                 <td class="score acc-excellent">98%</td>
                                 <td class="score seo-excellent">100%</td>
                                 <td class="score bp-excellent">100%</td>
                                 <td class="score pwa-poor">33%</td>
-                                <td class="date">10/19/2025</td>
+                                <td class="date">10/20/2025</td>
                             </tr>
                         
                             <tr class="site-row" data-url="wikipedia.org" data-country="United States">
@@ -288,8 +662,20 @@
                                 <td class="date">10/19/2025</td>
                             </tr>
                         
-                            <tr class="site-row" data-url="abril.com.br" data-country="Brazil">
+                            <tr class="site-row" data-url="elcomercio.pe" data-country="Peru">
                                 <td class="rank">#5</td>
+                                <td><a href="domain-elcomercio-pe.html" class="domain-link">elcomercio.pe</a></td>
+                                <td><a href="country-peru.html" class="country-link">🇵🇪 Peru</a></td>
+                                <td class="score perf-good">82% </td>
+                                <td class="score acc-good">85%</td>
+                                <td class="score seo-good">86%</td>
+                                <td class="score bp-average">67%</td>
+                                <td class="score pwa-poor">33%</td>
+                                <td class="date">10/20/2025</td>
+                            </tr>
+                        
+                            <tr class="site-row" data-url="abril.com.br" data-country="Brazil">
+                                <td class="rank">#6</td>
                                 <td><a href="domain-abril-com-br.html" class="domain-link">abril.com.br</a></td>
                                 <td><a href="country-brazil.html" class="country-link">🇧🇷 Brazil</a></td>
                                 <td class="score perf-good">81% </td>
@@ -301,7 +687,7 @@
                             </tr>
                         
                             <tr class="site-row" data-url="google.com" data-country="United States">
-                                <td class="rank">#6</td>
+                                <td class="rank">#7</td>
                                 <td><a href="domain-google-com.html" class="domain-link">google.com</a></td>
                                 <td><a href="country-united-states.html" class="country-link">🇺🇸 United States</a></td>
                                 <td class="score perf-good">79% </td>
@@ -313,7 +699,7 @@
                             </tr>
                         
                             <tr class="site-row" data-url="rediff.com" data-country="India">
-                                <td class="rank">#7</td>
+                                <td class="rank">#8</td>
                                 <td><a href="domain-rediff-com.html" class="domain-link">rediff.com</a></td>
                                 <td><a href="country-india.html" class="country-link">🇮🇳 India</a></td>
                                 <td class="score perf-good">76% </td>
@@ -325,7 +711,7 @@
                             </tr>
                         
                             <tr class="site-row" data-url="amazon.com" data-country="United States">
-                                <td class="rank">#8</td>
+                                <td class="rank">#9</td>
                                 <td><a href="domain-amazon-com.html" class="domain-link">amazon.com</a></td>
                                 <td><a href="country-united-states.html" class="country-link">🇺🇸 United States</a></td>
                                 <td class="score perf-good">76% <span class="trend-arrow trend-up">↗</span></td>
@@ -337,7 +723,7 @@
                             </tr>
                         
                             <tr class="site-row" data-url="gmx.net" data-country="Germany">
-                                <td class="rank">#9</td>
+                                <td class="rank">#10</td>
                                 <td><a href="domain-gmx-net.html" class="domain-link">gmx.net</a></td>
                                 <td><a href="country-germany.html" class="country-link">🇩🇪 Germany</a></td>
                                 <td class="score perf-good">75% </td>
@@ -348,32 +734,38 @@
                                 <td class="date">10/19/2025</td>
                             </tr>
                         
-                            <tr class="site-row" data-url="ok.ru" data-country="Russia">
-                                <td class="rank">#10</td>
-                                <td><a href="domain-ok-ru.html" class="domain-link">ok.ru</a></td>
-                                <td><a href="country-russia.html" class="country-link">🇷🇺 Russia</a></td>
-                                <td class="score perf-good">75% </td>
-                                <td class="score acc-excellent">90%</td>
-                                <td class="score seo-good">70%</td>
-                                <td class="score bp-average">58%</td>
-                                <td class="score pwa-average">67%</td>
-                                <td class="date">10/19/2025</td>
-                            </tr>
-                        
                     </tbody>
                 </table>
             </div>
         </section>
 
         <footer class="footer">
-            <p>📊 Generated by Global Lighthouse Tracker | Data from 148 websites across 59 countries</p>
+            <p>📊 Generated by Global Lighthouse Tracker | Data from 205 websites across 59 countries</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     <script>
+        // Update the last updated time to show in user's local timezone
+        const generationTime = new Date('2025-10-20T15:59:37.547Z'); // Actual generation time from server
+        document.addEventListener('DOMContentLoaded', function() {
+            const updateTimeElement = document.getElementById('updateTime');
+            if (updateTimeElement) {
+                const options = {
+                    year: 'numeric',
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    timeZoneName: 'short'
+                };
+                updateTimeElement.textContent = generationTime.toLocaleString(undefined, options);
+            }
+        });
+        
         // All sites data for search
-        const allSites = [{"url":"flipsite.io","country":"Finland","performance":100,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 20:14:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wikipedia.org","country":"United States","performance":97,"accessibility":93,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:36:04","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"nu.nl","country":"Netherlands","performance":83,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 20:22:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ad.nl","country":"Netherlands","performance":82,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 20:24:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"abril.com.br","country":"Brazil","performance":81,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 19:54:49","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"google.com","country":"United States","performance":79,"accessibility":98,"best_practices":100,"seo":85,"pwa":33,"test_date":"2025-10-20 07:04:35","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"rediff.com","country":"India","performance":76,"accessibility":94,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-19 19:48:08","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"amazon.com","country":"United States","performance":76,"accessibility":100,"best_practices":92,"seo":79,"pwa":0,"test_date":"2025-10-19 19:35:41","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"up","seo_trend":"down","pwa_trend":"down"},{"url":"gmx.net","country":"Germany","performance":75,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:44:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ok.ru","country":"Russia","performance":75,"accessibility":90,"best_practices":58,"seo":70,"pwa":67,"test_date":"2025-10-19 20:05:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cookpad.com","country":"Japan","performance":73,"accessibility":79,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:57:15","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"rijksoverheid.nl","country":"Netherlands","performance":73,"accessibility":98,"best_practices":100,"seo":97,"pwa":33,"test_date":"2025-10-19 20:26:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cricbuzz.com","country":"India","performance":72,"accessibility":84,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:46:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bizportal.co.il","country":"Israel","performance":71,"accessibility":92,"best_practices":75,"seo":97,"pwa":33,"test_date":"2025-10-19 20:22:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bol.com","country":"Netherlands","performance":71,"accessibility":86,"best_practices":0,"seo":92,"pwa":33,"test_date":"2025-10-19 20:24:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bing.com","country":"United States","performance":71,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 19:37:21","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"my.gov.au","country":"Australia","performance":69,"accessibility":0,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-19 20:04:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ndtv.com","country":"India","performance":68,"accessibility":75,"best_practices":92,"seo":83,"pwa":89,"test_date":"2025-10-19 19:47:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ameblo.jp","country":"Japan","performance":68,"accessibility":98,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:57:03","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"line.me","country":"Japan","performance":68,"accessibility":89,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:56:43","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mercadolivre.com.br","country":"Brazil","performance":67,"accessibility":96,"best_practices":67,"seo":96,"pwa":33,"test_date":"2025-10-19 19:51:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"nate.com","country":"South Korea","performance":66,"accessibility":75,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-19 20:11:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"yahoo.com","country":"United States","performance":66,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 19:36:35","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"web.de","country":"Germany","performance":65,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:42:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"arbetsformedlingen.se","country":"Sweden","performance":65,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 20:29:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dn.se","country":"Sweden","performance":65,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 20:27:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"suomi24.fi","country":"Finland","performance":64,"accessibility":78,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-19 20:16:10","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"ing.nl","country":"Netherlands","performance":64,"accessibility":96,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-19 20:25:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wordpress.com","country":"United States","performance":63,"accessibility":94,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:37:06","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"globalnews.ca","country":"Canada","performance":62,"accessibility":100,"best_practices":0,"seo":93,"pwa":100,"test_date":"2025-10-19 19:58:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"australia.gov.au","country":"Australia","performance":60,"accessibility":0,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-19 20:04:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"estadao.com.br","country":"Brazil","performance":60,"accessibility":91,"best_practices":83,"seo":92,"pwa":22,"test_date":"2025-10-19 19:55:13","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"canada.ca","country":"Canada","performance":60,"accessibility":100,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:59:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"hockeycanada.ca","country":"Canada","performance":60,"accessibility":77,"best_practices":83,"seo":76,"pwa":22,"test_date":"2025-10-19 20:00:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"framer.com","country":"Netherlands","performance":60,"accessibility":93,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-10-19 20:23:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"seek.com.au","country":"Australia","performance":59,"accessibility":93,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-19 20:03:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"g1.globo.com","country":"Brazil","performance":59,"accessibility":83,"best_practices":75,"seo":79,"pwa":33,"test_date":"2025-10-19 19:52:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"hindustantimes.com","country":"India","performance":58,"accessibility":76,"best_practices":58,"seo":92,"pwa":100,"test_date":"2025-10-19 19:47:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"goo.ne.jp","country":"Japan","performance":58,"accessibility":70,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 19:56:14","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"flashback.org","country":"Sweden","performance":58,"accessibility":84,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-19 20:27:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"facebook.com","country":"United States","performance":58,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 19:35:28","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"theweathernetwork.com","country":"Canada","performance":57,"accessibility":98,"best_practices":92,"seo":97,"pwa":67,"test_date":"2025-10-19 19:58:11","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"helsinki.fi","country":"Finland","performance":57,"accessibility":93,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:17:04","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"timesofindia.com","country":"India","performance":57,"accessibility":89,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-19 19:46:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"zum.com","country":"South Korea","performance":57,"accessibility":78,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-10-19 20:13:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"svt.se","country":"Sweden","performance":57,"accessibility":100,"best_practices":100,"seo":99,"pwa":89,"test_date":"2025-10-19 20:26:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"globo.com","country":"Brazil","performance":56,"accessibility":82,"best_practices":83,"seo":93,"pwa":67,"test_date":"2025-10-19 19:50:49","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"heise.de","country":"Germany","performance":56,"accessibility":83,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:44:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"skatteverket.se","country":"Sweden","performance":56,"accessibility":100,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 20:29:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"theguardian.com","country":"United Kingdom","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mk.co.kr","country":"South Korea","performance":55,"accessibility":71,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 20:14:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"independent.co.uk","country":"United Kingdom","performance":55,"accessibility":98,"best_practices":83,"seo":100,"pwa":78,"test_date":"2025-10-19 19:39:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"apple.com","country":"United States","performance":55,"accessibility":100,"best_practices":92,"seo":90,"pwa":33,"test_date":"2025-10-19 19:37:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"focus.de","country":"Germany","performance":54,"accessibility":88,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 19:42:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"youtube.com","country":"United States","performance":54,"accessibility":85,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-19 19:35:10","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"abc.net.au","country":"Australia","performance":53,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 20:02:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"spiegel.de","country":"Germany","performance":53,"accessibility":98,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-19 19:41:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"indiatimes.com","country":"India","performance":53,"accessibility":94,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-10-19 19:45:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"9news.com.au","country":"Australia","performance":52,"accessibility":63,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-19 20:03:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"nhs.uk","country":"United Kingdom","performance":52,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 19:41:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"instagram.com","country":"United States","performance":52,"accessibility":90,"best_practices":83,"seo":94,"pwa":67,"test_date":"2025-10-19 19:36:20","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same"},{"url":"aftonbladet.se","country":"Sweden","performance":51,"accessibility":98,"best_practices":92,"seo":100,"pwa":78,"test_date":"2025-10-19 20:26:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"business-standard.com","country":"India","performance":49,"accessibility":89,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 19:49:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ica.se","country":"Sweden","performance":49,"accessibility":94,"best_practices":83,"seo":100,"pwa":56,"test_date":"2025-10-19 20:28:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"folha.uol.com.br","country":"Brazil","performance":48,"accessibility":87,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:54:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"uol.com.br","country":"Brazil","performance":48,"accessibility":68,"best_practices":83,"seo":92,"pwa":89,"test_date":"2025-10-19 19:51:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"chip.de","country":"Germany","performance":48,"accessibility":91,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:43:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"t-online.de","country":"Germany","performance":48,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-19 19:42:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"zeit.de","country":"Germany","performance":48,"accessibility":86,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:43:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ria.ru","country":"Russia","performance":47,"accessibility":69,"best_practices":58,"seo":92,"pwa":56,"test_date":"2025-10-19 20:08:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"expressen.se","country":"Sweden","performance":47,"accessibility":96,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-19 20:26:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"klarna.com","country":"Sweden","performance":47,"accessibility":89,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-19 20:28:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"smh.com.au","country":"Australia","performance":46,"accessibility":87,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-19 20:02:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"hs.fi","country":"Finland","performance":46,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 20:15:25","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"reddit.com","country":"United States","performance":46,"accessibility":91,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 19:36:54","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"yle.fi","country":"Finland","performance":45,"accessibility":80,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 20:15:06","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"rbc.ru","country":"Russia","performance":45,"accessibility":67,"best_practices":75,"seo":93,"pwa":56,"test_date":"2025-10-19 20:06:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tistory.com","country":"South Korea","performance":44,"accessibility":81,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 20:09:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"yna.co.kr","country":"South Korea","performance":44,"accessibility":76,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-19 20:13:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"coop.se","country":"Sweden","performance":44,"accessibility":100,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-19 20:28:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tori.fi","country":"Finland","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-19 20:15:43","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"hani.co.kr","country":"South Korea","performance":43,"accessibility":87,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 20:12:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dailymail.co.uk","country":"United Kingdom","performance":43,"accessibility":61,"best_practices":67,"seo":78,"pwa":33,"test_date":"2025-10-19 19:38:26","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"flipkart.com","country":"India","performance":42,"accessibility":83,"best_practices":92,"seo":86,"pwa":100,"test_date":"2025-10-19 19:45:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"walla.co.il","country":"Israel","performance":42,"accessibility":74,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:18:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"marktplaats.nl","country":"Netherlands","performance":42,"accessibility":85,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:23:56","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"r7.com","country":"Brazil","performance":41,"accessibility":87,"best_practices":75,"seo":77,"pwa":33,"test_date":"2025-10-19 19:53:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"globes.co.il","country":"Israel","performance":41,"accessibility":42,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-19 20:20:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wix.com","country":"Israel","performance":41,"accessibility":98,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-19 20:17:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"naver.com","country":"South Korea","performance":41,"accessibility":86,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 20:08:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cbc.ca","country":"Canada","performance":40,"accessibility":98,"best_practices":83,"seo":90,"pwa":56,"test_date":"2025-10-19 19:57:57","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same"},{"url":"bild.de","country":"Germany","performance":40,"accessibility":96,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 19:41:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"telegraph.co.uk","country":"United Kingdom","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"news.com.au","country":"Australia","performance":39,"accessibility":96,"best_practices":83,"seo":98,"pwa":56,"test_date":"2025-10-19 20:02:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"mirror.co.uk","country":"United Kingdom","performance":39,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 19:39:27","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mtv.fi","country":"Finland","performance":38,"accessibility":81,"best_practices":92,"seo":99,"pwa":78,"test_date":"2025-10-19 20:15:57","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"verkkokauppa.com","country":"Finland","performance":38,"accessibility":100,"best_practices":83,"seo":100,"pwa":100,"test_date":"2025-10-19 20:16:28","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"yandex.ru","country":"Russia","performance":38,"accessibility":66,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 20:05:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"x.com","country":"United States","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 19:35:54","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"timhortons.ca","country":"Canada","performance":37,"accessibility":88,"best_practices":67,"seo":82,"pwa":33,"test_date":"2025-10-19 20:01:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tagesschau.de","country":"Germany","performance":37,"accessibility":88,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-19 19:45:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"zee5.com","country":"India","performance":37,"accessibility":85,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-19 19:49:11","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"telegraaf.nl","country":"Netherlands","performance":37,"accessibility":88,"best_practices":75,"seo":85,"pwa":44,"test_date":"2025-10-19 20:23:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"op.fi","country":"Finland","performance":36,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 20:16:49","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mako.co.il","country":"Israel","performance":36,"accessibility":83,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-19 20:18:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tfl.gov.uk","country":"United Kingdom","performance":36,"accessibility":98,"best_practices":92,"seo":79,"pwa":33,"test_date":"2025-10-19 19:40:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"figma.com","country":"United States","performance":35,"accessibility":92,"best_practices":75,"seo":100,"pwa":56,"test_date":"2025-10-19 19:37:40","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ctvnews.ca","country":"Canada","performance":34,"accessibility":89,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-10-19 19:58:30","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"iltalehti.fi","country":"Finland","performance":34,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:14:50","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"themarker.com","country":"Israel","performance":34,"accessibility":88,"best_practices":83,"seo":99,"pwa":44,"test_date":"2025-10-19 20:21:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ynet.co.il","country":"Israel","performance":34,"accessibility":59,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:17:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"rakuten.co.jp","country":"Japan","performance":34,"accessibility":70,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-19 19:55:47","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"tass.ru","country":"Russia","performance":34,"accessibility":93,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-19 20:07:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"domain.com.au","country":"Australia","performance":33,"accessibility":94,"best_practices":92,"seo":92,"pwa":78,"test_date":"2025-10-19 20:03:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bankofcanada.ca","country":"Canada","performance":33,"accessibility":96,"best_practices":83,"seo":84,"pwa":44,"test_date":"2025-10-19 19:59:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"haaretz.co.il","country":"Israel","performance":33,"accessibility":72,"best_practices":83,"seo":91,"pwa":44,"test_date":"2025-10-19 20:19:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"daum.net","country":"South Korea","performance":32,"accessibility":81,"best_practices":58,"seo":98,"pwa":33,"test_date":"2025-10-19 20:08:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"terra.com.br","country":"Brazil","performance":30,"accessibility":70,"best_practices":92,"seo":85,"pwa":100,"test_date":"2025-10-19 19:54:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"calcalist.co.il","country":"Israel","performance":30,"accessibility":67,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-19 20:20:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"sky.com","country":"United Kingdom","performance":29,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:39:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"sport5.co.il","country":"Israel","performance":28,"accessibility":61,"best_practices":58,"seo":70,"pwa":33,"test_date":"2025-10-19 20:22:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"pixiv.net","country":"Japan","performance":28,"accessibility":75,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:57:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same"},{"url":"rabobank.nl","country":"Netherlands","performance":28,"accessibility":92,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:25:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"blocket.se","country":"Sweden","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"argos.co.uk","country":"United Kingdom","performance":28,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 19:40:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"is.fi","country":"Finland","performance":27,"accessibility":98,"best_practices":100,"seo":100,"pwa":44,"test_date":"2025-10-19 20:14:19","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"ns.nl","country":"Netherlands","performance":27,"accessibility":99,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:24:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"vk.com","country":"Russia","performance":27,"accessibility":89,"best_practices":0,"seo":92,"pwa":100,"test_date":"2025-10-19 20:05:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"chosun.com","country":"South Korea","performance":26,"accessibility":61,"best_practices":58,"seo":92,"pwa":33,"test_date":"2025-10-19 20:11:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"moneycontrol.com","country":"India","performance":24,"accessibility":73,"best_practices":50,"seo":83,"pwa":33,"test_date":"2025-10-19 19:47:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"spotify.com","country":"Sweden","performance":20,"accessibility":93,"best_practices":92,"seo":97,"pwa":78,"test_date":"2025-10-19 20:28:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"americanas.com.br","country":"Brazil","performance":14,"accessibility":87,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:51:49","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"coupang.com","country":"South Korea","performance":14,"accessibility":79,"best_practices":67,"seo":82,"pwa":33,"test_date":"2025-10-19 20:10:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bbc.co.uk","country":"United Kingdom","performance":12,"accessibility":91,"best_practices":83,"seo":100,"pwa":44,"test_date":"2025-10-19 19:38:07","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"avito.ru","country":"Russia","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bom.gov.au","country":"Australia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:04:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"realestate.com.au","country":"Australia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:04:06","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"toronto.ca","country":"Canada","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:59:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"weatheroffice.gc.ca","country":"Canada","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:59:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"gov.il","country":"Israel","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:22:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"livedoor.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:56:50","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"nhk.or.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:57:41","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"nicovideo.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:55:55","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"yahoo.co.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:55:24","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"weblog.nl","country":"Netherlands","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:26:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"mail.ru","country":"Russia","performance":0,"accessibility":71,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-10-19 20:05:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ozon.ru","country":"Russia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:05:55","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wildberries.ru","country":"Russia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:07:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"}];
+        const allSites = [{"url":"flipsite.io","country":"Finland","performance":97,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-20 14:55:56","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"wikipedia.org","country":"United States","performance":97,"accessibility":93,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:36:04","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"nu.nl","country":"Netherlands","performance":83,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 20:22:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ad.nl","country":"Netherlands","performance":82,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 20:24:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"elcomercio.pe","country":"Peru","performance":82,"accessibility":85,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-10-20 15:38:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"abril.com.br","country":"Brazil","performance":81,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 19:54:49","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"google.com","country":"United States","performance":79,"accessibility":98,"best_practices":100,"seo":85,"pwa":33,"test_date":"2025-10-20 07:04:35","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"rediff.com","country":"India","performance":76,"accessibility":94,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-19 19:48:08","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"amazon.com","country":"United States","performance":76,"accessibility":100,"best_practices":92,"seo":79,"pwa":0,"test_date":"2025-10-19 19:35:41","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"up","seo_trend":"down","pwa_trend":"down"},{"url":"gmx.net","country":"Germany","performance":75,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:44:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ok.ru","country":"Russia","performance":75,"accessibility":90,"best_practices":58,"seo":70,"pwa":67,"test_date":"2025-10-19 20:05:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cookpad.com","country":"Japan","performance":74,"accessibility":79,"best_practices":100,"seo":81,"pwa":33,"test_date":"2025-10-20 15:08:16","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same"},{"url":"rijksoverheid.nl","country":"Netherlands","performance":73,"accessibility":98,"best_practices":100,"seo":97,"pwa":33,"test_date":"2025-10-19 20:26:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dagen.no","country":"Norway","performance":73,"accessibility":94,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-20 15:18:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"yle.fi","country":"Finland","performance":72,"accessibility":80,"best_practices":83,"seo":98,"pwa":33,"test_date":"2025-10-20 14:56:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same"},{"url":"20minutes.fr","country":"France","performance":72,"accessibility":81,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-10-20 15:53:32","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bizportal.co.il","country":"Israel","performance":71,"accessibility":92,"best_practices":75,"seo":97,"pwa":33,"test_date":"2025-10-19 20:22:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bol.com","country":"Netherlands","performance":71,"accessibility":86,"best_practices":0,"seo":92,"pwa":33,"test_date":"2025-10-19 20:24:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bing.com","country":"United States","performance":71,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 19:37:21","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"my.gov.au","country":"Australia","performance":69,"accessibility":0,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-19 20:04:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ndtv.com","country":"India","performance":68,"accessibility":75,"best_practices":92,"seo":83,"pwa":89,"test_date":"2025-10-19 19:47:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ameblo.jp","country":"Japan","performance":68,"accessibility":98,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:57:03","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"line.me","country":"Japan","performance":68,"accessibility":89,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:56:43","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mercadolivre.com.br","country":"Brazil","performance":67,"accessibility":96,"best_practices":67,"seo":96,"pwa":33,"test_date":"2025-10-19 19:51:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cricbuzz.com","country":"India","performance":66,"accessibility":88,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-20 15:14:48","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"up","pwa_trend":"same"},{"url":"nate.com","country":"South Korea","performance":66,"accessibility":75,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-19 20:11:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"yahoo.com","country":"United States","performance":66,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 19:36:35","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"denik.cz","country":"Czechia","performance":65,"accessibility":0,"best_practices":83,"seo":99,"pwa":56,"test_date":"2025-10-20 15:27:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"web.de","country":"Germany","performance":65,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:42:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"arbetsformedlingen.se","country":"Sweden","performance":65,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 20:29:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"derstandard.at","country":"Austria","performance":64,"accessibility":100,"best_practices":92,"seo":87,"pwa":33,"test_date":"2025-10-20 15:28:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ing.nl","country":"Netherlands","performance":64,"accessibility":96,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-19 20:25:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"domain.com.au","country":"Australia","performance":63,"accessibility":94,"best_practices":83,"seo":92,"pwa":78,"test_date":"2025-10-20 15:33:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same"},{"url":"demorgen.be","country":"Belgium","performance":63,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-20 15:26:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cvkeskus.ee","country":"Estonia","performance":63,"accessibility":92,"best_practices":83,"seo":93,"pwa":78,"test_date":"2025-10-20 15:17:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wordpress.com","country":"United States","performance":63,"accessibility":94,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:37:06","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"globalnews.ca","country":"Canada","performance":62,"accessibility":100,"best_practices":0,"seo":93,"pwa":100,"test_date":"2025-10-19 19:58:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"daa.ie","country":"Ireland","performance":62,"accessibility":91,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-20 15:17:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"censor.net","country":"Ukraine","performance":62,"accessibility":95,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-20 15:01:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"australia.gov.au","country":"Australia","performance":60,"accessibility":0,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-19 20:04:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"estadao.com.br","country":"Brazil","performance":60,"accessibility":91,"best_practices":83,"seo":92,"pwa":22,"test_date":"2025-10-19 19:55:13","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"canada.ca","country":"Canada","performance":60,"accessibility":100,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:59:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"hockeycanada.ca","country":"Canada","performance":60,"accessibility":77,"best_practices":83,"seo":76,"pwa":22,"test_date":"2025-10-19 20:00:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ceskatelevize.cz","country":"Czechia","performance":60,"accessibility":83,"best_practices":92,"seo":97,"pwa":33,"test_date":"2025-10-20 15:01:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"framer.com","country":"Netherlands","performance":60,"accessibility":93,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-10-19 20:23:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"seek.com.au","country":"Australia","performance":59,"accessibility":93,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-19 20:03:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"g1.globo.com","country":"Brazil","performance":59,"accessibility":83,"best_practices":75,"seo":79,"pwa":33,"test_date":"2025-10-19 19:52:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"20minutos.es","country":"Spain","performance":59,"accessibility":84,"best_practices":92,"seo":86,"pwa":33,"test_date":"2025-10-20 15:53:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"suomi24.fi","country":"Finland","performance":58,"accessibility":78,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-20 14:57:40","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"hindustantimes.com","country":"India","performance":58,"accessibility":76,"best_practices":58,"seo":92,"pwa":100,"test_date":"2025-10-19 19:47:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"goo.ne.jp","country":"Japan","performance":58,"accessibility":70,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 19:56:14","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"flashback.org","country":"Sweden","performance":58,"accessibility":84,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-19 20:27:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"facebook.com","country":"United States","performance":58,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 19:35:28","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"theweathernetwork.com","country":"Canada","performance":57,"accessibility":98,"best_practices":92,"seo":97,"pwa":67,"test_date":"2025-10-19 19:58:11","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"ekstrabladet.dk","country":"Denmark","performance":57,"accessibility":83,"best_practices":100,"seo":84,"pwa":33,"test_date":"2025-10-20 15:36:32","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dailynewsegypt.com","country":"Egypt","performance":57,"accessibility":96,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-20 15:19:02","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"timesofindia.com","country":"India","performance":57,"accessibility":89,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-19 19:46:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"zum.com","country":"South Korea","performance":57,"accessibility":78,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-10-19 20:13:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"svt.se","country":"Sweden","performance":57,"accessibility":100,"best_practices":100,"seo":99,"pwa":89,"test_date":"2025-10-19 20:26:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"globo.com","country":"Brazil","performance":56,"accessibility":82,"best_practices":83,"seo":93,"pwa":67,"test_date":"2025-10-19 19:50:49","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"helsinki.fi","country":"Finland","performance":56,"accessibility":93,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-20 14:58:28","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same"},{"url":"heise.de","country":"Germany","performance":56,"accessibility":83,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:44:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dagbladet.no","country":"Norway","performance":56,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-20 15:18:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"e24.no","country":"Norway","performance":56,"accessibility":77,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-20 15:34:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"skatteverket.se","country":"Sweden","performance":56,"accessibility":100,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 20:29:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"theguardian.com","country":"United Kingdom","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mk.co.kr","country":"South Korea","performance":55,"accessibility":71,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 20:14:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"independent.co.uk","country":"United Kingdom","performance":55,"accessibility":98,"best_practices":83,"seo":100,"pwa":78,"test_date":"2025-10-19 19:39:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"apple.com","country":"United States","performance":55,"accessibility":100,"best_practices":92,"seo":90,"pwa":33,"test_date":"2025-10-19 19:37:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"db﻿a.dk","country":"Denmark","performance":54,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-20 15:20:11","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"focus.de","country":"Germany","performance":54,"accessibility":88,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 19:42:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"youtube.com","country":"United States","performance":54,"accessibility":85,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-19 19:35:10","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"abc.net.au","country":"Australia","performance":53,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 20:02:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"deredactie.be","country":"Belgium","performance":53,"accessibility":90,"best_practices":58,"seo":100,"pwa":33,"test_date":"2025-10-20 15:28:20","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"chip.de","country":"Germany","performance":53,"accessibility":89,"best_practices":100,"seo":93,"pwa":56,"test_date":"2025-10-20 15:05:56","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same"},{"url":"spiegel.de","country":"Germany","performance":53,"accessibility":98,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-19 19:41:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"indiatimes.com","country":"India","performance":53,"accessibility":94,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-10-19 19:45:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"daum.net","country":"South Korea","performance":53,"accessibility":80,"best_practices":58,"seo":98,"pwa":33,"test_date":"2025-10-20 15:19:52","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"9news.com.au","country":"Australia","performance":52,"accessibility":63,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-19 20:03:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"24.hu","country":"Hungary","performance":52,"accessibility":71,"best_practices":58,"seo":92,"pwa":67,"test_date":"2025-10-20 15:54:11","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"nhs.uk","country":"United Kingdom","performance":52,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 19:41:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"instagram.com","country":"United States","performance":52,"accessibility":90,"best_practices":83,"seo":94,"pwa":67,"test_date":"2025-10-19 19:36:20","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same"},{"url":"diariocorreo.pe","country":"Peru","performance":51,"accessibility":74,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-10-20 15:30:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"eldiario.es","country":"Spain","performance":51,"accessibility":81,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-20 15:40:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"aftonbladet.se","country":"Sweden","performance":51,"accessibility":98,"best_practices":92,"seo":100,"pwa":78,"test_date":"2025-10-19 20:26:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"163.com","country":"China","performance":49,"accessibility":57,"best_practices":75,"seo":77,"pwa":33,"test_date":"2025-10-20 15:51:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dmi.dk","country":"Denmark","performance":49,"accessibility":94,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-20 15:32:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"business-standard.com","country":"India","performance":49,"accessibility":89,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 19:49:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ica.se","country":"Sweden","performance":49,"accessibility":94,"best_practices":83,"seo":100,"pwa":56,"test_date":"2025-10-19 20:28:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"folha.uol.com.br","country":"Brazil","performance":48,"accessibility":87,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:54:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"uol.com.br","country":"Brazil","performance":48,"accessibility":68,"best_practices":83,"seo":92,"pwa":89,"test_date":"2025-10-19 19:51:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"op.fi","country":"Finland","performance":48,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-20 14:58:14","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"t-online.de","country":"Germany","performance":48,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-19 19:42:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"zeit.de","country":"Germany","performance":48,"accessibility":86,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:43:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ria.ru","country":"Russia","performance":47,"accessibility":69,"best_practices":58,"seo":92,"pwa":56,"test_date":"2025-10-19 20:08:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"expressen.se","country":"Sweden","performance":47,"accessibility":96,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-19 20:26:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"klarna.com","country":"Sweden","performance":47,"accessibility":89,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-19 20:28:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dailymail.co.uk","country":"United Kingdom","performance":47,"accessibility":62,"best_practices":67,"seo":78,"pwa":33,"test_date":"2025-10-20 15:18:44","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"smh.com.au","country":"Australia","performance":46,"accessibility":87,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-19 20:02:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dr.dk","country":"Denmark","performance":46,"accessibility":80,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-20 15:34:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tori.fi","country":"Finland","performance":46,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-20 14:57:13","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"reddit.com","country":"United States","performance":46,"accessibility":91,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 19:36:54","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"rbc.ru","country":"Russia","performance":45,"accessibility":67,"best_practices":75,"seo":93,"pwa":56,"test_date":"2025-10-19 20:06:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"eldeber.com.bo","country":"Bolivia","performance":44,"accessibility":92,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-20 15:39:44","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"iltalehti.fi","country":"Finland","performance":44,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-20 14:56:13","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same"},{"url":"dennikn.sk","country":"Slovakia","performance":44,"accessibility":96,"best_practices":75,"seo":91,"pwa":56,"test_date":"2025-10-20 15:28:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tistory.com","country":"South Korea","performance":44,"accessibility":81,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 20:09:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"yna.co.kr","country":"South Korea","performance":44,"accessibility":76,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-19 20:13:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"diariodelcauca.com.co","country":"Colombia","performance":43,"accessibility":85,"best_practices":75,"seo":86,"pwa":33,"test_date":"2025-10-20 15:31:20","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"is.fi","country":"Finland","performance":43,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-20 14:55:41","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same"},{"url":"mtv.fi","country":"Finland","performance":43,"accessibility":84,"best_practices":100,"seo":92,"pwa":78,"test_date":"2025-10-20 14:57:28","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same"},{"url":"hani.co.kr","country":"South Korea","performance":43,"accessibility":87,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 20:12:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"flipkart.com","country":"India","performance":42,"accessibility":83,"best_practices":92,"seo":86,"pwa":100,"test_date":"2025-10-19 19:45:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"walla.co.il","country":"Israel","performance":42,"accessibility":74,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:18:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"corriere.it","country":"Italy","performance":42,"accessibility":69,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-20 15:12:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"citizen.digital","country":"Kenya","performance":42,"accessibility":84,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-20 15:07:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"marktplaats.nl","country":"Netherlands","performance":42,"accessibility":85,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:23:56","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"1news.co.nz","country":"New Zealand","performance":42,"accessibility":82,"best_practices":83,"seo":84,"pwa":33,"test_date":"2025-10-20 15:52:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"r7.com","country":"Brazil","performance":41,"accessibility":87,"best_practices":75,"seo":77,"pwa":33,"test_date":"2025-10-19 19:53:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"globes.co.il","country":"Israel","performance":41,"accessibility":42,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-19 20:20:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wix.com","country":"Israel","performance":41,"accessibility":98,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-19 20:17:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"naver.com","country":"South Korea","performance":41,"accessibility":86,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 20:08:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cbc.ca","country":"Canada","performance":40,"accessibility":98,"best_practices":83,"seo":90,"pwa":56,"test_date":"2025-10-19 19:57:57","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same"},{"url":"crhoy.com","country":"Costa Rica","performance":40,"accessibility":88,"best_practices":83,"seo":97,"pwa":33,"test_date":"2025-10-20 15:14:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"verkkokauppa.com","country":"Finland","performance":40,"accessibility":100,"best_practices":92,"seo":100,"pwa":100,"test_date":"2025-10-20 14:57:54","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same"},{"url":"bild.de","country":"Germany","performance":40,"accessibility":96,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 19:41:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"telegraph.co.uk","country":"United Kingdom","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"dantri.com.vn","country":"Vietnam","performance":40,"accessibility":78,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-20 15:19:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"news.com.au","country":"Australia","performance":39,"accessibility":96,"best_practices":83,"seo":98,"pwa":56,"test_date":"2025-10-19 20:02:01","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"15min.lt","country":"Lithuania","performance":39,"accessibility":80,"best_practices":75,"seo":92,"pwa":78,"test_date":"2025-10-20 15:50:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"coop.se","country":"Sweden","performance":39,"accessibility":100,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-20 15:08:47","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"mirror.co.uk","country":"United Kingdom","performance":39,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 19:39:27","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"yandex.ru","country":"Russia","performance":38,"accessibility":66,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 20:05:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"20min.ch","country":"Switzerland","performance":38,"accessibility":77,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-10-20 15:53:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"x.com","country":"United States","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 19:35:54","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"timhortons.ca","country":"Canada","performance":37,"accessibility":88,"best_practices":67,"seo":82,"pwa":33,"test_date":"2025-10-19 20:01:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tagesschau.de","country":"Germany","performance":37,"accessibility":88,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-19 19:45:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"zee5.com","country":"India","performance":37,"accessibility":85,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-19 19:49:11","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"telegraaf.nl","country":"Netherlands","performance":37,"accessibility":88,"best_practices":75,"seo":85,"pwa":44,"test_date":"2025-10-19 20:23:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"mako.co.il","country":"Israel","performance":36,"accessibility":83,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-19 20:18:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"tfl.gov.uk","country":"United Kingdom","performance":36,"accessibility":98,"best_practices":92,"seo":79,"pwa":33,"test_date":"2025-10-19 19:40:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"figma.com","country":"United States","performance":35,"accessibility":92,"best_practices":75,"seo":100,"pwa":56,"test_date":"2025-10-19 19:37:40","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"elespectador.com","country":"Colombia","performance":34,"accessibility":94,"best_practices":67,"seo":100,"pwa":67,"test_date":"2025-10-20 15:45:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"hs.fi","country":"Finland","performance":34,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-20 14:56:54","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"detik.com","country":"Indonesia","performance":34,"accessibility":79,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-20 15:29:40","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"themarker.com","country":"Israel","performance":34,"accessibility":88,"best_practices":83,"seo":99,"pwa":44,"test_date":"2025-10-19 20:21:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ynet.co.il","country":"Israel","performance":34,"accessibility":59,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:17:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"rakuten.co.jp","country":"Japan","performance":34,"accessibility":70,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-19 19:55:47","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"tass.ru","country":"Russia","performance":34,"accessibility":93,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-19 20:07:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bankofcanada.ca","country":"Canada","performance":33,"accessibility":96,"best_practices":83,"seo":84,"pwa":44,"test_date":"2025-10-19 19:59:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"haaretz.co.il","country":"Israel","performance":33,"accessibility":72,"best_practices":83,"seo":91,"pwa":44,"test_date":"2025-10-19 20:19:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"economist.com.na","country":"Namibia","performance":33,"accessibility":76,"best_practices":75,"seo":91,"pwa":33,"test_date":"2025-10-20 15:35:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"terra.com.br","country":"Brazil","performance":30,"accessibility":70,"best_practices":92,"seo":85,"pwa":100,"test_date":"2025-10-19 19:54:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"calcalist.co.il","country":"Israel","performance":30,"accessibility":67,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-19 20:20:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"diena.lv","country":"Latvia","performance":29,"accessibility":51,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-20 15:31:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"sky.com","country":"United Kingdom","performance":29,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:39:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"elcolombiano.com","country":"Colombia","performance":28,"accessibility":90,"best_practices":58,"seo":86,"pwa":33,"test_date":"2025-10-20 15:37:40","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"sport5.co.il","country":"Israel","performance":28,"accessibility":61,"best_practices":58,"seo":70,"pwa":33,"test_date":"2025-10-19 20:22:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"pixiv.net","country":"Japan","performance":28,"accessibility":75,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:57:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same"},{"url":"rabobank.nl","country":"Netherlands","performance":28,"accessibility":92,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:25:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"blocket.se","country":"Sweden","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"argos.co.uk","country":"United Kingdom","performance":28,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 19:40:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"douyin.com","country":"China","performance":27,"accessibility":67,"best_practices":0,"seo":92,"pwa":33,"test_date":"2025-10-20 15:34:11","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"delfi.lv","country":"Latvia","performance":27,"accessibility":68,"best_practices":75,"seo":91,"pwa":33,"test_date":"2025-10-20 15:26:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ns.nl","country":"Netherlands","performance":27,"accessibility":99,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:24:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"vk.com","country":"Russia","performance":27,"accessibility":89,"best_practices":0,"seo":92,"pwa":100,"test_date":"2025-10-19 20:05:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"chosun.com","country":"South Korea","performance":26,"accessibility":60,"best_practices":42,"seo":92,"pwa":33,"test_date":"2025-10-20 15:06:41","performance_trend":"same","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same"},{"url":"eesti.ee","country":"Estonia","performance":25,"accessibility":98,"best_practices":67,"seo":83,"pwa":33,"test_date":"2025-10-20 15:36:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"moneycontrol.com","country":"India","performance":24,"accessibility":73,"best_practices":50,"seo":83,"pwa":33,"test_date":"2025-10-19 19:47:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"delfi.lt","country":"Lithuania","performance":23,"accessibility":83,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-20 15:25:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"diggers.news","country":"Zambia","performance":21,"accessibility":86,"best_practices":75,"seo":86,"pwa":22,"test_date":"2025-10-20 15:32:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"spotify.com","country":"Sweden","performance":20,"accessibility":93,"best_practices":92,"seo":97,"pwa":78,"test_date":"2025-10-19 20:28:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"coupang.com","country":"South Korea","performance":18,"accessibility":80,"best_practices":58,"seo":82,"pwa":33,"test_date":"2025-10-20 15:13:45","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same"},{"url":"americanas.com.br","country":"Brazil","performance":14,"accessibility":87,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:51:49","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bbc.co.uk","country":"United Kingdom","performance":12,"accessibility":91,"best_practices":83,"seo":100,"pwa":44,"test_date":"2025-10-19 19:38:07","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"ctvnews.ca","country":"Canada","performance":10,"accessibility":89,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-20 15:15:14","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same"},{"url":"avito.ru","country":"Russia","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"economico.co.ao","country":"Angola","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:34:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"bom.gov.au","country":"Australia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:04:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"realestate.com.au","country":"Australia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:04:06","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"correodelsur.com.bo","country":"Bolivia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:09:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"toronto.ca","country":"Canada","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:59:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"weatheroffice.gc.ca","country":"Canada","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:59:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cooperativa.cl","country":"Chile","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:09:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"elbogotapost.com","country":"Colombia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:36:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cubadebate.cu","country":"Cuba","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:16:06","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cubaeduca.cu","country":"Cuba","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:16:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cubavision.icrt.cu","country":"Cuba","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:16:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"cz-invest.cz","country":"Czechia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:17:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"gov.il","country":"Israel","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:22:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"livedoor.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:56:50","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"nhk.or.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:57:41","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"nicovideo.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:55:55","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"yahoo.co.jp","country":"Japan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 19:55:24","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same"},{"url":"deturbo.lu","country":"Luxembourg","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:29:49","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"weblog.nl","country":"Netherlands","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:26:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"co.nz","country":"New Zealand","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:07:55","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dnb.no","country":"Norway","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:33:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"mail.ru","country":"Russia","performance":0,"accessibility":71,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-10-19 20:05:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ozon.ru","country":"Russia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:05:55","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"wildberries.ru","country":"Russia","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-19 20:07:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"elespanol.com","country":"Spain","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:40:56","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"dn.se","country":"Sweden","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:33:11","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"down","pwa_trend":"down"},{"url":"chinatimes.com","country":"Taiwan","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:05:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"},{"url":"ekşi.com.tr","country":"Turkey","performance":0,"accessibility":0,"best_practices":0,"seo":0,"pwa":0,"test_date":"2025-10-20 15:36:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none"}];
         
         // Search functionality
         const searchInput = document.getElementById('searchInput');
