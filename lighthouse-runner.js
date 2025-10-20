@@ -23,6 +23,7 @@ class LighthouseRunner {
 
   async runAudit(url, retryCount = 0) {
     let chrome = null;
+    let chromeKilled = false;
     
     // Ensure URL has proper protocol
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
@@ -44,7 +45,15 @@ class LighthouseRunner {
           '--disable-renderer-backgrounding',
           '--disable-web-security',
           '--disable-features=TranslateUI',
-          '--disable-ipc-flooding-protection'
+          '--disable-ipc-flooding-protection',
+          '--disable-extensions',
+          '--disable-plugins',
+          '--disable-sync',
+          '--metrics-recording-only',
+          '--no-default-browser-check',
+          '--no-pings',
+          '--password-store=basic',
+          '--use-mock-keychain'
         ]
       });
       
@@ -62,11 +71,37 @@ class LighthouseRunner {
       let timeoutId;
       let isTimedOut = false;
       
-      // Create a more robust timeout mechanism
+      // Create a more robust timeout mechanism with graceful shutdown
       const timeoutPromise = new Promise((_, reject) => {
-        timeoutId = setTimeout(() => {
+        timeoutId = setTimeout(async () => {
           isTimedOut = true;
-          reject(new Error(`Lighthouse audit timeout after ${this.auditTimeout}ms`));
+          console.log(`⏰ Timeout reached for ${url}, attempting graceful Chrome shutdown...`);
+          
+          // Try graceful Chrome shutdown first
+          if (chrome && !chromeKilled) {
+            try {
+              chromeKilled = true;
+              await chrome.kill();
+              console.log(`✅ Chrome gracefully shut down for ${url}`);
+            } catch (killError) {
+              console.error(`⚠️ Error during graceful Chrome shutdown for ${url}:`, killError.message);
+              
+              // Force kill if graceful shutdown fails
+              if (chrome.pid) {
+                try {
+                  process.kill(chrome.pid, 'SIGKILL');
+                  console.log(`🔪 Force killed Chrome process ${chrome.pid} for ${url}`);
+                } catch (forceKillError) {
+                  console.error(`❌ Error force killing Chrome process ${chrome.pid}:`, forceKillError.message);
+                }
+              }
+            }
+          }
+          
+          // Give Chrome time to fully shut down before rejecting
+          setTimeout(() => {
+            reject(new Error(`Lighthouse audit timeout after ${this.auditTimeout}ms`));
+          }, 2000);
         }, this.auditTimeout);
       });
       
@@ -88,13 +123,14 @@ class LighthouseRunner {
           clearTimeout(timeoutId);
         }
         
-        // Force kill chrome immediately on timeout to prevent hanging
-        if (isTimedOut && chrome) {
+        // Don't kill Chrome here if it was already killed by timeout
+        if (!chromeKilled && chrome) {
           try {
+            chromeKilled = true;
             await chrome.kill();
-            chrome = null;
+            console.log(`🧹 Chrome cleaned up after error for ${url}`);
           } catch (killError) {
-            console.error(`Error force-killing Chrome after timeout for ${url}:`, killError.message);
+            console.error(`⚠️ Error cleaning up Chrome after race error for ${url}:`, killError.message);
           }
         }
         
@@ -138,7 +174,7 @@ class LighthouseRunner {
         chrome = null;
       }
       
-      // Retry logic for certain types of errors
+      // Enhanced retry logic for certain types of errors
       const retryableErrors = [
         'TargetCloseError',
         'Protocol error',
@@ -148,22 +184,39 @@ class LighthouseRunner {
         'Navigation timeout',
         'Page crashed',
         'Target closed',
-        'WebSocket is not open'
+        'WebSocket is not open',
+        'net::ERR_',
+        'net::',
+        'ERR_CONNECTION',
+        'ERR_TIMED_OUT',
+        'ERR_NETWORK_CHANGED',
+        'ECONNREFUSED',
+        'ENOTFOUND',
+        'ETIMEDOUT'
       ];
       
       const isRetryable = retryableErrors.some(errorType => 
         error.message.includes(errorType) || 
         error.name.includes(errorType) || 
-        error.constructor.name.includes('TargetCloseError')
+        error.constructor.name.includes('TargetCloseError') ||
+        error.stack?.includes('TargetCloseError')
       );
       
       if (retryCount < this.maxRetries && isRetryable) {
         console.log(`⏳ Retrying ${url} in ${this.retryDelay}ms... (attempt ${retryCount + 2}/${this.maxRetries + 1})`);
         
-        // Add longer delay for TargetCloseError to let Chrome fully cleanup
-        const delayTime = error.message.includes('TargetCloseError') || error.message.includes('Target closed') 
-          ? this.retryDelay * 2 
-          : this.retryDelay;
+        // Add progressively longer delays for different error types
+        let delayTime = this.retryDelay;
+        if (error.message.includes('TargetCloseError') || error.message.includes('Target closed')) {
+          delayTime = this.retryDelay * 3; // 9 seconds for target errors
+        } else if (error.message.includes('timeout')) {
+          delayTime = this.retryDelay * 2; // 6 seconds for timeout errors
+        }
+        
+        // Add extra delay for network-related errors
+        if (error.message.includes('ERR_CONNECTION') || error.message.includes('ECONNREFUSED')) {
+          delayTime = this.retryDelay * 4; // 12 seconds for connection errors
+        }
           
         await this._sleep(delayTime);
         return await this.runAudit(url, retryCount + 1);
@@ -182,13 +235,15 @@ class LighthouseRunner {
       };
     } finally {
       // Enhanced cleanup in finally block with process safety
-      if (chrome) {
+      if (chrome && !chromeKilled) {
         try {
           // Check if Chrome process is still running before trying to kill
           if (chrome.pid) {
             try {
               process.kill(chrome.pid, 0); // Test if process exists (doesn't kill)
+              chromeKilled = true;
               await chrome.kill(); // Normal kill if process exists
+              console.log(`🧹 Chrome cleaned up in finally block for ${url}`);
             } catch (processCheckError) {
               // Process already dead, no need to kill
               console.log(`Chrome process ${chrome.pid} already terminated for ${url}`);
@@ -201,11 +256,18 @@ class LighthouseRunner {
           if (chrome.pid) {
             try {
               process.kill(chrome.pid, 'SIGTERM');
+              console.log(`🔪 Final SIGTERM sent to Chrome process ${chrome.pid} for ${url}`);
             } catch (finalKillError) {
               // Process might already be dead, ignore
+              console.log(`Chrome process ${chrome.pid} was already dead for ${url}`);
             }
           }
         }
+      }
+      
+      // Add a small delay to ensure Chrome fully shuts down before next audit
+      if (retryCount === 0) { // Only add delay on first attempt, not retries
+        await this._sleep(1000);
       }
     }
   }
