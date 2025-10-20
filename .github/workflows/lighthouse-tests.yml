@@ -1,13 +1,13 @@
-name: Daily Lighthouse Tests
+name: Bi-Hourly Lighthouse Tests
 
 on:
   schedule:
-    # Run every day at 2 AM UTC (daily testing of 1/7th of websites)
-    - cron: '0 2 * * *'
+    # Run every 2 hours (12 times per day, 84 times per week)
+    - cron: '0 */2 * * *'
   workflow_dispatch:  # Allow manual triggering
     inputs:
       test_all:
-        description: 'Test all websites (ignore daily rotation)'
+        description: 'Test all websites (ignore rotation)'
         required: false
         default: 'false'
         type: boolean
@@ -58,18 +58,42 @@ jobs:
           echo "Database initialized and migrated"
 
       - name: Run Lighthouse tests for daily batch
+        continue-on-error: true
+        id: lighthouse-tests
         run: |
           if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-            echo "🌍 Manual trigger: Testing all 148 websites across all countries..."
+            echo "🌍 Manual trigger: Testing all websites across all countries..."
             node global-tester.js --now
           else
-            # Calculate day of week (0=Sunday, 1=Monday, ..., 6=Saturday)
+            # Calculate bi-hourly batch index (0-83 for 84 batches per week)
+            # Day of week (0=Sunday, 1=Monday, ..., 6=Saturday) and hour of day (0-23)
             DAY_OF_WEEK=$(date +%w)
-            echo "📅 Today is day $DAY_OF_WEEK of the week"
-            echo "🎯 Running daily batch testing (1/7th of websites)..."
-            node global-tester.js --daily-batch $DAY_OF_WEEK
+            HOUR_OF_DAY=$(date +%H)
+            # Convert to 2-hour slots: 0-1=0, 2-3=1, 4-5=2, etc. (12 slots per day)
+            HOUR_SLOT=$((HOUR_OF_DAY / 2))
+            # Calculate batch index: day * 12 + hour_slot (0-83)
+            BATCH_INDEX=$((DAY_OF_WEEK * 12 + HOUR_SLOT))
+            echo "📅 Day $DAY_OF_WEEK, Hour $HOUR_OF_DAY (slot $HOUR_SLOT) = Batch $BATCH_INDEX/84"
+            echo "🎯 Running bi-hourly batch testing (1/84th of websites)..."
+            node global-tester.js --hourly-batch $BATCH_INDEX
           fi
           echo "✅ Lighthouse testing completed for today's batch"
+
+      - name: Check lighthouse test results
+        run: |
+          if [ "${{ steps.lighthouse-tests.outcome }}" = "success" ]; then
+            echo "🎉 All lighthouse tests completed successfully"
+          elif [ "${{ steps.lighthouse-tests.outcome }}" = "failure" ]; then
+            echo "⚠️ Some lighthouse tests failed, but continuing with available data"
+            echo "📊 Checking if database was updated with partial results..."
+            if [ -f "lighthouse_scores.db" ]; then
+              echo "✅ Database file exists - partial results may be available"
+            else
+              echo "❌ No database file found"
+            fi
+          else
+            echo "❓ Lighthouse tests had unexpected outcome: ${{ steps.lighthouse-tests.outcome }}"
+          fi
 
       - name: Commit updated database
         run: |
@@ -93,7 +117,10 @@ jobs:
               COMMIT_MSG="Update database: Full lighthouse test results ($(date '+%Y-%m-%d %H:%M UTC'))"
             else
               DAY_OF_WEEK=$(date +%w)
-              COMMIT_MSG="Update database: Daily batch $((DAY_OF_WEEK + 1))/7 lighthouse results ($(date '+%Y-%m-%d %H:%M UTC'))"
+              HOUR_OF_DAY=$(date +%H)
+              HOUR_SLOT=$((HOUR_OF_DAY / 2))
+              BATCH_INDEX=$((DAY_OF_WEEK * 12 + HOUR_SLOT))
+              COMMIT_MSG="Update database: Bi-hourly batch $((BATCH_INDEX + 1))/84 lighthouse results ($(date '+%Y-%m-%d %H:%M UTC'))"
             fi
             
             git commit -m "$COMMIT_MSG"
@@ -107,8 +134,43 @@ jobs:
       - name: Generate website
         run: |
           echo "Generating static website with latest test results..."
-          node generate-website.js
-          echo "Website generation completed"
+          if node generate-website.js; then
+            echo "✅ Website generation completed successfully"
+          else
+            echo "⚠️ Website generation encountered errors, but continuing deployment"
+            echo "📁 Checking if website files were created..."
+            if [ -d "website" ] && [ "$(ls -A website)" ]; then
+              echo "✅ Website directory exists with files - proceeding with deployment"
+            else
+              echo "❌ No website files found - creating basic error page"
+              mkdir -p website
+              cat > website/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Lighthouse Global Tester</title>
+            <style>
+              body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+              .error { color: #e74c3c; }
+              .info { color: #3498db; }
+            </style>
+          </head>
+          <body>
+            <h1>🌍 Global Lighthouse Tracker</h1>
+            <div class="error">
+              <h2>⚠️ Website Generation Error</h2>
+              <p>The website could not be generated due to testing issues.</p>
+            </div>
+            <div class="info">
+              <p>Testing is ongoing - please check back later.</p>
+              <p>Last update attempt: $(date)</p>
+            </div>
+          </body>
+          </html>
+          EOF
+              echo "✅ Created fallback error page"
+            fi
+          fi
 
       - name: Upload website artifacts
         uses: actions/upload-artifact@v4
@@ -134,13 +196,17 @@ jobs:
           echo "**Testing Date:** $(date)" >> $GITHUB_STEP_SUMMARY
           
           if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-            echo "**Mode:** Manual full testing (all 148 websites)" >> $GITHUB_STEP_SUMMARY
-            echo "**Websites Tested:** All 148 websites across 14 countries" >> $GITHUB_STEP_SUMMARY
+            echo "**Mode:** Manual full testing (all websites)" >> $GITHUB_STEP_SUMMARY
+            echo "**Websites Tested:** All websites across all countries" >> $GITHUB_STEP_SUMMARY
           else
             DAY_OF_WEEK=$(date +%w)
+            HOUR_OF_DAY=$(date +%H)
+            HOUR_SLOT=$((HOUR_OF_DAY / 2))
+            BATCH_INDEX=$((DAY_OF_WEEK * 12 + HOUR_SLOT))
             DAY_NAME=$(date +%A)
-            echo "**Mode:** Daily batch testing (Day $DAY_OF_WEEK - $DAY_NAME)" >> $GITHUB_STEP_SUMMARY
-            echo "**Daily Batch:** Approximately 1/7th of total websites (~22 sites)" >> $GITHUB_STEP_SUMMARY
+            echo "**Mode:** Bi-hourly batch testing (Batch $((BATCH_INDEX + 1))/84)" >> $GITHUB_STEP_SUMMARY
+            echo "**Time Slot:** $DAY_NAME, $(printf '%02d' $((HOUR_SLOT * 2)))-$(printf '%02d' $((HOUR_SLOT * 2 + 1))) UTC" >> $GITHUB_STEP_SUMMARY
+            echo "**Batch Size:** Approximately 1/84th of total websites" >> $GITHUB_STEP_SUMMARY
           fi
           
           echo "**Countries Available:** US, UK, Germany, India, Brazil, Japan, Canada, Australia, Russia, South Korea, Finland, Israel, Netherlands, Sweden" >> $GITHUB_STEP_SUMMARY
@@ -156,5 +222,5 @@ jobs:
           ")
           
           echo "**Total Historical Tests:** $TOTAL_TESTS" >> $GITHUB_STEP_SUMMARY
-          echo "**Testing Schedule:** Daily at 2 AM UTC (distributed across week)" >> $GITHUB_STEP_SUMMARY
+          echo "**Testing Schedule:** Every 2 hours (84 batches per week)" >> $GITHUB_STEP_SUMMARY
           echo "**Live Dashboard:** [View Performance Results](https://$(echo $GITHUB_REPOSITORY | sed 's/\//.github.io\//')/)" >> $GITHUB_STEP_SUMMARY

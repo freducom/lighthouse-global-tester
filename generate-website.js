@@ -57,6 +57,7 @@ class WebsiteGenerator {
   }
 
   async generateHomePage() {
+    const generationTime = new Date().toISOString(); // Capture actual generation time
     const allScoresWithTrends = await this.db.getLatestScoresWithTrends();
     
     if (allScoresWithTrends.length === 0) {
@@ -102,7 +103,7 @@ class WebsiteGenerator {
         <header class="header">
             <h1>🌍 Global Lighthouse Tracker</h1>
             <p class="subtitle">Performance insights from ${allScores.length} websites across ${this.domainsData.length} countries</p>
-            <div class="last-updated">Last updated: ${new Date().toLocaleString()}</div>
+            <div class="last-updated" id="lastUpdated">Last updated: <span id="updateTime">Loading...</span></div>
         </header>
 
         <div class="stats-grid">
@@ -210,6 +211,24 @@ class WebsiteGenerator {
     </div>
 
     <script>
+        // Update the last updated time to show in user's local timezone
+        const generationTime = new Date('${generationTime}'); // Actual generation time from server
+        document.addEventListener('DOMContentLoaded', function() {
+            const updateTimeElement = document.getElementById('updateTime');
+            if (updateTimeElement) {
+                const options = {
+                    year: 'numeric',
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    timeZoneName: 'short'
+                };
+                updateTimeElement.textContent = generationTime.toLocaleString(undefined, options);
+            }
+        });
+        
         // All sites data for search
         const allSites = ${JSON.stringify(allScores)};
         
