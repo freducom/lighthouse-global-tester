@@ -67,8 +67,8 @@ git push -u origin main
 
 ### 8. View Live Dashboard
 After the first successful run:
-- **Live Dashboard**: https://yourusername.github.io/lighthouse-global-tester
-- **Workflow Status**: https://github.com/yourusername/lighthouse-global-tester/actions
+- **Live Dashboard**: https://freducom.github.io/lighthouse-global-tester
+- **Workflow Status**: https://github.com/freducom/lighthouse-global-tester/actions
 
 ## 🔧 Troubleshooting Permission Issues
 
