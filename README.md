@@ -1,29 +1,18 @@
-# 🚀 Lightho- **🔄 Automated Testing**: Daily Lighthouse performance testing via GitHub Actions (1/7th of sites per day)
-- **🌍 Global Coverage**: 110 websites across 11 countries (Finland, Japan, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany, Global)
-- **📊 Beautiful Dashboard**: Facebook-style responsive web interface
+# 🚀 Lighthouse Automated Testing**: Daily Lighthouse performance testing via GitHub Actions 
+- **🌍 Global Coverage**
+- **📊 Beautiful Dashboard**
 - **📈 Historical Tracking**: SQLite database with performance score history
 - **🎯 Comprehensive Metrics**: Performance, Accessibility, Best Practices, SEO, and PWA scores
 - **📱 Mobile Responsive**: Works perfectly on desktop, tablet, and mobile devices
 - **🚀 GitHub Integration**: Fully automated with GitHub Actions and Pages deployment
 - **⚡ Distributed Load**: Tests spread across 7 days for faster execution and more frequent updatesbal Performance Tester
 
-[![Lighthouse Tests](https://github.com/fredu/lighthouse-global-tester/actions/workflows/lighthouse-tests.yml/badge.svg)](https://github.com/fredu/lighthouse-global-tester/actions/workflows/lighthouse-tests.yml)
+[![Lighthouse Tests](https://github.com/freducom/lighthouse-global-tester/actions/workflows/lighthouse-tests.yml/badge.svg)](https://github.com/freducom/lighthouse-global-tester/actions/workflows/lighthouse-tests.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://fredu.github.io/lighthouse-global-tester)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
 
-An automated weekly performance monitoring system that tests **110 major websites** across **11 countries** using Google Lighthouse, stores results in SQLite database, and serves a beautiful dashboard via GitHub Pages.
+An automated weekly performance monitoring system that tests using Google Lighthouse, stores results in SQLite database, and serves a beautiful dashboard via GitHub Pages.
 
-## 🌐 [Live Performance Dashboard](https://fredu.github.io/lighthouse-global-tester)
-
-## ✨ Features
-
-- **� Automated Testing**: Weekly Lighthouse performance testing via GitHub Actions
-- **🌍 Global Coverage**: 110 websites across 11 countries (Finland, Japan, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany, Global)
-- **📊 Beautiful Dashboard**: Facebook-style responsive web interface
-- **📈 Historical Tracking**: SQLite database with performance score history
-- **🎯 Comprehensive Metrics**: Performance, Accessibility, Best Practices, SEO, and PWA scores
-- **📱 Mobile Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **🚀 GitHub Integration**: Fully automated with GitHub Actions and Pages deployment
+## 🌐 [Live Performance Dashboard](https://freducom.github.io/lighthouse-global-tester)
 
 ## 🏗️ System Architecture
 
@@ -46,17 +35,6 @@ An automated weekly performance monitoring system that tests **110 major website
                     │  (Live Dashboard)      │
                     └─────────────────────────┘
 ```
-
-## 📊 Monitored Websites by Country
-
-### 🇫🇮 Finland (10 websites)
-- yle.fi, hs.fi, iltalehti.fi, is.fi, op.fi, helsinki.fi, mtv.fi, verkkokauppa.com, suomi24.fi, tori.fi
-
-### 🇯🇵 Japan (10 websites)  
-- yahoo.co.jp, rakuten.co.jp, ameblo.jp, goo.ne.jp, livedoor.jp, nicovideo.jp, nhk.or.jp, pixiv.net, line.me, cookpad.com
-
-### 🌍 Global (90 websites)
-Major international platforms including Google, Facebook, Amazon, Microsoft, GitHub, Reddit, Wikipedia, YouTube, Instagram, LinkedIn, and many more.
 
 ## 🚀 Quick Start
 
@@ -107,7 +85,7 @@ Visit `http://localhost:8080` to view the dashboard locally.
 ## 📈 Dashboard Features
 
 ### � Homepage
-- **Country Overview**: Performance summary for all 11 countries
+- **Country Overview**: Performance summary for all countries
 - **Global Statistics**: Total websites, average scores, trending metrics
 - **Visual Charts**: Interactive performance comparisons using Chart.js
 - **Quick Navigation**: Easy access to country-specific and domain-specific pages
@@ -130,7 +108,7 @@ Visit `http://localhost:8080` to view the dashboard locally.
 The system automatically:
 1. **Runs every day at 2 AM UTC** using cron scheduling
 2. **Tests 1/7th of websites daily** (approximately 16 sites) for distributed load
-3. **Completes full cycle weekly** - all 110 websites tested over 7 days
+3. **Completes full cycle weekly** - all websites tested over 7 days
 4. **Updates the SQLite database** with fresh performance data
 5. **Generates a new static website** with latest results
 6. **Deploys to GitHub Pages** for instant live updates
@@ -140,7 +118,7 @@ The system automatically:
 ### Manual Triggers
 - **Workflow Dispatch**: Trigger tests manually from GitHub Actions
   - **Daily Batch**: Test today's portion (1/7th) of websites
-  - **Full Test**: Test all 110 websites at once (use "test_all" input)
+  - **Full Test**: Test all websites at once (use "test_all" input)
 - **Push to Main**: Automatic deployment on code changes
 - **Local Testing**: Run and test locally before deployment
 
@@ -214,7 +192,11 @@ The system tracks five core Lighthouse metrics:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary software. All rights reserved by Fredrik Rönnlund.
+
+This source code is made publicly available for viewing and educational reference only. Unauthorized use, reproduction, or distribution is strictly prohibited. See the [LICENSE](LICENSE) file for complete terms and conditions.
+
+For licensing inquiries, please contact: fredu@fredu.com
 
 ## 🙏 Acknowledgments
 
@@ -228,4 +210,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the web performance community**
 
-🌐 **[View Live Dashboard](https://fredu.github.io/lighthouse-global-tester)** | 📊 **[See Latest Results](https://github.com/fredu/lighthouse-global-tester/actions)**
+🌐 **[View Live Dashboard](https://freducom.github.io/lighthouse-global-tester)** | 📊 **[See Latest Results](https://github.com/freducom/lighthouse-global-tester/actions)** | **[Build websites that score 100% on all tests](https://flipsite.io)**

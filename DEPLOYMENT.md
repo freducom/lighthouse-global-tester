@@ -24,19 +24,29 @@ git branch -M main
 git push -u origin main
 ```
 
-### 3. Enable GitHub Actions
+### 3. Configure Repository Permissions (IMPORTANT!)
+1. Go to your repository on GitHub
+2. Click "Settings" tab
+3. Scroll to "Actions" → "General"
+4. Under "Workflow permissions", select:
+   - ✅ **"Read and write permissions"**
+   - ✅ **"Allow GitHub Actions to create and approve pull requests"**
+5. Click "Save"
+
+### 4. Enable GitHub Pages
+1. Go to repository "Settings" tab
+2. Scroll down to "Pages" section
+3. Under "Source", select **"GitHub Actions"** (not Deploy from branch)
+4. Save the settings
+
+### 5. Enable GitHub Actions
 1. Go to your repository on GitHub
 2. Click the "Actions" tab
 3. GitHub will automatically detect the workflow file
 4. Click "I understand my workflows, go ahead and enable them"
 
-### 4. Enable GitHub Pages
-1. Go to repository "Settings" tab
-2. Scroll down to "Pages" section
-3. Under "Source", select "GitHub Actions"
-4. Save the settings
-
-### 5. Configure Repository Settings (Optional but Recommended)
+### 6. Configure Repository Settings (Optional but Recommended)
+### 6. Configure Repository Settings (Optional but Recommended)
 1. Go to "Settings" → "General"
 2. Under "Features", enable:
    - ✅ Issues
@@ -48,16 +58,30 @@ git push -u origin main
    - ✅ Allow squash merging
    - ✅ Allow rebase merging
 
-### 6. First Test Run
+### 7. First Test Run
 1. Go to "Actions" tab
-2. Click on "Lighthouse Performance Testing" workflow
+2. Click on "Daily Lighthouse Tests" workflow
 3. Click "Run workflow" → "Run workflow" to trigger manual test
-4. Wait for completion (~5-7 minutes for daily batch of ~22 websites, or ~30 minutes for all 148 websites if using "test_all")
+4. Wait for completion (~5-7 minutes for daily batch of ~22 websites)
+5. **For full test**: Check "Test all websites (ignore daily rotation)" before clicking "Run workflow"
 
-### 7. View Live Dashboard
+### 8. View Live Dashboard
 After the first successful run:
 - **Live Dashboard**: https://yourusername.github.io/lighthouse-global-tester
 - **Workflow Status**: https://github.com/yourusername/lighthouse-global-tester/actions
+
+## 🔧 Troubleshooting Permission Issues
+
+If you get permission errors:
+
+### Error: "Permission denied to github-actions[bot]"
+✅ **Fix**: Follow step 3 above - enable "Read and write permissions" for Actions
+
+### Error: "Pages deployment failed"  
+✅ **Fix**: Ensure Pages source is set to "GitHub Actions" (not "Deploy from branch")
+
+### Error: "Workflow not found"
+✅ **Fix**: Make sure `.github/workflows/lighthouse-tests.yml` exists and is pushed to main branch
 
 ## 🎯 What Happens Next
 
@@ -69,11 +93,10 @@ After the first successful run:
 - **Deployment**: Automatic deployment to GitHub Pages
 - **Scalability**: Automatically adapts when new countries or domains are added
 
-### Manual Testing
+### Manual Testing Options
+- **Daily Batch** (default): Test today's portion (~22 sites, ~5-7 minutes)
+- **Full Test**: Check the checkbox to test all 148 websites (~30 minutes)
 - Trigger anytime via GitHub Actions "Run workflow" button
-- **Daily Batch**: Test today's portion (default behavior)
-- **Full Test**: Use "test_all" input to test all 148 websites at once
-- Same process as automated runs
 
 ### Testing Distribution by Day
 - **Sunday (Day 0)**: ~22 websites from early countries (US, UK, etc.)
@@ -85,7 +108,7 @@ After the first successful run:
 
 ### Monitoring
 - Check Actions tab for run status
-- View artifacts for debugging
+- View deployment logs for debugging
 - Monitor performance trends on live dashboard
 
 ## 🔧 Customization Options
@@ -137,8 +160,9 @@ Edit `domains.json` and add websites to appropriate country arrays:
 ## 🎉 Success Indicators
 
 ✅ **Repository Created**: Code pushed to GitHub  
+✅ **Permissions Set**: Actions have read/write permissions  
+✅ **Pages Configured**: Source set to "GitHub Actions"  
 ✅ **Actions Enabled**: Workflow appears in Actions tab  
-✅ **Pages Enabled**: Settings configured for GitHub Actions source  
 ✅ **First Run Complete**: Initial test run finishes successfully  
 ✅ **Live Dashboard**: Website accessible at GitHub Pages URL  
 ✅ **Daily Schedule**: Automatic runs every day at 2 AM UTC  
@@ -148,11 +172,11 @@ Edit `domains.json` and add websites to appropriate country arrays:
 ## 📞 Support
 
 If you encounter issues:
-1. Check Actions tab for error logs
-2. Verify GitHub Pages settings
-3. Ensure repository is public
-4. Review workflow file for syntax errors
-5. Check database permissions and migrations
+1. **Permissions**: Ensure Actions have "Read and write permissions"
+2. **Pages Setup**: Verify source is "GitHub Actions"
+3. **Repository Public**: GitHub Pages requires public repository
+4. **Check Logs**: Review Actions tab for detailed error messages
+5. **Workflow File**: Ensure `.github/workflows/lighthouse-tests.yml` exists
 
 ---
 

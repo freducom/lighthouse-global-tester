@@ -1,4 +1,4 @@
-name: Lighthouse Performance Testing
+name: Daily Lighthouse Tests
 
 on:
   schedule:
@@ -14,9 +14,20 @@ on:
   push:
     branches: [ main ]
 
+# Add permissions for GitHub token
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   lighthouse-tests:
     runs-on: ubuntu-latest
+    
+    # Add concurrency to prevent multiple runs
+    concurrency:
+      group: lighthouse-tests
+      cancel-in-progress: true
     
     steps:
       - name: Checkout repository
@@ -34,10 +45,6 @@ jobs:
       - name: Install Chrome dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget gnupg
-          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-          sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
       - name: Setup database
@@ -48,8 +55,8 @@ jobs:
       - name: Run Lighthouse tests for daily batch
         run: |
           if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-            echo "🌍 Manual trigger: Testing all 110 websites across all countries..."
-            node global-tester.js
+            echo "🌍 Manual trigger: Testing all 148 websites across all countries..."
+            node global-tester.js --now
           else
             # Calculate day of week (0=Sunday, 1=Monday, ..., 6=Saturday)
             DAY_OF_WEEK=$(date +%w)
@@ -71,19 +78,17 @@ jobs:
           name: lighthouse-website
           path: website/
 
-      - name: Upload database artifacts
-        uses: actions/upload-artifact@v4
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload website artifacts
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: lighthouse-database
-          path: lighthouse_scores.db
-
+          path: ./website
+          
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website
-          force_orphan: true
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Generate test summary
         run: |
@@ -91,16 +96,16 @@ jobs:
           echo "**Testing Date:** $(date)" >> $GITHUB_STEP_SUMMARY
           
           if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-            echo "**Mode:** Manual full testing (all 110 websites)" >> $GITHUB_STEP_SUMMARY
-            echo "**Websites Tested:** All 110 websites across 11 countries" >> $GITHUB_STEP_SUMMARY
+            echo "**Mode:** Manual full testing (all 148 websites)" >> $GITHUB_STEP_SUMMARY
+            echo "**Websites Tested:** All 148 websites across 14 countries" >> $GITHUB_STEP_SUMMARY
           else
             DAY_OF_WEEK=$(date +%w)
             DAY_NAME=$(date +%A)
             echo "**Mode:** Daily batch testing (Day $DAY_OF_WEEK - $DAY_NAME)" >> $GITHUB_STEP_SUMMARY
-            echo "**Daily Batch:** Approximately 1/7th of total websites (~16 sites)" >> $GITHUB_STEP_SUMMARY
+            echo "**Daily Batch:** Approximately 1/7th of total websites (~22 sites)" >> $GITHUB_STEP_SUMMARY
           fi
           
-          echo "**Countries Available:** Finland, Japan, Global, Sweden, Norway, Denmark, Estonia, Latvia, Lithuania, Iceland, Germany" >> $GITHUB_STEP_SUMMARY
+          echo "**Countries Available:** US, UK, Germany, India, Brazil, Japan, Canada, Australia, Russia, South Korea, Finland, Israel, Netherlands, Sweden" >> $GITHUB_STEP_SUMMARY
           echo "**Database:** Updated with latest performance scores" >> $GITHUB_STEP_SUMMARY
           echo "**Website:** Deployed to GitHub Pages" >> $GITHUB_STEP_SUMMARY
           

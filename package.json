@@ -11,8 +11,9 @@
   "bugs": {
     "url": "https://github.com/fredu/lighthouse-global-tester/issues"
   },
-  "author": "fredu",
-  "license": "MIT",
+  "author": "Fredrik Rönnlund <fredu@fredu.com>",
+  "license": "UNLICENSED",
+  "private": true,
   "keywords": ["lighthouse", "performance", "testing", "monitoring", "github-actions", "github-pages", "web-performance"],
   "scripts": {
     "start": "node global-tester.js",
