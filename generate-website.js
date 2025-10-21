@@ -48,6 +48,7 @@ class WebsiteGenerator {
     // Generate all pages
     await this.generateHomePage();
     await this.generateCountryPages();
+    await this.generateIndustryPages();
     await this.generateDomainPages();
     await this.generateAssets();
 
@@ -86,6 +87,7 @@ class WebsiteGenerator {
     // Calculate statistics
     const stats = this.calculateGlobalStats(allScores);
     const countryStats = this.calculateCountryStats(allScores);
+    const industryStats = this.calculateIndustryStats(allScores);
     const topSites = allScores.sort((a, b) => b.performance - a.performance).slice(0, 10);
     
     const html = `
@@ -147,7 +149,40 @@ class WebsiteGenerator {
             </section>
 
             <section class="section">
-                <h2>🌍 Country Rankings</h2>
+                <h2>� Top 5 Industries by Performance</h2>
+                <div class="industry-comparison">
+                    <div class="best-industry">
+                        <h3>🥇 Best: ${industryStats.best.name}</h3>
+                        <div class="industry-score">${industryStats.best.avgPerformance}%</div>
+                        <p>Performance Leader</p>
+                    </div>
+                    <div class="worst-industry">
+                        <h3>🔄 Needs Improvement: ${industryStats.worst.name}</h3>
+                        <div class="industry-score">${industryStats.worst.avgPerformance}%</div>
+                        <p>Growth Opportunity</p>
+                    </div>
+                </div>
+                <div class="industry-rankings">
+                    <h3>🏆 Top 5 Industries</h3>
+                    <div class="industry-list">
+                        ${industryStats.top5.map((industry, index) => `
+                            <a href="industry-${industry.name.toLowerCase().replace(/\s+/g, '-')}.html" class="industry-item">
+                                <div class="industry-rank">#${index + 1}</div>
+                                <div class="industry-name">${industry.name}</div>
+                                <div class="industry-metrics">
+                                    <span class="metric">P: ${industry.avgPerformance}%</span>
+                                    <span class="metric">A: ${industry.avgAccessibility}%</span>
+                                    <span class="metric">SEO: ${industry.avgSeo}%</span>
+                                    <span class="metric">${industry.count} sites</span>
+                                </div>
+                            </a>
+                        `).join('')}
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>�🌍 Country Rankings</h2>
                 <div class="country-grid">
                     ${countryStats.all.map((country, index) => `
                         <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" class="country-card">
@@ -177,6 +212,7 @@ class WebsiteGenerator {
                             <th>Rank</th>
                             <th>Website</th>
                             <th>Country</th>
+                            <th>Industry</th>
                             <th>Performance</th>
                             <th>Accessibility</th>
                             <th>SEO</th>
@@ -191,6 +227,7 @@ class WebsiteGenerator {
                                 <td class="rank">#${index + 1}</td>
                                 <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
                                 <td><a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}</a></td>
+                                <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
                                 <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}% ${this.getTrendArrow(site.performance_trend)}</td>
                                 <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
                                 <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
@@ -278,6 +315,7 @@ class WebsiteGenerator {
                     <td class="rank">#\${index + 1}</td>
                     <td><a href="domain-\${site.url.replace(/\\./g, '-')}.html" class="domain-link">\${site.url}</a></td>
                     <td><a href="country-\${normalizeCountry(site.country).toLowerCase().replace(/\\s+/g, '-')}.html" class="country-link">\${getCountryFlag(normalizeCountry(site.country))} \${normalizeCountry(site.country)}</a></td>
+                    <td><a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" class="industry-link">\${site.industry || 'Unknown'}</a></td>
                     <td class="score perf-\${getScoreClass(site.performance)}">\${site.performance}%</td>
                     <td class="score acc-\${getScoreClass(site.accessibility)}">\${site.accessibility}%</td>
                     <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
@@ -431,6 +469,7 @@ class WebsiteGenerator {
                         <tr>
                             <th>Rank</th>
                             <th>Website</th>
+                            <th>Industry</th>
                             <th>Performance</th>
                             <th>Accessibility</th>
                             <th>SEO</th>
@@ -444,6 +483,7 @@ class WebsiteGenerator {
                             <tr class="site-row">
                                 <td class="rank">#${index + 1}</td>
                                 <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
+                                <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
                                 <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}%</td>
                                 <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
                                 <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
@@ -476,6 +516,7 @@ class WebsiteGenerator {
                 <tr class="site-row">
                     <td class="rank">#\${index + 1}</td>
                     <td><a href="domain-\${site.url.replace(/\\./g, '-')}.html" class="domain-link">\${site.url}</a></td>
+                    <td><a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" class="industry-link">\${site.industry || 'Unknown'}</a></td>
                     <td class="score perf-\${getScoreClass(site.performance)}">\${site.performance}%</td>
                     <td class="score acc-\${getScoreClass(site.accessibility)}">\${site.accessibility}%</td>
                     <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
@@ -613,6 +654,146 @@ class WebsiteGenerator {
             if (score >= 50) return 'average';
             return 'poor';
         }
+    </script>
+</body>
+</html>`;
+
+      fs.writeFileSync(path.join(this.outputDir, fileName), html);
+    }
+  }
+
+  async generateIndustryPages() {
+    console.log('🏭 Generating industry pages...');
+    
+    // Get all unique industries from the database
+    const allScores = await this.db.getAllLatestScores();
+    const industries = [...new Set(allScores.map(score => score.industry).filter(industry => industry))];
+    
+    for (const industry of industries) {
+      const industryScores = allScores.filter(score => score.industry === industry);
+      const fileName = `industry-${industry.toLowerCase().replace(/\s+/g, '-')}.html`;
+      const stats = this.calculateIndustrySpecificStats(industryScores);
+      
+      const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${industry} Industry - Lighthouse Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="breadcrumb">
+                <a href="index.html">🏠 Home</a> > 🏭 ${industry}
+            </div>
+            <h1>🏭 ${industry} Industry</h1>
+            <p class="subtitle">${industryScores.length} websites analyzed</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Average Performance</h3>
+                <div class="stat-value perf-${this.getScoreClass(stats.avgPerformance)}">${stats.avgPerformance}%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Average Accessibility</h3>
+                <div class="stat-value acc-${this.getScoreClass(stats.avgAccessibility)}">${stats.avgAccessibility}%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Average SEO</h3>
+                <div class="stat-value seo-${this.getScoreClass(stats.avgSeo)}">${stats.avgSeo}%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Average Best Practices</h3>
+                <div class="stat-value bp-${this.getScoreClass(stats.avgBestPractices)}">${stats.avgBestPractices}%</div>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>📈 ${industry} Websites</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search ${industry} websites..." />
+            </div>
+            <div class="table-container">
+                <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Website</th>
+                            <th>Country</th>
+                            <th>Performance</th>
+                            <th>Accessibility</th>
+                            <th>SEO</th>
+                            <th>Best Practices</th>
+                            <th>PWA</th>
+                            <th>Last Scanned</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        ${industryScores.map((site, index) => `
+                            <tr class="site-row">
+                                <td class="rank">#${index + 1}</td>
+                                <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
+                                <td><a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}</a></td>
+                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}%</td>
+                                <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
+                                <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
+                                <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
+                                <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
+                                <td class="date">${new Date(site.test_date).toLocaleDateString()}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const industryData = ${JSON.stringify(industryScores)};
+        
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 70) return 'good';
+            if (score >= 50) return 'average';
+            return 'poor';
+        }
+
+        function getCountryFlag(country) {
+            const flags = {
+                'Australia': '🇦🇺', 'United States': '🇺🇸', 'United Kingdom': '🇬🇧',
+                'Germany': '🇩🇪', 'France': '🇫🇷', 'Canada': '🇨🇦', 'Japan': '🇯🇵',
+                'Brazil': '🇧🇷', 'India': '🇮🇳', 'Russia': '🇷🇺', 'Sweden': '🇸🇪',
+                'Netherlands': '🇳🇱', 'Finland': '🇫🇮', 'South Korea': '🇰🇷',
+                'Israel': '🇮🇱', 'Global': '🌍'
+            };
+            return flags[country] || '🌍';
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const filtered = industryData.filter(site => 
+                site.url.toLowerCase().includes(query)
+            );
+            
+            document.getElementById('tableBody').innerHTML = filtered.map((site, index) => \`
+                <tr class="site-row">
+                    <td class="rank">#\${index + 1}</td>
+                    <td><a href="domain-\${site.url.replace(/\\./g, '-')}.html" class="domain-link">\${site.url}</a></td>
+                    <td><a href="country-\${site.country.toLowerCase().replace(/\\s+/g, '-')}.html" class="country-link">\${getCountryFlag(site.country)} \${site.country}</a></td>
+                    <td class="score perf-\${getScoreClass(site.performance)}">\${site.performance}%</td>
+                    <td class="score acc-\${getScoreClass(site.accessibility)}">\${site.accessibility}%</td>
+                    <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
+                    <td class="score bp-\${getScoreClass(site.best_practices)}">\${site.best_practices}%</td>
+                    <td class="score pwa-\${getScoreClass(site.pwa)}">\${site.pwa}%</td>
+                    <td class="date">\${new Date(site.test_date).toLocaleDateString()}</td>
+                </tr>
+            \`).join('');
+        });
     </script>
 </body>
 </html>`;
@@ -958,6 +1139,93 @@ body {
     font-size: 2em;
     font-weight: 700;
     margin: 10px 0;
+}
+
+.industry-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.best-industry, .worst-industry {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.best-industry {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.worst-industry {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    color: white;
+}
+
+.industry-score {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.industry-rankings h3 {
+    margin-bottom: 15px;
+    color: #1c1e21;
+}
+
+.industry-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.industry-item {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.industry-item:hover {
+    background: #e9ecef;
+    border-color: #007bff;
+    transform: translateY(-2px);
+}
+
+.industry-rank {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+    color: #007bff;
+}
+
+.industry-name {
+    flex: 1;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.industry-metrics {
+    display: flex;
+    gap: 10px;
+}
+
+.industry-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.industry-link:hover {
+    text-decoration: underline;
 }
 
 .country-grid {
@@ -1316,12 +1584,51 @@ body {
     };
   }
 
+  calculateIndustryStats(allScores) {
+    const byIndustry = {};
+    
+    allScores.forEach(score => {
+      if (!byIndustry[score.industry]) {
+        byIndustry[score.industry] = [];
+      }
+      byIndustry[score.industry].push(score);
+    });
+
+    const industryAverages = Object.keys(byIndustry).map(industry => {
+      const scores = byIndustry[industry];
+      return {
+        name: industry,
+        avgPerformance: Math.round(scores.reduce((sum, s) => sum + s.performance, 0) / scores.length),
+        avgAccessibility: Math.round(scores.reduce((sum, s) => sum + s.accessibility, 0) / scores.length),
+        avgSeo: Math.round(scores.reduce((sum, s) => sum + s.seo, 0) / scores.length),
+        avgBestPractices: Math.round(scores.reduce((sum, s) => sum + s.best_practices, 0) / scores.length),
+        count: scores.length
+      };
+    }).sort((a, b) => b.avgPerformance - a.avgPerformance);
+
+    return {
+      best: industryAverages[0],
+      worst: industryAverages[industryAverages.length - 1],
+      all: industryAverages,
+      top5: industryAverages.slice(0, 5)
+    };
+  }
+
   calculateCountrySpecificStats(countryScores) {
     return {
       avgPerformance: Math.round(countryScores.reduce((sum, s) => sum + s.performance, 0) / countryScores.length),
       avgAccessibility: Math.round(countryScores.reduce((sum, s) => sum + s.accessibility, 0) / countryScores.length),
       avgSeo: Math.round(countryScores.reduce((sum, s) => sum + s.seo, 0) / countryScores.length),
       avgBestPractices: Math.round(countryScores.reduce((sum, s) => sum + s.best_practices, 0) / countryScores.length)
+    };
+  }
+
+  calculateIndustrySpecificStats(industryScores) {
+    return {
+      avgPerformance: Math.round(industryScores.reduce((sum, s) => sum + s.performance, 0) / industryScores.length),
+      avgAccessibility: Math.round(industryScores.reduce((sum, s) => sum + s.accessibility, 0) / industryScores.length),
+      avgSeo: Math.round(industryScores.reduce((sum, s) => sum + s.seo, 0) / industryScores.length),
+      avgBestPractices: Math.round(industryScores.reduce((sum, s) => sum + s.best_practices, 0) / industryScores.length)
     };
   }
 
@@ -1440,6 +1747,8 @@ body {
     return descriptions[type][scoreClass] || 'Score available';
   }
 }
+
+module.exports = WebsiteGenerator;
 
 // Main execution
 async function main() {

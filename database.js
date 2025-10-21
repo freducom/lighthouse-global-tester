@@ -87,7 +87,7 @@ class Database {
   getAllLatestScores() {
     return new Promise((resolve, reject) => {
       this.db.all(`
-        SELECT url, country, performance, accessibility, best_practices, seo, pwa, test_date
+        SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
         FROM lighthouse_scores ls1
         WHERE test_date = (
           SELECT MAX(test_date) 

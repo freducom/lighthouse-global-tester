@@ -47,6 +47,7 @@
                         <tr>
                             <th>Rank</th>
                             <th>Website</th>
+                            <th>Industry</th>
                             <th>Performance</th>
                             <th>Accessibility</th>
                             <th>SEO</th>
@@ -60,6 +61,7 @@
                             <tr class="site-row">
                                 <td class="rank">#1</td>
                                 <td><a href="domain-emol-com.html" class="domain-link">emol.com</a></td>
+                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
                                 <td class="score perf-poor">20%</td>
                                 <td class="score acc-good">81%</td>
                                 <td class="score seo-good">77%</td>
@@ -80,7 +82,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"emol.com","country":"Chile","performance":20,"accessibility":81,"best_practices":50,"seo":77,"pwa":33,"test_date":"2025-10-20 16:05:25"}];
+        const countryData = [{"url":"emol.com","country":"Chile","industry":"Media","performance":20,"accessibility":81,"best_practices":50,"seo":77,"pwa":33,"test_date":"2025-10-20 16:05:25"}];
         
         document.getElementById('searchInput').addEventListener('input', function() {
             const query = this.value.toLowerCase();
@@ -92,6 +94,7 @@
                 <tr class="site-row">
                     <td class="rank">#${index + 1}</td>
                     <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
+                    <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
                     <td class="score perf-${getScoreClass(site.performance)}">${site.performance}%</td>
                     <td class="score acc-${getScoreClass(site.accessibility)}">${site.accessibility}%</td>
                     <td class="score seo-${getScoreClass(site.seo)}">${site.seo}%</td>

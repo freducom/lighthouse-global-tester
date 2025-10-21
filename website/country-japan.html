@@ -47,6 +47,7 @@
                         <tr>
                             <th>Rank</th>
                             <th>Website</th>
+                            <th>Industry</th>
                             <th>Performance</th>
                             <th>Accessibility</th>
                             <th>SEO</th>
@@ -60,6 +61,7 @@
                             <tr class="site-row">
                                 <td class="rank">#1</td>
                                 <td><a href="domain-cookpad-com.html" class="domain-link">cookpad.com</a></td>
+                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
                                 <td class="score perf-good">73%</td>
                                 <td class="score acc-good">79%</td>
                                 <td class="score seo-good">89%</td>
@@ -71,6 +73,7 @@
                             <tr class="site-row">
                                 <td class="rank">#2</td>
                                 <td><a href="domain-line-me.html" class="domain-link">line.me</a></td>
+                                <td><a href="industry-social-media.html" class="industry-link">Social Media</a></td>
                                 <td class="score perf-average">68%</td>
                                 <td class="score acc-good">89%</td>
                                 <td class="score seo-excellent">99%</td>
@@ -82,6 +85,7 @@
                             <tr class="site-row">
                                 <td class="rank">#3</td>
                                 <td><a href="domain-ameblo-jp.html" class="domain-link">ameblo.jp</a></td>
+                                <td><a href="industry-social-media.html" class="industry-link">Social Media</a></td>
                                 <td class="score perf-average">68%</td>
                                 <td class="score acc-excellent">98%</td>
                                 <td class="score seo-excellent">99%</td>
@@ -93,6 +97,7 @@
                             <tr class="site-row">
                                 <td class="rank">#4</td>
                                 <td><a href="domain-goo-ne-jp.html" class="domain-link">goo.ne.jp</a></td>
+                                <td><a href="industry-search-engine.html" class="industry-link">Search Engine</a></td>
                                 <td class="score perf-average">58%</td>
                                 <td class="score acc-good">70%</td>
                                 <td class="score seo-good">77%</td>
@@ -104,6 +109,7 @@
                             <tr class="site-row">
                                 <td class="rank">#5</td>
                                 <td><a href="domain-rakuten-co-jp.html" class="domain-link">rakuten.co.jp</a></td>
+                                <td><a href="industry-e-commerce.html" class="industry-link">E-commerce</a></td>
                                 <td class="score perf-poor">34%</td>
                                 <td class="score acc-good">70%</td>
                                 <td class="score seo-good">86%</td>
@@ -115,6 +121,7 @@
                             <tr class="site-row">
                                 <td class="rank">#6</td>
                                 <td><a href="domain-pixiv-net.html" class="domain-link">pixiv.net</a></td>
+                                <td><a href="industry-social-media.html" class="industry-link">Social Media</a></td>
                                 <td class="score perf-poor">28%</td>
                                 <td class="score acc-good">75%</td>
                                 <td class="score seo-excellent">90%</td>
@@ -135,7 +142,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"cookpad.com","country":"Japan","performance":73,"accessibility":79,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:57:15"},{"url":"line.me","country":"Japan","performance":68,"accessibility":89,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:56:43"},{"url":"ameblo.jp","country":"Japan","performance":68,"accessibility":98,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:57:03"},{"url":"goo.ne.jp","country":"Japan","performance":58,"accessibility":70,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 19:56:14"},{"url":"rakuten.co.jp","country":"Japan","performance":34,"accessibility":70,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-19 19:55:47"},{"url":"pixiv.net","country":"Japan","performance":28,"accessibility":75,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:57:35"}];
+        const countryData = [{"url":"cookpad.com","country":"Japan","industry":"Media","performance":73,"accessibility":79,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:57:15"},{"url":"line.me","country":"Japan","industry":"Social Media","performance":68,"accessibility":89,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:56:43"},{"url":"ameblo.jp","country":"Japan","industry":"Social Media","performance":68,"accessibility":98,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:57:03"},{"url":"goo.ne.jp","country":"Japan","industry":"Search Engine","performance":58,"accessibility":70,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 19:56:14"},{"url":"rakuten.co.jp","country":"Japan","industry":"E-commerce","performance":34,"accessibility":70,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-19 19:55:47"},{"url":"pixiv.net","country":"Japan","industry":"Social Media","performance":28,"accessibility":75,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:57:35"}];
         
         document.getElementById('searchInput').addEventListener('input', function() {
             const query = this.value.toLowerCase();
@@ -147,6 +154,7 @@
                 <tr class="site-row">
                     <td class="rank">#${index + 1}</td>
                     <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
+                    <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
                     <td class="score perf-${getScoreClass(site.performance)}">${site.performance}%</td>
                     <td class="score acc-${getScoreClass(site.accessibility)}">${site.accessibility}%</td>
                     <td class="score seo-${getScoreClass(site.seo)}">${site.seo}%</td>
