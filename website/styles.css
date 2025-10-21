@@ -146,7 +146,7 @@ body {
     gap: 20px;
 }
 
-.best-country, .worst-country {
+.best-country, .second-best-country, .second-worst-country, .worst-country {
     text-align: center;
     padding: 20px;
     border-radius: 8px;
@@ -155,6 +155,16 @@ body {
 .best-country {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+}
+
+.second-best-country {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.second-worst-country {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
 }
 
 .worst-country {

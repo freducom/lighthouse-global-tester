@@ -149,6 +149,16 @@ class WebsiteGenerator {
                         <div class="country-score">${countryStats.best.avgPerformance}%</div>
                         <p>Performance Leader</p>
                     </div>
+                    <div class="second-best-country">
+                        <h3>🥈 Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'}</h3>
+                        <div class="country-score">${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0}%</div>
+                        <p>Strong Performer</p>
+                    </div>
+                    <div class="second-worst-country">
+                        <h3>📈 Room for Growth: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'}</h3>
+                        <div class="country-score">${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0}%</div>
+                        <p>Improvement Potential</p>
+                    </div>
                     <div class="worst-country">
                         <h3>🔄 Needs Improvement: ${countryStats.worst.name}</h3>
                         <div class="country-score">${countryStats.worst.avgPerformance}%</div>
@@ -1198,7 +1208,7 @@ body {
     gap: 20px;
 }
 
-.best-country, .worst-country {
+.best-country, .second-best-country, .second-worst-country, .worst-country {
     text-align: center;
     padding: 20px;
     border-radius: 8px;
@@ -1207,6 +1217,16 @@ body {
 .best-country {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+}
+
+.second-best-country {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.second-worst-country {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
 }
 
 .worst-country {
@@ -2119,7 +2139,9 @@ body {
 
     return {
       best: countryAverages[0],
+      secondBest: countryAverages[1],
       worst: countryAverages[countryAverages.length - 1],
+      secondWorst: countryAverages[countryAverages.length - 2],
       all: countryAverages
     };
   }
