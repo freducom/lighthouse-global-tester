@@ -219,6 +219,80 @@ class Database {
     });
   }
 
+  getScoresWithTrendsForCountry(country) {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        WITH ranked_scores AS (
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date,
+                 ROW_NUMBER() OVER (PARTITION BY url ORDER BY test_date DESC) as rn
+          FROM lighthouse_scores 
+          WHERE country = ?
+        ),
+        latest_scores AS (
+          SELECT * FROM ranked_scores WHERE rn = 1
+        ),
+        previous_scores AS (
+          SELECT * FROM ranked_scores WHERE rn = 2
+        )
+        SELECT 
+          l.url, l.country, l.industry, l.test_date,
+          l.performance as current_performance,
+          l.accessibility as current_accessibility, 
+          l.best_practices as current_best_practices,
+          l.seo as current_seo,
+          l.pwa as current_pwa,
+          p.performance as previous_performance,
+          p.accessibility as previous_accessibility,
+          p.best_practices as previous_best_practices, 
+          p.seo as previous_seo,
+          p.pwa as previous_pwa
+        FROM latest_scores l
+        LEFT JOIN previous_scores p ON l.url = p.url
+        ORDER BY l.performance DESC
+      `, [country], (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+  }
+
+  getScoresWithTrendsForIndustry(industry) {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        WITH ranked_scores AS (
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date,
+                 ROW_NUMBER() OVER (PARTITION BY url ORDER BY test_date DESC) as rn
+          FROM lighthouse_scores 
+          WHERE industry = ?
+        ),
+        latest_scores AS (
+          SELECT * FROM ranked_scores WHERE rn = 1
+        ),
+        previous_scores AS (
+          SELECT * FROM ranked_scores WHERE rn = 2
+        )
+        SELECT 
+          l.url, l.country, l.industry, l.test_date,
+          l.performance as current_performance,
+          l.accessibility as current_accessibility, 
+          l.best_practices as current_best_practices,
+          l.seo as current_seo,
+          l.pwa as current_pwa,
+          p.performance as previous_performance,
+          p.accessibility as previous_accessibility,
+          p.best_practices as previous_best_practices, 
+          p.seo as previous_seo,
+          p.pwa as previous_pwa
+        FROM latest_scores l
+        LEFT JOIN previous_scores p ON l.url = p.url
+        ORDER BY l.performance DESC
+      `, [industry], (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+  }
+
   close() {
     this.db.close();
   }

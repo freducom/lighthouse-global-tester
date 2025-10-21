@@ -54,6 +54,20 @@
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
                 <h2 id="websites-heading">🏅 Top Websites in Japan</h2>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search Japan websites by name or industry</label>
                     <input type="text" 
@@ -69,24 +83,50 @@
                         <caption class="sr-only">
                             Lighthouse performance data for 6 websites from Japan, 
                             sorted by performance score in descending order. 
-                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Industry</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    Rank <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    Website <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="industry" aria-sort="none">
+                                    Industry <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    Accessibility <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    SEO <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    Best Practices <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    PWA <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    Last Scanned <span class="sort-indicator"></span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="cookpad.com" 
+                                data-industry="Media"
+                                data-performance="73"
+                                data-accessibility="79"
+                                data-seo="89"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:57:15">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-cookpad-com.html" 
@@ -103,8 +143,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-good"
-                                    aria-label="Performance score: 73 percent, good performance">
-                                    73%
+                                    aria-label="Performance score: 73 percent, good performance, trend: +1 points">
+                                    73%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+1</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 79 percent, good performance">
@@ -127,51 +167,16 @@
                                     <time datetime="2025-10-19 19:57:15">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="ameblo.jp" 
+                                data-industry="Social Media"
+                                data-performance="68"
+                                data-accessibility="98"
+                                data-seo="99"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:57:03">
                                 <td class="rank" aria-label="Rank 2">#2</td>
-                                <td>
-                                    <a href="domain-line-me.html" 
-                                       class="domain-link"
-                                       aria-label="View detailed report for line.me">
-                                        line.me
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="industry-social-media.html" 
-                                       class="industry-link"
-                                       aria-label="View all Social Media industry websites">
-                                        Social Media
-                                    </a>
-                                </td>
-                                <td class="score perf-average"
-                                    aria-label="Performance score: 68 percent, average performance">
-                                    68%
-                                </td>
-                                <td class="score acc-good"
-                                    aria-label="Accessibility score: 89 percent, good performance">
-                                    89%
-                                </td>
-                                <td class="score seo-excellent"
-                                    aria-label="SEO score: 99 percent, excellent performance">
-                                    99%
-                                </td>
-                                <td class="score bp-excellent"
-                                    aria-label="Best Practices score: 92 percent, excellent performance">
-                                    92%
-                                </td>
-                                <td class="score pwa-poor"
-                                    aria-label="PWA score: 33 percent, needs improvement">
-                                    33%
-                                </td>
-                                <td class="date" data-date="2025-10-19 19:56:43"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:56:43">10/19/2025</time>
-                                </td>
-                            </tr>
-                        
-                            <tr class="site-row">
-                                <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
                                     <a href="domain-ameblo-jp.html" 
                                        class="domain-link"
@@ -211,8 +216,64 @@
                                     <time datetime="2025-10-19 19:57:03">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="line.me" 
+                                data-industry="Social Media"
+                                data-performance="68"
+                                data-accessibility="89"
+                                data-seo="99"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:56:43">
+                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td>
+                                    <a href="domain-line-me.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for line.me">
+                                        line.me
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-social-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Social Media industry websites">
+                                        Social Media
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 68 percent, average performance, trend: +1 points">
+                                    68%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+1</span>
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 89 percent, good performance, trend: -2 points">
+                                    89%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-2</span>
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 99 percent, excellent performance">
+                                    99%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-19 19:56:43"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 19:56:43">10/19/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row trending-up" 
+                                data-url="goo.ne.jp" 
+                                data-industry="Search Engine"
+                                data-performance="58"
+                                data-accessibility="70"
+                                data-seo="77"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:56:14">
                                 <td class="rank" aria-label="Rank 4">#4</td>
                                 <td>
                                     <a href="domain-goo-ne-jp.html" 
@@ -229,8 +290,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 58 percent, average performance">
-                                    58%
+                                    aria-label="Performance score: 58 percent, average performance, trend: +3 points">
+                                    58%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 70 percent, good performance">
@@ -253,8 +314,15 @@
                                     <time datetime="2025-10-19 19:56:14">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="rakuten.co.jp" 
+                                data-industry="E-commerce"
+                                data-performance="34"
+                                data-accessibility="70"
+                                data-seo="86"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:55:47">
                                 <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
                                     <a href="domain-rakuten-co-jp.html" 
@@ -271,8 +339,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 34 percent, needs improvement">
-                                    34%
+                                    aria-label="Performance score: 34 percent, needs improvement, trend: +12 points">
+                                    34%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+12</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 70 percent, good performance">
@@ -295,8 +363,15 @@
                                     <time datetime="2025-10-19 19:55:47">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="pixiv.net" 
+                                data-industry="Social Media"
+                                data-performance="28"
+                                data-accessibility="75"
+                                data-seo="90"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:57:35">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-pixiv-net.html" 
@@ -313,16 +388,16 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 28 percent, needs improvement">
-                                    28%
+                                    aria-label="Performance score: 28 percent, needs improvement, trend: +2 points">
+                                    28%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 75 percent, good performance">
                                     75%
                                 </td>
                                 <td class="score seo-excellent"
-                                    aria-label="SEO score: 90 percent, excellent performance">
-                                    90%
+                                    aria-label="SEO score: 90 percent, excellent performance, trend: -1 points">
+                                    90%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-1</span>
                                 </td>
                                 <td class="score bp-good"
                                     aria-label="Best Practices score: 83 percent, good performance">
@@ -337,7 +412,6 @@
                                     <time datetime="2025-10-19 19:57:35">10/19/2025</time>
                                 </td>
                             </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -357,11 +431,58 @@
     </div>
 
     <script>
-        const countryData = [{"url":"cookpad.com","country":"Japan","industry":"Media","performance":73,"accessibility":79,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:57:15"},{"url":"line.me","country":"Japan","industry":"Social Media","performance":68,"accessibility":89,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:56:43"},{"url":"ameblo.jp","country":"Japan","industry":"Social Media","performance":68,"accessibility":98,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:57:03"},{"url":"goo.ne.jp","country":"Japan","industry":"Search Engine","performance":58,"accessibility":70,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 19:56:14"},{"url":"rakuten.co.jp","country":"Japan","industry":"E-commerce","performance":34,"accessibility":70,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-19 19:55:47"},{"url":"pixiv.net","country":"Japan","industry":"Social Media","performance":28,"accessibility":75,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:57:35"}];
+        const countryData = [{"url":"cookpad.com","country":"Japan","industry":"Media","performance":73,"accessibility":79,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-10-19 19:57:15","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ameblo.jp","country":"Japan","industry":"Social Media","performance":68,"accessibility":98,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:57:03","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"line.me","country":"Japan","industry":"Social Media","performance":68,"accessibility":89,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-10-19 19:56:43","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"goo.ne.jp","country":"Japan","industry":"Search Engine","performance":58,"accessibility":70,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-19 19:56:14","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"rakuten.co.jp","country":"Japan","industry":"E-commerce","performance":34,"accessibility":70,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-19 19:55:47","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":12,"text":"+12","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"pixiv.net","country":"Japan","industry":"Social Media","performance":28,"accessibility":75,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:57:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
         let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...countryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+            
+            currentSort = { column, order };
+            updateCountryTable(sorted);
+            updateSortIndicators();
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
+                } else {
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
         
         // Enhanced search functionality with accessibility features
         searchInput.addEventListener('input', function() {
@@ -371,21 +492,22 @@
             clearTimeout(searchTimeout);
             
             searchTimeout = setTimeout(() => {
-                const filtered = countryData.filter(site => 
+                filteredData = countryData.filter(site => 
                     site.url.toLowerCase().includes(query) ||
                     (site.industry && site.industry.toLowerCase().includes(query))
                 );
                 
-                updateCountryTable(filtered);
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
                 
                 // Announce results to screen readers
                 let announcement = '';
                 if (query.trim() === '') {
                     announcement = `Showing all ${countryData.length} websites from Japan`;
-                } else if (filtered.length === 0) {
+                } else if (filteredData.length === 0) {
                     announcement = `No results found for "${query}" in Japan`;
                 } else {
-                    announcement = `Found ${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${query}" in Japan`;
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Japan`;
                 }
                 
                 if (liveRegion) {
@@ -393,6 +515,140 @@
                 }
             }, 300);
         });
+        
+        // Add click handlers for sortable headers
+        document.querySelectorAll('.sortable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                sortData(column, newOrder);
+            });
+            
+            // Add keyboard support
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+            
+            // Make headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+        
+        // Add click handlers for sort buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const order = this.getAttribute('data-order');
+                
+                // Update active button
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                sortData(column, order);
+            });
+        });
+        
+        function updateCountryTable(data) {
+            const getScoreClass = (score) => {
+                if (score >= 90) return 'excellent';
+                if (score >= 70) return 'good';
+                if (score >= 50) return 'average';
+                return 'poor';
+            };
+            
+            const getScoreDescription = (score) => {
+                if (score >= 90) return 'Excellent';
+                if (score >= 70) return 'Good';
+                if (score >= 50) return 'Average';
+                return 'Poor';
+            };
+            
+            const getTrendArrow = (trend) => {
+                switch(trend) {
+                    case 'up': return '<span class="trend-arrow trend-up">↗</span>';
+                    case 'down': return '<span class="trend-arrow trend-down">↘</span>';
+                    default: return '';
+                }
+            };
+            
+            const getPerformanceDelta = (current, previous) => {
+                if (previous === null || previous === undefined) {
+                    return { delta: 0, text: '', class: 'delta-neutral' };
+                }
+                const delta = current - previous;
+                if (delta > 0) {
+                    return { delta, text: `+${delta}`, class: 'delta-positive' };
+                } else if (delta < 0) {
+                    return { delta, text: `${delta}`, class: 'delta-negative' };
+                } else {
+                    return { delta: 0, text: '±0', class: 'delta-neutral' };
+                }
+            };
+            
+            tableBody.innerHTML = data.map((site, index) => {
+                const perfDelta = site.performance_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const accDelta = site.accessibility_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const seoDelta = site.seo_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const bpDelta = site.best_practices_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const pwaDelta = site.pwa_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                
+                return `
+                <tr class="site-row ${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                    data-url="${site.url}" 
+                    data-industry="${site.industry || 'unknown'}"
+                    data-performance="${site.performance}"
+                    data-accessibility="${site.accessibility}"
+                    data-seo="${site.seo}"
+                    data-best-practices="${site.best_practices}"
+                    data-pwa="${site.pwa}"
+                    data-test-date="${site.test_date}">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}${perfDelta.delta !== 0 ? `, trend: ${perfDelta.text} points` : ''}">
+                        ${site.performance}%${getTrendArrow(site.performance_trend)}${perfDelta.delta !== 0 ? `<span class="performance-delta ${perfDelta.class}">${perfDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}${accDelta.delta !== 0 ? `, trend: ${accDelta.text} points` : ''}">
+                        ${site.accessibility}%${getTrendArrow(site.accessibility_trend)}${accDelta.delta !== 0 ? `<span class="performance-delta ${accDelta.class}">${accDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}${seoDelta.delta !== 0 ? `, trend: ${seoDelta.text} points` : ''}">
+                        ${site.seo}%${getTrendArrow(site.seo_trend)}${seoDelta.delta !== 0 ? `<span class="performance-delta ${seoDelta.class}">${seoDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}${bpDelta.delta !== 0 ? `, trend: ${bpDelta.text} points` : ''}">
+                        ${site.best_practices}%${getTrendArrow(site.best_practices_trend)}${bpDelta.delta !== 0 ? `<span class="performance-delta ${bpDelta.class}">${bpDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}${pwaDelta.delta !== 0 ? `, trend: ${pwaDelta.text} points` : ''}">
+                        ${site.pwa}%${getTrendArrow(site.pwa_trend)}${pwaDelta.delta !== 0 ? `<span class="performance-delta ${pwaDelta.class}">${pwaDelta.text}</span>` : ''}
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+        
+        // Initialize with default sort
+        updateSortIndicators();
         
         function updateCountryTable(sites) {
             tableBody.innerHTML = sites.map((site, index) => `

@@ -54,6 +54,20 @@
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
                 <h2 id="websites-heading">🏅 Top Websites in United Kingdom</h2>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search United Kingdom websites by name or industry</label>
                     <input type="text" 
@@ -69,24 +83,50 @@
                         <caption class="sr-only">
                             Lighthouse performance data for 10 websites from United Kingdom, 
                             sorted by performance score in descending order. 
-                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Industry</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    Rank <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    Website <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="industry" aria-sort="none">
+                                    Industry <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    Accessibility <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    SEO <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    Best Practices <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    PWA <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    Last Scanned <span class="sort-indicator"></span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="theguardian.com" 
+                                data-industry="Media"
+                                data-performance="56"
+                                data-accessibility="89"
+                                data-seo="86"
+                                data-best-practices="92"
+                                data-pwa="78"
+                                data-test-date="2025-10-19 19:38:42">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-theguardian-com.html" 
@@ -127,8 +167,15 @@
                                     <time datetime="2025-10-19 19:38:42">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="independent.co.uk" 
+                                data-industry="Media"
+                                data-performance="55"
+                                data-accessibility="98"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="78"
+                                data-test-date="2025-10-19 19:39:45">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-independent-co-uk.html" 
@@ -169,8 +216,15 @@
                                     <time datetime="2025-10-19 19:39:45">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="nhs.uk" 
+                                data-industry="Government"
+                                data-performance="52"
+                                data-accessibility="100"
+                                data-seo="100"
+                                data-best-practices="100"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:41:05">
                                 <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
                                     <a href="domain-nhs-uk.html" 
@@ -211,8 +265,15 @@
                                     <time datetime="2025-10-19 19:41:05">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="dailymail.co.uk" 
+                                data-industry="Media"
+                                data-performance="43"
+                                data-accessibility="61"
+                                data-seo="78"
+                                data-best-practices="67"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:38:26">
                                 <td class="rank" aria-label="Rank 4">#4</td>
                                 <td>
                                     <a href="domain-dailymail-co-uk.html" 
@@ -229,8 +290,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 43 percent, needs improvement">
-                                    43%
+                                    aria-label="Performance score: 43 percent, needs improvement, trend: +2 points">
+                                    43%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
                                 </td>
                                 <td class="score acc-average"
                                     aria-label="Accessibility score: 61 percent, average performance">
@@ -253,8 +314,15 @@
                                     <time datetime="2025-10-19 19:38:26">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="telegraph.co.uk" 
+                                data-industry="Media"
+                                data-performance="40"
+                                data-accessibility="98"
+                                data-seo="85"
+                                data-best-practices="75"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:39:09">
                                 <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
                                     <a href="domain-telegraph-co-uk.html" 
@@ -271,8 +339,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 40 percent, needs improvement">
-                                    40%
+                                    aria-label="Performance score: 40 percent, needs improvement, trend: +13 points">
+                                    40%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+13</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -295,8 +363,15 @@
                                     <time datetime="2025-10-19 19:39:09">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="mirror.co.uk" 
+                                data-industry="Media"
+                                data-performance="39"
+                                data-accessibility="77"
+                                data-seo="81"
+                                data-best-practices="83"
+                                data-pwa="67"
+                                data-test-date="2025-10-19 19:39:27">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-mirror-co-uk.html" 
@@ -313,8 +388,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 39 percent, needs improvement">
-                                    39%
+                                    aria-label="Performance score: 39 percent, needs improvement, trend: -5 points">
+                                    39%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-5</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 77 percent, good performance">
@@ -337,8 +412,15 @@
                                     <time datetime="2025-10-19 19:39:27">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="tfl.gov.uk" 
+                                data-industry="Transportation"
+                                data-performance="36"
+                                data-accessibility="98"
+                                data-seo="79"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:40:51">
                                 <td class="rank" aria-label="Rank 7">#7</td>
                                 <td>
                                     <a href="domain-tfl-gov-uk.html" 
@@ -379,8 +461,15 @@
                                     <time datetime="2025-10-19 19:40:51">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="sky.com" 
+                                data-industry="Telecom"
+                                data-performance="29"
+                                data-accessibility="100"
+                                data-seo="93"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:39:59">
                                 <td class="rank" aria-label="Rank 8">#8</td>
                                 <td>
                                     <a href="domain-sky-com.html" 
@@ -421,8 +510,15 @@
                                     <time datetime="2025-10-19 19:39:59">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="argos.co.uk" 
+                                data-industry="E-commerce"
+                                data-performance="28"
+                                data-accessibility="99"
+                                data-seo="98"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 19:40:22">
                                 <td class="rank" aria-label="Rank 9">#9</td>
                                 <td>
                                     <a href="domain-argos-co-uk.html" 
@@ -463,8 +559,15 @@
                                     <time datetime="2025-10-19 19:40:22">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="bbc.co.uk" 
+                                data-industry="Media"
+                                data-performance="12"
+                                data-accessibility="91"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="44"
+                                data-test-date="2025-10-19 19:38:07">
                                 <td class="rank" aria-label="Rank 10">#10</td>
                                 <td>
                                     <a href="domain-bbc-co-uk.html" 
@@ -481,12 +584,12 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 12 percent, needs improvement">
-                                    12%
+                                    aria-label="Performance score: 12 percent, needs improvement, trend: -1 points">
+                                    12%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-1</span>
                                 </td>
                                 <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 91 percent, excellent performance">
-                                    91%
+                                    aria-label="Accessibility score: 91 percent, excellent performance, trend: +3 points">
+                                    91%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
                                 </td>
                                 <td class="score seo-excellent"
                                     aria-label="SEO score: 100 percent, excellent performance">
@@ -505,7 +608,6 @@
                                     <time datetime="2025-10-19 19:38:07">10/19/2025</time>
                                 </td>
                             </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -525,11 +627,58 @@
     </div>
 
     <script>
-        const countryData = [{"url":"theguardian.com","country":"United Kingdom","industry":"Media","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42"},{"url":"independent.co.uk","country":"United Kingdom","industry":"Media","performance":55,"accessibility":98,"best_practices":83,"seo":100,"pwa":78,"test_date":"2025-10-19 19:39:45"},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":52,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 19:41:05"},{"url":"dailymail.co.uk","country":"United Kingdom","industry":"Media","performance":43,"accessibility":61,"best_practices":67,"seo":78,"pwa":33,"test_date":"2025-10-19 19:38:26"},{"url":"telegraph.co.uk","country":"United Kingdom","industry":"Media","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09"},{"url":"mirror.co.uk","country":"United Kingdom","industry":"Media","performance":39,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 19:39:27"},{"url":"tfl.gov.uk","country":"United Kingdom","industry":"Transportation","performance":36,"accessibility":98,"best_practices":92,"seo":79,"pwa":33,"test_date":"2025-10-19 19:40:51"},{"url":"sky.com","country":"United Kingdom","industry":"Telecom","performance":29,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:39:59"},{"url":"argos.co.uk","country":"United Kingdom","industry":"E-commerce","performance":28,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 19:40:22"},{"url":"bbc.co.uk","country":"United Kingdom","industry":"Media","performance":12,"accessibility":91,"best_practices":83,"seo":100,"pwa":44,"test_date":"2025-10-19 19:38:07"}];
+        const countryData = [{"url":"theguardian.com","country":"United Kingdom","industry":"Media","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"independent.co.uk","country":"United Kingdom","industry":"Media","performance":55,"accessibility":98,"best_practices":83,"seo":100,"pwa":78,"test_date":"2025-10-19 19:39:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":52,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 19:41:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"dailymail.co.uk","country":"United Kingdom","industry":"Media","performance":43,"accessibility":61,"best_practices":67,"seo":78,"pwa":33,"test_date":"2025-10-19 19:38:26","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"telegraph.co.uk","country":"United Kingdom","industry":"Media","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":13,"text":"+13","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mirror.co.uk","country":"United Kingdom","industry":"Media","performance":39,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 19:39:27","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tfl.gov.uk","country":"United Kingdom","industry":"Transportation","performance":36,"accessibility":98,"best_practices":92,"seo":79,"pwa":33,"test_date":"2025-10-19 19:40:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sky.com","country":"United Kingdom","industry":"Telecom","performance":29,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:39:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"argos.co.uk","country":"United Kingdom","industry":"E-commerce","performance":28,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 19:40:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bbc.co.uk","country":"United Kingdom","industry":"Media","performance":12,"accessibility":91,"best_practices":83,"seo":100,"pwa":44,"test_date":"2025-10-19 19:38:07","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
         let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...countryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+            
+            currentSort = { column, order };
+            updateCountryTable(sorted);
+            updateSortIndicators();
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
+                } else {
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
         
         // Enhanced search functionality with accessibility features
         searchInput.addEventListener('input', function() {
@@ -539,21 +688,22 @@
             clearTimeout(searchTimeout);
             
             searchTimeout = setTimeout(() => {
-                const filtered = countryData.filter(site => 
+                filteredData = countryData.filter(site => 
                     site.url.toLowerCase().includes(query) ||
                     (site.industry && site.industry.toLowerCase().includes(query))
                 );
                 
-                updateCountryTable(filtered);
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
                 
                 // Announce results to screen readers
                 let announcement = '';
                 if (query.trim() === '') {
                     announcement = `Showing all ${countryData.length} websites from United Kingdom`;
-                } else if (filtered.length === 0) {
+                } else if (filteredData.length === 0) {
                     announcement = `No results found for "${query}" in United Kingdom`;
                 } else {
-                    announcement = `Found ${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${query}" in United Kingdom`;
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in United Kingdom`;
                 }
                 
                 if (liveRegion) {
@@ -561,6 +711,140 @@
                 }
             }, 300);
         });
+        
+        // Add click handlers for sortable headers
+        document.querySelectorAll('.sortable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                sortData(column, newOrder);
+            });
+            
+            // Add keyboard support
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+            
+            // Make headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+        
+        // Add click handlers for sort buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const order = this.getAttribute('data-order');
+                
+                // Update active button
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                sortData(column, order);
+            });
+        });
+        
+        function updateCountryTable(data) {
+            const getScoreClass = (score) => {
+                if (score >= 90) return 'excellent';
+                if (score >= 70) return 'good';
+                if (score >= 50) return 'average';
+                return 'poor';
+            };
+            
+            const getScoreDescription = (score) => {
+                if (score >= 90) return 'Excellent';
+                if (score >= 70) return 'Good';
+                if (score >= 50) return 'Average';
+                return 'Poor';
+            };
+            
+            const getTrendArrow = (trend) => {
+                switch(trend) {
+                    case 'up': return '<span class="trend-arrow trend-up">↗</span>';
+                    case 'down': return '<span class="trend-arrow trend-down">↘</span>';
+                    default: return '';
+                }
+            };
+            
+            const getPerformanceDelta = (current, previous) => {
+                if (previous === null || previous === undefined) {
+                    return { delta: 0, text: '', class: 'delta-neutral' };
+                }
+                const delta = current - previous;
+                if (delta > 0) {
+                    return { delta, text: `+${delta}`, class: 'delta-positive' };
+                } else if (delta < 0) {
+                    return { delta, text: `${delta}`, class: 'delta-negative' };
+                } else {
+                    return { delta: 0, text: '±0', class: 'delta-neutral' };
+                }
+            };
+            
+            tableBody.innerHTML = data.map((site, index) => {
+                const perfDelta = site.performance_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const accDelta = site.accessibility_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const seoDelta = site.seo_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const bpDelta = site.best_practices_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const pwaDelta = site.pwa_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                
+                return `
+                <tr class="site-row ${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                    data-url="${site.url}" 
+                    data-industry="${site.industry || 'unknown'}"
+                    data-performance="${site.performance}"
+                    data-accessibility="${site.accessibility}"
+                    data-seo="${site.seo}"
+                    data-best-practices="${site.best_practices}"
+                    data-pwa="${site.pwa}"
+                    data-test-date="${site.test_date}">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}${perfDelta.delta !== 0 ? `, trend: ${perfDelta.text} points` : ''}">
+                        ${site.performance}%${getTrendArrow(site.performance_trend)}${perfDelta.delta !== 0 ? `<span class="performance-delta ${perfDelta.class}">${perfDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}${accDelta.delta !== 0 ? `, trend: ${accDelta.text} points` : ''}">
+                        ${site.accessibility}%${getTrendArrow(site.accessibility_trend)}${accDelta.delta !== 0 ? `<span class="performance-delta ${accDelta.class}">${accDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}${seoDelta.delta !== 0 ? `, trend: ${seoDelta.text} points` : ''}">
+                        ${site.seo}%${getTrendArrow(site.seo_trend)}${seoDelta.delta !== 0 ? `<span class="performance-delta ${seoDelta.class}">${seoDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}${bpDelta.delta !== 0 ? `, trend: ${bpDelta.text} points` : ''}">
+                        ${site.best_practices}%${getTrendArrow(site.best_practices_trend)}${bpDelta.delta !== 0 ? `<span class="performance-delta ${bpDelta.class}">${bpDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}${pwaDelta.delta !== 0 ? `, trend: ${pwaDelta.text} points` : ''}">
+                        ${site.pwa}%${getTrendArrow(site.pwa_trend)}${pwaDelta.delta !== 0 ? `<span class="performance-delta ${pwaDelta.class}">${pwaDelta.text}</span>` : ''}
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+        
+        // Initialize with default sort
+        updateSortIndicators();
         
         function updateCountryTable(sites) {
             tableBody.innerHTML = sites.map((site, index) => `

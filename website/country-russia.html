@@ -54,6 +54,20 @@
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
                 <h2 id="websites-heading">🏅 Top Websites in Russia</h2>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search Russia websites by name or industry</label>
                     <input type="text" 
@@ -69,24 +83,50 @@
                         <caption class="sr-only">
                             Lighthouse performance data for 8 websites from Russia, 
                             sorted by performance score in descending order. 
-                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Industry</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    Rank <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    Website <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="industry" aria-sort="none">
+                                    Industry <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    Accessibility <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    SEO <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    Best Practices <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    PWA <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    Last Scanned <span class="sort-indicator"></span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="ok.ru" 
+                                data-industry="Social Media"
+                                data-performance="75"
+                                data-accessibility="90"
+                                data-seo="70"
+                                data-best-practices="58"
+                                data-pwa="67"
+                                data-test-date="2025-10-19 20:05:31">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-ok-ru.html" 
@@ -127,8 +167,15 @@
                                     <time datetime="2025-10-19 20:05:31">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="ria.ru" 
+                                data-industry="Media"
+                                data-performance="47"
+                                data-accessibility="69"
+                                data-seo="92"
+                                data-best-practices="58"
+                                data-pwa="56"
+                                data-test-date="2025-10-19 20:08:04">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-ria-ru.html" 
@@ -169,8 +216,15 @@
                                     <time datetime="2025-10-19 20:08:04">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="rbc.ru" 
+                                data-industry="Media"
+                                data-performance="45"
+                                data-accessibility="67"
+                                data-seo="93"
+                                data-best-practices="75"
+                                data-pwa="56"
+                                data-test-date="2025-10-19 20:06:10">
                                 <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
                                     <a href="domain-rbc-ru.html" 
@@ -211,8 +265,15 @@
                                     <time datetime="2025-10-19 20:06:10">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="yandex.ru" 
+                                data-industry="Search Engine"
+                                data-performance="38"
+                                data-accessibility="66"
+                                data-seo="90"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:05:00">
                                 <td class="rank" aria-label="Rank 4">#4</td>
                                 <td>
                                     <a href="domain-yandex-ru.html" 
@@ -253,8 +314,15 @@
                                     <time datetime="2025-10-19 20:05:00">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="tass.ru" 
+                                data-industry="Media"
+                                data-performance="34"
+                                data-accessibility="93"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="89"
+                                data-test-date="2025-10-19 20:07:07">
                                 <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
                                     <a href="domain-tass-ru.html" 
@@ -295,8 +363,15 @@
                                     <time datetime="2025-10-19 20:07:07">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="vk.com" 
+                                data-industry="Social Media"
+                                data-performance="27"
+                                data-accessibility="89"
+                                data-seo="92"
+                                data-best-practices="0"
+                                data-pwa="100"
+                                data-test-date="2025-10-19 20:05:19">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-vk-com.html" 
@@ -337,8 +412,15 @@
                                     <time datetime="2025-10-19 20:05:19">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="avito.ru" 
+                                data-industry="Marketplace"
+                                data-performance="10"
+                                data-accessibility="64"
+                                data-seo="93"
+                                data-best-practices="58"
+                                data-pwa="89"
+                                data-test-date="2025-10-19 20:07:42">
                                 <td class="rank" aria-label="Rank 7">#7</td>
                                 <td>
                                     <a href="domain-avito-ru.html" 
@@ -379,8 +461,15 @@
                                     <time datetime="2025-10-19 20:07:42">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="mail.ru" 
+                                data-industry="Portal"
+                                data-performance="0"
+                                data-accessibility="71"
+                                data-seo="100"
+                                data-best-practices="67"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:05:46">
                                 <td class="rank" aria-label="Rank 8">#8</td>
                                 <td>
                                     <a href="domain-mail-ru.html" 
@@ -421,7 +510,6 @@
                                     <time datetime="2025-10-19 20:05:46">10/19/2025</time>
                                 </td>
                             </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -441,11 +529,58 @@
     </div>
 
     <script>
-        const countryData = [{"url":"ok.ru","country":"Russia","industry":"Social Media","performance":75,"accessibility":90,"best_practices":58,"seo":70,"pwa":67,"test_date":"2025-10-19 20:05:31"},{"url":"ria.ru","country":"Russia","industry":"Media","performance":47,"accessibility":69,"best_practices":58,"seo":92,"pwa":56,"test_date":"2025-10-19 20:08:04"},{"url":"rbc.ru","country":"Russia","industry":"Media","performance":45,"accessibility":67,"best_practices":75,"seo":93,"pwa":56,"test_date":"2025-10-19 20:06:10"},{"url":"yandex.ru","country":"Russia","industry":"Search Engine","performance":38,"accessibility":66,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 20:05:00"},{"url":"tass.ru","country":"Russia","industry":"Media","performance":34,"accessibility":93,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-19 20:07:07"},{"url":"vk.com","country":"Russia","industry":"Social Media","performance":27,"accessibility":89,"best_practices":0,"seo":92,"pwa":100,"test_date":"2025-10-19 20:05:19"},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42"},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":0,"accessibility":71,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-10-19 20:05:46"}];
+        const countryData = [{"url":"ok.ru","country":"Russia","industry":"Social Media","performance":75,"accessibility":90,"best_practices":58,"seo":70,"pwa":67,"test_date":"2025-10-19 20:05:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ria.ru","country":"Russia","industry":"Media","performance":47,"accessibility":69,"best_practices":58,"seo":92,"pwa":56,"test_date":"2025-10-19 20:08:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rbc.ru","country":"Russia","industry":"Media","performance":45,"accessibility":67,"best_practices":75,"seo":93,"pwa":56,"test_date":"2025-10-19 20:06:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yandex.ru","country":"Russia","industry":"Search Engine","performance":38,"accessibility":66,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 20:05:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tass.ru","country":"Russia","industry":"Media","performance":34,"accessibility":93,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-19 20:07:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"vk.com","country":"Russia","industry":"Social Media","performance":27,"accessibility":89,"best_practices":0,"seo":92,"pwa":100,"test_date":"2025-10-19 20:05:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":0,"accessibility":71,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-10-19 20:05:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
         let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...countryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+            
+            currentSort = { column, order };
+            updateCountryTable(sorted);
+            updateSortIndicators();
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
+                } else {
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
         
         // Enhanced search functionality with accessibility features
         searchInput.addEventListener('input', function() {
@@ -455,21 +590,22 @@
             clearTimeout(searchTimeout);
             
             searchTimeout = setTimeout(() => {
-                const filtered = countryData.filter(site => 
+                filteredData = countryData.filter(site => 
                     site.url.toLowerCase().includes(query) ||
                     (site.industry && site.industry.toLowerCase().includes(query))
                 );
                 
-                updateCountryTable(filtered);
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
                 
                 // Announce results to screen readers
                 let announcement = '';
                 if (query.trim() === '') {
                     announcement = `Showing all ${countryData.length} websites from Russia`;
-                } else if (filtered.length === 0) {
+                } else if (filteredData.length === 0) {
                     announcement = `No results found for "${query}" in Russia`;
                 } else {
-                    announcement = `Found ${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${query}" in Russia`;
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Russia`;
                 }
                 
                 if (liveRegion) {
@@ -477,6 +613,140 @@
                 }
             }, 300);
         });
+        
+        // Add click handlers for sortable headers
+        document.querySelectorAll('.sortable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                sortData(column, newOrder);
+            });
+            
+            // Add keyboard support
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+            
+            // Make headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+        
+        // Add click handlers for sort buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const order = this.getAttribute('data-order');
+                
+                // Update active button
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                sortData(column, order);
+            });
+        });
+        
+        function updateCountryTable(data) {
+            const getScoreClass = (score) => {
+                if (score >= 90) return 'excellent';
+                if (score >= 70) return 'good';
+                if (score >= 50) return 'average';
+                return 'poor';
+            };
+            
+            const getScoreDescription = (score) => {
+                if (score >= 90) return 'Excellent';
+                if (score >= 70) return 'Good';
+                if (score >= 50) return 'Average';
+                return 'Poor';
+            };
+            
+            const getTrendArrow = (trend) => {
+                switch(trend) {
+                    case 'up': return '<span class="trend-arrow trend-up">↗</span>';
+                    case 'down': return '<span class="trend-arrow trend-down">↘</span>';
+                    default: return '';
+                }
+            };
+            
+            const getPerformanceDelta = (current, previous) => {
+                if (previous === null || previous === undefined) {
+                    return { delta: 0, text: '', class: 'delta-neutral' };
+                }
+                const delta = current - previous;
+                if (delta > 0) {
+                    return { delta, text: `+${delta}`, class: 'delta-positive' };
+                } else if (delta < 0) {
+                    return { delta, text: `${delta}`, class: 'delta-negative' };
+                } else {
+                    return { delta: 0, text: '±0', class: 'delta-neutral' };
+                }
+            };
+            
+            tableBody.innerHTML = data.map((site, index) => {
+                const perfDelta = site.performance_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const accDelta = site.accessibility_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const seoDelta = site.seo_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const bpDelta = site.best_practices_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const pwaDelta = site.pwa_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                
+                return `
+                <tr class="site-row ${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                    data-url="${site.url}" 
+                    data-industry="${site.industry || 'unknown'}"
+                    data-performance="${site.performance}"
+                    data-accessibility="${site.accessibility}"
+                    data-seo="${site.seo}"
+                    data-best-practices="${site.best_practices}"
+                    data-pwa="${site.pwa}"
+                    data-test-date="${site.test_date}">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}${perfDelta.delta !== 0 ? `, trend: ${perfDelta.text} points` : ''}">
+                        ${site.performance}%${getTrendArrow(site.performance_trend)}${perfDelta.delta !== 0 ? `<span class="performance-delta ${perfDelta.class}">${perfDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}${accDelta.delta !== 0 ? `, trend: ${accDelta.text} points` : ''}">
+                        ${site.accessibility}%${getTrendArrow(site.accessibility_trend)}${accDelta.delta !== 0 ? `<span class="performance-delta ${accDelta.class}">${accDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}${seoDelta.delta !== 0 ? `, trend: ${seoDelta.text} points` : ''}">
+                        ${site.seo}%${getTrendArrow(site.seo_trend)}${seoDelta.delta !== 0 ? `<span class="performance-delta ${seoDelta.class}">${seoDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}${bpDelta.delta !== 0 ? `, trend: ${bpDelta.text} points` : ''}">
+                        ${site.best_practices}%${getTrendArrow(site.best_practices_trend)}${bpDelta.delta !== 0 ? `<span class="performance-delta ${bpDelta.class}">${bpDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}${pwaDelta.delta !== 0 ? `, trend: ${pwaDelta.text} points` : ''}">
+                        ${site.pwa}%${getTrendArrow(site.pwa_trend)}${pwaDelta.delta !== 0 ? `<span class="performance-delta ${pwaDelta.class}">${pwaDelta.text}</span>` : ''}
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+        
+        // Initialize with default sort
+        updateSortIndicators();
         
         function updateCountryTable(sites) {
             tableBody.innerHTML = sites.map((site, index) => `

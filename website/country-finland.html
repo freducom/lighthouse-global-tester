@@ -54,6 +54,20 @@
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
                 <h2 id="websites-heading">🏅 Top Websites in Finland</h2>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search Finland websites by name or industry</label>
                     <input type="text" 
@@ -69,24 +83,50 @@
                         <caption class="sr-only">
                             Lighthouse performance data for 11 websites from Finland, 
                             sorted by performance score in descending order. 
-                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Industry</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    Rank <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    Website <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="industry" aria-sort="none">
+                                    Industry <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    Accessibility <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    SEO <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    Best Practices <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    PWA <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    Last Scanned <span class="sort-indicator"></span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="flipsite.io" 
+                                data-industry="Website editor"
+                                data-performance="100"
+                                data-accessibility="98"
+                                data-seo="100"
+                                data-best-practices="100"
+                                data-pwa="33"
+                                data-test-date="2025-10-20 20:10:45">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-flipsite-io.html" 
@@ -127,8 +167,15 @@
                                     <time datetime="2025-10-20 20:10:45">10/20/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="suomi24.fi" 
+                                data-industry="Social Media"
+                                data-performance="64"
+                                data-accessibility="78"
+                                data-seo="83"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:16:10">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-suomi24-fi.html" 
@@ -145,8 +192,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 64 percent, average performance">
-                                    64%
+                                    aria-label="Performance score: 64 percent, average performance, trend: +6 points">
+                                    64%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+6</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 78 percent, good performance">
@@ -169,8 +216,15 @@
                                     <time datetime="2025-10-19 20:16:10">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="helsinki.fi" 
+                                data-industry="Education"
+                                data-performance="57"
+                                data-accessibility="93"
+                                data-seo="93"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:17:04">
                                 <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
                                     <a href="domain-helsinki-fi.html" 
@@ -187,8 +241,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 57 percent, average performance">
-                                    57%
+                                    aria-label="Performance score: 57 percent, average performance, trend: -5 points">
+                                    57%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-5</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 93 percent, excellent performance">
@@ -211,8 +265,15 @@
                                     <time datetime="2025-10-19 20:17:04">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-up" 
+                                data-url="hs.fi" 
+                                data-industry="Media"
+                                data-performance="46"
+                                data-accessibility="99"
+                                data-seo="100"
+                                data-best-practices="92"
+                                data-pwa="44"
+                                data-test-date="2025-10-19 20:15:25">
                                 <td class="rank" aria-label="Rank 4">#4</td>
                                 <td>
                                     <a href="domain-hs-fi.html" 
@@ -229,8 +290,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 46 percent, needs improvement">
-                                    46%
+                                    aria-label="Performance score: 46 percent, needs improvement, trend: +10 points">
+                                    46%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+10</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 99 percent, excellent performance">
@@ -253,8 +314,15 @@
                                     <time datetime="2025-10-19 20:15:25">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="yle.fi" 
+                                data-industry="Media"
+                                data-performance="45"
+                                data-accessibility="80"
+                                data-seo="98"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:15:06">
                                 <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
                                     <a href="domain-yle-fi.html" 
@@ -271,8 +339,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 45 percent, needs improvement">
-                                    45%
+                                    aria-label="Performance score: 45 percent, needs improvement, trend: -5 points">
+                                    45%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-5</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 80 percent, good performance">
@@ -295,8 +363,15 @@
                                     <time datetime="2025-10-19 20:15:06">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="tori.fi" 
+                                data-industry="Marketplace"
+                                data-performance="43"
+                                data-accessibility="98"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="67"
+                                data-test-date="2025-10-19 20:15:43">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-tori-fi.html" 
@@ -313,8 +388,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 43 percent, needs improvement">
-                                    43%
+                                    aria-label="Performance score: 43 percent, needs improvement, trend: -4 points">
+                                    43%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-4</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -337,8 +412,15 @@
                                     <time datetime="2025-10-19 20:15:43">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="mtv.fi" 
+                                data-industry="Media"
+                                data-performance="38"
+                                data-accessibility="81"
+                                data-seo="99"
+                                data-best-practices="92"
+                                data-pwa="78"
+                                data-test-date="2025-10-19 20:15:57">
                                 <td class="rank" aria-label="Rank 7">#7</td>
                                 <td>
                                     <a href="domain-mtv-fi.html" 
@@ -355,8 +437,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 38 percent, needs improvement">
-                                    38%
+                                    aria-label="Performance score: 38 percent, needs improvement, trend: -3 points">
+                                    38%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-3</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 81 percent, good performance">
@@ -379,8 +461,15 @@
                                     <time datetime="2025-10-19 20:15:57">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="verkkokauppa.com" 
+                                data-industry="E-commerce"
+                                data-performance="38"
+                                data-accessibility="100"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="100"
+                                data-test-date="2025-10-19 20:16:28">
                                 <td class="rank" aria-label="Rank 8">#8</td>
                                 <td>
                                     <a href="domain-verkkokauppa-com.html" 
@@ -421,8 +510,15 @@
                                     <time datetime="2025-10-19 20:16:28">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="op.fi" 
+                                data-industry="Finance"
+                                data-performance="36"
+                                data-accessibility="98"
+                                data-seo="100"
+                                data-best-practices="92"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:16:49">
                                 <td class="rank" aria-label="Rank 9">#9</td>
                                 <td>
                                     <a href="domain-op-fi.html" 
@@ -439,8 +535,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 36 percent, needs improvement">
-                                    36%
+                                    aria-label="Performance score: 36 percent, needs improvement, trend: -5 points">
+                                    36%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-5</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -463,8 +559,15 @@
                                     <time datetime="2025-10-19 20:16:49">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row " 
+                                data-url="iltalehti.fi" 
+                                data-industry="Media"
+                                data-performance="34"
+                                data-accessibility="98"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-19 20:14:50">
                                 <td class="rank" aria-label="Rank 10">#10</td>
                                 <td>
                                     <a href="domain-iltalehti-fi.html" 
@@ -505,8 +608,15 @@
                                     <time datetime="2025-10-19 20:14:50">10/19/2025</time>
                                 </td>
                             </tr>
-                        
-                            <tr class="site-row">
+                            <tr class="site-row trending-down" 
+                                data-url="is.fi" 
+                                data-industry="Media"
+                                data-performance="20"
+                                data-accessibility="100"
+                                data-seo="100"
+                                data-best-practices="92"
+                                data-pwa="44"
+                                data-test-date="2025-10-21 13:10:36">
                                 <td class="rank" aria-label="Rank 11">#11</td>
                                 <td>
                                     <a href="domain-is-fi.html" 
@@ -523,8 +633,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 20 percent, needs improvement">
-                                    20%
+                                    aria-label="Performance score: 20 percent, needs improvement, trend: -28 points">
+                                    20%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-28</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 100 percent, excellent performance">
@@ -547,7 +657,6 @@
                                     <time datetime="2025-10-21 13:10:36">10/21/2025</time>
                                 </td>
                             </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -567,11 +676,58 @@
     </div>
 
     <script>
-        const countryData = [{"url":"flipsite.io","country":"Finland","industry":"Website editor","performance":100,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-20 20:10:45"},{"url":"suomi24.fi","country":"Finland","industry":"Social Media","performance":64,"accessibility":78,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-19 20:16:10"},{"url":"helsinki.fi","country":"Finland","industry":"Education","performance":57,"accessibility":93,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:17:04"},{"url":"hs.fi","country":"Finland","industry":"Media","performance":46,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 20:15:25"},{"url":"yle.fi","country":"Finland","industry":"Media","performance":45,"accessibility":80,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 20:15:06"},{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-19 20:15:43"},{"url":"mtv.fi","country":"Finland","industry":"Media","performance":38,"accessibility":81,"best_practices":92,"seo":99,"pwa":78,"test_date":"2025-10-19 20:15:57"},{"url":"verkkokauppa.com","country":"Finland","industry":"E-commerce","performance":38,"accessibility":100,"best_practices":83,"seo":100,"pwa":100,"test_date":"2025-10-19 20:16:28"},{"url":"op.fi","country":"Finland","industry":"Finance","performance":36,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 20:16:49"},{"url":"iltalehti.fi","country":"Finland","industry":"Media","performance":34,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:14:50"},{"url":"is.fi","country":"Finland","industry":"Media","performance":20,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-21 13:10:36"}];
+        const countryData = [{"url":"flipsite.io","country":"Finland","industry":"Website editor","performance":100,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-20 20:10:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"suomi24.fi","country":"Finland","industry":"Social Media","performance":64,"accessibility":78,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-19 20:16:10","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"helsinki.fi","country":"Finland","industry":"Education","performance":57,"accessibility":93,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:17:04","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"hs.fi","country":"Finland","industry":"Media","performance":46,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 20:15:25","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":10,"text":"+10","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"yle.fi","country":"Finland","industry":"Media","performance":45,"accessibility":80,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 20:15:06","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-19 20:15:43","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mtv.fi","country":"Finland","industry":"Media","performance":38,"accessibility":81,"best_practices":92,"seo":99,"pwa":78,"test_date":"2025-10-19 20:15:57","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"verkkokauppa.com","country":"Finland","industry":"E-commerce","performance":38,"accessibility":100,"best_practices":83,"seo":100,"pwa":100,"test_date":"2025-10-19 20:16:28","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"op.fi","country":"Finland","industry":"Finance","performance":36,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-19 20:16:49","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"iltalehti.fi","country":"Finland","industry":"Media","performance":34,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:14:50","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"is.fi","country":"Finland","industry":"Media","performance":20,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-21 13:10:36","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-28,"text":"-28","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
         let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...countryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+            
+            currentSort = { column, order };
+            updateCountryTable(sorted);
+            updateSortIndicators();
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
+                } else {
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
         
         // Enhanced search functionality with accessibility features
         searchInput.addEventListener('input', function() {
@@ -581,21 +737,22 @@
             clearTimeout(searchTimeout);
             
             searchTimeout = setTimeout(() => {
-                const filtered = countryData.filter(site => 
+                filteredData = countryData.filter(site => 
                     site.url.toLowerCase().includes(query) ||
                     (site.industry && site.industry.toLowerCase().includes(query))
                 );
                 
-                updateCountryTable(filtered);
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
                 
                 // Announce results to screen readers
                 let announcement = '';
                 if (query.trim() === '') {
                     announcement = `Showing all ${countryData.length} websites from Finland`;
-                } else if (filtered.length === 0) {
+                } else if (filteredData.length === 0) {
                     announcement = `No results found for "${query}" in Finland`;
                 } else {
-                    announcement = `Found ${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${query}" in Finland`;
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Finland`;
                 }
                 
                 if (liveRegion) {
@@ -603,6 +760,140 @@
                 }
             }, 300);
         });
+        
+        // Add click handlers for sortable headers
+        document.querySelectorAll('.sortable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                sortData(column, newOrder);
+            });
+            
+            // Add keyboard support
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+            
+            // Make headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+        
+        // Add click handlers for sort buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const order = this.getAttribute('data-order');
+                
+                // Update active button
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                sortData(column, order);
+            });
+        });
+        
+        function updateCountryTable(data) {
+            const getScoreClass = (score) => {
+                if (score >= 90) return 'excellent';
+                if (score >= 70) return 'good';
+                if (score >= 50) return 'average';
+                return 'poor';
+            };
+            
+            const getScoreDescription = (score) => {
+                if (score >= 90) return 'Excellent';
+                if (score >= 70) return 'Good';
+                if (score >= 50) return 'Average';
+                return 'Poor';
+            };
+            
+            const getTrendArrow = (trend) => {
+                switch(trend) {
+                    case 'up': return '<span class="trend-arrow trend-up">↗</span>';
+                    case 'down': return '<span class="trend-arrow trend-down">↘</span>';
+                    default: return '';
+                }
+            };
+            
+            const getPerformanceDelta = (current, previous) => {
+                if (previous === null || previous === undefined) {
+                    return { delta: 0, text: '', class: 'delta-neutral' };
+                }
+                const delta = current - previous;
+                if (delta > 0) {
+                    return { delta, text: `+${delta}`, class: 'delta-positive' };
+                } else if (delta < 0) {
+                    return { delta, text: `${delta}`, class: 'delta-negative' };
+                } else {
+                    return { delta: 0, text: '±0', class: 'delta-neutral' };
+                }
+            };
+            
+            tableBody.innerHTML = data.map((site, index) => {
+                const perfDelta = site.performance_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const accDelta = site.accessibility_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const seoDelta = site.seo_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const bpDelta = site.best_practices_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const pwaDelta = site.pwa_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                
+                return `
+                <tr class="site-row ${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                    data-url="${site.url}" 
+                    data-industry="${site.industry || 'unknown'}"
+                    data-performance="${site.performance}"
+                    data-accessibility="${site.accessibility}"
+                    data-seo="${site.seo}"
+                    data-best-practices="${site.best_practices}"
+                    data-pwa="${site.pwa}"
+                    data-test-date="${site.test_date}">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}${perfDelta.delta !== 0 ? `, trend: ${perfDelta.text} points` : ''}">
+                        ${site.performance}%${getTrendArrow(site.performance_trend)}${perfDelta.delta !== 0 ? `<span class="performance-delta ${perfDelta.class}">${perfDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}${accDelta.delta !== 0 ? `, trend: ${accDelta.text} points` : ''}">
+                        ${site.accessibility}%${getTrendArrow(site.accessibility_trend)}${accDelta.delta !== 0 ? `<span class="performance-delta ${accDelta.class}">${accDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}${seoDelta.delta !== 0 ? `, trend: ${seoDelta.text} points` : ''}">
+                        ${site.seo}%${getTrendArrow(site.seo_trend)}${seoDelta.delta !== 0 ? `<span class="performance-delta ${seoDelta.class}">${seoDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}${bpDelta.delta !== 0 ? `, trend: ${bpDelta.text} points` : ''}">
+                        ${site.best_practices}%${getTrendArrow(site.best_practices_trend)}${bpDelta.delta !== 0 ? `<span class="performance-delta ${bpDelta.class}">${bpDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}${pwaDelta.delta !== 0 ? `, trend: ${pwaDelta.text} points` : ''}">
+                        ${site.pwa}%${getTrendArrow(site.pwa_trend)}${pwaDelta.delta !== 0 ? `<span class="performance-delta ${pwaDelta.class}">${pwaDelta.text}</span>` : ''}
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+        
+        // Initialize with default sort
+        updateSortIndicators();
         
         function updateCountryTable(sites) {
             tableBody.innerHTML = sites.map((site, index) => `

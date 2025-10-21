@@ -103,6 +103,21 @@ class WebsiteGenerator {
     }
   }
 
+  getPerformanceDelta(current, previous) {
+    if (previous === null || previous === undefined) {
+      return { delta: 0, text: '', class: 'delta-neutral' };
+    }
+    
+    const delta = current - previous;
+    if (delta > 0) {
+      return { delta, text: `+${delta}`, class: 'delta-positive' };
+    } else if (delta < 0) {
+      return { delta, text: `${delta}`, class: 'delta-negative' };
+    } else {
+      return { delta: 0, text: '±0', class: 'delta-neutral' };
+    }
+  }
+
   async generateWebsite() {
     console.log('🌐 Generating static website...');
     
@@ -719,10 +734,34 @@ class WebsiteGenerator {
 
   async generateCountryPages() {
     for (const countryData of this.domainsData) {
-      const countryScores = (await this.db.getScoresByCountry(countryData.country))
-        .sort((a, b) => b.performance - a.performance); // Sort by performance descending
+      const countryScoresWithTrends = await this.db.getScoresWithTrendsForCountry(countryData.country);
       
-      if (countryScores.length === 0) continue;
+      if (countryScoresWithTrends.length === 0) continue;
+
+      // Convert to the expected format with trend information
+      const countryScores = countryScoresWithTrends.map(row => ({
+        url: row.url,
+        country: row.country,
+        industry: row.industry,
+        performance: row.current_performance,
+        accessibility: row.current_accessibility,
+        best_practices: row.current_best_practices,
+        seo: row.current_seo,
+        pwa: row.current_pwa,
+        test_date: row.test_date,
+        // Trend data
+        performance_trend: this.getTrend(row.current_performance, row.previous_performance),
+        accessibility_trend: this.getTrend(row.current_accessibility, row.previous_accessibility),
+        best_practices_trend: this.getTrend(row.current_best_practices, row.previous_best_practices),
+        seo_trend: this.getTrend(row.current_seo, row.previous_seo),
+        pwa_trend: this.getTrend(row.current_pwa, row.previous_pwa),
+        // Performance deltas
+        performance_delta: this.getPerformanceDelta(row.current_performance, row.previous_performance),
+        accessibility_delta: this.getPerformanceDelta(row.current_accessibility, row.previous_accessibility),
+        best_practices_delta: this.getPerformanceDelta(row.current_best_practices, row.previous_best_practices),
+        seo_delta: this.getPerformanceDelta(row.current_seo, row.previous_seo),
+        pwa_delta: this.getPerformanceDelta(row.current_pwa, row.previous_pwa)
+      })).sort((a, b) => b.performance - a.performance);
 
       const fileName = `country-${countryData.country.toLowerCase().replace(/\s+/g, '-')}.html`;
       const stats = this.calculateCountrySpecificStats(countryScores);
@@ -783,6 +822,20 @@ class WebsiteGenerator {
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
                 <h2 id="websites-heading">🏅 Top Websites in ${countryData.country}</h2>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search ${countryData.country} websites by name or industry</label>
                     <input type="text" 
@@ -798,24 +851,57 @@ class WebsiteGenerator {
                         <caption class="sr-only">
                             Lighthouse performance data for ${countryScores.length} websites from ${countryData.country}, 
                             sorted by performance score in descending order. 
-                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Industry</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    Rank <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    Website <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="industry" aria-sort="none">
+                                    Industry <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    Accessibility <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    SEO <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    Best Practices <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    PWA <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    Last Scanned <span class="sort-indicator"></span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
-                        ${countryScores.map((site, index) => `
-                            <tr class="site-row">
+                        ${countryScores.map((site, index) => {
+                            const perfDelta = site.performance_delta;
+                            const accDelta = site.accessibility_delta;
+                            const seoDelta = site.seo_delta;
+                            const bpDelta = site.best_practices_delta;
+                            const pwaDelta = site.pwa_delta;
+                            
+                            return `
+                            <tr class="site-row ${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                                data-url="${site.url}" 
+                                data-industry="${site.industry || 'unknown'}"
+                                data-performance="${site.performance}"
+                                data-accessibility="${site.accessibility}"
+                                data-seo="${site.seo}"
+                                data-best-practices="${site.best_practices}"
+                                data-pwa="${site.pwa}"
+                                data-test-date="${site.test_date}">
                                 <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
                                 <td>
                                     <a href="domain-${site.url.replace(/\./g, '-')}.html" 
@@ -832,31 +918,31 @@ class WebsiteGenerator {
                                     </a>
                                 </td>
                                 <td class="score perf-${this.getScoreClass(site.performance)}"
-                                    aria-label="Performance score: ${site.performance} percent, ${this.getScoreDescription(site.performance)}">
-                                    ${site.performance}%
+                                    aria-label="Performance score: ${site.performance} percent, ${this.getScoreDescription(site.performance)}${perfDelta.delta !== 0 ? `, trend: ${perfDelta.text} points` : ''}">
+                                    ${site.performance}%${this.getTrendArrow(site.performance_trend)}${perfDelta.delta !== 0 ? `<span class="performance-delta ${perfDelta.class}">${perfDelta.text}</span>` : ''}
                                 </td>
                                 <td class="score acc-${this.getScoreClass(site.accessibility)}"
-                                    aria-label="Accessibility score: ${site.accessibility} percent, ${this.getScoreDescription(site.accessibility)}">
-                                    ${site.accessibility}%
+                                    aria-label="Accessibility score: ${site.accessibility} percent, ${this.getScoreDescription(site.accessibility)}${accDelta.delta !== 0 ? `, trend: ${accDelta.text} points` : ''}">
+                                    ${site.accessibility}%${this.getTrendArrow(site.accessibility_trend)}${accDelta.delta !== 0 ? `<span class="performance-delta ${accDelta.class}">${accDelta.text}</span>` : ''}
                                 </td>
                                 <td class="score seo-${this.getScoreClass(site.seo)}"
-                                    aria-label="SEO score: ${site.seo} percent, ${this.getScoreDescription(site.seo)}">
-                                    ${site.seo}%
+                                    aria-label="SEO score: ${site.seo} percent, ${this.getScoreDescription(site.seo)}${seoDelta.delta !== 0 ? `, trend: ${seoDelta.text} points` : ''}">
+                                    ${site.seo}%${this.getTrendArrow(site.seo_trend)}${seoDelta.delta !== 0 ? `<span class="performance-delta ${seoDelta.class}">${seoDelta.text}</span>` : ''}
                                 </td>
                                 <td class="score bp-${this.getScoreClass(site.best_practices)}"
-                                    aria-label="Best Practices score: ${site.best_practices} percent, ${this.getScoreDescription(site.best_practices)}">
-                                    ${site.best_practices}%
+                                    aria-label="Best Practices score: ${site.best_practices} percent, ${this.getScoreDescription(site.best_practices)}${bpDelta.delta !== 0 ? `, trend: ${bpDelta.text} points` : ''}">
+                                    ${site.best_practices}%${this.getTrendArrow(site.best_practices_trend)}${bpDelta.delta !== 0 ? `<span class="performance-delta ${bpDelta.class}">${bpDelta.text}</span>` : ''}
                                 </td>
                                 <td class="score pwa-${this.getScoreClass(site.pwa)}"
-                                    aria-label="PWA score: ${site.pwa} percent, ${this.getScoreDescription(site.pwa)}">
-                                    ${site.pwa}%
+                                    aria-label="PWA score: ${site.pwa} percent, ${this.getScoreDescription(site.pwa)}${pwaDelta.delta !== 0 ? `, trend: ${pwaDelta.text} points` : ''}">
+                                    ${site.pwa}%${this.getTrendArrow(site.pwa_trend)}${pwaDelta.delta !== 0 ? `<span class="performance-delta ${pwaDelta.class}">${pwaDelta.text}</span>` : ''}
                                 </td>
                                 <td class="date" data-date="${site.test_date}"
                                     aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
                                     <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
                                 </td>
-                            </tr>
-                        `).join('')}
+                            </tr>`;
+                        }).join('')}
                     </tbody>
                 </table>
             </div>
@@ -881,6 +967,53 @@ class WebsiteGenerator {
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
         let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...countryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+            
+            currentSort = { column, order };
+            updateCountryTable(sorted);
+            updateSortIndicators();
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(\`sort-\${currentSort.order}\`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
+                } else {
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
         
         // Enhanced search functionality with accessibility features
         searchInput.addEventListener('input', function() {
@@ -890,21 +1023,22 @@ class WebsiteGenerator {
             clearTimeout(searchTimeout);
             
             searchTimeout = setTimeout(() => {
-                const filtered = countryData.filter(site => 
+                filteredData = countryData.filter(site => 
                     site.url.toLowerCase().includes(query) ||
                     (site.industry && site.industry.toLowerCase().includes(query))
                 );
                 
-                updateCountryTable(filtered);
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
                 
                 // Announce results to screen readers
                 let announcement = '';
                 if (query.trim() === '') {
                     announcement = \`Showing all \${countryData.length} websites from ${countryData.country}\`;
-                } else if (filtered.length === 0) {
+                } else if (filteredData.length === 0) {
                     announcement = \`No results found for "\${query}" in ${countryData.country}\`;
                 } else {
-                    announcement = \`Found \${filtered.length} result\${filtered.length === 1 ? '' : 's'} for "\${query}" in ${countryData.country}\`;
+                    announcement = \`Found \${filteredData.length} result\${filteredData.length === 1 ? '' : 's'} for "\${query}" in ${countryData.country}\`;
                 }
                 
                 if (liveRegion) {
@@ -912,6 +1046,140 @@ class WebsiteGenerator {
                 }
             }, 300);
         });
+        
+        // Add click handlers for sortable headers
+        document.querySelectorAll('.sortable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                sortData(column, newOrder);
+            });
+            
+            // Add keyboard support
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+            
+            // Make headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+        
+        // Add click handlers for sort buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const order = this.getAttribute('data-order');
+                
+                // Update active button
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                sortData(column, order);
+            });
+        });
+        
+        function updateCountryTable(data) {
+            const getScoreClass = (score) => {
+                if (score >= 90) return 'excellent';
+                if (score >= 70) return 'good';
+                if (score >= 50) return 'average';
+                return 'poor';
+            };
+            
+            const getScoreDescription = (score) => {
+                if (score >= 90) return 'Excellent';
+                if (score >= 70) return 'Good';
+                if (score >= 50) return 'Average';
+                return 'Poor';
+            };
+            
+            const getTrendArrow = (trend) => {
+                switch(trend) {
+                    case 'up': return '<span class="trend-arrow trend-up">↗</span>';
+                    case 'down': return '<span class="trend-arrow trend-down">↘</span>';
+                    default: return '';
+                }
+            };
+            
+            const getPerformanceDelta = (current, previous) => {
+                if (previous === null || previous === undefined) {
+                    return { delta: 0, text: '', class: 'delta-neutral' };
+                }
+                const delta = current - previous;
+                if (delta > 0) {
+                    return { delta, text: \`+\${delta}\`, class: 'delta-positive' };
+                } else if (delta < 0) {
+                    return { delta, text: \`\${delta}\`, class: 'delta-negative' };
+                } else {
+                    return { delta: 0, text: '±0', class: 'delta-neutral' };
+                }
+            };
+            
+            tableBody.innerHTML = data.map((site, index) => {
+                const perfDelta = site.performance_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const accDelta = site.accessibility_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const seoDelta = site.seo_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const bpDelta = site.best_practices_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const pwaDelta = site.pwa_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                
+                return \`
+                <tr class="site-row \${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                    data-url="\${site.url}" 
+                    data-industry="\${site.industry || 'unknown'}"
+                    data-performance="\${site.performance}"
+                    data-accessibility="\${site.accessibility}"
+                    data-seo="\${site.seo}"
+                    data-best-practices="\${site.best_practices}"
+                    data-pwa="\${site.pwa}"
+                    data-test-date="\${site.test_date}">
+                    <td class="rank" aria-label="Rank \${index + 1}">#\${index + 1}</td>
+                    <td>
+                        <a href="domain-\${site.url.replace(/\\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for \${site.url}">
+                            \${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all \${site.industry || 'Unknown'} industry websites">
+                            \${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-\${getScoreClass(site.performance)}"
+                        aria-label="Performance score: \${site.performance} percent, \${getScoreDescription(site.performance)}\${perfDelta.delta !== 0 ? \`, trend: \${perfDelta.text} points\` : ''}">
+                        \${site.performance}%\${getTrendArrow(site.performance_trend)}\${perfDelta.delta !== 0 ? \`<span class="performance-delta \${perfDelta.class}">\${perfDelta.text}</span>\` : ''}
+                    </td>
+                    <td class="score acc-\${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: \${site.accessibility} percent, \${getScoreDescription(site.accessibility)}\${accDelta.delta !== 0 ? \`, trend: \${accDelta.text} points\` : ''}">
+                        \${site.accessibility}%\${getTrendArrow(site.accessibility_trend)}\${accDelta.delta !== 0 ? \`<span class="performance-delta \${accDelta.class}">\${accDelta.text}</span>\` : ''}
+                    </td>
+                    <td class="score seo-\${getScoreClass(site.seo)}"
+                        aria-label="SEO score: \${site.seo} percent, \${getScoreDescription(site.seo)}\${seoDelta.delta !== 0 ? \`, trend: \${seoDelta.text} points\` : ''}">
+                        \${site.seo}%\${getTrendArrow(site.seo_trend)}\${seoDelta.delta !== 0 ? \`<span class="performance-delta \${seoDelta.class}">\${seoDelta.text}</span>\` : ''}
+                    </td>
+                    <td class="score bp-\${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: \${site.best_practices} percent, \${getScoreDescription(site.best_practices)}\${bpDelta.delta !== 0 ? \`, trend: \${bpDelta.text} points\` : ''}">
+                        \${site.best_practices}%\${getTrendArrow(site.best_practices_trend)}\${bpDelta.delta !== 0 ? \`<span class="performance-delta \${bpDelta.class}">\${bpDelta.text}</span>\` : ''}
+                    </td>
+                    <td class="score pwa-\${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: \${site.pwa} percent, \${getScoreDescription(site.pwa)}\${pwaDelta.delta !== 0 ? \`, trend: \${pwaDelta.text} points\` : ''}">
+                        \${site.pwa}%\${getTrendArrow(site.pwa_trend)}\${pwaDelta.delta !== 0 ? \`<span class="performance-delta \${pwaDelta.class}">\${pwaDelta.text}</span>\` : ''}
+                    </td>
+                    <td class="date" data-date="\${site.test_date}"
+                        aria-label="Last tested on \${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>\`;
+            }).join('');
+        }
+        
+        // Initialize with default sort
+        updateSortIndicators();
         
         function updateCountryTable(sites) {
             tableBody.innerHTML = sites.map((site, index) => \`
@@ -1132,9 +1400,34 @@ class WebsiteGenerator {
     const industries = [...new Set(allScores.map(score => score.industry).filter(industry => industry))];
     
     for (const industry of industries) {
-      const industryScores = allScores
-        .filter(score => score.industry === industry)
-        .sort((a, b) => b.performance - a.performance); // Sort by performance descending
+      const industryScoresWithTrends = await this.db.getScoresWithTrendsForIndustry(industry);
+      
+      if (industryScoresWithTrends.length === 0) continue;
+
+      // Convert to the expected format with trend information
+      const industryScores = industryScoresWithTrends.map(row => ({
+        url: row.url,
+        country: row.country,
+        industry: row.industry,
+        performance: row.current_performance,
+        accessibility: row.current_accessibility,
+        best_practices: row.current_best_practices,
+        seo: row.current_seo,
+        pwa: row.current_pwa,
+        test_date: row.test_date,
+        // Trend data
+        performance_trend: this.getTrend(row.current_performance, row.previous_performance),
+        accessibility_trend: this.getTrend(row.current_accessibility, row.previous_accessibility),
+        best_practices_trend: this.getTrend(row.current_best_practices, row.previous_best_practices),
+        seo_trend: this.getTrend(row.current_seo, row.previous_seo),
+        pwa_trend: this.getTrend(row.current_pwa, row.previous_pwa),
+        // Performance deltas
+        performance_delta: this.getPerformanceDelta(row.current_performance, row.previous_performance),
+        accessibility_delta: this.getPerformanceDelta(row.current_accessibility, row.previous_accessibility),
+        best_practices_delta: this.getPerformanceDelta(row.current_best_practices, row.previous_best_practices),
+        seo_delta: this.getPerformanceDelta(row.current_seo, row.previous_seo),
+        pwa_delta: this.getPerformanceDelta(row.current_pwa, row.previous_pwa)
+      })).sort((a, b) => b.performance - a.performance);
       const fileName = `industry-${industry.toLowerCase().replace(/\s+/g, '-')}.html`;
       const stats = this.calculateIndustrySpecificStats(industryScores);
       
@@ -2465,6 +2758,195 @@ input[type="text"]:focus, input[type="search"]:focus {
     background: rgba(255, 255, 255, 0.2);
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+/* Advanced Table Sorting */
+.sortable-header {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 25px !important;
+    transition: background-color 0.2s ease;
+}
+
+.sortable-header:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sortable-header:focus {
+    outline: 2px solid #007bff;
+    outline-offset: -2px;
+}
+
+.sort-indicator {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.sortable-header.sort-asc .sort-indicator::after {
+    content: "▲";
+    opacity: 1;
+    color: #007bff;
+}
+
+.sortable-header.sort-desc .sort-indicator::after {
+    content: "▼";
+    opacity: 1;
+    color: #007bff;
+}
+
+.sortable-header:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+    content: "⇅";
+}
+
+.sortable-header:hover .sort-indicator {
+    opacity: 1;
+}
+
+/* Enhanced Trend Arrows */
+.trend-arrow {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 6px;
+    display: inline-block;
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+}
+
+.trend-up {
+    color: #28a745;
+    animation: trendPulse 2s infinite;
+}
+
+.trend-down {
+    color: #dc3545;
+    animation: trendPulse 2s infinite;
+}
+
+.trend-same {
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+@keyframes trendPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Performance Delta Badges */
+.performance-delta {
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 6px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.delta-positive {
+    background: #d4edda;
+    color: #155724;
+}
+
+.delta-negative {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.delta-neutral {
+    background: #e2e3e5;
+    color: #6c757d;
+}
+
+/* Advanced Sorting Controls */
+.sorting-controls {
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sorting-controls h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.sort-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.sort-btn {
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #ffffff;
+}
+
+.sort-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.sort-btn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.sort-btn.desc {
+    background: #6c757d;
+    color: white;
+    border-color: #6c757d;
+}
+
+/* Table Row Highlighting for Trends */
+.site-row.trending-up {
+    background: linear-gradient(90deg, rgba(40, 167, 69, 0.05) 0%, transparent 100%);
+}
+
+.site-row.trending-down {
+    background: linear-gradient(90deg, rgba(220, 53, 69, 0.05) 0%, transparent 100%);
+}
+
+/* Responsive Enhancements for Trends */
+@media (max-width: 768px) {
+    .trend-arrow {
+        font-size: 0.8em;
+        margin-left: 4px;
+    }
+    
+    .performance-delta {
+        font-size: 0.6em;
+        padding: 1px 4px;
+        margin-left: 4px;
+    }
+    
+    .sorting-controls {
+        padding: 10px;
+    }
+    
+    .sort-buttons {
+        gap: 6px;
+    }
+    
+    .sort-btn {
+        padding: 4px 8px;
+        font-size: 0.75em;
+    }
 }
 
 /* Status and Score Announcements */
