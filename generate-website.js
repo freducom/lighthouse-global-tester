@@ -153,7 +153,7 @@ class WebsiteGenerator {
             </section>
 
             <section class="section">
-                <h2>� Top 5 Industries by Performance</h2>
+                <h2>🏭 Top 5 Industries by Performance</h2>
                 <div class="industry-comparison">
                     <div class="best-industry">
                         <h3>🥇 Best: ${industryStats.best.name}</h3>
@@ -187,14 +187,11 @@ class WebsiteGenerator {
                     </div>
                 </div>
             </section>
-
-            <section class="section">
-                <h2>�🌍 Top 5 Country Rankings</h2>
-
+        </div>
 
         <section class="section">
-            <h2>� Top 5 Country Rankings</h2>
-            <div class="country-grid">
+            <h2>🌍 Top 5 Country Rankings</h2>
+                <div class="country-grid">
                 ${countryStats.all.slice(0, 5).map((country, index) => `
                     <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" class="country-card">
                         <div class="country-rank">#${index + 1}</div>
@@ -211,11 +208,10 @@ class WebsiteGenerator {
             <div class="see-all-link">
                 <a href="all-countries.html" class="btn-see-all">🌍 See all countries</a>
             </div>
-        </section>
-        </div>
+            </section>
 
-        <section class="section">
-            <h2>�🏅 Global Top 10 Websites</h2>
+            <section class="section">
+                <h2>🏅 Global Top 10 Websites</h2>
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="🔍 Search among all ${allScores.length} websites..." />
             </div>
@@ -386,9 +382,9 @@ class WebsiteGenerator {
                 'Italy': '🇮🇹',
                 'New Zealand': '🇳🇿',
                 'South Africa': '🇿🇦',
-                'Egypt': '�🇬',
+                'Egypt': '🇪🇬',
                 'Libya': '🇱🇾',
-                'Iran': '�🇮🇷',
+                'Iran': '🇮🇷',
                 'Greece': '🇬🇷',
                 'Spain': '🇪🇸',
                 'France': '🇫🇷',
@@ -1012,6 +1008,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -1110,9 +1107,10 @@ body {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 30px;
+    min-width: 0;
 }
 
 .section {
@@ -1121,6 +1119,9 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    min-height: auto;
+    overflow: visible;
+    min-width: 0;
 }
 
 .section h2 {
@@ -1169,6 +1170,8 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 8px;
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 .best-industry {
@@ -1185,6 +1188,11 @@ body {
     font-size: 2em;
     font-weight: 700;
     margin: 10px 0;
+}
+
+.industry-rankings {
+    margin-top: 20px;
+    overflow: visible;
 }
 
 .industry-rankings h3 {
@@ -1535,6 +1543,25 @@ body {
 }
 
 /* Responsive design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .industry-comparison {
+        gap: 15px;
+    }
+    
+    .country-grid {
+        gap: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .content-grid {
         grid-template-columns: 1fr;
@@ -1544,12 +1571,23 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .industry-comparison {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .country-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
     .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     
     .header {
         padding: 20px;
+        margin: -20px -20px 20px -20px;
     }
     
     .header h1 {
@@ -2001,6 +2039,7 @@ body {
         avgAccessibility: Math.round(scores.reduce((sum, s) => sum + s.accessibility, 0) / scores.length),
         avgSeo: Math.round(scores.reduce((sum, s) => sum + s.seo, 0) / scores.length),
         avgBestPractices: Math.round(scores.reduce((sum, s) => sum + s.best_practices, 0) / scores.length),
+        avgPwa: Math.round(scores.reduce((sum, s) => sum + s.pwa, 0) / scores.length),
         count: scores.length
       };
     }).sort((a, b) => b.avgPerformance - a.avgPerformance);
