@@ -50,6 +50,9 @@ class WebsiteGenerator {
     await this.generateCountryPages();
     await this.generateIndustryPages();
     await this.generateDomainPages();
+    await this.generateAllCountriesPage();
+    await this.generateAllIndustriesPage();
+    await this.generateAllCompaniesPage();
     await this.generateAssets();
 
     console.log('✅ Static website generated successfully!');
@@ -70,6 +73,7 @@ class WebsiteGenerator {
     const allScores = allScoresWithTrends.map(row => ({
       url: row.url,
       country: row.country,
+      industry: row.industry,
       performance: row.current_performance,
       accessibility: row.current_accessibility,
       best_practices: row.current_best_practices,
@@ -178,30 +182,40 @@ class WebsiteGenerator {
                             </a>
                         `).join('')}
                     </div>
+                    <div class="see-all-link">
+                        <a href="all-industries.html" class="btn-see-all">📊 See all industries</a>
+                    </div>
                 </div>
             </section>
 
             <section class="section">
-                <h2>�🌍 Country Rankings</h2>
-                <div class="country-grid">
-                    ${countryStats.all.map((country, index) => `
-                        <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" class="country-card">
-                            <div class="country-rank">#${index + 1}</div>
-                            <div class="country-flag">${this.getCountryFlag(country.name)}</div>
-                            <h3>${country.name}</h3>
-                            <div class="country-metrics">
-                                <span class="metric">P: ${country.avgPerformance}%</span>
-                                <span class="metric">A: ${country.avgAccessibility}%</span>
-                                <span class="metric">SEO: ${country.avgSeo}%</span>
-                            </div>
-                        </a>
-                    `).join('')}
-                </div>
-            </section>
+                <h2>�🌍 Top 5 Country Rankings</h2>
+
+
+        <section class="section">
+            <h2>� Top 5 Country Rankings</h2>
+            <div class="country-grid">
+                ${countryStats.all.slice(0, 5).map((country, index) => `
+                    <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" class="country-card">
+                        <div class="country-rank">#${index + 1}</div>
+                        <div class="country-flag">${this.getCountryFlag(country.name)}</div>
+                        <h3>${country.name}</h3>
+                        <div class="country-metrics">
+                            <span class="metric">P: ${country.avgPerformance}%</span>
+                            <span class="metric">A: ${country.avgAccessibility}%</span>
+                            <span class="metric">SEO: ${country.avgSeo}%</span>
+                        </div>
+                    </a>
+                `).join('')}
+            </div>
+            <div class="see-all-link">
+                <a href="all-countries.html" class="btn-see-all">🌍 See all countries</a>
+            </div>
+        </section>
         </div>
 
         <section class="section">
-            <h2>🏅 Global Top 10 Websites</h2>
+            <h2>�🏅 Global Top 10 Websites</h2>
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="🔍 Search among all ${allScores.length} websites..." />
             </div>
@@ -238,6 +252,9 @@ class WebsiteGenerator {
                         `).join('')}
                     </tbody>
                 </table>
+            </div>
+            <div class="see-all-link">
+                <a href="all-companies.html" class="btn-see-all">🏢 See all companies</a>
             </div>
         </section>
 
@@ -1289,6 +1306,31 @@ body {
     font-weight: 500;
 }
 
+.see-all-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-see-all {
+    display: inline-block;
+    background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(24, 119, 242, 0.3);
+}
+
+.btn-see-all:hover {
+    background: linear-gradient(135deg, #166dd4 0%, #3a93d4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(24, 119, 242, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
 .search-container {
     margin-bottom: 20px;
 }
@@ -1545,6 +1587,361 @@ body {
     fs.writeFileSync(path.join(this.outputDir, 'styles.css'), css);
   }
 
+  async generateAllCountriesPage() {
+    const allScoresWithTrends = await this.db.getLatestScoresWithTrends();
+    
+    if (allScoresWithTrends.length === 0) {
+      console.log('❌ No data found for all countries page.');
+      return;
+    }
+
+    // Convert to the expected format
+    const allScores = allScoresWithTrends.map(row => ({
+      url: row.url,
+      country: row.country,
+      industry: row.industry,
+      performance: row.current_performance,
+      accessibility: row.current_accessibility,
+      best_practices: row.current_best_practices,
+      seo: row.current_seo,
+      pwa: row.current_pwa,
+      test_date: row.test_date
+    }));
+
+    const countryStats = this.calculateCountryStats(allScores);
+    
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Countries - Global Lighthouse Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌍 All Countries</h1>
+            <p class="subtitle">Complete rankings of all ${countryStats.all.length} countries by performance</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search countries..." />
+            </div>
+            <div class="table-container">
+                <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Performance</th>
+                            <th>Accessibility</th>
+                            <th>SEO</th>
+                            <th>Best Practices</th>
+                            <th>PWA</th>
+                            <th>Websites</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        ${countryStats.all.map((country, index) => `
+                            <tr class="country-row" data-country="${country.name.toLowerCase()}">
+                                <td class="rank">#${index + 1}</td>
+                                <td><a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(country.name)} ${country.name}</a></td>
+                                <td class="score perf-${this.getScoreClass(country.avgPerformance)}">${country.avgPerformance}%</td>
+                                <td class="score acc-${this.getScoreClass(country.avgAccessibility)}">${country.avgAccessibility}%</td>
+                                <td class="score seo-${this.getScoreClass(country.avgSeo)}">${country.avgSeo}%</td>
+                                <td class="score bp-${this.getScoreClass(country.avgBestPractices)}">${country.avgBestPractices}%</td>
+                                <td class="score pwa-${this.getScoreClass(country.avgPwa)}">${country.avgPwa}%</td>
+                                <td class="count">${country.count}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>📊 Generated by Global Lighthouse Tracker | ${countryStats.all.length} countries analyzed</p>
+            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const tableBody = document.getElementById('tableBody');
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                rows.forEach(row => {
+                    const countryName = row.getAttribute('data-country');
+                    if (countryName.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'all-countries.html'), html);
+  }
+
+  async generateAllIndustriesPage() {
+    const allScoresWithTrends = await this.db.getLatestScoresWithTrends();
+    
+    if (allScoresWithTrends.length === 0) {
+      console.log('❌ No data found for all industries page.');
+      return;
+    }
+
+    // Convert to the expected format
+    const allScores = allScoresWithTrends.map(row => ({
+      url: row.url,
+      country: row.country,
+      industry: row.industry,
+      performance: row.current_performance,
+      accessibility: row.current_accessibility,
+      best_practices: row.current_best_practices,
+      seo: row.current_seo,
+      pwa: row.current_pwa,
+      test_date: row.test_date
+    }));
+
+    const industryStats = this.calculateIndustryStats(allScores);
+    
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Industries - Global Lighthouse Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏭 All Industries</h1>
+            <p class="subtitle">Complete rankings of all ${industryStats.all.length} industries by performance</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search industries..." />
+            </div>
+            <div class="table-container">
+                <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Industry</th>
+                            <th>Performance</th>
+                            <th>Accessibility</th>
+                            <th>SEO</th>
+                            <th>Best Practices</th>
+                            <th>PWA</th>
+                            <th>Websites</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        ${industryStats.all.map((industry, index) => `
+                            <tr class="industry-row" data-industry="${industry.name.toLowerCase()}">
+                                <td class="rank">#${index + 1}</td>
+                                <td><a href="industry-${industry.name.toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${industry.name}</a></td>
+                                <td class="score perf-${this.getScoreClass(industry.avgPerformance)}">${industry.avgPerformance}%</td>
+                                <td class="score acc-${this.getScoreClass(industry.avgAccessibility)}">${industry.avgAccessibility}%</td>
+                                <td class="score seo-${this.getScoreClass(industry.avgSeo)}">${industry.avgSeo}%</td>
+                                <td class="score bp-${this.getScoreClass(industry.avgBestPractices)}">${industry.avgBestPractices}%</td>
+                                <td class="score pwa-${this.getScoreClass(industry.avgPwa)}">${industry.avgPwa}%</td>
+                                <td class="count">${industry.count}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>📊 Generated by Global Lighthouse Tracker | ${industryStats.all.length} industries analyzed</p>
+            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const tableBody = document.getElementById('tableBody');
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                rows.forEach(row => {
+                    const industryName = row.getAttribute('data-industry');
+                    if (industryName.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'all-industries.html'), html);
+  }
+
+  async generateAllCompaniesPage() {
+    const allScoresWithTrends = await this.db.getLatestScoresWithTrends();
+    
+    if (allScoresWithTrends.length === 0) {
+      console.log('❌ No data found for all companies page.');
+      return;
+    }
+
+    // Convert to the expected format and add trend information
+    const allScores = allScoresWithTrends.map(row => ({
+      url: row.url,
+      country: row.country,
+      industry: row.industry,
+      performance: row.current_performance,
+      accessibility: row.current_accessibility,
+      best_practices: row.current_best_practices,
+      seo: row.current_seo,
+      pwa: row.current_pwa,
+      test_date: row.test_date,
+      // Trend data
+      performance_trend: this.getTrend(row.current_performance, row.previous_performance),
+      accessibility_trend: this.getTrend(row.current_accessibility, row.previous_accessibility),
+      best_practices_trend: this.getTrend(row.current_best_practices, row.previous_best_practices),
+      seo_trend: this.getTrend(row.current_seo, row.previous_seo),
+      pwa_trend: this.getTrend(row.current_pwa, row.previous_pwa)
+    }));
+
+    // Sort by performance score (descending)
+    const rankedSites = allScores.sort((a, b) => b.performance - a.performance);
+    
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Companies - Global Lighthouse Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏢 All Companies</h1>
+            <p class="subtitle">Complete rankings of all ${rankedSites.length} websites by performance</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Search among all ${rankedSites.length} websites..." />
+            </div>
+            <div class="table-container">
+                <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Website</th>
+                            <th>Country</th>
+                            <th>Industry</th>
+                            <th>Performance</th>
+                            <th>Accessibility</th>
+                            <th>SEO</th>
+                            <th>Best Practices</th>
+                            <th>PWA</th>
+                            <th>Last Scanned</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        ${rankedSites.map((site, index) => `
+                            <tr class="site-row" data-url="${site.url}" data-country="${this.normalizeCountry(site.country)}" data-industry="${(site.industry || 'unknown').toLowerCase()}">
+                                <td class="rank">#${index + 1}</td>
+                                <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
+                                <td><a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}</a></td>
+                                <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
+                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}% ${this.getTrendArrow(site.performance_trend)}</td>
+                                <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
+                                <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
+                                <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
+                                <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
+                                <td class="date" data-date="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>📊 Generated by Global Lighthouse Tracker | ${rankedSites.length} websites analyzed</p>
+            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const tableBody = document.getElementById('tableBody');
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+            // Format all dates on page load
+            function formatAllDates() {
+                const dateElements = document.querySelectorAll('.date[data-date]');
+                dateElements.forEach(element => {
+                    const isoDate = element.getAttribute('data-date');
+                    const date = new Date(isoDate);
+                    element.textContent = date.toLocaleDateString();
+                });
+            }
+            formatAllDates();
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                rows.forEach(row => {
+                    const url = row.getAttribute('data-url') || '';
+                    const country = row.getAttribute('data-country') || '';
+                    const industry = row.getAttribute('data-industry') || '';
+                    
+                    if (url.includes(searchTerm) || country.includes(searchTerm) || industry.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'all-companies.html'), html);
+  }
+
   calculateGlobalStats(allScores) {
     return {
       avgPerformance: Math.round(allScores.reduce((sum, s) => sum + s.performance, 0) / allScores.length),
@@ -1573,6 +1970,8 @@ body {
         avgPerformance: Math.round(scores.reduce((sum, s) => sum + s.performance, 0) / scores.length),
         avgAccessibility: Math.round(scores.reduce((sum, s) => sum + s.accessibility, 0) / scores.length),
         avgSeo: Math.round(scores.reduce((sum, s) => sum + s.seo, 0) / scores.length),
+        avgBestPractices: Math.round(scores.reduce((sum, s) => sum + s.best_practices, 0) / scores.length),
+        avgPwa: Math.round(scores.reduce((sum, s) => sum + s.pwa, 0) / scores.length),
         count: scores.length
       };
     }).sort((a, b) => b.avgPerformance - a.avgPerformance);

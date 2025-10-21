@@ -311,6 +311,31 @@ body {
     font-weight: 500;
 }
 
+.see-all-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-see-all {
+    display: inline-block;
+    background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(24, 119, 242, 0.3);
+}
+
+.btn-see-all:hover {
+    background: linear-gradient(135deg, #166dd4 0%, #3a93d4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(24, 119, 242, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
 .search-container {
     margin-bottom: 20px;
 }
