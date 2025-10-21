@@ -2697,5 +2697,50 @@
         "industry": "Media"
       }
     ]
+  },
+  {
+    "country": "Mexico",
+    "top_domains": [
+      {"domain": "amazon.com.mx", "industry": "E-commerce"},
+      {"domain": "mercadolibre.com.mx", "industry": "Marketplace"},
+      {"domain": "eleconomista.com.mx", "industry": "Media"},
+      {"domain": "milenio.com", "industry": "Media"},
+      {"domain": "claro.com.mx", "industry": "Telecom"},
+      {"domain": "inegi.org.mx", "industry": "Government"},
+      {"domain": "banxico.org.mx", "industry": "Finance"},
+      {"domain": "ujiapps.mx", "industry": "Software"},
+      {"domain": "walmart.com.mx", "industry": "E-commerce"},
+      {"domain": "seguros-banamex.com.mx", "industry": "Finance"}
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "top_domains": [
+      {"domain": "daraz.pk", "industry": "Marketplace"},
+      {"domain": "olx.com.pk", "industry": "Marketplace"},
+      {"domain": "pakistan.gov.pk", "industry": "Government"},
+      {"domain": "geo.tv", "industry": "Media"},
+      {"domain": "dawn.com", "industry": "Media"},
+      {"domain": "ptcl.com.pk", "industry": "Telecom"},
+      {"domain": "hbl.com", "industry": "Finance"},
+      {"domain": "jobz.pk", "industry": "Jobs"},
+      {"domain": "pakwheels.com", "industry": "Automotive"},
+      {"domain": "rozee.pk", "industry": "Jobs"}
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "top_domains": [
+      {"domain": "daraz.com.bd", "industry": "E-commerce"},
+      {"domain": "bikroy.com", "industry": "Marketplace"},
+      {"domain": "prothomalo.com", "industry": "Media"},
+      {"domain": "bdjobs.com", "industry": "Jobs"},
+      {"domain": "teletalk.com.bd", "industry": "Telecom"},
+      {"domain": "gov.bd", "industry": "Government"},
+      {"domain": "grameenphone.com", "industry": "Telecom"},
+      {"domain": "thefinancialexpress.com.bd", "industry": "Media"},
+      {"domain": "du.ac.bd", "industry": "Education"},
+      {"domain": "shahajalalbank.com.bd", "industry": "Finance"}
+    ]
   }
 ]
