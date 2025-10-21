@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace Industry - Lighthouse Tracker</title>
+    <meta name="description" content="Lighthouse performance analysis for marketplace industry websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -84,18 +89,6 @@
                         
                             <tr class="site-row">
                                 <td class="rank">#3</td>
-                                <td><a href="domain-avito-ru.html" class="domain-link">avito.ru</a></td>
-                                <td><a href="country-russia.html" class="country-link">🇷🇺 Russia</a></td>
-                                <td class="score perf-poor">10%</td>
-                                <td class="score acc-average">64%</td>
-                                <td class="score seo-excellent">93%</td>
-                                <td class="score bp-average">58%</td>
-                                <td class="score pwa-good">89%</td>
-                                <td class="date">10/19/2025</td>
-                            </tr>
-                        
-                            <tr class="site-row">
-                                <td class="rank">#4</td>
                                 <td><a href="domain-blocket-se.html" class="domain-link">blocket.se</a></td>
                                 <td><a href="country-sweden.html" class="country-link">🇸🇪 Sweden</a></td>
                                 <td class="score perf-poor">28%</td>
@@ -106,6 +99,18 @@
                                 <td class="date">10/19/2025</td>
                             </tr>
                         
+                            <tr class="site-row">
+                                <td class="rank">#4</td>
+                                <td><a href="domain-avito-ru.html" class="domain-link">avito.ru</a></td>
+                                <td><a href="country-russia.html" class="country-link">🇷🇺 Russia</a></td>
+                                <td class="score perf-poor">10%</td>
+                                <td class="score acc-average">64%</td>
+                                <td class="score seo-excellent">93%</td>
+                                <td class="score bp-average">58%</td>
+                                <td class="score pwa-good">89%</td>
+                                <td class="date">10/19/2025</td>
+                            </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -113,7 +118,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-19 20:15:43"},{"url":"marktplaats.nl","country":"Netherlands","industry":"Marketplace","performance":42,"accessibility":85,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:23:56"},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42"},{"url":"blocket.se","country":"Sweden","industry":"Marketplace","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29"}];
+        const industryData = [{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-19 20:15:43"},{"url":"marktplaats.nl","country":"Netherlands","industry":"Marketplace","performance":42,"accessibility":85,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:23:56"},{"url":"blocket.se","country":"Sweden","industry":"Marketplace","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29"},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42"}];
         
         function getScoreClass(score) {
             if (score >= 90) return 'excellent';
@@ -154,6 +159,13 @@
                 </tr>
             `).join('');
         });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
     </script>
 </body>
 </html>

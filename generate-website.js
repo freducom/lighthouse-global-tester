@@ -101,6 +101,11 @@ class WebsiteGenerator {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Lighthouse Tracker</title>
+    <meta name="description" content="Track and analyze Lighthouse performance scores across global websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -418,6 +423,21 @@ class WebsiteGenerator {
             return flags[country] || '🌍';
         }
     </script>
+
+    <script>
+        // Service Worker Registration for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('✅ SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('❌ SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>`;
 
@@ -426,7 +446,8 @@ class WebsiteGenerator {
 
   async generateCountryPages() {
     for (const countryData of this.domainsData) {
-      const countryScores = await this.db.getScoresByCountry(countryData.country);
+      const countryScores = (await this.db.getScoresByCountry(countryData.country))
+        .sort((a, b) => b.performance - a.performance); // Sort by performance descending
       
       if (countryScores.length === 0) continue;
 
@@ -440,6 +461,11 @@ class WebsiteGenerator {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${countryData.country} - Lighthouse Tracker</title>
+    <meta name="description" content="Lighthouse performance analysis for ${countryData.country} websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -549,6 +575,13 @@ class WebsiteGenerator {
             if (score >= 50) return 'average';
             return 'poor';
         }
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
     </script>
 </body>
 </html>`;
@@ -569,6 +602,8 @@ class WebsiteGenerator {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global - Lighthouse Tracker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -683,7 +718,9 @@ class WebsiteGenerator {
     const industries = [...new Set(allScores.map(score => score.industry).filter(industry => industry))];
     
     for (const industry of industries) {
-      const industryScores = allScores.filter(score => score.industry === industry);
+      const industryScores = allScores
+        .filter(score => score.industry === industry)
+        .sort((a, b) => b.performance - a.performance); // Sort by performance descending
       const fileName = `industry-${industry.toLowerCase().replace(/\s+/g, '-')}.html`;
       const stats = this.calculateIndustrySpecificStats(industryScores);
       
@@ -694,6 +731,11 @@ class WebsiteGenerator {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${industry} Industry - Lighthouse Tracker</title>
+    <meta name="description" content="Lighthouse performance analysis for ${industry.toLowerCase()} industry websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -807,6 +849,13 @@ class WebsiteGenerator {
                 </tr>
             \`).join('');
         });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
     </script>
 </body>
 </html>`;
@@ -829,6 +878,11 @@ class WebsiteGenerator {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${site.url} - Lighthouse History</title>
+    <meta name="description" content="Lighthouse performance history and insights for ${site.url}">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -979,6 +1033,13 @@ class WebsiteGenerator {
                 }
             }
         });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
     </script>
     ` : ''}
 </body>
@@ -1229,7 +1290,7 @@ body {
     font-weight: 700;
     width: 40px;
     text-align: center;
-    color: #007bff;
+    color: #1c1e21;
 }
 
 .industry-name {
@@ -1282,7 +1343,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #1877f2;
+    background: #1c1e21;
     color: white;
     font-size: 0.8em;
     padding: 4px 8px;
@@ -1655,6 +1716,11 @@ body {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Countries - Global Lighthouse Tracker</title>
+    <meta name="description" content="Complete rankings of all countries by lighthouse performance analysis">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1727,6 +1793,13 @@ body {
                     }
                 });
             });
+            
+            // Register service worker for PWA functionality
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => console.log('SW registered', registration))
+                    .catch(error => console.log('SW registration failed', error));
+            }
         });
     </script>
 </body>
@@ -1764,7 +1837,15 @@ body {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Industries - Global Lighthouse Tracker</title>
+    <meta name="description" content="Complete rankings of all industries by lighthouse performance analysis">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1837,6 +1918,13 @@ body {
                     }
                 });
             });
+            
+            // Register service worker for PWA functionality
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => console.log('SW registered', registration))
+                    .catch(error => console.log('SW registration failed', error));
+            }
         });
     </script>
 </body>
@@ -1881,7 +1969,15 @@ body {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Companies - Global Lighthouse Tracker</title>
+    <meta name="description" content="Complete rankings of all companies by lighthouse performance analysis">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1972,6 +2068,13 @@ body {
                     }
                 });
             });
+            
+            // Register service worker for PWA functionality
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => console.log('SW registered', registration))
+                    .catch(error => console.log('SW registration failed', error));
+            }
         });
     </script>
 </body>

@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Lighthouse Tracker</title>
+    <meta name="description" content="Track and analyze Lighthouse performance scores across global websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -371,7 +376,7 @@
 
     <script>
         // Update the last updated time to show in user's local timezone
-        const generationTime = new Date('2025-10-21T09:38:50.552Z'); // Actual generation time from server
+        const generationTime = new Date('2025-10-21T10:09:51.379Z'); // Actual generation time from server
         document.addEventListener('DOMContentLoaded', function() {
             const updateTimeElement = document.getElementById('updateTime');
             if (updateTimeElement) {
@@ -525,6 +530,21 @@
                 'Global': '🌍'
             };
             return flags[country] || '🌍';
+        }
+    </script>
+
+    <script>
+        // Service Worker Registration for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('✅ SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('❌ SW registration failed: ', registrationError);
+                    });
+            });
         }
     </script>
 </body>
