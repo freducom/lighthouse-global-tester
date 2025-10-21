@@ -196,6 +196,29 @@ body {
     margin: 10px 0;
 }
 
+/* Clickable country tile styles */
+.country-tile-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.country-tile-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.country-tile-link:focus {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+}
+
+.country-tile-link:active {
+    transform: translateY(-1px);
+}
+
 .industry-comparison {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -634,6 +657,33 @@ body {
         margin: -20px -20px 20px -20px;
     }
     
+    /* Hide rightmost industry metrics on smaller screens */
+    .industry-metrics .metric:nth-child(4) {
+        display: none; /* Hide "X sites" count first */
+    }
+}
+
+@media (max-width: 640px) {
+    /* Hide SEO metric next */
+    .industry-metrics .metric:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    /* Hide Accessibility metric next */
+    .industry-metrics .metric:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    /* On very small screens, hide all metrics, keep only industry name */
+    .industry-metrics {
+        display: none;
+    }
+    }
+    
     .header h1 {
         font-size: 2em;
     }
@@ -670,24 +720,6 @@ body {
    ============================================ */
 
 /* Skip Navigation Link */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #000;
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    z-index: 1000;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.skip-link:focus {
-    top: 6px;
-}
-
 /* Enhanced Focus Indicators */
 *:focus {
     outline: 3px solid #007bff;
@@ -719,6 +751,42 @@ button:focus, .btn:focus, input:focus, select:focus, textarea:focus {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+/* Offline Badge */
+.offline-badge {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    z-index: 10000;
+    animation: fadeInPulse 0.5s ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeInPulse {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.9);
+    }
+    50% {
+        transform: translateY(0) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.offline-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
 
 /* High Contrast Color Improvements for WCAG AA compliance */
@@ -782,7 +850,7 @@ a {
 
 a:hover, a:focus {
     color: #003d82;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
@@ -1042,11 +1110,6 @@ input[type="text"]:focus, input[type="search"]:focus {
 
 /* Responsive Accessibility */
 @media (max-width: 768px) {
-    .skip-link {
-        font-size: 16px;
-        padding: 12px;
-    }
-    
     th, td {
         padding: 8px;
         font-size: 14px;

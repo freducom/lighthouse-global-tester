@@ -193,8 +193,10 @@ class WebsiteGenerator {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- Skip Navigation -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Offline Badge -->
+    <div id="offline-badge" class="offline-badge" style="display: none;">
+        🔌 Website Offline
+    </div>
     
     <!-- Live Region for Dynamic Announcements -->
     <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
@@ -207,10 +209,6 @@ class WebsiteGenerator {
             <!-- Main Navigation -->
             <nav aria-label="Main navigation" role="navigation">
                 <ul class="nav-links">
-                    <li><a href="#global-stats">Statistics</a></li>
-                    <li><a href="#country-comparison">Countries</a></li>
-                    <li><a href="#industry-rankings">Industries</a></li>
-                    <li><a href="#global-websites">Websites</a></li>
                     <li><a href="latest-updated.html">📅 Latest Scan</a></li>
                     <li><a href="all-countries.html">All Countries</a></li>
                     <li><a href="all-industries.html">All Industries</a></li>
@@ -258,26 +256,26 @@ class WebsiteGenerator {
                 <section class="section" aria-labelledby="country-comparison-heading" id="country-comparison">
                     <h2 id="country-comparison-heading">🏆 Best & Worst Performing Countries</h2>
                     <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
-                        <div class="best-country" role="img" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
+                        <a href="${this.getCountryUrl(countryStats.best.name)}" class="best-country country-tile-link" role="button" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
                             <h3 id="best-country-title">🥇 Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h3>
                             <div class="country-score" aria-label="${countryStats.best.avgPerformance} percent average performance">${countryStats.best.avgPerformance}%</div>
                             <p id="best-country-desc">Performance Leader</p>
-                        </div>
-                        <div class="second-best-country" role="img" aria-labelledby="second-best-title" aria-describedby="second-best-desc">
+                        </a>
+                        <a href="${countryStats.secondBest ? this.getCountryUrl(countryStats.secondBest.name) : '#'}" class="second-best-country country-tile-link" role="button" aria-labelledby="second-best-title" aria-describedby="second-best-desc">
                             <h3 id="second-best-title">🥈 Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'} ${countryStats.secondBest ? this.getCountryFlag(countryStats.secondBest.name) : ''}</h3>
                             <div class="country-score" aria-label="${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0} percent average performance">${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0}%</div>
                             <p id="second-best-desc">Strong Performer</p>
-                        </div>
-                        <div class="second-worst-country" role="img" aria-labelledby="second-worst-title" aria-describedby="second-worst-desc">
+                        </a>
+                        <a href="${countryStats.secondWorst ? this.getCountryUrl(countryStats.secondWorst.name) : '#'}" class="second-worst-country country-tile-link" role="button" aria-labelledby="second-worst-title" aria-describedby="second-worst-desc">
                             <h3 id="second-worst-title">📈 Room for Growth: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'} ${countryStats.secondWorst ? this.getCountryFlag(countryStats.secondWorst.name) : ''}</h3>
                             <div class="country-score" aria-label="${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0} percent average performance">${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0}%</div>
                             <p id="second-worst-desc">Improvement Potential</p>
-                        </div>
-                        <div class="worst-country" role="img" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
+                        </a>
+                        <a href="${this.getCountryUrl(countryStats.worst.name)}" class="worst-country country-tile-link" role="button" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
                             <h3 id="worst-country-title">🔄 Needs Improvement: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h3>
                             <div class="country-score" aria-label="${countryStats.worst.avgPerformance} percent average performance">${countryStats.worst.avgPerformance}%</div>
                             <p id="worst-country-desc">Growth Opportunity</p>
-                        </div>
+                        </a>
                     </div>
                 </section>
 
@@ -473,7 +471,7 @@ class WebsiteGenerator {
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small>Last updated: <time datetime="${generationTime}" id="updateTime">${new Date(generationTime).toLocaleDateString()}</time></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
@@ -725,6 +723,28 @@ class WebsiteGenerator {
                     });
             });
         }
+
+        // Offline Detection and Badge Management
+        function updateOfflineStatus() {
+            const offlineBadge = document.getElementById('offline-badge');
+            if (!navigator.onLine) {
+                offlineBadge.style.display = 'block';
+                console.log('📵 Website is now offline');
+            } else {
+                offlineBadge.style.display = 'none';
+                console.log('🌐 Website is now online');
+            }
+        }
+
+        // Check offline status on page load
+        window.addEventListener('load', updateOfflineStatus);
+
+        // Listen for online/offline events
+        window.addEventListener('online', updateOfflineStatus);
+        window.addEventListener('offline', updateOfflineStatus);
+
+        // Initial check
+        updateOfflineStatus();
     </script>
 </body>
 </html>`;
@@ -781,7 +801,10 @@ class WebsiteGenerator {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
+    <!-- Offline Badge -->
+    <div id="offline-badge" class="offline-badge" style="display: none;">
+        🔌 Website Offline
+    </div>
     
     <div class="container">
         <header class="header" role="banner">
@@ -955,7 +978,7 @@ class WebsiteGenerator {
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
@@ -1446,8 +1469,6 @@ class WebsiteGenerator {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
-    
     <div class="container">
         <header class="header" role="banner">
             <nav class="breadcrumb" aria-label="Breadcrumb navigation">
@@ -1573,7 +1594,7 @@ class WebsiteGenerator {
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
@@ -2110,6 +2131,29 @@ body {
     margin: 10px 0;
 }
 
+/* Clickable country tile styles */
+.country-tile-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.country-tile-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.country-tile-link:focus {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+}
+
+.country-tile-link:active {
+    transform: translateY(-1px);
+}
+
 .industry-comparison {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2548,6 +2592,33 @@ body {
         margin: -20px -20px 20px -20px;
     }
     
+    /* Hide rightmost industry metrics on smaller screens */
+    .industry-metrics .metric:nth-child(4) {
+        display: none; /* Hide "X sites" count first */
+    }
+}
+
+@media (max-width: 640px) {
+    /* Hide SEO metric next */
+    .industry-metrics .metric:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    /* Hide Accessibility metric next */
+    .industry-metrics .metric:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    /* On very small screens, hide all metrics, keep only industry name */
+    .industry-metrics {
+        display: none;
+    }
+    }
+    
     .header h1 {
         font-size: 2em;
     }
@@ -2584,24 +2655,6 @@ body {
    ============================================ */
 
 /* Skip Navigation Link */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #000;
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    z-index: 1000;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.skip-link:focus {
-    top: 6px;
-}
-
 /* Enhanced Focus Indicators */
 *:focus {
     outline: 3px solid #007bff;
@@ -2633,6 +2686,42 @@ button:focus, .btn:focus, input:focus, select:focus, textarea:focus {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+/* Offline Badge */
+.offline-badge {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    z-index: 10000;
+    animation: fadeInPulse 0.5s ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeInPulse {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.9);
+    }
+    50% {
+        transform: translateY(0) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.offline-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
 
 /* High Contrast Color Improvements for WCAG AA compliance */
@@ -2696,7 +2785,7 @@ a {
 
 a:hover, a:focus {
     color: #003d82;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
@@ -2956,11 +3045,6 @@ input[type="text"]:focus, input[type="search"]:focus {
 
 /* Responsive Accessibility */
 @media (max-width: 768px) {
-    .skip-link {
-        font-size: 16px;
-        padding: 12px;
-    }
-    
     th, td {
         padding: 8px;
         font-size: 14px;
@@ -3488,6 +3572,11 @@ input[type="text"]:focus, input[type="search"]:focus {
     return country === 'Unknown' ? 'Global' : country;
   }
 
+  getCountryUrl(country) {
+    if (!country) return '#';
+    return `country-${this.normalizeCountry(country).toLowerCase().replace(/\s+/g, '-')}.html`;
+  }
+
   getCountryFlag(country) {
     const normalizedCountry = this.normalizeCountry(country);
     const flags = {
@@ -3645,8 +3734,6 @@ input[type="text"]:focus, input[type="search"]:focus {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
-    
     <div class="container">
         <header class="header" role="banner">
             <nav class="breadcrumb" aria-label="Breadcrumb navigation">
@@ -3783,7 +3870,7 @@ input[type="text"]:focus, input[type="search"]:focus {
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
@@ -3968,6 +4055,37 @@ input[type="text"]:focus, input[type="search"]:focus {
       avgBestPractices: Math.round(totals.best_practices / scores.length),
       avgPwa: Math.round(totals.pwa / scores.length)
     };
+  }
+
+  getOfflineBadgeHTML() {
+    return `    <!-- Offline Badge -->
+    <div id="offline-badge" class="offline-badge" style="display: none;">
+        🔌 Website Offline
+    </div>`;
+  }
+
+  getOfflineDetectionJS() {
+    return `        // Offline Detection and Badge Management
+        function updateOfflineStatus() {
+            const offlineBadge = document.getElementById('offline-badge');
+            if (!navigator.onLine) {
+                offlineBadge.style.display = 'block';
+                console.log('📵 Website is now offline');
+            } else {
+                offlineBadge.style.display = 'none';
+                console.log('🌐 Website is now online');
+            }
+        }
+
+        // Check offline status on page load
+        window.addEventListener('load', updateOfflineStatus);
+
+        // Listen for online/offline events
+        window.addEventListener('online', updateOfflineStatus);
+        window.addEventListener('offline', updateOfflineStatus);
+
+        // Initial check
+        updateOfflineStatus();`;
   }
 }
 
