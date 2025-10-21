@@ -13,237 +13,684 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
+    
     <div class="container">
-        <header class="header">
-            <div class="breadcrumb">
-                <a href="index.html">🏠 Home</a> > 🇸🇪 Sweden
-            </div>
-            <h1>🇸🇪 Sweden Performance</h1>
-            <p class="subtitle">12 websites analyzed</p>
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">🇸🇪 Sweden</li>
+                </ol>
+            </nav>
+            <h1>🇸🇪 Sweden Performance Analysis</h1>
+            <p class="subtitle">Comprehensive lighthouse analysis of 12 websites from Sweden</p>
         </header>
 
-        <div class="stats-grid">
-            <div class="stat-card performance">
+        <section class="stats-grid" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="sr-only">Performance Statistics for Sweden</h2>
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 48 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number">48%</div>
+                <div class="stat-number" aria-hidden="true">48%</div>
+                <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card accessibility">
+            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 96 percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-number">96%</div>
+                <div class="stat-number" aria-hidden="true">96%</div>
+                <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
-            <div class="stat-card seo">
+            <div class="stat-card seo" role="img" aria-label="Average SEO score: 95 percent">
                 <h3>Average SEO</h3>
-                <div class="stat-number">95%</div>
+                <div class="stat-number" aria-hidden="true">95%</div>
+                <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card best-practices">
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 92 percent">
                 <h3>Best Practices</h3>
-                <div class="stat-number">92%</div>
+                <div class="stat-number" aria-hidden="true">92%</div>
+                <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
-        </div>
+        </section>
 
-        <section class="section">
-            <h2>🏅 Top Websites in Sweden</h2>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search Sweden websites..." />
-            </div>
-            <div class="table-container">
-                <table class="results-table" id="resultsTable">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Website</th>
-                            <th>Industry</th>
-                            <th>Performance</th>
-                            <th>Accessibility</th>
-                            <th>SEO</th>
-                            <th>Best Practices</th>
-                            <th>PWA</th>
-                            <th>Last Scanned</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="websites-heading">
+                <h2 id="websites-heading">🏅 Top Websites in Sweden</h2>
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search Sweden websites by name or industry</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search Sweden websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name or industry. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
+                        <caption class="sr-only">
+                            Lighthouse performance data for 12 websites from Sweden, 
+                            sorted by performance score in descending order. 
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" aria-sort="none">Rank</th>
+                                <th scope="col" aria-sort="none">Website</th>
+                                <th scope="col" aria-sort="none">Industry</th>
+                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
+                                <th scope="col" aria-sort="none">Accessibility</th>
+                                <th scope="col" aria-sort="none">SEO</th>
+                                <th scope="col" aria-sort="none">Best Practices</th>
+                                <th scope="col" aria-sort="none">PWA</th>
+                                <th scope="col" aria-sort="none">Last Scanned</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
                         
                             <tr class="site-row">
-                                <td class="rank">#1</td>
-                                <td><a href="domain-dn-se.html" class="domain-link">dn.se</a></td>
-                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
-                                <td class="score perf-average">65%</td>
-                                <td class="score acc-excellent">100%</td>
-                                <td class="score seo-excellent">100%</td>
-                                <td class="score bp-excellent">100%</td>
-                                <td class="score pwa-poor">33%</td>
-                                <td class="date" data-date="2025-10-19 20:27:12">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 1">#1</td>
+                                <td>
+                                    <a href="domain-dn-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for dn.se">
+                                        dn.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 65 percent, average performance">
+                                    65%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:27:12"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:27:12">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#2</td>
-                                <td><a href="domain-arbetsformedlingen-se.html" class="domain-link">arbetsformedlingen.se</a></td>
-                                <td><a href="industry-government.html" class="industry-link">Government</a></td>
-                                <td class="score perf-average">65%</td>
-                                <td class="score acc-excellent">100%</td>
-                                <td class="score seo-excellent">92%</td>
-                                <td class="score bp-excellent">100%</td>
-                                <td class="score pwa-poor">33%</td>
-                                <td class="date" data-date="2025-10-19 20:29:33">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 2">#2</td>
+                                <td>
+                                    <a href="domain-arbetsformedlingen-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for arbetsformedlingen.se">
+                                        arbetsformedlingen.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-government.html" 
+                                       class="industry-link"
+                                       aria-label="View all Government industry websites">
+                                        Government
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 65 percent, average performance">
+                                    65%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:29:33"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:29:33">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#3</td>
-                                <td><a href="domain-svt-se.html" class="domain-link">svt.se</a></td>
-                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
-                                <td class="score perf-average">57%</td>
-                                <td class="score acc-excellent">100%</td>
-                                <td class="score seo-excellent">99%</td>
-                                <td class="score bp-excellent">100%</td>
-                                <td class="score pwa-good">89%</td>
-                                <td class="date" data-date="2025-10-19 20:26:59">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td>
+                                    <a href="domain-svt-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for svt.se">
+                                        svt.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 57 percent, average performance">
+                                    57%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 99 percent, excellent performance">
+                                    99%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 89 percent, good performance">
+                                    89%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:26:59"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:26:59">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#4</td>
-                                <td><a href="domain-skatteverket-se.html" class="domain-link">skatteverket.se</a></td>
-                                <td><a href="industry-government.html" class="industry-link">Government</a></td>
-                                <td class="score perf-average">56%</td>
-                                <td class="score acc-excellent">100%</td>
-                                <td class="score seo-good">83%</td>
-                                <td class="score bp-excellent">92%</td>
-                                <td class="score pwa-poor">33%</td>
-                                <td class="date" data-date="2025-10-19 20:29:16">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 4">#4</td>
+                                <td>
+                                    <a href="domain-skatteverket-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for skatteverket.se">
+                                        skatteverket.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-government.html" 
+                                       class="industry-link"
+                                       aria-label="View all Government industry websites">
+                                        Government
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 56 percent, average performance">
+                                    56%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:29:16"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:29:16">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#5</td>
-                                <td><a href="domain-aftonbladet-se.html" class="domain-link">aftonbladet.se</a></td>
-                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
-                                <td class="score perf-average">51%</td>
-                                <td class="score acc-excellent">98%</td>
-                                <td class="score seo-excellent">100%</td>
-                                <td class="score bp-excellent">92%</td>
-                                <td class="score pwa-good">78%</td>
-                                <td class="date" data-date="2025-10-19 20:26:29">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 5">#5</td>
+                                <td>
+                                    <a href="domain-aftonbladet-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for aftonbladet.se">
+                                        aftonbladet.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 51 percent, average performance">
+                                    51%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 98 percent, excellent performance">
+                                    98%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:26:29"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:26:29">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#6</td>
-                                <td><a href="domain-ica-se.html" class="domain-link">ica.se</a></td>
-                                <td><a href="industry-e-commerce.html" class="industry-link">E-commerce</a></td>
-                                <td class="score perf-poor">49%</td>
-                                <td class="score acc-excellent">94%</td>
-                                <td class="score seo-excellent">100%</td>
-                                <td class="score bp-good">83%</td>
-                                <td class="score pwa-average">56%</td>
-                                <td class="date" data-date="2025-10-19 20:28:01">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 6">#6</td>
+                                <td>
+                                    <a href="domain-ica-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for ica.se">
+                                        ica.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-e-commerce.html" 
+                                       class="industry-link"
+                                       aria-label="View all E-commerce industry websites">
+                                        E-commerce
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 49 percent, needs improvement">
+                                    49%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 94 percent, excellent performance">
+                                    94%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 56 percent, average performance">
+                                    56%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:28:01"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:28:01">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#7</td>
-                                <td><a href="domain-expressen-se.html" class="domain-link">expressen.se</a></td>
-                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
-                                <td class="score perf-poor">49%</td>
-                                <td class="score acc-excellent">96%</td>
-                                <td class="score seo-excellent">99%</td>
-                                <td class="score bp-excellent">100%</td>
-                                <td class="score pwa-poor">33%</td>
-                                <td class="date" data-date="2025-10-20 18:14:33">10/20/2025</td>
+                                <td class="rank" aria-label="Rank 7">#7</td>
+                                <td>
+                                    <a href="domain-expressen-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for expressen.se">
+                                        expressen.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 49 percent, needs improvement">
+                                    49%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 96 percent, excellent performance">
+                                    96%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 99 percent, excellent performance">
+                                    99%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-20 18:14:33"
+                                    aria-label="Last tested on 10/20/2025">
+                                    <time datetime="2025-10-20 18:14:33">10/20/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#8</td>
-                                <td><a href="domain-klarna-com.html" class="domain-link">klarna.com</a></td>
-                                <td><a href="industry-finance.html" class="industry-link">Finance</a></td>
-                                <td class="score perf-poor">47%</td>
-                                <td class="score acc-good">89%</td>
-                                <td class="score seo-excellent">100%</td>
-                                <td class="score bp-excellent">92%</td>
-                                <td class="score pwa-average">56%</td>
-                                <td class="date" data-date="2025-10-19 20:28:59">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 8">#8</td>
+                                <td>
+                                    <a href="domain-klarna-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for klarna.com">
+                                        klarna.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-finance.html" 
+                                       class="industry-link"
+                                       aria-label="View all Finance industry websites">
+                                        Finance
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 47 percent, needs improvement">
+                                    47%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 89 percent, good performance">
+                                    89%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 56 percent, average performance">
+                                    56%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:28:59"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:28:59">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#9</td>
-                                <td><a href="domain-coop-se.html" class="domain-link">coop.se</a></td>
-                                <td><a href="industry-e-commerce.html" class="industry-link">E-commerce</a></td>
-                                <td class="score perf-poor">44%</td>
-                                <td class="score acc-excellent">100%</td>
-                                <td class="score seo-excellent">93%</td>
-                                <td class="score bp-excellent">100%</td>
-                                <td class="score pwa-good">78%</td>
-                                <td class="date" data-date="2025-10-19 20:28:21">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 9">#9</td>
+                                <td>
+                                    <a href="domain-coop-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for coop.se">
+                                        coop.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-e-commerce.html" 
+                                       class="industry-link"
+                                       aria-label="View all E-commerce industry websites">
+                                        E-commerce
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 44 percent, needs improvement">
+                                    44%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 93 percent, excellent performance">
+                                    93%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:28:21"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:28:21">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#10</td>
-                                <td><a href="domain-flashback-org.html" class="domain-link">flashback.org</a></td>
-                                <td><a href="industry-social-media.html" class="industry-link">Social Media</a></td>
-                                <td class="score perf-poor">39%</td>
-                                <td class="score acc-good">77%</td>
-                                <td class="score seo-good">84%</td>
-                                <td class="score bp-good">75%</td>
-                                <td class="score pwa-poor">33%</td>
-                                <td class="date" data-date="2025-10-20 18:17:46">10/20/2025</td>
+                                <td class="rank" aria-label="Rank 10">#10</td>
+                                <td>
+                                    <a href="domain-flashback-org.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for flashback.org">
+                                        flashback.org
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-social-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Social Media industry websites">
+                                        Social Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 39 percent, needs improvement">
+                                    39%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 77 percent, good performance">
+                                    77%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 84 percent, good performance">
+                                    84%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-20 18:17:46"
+                                    aria-label="Last tested on 10/20/2025">
+                                    <time datetime="2025-10-20 18:17:46">10/20/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#11</td>
-                                <td><a href="domain-blocket-se.html" class="domain-link">blocket.se</a></td>
-                                <td><a href="industry-marketplace.html" class="industry-link">Marketplace</a></td>
-                                <td class="score perf-poor">28%</td>
-                                <td class="score acc-excellent">100%</td>
-                                <td class="score seo-excellent">92%</td>
-                                <td class="score bp-good">75%</td>
-                                <td class="score pwa-poor">33%</td>
-                                <td class="date" data-date="2025-10-19 20:27:29">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 11">#11</td>
+                                <td>
+                                    <a href="domain-blocket-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for blocket.se">
+                                        blocket.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-marketplace.html" 
+                                       class="industry-link"
+                                       aria-label="View all Marketplace industry websites">
+                                        Marketplace
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 28 percent, needs improvement">
+                                    28%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:27:29"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:27:29">10/19/2025</time>
+                                </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank">#12</td>
-                                <td><a href="domain-spotify-com.html" class="domain-link">spotify.com</a></td>
-                                <td><a href="industry-media.html" class="industry-link">Media</a></td>
-                                <td class="score perf-poor">20%</td>
-                                <td class="score acc-excellent">93%</td>
-                                <td class="score seo-excellent">97%</td>
-                                <td class="score bp-excellent">92%</td>
-                                <td class="score pwa-good">78%</td>
-                                <td class="date" data-date="2025-10-19 20:28:39">10/19/2025</td>
+                                <td class="rank" aria-label="Rank 12">#12</td>
+                                <td>
+                                    <a href="domain-spotify-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for spotify.com">
+                                        spotify.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 20 percent, needs improvement">
+                                    20%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 93 percent, excellent performance">
+                                    93%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 97 percent, excellent performance">
+                                    97%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-19 20:28:39"
+                                    aria-label="Last tested on 10/19/2025">
+                                    <time datetime="2025-10-19 20:28:39">10/19/2025</time>
+                                </td>
                             </tr>
                         
                     </tbody>
                 </table>
             </div>
         </section>
+        </main>
 
-        <footer class="footer">
-            <p>📊 Sweden Performance Data | 12 websites tested</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📊 Sweden Performance Data | 12 websites tested</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                </div>
+            </div>
         </footer>
     </div>
 
     <script>
         const countryData = [{"url":"dn.se","country":"Sweden","industry":"Media","performance":65,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-19 20:27:12"},{"url":"arbetsformedlingen.se","country":"Sweden","industry":"Government","performance":65,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 20:29:33"},{"url":"svt.se","country":"Sweden","industry":"Media","performance":57,"accessibility":100,"best_practices":100,"seo":99,"pwa":89,"test_date":"2025-10-19 20:26:59"},{"url":"skatteverket.se","country":"Sweden","industry":"Government","performance":56,"accessibility":100,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-19 20:29:16"},{"url":"aftonbladet.se","country":"Sweden","industry":"Media","performance":51,"accessibility":98,"best_practices":92,"seo":100,"pwa":78,"test_date":"2025-10-19 20:26:29"},{"url":"ica.se","country":"Sweden","industry":"E-commerce","performance":49,"accessibility":94,"best_practices":83,"seo":100,"pwa":56,"test_date":"2025-10-19 20:28:01"},{"url":"expressen.se","country":"Sweden","industry":"Media","performance":49,"accessibility":96,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-20 18:14:33"},{"url":"klarna.com","country":"Sweden","industry":"Finance","performance":47,"accessibility":89,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-19 20:28:59"},{"url":"coop.se","country":"Sweden","industry":"E-commerce","performance":44,"accessibility":100,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-19 20:28:21"},{"url":"flashback.org","country":"Sweden","industry":"Social Media","performance":39,"accessibility":77,"best_practices":75,"seo":84,"pwa":33,"test_date":"2025-10-20 18:17:46"},{"url":"blocket.se","country":"Sweden","industry":"Marketplace","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29"},{"url":"spotify.com","country":"Sweden","industry":"Media","performance":20,"accessibility":93,"best_practices":92,"seo":97,"pwa":78,"test_date":"2025-10-19 20:28:39"}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
         
-        document.getElementById('searchInput').addEventListener('input', function() {
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase();
-            const filtered = countryData.filter(site => 
-                site.url.toLowerCase().includes(query)
-            );
             
-            document.getElementById('tableBody').innerHTML = filtered.map((site, index) => `
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const filtered = countryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.industry && site.industry.toLowerCase().includes(query))
+                );
+                
+                updateCountryTable(filtered);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${countryData.length} websites from Sweden`;
+                } else if (filtered.length === 0) {
+                    announcement = `No results found for "${query}" in Sweden`;
+                } else {
+                    announcement = `Found ${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${query}" in Sweden`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
+        
+        function updateCountryTable(sites) {
+            tableBody.innerHTML = sites.map((site, index) => `
                 <tr class="site-row">
-                    <td class="rank">#${index + 1}</td>
-                    <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
-                    <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
-                    <td class="score perf-${getScoreClass(site.performance)}">${site.performance}%</td>
-                    <td class="score acc-${getScoreClass(site.accessibility)}">${site.accessibility}%</td>
-                    <td class="score seo-${getScoreClass(site.seo)}">${site.seo}%</td>
-                    <td class="score bp-${getScoreClass(site.best_practices)}">${site.best_practices}%</td>
-                    <td class="score pwa-${getScoreClass(site.pwa)}">${site.pwa}%</td>
-                    <td class="date" data-date="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</td>
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}">
+                        ${site.performance}%
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}">
+                        ${site.accessibility}%
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}">
+                        ${site.seo}%
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}">
+                        ${site.best_practices}%
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}">
+                        ${site.pwa}%
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
                 </tr>
             `).join('');
-            
-            // Re-format dates after updating content
-            formatAllDates();
-        });
+        }
         
         function getScoreClass(score) {
             if (score >= 90) return 'excellent';
@@ -251,6 +698,30 @@
             if (score >= 50) return 'average';
             return 'poor';
         }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
+        }
+        
+        // Format dates in user's locale
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    cell.querySelector('time').textContent = date.toLocaleDateString();
+                }
+            });
+        }
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
+        });
         
         // Register service worker for PWA functionality
         if ('serviceWorker' in navigator) {

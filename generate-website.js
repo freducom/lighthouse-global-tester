@@ -9,6 +9,72 @@ class WebsiteGenerator {
     this.domainsData = JSON.parse(fs.readFileSync('./domains.json', 'utf8'));
   }
 
+  getCountryFlag(country) {
+    const flags = {
+      'United States': '🇺🇸',
+      'United Kingdom': '🇬🇧',
+      'Germany': '🇩🇪',
+      'India': '🇮🇳',
+      'Brazil': '🇧🇷',
+      'Japan': '🇯🇵',
+      'Canada': '🇨🇦',
+      'Australia': '🇦🇺',
+      'Russia': '🇷🇺',
+      'South Korea': '🇰🇷',
+      'Finland': '🇫🇮',
+      'Israel': '🇮🇱',
+      'Netherlands': '🇳🇱',
+      'Sweden': '🇸🇪',
+      'Ireland': '🇮🇪',
+      'Austria': '🇦🇹',
+      'Poland': '🇵🇱',
+      'Norway': '🇳🇴',
+      'Denmark': '🇩🇰',
+      'Ukraine': '🇺🇦',
+      'Hungary': '🇭🇺',
+      'Estonia': '🇪🇪',
+      'Lithuania': '🇱🇹',
+      'Latvia': '🇱🇻',
+      'Turkey': '🇹🇷',
+      'Italy': '🇮🇹',
+      'New Zealand': '🇳🇿',
+      'South Africa': '🇿🇦',
+      'Egypt': '🇪🇬',
+      'Libya': '🇱🇾',
+      'Iran': '🇮🇷',
+      'Greece': '🇬🇷',
+      'Spain': '🇪🇸',
+      'France': '🇫🇷',
+      'Belgium': '🇧🇪',
+      'Luxembourg': '🇱🇺',
+      'Switzerland': '🇨🇭',
+      'Czechia': '🇨🇿',
+      'Slovakia': '🇸🇰',
+      'Malta': '🇲🇹',
+      'China': '🇨🇳',
+      'Vietnam': '🇻🇳',
+      'Thailand': '🇹🇭',
+      'Malaysia': '🇲🇾',
+      'Singapore': '🇸🇬',
+      'Indonesia': '🇮🇩',
+      'Taiwan': '🇹🇼',
+      'Peru': '🇵🇪',
+      'Colombia': '🇨🇴',
+      'Costa Rica': '🇨🇷',
+      'Cuba': '🇨🇺',
+      'Bolivia': '🇧🇴',
+      'Chile': '🇨🇱',
+      'Paraguay': '🇵🇾',
+      'Uruguay': '🇺🇾',
+      'Zambia': '🇿🇲',
+      'Kenya': '🇰🇪',
+      'Angola': '🇦🇴',
+      'Namibia': '🇳🇦',
+      'Global': '🌍'
+    };
+    return flags[country] || '🌍';
+  }
+
   getTrend(current, previous) {
     if (previous === null || previous === undefined) {
       return 'none'; // No previous data
@@ -53,6 +119,7 @@ class WebsiteGenerator {
     await this.generateAllCountriesPage();
     await this.generateAllIndustriesPage();
     await this.generateAllCompaniesPage();
+    await this.generateLatestUpdatedPage();
     await this.generateAssets();
 
     console.log('✅ Static website generated successfully!');
@@ -100,8 +167,9 @@ class WebsiteGenerator {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Lighthouse Tracker</title>
-    <meta name="description" content="Track and analyze Lighthouse performance scores across global websites">
+    <title>Global Lighthouse Tracker - Web Performance Analytics Dashboard</title>
+    <meta name="description" content="Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics">
+    <meta name="keywords" content="web performance, lighthouse, accessibility, SEO, performance analytics, website optimization">
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
@@ -110,101 +178,143 @@ class WebsiteGenerator {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Live Region for Dynamic Announcements -->
+    <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
+    
     <div class="container">
-        <header class="header">
+        <header class="header" role="banner">
             <h1>🌍 Global Lighthouse Tracker</h1>
             <p class="subtitle">Performance insights from ${allScores.length} websites across ${this.domainsData.length} countries</p>
-            <div class="last-updated" id="lastUpdated">Last updated: <span id="updateTime">Loading...</span></div>
+            
+            <!-- Main Navigation -->
+            <nav aria-label="Main navigation" role="navigation">
+                <ul class="nav-links">
+                    <li><a href="#global-stats">Statistics</a></li>
+                    <li><a href="#country-comparison">Countries</a></li>
+                    <li><a href="#industry-rankings">Industries</a></li>
+                    <li><a href="#global-websites">Websites</a></li>
+                    <li><a href="latest-updated.html">📅 Latest Scan</a></li>
+                    <li><a href="all-countries.html">All Countries</a></li>
+                    <li><a href="all-industries.html">All Industries</a></li>
+                    <li><a href="all-companies.html">All Companies</a></li>
+                </ul>
+            </nav>
+            
+            <div class="last-updated" id="lastUpdated">
+                Last updated: <time id="updateTime" datetime="${new Date().toISOString()}">Loading...</time>
+            </div>
         </header>
 
-        <div class="stats-grid">
-            <div class="stat-card performance">
-                <h3>Global Performance</h3>
-                <div class="stat-number">${stats.avgPerformance}%</div>
-                <div class="stat-trend">📊 Average across all sites</div>
-            </div>
-            <div class="stat-card accessibility">
-                <h3>Accessibility</h3>
-                <div class="stat-number">${stats.avgAccessibility}%</div>
-                <div class="stat-trend">♿ Global accessibility score</div>
-            </div>
-            <div class="stat-card seo">
-                <h3>SEO Score</h3>
-                <div class="stat-number">${stats.avgSeo}%</div>
-                <div class="stat-trend">🔍 Search optimization</div>
-            </div>
-            <div class="stat-card best-practices">
-                <h3>Best Practices</h3>
-                <div class="stat-number">${stats.avgBestPractices}%</div>
-                <div class="stat-trend">✨ Code quality standards</div>
-            </div>
-        </div>
-
-        <div class="content-grid">
-            <section class="section">
-                <h2>🏆 Best & Worst Performing Countries</h2>
-                <div class="country-comparison">
-                    <div class="best-country">
-                        <h3>🥇 Best: ${countryStats.best.name}</h3>
-                        <div class="country-score">${countryStats.best.avgPerformance}%</div>
-                        <p>Performance Leader</p>
-                    </div>
-                    <div class="second-best-country">
-                        <h3>🥈 Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'}</h3>
-                        <div class="country-score">${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0}%</div>
-                        <p>Strong Performer</p>
-                    </div>
-                    <div class="second-worst-country">
-                        <h3>📈 Room for Growth: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'}</h3>
-                        <div class="country-score">${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0}%</div>
-                        <p>Improvement Potential</p>
-                    </div>
-                    <div class="worst-country">
-                        <h3>🔄 Needs Improvement: ${countryStats.worst.name}</h3>
-                        <div class="country-score">${countryStats.worst.avgPerformance}%</div>
-                        <p>Growth Opportunity</p>
-                    </div>
+        <main id="main-content" role="main">
+            <!-- Global Statistics Section -->
+            <section class="stats-grid" aria-labelledby="global-stats-heading" id="global-stats">
+                <h2 id="global-stats-heading" class="sr-only">Global Performance Statistics</h2>
+                
+                <div class="stat-card performance" role="img" aria-labelledby="global-perf-title" aria-describedby="global-perf-desc">
+                    <h3 id="global-perf-title">Global Performance</h3>
+                    <div class="stat-number" aria-label="${stats.avgPerformance} percent performance score">${stats.avgPerformance}%</div>
+                    <div id="global-perf-desc" class="stat-trend">📊 Average across all ${allScores.length} tested sites</div>
+                </div>
+                
+                <div class="stat-card accessibility" role="img" aria-labelledby="global-acc-title" aria-describedby="global-acc-desc">
+                    <h3 id="global-acc-title">Accessibility</h3>
+                    <div class="stat-number" aria-label="${stats.avgAccessibility} percent accessibility score">${stats.avgAccessibility}%</div>
+                    <div id="global-acc-desc" class="stat-trend">♿ Global accessibility compliance</div>
+                </div>
+                
+                <div class="stat-card seo" role="img" aria-labelledby="global-seo-title" aria-describedby="global-seo-desc">
+                    <h3 id="global-seo-title">SEO Score</h3>
+                    <div class="stat-number" aria-label="${stats.avgSeo} percent SEO score">${stats.avgSeo}%</div>
+                    <div id="global-seo-desc" class="stat-trend">🔍 Search engine optimization</div>
+                </div>
+                
+                <div class="stat-card best-practices" role="img" aria-labelledby="global-bp-title" aria-describedby="global-bp-desc">
+                    <h3 id="global-bp-title">Best Practices</h3>
+                    <div class="stat-number" aria-label="${stats.avgBestPractices} percent best practices score">${stats.avgBestPractices}%</div>
+                    <div id="global-bp-desc" class="stat-trend">✨ Code quality standards</div>
                 </div>
             </section>
 
-            <section class="section">
-                <h2>🏭 Top 5 Industries by Performance</h2>
-                <div class="industry-comparison">
-                    <div class="best-industry">
-                        <h3>🥇 Best: ${industryStats.best.name}</h3>
-                        <div class="industry-score">${industryStats.best.avgPerformance}%</div>
-                        <p>Performance Leader</p>
+            <div class="content-grid">
+                <!-- Country Comparison Section -->
+                <section class="section" aria-labelledby="country-comparison-heading" id="country-comparison">
+                    <h2 id="country-comparison-heading">🏆 Best & Worst Performing Countries</h2>
+                    <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
+                        <div class="best-country" role="img" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
+                            <h3 id="best-country-title">🥇 Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h3>
+                            <div class="country-score" aria-label="${countryStats.best.avgPerformance} percent average performance">${countryStats.best.avgPerformance}%</div>
+                            <p id="best-country-desc">Performance Leader</p>
+                        </div>
+                        <div class="second-best-country" role="img" aria-labelledby="second-best-title" aria-describedby="second-best-desc">
+                            <h3 id="second-best-title">🥈 Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'} ${countryStats.secondBest ? this.getCountryFlag(countryStats.secondBest.name) : ''}</h3>
+                            <div class="country-score" aria-label="${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0} percent average performance">${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0}%</div>
+                            <p id="second-best-desc">Strong Performer</p>
+                        </div>
+                        <div class="second-worst-country" role="img" aria-labelledby="second-worst-title" aria-describedby="second-worst-desc">
+                            <h3 id="second-worst-title">📈 Room for Growth: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'} ${countryStats.secondWorst ? this.getCountryFlag(countryStats.secondWorst.name) : ''}</h3>
+                            <div class="country-score" aria-label="${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0} percent average performance">${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0}%</div>
+                            <p id="second-worst-desc">Improvement Potential</p>
+                        </div>
+                        <div class="worst-country" role="img" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
+                            <h3 id="worst-country-title">🔄 Needs Improvement: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h3>
+                            <div class="country-score" aria-label="${countryStats.worst.avgPerformance} percent average performance">${countryStats.worst.avgPerformance}%</div>
+                            <p id="worst-country-desc">Growth Opportunity</p>
+                        </div>
                     </div>
-                    <div class="worst-industry">
-                        <h3>🔄 Needs Improvement: ${industryStats.worst.name}</h3>
-                        <div class="industry-score">${industryStats.worst.avgPerformance}%</div>
-                        <p>Growth Opportunity</p>
+                </section>
+
+                <!-- Industry Rankings Section -->
+                <section class="section" aria-labelledby="industry-rankings-heading" id="industry-rankings">
+                    <h2 id="industry-rankings-heading">🏭 Top 5 Industries by Performance</h2>
+                    
+                    <div class="industry-comparison" role="group" aria-labelledby="industry-comparison-heading">
+                        <h3 id="industry-comparison-heading" class="sr-only">Industry Performance Comparison</h3>
+                        <div class="best-industry" role="img" aria-labelledby="best-industry-title" aria-describedby="best-industry-desc">
+                            <h4 id="best-industry-title">🥇 Best: ${industryStats.best.name}</h4>
+                            <div class="industry-score" aria-label="${industryStats.best.avgPerformance} percent average performance">${industryStats.best.avgPerformance}%</div>
+                            <p id="best-industry-desc">Performance Leader</p>
+                        </div>
+                        <div class="worst-industry" role="img" aria-labelledby="worst-industry-title" aria-describedby="worst-industry-desc">
+                            <h4 id="worst-industry-title">🔄 Needs Improvement: ${industryStats.worst.name}</h4>
+                            <div class="industry-score" aria-label="${industryStats.worst.avgPerformance} percent average performance">${industryStats.worst.avgPerformance}%</div>
+                            <p id="worst-industry-desc">Growth Opportunity</p>
+                        </div>
                     </div>
-                </div>
-                <div class="industry-rankings">
-                    <h3>🏆 Top 5 Industries</h3>
-                    <div class="industry-list">
-                        ${industryStats.top5.map((industry, index) => `
-                            <a href="industry-${industry.name.toLowerCase().replace(/\s+/g, '-')}.html" class="industry-item">
-                                <div class="industry-rank">#${index + 1}</div>
-                                <div class="industry-name">${industry.name}</div>
-                                <div class="industry-metrics">
-                                    <span class="metric">P: ${industry.avgPerformance}%</span>
-                                    <span class="metric">A: ${industry.avgAccessibility}%</span>
-                                    <span class="metric">SEO: ${industry.avgSeo}%</span>
-                                    <span class="metric">${industry.count} sites</span>
-                                </div>
+                    
+                    <div class="industry-rankings" aria-labelledby="top-industries-heading">
+                        <h3 id="top-industries-heading">🏆 Top 5 Industries</h3>
+                        <div class="industry-list" role="list">
+                            ${industryStats.top5.map((industry, index) => `
+                                <a href="industry-${industry.name.toLowerCase().replace(/\s+/g, '-')}.html" 
+                                   class="industry-item" 
+                                   role="listitem"
+                                   aria-describedby="industry-${index}-desc">
+                                    <div class="industry-rank" aria-label="Rank ${index + 1}">#${index + 1}</div>
+                                    <div class="industry-name">${industry.name}</div>
+                                    <div id="industry-${index}-desc" class="industry-metrics" aria-label="Performance ${industry.avgPerformance}%, Accessibility ${industry.avgAccessibility}%, SEO ${industry.avgSeo}%, ${industry.count} websites">
+                                        <span class="metric" aria-label="Performance ${industry.avgPerformance} percent">P: ${industry.avgPerformance}%</span>
+                                        <span class="metric" aria-label="Accessibility ${industry.avgAccessibility} percent">A: ${industry.avgAccessibility}%</span>
+                                        <span class="metric" aria-label="SEO ${industry.avgSeo} percent">SEO: ${industry.avgSeo}%</span>
+                                        <span class="metric" aria-label="${industry.count} websites">${industry.count} sites</span>
+                                    </div>
+                                </a>
+                            `).join('')}
+                        </div>
+                        <div class="see-all-link">
+                            <a href="all-industries.html" class="btn-see-all" aria-describedby="see-all-industries-desc">
+                                📊 See all industries
                             </a>
-                        `).join('')}
+                            <div id="see-all-industries-desc" class="sr-only">View comprehensive list of all industry performance rankings</div>
+                        </div>
                     </div>
-                    <div class="see-all-link">
-                        <a href="all-industries.html" class="btn-see-all">📊 See all industries</a>
-                    </div>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
 
-        <section class="section">
+            <!-- Global Websites Section -->
+            <section class="section" aria-labelledby="global-websites-heading" id="global-websites">
             <h2>🌍 Top 5 Country Rankings</h2>
                 <div class="country-grid">
                 ${countryStats.all.slice(0, 5).map((country, index) => `
@@ -225,53 +335,132 @@ class WebsiteGenerator {
             </div>
             </section>
 
-            <section class="section">
-                <h2>🏅 Global Top 10 Websites</h2>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search among all ${allScores.length} websites..." />
-            </div>
-            <div class="table-container">
-                <table class="results-table" id="resultsTable">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Website</th>
-                            <th>Country</th>
-                            <th>Industry</th>
-                            <th>Performance</th>
-                            <th>Accessibility</th>
-                            <th>SEO</th>
-                            <th>Best Practices</th>
-                            <th>PWA</th>
-                            <th>Last Scanned</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        ${topSites.map((site, index) => `
-                            <tr class="site-row" data-url="${site.url}" data-country="${this.normalizeCountry(site.country)}">
-                                <td class="rank">#${index + 1}</td>
-                                <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
-                                <td><a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}</a></td>
-                                <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
-                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}% ${this.getTrendArrow(site.performance_trend)}</td>
-                                <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
-                                <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
-                                <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
-                                <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
-                                <td class="date" data-date="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</td>
+                <h2 id="global-websites-heading">🏅 Global Top 10 Websites</h2>
+                
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search websites by domain, country, or industry</label>
+                    <input type="search" 
+                           id="searchInput" 
+                           placeholder="🔍 Search among all ${allScores.length} websites..." 
+                           aria-describedby="search-instructions"
+                           role="searchbox"
+                           aria-label="Search websites" />
+                    <div id="search-instructions" class="sr-only">
+                        Type to filter the results table by website domain, country, or industry. Results will update automatically as you type.
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="global-websites-heading">
+                        <caption class="sr-only">
+                            Global website performance rankings showing the top performing websites with their 
+                            performance scores, accessibility ratings, SEO scores, best practices compliance, 
+                            Progressive Web App features, and last scan dates. Use the search box above to filter results.
+                        </caption>
+                        <thead>
+                            <tr role="row">
+                                <th scope="col" id="rank-header">Rank</th>
+                                <th scope="col" id="website-header">Website</th>
+                                <th scope="col" id="country-header">Country</th>
+                                <th scope="col" id="industry-header">Industry</th>
+                                <th scope="col" id="performance-header">Performance</th>
+                                <th scope="col" id="accessibility-header">Accessibility</th>
+                                <th scope="col" id="seo-header">SEO</th>
+                                <th scope="col" id="best-practices-header">Best Practices</th>
+                                <th scope="col" id="pwa-header">PWA</th>
+                                <th scope="col" id="scanned-header">Last Scanned</th>
                             </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            </div>
+                        </thead>
+                        <tbody id="tableBody">
+                            ${topSites.map((site, index) => `
+                                <tr class="site-row" 
+                                    data-url="${site.url}" 
+                                    data-country="${this.normalizeCountry(site.country)}"
+                                    role="row">
+                                    <td headers="rank-header">
+                                        <span class="rank" aria-label="Rank ${index + 1}">#${index + 1}</span>
+                                    </td>
+                                    <td headers="website-header">
+                                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                                           class="domain-link"
+                                           aria-describedby="website-desc-${index}">
+                                            ${site.url}
+                                        </a>
+                                        <div id="website-desc-${index}" class="sr-only">
+                                            View detailed performance history and analysis for ${site.url}
+                                        </div>
+                                    </td>
+                                    <td headers="country-header">
+                                        <a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" 
+                                           class="country-link"
+                                           aria-label="${this.normalizeCountry(site.country)} country performance page">
+                                            ${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}
+                                        </a>
+                                    </td>
+                                    <td headers="industry-header">
+                                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                                           class="industry-link"
+                                           aria-label="${site.industry || 'Unknown'} industry performance page">
+                                            ${site.industry || 'Unknown'}
+                                        </a>
+                                    </td>
+                                    <td headers="performance-header">
+                                        <span class="score perf-${this.getScoreClass(site.performance)}" 
+                                              aria-label="Performance score ${site.performance} percent ${site.performance_trend ? (site.performance_trend > 0 ? 'trending up' : site.performance_trend < 0 ? 'trending down' : 'stable') : ''}">
+                                            ${site.performance}% ${this.getTrendArrow(site.performance_trend)}
+                                        </span>
+                                    </td>
+                                    <td headers="accessibility-header">
+                                        <span class="score acc-${this.getScoreClass(site.accessibility)}" 
+                                              aria-label="Accessibility score ${site.accessibility} percent">
+                                            ${site.accessibility}%
+                                        </span>
+                                    </td>
+                                    <td headers="seo-header">
+                                        <span class="score seo-${this.getScoreClass(site.seo)}" 
+                                              aria-label="SEO score ${site.seo} percent">
+                                            ${site.seo}%
+                                        </span>
+                                    </td>
+                                    <td headers="best-practices-header">
+                                        <span class="score bp-${this.getScoreClass(site.best_practices)}" 
+                                              aria-label="Best practices score ${site.best_practices} percent">
+                                            ${site.best_practices}%
+                                        </span>
+                                    </td>
+                                    <td headers="pwa-header">
+                                        <span class="score pwa-${this.getScoreClass(site.pwa)}" 
+                                              aria-label="Progressive Web App score ${site.pwa} percent">
+                                            ${site.pwa}%
+                                        </span>
+                                    </td>
+                                    <td headers="scanned-header">
+                                        <time class="date" 
+                                              datetime="${new Date(site.test_date).toISOString()}"
+                                              data-date="${site.test_date}"
+                                              aria-label="Last scanned on ${new Date(site.test_date).toLocaleDateString()}">
+                                            ${new Date(site.test_date).toLocaleDateString()}
+                                        </time>
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
             <div class="see-all-link">
                 <a href="all-companies.html" class="btn-see-all">🏢 See all companies</a>
             </div>
         </section>
 
-        <footer class="footer">
-            <p>📊 Generated by Global Lighthouse Tracker | Data from ${allScores.length} websites across ${this.domainsData.length} countries</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📊 Generated by Global Lighthouse Tracker | Data from <span class="sr-only">total of </span>${allScores.length} websites across ${this.domainsData.length} countries</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small>Last updated: <time datetime="${generationTime}" id="updateTime">${new Date(generationTime).toLocaleDateString()}</time></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                </div>
+            </div>
         </footer>
     </div>
 
@@ -323,35 +512,102 @@ class WebsiteGenerator {
         // All sites data for search
         const allSites = ${JSON.stringify(allScores)};
         
-        // Search functionality
+        // Search functionality with accessibility features
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
         
         searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase();
-            const filtered = allSites.filter(site => 
-                site.url.toLowerCase().includes(query) || 
-                site.country.toLowerCase().includes(query)
-            );
             
-            updateTable(filtered);
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const filtered = allSites.filter(site => 
+                    site.url.toLowerCase().includes(query) || 
+                    site.country.toLowerCase().includes(query) ||
+                    (site.industry && site.industry.toLowerCase().includes(query))
+                );
+                
+                updateTable(filtered);
+                
+                // Announce results to screen readers
+                const resultCount = Math.min(filtered.length, 50);
+                const totalResults = filtered.length;
+                let announcement = '';
+                
+                if (query.trim() === '') {
+                    announcement = \`Showing top 50 websites from \${allSites.length} total\`;
+                } else if (totalResults === 0) {
+                    announcement = \`No results found for "\${query}"\`;
+                } else if (totalResults > 50) {
+                    announcement = \`Showing top 50 results from \${totalResults} matches for "\${query}"\`;
+                } else {
+                    announcement = \`Found \${totalResults} result\${totalResults === 1 ? '' : 's'} for "\${query}"\`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300); // 300ms debounce
         });
         
         function updateTable(sites) {
             tableBody.innerHTML = sites.slice(0, 50).map((site, index) => \`
                 <tr class="site-row" data-url="\${site.url}" data-country="\${normalizeCountry(site.country)}">
-                    <td class="rank">#\${index + 1}</td>
-                    <td><a href="domain-\${site.url.replace(/\\./g, '-')}.html" class="domain-link">\${site.url}</a></td>
-                    <td><a href="country-\${normalizeCountry(site.country).toLowerCase().replace(/\\s+/g, '-')}.html" class="country-link">\${getCountryFlag(normalizeCountry(site.country))} \${normalizeCountry(site.country)}</a></td>
-                    <td><a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" class="industry-link">\${site.industry || 'Unknown'}</a></td>
-                    <td class="score perf-\${getScoreClass(site.performance)}">\${site.performance}%</td>
-                    <td class="score acc-\${getScoreClass(site.accessibility)}">\${site.accessibility}%</td>
-                    <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
-                    <td class="score bp-\${getScoreClass(site.best_practices)}">\${site.best_practices}%</td>
-                    <td class="score pwa-\${getScoreClass(site.pwa)}">\${site.pwa}%</td>
-                    <td class="date" data-date="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</td>
+                    <td class="rank" aria-label="Rank \${index + 1}">#\${index + 1}</td>
+                    <td>
+                        <a href="domain-\${site.url.replace(/\\./g, '-')}.html" 
+                           class="domain-link" 
+                           aria-label="View detailed report for \${site.url}">
+                            \${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-\${normalizeCountry(site.country).toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from \${normalizeCountry(site.country)}">
+                            \${getCountryFlag(normalizeCountry(site.country))} \${normalizeCountry(site.country)}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all \${site.industry || 'Unknown'} industry websites">
+                            \${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-\${getScoreClass(site.performance)}" 
+                        aria-label="Performance score: \${site.performance} percent, \${getScoreDescription(site.performance)}">
+                        \${site.performance}%
+                    </td>
+                    <td class="score acc-\${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: \${site.accessibility} percent, \${getScoreDescription(site.accessibility)}">
+                        \${site.accessibility}%
+                    </td>
+                    <td class="score seo-\${getScoreClass(site.seo)}"
+                        aria-label="SEO score: \${site.seo} percent, \${getScoreDescription(site.seo)}">
+                        \${site.seo}%
+                    </td>
+                    <td class="score bp-\${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: \${site.best_practices} percent, \${getScoreDescription(site.best_practices)}">
+                        \${site.best_practices}%
+                    </td>
+                    <td class="score pwa-\${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: \${site.pwa} percent, \${getScoreDescription(site.pwa)}">
+                        \${site.pwa}%
+                    </td>
+                    <td class="date" data-date="\${site.test_date}" 
+                        aria-label="Last tested on \${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
                 </tr>
             \`).join('');
+            
+            // Re-format dates after table update
+            formatAllDates();
         }
         
         function getScoreClass(score) {
@@ -359,6 +615,13 @@ class WebsiteGenerator {
             if (score >= 70) return 'good';
             if (score >= 50) return 'average';
             return 'poor';
+        }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
         }
 
         // Add country normalization function
@@ -479,105 +742,222 @@ class WebsiteGenerator {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
+    
     <div class="container">
-        <header class="header">
-            <div class="breadcrumb">
-                <a href="index.html">🏠 Home</a> > ${this.getCountryFlag(countryData.country)} ${countryData.country}
-            </div>
-            <h1>${this.getCountryFlag(countryData.country)} ${countryData.country} Performance</h1>
-            <p class="subtitle">${countryScores.length} websites analyzed</p>
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">${this.getCountryFlag(countryData.country)} ${countryData.country}</li>
+                </ol>
+            </nav>
+            <h1>${this.getCountryFlag(countryData.country)} ${countryData.country} Performance Analysis</h1>
+            <p class="subtitle">Comprehensive lighthouse analysis of ${countryScores.length} websites from ${countryData.country}</p>
         </header>
 
-        <div class="stats-grid">
-            <div class="stat-card performance">
+        <section class="stats-grid" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="sr-only">Performance Statistics for ${countryData.country}</h2>
+            <div class="stat-card performance" role="img" aria-label="Average performance score: ${stats.avgPerformance} percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number">${stats.avgPerformance}%</div>
+                <div class="stat-number" aria-hidden="true">${stats.avgPerformance}%</div>
+                <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card accessibility">
+            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: ${stats.avgAccessibility} percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-number">${stats.avgAccessibility}%</div>
+                <div class="stat-number" aria-hidden="true">${stats.avgAccessibility}%</div>
+                <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
-            <div class="stat-card seo">
+            <div class="stat-card seo" role="img" aria-label="Average SEO score: ${stats.avgSeo} percent">
                 <h3>Average SEO</h3>
-                <div class="stat-number">${stats.avgSeo}%</div>
+                <div class="stat-number" aria-hidden="true">${stats.avgSeo}%</div>
+                <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card best-practices">
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: ${stats.avgBestPractices} percent">
                 <h3>Best Practices</h3>
-                <div class="stat-number">${stats.avgBestPractices}%</div>
+                <div class="stat-number" aria-hidden="true">${stats.avgBestPractices}%</div>
+                <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
-        </div>
+        </section>
 
-        <section class="section">
-            <h2>🏅 Top Websites in ${countryData.country}</h2>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search ${countryData.country} websites..." />
-            </div>
-            <div class="table-container">
-                <table class="results-table" id="resultsTable">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Website</th>
-                            <th>Industry</th>
-                            <th>Performance</th>
-                            <th>Accessibility</th>
-                            <th>SEO</th>
-                            <th>Best Practices</th>
-                            <th>PWA</th>
-                            <th>Last Scanned</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="websites-heading">
+                <h2 id="websites-heading">🏅 Top Websites in ${countryData.country}</h2>
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search ${countryData.country} websites by name or industry</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search ${countryData.country} websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name or industry. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
+                        <caption class="sr-only">
+                            Lighthouse performance data for ${countryScores.length} websites from ${countryData.country}, 
+                            sorted by performance score in descending order. 
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" aria-sort="none">Rank</th>
+                                <th scope="col" aria-sort="none">Website</th>
+                                <th scope="col" aria-sort="none">Industry</th>
+                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
+                                <th scope="col" aria-sort="none">Accessibility</th>
+                                <th scope="col" aria-sort="none">SEO</th>
+                                <th scope="col" aria-sort="none">Best Practices</th>
+                                <th scope="col" aria-sort="none">PWA</th>
+                                <th scope="col" aria-sort="none">Last Scanned</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
                         ${countryScores.map((site, index) => `
                             <tr class="site-row">
-                                <td class="rank">#${index + 1}</td>
-                                <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
-                                <td><a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" class="industry-link">${site.industry || 'Unknown'}</a></td>
-                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}%</td>
-                                <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
-                                <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
-                                <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
-                                <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
-                                <td class="date" data-date="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</td>
+                                <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                                <td>
+                                    <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for ${site.url}">
+                                        ${site.url}
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                                       class="industry-link"
+                                       aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                                        ${site.industry || 'Unknown'}
+                                    </a>
+                                </td>
+                                <td class="score perf-${this.getScoreClass(site.performance)}"
+                                    aria-label="Performance score: ${site.performance} percent, ${this.getScoreDescription(site.performance)}">
+                                    ${site.performance}%
+                                </td>
+                                <td class="score acc-${this.getScoreClass(site.accessibility)}"
+                                    aria-label="Accessibility score: ${site.accessibility} percent, ${this.getScoreDescription(site.accessibility)}">
+                                    ${site.accessibility}%
+                                </td>
+                                <td class="score seo-${this.getScoreClass(site.seo)}"
+                                    aria-label="SEO score: ${site.seo} percent, ${this.getScoreDescription(site.seo)}">
+                                    ${site.seo}%
+                                </td>
+                                <td class="score bp-${this.getScoreClass(site.best_practices)}"
+                                    aria-label="Best Practices score: ${site.best_practices} percent, ${this.getScoreDescription(site.best_practices)}">
+                                    ${site.best_practices}%
+                                </td>
+                                <td class="score pwa-${this.getScoreClass(site.pwa)}"
+                                    aria-label="PWA score: ${site.pwa} percent, ${this.getScoreDescription(site.pwa)}">
+                                    ${site.pwa}%
+                                </td>
+                                <td class="date" data-date="${site.test_date}"
+                                    aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                                    <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                                </td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             </div>
         </section>
+        </main>
 
-        <footer class="footer">
-            <p>📊 ${this.normalizeCountry(countryData.country)} Performance Data | ${countryScores.length} websites tested</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📊 ${this.normalizeCountry(countryData.country)} Performance Data | ${countryScores.length} websites tested</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                </div>
+            </div>
         </footer>
     </div>
 
     <script>
         const countryData = ${JSON.stringify(countryScores)};
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
         
-        document.getElementById('searchInput').addEventListener('input', function() {
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase();
-            const filtered = countryData.filter(site => 
-                site.url.toLowerCase().includes(query)
-            );
             
-            document.getElementById('tableBody').innerHTML = filtered.map((site, index) => \`
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const filtered = countryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.industry && site.industry.toLowerCase().includes(query))
+                );
+                
+                updateCountryTable(filtered);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = \`Showing all \${countryData.length} websites from ${countryData.country}\`;
+                } else if (filtered.length === 0) {
+                    announcement = \`No results found for "\${query}" in ${countryData.country}\`;
+                } else {
+                    announcement = \`Found \${filtered.length} result\${filtered.length === 1 ? '' : 's'} for "\${query}" in ${countryData.country}\`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
+        
+        function updateCountryTable(sites) {
+            tableBody.innerHTML = sites.map((site, index) => \`
                 <tr class="site-row">
-                    <td class="rank">#\${index + 1}</td>
-                    <td><a href="domain-\${site.url.replace(/\\./g, '-')}.html" class="domain-link">\${site.url}</a></td>
-                    <td><a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" class="industry-link">\${site.industry || 'Unknown'}</a></td>
-                    <td class="score perf-\${getScoreClass(site.performance)}">\${site.performance}%</td>
-                    <td class="score acc-\${getScoreClass(site.accessibility)}">\${site.accessibility}%</td>
-                    <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
-                    <td class="score bp-\${getScoreClass(site.best_practices)}">\${site.best_practices}%</td>
-                    <td class="score pwa-\${getScoreClass(site.pwa)}">\${site.pwa}%</td>
-                    <td class="date" data-date="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</td>
+                    <td class="rank" aria-label="Rank \${index + 1}">#\${index + 1}</td>
+                    <td>
+                        <a href="domain-\${site.url.replace(/\\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for \${site.url}">
+                            \${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all \${site.industry || 'Unknown'} industry websites">
+                            \${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-\${getScoreClass(site.performance)}"
+                        aria-label="Performance score: \${site.performance} percent, \${getScoreDescription(site.performance)}">
+                        \${site.performance}%
+                    </td>
+                    <td class="score acc-\${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: \${site.accessibility} percent, \${getScoreDescription(site.accessibility)}">
+                        \${site.accessibility}%
+                    </td>
+                    <td class="score seo-\${getScoreClass(site.seo)}"
+                        aria-label="SEO score: \${site.seo} percent, \${getScoreDescription(site.seo)}">
+                        \${site.seo}%
+                    </td>
+                    <td class="score bp-\${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: \${site.best_practices} percent, \${getScoreDescription(site.best_practices)}">
+                        \${site.best_practices}%
+                    </td>
+                    <td class="score pwa-\${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: \${site.pwa} percent, \${getScoreDescription(site.pwa)}">
+                        \${site.pwa}%
+                    </td>
+                    <td class="date" data-date="\${site.test_date}"
+                        aria-label="Last tested on \${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
                 </tr>
             \`).join('');
-            
-            // Re-format dates after updating content
-            formatAllDates();
-        });
+        }
         
         function getScoreClass(score) {
             if (score >= 90) return 'excellent';
@@ -585,6 +965,30 @@ class WebsiteGenerator {
             if (score >= 50) return 'average';
             return 'poor';
         }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
+        }
+        
+        // Format dates in user's locale
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    cell.querySelector('time').textContent = date.toLocaleDateString();
+                }
+            });
+        }
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
+        });
         
         // Register service worker for PWA functionality
         if ('serviceWorker' in navigator) {
@@ -749,82 +1153,235 @@ class WebsiteGenerator {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
+    
     <div class="container">
-        <header class="header">
-            <div class="breadcrumb">
-                <a href="index.html">🏠 Home</a> > 🏭 ${industry}
-            </div>
-            <h1>🏭 ${industry} Industry</h1>
-            <p class="subtitle">${industryScores.length} websites analyzed</p>
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">🏭 ${industry}</li>
+                </ol>
+            </nav>
+            <h1>🏭 ${industry} Industry Performance Analysis</h1>
+            <p class="subtitle">Comprehensive lighthouse analysis of ${industryScores.length} websites in the ${industry.toLowerCase()} industry</p>
         </header>
 
-        <div class="stats-grid">
-            <div class="stat-card">
+        <section class="stats-grid" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="sr-only">Performance Statistics for ${industry} Industry</h2>
+            <div class="stat-card" role="img" aria-label="Average performance score: ${stats.avgPerformance} percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-${this.getScoreClass(stats.avgPerformance)}">${stats.avgPerformance}%</div>
+                <div class="stat-value perf-${this.getScoreClass(stats.avgPerformance)}" aria-hidden="true">${stats.avgPerformance}%</div>
+                <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card">
+            <div class="stat-card" role="img" aria-label="Average accessibility score: ${stats.avgAccessibility} percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-value acc-${this.getScoreClass(stats.avgAccessibility)}">${stats.avgAccessibility}%</div>
+                <div class="stat-value acc-${this.getScoreClass(stats.avgAccessibility)}" aria-hidden="true">${stats.avgAccessibility}%</div>
+                <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
-            <div class="stat-card">
+            <div class="stat-card" role="img" aria-label="Average SEO score: ${stats.avgSeo} percent">
                 <h3>Average SEO</h3>
-                <div class="stat-value seo-${this.getScoreClass(stats.avgSeo)}">${stats.avgSeo}%</div>
+                <div class="stat-value seo-${this.getScoreClass(stats.avgSeo)}" aria-hidden="true">${stats.avgSeo}%</div>
+                <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card">
+            <div class="stat-card" role="img" aria-label="Average best practices score: ${stats.avgBestPractices} percent">
                 <h3>Average Best Practices</h3>
-                <div class="stat-value bp-${this.getScoreClass(stats.avgBestPractices)}">${stats.avgBestPractices}%</div>
+                <div class="stat-value bp-${this.getScoreClass(stats.avgBestPractices)}" aria-hidden="true">${stats.avgBestPractices}%</div>
+                <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
-        </div>
+        </section>
 
-        <section class="section">
-            <h2>📈 ${industry} Websites</h2>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search ${industry} websites..." />
-            </div>
-            <div class="table-container">
-                <table class="results-table" id="resultsTable">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Website</th>
-                            <th>Country</th>
-                            <th>Performance</th>
-                            <th>Accessibility</th>
-                            <th>SEO</th>
-                            <th>Best Practices</th>
-                            <th>PWA</th>
-                            <th>Last Scanned</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="websites-heading">
+                <h2 id="websites-heading">📈 ${industry} Websites</h2>
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search ${industry} websites by name or country</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search ${industry} websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
+                        <caption class="sr-only">
+                            Lighthouse performance data for ${industryScores.length} websites in the ${industry} industry, 
+                            sorted by performance score in descending order. 
+                            Table includes website URL, country, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" aria-sort="none">Rank</th>
+                                <th scope="col" aria-sort="none">Website</th>
+                                <th scope="col" aria-sort="none">Country</th>
+                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
+                                <th scope="col" aria-sort="none">Accessibility</th>
+                                <th scope="col" aria-sort="none">SEO</th>
+                                <th scope="col" aria-sort="none">Best Practices</th>
+                                <th scope="col" aria-sort="none">PWA</th>
+                                <th scope="col" aria-sort="none">Last Scanned</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
                         ${industryScores.map((site, index) => `
                             <tr class="site-row">
-                                <td class="rank">#${index + 1}</td>
-                                <td><a href="domain-${site.url.replace(/\./g, '-')}.html" class="domain-link">${site.url}</a></td>
-                                <td><a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" class="country-link">${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}</a></td>
-                                <td class="score perf-${this.getScoreClass(site.performance)}">${site.performance}%</td>
-                                <td class="score acc-${this.getScoreClass(site.accessibility)}">${site.accessibility}%</td>
-                                <td class="score seo-${this.getScoreClass(site.seo)}">${site.seo}%</td>
-                                <td class="score bp-${this.getScoreClass(site.best_practices)}">${site.best_practices}%</td>
-                                <td class="score pwa-${this.getScoreClass(site.pwa)}">${site.pwa}%</td>
-                                <td class="date">${new Date(site.test_date).toLocaleDateString()}</td>
+                                <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                                <td>
+                                    <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for ${site.url}">
+                                        ${site.url}
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from ${this.normalizeCountry(site.country)}">
+                                        ${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}
+                                    </a>
+                                </td>
+                                <td class="score perf-${this.getScoreClass(site.performance)}"
+                                    aria-label="Performance score: ${site.performance} percent, ${this.getScoreDescription(site.performance)}">
+                                    ${site.performance}%
+                                </td>
+                                <td class="score acc-${this.getScoreClass(site.accessibility)}"
+                                    aria-label="Accessibility score: ${site.accessibility} percent, ${this.getScoreDescription(site.accessibility)}">
+                                    ${site.accessibility}%
+                                </td>
+                                <td class="score seo-${this.getScoreClass(site.seo)}"
+                                    aria-label="SEO score: ${site.seo} percent, ${this.getScoreDescription(site.seo)}">
+                                    ${site.seo}%
+                                </td>
+                                <td class="score bp-${this.getScoreClass(site.best_practices)}"
+                                    aria-label="Best Practices score: ${site.best_practices} percent, ${this.getScoreDescription(site.best_practices)}">
+                                    ${site.best_practices}%
+                                </td>
+                                <td class="score pwa-${this.getScoreClass(site.pwa)}"
+                                    aria-label="PWA score: ${site.pwa} percent, ${this.getScoreDescription(site.pwa)}">
+                                    ${site.pwa}%
+                                </td>
+                                <td class="date" data-date="${site.test_date}"
+                                    aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                                    <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                                </td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             </div>
         </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📊 ${industry} Industry Performance Data | ${industryScores.length} websites tested</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script>
         const industryData = ${JSON.stringify(industryScores)};
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const filtered = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    site.country.toLowerCase().includes(query)
+                );
+                
+                updateIndustryTable(filtered);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = \`Showing all \${industryData.length} websites in ${industry}\`;
+                } else if (filtered.length === 0) {
+                    announcement = \`No results found for "\${query}" in ${industry}\`;
+                } else {
+                    announcement = \`Found \${filtered.length} result\${filtered.length === 1 ? '' : 's'} for "\${query}" in ${industry}\`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
+        
+        function updateIndustryTable(sites) {
+            tableBody.innerHTML = sites.map((site, index) => \`
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank \${index + 1}">#\${index + 1}</td>
+                    <td>
+                        <a href="domain-\${site.url.replace(/\\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for \${site.url}">
+                            \${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-\${normalizeCountry(site.country).toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from \${normalizeCountry(site.country)}">
+                            \${getCountryFlag(site.country)} \${normalizeCountry(site.country)}
+                        </a>
+                    </td>
+                    <td class="score perf-\${getScoreClass(site.performance)}"
+                        aria-label="Performance score: \${site.performance} percent, \${getScoreDescription(site.performance)}">
+                        \${site.performance}%
+                    </td>
+                    <td class="score acc-\${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: \${site.accessibility} percent, \${getScoreDescription(site.accessibility)}">
+                        \${site.accessibility}%
+                    </td>
+                    <td class="score seo-\${getScoreClass(site.seo)}"
+                        aria-label="SEO score: \${site.seo} percent, \${getScoreDescription(site.seo)}">
+                        \${site.seo}%
+                    </td>
+                    <td class="score bp-\${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: \${site.best_practices} percent, \${getScoreDescription(site.best_practices)}">
+                        \${site.best_practices}%
+                    </td>
+                    <td class="score pwa-\${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: \${site.pwa} percent, \${getScoreDescription(site.pwa)}">
+                        \${site.pwa}%
+                    </td>
+                    <td class="date" data-date="\${site.test_date}"
+                        aria-label="Last tested on \${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="\${site.test_date}">\${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>
+            \`).join('');
+        }
         
         function getScoreClass(score) {
             if (score >= 90) return 'excellent';
             if (score >= 70) return 'good';
             if (score >= 50) return 'average';
             return 'poor';
+        }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
         }
 
         function getCountryFlag(country) {
@@ -837,27 +1394,29 @@ class WebsiteGenerator {
             };
             return flags[country] || '🌍';
         }
-
-        // Search functionality
-        document.getElementById('searchInput').addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            const filtered = industryData.filter(site => 
-                site.url.toLowerCase().includes(query)
-            );
-            
-            document.getElementById('tableBody').innerHTML = filtered.map((site, index) => \`
-                <tr class="site-row">
-                    <td class="rank">#\${index + 1}</td>
-                    <td><a href="domain-\${site.url.replace(/\\./g, '-')}.html" class="domain-link">\${site.url}</a></td>
-                    <td><a href="country-\${site.country.toLowerCase().replace(/\\s+/g, '-')}.html" class="country-link">\${getCountryFlag(site.country)} \${site.country}</a></td>
-                    <td class="score perf-\${getScoreClass(site.performance)}">\${site.performance}%</td>
-                    <td class="score acc-\${getScoreClass(site.accessibility)}">\${site.accessibility}%</td>
-                    <td class="score seo-\${getScoreClass(site.seo)}">\${site.seo}%</td>
-                    <td class="score bp-\${getScoreClass(site.best_practices)}">\${site.best_practices}%</td>
-                    <td class="score pwa-\${getScoreClass(site.pwa)}">\${site.pwa}%</td>
-                    <td class="date">\${new Date(site.test_date).toLocaleDateString()}</td>
-                </tr>
-            \`).join('');
+        
+        function normalizeCountry(country) {
+            return country === 'Unknown' ? 'Global' : country;
+        }
+        
+        // Format dates in user's locale
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    const timeElement = cell.querySelector('time');
+                    if (timeElement) {
+                        timeElement.textContent = date.toLocaleDateString();
+                    }
+                }
+            });
+        }
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
         });
         
         // Register service worker for PWA functionality
@@ -1117,6 +1676,24 @@ body {
     margin-bottom: 20px;
     font-size: 0.9em;
     opacity: 0.8;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumb-list li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-list li::marker {
+    display: none;
 }
 
 .breadcrumb a {
@@ -1403,7 +1980,7 @@ body {
 .btn-see-all {
     display: inline-block;
     background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
-    color: white;
+    color: white !important;
     padding: 12px 24px;
     border-radius: 24px;
     text-decoration: none;
@@ -1416,7 +1993,14 @@ body {
     background: linear-gradient(135deg, #166dd4 0%, #3a93d4 100%);
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(24, 119, 242, 0.4);
-    color: white;
+    color: white !important;
+    text-decoration: none;
+}
+
+.btn-see-all:visited,
+.btn-see-all:link,
+.btn-see-all:active {
+    color: white !important;
     text-decoration: none;
 }
 
@@ -1700,6 +2284,229 @@ body {
 
 .trend-down {
     color: #e74c3c;
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+/* Skip Navigation Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Enhanced Focus Indicators */
+*:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 2px;
+}
+
+button:focus, .btn:focus, input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Screen Reader Only Text */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Live Region for Dynamic Announcements */
+.live-region {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* High Contrast Color Improvements for WCAG AA compliance */
+.score.excellent, .perf-excellent, .acc-excellent, .seo-excellent, .bp-excellent, .pwa-excellent {
+    background: #d1f2eb !important;
+    color: #0f5132 !important;
+    border: 1px solid #0f5132;
+}
+
+.score.good, .perf-good, .acc-good, .seo-good, .bp-good, .pwa-good {
+    background: #fff3cd !important;
+    color: #664d03 !important;
+    border: 1px solid #664d03;
+}
+
+.score.average, .perf-average, .acc-average, .seo-average, .bp-average, .pwa-average {
+    background: #f8d7da !important;
+    color: #721c24 !important;
+    border: 1px solid #721c24;
+}
+
+.score.poor, .perf-poor, .acc-poor, .seo-poor, .bp-poor, .pwa-poor {
+    background: #f5c2c7 !important;
+    color: #721c24 !important;
+    border: 1px solid #721c24;
+}
+
+/* Enhanced Table Accessibility */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #212529;
+}
+
+caption {
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+    background: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    caption-side: top;
+}
+
+/* Enhanced Link Accessibility */
+a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: #003d82;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6f42c1;
+}
+
+/* Form Elements Accessibility */
+input[type="text"], input[type="search"] {
+    border: 2px solid #ced4da;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="search"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Button Accessibility */
+.btn-see-all {
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.btn-see-all:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Country and Industry Rankings Accessibility */
+.country-rank, .industry-rank {
+    background: #0f4d8c !important;
+    color: white !important;
+    border: 1px solid #0a3566;
+}
+
+/* Enhanced Navigation */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Status and Score Announcements */
+.score[aria-label]::after {
+    content: "";
+}
+
+/* Responsive Accessibility */
+@media (max-width: 768px) {
+    .skip-link {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    input[type="text"], input[type="search"] {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .score {
+        border-width: 2px !important;
+    }
+    
+    .btn-see-all {
+        border-width: 3px !important;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 `;
 
@@ -2278,7 +3085,14 @@ body {
     return 'poor';
   }
 
-  getScoreDescription(score, type) {
+  getScoreDescription(score) {
+    if (score >= 90) return 'excellent performance';
+    if (score >= 70) return 'good performance';
+    if (score >= 50) return 'average performance';
+    return 'needs improvement';
+  }
+
+  getDetailedScoreDescription(score, type) {
     const descriptions = {
       performance: {
         excellent: 'Lightning fast! 🚀',
@@ -2308,6 +3122,370 @@ body {
 
     const scoreClass = this.getScoreClass(score);
     return descriptions[type][scoreClass] || 'Score available';
+  }
+
+  async generateLatestUpdatedPage() {
+    console.log('📅 Generating Latest Updated Statistics page...');
+    
+    const latestScanResults = await this.db.getLatestScanResults();
+    
+    if (latestScanResults.length === 0) {
+      console.log('❌ No data found for latest updated statistics page.');
+      return;
+    }
+
+    // Get the scan date for display
+    const latestScanDate = latestScanResults[0].test_date;
+    const scanDate = new Date(latestScanDate);
+    const formattedScanDate = scanDate.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+
+    // Calculate statistics for the latest scan
+    const stats = this.calculateStatsForScores(latestScanResults);
+    
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Updated Statistics - Lighthouse Tracker</title>
+    <meta name="description" content="Latest lighthouse performance scan results from ${formattedScanDate} - ${latestScanResults.length} websites analyzed">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" id="skip-main">Skip to main content</a>
+    
+    <div class="container">
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">📅 Latest Updated Statistics</li>
+                </ol>
+            </nav>
+            <h1>📅 Latest Updated Statistics</h1>
+            <p class="subtitle">
+                Most recent lighthouse scan from <time datetime="${latestScanDate}">${formattedScanDate}</time>
+                <br>${latestScanResults.length} websites analyzed in the latest scan
+            </p>
+        </header>
+
+        <section class="stats-grid" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="sr-only">Performance Statistics for Latest Scan</h2>
+            <div class="stat-card performance" role="img" aria-label="Average performance score: ${stats.avgPerformance} percent">
+                <h3>Average Performance</h3>
+                <div class="stat-number" aria-hidden="true">${stats.avgPerformance}%</div>
+                <p class="sr-only">Performance measures loading speed and user experience</p>
+            </div>
+            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: ${stats.avgAccessibility} percent">
+                <h3>Average Accessibility</h3>
+                <div class="stat-number" aria-hidden="true">${stats.avgAccessibility}%</div>
+                <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
+            </div>
+            <div class="stat-card seo" role="img" aria-label="Average SEO score: ${stats.avgSeo} percent">
+                <h3>Average SEO</h3>
+                <div class="stat-number" aria-hidden="true">${stats.avgSeo}%</div>
+                <p class="sr-only">SEO measures search engine optimization and discoverability</p>
+            </div>
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: ${stats.avgBestPractices} percent">
+                <h3>Best Practices</h3>
+                <div class="stat-number" aria-hidden="true">${stats.avgBestPractices}%</div>
+                <p class="sr-only">Best practices measures security and modern web standards compliance</p>
+            </div>
+        </section>
+
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="websites-heading">
+                <h2 id="websites-heading">🚀 Recently Scanned Websites</h2>
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search recently scanned websites by name, country, or industry</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search recently scanned websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name, country, or industry. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
+                        <caption class="sr-only">
+                            Lighthouse performance data for ${latestScanResults.length} websites from the latest scan on ${formattedScanDate}, 
+                            sorted by performance score in descending order. 
+                            Table includes website URL, country, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" aria-sort="none">Rank</th>
+                                <th scope="col" aria-sort="none">Website</th>
+                                <th scope="col" aria-sort="none">Country</th>
+                                <th scope="col" aria-sort="none">Industry</th>
+                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
+                                <th scope="col" aria-sort="none">Accessibility</th>
+                                <th scope="col" aria-sort="none">SEO</th>
+                                <th scope="col" aria-sort="none">Best Practices</th>
+                                <th scope="col" aria-sort="none">PWA</th>
+                                <th scope="col" aria-sort="none">Scan Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            ${latestScanResults.map((site, index) => `
+                                <tr class="site-row">
+                                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                                    <td>
+                                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                                           class="domain-link"
+                                           aria-label="View detailed report for ${site.url}">
+                                            ${site.url}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" 
+                                           class="country-link"
+                                           aria-label="View all websites from ${this.normalizeCountry(site.country)}">
+                                            ${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                                           class="industry-link"
+                                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                                            ${site.industry || 'Unknown'}
+                                        </a>
+                                    </td>
+                                    <td class="score perf-${this.getScoreClass(site.performance)}"
+                                        aria-label="Performance score: ${site.performance} percent, ${this.getScoreDescription(site.performance)}">
+                                        ${site.performance}%
+                                    </td>
+                                    <td class="score acc-${this.getScoreClass(site.accessibility)}"
+                                        aria-label="Accessibility score: ${site.accessibility} percent, ${this.getScoreDescription(site.accessibility)}">
+                                        ${site.accessibility}%
+                                    </td>
+                                    <td class="score seo-${this.getScoreClass(site.seo)}"
+                                        aria-label="SEO score: ${site.seo} percent, ${this.getScoreDescription(site.seo)}">
+                                        ${site.seo}%
+                                    </td>
+                                    <td class="score bp-${this.getScoreClass(site.best_practices)}"
+                                        aria-label="Best Practices score: ${site.best_practices} percent, ${this.getScoreDescription(site.best_practices)}">
+                                        ${site.best_practices}%
+                                    </td>
+                                    <td class="score pwa-${this.getScoreClass(site.pwa)}"
+                                        aria-label="PWA score: ${site.pwa} percent, ${this.getScoreDescription(site.pwa)}">
+                                        ${site.pwa}%
+                                    </td>
+                                    <td class="date" data-date="${site.test_date}"
+                                        aria-label="Scanned at ${new Date(site.test_date).toLocaleString()}">
+                                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleTimeString()}</time>
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📅 Latest Scan Data from <time datetime="${latestScanDate}">${formattedScanDate}</time> | ${latestScanResults.length} websites analyzed</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant | <a href="#skip-main" aria-label="Back to top of page">Back to top</a></small></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const latestScanData = ${JSON.stringify(latestScanResults)};
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const filtered = latestScanData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    site.country.toLowerCase().includes(query) ||
+                    (site.industry && site.industry.toLowerCase().includes(query))
+                );
+                
+                updateLatestScanTable(filtered);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = \`Showing all \${latestScanData.length} websites from latest scan\`;
+                } else if (filtered.length === 0) {
+                    announcement = \`No results found for "\${query}" in latest scan\`;
+                } else {
+                    announcement = \`Found \${filtered.length} result\${filtered.length === 1 ? '' : 's'} for "\${query}" in latest scan\`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
+        
+        function updateLatestScanTable(sites) {
+            tableBody.innerHTML = sites.map((site, index) => \`
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank \${index + 1}">#\${index + 1}</td>
+                    <td>
+                        <a href="domain-\${site.url.replace(/\\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for \${site.url}">
+                            \${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-\${normalizeCountry(site.country).toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from \${normalizeCountry(site.country)}">
+                            \${getCountryFlag(site.country)} \${normalizeCountry(site.country)}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-\${(site.industry || 'unknown').toLowerCase().replace(/\\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all \${site.industry || 'Unknown'} industry websites">
+                            \${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-\${getScoreClass(site.performance)}"
+                        aria-label="Performance score: \${site.performance} percent, \${getScoreDescription(site.performance)}">
+                        \${site.performance}%
+                    </td>
+                    <td class="score acc-\${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: \${site.accessibility} percent, \${getScoreDescription(site.accessibility)}">
+                        \${site.accessibility}%
+                    </td>
+                    <td class="score seo-\${getScoreClass(site.seo)}"
+                        aria-label="SEO score: \${site.seo} percent, \${getScoreDescription(site.seo)}">
+                        \${site.seo}%
+                    </td>
+                    <td class="score bp-\${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: \${site.best_practices} percent, \${getScoreDescription(site.best_practices)}">
+                        \${site.best_practices}%
+                    </td>
+                    <td class="score pwa-\${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: \${site.pwa} percent, \${getScoreDescription(site.pwa)}">
+                        \${site.pwa}%
+                    </td>
+                    <td class="date" data-date="\${site.test_date}"
+                        aria-label="Scanned at \${new Date(site.test_date).toLocaleString()}">
+                        <time datetime="\${site.test_date}">\${new Date(site.test_date).toLocaleTimeString()}</time>
+                    </td>
+                </tr>
+            \`).join('');
+        }
+        
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 70) return 'good';
+            if (score >= 50) return 'average';
+            return 'poor';
+        }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
+        }
+        
+        function normalizeCountry(country) {
+            return country === 'Unknown' ? 'Global' : country;
+        }
+        
+        function getCountryFlag(country) {
+            const flags = {
+                'United States': '🇺🇸', 'United Kingdom': '🇬🇧', 'Germany': '🇩🇪',
+                'India': '🇮🇳', 'Brazil': '🇧🇷', 'Japan': '🇯🇵', 'Canada': '🇨🇦',
+                'Australia': '🇦🇺', 'Russia': '🇷🇺', 'South Korea': '🇰🇷',
+                'Finland': '🇫🇮', 'Sweden': '🇸🇪', 'Netherlands': '🇳🇱',
+                'Israel': '🇮🇱', 'Global': '🌍', 'Unknown': '🌍'
+            };
+            return flags[country] || '🌍';
+        }
+        
+        // Format dates in user's locale
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    cell.querySelector('time').textContent = date.toLocaleTimeString();
+                }
+            });
+        }
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
+        });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
+    </script>
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'latest-updated.html'), html);
+    console.log('✅ Latest Updated Statistics page generated successfully');
+  }
+
+  calculateStatsForScores(scores) {
+    if (scores.length === 0) {
+      return {
+        avgPerformance: 0,
+        avgAccessibility: 0,
+        avgSeo: 0,
+        avgBestPractices: 0,
+        avgPwa: 0
+      };
+    }
+
+    const totals = scores.reduce((acc, score) => {
+      acc.performance += score.performance || 0;
+      acc.accessibility += score.accessibility || 0;
+      acc.seo += score.seo || 0;
+      acc.best_practices += score.best_practices || 0;
+      acc.pwa += score.pwa || 0;
+      return acc;
+    }, { performance: 0, accessibility: 0, seo: 0, best_practices: 0, pwa: 0 });
+
+    return {
+      avgPerformance: Math.round(totals.performance / scores.length),
+      avgAccessibility: Math.round(totals.accessibility / scores.length),
+      avgSeo: Math.round(totals.seo / scores.length),
+      avgBestPractices: Math.round(totals.best_practices / scores.length),
+      avgPwa: Math.round(totals.pwa / scores.length)
+    };
   }
 }
 

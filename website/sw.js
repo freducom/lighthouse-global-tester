@@ -1,5 +1,5 @@
 // Service Worker for Global Lighthouse Tracker PWA
-const CACHE_NAME = 'lighthouse-tracker-v1';
+const CACHE_NAME = 'lighthouse-tracker-v2'; // Updated version to force cache refresh
 const OFFLINE_URL = '/index.html';
 
 // Files to cache for offline functionality
@@ -21,7 +21,8 @@ const urlsToCache = [
   '/industry-search-engine.html',
   '/all-countries.html',
   '/all-industries.html',
-  '/all-companies.html'
+  '/all-companies.html',
+  '/latest-updated.html'
 ];
 
 // Install event - cache resources
@@ -63,7 +64,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - smart caching strategy
 self.addEventListener('fetch', (event) => {
   // Only handle GET requests
   if (event.request.method !== 'GET') return;
@@ -71,48 +72,74 @@ self.addEventListener('fetch', (event) => {
   // Skip non-http(s) requests
   if (!event.request.url.startsWith('http')) return;
 
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Return cached version if available
-        if (response) {
-          console.log('📱 Serving from cache:', event.request.url);
-          return response;
-        }
+  const url = new URL(event.request.url);
+  const isHTMLPage = event.request.destination === 'document' || 
+                     url.pathname.endsWith('.html') || 
+                     url.pathname === '/';
 
-        // Otherwise fetch from network
-        console.log('🌐 Fetching from network:', event.request.url);
-        return fetch(event.request)
-          .then((response) => {
-            // Don't cache if not a valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-
-            // Clone the response for caching
+  if (isHTMLPage) {
+    // NETWORK-FIRST strategy for HTML pages (fresh data)
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          // Cache the fresh response
+          if (response && response.status === 200 && response.type === 'basic') {
             const responseToCache = response.clone();
-
             caches.open(CACHE_NAME)
               .then((cache) => {
-                // Cache HTML pages and assets
-                if (event.request.url.includes('.html') || 
-                    event.request.url.includes('.css') || 
-                    event.request.url.includes('.js') ||
-                    event.request.url.includes('.svg')) {
-                  cache.put(event.request, responseToCache);
-                }
+                console.log('🔄 Updating cache with fresh content:', event.request.url);
+                cache.put(event.request, responseToCache);
               });
-
+          }
+          console.log('🌐 Serving fresh content from network:', event.request.url);
+          return response;
+        })
+        .catch(() => {
+          // Fallback to cache if network fails (offline support)
+          console.log('📱 Network failed, serving from cache:', event.request.url);
+          return caches.match(event.request)
+            .then((cachedResponse) => {
+              return cachedResponse || caches.match(OFFLINE_URL);
+            });
+        })
+    );
+  } else {
+    // CACHE-FIRST strategy for static assets (performance)
+    event.respondWith(
+      caches.match(event.request)
+        .then((response) => {
+          if (response) {
+            console.log('📱 Serving static asset from cache:', event.request.url);
             return response;
-          })
-          .catch(() => {
-            // If network fails, try to serve the offline page for navigation requests
-            if (event.request.mode === 'navigate') {
-              return caches.match(OFFLINE_URL);
-            }
-          });
-      })
-  );
+          }
+
+          // Fetch and cache static assets
+          console.log('🌐 Fetching static asset from network:', event.request.url);
+          return fetch(event.request)
+            .then((response) => {
+              if (!response || response.status !== 200 || response.type !== 'basic') {
+                return response;
+              }
+
+              // Cache static assets
+              const responseToCache = response.clone();
+              caches.open(CACHE_NAME)
+                .then((cache) => {
+                  if (event.request.url.includes('.css') || 
+                      event.request.url.includes('.js') ||
+                      event.request.url.includes('.svg') ||
+                      event.request.url.includes('.png') ||
+                      event.request.url.includes('.jpg')) {
+                    console.log('💾 Caching static asset:', event.request.url);
+                    cache.put(event.request, responseToCache);
+                  }
+                });
+
+              return response;
+            });
+        })
+    );
+  }
 });
 
 // Background sync for data updates (future enhancement)

@@ -188,6 +188,37 @@ class Database {
     });
   }
 
+  getLatestScanResults() {
+    return new Promise((resolve, reject) => {
+      // First get the most recent test_date across all records
+      this.db.get(`
+        SELECT MAX(test_date) as latest_date
+        FROM lighthouse_scores
+      `, (err, row) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        
+        if (!row || !row.latest_date) {
+          resolve([]);
+          return;
+        }
+        
+        // Then get all records from that latest scan date
+        this.db.all(`
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
+          FROM lighthouse_scores
+          WHERE test_date = ?
+          ORDER BY performance DESC, url ASC
+        `, [row.latest_date], (err, rows) => {
+          if (err) reject(err);
+          else resolve(rows);
+        });
+      });
+    });
+  }
+
   close() {
     this.db.close();
   }
