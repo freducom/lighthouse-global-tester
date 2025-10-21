@@ -30,7 +30,7 @@ class Database {
     });
   }
 
-  saveScore(url, country, scores) {
+  saveScore(url, country, industry, scores) {
     return new Promise((resolve, reject) => {
       const performance = scores.performance || 0;
       const accessibility = scores.accessibility || 0;
@@ -47,13 +47,14 @@ class Database {
       
       const stmt = this.db.prepare(`
         INSERT INTO lighthouse_scores 
-        (url, country, performance, accessibility, best_practices, seo, pwa)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        (url, country, industry, performance, accessibility, best_practices, seo, pwa)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
       `);
       
       stmt.run([
         url,
         country,
+        industry,
         performance,
         accessibility,
         bestPractices,
