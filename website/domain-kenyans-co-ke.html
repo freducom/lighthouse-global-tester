@@ -25,14 +25,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇰🇪 Kenya</span>
-                <span class="last-scan">Last scanned: 10/21/2025, 4:20:41 PM</span>
+                <span class="last-scan">Last scanned: 10/21/2025, 4:47:42 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">34%</div>
+                <div class="stat-number poor">47%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -54,9 +54,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -67,8 +67,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 34%"></div>
-                        <span class="score-text">34%</span>
+                        <div class="score-fill performance" style="width: 47%"></div>
+                        <span class="score-text">47%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -108,6 +108,59 @@
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":268,"url":"kenyans.co.ke","performance":34,"accessibility":98,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-21 16:20:41","country":"Kenya","industry":"Media"},{"id":272,"url":"kenyans.co.ke","performance":47,"accessibility":98,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-21 16:47:42","country":"Kenya","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#ff6b35',
+                    backgroundColor: 'rgba(255, 107, 53, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#4285f4',
+                    backgroundColor: 'rgba(66, 133, 244, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#34a853',
+                    backgroundColor: 'rgba(52, 168, 83, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
+    </script>
     
 </body>
 </html>

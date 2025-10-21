@@ -32,9 +32,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Kenya</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 34 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 47 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">34%</div>
+                <div class="stat-number" aria-hidden="true">47%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 98 percent">
@@ -121,15 +121,15 @@
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="kenyans.co.ke" 
                                 data-industry="Media"
-                                data-performance="34"
+                                data-performance="47"
                                 data-accessibility="98"
                                 data-seo="93"
                                 data-best-practices="75"
                                 data-pwa="33"
-                                data-test-date="2025-10-21 16:20:41">
+                                data-test-date="2025-10-21 16:47:42">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-kenyans-co-ke.html" 
@@ -146,8 +146,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 34 percent, needs improvement">
-                                    34%
+                                    aria-label="Performance score: 47 percent, needs improvement, trend: +13 points">
+                                    47%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+13</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -165,9 +165,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-21 16:20:41"
+                                <td class="date" data-date="2025-10-21 16:47:42"
                                     aria-label="Last tested on 10/21/2025">
-                                    <time datetime="2025-10-21 16:20:41">10/21/2025</time>
+                                    <time datetime="2025-10-21 16:47:42">10/21/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -189,7 +189,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"kenyans.co.ke","country":"Kenya","industry":"Media","performance":34,"accessibility":98,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-21 16:20:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"kenyans.co.ke","country":"Kenya","industry":"Media","performance":47,"accessibility":98,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-21 16:47:42","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":13,"text":"+13","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

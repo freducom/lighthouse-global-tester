@@ -293,6 +293,42 @@ class Database {
     });
   }
 
+  getRecentScanResults() {
+    return new Promise((resolve, reject) => {
+      // First get the most recent test_date
+      this.db.get(`
+        SELECT MAX(test_date) as latest_date
+        FROM lighthouse_scores
+      `, (err, row) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        
+        if (!row || !row.latest_date) {
+          resolve([]);
+          return;
+        }
+        
+        // Get all records from the latest scan AND all records within 120 minutes before it
+        // Use SQLite datetime functions for reliable date arithmetic
+        this.db.all(`
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date,
+                 CASE 
+                   WHEN test_date = ? THEN 'latest'
+                   ELSE 'recent'
+                 END as scan_type
+          FROM lighthouse_scores
+          WHERE test_date >= datetime(?, '-120 minutes') AND test_date <= ?
+          ORDER BY test_date DESC, performance DESC, url ASC
+        `, [row.latest_date, row.latest_date, row.latest_date], (err, rows) => {
+          if (err) reject(err);
+          else resolve(rows);
+        });
+      });
+    });
+  }
+
   close() {
     this.db.close();
   }

@@ -2207,7 +2207,7 @@ body {
     background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     transition: all 0.2s;
     border: 2px solid transparent;
@@ -2217,6 +2217,7 @@ body {
     background: #e9ecef;
     border-color: #007bff;
     transform: translateY(-2px);
+    text-decoration: none !important;
 }
 
 .industry-rank {
@@ -2258,7 +2259,7 @@ body {
     background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     transition: all 0.2s;
     border: 2px solid transparent;
@@ -2271,6 +2272,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-color: #1877f2;
     transform: translateY(-2px);
+    text-decoration: none !important;
 }
 
 .country-rank {
@@ -2406,6 +2408,62 @@ body {
 .domain-link:hover {
     color: #166fe5;
     text-decoration: underline;
+}
+
+/* Scan Type Badges and Row Styling */
+.scan-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.scan-badge.latest {
+    background: linear-gradient(135deg, #42b883 0%, #369870 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(66, 184, 131, 0.3);
+}
+
+.scan-badge.recent {
+    background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(24, 119, 242, 0.3);
+}
+
+.latest-scan {
+    background: rgba(66, 184, 131, 0.05);
+    border-left: 3px solid #42b883;
+}
+
+.recent-scan {
+    background: rgba(24, 119, 242, 0.05);
+    border-left: 3px solid #1877f2;
+}
+
+.latest-scan:hover {
+    background: rgba(66, 184, 131, 0.1);
+}
+
+.recent-scan:hover {
+    background: rgba(24, 119, 242, 0.1);
+}
+
+.scan-type {
+    text-align: center;
+    width: 80px;
+}
+
+.section-description {
+    color: #65676b;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1877f2;
 }
 
 .country-link {
@@ -3698,13 +3756,17 @@ input[type="text"]:focus, input[type="search"]:focus {
   async generateLatestUpdatedPage() {
     console.log('📅 Generating Latest Updated Statistics page...');
     
-    const latestScanResults = await this.db.getLatestScanResults();
+    const recentScanResults = await this.db.getRecentScanResults();
     
-    if (latestScanResults.length === 0) {
+    if (recentScanResults.length === 0) {
       console.log('❌ No data found for latest updated statistics page.');
       return;
     }
 
+    // Separate latest scan from recent scans
+    const latestScanResults = recentScanResults.filter(row => row.scan_type === 'latest');
+    const recentResults = recentScanResults.filter(row => row.scan_type === 'recent');
+    
     // Get the scan date for display
     const latestScanDate = latestScanResults[0].test_date;
     const scanDate = new Date(latestScanDate);
@@ -3718,6 +3780,15 @@ input[type="text"]:focus, input[type="search"]:focus {
 
     // Calculate statistics for the latest scan
     const stats = this.calculateStatsForScores(latestScanResults);
+    
+    // Calculate time range for recent scans
+    const cutoffTime = new Date(scanDate.getTime() - (120 * 60 * 1000));
+    const formattedCutoffTime = cutoffTime.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
     
     const html = `
 <!DOCTYPE html>
@@ -3746,6 +3817,7 @@ input[type="text"]:focus, input[type="search"]:focus {
             <p class="subtitle">
                 Most recent lighthouse scan from <time datetime="${latestScanDate}">${formattedScanDate}</time>
                 <br>${latestScanResults.length} websites analyzed in the latest scan
+                ${recentResults.length > 0 ? `<br>Plus ${recentResults.length} additional scans from ${formattedCutoffTime} to ${formattedScanDate}` : ''}
             </p>
         </header>
 
@@ -3775,7 +3847,10 @@ input[type="text"]:focus, input[type="search"]:focus {
 
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
-                <h2 id="websites-heading">🚀 Recently Scanned Websites</h2>
+                <h2 id="websites-heading">🚀 Latest & Recent Scan Results</h2>
+                <p class="section-description">
+                    Showing the most recent scan (${latestScanResults.length} websites) plus all scans within the last 120 minutes (${recentResults.length} additional websites)
+                </p>
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search recently scanned websites by name, country, or industry</label>
                     <input type="text" 
@@ -3789,9 +3864,10 @@ input[type="text"]:focus, input[type="search"]:focus {
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
-                            Lighthouse performance data for ${latestScanResults.length} websites from the latest scan on ${formattedScanDate}, 
-                            sorted by performance score in descending order. 
-                            Table includes website URL, country, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                            Lighthouse performance data for ${recentScanResults.length} websites from recent scans, 
+                            including the latest scan on ${formattedScanDate} and scans within the previous 120 minutes,
+                            sorted by scan time and performance score. 
+                            Table includes website URL, country, industry, scan type, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
                         </caption>
                         <thead>
                             <tr>
@@ -3799,6 +3875,7 @@ input[type="text"]:focus, input[type="search"]:focus {
                                 <th scope="col" aria-sort="none">Website</th>
                                 <th scope="col" aria-sort="none">Country</th>
                                 <th scope="col" aria-sort="none">Industry</th>
+                                <th scope="col" aria-sort="none">Scan Type</th>
                                 <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
                                 <th scope="col" aria-sort="none">Accessibility</th>
                                 <th scope="col" aria-sort="none">SEO</th>
@@ -3808,8 +3885,8 @@ input[type="text"]:focus, input[type="search"]:focus {
                             </tr>
                         </thead>
                         <tbody id="tableBody">
-                            ${latestScanResults.map((site, index) => `
-                                <tr class="site-row">
+                            ${recentScanResults.map((site, index) => `
+                                <tr class="site-row ${site.scan_type === 'latest' ? 'latest-scan' : 'recent-scan'}">
                                     <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
                                     <td>
                                         <a href="domain-${site.url.replace(/\./g, '-')}.html" 
@@ -3831,6 +3908,12 @@ input[type="text"]:focus, input[type="search"]:focus {
                                            aria-label="View all ${site.industry || 'Unknown'} industry websites">
                                             ${site.industry || 'Unknown'}
                                         </a>
+                                    </td>
+                                    <td class="scan-type ${site.scan_type}"
+                                        aria-label="Scan type: ${site.scan_type === 'latest' ? 'Latest scan' : 'Recent scan'}">
+                                        <span class="scan-badge ${site.scan_type}">
+                                            ${site.scan_type === 'latest' ? '🎯 Latest' : '📅 Recent'}
+                                        </span>
                                     </td>
                                     <td class="score perf-${this.getScoreClass(site.performance)}"
                                         aria-label="Performance score: ${site.performance} percent, ${this.getScoreDescription(site.performance)}">
@@ -3866,7 +3949,7 @@ input[type="text"]:focus, input[type="search"]:focus {
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📅 Latest Scan Data from <time datetime="${latestScanDate}">${formattedScanDate}</time> | ${latestScanResults.length} websites analyzed</p>
+                <p>📅 Latest Scan Data from <time datetime="${latestScanDate}">${formattedScanDate}</time> | ${latestScanResults.length} latest + ${recentResults.length} recent = ${recentScanResults.length} total websites</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
