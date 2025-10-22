@@ -23,6 +23,8 @@
     "test-smart": "node smart-batch-tester.js",
     "test-smart-preview": "node smart-batch-tester.js --preview",
     "test-smart-dry": "node smart-batch-tester.js --dry-run",
+    "test-untested": "node manual-tester.js",
+    "test-untested-status": "node manual-tester.js --status",
     "summary": "node global-tester.js --summary",
     "query": "node query-scores.js",
     "failed-tests": "node query-failed-tests.js",

@@ -77,7 +77,9 @@ Visit `http://localhost:8080` to view the dashboard locally.
 | `npm run generate` | Generate static website from database |
 | `npm run serve` | Serve website locally on port 8080 |
 | `npm run deploy` | Test all sites and generate website |
-| `npm run deploy-daily` | Test daily batch and generate website |
+| `npm run deploy-smart` | Smart test + generate website |
+| `npm run test-untested` | Test 10 never-tested domains manually |
+| `npm run test-untested-status` | Check status of untested domains |
 | `npm run dev` | Generate and serve for local development |
 | `npm run migrate` | Initialize/migrate database |
 | `npm run query` | Interactive database query tool |
