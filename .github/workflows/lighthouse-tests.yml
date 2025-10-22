@@ -69,6 +69,9 @@ jobs:
             # Day of week (0=Sunday, 1=Monday, ..., 6=Saturday) and hour of day (0-23)
             DAY_OF_WEEK=$(date +%w)
             HOUR_OF_DAY=$(date +%H)
+            # Remove leading zeros to prevent octal interpretation
+            HOUR_OF_DAY=$((10#$HOUR_OF_DAY))
+            DAY_OF_WEEK=$((10#$DAY_OF_WEEK))
             # Convert to 2-hour slots: 0-1=0, 2-3=1, 4-5=2, etc. (12 slots per day)
             HOUR_SLOT=$((HOUR_OF_DAY / 2))
             # Calculate batch index: day * 12 + hour_slot (0-83)
@@ -118,6 +121,9 @@ jobs:
             else
               DAY_OF_WEEK=$(date +%w)
               HOUR_OF_DAY=$(date +%H)
+              # Remove leading zeros to prevent octal interpretation
+              HOUR_OF_DAY=$((10#$HOUR_OF_DAY))
+              DAY_OF_WEEK=$((10#$DAY_OF_WEEK))
               HOUR_SLOT=$((HOUR_OF_DAY / 2))
               BATCH_INDEX=$((DAY_OF_WEEK * 12 + HOUR_SLOT))
               COMMIT_MSG="Update database: Bi-hourly batch $((BATCH_INDEX + 1))/84 lighthouse results ($(date '+%Y-%m-%d %H:%M UTC'))"
@@ -201,6 +207,9 @@ jobs:
           else
             DAY_OF_WEEK=$(date +%w)
             HOUR_OF_DAY=$(date +%H)
+            # Remove leading zeros to prevent octal interpretation
+            HOUR_OF_DAY=$((10#$HOUR_OF_DAY))
+            DAY_OF_WEEK=$((10#$DAY_OF_WEEK))
             HOUR_SLOT=$((HOUR_OF_DAY / 2))
             BATCH_INDEX=$((DAY_OF_WEEK * 12 + HOUR_SLOT))
             DAY_NAME=$(date +%A)
