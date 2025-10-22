@@ -2,173 +2,127 @@
   {
     "country": "United States",
     "top_domains": [
-      {
-        "domain": "google.com",
-        "industry": "Search Engine"
-      },
-      {
-        "domain": "youtube.com",
-        "industry": "Media"
-      },
-      {
-        "domain": "facebook.com",
-        "industry": "Social Media"
-      },
-      {
-        "domain": "tesla.com",
-        "industry": "Automotive"
-      },
-      {
-        "domain": "berkshirehathaway.com",
-        "industry": "Finance"
-      },
-      {
-        "domain": "amazon.com",
-        "industry": "E-commerce"
-      },
-      {
-        "domain": "x.com",
-        "industry": "Social Media"
-      },
-      {
-        "domain": "wikipedia.org",
-        "industry": "Media"
-      },
-      {
-        "domain": "instagram.com",
-        "industry": "Social Media"
-      },
-      {
-        "domain": "yahoo.com",
-        "industry": "Portal"
-      },
-      {
-        "domain": "reddit.com",
-        "industry": "Social Media"
-      },
-      {
-        "domain": "wordpress.com",
-        "industry": "Website editor"
-      },
-      {
-        "domain": "wordpress.org",
-        "industry": "Website editor"
-      },
-      {
-        "domain": "bing.com",
-        "industry": "Search Engine"
-      },
-      {
-        "domain": "figma.com",
-        "industry": "Website editor"
-      },
-      {
-        "domain": "apple.com",
-        "industry": "Technology"
-      }
-    ]
+    {"domain": "google.com", "industry": "Search Engine"},
+    {"domain": "youtube.com", "industry": "Media"},
+    {"domain": "facebook.com", "industry": "Social Media"},
+    {"domain": "x.com", "industry": "Social Media"},
+    {"domain": "instagram.com", "industry": "Social Media"},
+    {"domain": "wikipedia.org", "industry": "Media"},
+    {"domain": "yahoo.com", "industry": "Portal"},
+    {"domain": "bing.com", "industry": "Search Engine"},
+    {"domain": "amazon.com", "industry": "E-commerce"},
+    {"domain": "apple.com", "industry": "Technology"},
+    {"domain": "microsoft.com", "industry": "Technology"},
+    {"domain": "cnn.com", "industry": "Media"},
+    {"domain": "nytimes.com", "industry": "Media"},
+    {"domain": "washingtonpost.com", "industry": "Media"},
+    {"domain": "foxnews.com", "industry": "Media"},
+    {"domain": "forbes.com", "industry": "Media"},
+    {"domain": "bloomberg.com", "industry": "Finance"},
+    {"domain": "chase.com", "industry": "Finance"},
+    {"domain": "bankofamerica.com", "industry": "Finance"},
+    {"domain": "wellsfargo.com", "industry": "Finance"},
+    {"domain": "tesla.com", "industry": "Automotive"},
+    {"domain": "reddit.com", "industry": "Social Media"},
+    {"domain": "salesforce.com", "industry": "Website editor"},
+    {"domain": "hubspot.com", "industry": "Marketing"},
+    {"domain": "adobe.com", "industry": "Website editor"},
+    {"domain": "linkedin.com", "industry": "Social Media"},
+    {"domain": "berkshirehathaway.com", "industry": "Finance"},
+    {"domain": "figma.com", "industry": "Website editor"},
+    {"domain": "wordpress.com", "industry": "Website editor"},
+    {"domain": "mailchimp.com", "industry": "Marketing"},
+    {"domain": "etsy.com", "industry": "Marketplace"},
+    {"domain": "ebay.com", "industry": "Marketplace"},
+    {"domain": "netflix.com", "industry": "Media"},
+    {"domain": "hulu.com", "industry": "Media"},
+    {"domain": "disneyplus.com", "industry": "Media"},
+    {"domain": "nasa.gov", "industry": "Government"},
+    {"domain": "irs.gov", "industry": "Government"},
+    {"domain": "whitehouse.gov", "industry": "Government"},
+    {"domain": "usps.com", "industry": "Government"},
+    {"domain": "nyse.com", "industry": "Finance"},
+    {"domain": "cnbc.com", "industry": "Media"},
+    {"domain": "msnbc.com", "industry": "Media"},
+    {"domain": "npr.org", "industry": "Media"},
+    {"domain": "twitch.tv", "industry": "Media"},
+    {"domain": "patreon.com", "industry": "Marketplace"},
+    {"domain": "shopify.com", "industry": "E-commerce"},
+    {"domain": "stripe.com", "industry": "Finance"},
+    {"domain": "intuit.com", "industry": "Finance"},
+    {"domain": "zoom.us", "industry": "Technology"},
+    {"domain": "slack.com", "industry": "Technology"}
+  ]
   },
   {
     "country": "United Kingdom",
-    "top_domains": [
-      {
-        "domain": "bbc.co.uk",
-        "industry": "Media"
-      },
-      {
-        "domain": "dailymail.co.uk",
-        "industry": "Media"
-      },
-      {
-        "domain": "theguardian.com",
-        "industry": "Media"
-      },
-      {
-        "domain": "telegraph.co.uk",
-        "industry": "Media"
-      },
-      {
-        "domain": "mirror.co.uk",
-        "industry": "Media"
-      },
-      {
-        "domain": "independent.co.uk",
-        "industry": "Media"
-      },
-      {
-        "domain": "sky.com",
-        "industry": "Telecom"
-      },
-      {
-        "domain": "argos.co.uk",
-        "industry": "E-commerce"
-      },
-      {
-        "domain": "tfl.gov.uk",
-        "industry": "Transportation"
-      },
-      {
-        "domain": "nhs.uk",
-        "industry": "Government"
-      }
-    ]
+     "top_domains": [
+    {"domain": "bbc.co.uk", "industry": "Media"},
+    {"domain": "dailymail.co.uk", "industry": "Media"},
+    {"domain": "theguardian.com", "industry": "Media"},
+    {"domain": "telegraph.co.uk", "industry": "Media"},
+    {"domain": "mirror.co.uk", "industry": "Media"},
+    {"domain": "independent.co.uk", "industry": "Media"},
+    {"domain": "sky.com", "industry": "Telecom"},
+    {"domain": "argos.co.uk", "industry": "E-commerce"},
+    {"domain": "tfl.gov.uk", "industry": "Transportation"},
+    {"domain": "nhs.uk", "industry": "Government"},
+    {"domain": "gov.uk", "industry": "Government"},
+    {"domain": "channel4.com", "industry": "Media"},
+    {"domain": "itv.com", "industry": "Media"},
+    {"domain": "metro.co.uk", "industry": "Media"},
+    {"domain": "thesun.co.uk", "industry": "Media"},
+    {"domain": "standard.co.uk", "industry": "Media"},
+    {"domain": "ft.com", "industry": "Finance"},
+    {"domain": "bankofengland.co.uk", "industry": "Finance"},
+    {"domain": "barclays.co.uk", "industry": "Finance"},
+    {"domain": "hsbc.co.uk", "industry": "Finance"},
+    {"domain": "natwest.com", "industry": "Finance"},
+    {"domain": "lloydsbank.com", "industry": "Finance"},
+    {"domain": "santander.co.uk", "industry": "Finance"},
+    {"domain": "asda.com", "industry": "E-commerce"},
+    {"domain": "tesco.com", "industry": "E-commerce"},
+    {"domain": "sainsburys.co.uk", "industry": "E-commerce"},
+    {"domain": "coop.co.uk", "industry": "E-commerce"},
+    {"domain": "vodafone.co.uk", "industry": "Telecom"},
+    {"domain": "ee.co.uk", "industry": "Telecom"},
+    {"domain": "bt.com", "industry": "Telecom"}
+  ]
   },
   {
     "country": "Germany",
-    "top_domains": [
-      {
-        "domain": "bild.de",
-        "industry": "Media"
-      },
-      {
-        "domain": "spiegel.de",
-        "industry": "Media"
-      },
-      {
-        "domain": "mercedes-benz.de",
-        "industry": "Automotive"
-      },
-      {
-        "domain": "bmw.de",
-        "industry": "Automotive"
-      },
-      {
-        "domain": "volkswagen.de",
-        "industry": "Automotive"
-      },
-      {
-        "domain": "focus.de",
-        "industry": "Media"
-      },
-      {
-        "domain": "t-online.de",
-        "industry": "Portal"
-      },
-      {
-        "domain": "web.de",
-        "industry": "Portal"
-      },
-      {
-        "domain": "chip.de",
-        "industry": "Media"
-      },
-      {
-        "domain": "zeit.de",
-        "industry": "Media"
-      },
-      {
-        "domain": "heise.de",
-        "industry": "Media"
-      },
-      {
-        "domain": "gmx.net",
-        "industry": "Portal"
-      },
-      {
-        "domain": "tagesschau.de",
-        "industry": "Media"
-      }
-    ]
+     "top_domains": [
+    {"domain": "bild.de", "industry": "Media"},
+    {"domain": "spiegel.de", "industry": "Media"},
+    {"domain": "mercedes-benz.de", "industry": "Automotive"},
+    {"domain": "bmw.de", "industry": "Automotive"},
+    {"domain": "volkswagen.de", "industry": "Automotive"},
+    {"domain": "focus.de", "industry": "Media"},
+    {"domain": "t-online.de", "industry": "Portal"},
+    {"domain": "web.de", "industry": "Portal"},
+    {"domain": "chip.de", "industry": "Media"},
+    {"domain": "zeit.de", "industry": "Media"},
+    {"domain": "heise.de", "industry": "Media"},
+    {"domain": "gmx.net", "industry": "Portal"},
+    {"domain": "tagesschau.de", "industry": "Media"},
+    {"domain": "faz.net", "industry": "Media"},
+    {"domain": "sueddeutsche.de", "industry": "Media"},
+    {"domain": "welt.de", "industry": "Media"},
+    {"domain": "otto.de", "industry": "E-commerce"},
+    {"domain": "zalando.de", "industry": "E-commerce"},
+    {"domain": "idealo.de", "industry": "E-commerce"},
+    {"domain": "saturn.de", "industry": "E-commerce"},
+    {"domain": "mediamarkt.de", "industry": "E-commerce"},
+    {"domain": "postbank.de", "industry": "Finance"},
+    {"domain": "commerzbank.de", "industry": "Finance"},
+    {"domain": "sparkasse.de", "industry": "Finance"},
+    {"domain": "deutsche-bank.de", "industry": "Finance"},
+    {"domain": "boerse.de", "industry": "Finance"},
+    {"domain": "arbeitsagentur.de", "industry": "Government"},
+    {"domain": "bund.de", "industry": "Government"},
+    {"domain": "bahn.de", "industry": "Transportation"},
+    {"domain": "dw.com", "industry": "Media"}
+  ]
   },
   {
     "country": "India",
@@ -308,47 +262,37 @@
   {
     "country": "Canada",
     "top_domains": [
-      {
-        "domain": "cbc.ca",
-        "industry": "Media"
-      },
-      {
-        "domain": "theweathernetwork.com",
-        "industry": "Weather"
-      },
-      {
-        "domain": "ctvnews.ca",
-        "industry": "Media"
-      },
-      {
-        "domain": "globalnews.ca",
-        "industry": "Media"
-      },
-      {
-        "domain": "toronto.ca",
-        "industry": "Government"
-      },
-      {
-        "domain": "bankofcanada.ca",
-        "industry": "Finance"
-      },
-      {
-        "domain": "canada.ca",
-        "industry": "Government"
-      },
-      {
-        "domain": "weatheroffice.gc.ca",
-        "industry": "Weather"
-      },
-      {
-        "domain": "hockeycanada.ca",
-        "industry": "Sports"
-      },
-      {
-        "domain": "timhortons.ca",
-        "industry": "Food & Drink"
-      }
-    ]
+    {"domain": "cbc.ca", "industry": "Media"},
+    {"domain": "theweathernetwork.com", "industry": "Weather"},
+    {"domain": "ctvnews.ca", "industry": "Media"},
+    {"domain": "globalnews.ca", "industry": "Media"},
+    {"domain": "toronto.ca", "industry": "Government"},
+    {"domain": "bankofcanada.ca", "industry": "Finance"},
+    {"domain": "canada.ca", "industry": "Government"},
+    {"domain": "weatheroffice.gc.ca", "industry": "Weather"},
+    {"domain": "hockeycanada.ca", "industry": "Sports"},
+    {"domain": "timhortons.ca", "industry": "Food & Drink"},
+    {"domain": "realtor.ca", "industry": "Real Estate"},
+    {"domain": "walmart.ca", "industry": "Retail"},
+    {"domain": "canadiantire.ca", "industry": "Retail"},
+    {"domain": "td.com", "industry": "Finance"},
+    {"domain": "rbcroyalbank.com", "industry": "Finance"},
+    {"domain": "scotiabank.com", "industry": "Finance"},
+    {"domain": "bmo.com", "industry": "Finance"},
+    {"domain": "bell.ca", "industry": "Telecom"},
+    {"domain": "rogers.com", "industry": "Telecom"},
+    {"domain": "shaw.ca", "industry": "Telecom"},
+    {"domain": "aircanada.com", "industry": "Transportation"},
+    {"domain": "westjet.com", "industry": "Transportation"},
+    {"domain": "cra-arc.gc.ca", "industry": "Government"},
+    {"domain": "ontario.ca", "industry": "Government"},
+    {"domain": "servicecanada.gc.ca", "industry": "Government"},
+    {"domain": "cp24.com", "industry": "Media"},
+    {"domain": "financialpost.com", "industry": "Media"},
+    {"domain": "canadiangeographic.ca", "industry": "Media"},
+    {"domain": "macleans.ca", "industry": "Media"},
+    {"domain": "weathernetwork.ca", "industry": "Weather"}
+  ]
   },
   {
     "country": "Australia",
@@ -487,56 +431,45 @@
   },
   {
     "country": "Finland",
-    "top_domains": [
-      {
-        "domain": "is.fi",
-        "industry": "Media"
-      },
-      {
-        "domain": "flipsite.io",
-        "industry": "Website editor"
-      },
-      {
-        "domain": "emathstudio.com",
-        "industry": "Education"
-      },
-      {
-        "domain": "iltalehti.fi",
-        "industry": "Media"
-      },
-      {
-        "domain": "yle.fi",
-        "industry": "Media"
-      },
-      {
-        "domain": "hs.fi",
-        "industry": "Media"
-      },
-      {
-        "domain": "tori.fi",
-        "industry": "Marketplace"
-      },
-      {
-        "domain": "mtv.fi",
-        "industry": "Media"
-      },
-      {
-        "domain": "suomi24.fi",
-        "industry": "Social Media"
-      },
-      {
-        "domain": "verkkokauppa.com",
-        "industry": "E-commerce"
-      },
-      {
-        "domain": "op.fi",
-        "industry": "Finance"
-      },
-      {
-        "domain": "helsinki.fi",
-        "industry": "Education"
-      }
-    ]
+   "top_domains": [
+    {"domain": "is.fi", "industry": "Media"},
+    {"domain": "flipsite.io", "industry": "Website editor"},
+    {"domain": "emathstudio.com", "industry": "Education"},
+    {"domain": "iltalehti.fi", "industry": "Media"},
+    {"domain": "yle.fi", "industry": "Media"},
+    {"domain": "hs.fi", "industry": "Media"},
+    {"domain": "tori.fi", "industry": "Marketplace"},
+    {"domain": "mtv.fi", "industry": "Media"},
+    {"domain": "suomi24.fi", "industry": "Social Media"},
+    {"domain": "verkkokauppa.com", "industry": "E-commerce"},
+    {"domain": "op.fi", "industry": "Finance"},
+    {"domain": "helsinki.fi", "industry": "Education"},
+    {"domain": "posti.fi", "industry": "Government"},
+    {"domain": "kela.fi", "industry": "Government"},
+    {"domain": "vero.fi", "industry": "Government"},
+    {"domain": "prisma.fi", "industry": "E-commerce"},
+    {"domain": "sokos.fi", "industry": "E-commerce"},
+    {"domain": "finnkino.fi", "industry": "Media"},
+    {"domain": "moottori.fi", "industry": "Automotive"},
+    {"domain": "autotalli.com", "industry": "Marketplace"},
+    {"domain": "etuovi.com", "industry": "Marketplace"},
+    {"domain": "oikotie.fi", "industry": "Marketplace"},
+    {"domain": "fonecta.fi", "industry": "Portal"},
+    {"domain": "vr.fi", "industry": "Transportation"},
+    {"domain": "finnair.com", "industry": "Transportation"},
+    {"domain": "yleareena.fi", "industry": "Media"},
+    {"domain": "savonsanomat.fi", "industry": "Media"},
+    {"domain": "amiedu.fi", "industry": "Education"},
+    {"domain": "iltasanomat.fi", "industry": "Media"},
+    {"domain": "vaadin.com", "industry": "Technology"},
+    {"domain": "valohai.com", "industry": "Technology"},
+    {"domain": "openocean.vc", "industry": "Finance"},
+    {"domain": "superherocapital.com", "industry": "Finance"},
+    {"domain": "gorillacapital.fi", "industry": "Finance"},
+    {"domain": "supermetrics.com", "industry": "Marketing"},
+    {"domain": "leadoo.com", "industry": "Marketing"},
+    {"domain": "wpseoai.com", "industry": "Marketing"}
+  ]
   },
   {
     "country": "Israel",
@@ -638,56 +571,38 @@
   },
   {
     "country": "Sweden",
-    "top_domains": [
-      {
-        "domain": "aftonbladet.se",
-        "industry": "Media"
-      },
-      {
-        "domain": "expressen.se",
-        "industry": "Media"
-      },
-      {
-        "domain": "svt.se",
-        "industry": "Media"
-      },
-      {
-        "domain": "dn.se",
-        "industry": "Media"
-      },
-      {
-        "domain": "blocket.se",
-        "industry": "Marketplace"
-      },
-      {
-        "domain": "flashback.org",
-        "industry": "Social Media"
-      },
-      {
-        "domain": "ica.se",
-        "industry": "E-commerce"
-      },
-      {
-        "domain": "coop.se",
-        "industry": "E-commerce"
-      },
-      {
-        "domain": "spotify.com",
-        "industry": "Media"
-      },
-      {
-        "domain": "klarna.com",
-        "industry": "Finance"
-      },
-      {
-        "domain": "skatteverket.se",
-        "industry": "Government"
-      },
-      {
-        "domain": "arbetsformedlingen.se",
-        "industry": "Government"
-      }
-    ]
+   "top_domains": [
+    {"domain": "aftonbladet.se", "industry": "Media"},
+    {"domain": "expressen.se", "industry": "Media"},
+    {"domain": "svt.se", "industry": "Media"},
+    {"domain": "dn.se", "industry": "Media"},
+    {"domain": "blocket.se", "industry": "Marketplace"},
+    {"domain": "flashback.org", "industry": "Social Media"},
+    {"domain": "ica.se", "industry": "E-commerce"},
+    {"domain": "coop.se", "industry": "E-commerce"},
+    {"domain": "spotify.com", "industry": "Media"},
+    {"domain": "klarna.com", "industry": "Finance"},
+    {"domain": "skatteverket.se", "industry": "Government"},
+    {"domain": "arbetsformedlingen.se", "industry": "Government"},
+    {"domain": "svd.se", "industry": "Media"},
+    {"domain": "lu.se", "industry": "Education"},
+    {"domain": "gu.se", "industry": "Education"},
+    {"domain": "su.se", "industry": "Education"},
+    {"domain": "lansforsakringar.se", "industry": "Finance"},
+    {"domain": "folksam.se", "industry": "Finance"},
+    {"domain": "apotea.se", "industry": "E-commerce"},
+    {"domain": "byggmax.se", "industry": "E-commerce"},
+    {"domain": "hm.com/se", "industry": "E-commerce"},
+    {"domain": "comviq.se", "industry": "Telecom"},
+    {"domain": "telia.se", "industry": "Telecom"},
+    {"domain": "postnord.se", "industry": "Transportation"},
+    {"domain": "systembolaget.se", "industry": "E-commerce"},
+    {"domain": "regeringen.se", "industry": "Government"},
+    {"domain": "polisen.se", "industry": "Government"},
+    {"domain": "trafikverket.se", "industry": "Transportation"},
+    {"domain": "refined.com", "industry": "Website editor"},
+    {"domain": "standoutcapital.com", "industry": "Finance"}
+  ]
   },
   {
     "country": "Ireland",
@@ -781,48 +696,38 @@
   },
   {
     "country": "Poland",
-    "top_domains": [
-      {
-        "domain": "wp.pl",
-        "industry": "Portal"
-      },
-      {
-        "domain": "onet.pl",
-        "industry": "Portal"
-      },
-      {
-        "domain": "o2.pl",
-        "industry": "Portal"
-      },
-      {
-        "domain": "interia.pl",
-        "industry": "Portal"
-      },
-      {
-        "domain": "allegro.pl",
-        "industry": "E-commerce"
-      },
-      {
-        "domain": "gazeta.pl",
-        "industry": "Media"
-      },
-      {
-        "domain": "olx.pl",
-        "industry": "Marketplace"
-      },
-      {
-        "domain": "aliorbank.pl",
-        "industry": "Finance"
-      },
-      {
-        "domain": "ing.pl",
-        "industry": "Finance"
-      },
-      {
-        "domain": "polsatnews.pl",
-        "industry": "Media"
-      }
-    ]
+ "top_domains": [
+    {"domain": "wp.pl", "industry": "Portal"},
+    {"domain": "onet.pl", "industry": "Portal"},
+    {"domain": "o2.pl", "industry": "Portal"},
+    {"domain": "interia.pl", "industry": "Portal"},
+    {"domain": "allegro.pl", "industry": "E-commerce"},
+    {"domain": "gazeta.pl", "industry": "Media"},
+    {"domain": "olx.pl", "industry": "Marketplace"},
+    {"domain": "aliorbank.pl", "industry": "Finance"},
+    {"domain": "ing.pl", "industry": "Finance"},
+    {"domain": "polsatnews.pl", "industry": "Media"},
+    {"domain": "tvn24.pl", "industry": "Media"},
+    {"domain": "rmf24.pl", "industry": "Media"},
+    {"domain": "money.pl", "industry": "Finance"},
+    {"domain": "bankier.pl", "industry": "Finance"},
+    {"domain": "gov.pl", "industry": "Government"},
+    {"domain": "poczta-polska.pl", "industry": "Government"},
+    {"domain": "autocentrum.pl", "industry": "Automotive"},
+    {"domain": "gratka.pl", "industry": "Marketplace"},
+    {"domain": "sprzedajemy.pl", "industry": "Marketplace"},
+    {"domain": "pracuj.pl", "industry": "Jobs"},
+    {"domain": "nofluffjobs.com", "industry": "Jobs"},
+    {"domain": "edu.pl", "industry": "Education"},
+    {"domain": "umcs.pl", "industry": "Education"},
+    {"domain": "uw.edu.pl", "industry": "Education"},
+    {"domain": "politechnika.edu.pl", "industry": "Education"},
+    {"domain": "pg.edu.pl", "industry": "Education"},
+    {"domain": "plus.pl", "industry": "Telecom"},
+    {"domain": "orange.pl", "industry": "Telecom"},
+    {"domain": "play.pl", "industry": "Telecom"},
+    {"domain": "salesmanago.com", "industry": "Marketing"}
+  ]
   },
   {
     "country": "Norway",
