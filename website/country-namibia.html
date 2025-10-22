@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namibia - Valmitta</title>
+    <meta name="description" content="Lighthouse performance analysis for Namibia websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Offline Badge -->
+    <div id="offline-badge" class="offline-badge" style="display: none;">
+        🔌 Website Offline
+    </div>
+    
+    <div class="container">
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">🇳🇦 Namibia</li>
+                </ol>
+            </nav>
+            <h1>🇳🇦 Namibia Performance Analysis</h1>
+            <p class="subtitle">Comprehensive lighthouse analysis of 3 websites from Namibia</p>
+        </header>
+
+        <section class="stats-grid" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="sr-only">Performance Statistics for Namibia</h2>
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 43 percent">
+                <h3>Average Performance</h3>
+                <div class="stat-number" aria-hidden="true">43%</div>
+                <p class="sr-only">Performance measures loading speed and user experience</p>
+            </div>
+            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 82 percent">
+                <h3>Average Accessibility</h3>
+                <div class="stat-number" aria-hidden="true">82%</div>
+                <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
+            </div>
+            <div class="stat-card seo" role="img" aria-label="Average SEO score: 83 percent">
+                <h3>Average SEO</h3>
+                <div class="stat-number" aria-hidden="true">83%</div>
+                <p class="sr-only">SEO measures search engine optimization and discoverability</p>
+            </div>
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 80 percent">
+                <h3>Best Practices</h3>
+                <div class="stat-number" aria-hidden="true">80%</div>
+                <p class="sr-only">Best practices measures security and modern web standards compliance</p>
+            </div>
+        </section>
+
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="websites-heading">
+                <h2 id="websites-heading">🏅 Top Websites in Namibia</h2>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search Namibia websites by name or industry</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search Namibia websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name or industry. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
+                        <caption class="sr-only">
+                            Lighthouse performance data for 3 websites from Namibia, 
+                            sorted by performance score in descending order. 
+                            Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    Rank <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    Website <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="industry" aria-sort="none">
+                                    Industry <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    Accessibility <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    SEO <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    Best Practices <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    PWA <span class="sort-indicator"></span>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    Last Scanned <span class="sort-indicator"></span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        
+                            <tr class="site-row " 
+                                data-url="ncci.org.na" 
+                                data-industry="Non-profit"
+                                data-performance="57"
+                                data-accessibility="80"
+                                data-seo="85"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-22 16:15:19">
+                                <td class="rank" aria-label="Rank 1">#1</td>
+                                <td>
+                                    <a href="domain-ncci-org-na.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for ncci.org.na">
+                                        ncci.org.na
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-non-profit.html" 
+                                       class="industry-link"
+                                       aria-label="View all Non-profit industry websites">
+                                        Non-profit
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 57 percent, average performance">
+                                    57%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 80 percent, good performance">
+                                    80%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 85 percent, good performance">
+                                    85%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-22 16:15:19"
+                                    aria-label="Last tested on 10/22/2025">
+                                    <time datetime="2025-10-22 16:15:19">10/22/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row " 
+                                data-url="namibian.com.na" 
+                                data-industry="Media"
+                                data-performance="42"
+                                data-accessibility="79"
+                                data-seo="93"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-22 15:05:02">
+                                <td class="rank" aria-label="Rank 2">#2</td>
+                                <td>
+                                    <a href="domain-namibian-com-na.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for namibian.com.na">
+                                        namibian.com.na
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 42 percent, needs improvement">
+                                    42%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 79 percent, good performance">
+                                    79%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 93 percent, excellent performance">
+                                    93%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-22 15:05:02"
+                                    aria-label="Last tested on 10/22/2025">
+                                    <time datetime="2025-10-22 15:05:02">10/22/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row " 
+                                data-url="neweralive.na" 
+                                data-industry="Media"
+                                data-performance="29"
+                                data-accessibility="88"
+                                data-seo="71"
+                                data-best-practices="75"
+                                data-pwa="33"
+                                data-test-date="2025-10-22 18:15:10">
+                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td>
+                                    <a href="domain-neweralive-na.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for neweralive.na">
+                                        neweralive.na
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 29 percent, needs improvement">
+                                    29%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 88 percent, good performance">
+                                    88%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 71 percent, good performance">
+                                    71%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-22 18:15:10"
+                                    aria-label="Last tested on 10/22/2025">
+                                    <time datetime="2025-10-22 18:15:10">10/22/2025</time>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📊 Namibia Performance Data | 3 websites tested</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const countryData = [{"url":"ncci.org.na","country":"Namibia","industry":"Non-profit","performance":57,"accessibility":80,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-22 16:15:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"namibian.com.na","country":"Namibia","industry":"Media","performance":42,"accessibility":79,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-22 15:05:02","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"neweralive.na","country":"Namibia","industry":"Media","performance":29,"accessibility":88,"best_practices":75,"seo":71,"pwa":33,"test_date":"2025-10-22 18:15:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...countryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
+            });
+            
+            currentSort = { column, order };
+            updateCountryTable(sorted);
+            updateSortIndicators();
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
+                } else {
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
+        
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                filteredData = countryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.industry && site.industry.toLowerCase().includes(query))
+                );
+                
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${countryData.length} websites from Namibia`;
+                } else if (filteredData.length === 0) {
+                    announcement = `No results found for "${query}" in Namibia`;
+                } else {
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Namibia`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
+        
+        // Add click handlers for sortable headers
+        document.querySelectorAll('.sortable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                sortData(column, newOrder);
+            });
+            
+            // Add keyboard support
+            header.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+            
+            // Make headers focusable
+            header.setAttribute('tabindex', '0');
+        });
+        
+        // Add click handlers for sort buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const column = this.getAttribute('data-sort');
+                const order = this.getAttribute('data-order');
+                
+                // Update active button
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                sortData(column, order);
+            });
+        });
+        
+        function updateCountryTable(data) {
+            const getScoreClass = (score) => {
+                if (score >= 90) return 'excellent';
+                if (score >= 70) return 'good';
+                if (score >= 50) return 'average';
+                return 'poor';
+            };
+            
+            const getScoreDescription = (score) => {
+                if (score >= 90) return 'Excellent';
+                if (score >= 70) return 'Good';
+                if (score >= 50) return 'Average';
+                return 'Poor';
+            };
+            
+            const getTrendArrow = (trend) => {
+                switch(trend) {
+                    case 'up': return '<span class="trend-arrow trend-up">↗</span>';
+                    case 'down': return '<span class="trend-arrow trend-down">↘</span>';
+                    default: return '';
+                }
+            };
+            
+            const getPerformanceDelta = (current, previous) => {
+                if (previous === null || previous === undefined) {
+                    return { delta: 0, text: '', class: 'delta-neutral' };
+                }
+                const delta = current - previous;
+                if (delta > 0) {
+                    return { delta, text: `+${delta}`, class: 'delta-positive' };
+                } else if (delta < 0) {
+                    return { delta, text: `${delta}`, class: 'delta-negative' };
+                } else {
+                    return { delta: 0, text: '±0', class: 'delta-neutral' };
+                }
+            };
+            
+            tableBody.innerHTML = data.map((site, index) => {
+                const perfDelta = site.performance_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const accDelta = site.accessibility_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const seoDelta = site.seo_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const bpDelta = site.best_practices_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                const pwaDelta = site.pwa_delta || { delta: 0, text: '', class: 'delta-neutral' };
+                
+                return `
+                <tr class="site-row ${site.performance_trend === 'up' ? 'trending-up' : site.performance_trend === 'down' ? 'trending-down' : ''}" 
+                    data-url="${site.url}" 
+                    data-industry="${site.industry || 'unknown'}"
+                    data-performance="${site.performance}"
+                    data-accessibility="${site.accessibility}"
+                    data-seo="${site.seo}"
+                    data-best-practices="${site.best_practices}"
+                    data-pwa="${site.pwa}"
+                    data-test-date="${site.test_date}">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}${perfDelta.delta !== 0 ? `, trend: ${perfDelta.text} points` : ''}">
+                        ${site.performance}%${getTrendArrow(site.performance_trend)}${perfDelta.delta !== 0 ? `<span class="performance-delta ${perfDelta.class}">${perfDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}${accDelta.delta !== 0 ? `, trend: ${accDelta.text} points` : ''}">
+                        ${site.accessibility}%${getTrendArrow(site.accessibility_trend)}${accDelta.delta !== 0 ? `<span class="performance-delta ${accDelta.class}">${accDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}${seoDelta.delta !== 0 ? `, trend: ${seoDelta.text} points` : ''}">
+                        ${site.seo}%${getTrendArrow(site.seo_trend)}${seoDelta.delta !== 0 ? `<span class="performance-delta ${seoDelta.class}">${seoDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}${bpDelta.delta !== 0 ? `, trend: ${bpDelta.text} points` : ''}">
+                        ${site.best_practices}%${getTrendArrow(site.best_practices_trend)}${bpDelta.delta !== 0 ? `<span class="performance-delta ${bpDelta.class}">${bpDelta.text}</span>` : ''}
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}${pwaDelta.delta !== 0 ? `, trend: ${pwaDelta.text} points` : ''}">
+                        ${site.pwa}%${getTrendArrow(site.pwa_trend)}${pwaDelta.delta !== 0 ? `<span class="performance-delta ${pwaDelta.class}">${pwaDelta.text}</span>` : ''}
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+        
+        // Initialize with default sort
+        updateSortIndicators();
+        
+        function updateCountryTable(sites) {
+            tableBody.innerHTML = sites.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="industry-${(site.industry || 'unknown').toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="industry-link"
+                           aria-label="View all ${site.industry || 'Unknown'} industry websites">
+                            ${site.industry || 'Unknown'}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}">
+                        ${site.performance}%
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}">
+                        ${site.accessibility}%
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}">
+                        ${site.seo}%
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}">
+                        ${site.best_practices}%
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}">
+                        ${site.pwa}%
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 70) return 'good';
+            if (score >= 50) return 'average';
+            return 'poor';
+        }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
+        }
+        
+        // Format dates in user's locale
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    cell.querySelector('time').textContent = date.toLocaleDateString();
+                }
+            });
+        }
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
+        });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
+    </script>
+</body>
+</html>

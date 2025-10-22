@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-profit Industry - Valmitta</title>
+    <meta name="description" content="Lighthouse performance analysis for non-profit industry websites">
+    <meta name="theme-color" content="#1877f2">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">🏭 Non-profit</li>
+                </ol>
+            </nav>
+            <h1>🏭 Non-profit Industry Performance Analysis</h1>
+            <p class="subtitle">Comprehensive lighthouse analysis of 1 websites in the non-profit industry</p>
+        </header>
+
+        <section class="stats-grid" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="sr-only">Performance Statistics for Non-profit Industry</h2>
+            <div class="stat-card" role="img" aria-label="Average performance score: 57 percent">
+                <h3>Average Performance</h3>
+                <div class="stat-value perf-average" aria-hidden="true">57%</div>
+                <p class="sr-only">Performance measures loading speed and user experience</p>
+            </div>
+            <div class="stat-card" role="img" aria-label="Average accessibility score: 80 percent">
+                <h3>Average Accessibility</h3>
+                <div class="stat-value acc-good" aria-hidden="true">80%</div>
+                <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
+            </div>
+            <div class="stat-card" role="img" aria-label="Average SEO score: 85 percent">
+                <h3>Average SEO</h3>
+                <div class="stat-value seo-good" aria-hidden="true">85%</div>
+                <p class="sr-only">SEO measures search engine optimization and discoverability</p>
+            </div>
+            <div class="stat-card" role="img" aria-label="Average best practices score: 83 percent">
+                <h3>Average Best Practices</h3>
+                <div class="stat-value bp-good" aria-hidden="true">83%</div>
+                <p class="sr-only">Best practices measures security and modern web standards compliance</p>
+            </div>
+        </section>
+
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="websites-heading">
+                <h2 id="websites-heading">📈 Non-profit Websites</h2>
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search Non-profit websites by name or country</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search Non-profit websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
+                        <caption class="sr-only">
+                            Lighthouse performance data for 1 websites in the Non-profit industry, 
+                            sorted by performance score in descending order. 
+                            Table includes website URL, country, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" aria-sort="none">Rank</th>
+                                <th scope="col" aria-sort="none">Website</th>
+                                <th scope="col" aria-sort="none">Country</th>
+                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
+                                <th scope="col" aria-sort="none">Accessibility</th>
+                                <th scope="col" aria-sort="none">SEO</th>
+                                <th scope="col" aria-sort="none">Best Practices</th>
+                                <th scope="col" aria-sort="none">PWA</th>
+                                <th scope="col" aria-sort="none">Last Scanned</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 1">#1</td>
+                                <td>
+                                    <a href="domain-ncci-org-na.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for ncci.org.na">
+                                        ncci.org.na
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-namibia.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Namibia">
+                                        🇳🇦 Namibia
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 57 percent, average performance">
+                                    57%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 80 percent, good performance">
+                                    80%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 85 percent, good performance">
+                                    85%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-22 16:15:19"
+                                    aria-label="Last tested on 10/22/2025">
+                                    <time datetime="2025-10-22 16:15:19">10/22/2025</time>
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p>📊 Non-profit Industry Performance Data | 1 websites tested</p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <div class="footer-meta">
+                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const industryData = [{"url":"ncci.org.na","country":"Namibia","industry":"Non-profit","performance":57,"accessibility":80,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-22 16:15:19","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const filtered = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    site.country.toLowerCase().includes(query)
+                );
+                
+                updateIndustryTable(filtered);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${industryData.length} websites in Non-profit`;
+                } else if (filtered.length === 0) {
+                    announcement = `No results found for "${query}" in Non-profit`;
+                } else {
+                    announcement = `Found ${filtered.length} result${filtered.length === 1 ? '' : 's'} for "${query}" in Non-profit`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
+        
+        function updateIndustryTable(sites) {
+            tableBody.innerHTML = sites.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-${normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from ${normalizeCountry(site.country)}">
+                            ${getCountryFlag(site.country)} ${normalizeCountry(site.country)}
+                        </a>
+                    </td>
+                    <td class="score perf-${getScoreClass(site.performance)}"
+                        aria-label="Performance score: ${site.performance} percent, ${getScoreDescription(site.performance)}">
+                        ${site.performance}%
+                    </td>
+                    <td class="score acc-${getScoreClass(site.accessibility)}"
+                        aria-label="Accessibility score: ${site.accessibility} percent, ${getScoreDescription(site.accessibility)}">
+                        ${site.accessibility}%
+                    </td>
+                    <td class="score seo-${getScoreClass(site.seo)}"
+                        aria-label="SEO score: ${site.seo} percent, ${getScoreDescription(site.seo)}">
+                        ${site.seo}%
+                    </td>
+                    <td class="score bp-${getScoreClass(site.best_practices)}"
+                        aria-label="Best Practices score: ${site.best_practices} percent, ${getScoreDescription(site.best_practices)}">
+                        ${site.best_practices}%
+                    </td>
+                    <td class="score pwa-${getScoreClass(site.pwa)}"
+                        aria-label="PWA score: ${site.pwa} percent, ${getScoreDescription(site.pwa)}">
+                        ${site.pwa}%
+                    </td>
+                    <td class="date" data-date="${site.test_date}"
+                        aria-label="Last tested on ${new Date(site.test_date).toLocaleDateString()}">
+                        <time datetime="${site.test_date}">${new Date(site.test_date).toLocaleDateString()}</time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 70) return 'good';
+            if (score >= 50) return 'average';
+            return 'poor';
+        }
+        
+        function getScoreDescription(score) {
+            if (score >= 90) return 'excellent performance';
+            if (score >= 70) return 'good performance';
+            if (score >= 50) return 'average performance';
+            return 'needs improvement';
+        }
+
+        function getCountryFlag(country) {
+            const flags = {
+                'Australia': '🇦🇺', 'United States': '🇺🇸', 'United Kingdom': '🇬🇧',
+                'Germany': '🇩🇪', 'France': '🇫🇷', 'Canada': '🇨🇦', 'Japan': '🇯🇵',
+                'Brazil': '🇧🇷', 'India': '🇮🇳', 'Russia': '🇷🇺', 'Sweden': '🇸🇪',
+                'Netherlands': '🇳🇱', 'Finland': '🇫🇮', 'South Korea': '🇰🇷',
+                'Israel': '🇮🇱', 'Global': '🌍'
+            };
+            return flags[country] || '🌍';
+        }
+        
+        function normalizeCountry(country) {
+            return country === 'Unknown' ? 'Global' : country;
+        }
+        
+        // Format dates in user's locale
+        function formatAllDates() {
+            const dateCells = document.querySelectorAll('td.date[data-date]');
+            dateCells.forEach(cell => {
+                const dateString = cell.getAttribute('data-date');
+                if (dateString) {
+                    const date = new Date(dateString);
+                    const timeElement = cell.querySelector('time');
+                    if (timeElement) {
+                        timeElement.textContent = date.toLocaleDateString();
+                    }
+                }
+            });
+        }
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            formatAllDates();
+        });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
+    </script>
+</body>
+</html>
