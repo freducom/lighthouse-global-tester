@@ -32,9 +32,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Estonia</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 23 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 24 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">23%</div>
+                <div class="stat-number" aria-hidden="true">24%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 78 percent">
@@ -170,15 +170,15 @@
                                     <time datetime="2025-10-20 16:11:54">10/20/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row trending-down" 
+                            <tr class="site-row trending-up" 
                                 data-url="kaubamaja.ee" 
                                 data-industry="E-commerce"
-                                data-performance="1"
+                                data-performance="4"
                                 data-accessibility="76"
                                 data-seo="91"
                                 data-best-practices="92"
                                 data-pwa="78"
-                                data-test-date="2025-10-21 15:26:58">
+                                data-test-date="2025-10-21 18:20:35">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-kaubamaja-ee.html" 
@@ -195,8 +195,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 1 percent, needs improvement, trend: -1 points">
-                                    1%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-1</span>
+                                    aria-label="Performance score: 4 percent, needs improvement, trend: +3 points">
+                                    4%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 76 percent, good performance">
@@ -214,9 +214,9 @@
                                     aria-label="PWA score: 78 percent, good performance">
                                     78%
                                 </td>
-                                <td class="date" data-date="2025-10-21 15:26:58"
+                                <td class="date" data-date="2025-10-21 18:20:35"
                                     aria-label="Last tested on 10/21/2025">
-                                    <time datetime="2025-10-21 15:26:58">10/21/2025</time>
+                                    <time datetime="2025-10-21 18:20:35">10/21/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -238,7 +238,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"euronics.ee","country":"Estonia","industry":"E-commerce","performance":44,"accessibility":79,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-20 16:11:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"kaubamaja.ee","country":"Estonia","industry":"E-commerce","performance":1,"accessibility":76,"best_practices":92,"seo":91,"pwa":78,"test_date":"2025-10-21 15:26:58","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const countryData = [{"url":"euronics.ee","country":"Estonia","industry":"E-commerce","performance":44,"accessibility":79,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-20 16:11:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"kaubamaja.ee","country":"Estonia","industry":"E-commerce","performance":4,"accessibility":76,"best_practices":92,"seo":91,"pwa":78,"test_date":"2025-10-21 18:20:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

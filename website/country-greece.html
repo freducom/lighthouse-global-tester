@@ -32,9 +32,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Greece</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 59 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 56 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">59%</div>
+                <div class="stat-number" aria-hidden="true">56%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 84 percent">
@@ -121,15 +121,15 @@
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row trending-up" 
+                            <tr class="site-row trending-down" 
                                 data-url="kathimerini.gr" 
                                 data-industry="Media"
-                                data-performance="67"
+                                data-performance="61"
                                 data-accessibility="91"
                                 data-seo="93"
                                 data-best-practices="75"
                                 data-pwa="33"
-                                data-test-date="2025-10-21 15:26:30">
+                                data-test-date="2025-10-21 18:20:02">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-kathimerini-gr.html" 
@@ -146,8 +146,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 67 percent, average performance, trend: +3 points">
-                                    67%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
+                                    aria-label="Performance score: 61 percent, average performance, trend: -6 points">
+                                    61%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-6</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 91 percent, excellent performance">
@@ -165,9 +165,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-21 15:26:30"
+                                <td class="date" data-date="2025-10-21 18:20:02"
                                     aria-label="Last tested on 10/21/2025">
-                                    <time datetime="2025-10-21 15:26:30">10/21/2025</time>
+                                    <time datetime="2025-10-21 18:20:02">10/21/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -238,7 +238,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"kathimerini.gr","country":"Greece","industry":"Media","performance":67,"accessibility":91,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-21 15:26:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ethnos.gr","country":"Greece","industry":"Media","performance":51,"accessibility":76,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-20 16:10:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"kathimerini.gr","country":"Greece","industry":"Media","performance":61,"accessibility":91,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-21 18:20:02","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ethnos.gr","country":"Greece","industry":"Media","performance":51,"accessibility":76,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-20 16:10:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

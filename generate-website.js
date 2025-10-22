@@ -3566,13 +3566,13 @@ input[type="text"]:focus, input[type="search"]:focus {
         avgPwa: Math.round(scores.reduce((sum, s) => sum + s.pwa, 0) / scores.length),
         count: scores.length
       };
-    }).sort((a, b) => b.avgPerformance - a.avgPerformance);
+    }).filter(country => country.count >= 5).sort((a, b) => b.avgPerformance - a.avgPerformance);
 
     return {
       best: countryAverages[0],
-      secondBest: countryAverages[1],
+      secondBest: countryAverages.length > 1 ? countryAverages[1] : null,
       worst: countryAverages[countryAverages.length - 1],
-      secondWorst: countryAverages[countryAverages.length - 2],
+      secondWorst: countryAverages.length > 2 ? countryAverages[countryAverages.length - 2] : null,
       all: countryAverages
     };
   }
@@ -3598,11 +3598,11 @@ input[type="text"]:focus, input[type="search"]:focus {
         avgPwa: Math.round(scores.reduce((sum, s) => sum + s.pwa, 0) / scores.length),
         count: scores.length
       };
-    }).sort((a, b) => b.avgPerformance - a.avgPerformance);
+    }).filter(industry => industry.count >= 5).sort((a, b) => b.avgPerformance - a.avgPerformance);
 
     return {
       best: industryAverages[0],
-      worst: industryAverages[industryAverages.length - 1],
+      worst: industryAverages.length > 0 ? industryAverages[industryAverages.length - 1] : null,
       all: industryAverages,
       top5: industryAverages.slice(0, 5)
     };
