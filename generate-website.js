@@ -3816,8 +3816,6 @@ input[type="text"]:focus, input[type="search"]:focus {
             <h1>📅 Latest Updated Statistics</h1>
             <p class="subtitle">
                 Most recent lighthouse scan from <time datetime="${latestScanDate}">${formattedScanDate}</time>
-                <br>${latestScanResults.length} websites analyzed in the latest scan
-                ${recentResults.length > 0 ? `<br>Plus ${recentResults.length} additional scans from ${formattedCutoffTime} to ${formattedScanDate}` : ''}
             </p>
         </header>
 
@@ -3848,9 +3846,6 @@ input[type="text"]:focus, input[type="search"]:focus {
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="websites-heading">
                 <h2 id="websites-heading">🚀 Latest & Recent Scan Results</h2>
-                <p class="section-description">
-                    Showing the most recent scan (${latestScanResults.length} websites) plus all scans within the last 120 minutes (${recentResults.length} additional websites)
-                </p>
                 <div class="search-container">
                     <label for="searchInput" class="sr-only">Search recently scanned websites by name, country, or industry</label>
                     <input type="text" 
@@ -3949,7 +3944,7 @@ input[type="text"]:focus, input[type="search"]:focus {
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📅 Latest Scan Data from <time datetime="${latestScanDate}">${formattedScanDate}</time> | ${latestScanResults.length} latest + ${recentResults.length} recent = ${recentScanResults.length} total websites</p>
+                <p>📅 Latest Scan Data from <time datetime="${latestScanDate}">${formattedScanDate}</time></p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
