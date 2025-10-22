@@ -22,6 +22,7 @@
     "test-country": "node global-tester.js --country",
     "summary": "node global-tester.js --summary",
     "query": "node query-scores.js",
+    "failed-tests": "node query-failed-tests.js",
     "generate": "node generate-website.js",
     "serve": "node serve-website.js",
     "deploy": "npm run test && npm run generate",

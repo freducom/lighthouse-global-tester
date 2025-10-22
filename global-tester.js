@@ -44,7 +44,8 @@ class GlobalLighthouseTester {
       // Check if the lighthouse runner returned error scores
       if (scores.error) {
         console.error(`❌ ${domain} failed with error: ${scores.errorMessage}`);
-        // Don't save error results to database
+        // Save the failed test to the failed tests table
+        await this.db.saveFailedTest(domain);
         return {
           url: domain,
           country,
@@ -67,6 +68,13 @@ class GlobalLighthouseTester {
       return { url: domain, country, industry, ...scores };
     } catch (error) {
       console.error(`❌ Failed to test ${domain}: ${error.message}`);
+      
+      // Save the failed test to the failed tests table
+      try {
+        await this.db.saveFailedTest(domain);
+      } catch (dbError) {
+        console.error(`Failed to save failed test for ${domain}: ${dbError.message}`);
+      }
       
       // Return a failed result object instead of null to continue processing
       return {

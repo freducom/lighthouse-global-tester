@@ -81,6 +81,7 @@ Visit `http://localhost:8080` to view the dashboard locally.
 | `npm run dev` | Generate and serve for local development |
 | `npm run migrate` | Initialize/migrate database |
 | `npm run query` | Interactive database query tool |
+| `npm run failed-tests` | View report of failed lighthouse tests |
 
 ## 📈 Dashboard Features
 
@@ -125,6 +126,7 @@ The system automatically:
 ## 🗃️ Database Schema
 
 ```sql
+-- Main lighthouse test results
 CREATE TABLE lighthouse_scores (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     url TEXT NOT NULL,
@@ -136,6 +138,13 @@ CREATE TABLE lighthouse_scores (
     seo_score INTEGER,
     pwa_score INTEGER,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Failed lighthouse tests tracking
+CREATE TABLE lighthouse_failed_tests (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    url TEXT NOT NULL,
+    failure_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
 

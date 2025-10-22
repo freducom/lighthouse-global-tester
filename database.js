@@ -21,11 +21,27 @@ class Database {
       )
     `;
     
+    const createFailedTable = `
+      CREATE TABLE IF NOT EXISTS lighthouse_failed_tests (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        url TEXT NOT NULL,
+        failure_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+      )
+    `;
+    
     this.db.run(createTable, (err) => {
       if (err) {
-        console.error('Error creating table:', err);
+        console.error('Error creating lighthouse_scores table:', err);
       } else {
-        console.log('Database initialized successfully');
+        console.log('lighthouse_scores table initialized successfully');
+      }
+    });
+    
+    this.db.run(createFailedTable, (err) => {
+      if (err) {
+        console.error('Error creating lighthouse_failed_tests table:', err);
+      } else {
+        console.log('lighthouse_failed_tests table initialized successfully');
       }
     });
   }
@@ -38,10 +54,12 @@ class Database {
       const seo = scores.seo || 0;
       const pwa = scores.pwa || 0;
       
-      // Skip saving if all scores are 0 (failed test)
+      // Check if test failed (all scores are 0)
       if (performance === 0 && accessibility === 0 && bestPractices === 0 && seo === 0 && pwa === 0) {
-        console.log(`⚠️ Skipping ${url} - all scores are 0 (test failed)`);
-        resolve(null); // Return null to indicate no save occurred
+        console.log(`⚠️ Test failed for ${url} - recording failure and skipping save`);
+        this.saveFailedTest(url).then(() => {
+          resolve(null); // Return null to indicate no save occurred
+        }).catch(reject);
         return;
       }
       
@@ -326,6 +344,81 @@ class Database {
           else resolve(rows);
         });
       });
+    });
+  }
+
+  saveFailedTest(url) {
+    return new Promise((resolve, reject) => {
+      const stmt = this.db.prepare(`
+        INSERT INTO lighthouse_failed_tests (url)
+        VALUES (?)
+      `);
+      
+      stmt.run([url], function(err) {
+        if (err) reject(err);
+        else resolve(this.lastID);
+      });
+      
+      stmt.finalize();
+    });
+  }
+
+  getFailedTests(limit = 50) {
+    return new Promise((resolve, reject) => {
+      this.db.all(
+        `SELECT * FROM lighthouse_failed_tests 
+         ORDER BY failure_timestamp DESC 
+         LIMIT ?`,
+        [limit],
+        (err, rows) => {
+          if (err) reject(err);
+          else resolve(rows);
+        }
+      );
+    });
+  }
+
+  getFailedTestsCount() {
+    return new Promise((resolve, reject) => {
+      this.db.get(
+        `SELECT COUNT(*) as count FROM lighthouse_failed_tests`,
+        (err, row) => {
+          if (err) reject(err);
+          else resolve(row.count);
+        }
+      );
+    });
+  }
+
+  getFailedTestsByUrl(url) {
+    return new Promise((resolve, reject) => {
+      this.db.all(
+        `SELECT * FROM lighthouse_failed_tests 
+         WHERE url = ? 
+         ORDER BY failure_timestamp DESC`,
+        [url],
+        (err, rows) => {
+          if (err) reject(err);
+          else resolve(rows);
+        }
+      );
+    });
+  }
+
+  getFailedTestsStats() {
+    return new Promise((resolve, reject) => {
+      this.db.all(
+        `SELECT url, COUNT(*) as failure_count, 
+                MAX(failure_timestamp) as last_failure,
+                MIN(failure_timestamp) as first_failure
+         FROM lighthouse_failed_tests 
+         GROUP BY url 
+         ORDER BY failure_count DESC, last_failure DESC`,
+        (err, rows) => {
+          if (err) reject(err);
+          else resolve(rows);
+        }
+      );
     });
   }
 
