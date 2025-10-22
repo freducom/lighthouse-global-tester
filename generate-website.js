@@ -3135,6 +3135,59 @@ input[type="text"]:focus, input[type="search"]:focus {
 `;
 
     fs.writeFileSync(path.join(this.outputDir, 'styles.css'), css);
+
+    // Generate Service Worker
+    const serviceWorker = `
+const CACHE_NAME = 'lighthouse-tracker-v1';
+const urlsToCache = [
+  '/',
+  '/index.html',
+  '/styles.css',
+  '/manifest.json'
+];
+
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Return cached version or fetch from network
+        return response || fetch(event.request);
+      }
+    )
+  );
+});
+`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'sw.js'), serviceWorker);
+
+    // Generate Web App Manifest
+    const manifest = {
+      "name": "Lighthouse Global Tracker",
+      "short_name": "LighthouseTracker",
+      "description": "Global website performance analysis with Lighthouse",
+      "start_url": "/",
+      "display": "standalone",
+      "background_color": "#1877f2",
+      "theme_color": "#1877f2",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    };
+
+    fs.writeFileSync(path.join(this.outputDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
   }
 
   async generateAllCountriesPage() {
