@@ -1866,7 +1866,7 @@ class WebsiteGenerator {
         </section>
 
         <footer class="footer">
-            <p>📊 ${site.url} Performance History | Last tested: ${new Date(site.test_date).toLocaleDateString()}</p>
+            <p>📊 <a href="${site.url}">${site.url}</a> Performance History | Last tested: ${new Date(site.test_date).toLocaleDateString()}</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
