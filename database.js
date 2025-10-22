@@ -422,6 +422,274 @@ class Database {
     });
   }
 
+  // Domain prioritization methods for smart batch testing
+  getDomainsByCategory() {
+    return new Promise((resolve, reject) => {
+      // Get all domains from domains.json with their test history
+      const fs = require('fs');
+      let allDomains = [];
+      
+      try {
+        const domainsData = JSON.parse(fs.readFileSync('./domains.json', 'utf8'));
+        for (const countryData of domainsData) {
+          for (const domainInfo of countryData.top_domains) {
+            allDomains.push({
+              domain: domainInfo.domain,
+              country: countryData.country,
+              industry: domainInfo.industry
+            });
+          }
+        }
+      } catch (error) {
+        reject(new Error('Failed to load domains.json: ' + error.message));
+        return;
+      }
+
+      // Complex query to categorize all domains
+      const query = `
+        WITH domain_stats AS (
+          SELECT 
+            url,
+            COUNT(*) as total_tests,
+            SUM(CASE WHEN performance > 0 OR accessibility > 0 OR best_practices > 0 OR seo > 0 OR pwa > 0 THEN 1 ELSE 0 END) as success_count,
+            MAX(test_date) as last_test_date,
+            MAX(CASE WHEN performance > 0 OR accessibility > 0 OR best_practices > 0 OR seo > 0 OR pwa > 0 THEN test_date END) as last_success_date
+          FROM lighthouse_scores 
+          GROUP BY url
+        ),
+        failure_stats AS (
+          SELECT 
+            url,
+            COUNT(*) as failure_count,
+            MAX(failure_timestamp) as last_failure_date
+          FROM lighthouse_failed_tests 
+          GROUP BY url
+        )
+        SELECT 
+          ? as domain,
+          ? as country,
+          ? as industry,
+          COALESCE(ds.total_tests, 0) as total_tests,
+          COALESCE(ds.success_count, 0) as success_count,
+          COALESCE(fs.failure_count, 0) as failure_count,
+          ds.last_test_date,
+          ds.last_success_date,
+          fs.last_failure_date,
+          CASE 
+            WHEN ds.total_tests IS NULL AND fs.failure_count IS NULL THEN 'never_tested'
+            WHEN ds.success_count >= 3 AND ds.last_success_date >= datetime('now', '-7 days') THEN 'reliable_success'
+            WHEN ds.success_count > 0 AND ds.last_success_date >= datetime('now', '-14 days') THEN 'recent_mixed'
+            WHEN ds.success_count > 0 AND ds.last_success_date < datetime('now', '-14 days') THEN 'old_success'
+            WHEN ds.success_count = 0 OR ds.last_success_date IS NULL OR ds.last_success_date < datetime('now', '-30 days') THEN 'failed_only'
+            ELSE 'unknown'
+          END as category,
+          CASE 
+            WHEN fs.last_failure_date IS NULL THEN 0
+            WHEN fs.last_failure_date >= datetime('now', '-1 days') THEN 1
+            WHEN fs.last_failure_date >= datetime('now', '-3 days') THEN 3
+            WHEN fs.last_failure_date >= datetime('now', '-7 days') THEN 7
+            ELSE 0
+          END as cooldown_days_remaining
+        FROM domain_stats ds
+        FULL OUTER JOIN failure_stats fs ON ds.url = fs.url
+      `;
+
+      // Since SQLite doesn't support FULL OUTER JOIN easily, we'll do this in JavaScript
+      // First get all tested domains
+      this.db.all(`
+        WITH domain_stats AS (
+          SELECT 
+            url,
+            COUNT(*) as total_tests,
+            SUM(CASE WHEN performance > 0 OR accessibility > 0 OR best_practices > 0 OR seo > 0 OR pwa > 0 THEN 1 ELSE 0 END) as success_count,
+            MAX(test_date) as last_test_date,
+            MAX(CASE WHEN performance > 0 OR accessibility > 0 OR best_practices > 0 OR seo > 0 OR pwa > 0 THEN test_date END) as last_success_date
+          FROM lighthouse_scores 
+          GROUP BY url
+        ),
+        failure_stats AS (
+          SELECT 
+            url,
+            COUNT(*) as failure_count,
+            MAX(failure_timestamp) as last_failure_date
+          FROM lighthouse_failed_tests 
+          GROUP BY url
+        )
+        SELECT 
+          COALESCE(ds.url, fs.url) as domain,
+          COALESCE(ds.total_tests, 0) as total_tests,
+          COALESCE(ds.success_count, 0) as success_count,
+          COALESCE(fs.failure_count, 0) as failure_count,
+          ds.last_test_date,
+          ds.last_success_date,
+          fs.last_failure_date
+        FROM domain_stats ds
+        LEFT JOIN failure_stats fs ON ds.url = fs.url
+        UNION
+        SELECT 
+          fs.url as domain,
+          0 as total_tests,
+          0 as success_count,
+          fs.failure_count,
+          NULL as last_test_date,
+          NULL as last_success_date,
+          fs.last_failure_date
+        FROM failure_stats fs
+        LEFT JOIN domain_stats ds ON fs.url = ds.url
+        WHERE ds.url IS NULL
+      `, (err, dbResults) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        // Create a map of tested domains
+        const testedDomains = new Map();
+        dbResults.forEach(row => {
+          testedDomains.set(row.domain, row);
+        });
+
+        // Categorize all domains
+        const categorizedDomains = {
+          never_tested: [],
+          reliable_success: [],
+          recent_mixed: [],
+          old_success: [],
+          failed_only: []
+        };
+
+        allDomains.forEach(domainInfo => {
+          const dbData = testedDomains.get(domainInfo.domain);
+          let category = 'never_tested';
+          let cooldownDaysRemaining = 0;
+
+          if (dbData) {
+            const now = new Date();
+            const lastSuccess = dbData.last_success_date ? new Date(dbData.last_success_date) : null;
+            const lastFailure = dbData.last_failure_date ? new Date(dbData.last_failure_date) : null;
+            const lastTest = dbData.last_test_date ? new Date(dbData.last_test_date) : null;
+
+            // Calculate cooldown for failed domains
+            if (lastFailure) {
+              const daysSinceFailure = (now - lastFailure) / (1000 * 60 * 60 * 24);
+              if (daysSinceFailure < 1) cooldownDaysRemaining = 1;
+              else if (daysSinceFailure < 3) cooldownDaysRemaining = 3 - Math.floor(daysSinceFailure);
+              else if (daysSinceFailure < 7) cooldownDaysRemaining = 7 - Math.floor(daysSinceFailure);
+            }
+
+            // Categorize based on success patterns and recency
+            if (dbData.success_count >= 3 && lastSuccess && (now - lastSuccess) / (1000 * 60 * 60 * 24) <= 7) {
+              category = 'reliable_success';
+            } else if (dbData.success_count > 0 && lastSuccess && (now - lastSuccess) / (1000 * 60 * 60 * 24) <= 14) {
+              category = 'recent_mixed';
+            } else if (dbData.success_count > 0 && lastSuccess && (now - lastSuccess) / (1000 * 60 * 60 * 24) > 14) {
+              category = 'old_success';
+            } else if (dbData.success_count === 0 || !lastSuccess || (now - lastSuccess) / (1000 * 60 * 60 * 24) > 30) {
+              category = 'failed_only';
+            }
+          }
+
+          categorizedDomains[category].push({
+            ...domainInfo,
+            ...dbData,
+            category,
+            cooldownDaysRemaining
+          });
+        });
+
+        resolve(categorizedDomains);
+      });
+    });
+  }
+
+  getSmartBatch(batchSize = 50, percentages = { never_tested: 70, reliable_success: 10, recent_mixed: 10, old_success: 5, failed_only: 5 }) {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const categorizedDomains = await this.getDomainsByCategory();
+        
+        // Filter out domains in cooldown period
+        const availableDomains = {
+          never_tested: categorizedDomains.never_tested,
+          reliable_success: categorizedDomains.reliable_success.filter(d => d.cooldownDaysRemaining === 0),
+          recent_mixed: categorizedDomains.recent_mixed.filter(d => d.cooldownDaysRemaining === 0),
+          old_success: categorizedDomains.old_success.filter(d => d.cooldownDaysRemaining === 0),
+          failed_only: categorizedDomains.failed_only.filter(d => d.cooldownDaysRemaining === 0)
+        };
+
+        // Calculate actual allocation based on available domains
+        const allocation = this.calculateAdaptiveAllocation(availableDomains, batchSize, percentages);
+        
+        // Select domains for each category
+        const selectedDomains = [];
+        
+        for (const [category, count] of Object.entries(allocation)) {
+          if (count > 0 && availableDomains[category].length > 0) {
+            // Randomly shuffle and take the required count
+            const shuffled = [...availableDomains[category]].sort(() => Math.random() - 0.5);
+            selectedDomains.push(...shuffled.slice(0, count));
+          }
+        }
+
+        // If we don't have enough domains, fill with whatever is available
+        if (selectedDomains.length < batchSize) {
+          const remaining = batchSize - selectedDomains.length;
+          const allAvailable = Object.values(availableDomains).flat();
+          const usedDomains = new Set(selectedDomains.map(d => d.domain));
+          const unused = allAvailable.filter(d => !usedDomains.has(d.domain));
+          
+          if (unused.length > 0) {
+            const shuffled = unused.sort(() => Math.random() - 0.5);
+            selectedDomains.push(...shuffled.slice(0, remaining));
+          }
+        }
+
+        resolve({
+          selectedDomains: selectedDomains.slice(0, batchSize),
+          allocation,
+          availableCounts: Object.fromEntries(
+            Object.entries(availableDomains).map(([k, v]) => [k, v.length])
+          ),
+          cooldownCounts: Object.fromEntries(
+            Object.entries(categorizedDomains).map(([k, v]) => [k, v.filter(d => d.cooldownDaysRemaining > 0).length])
+          )
+        });
+      } catch (error) {
+        reject(error);
+      }
+    });
+  }
+
+  calculateAdaptiveAllocation(availableDomains, batchSize, originalPercentages) {
+    const allocation = {};
+    let totalAllocated = 0;
+
+    // Calculate initial allocation
+    for (const [category, percentage] of Object.entries(originalPercentages)) {
+      const requestedCount = Math.floor((percentage / 100) * batchSize);
+      const availableCount = availableDomains[category]?.length || 0;
+      allocation[category] = Math.min(requestedCount, availableCount);
+      totalAllocated += allocation[category];
+    }
+
+    // If we have remaining slots, redistribute
+    const remaining = batchSize - totalAllocated;
+    if (remaining > 0) {
+      // Redistribute to categories with available domains, prioritizing never_tested first
+      const priorityOrder = ['never_tested', 'reliable_success', 'recent_mixed', 'old_success', 'failed_only'];
+      
+      for (const category of priorityOrder) {
+        if (remaining <= 0) break;
+        
+        const available = (availableDomains[category]?.length || 0) - allocation[category];
+        const canAdd = Math.min(remaining, available);
+        allocation[category] += canAdd;
+        totalAllocated += canAdd;
+      }
+    }
+
+    return allocation;
+  }
+
   close() {
     this.db.close();
   }
