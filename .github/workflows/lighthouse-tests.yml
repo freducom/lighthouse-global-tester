@@ -9,7 +9,7 @@ on:
       test_all:
         description: 'Test all websites (ignore rotation)'
         required: false
-        default: 'false'
+        default: false
         type: boolean
   push:
     branches: [ main ]
