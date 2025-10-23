@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rbc.ru - Lighthouse History</title>
     <meta name="description" content="Lighthouse performance history and insights for rbc.ru">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
@@ -28,7 +28,7 @@
             "name": "Valmitta",
             "url": "https://valmitta.com"
           },
-          "dateCreated": "2025-10-23T15:35:52.402Z",
+          "dateCreated": "2025-10-23T15:54:08.491Z",
           "about": {
             "@type": "WebSite",
             "name": "rbc.ru",
@@ -40,11 +40,11 @@
           "@id": "https://valmitta.com/domain-rbc.ru.html#metrics",
           "name": "rbc.ru Performance Metrics",
           "description": "Latest Lighthouse scores for rbc.ru",
-          "performanceScore": 45,
-          "accessibilityScore": 67,
-          "bestPracticesScore": 75,
+          "performanceScore": 51,
+          "accessibilityScore": 72,
+          "bestPracticesScore": 58,
           "seoScore": 93,
-          "dateRecorded": "2025-10-19 20:06:10"
+          "dateRecorded": "2025-10-23 12:18:32"
         }
       ]
     }
@@ -62,20 +62,20 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇷🇺 Russia</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 8:06:10 PM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 12:18:32 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">45%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number average">51%</div>
+                <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number average">67%</div>
-                <div class="stat-description">average performance</div>
+                <div class="stat-number good">72%</div>
+                <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
@@ -84,16 +84,16 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number good">75%</div>
-                <div class="stat-description">good performance</div>
+                <div class="stat-number average">58%</div>
+                <div class="stat-description">average performance</div>
             </div>
         </div>
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -104,22 +104,22 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 45%"></div>
-                        <span class="score-text">45%</span>
+                        <div class="score-fill performance" style="width: 51%"></div>
+                        <span class="score-text">51%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 67%"></div>
-                        <span class="score-text">67%</span>
+                        <div class="score-fill accessibility" style="width: 72%"></div>
+                        <span class="score-text">72%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 75%"></div>
-                        <span class="score-text">75%</span>
+                        <div class="score-fill best-practices" style="width: 58%"></div>
+                        <span class="score-text">58%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -140,11 +140,64 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="https://rbc.ru" target="_blank" rel="noopener">rbc.ru</a> Performance History | Last tested: 10/19/2025</p>
+            <p>📊 <a href="https://rbc.ru" target="_blank" rel="noopener">rbc.ru</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":157,"url":"rbc.ru","performance":45,"accessibility":67,"best_practices":75,"seo":93,"pwa":56,"test_date":"2025-10-19 20:06:10","country":"Russia","industry":"Media"},{"id":517,"url":"rbc.ru","performance":51,"accessibility":72,"best_practices":58,"seo":93,"pwa":56,"test_date":"2025-10-23 12:18:32","country":"Russia","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+        // Register service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered', registration))
+                .catch(error => console.log('SW registration failed', error));
+        }
+    </script>
     
 </body>
 </html>

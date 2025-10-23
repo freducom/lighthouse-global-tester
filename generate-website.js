@@ -185,10 +185,9 @@ class WebsiteGenerator {
     <title>Valmitta - Web Performance Analytics Dashboard</title>
     <meta name="description" content="Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics">
     <meta name="keywords" content="web performance, lighthouse, accessibility, SEO, performance analytics, website optimization">
-    <meta name="theme-color" content="#f7931e">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
@@ -869,10 +868,9 @@ class WebsiteGenerator {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${countryData.country} - Valmitta</title>
     <meta name="description" content="Lighthouse performance analysis for ${countryData.country} websites">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     
     <!-- Schema.org Structured Data for Country Page -->
@@ -1580,7 +1578,7 @@ class WebsiteGenerator {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${industry} Industry - Valmitta</title>
     <meta name="description" content="Lighthouse performance analysis for ${industry.toLowerCase()} industry websites">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
@@ -1880,7 +1878,7 @@ class WebsiteGenerator {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${site.url} - Lighthouse History</title>
     <meta name="description" content="Lighthouse performance history and insights for ${site.url}">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
@@ -2038,20 +2036,20 @@ class WebsiteGenerator {
                 datasets: [{
                     label: 'Performance',
                     data: historyData.map(d => d.performance),
-                    borderColor: '#ff6b35',
-                    backgroundColor: 'rgba(255, 107, 53, 0.1)',
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
                     tension: 0.1
                 }, {
                     label: 'Accessibility',
                     data: historyData.map(d => d.accessibility),
-                    borderColor: '#4285f4',
-                    backgroundColor: 'rgba(66, 133, 244, 0.1)',
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
                     tension: 0.1
                 }, {
                     label: 'SEO',
                     data: historyData.map(d => d.seo),
-                    borderColor: '#34a853',
-                    backgroundColor: 'rgba(52, 168, 83, 0.1)',
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
                     tension: 0.1
                 }]
             },
@@ -2115,10 +2113,10 @@ body {
     padding: 20px;
     margin: -20px -20px 20px -20px;
     border-radius: 0 0 8px 8px;
-    color: #1c1e21;
+    color: #0D3B66;
     text-align: center;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #f7931e;
+    border-bottom: 2px solid #FFB703;
 }
 
 .header h1 {
@@ -2178,13 +2176,13 @@ body {
 }
 
 .breadcrumb a {
-    color: #1e3a5f;
+    color: #0D3B66;
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .breadcrumb a:hover {
-    color: #f7931e;
+    color: #FFB703;
 }
 
 .stats-grid {
@@ -2209,10 +2207,10 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.stat-card.performance { border-left-color: #ff6b35; }
-.stat-card.accessibility { border-left-color: #4285f4; }
-.stat-card.seo { border-left-color: #34a853; }
-.stat-card.best-practices { border-left-color: #9c27b0; }
+.stat-card.performance { border-left-color: #E07A00; }
+.stat-card.accessibility { border-left-color: #1E6091; }
+.stat-card.seo { border-left-color: #FFB703; }
+.stat-card.best-practices { border-left-color: #081C34; }
 
 .stat-card h3 {
     font-size: 0.9em;
@@ -2437,7 +2435,7 @@ body {
 .country-card:hover {
     background: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: #1877f2;
+    border-color: #0D3B66;
     transform: translateY(-2px);
     text-decoration: none !important;
 }
@@ -2485,7 +2483,7 @@ body {
 
 .btn-see-all {
     display: inline-block;
-    background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+    background: linear-gradient(135deg, #0D3B66 0%, #42a5f5 100%);
     color: white !important;
     padding: 12px 24px;
     border-radius: 24px;
@@ -2525,7 +2523,7 @@ body {
 }
 
 #searchInput:focus {
-    border-color: #1877f2;
+    border-color: #0D3B66;
 }
 
 .table-container {
@@ -2561,12 +2559,12 @@ body {
 
 .rank {
     font-weight: 700;
-    color: #1877f2;
+    color: #0D3B66;
     width: 60px;
 }
 
 .domain-link {
-    color: #1877f2;
+    color: #0D3B66;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s;
@@ -2595,7 +2593,7 @@ body {
 }
 
 .scan-badge.recent {
-    background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
+    background: linear-gradient(135deg, #0D3B66 0%, #166fe5 100%);
     color: white;
     box-shadow: 0 2px 4px rgba(24, 119, 242, 0.3);
 }
@@ -2607,7 +2605,7 @@ body {
 
 .recent-scan {
     background: rgba(24, 119, 242, 0.05);
-    border-left: 3px solid #1877f2;
+    border-left: 3px solid #0D3B66;
 }
 
 .latest-scan:hover {
@@ -2630,7 +2628,7 @@ body {
     padding: 12px 16px;
     background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #1877f2;
+    border-left: 4px solid #0D3B66;
 }
 
 .country-link {
@@ -2640,7 +2638,7 @@ body {
 }
 
 .country-link:hover {
-    color: #1877f2;
+    color: #0D3B66;
 }
 
 .score {
@@ -2673,7 +2671,7 @@ body {
 }
 
 .footer a {
-    color: #1877f2;
+    color: #0D3B66;
     text-decoration: none;
     font-weight: 500;
 }
@@ -3389,7 +3387,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Countries - Valmitta</title>
     <meta name="description" content="Complete rankings of all countries by lighthouse performance analysis">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
@@ -3514,7 +3512,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Industries - Valmitta</title>
     <meta name="description" content="Complete rankings of all industries by lighthouse performance analysis">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
@@ -3646,7 +3644,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Companies - Valmitta</title>
     <meta name="description" content="Complete rankings of all companies by lighthouse performance analysis">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
@@ -4019,7 +4017,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latest Updated Statistics - Valmitta</title>
     <meta name="description" content="Latest lighthouse performance scan results from ${formattedScanDate} - ${latestScanResults.length} websites analyzed">
-    <meta name="theme-color" content="#1877f2">
+    <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
