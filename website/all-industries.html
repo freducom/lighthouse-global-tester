@@ -30,6 +30,15 @@
     <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/twitterCard_1200x675.png">
     <meta name="twitter:site" content="@valmitta">
     <meta name="twitter:creator" content="@valmitta">
+    <!-- PostHog Analytics -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init yi Ar jr mi Or Mr capture Li calculateEventProperties Nr register register_once register_for_session unregister unregister_for_session Br getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zr Lr createPersonProfile Hr Rr qr opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug L Ur getPageViewId captureTraceFeedback captureTraceMetric Pr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_txSL3d2o8C7Y5fzys73cLBx88FYqcThmBOQ4XiIObgh', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only'
+        });
+    </script>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -37,7 +46,7 @@
     <div class="container">
         <header class="header">
             <h1>🏭 All Industries</h1>
-            <p class="subtitle">Complete rankings of all 11 industries by performance</p>
+            <p class="subtitle">Complete rankings of all 12 industries by performance</p>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">← Back to Home</a>
             </div>
@@ -66,7 +75,7 @@
                             <tr class="industry-row" data-industry="government">
                                 <td class="rank">#1</td>
                                 <td><a href="industry-government.html" class="industry-link">Government</a></td>
-                                <td class="score perf-average">58%</td>
+                                <td class="score perf-average">60%</td>
                                 <td class="score acc-good">86%</td>
                                 <td class="score seo-excellent">94%</td>
                                 <td class="score bp-excellent">92%</td>
@@ -74,19 +83,8 @@
                                 <td class="count">18</td>
                             </tr>
                         
-                            <tr class="industry-row" data-industry="jobs">
-                                <td class="rank">#2</td>
-                                <td><a href="industry-jobs.html" class="industry-link">Jobs</a></td>
-                                <td class="score perf-average">58%</td>
-                                <td class="score acc-good">84%</td>
-                                <td class="score seo-excellent">91%</td>
-                                <td class="score bp-good">74%</td>
-                                <td class="score pwa-poor">49%</td>
-                                <td class="count">5</td>
-                            </tr>
-                        
                             <tr class="industry-row" data-industry="website editor">
-                                <td class="rank">#3</td>
+                                <td class="rank">#2</td>
                                 <td><a href="industry-website-editor.html" class="industry-link">Website editor</a></td>
                                 <td class="score perf-average">58%</td>
                                 <td class="score acc-excellent">93%</td>
@@ -94,6 +92,17 @@
                                 <td class="score bp-good">89%</td>
                                 <td class="score pwa-poor">38%</td>
                                 <td class="count">7</td>
+                            </tr>
+                        
+                            <tr class="industry-row" data-industry="jobs">
+                                <td class="rank">#3</td>
+                                <td><a href="industry-jobs.html" class="industry-link">Jobs</a></td>
+                                <td class="score perf-average">57%</td>
+                                <td class="score acc-good">84%</td>
+                                <td class="score seo-excellent">91%</td>
+                                <td class="score bp-good">74%</td>
+                                <td class="score pwa-poor">49%</td>
+                                <td class="count">5</td>
                             </tr>
                         
                             <tr class="industry-row" data-industry="search engine">
@@ -143,12 +152,12 @@
                             <tr class="industry-row" data-industry="media">
                                 <td class="rank">#8</td>
                                 <td><a href="industry-media.html" class="industry-link">Media</a></td>
-                                <td class="score perf-poor">42%</td>
+                                <td class="score perf-poor">43%</td>
                                 <td class="score acc-good">87%</td>
                                 <td class="score seo-excellent">91%</td>
                                 <td class="score bp-good">81%</td>
                                 <td class="score pwa-poor">47%</td>
-                                <td class="count">165</td>
+                                <td class="count">168</td>
                             </tr>
                         
                             <tr class="industry-row" data-industry="marketplace">
@@ -165,10 +174,10 @@
                             <tr class="industry-row" data-industry="e-commerce">
                                 <td class="rank">#10</td>
                                 <td><a href="industry-e-commerce.html" class="industry-link">E-commerce</a></td>
-                                <td class="score perf-poor">40%</td>
+                                <td class="score perf-poor">39%</td>
                                 <td class="score acc-good">87%</td>
                                 <td class="score seo-excellent">92%</td>
-                                <td class="score bp-good">79%</td>
+                                <td class="score bp-good">78%</td>
                                 <td class="score pwa-average">52%</td>
                                 <td class="count">21</td>
                             </tr>
@@ -184,13 +193,24 @@
                                 <td class="count">5</td>
                             </tr>
                         
+                            <tr class="industry-row" data-industry="telecom">
+                                <td class="rank">#12</td>
+                                <td><a href="industry-telecom.html" class="industry-link">Telecom</a></td>
+                                <td class="score perf-poor">30%</td>
+                                <td class="score acc-good">83%</td>
+                                <td class="score seo-good">88%</td>
+                                <td class="score bp-good">80%</td>
+                                <td class="score pwa-poor">33%</td>
+                                <td class="count">5</td>
+                            </tr>
+                        
                     </tbody>
                 </table>
             </div>
         </section>
 
         <footer class="footer">
-            <p>11 industries analyzed</p>
+            <p>12 industries analyzed</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>

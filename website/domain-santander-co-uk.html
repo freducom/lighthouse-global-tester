@@ -30,6 +30,15 @@
     <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/twitterCard_1200x675.png">
     <meta name="twitter:site" content="@valmitta">
     <meta name="twitter:creator" content="@valmitta">
+    <!-- PostHog Analytics -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init yi Ar jr mi Or Mr capture Li calculateEventProperties Nr register register_once register_for_session unregister unregister_for_session Br getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zr Lr createPersonProfile Hr Rr qr opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug L Ur getPageViewId captureTraceFeedback captureTraceMetric Pr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_txSL3d2o8C7Y5fzys73cLBx88FYqcThmBOQ4XiIObgh', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only'
+        });
+    </script>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -49,7 +58,7 @@
             "name": "Valmitta",
             "url": "https://valmitta.com"
           },
-          "dateCreated": "2025-10-23T19:56:29.116Z",
+          "dateCreated": "2025-10-23T21:01:45.830Z",
           "about": {
             "@type": "WebSite",
             "name": "santander.co.uk",
@@ -61,11 +70,11 @@
           "@id": "https://valmitta.com/domain-santander.co.uk.html#metrics",
           "name": "santander.co.uk Performance Metrics",
           "description": "Latest Lighthouse scores for santander.co.uk",
-          "performanceScore": 37,
+          "performanceScore": 41,
           "accessibilityScore": 100,
           "bestPracticesScore": 100,
           "seoScore": 86,
-          "dateRecorded": "2025-10-23 18:13:57"
+          "dateRecorded": "2025-10-23 19:30:31"
         }
       ]
     }
@@ -83,14 +92,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇬🇧 United Kingdom</span>
-                <span class="last-scan">Last scanned: 10/23/2025, 6:13:57 PM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 7:30:31 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">37%</div>
+                <div class="stat-number poor">41%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -112,9 +121,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -125,8 +134,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 37%"></div>
-                        <span class="score-text">37%</span>
+                        <div class="score-fill performance" style="width: 41%"></div>
+                        <span class="score-text">41%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -166,6 +175,53 @@
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":551,"url":"santander.co.uk","performance":37,"accessibility":100,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-23 18:13:57","country":"United Kingdom","industry":"Finance"},{"id":558,"url":"santander.co.uk","performance":41,"accessibility":100,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-23 19:30:31","country":"United Kingdom","industry":"Finance"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

@@ -109,6 +109,18 @@ class WebsiteGenerator {
     <meta name="twitter:creator" content="@valmitta">`;
   }
 
+  getPostHogScript() {
+    return `    <!-- PostHog Analytics -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init yi Ar jr mi Or Mr capture Li calculateEventProperties Nr register register_once register_for_session unregister unregister_for_session Br getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zr Lr createPersonProfile Hr Rr qr opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug L Ur getPageViewId captureTraceFeedback captureTraceMetric Pr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_txSL3d2o8C7Y5fzys73cLBx88FYqcThmBOQ4XiIObgh', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only'
+        });
+    </script>`;
+  }
+
   getTrend(current, previous) {
     if (previous === null || previous === undefined) {
       return 'none'; // No previous data
@@ -223,6 +235,7 @@ class WebsiteGenerator {
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics`, 'index.html')}
+${this.getPostHogScript()}
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -1044,6 +1057,7 @@ ${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comp
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags(`${countryData.country} - Website Performance Analysis`, `Lighthouse performance analysis for ${countryData.country} websites. View detailed metrics and rankings.`, fileName)}
+${this.getPostHogScript()}
     <link rel="stylesheet" href="styles.css">
     
     <!-- Schema.org Structured Data for Country Page -->
@@ -1747,6 +1761,7 @@ ${this.getFaviconHTML()}
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags(`${industry} Industry - Performance Analysis`, `Lighthouse performance analysis for ${industry.toLowerCase()} industry websites. Compare metrics and rankings.`, fileName)}
+${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -2041,6 +2056,7 @@ ${this.getSocialMetaTags(`${industry} Industry - Performance Analysis`, `Lightho
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags(`${site.url} - Performance History`, `Lighthouse performance history and insights for ${site.url}. View detailed metrics and performance trends.`, fileName)}
+${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -3864,6 +3880,7 @@ input[type="text"]:focus, input[type="search"]:focus {
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags('All Countries - Performance Rankings', 'Complete rankings of all countries by lighthouse performance analysis. Compare global website performance metrics.', 'all-countries.html')}
+${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -3980,6 +3997,7 @@ ${this.getSocialMetaTags('All Countries - Performance Rankings', 'Complete ranki
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags('All Industries - Performance Rankings', 'Complete rankings of all industries by lighthouse performance analysis. Compare industry performance metrics.', 'all-industries.html')}
+${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -4103,6 +4121,7 @@ ${this.getSocialMetaTags('All Industries - Performance Rankings', 'Complete rank
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags('All Companies - Performance Rankings', 'Complete rankings of all companies by lighthouse performance analysis. Compare website performance metrics across all industries.', 'all-companies.html')}
+${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -4482,6 +4501,7 @@ ${this.getSocialMetaTags('All Companies - Performance Rankings', 'Complete ranki
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
 ${this.getSocialMetaTags('Latest Updated Statistics - Valmitta', `Latest lighthouse performance scan results from ${formattedScanDate} - ${latestScanResults.length} websites analyzed`, 'latest-updated.html')}
+${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
