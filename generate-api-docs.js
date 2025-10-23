@@ -87,11 +87,34 @@ class APIDocsGenerator {
         }
         
         .toc {
-            background: linear-gradient(135deg, var(--primary-blue), var(--sky-blue));
-            color: white;
+            background: white;
+            border: 2px solid var(--primary-blue);
+            color: var(--midnight-blue);
             padding: 24px;
             border-radius: 12px;
             margin-bottom: 32px;
+            box-shadow: 0 4px 12px rgba(13, 59, 102, 0.1);
+        }
+        
+        .toc h2 {
+            color: var(--midnight-blue);
+            margin: 0 0 20px 0;
+            padding: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid var(--bright-amber);
+            padding-bottom: 8px;
+        }
+        
+        .toc h3 {
+            color: var(--primary-blue);
+            margin: 20px 0 12px 0;
+            font-size: 1.1em;
+        }
+        
+        .toc p {
+            color: var(--midnight-blue);
+            margin-bottom: 16px;
+            line-height: 1.5;
         }
         
         .toc ul {
@@ -105,15 +128,18 @@ class APIDocsGenerator {
         }
         
         .toc a {
-            color: white;
+            color: var(--primary-blue);
             text-decoration: none;
-            opacity: 0.9;
-            transition: opacity 0.2s;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            display: inline-block;
         }
         
         .toc a:hover {
-            opacity: 1;
-            text-decoration: underline;
+            background: var(--bright-amber);
+            color: var(--midnight-blue);
+            text-decoration: none;
         }
         
         .parameter-table {
@@ -159,11 +185,19 @@ class APIDocsGenerator {
         }
         
         .cors-info {
-            background: linear-gradient(135deg, var(--sky-blue), var(--primary-blue));
-            color: white;
+            background: white;
+            border: 2px solid var(--sky-blue);
+            color: var(--midnight-blue);
             padding: 16px;
             border-radius: 8px;
             margin: 24px 0;
+            box-shadow: 0 2px 8px rgba(30, 96, 145, 0.1);
+        }
+        
+        .cors-info h4 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            margin-bottom: 12px;
         }
         
         code {
@@ -229,8 +263,6 @@ class APIDocsGenerator {
     </header>
 
     <main class="api-docs">
-        <a href="index.html" class="back-to-home">← Back to Dashboard</a>
-        
         <!-- Table of Contents -->
         <div class="toc">
             <h2>📚 API Documentation</h2>
@@ -253,7 +285,7 @@ class APIDocsGenerator {
             
             <div class="endpoint-section">
                 <h3>API Base URL</h3>
-                <div class="endpoint-url">https://freducom.github.io/lighthouse-global-tester/api/</div>
+                <div class="endpoint-url">https://valmitta.com/api/</div>
                 
                 <div class="rate-limit-info">
                     <h4>📈 Rate Limits & Usage</h4>
@@ -604,7 +636,7 @@ class APIDocsGenerator {
                 <div class="json-example">
                     <pre>// Get overview data
 async function getOverview() {
-    const response = await fetch('https://freducom.github.io/lighthouse-global-tester/api/overview.json');
+    const response = await fetch('https://valmitta.com/api/overview.json');
     const data = await response.json();
     console.log('Global averages:', data.global_averages);
 }
@@ -612,7 +644,7 @@ async function getOverview() {
 // Get country-specific data
 async function getCountryData(country) {
     const slug = country.toLowerCase().replace(/\\s+/g, '-');
-    const response = await fetch(\`https://freducom.github.io/lighthouse-global-tester/api/countries/\${slug}.json\`);
+    const response = await fetch(\`https://valmitta.com/api/countries/\${slug}.json\`);
     const data = await response.json();
     return data;
 }
@@ -620,7 +652,7 @@ async function getCountryData(country) {
 // Get website performance history
 async function getWebsiteHistory(website) {
     const slug = website.replace(/\\./g, '-');
-    const response = await fetch(\`https://freducom.github.io/lighthouse-global-tester/api/websites/\${slug}.json\`);
+    const response = await fetch(\`https://valmitta.com/api/websites/\${slug}.json\`);
     const data = await response.json();
     return data.historical_data;
 }</pre>
@@ -634,7 +666,7 @@ async function getWebsiteHistory(website) {
 
 # Get overview data
 def get_overview():
-    url = 'https://freducom.github.io/lighthouse-global-tester/api/overview.json'
+    url = 'https://valmitta.com/api/overview.json'
     response = requests.get(url)
     data = response.json()
     return data['global_averages']
@@ -642,13 +674,13 @@ def get_overview():
 # Get industry data
 def get_industry_data(industry):
     slug = industry.lower().replace(' ', '-')
-    url = f'https://freducom.github.io/lighthouse-global-tester/api/industries/{slug}.json'
+    url = f'https://valmitta.com/api/industries/{slug}.json'
     response = requests.get(url)
     return response.json()
 
 # Get all countries
 def get_all_countries():
-    url = 'https://freducom.github.io/lighthouse-global-tester/api/countries.json'
+    url = 'https://valmitta.com/api/countries.json'
     response = requests.get(url)
     data = response.json()
     return data['countries']</pre>
@@ -659,13 +691,13 @@ def get_all_countries():
                 <h3>cURL</h3>
                 <div class="json-example">
                     <pre># Get overview
-curl "https://freducom.github.io/lighthouse-global-tester/api/overview.json"
+curl "https://valmitta.com/api/overview.json"
 
 # Get specific country data
-curl "https://freducom.github.io/lighthouse-global-tester/api/countries/united-states.json"
+curl "https://valmitta.com/api/countries/united-states.json"
 
 # Get website data with pretty printing
-curl -s "https://freducom.github.io/lighthouse-global-tester/api/websites/google-com.json" | jq '.'</pre>
+curl -s "https://valmitta.com/api/websites/google-com.json" | jq '.'</pre>
                 </div>
             </div>
         </div>
@@ -784,7 +816,7 @@ curl -s "https://freducom.github.io/lighthouse-global-tester/api/websites/google
   }
 
   getSocialMetaTags() {
-    const baseUrl = 'https://freducom.github.io/lighthouse-global-tester';
+    const baseUrl = 'https://valmitta.com';
     const ogImageUrl = `${baseUrl}/openGraph_1200x630.png`;
     const twitterImageUrl = `${baseUrl}/twitterCard_1200x675.png`;
     

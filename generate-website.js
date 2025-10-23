@@ -57,6 +57,7 @@ class WebsiteGenerator {
       'Malaysia': '🇲🇾',
       'Singapore': '🇸🇬',
       'Indonesia': '🇮🇩',
+      'Pakistan': '🇵🇰',
       'Taiwan': '🇹🇼',
       'Peru': '🇵🇪',
       'Colombia': '🇨🇴',
@@ -131,38 +132,153 @@ class WebsiteGenerator {
             </div>
             
             <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="all-countries.html">All Countries</a></li>
-                    <li><a href="all-industries.html">All Industries</a></li>
-                    <li><a href="api-docs.html">API Documentation</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>API Endpoints</h3>
-                <ul class="footer-links">
-                    <li><a href="api/overview.json" target="_blank">Global Overview</a></li>
-                    <li><a href="api/countries.json" target="_blank">All Countries</a></li>
-                    <li><a href="api/industries.json" target="_blank">All Industries</a></li>
-                    <li><a href="api/stats.json" target="_blank">Statistics</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact & Support</h3>
-                <p>Have questions about our lighthouse data or API?</p>
-                <button id="contact-form-btn" class="contact-btn">
-                    💬 Get In Touch
-                </button>
+                <p><a href="api-docs.html">📚 API Documentation</a></p>
+                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <p>📝 <button onclick="openWebsiteModal()" class="suggest-btn">Suggest a Website</button></p>
             </div>
         </div>
         
         <div class="footer-bottom">
             <p>&copy; 2025 Valmitta. Lighthouse performance data updated regularly.</p>
+            <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
         </div>
-    </footer>`;
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>`;
   }
 
   getTrend(current, previous) {
@@ -646,17 +762,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>Data from <span class="sr-only">total of </span>${allScores.length} websites across ${this.domainsData.length} countries</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <p>📝 <button onclick="openWebsiteModal()" class="suggest-btn">Suggest a Website</button></p>
-                <div class="footer-meta">
-                    <p><small>Last updated: <time datetime="${generationTime}" id="updateTime">${new Date(generationTime).toLocaleDateString()}</time></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
-                </div>
-            </div>
-        </footer>
+${this.getFooterHTML(allScores.length, this.domainsData.length)}
 
         <!-- Website Suggestion Modal -->
         <div id="websiteModal" class="modal" style="display: none;">
@@ -929,6 +1035,7 @@ ${this.getPostHogScript()}
                 'Malaysia': '🇲🇾',
                 'Singapore': '🇸🇬',
                 'Indonesia': '🇮🇩',
+                'Pakistan': '🇵🇰',
                 'Taiwan': '🇹🇼',
                 'Peru': '🇵🇪',
                 'Colombia': '🇨🇴',
@@ -2045,7 +2152,7 @@ ${this.getPostHogScript()}
                 'Germany': '🇩🇪', 'France': '🇫🇷', 'Canada': '🇨🇦', 'Japan': '🇯🇵',
                 'Brazil': '🇧🇷', 'India': '🇮🇳', 'Russia': '🇷🇺', 'Sweden': '🇸🇪',
                 'Netherlands': '🇳🇱', 'Finland': '🇫🇮', 'South Korea': '🇰🇷',
-                'Israel': '🇮🇱', 'Global': '🌍'
+                'Israel': '🇮🇱', 'Pakistan': '🇵🇰', 'Global': '🌍'
             };
             return flags[country] || '🌍';
         }
@@ -3974,10 +4081,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-        <footer class="footer">
-            <p> ${countryStats.all.length} countries analyzed</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-        </footer>
+${this.getFooterHTML(0, countryStats.all.length)}
     </div>
 
     <script>
@@ -4091,10 +4195,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-        <footer class="footer">
-            <p>${industryStats.all.length} industries analyzed</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-        </footer>
+${this.getFooterHTML(0, industryStats.all.length)}
     </div>
 
     <script>
@@ -4219,10 +4320,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-        <footer class="footer">
-            <p>${rankedSites.length} websites analyzed</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-        </footer>
+${this.getFooterHTML(rankedSites.length, 0)}
     </div>
 
     <script>
@@ -4687,16 +4785,7 @@ ${this.getPostHogScript()}
             </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📅 Latest Scan Data from <time datetime="${latestScanDate}">${formattedScanDate}</time></p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
-                </div>
-            </div>
-        </footer>
+${this.getFooterHTML(latestScanResults.length, 0)}
     </div>
 
     <script>
@@ -4815,7 +4904,7 @@ ${this.getPostHogScript()}
                 'India': '🇮🇳', 'Brazil': '🇧🇷', 'Japan': '🇯🇵', 'Canada': '🇨🇦',
                 'Australia': '🇦🇺', 'Russia': '🇷🇺', 'South Korea': '🇰🇷',
                 'Finland': '🇫🇮', 'Sweden': '🇸🇪', 'Netherlands': '🇳🇱',
-                'Israel': '🇮🇱', 'Global': '🌍', 'Unknown': '🌍'
+                'Israel': '🇮🇱', 'Pakistan': '🇵🇰', 'Global': '🌍', 'Unknown': '🌍'
             };
             return flags[country] || '🌍';
         }
