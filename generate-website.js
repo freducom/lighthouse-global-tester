@@ -75,6 +75,16 @@ class WebsiteGenerator {
     return flags[country] || '🌍';
   }
 
+  getFaviconHTML() {
+    return `    <link rel="icon" type="image/png" sizes="16x16" href="favicon_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon_64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicon_128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicon_256.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="favicon_128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="favicon_256.png">`;
+  }
+
   getTrend(current, previous) {
     if (previous === null || previous === undefined) {
       return 'none'; // No previous data
@@ -174,6 +184,7 @@ class WebsiteGenerator {
     const stats = this.calculateGlobalStats(allScores);
     const countryStats = this.calculateCountryStats(allScores);
     const industryStats = this.calculateIndustryStats(allScores);
+    const websiteStats = this.calculateWebsiteStats(allScores);
     const topSites = allScores.sort((a, b) => b.performance - a.performance).slice(0, 10);
     
     const html = `
@@ -186,8 +197,7 @@ class WebsiteGenerator {
     <meta name="description" content="Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics">
     <meta name="keywords" content="web performance, lighthouse, accessibility, SEO, performance analytics, website optimization">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
@@ -351,6 +361,21 @@ class WebsiteGenerator {
                             <p id="worst-country-desc">Growth Opportunity</p>
                         </a>
                     </div>
+                    
+                    <!-- Website Comparison Section -->
+                    <h2 id="website-comparison-heading" style="margin-top: 40px;">🏆 Best & Worst Performing Websites</h2>
+                    <div class="website-comparison" role="group" aria-labelledby="website-comparison-heading">
+                        <a href="domain-${websiteStats.best.url.replace(/\./g, '-')}.html" class="best-website website-tile-link" role="button" aria-labelledby="best-website-title" aria-describedby="best-website-desc">
+                            <h3 id="best-website-title">🥇 Best: ${websiteStats.best.url}</h3>
+                            <div class="website-score" aria-label="${websiteStats.best.performance} percent performance">${websiteStats.best.performance}%</div>
+                            <p id="best-website-desc">${this.getCountryFlag(websiteStats.best.country)} ${this.normalizeCountry(websiteStats.best.country)}</p>
+                        </a>
+                        <a href="domain-${websiteStats.worst.url.replace(/\./g, '-')}.html" class="worst-website website-tile-link" role="button" aria-labelledby="worst-website-title" aria-describedby="worst-website-desc">
+                            <h3 id="worst-website-title">🔄 Needs Improvement: ${websiteStats.worst.url}</h3>
+                            <div class="website-score" aria-label="${websiteStats.worst.performance} percent performance">${websiteStats.worst.performance}%</div>
+                            <p id="worst-website-desc">${this.getCountryFlag(websiteStats.worst.country)} ${this.normalizeCountry(websiteStats.worst.country)}</p>
+                        </a>
+                    </div>
                 </section>
 
                 <!-- Industry Rankings Section -->
@@ -381,11 +406,10 @@ class WebsiteGenerator {
                                    aria-describedby="industry-${index}-desc">
                                     <div class="industry-rank" aria-label="Rank ${index + 1}">#${index + 1}</div>
                                     <div class="industry-name">${industry.name}</div>
-                                    <div id="industry-${index}-desc" class="industry-metrics" aria-label="Performance ${industry.avgPerformance}%, Accessibility ${industry.avgAccessibility}%, SEO ${industry.avgSeo}%, ${industry.count} websites">
+                                    <div id="industry-${index}-desc" class="industry-metrics" aria-label="Performance ${industry.avgPerformance}%, Accessibility ${industry.avgAccessibility}%, SEO ${industry.avgSeo}%">
                                         <span class="metric" aria-label="Performance ${industry.avgPerformance} percent">P: ${industry.avgPerformance}%</span>
                                         <span class="metric" aria-label="Accessibility ${industry.avgAccessibility} percent">A: ${industry.avgAccessibility}%</span>
                                         <span class="metric" aria-label="SEO ${industry.avgSeo} percent">SEO: ${industry.avgSeo}%</span>
-                                        <span class="metric" aria-label="${industry.count} websites">${industry.count} sites</span>
                                     </div>
                                 </a>
                             `).join('')}
@@ -541,7 +565,7 @@ class WebsiteGenerator {
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📊 Generated by Valmitta | Data from <span class="sr-only">total of </span>${allScores.length} websites across ${this.domainsData.length} countries</p>
+                <p>Data from <span class="sr-only">total of </span>${allScores.length} websites across ${this.domainsData.length} countries</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small>Last updated: <time datetime="${generationTime}" id="updateTime">${new Date(generationTime).toLocaleDateString()}</time></small></p>
@@ -784,42 +808,6 @@ class WebsiteGenerator {
         }
     </script>
 
-    <script>
-        // Service Worker Registration for PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then((registration) => {
-                        console.log('✅ SW registered: ', registration);
-                    })
-                    .catch((registrationError) => {
-                        console.log('❌ SW registration failed: ', registrationError);
-                    });
-            });
-        }
-
-        // Offline Detection and Badge Management
-        function updateOfflineStatus() {
-            const offlineBadge = document.getElementById('offline-badge');
-            if (!navigator.onLine) {
-                offlineBadge.style.display = 'block';
-                console.log('📵 Website is now offline');
-            } else {
-                offlineBadge.style.display = 'none';
-                console.log('🌐 Website is now online');
-            }
-        }
-
-        // Check offline status on page load
-        window.addEventListener('load', updateOfflineStatus);
-
-        // Listen for online/offline events
-        window.addEventListener('online', updateOfflineStatus);
-        window.addEventListener('offline', updateOfflineStatus);
-
-        // Initial check
-        updateOfflineStatus();
-    </script>
 </body>
 </html>`;
 
@@ -869,8 +857,7 @@ class WebsiteGenerator {
     <title>${countryData.country} - Valmitta</title>
     <meta name="description" content="Lighthouse performance analysis for ${countryData.country} websites">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="stylesheet" href="styles.css">
     
     <!-- Schema.org Structured Data for Country Page -->
@@ -1397,12 +1384,6 @@ class WebsiteGenerator {
             formatAllDates();
         });
         
-        // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
-                .catch(error => console.log('SW registration failed', error));
-        }
     </script>
 </body>
 </html>`;
@@ -1423,8 +1404,7 @@ class WebsiteGenerator {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global - Valmitta</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1579,8 +1559,7 @@ class WebsiteGenerator {
     <title>${industry} Industry - Valmitta</title>
     <meta name="description" content="Lighthouse performance analysis for ${industry.toLowerCase()} industry websites">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -1849,12 +1828,6 @@ class WebsiteGenerator {
             formatAllDates();
         });
         
-        // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
-                .catch(error => console.log('SW registration failed', error));
-        }
     </script>
 </body>
 </html>`;
@@ -1879,8 +1852,7 @@ class WebsiteGenerator {
     <title>${site.url} - Lighthouse History</title>
     <meta name="description" content="Lighthouse performance history and insights for ${site.url}">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -2070,12 +2042,6 @@ class WebsiteGenerator {
             }
         });
         
-        // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
-                .catch(error => console.log('SW registration failed', error));
-        }
     </script>
     ` : ''}
 </body>
@@ -2271,22 +2237,22 @@ body {
 }
 
 .best-country {
-    background: linear-gradient(135deg, #f7931e 0%, #1e3a5f 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFB703 0%, #FFD166 100%);
+    color: #081C34;
 }
 
 .second-best-country {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #1E6091 0%, #0D3B66 100%);
     color: white;
 }
 
 .second-worst-country {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    color: #333;
+    background: linear-gradient(135deg, #FFD166 0%, #E07A00 100%);
+    color: #081C34;
 }
 
 .worst-country {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #0D3B66 0%, #081C34 100%);
     color: white;
 }
 
@@ -2294,6 +2260,57 @@ body {
     font-size: 2em;
     font-weight: 700;
     margin: 10px 0;
+}
+
+/* Website Comparison Styles */
+.website-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.best-website {
+    background: linear-gradient(135deg, #FFB703 0%, #FFD166 100%);
+    color: #081C34;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.worst-website {
+    background: linear-gradient(135deg, #0D3B66 0%, #081C34 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.website-score {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.website-tile-link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.website-tile-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.website-tile-link:focus {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+}
+
+.website-tile-link:active {
+    transform: translateY(-1px);
 }
 
 /* Clickable country tile styles */
@@ -2335,13 +2352,15 @@ body {
 }
 
 .best-industry {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFB703 0%, #FFD166 100%);
+    color: #081C34;
+    border: 2px solid #E07A00;
 }
 
 .worst-industry {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    background: linear-gradient(135deg, #1E6091 0%, #0D3B66 100%);
     color: white;
+    border: 2px solid #081C34;
 }
 
 .industry-score {
@@ -2421,35 +2440,35 @@ body {
 }
 
 .country-card {
-    background: #f8f9fa;
+    background: white;
     padding: 15px;
     border-radius: 8px;
     text-decoration: none !important;
-    color: inherit;
-    transition: all 0.2s;
-    border: 2px solid transparent;
+    color: #081C34;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #FFB703;
     position: relative;
     overflow: hidden;
 }
 
 .country-card:hover {
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: #0D3B66;
+    box-shadow: 0 4px 12px rgba(13, 59, 102, 0.15);
     transform: translateY(-2px);
     text-decoration: none !important;
+    color: #081C34 !important;
 }
 
 .country-rank {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #1c1e21;
-    color: white;
+    background: linear-gradient(135deg, #FFB703 0%, #E07A00 100%);
+    color: #081C34;
     font-size: 0.8em;
     padding: 4px 8px;
     border-radius: 12px;
     font-weight: 600;
+    border: 1px solid #FFD166;
 }
 
 .country-flag {
@@ -2637,7 +2656,7 @@ body {
     transition: color 0.2s;
 }
 
-.country-link:hover {
+.country-link:hover:not(.country-card) {
     color: #0D3B66;
 }
 
@@ -2745,7 +2764,7 @@ body {
     position: relative;
 }
 
-.score-fill.performance { background: linear-gradient(90deg, #ff6b35, #f7931e); }
+.score-fill.performance { background: linear-gradient(90deg, #E07A00, #FFB703); }
 .score-fill.accessibility { background: linear-gradient(90deg, #4285f4, #34a853); }
 .score-fill.best-practices { background: linear-gradient(90deg, #9c27b0, #673ab7); }
 .score-fill.seo { background: linear-gradient(90deg, #34a853, #0f9d58); }
@@ -2794,6 +2813,11 @@ body {
     
     .country-comparison {
         grid-template-columns: 1fr;
+    }
+    
+    .website-comparison {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     
     .industry-comparison {
@@ -3007,7 +3031,6 @@ a {
 }
 
 a:hover, a:focus {
-    color: #003d82;
     text-decoration: none;
 }
 
@@ -3067,8 +3090,8 @@ input[type="text"]:focus, input[type="search"]:focus {
 }
 
 .nav-links a:hover, .nav-links a:focus {
-    background: rgba(247, 147, 30, 0.1);
-    color: #f7931e;
+    background: rgba(255, 183, 3, 0.1);
+    color: #FFB703;
     padding: 4px 8px;
     border-radius: 4px;
 }
@@ -3302,39 +3325,6 @@ input[type="text"]:focus, input[type="search"]:focus {
 
     fs.writeFileSync(path.join(this.outputDir, 'styles.css'), css);
 
-    // Generate Service Worker
-    const serviceWorker = `
-const CACHE_NAME = 'lighthouse-tracker-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/manifest.json'
-];
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Return cached version or fetch from network
-        return response || fetch(event.request);
-      }
-    )
-  );
-});
-`;
-
-    fs.writeFileSync(path.join(this.outputDir, 'sw.js'), serviceWorker);
-
     // Generate Web App Manifest
     const manifest = {
       "name": "Valmitta",
@@ -3342,9 +3332,34 @@ self.addEventListener('fetch', function(event) {
       "description": "Global website performance analysis with Lighthouse",
       "start_url": "/",
       "display": "standalone",
-      "background_color": "#f7931e",
-      "theme_color": "#f7931e",
+      "background_color": "#0D3B66",
+      "theme_color": "#0D3B66",
       "icons": [
+        {
+          "src": "favicon_16.png",
+          "sizes": "16x16",
+          "type": "image/png"
+        },
+        {
+          "src": "favicon_32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        },
+        {
+          "src": "favicon_64.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        },
+        {
+          "src": "favicon_128.png",
+          "sizes": "128x128",
+          "type": "image/png"
+        },
+        {
+          "src": "favicon_256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+        },
         {
           "src": "logo.png",
           "sizes": "512x512",
@@ -3388,8 +3403,7 @@ self.addEventListener('fetch', function(event) {
     <title>All Countries - Valmitta</title>
     <meta name="description" content="Complete rankings of all countries by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -3440,7 +3454,7 @@ self.addEventListener('fetch', function(event) {
         </section>
 
         <footer class="footer">
-            <p>📊 Generated by Valmitta and <a href="mailto:fredu@fredu.com">fredu@fredu.com</a> | ${countryStats.all.length} countries analyzed</p>
+            <p> ${countryStats.all.length} countries analyzed</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
@@ -3464,12 +3478,6 @@ self.addEventListener('fetch', function(event) {
                 });
             });
             
-            // Register service worker for PWA functionality
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('SW registered', registration))
-                    .catch(error => console.log('SW registration failed', error));
-            }
         });
     </script>
 </body>
@@ -3507,14 +3515,10 @@ self.addEventListener('fetch', function(event) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Industries - Valmitta</title>
     <meta name="description" content="Complete rankings of all industries by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -3565,7 +3569,7 @@ self.addEventListener('fetch', function(event) {
         </section>
 
         <footer class="footer">
-            <p>📊 Generated by Valmitta | ${industryStats.all.length} industries analyzed</p>
+            <p>${industryStats.all.length} industries analyzed</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
@@ -3589,12 +3593,6 @@ self.addEventListener('fetch', function(event) {
                 });
             });
             
-            // Register service worker for PWA functionality
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('SW registered', registration))
-                    .catch(error => console.log('SW registration failed', error));
-            }
         });
     </script>
 </body>
@@ -3638,15 +3636,13 @@ self.addEventListener('fetch', function(event) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Companies - Valmitta</title>
     <meta name="description" content="Complete rankings of all companies by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -3701,7 +3697,7 @@ self.addEventListener('fetch', function(event) {
         </section>
 
         <footer class="footer">
-            <p>📊 Generated by Valmitta | ${rankedSites.length} websites analyzed</p>
+            <p>${rankedSites.length} websites analyzed</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
@@ -3739,12 +3735,6 @@ self.addEventListener('fetch', function(event) {
                 });
             });
             
-            // Register service worker for PWA functionality
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('SW registered', registration))
-                    .catch(error => console.log('SW registration failed', error));
-            }
         });
     </script>
 </body>
@@ -3760,6 +3750,18 @@ self.addEventListener('fetch', function(event) {
       avgSeo: Math.round(allScores.reduce((sum, s) => sum + s.seo, 0) / allScores.length),
       avgBestPractices: Math.round(allScores.reduce((sum, s) => sum + s.best_practices, 0) / allScores.length),
       avgPwa: Math.round(allScores.reduce((sum, s) => sum + s.pwa, 0) / allScores.length)
+    };
+  }
+
+  calculateWebsiteStats(allScores) {
+    // Sort by performance score
+    const sortedByPerformance = [...allScores].sort((a, b) => b.performance - a.performance);
+    
+    return {
+      best: sortedByPerformance[0],
+      secondBest: sortedByPerformance[1],
+      secondWorst: sortedByPerformance[sortedByPerformance.length - 2],
+      worst: sortedByPerformance[sortedByPerformance.length - 1]
     };
   }
 
@@ -4018,8 +4020,7 @@ self.addEventListener('fetch', function(event) {
     <title>Latest Updated Statistics - Valmitta</title>
     <meta name="description" content="Latest lighthouse performance scan results from ${formattedScanDate} - ${latestScanResults.length} websites analyzed">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+${this.getFaviconHTML()}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -4311,12 +4312,6 @@ self.addEventListener('fetch', function(event) {
             formatAllDates();
         });
         
-        // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
-                .catch(error => console.log('SW registration failed', error));
-        }
     </script>
 </body>
 </html>`;

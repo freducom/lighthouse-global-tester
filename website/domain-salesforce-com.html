@@ -7,8 +7,13 @@
     <title>salesforce.com - Lighthouse History</title>
     <meta name="description" content="Lighthouse performance history and insights for salesforce.com">
     <meta name="theme-color" content="#0D3B66">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon_64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicon_128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicon_256.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="favicon_128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="favicon_256.png">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -28,7 +33,7 @@
             "name": "Valmitta",
             "url": "https://valmitta.com"
           },
-          "dateCreated": "2025-10-23T15:54:08.538Z",
+          "dateCreated": "2025-10-23T19:19:41.754Z",
           "about": {
             "@type": "WebSite",
             "name": "salesforce.com",
@@ -40,11 +45,11 @@
           "@id": "https://valmitta.com/domain-salesforce.com.html#metrics",
           "name": "salesforce.com Performance Metrics",
           "description": "Latest Lighthouse scores for salesforce.com",
-          "performanceScore": 32,
+          "performanceScore": 27,
           "accessibilityScore": 100,
-          "bestPracticesScore": 100,
-          "seoScore": 92,
-          "dateRecorded": "2025-10-23 07:00:59"
+          "bestPracticesScore": 92,
+          "seoScore": 85,
+          "dateRecorded": "2025-10-23 16:17:39"
         }
       ]
     }
@@ -62,14 +67,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇺🇸 United States</span>
-                <span class="last-scan">Last scanned: 10/23/2025, 7:00:59 AM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 4:17:39 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">32%</div>
+                <div class="stat-number poor">27%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -79,21 +84,21 @@
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
-                <div class="stat-number excellent">92%</div>
-                <div class="stat-description">excellent performance</div>
+                <div class="stat-number good">85%</div>
+                <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number excellent">100%</div>
+                <div class="stat-number excellent">92%</div>
                 <div class="stat-description">excellent performance</div>
             </div>
         </div>
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -104,8 +109,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 32%"></div>
-                        <span class="score-text">32%</span>
+                        <div class="score-fill performance" style="width: 27%"></div>
+                        <span class="score-text">27%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -118,15 +123,15 @@
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 100%"></div>
-                        <span class="score-text">100%</span>
+                        <div class="score-fill best-practices" style="width: 92%"></div>
+                        <span class="score-text">92%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">SEO:</span>
                     <div class="score-bar">
-                        <div class="score-fill seo" style="width: 92%"></div>
-                        <span class="score-text">92%</span>
+                        <div class="score-fill seo" style="width: 85%"></div>
+                        <span class="score-text">85%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -145,6 +150,53 @@
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":462,"url":"salesforce.com","performance":32,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 07:00:59","country":"United States","industry":"Website editor"},{"id":540,"url":"salesforce.com","performance":27,"accessibility":100,"best_practices":92,"seo":85,"pwa":33,"test_date":"2025-10-23 16:17:39","country":"United States","industry":"Website editor"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>
