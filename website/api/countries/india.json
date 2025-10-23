@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.113Z",
+    "country": "India",
+    "flag": "🇮🇳",
+    "website_count": 11
+  },
+  "averages": {
+    "performance": 47,
+    "accessibility": 84,
+    "best_practices": 78,
+    "seo": 89,
+    "pwa": 61
+  },
+  "websites": [
+    {
+      "url": "cricbuzz.com",
+      "industry": "Sports",
+      "scores": {
+        "performance": 72,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:46:43"
+    },
+    {
+      "url": "hindustantimes.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 58,
+        "accessibility": 76,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 100
+      },
+      "test_date": "2025-10-19 19:47:54"
+    },
+    {
+      "url": "timesofindia.com",
+      "industry": "Tech",
+      "scores": {
+        "performance": 57,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:46:30"
+    },
+    {
+      "url": "indiatimes.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 53,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:45:59"
+    },
+    {
+      "url": "amazon.in",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 53,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 100
+      },
+      "test_date": "2025-10-22 08:33:06"
+    },
+    {
+      "url": "business-standard.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:49:28"
+    },
+    {
+      "url": "rediff.com",
+      "industry": "Portal",
+      "scores": {
+        "performance": 47,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 12:20:27"
+    },
+    {
+      "url": "flipkart.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 38,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 100
+      },
+      "test_date": "2025-10-20 18:18:18"
+    },
+    {
+      "url": "zee5.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-19 19:49:11"
+    },
+    {
+      "url": "ndtv.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 89
+      },
+      "test_date": "2025-10-22 16:16:12"
+    },
+    {
+      "url": "moneycontrol.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 24,
+        "accessibility": 73,
+        "best_practices": 50,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:47:14"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 2,
+      "averages": {
+        "performance": 46,
+        "accessibility": 91,
+        "best_practices": 88,
+        "seo": 90,
+        "pwa": 100
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 24,
+        "accessibility": 73,
+        "best_practices": 50,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 5,
+      "averages": {
+        "performance": 45,
+        "accessibility": 84,
+        "best_practices": 78,
+        "seo": 88,
+        "pwa": 69
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 47,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Sports",
+      "website_count": 1,
+      "averages": {
+        "performance": 72,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Tech",
+      "website_count": 1,
+      "averages": {
+        "performance": 57,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    }
+  ]
+}

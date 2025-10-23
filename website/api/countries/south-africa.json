@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.125Z",
+    "country": "South Africa",
+    "flag": "🇿🇦",
+    "website_count": 4
+  },
+  "averages": {
+    "performance": 27,
+    "accessibility": 92,
+    "best_practices": 73,
+    "seo": 83,
+    "pwa": 64
+  },
+  "websites": [
+    {
+      "url": "iol.co.za",
+      "industry": "Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-10-21 12:52:42"
+    },
+    {
+      "url": "ewn.co.za",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 16:12:56"
+    },
+    {
+      "url": "fin24.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 14,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 89
+      },
+      "test_date": "2025-10-20 18:17:21"
+    },
+    {
+      "url": "news24.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 10,
+        "accessibility": 89,
+        "best_practices": 67,
+        "seo": 68,
+        "pwa": 89
+      },
+      "test_date": "2025-10-22 18:26:43"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 14,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 31,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 55
+      }
+    }
+  ]
+}

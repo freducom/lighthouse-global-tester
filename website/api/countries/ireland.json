@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.122Z",
+    "country": "Ireland",
+    "flag": "🇮🇪",
+    "website_count": 4
+  },
+  "averages": {
+    "performance": 42,
+    "accessibility": 88,
+    "best_practices": 86,
+    "seo": 87,
+    "pwa": 56
+  },
+  "websites": [
+    {
+      "url": "irishexaminer.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 52,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 67
+      },
+      "test_date": "2025-10-21 17:38:27"
+    },
+    {
+      "url": "irishmirror.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-21 12:56:48"
+    },
+    {
+      "url": "irishtimes.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-21 17:42:12"
+    },
+    {
+      "url": "rte.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 56
+      },
+      "test_date": "2025-10-23 16:42:48"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 4,
+      "averages": {
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 86,
+        "seo": 87,
+        "pwa": 56
+      }
+    }
+  ]
+}

@@ -1,0 +1,3152 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.233Z",
+    "websites_with_trends": 120,
+    "total_websites": 326
+  },
+  "global_trends": {
+    "average_changes": {
+      "performance": -0.8,
+      "accessibility": -0.1,
+      "best_practices": 0.3,
+      "seo": -0.2,
+      "pwa": 0.1
+    },
+    "improvements": {
+      "performance": 48,
+      "accessibility": 18,
+      "best_practices": 14,
+      "seo": 7,
+      "pwa": 1
+    },
+    "declines": {
+      "performance": 55,
+      "accessibility": 11,
+      "best_practices": 18,
+      "seo": 12,
+      "pwa": 0
+    }
+  },
+  "website_trends": [
+    {
+      "url": "my.gov.au",
+      "country": "Australia",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 65,
+        "accessibility": 0,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 69,
+        "accessibility": 0,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "seek.com.au",
+      "country": "Australia",
+      "industry": "Jobs",
+      "current_scores": {
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "salzburg24.at",
+      "country": "Austria",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 40,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 44,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nieuwsblad.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 28,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 28,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rtbf.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 36,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": -1,
+        "best_practices": 0,
+        "seo": -1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "abril.com.br",
+      "country": "Brazil",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 81,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 81,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "estadao.com.br",
+      "country": "Brazil",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 60,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 22
+      },
+      "previous_scores": {
+        "performance": 66,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 22
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "folha.uol.com.br",
+      "country": "Brazil",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 36,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 48,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -12,
+        "accessibility": 1,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "mercadolivre.com.br",
+      "country": "Brazil",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 65,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 67,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 96,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -2,
+        "accessibility": 0,
+        "best_practices": 16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "cbc.ca",
+      "country": "Canada",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 5,
+        "accessibility": 7,
+        "best_practices": 0,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ctvnews.ca",
+      "country": "Canada",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 34,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 37,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "globalnews.ca",
+      "country": "Canada",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 62,
+        "accessibility": 100,
+        "best_practices": 0,
+        "seo": 93,
+        "pwa": 100
+      },
+      "previous_scores": {
+        "performance": 62,
+        "accessibility": 100,
+        "best_practices": 0,
+        "seo": 93,
+        "pwa": 100
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "scotiabank.com",
+      "country": "Canada",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 33,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "servicecanada.gc.ca",
+      "country": "Canada",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 0,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 35,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "theweathernetwork.com",
+      "country": "Canada",
+      "industry": "Weather",
+      "current_scores": {
+        "performance": 57,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "jd.com",
+      "country": "China",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 52,
+        "accessibility": 65,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 57,
+        "accessibility": 65,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "novinky.cz",
+      "country": "Czechia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kaubamaja.ee",
+      "country": "Estonia",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 4,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 1,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "flipsite.io",
+      "country": "Finland",
+      "industry": "Website editor",
+      "current_scores": {
+        "performance": 100,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 100,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "helsinki.fi",
+      "country": "Finland",
+      "industry": "Education",
+      "current_scores": {
+        "performance": 57,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 62,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "hs.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 46,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 10,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "iltalehti.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 34,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "is.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 37,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 20,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 17,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "mtv.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 84,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 38,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 3,
+        "best_practices": 8,
+        "seo": -7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "op.fi",
+      "country": "Finland",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -10,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "savonsanomat.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 28,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 33,
+        "accessibility": 81,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 3,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "suomi24.fi",
+      "country": "Finland",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 64,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "tori.fi",
+      "country": "Finland",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 47,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "verkkokauppa.com",
+      "country": "Finland",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      },
+      "previous_scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "yle.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 45,
+        "accessibility": 80,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 50,
+        "accessibility": 80,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "focus.de",
+      "country": "Germany",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 48,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 54,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "saturn.de",
+      "country": "Germany",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 39,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 31,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": 8,
+        "accessibility": 0,
+        "best_practices": 9,
+        "seo": -3,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kathimerini.gr",
+      "country": "Greece",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 61,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 67,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "news247.gr",
+      "country": "Greece",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 25,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 96,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 2,
+        "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nosalty.hu",
+      "country": "Hungary",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 28,
+        "accessibility": 67,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 28,
+        "accessibility": 67,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "flipkart.com",
+      "country": "India",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 100
+      },
+      "previous_scores": {
+        "performance": 42,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 100
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 4,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ndtv.com",
+      "country": "India",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 68,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": -41,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rediff.com",
+      "country": "India",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 47,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 76,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -29,
+        "accessibility": -11,
+        "best_practices": -8,
+        "seo": -8,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "iribnews.ir",
+      "country": "Iran",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 58,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 80,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -22,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "irna.ir",
+      "country": "Iran",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 94,
+        "accessibility": 69,
+        "best_practices": 0,
+        "seo": 84,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 72,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": -22,
+        "best_practices": -100,
+        "seo": 12,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "isna.ir",
+      "country": "Iran",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 72,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 80,
+        "accessibility": 91,
+        "best_practices": 0,
+        "seo": 89,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 19,
+        "accessibility": 0,
+        "best_practices": 100,
+        "seo": -17,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "khabaronline.ir",
+      "country": "Iran",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 29,
+        "accessibility": 62,
+        "best_practices": 67,
+        "seo": 81,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 30,
+        "accessibility": 62,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "irishexaminer.com",
+      "country": "Ireland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 52,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 57,
+        "accessibility": 85,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "irishtimes.com",
+      "country": "Ireland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 35,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rte.ie",
+      "country": "Ireland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 34,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 40,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "repubblica.it",
+      "country": "Italy",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 45,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ameblo.jp",
+      "country": "Japan",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 68,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 68,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "cookpad.com",
+      "country": "Japan",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 73,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 72,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "goo.ne.jp",
+      "country": "Japan",
+      "industry": "Search Engine",
+      "current_scores": {
+        "performance": 58,
+        "accessibility": 70,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 70,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "line.me",
+      "country": "Japan",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 62,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 68,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 2,
+        "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "pixiv.net",
+      "country": "Japan",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 28,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 26,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": -1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rakuten.co.jp",
+      "country": "Japan",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 9,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -25,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kenyans.co.ke",
+      "country": "Kenya",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 50,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 47,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "safaricom.co.ke",
+      "country": "Kenya",
+      "industry": "Telecom",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nra.lv",
+      "country": "Latvia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 21,
+        "accessibility": 95,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 21,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "news24.lu",
+      "country": "Luxembourg",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 89,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 89,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "neweralive.na",
+      "country": "Namibia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 71,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 29,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 71,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "framer.com",
+      "country": "Netherlands",
+      "industry": "Website editor",
+      "current_scores": {
+        "performance": 50,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 60,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -10,
+        "accessibility": 1,
+        "best_practices": -9,
+        "seo": 1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "marktplaats.nl",
+      "country": "Netherlands",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 16,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 96,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 42,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -26,
+        "accessibility": 0,
+        "best_practices": 9,
+        "seo": -4,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ns.nl",
+      "country": "Netherlands",
+      "industry": "Transportation",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 27,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nu.nl",
+      "country": "Netherlands",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 76,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 83,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -7,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rabobank.nl",
+      "country": "Netherlands",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 47,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 28,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 19,
+        "accessibility": 0,
+        "best_practices": 8,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rijksoverheid.nl",
+      "country": "Netherlands",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 67,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "reservebank.govt.nz",
+      "country": "New Zealand",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 26,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": -8,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "schibsted.no",
+      "country": "Norway",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 56,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rozee.pk",
+      "country": "Pakistan",
+      "industry": "Jobs",
+      "current_scores": {
+        "performance": 89,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 84,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "npy.com.py",
+      "country": "Paraguay",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 98,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 37,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 98,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nofluffjobs.com",
+      "country": "Poland",
+      "industry": "Jobs",
+      "current_scores": {
+        "performance": 31,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "salesmanago.com",
+      "country": "Poland",
+      "industry": "Marketing",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 49,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "mail.ru",
+      "country": "Russia",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 0,
+        "accessibility": 71,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 33,
+        "accessibility": -8,
+        "best_practices": 0,
+        "seo": -8,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ok.ru",
+      "country": "Russia",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 81,
+        "accessibility": 90,
+        "best_practices": 58,
+        "seo": 77,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 75,
+        "accessibility": 90,
+        "best_practices": 58,
+        "seo": 70,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rbc.ru",
+      "country": "Russia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 51,
+        "accessibility": 72,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 45,
+        "accessibility": 67,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 5,
+        "best_practices": -17,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ria.ru",
+      "country": "Russia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "mk.co.kr",
+      "country": "South Korea",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 72,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 71,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -29,
+        "accessibility": 1,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nate.com",
+      "country": "South Korea",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 74,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 66,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -33,
+        "accessibility": -1,
+        "best_practices": -16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "naver.com",
+      "country": "South Korea",
+      "industry": "Search Engine",
+      "current_scores": {
+        "performance": 40,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 76,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 41,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": -1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "expressen.se",
+      "country": "Sweden",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 49,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 47,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "flashback.org",
+      "country": "Sweden",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 39,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -19,
+        "accessibility": -7,
+        "best_practices": 8,
+        "seo": -7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "klarna.com",
+      "country": "Sweden",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 24,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 27,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "rts.ch",
+      "country": "Switzerland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 56,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 56,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kapook.com",
+      "country": "Thailand",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 35,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kamuajans.com",
+      "country": "Turkey",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 97,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 97,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": -2,
+        "accessibility": 1,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "sahibinden.com",
+      "country": "Turkey",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 80,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 79,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "news.finance.ua",
+      "country": "Ukraine",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 67,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 48,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": 19,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "argos.co.uk",
+      "country": "United Kingdom",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 40,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 28,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 12,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bbc.co.uk",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 4,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 12,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": -8,
+        "accessibility": -2,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "dailymail.co.uk",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 36,
+        "accessibility": 71,
+        "best_practices": 67,
+        "seo": 78,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 43,
+        "accessibility": 61,
+        "best_practices": 67,
+        "seo": 78,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -7,
+        "accessibility": 10,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "independent.co.uk",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 50,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": -2,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 11
+      }
+    },
+    {
+      "url": "mirror.co.uk",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 31,
+        "accessibility": 71,
+        "best_practices": 83,
+        "seo": 81,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": 10,
+        "accessibility": 6,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nhs.uk",
+      "country": "United Kingdom",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 54,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 8,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "sainsburys.co.uk",
+      "country": "United Kingdom",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 37,
+        "accessibility": 92,
+        "best_practices": 58,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 33,
+        "accessibility": 92,
+        "best_practices": 58,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "santander.co.uk",
+      "country": "United Kingdom",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 37,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "sky.com",
+      "country": "United Kingdom",
+      "industry": "Telecom",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 29,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "telegraph.co.uk",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "tfl.gov.uk",
+      "country": "United Kingdom",
+      "industry": "Transportation",
+      "current_scores": {
+        "performance": 39,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "theguardian.com",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 58,
+        "accessibility": 89,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 56,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "amazon.com",
+      "country": "United States",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 56,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 54,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "apple.com",
+      "country": "United States",
+      "industry": "Technology",
+      "current_scores": {
+        "performance": 48,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -7,
+        "accessibility": 0,
+        "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "berkshirehathaway.com",
+      "country": "United States",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 100,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 67,
+        "pwa": 0
+      },
+      "previous_scores": {
+        "performance": 99,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 67,
+        "pwa": 0
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bing.com",
+      "country": "United States",
+      "industry": "Search Engine",
+      "current_scores": {
+        "performance": 80,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 71,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 9,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "facebook.com",
+      "country": "United States",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 58,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 63,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "figma.com",
+      "country": "United States",
+      "industry": "Website editor",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 33,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 9,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "google.com",
+      "country": "United States",
+      "industry": "Search Engine",
+      "current_scores": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "instagram.com",
+      "country": "United States",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 59,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 61,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "msnbc.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 32,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 11,
+        "best_practices": -9,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nasa.gov",
+      "country": "United States",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 66,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 41,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 25,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "netflix.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 31,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 7,
+        "accessibility": 5,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "npr.org",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 24,
+        "accessibility": 74,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 25,
+        "accessibility": 77,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": -3,
+        "best_practices": 0,
+        "seo": -6,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nyse.com",
+      "country": "United States",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 68,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 25,
+        "accessibility": 77,
+        "best_practices": 92,
+        "seo": 68,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 17,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "nytimes.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 80,
+        "best_practices": 67,
+        "seo": 77,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 25,
+        "accessibility": 77,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 3,
+        "best_practices": 0,
+        "seo": -14,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "reddit.com",
+      "country": "United States",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 55,
+        "accessibility": 74,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": 9,
+        "accessibility": -17,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "salesforce.com",
+      "country": "United States",
+      "industry": "Website editor",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 27,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "shopify.com",
+      "country": "United States",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -17,
+        "accessibility": 6,
+        "best_practices": -17,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "tesla.com",
+      "country": "United States",
+      "industry": "Automotive",
+      "current_scores": {
+        "performance": 29,
+        "accessibility": 70,
+        "best_practices": 100,
+        "seo": 74,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 29,
+        "accessibility": 67,
+        "best_practices": 0,
+        "seo": 74,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 3,
+        "best_practices": 100,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "wikipedia.org",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 96,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 98,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "wordpress.com",
+      "country": "United States",
+      "industry": "Website editor",
+      "current_scores": {
+        "performance": 66,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 63,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "x.com",
+      "country": "United States",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 42,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "yahoo.com",
+      "country": "United States",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 69,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 69,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "youtube.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 57,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 57,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kenh14.vn",
+      "country": "Vietnam",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 44,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ]
+}

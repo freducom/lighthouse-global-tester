@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.150Z",
+    "industry": "Telecom",
+    "website_count": 5
+  },
+  "averages": {
+    "performance": 30,
+    "accessibility": 83,
+    "best_practices": 80,
+    "seo": 88,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "shaw.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 25,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 20:16:54"
+    },
+    {
+      "url": "safaricom.co.ke",
+      "country": "Kenya",
+      "scores": {
+        "performance": 33,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:47:35"
+    },
+    {
+      "url": "ptcl.com.pk",
+      "country": "Pakistan",
+      "scores": {
+        "performance": 25,
+        "accessibility": 53,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 10:16:17"
+    },
+    {
+      "url": "orange.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 03:00:12"
+    },
+    {
+      "url": "sky.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 07:35:08"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Canada",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Kenya",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Pakistan",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 53,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Poland",
+      "website_count": 1,
+      "averages": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United Kingdom",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      }
+    }
+  ]
+}

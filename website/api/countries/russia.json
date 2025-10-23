@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.117Z",
+    "country": "Russia",
+    "flag": "🇷🇺",
+    "website_count": 9
+  },
+  "averages": {
+    "performance": 39,
+    "accessibility": 75,
+    "best_practices": 59,
+    "seo": 91,
+    "pwa": 62
+  },
+  "websites": [
+    {
+      "url": "ok.ru",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 81,
+        "accessibility": 90,
+        "best_practices": 58,
+        "seo": 77,
+        "pwa": 67
+      },
+      "test_date": "2025-10-23 00:52:03"
+    },
+    {
+      "url": "rbc.ru",
+      "industry": "Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 72,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-23 12:18:32"
+    },
+    {
+      "url": "ria.ru",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-23 15:45:11"
+    },
+    {
+      "url": "yandex.ru",
+      "industry": "Search Engine",
+      "scores": {
+        "performance": 38,
+        "accessibility": 66,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:05:00"
+    },
+    {
+      "url": "tass.ru",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 89
+      },
+      "test_date": "2025-10-19 20:07:07"
+    },
+    {
+      "url": "mail.ru",
+      "industry": "Portal",
+      "scores": {
+        "performance": 33,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 08:44:08"
+    },
+    {
+      "url": "ozon.ru",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 32,
+        "accessibility": 63,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 04:11:44"
+    },
+    {
+      "url": "vk.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 89,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 100
+      },
+      "test_date": "2025-10-19 20:05:19"
+    },
+    {
+      "url": "avito.ru",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 10,
+        "accessibility": 64,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-19 20:07:42"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 32,
+        "accessibility": 63,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 10,
+        "accessibility": 64,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 69,
+        "seo": 95,
+        "pwa": 67
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Search Engine",
+      "website_count": 1,
+      "averages": {
+        "performance": 38,
+        "accessibility": 66,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Social Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 54,
+        "accessibility": 90,
+        "best_practices": 29,
+        "seo": 85,
+        "pwa": 84
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.149Z",
+    "industry": "Real Estate",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 33,
+    "accessibility": 88,
+    "best_practices": 84,
+    "seo": 89,
+    "pwa": 89
+  },
+  "websites": [
+    {
+      "url": "domain.com.au",
+      "country": "Australia",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-19 20:03:31"
+    },
+    {
+      "url": "realtor.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 33,
+        "accessibility": 81,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 100
+      },
+      "test_date": "2025-10-23 12:19:53"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Australia",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      }
+    },
+    {
+      "country": "Canada",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 81,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 100
+      }
+    }
+  ]
+}

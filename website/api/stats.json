@@ -1,0 +1,911 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.106Z",
+    "total_websites": 326
+  },
+  "distribution": {
+    "performance": {
+      "excellent": 7,
+      "good": 24,
+      "average": 85,
+      "poor": 210
+    },
+    "accessibility": {
+      "excellent": 160,
+      "good": 141,
+      "average": 20,
+      "poor": 5
+    },
+    "best_practices": {
+      "excellent": 115,
+      "good": 154,
+      "average": 51,
+      "poor": 6
+    },
+    "seo": {
+      "excellent": 212,
+      "good": 109,
+      "average": 5,
+      "poor": 0
+    },
+    "pwa": {
+      "excellent": 11,
+      "good": 45,
+      "average": 34,
+      "poor": 236
+    }
+  },
+  "by_country": [
+    {
+      "country": "Australia",
+      "website_count": 8,
+      "averages": {
+        "performance": 50,
+        "accessibility": 67,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 47
+      }
+    },
+    {
+      "country": "Austria",
+      "website_count": 6,
+      "averages": {
+        "performance": 46,
+        "accessibility": 87,
+        "best_practices": 85,
+        "seo": 89,
+        "pwa": 48
+      }
+    },
+    {
+      "country": "Bangladesh",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      }
+    },
+    {
+      "country": "Belgium",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 92,
+        "best_practices": 78,
+        "seo": 92,
+        "pwa": 52
+      }
+    },
+    {
+      "country": "Bolivia",
+      "website_count": 2,
+      "averages": {
+        "performance": 69,
+        "accessibility": 81,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Brazil",
+      "website_count": 10,
+      "averages": {
+        "performance": 49,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 48
+      }
+    },
+    {
+      "country": "Canada",
+      "website_count": 14,
+      "averages": {
+        "performance": 43,
+        "accessibility": 94,
+        "best_practices": 77,
+        "seo": 89,
+        "pwa": 47
+      }
+    },
+    {
+      "country": "Chile",
+      "website_count": 4,
+      "averages": {
+        "performance": 42,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 88,
+        "pwa": 30
+      }
+    },
+    {
+      "country": "China",
+      "website_count": 2,
+      "averages": {
+        "performance": 41,
+        "accessibility": 56,
+        "best_practices": 96,
+        "seo": 81,
+        "pwa": 45
+      }
+    },
+    {
+      "country": "Cuba",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 22
+      }
+    },
+    {
+      "country": "Czechia",
+      "website_count": 3,
+      "averages": {
+        "performance": 42,
+        "accessibility": 68,
+        "best_practices": 72,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Denmark",
+      "website_count": 1,
+      "averages": {
+        "performance": 81,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 67
+      }
+    },
+    {
+      "country": "Egypt",
+      "website_count": 1,
+      "averages": {
+        "performance": 20,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 80,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Estonia",
+      "website_count": 3,
+      "averages": {
+        "performance": 25,
+        "accessibility": 80,
+        "best_practices": 86,
+        "seo": 94,
+        "pwa": 48
+      }
+    },
+    {
+      "country": "Finland",
+      "website_count": 16,
+      "averages": {
+        "performance": 49,
+        "accessibility": 91,
+        "best_practices": 90,
+        "seo": 97,
+        "pwa": 47
+      }
+    },
+    {
+      "country": "France",
+      "website_count": 8,
+      "averages": {
+        "performance": 46,
+        "accessibility": 87,
+        "best_practices": 90,
+        "seo": 93,
+        "pwa": 70
+      }
+    },
+    {
+      "country": "Germany",
+      "website_count": 16,
+      "averages": {
+        "performance": 44,
+        "accessibility": 92,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 54
+      }
+    },
+    {
+      "country": "Greece",
+      "website_count": 4,
+      "averages": {
+        "performance": 51,
+        "accessibility": 88,
+        "best_practices": 77,
+        "seo": 95,
+        "pwa": 36
+      }
+    },
+    {
+      "country": "Hungary",
+      "website_count": 3,
+      "averages": {
+        "performance": 25,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 44
+      }
+    },
+    {
+      "country": "India",
+      "website_count": 11,
+      "averages": {
+        "performance": 47,
+        "accessibility": 84,
+        "best_practices": 78,
+        "seo": 89,
+        "pwa": 61
+      }
+    },
+    {
+      "country": "Indonesia",
+      "website_count": 3,
+      "averages": {
+        "performance": 30,
+        "accessibility": 91,
+        "best_practices": 78,
+        "seo": 90,
+        "pwa": 37
+      }
+    },
+    {
+      "country": "Iran",
+      "website_count": 5,
+      "averages": {
+        "performance": 67,
+        "accessibility": 80,
+        "best_practices": 65,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Ireland",
+      "website_count": 4,
+      "averages": {
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 86,
+        "seo": 87,
+        "pwa": 56
+      }
+    },
+    {
+      "country": "Israel",
+      "website_count": 10,
+      "averages": {
+        "performance": 39,
+        "accessibility": 74,
+        "best_practices": 77,
+        "seo": 90,
+        "pwa": 35
+      }
+    },
+    {
+      "country": "Italy",
+      "website_count": 2,
+      "averages": {
+        "performance": 39,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Japan",
+      "website_count": 6,
+      "averages": {
+        "performance": 50,
+        "accessibility": 81,
+        "best_practices": 90,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Kenya",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 89,
+        "best_practices": 72,
+        "seo": 86,
+        "pwa": 29
+      }
+    },
+    {
+      "country": "Latvia",
+      "website_count": 4,
+      "averages": {
+        "performance": 27,
+        "accessibility": 84,
+        "best_practices": 79,
+        "seo": 90,
+        "pwa": 58
+      }
+    },
+    {
+      "country": "Libya",
+      "website_count": 3,
+      "averages": {
+        "performance": 43,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Luxembourg",
+      "website_count": 4,
+      "averages": {
+        "performance": 54,
+        "accessibility": 91,
+        "best_practices": 86,
+        "seo": 95,
+        "pwa": 44
+      }
+    },
+    {
+      "country": "Malaysia",
+      "website_count": 2,
+      "averages": {
+        "performance": 84,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Malta",
+      "website_count": 2,
+      "averages": {
+        "performance": 58,
+        "accessibility": 82,
+        "best_practices": 63,
+        "seo": 85,
+        "pwa": 17
+      }
+    },
+    {
+      "country": "Mexico",
+      "website_count": 2,
+      "averages": {
+        "performance": 35,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Namibia",
+      "website_count": 4,
+      "averages": {
+        "performance": 39,
+        "accessibility": 85,
+        "best_practices": 81,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Netherlands",
+      "website_count": 10,
+      "averages": {
+        "performance": 54,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 34
+      }
+    },
+    {
+      "country": "New Zealand",
+      "website_count": 1,
+      "averages": {
+        "performance": 30,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Norway",
+      "website_count": 3,
+      "averages": {
+        "performance": 43,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 44
+      }
+    },
+    {
+      "country": "Pakistan",
+      "website_count": 5,
+      "averages": {
+        "performance": 52,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 49
+      }
+    },
+    {
+      "country": "Paraguay",
+      "website_count": 2,
+      "averages": {
+        "performance": 29,
+        "accessibility": 89,
+        "best_practices": 79,
+        "seo": 94,
+        "pwa": 56
+      }
+    },
+    {
+      "country": "Poland",
+      "website_count": 7,
+      "averages": {
+        "performance": 39,
+        "accessibility": 92,
+        "best_practices": 73,
+        "seo": 95,
+        "pwa": 54
+      }
+    },
+    {
+      "country": "Russia",
+      "website_count": 9,
+      "averages": {
+        "performance": 39,
+        "accessibility": 75,
+        "best_practices": 59,
+        "seo": 91,
+        "pwa": 62
+      }
+    },
+    {
+      "country": "Singapore",
+      "website_count": 1,
+      "averages": {
+        "performance": 15,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Slovakia",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "South Africa",
+      "website_count": 4,
+      "averages": {
+        "performance": 27,
+        "accessibility": 92,
+        "best_practices": 73,
+        "seo": 83,
+        "pwa": 64
+      }
+    },
+    {
+      "country": "South Korea",
+      "website_count": 10,
+      "averages": {
+        "performance": 36,
+        "accessibility": 78,
+        "best_practices": 78,
+        "seo": 89,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Spain",
+      "website_count": 2,
+      "averages": {
+        "performance": 32,
+        "accessibility": 90,
+        "best_practices": 80,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 15,
+      "averages": {
+        "performance": 45,
+        "accessibility": 95,
+        "best_practices": 90,
+        "seo": 95,
+        "pwa": 47
+      }
+    },
+    {
+      "country": "Switzerland",
+      "website_count": 3,
+      "averages": {
+        "performance": 40,
+        "accessibility": 99,
+        "best_practices": 86,
+        "seo": 99,
+        "pwa": 52
+      }
+    },
+    {
+      "country": "Taiwan",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Thailand",
+      "website_count": 5,
+      "averages": {
+        "performance": 30,
+        "accessibility": 95,
+        "best_practices": 73,
+        "seo": 96,
+        "pwa": 58
+      }
+    },
+    {
+      "country": "Turkey",
+      "website_count": 3,
+      "averages": {
+        "performance": 53,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 37
+      }
+    },
+    {
+      "country": "Ukraine",
+      "website_count": 3,
+      "averages": {
+        "performance": 50,
+        "accessibility": 74,
+        "best_practices": 72,
+        "seo": 88,
+        "pwa": 52
+      }
+    },
+    {
+      "country": "United Kingdom",
+      "website_count": 18,
+      "averages": {
+        "performance": 42,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 45
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 50,
+      "averages": {
+        "performance": 49,
+        "accessibility": 89,
+        "best_practices": 82,
+        "seo": 90,
+        "pwa": 42
+      }
+    },
+    {
+      "country": "Vietnam",
+      "website_count": 1,
+      "averages": {
+        "performance": 38,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Zambia",
+      "website_count": 1,
+      "averages": {
+        "performance": 34,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      }
+    }
+  ],
+  "by_industry": [
+    {
+      "industry": "Automotive",
+      "website_count": 5,
+      "averages": {
+        "performance": 32,
+        "accessibility": 92,
+        "best_practices": 81,
+        "seo": 93,
+        "pwa": 51
+      }
+    },
+    {
+      "industry": "E-commerce",
+      "website_count": 21,
+      "averages": {
+        "performance": 39,
+        "accessibility": 87,
+        "best_practices": 78,
+        "seo": 92,
+        "pwa": 52
+      }
+    },
+    {
+      "industry": "Education",
+      "website_count": 2,
+      "averages": {
+        "performance": 79,
+        "accessibility": 97,
+        "best_practices": 96,
+        "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 25,
+      "averages": {
+        "performance": 44,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 88,
+        "pwa": 37
+      }
+    },
+    {
+      "industry": "Food & Drink",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Government",
+      "website_count": 18,
+      "averages": {
+        "performance": 60,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 94,
+        "pwa": 39
+      }
+    },
+    {
+      "industry": "Jobs",
+      "website_count": 5,
+      "averages": {
+        "performance": 57,
+        "accessibility": 84,
+        "best_practices": 74,
+        "seo": 91,
+        "pwa": 49
+      }
+    },
+    {
+      "industry": "Marketing",
+      "website_count": 3,
+      "averages": {
+        "performance": 36,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 88,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 12,
+      "averages": {
+        "performance": 41,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 48
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 168,
+      "averages": {
+        "performance": 43,
+        "accessibility": 87,
+        "best_practices": 81,
+        "seo": 91,
+        "pwa": 47
+      }
+    },
+    {
+      "industry": "Non-profit",
+      "website_count": 2,
+      "averages": {
+        "performance": 36,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 17,
+      "averages": {
+        "performance": 46,
+        "accessibility": 80,
+        "best_practices": 76,
+        "seo": 89,
+        "pwa": 50
+      }
+    },
+    {
+      "industry": "Real Estate",
+      "website_count": 2,
+      "averages": {
+        "performance": 33,
+        "accessibility": 88,
+        "best_practices": 84,
+        "seo": 89,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Search Engine",
+      "website_count": 5,
+      "averages": {
+        "performance": 57,
+        "accessibility": 82,
+        "best_practices": 87,
+        "seo": 84,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Social Media",
+      "website_count": 14,
+      "averages": {
+        "performance": 52,
+        "accessibility": 85,
+        "best_practices": 77,
+        "seo": 92,
+        "pwa": 54
+      }
+    },
+    {
+      "industry": "Software",
+      "website_count": 1,
+      "averages": {
+        "performance": 41,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Sports",
+      "website_count": 4,
+      "averages": {
+        "performance": 47,
+        "accessibility": 80,
+        "best_practices": 81,
+        "seo": 84,
+        "pwa": 30
+      }
+    },
+    {
+      "industry": "Tech",
+      "website_count": 1,
+      "averages": {
+        "performance": 57,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Technology",
+      "website_count": 4,
+      "averages": {
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 63,
+        "seo": 88,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 5,
+      "averages": {
+        "performance": 30,
+        "accessibility": 83,
+        "best_practices": 80,
+        "seo": 88,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 3,
+      "averages": {
+        "performance": 31,
+        "accessibility": 98,
+        "best_practices": 89,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Weather",
+      "website_count": 1,
+      "averages": {
+        "performance": 57,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      }
+    },
+    {
+      "industry": "Website editor",
+      "website_count": 7,
+      "averages": {
+        "performance": 58,
+        "accessibility": 93,
+        "best_practices": 89,
+        "seo": 92,
+        "pwa": 38
+      }
+    }
+  ]
+}

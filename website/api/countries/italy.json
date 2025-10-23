@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.125Z",
+    "country": "Italy",
+    "flag": "🇮🇹",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 39,
+    "accessibility": 80,
+    "best_practices": 83,
+    "seo": 84,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "repubblica.it",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 15:44:09"
+    },
+    {
+      "url": "la7.it",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-21 22:20:20"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 39,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.128Z",
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 40,
+    "accessibility": 99,
+    "best_practices": 86,
+    "seo": 99,
+    "pwa": 52
+  },
+  "websites": [
+    {
+      "url": "rts.ch",
+      "industry": "Media",
+      "scores": {
+        "performance": 56,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:43:05"
+    },
+    {
+      "url": "letemps.ch",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 89
+      },
+      "test_date": "2025-10-22 03:10:08"
+    },
+    {
+      "url": "nzz.ch",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 22:14:51"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 40,
+        "accessibility": 99,
+        "best_practices": 86,
+        "seo": 99,
+        "pwa": 52
+      }
+    }
+  ]
+}

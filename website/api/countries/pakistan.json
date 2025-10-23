@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.133Z",
+    "country": "Pakistan",
+    "flag": "🌍",
+    "website_count": 5
+  },
+  "averages": {
+    "performance": 52,
+    "accessibility": 77,
+    "best_practices": 75,
+    "seo": 90,
+    "pwa": 49
+  },
+  "websites": [
+    {
+      "url": "rozee.pk",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 89,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 15:52:25"
+    },
+    {
+      "url": "jobz.pk",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 80,
+        "accessibility": 70,
+        "best_practices": 67,
+        "seo": 87,
+        "pwa": 33
+      },
+      "test_date": "2025-10-21 18:12:33"
+    },
+    {
+      "url": "pakwheels.com",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 89
+      },
+      "test_date": "2025-10-23 04:12:53"
+    },
+    {
+      "url": "olx.com.pk",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 31,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-23 00:53:37"
+    },
+    {
+      "url": "ptcl.com.pk",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 25,
+        "accessibility": 53,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 10:16:17"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Automotive",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Jobs",
+      "website_count": 2,
+      "averages": {
+        "performance": 85,
+        "accessibility": 76,
+        "best_practices": 80,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 31,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 56
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 53,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      }
+    }
+  ]
+}

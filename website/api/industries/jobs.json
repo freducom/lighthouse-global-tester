@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.150Z",
+    "industry": "Jobs",
+    "website_count": 5
+  },
+  "averages": {
+    "performance": 57,
+    "accessibility": 84,
+    "best_practices": 74,
+    "seo": 91,
+    "pwa": 49
+  },
+  "websites": [
+    {
+      "url": "seek.com.au",
+      "country": "Australia",
+      "scores": {
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-23 19:34:20"
+    },
+    {
+      "url": "jobz.pk",
+      "country": "Pakistan",
+      "scores": {
+        "performance": 80,
+        "accessibility": 70,
+        "best_practices": 67,
+        "seo": 87,
+        "pwa": 33
+      },
+      "test_date": "2025-10-21 18:12:33"
+    },
+    {
+      "url": "rozee.pk",
+      "country": "Pakistan",
+      "scores": {
+        "performance": 89,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 15:52:25"
+    },
+    {
+      "url": "nofluffjobs.com",
+      "country": "Poland",
+      "scores": {
+        "performance": 31,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-22 20:28:02"
+    },
+    {
+      "url": "pracuj.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 08:34:22"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Australia",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 78
+      }
+    },
+    {
+      "country": "Pakistan",
+      "website_count": 2,
+      "averages": {
+        "performance": 85,
+        "accessibility": 76,
+        "best_practices": 80,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Poland",
+      "website_count": 2,
+      "averages": {
+        "performance": 32,
+        "accessibility": 89,
+        "best_practices": 71,
+        "seo": 93,
+        "pwa": 50
+      }
+    }
+  ]
+}

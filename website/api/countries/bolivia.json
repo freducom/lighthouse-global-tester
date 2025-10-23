@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.131Z",
+    "country": "Bolivia",
+    "flag": "🇧🇴",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 69,
+    "accessibility": 81,
+    "best_practices": 100,
+    "seo": 92,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "laprensa.com.bo",
+      "industry": "Media",
+      "scores": {
+        "performance": 71,
+        "accessibility": 74,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 00:44:03"
+    },
+    {
+      "url": "opinion.com.bo",
+      "industry": "Media",
+      "scores": {
+        "performance": 67,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 02:59:51"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 69,
+        "accessibility": 81,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      }
+    }
+  ]
+}

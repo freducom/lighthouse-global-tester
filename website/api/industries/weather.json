@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.150Z",
+    "industry": "Weather",
+    "website_count": 1
+  },
+  "averages": {
+    "performance": 57,
+    "accessibility": 98,
+    "best_practices": 92,
+    "seo": 97,
+    "pwa": 67
+  },
+  "websites": [
+    {
+      "url": "theweathernetwork.com",
+      "country": "Canada",
+      "scores": {
+        "performance": 57,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      },
+      "test_date": "2025-10-19 19:58:11"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Canada",
+      "website_count": 1,
+      "averages": {
+        "performance": 57,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      }
+    }
+  ]
+}

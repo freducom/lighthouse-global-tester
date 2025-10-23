@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.152Z",
+    "industry": "Non-profit",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 36,
+    "accessibility": 85,
+    "best_practices": 83,
+    "seo": 86,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "ncci.org.na",
+      "country": "Namibia",
+      "scores": {
+        "performance": 57,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 16:15:19"
+    },
+    {
+      "url": "sgbic.org",
+      "country": "Singapore",
+      "scores": {
+        "performance": 15,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 20:13:58"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Namibia",
+      "website_count": 1,
+      "averages": {
+        "performance": 57,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Singapore",
+      "website_count": 1,
+      "averages": {
+        "performance": 15,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    }
+  ]
+}

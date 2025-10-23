@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.178Z",
+    "url": "mtv.fi",
+    "country": "Finland",
+    "industry": "Media"
+  },
+  "latest_scores": {
+    "performance": 35,
+    "accessibility": 84,
+    "best_practices": 100,
+    "seo": 92,
+    "pwa": 78,
+    "test_date": "2025-10-22 14:57:04"
+  },
+  "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 84,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 78,
+      "test_date": "2025-10-22 14:57:04"
+    },
+    {
+      "performance": 38,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 78,
+      "test_date": "2025-10-19 20:15:57"
+    },
+    {
+      "performance": 41,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 78,
+      "test_date": "2025-10-19 16:52:41"
+    }
+  ],
+  "trends": {
+    "performance": -3,
+    "accessibility": 3,
+    "best_practices": 8,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-10-22 14:57:04",
+    "test_date_previous": "2025-10-19 20:15:57"
+  }
+}

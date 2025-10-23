@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.150Z",
+    "industry": "Education",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 79,
+    "accessibility": 97,
+    "best_practices": 96,
+    "seo": 97,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "emathstudio.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 08:37:37"
+    },
+    {
+      "url": "helsinki.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 57,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:17:04"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Finland",
+      "website_count": 2,
+      "averages": {
+        "performance": 79,
+        "accessibility": 97,
+        "best_practices": 96,
+        "seo": 97,
+        "pwa": 33
+      }
+    }
+  ]
+}

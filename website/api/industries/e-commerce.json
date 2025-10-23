@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.150Z",
+    "industry": "E-commerce",
+    "website_count": 21
+  },
+  "averages": {
+    "performance": 39,
+    "accessibility": 87,
+    "best_practices": 78,
+    "seo": 92,
+    "pwa": 52
+  },
+  "websites": [
+    {
+      "url": "americanas.com.br",
+      "country": "Brazil",
+      "scores": {
+        "performance": 14,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:51:49"
+    },
+    {
+      "url": "mercadolivre.com.br",
+      "country": "Brazil",
+      "scores": {
+        "performance": 65,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 12:19:37"
+    },
+    {
+      "url": "mercadolibre.cl",
+      "country": "Chile",
+      "scores": {
+        "performance": 56,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 12:19:07"
+    },
+    {
+      "url": "jd.com",
+      "country": "China",
+      "scores": {
+        "performance": 52,
+        "accessibility": 65,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      },
+      "test_date": "2025-10-21 18:12:11"
+    },
+    {
+      "url": "euronics.ee",
+      "country": "Estonia",
+      "scores": {
+        "performance": 44,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 16:11:54"
+    },
+    {
+      "url": "kaubamaja.ee",
+      "country": "Estonia",
+      "scores": {
+        "performance": 4,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 78
+      },
+      "test_date": "2025-10-21 18:20:35"
+    },
+    {
+      "url": "verkkokauppa.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-10-19 20:16:28"
+    },
+    {
+      "url": "otto.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 25,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-23 03:01:46"
+    },
+    {
+      "url": "saturn.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 39,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 78
+      },
+      "test_date": "2025-10-23 19:31:29"
+    },
+    {
+      "url": "amazon.in",
+      "country": "India",
+      "scores": {
+        "performance": 53,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 100
+      },
+      "test_date": "2025-10-22 08:33:06"
+    },
+    {
+      "url": "flipkart.com",
+      "country": "India",
+      "scores": {
+        "performance": 38,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 100
+      },
+      "test_date": "2025-10-20 18:18:18"
+    },
+    {
+      "url": "rakuten.co.jp",
+      "country": "Japan",
+      "scores": {
+        "performance": 9,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 12:18:12"
+    },
+    {
+      "url": "bol.com",
+      "country": "Netherlands",
+      "scores": {
+        "performance": 71,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:24:41"
+    },
+    {
+      "url": "ozon.ru",
+      "country": "Russia",
+      "scores": {
+        "performance": 32,
+        "accessibility": 63,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 04:11:44"
+    },
+    {
+      "url": "coupang.com",
+      "country": "South Korea",
+      "scores": {
+        "performance": 14,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:10:27"
+    },
+    {
+      "url": "coop.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 44,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-19 20:28:21"
+    },
+    {
+      "url": "ica.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 49,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-19 20:28:01"
+    },
+    {
+      "url": "argos.co.uk",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 40,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 07:35:28"
+    },
+    {
+      "url": "sainsburys.co.uk",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 37,
+        "accessibility": 92,
+        "best_practices": 58,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:48:07"
+    },
+    {
+      "url": "amazon.com",
+      "country": "United States",
+      "scores": {
+        "performance": 56,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 06:53:39"
+    },
+    {
+      "url": "shopify.com",
+      "country": "United States",
+      "scores": {
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 20:18:30"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Brazil",
+      "website_count": 2,
+      "averages": {
+        "performance": 40,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Chile",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "China",
+      "website_count": 1,
+      "averages": {
+        "performance": 52,
+        "accessibility": 65,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Estonia",
+      "website_count": 2,
+      "averages": {
+        "performance": 24,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 56
+      }
+    },
+    {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      }
+    },
+    {
+      "country": "Germany",
+      "website_count": 2,
+      "averages": {
+        "performance": 32,
+        "accessibility": 91,
+        "best_practices": 84,
+        "seo": 91,
+        "pwa": 73
+      }
+    },
+    {
+      "country": "India",
+      "website_count": 2,
+      "averages": {
+        "performance": 46,
+        "accessibility": 91,
+        "best_practices": 88,
+        "seo": 90,
+        "pwa": 100
+      }
+    },
+    {
+      "country": "Japan",
+      "website_count": 1,
+      "averages": {
+        "performance": 9,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Netherlands",
+      "website_count": 1,
+      "averages": {
+        "performance": 71,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Russia",
+      "website_count": 1,
+      "averages": {
+        "performance": 32,
+        "accessibility": 63,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "South Korea",
+      "website_count": 1,
+      "averages": {
+        "performance": 14,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 2,
+      "averages": {
+        "performance": 47,
+        "accessibility": 97,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      }
+    },
+    {
+      "country": "United Kingdom",
+      "website_count": 2,
+      "averages": {
+        "performance": 39,
+        "accessibility": 96,
+        "best_practices": 71,
+        "seo": 95,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 2,
+      "averages": {
+        "performance": 49,
+        "accessibility": 94,
+        "best_practices": 79,
+        "seo": 92,
+        "pwa": 33
+      }
+    }
+  ]
+}

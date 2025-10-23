@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.210Z",
+    "url": "apple.com",
+    "country": "United States",
+    "industry": "Technology"
+  },
+  "latest_scores": {
+    "performance": 48,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 90,
+    "pwa": 33,
+    "test_date": "2025-10-23 06:53:56"
+  },
+  "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-10-23 06:53:56"
+    },
+    {
+      "performance": 55,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-10-19 19:37:53"
+    }
+  ],
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-23 06:53:56",
+    "test_date_previous": "2025-10-19 19:37:53"
+  }
+}

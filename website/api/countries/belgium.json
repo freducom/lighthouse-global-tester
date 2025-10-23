@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.128Z",
+    "country": "Belgium",
+    "flag": "🇧🇪",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 37,
+    "accessibility": 92,
+    "best_practices": 78,
+    "seo": 92,
+    "pwa": 52
+  },
+  "websites": [
+    {
+      "url": "lameuse.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-21 22:20:59"
+    },
+    {
+      "url": "rtbf.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 15:56:22"
+    },
+    {
+      "url": "nieuwsblad.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 56
+      },
+      "test_date": "2025-10-22 20:27:29"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 92,
+        "best_practices": 78,
+        "seo": 92,
+        "pwa": 52
+      }
+    }
+  ]
+}

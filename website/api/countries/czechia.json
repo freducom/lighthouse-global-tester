@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.128Z",
+    "country": "Czechia",
+    "flag": "🇨🇿",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 42,
+    "accessibility": 68,
+    "best_practices": 72,
+    "seo": 82,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "lidovky.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 43,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 04:14:28"
+    },
+    {
+      "url": "parlamentnilisty.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 77,
+        "best_practices": 67,
+        "seo": 74,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 04:17:27"
+    },
+    {
+      "url": "novinky.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 20:29:38"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 42,
+        "accessibility": 68,
+        "best_practices": 72,
+        "seo": 82,
+        "pwa": 33
+      }
+    }
+  ]
+}

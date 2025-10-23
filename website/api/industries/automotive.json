@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.151Z",
+    "industry": "Automotive",
+    "website_count": 5
+  },
+  "averages": {
+    "performance": 32,
+    "accessibility": 92,
+    "best_practices": 81,
+    "seo": 93,
+    "pwa": 51
+  },
+  "websites": [
+    {
+      "url": "bmw.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 08:31:37"
+    },
+    {
+      "url": "mercedes-benz.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 7,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 12:20:09"
+    },
+    {
+      "url": "volkswagen.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 47,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 08:32:49"
+    },
+    {
+      "url": "pakwheels.com",
+      "country": "Pakistan",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 89
+      },
+      "test_date": "2025-10-23 04:12:53"
+    },
+    {
+      "url": "tesla.com",
+      "country": "United States",
+      "scores": {
+        "performance": 29,
+        "accessibility": 70,
+        "best_practices": 100,
+        "seo": 74,
+        "pwa": 67
+      },
+      "test_date": "2025-10-23 06:59:36"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Germany",
+      "website_count": 3,
+      "averages": {
+        "performance": 33,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Pakistan",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 89
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 1,
+      "averages": {
+        "performance": 29,
+        "accessibility": 70,
+        "best_practices": 100,
+        "seo": 74,
+        "pwa": 67
+      }
+    }
+  ]
+}

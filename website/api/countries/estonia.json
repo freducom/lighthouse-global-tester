@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.124Z",
+    "country": "Estonia",
+    "flag": "🇪🇪",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 25,
+    "accessibility": 80,
+    "best_practices": 86,
+    "seo": 94,
+    "pwa": 48
+  },
+  "websites": [
+    {
+      "url": "euronics.ee",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 44,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 16:11:54"
+    },
+    {
+      "url": "ohtuleht.ee",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 00:48:02"
+    },
+    {
+      "url": "kaubamaja.ee",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 4,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 78
+      },
+      "test_date": "2025-10-21 18:20:35"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 2,
+      "averages": {
+        "performance": 24,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 56
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 97,
+        "pwa": 33
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.127Z",
+    "country": "France",
+    "flag": "🇫🇷",
+    "website_count": 8
+  },
+  "averages": {
+    "performance": 46,
+    "accessibility": 87,
+    "best_practices": 90,
+    "seo": 93,
+    "pwa": 70
+  },
+  "websites": [
+    {
+      "url": "mediapart.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 65,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-22 10:16:36"
+    },
+    {
+      "url": "lemonde.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 63,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-22 03:08:19"
+    },
+    {
+      "url": "franceinfo.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 59,
+        "accessibility": 75,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 100
+      },
+      "test_date": "2025-10-20 20:13:06"
+    },
+    {
+      "url": "lesechos.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-22 03:09:43"
+    },
+    {
+      "url": "lefigaro.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 70,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-22 03:08:05"
+    },
+    {
+      "url": "leparisien.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 82,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 03:08:40"
+    },
+    {
+      "url": "liberation.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 04:12:31"
+    },
+    {
+      "url": "marieclaire.fr",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-10-22 10:12:33"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 8,
+      "averages": {
+        "performance": 46,
+        "accessibility": 87,
+        "best_practices": 90,
+        "seo": 93,
+        "pwa": 70
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.215Z",
+    "url": "tesla.com",
+    "country": "United States",
+    "industry": "Automotive"
+  },
+  "latest_scores": {
+    "performance": 29,
+    "accessibility": 70,
+    "best_practices": 100,
+    "seo": 74,
+    "pwa": 67,
+    "test_date": "2025-10-23 06:59:36"
+  },
+  "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 70,
+      "best_practices": 100,
+      "seo": 74,
+      "pwa": 67,
+      "test_date": "2025-10-23 06:59:36"
+    },
+    {
+      "performance": 29,
+      "accessibility": 67,
+      "best_practices": 0,
+      "seo": 74,
+      "pwa": 67,
+      "test_date": "2025-10-22 08:27:43"
+    },
+    {
+      "performance": 28,
+      "accessibility": 67,
+      "best_practices": 0,
+      "seo": 74,
+      "pwa": 67,
+      "test_date": "2025-10-22 08:22:29"
+    }
+  ],
+  "trends": {
+    "performance": 0,
+    "accessibility": 3,
+    "best_practices": 100,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-23 06:59:36",
+    "test_date_previous": "2025-10-22 08:27:43"
+  }
+}

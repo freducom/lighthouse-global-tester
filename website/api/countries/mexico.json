@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.133Z",
+    "country": "Mexico",
+    "flag": "🌍",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 35,
+    "accessibility": 94,
+    "best_practices": 83,
+    "seo": 98,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "mercadolibre.com.mx",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 44,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 12:19:22"
+    },
+    {
+      "url": "milenio.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 14:11:35"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 44,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    }
+  ]
+}

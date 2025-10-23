@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.152Z",
+    "industry": "Marketing",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 36,
+    "accessibility": 99,
+    "best_practices": 83,
+    "seo": 88,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "salesmanago.com",
+      "country": "Poland",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:49:08"
+    },
+    {
+      "url": "hubspot.com",
+      "country": "United States",
+      "scores": {
+        "performance": 18,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 07:01:58"
+    },
+    {
+      "url": "mailchimp.com",
+      "country": "United States",
+      "scores": {
+        "performance": 47,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 07:03:37"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Poland",
+      "website_count": 1,
+      "averages": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 2,
+      "averages": {
+        "performance": 33,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      }
+    }
+  ]
+}

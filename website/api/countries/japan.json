@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.115Z",
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "website_count": 6
+  },
+  "averages": {
+    "performance": 50,
+    "accessibility": 81,
+    "best_practices": 90,
+    "seo": 90,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "cookpad.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 73,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:57:15"
+    },
+    {
+      "url": "ameblo.jp",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 68,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:57:03"
+    },
+    {
+      "url": "line.me",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 62,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 04:14:55"
+    },
+    {
+      "url": "goo.ne.jp",
+      "industry": "Search Engine",
+      "scores": {
+        "performance": 58,
+        "accessibility": 70,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:56:14"
+    },
+    {
+      "url": "pixiv.net",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:57:35"
+    },
+    {
+      "url": "rakuten.co.jp",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 9,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 12:18:12"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 9,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 73,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Search Engine",
+      "website_count": 1,
+      "averages": {
+        "performance": 58,
+        "accessibility": 70,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Social Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 53,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 96,
+        "pwa": 33
+      }
+    }
+  ]
+}

@@ -1,0 +1,736 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.059Z",
+    "total_countries": 56
+  },
+  "countries": [
+    {
+      "country": "Australia",
+      "website_count": 8,
+      "averages": {
+        "performance": 50,
+        "accessibility": 67,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 47
+      },
+      "flag": "🇦🇺",
+      "api_endpoint": "countries/australia.json"
+    },
+    {
+      "country": "Austria",
+      "website_count": 6,
+      "averages": {
+        "performance": 46,
+        "accessibility": 87,
+        "best_practices": 85,
+        "seo": 89,
+        "pwa": 48
+      },
+      "flag": "🇦🇹",
+      "api_endpoint": "countries/austria.json"
+    },
+    {
+      "country": "Bangladesh",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      },
+      "flag": "🌍",
+      "api_endpoint": "countries/bangladesh.json"
+    },
+    {
+      "country": "Belgium",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 92,
+        "best_practices": 78,
+        "seo": 92,
+        "pwa": 52
+      },
+      "flag": "🇧🇪",
+      "api_endpoint": "countries/belgium.json"
+    },
+    {
+      "country": "Bolivia",
+      "website_count": 2,
+      "averages": {
+        "performance": 69,
+        "accessibility": 81,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "flag": "🇧🇴",
+      "api_endpoint": "countries/bolivia.json"
+    },
+    {
+      "country": "Brazil",
+      "website_count": 10,
+      "averages": {
+        "performance": 49,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 48
+      },
+      "flag": "🇧🇷",
+      "api_endpoint": "countries/brazil.json"
+    },
+    {
+      "country": "Canada",
+      "website_count": 14,
+      "averages": {
+        "performance": 43,
+        "accessibility": 94,
+        "best_practices": 77,
+        "seo": 89,
+        "pwa": 47
+      },
+      "flag": "🇨🇦",
+      "api_endpoint": "countries/canada.json"
+    },
+    {
+      "country": "Chile",
+      "website_count": 4,
+      "averages": {
+        "performance": 42,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 88,
+        "pwa": 30
+      },
+      "flag": "🇨🇱",
+      "api_endpoint": "countries/chile.json"
+    },
+    {
+      "country": "China",
+      "website_count": 2,
+      "averages": {
+        "performance": 41,
+        "accessibility": 56,
+        "best_practices": 96,
+        "seo": 81,
+        "pwa": 45
+      },
+      "flag": "🇨🇳",
+      "api_endpoint": "countries/china.json"
+    },
+    {
+      "country": "Cuba",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 22
+      },
+      "flag": "🇨🇺",
+      "api_endpoint": "countries/cuba.json"
+    },
+    {
+      "country": "Czechia",
+      "website_count": 3,
+      "averages": {
+        "performance": 42,
+        "accessibility": 68,
+        "best_practices": 72,
+        "seo": 82,
+        "pwa": 33
+      },
+      "flag": "🇨🇿",
+      "api_endpoint": "countries/czechia.json"
+    },
+    {
+      "country": "Denmark",
+      "website_count": 1,
+      "averages": {
+        "performance": 81,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 67
+      },
+      "flag": "🇩🇰",
+      "api_endpoint": "countries/denmark.json"
+    },
+    {
+      "country": "Egypt",
+      "website_count": 1,
+      "averages": {
+        "performance": 20,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 80,
+        "pwa": 33
+      },
+      "flag": "🇪🇬",
+      "api_endpoint": "countries/egypt.json"
+    },
+    {
+      "country": "Estonia",
+      "website_count": 3,
+      "averages": {
+        "performance": 25,
+        "accessibility": 80,
+        "best_practices": 86,
+        "seo": 94,
+        "pwa": 48
+      },
+      "flag": "🇪🇪",
+      "api_endpoint": "countries/estonia.json"
+    },
+    {
+      "country": "Finland",
+      "website_count": 16,
+      "averages": {
+        "performance": 49,
+        "accessibility": 91,
+        "best_practices": 90,
+        "seo": 97,
+        "pwa": 47
+      },
+      "flag": "🇫🇮",
+      "api_endpoint": "countries/finland.json"
+    },
+    {
+      "country": "France",
+      "website_count": 8,
+      "averages": {
+        "performance": 46,
+        "accessibility": 87,
+        "best_practices": 90,
+        "seo": 93,
+        "pwa": 70
+      },
+      "flag": "🇫🇷",
+      "api_endpoint": "countries/france.json"
+    },
+    {
+      "country": "Germany",
+      "website_count": 16,
+      "averages": {
+        "performance": 44,
+        "accessibility": 92,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 54
+      },
+      "flag": "🇩🇪",
+      "api_endpoint": "countries/germany.json"
+    },
+    {
+      "country": "Greece",
+      "website_count": 4,
+      "averages": {
+        "performance": 51,
+        "accessibility": 88,
+        "best_practices": 77,
+        "seo": 95,
+        "pwa": 36
+      },
+      "flag": "🇬🇷",
+      "api_endpoint": "countries/greece.json"
+    },
+    {
+      "country": "Hungary",
+      "website_count": 3,
+      "averages": {
+        "performance": 25,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 44
+      },
+      "flag": "🇭🇺",
+      "api_endpoint": "countries/hungary.json"
+    },
+    {
+      "country": "India",
+      "website_count": 11,
+      "averages": {
+        "performance": 47,
+        "accessibility": 84,
+        "best_practices": 78,
+        "seo": 89,
+        "pwa": 61
+      },
+      "flag": "🇮🇳",
+      "api_endpoint": "countries/india.json"
+    },
+    {
+      "country": "Indonesia",
+      "website_count": 3,
+      "averages": {
+        "performance": 30,
+        "accessibility": 91,
+        "best_practices": 78,
+        "seo": 90,
+        "pwa": 37
+      },
+      "flag": "🇮🇩",
+      "api_endpoint": "countries/indonesia.json"
+    },
+    {
+      "country": "Iran",
+      "website_count": 5,
+      "averages": {
+        "performance": 67,
+        "accessibility": 80,
+        "best_practices": 65,
+        "seo": 86,
+        "pwa": 33
+      },
+      "flag": "🇮🇷",
+      "api_endpoint": "countries/iran.json"
+    },
+    {
+      "country": "Ireland",
+      "website_count": 4,
+      "averages": {
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 86,
+        "seo": 87,
+        "pwa": 56
+      },
+      "flag": "🇮🇪",
+      "api_endpoint": "countries/ireland.json"
+    },
+    {
+      "country": "Israel",
+      "website_count": 10,
+      "averages": {
+        "performance": 39,
+        "accessibility": 74,
+        "best_practices": 77,
+        "seo": 90,
+        "pwa": 35
+      },
+      "flag": "🇮🇱",
+      "api_endpoint": "countries/israel.json"
+    },
+    {
+      "country": "Italy",
+      "website_count": 2,
+      "averages": {
+        "performance": 39,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "flag": "🇮🇹",
+      "api_endpoint": "countries/italy.json"
+    },
+    {
+      "country": "Japan",
+      "website_count": 6,
+      "averages": {
+        "performance": 50,
+        "accessibility": 81,
+        "best_practices": 90,
+        "seo": 90,
+        "pwa": 33
+      },
+      "flag": "🇯🇵",
+      "api_endpoint": "countries/japan.json"
+    },
+    {
+      "country": "Kenya",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 89,
+        "best_practices": 72,
+        "seo": 86,
+        "pwa": 29
+      },
+      "flag": "🇰🇪",
+      "api_endpoint": "countries/kenya.json"
+    },
+    {
+      "country": "Latvia",
+      "website_count": 4,
+      "averages": {
+        "performance": 27,
+        "accessibility": 84,
+        "best_practices": 79,
+        "seo": 90,
+        "pwa": 58
+      },
+      "flag": "🇱🇻",
+      "api_endpoint": "countries/latvia.json"
+    },
+    {
+      "country": "Libya",
+      "website_count": 3,
+      "averages": {
+        "performance": 43,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "flag": "🇱🇾",
+      "api_endpoint": "countries/libya.json"
+    },
+    {
+      "country": "Luxembourg",
+      "website_count": 4,
+      "averages": {
+        "performance": 54,
+        "accessibility": 91,
+        "best_practices": 86,
+        "seo": 95,
+        "pwa": 44
+      },
+      "flag": "🇱🇺",
+      "api_endpoint": "countries/luxembourg.json"
+    },
+    {
+      "country": "Malaysia",
+      "website_count": 2,
+      "averages": {
+        "performance": 84,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "flag": "🇲🇾",
+      "api_endpoint": "countries/malaysia.json"
+    },
+    {
+      "country": "Malta",
+      "website_count": 2,
+      "averages": {
+        "performance": 58,
+        "accessibility": 82,
+        "best_practices": 63,
+        "seo": 85,
+        "pwa": 17
+      },
+      "flag": "🇲🇹",
+      "api_endpoint": "countries/malta.json"
+    },
+    {
+      "country": "Mexico",
+      "website_count": 2,
+      "averages": {
+        "performance": 35,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "flag": "🌍",
+      "api_endpoint": "countries/mexico.json"
+    },
+    {
+      "country": "Namibia",
+      "website_count": 4,
+      "averages": {
+        "performance": 39,
+        "accessibility": 85,
+        "best_practices": 81,
+        "seo": 86,
+        "pwa": 33
+      },
+      "flag": "🇳🇦",
+      "api_endpoint": "countries/namibia.json"
+    },
+    {
+      "country": "Netherlands",
+      "website_count": 10,
+      "averages": {
+        "performance": 54,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 34
+      },
+      "flag": "🇳🇱",
+      "api_endpoint": "countries/netherlands.json"
+    },
+    {
+      "country": "New Zealand",
+      "website_count": 1,
+      "averages": {
+        "performance": 30,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "flag": "🇳🇿",
+      "api_endpoint": "countries/new-zealand.json"
+    },
+    {
+      "country": "Norway",
+      "website_count": 3,
+      "averages": {
+        "performance": 43,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 44
+      },
+      "flag": "🇳🇴",
+      "api_endpoint": "countries/norway.json"
+    },
+    {
+      "country": "Pakistan",
+      "website_count": 5,
+      "averages": {
+        "performance": 52,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 49
+      },
+      "flag": "🌍",
+      "api_endpoint": "countries/pakistan.json"
+    },
+    {
+      "country": "Paraguay",
+      "website_count": 2,
+      "averages": {
+        "performance": 29,
+        "accessibility": 89,
+        "best_practices": 79,
+        "seo": 94,
+        "pwa": 56
+      },
+      "flag": "🇵🇾",
+      "api_endpoint": "countries/paraguay.json"
+    },
+    {
+      "country": "Poland",
+      "website_count": 7,
+      "averages": {
+        "performance": 39,
+        "accessibility": 92,
+        "best_practices": 73,
+        "seo": 95,
+        "pwa": 54
+      },
+      "flag": "🇵🇱",
+      "api_endpoint": "countries/poland.json"
+    },
+    {
+      "country": "Russia",
+      "website_count": 9,
+      "averages": {
+        "performance": 39,
+        "accessibility": 75,
+        "best_practices": 59,
+        "seo": 91,
+        "pwa": 62
+      },
+      "flag": "🇷🇺",
+      "api_endpoint": "countries/russia.json"
+    },
+    {
+      "country": "Singapore",
+      "website_count": 1,
+      "averages": {
+        "performance": 15,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "flag": "🇸🇬",
+      "api_endpoint": "countries/singapore.json"
+    },
+    {
+      "country": "Slovakia",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "flag": "🇸🇰",
+      "api_endpoint": "countries/slovakia.json"
+    },
+    {
+      "country": "South Africa",
+      "website_count": 4,
+      "averages": {
+        "performance": 27,
+        "accessibility": 92,
+        "best_practices": 73,
+        "seo": 83,
+        "pwa": 64
+      },
+      "flag": "🇿🇦",
+      "api_endpoint": "countries/south-africa.json"
+    },
+    {
+      "country": "South Korea",
+      "website_count": 10,
+      "averages": {
+        "performance": 36,
+        "accessibility": 78,
+        "best_practices": 78,
+        "seo": 89,
+        "pwa": 33
+      },
+      "flag": "🇰🇷",
+      "api_endpoint": "countries/south-korea.json"
+    },
+    {
+      "country": "Spain",
+      "website_count": 2,
+      "averages": {
+        "performance": 32,
+        "accessibility": 90,
+        "best_practices": 80,
+        "seo": 91,
+        "pwa": 33
+      },
+      "flag": "🇪🇸",
+      "api_endpoint": "countries/spain.json"
+    },
+    {
+      "country": "Sweden",
+      "website_count": 15,
+      "averages": {
+        "performance": 45,
+        "accessibility": 95,
+        "best_practices": 90,
+        "seo": 95,
+        "pwa": 47
+      },
+      "flag": "🇸🇪",
+      "api_endpoint": "countries/sweden.json"
+    },
+    {
+      "country": "Switzerland",
+      "website_count": 3,
+      "averages": {
+        "performance": 40,
+        "accessibility": 99,
+        "best_practices": 86,
+        "seo": 99,
+        "pwa": 52
+      },
+      "flag": "🇨🇭",
+      "api_endpoint": "countries/switzerland.json"
+    },
+    {
+      "country": "Taiwan",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "flag": "🇹🇼",
+      "api_endpoint": "countries/taiwan.json"
+    },
+    {
+      "country": "Thailand",
+      "website_count": 5,
+      "averages": {
+        "performance": 30,
+        "accessibility": 95,
+        "best_practices": 73,
+        "seo": 96,
+        "pwa": 58
+      },
+      "flag": "🇹🇭",
+      "api_endpoint": "countries/thailand.json"
+    },
+    {
+      "country": "Turkey",
+      "website_count": 3,
+      "averages": {
+        "performance": 53,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 37
+      },
+      "flag": "🇹🇷",
+      "api_endpoint": "countries/turkey.json"
+    },
+    {
+      "country": "Ukraine",
+      "website_count": 3,
+      "averages": {
+        "performance": 50,
+        "accessibility": 74,
+        "best_practices": 72,
+        "seo": 88,
+        "pwa": 52
+      },
+      "flag": "🇺🇦",
+      "api_endpoint": "countries/ukraine.json"
+    },
+    {
+      "country": "United Kingdom",
+      "website_count": 18,
+      "averages": {
+        "performance": 42,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 45
+      },
+      "flag": "🇬🇧",
+      "api_endpoint": "countries/united-kingdom.json"
+    },
+    {
+      "country": "United States",
+      "website_count": 50,
+      "averages": {
+        "performance": 49,
+        "accessibility": 89,
+        "best_practices": 82,
+        "seo": 90,
+        "pwa": 42
+      },
+      "flag": "🇺🇸",
+      "api_endpoint": "countries/united-states.json"
+    },
+    {
+      "country": "Vietnam",
+      "website_count": 1,
+      "averages": {
+        "performance": 38,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "flag": "🇻🇳",
+      "api_endpoint": "countries/vietnam.json"
+    },
+    {
+      "country": "Zambia",
+      "website_count": 1,
+      "averages": {
+        "performance": 34,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "flag": "🇿🇲",
+      "api_endpoint": "countries/zambia.json"
+    }
+  ]
+}

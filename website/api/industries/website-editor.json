@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.151Z",
+    "industry": "Website editor",
+    "website_count": 7
+  },
+  "averages": {
+    "performance": 58,
+    "accessibility": 93,
+    "best_practices": 89,
+    "seo": 92,
+    "pwa": 38
+  },
+  "websites": [
+    {
+      "url": "flipsite.io",
+      "country": "Finland",
+      "scores": {
+        "performance": 100,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 20:10:45"
+    },
+    {
+      "url": "framer.com",
+      "country": "Netherlands",
+      "scores": {
+        "performance": 50,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 20:12:46"
+    },
+    {
+      "url": "refined.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 12:24:26"
+    },
+    {
+      "url": "adobe.com",
+      "country": "United States",
+      "scores": {
+        "performance": 87,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-23 07:02:14"
+    },
+    {
+      "url": "figma.com",
+      "country": "United States",
+      "scores": {
+        "performance": 42,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-23 07:03:06"
+    },
+    {
+      "url": "salesforce.com",
+      "country": "United States",
+      "scores": {
+        "performance": 27,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:48:40"
+    },
+    {
+      "url": "wordpress.com",
+      "country": "United States",
+      "scores": {
+        "performance": 66,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 07:03:18"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 100,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Netherlands",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 4,
+      "averages": {
+        "performance": 56,
+        "accessibility": 94,
+        "best_practices": 88,
+        "seo": 91,
+        "pwa": 42
+      }
+    }
+  ]
+}

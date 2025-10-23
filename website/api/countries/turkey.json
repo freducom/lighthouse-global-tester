@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.125Z",
+    "country": "Turkey",
+    "flag": "🇹🇷",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 53,
+    "accessibility": 87,
+    "best_practices": 83,
+    "seo": 89,
+    "pwa": 37
+  },
+  "websites": [
+    {
+      "url": "sahibinden.com",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 80,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:47:50"
+    },
+    {
+      "url": "kamuajans.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 97,
+        "pwa": 44
+      },
+      "test_date": "2025-10-21 18:16:17"
+    },
+    {
+      "url": "ntv.com.tr",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 88,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 22:10:01"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 80,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 40,
+        "accessibility": 89,
+        "best_practices": 79,
+        "seo": 93,
+        "pwa": 39
+      }
+    }
+  ]
+}

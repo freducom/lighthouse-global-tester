@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.152Z",
+    "industry": "Transportation",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 31,
+    "accessibility": 98,
+    "best_practices": 89,
+    "seo": 91,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "ns.nl",
+      "country": "Netherlands",
+      "scores": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 22:03:21"
+    },
+    {
+      "url": "postnord.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 28,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 08:33:41"
+    },
+    {
+      "url": "tfl.gov.uk",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 39,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 07:35:54"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Netherlands",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United Kingdom",
+      "website_count": 1,
+      "averages": {
+        "performance": 39,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 33
+      }
+    }
+  ]
+}

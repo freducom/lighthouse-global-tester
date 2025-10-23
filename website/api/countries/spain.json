@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.127Z",
+    "country": "Spain",
+    "flag": "🇪🇸",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 32,
+    "accessibility": 90,
+    "best_practices": 80,
+    "seo": 91,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "lavanguardia.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 00:53:15"
+    },
+    {
+      "url": "marca.com",
+      "industry": "Sports",
+      "scores": {
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 10:11:29"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 36,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Sports",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.123Z",
+    "country": "Poland",
+    "flag": "🇵🇱",
+    "website_count": 7
+  },
+  "averages": {
+    "performance": 39,
+    "accessibility": 92,
+    "best_practices": 73,
+    "seo": 95,
+    "pwa": 54
+  },
+  "websites": [
+    {
+      "url": "o2.pl",
+      "industry": "Portal",
+      "scores": {
+        "performance": 54,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-22 22:15:13"
+    },
+    {
+      "url": "onet.pl",
+      "industry": "Portal",
+      "scores": {
+        "performance": 50,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 98,
+        "pwa": 100
+      },
+      "test_date": "2025-10-23 02:58:41"
+    },
+    {
+      "url": "salesmanago.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 16:49:08"
+    },
+    {
+      "url": "orange.pl",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 03:00:12"
+    },
+    {
+      "url": "pracuj.pl",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 08:34:22"
+    },
+    {
+      "url": "nofluffjobs.com",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 31,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-22 20:28:02"
+    },
+    {
+      "url": "olx.pl",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 23,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 02:58:23"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Jobs",
+      "website_count": 2,
+      "averages": {
+        "performance": 32,
+        "accessibility": 89,
+        "best_practices": 71,
+        "seo": 93,
+        "pwa": 50
+      }
+    },
+    {
+      "industry": "Marketing",
+      "website_count": 1,
+      "averages": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 23,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 2,
+      "averages": {
+        "performance": 52,
+        "accessibility": 88,
+        "best_practices": 71,
+        "seo": 99,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 33
+      }
+    }
+  ]
+}

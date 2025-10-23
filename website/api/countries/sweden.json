@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.121Z",
+    "country": "Sweden",
+    "flag": "🇸🇪",
+    "website_count": 15
+  },
+  "averages": {
+    "performance": 45,
+    "accessibility": 95,
+    "best_practices": 90,
+    "seo": 95,
+    "pwa": 47
+  },
+  "websites": [
+    {
+      "url": "dn.se",
+      "industry": "Media",
+      "scores": {
+        "performance": 65,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:27:12"
+    },
+    {
+      "url": "arbetsformedlingen.se",
+      "industry": "Government",
+      "scores": {
+        "performance": 65,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:29:33"
+    },
+    {
+      "url": "regeringen.se",
+      "industry": "Government",
+      "scores": {
+        "performance": 65,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 12:24:42"
+    },
+    {
+      "url": "svt.se",
+      "industry": "Media",
+      "scores": {
+        "performance": 57,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 89
+      },
+      "test_date": "2025-10-19 20:26:59"
+    },
+    {
+      "url": "skatteverket.se",
+      "industry": "Government",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:29:16"
+    },
+    {
+      "url": "aftonbladet.se",
+      "industry": "Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-19 20:26:29"
+    },
+    {
+      "url": "ica.se",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 49,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-19 20:28:01"
+    },
+    {
+      "url": "expressen.se",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 18:14:33"
+    },
+    {
+      "url": "coop.se",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 44,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-19 20:28:21"
+    },
+    {
+      "url": "flashback.org",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 18:17:46"
+    },
+    {
+      "url": "refined.com",
+      "industry": "Website editor",
+      "scores": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 12:24:26"
+    },
+    {
+      "url": "blocket.se",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 28,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:27:29"
+    },
+    {
+      "url": "postnord.se",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 28,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 08:33:41"
+    },
+    {
+      "url": "klarna.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 24,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-21 20:23:47"
+    },
+    {
+      "url": "spotify.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 20,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 78
+      },
+      "test_date": "2025-10-19 20:28:39"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 2,
+      "averages": {
+        "performance": 47,
+        "accessibility": 97,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 67
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 24,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Government",
+      "website_count": 3,
+      "averages": {
+        "performance": 62,
+        "accessibility": 100,
+        "best_practices": 86,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 5,
+      "averages": {
+        "performance": 48,
+        "accessibility": 97,
+        "best_practices": 97,
+        "seo": 99,
+        "pwa": 62
+      }
+    },
+    {
+      "industry": "Social Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 39,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Website editor",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      }
+    }
+  ]
+}

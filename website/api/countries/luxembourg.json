@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.128Z",
+    "country": "Luxembourg",
+    "flag": "🇱🇺",
+    "website_count": 4
+  },
+  "averages": {
+    "performance": 54,
+    "accessibility": 91,
+    "best_practices": 86,
+    "seo": 95,
+    "pwa": 44
+  },
+  "websites": [
+    {
+      "url": "news24.lu",
+      "industry": "Media",
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 19:51:00"
+    },
+    {
+      "url": "esch.lu",
+      "industry": "Media",
+      "scores": {
+        "performance": 57,
+        "accessibility": 95,
+        "best_practices": 100,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 16:05:57"
+    },
+    {
+      "url": "luxembourg.lu",
+      "industry": "Government",
+      "scores": {
+        "performance": 48,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-22 06:26:16"
+    },
+    {
+      "url": "paperjam.lu",
+      "industry": "Media",
+      "scores": {
+        "performance": 21,
+        "accessibility": 69,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-23 04:13:40"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 48,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 56,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 44
+      }
+    }
+  ]
+}

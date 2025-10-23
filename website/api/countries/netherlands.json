@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.120Z",
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "website_count": 10
+  },
+  "averages": {
+    "performance": 54,
+    "accessibility": 93,
+    "best_practices": 83,
+    "seo": 90,
+    "pwa": 34
+  },
+  "websites": [
+    {
+      "url": "ad.nl",
+      "industry": "Media",
+      "scores": {
+        "performance": 82,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:24:09"
+    },
+    {
+      "url": "nu.nl",
+      "industry": "Media",
+      "scores": {
+        "performance": 76,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 22:10:17"
+    },
+    {
+      "url": "bol.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 71,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:24:41"
+    },
+    {
+      "url": "rijksoverheid.nl",
+      "industry": "Government",
+      "scores": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 15:45:29"
+    },
+    {
+      "url": "ing.nl",
+      "industry": "Finance",
+      "scores": {
+        "performance": 64,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:25:34"
+    },
+    {
+      "url": "framer.com",
+      "industry": "Website editor",
+      "scores": {
+        "performance": 50,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 20:12:46"
+    },
+    {
+      "url": "rabobank.nl",
+      "industry": "Finance",
+      "scores": {
+        "performance": 47,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 10:23:52"
+    },
+    {
+      "url": "telegraaf.nl",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 44
+      },
+      "test_date": "2025-10-19 20:23:38"
+    },
+    {
+      "url": "ns.nl",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 22:03:21"
+    },
+    {
+      "url": "marktplaats.nl",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 16,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 10:12:52"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 71,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 2,
+      "averages": {
+        "performance": 56,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 16,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 96,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 65,
+        "accessibility": 95,
+        "best_practices": 86,
+        "seo": 80,
+        "pwa": 37
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Website editor",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      }
+    }
+  ]
+}

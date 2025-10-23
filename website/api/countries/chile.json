@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.132Z",
+    "country": "Chile",
+    "flag": "🇨🇱",
+    "website_count": 4
+  },
+  "averages": {
+    "performance": 42,
+    "accessibility": 86,
+    "best_practices": 75,
+    "seo": 88,
+    "pwa": 30
+  },
+  "websites": [
+    {
+      "url": "laprensaaustral.cl",
+      "industry": "Media",
+      "scores": {
+        "performance": 58,
+        "accessibility": 76,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 22
+      },
+      "test_date": "2025-10-22 00:45:06"
+    },
+    {
+      "url": "mercadolibre.cl",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 56,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 12:19:07"
+    },
+    {
+      "url": "latercera.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 00:52:47"
+    },
+    {
+      "url": "emol.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 20,
+        "accessibility": 81,
+        "best_practices": 50,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-20 16:05:25"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 83,
+        "best_practices": 72,
+        "seo": 86,
+        "pwa": 29
+      }
+    }
+  ]
+}

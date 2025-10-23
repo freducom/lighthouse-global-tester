@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.150Z",
+    "industry": "Sports",
+    "website_count": 4
+  },
+  "averages": {
+    "performance": 47,
+    "accessibility": 80,
+    "best_practices": 81,
+    "seo": 84,
+    "pwa": 30
+  },
+  "websites": [
+    {
+      "url": "hockeycanada.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 60,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 22
+      },
+      "test_date": "2025-10-19 20:00:05"
+    },
+    {
+      "url": "cricbuzz.com",
+      "country": "India",
+      "scores": {
+        "performance": 72,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 19:46:43"
+    },
+    {
+      "url": "sport5.co.il",
+      "country": "Israel",
+      "scores": {
+        "performance": 28,
+        "accessibility": 61,
+        "best_practices": 58,
+        "seo": 70,
+        "pwa": 33
+      },
+      "test_date": "2025-10-19 20:22:17"
+    },
+    {
+      "url": "marca.com",
+      "country": "Spain",
+      "scores": {
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 10:11:29"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Canada",
+      "website_count": 1,
+      "averages": {
+        "performance": 60,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 22
+      }
+    },
+    {
+      "country": "India",
+      "website_count": 1,
+      "averages": {
+        "performance": 72,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Israel",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 61,
+        "best_practices": 58,
+        "seo": 70,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Spain",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      }
+    }
+  ]
+}

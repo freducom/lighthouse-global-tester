@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.124Z",
+    "country": "Ukraine",
+    "flag": "🇺🇦",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 50,
+    "accessibility": 74,
+    "best_practices": 72,
+    "seo": 88,
+    "pwa": 52
+  },
+  "websites": [
+    {
+      "url": "news.finance.ua",
+      "industry": "Finance",
+      "scores": {
+        "performance": 67,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 89
+      },
+      "test_date": "2025-10-22 19:44:03"
+    },
+    {
+      "url": "lb.ua",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 03:04:30"
+    },
+    {
+      "url": "pravda.com.ua",
+      "industry": "Media",
+      "scores": {
+        "performance": 38,
+        "accessibility": 73,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 08:34:43"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 67,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 42,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 87,
+        "pwa": 33
+      }
+    }
+  ]
+}

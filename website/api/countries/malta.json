@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.129Z",
+    "country": "Malta",
+    "flag": "🇲🇹",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 58,
+    "accessibility": 82,
+    "best_practices": 63,
+    "seo": 85,
+    "pwa": 17
+  },
+  "websites": [
+    {
+      "url": "malta.com",
+      "industry": "Portal",
+      "scores": {
+        "performance": 60,
+        "accessibility": 72,
+        "best_practices": 42,
+        "seo": 69,
+        "pwa": 0
+      },
+      "test_date": "2025-10-22 08:48:17"
+    },
+    {
+      "url": "lovinmalta.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 55,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 06:18:15"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 55,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 60,
+        "accessibility": 72,
+        "best_practices": 42,
+        "seo": 69,
+        "pwa": 0
+      }
+    }
+  ]
+}

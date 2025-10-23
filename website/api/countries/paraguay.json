@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generated_at": "2025-10-23T21:10:25.132Z",
+    "country": "Paraguay",
+    "flag": "🇵🇾",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 29,
+    "accessibility": 89,
+    "best_practices": 79,
+    "seo": 94,
+    "pwa": 56
+  },
+  "websites": [
+    {
+      "url": "npy.com.py",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-22 20:30:47"
+    },
+    {
+      "url": "lanacion.com.py",
+      "industry": "Media",
+      "scores": {
+        "performance": 22,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 78
+      },
+      "test_date": "2025-10-22 00:43:49"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 29,
+        "accessibility": 89,
+        "best_practices": 79,
+        "seo": 94,
+        "pwa": 56
+      }
+    }
+  ]
+}

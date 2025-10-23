@@ -121,6 +121,50 @@ class WebsiteGenerator {
     </script>`;
   }
 
+  getFooterHTML(websiteCount, countriesCount) {
+    return `    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Valmitta</h3>
+                <p>Global lighthouse performance monitoring across ${websiteCount} websites in ${countriesCount} countries.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="all-countries.html">All Countries</a></li>
+                    <li><a href="all-industries.html">All Industries</a></li>
+                    <li><a href="api-docs.html">API Documentation</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>API Endpoints</h3>
+                <ul class="footer-links">
+                    <li><a href="api/overview.json" target="_blank">Global Overview</a></li>
+                    <li><a href="api/countries.json" target="_blank">All Countries</a></li>
+                    <li><a href="api/industries.json" target="_blank">All Industries</a></li>
+                    <li><a href="api/stats.json" target="_blank">Statistics</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact & Support</h3>
+                <p>Have questions about our lighthouse data or API?</p>
+                <button id="contact-form-btn" class="contact-btn">
+                    💬 Get In Touch
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Valmitta. Lighthouse performance data updated regularly.</p>
+        </div>
+    </footer>`;
+  }
+
   getTrend(current, previous) {
     if (previous === null || previous === undefined) {
       return 'none'; // No previous data
@@ -4868,6 +4912,16 @@ module.exports = WebsiteGenerator;
 async function main() {
   const generator = new WebsiteGenerator();
   await generator.generateWebsite();
+  
+  // Generate JSON API
+  const APIGenerator = require('./generate-api');
+  const apiGenerator = new APIGenerator();
+  await apiGenerator.generateAPI();
+  
+  // Generate API Documentation
+  const APIDocsGenerator = require('./generate-api-docs');
+  const apiDocsGenerator = new APIDocsGenerator();
+  await apiDocsGenerator.generateAPIDocs();
 }
 
 main().catch(console.error);
