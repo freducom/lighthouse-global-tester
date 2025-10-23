@@ -32,9 +32,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Ukraine</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 47 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 57 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">47%</div>
+                <div class="stat-number" aria-hidden="true">57%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 74 percent">
@@ -121,15 +121,15 @@
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="news.finance.ua" 
                                 data-industry="Finance"
-                                data-performance="48"
+                                data-performance="67"
                                 data-accessibility="63"
                                 data-seo="91"
                                 data-best-practices="67"
                                 data-pwa="89"
-                                data-test-date="2025-10-22 18:21:57">
+                                data-test-date="2025-10-22 19:44:03">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-news-finance-ua.html" 
@@ -145,9 +145,9 @@
                                         Finance
                                     </a>
                                 </td>
-                                <td class="score perf-poor"
-                                    aria-label="Performance score: 48 percent, needs improvement">
-                                    48%
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 67 percent, average performance, trend: +19 points">
+                                    67%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+19</span>
                                 </td>
                                 <td class="score acc-average"
                                     aria-label="Accessibility score: 63 percent, average performance">
@@ -165,9 +165,9 @@
                                     aria-label="PWA score: 89 percent, good performance">
                                     89%
                                 </td>
-                                <td class="date" data-date="2025-10-22 18:21:57"
+                                <td class="date" data-date="2025-10-22 19:44:03"
                                     aria-label="Last tested on 10/22/2025">
-                                    <time datetime="2025-10-22 18:21:57">10/22/2025</time>
+                                    <time datetime="2025-10-22 19:44:03">10/22/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -238,7 +238,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"news.finance.ua","country":"Ukraine","industry":"Finance","performance":48,"accessibility":63,"best_practices":67,"seo":91,"pwa":89,"test_date":"2025-10-22 18:21:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lb.ua","country":"Ukraine","industry":"Media","performance":46,"accessibility":85,"best_practices":75,"seo":91,"pwa":33,"test_date":"2025-10-22 03:04:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"news.finance.ua","country":"Ukraine","industry":"Finance","performance":67,"accessibility":63,"best_practices":67,"seo":91,"pwa":89,"test_date":"2025-10-22 19:44:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"lb.ua","country":"Ukraine","industry":"Media","performance":46,"accessibility":85,"best_practices":75,"seo":91,"pwa":33,"test_date":"2025-10-22 03:04:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

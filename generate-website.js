@@ -1868,7 +1868,7 @@ class WebsiteGenerator {
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="${site.url}">${site.url}</a> Performance History | Last tested: ${new Date(site.test_date).toLocaleDateString()}</p>
+            <p>📊 <a href="https://${site.url}" target="_blank" rel="noopener">${site.url}</a> Performance History | Last tested: ${new Date(site.test_date).toLocaleDateString()}</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
@@ -1958,13 +1958,14 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #f7931e 0%, #1e3a5f 100%);
-    padding: 40px;
+    background: #ffffff;
+    padding: 20px;
     margin: -20px -20px 20px -20px;
-    border-radius: 0 0 16px 16px;
-    color: white;
+    border-radius: 0 0 8px 8px;
+    color: #1c1e21;
     text-align: center;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #f7931e;
 }
 
 .header h1 {
@@ -1974,11 +1975,11 @@ body {
 }
 
 .logo-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .header-logo {
-    height: 120px;
+    height: 60px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -2024,13 +2025,13 @@ body {
 }
 
 .breadcrumb a {
-    color: white;
+    color: #1e3a5f;
     text-decoration: none;
-    transition: opacity 0.2s;
+    transition: color 0.2s;
 }
 
 .breadcrumb a:hover {
-    opacity: 0.7;
+    color: #f7931e;
 }
 
 .stats-grid {
@@ -2909,13 +2910,14 @@ input[type="text"]:focus, input[type="search"]:focus {
 }
 
 .nav-links a {
-    color: white;
+    color: #1e3a5f;
     text-decoration: underline;
     font-weight: 500;
 }
 
 .nav-links a:hover, .nav-links a:focus {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(247, 147, 30, 0.1);
+    color: #f7931e;
     padding: 4px 8px;
     border-radius: 4px;
 }
