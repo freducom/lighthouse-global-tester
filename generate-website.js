@@ -85,6 +85,30 @@ class WebsiteGenerator {
     <link rel="apple-touch-icon" sizes="256x256" href="favicon_256.png">`;
   }
 
+  getSocialMetaTags(title, description, url = '', type = 'website') {
+    const baseUrl = 'https://freducom.github.io/lighthouse-global-tester';
+    const fullUrl = url ? `${baseUrl}/${url}` : baseUrl;
+    const ogImageUrl = `${baseUrl}/openGraph_1200x630.png`;
+    const twitterImageUrl = `${baseUrl}/twitterCard_1200x675.png`;
+    
+    return `    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="${title}">
+    <meta property="og:description" content="${description}">
+    <meta property="og:image" content="${ogImageUrl}">
+    <meta property="og:url" content="${fullUrl}">
+    <meta property="og:type" content="${type}">
+    <meta property="og:site_name" content="Valmitta">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${title}">
+    <meta name="twitter:description" content="${description}">
+    <meta name="twitter:image" content="${twitterImageUrl}">
+    <meta name="twitter:site" content="@valmitta">
+    <meta name="twitter:creator" content="@valmitta">`;
+  }
+
   getTrend(current, previous) {
     if (previous === null || previous === undefined) {
       return 'none'; // No previous data
@@ -198,6 +222,7 @@ class WebsiteGenerator {
     <meta name="keywords" content="web performance, lighthouse, accessibility, SEO, performance analytics, website optimization">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics`, 'index.html')}
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
@@ -858,6 +883,7 @@ ${this.getFaviconHTML()}
     <meta name="description" content="Lighthouse performance analysis for ${countryData.country} websites">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags(`${countryData.country} - Website Performance Analysis`, `Lighthouse performance analysis for ${countryData.country} websites. View detailed metrics and rankings.`, fileName)}
     <link rel="stylesheet" href="styles.css">
     
     <!-- Schema.org Structured Data for Country Page -->
@@ -1560,6 +1586,7 @@ ${this.getFaviconHTML()}
     <meta name="description" content="Lighthouse performance analysis for ${industry.toLowerCase()} industry websites">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags(`${industry} Industry - Performance Analysis`, `Lighthouse performance analysis for ${industry.toLowerCase()} industry websites. Compare metrics and rankings.`, fileName)}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -1853,6 +1880,7 @@ ${this.getFaviconHTML()}
     <meta name="description" content="Lighthouse performance history and insights for ${site.url}">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags(`${site.url} - Performance History`, `Lighthouse performance history and insights for ${site.url}. View detailed metrics and performance trends.`, fileName)}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -3404,6 +3432,7 @@ input[type="text"]:focus, input[type="search"]:focus {
     <meta name="description" content="Complete rankings of all countries by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags('All Countries - Performance Rankings', 'Complete rankings of all countries by lighthouse performance analysis. Compare global website performance metrics.', 'all-countries.html')}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -3519,6 +3548,7 @@ ${this.getFaviconHTML()}
     <meta name="description" content="Complete rankings of all industries by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags('All Industries - Performance Rankings', 'Complete rankings of all industries by lighthouse performance analysis. Compare industry performance metrics.', 'all-industries.html')}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -3636,13 +3666,12 @@ ${this.getFaviconHTML()}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Companies - Valmitta</title>
     <meta name="description" content="Complete rankings of all companies by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags('All Companies - Performance Rankings', 'Complete rankings of all companies by lighthouse performance analysis. Compare website performance metrics across all industries.', 'all-companies.html')}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -4021,6 +4050,7 @@ ${this.getFaviconHTML()}
     <meta name="description" content="Latest lighthouse performance scan results from ${formattedScanDate} - ${latestScanResults.length} websites analyzed">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getSocialMetaTags('Latest Updated Statistics - Valmitta', `Latest lighthouse performance scan results from ${formattedScanDate} - ${latestScanResults.length} websites analyzed`, 'latest-updated.html')}
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>

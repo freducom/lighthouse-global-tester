@@ -14,6 +14,22 @@
     <link rel="icon" type="image/png" sizes="256x256" href="favicon_256.png">
     <link rel="apple-touch-icon" sizes="128x128" href="favicon_128.png">
     <link rel="apple-touch-icon" sizes="256x256" href="favicon_256.png">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="sainsburys.co.uk - Performance History">
+    <meta property="og:description" content="Lighthouse performance history and insights for sainsburys.co.uk. View detailed metrics and performance trends.">
+    <meta property="og:image" content="https://freducom.github.io/lighthouse-global-tester/openGraph_1200x630.png">
+    <meta property="og:url" content="https://freducom.github.io/lighthouse-global-tester/domain-sainsburys-co-uk.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Valmitta">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="sainsburys.co.uk - Performance History">
+    <meta name="twitter:description" content="Lighthouse performance history and insights for sainsburys.co.uk. View detailed metrics and performance trends.">
+    <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/twitterCard_1200x675.png">
+    <meta name="twitter:site" content="@valmitta">
+    <meta name="twitter:creator" content="@valmitta">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -33,7 +49,7 @@
             "name": "Valmitta",
             "url": "https://valmitta.com"
           },
-          "dateCreated": "2025-10-23T19:19:41.745Z",
+          "dateCreated": "2025-10-23T19:28:07.793Z",
           "about": {
             "@type": "WebSite",
             "name": "sainsburys.co.uk",
@@ -45,11 +61,11 @@
           "@id": "https://valmitta.com/domain-sainsburys.co.uk.html#metrics",
           "name": "sainsburys.co.uk Performance Metrics",
           "description": "Latest Lighthouse scores for sainsburys.co.uk",
-          "performanceScore": 33,
+          "performanceScore": 37,
           "accessibilityScore": 92,
           "bestPracticesScore": 58,
           "seoScore": 91,
-          "dateRecorded": "2025-10-23 16:17:09"
+          "dateRecorded": "2025-10-23 16:48:07"
         }
       ]
     }
@@ -67,14 +83,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇬🇧 United Kingdom</span>
-                <span class="last-scan">Last scanned: 10/23/2025, 4:17:09 PM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 4:48:07 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">33%</div>
+                <div class="stat-number poor">37%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -96,9 +112,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -109,8 +125,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 33%"></div>
-                        <span class="score-text">33%</span>
+                        <div class="score-fill performance" style="width: 37%"></div>
+                        <span class="score-text">37%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -150,6 +166,53 @@
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":539,"url":"sainsburys.co.uk","performance":33,"accessibility":92,"best_practices":58,"seo":91,"pwa":33,"test_date":"2025-10-23 16:17:09","country":"United Kingdom","industry":"E-commerce"},{"id":547,"url":"sainsburys.co.uk","performance":37,"accessibility":92,"best_practices":58,"seo":91,"pwa":33,"test_date":"2025-10-23 16:48:07","country":"United Kingdom","industry":"E-commerce"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>
