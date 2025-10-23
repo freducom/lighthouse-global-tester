@@ -33,6 +33,7 @@
     <meta name="twitter:creator" content="@valmitta">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -100,7 +101,7 @@
           "creator": {
             "@id": "https://valmitta.com/#organization"
           },
-          "dateModified": "2025-10-23T19:28:07.623Z",
+          "dateModified": "2025-10-23T19:56:28.941Z",
           "keywords": ["web performance", "lighthouse", "accessibility", "SEO", "performance analytics"]
         }
       ]
@@ -134,7 +135,7 @@
             </nav>
             
             <div class="last-updated" id="lastUpdated">
-                Last updated: <time id="updateTime" datetime="2025-10-23T19:28:07.623Z">Loading...</time>
+                Last updated: <time id="updateTime" datetime="2025-10-23T19:56:28.941Z">Loading...</time>
             </div>
         </header>
 
@@ -1135,17 +1136,72 @@
             <div class="footer-content">
                 <p>Data from <span class="sr-only">total of </span>321 websites across 62 countries</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <p>📝 <button onclick="openWebsiteModal()" class="suggest-btn">Suggest a Website</button></p>
                 <div class="footer-meta">
-                    <p><small>Last updated: <time datetime="2025-10-23T19:28:07.596Z" id="updateTime">10/23/2025</time></small></p>
+                    <p><small>Last updated: <time datetime="2025-10-23T19:56:28.915Z" id="updateTime">10/23/2025</time></small></p>
                     <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+                </div>
+                <form id="websiteForm" onsubmit="submitWebsiteForm(event)">
+                    <div class="form-group">
+                        <label for="domain">Website Domain <span class="required">*</span></label>
+                        <input type="url" id="domain" name="domain" placeholder="https://example.com" required>
+                        <small>Enter the full website URL including https://</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country <span class="required">*</span></label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            <option value="United States">🇺🇸 United States</option><option value="United Kingdom">🇬🇧 United Kingdom</option><option value="Germany">🇩🇪 Germany</option><option value="India">🇮🇳 India</option><option value="Brazil">🇧🇷 Brazil</option><option value="Japan">🇯🇵 Japan</option><option value="Canada">🇨🇦 Canada</option><option value="Australia">🇦🇺 Australia</option><option value="Russia">🇷🇺 Russia</option><option value="South Korea">🇰🇷 South Korea</option><option value="Finland">🇫🇮 Finland</option><option value="Israel">🇮🇱 Israel</option><option value="Netherlands">🇳🇱 Netherlands</option><option value="Sweden">🇸🇪 Sweden</option><option value="Ireland">🇮🇪 Ireland</option><option value="Austria">🇦🇹 Austria</option><option value="Poland">🇵🇱 Poland</option><option value="Norway">🇳🇴 Norway</option><option value="Denmark">🇩🇰 Denmark</option><option value="Ukraine">🇺🇦 Ukraine</option><option value="Hungary">🇭🇺 Hungary</option><option value="Estonia">🇪🇪 Estonia</option><option value="Lithuania">🇱🇹 Lithuania</option><option value="Latvia">🇱🇻 Latvia</option><option value="Turkey">🇹🇷 Turkey</option><option value="Italy">🇮🇹 Italy</option><option value="New Zealand">🇳🇿 New Zealand</option><option value="South Africa">🇿🇦 South Africa</option><option value="Egypt">🇪🇬 Egypt</option><option value="Libya">🇱🇾 Libya</option><option value="Iran">🇮🇷 Iran</option><option value="Greece">🇬🇷 Greece</option><option value="Spain">🇪🇸 Spain</option><option value="France">🇫🇷 France</option><option value="Belgium">🇧🇪 Belgium</option><option value="Luxembourg">🇱🇺 Luxembourg</option><option value="Switzerland">🇨🇭 Switzerland</option><option value="Czechia">🇨🇿 Czechia</option><option value="Slovakia">🇸🇰 Slovakia</option><option value="Malta">🇲🇹 Malta</option><option value="China">🇨🇳 China</option><option value="Vietnam">🇻🇳 Vietnam</option><option value="Thailand">🇹🇭 Thailand</option><option value="Malaysia">🇲🇾 Malaysia</option><option value="Singapore">🇸🇬 Singapore</option><option value="Indonesia">🇮🇩 Indonesia</option><option value="Taiwan">🇹🇼 Taiwan</option><option value="Peru">🇵🇪 Peru</option><option value="Colombia">🇨🇴 Colombia</option><option value="Costa Rica">🇨🇷 Costa Rica</option><option value="Cuba">🇨🇺 Cuba</option><option value="Bolivia">🇧🇴 Bolivia</option><option value="Chile">🇨🇱 Chile</option><option value="Paraguay">🇵🇾 Paraguay</option><option value="Uruguay">🇺🇾 Uruguay</option><option value="Zambia">🇿🇲 Zambia</option><option value="Kenya">🇰🇪 Kenya</option><option value="Angola">🇦🇴 Angola</option><option value="Namibia">🇳🇦 Namibia</option><option value="Mexico">🌍 Mexico</option><option value="Pakistan">🌍 Pakistan</option><option value="Bangladesh">🌍 Bangladesh</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="industry">Industry <span class="required">*</span></label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select an industry</option>
+                            <option value="Technology">💻 Technology</option>
+                            <option value="E-commerce">🛒 E-commerce</option>
+                            <option value="Media">📺 Media</option>
+                            <option value="Finance">💰 Finance</option>
+                            <option value="Government">🏛️ Government</option>
+                            <option value="Education">🎓 Education</option>
+                            <option value="Healthcare">🏥 Healthcare</option>
+                            <option value="Travel">✈️ Travel</option>
+                            <option value="Food">🍕 Food</option>
+                            <option value="Entertainment">🎬 Entertainment</option>
+                            <option value="Sports">⚽ Sports</option>
+                            <option value="Other">📁 Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Any additional information about this website..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" onclick="closeModal()" class="btn-cancel">Cancel</button>
+                        <button type="submit" class="btn-submit">📤 Submit Suggestion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script>
         // Update the last updated time to show in user's local timezone
-        const generationTime = new Date('2025-10-23T19:28:07.596Z'); // Actual generation time from server
+        const generationTime = new Date('2025-10-23T19:56:28.915Z'); // Actual generation time from server
         document.addEventListener('DOMContentLoaded', function() {
             const updateTimeElement = document.getElementById('updateTime');
             if (updateTimeElement) {
@@ -1374,6 +1430,108 @@
             };
             return flags[country] || '🌍';
         }
+
+        // EmailJS Configuration
+        const EMAILJS_SERVICE_ID = 'service_2vjiusm';
+        const EMAILJS_TEMPLATE_ID = 'template_vr9u2wx';
+        const EMAILJS_PUBLIC_KEY = 'lx3kzRLMUaxOjPsT5';
+
+        // Initialize EmailJS
+        (function() {
+            emailjs.init(EMAILJS_PUBLIC_KEY);
+        })();
+
+        // Modal Functions
+        function openWebsiteModal() {
+            document.getElementById('websiteModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('websiteModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            document.getElementById('websiteForm').reset();
+        }
+
+        function submitWebsiteForm(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('websiteForm');
+            const formData = new FormData(form);
+            
+            const templateParams = {
+                domain: formData.get('domain'),
+                country: formData.get('country'),
+                industry: formData.get('industry'),
+                message: formData.get('message') || 'No additional notes provided',
+                submitted_at: new Date().toLocaleString(),
+                user_agent: navigator.userAgent,
+                referrer: document.referrer || 'Direct'
+            };
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = '📤 Sending...';
+            submitBtn.disabled = true;
+            
+            emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    showSuccessMessage();
+                    form.reset();
+                    setTimeout(() => closeModal(), 3000);
+                })
+                .catch(function(error) {
+                    console.log('FAILED...', error);
+                    showErrorMessage();
+                })
+                .finally(function() {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+        }
+
+        function showSuccessMessage() {
+            const modal = document.getElementById('websiteModal');
+            const content = modal.querySelector('.modal-content');
+            content.innerHTML = `
+                <div class="success-message">
+                    <div class="success-icon">✅</div>
+                    <h3>Thank you!</h3>
+                    <p>Your website suggestion has been sent successfully. We'll review it and consider adding it to our tracking system.</p>
+                    <p><small>This modal will close automatically in a few seconds.</small></p>
+                </div>
+            `;
+        }
+
+        function showErrorMessage() {
+            const modal = document.getElementById('websiteModal');
+            const content = modal.querySelector('.modal-content');
+            content.innerHTML = `
+                <div class="error-message">
+                    <div class="error-icon">❌</div>
+                    <h3>Oops! Something went wrong</h3>
+                    <p>There was a problem sending your suggestion. Please try again or contact us directly.</p>
+                    <button onclick="location.reload()" class="retry-btn">Try Again</button>
+                </div>
+            `;
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
     </script>
 
 </body>

@@ -225,6 +225,7 @@ ${this.getFaviconHTML()}
 ${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics`, 'index.html')}
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -592,12 +593,69 @@ ${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comp
             <div class="footer-content">
                 <p>Data from <span class="sr-only">total of </span>${allScores.length} websites across ${this.domainsData.length} countries</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
+                <p>📝 <button onclick="openWebsiteModal()" class="suggest-btn">Suggest a Website</button></p>
                 <div class="footer-meta">
                     <p><small>Last updated: <time datetime="${generationTime}" id="updateTime">${new Date(generationTime).toLocaleDateString()}</time></small></p>
                     <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+                </div>
+                <form id="websiteForm" onsubmit="submitWebsiteForm(event)">
+                    <div class="form-group">
+                        <label for="domain">Website Domain <span class="required">*</span></label>
+                        <input type="url" id="domain" name="domain" placeholder="https://example.com" required>
+                        <small>Enter the full website URL including https://</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country <span class="required">*</span></label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            ${this.domainsData.map(country => 
+                                `<option value="${country.country}">${this.getCountryFlag(country.country)} ${country.country}</option>`
+                            ).join('')}
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="industry">Industry <span class="required">*</span></label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select an industry</option>
+                            <option value="Technology">💻 Technology</option>
+                            <option value="E-commerce">🛒 E-commerce</option>
+                            <option value="Media">📺 Media</option>
+                            <option value="Finance">💰 Finance</option>
+                            <option value="Government">🏛️ Government</option>
+                            <option value="Education">🎓 Education</option>
+                            <option value="Healthcare">🏥 Healthcare</option>
+                            <option value="Travel">✈️ Travel</option>
+                            <option value="Food">🍕 Food</option>
+                            <option value="Entertainment">🎬 Entertainment</option>
+                            <option value="Sports">⚽ Sports</option>
+                            <option value="Other">📁 Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Any additional information about this website..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" onclick="closeModal()" class="btn-cancel">Cancel</button>
+                        <button type="submit" class="btn-submit">📤 Submit Suggestion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -831,6 +889,108 @@ ${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comp
             };
             return flags[country] || '🌍';
         }
+
+        // EmailJS Configuration
+        const EMAILJS_SERVICE_ID = 'service_2vjiusm';
+        const EMAILJS_TEMPLATE_ID = 'template_vr9u2wx';
+        const EMAILJS_PUBLIC_KEY = 'lx3kzRLMUaxOjPsT5';
+
+        // Initialize EmailJS
+        (function() {
+            emailjs.init(EMAILJS_PUBLIC_KEY);
+        })();
+
+        // Modal Functions
+        function openWebsiteModal() {
+            document.getElementById('websiteModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('websiteModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            document.getElementById('websiteForm').reset();
+        }
+
+        function submitWebsiteForm(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('websiteForm');
+            const formData = new FormData(form);
+            
+            const templateParams = {
+                domain: formData.get('domain'),
+                country: formData.get('country'),
+                industry: formData.get('industry'),
+                message: formData.get('message') || 'No additional notes provided',
+                submitted_at: new Date().toLocaleString(),
+                user_agent: navigator.userAgent,
+                referrer: document.referrer || 'Direct'
+            };
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = '📤 Sending...';
+            submitBtn.disabled = true;
+            
+            emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    showSuccessMessage();
+                    form.reset();
+                    setTimeout(() => closeModal(), 3000);
+                })
+                .catch(function(error) {
+                    console.log('FAILED...', error);
+                    showErrorMessage();
+                })
+                .finally(function() {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+        }
+
+        function showSuccessMessage() {
+            const modal = document.getElementById('websiteModal');
+            const content = modal.querySelector('.modal-content');
+            content.innerHTML = \`
+                <div class="success-message">
+                    <div class="success-icon">✅</div>
+                    <h3>Thank you!</h3>
+                    <p>Your website suggestion has been sent successfully. We'll review it and consider adding it to our tracking system.</p>
+                    <p><small>This modal will close automatically in a few seconds.</small></p>
+                </div>
+            \`;
+        }
+
+        function showErrorMessage() {
+            const modal = document.getElementById('websiteModal');
+            const content = modal.querySelector('.modal-content');
+            content.innerHTML = \`
+                <div class="error-message">
+                    <div class="error-icon">❌</div>
+                    <h3>Oops! Something went wrong</h3>
+                    <p>There was a problem sending your suggestion. Please try again or contact us directly.</p>
+                    <button onclick="location.reload()" class="retry-btn">Try Again</button>
+                </div>
+            \`;
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
     </script>
 
 </body>
@@ -3347,6 +3507,277 @@ input[type="text"]:focus, input[type="search"]:focus {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================
+   MODAL AND FORM STYLES
+   ============================================ */
+
+/* Suggest Button */
+.suggest-btn {
+    background: linear-gradient(135deg, #FFB703 0%, #E07A00 100%);
+    color: #081C34;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.suggest-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 183, 3, 0.3);
+    background: linear-gradient(135deg, #E07A00 0%, #FFB703 100%);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 0 24px;
+    border-bottom: 2px solid #f0f2f5;
+    margin-bottom: 24px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #0D3B66;
+    font-size: 1.5em;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #65676b;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+    background: #f0f2f5;
+    color: #0D3B66;
+}
+
+/* Form Styles */
+#websiteForm {
+    padding: 0 24px 24px 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #0D3B66;
+    font-size: 0.9em;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e4e6ea;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0D3B66;
+    box-shadow: 0 0 0 3px rgba(13, 59, 102, 0.1);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 4px;
+    color: #65676b;
+    font-size: 0.8em;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e4e6ea;
+}
+
+.btn-cancel {
+    background: #f8f9fa;
+    color: #65676b;
+    border: 2px solid #e4e6ea;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-cancel:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #0D3B66 0%, #1E6091 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: linear-gradient(135deg, #081C34 0%, #0D3B66 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(13, 59, 102, 0.3);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Success/Error Messages */
+.success-message,
+.error-message {
+    text-align: center;
+    padding: 40px 24px;
+}
+
+.success-icon,
+.error-icon {
+    font-size: 3em;
+    margin-bottom: 16px;
+}
+
+.success-message h3 {
+    color: #28a745;
+    margin: 0 0 12px 0;
+}
+
+.error-message h3 {
+    color: #dc3545;
+    margin: 0 0 12px 0;
+}
+
+.retry-btn {
+    background: linear-gradient(135deg, #FFB703 0%, #E07A00 100%);
+    color: #081C34;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 16px;
+    transition: all 0.2s ease;
+}
+
+.retry-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 183, 3, 0.3);
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal {
+        padding: 10px;
+    }
+    
+    .modal-content {
+        border-radius: 12px;
+        max-height: 95vh;
+    }
+    
+    .modal-header {
+        padding: 20px 20px 0 20px;
+    }
+    
+    #websiteForm {
+        padding: 0 20px 20px 20px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn-cancel,
+    .btn-submit {
+        width: 100%;
     }
 }
 `;
