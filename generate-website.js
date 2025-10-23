@@ -188,7 +188,6 @@ class WebsiteGenerator {
     <meta name="theme-color" content="#f7931e">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
@@ -266,11 +265,6 @@ class WebsiteGenerator {
     </script>
 </head>
 <body>
-    <!-- Offline Badge -->
-    <div id="offline-badge" class="offline-badge" style="display: none;">
-        🔌 Website Offline
-    </div>
-    
     <!-- Live Region for Dynamic Announcements -->
     <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
     
@@ -784,43 +778,6 @@ class WebsiteGenerator {
             return flags[country] || '🌍';
         }
     </script>
-
-    <script>
-        // Service Worker Registration for PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then((registration) => {
-                        console.log('✅ SW registered: ', registration);
-                    })
-                    .catch((registrationError) => {
-                        console.log('❌ SW registration failed: ', registrationError);
-                    });
-            });
-        }
-
-        // Offline Detection and Badge Management
-        function updateOfflineStatus() {
-            const offlineBadge = document.getElementById('offline-badge');
-            if (!navigator.onLine) {
-                offlineBadge.style.display = 'block';
-                console.log('📵 Website is now offline');
-            } else {
-                offlineBadge.style.display = 'none';
-                console.log('🌐 Website is now online');
-            }
-        }
-
-        // Check offline status on page load
-        window.addEventListener('load', updateOfflineStatus);
-
-        // Listen for online/offline events
-        window.addEventListener('online', updateOfflineStatus);
-        window.addEventListener('offline', updateOfflineStatus);
-
-        // Initial check
-        updateOfflineStatus();
-    </script>
 </body>
 </html>`;
 
@@ -872,7 +829,7 @@ class WebsiteGenerator {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
     
     <!-- Schema.org Structured Data for Country Page -->
@@ -920,9 +877,6 @@ class WebsiteGenerator {
 </head>
 <body>
     <!-- Offline Badge -->
-    <div id="offline-badge" class="offline-badge" style="display: none;">
-        🔌 Website Offline
-    </div>
     
     <div class="container">
         <header class="header" role="banner">
@@ -1400,9 +1354,6 @@ class WebsiteGenerator {
         });
         
         // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
                 .catch(error => console.log('SW registration failed', error));
         }
     </script>
@@ -1583,7 +1534,7 @@ class WebsiteGenerator {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1852,9 +1803,6 @@ class WebsiteGenerator {
         });
         
         // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
                 .catch(error => console.log('SW registration failed', error));
         }
     </script>
@@ -1883,7 +1831,7 @@ class WebsiteGenerator {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
@@ -2073,9 +2021,6 @@ class WebsiteGenerator {
         });
         
         // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
                 .catch(error => console.log('SW registration failed', error));
         }
     </script>
@@ -2914,9 +2859,6 @@ button:focus, .btn:focus, input:focus, select:focus, textarea:focus {
 }
 
 /* Offline Badge */
-.offline-badge {
-    position: fixed;
-    top: 20px;
     right: 20px;
     background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
     color: white;
@@ -2944,9 +2886,6 @@ button:focus, .btn:focus, input:focus, select:focus, textarea:focus {
     }
 }
 
-.offline-badge:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
 
 /* High Contrast Color Improvements for WCAG AA compliance */
@@ -3303,59 +3242,6 @@ input[type="text"]:focus, input[type="search"]:focus {
 `;
 
     fs.writeFileSync(path.join(this.outputDir, 'styles.css'), css);
-
-    // Generate Service Worker
-    const serviceWorker = `
-const CACHE_NAME = 'lighthouse-tracker-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/manifest.json'
-];
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Return cached version or fetch from network
-        return response || fetch(event.request);
-      }
-    )
-  );
-});
-`;
-
-    fs.writeFileSync(path.join(this.outputDir, 'sw.js'), serviceWorker);
-
-    // Generate Web App Manifest
-    const manifest = {
-      "name": "Valmitta",
-      "short_name": "Valmitta",
-      "description": "Global website performance analysis with Lighthouse",
-      "start_url": "/",
-      "display": "standalone",
-      "background_color": "#f7931e",
-      "theme_color": "#f7931e",
-      "icons": [
-        {
-          "src": "logo.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        }
-      ]
-    };
-
-    fs.writeFileSync(path.join(this.outputDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
   }
 
   async generateAllCountriesPage() {
@@ -3392,7 +3278,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -3467,9 +3353,6 @@ self.addEventListener('fetch', function(event) {
             });
             
             // Register service worker for PWA functionality
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('SW registered', registration))
                     .catch(error => console.log('SW registration failed', error));
             }
         });
@@ -3517,7 +3400,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -3592,9 +3475,6 @@ self.addEventListener('fetch', function(event) {
             });
             
             // Register service worker for PWA functionality
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('SW registered', registration))
                     .catch(error => console.log('SW registration failed', error));
             }
         });
@@ -3649,7 +3529,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -3742,9 +3622,6 @@ self.addEventListener('fetch', function(event) {
             });
             
             // Register service worker for PWA functionality
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('SW registered', registration))
                     .catch(error => console.log('SW registration failed', error));
             }
         });
@@ -4022,7 +3899,7 @@ self.addEventListener('fetch', function(event) {
     <meta name="theme-color" content="#1877f2">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
-    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -4314,9 +4191,6 @@ self.addEventListener('fetch', function(event) {
         });
         
         // Register service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(registration => console.log('SW registered', registration))
                 .catch(error => console.log('SW registration failed', error));
         }
     </script>
@@ -4358,17 +4232,11 @@ self.addEventListener('fetch', function(event) {
 
   getOfflineBadgeHTML() {
     return `    <!-- Offline Badge -->
-    <div id="offline-badge" class="offline-badge" style="display: none;">
-        🔌 Website Offline
-    </div>`;
   }
 
   getOfflineDetectionJS() {
     return `        // Offline Detection and Badge Management
         function updateOfflineStatus() {
-            const offlineBadge = document.getElementById('offline-badge');
-            if (!navigator.onLine) {
-                offlineBadge.style.display = 'block';
                 console.log('📵 Website is now offline');
             } else {
                 offlineBadge.style.display = 'none';
