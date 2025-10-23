@@ -11,6 +11,49 @@
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org Structured Data for Country Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/country-united kingdom.html#report",
+          "name": "United Kingdom Website Performance Report",
+          "description": "Lighthouse performance analysis of 16 websites from United Kingdom",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:11.867Z",
+          "about": {
+            "@type": "Place",
+            "name": "United Kingdom",
+            "identifier": "United Kingdom"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://valmitta.com/country-united kingdom.html#dataset",
+          "name": "United Kingdom Website Performance Data",
+          "description": "Performance metrics for 16 websites from United Kingdom",
+          "creator": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "United Kingdom"
+          },
+          "dateModified": "2025-10-23T08:24:11.867Z",
+          "keywords": ["United Kingdom", "web performance", "lighthouse", "website analysis"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Offline Badge -->
@@ -27,29 +70,29 @@
                 </ol>
             </nav>
             <h1>🇬🇧 United Kingdom Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of 11 websites from United Kingdom</p>
+            <p class="subtitle">Comprehensive lighthouse analysis of 16 websites from United Kingdom</p>
         </header>
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for United Kingdom</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 39 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 42 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">39%</div>
+                <div class="stat-number" aria-hidden="true">42%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 90 percent">
+            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 91 percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-number" aria-hidden="true">90%</div>
+                <div class="stat-number" aria-hidden="true">91%</div>
                 <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
-            <div class="stat-card seo" role="img" aria-label="Average SEO score: 89 percent">
+            <div class="stat-card seo" role="img" aria-label="Average SEO score: 90 percent">
                 <h3>Average SEO</h3>
-                <div class="stat-number" aria-hidden="true">89%</div>
+                <div class="stat-number" aria-hidden="true">90%</div>
                 <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 86 percent">
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 83 percent">
                 <h3>Best Practices</h3>
-                <div class="stat-number" aria-hidden="true">86%</div>
+                <div class="stat-number" aria-hidden="true">83%</div>
                 <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
         </section>
@@ -84,7 +127,7 @@
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
-                            Lighthouse performance data for 11 websites from United Kingdom, 
+                            Lighthouse performance data for 16 websites from United Kingdom, 
                             sorted by performance score in descending order. 
                             Table includes website URL, industry, and scores for performance, accessibility, SEO, best practices, and PWA compliance with trend indicators.
                         </caption>
@@ -122,15 +165,64 @@
                         <tbody id="tableBody">
                         
                             <tr class="site-row " 
+                                data-url="gov.uk" 
+                                data-industry="Government"
+                                data-performance="73"
+                                data-accessibility="100"
+                                data-seo="99"
+                                data-best-practices="100"
+                                data-pwa="33"
+                                data-test-date="2025-10-23 07:36:21">
+                                <td class="rank" aria-label="Rank 1">#1</td>
+                                <td>
+                                    <a href="domain-gov-uk.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for gov.uk">
+                                        gov.uk
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-government.html" 
+                                       class="industry-link"
+                                       aria-label="View all Government industry websites">
+                                        Government
+                                    </a>
+                                </td>
+                                <td class="score perf-good"
+                                    aria-label="Performance score: 73 percent, good performance">
+                                    73%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 99 percent, excellent performance">
+                                    99%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:36:21"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:36:21">10/23/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row trending-up" 
                                 data-url="theguardian.com" 
                                 data-industry="Media"
-                                data-performance="56"
+                                data-performance="58"
                                 data-accessibility="89"
                                 data-seo="86"
-                                data-best-practices="92"
+                                data-best-practices="100"
                                 data-pwa="78"
-                                data-test-date="2025-10-19 19:38:42">
-                                <td class="rank" aria-label="Rank 1">#1</td>
+                                data-test-date="2025-10-23 07:33:26">
+                                <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-theguardian-com.html" 
                                        class="domain-link"
@@ -146,8 +238,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 56 percent, average performance">
-                                    56%
+                                    aria-label="Performance score: 58 percent, average performance, trend: +2 points">
+                                    58%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 89 percent, good performance">
@@ -158,33 +250,33 @@
                                     86%
                                 </td>
                                 <td class="score bp-excellent"
-                                    aria-label="Best Practices score: 92 percent, excellent performance">
-                                    92%
+                                    aria-label="Best Practices score: 100 percent, excellent performance, trend: +8 points">
+                                    100%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+8</span>
                                 </td>
                                 <td class="score pwa-good"
                                     aria-label="PWA score: 78 percent, good performance">
                                     78%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:38:42"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:38:42">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:33:26"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:33:26">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
-                                data-url="independent.co.uk" 
+                                data-url="metro.co.uk" 
                                 data-industry="Media"
-                                data-performance="55"
-                                data-accessibility="98"
-                                data-seo="100"
-                                data-best-practices="83"
-                                data-pwa="78"
-                                data-test-date="2025-10-19 19:39:45">
-                                <td class="rank" aria-label="Rank 2">#2</td>
+                                data-performance="57"
+                                data-accessibility="78"
+                                data-seo="83"
+                                data-best-practices="67"
+                                data-pwa="44"
+                                data-test-date="2025-10-23 07:37:27">
+                                <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
-                                    <a href="domain-independent-co-uk.html" 
+                                    <a href="domain-metro-co-uk.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for independent.co.uk">
-                                        independent.co.uk
+                                       aria-label="View detailed report for metro.co.uk">
+                                        metro.co.uk
                                     </a>
                                 </td>
                                 <td>
@@ -195,28 +287,28 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 55 percent, average performance">
-                                    55%
+                                    aria-label="Performance score: 57 percent, average performance">
+                                    57%
                                 </td>
-                                <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 98 percent, excellent performance">
-                                    98%
-                                </td>
-                                <td class="score seo-excellent"
-                                    aria-label="SEO score: 100 percent, excellent performance">
-                                    100%
-                                </td>
-                                <td class="score bp-good"
-                                    aria-label="Best Practices score: 83 percent, good performance">
-                                    83%
-                                </td>
-                                <td class="score pwa-good"
-                                    aria-label="PWA score: 78 percent, good performance">
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 78 percent, good performance">
                                     78%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:39:45"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:39:45">10/19/2025</time>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 44 percent, needs improvement">
+                                    44%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:37:27"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:37:27">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -228,7 +320,7 @@
                                 data-best-practices="83"
                                 data-pwa="33"
                                 data-test-date="2025-10-22 16:14:31">
-                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td class="rank" aria-label="Rank 4">#4</td>
                                 <td>
                                     <a href="domain-natwest-com.html" 
                                        class="domain-link"
@@ -268,16 +360,16 @@
                                     <time datetime="2025-10-22 16:14:31">10/22/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="nhs.uk" 
                                 data-industry="Government"
-                                data-performance="46"
+                                data-performance="54"
                                 data-accessibility="100"
                                 data-seo="100"
                                 data-best-practices="100"
                                 data-pwa="33"
-                                data-test-date="2025-10-22 19:56:44">
-                                <td class="rank" aria-label="Rank 4">#4</td>
+                                data-test-date="2025-10-23 07:36:10">
+                                <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
                                     <a href="domain-nhs-uk.html" 
                                        class="domain-link"
@@ -292,9 +384,9 @@
                                         Government
                                     </a>
                                 </td>
-                                <td class="score perf-poor"
-                                    aria-label="Performance score: 46 percent, needs improvement">
-                                    46%
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 54 percent, average performance, trend: +8 points">
+                                    54%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+8</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 100 percent, excellent performance">
@@ -312,26 +404,26 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-22 19:56:44"
-                                    aria-label="Last tested on 10/22/2025">
-                                    <time datetime="2025-10-22 19:56:44">10/22/2025</time>
+                                <td class="date" data-date="2025-10-23 07:36:10"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:36:10">10/23/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row trending-up" 
-                                data-url="dailymail.co.uk" 
+                            <tr class="site-row trending-down" 
+                                data-url="independent.co.uk" 
                                 data-industry="Media"
-                                data-performance="43"
-                                data-accessibility="61"
-                                data-seo="78"
-                                data-best-practices="67"
-                                data-pwa="33"
-                                data-test-date="2025-10-19 19:38:26">
-                                <td class="rank" aria-label="Rank 5">#5</td>
+                                data-performance="50"
+                                data-accessibility="96"
+                                data-seo="100"
+                                data-best-practices="83"
+                                data-pwa="89"
+                                data-test-date="2025-10-23 07:34:43">
+                                <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
-                                    <a href="domain-dailymail-co-uk.html" 
+                                    <a href="domain-independent-co-uk.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for dailymail.co.uk">
-                                        dailymail.co.uk
+                                       aria-label="View detailed report for independent.co.uk">
+                                        independent.co.uk
                                     </a>
                                 </td>
                                 <td>
@@ -341,41 +433,41 @@
                                         Media
                                     </a>
                                 </td>
-                                <td class="score perf-poor"
-                                    aria-label="Performance score: 43 percent, needs improvement, trend: +2 points">
-                                    43%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 50 percent, average performance, trend: -5 points">
+                                    50%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-5</span>
                                 </td>
-                                <td class="score acc-average"
-                                    aria-label="Accessibility score: 61 percent, average performance">
-                                    61%
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 96 percent, excellent performance, trend: -2 points">
+                                    96%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-2</span>
                                 </td>
-                                <td class="score seo-good"
-                                    aria-label="SEO score: 78 percent, good performance">
-                                    78%
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
                                 </td>
-                                <td class="score bp-average"
-                                    aria-label="Best Practices score: 67 percent, average performance">
-                                    67%
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
                                 </td>
-                                <td class="score pwa-poor"
-                                    aria-label="PWA score: 33 percent, needs improvement">
-                                    33%
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 89 percent, good performance, trend: +11 points">
+                                    89%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+11</span>
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:38:26"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:38:26">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:34:43"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:34:43">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row trending-up" 
                                 data-url="telegraph.co.uk" 
                                 data-industry="Media"
-                                data-performance="40"
+                                data-performance="44"
                                 data-accessibility="98"
                                 data-seo="85"
                                 data-best-practices="75"
                                 data-pwa="33"
-                                data-test-date="2025-10-19 19:39:09">
-                                <td class="rank" aria-label="Rank 6">#6</td>
+                                data-test-date="2025-10-23 07:33:55">
+                                <td class="rank" aria-label="Rank 7">#7</td>
                                 <td>
                                     <a href="domain-telegraph-co-uk.html" 
                                        class="domain-link"
@@ -391,8 +483,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 40 percent, needs improvement, trend: +13 points">
-                                    40%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+13</span>
+                                    aria-label="Performance score: 44 percent, needs improvement, trend: +4 points">
+                                    44%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+4</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -410,21 +502,217 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:39:09"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:39:09">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:33:55"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:33:55">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
+                                data-url="channel4.com" 
+                                data-industry="Media"
+                                data-performance="43"
+                                data-accessibility="88"
+                                data-seo="93"
+                                data-best-practices="83"
+                                data-pwa="78"
+                                data-test-date="2025-10-23 07:36:41">
+                                <td class="rank" aria-label="Rank 8">#8</td>
+                                <td>
+                                    <a href="domain-channel4-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for channel4.com">
+                                        channel4.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 43 percent, needs improvement">
+                                    43%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 88 percent, good performance">
+                                    88%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 93 percent, excellent performance">
+                                    93%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:36:41"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:36:41">10/23/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row trending-up" 
+                                data-url="mirror.co.uk" 
+                                data-industry="Media"
+                                data-performance="41"
+                                data-accessibility="77"
+                                data-seo="81"
+                                data-best-practices="75"
+                                data-pwa="67"
+                                data-test-date="2025-10-23 07:34:25">
+                                <td class="rank" aria-label="Rank 9">#9</td>
+                                <td>
+                                    <a href="domain-mirror-co-uk.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for mirror.co.uk">
+                                        mirror.co.uk
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 41 percent, needs improvement, trend: +10 points">
+                                    41%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+10</span>
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 77 percent, good performance, trend: +6 points">
+                                    77%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+6</span>
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 81 percent, good performance">
+                                    81%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance, trend: -8 points">
+                                    75%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-8</span>
+                                </td>
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:34:25"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:34:25">10/23/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row trending-up" 
+                                data-url="argos.co.uk" 
+                                data-industry="E-commerce"
+                                data-performance="40"
+                                data-accessibility="99"
+                                data-seo="98"
+                                data-best-practices="83"
+                                data-pwa="33"
+                                data-test-date="2025-10-23 07:35:28">
+                                <td class="rank" aria-label="Rank 10">#10</td>
+                                <td>
+                                    <a href="domain-argos-co-uk.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for argos.co.uk">
+                                        argos.co.uk
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-e-commerce.html" 
+                                       class="industry-link"
+                                       aria-label="View all E-commerce industry websites">
+                                        E-commerce
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 40 percent, needs improvement, trend: +12 points">
+                                    40%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+12</span>
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 99 percent, excellent performance">
+                                    99%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 98 percent, excellent performance">
+                                    98%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance, trend: -9 points">
+                                    83%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-9</span>
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:35:28"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:35:28">10/23/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row " 
+                                data-url="thesun.co.uk" 
+                                data-industry="Media"
+                                data-performance="40"
+                                data-accessibility="94"
+                                data-seo="100"
+                                data-best-practices="67"
+                                data-pwa="44"
+                                data-test-date="2025-10-23 07:37:59">
+                                <td class="rank" aria-label="Rank 11">#11</td>
+                                <td>
+                                    <a href="domain-thesun-co-uk.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for thesun.co.uk">
+                                        thesun.co.uk
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="industry-media.html" 
+                                       class="industry-link"
+                                       aria-label="View all Media industry websites">
+                                        Media
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 40 percent, needs improvement">
+                                    40%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 94 percent, excellent performance">
+                                    94%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 44 percent, needs improvement">
+                                    44%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:37:59"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:37:59">10/23/2025</time>
+                                </td>
+                            </tr>
+                            <tr class="site-row trending-up" 
                                 data-url="tfl.gov.uk" 
                                 data-industry="Transportation"
-                                data-performance="36"
+                                data-performance="39"
                                 data-accessibility="98"
                                 data-seo="79"
                                 data-best-practices="92"
                                 data-pwa="33"
-                                data-test-date="2025-10-19 19:40:51">
-                                <td class="rank" aria-label="Rank 7">#7</td>
+                                data-test-date="2025-10-23 07:35:54">
+                                <td class="rank" aria-label="Rank 12">#12</td>
                                 <td>
                                     <a href="domain-tfl-gov-uk.html" 
                                        class="domain-link"
@@ -440,8 +728,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 36 percent, needs improvement">
-                                    36%
+                                    aria-label="Performance score: 39 percent, needs improvement, trend: +3 points">
+                                    39%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -459,26 +747,26 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:40:51"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:40:51">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:35:54"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:35:54">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row trending-down" 
-                                data-url="mirror.co.uk" 
+                                data-url="dailymail.co.uk" 
                                 data-industry="Media"
-                                data-performance="31"
+                                data-performance="36"
                                 data-accessibility="71"
-                                data-seo="81"
-                                data-best-practices="83"
-                                data-pwa="67"
-                                data-test-date="2025-10-22 14:19:30">
-                                <td class="rank" aria-label="Rank 8">#8</td>
+                                data-seo="78"
+                                data-best-practices="67"
+                                data-pwa="33"
+                                data-test-date="2025-10-23 07:33:09">
+                                <td class="rank" aria-label="Rank 13">#13</td>
                                 <td>
-                                    <a href="domain-mirror-co-uk.html" 
+                                    <a href="domain-dailymail-co-uk.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for mirror.co.uk">
-                                        mirror.co.uk
+                                       aria-label="View detailed report for dailymail.co.uk">
+                                        dailymail.co.uk
                                     </a>
                                 </td>
                                 <td>
@@ -489,40 +777,40 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 31 percent, needs improvement, trend: -8 points">
-                                    31%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-8</span>
+                                    aria-label="Performance score: 36 percent, needs improvement, trend: -7 points">
+                                    36%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-7</span>
                                 </td>
                                 <td class="score acc-good"
-                                    aria-label="Accessibility score: 71 percent, good performance, trend: -6 points">
-                                    71%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-6</span>
+                                    aria-label="Accessibility score: 71 percent, good performance, trend: +10 points">
+                                    71%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+10</span>
                                 </td>
                                 <td class="score seo-good"
-                                    aria-label="SEO score: 81 percent, good performance">
-                                    81%
+                                    aria-label="SEO score: 78 percent, good performance">
+                                    78%
                                 </td>
-                                <td class="score bp-good"
-                                    aria-label="Best Practices score: 83 percent, good performance">
-                                    83%
-                                </td>
-                                <td class="score pwa-average"
-                                    aria-label="PWA score: 67 percent, average performance">
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
                                     67%
                                 </td>
-                                <td class="date" data-date="2025-10-22 14:19:30"
-                                    aria-label="Last tested on 10/22/2025">
-                                    <time datetime="2025-10-22 14:19:30">10/22/2025</time>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-23 07:33:09"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:33:09">10/23/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-down" 
                                 data-url="sky.com" 
                                 data-industry="Telecom"
-                                data-performance="29"
+                                data-performance="26"
                                 data-accessibility="100"
                                 data-seo="93"
                                 data-best-practices="92"
                                 data-pwa="33"
-                                data-test-date="2025-10-19 19:39:59">
-                                <td class="rank" aria-label="Rank 9">#9</td>
+                                data-test-date="2025-10-23 07:35:08">
+                                <td class="rank" aria-label="Rank 14">#14</td>
                                 <td>
                                     <a href="domain-sky-com.html" 
                                        class="domain-link"
@@ -538,8 +826,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 29 percent, needs improvement">
-                                    29%
+                                    aria-label="Performance score: 26 percent, needs improvement, trend: -3 points">
+                                    26%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-3</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 100 percent, excellent performance">
@@ -557,70 +845,70 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:39:59"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:39:59">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:35:08"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:35:08">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
-                                data-url="argos.co.uk" 
-                                data-industry="E-commerce"
-                                data-performance="28"
-                                data-accessibility="99"
-                                data-seo="98"
-                                data-best-practices="92"
+                                data-url="itv.com" 
+                                data-industry="Media"
+                                data-performance="13"
+                                data-accessibility="94"
+                                data-seo="84"
+                                data-best-practices="83"
                                 data-pwa="33"
-                                data-test-date="2025-10-19 19:40:22">
-                                <td class="rank" aria-label="Rank 10">#10</td>
+                                data-test-date="2025-10-23 07:36:57">
+                                <td class="rank" aria-label="Rank 15">#15</td>
                                 <td>
-                                    <a href="domain-argos-co-uk.html" 
+                                    <a href="domain-itv-com.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for argos.co.uk">
-                                        argos.co.uk
+                                       aria-label="View detailed report for itv.com">
+                                        itv.com
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="industry-e-commerce.html" 
+                                    <a href="industry-media.html" 
                                        class="industry-link"
-                                       aria-label="View all E-commerce industry websites">
-                                        E-commerce
+                                       aria-label="View all Media industry websites">
+                                        Media
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 28 percent, needs improvement">
-                                    28%
+                                    aria-label="Performance score: 13 percent, needs improvement">
+                                    13%
                                 </td>
                                 <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 99 percent, excellent performance">
-                                    99%
+                                    aria-label="Accessibility score: 94 percent, excellent performance">
+                                    94%
                                 </td>
-                                <td class="score seo-excellent"
-                                    aria-label="SEO score: 98 percent, excellent performance">
-                                    98%
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 84 percent, good performance">
+                                    84%
                                 </td>
-                                <td class="score bp-excellent"
-                                    aria-label="Best Practices score: 92 percent, excellent performance">
-                                    92%
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
                                 </td>
                                 <td class="score pwa-poor"
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:40:22"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:40:22">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:36:57"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:36:57">10/23/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row trending-down" 
                                 data-url="bbc.co.uk" 
                                 data-industry="Media"
-                                data-performance="12"
-                                data-accessibility="91"
+                                data-performance="4"
+                                data-accessibility="89"
                                 data-seo="100"
                                 data-best-practices="83"
                                 data-pwa="44"
-                                data-test-date="2025-10-19 19:38:07">
-                                <td class="rank" aria-label="Rank 11">#11</td>
+                                data-test-date="2025-10-23 07:32:45">
+                                <td class="rank" aria-label="Rank 16">#16</td>
                                 <td>
                                     <a href="domain-bbc-co-uk.html" 
                                        class="domain-link"
@@ -636,12 +924,12 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 12 percent, needs improvement, trend: -1 points">
-                                    12%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-1</span>
+                                    aria-label="Performance score: 4 percent, needs improvement, trend: -8 points">
+                                    4%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-8</span>
                                 </td>
-                                <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 91 percent, excellent performance, trend: +3 points">
-                                    91%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 89 percent, good performance, trend: -2 points">
+                                    89%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-2</span>
                                 </td>
                                 <td class="score seo-excellent"
                                     aria-label="SEO score: 100 percent, excellent performance">
@@ -655,9 +943,9 @@
                                     aria-label="PWA score: 44 percent, needs improvement">
                                     44%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:38:07"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:38:07">10/19/2025</time>
+                                <td class="date" data-date="2025-10-23 07:32:45"
+                                    aria-label="Last tested on 10/23/2025">
+                                    <time datetime="2025-10-23 07:32:45">10/23/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -668,7 +956,7 @@
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📊 United Kingdom Performance Data | 11 websites tested</p>
+                <p>📊 United Kingdom Performance Data | 16 websites tested</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
@@ -679,7 +967,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"theguardian.com","country":"United Kingdom","industry":"Media","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"independent.co.uk","country":"United Kingdom","industry":"Media","performance":55,"accessibility":98,"best_practices":83,"seo":100,"pwa":78,"test_date":"2025-10-19 19:39:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"natwest.com","country":"United Kingdom","industry":"Finance","performance":54,"accessibility":89,"best_practices":83,"seo":75,"pwa":33,"test_date":"2025-10-22 16:14:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":46,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-22 19:56:44","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"dailymail.co.uk","country":"United Kingdom","industry":"Media","performance":43,"accessibility":61,"best_practices":67,"seo":78,"pwa":33,"test_date":"2025-10-19 19:38:26","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"telegraph.co.uk","country":"United Kingdom","industry":"Media","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":13,"text":"+13","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tfl.gov.uk","country":"United Kingdom","industry":"Transportation","performance":36,"accessibility":98,"best_practices":92,"seo":79,"pwa":33,"test_date":"2025-10-19 19:40:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mirror.co.uk","country":"United Kingdom","industry":"Media","performance":31,"accessibility":71,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-22 14:19:30","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sky.com","country":"United Kingdom","industry":"Telecom","performance":29,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 19:39:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"argos.co.uk","country":"United Kingdom","industry":"E-commerce","performance":28,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-19 19:40:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bbc.co.uk","country":"United Kingdom","industry":"Media","performance":12,"accessibility":91,"best_practices":83,"seo":100,"pwa":44,"test_date":"2025-10-19 19:38:07","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const countryData = [{"url":"gov.uk","country":"United Kingdom","industry":"Government","performance":73,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-23 07:36:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"theguardian.com","country":"United Kingdom","industry":"Media","performance":58,"accessibility":89,"best_practices":100,"seo":86,"pwa":78,"test_date":"2025-10-23 07:33:26","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"metro.co.uk","country":"United Kingdom","industry":"Media","performance":57,"accessibility":78,"best_practices":67,"seo":83,"pwa":44,"test_date":"2025-10-23 07:37:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"natwest.com","country":"United Kingdom","industry":"Finance","performance":54,"accessibility":89,"best_practices":83,"seo":75,"pwa":33,"test_date":"2025-10-22 16:14:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":54,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 07:36:10","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"independent.co.uk","country":"United Kingdom","industry":"Media","performance":50,"accessibility":96,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-23 07:34:43","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"up","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":11,"text":"+11","class":"delta-positive"}},{"url":"telegraph.co.uk","country":"United Kingdom","industry":"Media","performance":44,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-23 07:33:55","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"channel4.com","country":"United Kingdom","industry":"Media","performance":43,"accessibility":88,"best_practices":83,"seo":93,"pwa":78,"test_date":"2025-10-23 07:36:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mirror.co.uk","country":"United Kingdom","industry":"Media","performance":41,"accessibility":77,"best_practices":75,"seo":81,"pwa":67,"test_date":"2025-10-23 07:34:25","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":10,"text":"+10","class":"delta-positive"},"accessibility_delta":{"delta":6,"text":"+6","class":"delta-positive"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"argos.co.uk","country":"United Kingdom","industry":"E-commerce","performance":40,"accessibility":99,"best_practices":83,"seo":98,"pwa":33,"test_date":"2025-10-23 07:35:28","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":12,"text":"+12","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"thesun.co.uk","country":"United Kingdom","industry":"Media","performance":40,"accessibility":94,"best_practices":67,"seo":100,"pwa":44,"test_date":"2025-10-23 07:37:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tfl.gov.uk","country":"United Kingdom","industry":"Transportation","performance":39,"accessibility":98,"best_practices":92,"seo":79,"pwa":33,"test_date":"2025-10-23 07:35:54","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"dailymail.co.uk","country":"United Kingdom","industry":"Media","performance":36,"accessibility":71,"best_practices":67,"seo":78,"pwa":33,"test_date":"2025-10-23 07:33:09","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"accessibility_delta":{"delta":10,"text":"+10","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sky.com","country":"United Kingdom","industry":"Telecom","performance":26,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-23 07:35:08","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"itv.com","country":"United Kingdom","industry":"Media","performance":13,"accessibility":94,"best_practices":83,"seo":84,"pwa":33,"test_date":"2025-10-23 07:36:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bbc.co.uk","country":"United Kingdom","industry":"Media","performance":4,"accessibility":89,"best_practices":83,"seo":100,"pwa":44,"test_date":"2025-10-23 07:32:45","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

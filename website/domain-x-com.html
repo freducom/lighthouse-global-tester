@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-x.com.html#report",
+          "name": "x.com Performance Report",
+          "description": "Lighthouse performance history and insights for x.com",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.096Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "x.com",
+            "url": "https://x.com"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-x.com.html#metrics",
+          "name": "x.com Performance Metrics",
+          "description": "Latest Lighthouse scores for x.com",
+          "performanceScore": 38,
+          "accessibilityScore": 87,
+          "bestPracticesScore": 92,
+          "seoScore": 100,
+          "dateRecorded": "2025-10-23 06:52:14"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,14 +62,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇺🇸 United States</span>
-                <span class="last-scan">Last scanned: 10/22/2025, 8:28:44 AM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 6:52:14 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">42%</div>
+                <div class="stat-number poor">38%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -67,8 +104,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 42%"></div>
-                        <span class="score-text">42%</span>
+                        <div class="score-fill performance" style="width: 38%"></div>
+                        <span class="score-text">38%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="x.com">x.com</a> Performance History | Last tested: 10/22/2025</p>
+            <p>📊 <a href="https://x.com" target="_blank" rel="noopener">x.com</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":41,"url":"x.com","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 18:07:35","country":"United States","industry":"Social Media"},{"id":73,"url":"x.com","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 19:35:54","country":"United States","industry":"Social Media"},{"id":330,"url":"x.com","performance":51,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-22 08:23:12","country":"United States","industry":"Social Media"},{"id":343,"url":"x.com","performance":42,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-22 08:28:44","country":"United States","industry":"Social Media"}];
+        const historyData = [{"id":41,"url":"x.com","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 18:07:35","country":"United States","industry":"Social Media"},{"id":73,"url":"x.com","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-19 19:35:54","country":"United States","industry":"Social Media"},{"id":330,"url":"x.com","performance":51,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-22 08:23:12","country":"United States","industry":"Social Media"},{"id":343,"url":"x.com","performance":42,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-22 08:28:44","country":"United States","industry":"Social Media"},{"id":443,"url":"x.com","performance":38,"accessibility":87,"best_practices":92,"seo":100,"pwa":89,"test_date":"2025-10-23 06:52:14","country":"United States","industry":"Social Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

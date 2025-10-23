@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-reddit.com.html#report",
+          "name": "reddit.com Performance Report",
+          "description": "Lighthouse performance history and insights for reddit.com",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.090Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "reddit.com",
+            "url": "https://reddit.com"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-reddit.com.html#metrics",
+          "name": "reddit.com Performance Metrics",
+          "description": "Latest Lighthouse scores for reddit.com",
+          "performanceScore": 55,
+          "accessibilityScore": 74,
+          "bestPracticesScore": 92,
+          "seoScore": 93,
+          "dateRecorded": "2025-10-23 07:00:37"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,20 +62,20 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇺🇸 United States</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 7:36:54 PM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 7:00:37 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">46%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number average">55%</div>
+                <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number excellent">91%</div>
-                <div class="stat-description">excellent performance</div>
+                <div class="stat-number good">74%</div>
+                <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
@@ -67,15 +104,15 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 46%"></div>
-                        <span class="score-text">46%</span>
+                        <div class="score-fill performance" style="width: 55%"></div>
+                        <span class="score-text">55%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 91%"></div>
-                        <span class="score-text">91%</span>
+                        <div class="score-fill accessibility" style="width: 74%"></div>
+                        <span class="score-text">74%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="reddit.com">reddit.com</a> Performance History | Last tested: 10/19/2025</p>
+            <p>📊 <a href="https://reddit.com" target="_blank" rel="noopener">reddit.com</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":45,"url":"reddit.com","performance":56,"accessibility":74,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 18:08:36","country":"United States","industry":"Social Media"},{"id":77,"url":"reddit.com","performance":46,"accessibility":91,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 19:36:54","country":"United States","industry":"Social Media"}];
+        const historyData = [{"id":45,"url":"reddit.com","performance":56,"accessibility":74,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 18:08:36","country":"United States","industry":"Social Media"},{"id":77,"url":"reddit.com","performance":46,"accessibility":91,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-19 19:36:54","country":"United States","industry":"Social Media"},{"id":461,"url":"reddit.com","performance":55,"accessibility":74,"best_practices":92,"seo":93,"pwa":89,"test_date":"2025-10-23 07:00:37","country":"United States","industry":"Social Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

@@ -191,6 +191,79 @@ class WebsiteGenerator {
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://valmitta.com/#organization",
+          "name": "Valmitta",
+          "url": "https://valmitta.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://valmitta.com/logo.png",
+            "width": 400,
+            "height": 120
+          },
+          "description": "Global website performance analysis with Lighthouse metrics across ${allScores.length} websites from ${this.domainsData.length} countries",
+          "foundingDate": "2025",
+          "sameAs": [
+            "https://github.com/freducom/lighthouse-global-tester"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://valmitta.com/#website", 
+          "url": "https://valmitta.com",
+          "name": "Valmitta",
+          "description": "Comprehensive web performance analytics dashboard",
+          "publisher": {
+            "@id": "https://valmitta.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://valmitta.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://valmitta.com/#software",
+          "name": "Valmitta",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Any",
+          "description": "Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics",
+          "url": "https://valmitta.com",
+          "author": {
+            "@id": "https://valmitta.com/#organization"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://valmitta.com/#dataset",
+          "name": "Global Website Performance Dataset", 
+          "description": "Lighthouse performance metrics for ${allScores.length} websites across ${this.domainsData.length} countries",
+          "creator": {
+            "@id": "https://valmitta.com/#organization"
+          },
+          "dateModified": "${new Date().toISOString()}",
+          "keywords": ["web performance", "lighthouse", "accessibility", "SEO", "performance analytics"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Offline Badge -->
@@ -801,6 +874,49 @@ class WebsiteGenerator {
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231877f2'/><text x='50' y='75' font-size='70' text-anchor='middle' fill='%23FFD700'>🏆</text></svg>">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org Structured Data for Country Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/country-${this.normalizeCountry(countryData.country).toLowerCase().replace(/\\s+/g, '-')}.html#report",
+          "name": "${countryData.country} Website Performance Report",
+          "description": "Lighthouse performance analysis of ${countryScores.length} websites from ${countryData.country}",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "${new Date().toISOString()}",
+          "about": {
+            "@type": "Place",
+            "name": "${countryData.country}",
+            "identifier": "${countryData.country}"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://valmitta.com/country-${this.normalizeCountry(countryData.country).toLowerCase().replace(/\\s+/g, '-')}.html#dataset",
+          "name": "${countryData.country} Website Performance Data",
+          "description": "Performance metrics for ${countryScores.length} websites from ${countryData.country}",
+          "creator": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "${countryData.country}"
+          },
+          "dateModified": "${new Date().toISOString()}",
+          "keywords": ["${countryData.country}", "web performance", "lighthouse", "website analysis"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Offline Badge -->
@@ -1770,6 +1886,43 @@ class WebsiteGenerator {
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-${site.url.replace(/\\./g, '-')}.html#report",
+          "name": "${site.url} Performance Report",
+          "description": "Lighthouse performance history and insights for ${site.url}",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "${new Date().toISOString()}",
+          "about": {
+            "@type": "WebSite",
+            "name": "${site.url}",
+            "url": "https://${site.url}"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-${site.url.replace(/\\./g, '-')}.html#metrics",
+          "name": "${site.url} Performance Metrics",
+          "description": "Latest Lighthouse scores for ${site.url}",
+          "performanceScore": ${site.performance},
+          "accessibilityScore": ${site.accessibility},
+          "bestPracticesScore": ${site.best_practices},
+          "seoScore": ${site.seo},
+          "dateRecorded": "${site.test_date}"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">

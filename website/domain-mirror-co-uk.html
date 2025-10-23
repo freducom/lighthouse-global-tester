@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-mirror.co.uk.html#report",
+          "name": "mirror.co.uk Performance Report",
+          "description": "Lighthouse performance history and insights for mirror.co.uk",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.071Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "mirror.co.uk",
+            "url": "https://mirror.co.uk"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-mirror.co.uk.html#metrics",
+          "name": "mirror.co.uk Performance Metrics",
+          "description": "Latest Lighthouse scores for mirror.co.uk",
+          "performanceScore": 41,
+          "accessibilityScore": 77,
+          "bestPracticesScore": 75,
+          "seoScore": 81,
+          "dateRecorded": "2025-10-23 07:34:25"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,19 +62,19 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇬🇧 United Kingdom</span>
-                <span class="last-scan">Last scanned: 10/22/2025, 2:19:30 PM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 7:34:25 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">31%</div>
+                <div class="stat-number poor">41%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">71%</div>
+                <div class="stat-number good">77%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
@@ -47,7 +84,7 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number good">83%</div>
+                <div class="stat-number good">75%</div>
                 <div class="stat-description">good performance</div>
             </div>
         </div>
@@ -67,22 +104,22 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 31%"></div>
-                        <span class="score-text">31%</span>
+                        <div class="score-fill performance" style="width: 41%"></div>
+                        <span class="score-text">41%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 71%"></div>
-                        <span class="score-text">71%</span>
+                        <div class="score-fill accessibility" style="width: 77%"></div>
+                        <span class="score-text">77%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 83%"></div>
-                        <span class="score-text">83%</span>
+                        <div class="score-fill best-practices" style="width: 75%"></div>
+                        <span class="score-text">75%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="mirror.co.uk">mirror.co.uk</a> Performance History | Last tested: 10/22/2025</p>
+            <p>📊 <a href="https://mirror.co.uk" target="_blank" rel="noopener">mirror.co.uk</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":51,"url":"mirror.co.uk","performance":44,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 18:10:17","country":"United Kingdom","industry":"Media"},{"id":86,"url":"mirror.co.uk","performance":39,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 19:39:27","country":"United Kingdom","industry":"Media"},{"id":366,"url":"mirror.co.uk","performance":31,"accessibility":71,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-22 14:19:30","country":"United Kingdom","industry":"Media"}];
+        const historyData = [{"id":51,"url":"mirror.co.uk","performance":44,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 18:10:17","country":"United Kingdom","industry":"Media"},{"id":86,"url":"mirror.co.uk","performance":39,"accessibility":77,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-19 19:39:27","country":"United Kingdom","industry":"Media"},{"id":366,"url":"mirror.co.uk","performance":31,"accessibility":71,"best_practices":83,"seo":81,"pwa":67,"test_date":"2025-10-22 14:19:30","country":"United Kingdom","industry":"Media"},{"id":493,"url":"mirror.co.uk","performance":41,"accessibility":77,"best_practices":75,"seo":81,"pwa":67,"test_date":"2025-10-23 07:34:25","country":"United Kingdom","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

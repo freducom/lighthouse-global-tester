@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-telegraph.co.uk.html#report",
+          "name": "telegraph.co.uk Performance Report",
+          "description": "Lighthouse performance history and insights for telegraph.co.uk",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.072Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "telegraph.co.uk",
+            "url": "https://telegraph.co.uk"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-telegraph.co.uk.html#metrics",
+          "name": "telegraph.co.uk Performance Metrics",
+          "description": "Latest Lighthouse scores for telegraph.co.uk",
+          "performanceScore": 44,
+          "accessibilityScore": 98,
+          "bestPracticesScore": 75,
+          "seoScore": 85,
+          "dateRecorded": "2025-10-23 07:33:55"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,14 +62,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇬🇧 United Kingdom</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 7:39:09 PM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 7:33:55 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">40%</div>
+                <div class="stat-number poor">44%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -67,8 +104,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 40%"></div>
-                        <span class="score-text">40%</span>
+                        <div class="score-fill performance" style="width: 44%"></div>
+                        <span class="score-text">44%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="telegraph.co.uk">telegraph.co.uk</a> Performance History | Last tested: 10/19/2025</p>
+            <p>📊 <a href="https://telegraph.co.uk" target="_blank" rel="noopener">telegraph.co.uk</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":50,"url":"telegraph.co.uk","performance":27,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 18:10:00","country":"United Kingdom","industry":"Media"},{"id":85,"url":"telegraph.co.uk","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09","country":"United Kingdom","industry":"Media"}];
+        const historyData = [{"id":50,"url":"telegraph.co.uk","performance":27,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 18:10:00","country":"United Kingdom","industry":"Media"},{"id":85,"url":"telegraph.co.uk","performance":40,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:39:09","country":"United Kingdom","industry":"Media"},{"id":492,"url":"telegraph.co.uk","performance":44,"accessibility":98,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-23 07:33:55","country":"United Kingdom","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

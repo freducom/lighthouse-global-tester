@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-tesla.com.html#report",
+          "name": "tesla.com Performance Report",
+          "description": "Lighthouse performance history and insights for tesla.com",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.093Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "tesla.com",
+            "url": "https://tesla.com"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-tesla.com.html#metrics",
+          "name": "tesla.com Performance Metrics",
+          "description": "Latest Lighthouse scores for tesla.com",
+          "performanceScore": 29,
+          "accessibilityScore": 70,
+          "bestPracticesScore": 100,
+          "seoScore": 74,
+          "dateRecorded": "2025-10-23 06:59:36"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,7 +62,7 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇺🇸 United States</span>
-                <span class="last-scan">Last scanned: 10/22/2025, 8:27:43 AM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 6:59:36 AM</span>
             </div>
         </header>
 
@@ -37,8 +74,8 @@
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number average">67%</div>
-                <div class="stat-description">average performance</div>
+                <div class="stat-number good">70%</div>
+                <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
@@ -47,8 +84,8 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number poor">0%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number excellent">100%</div>
+                <div class="stat-description">excellent performance</div>
             </div>
         </div>
 
@@ -74,15 +111,15 @@
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 67%"></div>
-                        <span class="score-text">67%</span>
+                        <div class="score-fill accessibility" style="width: 70%"></div>
+                        <span class="score-text">70%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 0%"></div>
-                        <span class="score-text">0%</span>
+                        <div class="score-fill best-practices" style="width: 100%"></div>
+                        <span class="score-text">100%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="tesla.com">tesla.com</a> Performance History | Last tested: 10/22/2025</p>
+            <p>📊 <a href="https://tesla.com" target="_blank" rel="noopener">tesla.com</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":327,"url":"tesla.com","performance":28,"accessibility":67,"best_practices":0,"seo":74,"pwa":67,"test_date":"2025-10-22 08:22:29","country":"United States","industry":"Automotive"},{"id":340,"url":"tesla.com","performance":29,"accessibility":67,"best_practices":0,"seo":74,"pwa":67,"test_date":"2025-10-22 08:27:43","country":"United States","industry":"Automotive"}];
+        const historyData = [{"id":327,"url":"tesla.com","performance":28,"accessibility":67,"best_practices":0,"seo":74,"pwa":67,"test_date":"2025-10-22 08:22:29","country":"United States","industry":"Automotive"},{"id":340,"url":"tesla.com","performance":29,"accessibility":67,"best_practices":0,"seo":74,"pwa":67,"test_date":"2025-10-22 08:27:43","country":"United States","industry":"Automotive"},{"id":460,"url":"tesla.com","performance":29,"accessibility":70,"best_practices":100,"seo":74,"pwa":67,"test_date":"2025-10-23 06:59:36","country":"United States","industry":"Automotive"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

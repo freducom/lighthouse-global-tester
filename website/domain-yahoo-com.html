@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-yahoo.com.html#report",
+          "name": "yahoo.com Performance Report",
+          "description": "Lighthouse performance history and insights for yahoo.com",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.097Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "yahoo.com",
+            "url": "https://yahoo.com"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-yahoo.com.html#metrics",
+          "name": "yahoo.com Performance Metrics",
+          "description": "Latest Lighthouse scores for yahoo.com",
+          "performanceScore": 69,
+          "accessibilityScore": 87,
+          "bestPracticesScore": 100,
+          "seoScore": 92,
+          "dateRecorded": "2025-10-23 06:53:04"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,7 +62,7 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇺🇸 United States</span>
-                <span class="last-scan">Last scanned: 10/22/2025, 8:29:28 AM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 6:53:04 AM</span>
             </div>
         </header>
 
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="yahoo.com">yahoo.com</a> Performance History | Last tested: 10/22/2025</p>
+            <p>📊 <a href="https://yahoo.com" target="_blank" rel="noopener">yahoo.com</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":44,"url":"yahoo.com","performance":71,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 18:08:15","country":"United States","industry":"Portal"},{"id":76,"url":"yahoo.com","performance":66,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 19:36:35","country":"United States","industry":"Portal"},{"id":333,"url":"yahoo.com","performance":68,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-22 08:23:56","country":"United States","industry":"Portal"},{"id":346,"url":"yahoo.com","performance":69,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-22 08:29:28","country":"United States","industry":"Portal"}];
+        const historyData = [{"id":44,"url":"yahoo.com","performance":71,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 18:08:15","country":"United States","industry":"Portal"},{"id":76,"url":"yahoo.com","performance":66,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 19:36:35","country":"United States","industry":"Portal"},{"id":333,"url":"yahoo.com","performance":68,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-22 08:23:56","country":"United States","industry":"Portal"},{"id":346,"url":"yahoo.com","performance":69,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-22 08:29:28","country":"United States","industry":"Portal"},{"id":446,"url":"yahoo.com","performance":69,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 06:53:04","country":"United States","industry":"Portal"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

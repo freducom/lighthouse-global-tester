@@ -12,6 +12,43 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Schema.org Structured Data for Domain Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Report",
+          "@id": "https://valmitta.com/domain-facebook.com.html#report",
+          "name": "facebook.com Performance Report",
+          "description": "Lighthouse performance history and insights for facebook.com",
+          "author": {
+            "@type": "Organization",
+            "name": "Valmitta",
+            "url": "https://valmitta.com"
+          },
+          "dateCreated": "2025-10-23T08:24:12.080Z",
+          "about": {
+            "@type": "WebSite",
+            "name": "facebook.com",
+            "url": "https://facebook.com"
+          }
+        },
+        {
+          "@type": "PerformanceMetrics",
+          "@id": "https://valmitta.com/domain-facebook.com.html#metrics",
+          "name": "facebook.com Performance Metrics",
+          "description": "Latest Lighthouse scores for facebook.com",
+          "performanceScore": 58,
+          "accessibilityScore": 71,
+          "bestPracticesScore": 75,
+          "seoScore": 93,
+          "dateRecorded": "2025-10-23 06:51:59"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,14 +62,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇺🇸 United States</span>
-                <span class="last-scan">Last scanned: 10/22/2025, 8:27:19 AM</span>
+                <span class="last-scan">Last scanned: 10/23/2025, 6:51:59 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">63%</div>
+                <div class="stat-number average">58%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -67,8 +104,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 63%"></div>
-                        <span class="score-text">63%</span>
+                        <div class="score-fill performance" style="width: 58%"></div>
+                        <span class="score-text">58%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -103,14 +140,14 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="facebook.com">facebook.com</a> Performance History | Last tested: 10/22/2025</p>
+            <p>📊 <a href="https://facebook.com" target="_blank" rel="noopener">facebook.com</a> Performance History | Last tested: 10/23/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
     
     <script>
-        const historyData = [{"id":39,"url":"facebook.com","performance":59,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 18:07:05","country":"United States","industry":"Social Media"},{"id":71,"url":"facebook.com","performance":58,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 19:35:28","country":"United States","industry":"Social Media"},{"id":227,"url":"facebook.com","performance":52,"accessibility":78,"best_practices":58,"seo":93,"pwa":78,"test_date":"2025-10-20 18:15:31","country":"United States","industry":"Social Media"},{"id":326,"url":"facebook.com","performance":61,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:22:00","country":"United States","industry":"Social Media"},{"id":336,"url":"facebook.com","performance":60,"accessibility":71,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-10-22 08:25:57","country":"United States","industry":"Social Media"},{"id":339,"url":"facebook.com","performance":63,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:27:19","country":"United States","industry":"Social Media"}];
+        const historyData = [{"id":39,"url":"facebook.com","performance":59,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 18:07:05","country":"United States","industry":"Social Media"},{"id":71,"url":"facebook.com","performance":58,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 19:35:28","country":"United States","industry":"Social Media"},{"id":227,"url":"facebook.com","performance":52,"accessibility":78,"best_practices":58,"seo":93,"pwa":78,"test_date":"2025-10-20 18:15:31","country":"United States","industry":"Social Media"},{"id":326,"url":"facebook.com","performance":61,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:22:00","country":"United States","industry":"Social Media"},{"id":336,"url":"facebook.com","performance":60,"accessibility":71,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-10-22 08:25:57","country":"United States","industry":"Social Media"},{"id":339,"url":"facebook.com","performance":63,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:27:19","country":"United States","industry":"Social Media"},{"id":442,"url":"facebook.com","performance":58,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-23 06:51:59","country":"United States","industry":"Social Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {
