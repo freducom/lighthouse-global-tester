@@ -126,21 +126,15 @@ class WebsiteGenerator {
     return `    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>Valmitta</h3>
-                <p>Global lighthouse performance monitoring across ${websiteCount} websites in ${countriesCount} countries.</p>
-            </div>
             
             <div class="footer-section">
-                <p><a href="api-docs.html">📚 API Documentation</a></p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <p>📝 <button onclick="openWebsiteModal()" class="suggest-btn">Suggest a Website</button></p>
+                <p><a href="api-docs.html">📚 API Documentation</a> | <a href="latest-updated.html">📅 Latest Scan</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Valmitta. Lighthouse performance data updated regularly.</p>
-            <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
+            <p>&copy; 2025 Valmitta. Lighthouse performance monitoring of ${websiteCount} websites.</p>
         </div>
     </footer>
 
@@ -768,7 +762,7 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>💡 Suggest a Website</h2>
+                    <h2>💡 Add your website</h2>
                     <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
                 </div>
                 <form id="websiteForm" onsubmit="submitWebsiteForm(event)">
@@ -1432,7 +1426,6 @@ ${this.getPostHogScript()}
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
@@ -2042,7 +2035,6 @@ ${this.getPostHogScript()}
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                    <p><small>Accessibility: WCAG 2.1 AA compliant</small></p>
                 </div>
             </div>
         </footer>
