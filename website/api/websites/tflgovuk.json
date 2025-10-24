@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.217Z",
+    "generated_at": "2025-10-24T15:44:51.581Z",
     "url": "tfl.gov.uk",
     "country": "United Kingdom",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 39,
-    "accessibility": 98,
-    "best_practices": 92,
-    "seo": 79,
+    "performance": 88,
+    "accessibility": 59,
+    "best_practices": 83,
+    "seo": 77,
     "pwa": 33,
-    "test_date": "2025-10-23 07:35:54"
+    "test_date": "2025-10-24 10:16:14"
   },
   "historical_data": [
+    {
+      "performance": 88,
+      "accessibility": 59,
+      "best_practices": 83,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-10-24 10:16:14"
+    },
     {
       "performance": 39,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
-    "accessibility": 0,
-    "best_practices": 0,
-    "seo": 0,
+    "performance": 49,
+    "accessibility": -39,
+    "best_practices": -9,
+    "seo": -2,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:35:54",
-    "test_date_previous": "2025-10-19 19:40:51"
+    "test_date_current": "2025-10-24 10:16:14",
+    "test_date_previous": "2025-10-23 07:35:54"
   }
 }

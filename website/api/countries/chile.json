@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.132Z",
+    "generated_at": "2025-10-24T15:44:51.493Z",
     "country": "Chile",
     "flag": "🇨🇱",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 86,
-    "best_practices": 75,
-    "seo": 88,
-    "pwa": 30
+    "performance": 39,
+    "accessibility": 84,
+    "best_practices": 77,
+    "seo": 86,
+    "pwa": 31
   },
   "websites": [
     {
@@ -50,6 +50,18 @@
       "test_date": "2025-10-22 00:52:47"
     },
     {
+      "url": "t13.cl",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 06:15:46"
+    },
+    {
       "url": "emol.com",
       "industry": "Media",
       "scores": {
@@ -76,13 +88,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 37,
-        "accessibility": 83,
-        "best_practices": 72,
-        "seo": 86,
-        "pwa": 29
+        "performance": 35,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 30
       }
     }
   ]

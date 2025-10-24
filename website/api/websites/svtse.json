@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.212Z",
+    "generated_at": "2025-10-24T15:44:51.576Z",
     "url": "svt.se",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 51,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 99,
     "pwa": 89,
-    "test_date": "2025-10-19 20:26:59"
+    "test_date": "2025-10-24 04:16:25"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-10-24 04:16:25"
+    },
     {
       "performance": 57,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:26:59"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 04:16:25",
+    "test_date_previous": "2025-10-19 20:26:59"
+  }
 }

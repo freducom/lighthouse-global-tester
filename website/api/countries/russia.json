@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.117Z",
+    "generated_at": "2025-10-24T15:44:51.475Z",
     "country": "Russia",
     "flag": "🇷🇺",
     "website_count": 9
@@ -50,6 +50,18 @@
       "test_date": "2025-10-23 15:45:11"
     },
     {
+      "url": "tass.ru",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 89
+      },
+      "test_date": "2025-10-24 08:14:33"
+    },
+    {
       "url": "yandex.ru",
       "industry": "Search Engine",
       "scores": {
@@ -60,18 +72,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:05:00"
-    },
-    {
-      "url": "tass.ru",
-      "industry": "Media",
-      "scores": {
-        "performance": 34,
-        "accessibility": 93,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 89
-      },
-      "test_date": "2025-10-19 20:07:07"
     },
     {
       "url": "mail.ru",
@@ -149,7 +149,7 @@
       "industry": "Media",
       "website_count": 3,
       "averages": {
-        "performance": 42,
+        "performance": 45,
         "accessibility": 81,
         "best_practices": 69,
         "seo": 95,

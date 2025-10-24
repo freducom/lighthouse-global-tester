@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.130Z",
+    "generated_at": "2025-10-24T15:44:51.490Z",
     "country": "Malta",
     "flag": "🇲🇹",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 58,
-    "accessibility": 82,
-    "best_practices": 63,
-    "seo": 85,
-    "pwa": 17
+    "performance": 51,
+    "accessibility": 86,
+    "best_practices": 67,
+    "seo": 90,
+    "pwa": 30
   },
   "websites": [
     {
@@ -36,18 +36,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 06:18:15"
+    },
+    {
+      "url": "timesofmalta.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 38,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-24 14:13:58"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 55,
-        "accessibility": 91,
-        "best_practices": 83,
+        "performance": 47,
+        "accessibility": 94,
+        "best_practices": 79,
         "seo": 100,
-        "pwa": 33
+        "pwa": 45
       }
     },
     {

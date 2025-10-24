@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.152Z",
+    "generated_at": "2025-10-24T15:44:51.516Z",
     "industry": "Education",
-    "website_count": 2
+    "website_count": 5
   },
   "averages": {
-    "performance": 79,
-    "accessibility": 97,
-    "best_practices": 96,
-    "seo": 97,
-    "pwa": 33
+    "performance": 63,
+    "accessibility": 93,
+    "best_practices": 90,
+    "seo": 91,
+    "pwa": 35
   },
   "websites": [
     {
@@ -35,6 +35,42 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "singaporetech.edu.sg",
+      "country": "Singapore",
+      "scores": {
+        "performance": 23,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 21:49:48"
+    },
+    {
+      "url": "su.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 43,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 03:01:21"
+    },
+    {
+      "url": "thaiall.com",
+      "country": "Thailand",
+      "scores": {
+        "performance": 92,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 44
+      },
+      "test_date": "2025-10-24 10:16:42"
     }
   ],
   "countries": [
@@ -47,6 +83,39 @@
         "best_practices": 96,
         "seo": 97,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Singapore",
+      "website_count": 1,
+      "averages": {
+        "performance": 23,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 43,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Thailand",
+      "website_count": 1,
+      "averages": {
+        "performance": 92,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 44
       }
     }
   ]

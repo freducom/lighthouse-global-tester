@@ -58,7 +58,7 @@
             "name": "Valmitta",
             "url": "https://valmitta.com"
           },
-          "dateCreated": "2025-10-24T15:20:34.940Z",
+          "dateCreated": "2025-10-24T15:44:51.261Z",
           "about": {
             "@type": "WebSite",
             "name": "spotify.com",
@@ -70,11 +70,11 @@
           "@id": "https://valmitta.com/domain-spotify.com.html#metrics",
           "name": "spotify.com Performance Metrics",
           "description": "Latest Lighthouse scores for spotify.com",
-          "performanceScore": 20,
+          "performanceScore": 33,
           "accessibilityScore": 93,
-          "bestPracticesScore": 92,
+          "bestPracticesScore": 83,
           "seoScore": 97,
-          "dateRecorded": "2025-10-19 20:28:39"
+          "dateRecorded": "2025-10-24 00:48:24"
         }
       ]
     }
@@ -92,14 +92,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇸🇪 Sweden</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 8:28:39 PM</span>
+                <span class="last-scan">Last scanned: 10/24/2025, 12:48:24 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">20%</div>
+                <div class="stat-number poor">33%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -114,16 +114,16 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number excellent">92%</div>
-                <div class="stat-description">excellent performance</div>
+                <div class="stat-number good">83%</div>
+                <div class="stat-description">good performance</div>
             </div>
         </div>
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -134,8 +134,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 20%"></div>
-                        <span class="score-text">20%</span>
+                        <div class="score-fill performance" style="width: 33%"></div>
+                        <span class="score-text">33%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -148,8 +148,8 @@
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 92%"></div>
-                        <span class="score-text">92%</span>
+                        <div class="score-fill best-practices" style="width: 83%"></div>
+                        <span class="score-text">83%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -170,11 +170,58 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="https://spotify.com" target="_blank" rel="noopener">spotify.com</a> Performance History | Last tested: 10/19/2025</p>
+            <p>📊 <a href="https://spotify.com" target="_blank" rel="noopener">spotify.com</a> Performance History | Last tested: 10/24/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":213,"url":"spotify.com","performance":20,"accessibility":93,"best_practices":92,"seo":97,"pwa":78,"test_date":"2025-10-19 20:28:39","country":"Sweden","industry":"Media"},{"id":594,"url":"spotify.com","performance":33,"accessibility":93,"best_practices":83,"seo":97,"pwa":78,"test_date":"2025-10-24 00:48:24","country":"Sweden","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

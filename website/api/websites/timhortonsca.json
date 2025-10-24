@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.180Z",
+    "generated_at": "2025-10-24T15:44:51.544Z",
     "url": "timhortons.ca",
     "country": "Canada",
     "industry": "Food & Drink"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 34,
     "accessibility": 88,
-    "best_practices": 67,
+    "best_practices": 75,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-10-19 20:01:04"
+    "test_date": "2025-10-24 14:14:58"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 88,
+      "best_practices": 75,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-10-24 14:14:58"
+    },
     {
       "performance": 37,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:01:04"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 14:14:58",
+    "test_date_previous": "2025-10-19 20:01:04"
+  }
 }

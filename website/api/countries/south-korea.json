@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.118Z",
+    "generated_at": "2025-10-24T15:44:51.476Z",
     "country": "South Korea",
     "flag": "🇰🇷",
     "website_count": 10
@@ -26,18 +26,6 @@
       "test_date": "2025-10-19 20:13:33"
     },
     {
-      "url": "tistory.com",
-      "industry": "Social Media",
-      "scores": {
-        "performance": 44,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:09:25"
-    },
-    {
       "url": "yna.co.kr",
       "industry": "Media",
       "scores": {
@@ -60,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:12:25"
+    },
+    {
+      "url": "tistory.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 14:15:21"
     },
     {
       "url": "naver.com",
@@ -183,7 +183,7 @@
       "industry": "Social Media",
       "website_count": 1,
       "averages": {
-        "performance": 44,
+        "performance": 41,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,

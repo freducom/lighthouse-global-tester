@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.151Z",
+    "generated_at": "2025-10-24T15:44:51.515Z",
     "industry": "Portal",
-    "website_count": 17
+    "website_count": 19
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 80,
-    "best_practices": 76,
+    "performance": 48,
+    "accessibility": 78,
+    "best_practices": 77,
     "seo": 89,
-    "pwa": 50
+    "pwa": 48
   },
   "websites": [
+    {
+      "url": "sol.bo",
+      "country": "Bolivia",
+      "scores": {
+        "performance": 98,
+        "accessibility": 89,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:15:58"
+    },
     {
       "url": "terra.com.br",
       "country": "Brazil",
@@ -49,6 +61,18 @@
       "test_date": "2025-10-23 10:20:10"
     },
     {
+      "url": "sohu.com",
+      "country": "China",
+      "scores": {
+        "performance": 45,
+        "accessibility": 33,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:15:21"
+    },
+    {
       "url": "gmx.net",
       "country": "Germany",
       "scores": {
@@ -64,13 +88,13 @@
       "url": "t-online.de",
       "country": "Germany",
       "scores": {
-        "performance": 48,
+        "performance": 35,
         "accessibility": 76,
         "best_practices": 100,
         "seo": 93,
         "pwa": 89
       },
-      "test_date": "2025-10-19 19:42:37"
+      "test_date": "2025-10-24 06:15:06"
     },
     {
       "url": "web.de",
@@ -219,6 +243,17 @@
   ],
   "countries": [
     {
+      "country": "Bolivia",
+      "website_count": 1,
+      "averages": {
+        "performance": 98,
+        "accessibility": 89,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Brazil",
       "website_count": 2,
       "averages": {
@@ -231,20 +266,20 @@
     },
     {
       "country": "China",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 29,
-        "accessibility": 47,
-        "best_practices": 92,
-        "seo": 74,
-        "pwa": 56
+        "performance": 37,
+        "accessibility": 40,
+        "best_practices": 88,
+        "seo": 79,
+        "pwa": 45
       }
     },
     {
       "country": "Germany",
       "website_count": 3,
       "averages": {
-        "performance": 63,
+        "performance": 58,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 88,

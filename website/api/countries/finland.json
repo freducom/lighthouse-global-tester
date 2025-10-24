@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.119Z",
+    "generated_at": "2025-10-24T15:44:51.477Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 16
+    "website_count": 18
   },
   "averages": {
-    "performance": 49,
+    "performance": 48,
     "accessibility": 91,
     "best_practices": 90,
     "seo": 97,
-    "pwa": 47
+    "pwa": 45
   },
   "websites": [
     {
@@ -50,16 +50,16 @@
       "test_date": "2025-10-23 02:59:36"
     },
     {
-      "url": "suomi24.fi",
-      "industry": "Social Media",
+      "url": "superherocapital.com",
+      "industry": "Finance",
       "scores": {
-        "performance": 64,
-        "accessibility": 78,
+        "performance": 74,
+        "accessibility": 90,
         "best_practices": 83,
-        "seo": 83,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:16:10"
+      "test_date": "2025-10-24 04:12:38"
     },
     {
       "url": "helsinki.fi",
@@ -72,6 +72,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "sokos.fi",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:15:43"
     },
     {
       "url": "hs.fi",
@@ -96,18 +108,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:15:06"
-    },
-    {
-      "url": "tori.fi",
-      "industry": "Marketplace",
-      "scores": {
-        "performance": 43,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 67
-      },
-      "test_date": "2025-10-19 20:15:43"
     },
     {
       "url": "verkkokauppa.com",
@@ -158,6 +158,18 @@
       "test_date": "2025-10-19 20:14:50"
     },
     {
+      "url": "suomi24.fi",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 04:12:00"
+    },
+    {
       "url": "posti.fi",
       "industry": "Government",
       "scores": {
@@ -204,18 +216,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 02:59:22"
+    },
+    {
+      "url": "tori.fi",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 22,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-24 14:20:09"
     }
   ],
   "industries": [
     {
       "industry": "E-commerce",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 100,
-        "best_practices": 83,
+        "performance": 44,
+        "accessibility": 97,
+        "best_practices": 92,
         "seo": 100,
-        "pwa": 100
+        "pwa": 67
       }
     },
     {
@@ -231,12 +255,12 @@
     },
     {
       "industry": "Finance",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 52,
-        "accessibility": 98,
-        "best_practices": 96,
-        "seo": 95,
+        "performance": 59,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 92,
         "pwa": 33
       }
     },
@@ -255,7 +279,7 @@
       "industry": "Marketplace",
       "website_count": 2,
       "averages": {
-        "performance": 35,
+        "performance": 24,
         "accessibility": 75,
         "best_practices": 83,
         "seo": 100,
@@ -277,9 +301,9 @@
       "industry": "Social Media",
       "website_count": 1,
       "averages": {
-        "performance": 64,
+        "performance": 33,
         "accessibility": 78,
-        "best_practices": 83,
+        "best_practices": 75,
         "seo": 83,
         "pwa": 33
       }

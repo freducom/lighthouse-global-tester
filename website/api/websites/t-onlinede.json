@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.189Z",
+    "generated_at": "2025-10-24T15:44:51.553Z",
     "url": "t-online.de",
     "country": "Germany",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 35,
     "accessibility": 76,
     "best_practices": 100,
     "seo": 93,
     "pwa": 89,
-    "test_date": "2025-10-19 19:42:37"
+    "test_date": "2025-10-24 06:15:06"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 76,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 89,
+      "test_date": "2025-10-24 06:15:06"
+    },
     {
       "performance": 48,
       "accessibility": 76,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:42:37"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -13,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 06:15:06",
+    "test_date_previous": "2025-10-19 19:42:37"
+  }
 }

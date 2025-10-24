@@ -1,37 +1,60 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.131Z",
+    "generated_at": "2025-10-24T15:44:51.491Z",
     "country": "Singapore",
     "flag": "🇸🇬",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 18,
-    "accessibility": 89,
+    "performance": 22,
+    "accessibility": 83,
     "best_practices": 83,
-    "seo": 86,
+    "seo": 84,
     "pwa": 33
   },
   "websites": [
     {
+      "url": "singaporetech.edu.sg",
+      "industry": "Education",
+      "scores": {
+        "performance": 23,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 21:49:48"
+    },
+    {
       "url": "sgbic.org",
       "industry": "Non-profit",
       "scores": {
-        "performance": 18,
+        "performance": 21,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 21:15:54"
+      "test_date": "2025-10-23 21:40:36"
     }
   ],
   "industries": [
     {
+      "industry": "Education",
+      "website_count": 1,
+      "averages": {
+        "performance": 23,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Non-profit",
       "website_count": 1,
       "averages": {
-        "performance": 18,
+        "performance": 21,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 86,

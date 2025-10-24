@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.217Z",
+    "generated_at": "2025-10-24T15:44:51.581Z",
     "url": "theguardian.com",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 20,
     "accessibility": 89,
-    "best_practices": 100,
-    "seo": 86,
+    "best_practices": 83,
+    "seo": 84,
     "pwa": 78,
-    "test_date": "2025-10-23 07:33:26"
+    "test_date": "2025-10-24 12:21:54"
   },
   "historical_data": [
+    {
+      "performance": 20,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 78,
+      "test_date": "2025-10-24 12:21:54"
+    },
     {
       "performance": 58,
       "accessibility": 89,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -38,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": 0,
+    "best_practices": -17,
+    "seo": -2,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:33:26",
-    "test_date_previous": "2025-10-19 19:38:42"
+    "test_date_current": "2025-10-24 12:21:54",
+    "test_date_previous": "2025-10-23 07:33:26"
   }
 }

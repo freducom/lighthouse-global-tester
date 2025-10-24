@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.217Z",
+    "generated_at": "2025-10-24T15:44:51.581Z",
     "url": "thesun.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 40,
-    "accessibility": 94,
-    "best_practices": 67,
-    "seo": 100,
+    "performance": 23,
+    "accessibility": 98,
+    "best_practices": 58,
+    "seo": 92,
     "pwa": 44,
-    "test_date": "2025-10-23 07:37:59"
+    "test_date": "2025-10-24 12:29:55"
   },
   "historical_data": [
+    {
+      "performance": 23,
+      "accessibility": 98,
+      "best_practices": 58,
+      "seo": 92,
+      "pwa": 44,
+      "test_date": "2025-10-24 12:29:55"
+    },
     {
       "performance": 40,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 07:37:59"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -17,
+    "accessibility": 4,
+    "best_practices": -9,
+    "seo": -8,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 12:29:55",
+    "test_date_previous": "2025-10-23 07:37:59"
+  }
 }

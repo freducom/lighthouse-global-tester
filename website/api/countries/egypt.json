@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.126Z",
+    "generated_at": "2025-10-24T15:44:51.486Z",
     "country": "Egypt",
     "flag": "🇪🇬",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 20,
-    "accessibility": 88,
-    "best_practices": 75,
-    "seo": 80,
+    "performance": 36,
+    "accessibility": 86,
+    "best_practices": 67,
+    "seo": 87,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "syria.tv",
+      "industry": "Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 06:14:17"
+    },
     {
       "url": "elwatannews.com",
       "industry": "Media",
@@ -29,12 +41,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 20,
-        "accessibility": 88,
-        "best_practices": 75,
-        "seo": 80,
+        "performance": 36,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 87,
         "pwa": 33
       }
     }

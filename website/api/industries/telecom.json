@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.152Z",
+    "generated_at": "2025-10-24T15:44:51.516Z",
     "industry": "Telecom",
-    "website_count": 5
+    "website_count": 7
   },
   "averages": {
-    "performance": 30,
-    "accessibility": 83,
-    "best_practices": 80,
-    "seo": 88,
-    "pwa": 33
+    "performance": 32,
+    "accessibility": 87,
+    "best_practices": 83,
+    "seo": 90,
+    "pwa": 35
   },
   "websites": [
     {
@@ -23,6 +23,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 20:16:54"
+    },
+    {
+      "url": "telia.ee",
+      "country": "Estonia",
+      "scores": {
+        "performance": 30,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-24 10:10:58"
     },
     {
       "url": "safaricom.co.ke",
@@ -61,16 +73,28 @@
       "test_date": "2025-10-23 03:00:12"
     },
     {
+      "url": "telia.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 10:11:18"
+    },
+    {
       "url": "sky.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 26,
+        "performance": 36,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:35:08"
+      "test_date": "2025-10-23 22:09:44"
     }
   ],
   "countries": [
@@ -83,6 +107,17 @@
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Estonia",
+      "website_count": 1,
+      "averages": {
+        "performance": 30,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
       }
     },
     {
@@ -119,10 +154,21 @@
       }
     },
     {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
       "country": "United Kingdom",
       "website_count": 1,
       "averages": {
-        "performance": 26,
+        "performance": 36,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 93,

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.180Z",
+    "generated_at": "2025-10-24T15:44:51.544Z",
     "url": "theweathernetwork.com",
     "country": "Canada",
     "industry": "Weather"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 33,
     "accessibility": 98,
-    "best_practices": 92,
-    "seo": 97,
+    "best_practices": 83,
+    "seo": 90,
     "pwa": 67,
-    "test_date": "2025-10-19 19:58:11"
+    "test_date": "2025-10-24 12:33:10"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 67,
+      "test_date": "2025-10-24 12:33:10"
+    },
     {
       "performance": 57,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": -24,
     "accessibility": 0,
-    "best_practices": 0,
-    "seo": 0,
+    "best_practices": -9,
+    "seo": -7,
     "pwa": 0,
-    "test_date_current": "2025-10-19 19:58:11",
-    "test_date_previous": "2025-10-19 18:14:56"
+    "test_date_current": "2025-10-24 12:33:10",
+    "test_date_previous": "2025-10-19 19:58:11"
   }
 }

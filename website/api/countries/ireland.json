@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.122Z",
+    "generated_at": "2025-10-24T15:44:51.481Z",
     "country": "Ireland",
     "flag": "🇮🇪",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 88,
-    "best_practices": 86,
-    "seo": 87,
-    "pwa": 56
+    "performance": 43,
+    "accessibility": 86,
+    "best_practices": 83,
+    "seo": 86,
+    "pwa": 53
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-21 17:38:27"
+    },
+    {
+      "url": "thejournal.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 48,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 44
+      },
+      "test_date": "2025-10-24 12:22:17"
     },
     {
       "url": "irishmirror.ie",
@@ -65,13 +77,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 42,
-        "accessibility": 88,
-        "best_practices": 86,
-        "seo": 87,
-        "pwa": 56
+        "performance": 43,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 53
       }
     }
   ]

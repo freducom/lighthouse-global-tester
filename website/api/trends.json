@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.242Z",
-    "websites_with_trends": 124,
-    "total_websites": 326
+    "generated_at": "2025-10-24T15:44:51.610Z",
+    "websites_with_trends": 137,
+    "total_websites": 372
   },
   "global_trends": {
     "average_changes": {
-      "performance": -0.7,
-      "accessibility": -0.1,
-      "best_practices": 0.3,
-      "seo": -0.2,
-      "pwa": 0.1
+      "performance": -1.9,
+      "accessibility": -0.3,
+      "best_practices": -1.6,
+      "seo": -0.3,
+      "pwa": 0.2
     },
     "improvements": {
-      "performance": 51,
-      "accessibility": 18,
+      "performance": 50,
+      "accessibility": 19,
       "best_practices": 14,
-      "seo": 7,
-      "pwa": 1
+      "seo": 9,
+      "pwa": 2
     },
     "declines": {
-      "performance": 56,
-      "accessibility": 11,
-      "best_practices": 18,
-      "seo": 12,
+      "performance": 71,
+      "accessibility": 15,
+      "best_practices": 26,
+      "seo": 16,
       "pwa": 0
     }
   },
@@ -397,23 +397,49 @@
       "country": "Canada",
       "industry": "Weather",
       "current_scores": {
+        "performance": 33,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 67
+      },
+      "previous_scores": {
         "performance": 57,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 97,
         "pwa": 67
       },
+      "changes": {
+        "performance": -24,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": -7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "timhortons.ca",
+      "country": "Canada",
+      "industry": "Food & Drink",
+      "current_scores": {
+        "performance": 34,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 82,
+        "pwa": 33
+      },
       "previous_scores": {
-        "performance": 58,
-        "accessibility": 98,
-        "best_practices": 92,
-        "seo": 97,
-        "pwa": 67
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 82,
+        "pwa": 33
       },
       "changes": {
-        "performance": -1,
+        "performance": -3,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": 8,
         "seo": 0,
         "pwa": 0
       }
@@ -709,23 +735,23 @@
       "country": "Finland",
       "industry": "Social Media",
       "current_scores": {
+        "performance": 33,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 64,
         "accessibility": 78,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 58,
-        "accessibility": 78,
-        "best_practices": 83,
-        "seo": 83,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 6,
+        "performance": -31,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": -8,
         "seo": 0,
         "pwa": 0
       }
@@ -735,21 +761,21 @@
       "country": "Finland",
       "industry": "Marketplace",
       "current_scores": {
-        "performance": 43,
+        "performance": 22,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 67
       },
       "previous_scores": {
-        "performance": 47,
+        "performance": 43,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 67
       },
       "changes": {
-        "performance": -4,
+        "performance": -21,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -861,6 +887,84 @@
       }
     },
     {
+      "url": "spiegel.de",
+      "country": "Germany",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 53,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -8,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "t-online.de",
+      "country": "Germany",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 76,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 48,
+        "accessibility": 76,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": -13,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "tagesschau.de",
+      "country": "Germany",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 46,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 9,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "kathimerini.gr",
       "country": "Greece",
       "industry": "Media",
@@ -917,21 +1021,21 @@
       "country": "Greece",
       "industry": "Media",
       "current_scores": {
-        "performance": 67,
+        "performance": 60,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 98,
         "pwa": 44
       },
       "previous_scores": {
-        "performance": 64,
+        "performance": 67,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 98,
         "pwa": 44
       },
       "changes": {
-        "performance": 3,
+        "performance": -7,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -1489,22 +1593,22 @@
       "country": "Latvia",
       "industry": "Media",
       "current_scores": {
+        "performance": 11,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 78
+      },
+      "previous_scores": {
         "performance": 13,
         "accessibility": 79,
         "best_practices": 75,
         "seo": 90,
         "pwa": 78
       },
-      "previous_scores": {
-        "performance": 12,
-        "accessibility": 79,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 78
-      },
       "changes": {
-        "performance": 1,
-        "accessibility": 0,
+        "performance": -2,
+        "accessibility": -1,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
@@ -1541,21 +1645,21 @@
       "country": "Malaysia",
       "industry": "Media",
       "current_scores": {
-        "performance": 80,
+        "performance": 76,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 87,
+        "performance": 80,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
       "changes": {
-        "performance": -7,
+        "performance": -4,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -1742,6 +1846,32 @@
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
+      }
+    },
+    {
+      "url": "telegraaf.nl",
+      "country": "Netherlands",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": -7,
+        "accessibility": 9,
+        "best_practices": 0,
+        "seo": 6,
+        "pwa": 12
       }
     },
     {
@@ -2005,18 +2135,44 @@
       }
     },
     {
+      "url": "tass.ru",
+      "country": "Russia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": 7,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "sgbic.org",
       "country": "Singapore",
       "industry": "Non-profit",
       "current_scores": {
-        "performance": 18,
+        "performance": 21,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 15,
+        "performance": 18,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 86,
@@ -2109,6 +2265,32 @@
       }
     },
     {
+      "url": "tistory.com",
+      "country": "South Korea",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 44,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "expressen.se",
       "country": "Sweden",
       "industry": "Media",
@@ -2180,6 +2362,84 @@
       },
       "changes": {
         "performance": -3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "skatteverket.se",
+      "country": "Sweden",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -12,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "spotify.com",
+      "country": "Sweden",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 97,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 20,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": 13,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "svt.se",
+      "country": "Sweden",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 51,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 57,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": -6,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2529,21 +2789,21 @@
       "country": "United Kingdom",
       "industry": "Telecom",
       "current_scores": {
-        "performance": 26,
+        "performance": 36,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 29,
+        "performance": 26,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
       "changes": {
-        "performance": -3,
+        "performance": 10,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2555,24 +2815,24 @@
       "country": "United Kingdom",
       "industry": "Media",
       "current_scores": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 44,
         "accessibility": 98,
         "best_practices": 75,
         "seo": 85,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 40,
-        "accessibility": 98,
-        "best_practices": 75,
-        "seo": 85,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 4,
+        "performance": -17,
         "accessibility": 0,
-        "best_practices": 0,
-        "seo": 0,
+        "best_practices": 8,
+        "seo": 1,
         "pwa": 0
       }
     },
@@ -2581,24 +2841,24 @@
       "country": "United Kingdom",
       "industry": "Transportation",
       "current_scores": {
+        "performance": 88,
+        "accessibility": 59,
+        "best_practices": 83,
+        "seo": 77,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 39,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 79,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 36,
-        "accessibility": 98,
-        "best_practices": 92,
-        "seo": 79,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 3,
-        "accessibility": 0,
-        "best_practices": 0,
-        "seo": 0,
+        "performance": 49,
+        "accessibility": -39,
+        "best_practices": -9,
+        "seo": -2,
         "pwa": 0
       }
     },
@@ -2607,24 +2867,50 @@
       "country": "United Kingdom",
       "industry": "Media",
       "current_scores": {
+        "performance": 20,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 78
+      },
+      "previous_scores": {
         "performance": 58,
         "accessibility": 89,
         "best_practices": 100,
         "seo": 86,
         "pwa": 78
       },
+      "changes": {
+        "performance": -38,
+        "accessibility": 0,
+        "best_practices": -17,
+        "seo": -2,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "thesun.co.uk",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 23,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 44
+      },
       "previous_scores": {
-        "performance": 56,
-        "accessibility": 89,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 78
+        "performance": 40,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 44
       },
       "changes": {
-        "performance": 2,
-        "accessibility": 0,
-        "best_practices": 8,
-        "seo": 0,
+        "performance": -17,
+        "accessibility": 4,
+        "best_practices": -9,
+        "seo": -8,
         "pwa": 0
       }
     },
@@ -3071,27 +3357,79 @@
       }
     },
     {
+      "url": "slack.com",
+      "country": "United States",
+      "industry": "Technology",
+      "current_scores": {
+        "performance": 43,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 62,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -19,
+        "accessibility": -2,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "stripe.com",
+      "country": "United States",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 57,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 74,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 96,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -17,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "tesla.com",
       "country": "United States",
       "industry": "Automotive",
       "current_scores": {
+        "performance": 25,
+        "accessibility": 69,
+        "best_practices": 0,
+        "seo": 74,
+        "pwa": 67
+      },
+      "previous_scores": {
         "performance": 29,
         "accessibility": 70,
         "best_practices": 100,
         "seo": 74,
         "pwa": 67
       },
-      "previous_scores": {
-        "performance": 29,
-        "accessibility": 67,
-        "best_practices": 0,
-        "seo": 74,
-        "pwa": 67
-      },
       "changes": {
-        "performance": 0,
-        "accessibility": 3,
-        "best_practices": 100,
+        "performance": -4,
+        "accessibility": -1,
+        "best_practices": -100,
         "seo": 0,
         "pwa": 0
       }

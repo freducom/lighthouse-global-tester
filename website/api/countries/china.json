@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.130Z",
+    "generated_at": "2025-10-24T15:44:51.490Z",
     "country": "China",
     "flag": "🇨🇳",
-    "website_count": 2
+    "website_count": 4
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 56,
-    "best_practices": 96,
-    "seo": 81,
-    "pwa": 45
+    "performance": 46,
+    "accessibility": 47,
+    "best_practices": 83,
+    "seo": 83,
+    "pwa": 39
   },
   "websites": [
+    {
+      "url": "taobao.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 56,
+        "accessibility": 44,
+        "best_practices": 58,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 06:21:32"
+    },
     {
       "url": "jd.com",
       "industry": "E-commerce",
@@ -24,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-21 18:12:11"
+    },
+    {
+      "url": "sohu.com",
+      "industry": "Portal",
+      "scores": {
+        "performance": 45,
+        "accessibility": 33,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:15:21"
     },
     {
       "url": "qq.com",
@@ -41,24 +65,24 @@
   "industries": [
     {
       "industry": "E-commerce",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 52,
-        "accessibility": 65,
-        "best_practices": 100,
-        "seo": 88,
+        "performance": 54,
+        "accessibility": 55,
+        "best_practices": 79,
+        "seo": 87,
         "pwa": 33
       }
     },
     {
       "industry": "Portal",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 29,
-        "accessibility": 47,
-        "best_practices": 92,
-        "seo": 74,
-        "pwa": 56
+        "performance": 37,
+        "accessibility": 40,
+        "best_practices": 88,
+        "seo": 79,
+        "pwa": 45
       }
     }
   ]

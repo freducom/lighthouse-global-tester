@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.151Z",
+    "generated_at": "2025-10-24T15:44:51.516Z",
     "industry": "Sports",
-    "website_count": 4
+    "website_count": 6
   },
   "averages": {
-    "performance": 47,
-    "accessibility": 80,
-    "best_practices": 81,
-    "seo": 84,
-    "pwa": 30
+    "performance": 46,
+    "accessibility": 77,
+    "best_practices": 82,
+    "seo": 85,
+    "pwa": 35
   },
   "websites": [
     {
@@ -49,6 +49,18 @@
       "test_date": "2025-10-19 20:22:17"
     },
     {
+      "url": "sport.sk",
+      "country": "Slovakia",
+      "scores": {
+        "performance": 37,
+        "accessibility": 68,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 00:41:06"
+    },
+    {
       "url": "marca.com",
       "country": "Spain",
       "scores": {
@@ -59,6 +71,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 10:11:29"
+    },
+    {
+      "url": "sport.ua",
+      "country": "Ukraine",
+      "scores": {
+        "performance": 50,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-24 00:41:27"
     }
   ],
   "countries": [
@@ -96,6 +120,17 @@
       }
     },
     {
+      "country": "Slovakia",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 68,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Spain",
       "website_count": 1,
       "averages": {
@@ -104,6 +139,17 @@
         "best_practices": 92,
         "seo": 90,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Ukraine",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 56
       }
     }
   ]

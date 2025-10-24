@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.130Z",
+    "generated_at": "2025-10-24T15:44:51.490Z",
     "country": "Vietnam",
     "flag": "🇻🇳",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 83,
-    "best_practices": 58,
-    "seo": 90,
+    "performance": 41,
+    "accessibility": 85,
+    "best_practices": 67,
+    "seo": 95,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "soha.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:14:54"
+    },
     {
       "url": "kenh14.vn",
       "industry": "Media",
@@ -29,12 +41,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 83,
-        "best_practices": 58,
-        "seo": 90,
+        "performance": 41,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 95,
         "pwa": 33
       }
     }

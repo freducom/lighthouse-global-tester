@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.151Z",
+    "generated_at": "2025-10-24T15:44:51.515Z",
     "industry": "E-commerce",
-    "website_count": 21
+    "website_count": 26
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 87,
-    "best_practices": 78,
+    "performance": 40,
+    "accessibility": 86,
+    "best_practices": 79,
     "seo": 92,
-    "pwa": 52
+    "pwa": 49
   },
   "websites": [
     {
@@ -61,6 +61,18 @@
       "test_date": "2025-10-21 18:12:11"
     },
     {
+      "url": "taobao.com",
+      "country": "China",
+      "scores": {
+        "performance": 56,
+        "accessibility": 44,
+        "best_practices": 58,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 06:21:32"
+    },
+    {
       "url": "euronics.ee",
       "country": "Estonia",
       "scores": {
@@ -83,6 +95,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-21 18:20:35"
+    },
+    {
+      "url": "sokos.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:15:43"
     },
     {
       "url": "verkkokauppa.com",
@@ -181,6 +205,18 @@
       "test_date": "2025-10-23 04:11:44"
     },
     {
+      "url": "superbalist.com",
+      "country": "South Africa",
+      "scores": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 56
+      },
+      "test_date": "2025-10-24 04:12:21"
+    },
+    {
       "url": "coupang.com",
       "country": "South Korea",
       "scores": {
@@ -217,6 +253,18 @@
       "test_date": "2025-10-19 20:28:01"
     },
     {
+      "url": "systembolaget.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 35,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 06:14:40"
+    },
+    {
       "url": "argos.co.uk",
       "country": "United Kingdom",
       "scores": {
@@ -239,6 +287,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 16:48:07"
+    },
+    {
+      "url": "tesco.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 44,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 10:15:24"
     },
     {
       "url": "amazon.com",
@@ -290,12 +350,12 @@
     },
     {
       "country": "China",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 52,
-        "accessibility": 65,
-        "best_practices": 100,
-        "seo": 88,
+        "performance": 54,
+        "accessibility": 55,
+        "best_practices": 79,
+        "seo": 87,
         "pwa": 33
       }
     },
@@ -312,13 +372,13 @@
     },
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 100,
-        "best_practices": 83,
+        "performance": 44,
+        "accessibility": 97,
+        "best_practices": 92,
         "seo": 100,
-        "pwa": 100
+        "pwa": 67
       }
     },
     {
@@ -377,6 +437,17 @@
       }
     },
     {
+      "country": "South Africa",
+      "website_count": 1,
+      "averages": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 56
+      }
+    },
+    {
       "country": "South Korea",
       "website_count": 1,
       "averages": {
@@ -389,23 +460,23 @@
     },
     {
       "country": "Sweden",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 47,
-        "accessibility": 97,
-        "best_practices": 92,
-        "seo": 97,
-        "pwa": 67
+        "performance": 43,
+        "accessibility": 93,
+        "best_practices": 86,
+        "seo": 98,
+        "pwa": 56
       }
     },
     {
       "country": "United Kingdom",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 39,
-        "accessibility": 96,
-        "best_practices": 71,
-        "seo": 95,
+        "performance": 40,
+        "accessibility": 95,
+        "best_practices": 78,
+        "seo": 92,
         "pwa": 33
       }
     },

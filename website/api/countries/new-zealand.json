@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.125Z",
+    "generated_at": "2025-10-24T15:44:51.485Z",
     "country": "New Zealand",
     "flag": "🇳🇿",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
     "performance": 30,
-    "accessibility": 89,
-    "best_practices": 75,
-    "seo": 100,
-    "pwa": 33
+    "accessibility": 88,
+    "best_practices": 38,
+    "seo": 95,
+    "pwa": 45
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 15:44:31"
+    },
+    {
+      "url": "stuff.co.nz",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 90,
+        "pwa": 56
+      },
+      "test_date": "2025-10-24 03:00:50"
     }
   ],
   "industries": [
@@ -36,6 +48,17 @@
         "best_practices": 75,
         "seo": 100,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 30,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 90,
+        "pwa": 56
       }
     }
   ]

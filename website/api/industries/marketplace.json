@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.152Z",
+    "generated_at": "2025-10-24T15:44:51.516Z",
     "industry": "Marketplace",
-    "website_count": 12
+    "website_count": 14
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 87,
+    "performance": 43,
+    "accessibility": 85,
     "best_practices": 83,
-    "seo": 93,
+    "seo": 92,
     "pwa": 48
   },
   "websites": [
@@ -28,13 +28,37 @@
       "url": "tori.fi",
       "country": "Finland",
       "scores": {
-        "performance": 43,
+        "performance": 22,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-19 20:15:43"
+      "test_date": "2025-10-24 14:20:09"
+    },
+    {
+      "url": "subito.it",
+      "country": "Italy",
+      "scores": {
+        "performance": 37,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-24 03:02:30"
+    },
+    {
+      "url": "skelbiu.lt",
+      "country": "Lithuania",
+      "scores": {
+        "performance": 88,
+        "accessibility": 52,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:09:25"
     },
     {
       "url": "mercadolibre.com.mx",
@@ -162,11 +186,33 @@
       "country": "Finland",
       "website_count": 2,
       "averages": {
-        "performance": 35,
+        "performance": 24,
         "accessibility": 75,
         "best_practices": 83,
         "seo": 100,
         "pwa": 50
+      }
+    },
+    {
+      "country": "Italy",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 67
+      }
+    },
+    {
+      "country": "Lithuania",
+      "website_count": 1,
+      "averages": {
+        "performance": 88,
+        "accessibility": 52,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
       }
     },
     {

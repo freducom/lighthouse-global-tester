@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.212Z",
+    "generated_at": "2025-10-24T15:44:51.576Z",
     "url": "spotify.com",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 20,
+    "performance": 33,
     "accessibility": 93,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 97,
     "pwa": 78,
-    "test_date": "2025-10-19 20:28:39"
+    "test_date": "2025-10-24 00:48:24"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 97,
+      "pwa": 78,
+      "test_date": "2025-10-24 00:48:24"
+    },
     {
       "performance": 20,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:28:39"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 13,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 00:48:24",
+    "test_date_previous": "2025-10-19 20:28:39"
+  }
 }

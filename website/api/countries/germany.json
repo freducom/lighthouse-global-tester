@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.112Z",
+    "generated_at": "2025-10-24T15:44:51.471Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 16
+    "website_count": 18
   },
   "averages": {
-    "performance": 44,
+    "performance": 42,
     "accessibility": 92,
     "best_practices": 88,
     "seo": 93,
@@ -48,30 +48,6 @@
         "pwa": 56
       },
       "test_date": "2025-10-19 19:44:00"
-    },
-    {
-      "url": "spiegel.de",
-      "industry": "Media",
-      "scores": {
-        "performance": 53,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 78
-      },
-      "test_date": "2025-10-19 19:41:54"
-    },
-    {
-      "url": "t-online.de",
-      "industry": "Portal",
-      "scores": {
-        "performance": 48,
-        "accessibility": 76,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 89
-      },
-      "test_date": "2025-10-19 19:42:37"
     },
     {
       "url": "chip.de",
@@ -134,6 +110,30 @@
       "test_date": "2025-10-22 08:31:37"
     },
     {
+      "url": "tagesschau.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 06:18:01"
+    },
+    {
+      "url": "spiegel.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-24 00:40:36"
+    },
+    {
       "url": "bild.de",
       "industry": "Media",
       "scores": {
@@ -144,6 +144,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-19 19:41:29"
+    },
+    {
+      "url": "sparkasse.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 40,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-24 00:40:09"
     },
     {
       "url": "saturn.de",
@@ -158,16 +170,28 @@
       "test_date": "2025-10-23 19:31:29"
     },
     {
-      "url": "tagesschau.de",
+      "url": "t-online.de",
+      "industry": "Portal",
+      "scores": {
+        "performance": 35,
+        "accessibility": 76,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-24 06:15:06"
+    },
+    {
+      "url": "sueddeutsche.de",
       "industry": "Media",
       "scores": {
-        "performance": 37,
-        "accessibility": 88,
-        "best_practices": 83,
+        "performance": 28,
+        "accessibility": 91,
+        "best_practices": 100,
         "seo": 93,
-        "pwa": 33
+        "pwa": 56
       },
-      "test_date": "2025-10-19 19:45:15"
+      "test_date": "2025-10-24 04:11:39"
     },
     {
       "url": "otto.de",
@@ -231,31 +255,31 @@
     },
     {
       "industry": "Finance",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 17,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 86,
-        "pwa": 33
+        "performance": 29,
+        "accessibility": 89,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 45
       }
     },
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 47,
+        "performance": 45,
         "accessibility": 90,
-        "best_practices": 93,
+        "best_practices": 94,
         "seo": 94,
-        "pwa": 62
+        "pwa": 61
       }
     },
     {
       "industry": "Portal",
       "website_count": 3,
       "averages": {
-        "performance": 63,
+        "performance": 58,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 88,

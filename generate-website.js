@@ -128,7 +128,7 @@ class WebsiteGenerator {
         <div class="footer-content">
             
             <div class="footer-section">
-                <p>📝 <button onclick="openWebsiteModal()" class="suggest-btn">Suggest a Website</button></p>
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
                 <p><a href="api-docs.html">📚 API Documentation</a> | <a href="latest-updated.html">📅 Latest Scan</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
@@ -483,16 +483,6 @@ ${this.getPostHogScript()}
             </div>
             <p class="subtitle">Performance insights from ${allScores.length} websites across ${this.domainsData.length} countries</p>
             
-            <!-- Main Navigation -->
-            <nav aria-label="Main navigation" role="navigation">
-                <ul class="nav-links">
-                    <li><a href="latest-updated.html">📅 Latest Scan</a></li>
-                    <li><a href="all-countries.html">All Countries</a></li>
-                    <li><a href="all-industries.html">All Industries</a></li>
-                    <li><a href="all-companies.html">All Companies</a></li>
-                </ul>
-            </nav>
-            
             <div class="last-updated" id="lastUpdated">
                 Last updated: <time id="updateTime" datetime="${new Date().toISOString()}">Loading...</time>
             </div>
@@ -504,27 +494,27 @@ ${this.getPostHogScript()}
                 <h2 id="global-stats-heading" class="sr-only">Global Performance Statistics</h2>
                 
                 <div class="stat-card performance" role="img" aria-labelledby="global-perf-title" aria-describedby="global-perf-desc">
-                    <h3 id="global-perf-title">Global Performance</h3>
+                    <h3 id="global-perf-title">🚀 Global Performance</h3>
                     <div class="stat-number" aria-label="${stats.avgPerformance} percent performance score">${stats.avgPerformance}%</div>
-                    <div id="global-perf-desc" class="stat-trend">📊 Average across all ${allScores.length} tested sites</div>
+                    <div id="global-perf-desc" class="stat-trend">Average across ${allScores.length} sites</div>
                 </div>
                 
                 <div class="stat-card accessibility" role="img" aria-labelledby="global-acc-title" aria-describedby="global-acc-desc">
-                    <h3 id="global-acc-title">Accessibility</h3>
+                    <h3 id="global-acc-title">♿ Accessibility</h3>
                     <div class="stat-number" aria-label="${stats.avgAccessibility} percent accessibility score">${stats.avgAccessibility}%</div>
-                    <div id="global-acc-desc" class="stat-trend">♿ Global accessibility compliance</div>
+                    <div id="global-acc-desc" class="stat-trend">Global accessibility compliance</div>
                 </div>
                 
                 <div class="stat-card seo" role="img" aria-labelledby="global-seo-title" aria-describedby="global-seo-desc">
-                    <h3 id="global-seo-title">SEO Score</h3>
+                    <h3 id="global-seo-title">🔍 SEO Score</h3>
                     <div class="stat-number" aria-label="${stats.avgSeo} percent SEO score">${stats.avgSeo}%</div>
-                    <div id="global-seo-desc" class="stat-trend">🔍 Search engine optimization</div>
+                    <div id="global-seo-desc" class="stat-trend">Search engine optimization</div>
                 </div>
                 
                 <div class="stat-card best-practices" role="img" aria-labelledby="global-bp-title" aria-describedby="global-bp-desc">
-                    <h3 id="global-bp-title">Best Practices</h3>
+                    <h3 id="global-bp-title">✨ Best Practices</h3>
                     <div class="stat-number" aria-label="${stats.avgBestPractices} percent best practices score">${stats.avgBestPractices}%</div>
-                    <div id="global-bp-desc" class="stat-trend">✨ Code quality standards</div>
+                    <div id="global-bp-desc" class="stat-trend">Code quality standards</div>
                 </div>
             </section>
 
@@ -534,22 +524,22 @@ ${this.getPostHogScript()}
                     <h2 id="country-comparison-heading">🏆 Best & Worst Performing Countries</h2>
                     <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
                         <a href="${this.getCountryUrl(countryStats.best.name)}" class="best-country country-tile-link" role="button" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
-                            <h3 id="best-country-title">🥇 Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h3>
+                            <h3 id="best-country-title">Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h3>
                             <div class="country-score" aria-label="${countryStats.best.avgPerformance} percent average performance">${countryStats.best.avgPerformance}%</div>
                             <p id="best-country-desc">Performance Leader</p>
                         </a>
                         <a href="${countryStats.secondBest ? this.getCountryUrl(countryStats.secondBest.name) : '#'}" class="second-best-country country-tile-link" role="button" aria-labelledby="second-best-title" aria-describedby="second-best-desc">
-                            <h3 id="second-best-title">🥈 Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'} ${countryStats.secondBest ? this.getCountryFlag(countryStats.secondBest.name) : ''}</h3>
+                            <h3 id="second-best-title">Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'} ${countryStats.secondBest ? this.getCountryFlag(countryStats.secondBest.name) : ''}</h3>
                             <div class="country-score" aria-label="${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0} percent average performance">${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0}%</div>
                             <p id="second-best-desc">Strong Performer</p>
                         </a>
                         <a href="${countryStats.secondWorst ? this.getCountryUrl(countryStats.secondWorst.name) : '#'}" class="second-worst-country country-tile-link" role="button" aria-labelledby="second-worst-title" aria-describedby="second-worst-desc">
-                            <h3 id="second-worst-title">📈 Room for Growth: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'} ${countryStats.secondWorst ? this.getCountryFlag(countryStats.secondWorst.name) : ''}</h3>
+                            <h3 id="second-worst-title">Almost last: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'} ${countryStats.secondWorst ? this.getCountryFlag(countryStats.secondWorst.name) : ''}</h3>
                             <div class="country-score" aria-label="${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0} percent average performance">${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0}%</div>
                             <p id="second-worst-desc">Improvement Potential</p>
                         </a>
                         <a href="${this.getCountryUrl(countryStats.worst.name)}" class="worst-country country-tile-link" role="button" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
-                            <h3 id="worst-country-title">🔄 Needs Improvement: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h3>
+                            <h3 id="worst-country-title">Worst: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h3>
                             <div class="country-score" aria-label="${countryStats.worst.avgPerformance} percent average performance">${countryStats.worst.avgPerformance}%</div>
                             <p id="worst-country-desc">Growth Opportunity</p>
                         </a>
@@ -559,12 +549,12 @@ ${this.getPostHogScript()}
                     <h2 id="website-comparison-heading" style="margin-top: 40px;">🏆 Best & Worst Performing Websites</h2>
                     <div class="website-comparison" role="group" aria-labelledby="website-comparison-heading">
                         <a href="domain-${websiteStats.best.url.replace(/\./g, '-')}.html" class="best-website website-tile-link" role="button" aria-labelledby="best-website-title" aria-describedby="best-website-desc">
-                            <h3 id="best-website-title">🥇 Best: ${websiteStats.best.url}</h3>
+                            <h3 id="best-website-title">Best: ${websiteStats.best.url}</h3>
                             <div class="website-score" aria-label="${websiteStats.best.performance} percent performance">${websiteStats.best.performance}%</div>
                             <p id="best-website-desc">${this.getCountryFlag(websiteStats.best.country)} ${this.normalizeCountry(websiteStats.best.country)}</p>
                         </a>
                         <a href="domain-${websiteStats.worst.url.replace(/\./g, '-')}.html" class="worst-website website-tile-link" role="button" aria-labelledby="worst-website-title" aria-describedby="worst-website-desc">
-                            <h3 id="worst-website-title">🔄 Needs Improvement: ${websiteStats.worst.url}</h3>
+                            <h3 id="worst-website-title">Needs Improvement: ${websiteStats.worst.url}</h3>
                             <div class="website-score" aria-label="${websiteStats.worst.performance} percent performance">${websiteStats.worst.performance}%</div>
                             <p id="worst-website-desc">${this.getCountryFlag(websiteStats.worst.country)} ${this.normalizeCountry(websiteStats.worst.country)}</p>
                         </a>
@@ -578,12 +568,12 @@ ${this.getPostHogScript()}
                     <div class="industry-comparison" role="group" aria-labelledby="industry-comparison-heading">
                         <h3 id="industry-comparison-heading" class="sr-only">Industry Performance Comparison</h3>
                         <div class="best-industry" role="img" aria-labelledby="best-industry-title" aria-describedby="best-industry-desc">
-                            <h4 id="best-industry-title">🥇 Best: ${industryStats.best.name}</h4>
+                            <h4 id="best-industry-title">Best: ${industryStats.best.name}</h4>
                             <div class="industry-score" aria-label="${industryStats.best.avgPerformance} percent average performance">${industryStats.best.avgPerformance}%</div>
                             <p id="best-industry-desc">Performance Leader</p>
                         </div>
                         <div class="worst-industry" role="img" aria-labelledby="worst-industry-title" aria-describedby="worst-industry-desc">
-                            <h4 id="worst-industry-title">🔄 Needs Improvement: ${industryStats.worst.name}</h4>
+                            <h4 id="worst-industry-title">Worst: ${industryStats.worst.name}</h4>
                             <div class="industry-score" aria-label="${industryStats.worst.avgPerformance} percent average performance">${industryStats.worst.avgPerformance}%</div>
                             <p id="worst-industry-desc">Growth Opportunity</p>
                         </div>
@@ -609,7 +599,7 @@ ${this.getPostHogScript()}
                         </div>
                         <div class="see-all-link">
                             <a href="all-industries.html" class="btn-see-all" aria-describedby="see-all-industries-desc">
-                                📊 See all industries
+                                See all industries
                             </a>
                             <div id="see-all-industries-desc" class="sr-only">View comprehensive list of all industry performance rankings</div>
                         </div>
@@ -635,7 +625,7 @@ ${this.getPostHogScript()}
                 `).join('')}
             </div>
             <div class="see-all-link">
-                <a href="all-countries.html" class="btn-see-all">🌍 See all countries</a>
+                <a href="all-countries.html" class="btn-see-all">See all countries</a>
             </div>
             </section>
 
@@ -752,7 +742,7 @@ ${this.getPostHogScript()}
                     </table>
                 </div>
             <div class="see-all-link">
-                <a href="all-companies.html" class="btn-see-all">🏢 See all companies</a>
+                <a href="all-companies.html" class="btn-see-all">See all websites</a>
             </div>
         </section>
 
@@ -2664,7 +2654,6 @@ body {
 .country-tile-link {
     display: block;
     text-decoration: none;
-    color: white;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
 }
@@ -3379,10 +3368,6 @@ a {
 
 a:hover, a:focus {
     text-decoration: none;
-}
-
-a:visited {
-    color: #6f42c1;
 }
 
 /* Form Elements Accessibility */

@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.132Z",
+    "generated_at": "2025-10-24T15:44:51.492Z",
     "country": "Bolivia",
     "flag": "🇧🇴",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 69,
-    "accessibility": 81,
+    "performance": 79,
+    "accessibility": 84,
     "best_practices": 100,
-    "seo": 92,
+    "seo": 95,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "sol.bo",
+      "industry": "Portal",
+      "scores": {
+        "performance": 98,
+        "accessibility": 89,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-23 22:15:58"
+    },
     {
       "url": "laprensa.com.bo",
       "industry": "Media",
@@ -47,6 +59,17 @@
         "accessibility": 81,
         "best_practices": 100,
         "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 98,
+        "accessibility": 89,
+        "best_practices": 100,
+        "seo": 100,
         "pwa": 33
       }
     }

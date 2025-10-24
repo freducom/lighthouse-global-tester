@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.131Z",
+    "generated_at": "2025-10-24T15:44:51.491Z",
     "country": "Malaysia",
     "flag": "🇲🇾",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 80,
-    "accessibility": 85,
+    "performance": 79,
+    "accessibility": 83,
     "best_practices": 92,
-    "seo": 91,
+    "seo": 86,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "themalaysianreserve.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 81,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 12:22:28"
+    },
     {
       "url": "mymoney.com.my",
       "industry": "Finance",
@@ -29,13 +41,13 @@
       "url": "sinchew.com.my",
       "industry": "Media",
       "scores": {
-        "performance": 80,
+        "performance": 76,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-23 21:23:05"
+      "test_date": "2025-10-23 21:47:38"
     }
   ],
   "industries": [
@@ -52,12 +64,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 80,
+        "performance": 79,
         "accessibility": 81,
         "best_practices": 92,
-        "seo": 82,
+        "seo": 79,
         "pwa": 33
       }
     }

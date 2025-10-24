@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:20:35.133Z",
+    "generated_at": "2025-10-24T15:44:51.494Z",
     "country": "Kenya",
     "flag": "🇰🇪",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 89,
-    "best_practices": 72,
-    "seo": 86,
-    "pwa": 29
+    "performance": 39,
+    "accessibility": 91,
+    "best_practices": 73,
+    "seo": 88,
+    "pwa": 28
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-21 20:19:07"
+    },
+    {
+      "url": "standardmedia.co.ke",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 22
+      },
+      "test_date": "2025-10-24 02:54:49"
     },
     {
       "url": "safaricom.co.ke",
@@ -53,13 +65,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 39,
+        "performance": 41,
         "accessibility": 98,
-        "best_practices": 67,
-        "seo": 87,
-        "pwa": 28
+        "best_practices": 70,
+        "seo": 89,
+        "pwa": 26
       }
     },
     {
