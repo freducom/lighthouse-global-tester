@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.483Z",
+    "generated_at": "2025-10-25T14:55:51.404Z",
     "country": "Ukraine",
     "flag": "🇺🇦",
-    "website_count": 4
+    "website_count": 7
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 75,
-    "best_practices": 77,
-    "seo": 89,
-    "pwa": 53
+    "performance": 54,
+    "accessibility": 79,
+    "best_practices": 78,
+    "seo": 92,
+    "pwa": 57
   },
   "websites": [
+    {
+      "url": "unian.ua",
+      "industry": "Media",
+      "scores": {
+        "performance": 69,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 100
+      },
+      "test_date": "2025-10-24 20:20:35"
+    },
     {
       "url": "news.finance.ua",
       "industry": "Finance",
@@ -24,6 +36,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-22 19:44:03"
+    },
+    {
+      "url": "tsn.ua",
+      "industry": "Media",
+      "scores": {
+        "performance": 60,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-24 18:14:26"
     },
     {
       "url": "sport.ua",
@@ -48,6 +72,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 03:04:30"
+    },
+    {
+      "url": "ukr.net",
+      "industry": "Portal",
+      "scores": {
+        "performance": 46,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 20:13:36"
     },
     {
       "url": "pravda.com.ua",
@@ -76,12 +112,23 @@
     },
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 42,
-        "accessibility": 79,
-        "best_practices": 75,
-        "seo": 87,
+        "performance": 53,
+        "accessibility": 85,
+        "best_practices": 79,
+        "seo": 92,
+        "pwa": 56
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 46,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 95,
         "pwa": 33
       }
     },

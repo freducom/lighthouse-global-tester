@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.478Z",
+    "generated_at": "2025-10-25T14:55:51.398Z",
     "country": "Israel",
     "flag": "🇮🇱",
     "website_count": 10
   },
   "averages": {
     "performance": 39,
-    "accessibility": 74,
-    "best_practices": 77,
+    "accessibility": 73,
+    "best_practices": 76,
     "seo": 90,
     "pwa": 35
   },
@@ -38,18 +38,6 @@
       "test_date": "2025-10-19 20:18:17"
     },
     {
-      "url": "wix.com",
-      "industry": "Software",
-      "scores": {
-        "performance": 41,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:17:29"
-    },
-    {
       "url": "globes.co.il",
       "industry": "Media",
       "scores": {
@@ -60,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:20:16"
+    },
+    {
+      "url": "wix.com",
+      "industry": "Software",
+      "scores": {
+        "performance": 39,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 04:15:27"
     },
     {
       "url": "mako.co.il",
@@ -161,10 +161,10 @@
       "industry": "Software",
       "website_count": 1,
       "averages": {
-        "performance": 41,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 86,
+        "performance": 39,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 79,
         "pwa": 33
       }
     },

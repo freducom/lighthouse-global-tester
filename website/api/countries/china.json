@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.490Z",
+    "generated_at": "2025-10-25T14:55:51.412Z",
     "country": "China",
     "flag": "🇨🇳",
-    "website_count": 4
+    "website_count": 6
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 47,
-    "best_practices": 83,
-    "seo": 83,
-    "pwa": 39
+    "performance": 44,
+    "accessibility": 49,
+    "best_practices": 71,
+    "seo": 82,
+    "pwa": 46
   },
   "websites": [
     {
@@ -38,6 +38,18 @@
       "test_date": "2025-10-21 18:12:11"
     },
     {
+      "url": "weibo.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 51,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 89
+      },
+      "test_date": "2025-10-25 03:04:15"
+    },
+    {
       "url": "sohu.com",
       "industry": "Portal",
       "scores": {
@@ -48,6 +60,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 22:15:21"
+    },
+    {
+      "url": "xiaohongshu.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 52,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 06:16:14"
     },
     {
       "url": "qq.com",
@@ -83,6 +107,17 @@
         "best_practices": 88,
         "seo": 79,
         "pwa": 45
+      }
+    },
+    {
+      "industry": "Social Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 41,
+        "accessibility": 52,
+        "best_practices": 46,
+        "seo": 81,
+        "pwa": 61
       }
     }
   ]

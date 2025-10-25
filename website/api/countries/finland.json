@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.477Z",
+    "generated_at": "2025-10-25T14:55:51.398Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 18
+    "website_count": 23
   },
   "averages": {
-    "performance": 48,
-    "accessibility": 91,
-    "best_practices": 90,
-    "seo": 97,
+    "performance": 50,
+    "accessibility": 90,
+    "best_practices": 89,
+    "seo": 96,
     "pwa": 45
   },
   "websites": [
@@ -62,6 +62,42 @@
       "test_date": "2025-10-24 04:12:38"
     },
     {
+      "url": "valohai.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 73,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:14:30"
+    },
+    {
+      "url": "wpseoai.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 65,
+        "accessibility": 90,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 06:15:39"
+    },
+    {
+      "url": "vr.fi",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 60,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 00:51:41"
+    },
+    {
       "url": "helsinki.fi",
       "industry": "Education",
       "scores": {
@@ -98,28 +134,52 @@
       "test_date": "2025-10-19 20:15:25"
     },
     {
+      "url": "vero.fi",
+      "industry": "Government",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-10-24 22:15:10"
+    },
+    {
       "url": "yle.fi",
       "industry": "Media",
       "scores": {
-        "performance": 45,
-        "accessibility": 80,
-        "best_practices": 92,
+        "performance": 44,
+        "accessibility": 83,
+        "best_practices": 83,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:15:06"
+      "test_date": "2025-10-25 08:12:32"
+    },
+    {
+      "url": "tori.fi",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-24 16:00:30"
     },
     {
       "url": "verkkokauppa.com",
       "industry": "E-commerce",
       "scores": {
-        "performance": 38,
+        "performance": 40,
         "accessibility": 100,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 100
       },
-      "test_date": "2025-10-19 20:16:28"
+      "test_date": "2025-10-24 22:14:50"
     },
     {
       "url": "is.fi",
@@ -194,6 +254,18 @@
       "test_date": "2025-10-23 19:32:33"
     },
     {
+      "url": "vaadin.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 28,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:13:29"
+    },
+    {
       "url": "oikotie.fi",
       "industry": "Marketplace",
       "scores": {
@@ -216,18 +288,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 02:59:22"
-    },
-    {
-      "url": "tori.fi",
-      "industry": "Marketplace",
-      "scores": {
-        "performance": 22,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 67
-      },
-      "test_date": "2025-10-24 14:20:09"
     }
   ],
   "industries": [
@@ -235,9 +295,9 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 44,
+        "performance": 45,
         "accessibility": 97,
-        "best_practices": 92,
+        "best_practices": 96,
         "seo": 100,
         "pwa": 67
       }
@@ -266,11 +326,22 @@
     },
     {
       "industry": "Government",
+      "website_count": 2,
+      "averages": {
+        "performance": 39,
+        "accessibility": 96,
+        "best_practices": 80,
+        "seo": 97,
+        "pwa": 39
+      }
+    },
+    {
+      "industry": "Marketing",
       "website_count": 1,
       "averages": {
-        "performance": 32,
-        "accessibility": 91,
-        "best_practices": 92,
+        "performance": 65,
+        "accessibility": 90,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 33
       }
@@ -279,7 +350,7 @@
       "industry": "Marketplace",
       "website_count": 2,
       "averages": {
-        "performance": 24,
+        "performance": 35,
         "accessibility": 75,
         "best_practices": 83,
         "seo": 100,
@@ -290,9 +361,9 @@
       "industry": "Media",
       "website_count": 6,
       "averages": {
-        "performance": 38,
+        "performance": 37,
         "accessibility": 91,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 98,
         "pwa": 54
       }
@@ -306,6 +377,28 @@
         "best_practices": 75,
         "seo": 83,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Technology",
+      "website_count": 2,
+      "averages": {
+        "performance": 51,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 1,
+      "averages": {
+        "performance": 60,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
       }
     },
     {

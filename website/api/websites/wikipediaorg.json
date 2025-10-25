@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.588Z",
+    "generated_at": "2025-10-25T14:55:51.527Z",
     "url": "wikipedia.org",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 96,
-    "accessibility": 93,
+    "performance": 93,
+    "accessibility": 92,
     "best_practices": 92,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-23 06:52:49"
+    "test_date": "2025-10-25 04:13:16"
   },
   "historical_data": [
+    {
+      "performance": 93,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-10-25 04:13:16"
+    },
     {
       "performance": 96,
       "accessibility": 93,
@@ -56,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
-    "accessibility": 0,
+    "performance": -3,
+    "accessibility": -1,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 06:52:49",
-    "test_date_previous": "2025-10-22 08:28:54"
+    "test_date_current": "2025-10-25 04:13:16",
+    "test_date_previous": "2025-10-23 06:52:49"
   }
 }

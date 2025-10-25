@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.564Z",
+    "generated_at": "2025-10-25T14:55:51.500Z",
     "url": "timesofmalta.com",
     "country": "Malta",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 34,
     "accessibility": 96,
     "best_practices": 75,
     "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-24 14:13:58"
+    "test_date": "2025-10-24 15:28:55"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-10-24 15:28:55"
+    },
     {
       "performance": 38,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 14:13:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 15:28:55",
+    "test_date_previous": "2025-10-24 14:13:58"
+  }
 }

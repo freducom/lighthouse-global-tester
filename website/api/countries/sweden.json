@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.480Z",
+    "generated_at": "2025-10-25T14:55:51.400Z",
     "country": "Sweden",
     "flag": "🇸🇪",
-    "website_count": 20
+    "website_count": 21
   },
   "averages": {
-    "performance": 46,
+    "performance": 47,
     "accessibility": 95,
     "best_practices": 89,
     "seo": 95,
-    "pwa": 44
+    "pwa": 45
   },
   "websites": [
     {
@@ -60,6 +60,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 12:24:42"
+    },
+    {
+      "url": "trafikverket.se",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 65,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-24 16:12:30"
     },
     {
       "url": "aftonbladet.se",
@@ -345,13 +357,13 @@
     },
     {
       "industry": "Transportation",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 28,
+        "performance": 47,
         "accessibility": 98,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 33
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 50
       }
     },
     {

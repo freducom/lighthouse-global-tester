@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.494Z",
+    "generated_at": "2025-10-25T14:55:51.417Z",
     "country": "Namibia",
     "flag": "🇳🇦",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 85,
-    "best_practices": 81,
-    "seo": 86,
+    "performance": 40,
+    "accessibility": 86,
+    "best_practices": 80,
+    "seo": 84,
     "pwa": 33
   },
   "websites": [
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 16:15:19"
+    },
+    {
+      "url": "travel-namibia.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 47,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 78,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 16:12:50"
     },
     {
       "url": "namibian.com.na",
@@ -65,12 +77,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 32,
+        "performance": 36,
         "accessibility": 87,
-        "best_practices": 80,
-        "seo": 86,
+        "best_practices": 79,
+        "seo": 84,
         "pwa": 33
       }
     },

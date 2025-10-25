@@ -92,6 +92,20 @@
                     <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
                     <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
                 </div>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+                
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
@@ -101,15 +115,51 @@
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Country</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by rank">
+                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by website name">
+                                        Website <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by country">
+                                        Country <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
+                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
+                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
+                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
+                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
+                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
+                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
+                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
@@ -469,9 +519,98 @@
             });
         }
         
+        // Sorting functionality
+        function sortData(column, order = 'desc') {
+            const table = document.querySelector('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            rows.sort((a, b) => {
+                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
+                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+                
+                if (!aVal || !bVal) return 0;
+                
+                // Get text content or data attribute value
+                aVal = aVal.textContent.trim();
+                bVal = bVal.textContent.trim();
+                
+                // Handle numeric values
+                const aNum = parseFloat(aVal);
+                const bNum = parseFloat(bVal);
+                
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                }
+                
+                // Handle string values
+                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+            });
+            
+            // Clear and re-append sorted rows
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update sort indicators
+            updateSortIndicators(column, order);
+        }
+        
+        function updateSortIndicators(activeColumn, order) {
+            const headers = document.querySelectorAll('.sortable-header');
+            headers.forEach((header, index) => {
+                const arrow = header.querySelector('.sort-arrow');
+                if (index === activeColumn) {
+                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
+                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+                } else {
+                    arrow.textContent = '';
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
+        
+        function getColumnIndex(sortType) {
+            const columnMap = {
+                'rank': 0,
+                'url': 1, 
+                'country': 2,
+                'performance': 3,
+                'accessibility': 4,
+                'seo': 5,
+                'best_practices': 6,
+                'pwa': 7,
+                'test_date': 8
+            };
+            return columnMap[sortType] || 0;
+        }
+        
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
             formatAllDates();
+            
+            // Add click handlers for sortable headers
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const button = header.querySelector('.sort-header-btn');
+                if (button) {
+                    button.addEventListener('click', function() {
+                        const sortType = header.getAttribute('data-sort');
+                        const column = getColumnIndex(sortType);
+                        const currentSort = header.getAttribute('aria-sort');
+                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
+                        sortData(column, newOrder);
+                    });
+                }
+            });
+            
+            // Add click handlers for quick sort buttons
+            document.querySelectorAll('.sort-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const sortType = this.getAttribute('data-sort');
+                    const order = this.getAttribute('data-order') || 'desc';
+                    const column = getColumnIndex(sortType);
+                    sortData(column, order);
+                });
+            });
         });
         
     </script>

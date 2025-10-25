@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.516Z",
+    "generated_at": "2025-10-25T14:55:51.442Z",
     "industry": "Marketplace",
-    "website_count": 14
+    "website_count": 16
   },
   "averages": {
     "performance": 43,
-    "accessibility": 85,
+    "accessibility": 87,
     "best_practices": 83,
     "seo": 92,
-    "pwa": 48
+    "pwa": 52
   },
   "websites": [
+    {
+      "url": "willhaben.at",
+      "country": "Austria",
+      "scores": {
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 96,
+        "pwa": 78
+      },
+      "test_date": "2025-10-25 04:14:27"
+    },
     {
       "url": "oikotie.fi",
       "country": "Finland",
@@ -28,13 +40,13 @@
       "url": "tori.fi",
       "country": "Finland",
       "scores": {
-        "performance": 22,
+        "performance": 43,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-24 14:20:09"
+      "test_date": "2025-10-24 16:00:30"
     },
     {
       "url": "subito.it",
@@ -83,6 +95,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 10:12:52"
+    },
+    {
+      "url": "trademe.co.nz",
+      "country": "New Zealand",
+      "scores": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-24 16:12:16"
     },
     {
       "url": "olx.com.pk",
@@ -183,10 +207,21 @@
   ],
   "countries": [
     {
+      "country": "Austria",
+      "website_count": 1,
+      "averages": {
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 96,
+        "pwa": 78
+      }
+    },
+    {
       "country": "Finland",
       "website_count": 2,
       "averages": {
-        "performance": 24,
+        "performance": 35,
         "accessibility": 75,
         "best_practices": 83,
         "seo": 100,
@@ -235,6 +270,17 @@
         "best_practices": 92,
         "seo": 96,
         "pwa": 33
+      }
+    },
+    {
+      "country": "New Zealand",
+      "website_count": 1,
+      "averages": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 78
       }
     },
     {

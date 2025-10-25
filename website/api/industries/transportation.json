@@ -1,17 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.517Z",
+    "generated_at": "2025-10-25T14:55:51.444Z",
     "industry": "Transportation",
-    "website_count": 3
+    "website_count": 6
   },
   "averages": {
-    "performance": 47,
-    "accessibility": 85,
-    "best_practices": 86,
-    "seo": 90,
-    "pwa": 33
+    "performance": 49,
+    "accessibility": 90,
+    "best_practices": 88,
+    "seo": 93,
+    "pwa": 44
   },
   "websites": [
+    {
+      "url": "westjet.com",
+      "country": "Canada",
+      "scores": {
+        "performance": 25,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 04:12:53"
+    },
+    {
+      "url": "vr.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 60,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 00:51:41"
+    },
     {
       "url": "ns.nl",
       "country": "Netherlands",
@@ -37,6 +61,18 @@
       "test_date": "2025-10-23 08:33:41"
     },
     {
+      "url": "trafikverket.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 65,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-24 16:12:30"
+    },
+    {
       "url": "tfl.gov.uk",
       "country": "United Kingdom",
       "scores": {
@@ -51,6 +87,28 @@
   ],
   "countries": [
     {
+      "country": "Canada",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 60,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      }
+    },
+    {
       "country": "Netherlands",
       "website_count": 1,
       "averages": {
@@ -63,13 +121,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 28,
+        "performance": 47,
         "accessibility": 98,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 33
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 50
       }
     },
     {

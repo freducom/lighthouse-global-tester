@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.476Z",
+    "generated_at": "2025-10-25T14:55:51.396Z",
     "country": "South Korea",
     "flag": "🇰🇷",
     "website_count": 10
   },
   "averages": {
-    "performance": 36,
+    "performance": 33,
     "accessibility": 78,
     "best_practices": 78,
     "seo": 89,
@@ -14,28 +14,16 @@
   },
   "websites": [
     {
-      "url": "zum.com",
-      "industry": "Portal",
-      "scores": {
-        "performance": 57,
-        "accessibility": 78,
-        "best_practices": 92,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:13:33"
-    },
-    {
-      "url": "yna.co.kr",
-      "industry": "Media",
+      "url": "tistory.com",
+      "industry": "Social Media",
       "scores": {
         "performance": 44,
-        "accessibility": 76,
-        "best_practices": 83,
-        "seo": 92,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:13:09"
+      "test_date": "2025-10-24 15:55:39"
     },
     {
       "url": "hani.co.kr",
@@ -50,18 +38,6 @@
       "test_date": "2025-10-19 20:12:25"
     },
     {
-      "url": "tistory.com",
-      "industry": "Social Media",
-      "scores": {
-        "performance": 41,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 14:15:21"
-    },
-    {
       "url": "naver.com",
       "industry": "Search Engine",
       "scores": {
@@ -72,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 16:14:58"
+    },
+    {
+      "url": "zum.com",
+      "industry": "Portal",
+      "scores": {
+        "performance": 36,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 12:21:43"
     },
     {
       "url": "nate.com",
@@ -96,6 +84,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:08:52"
+    },
+    {
+      "url": "yna.co.kr",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 08:13:26"
     },
     {
       "url": "chosun.com",
@@ -150,9 +150,9 @@
       "industry": "Media",
       "website_count": 4,
       "averages": {
-        "performance": 35,
+        "performance": 32,
         "accessibility": 74,
-        "best_practices": 77,
+        "best_practices": 79,
         "seo": 93,
         "pwa": 33
       }
@@ -161,9 +161,9 @@
       "industry": "Portal",
       "website_count": 3,
       "averages": {
-        "performance": 41,
+        "performance": 34,
         "accessibility": 78,
-        "best_practices": 72,
+        "best_practices": 69,
         "seo": 93,
         "pwa": 33
       }
@@ -183,7 +183,7 @@
       "industry": "Social Media",
       "website_count": 1,
       "averages": {
-        "performance": 41,
+        "performance": 44,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,

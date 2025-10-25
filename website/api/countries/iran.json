@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.487Z",
+    "generated_at": "2025-10-25T14:55:51.408Z",
     "country": "Iran",
     "flag": "🇮🇷",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 65,
-    "accessibility": 80,
-    "best_practices": 70,
-    "seo": 87,
-    "pwa": 33
+    "performance": 64,
+    "accessibility": 81,
+    "best_practices": 71,
+    "seo": 88,
+    "pwa": 36
   },
   "websites": [
     {
@@ -86,6 +86,18 @@
       "test_date": "2025-10-24 08:13:36"
     },
     {
+      "url": "yjc.ir",
+      "industry": "Media",
+      "scores": {
+        "performance": 56,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-25 08:12:14"
+    },
+    {
       "url": "khabaronline.ir",
       "industry": "Media",
       "scores": {
@@ -101,13 +113,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 65,
-        "accessibility": 80,
-        "best_practices": 70,
-        "seo": 87,
-        "pwa": 33
+        "performance": 64,
+        "accessibility": 81,
+        "best_practices": 71,
+        "seo": 88,
+        "pwa": 36
       }
     }
   ]

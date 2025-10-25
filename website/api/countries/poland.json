@@ -1,18 +1,42 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.482Z",
+    "generated_at": "2025-10-25T14:55:51.402Z",
     "country": "Poland",
     "flag": "🇵🇱",
-    "website_count": 7
+    "website_count": 10
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 92,
-    "best_practices": 73,
-    "seo": 95,
+    "performance": 45,
+    "accessibility": 90,
+    "best_practices": 78,
+    "seo": 93,
     "pwa": 54
   },
   "websites": [
+    {
+      "url": "wp.pl",
+      "industry": "Portal",
+      "scores": {
+        "performance": 61,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-25 06:15:16"
+    },
+    {
+      "url": "tvn24.pl",
+      "industry": "Media",
+      "scores": {
+        "performance": 59,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 78
+      },
+      "test_date": "2025-10-24 18:19:28"
+    },
     {
       "url": "o2.pl",
       "industry": "Portal",
@@ -24,6 +48,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-22 22:15:13"
+    },
+    {
+      "url": "uw.edu.pl",
+      "industry": "Education",
+      "scores": {
+        "performance": 51,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:12:34"
     },
     {
       "url": "onet.pl",
@@ -100,6 +136,17 @@
   ],
   "industries": [
     {
+      "industry": "Education",
+      "website_count": 1,
+      "averages": {
+        "performance": 51,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Jobs",
       "website_count": 2,
       "averages": {
@@ -133,14 +180,25 @@
       }
     },
     {
-      "industry": "Portal",
-      "website_count": 2,
+      "industry": "Media",
+      "website_count": 1,
       "averages": {
-        "performance": 52,
-        "accessibility": 88,
-        "best_practices": 71,
-        "seo": 99,
-        "pwa": 89
+        "performance": 59,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 78
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 3,
+      "averages": {
+        "performance": 55,
+        "accessibility": 86,
+        "best_practices": 78,
+        "seo": 97,
+        "pwa": 78
       }
     },
     {

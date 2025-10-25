@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.574Z",
+    "generated_at": "2025-10-25T14:55:51.510Z",
     "url": "zum.com",
     "country": "South Korea",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 57,
-    "accessibility": 78,
-    "best_practices": 92,
+    "performance": 36,
+    "accessibility": 80,
+    "best_practices": 83,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-19 20:13:33"
+    "test_date": "2025-10-25 12:21:43"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-10-25 12:21:43"
+    },
     {
       "performance": 57,
       "accessibility": 78,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:13:33"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -21,
+    "accessibility": 2,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-25 12:21:43",
+    "test_date_previous": "2025-10-19 20:13:33"
+  }
 }

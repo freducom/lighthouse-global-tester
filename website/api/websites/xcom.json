@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.588Z",
+    "generated_at": "2025-10-25T14:55:51.527Z",
     "url": "x.com",
     "country": "United States",
     "industry": "Social Media"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 34,
     "accessibility": 87,
     "best_practices": 92,
-    "seo": 100,
+    "seo": 91,
     "pwa": 89,
-    "test_date": "2025-10-23 06:52:14"
+    "test_date": "2025-10-25 06:15:53"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 87,
+      "best_practices": 92,
+      "seo": 91,
+      "pwa": 89,
+      "test_date": "2025-10-25 06:15:53"
+    },
     {
       "performance": 38,
       "accessibility": 87,
@@ -59,9 +67,9 @@
     "performance": -4,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": -9,
     "pwa": 0,
-    "test_date_current": "2025-10-23 06:52:14",
-    "test_date_previous": "2025-10-22 08:28:44"
+    "test_date_current": "2025-10-25 06:15:53",
+    "test_date_previous": "2025-10-23 06:52:14"
   }
 }

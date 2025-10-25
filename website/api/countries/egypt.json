@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.486Z",
+    "generated_at": "2025-10-25T14:55:51.407Z",
     "country": "Egypt",
     "flag": "🇪🇬",
-    "website_count": 2
+    "website_count": 4
   },
   "averages": {
-    "performance": 36,
-    "accessibility": 86,
-    "best_practices": 67,
-    "seo": 87,
-    "pwa": 33
+    "performance": 32,
+    "accessibility": 91,
+    "best_practices": 63,
+    "seo": 91,
+    "pwa": 42
   },
   "websites": [
     {
@@ -24,6 +24,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 06:14:17"
+    },
+    {
+      "url": "yallakora.com",
+      "industry": "Sports",
+      "scores": {
+        "performance": 34,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 08:11:24"
+    },
+    {
+      "url": "youm7.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 22,
+        "accessibility": 96,
+        "best_practices": 50,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 08:17:20"
     },
     {
       "url": "elwatannews.com",
@@ -41,13 +65,24 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 36,
-        "accessibility": 86,
-        "best_practices": 67,
-        "seo": 87,
+        "performance": 31,
+        "accessibility": 89,
+        "best_practices": 61,
+        "seo": 91,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Sports",
+      "website_count": 1,
+      "averages": {
+        "performance": 34,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 67
       }
     }
   ]

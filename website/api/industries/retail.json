@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2025-10-25T14:55:51.444Z",
+    "industry": "Retail",
+    "website_count": 1
+  },
+  "averages": {
+    "performance": 37,
+    "accessibility": 93,
+    "best_practices": 67,
+    "seo": 91,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "walmart.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 03:00:21"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Canada",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      }
+    }
+  ]
+}

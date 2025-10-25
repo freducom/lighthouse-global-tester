@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.515Z",
+    "generated_at": "2025-10-25T14:55:51.443Z",
     "industry": "E-commerce",
-    "website_count": 26
+    "website_count": 29
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 86,
+    "performance": 41,
+    "accessibility": 83,
     "best_practices": 79,
     "seo": 92,
     "pwa": 49
@@ -112,13 +112,13 @@
       "url": "verkkokauppa.com",
       "country": "Finland",
       "scores": {
-        "performance": 38,
+        "performance": 40,
         "accessibility": 100,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 100
       },
-      "test_date": "2025-10-19 20:16:28"
+      "test_date": "2025-10-24 22:14:50"
     },
     {
       "url": "otto.de",
@@ -143,6 +143,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-23 19:31:29"
+    },
+    {
+      "url": "zalando.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 30,
+        "accessibility": 0,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 22
+      },
+      "test_date": "2025-10-25 10:08:45"
     },
     {
       "url": "amazon.in",
@@ -179,6 +191,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 12:18:12"
+    },
+    {
+      "url": "walmart.com.mx",
+      "country": "Mexico",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 03:00:38"
     },
     {
       "url": "bol.com",
@@ -263,6 +287,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 06:14:40"
+    },
+    {
+      "url": "trendyol.com",
+      "country": "Turkey",
+      "scores": {
+        "performance": 54,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-24 16:13:06"
     },
     {
       "url": "argos.co.uk",
@@ -374,22 +410,22 @@
       "country": "Finland",
       "website_count": 2,
       "averages": {
-        "performance": 44,
+        "performance": 45,
         "accessibility": 97,
-        "best_practices": 92,
+        "best_practices": 96,
         "seo": 100,
         "pwa": 67
       }
     },
     {
       "country": "Germany",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 32,
-        "accessibility": 91,
-        "best_practices": 84,
-        "seo": 91,
-        "pwa": 73
+        "performance": 31,
+        "accessibility": 60,
+        "best_practices": 81,
+        "seo": 94,
+        "pwa": 56
       }
     },
     {
@@ -411,6 +447,17 @@
         "accessibility": 70,
         "best_practices": 83,
         "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Mexico",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 83,
         "pwa": 33
       }
     },
@@ -467,6 +514,17 @@
         "best_practices": 86,
         "seo": 98,
         "pwa": 56
+      }
+    },
+    {
+      "country": "Turkey",
+      "website_count": 1,
+      "averages": {
+        "performance": 54,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 89
       }
     },
     {

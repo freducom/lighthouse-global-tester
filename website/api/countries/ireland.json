@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.481Z",
+    "generated_at": "2025-10-25T14:55:51.401Z",
     "country": "Ireland",
     "flag": "🇮🇪",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 43,
-    "accessibility": 86,
+    "performance": 48,
+    "accessibility": 87,
     "best_practices": 83,
-    "seo": 86,
-    "pwa": 53
+    "seo": 87,
+    "pwa": 50
   },
   "websites": [
+    {
+      "url": "tribune.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 71,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 16:13:22"
+    },
     {
       "url": "irishexaminer.com",
       "industry": "Media",
@@ -77,13 +89,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 43,
-        "accessibility": 86,
+        "performance": 48,
+        "accessibility": 87,
         "best_practices": 83,
-        "seo": 86,
-        "pwa": 53
+        "seo": 87,
+        "pwa": 50
       }
     }
   ]

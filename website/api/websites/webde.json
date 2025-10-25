@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.554Z",
+    "generated_at": "2025-10-25T14:55:51.488Z",
     "url": "web.de",
     "country": "Germany",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 88,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-19 19:42:53"
+    "test_date": "2025-10-25 03:03:39"
   },
   "historical_data": [
+    {
+      "performance": 88,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-10-25 03:03:39"
+    },
     {
       "performance": 65,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:42:53"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 23,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-25 03:03:39",
+    "test_date_previous": "2025-10-19 19:42:53"
+  }
 }

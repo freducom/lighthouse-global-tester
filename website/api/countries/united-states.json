@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.468Z",
+    "generated_at": "2025-10-25T14:55:51.386Z",
     "country": "United States",
     "flag": "🇺🇸",
     "website_count": 50
   },
   "averages": {
-    "performance": 49,
+    "performance": 47,
     "accessibility": 89,
     "best_practices": 80,
     "seo": 90,
-    "pwa": 42
+    "pwa": 43
   },
   "websites": [
     {
@@ -29,13 +29,13 @@
       "url": "wikipedia.org",
       "industry": "Media",
       "scores": {
-        "performance": 96,
-        "accessibility": 93,
+        "performance": 93,
+        "accessibility": 92,
         "best_practices": 92,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:52:49"
+      "test_date": "2025-10-25 04:13:16"
     },
     {
       "url": "adobe.com",
@@ -86,6 +86,18 @@
       "test_date": "2025-10-23 07:02:29"
     },
     {
+      "url": "whitehouse.gov",
+      "industry": "Government",
+      "scores": {
+        "performance": 74,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 83,
+        "pwa": 78
+      },
+      "test_date": "2025-10-25 04:13:05"
+    },
+    {
       "url": "google.com",
       "industry": "Search Engine",
       "scores": {
@@ -122,18 +134,6 @@
       "test_date": "2025-10-23 07:04:36"
     },
     {
-      "url": "wordpress.com",
-      "industry": "Website editor",
-      "scores": {
-        "performance": 66,
-        "accessibility": 94,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 07:03:18"
-    },
-    {
       "url": "nasa.gov",
       "industry": "Government",
       "scores": {
@@ -144,18 +144,6 @@
         "pwa": 44
       },
       "test_date": "2025-10-23 07:06:56"
-    },
-    {
-      "url": "whitehouse.gov",
-      "industry": "Government",
-      "scores": {
-        "performance": 66,
-        "accessibility": 92,
-        "best_practices": 100,
-        "seo": 83,
-        "pwa": 78
-      },
-      "test_date": "2025-10-23 07:07:30"
     },
     {
       "url": "instagram.com",
@@ -194,30 +182,6 @@
       "test_date": "2025-10-23 06:51:59"
     },
     {
-      "url": "wellsfargo.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 58,
-        "accessibility": 100,
-        "best_practices": 58,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 06:59:08"
-    },
-    {
-      "url": "youtube.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 57,
-        "accessibility": 85,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 06:51:42"
-    },
-    {
       "url": "stripe.com",
       "industry": "Finance",
       "scores": {
@@ -254,16 +218,16 @@
       "test_date": "2025-10-23 07:00:37"
     },
     {
-      "url": "usps.com",
-      "industry": "Government",
+      "url": "youtube.com",
+      "industry": "Media",
       "scores": {
-        "performance": 53,
-        "accessibility": 66,
+        "performance": 54,
+        "accessibility": 91,
         "best_practices": 75,
-        "seo": 83,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:08:28"
+      "test_date": "2025-10-25 08:17:57"
     },
     {
       "url": "forbes.com",
@@ -276,6 +240,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 06:57:01"
+    },
+    {
+      "url": "wordpress.com",
+      "industry": "Website editor",
+      "scores": {
+        "performance": 50,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 06:13:28"
     },
     {
       "url": "apple.com",
@@ -374,18 +350,6 @@
       "test_date": "2025-10-23 20:18:30"
     },
     {
-      "url": "x.com",
-      "industry": "Social Media",
-      "scores": {
-        "performance": 38,
-        "accessibility": 87,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 89
-      },
-      "test_date": "2025-10-23 06:52:14"
-    },
-    {
       "url": "netflix.com",
       "industry": "Media",
       "scores": {
@@ -396,6 +360,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:05:20"
+    },
+    {
+      "url": "wellsfargo.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 04:11:21"
     },
     {
       "url": "cnn.com",
@@ -432,6 +408,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 06:54:20"
+    },
+    {
+      "url": "usps.com",
+      "industry": "Government",
+      "scores": {
+        "performance": 36,
+        "accessibility": 66,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 20:27:15"
+    },
+    {
+      "url": "x.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 89
+      },
+      "test_date": "2025-10-25 06:15:53"
     },
     {
       "url": "msnbc.com",
@@ -482,18 +482,6 @@
       "test_date": "2025-10-23 06:58:27"
     },
     {
-      "url": "twitch.tv",
-      "industry": "Media",
-      "scores": {
-        "performance": 30,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 96,
-        "pwa": 56
-      },
-      "test_date": "2025-10-23 07:10:46"
-    },
-    {
       "url": "cnbc.com",
       "industry": "Media",
       "scores": {
@@ -504,18 +492,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:09:34"
-    },
-    {
-      "url": "washingtonpost.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 28,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 06:56:18"
     },
     {
       "url": "bloomberg.com",
@@ -552,6 +528,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 16:48:40"
+    },
+    {
+      "url": "twitch.tv",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 97,
+        "pwa": 67
+      },
+      "test_date": "2025-10-24 18:23:16"
+    },
+    {
+      "url": "washingtonpost.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 92,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 03:01:14"
     },
     {
       "url": "tesla.com",
@@ -641,7 +641,7 @@
       "industry": "Finance",
       "website_count": 8,
       "averages": {
-        "performance": 46,
+        "performance": 44,
         "accessibility": 89,
         "best_practices": 79,
         "seo": 83,
@@ -652,10 +652,10 @@
       "industry": "Government",
       "website_count": 4,
       "averages": {
-        "performance": 61,
+        "performance": 59,
         "accessibility": 88,
         "best_practices": 90,
-        "seo": 91,
+        "seo": 93,
         "pwa": 47
       }
     },
@@ -685,11 +685,11 @@
       "industry": "Media",
       "website_count": 14,
       "averages": {
-        "performance": 40,
+        "performance": 39,
         "accessibility": 88,
-        "best_practices": 82,
+        "best_practices": 81,
         "seo": 92,
-        "pwa": 42
+        "pwa": 43
       }
     },
     {
@@ -718,10 +718,10 @@
       "industry": "Social Media",
       "website_count": 5,
       "averages": {
-        "performance": 57,
+        "performance": 56,
         "accessibility": 84,
         "best_practices": 82,
-        "seo": 97,
+        "seo": 95,
         "pwa": 71
       }
     },
@@ -740,9 +740,9 @@
       "industry": "Website editor",
       "website_count": 4,
       "averages": {
-        "performance": 56,
+        "performance": 52,
         "accessibility": 94,
-        "best_practices": 88,
+        "best_practices": 86,
         "seo": 91,
         "pwa": 42
       }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.542Z",
+    "generated_at": "2025-10-25T14:55:51.475Z",
     "url": "uol.com.br",
     "country": "Brazil",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 48,
-    "accessibility": 68,
-    "best_practices": 83,
+    "performance": 52,
+    "accessibility": 64,
+    "best_practices": 67,
     "seo": 92,
     "pwa": 89,
-    "test_date": "2025-10-19 19:51:10"
+    "test_date": "2025-10-24 20:26:13"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 64,
+      "best_practices": 67,
+      "seo": 92,
+      "pwa": 89,
+      "test_date": "2025-10-24 20:26:13"
+    },
     {
       "performance": 48,
       "accessibility": 68,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:51:10"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": -4,
+    "best_practices": -16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 20:26:13",
+    "test_date_previous": "2025-10-19 19:51:10"
+  }
 }

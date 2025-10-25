@@ -52,14 +52,14 @@
                 </ol>
             </nav>
             <h1>🏭 Portal Industry Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of 19 websites in the portal industry</p>
+            <p class="subtitle">Comprehensive lighthouse analysis of 24 websites in the portal industry</p>
         </header>
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Portal Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 48 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 50 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-poor" aria-hidden="true">48%</div>
+                <div class="stat-value perf-average" aria-hidden="true">50%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average accessibility score: 78 percent">
@@ -92,24 +92,74 @@
                     <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
                     <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
                 </div>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+                
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
-                            Lighthouse performance data for 19 websites in the Portal industry, 
+                            Lighthouse performance data for 24 websites in the Portal industry, 
                             sorted by performance score in descending order. 
                             Table includes website URL, country, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Country</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by rank">
+                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by website name">
+                                        Website <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by country">
+                                        Country <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
+                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
+                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
+                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
+                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
+                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
+                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
+                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
@@ -159,6 +209,48 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
+                                    <a href="domain-web-de.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for web.de">
+                                        web.de
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-germany.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Germany">
+                                        🇩🇪 Germany
+                                    </a>
+                                </td>
+                                <td class="score perf-good"
+                                    aria-label="Performance score: 88 percent, good performance">
+                                    88%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 85 percent, good performance">
+                                    85%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-25 03:03:39"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 03:03:39">10/25/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td>
                                     <a href="domain-gmx-net.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for gmx.net">
@@ -199,7 +291,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td class="rank" aria-label="Rank 4">#4</td>
                                 <td>
                                     <a href="domain-yahoo-com.html" 
                                        class="domain-link"
@@ -241,49 +333,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 4">#4</td>
+                                <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
-                                    <a href="domain-web-de.html" 
+                                    <a href="domain-wp-pl.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for web.de">
-                                        web.de
+                                       aria-label="View detailed report for wp.pl">
+                                        wp.pl
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="country-germany.html" 
+                                    <a href="country-poland.html" 
                                        class="country-link"
-                                       aria-label="View all websites from Germany">
-                                        🇩🇪 Germany
+                                       aria-label="View all websites from Poland">
+                                        🇵🇱 Poland
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 65 percent, average performance">
-                                    65%
+                                    aria-label="Performance score: 61 percent, average performance">
+                                    61%
                                 </td>
-                                <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 100 percent, excellent performance">
-                                    100%
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 84 percent, good performance">
+                                    84%
                                 </td>
-                                <td class="score seo-good"
-                                    aria-label="SEO score: 85 percent, good performance">
-                                    85%
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 93 percent, excellent performance">
+                                    93%
                                 </td>
-                                <td class="score bp-good"
-                                    aria-label="Best Practices score: 75 percent, good performance">
-                                    75%
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
                                 </td>
-                                <td class="score pwa-poor"
-                                    aria-label="PWA score: 33 percent, needs improvement">
-                                    33%
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 56 percent, average performance">
+                                    56%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:42:53"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:42:53">10/19/2025</time>
+                                <td class="date" data-date="2025-10-25 06:15:16"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 06:15:16">10/25/2025</time>
                                 </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 5">#5</td>
+                                <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-malta-com.html" 
                                        class="domain-link"
@@ -325,49 +417,91 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 6">#6</td>
+                                <td class="rank" aria-label="Rank 7">#7</td>
                                 <td>
-                                    <a href="domain-zum-com.html" 
+                                    <a href="domain-virgilio-it.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for zum.com">
-                                        zum.com
+                                       aria-label="View detailed report for virgilio.it">
+                                        virgilio.it
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="country-south-korea.html" 
+                                    <a href="country-italy.html" 
                                        class="country-link"
-                                       aria-label="View all websites from South Korea">
-                                        🇰🇷 South Korea
+                                       aria-label="View all websites from Italy">
+                                        🇮🇹 Italy
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 57 percent, average performance">
-                                    57%
+                                    aria-label="Performance score: 58 percent, average performance">
+                                    58%
                                 </td>
                                 <td class="score acc-good"
-                                    aria-label="Accessibility score: 78 percent, good performance">
-                                    78%
+                                    aria-label="Accessibility score: 87 percent, good performance">
+                                    87%
                                 </td>
                                 <td class="score seo-excellent"
-                                    aria-label="SEO score: 91 percent, excellent performance">
-                                    91%
+                                    aria-label="SEO score: 93 percent, excellent performance">
+                                    93%
                                 </td>
                                 <td class="score bp-excellent"
                                     aria-label="Best Practices score: 92 percent, excellent performance">
                                     92%
                                 </td>
-                                <td class="score pwa-poor"
-                                    aria-label="PWA score: 33 percent, needs improvement">
-                                    33%
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 67 percent, average performance">
+                                    67%
                                 </td>
-                                <td class="date" data-date="2025-10-19 20:13:33"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 20:13:33">10/19/2025</time>
+                                <td class="date" data-date="2025-10-25 00:44:25"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 00:44:25">10/25/2025</time>
                                 </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 7">#7</td>
+                                <td class="rank" aria-label="Rank 8">#8</td>
+                                <td>
+                                    <a href="domain-zambia-co-zm.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for zambia.co.zm">
+                                        zambia.co.zm
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-zambia.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Zambia">
+                                        🇿🇲 Zambia
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 55 percent, average performance">
+                                    55%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 89 percent, good performance">
+                                    89%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 86 percent, good performance">
+                                    86%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-25 10:09:43"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 10:09:43">10/25/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 9">#9</td>
                                 <td>
                                     <a href="domain-o2-pl.html" 
                                        class="domain-link"
@@ -409,7 +543,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 8">#8</td>
+                                <td class="rank" aria-label="Rank 10">#10</td>
+                                <td>
+                                    <a href="domain-uol-com-br.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for uol.com.br">
+                                        uol.com.br
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-brazil.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Brazil">
+                                        🇧🇷 Brazil
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 52 percent, average performance">
+                                    52%
+                                </td>
+                                <td class="score acc-average"
+                                    aria-label="Accessibility score: 64 percent, average performance">
+                                    64%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 89 percent, good performance">
+                                    89%
+                                </td>
+                                <td class="date" data-date="2025-10-24 20:26:13"
+                                    aria-label="Last tested on 10/24/2025">
+                                    <time datetime="2025-10-24 20:26:13">10/24/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 11">#11</td>
                                 <td>
                                     <a href="domain-onet-pl.html" 
                                        class="domain-link"
@@ -451,49 +627,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 9">#9</td>
+                                <td class="rank" aria-label="Rank 12">#12</td>
                                 <td>
-                                    <a href="domain-uol-com-br.html" 
+                                    <a href="domain-yahoo-co-jp.html" 
                                        class="domain-link"
-                                       aria-label="View detailed report for uol.com.br">
-                                        uol.com.br
+                                       aria-label="View detailed report for yahoo.co.jp">
+                                        yahoo.co.jp
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="country-brazil.html" 
+                                    <a href="country-japan.html" 
                                        class="country-link"
-                                       aria-label="View all websites from Brazil">
-                                        🇧🇷 Brazil
+                                       aria-label="View all websites from Japan">
+                                        🇯🇵 Japan
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 48 percent, needs improvement">
-                                    48%
+                                    aria-label="Performance score: 49 percent, needs improvement">
+                                    49%
                                 </td>
-                                <td class="score acc-average"
-                                    aria-label="Accessibility score: 68 percent, average performance">
-                                    68%
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 73 percent, good performance">
+                                    73%
                                 </td>
                                 <td class="score seo-excellent"
-                                    aria-label="SEO score: 92 percent, excellent performance">
-                                    92%
+                                    aria-label="SEO score: 90 percent, excellent performance">
+                                    90%
                                 </td>
                                 <td class="score bp-good"
                                     aria-label="Best Practices score: 83 percent, good performance">
                                     83%
                                 </td>
-                                <td class="score pwa-good"
-                                    aria-label="PWA score: 89 percent, good performance">
-                                    89%
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
                                 </td>
-                                <td class="date" data-date="2025-10-19 19:51:10"
-                                    aria-label="Last tested on 10/19/2025">
-                                    <time datetime="2025-10-19 19:51:10">10/19/2025</time>
+                                <td class="date" data-date="2025-10-25 06:16:31"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 06:16:31">10/25/2025</time>
                                 </td>
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 10">#10</td>
+                                <td class="rank" aria-label="Rank 13">#13</td>
                                 <td>
                                     <a href="domain-rediff-com.html" 
                                        class="domain-link"
@@ -535,7 +711,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 11">#11</td>
+                                <td class="rank" aria-label="Rank 14">#14</td>
+                                <td>
+                                    <a href="domain-ukr-net.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for ukr.net">
+                                        ukr.net
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-ukraine.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Ukraine">
+                                        🇺🇦 Ukraine
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 46 percent, needs improvement">
+                                    46%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 76 percent, good performance">
+                                    76%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 95 percent, excellent performance">
+                                    95%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-24 20:13:36"
+                                    aria-label="Last tested on 10/24/2025">
+                                    <time datetime="2025-10-24 20:13:36">10/24/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 15">#15</td>
                                 <td>
                                     <a href="domain-sohu-com.html" 
                                        class="domain-link"
@@ -577,7 +795,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 12">#12</td>
+                                <td class="rank" aria-label="Rank 16">#16</td>
                                 <td>
                                     <a href="domain-kapook-com.html" 
                                        class="domain-link"
@@ -619,7 +837,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 13">#13</td>
+                                <td class="rank" aria-label="Rank 17">#17</td>
+                                <td>
+                                    <a href="domain-zum-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for zum.com">
+                                        zum.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-south-korea.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from South Korea">
+                                        🇰🇷 South Korea
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 36 percent, needs improvement">
+                                    36%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 80 percent, good performance">
+                                    80%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 91 percent, excellent performance">
+                                    91%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-25 12:21:43"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 12:21:43">10/25/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 18">#18</td>
                                 <td>
                                     <a href="domain-t-online-de.html" 
                                        class="domain-link"
@@ -661,7 +921,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 14">#14</td>
+                                <td class="rank" aria-label="Rank 19">#19</td>
                                 <td>
                                     <a href="domain-mail-ru.html" 
                                        class="domain-link"
@@ -703,7 +963,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 15">#15</td>
+                                <td class="rank" aria-label="Rank 20">#20</td>
                                 <td>
                                     <a href="domain-nate-com.html" 
                                        class="domain-link"
@@ -745,7 +1005,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 16">#16</td>
+                                <td class="rank" aria-label="Rank 21">#21</td>
                                 <td>
                                     <a href="domain-daum-net.html" 
                                        class="domain-link"
@@ -787,7 +1047,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 17">#17</td>
+                                <td class="rank" aria-label="Rank 22">#22</td>
                                 <td>
                                     <a href="domain-terra-com-br.html" 
                                        class="domain-link"
@@ -829,7 +1089,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 18">#18</td>
+                                <td class="rank" aria-label="Rank 23">#23</td>
                                 <td>
                                     <a href="domain-qq-com.html" 
                                        class="domain-link"
@@ -871,7 +1131,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 19">#19</td>
+                                <td class="rank" aria-label="Rank 24">#24</td>
                                 <td>
                                     <a href="domain-freemail-hu.html" 
                                        class="domain-link"
@@ -920,7 +1180,7 @@
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📊 Portal Industry Performance Data | 19 websites tested</p>
+                <p>📊 Portal Industry Performance Data | 24 websites tested</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
@@ -930,7 +1190,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"sol.bo","country":"Bolivia","industry":"Portal","performance":98,"accessibility":89,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 22:15:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"gmx.net","country":"Germany","industry":"Portal","performance":75,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:44:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yahoo.com","country":"United States","industry":"Portal","performance":69,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 06:53:04","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"web.de","country":"Germany","industry":"Portal","performance":65,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:42:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"malta.com","country":"Malta","industry":"Portal","performance":60,"accessibility":72,"best_practices":42,"seo":69,"pwa":0,"test_date":"2025-10-22 08:48:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"zum.com","country":"South Korea","industry":"Portal","performance":57,"accessibility":78,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-10-19 20:13:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"o2.pl","country":"Poland","industry":"Portal","performance":54,"accessibility":96,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-22 22:15:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"onet.pl","country":"Poland","industry":"Portal","performance":50,"accessibility":79,"best_practices":67,"seo":98,"pwa":100,"test_date":"2025-10-23 02:58:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"uol.com.br","country":"Brazil","industry":"Portal","performance":48,"accessibility":68,"best_practices":83,"seo":92,"pwa":89,"test_date":"2025-10-19 19:51:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rediff.com","country":"India","industry":"Portal","performance":47,"accessibility":83,"best_practices":67,"seo":85,"pwa":33,"test_date":"2025-10-23 12:20:27","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-29,"text":"-29","class":"delta-negative"},"accessibility_delta":{"delta":-11,"text":"-11","class":"delta-negative"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sohu.com","country":"China","industry":"Portal","performance":45,"accessibility":33,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-23 22:15:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"kapook.com","country":"Thailand","industry":"Portal","performance":37,"accessibility":93,"best_practices":50,"seo":92,"pwa":33,"test_date":"2025-10-21 18:19:41","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"t-online.de","country":"Germany","industry":"Portal","performance":35,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-24 06:15:06","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-13,"text":"-13","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":33,"accessibility":63,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-22 08:44:08","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":33,"text":"+33","class":"delta-positive"},"accessibility_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nate.com","country":"South Korea","industry":"Portal","performance":33,"accessibility":74,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-22 16:12:46","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-33,"text":"-33","class":"delta-negative"},"accessibility_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"best_practices_delta":{"delta":-16,"text":"-16","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"daum.net","country":"South Korea","industry":"Portal","performance":32,"accessibility":81,"best_practices":58,"seo":98,"pwa":33,"test_date":"2025-10-19 20:08:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"terra.com.br","country":"Brazil","industry":"Portal","performance":30,"accessibility":70,"best_practices":92,"seo":85,"pwa":100,"test_date":"2025-10-19 19:54:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"qq.com","country":"China","industry":"Portal","performance":29,"accessibility":47,"best_practices":92,"seo":74,"pwa":56,"test_date":"2025-10-23 10:20:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"freemail.hu","country":"Hungary","industry":"Portal","performance":21,"accessibility":86,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-20 20:13:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"sol.bo","country":"Bolivia","industry":"Portal","performance":98,"accessibility":89,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 22:15:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"web.de","country":"Germany","industry":"Portal","performance":88,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-25 03:03:39","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":23,"text":"+23","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"gmx.net","country":"Germany","industry":"Portal","performance":75,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:44:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yahoo.com","country":"United States","industry":"Portal","performance":69,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 06:53:04","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"wp.pl","country":"Poland","industry":"Portal","performance":61,"accessibility":84,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-25 06:15:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"malta.com","country":"Malta","industry":"Portal","performance":60,"accessibility":72,"best_practices":42,"seo":69,"pwa":0,"test_date":"2025-10-22 08:48:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"virgilio.it","country":"Italy","industry":"Portal","performance":58,"accessibility":87,"best_practices":92,"seo":93,"pwa":67,"test_date":"2025-10-25 00:44:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"zambia.co.zm","country":"Zambia","industry":"Portal","performance":55,"accessibility":89,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-10-25 10:09:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"o2.pl","country":"Poland","industry":"Portal","performance":54,"accessibility":96,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-22 22:15:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"uol.com.br","country":"Brazil","industry":"Portal","performance":52,"accessibility":64,"best_practices":67,"seo":92,"pwa":89,"test_date":"2025-10-24 20:26:13","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"best_practices_delta":{"delta":-16,"text":"-16","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"onet.pl","country":"Poland","industry":"Portal","performance":50,"accessibility":79,"best_practices":67,"seo":98,"pwa":100,"test_date":"2025-10-23 02:58:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yahoo.co.jp","country":"Japan","industry":"Portal","performance":49,"accessibility":73,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-25 06:16:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rediff.com","country":"India","industry":"Portal","performance":47,"accessibility":83,"best_practices":67,"seo":85,"pwa":33,"test_date":"2025-10-23 12:20:27","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-29,"text":"-29","class":"delta-negative"},"accessibility_delta":{"delta":-11,"text":"-11","class":"delta-negative"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ukr.net","country":"Ukraine","industry":"Portal","performance":46,"accessibility":76,"best_practices":67,"seo":95,"pwa":33,"test_date":"2025-10-24 20:13:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sohu.com","country":"China","industry":"Portal","performance":45,"accessibility":33,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-23 22:15:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"kapook.com","country":"Thailand","industry":"Portal","performance":37,"accessibility":93,"best_practices":50,"seo":92,"pwa":33,"test_date":"2025-10-21 18:19:41","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"zum.com","country":"South Korea","industry":"Portal","performance":36,"accessibility":80,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-25 12:21:43","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-21,"text":"-21","class":"delta-negative"},"accessibility_delta":{"delta":2,"text":"+2","class":"delta-positive"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"t-online.de","country":"Germany","industry":"Portal","performance":35,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-24 06:15:06","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-13,"text":"-13","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":33,"accessibility":63,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-22 08:44:08","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":33,"text":"+33","class":"delta-positive"},"accessibility_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nate.com","country":"South Korea","industry":"Portal","performance":33,"accessibility":74,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-22 16:12:46","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-33,"text":"-33","class":"delta-negative"},"accessibility_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"best_practices_delta":{"delta":-16,"text":"-16","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"daum.net","country":"South Korea","industry":"Portal","performance":32,"accessibility":81,"best_practices":58,"seo":98,"pwa":33,"test_date":"2025-10-19 20:08:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"terra.com.br","country":"Brazil","industry":"Portal","performance":30,"accessibility":70,"best_practices":92,"seo":85,"pwa":100,"test_date":"2025-10-19 19:54:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"qq.com","country":"China","industry":"Portal","performance":29,"accessibility":47,"best_practices":92,"seo":74,"pwa":56,"test_date":"2025-10-23 10:20:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"freemail.hu","country":"Hungary","industry":"Portal","performance":21,"accessibility":86,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-20 20:13:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -1057,9 +1317,98 @@
             });
         }
         
+        // Sorting functionality
+        function sortData(column, order = 'desc') {
+            const table = document.querySelector('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            rows.sort((a, b) => {
+                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
+                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+                
+                if (!aVal || !bVal) return 0;
+                
+                // Get text content or data attribute value
+                aVal = aVal.textContent.trim();
+                bVal = bVal.textContent.trim();
+                
+                // Handle numeric values
+                const aNum = parseFloat(aVal);
+                const bNum = parseFloat(bVal);
+                
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                }
+                
+                // Handle string values
+                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+            });
+            
+            // Clear and re-append sorted rows
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update sort indicators
+            updateSortIndicators(column, order);
+        }
+        
+        function updateSortIndicators(activeColumn, order) {
+            const headers = document.querySelectorAll('.sortable-header');
+            headers.forEach((header, index) => {
+                const arrow = header.querySelector('.sort-arrow');
+                if (index === activeColumn) {
+                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
+                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+                } else {
+                    arrow.textContent = '';
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
+        
+        function getColumnIndex(sortType) {
+            const columnMap = {
+                'rank': 0,
+                'url': 1, 
+                'country': 2,
+                'performance': 3,
+                'accessibility': 4,
+                'seo': 5,
+                'best_practices': 6,
+                'pwa': 7,
+                'test_date': 8
+            };
+            return columnMap[sortType] || 0;
+        }
+        
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
             formatAllDates();
+            
+            // Add click handlers for sortable headers
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const button = header.querySelector('.sort-header-btn');
+                if (button) {
+                    button.addEventListener('click', function() {
+                        const sortType = header.getAttribute('data-sort');
+                        const column = getColumnIndex(sortType);
+                        const currentSort = header.getAttribute('aria-sort');
+                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
+                        sortData(column, newOrder);
+                    });
+                }
+            });
+            
+            // Add click handlers for quick sort buttons
+            document.querySelectorAll('.sort-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const sortType = this.getAttribute('data-sort');
+                    const order = this.getAttribute('data-order') || 'desc';
+                    const column = getColumnIndex(sortType);
+                    sortData(column, order);
+                });
+            });
         });
         
     </script>

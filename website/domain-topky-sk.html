@@ -58,7 +58,7 @@
             "name": "Valmitta",
             "url": "https://valmitta.com"
           },
-          "dateCreated": "2025-10-24T15:44:51.253Z",
+          "dateCreated": "2025-10-25T14:55:51.137Z",
           "about": {
             "@type": "WebSite",
             "name": "topky.sk",
@@ -74,7 +74,7 @@
           "accessibilityScore": 96,
           "bestPracticesScore": 75,
           "seoScore": 99,
-          "dateRecorded": "2025-10-24 14:19:50"
+          "dateRecorded": "2025-10-24 16:00:11"
         }
       ]
     }
@@ -92,7 +92,7 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇸🇰 Slovakia</span>
-                <span class="last-scan">Last scanned: 10/24/2025, 2:19:50 PM</span>
+                <span class="last-scan">Last scanned: 10/24/2025, 4:00:11 PM</span>
             </div>
         </header>
 
@@ -121,9 +121,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -175,6 +175,53 @@
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":644,"url":"topky.sk","performance":37,"accessibility":96,"best_practices":75,"seo":99,"pwa":33,"test_date":"2025-10-24 14:19:50","country":"Slovakia","industry":"Media"},{"id":649,"url":"topky.sk","performance":36,"accessibility":96,"best_practices":75,"seo":99,"pwa":33,"test_date":"2025-10-24 15:34:46","country":"Slovakia","industry":"Media"},{"id":653,"url":"topky.sk","performance":37,"accessibility":96,"best_practices":75,"seo":99,"pwa":33,"test_date":"2025-10-24 16:00:11","country":"Slovakia","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

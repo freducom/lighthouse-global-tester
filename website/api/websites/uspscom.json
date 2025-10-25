@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.587Z",
+    "generated_at": "2025-10-25T14:55:51.526Z",
     "url": "usps.com",
     "country": "United States",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 36,
     "accessibility": 66,
     "best_practices": 75,
-    "seo": 83,
+    "seo": 90,
     "pwa": 33,
-    "test_date": "2025-10-23 07:08:28"
+    "test_date": "2025-10-24 20:27:15"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 66,
+      "best_practices": 75,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-10-24 20:27:15"
+    },
     {
       "performance": 53,
       "accessibility": 66,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 07:08:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -17,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-10-24 20:27:15",
+    "test_date_previous": "2025-10-23 07:08:28"
+  }
 }

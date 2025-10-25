@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.494Z",
+    "generated_at": "2025-10-25T14:55:51.417Z",
     "country": "Mexico",
     "flag": "🌍",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 35,
-    "accessibility": 94,
-    "best_practices": 83,
-    "seo": 98,
+    "performance": 42,
+    "accessibility": 96,
+    "best_practices": 80,
+    "seo": 93,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "walmart.com.mx",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 03:00:38"
+    },
     {
       "url": "mercadolibre.com.mx",
       "industry": "Marketplace",
@@ -39,6 +51,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Marketplace",
       "website_count": 1,

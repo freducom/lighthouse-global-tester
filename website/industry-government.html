@@ -52,14 +52,14 @@
                 </ol>
             </nav>
             <h1>🏭 Government Industry Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of 18 websites in the government industry</p>
+            <p class="subtitle">Comprehensive lighthouse analysis of 19 websites in the government industry</p>
         </header>
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Government Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 59 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 58 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-average" aria-hidden="true">59%</div>
+                <div class="stat-value perf-average" aria-hidden="true">58%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average accessibility score: 86 percent">
@@ -72,9 +72,9 @@
                 <div class="stat-value seo-excellent" aria-hidden="true">94%</div>
                 <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card" role="img" aria-label="Average best practices score: 92 percent">
+            <div class="stat-card" role="img" aria-label="Average best practices score: 91 percent">
                 <h3>Average Best Practices</h3>
-                <div class="stat-value bp-excellent" aria-hidden="true">92%</div>
+                <div class="stat-value bp-excellent" aria-hidden="true">91%</div>
                 <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
         </section>
@@ -92,24 +92,74 @@
                     <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
                     <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
                 </div>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+                
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
-                            Lighthouse performance data for 18 websites in the Government industry, 
+                            Lighthouse performance data for 19 websites in the Government industry, 
                             sorted by performance score in descending order. 
                             Table includes website URL, country, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Country</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by rank">
+                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by website name">
+                                        Website <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by country">
+                                        Country <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
+                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
+                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
+                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
+                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
+                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
+                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
+                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
@@ -201,6 +251,48 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
+                                    <a href="domain-whitehouse-gov.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for whitehouse.gov">
+                                        whitehouse.gov
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-united-states.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from United States">
+                                        🇺🇸 United States
+                                    </a>
+                                </td>
+                                <td class="score perf-good"
+                                    aria-label="Performance score: 74 percent, good performance">
+                                    74%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-25 04:13:05"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 04:13:05">10/25/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 4">#4</td>
+                                <td>
                                     <a href="domain-gov-uk.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for gov.uk">
@@ -241,7 +333,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 4">#4</td>
+                                <td class="rank" aria-label="Rank 5">#5</td>
                                 <td>
                                     <a href="domain-rijksoverheid-nl.html" 
                                        class="domain-link"
@@ -283,7 +375,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 5">#5</td>
+                                <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-nasa-gov.html" 
                                        class="domain-link"
@@ -321,48 +413,6 @@
                                 <td class="date" data-date="2025-10-23 07:06:56"
                                     aria-label="Last tested on 10/23/2025">
                                     <time datetime="2025-10-23 07:06:56">10/23/2025</time>
-                                </td>
-                            </tr>
-                        
-                            <tr class="site-row">
-                                <td class="rank" aria-label="Rank 6">#6</td>
-                                <td>
-                                    <a href="domain-whitehouse-gov.html" 
-                                       class="domain-link"
-                                       aria-label="View detailed report for whitehouse.gov">
-                                        whitehouse.gov
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="country-united-states.html" 
-                                       class="country-link"
-                                       aria-label="View all websites from United States">
-                                        🇺🇸 United States
-                                    </a>
-                                </td>
-                                <td class="score perf-average"
-                                    aria-label="Performance score: 66 percent, average performance">
-                                    66%
-                                </td>
-                                <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 92 percent, excellent performance">
-                                    92%
-                                </td>
-                                <td class="score seo-good"
-                                    aria-label="SEO score: 83 percent, good performance">
-                                    83%
-                                </td>
-                                <td class="score bp-excellent"
-                                    aria-label="Best Practices score: 100 percent, excellent performance">
-                                    100%
-                                </td>
-                                <td class="score pwa-good"
-                                    aria-label="PWA score: 78 percent, good performance">
-                                    78%
-                                </td>
-                                <td class="date" data-date="2025-10-23 07:07:30"
-                                    aria-label="Last tested on 10/23/2025">
-                                    <time datetime="2025-10-23 07:07:30">10/23/2025</time>
                                 </td>
                             </tr>
                         
@@ -663,48 +713,6 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 14">#14</td>
                                 <td>
-                                    <a href="domain-usps-com.html" 
-                                       class="domain-link"
-                                       aria-label="View detailed report for usps.com">
-                                        usps.com
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="country-united-states.html" 
-                                       class="country-link"
-                                       aria-label="View all websites from United States">
-                                        🇺🇸 United States
-                                    </a>
-                                </td>
-                                <td class="score perf-average"
-                                    aria-label="Performance score: 53 percent, average performance">
-                                    53%
-                                </td>
-                                <td class="score acc-average"
-                                    aria-label="Accessibility score: 66 percent, average performance">
-                                    66%
-                                </td>
-                                <td class="score seo-good"
-                                    aria-label="SEO score: 83 percent, good performance">
-                                    83%
-                                </td>
-                                <td class="score bp-good"
-                                    aria-label="Best Practices score: 75 percent, good performance">
-                                    75%
-                                </td>
-                                <td class="score pwa-poor"
-                                    aria-label="PWA score: 33 percent, needs improvement">
-                                    33%
-                                </td>
-                                <td class="date" data-date="2025-10-23 07:08:28"
-                                    aria-label="Last tested on 10/23/2025">
-                                    <time datetime="2025-10-23 07:08:28">10/23/2025</time>
-                                </td>
-                            </tr>
-                        
-                            <tr class="site-row">
-                                <td class="rank" aria-label="Rank 15">#15</td>
-                                <td>
                                     <a href="domain-luxembourg-lu.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for luxembourg.lu">
@@ -741,6 +749,48 @@
                                 <td class="date" data-date="2025-10-22 06:26:16"
                                     aria-label="Last tested on 10/22/2025">
                                     <time datetime="2025-10-22 06:26:16">10/22/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 15">#15</td>
+                                <td>
+                                    <a href="domain-vero-fi.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for vero.fi">
+                                        vero.fi
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-finland.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Finland">
+                                        🇫🇮 Finland
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 46 percent, needs improvement">
+                                    46%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 93 percent, excellent performance">
+                                    93%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 44 percent, needs improvement">
+                                    44%
+                                </td>
+                                <td class="date" data-date="2025-10-24 22:15:10"
+                                    aria-label="Last tested on 10/24/2025">
+                                    <time datetime="2025-10-24 22:15:10">10/24/2025</time>
                                 </td>
                             </tr>
                         
@@ -789,6 +839,48 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 17">#17</td>
                                 <td>
+                                    <a href="domain-usps-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for usps.com">
+                                        usps.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-united-states.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from United States">
+                                        🇺🇸 United States
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 36 percent, needs improvement">
+                                    36%
+                                </td>
+                                <td class="score acc-average"
+                                    aria-label="Accessibility score: 66 percent, average performance">
+                                    66%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 90 percent, excellent performance">
+                                    90%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-24 20:27:15"
+                                    aria-label="Last tested on 10/24/2025">
+                                    <time datetime="2025-10-24 20:27:15">10/24/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 18">#18</td>
+                                <td>
                                     <a href="domain-servicecanada-gc-ca.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for servicecanada.gc.ca">
@@ -829,7 +921,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 18">#18</td>
+                                <td class="rank" aria-label="Rank 19">#19</td>
                                 <td>
                                     <a href="domain-posti-fi.html" 
                                        class="domain-link"
@@ -878,7 +970,7 @@
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📊 Government Industry Performance Data | 18 websites tested</p>
+                <p>📊 Government Industry Performance Data | 19 websites tested</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
@@ -888,7 +980,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"mitid.dk","country":"Denmark","industry":"Government","performance":81,"accessibility":100,"best_practices":100,"seo":92,"pwa":67,"test_date":"2025-10-22 14:19:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ontario.ca","country":"Canada","industry":"Government","performance":74,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 02:58:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"gov.uk","country":"United Kingdom","industry":"Government","performance":73,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-23 07:36:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rijksoverheid.nl","country":"Netherlands","industry":"Government","performance":69,"accessibility":98,"best_practices":100,"seo":97,"pwa":33,"test_date":"2025-10-23 15:45:29","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nasa.gov","country":"United States","industry":"Government","performance":66,"accessibility":93,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-23 07:06:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":25,"text":"+25","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"whitehouse.gov","country":"United States","industry":"Government","performance":66,"accessibility":92,"best_practices":100,"seo":83,"pwa":78,"test_date":"2025-10-23 07:07:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"arbetsformedlingen.se","country":"Sweden","industry":"Government","performance":65,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 20:29:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"my.gov.au","country":"Australia","industry":"Government","performance":65,"accessibility":0,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-22 14:57:26","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"regeringen.se","country":"Sweden","industry":"Government","performance":65,"accessibility":100,"best_practices":67,"seo":99,"pwa":33,"test_date":"2025-10-23 12:24:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"australia.gov.au","country":"Australia","industry":"Government","performance":60,"accessibility":0,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-19 20:04:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"canada.ca","country":"Canada","industry":"Government","performance":60,"accessibility":100,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:59:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"irs.gov","country":"United States","industry":"Government","performance":59,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-23 07:07:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":54,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 07:36:10","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"usps.com","country":"United States","industry":"Government","performance":53,"accessibility":66,"best_practices":75,"seo":83,"pwa":33,"test_date":"2025-10-23 07:08:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"luxembourg.lu","country":"Luxembourg","industry":"Government","performance":48,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-22 06:26:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"skatteverket.se","country":"Sweden","industry":"Government","performance":44,"accessibility":100,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-23 22:09:11","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-12,"text":"-12","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"servicecanada.gc.ca","country":"Canada","industry":"Government","performance":35,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-23 19:35:08","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":35,"text":"+35","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"posti.fi","country":"Finland","industry":"Government","performance":32,"accessibility":91,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 08:30:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"mitid.dk","country":"Denmark","industry":"Government","performance":81,"accessibility":100,"best_practices":100,"seo":92,"pwa":67,"test_date":"2025-10-22 14:19:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ontario.ca","country":"Canada","industry":"Government","performance":74,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 02:58:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"whitehouse.gov","country":"United States","industry":"Government","performance":74,"accessibility":92,"best_practices":100,"seo":83,"pwa":78,"test_date":"2025-10-25 04:13:05","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"gov.uk","country":"United Kingdom","industry":"Government","performance":73,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-23 07:36:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rijksoverheid.nl","country":"Netherlands","industry":"Government","performance":69,"accessibility":98,"best_practices":100,"seo":97,"pwa":33,"test_date":"2025-10-23 15:45:29","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nasa.gov","country":"United States","industry":"Government","performance":66,"accessibility":93,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-23 07:06:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":25,"text":"+25","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"arbetsformedlingen.se","country":"Sweden","industry":"Government","performance":65,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 20:29:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"my.gov.au","country":"Australia","industry":"Government","performance":65,"accessibility":0,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-22 14:57:26","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"regeringen.se","country":"Sweden","industry":"Government","performance":65,"accessibility":100,"best_practices":67,"seo":99,"pwa":33,"test_date":"2025-10-23 12:24:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"australia.gov.au","country":"Australia","industry":"Government","performance":60,"accessibility":0,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-19 20:04:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"canada.ca","country":"Canada","industry":"Government","performance":60,"accessibility":100,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-10-19 19:59:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"irs.gov","country":"United States","industry":"Government","performance":59,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-23 07:07:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":54,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 07:36:10","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"luxembourg.lu","country":"Luxembourg","industry":"Government","performance":48,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-22 06:26:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"vero.fi","country":"Finland","industry":"Government","performance":46,"accessibility":100,"best_practices":67,"seo":93,"pwa":44,"test_date":"2025-10-24 22:15:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"skatteverket.se","country":"Sweden","industry":"Government","performance":44,"accessibility":100,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-23 22:09:11","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-12,"text":"-12","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"usps.com","country":"United States","industry":"Government","performance":36,"accessibility":66,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-24 20:27:15","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"servicecanada.gc.ca","country":"Canada","industry":"Government","performance":35,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-23 19:35:08","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":35,"text":"+35","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"posti.fi","country":"Finland","industry":"Government","performance":32,"accessibility":91,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 08:30:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -1015,9 +1107,98 @@
             });
         }
         
+        // Sorting functionality
+        function sortData(column, order = 'desc') {
+            const table = document.querySelector('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            rows.sort((a, b) => {
+                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
+                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+                
+                if (!aVal || !bVal) return 0;
+                
+                // Get text content or data attribute value
+                aVal = aVal.textContent.trim();
+                bVal = bVal.textContent.trim();
+                
+                // Handle numeric values
+                const aNum = parseFloat(aVal);
+                const bNum = parseFloat(bVal);
+                
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                }
+                
+                // Handle string values
+                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+            });
+            
+            // Clear and re-append sorted rows
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update sort indicators
+            updateSortIndicators(column, order);
+        }
+        
+        function updateSortIndicators(activeColumn, order) {
+            const headers = document.querySelectorAll('.sortable-header');
+            headers.forEach((header, index) => {
+                const arrow = header.querySelector('.sort-arrow');
+                if (index === activeColumn) {
+                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
+                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+                } else {
+                    arrow.textContent = '';
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
+        
+        function getColumnIndex(sortType) {
+            const columnMap = {
+                'rank': 0,
+                'url': 1, 
+                'country': 2,
+                'performance': 3,
+                'accessibility': 4,
+                'seo': 5,
+                'best_practices': 6,
+                'pwa': 7,
+                'test_date': 8
+            };
+            return columnMap[sortType] || 0;
+        }
+        
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
             formatAllDates();
+            
+            // Add click handlers for sortable headers
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const button = header.querySelector('.sort-header-btn');
+                if (button) {
+                    button.addEventListener('click', function() {
+                        const sortType = header.getAttribute('data-sort');
+                        const column = getColumnIndex(sortType);
+                        const currentSort = header.getAttribute('aria-sort');
+                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
+                        sortData(column, newOrder);
+                    });
+                }
+            });
+            
+            // Add click handlers for quick sort buttons
+            document.querySelectorAll('.sort-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const sortType = this.getAttribute('data-sort');
+                    const order = this.getAttribute('data-order') || 'desc';
+                    const column = getColumnIndex(sortType);
+                    sortData(column, order);
+                });
+            });
         });
         
     </script>

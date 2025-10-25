@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.469Z",
+    "generated_at": "2025-10-25T14:55:51.388Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
-    "website_count": 20
+    "website_count": 21
   },
   "averages": {
-    "performance": 41,
+    "performance": 40,
     "accessibility": 90,
     "best_practices": 82,
-    "seo": 89,
-    "pwa": 46
+    "seo": 90,
+    "pwa": 45
   },
   "websites": [
     {
@@ -182,6 +182,18 @@
       "test_date": "2025-10-23 22:09:44"
     },
     {
+      "url": "vodafone.co.uk",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 34,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 00:50:27"
+    },
+    {
       "url": "standard.co.uk",
       "industry": "Media",
       "scores": {
@@ -301,12 +313,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 36,
-        "accessibility": 100,
+        "performance": 35,
+        "accessibility": 97,
         "best_practices": 92,
-        "seo": 93,
+        "seo": 97,
         "pwa": 33
       }
     },

@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.492Z",
+    "generated_at": "2025-10-25T14:55:51.414Z",
     "country": "Taiwan",
     "flag": "🇹🇼",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 28,
-    "accessibility": 87,
-    "best_practices": 75,
+    "performance": 33,
+    "accessibility": 84,
+    "best_practices": 84,
     "seo": 100,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "tvbs.com.tw",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 80,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 18:19:10"
+    },
     {
       "url": "ettoday.net",
       "industry": "Media",
@@ -29,11 +41,11 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 28,
-        "accessibility": 87,
-        "best_practices": 75,
+        "performance": 33,
+        "accessibility": 84,
+        "best_practices": 84,
         "seo": 100,
         "pwa": 33
       }

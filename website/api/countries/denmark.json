@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.482Z",
+    "generated_at": "2025-10-25T14:55:51.403Z",
     "country": "Denmark",
     "flag": "🇩🇰",
-    "website_count": 1
+    "website_count": 3
   },
   "averages": {
-    "performance": 81,
-    "accessibility": 100,
-    "best_practices": 100,
-    "seo": 92,
-    "pwa": 67
+    "performance": 62,
+    "accessibility": 98,
+    "best_practices": 94,
+    "seo": 97,
+    "pwa": 44
   },
   "websites": [
     {
@@ -24,6 +24,30 @@
         "pwa": 67
       },
       "test_date": "2025-10-22 14:19:45"
+    },
+    {
+      "url": "tv2.dk",
+      "industry": "Media",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 18:15:20"
+    },
+    {
+      "url": "yousee.dk",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 48,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 08:17:42"
     }
   ],
   "industries": [
@@ -36,6 +60,28 @@
         "best_practices": 100,
         "seo": 92,
         "pwa": 67
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 48,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
       }
     }
   ]

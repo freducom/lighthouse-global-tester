@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.489Z",
+    "generated_at": "2025-10-25T14:55:51.411Z",
     "country": "Slovakia",
     "flag": "🇸🇰",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 85,
-    "best_practices": 77,
+    "performance": 36,
+    "accessibility": 84,
+    "best_practices": 78,
     "seo": 90,
-    "pwa": 35
+    "pwa": 41
   },
   "websites": [
     {
@@ -59,7 +59,7 @@
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-24 14:19:50"
+      "test_date": "2025-10-24 16:00:11"
     },
     {
       "url": "pravda.sk",
@@ -72,18 +72,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 08:35:09"
+    },
+    {
+      "url": "zive.sk",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 12:14:55"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 37,
-        "accessibility": 90,
-        "best_practices": 77,
+        "performance": 36,
+        "accessibility": 87,
+        "best_practices": 78,
         "seo": 92,
-        "pwa": 36
+        "pwa": 42
       }
     },
     {

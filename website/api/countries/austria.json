@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.481Z",
+    "generated_at": "2025-10-25T14:55:51.402Z",
     "country": "Austria",
     "flag": "🇦🇹",
-    "website_count": 6
+    "website_count": 8
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 87,
-    "best_practices": 85,
+    "performance": 43,
+    "accessibility": 88,
+    "best_practices": 86,
     "seo": 89,
-    "pwa": 48
+    "pwa": 50
   },
   "websites": [
     {
@@ -74,6 +74,18 @@
       "test_date": "2025-10-23 16:49:31"
     },
     {
+      "url": "willhaben.at",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 96,
+        "pwa": 78
+      },
+      "test_date": "2025-10-25 04:14:27"
+    },
+    {
       "url": "meinbezirk.at",
       "industry": "Media",
       "scores": {
@@ -84,18 +96,41 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 12:18:43"
+    },
+    {
+      "url": "vienna.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:16:12"
     }
   ],
   "industries": [
     {
-      "industry": "Media",
-      "website_count": 6,
+      "industry": "Marketplace",
+      "website_count": 1,
       "averages": {
-        "performance": 46,
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 96,
+        "pwa": 78
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 7,
+      "averages": {
+        "performance": 44,
         "accessibility": 87,
-        "best_practices": 85,
-        "seo": 89,
-        "pwa": 48
+        "best_practices": 84,
+        "seo": 88,
+        "pwa": 46
       }
     }
   ]

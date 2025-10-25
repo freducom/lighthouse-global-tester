@@ -1,18 +1,42 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.488Z",
+    "generated_at": "2025-10-25T14:55:51.409Z",
     "country": "Belgium",
     "flag": "🇧🇪",
-    "website_count": 3
+    "website_count": 5
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 92,
-    "best_practices": 78,
+    "performance": 46,
+    "accessibility": 90,
+    "best_practices": 80,
     "seo": 92,
-    "pwa": 52
+    "pwa": 42
   },
   "websites": [
+    {
+      "url": "vrt.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 91,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 00:51:59"
+    },
+    {
+      "url": "wiw.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 22
+      },
+      "test_date": "2025-10-25 04:14:54"
+    },
     {
       "url": "lameuse.be",
       "industry": "Media",
@@ -53,13 +77,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 5,
       "averages": {
-        "performance": 37,
-        "accessibility": 92,
-        "best_practices": 78,
+        "performance": 46,
+        "accessibility": 90,
+        "best_practices": 80,
         "seo": 92,
-        "pwa": 52
+        "pwa": 42
       }
     }
   ]

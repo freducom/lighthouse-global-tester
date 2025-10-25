@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.473Z",
+    "generated_at": "2025-10-25T14:55:51.392Z",
     "country": "Japan",
     "flag": "🇯🇵",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
     "performance": 50,
-    "accessibility": 81,
-    "best_practices": 90,
+    "accessibility": 79,
+    "best_practices": 89,
     "seo": 90,
     "pwa": 33
   },
@@ -62,6 +62,18 @@
       "test_date": "2025-10-19 19:56:14"
     },
     {
+      "url": "yahoo.co.jp",
+      "industry": "Portal",
+      "scores": {
+        "performance": 49,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 06:16:31"
+    },
+    {
       "url": "pixiv.net",
       "industry": "Social Media",
       "scores": {
@@ -106,6 +118,17 @@
         "accessibility": 79,
         "best_practices": 92,
         "seo": 89,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 49,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 90,
         "pwa": 33
       }
     },

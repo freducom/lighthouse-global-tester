@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.589Z",
+    "generated_at": "2025-10-25T14:55:51.527Z",
     "url": "youtube.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 57,
-    "accessibility": 85,
+    "performance": 54,
+    "accessibility": 91,
     "best_practices": 75,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 06:51:42"
+    "test_date": "2025-10-25 08:17:57"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 91,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-25 08:17:57"
+    },
     {
       "performance": 57,
       "accessibility": 85,
@@ -72,12 +80,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 0,
+    "performance": -3,
+    "accessibility": 6,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 06:51:42",
-    "test_date_previous": "2025-10-22 08:27:02"
+    "test_date_current": "2025-10-25 08:17:57",
+    "test_date_previous": "2025-10-23 06:51:42"
   }
 }

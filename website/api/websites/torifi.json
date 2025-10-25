@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.550Z",
+    "generated_at": "2025-10-25T14:55:51.483Z",
     "url": "tori.fi",
     "country": "Finland",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 22,
+    "performance": 43,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-10-24 14:20:09"
+    "test_date": "2025-10-24 16:00:30"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-10-24 16:00:30"
+    },
+    {
+      "performance": 21,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-10-24 15:35:06"
+    },
     {
       "performance": 22,
       "accessibility": 98,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -21,
+    "performance": 22,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-24 14:20:09",
-    "test_date_previous": "2025-10-19 20:15:43"
+    "test_date_current": "2025-10-24 16:00:30",
+    "test_date_previous": "2025-10-24 15:35:06"
   }
 }

@@ -1,17 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.517Z",
+    "generated_at": "2025-10-25T14:55:51.445Z",
     "industry": "Technology",
-    "website_count": 4
+    "website_count": 6
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 87,
-    "best_practices": 63,
-    "seo": 88,
+    "performance": 42,
+    "accessibility": 84,
+    "best_practices": 69,
+    "seo": 90,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "vaadin.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 28,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:13:29"
+    },
+    {
+      "url": "valohai.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 73,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:14:30"
+    },
     {
       "url": "apple.com",
       "country": "United States",
@@ -62,6 +86,17 @@
     }
   ],
   "countries": [
+    {
+      "country": "Finland",
+      "website_count": 2,
+      "averages": {
+        "performance": 51,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
     {
       "country": "United States",
       "website_count": 4,

@@ -1,17 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.516Z",
+    "generated_at": "2025-10-25T14:55:51.444Z",
     "industry": "Social Media",
-    "website_count": 14
+    "website_count": 16
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 85,
-    "best_practices": 76,
-    "seo": 92,
-    "pwa": 54
+    "performance": 49,
+    "accessibility": 81,
+    "best_practices": 72,
+    "seo": 90,
+    "pwa": 55
   },
   "websites": [
+    {
+      "url": "weibo.com",
+      "country": "China",
+      "scores": {
+        "performance": 51,
+        "accessibility": 51,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 89
+      },
+      "test_date": "2025-10-25 03:04:15"
+    },
+    {
+      "url": "xiaohongshu.com",
+      "country": "China",
+      "scores": {
+        "performance": 30,
+        "accessibility": 52,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 06:16:14"
+    },
     {
       "url": "suomi24.fi",
       "country": "Finland",
@@ -76,25 +100,25 @@
       "url": "vk.com",
       "country": "Russia",
       "scores": {
-        "performance": 27,
+        "performance": 35,
         "accessibility": 89,
         "best_practices": 0,
         "seo": 92,
         "pwa": 100
       },
-      "test_date": "2025-10-19 20:05:19"
+      "test_date": "2025-10-25 00:46:47"
     },
     {
       "url": "tistory.com",
       "country": "South Korea",
       "scores": {
-        "performance": 41,
+        "performance": 44,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-24 14:15:21"
+      "test_date": "2025-10-24 15:55:39"
     },
     {
       "url": "flashback.org",
@@ -172,16 +196,27 @@
       "url": "x.com",
       "country": "United States",
       "scores": {
-        "performance": 38,
+        "performance": 34,
         "accessibility": 87,
         "best_practices": 92,
-        "seo": 100,
+        "seo": 91,
         "pwa": 89
       },
-      "test_date": "2025-10-23 06:52:14"
+      "test_date": "2025-10-25 06:15:53"
     }
   ],
   "countries": [
+    {
+      "country": "China",
+      "website_count": 2,
+      "averages": {
+        "performance": 41,
+        "accessibility": 52,
+        "best_practices": 46,
+        "seo": 81,
+        "pwa": 61
+      }
+    },
     {
       "country": "Finland",
       "website_count": 1,
@@ -208,7 +243,7 @@
       "country": "Russia",
       "website_count": 2,
       "averages": {
-        "performance": 54,
+        "performance": 58,
         "accessibility": 90,
         "best_practices": 29,
         "seo": 85,
@@ -219,7 +254,7 @@
       "country": "South Korea",
       "website_count": 1,
       "averages": {
-        "performance": 41,
+        "performance": 44,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,
@@ -252,10 +287,10 @@
       "country": "United States",
       "website_count": 5,
       "averages": {
-        "performance": 57,
+        "performance": 56,
         "accessibility": 84,
         "best_practices": 82,
-        "seo": 97,
+        "seo": 95,
         "pwa": 71
       }
     }

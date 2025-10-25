@@ -52,7 +52,7 @@
                 </ol>
             </nav>
             <h1>🏭 Marketplace Industry Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of 14 websites in the marketplace industry</p>
+            <p class="subtitle">Comprehensive lighthouse analysis of 16 websites in the marketplace industry</p>
         </header>
 
         <section class="stats-grid" aria-labelledby="stats-heading">
@@ -62,9 +62,9 @@
                 <div class="stat-value perf-poor" aria-hidden="true">43%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card" role="img" aria-label="Average accessibility score: 85 percent">
+            <div class="stat-card" role="img" aria-label="Average accessibility score: 87 percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-value acc-good" aria-hidden="true">85%</div>
+                <div class="stat-value acc-good" aria-hidden="true">87%</div>
                 <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average SEO score: 92 percent">
@@ -92,24 +92,74 @@
                     <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
                     <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
                 </div>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+                
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
-                            Lighthouse performance data for 14 websites in the Marketplace industry, 
+                            Lighthouse performance data for 16 websites in the Marketplace industry, 
                             sorted by performance score in descending order. 
                             Table includes website URL, country, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Country</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by rank">
+                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by website name">
+                                        Website <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by country">
+                                        Country <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
+                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
+                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
+                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
+                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
+                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
+                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
+                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
@@ -369,6 +419,48 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 7">#7</td>
                                 <td>
+                                    <a href="domain-tori-fi.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for tori.fi">
+                                        tori.fi
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-finland.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Finland">
+                                        🇫🇮 Finland
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 43 percent, needs improvement">
+                                    43%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 98 percent, excellent performance">
+                                    98%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="date" data-date="2025-10-24 16:00:30"
+                                    aria-label="Last tested on 10/24/2025">
+                                    <time datetime="2025-10-24 16:00:30">10/24/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 8">#8</td>
+                                <td>
                                     <a href="domain-subito-it.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for subito.it">
@@ -409,7 +501,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 8">#8</td>
+                                <td class="rank" aria-label="Rank 9">#9</td>
+                                <td>
+                                    <a href="domain-willhaben-at.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for willhaben.at">
+                                        willhaben.at
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-austria.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Austria">
+                                        🇦🇹 Austria
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 35 percent, needs improvement">
+                                    35%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 98 percent, excellent performance">
+                                    98%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 96 percent, excellent performance">
+                                    96%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-25 04:14:27"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 04:14:27">10/25/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 10">#10</td>
                                 <td>
                                     <a href="domain-olx-com-pk.html" 
                                        class="domain-link"
@@ -451,7 +585,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 9">#9</td>
+                                <td class="rank" aria-label="Rank 11">#11</td>
                                 <td>
                                     <a href="domain-blocket-se.html" 
                                        class="domain-link"
@@ -493,7 +627,49 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 10">#10</td>
+                                <td class="rank" aria-label="Rank 12">#12</td>
+                                <td>
+                                    <a href="domain-trademe-co-nz.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for trademe.co.nz">
+                                        trademe.co.nz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-new-zealand.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from New Zealand">
+                                        🇳🇿 New Zealand
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 27 percent, needs improvement">
+                                    27%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 98 percent, excellent performance">
+                                    98%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 78 percent, good performance">
+                                    78%
+                                </td>
+                                <td class="date" data-date="2025-10-24 16:12:16"
+                                    aria-label="Last tested on 10/24/2025">
+                                    <time datetime="2025-10-24 16:12:16">10/24/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 13">#13</td>
                                 <td>
                                     <a href="domain-oikotie-fi.html" 
                                        class="domain-link"
@@ -535,7 +711,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 11">#11</td>
+                                <td class="rank" aria-label="Rank 14">#14</td>
                                 <td>
                                     <a href="domain-olx-pl.html" 
                                        class="domain-link"
@@ -577,49 +753,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 12">#12</td>
-                                <td>
-                                    <a href="domain-tori-fi.html" 
-                                       class="domain-link"
-                                       aria-label="View detailed report for tori.fi">
-                                        tori.fi
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="country-finland.html" 
-                                       class="country-link"
-                                       aria-label="View all websites from Finland">
-                                        🇫🇮 Finland
-                                    </a>
-                                </td>
-                                <td class="score perf-poor"
-                                    aria-label="Performance score: 22 percent, needs improvement">
-                                    22%
-                                </td>
-                                <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 98 percent, excellent performance">
-                                    98%
-                                </td>
-                                <td class="score seo-excellent"
-                                    aria-label="SEO score: 100 percent, excellent performance">
-                                    100%
-                                </td>
-                                <td class="score bp-good"
-                                    aria-label="Best Practices score: 83 percent, good performance">
-                                    83%
-                                </td>
-                                <td class="score pwa-average"
-                                    aria-label="PWA score: 67 percent, average performance">
-                                    67%
-                                </td>
-                                <td class="date" data-date="2025-10-24 14:20:09"
-                                    aria-label="Last tested on 10/24/2025">
-                                    <time datetime="2025-10-24 14:20:09">10/24/2025</time>
-                                </td>
-                            </tr>
-                        
-                            <tr class="site-row">
-                                <td class="rank" aria-label="Rank 13">#13</td>
+                                <td class="rank" aria-label="Rank 15">#15</td>
                                 <td>
                                     <a href="domain-marktplaats-nl.html" 
                                        class="domain-link"
@@ -661,7 +795,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 14">#14</td>
+                                <td class="rank" aria-label="Rank 16">#16</td>
                                 <td>
                                     <a href="domain-avito-ru.html" 
                                        class="domain-link"
@@ -710,7 +844,7 @@
 
         <footer class="footer" role="contentinfo">
             <div class="footer-content">
-                <p>📊 Marketplace Industry Performance Data | 14 websites tested</p>
+                <p>📊 Marketplace Industry Performance Data | 16 websites tested</p>
                 <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
                 <div class="footer-meta">
                     <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
@@ -720,7 +854,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"skelbiu.lt","country":"Lithuania","industry":"Marketplace","performance":88,"accessibility":52,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-23 22:09:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"patreon.com","country":"United States","industry":"Marketplace","performance":81,"accessibility":81,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-23 04:17:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sahibinden.com","country":"Turkey","industry":"Marketplace","performance":80,"accessibility":84,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-23 16:47:50","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"etsy.com","country":"United States","industry":"Marketplace","performance":68,"accessibility":100,"best_practices":100,"seo":93,"pwa":56,"test_date":"2025-10-23 07:04:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ebay.com","country":"United States","industry":"Marketplace","performance":45,"accessibility":97,"best_practices":83,"seo":98,"pwa":78,"test_date":"2025-10-23 07:04:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mercadolibre.com.mx","country":"Mexico","industry":"Marketplace","performance":44,"accessibility":96,"best_practices":83,"seo":96,"pwa":33,"test_date":"2025-10-22 12:19:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"subito.it","country":"Italy","industry":"Marketplace","performance":37,"accessibility":95,"best_practices":83,"seo":85,"pwa":67,"test_date":"2025-10-24 03:02:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"olx.com.pk","country":"Pakistan","industry":"Marketplace","performance":31,"accessibility":86,"best_practices":75,"seo":100,"pwa":56,"test_date":"2025-10-23 00:53:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"blocket.se","country":"Sweden","industry":"Marketplace","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"oikotie.fi","country":"Finland","industry":"Marketplace","performance":26,"accessibility":52,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-23 00:48:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"olx.pl","country":"Poland","industry":"Marketplace","performance":23,"accessibility":98,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-23 02:58:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":22,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-24 14:20:09","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-21,"text":"-21","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"marktplaats.nl","country":"Netherlands","industry":"Marketplace","performance":16,"accessibility":85,"best_practices":92,"seo":96,"pwa":33,"test_date":"2025-10-22 10:12:52","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-26,"text":"-26","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"skelbiu.lt","country":"Lithuania","industry":"Marketplace","performance":88,"accessibility":52,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-23 22:09:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"patreon.com","country":"United States","industry":"Marketplace","performance":81,"accessibility":81,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-23 04:17:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sahibinden.com","country":"Turkey","industry":"Marketplace","performance":80,"accessibility":84,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-23 16:47:50","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"etsy.com","country":"United States","industry":"Marketplace","performance":68,"accessibility":100,"best_practices":100,"seo":93,"pwa":56,"test_date":"2025-10-23 07:04:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ebay.com","country":"United States","industry":"Marketplace","performance":45,"accessibility":97,"best_practices":83,"seo":98,"pwa":78,"test_date":"2025-10-23 07:04:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mercadolibre.com.mx","country":"Mexico","industry":"Marketplace","performance":44,"accessibility":96,"best_practices":83,"seo":96,"pwa":33,"test_date":"2025-10-22 12:19:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-24 16:00:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":22,"text":"+22","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"subito.it","country":"Italy","industry":"Marketplace","performance":37,"accessibility":95,"best_practices":83,"seo":85,"pwa":67,"test_date":"2025-10-24 03:02:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"willhaben.at","country":"Austria","industry":"Marketplace","performance":35,"accessibility":98,"best_practices":100,"seo":96,"pwa":78,"test_date":"2025-10-25 04:14:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"olx.com.pk","country":"Pakistan","industry":"Marketplace","performance":31,"accessibility":86,"best_practices":75,"seo":100,"pwa":56,"test_date":"2025-10-23 00:53:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"blocket.se","country":"Sweden","industry":"Marketplace","performance":28,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-19 20:27:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"trademe.co.nz","country":"New Zealand","industry":"Marketplace","performance":27,"accessibility":98,"best_practices":75,"seo":92,"pwa":78,"test_date":"2025-10-24 16:12:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"oikotie.fi","country":"Finland","industry":"Marketplace","performance":26,"accessibility":52,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-23 00:48:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"olx.pl","country":"Poland","industry":"Marketplace","performance":23,"accessibility":98,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-23 02:58:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"marktplaats.nl","country":"Netherlands","industry":"Marketplace","performance":16,"accessibility":85,"best_practices":92,"seo":96,"pwa":33,"test_date":"2025-10-22 10:12:52","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-26,"text":"-26","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -847,9 +981,98 @@
             });
         }
         
+        // Sorting functionality
+        function sortData(column, order = 'desc') {
+            const table = document.querySelector('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            rows.sort((a, b) => {
+                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
+                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+                
+                if (!aVal || !bVal) return 0;
+                
+                // Get text content or data attribute value
+                aVal = aVal.textContent.trim();
+                bVal = bVal.textContent.trim();
+                
+                // Handle numeric values
+                const aNum = parseFloat(aVal);
+                const bNum = parseFloat(bVal);
+                
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                }
+                
+                // Handle string values
+                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+            });
+            
+            // Clear and re-append sorted rows
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update sort indicators
+            updateSortIndicators(column, order);
+        }
+        
+        function updateSortIndicators(activeColumn, order) {
+            const headers = document.querySelectorAll('.sortable-header');
+            headers.forEach((header, index) => {
+                const arrow = header.querySelector('.sort-arrow');
+                if (index === activeColumn) {
+                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
+                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+                } else {
+                    arrow.textContent = '';
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
+        
+        function getColumnIndex(sortType) {
+            const columnMap = {
+                'rank': 0,
+                'url': 1, 
+                'country': 2,
+                'performance': 3,
+                'accessibility': 4,
+                'seo': 5,
+                'best_practices': 6,
+                'pwa': 7,
+                'test_date': 8
+            };
+            return columnMap[sortType] || 0;
+        }
+        
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
             formatAllDates();
+            
+            // Add click handlers for sortable headers
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const button = header.querySelector('.sort-header-btn');
+                if (button) {
+                    button.addEventListener('click', function() {
+                        const sortType = header.getAttribute('data-sort');
+                        const column = getColumnIndex(sortType);
+                        const currentSort = header.getAttribute('aria-sort');
+                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
+                        sortData(column, newOrder);
+                    });
+                }
+            });
+            
+            // Add click handlers for quick sort buttons
+            document.querySelectorAll('.sort-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const sortType = this.getAttribute('data-sort');
+                    const order = this.getAttribute('data-order') || 'desc';
+                    const column = getColumnIndex(sortType);
+                    sortData(column, order);
+                });
+            });
         });
         
     </script>

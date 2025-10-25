@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.490Z",
+    "generated_at": "2025-10-25T14:55:51.412Z",
     "country": "Vietnam",
     "flag": "🇻🇳",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 85,
+    "performance": 39,
+    "accessibility": 87,
     "best_practices": 67,
-    "seo": 95,
-    "pwa": 33
+    "seo": 93,
+    "pwa": 37
   },
   "websites": [
     {
@@ -36,18 +36,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-21 20:15:15"
+    },
+    {
+      "url": "tuoitre.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-24 18:15:04"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 41,
-        "accessibility": 85,
+        "performance": 39,
+        "accessibility": 87,
         "best_practices": 67,
-        "seo": 95,
-        "pwa": 33
+        "seo": 93,
+        "pwa": 37
       }
     }
   ]

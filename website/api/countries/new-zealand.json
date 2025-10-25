@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.485Z",
+    "generated_at": "2025-10-25T14:55:51.406Z",
     "country": "New Zealand",
     "flag": "🇳🇿",
-    "website_count": 2
+    "website_count": 4
   },
   "averages": {
-    "performance": 30,
-    "accessibility": 88,
-    "best_practices": 38,
-    "seo": 95,
-    "pwa": 45
+    "performance": 40,
+    "accessibility": 84,
+    "best_practices": 58,
+    "seo": 89,
+    "pwa": 50
   },
   "websites": [
+    {
+      "url": "unknown.co.nz",
+      "industry": "Media",
+      "scores": {
+        "performance": 71,
+        "accessibility": 61,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 20:24:18"
+    },
     {
       "url": "reservebank.govt.nz",
       "industry": "Finance",
@@ -36,6 +48,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-24 03:00:50"
+    },
+    {
+      "url": "trademe.co.nz",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-24 16:12:16"
     }
   ],
   "industries": [
@@ -51,14 +75,25 @@
       }
     },
     {
-      "industry": "Media",
+      "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 30,
-        "accessibility": 86,
-        "best_practices": 0,
-        "seo": 90,
-        "pwa": 56
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 78
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 2,
+      "averages": {
+        "performance": 51,
+        "accessibility": 74,
+        "best_practices": 42,
+        "seo": 83,
+        "pwa": 45
       }
     }
   ]

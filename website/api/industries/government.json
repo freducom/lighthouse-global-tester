@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.515Z",
+    "generated_at": "2025-10-25T14:55:51.442Z",
     "industry": "Government",
-    "website_count": 18
+    "website_count": 19
   },
   "averages": {
-    "performance": 59,
+    "performance": 58,
     "accessibility": 86,
-    "best_practices": 92,
+    "best_practices": 91,
     "seo": 94,
     "pwa": 39
   },
@@ -95,6 +95,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 08:30:07"
+    },
+    {
+      "url": "vero.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-10-24 22:15:10"
     },
     {
       "url": "luxembourg.lu",
@@ -208,25 +220,25 @@
       "url": "usps.com",
       "country": "United States",
       "scores": {
-        "performance": 53,
+        "performance": 36,
         "accessibility": 66,
         "best_practices": 75,
-        "seo": 83,
+        "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:08:28"
+      "test_date": "2025-10-24 20:27:15"
     },
     {
       "url": "whitehouse.gov",
       "country": "United States",
       "scores": {
-        "performance": 66,
+        "performance": 74,
         "accessibility": 92,
         "best_practices": 100,
         "seo": 83,
         "pwa": 78
       },
-      "test_date": "2025-10-23 07:07:30"
+      "test_date": "2025-10-25 04:13:05"
     }
   ],
   "countries": [
@@ -265,13 +277,13 @@
     },
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 32,
-        "accessibility": 91,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
+        "performance": 39,
+        "accessibility": 96,
+        "best_practices": 80,
+        "seo": 97,
+        "pwa": 39
       }
     },
     {
@@ -322,10 +334,10 @@
       "country": "United States",
       "website_count": 4,
       "averages": {
-        "performance": 61,
+        "performance": 59,
         "accessibility": 88,
         "best_practices": 90,
-        "seo": 91,
+        "seo": 93,
         "pwa": 47
       }
     }

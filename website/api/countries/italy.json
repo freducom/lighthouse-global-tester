@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.485Z",
+    "generated_at": "2025-10-25T14:55:51.406Z",
     "country": "Italy",
     "flag": "🇮🇹",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 38,
+    "performance": 43,
     "accessibility": 85,
-    "best_practices": 83,
-    "seo": 84,
-    "pwa": 44
+    "best_practices": 85,
+    "seo": 86,
+    "pwa": 50
   },
   "websites": [
+    {
+      "url": "virgilio.it",
+      "industry": "Portal",
+      "scores": {
+        "performance": 58,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 00:44:25"
+    },
     {
       "url": "repubblica.it",
       "industry": "Media",
@@ -71,6 +83,17 @@
         "best_practices": 83,
         "seo": 84,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 58,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 67
       }
     }
   ]

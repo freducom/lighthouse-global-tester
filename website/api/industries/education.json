@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.516Z",
+    "generated_at": "2025-10-25T14:55:51.444Z",
     "industry": "Education",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 63,
+    "performance": 61,
     "accessibility": 93,
-    "best_practices": 90,
-    "seo": 91,
+    "best_practices": 89,
+    "seo": 90,
     "pwa": 35
   },
   "websites": [
@@ -35,6 +35,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "uw.edu.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 51,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 22:12:34"
     },
     {
       "url": "singaporetech.edu.sg",
@@ -82,6 +94,17 @@
         "accessibility": 97,
         "best_practices": 96,
         "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Poland",
+      "website_count": 1,
+      "averages": {
+        "performance": 51,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 82,
         "pwa": 33
       }
     },

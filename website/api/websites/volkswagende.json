@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.554Z",
+    "generated_at": "2025-10-25T14:55:51.488Z",
     "url": "volkswagen.de",
     "country": "Germany",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 39,
     "accessibility": 97,
     "best_practices": 83,
-    "seo": 96,
+    "seo": 95,
     "pwa": 33,
-    "test_date": "2025-10-22 08:32:49"
+    "test_date": "2025-10-25 00:51:27"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 95,
+      "pwa": 33,
+      "test_date": "2025-10-25 00:51:27"
+    },
     {
       "performance": 47,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 08:32:49"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -8,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-10-25 00:51:27",
+    "test_date_previous": "2025-10-22 08:32:49"
+  }
 }

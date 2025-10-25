@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.484Z",
+    "generated_at": "2025-10-25T14:55:51.405Z",
     "country": "Lithuania",
     "flag": "🇱🇹",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 88,
-    "accessibility": 52,
-    "best_practices": 83,
+    "performance": 58,
+    "accessibility": 58,
+    "best_practices": 71,
     "seo": 83,
-    "pwa": 33
+    "pwa": 50
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 22:09:25"
+    },
+    {
+      "url": "vz.lt",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 64,
+        "best_practices": 58,
+        "seo": 82,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 00:52:50"
     }
   ],
   "industries": [
@@ -36,6 +48,17 @@
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 27,
+        "accessibility": 64,
+        "best_practices": 58,
+        "seo": 82,
+        "pwa": 67
       }
     }
   ]

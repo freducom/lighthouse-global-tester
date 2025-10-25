@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.485Z",
+    "generated_at": "2025-10-25T14:55:51.405Z",
     "country": "Turkey",
     "flag": "🇹🇷",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 53,
+    "performance": 54,
     "accessibility": 87,
     "best_practices": 83,
-    "seo": 89,
-    "pwa": 37
+    "seo": 90,
+    "pwa": 50
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 16:47:50"
+    },
+    {
+      "url": "trendyol.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 54,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-24 16:13:06"
     },
     {
       "url": "kamuajans.com",
@@ -51,6 +63,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 54,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 89
+      }
+    },
     {
       "industry": "Marketplace",
       "website_count": 1,

@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.516Z",
+    "generated_at": "2025-10-25T14:55:51.443Z",
     "industry": "Sports",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 77,
-    "best_practices": 82,
-    "seo": 85,
-    "pwa": 35
+    "performance": 44,
+    "accessibility": 80,
+    "best_practices": 80,
+    "seo": 86,
+    "pwa": 40
   },
   "websites": [
     {
@@ -23,6 +23,18 @@
         "pwa": 22
       },
       "test_date": "2025-10-19 20:00:05"
+    },
+    {
+      "url": "yallakora.com",
+      "country": "Egypt",
+      "scores": {
+        "performance": 34,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 67
+      },
+      "test_date": "2025-10-25 08:11:24"
     },
     {
       "url": "cricbuzz.com",
@@ -95,6 +107,17 @@
         "best_practices": 83,
         "seo": 76,
         "pwa": 22
+      }
+    },
+    {
+      "country": "Egypt",
+      "website_count": 1,
+      "averages": {
+        "performance": 34,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 67
       }
     },
     {

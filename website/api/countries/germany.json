@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.471Z",
+    "generated_at": "2025-10-25T14:55:51.390Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 18
+    "website_count": 20
   },
   "averages": {
     "performance": 42,
-    "accessibility": 92,
+    "accessibility": 87,
     "best_practices": 88,
-    "seo": 93,
-    "pwa": 54
+    "seo": 94,
+    "pwa": 52
   },
   "websites": [
+    {
+      "url": "web.de",
+      "industry": "Portal",
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 03:03:39"
+    },
     {
       "url": "gmx.net",
       "industry": "Portal",
@@ -24,18 +36,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:44:15"
-    },
-    {
-      "url": "web.de",
-      "industry": "Portal",
-      "scores": {
-        "performance": 65,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 19:42:53"
     },
     {
       "url": "heise.de",
@@ -62,18 +62,6 @@
       "test_date": "2025-10-19 19:43:17"
     },
     {
-      "url": "zeit.de",
-      "industry": "Media",
-      "scores": {
-        "performance": 48,
-        "accessibility": 86,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 78
-      },
-      "test_date": "2025-10-19 19:43:37"
-    },
-    {
       "url": "focus.de",
       "industry": "Media",
       "scores": {
@@ -84,18 +72,6 @@
         "pwa": 89
       },
       "test_date": "2025-10-20 20:11:07"
-    },
-    {
-      "url": "volkswagen.de",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 47,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 96,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 08:32:49"
     },
     {
       "url": "bmw.de",
@@ -134,6 +110,18 @@
       "test_date": "2025-10-24 00:40:36"
     },
     {
+      "url": "welt.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 04:11:51"
+    },
+    {
       "url": "bild.de",
       "industry": "Media",
       "scores": {
@@ -170,6 +158,30 @@
       "test_date": "2025-10-23 19:31:29"
     },
     {
+      "url": "volkswagen.de",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 39,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 00:51:27"
+    },
+    {
+      "url": "zeit.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 78
+      },
+      "test_date": "2025-10-25 10:16:16"
+    },
+    {
       "url": "t-online.de",
       "industry": "Portal",
       "scores": {
@@ -180,6 +192,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-24 06:15:06"
+    },
+    {
+      "url": "zalando.de",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 30,
+        "accessibility": 0,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 22
+      },
+      "test_date": "2025-10-25 10:08:45"
     },
     {
       "url": "sueddeutsche.de",
@@ -235,22 +259,22 @@
       "industry": "Automotive",
       "website_count": 3,
       "averages": {
-        "performance": 33,
+        "performance": 31,
         "accessibility": 99,
         "best_practices": 83,
-        "seo": 99,
+        "seo": 98,
         "pwa": 33
       }
     },
     {
       "industry": "E-commerce",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 32,
-        "accessibility": 91,
-        "best_practices": 84,
-        "seo": 91,
-        "pwa": 73
+        "performance": 31,
+        "accessibility": 60,
+        "best_practices": 81,
+        "seo": 94,
+        "pwa": 56
       }
     },
     {
@@ -266,20 +290,20 @@
     },
     {
       "industry": "Media",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 45,
+        "performance": 43,
         "accessibility": 90,
-        "best_practices": 94,
-        "seo": 94,
-        "pwa": 61
+        "best_practices": 93,
+        "seo": 95,
+        "pwa": 58
       }
     },
     {
       "industry": "Portal",
       "website_count": 3,
       "averages": {
-        "performance": 58,
+        "performance": 66,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 88,

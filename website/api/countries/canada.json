@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-24T15:44:51.474Z",
+    "generated_at": "2025-10-25T14:55:51.393Z",
     "country": "Canada",
     "flag": "🇨🇦",
-    "website_count": 15
+    "website_count": 17
   },
   "averages": {
-    "performance": 40,
+    "performance": 39,
     "accessibility": 94,
-    "best_practices": 72,
+    "best_practices": 71,
     "seo": 88,
-    "pwa": 46
+    "pwa": 44
   },
   "websites": [
     {
@@ -74,6 +74,18 @@
       "test_date": "2025-10-19 19:57:57"
     },
     {
+      "url": "walmart.ca",
+      "industry": "Retail",
+      "scores": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 03:00:21"
+    },
+    {
       "url": "scotiabank.com",
       "industry": "Finance",
       "scores": {
@@ -98,6 +110,18 @@
       "test_date": "2025-10-23 19:35:08"
     },
     {
+      "url": "timhortons.ca",
+      "industry": "Food & Drink",
+      "scores": {
+        "performance": 35,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-24 15:55:19"
+    },
+    {
       "url": "ctvnews.ca",
       "industry": "Media",
       "scores": {
@@ -108,18 +132,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:58:30"
-    },
-    {
-      "url": "timhortons.ca",
-      "industry": "Food & Drink",
-      "scores": {
-        "performance": 34,
-        "accessibility": 88,
-        "best_practices": 75,
-        "seo": 82,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 14:14:58"
     },
     {
       "url": "bankofcanada.ca",
@@ -182,6 +194,18 @@
       "test_date": "2025-10-23 20:16:54"
     },
     {
+      "url": "westjet.com",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 25,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-25 04:12:53"
+    },
+    {
       "url": "rbcroyalbank.com",
       "industry": "Finance",
       "scores": {
@@ -210,7 +234,7 @@
       "industry": "Food & Drink",
       "website_count": 1,
       "averages": {
-        "performance": 34,
+        "performance": 35,
         "accessibility": 88,
         "best_practices": 75,
         "seo": 82,
@@ -251,6 +275,17 @@
       }
     },
     {
+      "industry": "Retail",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Sports",
       "website_count": 1,
       "averages": {
@@ -268,6 +303,17 @@
         "performance": 25,
         "accessibility": 96,
         "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 86,
+        "best_practices": 67,
         "seo": 86,
         "pwa": 33
       }

@@ -92,6 +92,20 @@
                     <div id="search-help" class="sr-only">Type to filter websites by name or country. Results update automatically as you type.</div>
                     <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
                 </div>
+                
+                <div class="sorting-controls">
+                    <h4>Quick Sort Options:</h4>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="performance" data-order="desc">Performance ↓</button>
+                        <button class="sort-btn" data-sort="accessibility" data-order="desc">Accessibility ↓</button>
+                        <button class="sort-btn" data-sort="seo" data-order="desc">SEO ↓</button>
+                        <button class="sort-btn" data-sort="best_practices" data-order="desc">Best Practices ↓</button>
+                        <button class="sort-btn" data-sort="pwa" data-order="desc">PWA ↓</button>
+                        <button class="sort-btn" data-sort="url" data-order="asc">Name A-Z</button>
+                        <button class="sort-btn" data-sort="test_date" data-order="desc">Latest First</button>
+                    </div>
+                </div>
+                
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
@@ -101,15 +115,51 @@
                         </caption>
                         <thead>
                             <tr>
-                                <th scope="col" aria-sort="none">Rank</th>
-                                <th scope="col" aria-sort="none">Website</th>
-                                <th scope="col" aria-sort="none">Country</th>
-                                <th scope="col" aria-sort="descending" aria-label="Performance score, currently sorted descending">Performance</th>
-                                <th scope="col" aria-sort="none">Accessibility</th>
-                                <th scope="col" aria-sort="none">SEO</th>
-                                <th scope="col" aria-sort="none">Best Practices</th>
-                                <th scope="col" aria-sort="none">PWA</th>
-                                <th scope="col" aria-sort="none">Last Scanned</th>
+                                <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by rank">
+                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by website name">
+                                        Website <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by country">
+                                        Country <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
+                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
+                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
+                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
+                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
+                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
+                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
+                                <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
+                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
+                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
+                                    </button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
@@ -453,48 +503,6 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 9">#9</td>
                                 <td>
-                                    <a href="domain-wellsfargo-com.html" 
-                                       class="domain-link"
-                                       aria-label="View detailed report for wellsfargo.com">
-                                        wellsfargo.com
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="country-united-states.html" 
-                                       class="country-link"
-                                       aria-label="View all websites from United States">
-                                        🇺🇸 United States
-                                    </a>
-                                </td>
-                                <td class="score perf-average"
-                                    aria-label="Performance score: 58 percent, average performance">
-                                    58%
-                                </td>
-                                <td class="score acc-excellent"
-                                    aria-label="Accessibility score: 100 percent, excellent performance">
-                                    100%
-                                </td>
-                                <td class="score seo-good"
-                                    aria-label="SEO score: 86 percent, good performance">
-                                    86%
-                                </td>
-                                <td class="score bp-average"
-                                    aria-label="Best Practices score: 58 percent, average performance">
-                                    58%
-                                </td>
-                                <td class="score pwa-poor"
-                                    aria-label="PWA score: 33 percent, needs improvement">
-                                    33%
-                                </td>
-                                <td class="date" data-date="2025-10-23 06:59:08"
-                                    aria-label="Last tested on 10/23/2025">
-                                    <time datetime="2025-10-23 06:59:08">10/23/2025</time>
-                                </td>
-                            </tr>
-                        
-                            <tr class="site-row">
-                                <td class="rank" aria-label="Rank 10">#10</td>
-                                <td>
                                     <a href="domain-stripe-com.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for stripe.com">
@@ -535,7 +543,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 11">#11</td>
+                                <td class="rank" aria-label="Rank 10">#10</td>
                                 <td>
                                     <a href="domain-natwest-com.html" 
                                        class="domain-link"
@@ -577,7 +585,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 12">#12</td>
+                                <td class="rank" aria-label="Rank 11">#11</td>
                                 <td>
                                     <a href="domain-rabobank-nl.html" 
                                        class="domain-link"
@@ -619,7 +627,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 13">#13</td>
+                                <td class="rank" aria-label="Rank 12">#12</td>
                                 <td>
                                     <a href="domain-nyse-com.html" 
                                        class="domain-link"
@@ -661,7 +669,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 14">#14</td>
+                                <td class="rank" aria-label="Rank 13">#13</td>
                                 <td>
                                     <a href="domain-santander-co-uk.html" 
                                        class="domain-link"
@@ -703,7 +711,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 15">#15</td>
+                                <td class="rank" aria-label="Rank 14">#14</td>
                                 <td>
                                     <a href="domain-sparkasse-de.html" 
                                        class="domain-link"
@@ -745,7 +753,7 @@
                             </tr>
                         
                             <tr class="site-row">
-                                <td class="rank" aria-label="Rank 16">#16</td>
+                                <td class="rank" aria-label="Rank 15">#15</td>
                                 <td>
                                     <a href="domain-swedbank-ee.html" 
                                        class="domain-link"
@@ -783,6 +791,48 @@
                                 <td class="date" data-date="2025-10-24 04:16:45"
                                     aria-label="Last tested on 10/24/2025">
                                     <time datetime="2025-10-24 04:16:45">10/24/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 16">#16</td>
+                                <td>
+                                    <a href="domain-wellsfargo-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for wellsfargo.com">
+                                        wellsfargo.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-united-states.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from United States">
+                                        🇺🇸 United States
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 38 percent, needs improvement">
+                                    38%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 86 percent, good performance">
+                                    86%
+                                </td>
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 58 percent, average performance">
+                                    58%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-25 04:11:21"
+                                    aria-label="Last tested on 10/25/2025">
+                                    <time datetime="2025-10-25 04:11:21">10/25/2025</time>
                                 </td>
                             </tr>
                         
@@ -1392,7 +1442,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"berkshirehathaway.com","country":"United States","industry":"Finance","performance":100,"accessibility":88,"best_practices":75,"seo":67,"pwa":0,"test_date":"2025-10-23 07:02:41","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"standoutcapital.com","country":"Sweden","industry":"Finance","performance":90,"accessibility":98,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-24 02:55:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mymoney.com.my","country":"Malaysia","industry":"Finance","performance":80,"accessibility":88,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-22 14:57:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"openocean.vc","country":"Finland","industry":"Finance","performance":78,"accessibility":98,"best_practices":100,"seo":89,"pwa":33,"test_date":"2025-10-23 02:59:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"superherocapital.com","country":"Finland","industry":"Finance","performance":74,"accessibility":90,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-24 04:12:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bizportal.co.il","country":"Israel","industry":"Finance","performance":71,"accessibility":92,"best_practices":75,"seo":97,"pwa":33,"test_date":"2025-10-19 20:22:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"news.finance.ua","country":"Ukraine","industry":"Finance","performance":67,"accessibility":63,"best_practices":67,"seo":91,"pwa":89,"test_date":"2025-10-22 19:44:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ing.nl","country":"Netherlands","industry":"Finance","performance":64,"accessibility":96,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-19 20:25:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"wellsfargo.com","country":"United States","industry":"Finance","performance":58,"accessibility":100,"best_practices":58,"seo":86,"pwa":33,"test_date":"2025-10-23 06:59:08","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"stripe.com","country":"United States","industry":"Finance","performance":57,"accessibility":95,"best_practices":83,"seo":96,"pwa":33,"test_date":"2025-10-24 02:58:56","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"natwest.com","country":"United Kingdom","industry":"Finance","performance":54,"accessibility":89,"best_practices":83,"seo":75,"pwa":33,"test_date":"2025-10-22 16:14:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rabobank.nl","country":"Netherlands","industry":"Finance","performance":47,"accessibility":92,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 10:23:52","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nyse.com","country":"United States","industry":"Finance","performance":42,"accessibility":77,"best_practices":83,"seo":68,"pwa":33,"test_date":"2025-10-23 07:09:01","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":17,"text":"+17","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"santander.co.uk","country":"United Kingdom","industry":"Finance","performance":41,"accessibility":100,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-23 19:30:31","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sparkasse.de","country":"Germany","industry":"Finance","performance":40,"accessibility":92,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-24 00:40:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"swedbank.ee","country":"Estonia","industry":"Finance","performance":38,"accessibility":98,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-24 04:16:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"scotiabank.com","country":"Canada","industry":"Finance","performance":35,"accessibility":100,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-23 19:33:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bankofcanada.ca","country":"Canada","industry":"Finance","performance":33,"accessibility":96,"best_practices":83,"seo":84,"pwa":44,"test_date":"2025-10-19 19:59:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"intuit.com","country":"United States","industry":"Finance","performance":32,"accessibility":98,"best_practices":92,"seo":86,"pwa":33,"test_date":"2025-10-23 07:30:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"chase.com","country":"United States","industry":"Finance","performance":30,"accessibility":92,"best_practices":92,"seo":86,"pwa":33,"test_date":"2025-10-23 06:58:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"reservebank.govt.nz","country":"New Zealand","industry":"Finance","performance":30,"accessibility":89,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-23 15:44:31","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bloomberg.com","country":"United States","industry":"Finance","performance":28,"accessibility":87,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-10-23 06:57:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"op.fi","country":"Finland","industry":"Finance","performance":26,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 02:59:22","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-10,"text":"-10","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"td.com","country":"Canada","industry":"Finance","performance":26,"accessibility":92,"best_practices":0,"seo":77,"pwa":33,"test_date":"2025-10-24 08:15:02","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"klarna.com","country":"Sweden","industry":"Finance","performance":24,"accessibility":90,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-10-21 20:23:47","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"moneycontrol.com","country":"India","industry":"Finance","performance":24,"accessibility":73,"best_practices":50,"seo":83,"pwa":33,"test_date":"2025-10-19 19:47:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bankofamerica.com","country":"United States","industry":"Finance","performance":22,"accessibility":78,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-23 06:58:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"postbank.de","country":"Germany","industry":"Finance","performance":17,"accessibility":85,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-23 08:29:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rbcroyalbank.com","country":"Canada","industry":"Finance","performance":16,"accessibility":97,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-23 12:18:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"fin24.com","country":"South Africa","industry":"Finance","performance":14,"accessibility":96,"best_practices":67,"seo":75,"pwa":89,"test_date":"2025-10-20 18:17:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"berkshirehathaway.com","country":"United States","industry":"Finance","performance":100,"accessibility":88,"best_practices":75,"seo":67,"pwa":0,"test_date":"2025-10-23 07:02:41","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"standoutcapital.com","country":"Sweden","industry":"Finance","performance":90,"accessibility":98,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-24 02:55:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mymoney.com.my","country":"Malaysia","industry":"Finance","performance":80,"accessibility":88,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-22 14:57:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"openocean.vc","country":"Finland","industry":"Finance","performance":78,"accessibility":98,"best_practices":100,"seo":89,"pwa":33,"test_date":"2025-10-23 02:59:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"superherocapital.com","country":"Finland","industry":"Finance","performance":74,"accessibility":90,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-24 04:12:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bizportal.co.il","country":"Israel","industry":"Finance","performance":71,"accessibility":92,"best_practices":75,"seo":97,"pwa":33,"test_date":"2025-10-19 20:22:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"news.finance.ua","country":"Ukraine","industry":"Finance","performance":67,"accessibility":63,"best_practices":67,"seo":91,"pwa":89,"test_date":"2025-10-22 19:44:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ing.nl","country":"Netherlands","industry":"Finance","performance":64,"accessibility":96,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-19 20:25:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"stripe.com","country":"United States","industry":"Finance","performance":57,"accessibility":95,"best_practices":83,"seo":96,"pwa":33,"test_date":"2025-10-24 02:58:56","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"natwest.com","country":"United Kingdom","industry":"Finance","performance":54,"accessibility":89,"best_practices":83,"seo":75,"pwa":33,"test_date":"2025-10-22 16:14:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rabobank.nl","country":"Netherlands","industry":"Finance","performance":47,"accessibility":92,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 10:23:52","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nyse.com","country":"United States","industry":"Finance","performance":42,"accessibility":77,"best_practices":83,"seo":68,"pwa":33,"test_date":"2025-10-23 07:09:01","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":17,"text":"+17","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"santander.co.uk","country":"United Kingdom","industry":"Finance","performance":41,"accessibility":100,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-23 19:30:31","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sparkasse.de","country":"Germany","industry":"Finance","performance":40,"accessibility":92,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-24 00:40:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"swedbank.ee","country":"Estonia","industry":"Finance","performance":38,"accessibility":98,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-24 04:16:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"wellsfargo.com","country":"United States","industry":"Finance","performance":38,"accessibility":100,"best_practices":58,"seo":86,"pwa":33,"test_date":"2025-10-25 04:11:21","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-20,"text":"-20","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"scotiabank.com","country":"Canada","industry":"Finance","performance":35,"accessibility":100,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-23 19:33:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bankofcanada.ca","country":"Canada","industry":"Finance","performance":33,"accessibility":96,"best_practices":83,"seo":84,"pwa":44,"test_date":"2025-10-19 19:59:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"intuit.com","country":"United States","industry":"Finance","performance":32,"accessibility":98,"best_practices":92,"seo":86,"pwa":33,"test_date":"2025-10-23 07:30:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"chase.com","country":"United States","industry":"Finance","performance":30,"accessibility":92,"best_practices":92,"seo":86,"pwa":33,"test_date":"2025-10-23 06:58:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"reservebank.govt.nz","country":"New Zealand","industry":"Finance","performance":30,"accessibility":89,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-23 15:44:31","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bloomberg.com","country":"United States","industry":"Finance","performance":28,"accessibility":87,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-10-23 06:57:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"op.fi","country":"Finland","industry":"Finance","performance":26,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 02:59:22","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-10,"text":"-10","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"td.com","country":"Canada","industry":"Finance","performance":26,"accessibility":92,"best_practices":0,"seo":77,"pwa":33,"test_date":"2025-10-24 08:15:02","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"klarna.com","country":"Sweden","industry":"Finance","performance":24,"accessibility":90,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-10-21 20:23:47","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"moneycontrol.com","country":"India","industry":"Finance","performance":24,"accessibility":73,"best_practices":50,"seo":83,"pwa":33,"test_date":"2025-10-19 19:47:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bankofamerica.com","country":"United States","industry":"Finance","performance":22,"accessibility":78,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-23 06:58:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"postbank.de","country":"Germany","industry":"Finance","performance":17,"accessibility":85,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-23 08:29:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rbcroyalbank.com","country":"Canada","industry":"Finance","performance":16,"accessibility":97,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-23 12:18:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"fin24.com","country":"South Africa","industry":"Finance","performance":14,"accessibility":96,"best_practices":67,"seo":75,"pwa":89,"test_date":"2025-10-20 18:17:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -1519,9 +1569,98 @@
             });
         }
         
+        // Sorting functionality
+        function sortData(column, order = 'desc') {
+            const table = document.querySelector('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            rows.sort((a, b) => {
+                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
+                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+                
+                if (!aVal || !bVal) return 0;
+                
+                // Get text content or data attribute value
+                aVal = aVal.textContent.trim();
+                bVal = bVal.textContent.trim();
+                
+                // Handle numeric values
+                const aNum = parseFloat(aVal);
+                const bNum = parseFloat(bVal);
+                
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                }
+                
+                // Handle string values
+                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+            });
+            
+            // Clear and re-append sorted rows
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update sort indicators
+            updateSortIndicators(column, order);
+        }
+        
+        function updateSortIndicators(activeColumn, order) {
+            const headers = document.querySelectorAll('.sortable-header');
+            headers.forEach((header, index) => {
+                const arrow = header.querySelector('.sort-arrow');
+                if (index === activeColumn) {
+                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
+                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+                } else {
+                    arrow.textContent = '';
+                    header.setAttribute('aria-sort', 'none');
+                }
+            });
+        }
+        
+        function getColumnIndex(sortType) {
+            const columnMap = {
+                'rank': 0,
+                'url': 1, 
+                'country': 2,
+                'performance': 3,
+                'accessibility': 4,
+                'seo': 5,
+                'best_practices': 6,
+                'pwa': 7,
+                'test_date': 8
+            };
+            return columnMap[sortType] || 0;
+        }
+        
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
             formatAllDates();
+            
+            // Add click handlers for sortable headers
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const button = header.querySelector('.sort-header-btn');
+                if (button) {
+                    button.addEventListener('click', function() {
+                        const sortType = header.getAttribute('data-sort');
+                        const column = getColumnIndex(sortType);
+                        const currentSort = header.getAttribute('aria-sort');
+                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
+                        sortData(column, newOrder);
+                    });
+                }
+            });
+            
+            // Add click handlers for quick sort buttons
+            document.querySelectorAll('.sort-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const sortType = this.getAttribute('data-sort');
+                    const order = this.getAttribute('data-order') || 'desc';
+                    const column = getColumnIndex(sortType);
+                    sortData(column, order);
+                });
+            });
         });
         
     </script>
