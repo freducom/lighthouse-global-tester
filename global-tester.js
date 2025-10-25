@@ -181,6 +181,14 @@ class GlobalLighthouseTester {
     // Calculate which domains to test in this batch
     const startIndex = batchIndex * batchSize;
     const endIndex = Math.min(startIndex + batchSize, totalDomains);
+    
+    // Check if this batch index is beyond the available domains
+    if (startIndex >= totalDomains) {
+      console.log(`📊 Batch ${batchIndex + 1}/84: No domains to test (batch index ${batchIndex} is beyond available domains)`);
+      console.log(`ℹ️  Only ${Math.ceil(totalDomains / batchSize)} batches are needed for ${totalDomains} domains`);
+      return [];
+    }
+    
     const batchDomains = allDomains.slice(startIndex, endIndex);
     
     const dayOfWeek = Math.floor(batchIndex / 12);
@@ -412,9 +420,19 @@ async function main() {
     const batchIndex = args.indexOf('--hourly-batch');
     const batchNumber = parseInt(args[batchIndex + 1]);
     
+    // Calculate how many batches are actually needed
+    const totalDomains = tester.allDomains.length;
+    const batchSize = Math.ceil(totalDomains / 84);
+    const actualBatchesNeeded = Math.ceil(totalDomains / batchSize);
+    
     if (isNaN(batchNumber) || batchNumber < 0 || batchNumber > 83) {
-      console.error('❌ Invalid batch index. Use 0-83 (84 batches total)');
+      console.error(`❌ Invalid batch index. Use 0-83 (84 batches total, but only ${actualBatchesNeeded} needed for ${totalDomains} domains)`);
       process.exit(1);
+    }
+    
+    // Warn if batch is beyond what's needed
+    if (batchNumber >= actualBatchesNeeded) {
+      console.log(`⚠️  Batch ${batchNumber} is beyond the ${actualBatchesNeeded} batches needed for ${totalDomains} domains`);
     }
     
     let batchResults = null;
