@@ -77,13 +77,14 @@ class WebsiteGenerator {
   }
 
   getFaviconHTML() {
-    return `    <link rel="icon" type="image/png" sizes="16x16" href="favicon_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="favicon_64.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="favicon_128.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="favicon_256.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="favicon_128.png">
-    <link rel="apple-touch-icon" sizes="256x256" href="favicon_256.png">`;
+    return `    <link rel="icon" type="image/png" sizes="16x16" href="cheetahcheck_favicon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="cheetahcheck_favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="cheetahcheck_favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="cheetahcheck_favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="cheetahcheck_favicon_128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="cheetahcheck_favicon_256x256.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="cheetahcheck_favicon_128x128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="cheetahcheck_favicon_256x256.png">`;
   }
 
   getSocialMetaTags(title, description, url = '', type = 'website') {
@@ -98,7 +99,7 @@ class WebsiteGenerator {
     <meta property="og:image" content="${ogImageUrl}">
     <meta property="og:url" content="${fullUrl}">
     <meta property="og:type" content="${type}">
-    <meta property="og:site_name" content="Valmitta">
+    <meta property="og:site_name" content="CheetahCheck">
     <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card Meta Tags -->
@@ -106,8 +107,8 @@ class WebsiteGenerator {
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
     <meta name="twitter:image" content="${twitterImageUrl}">
-    <meta name="twitter:site" content="@valmitta">
-    <meta name="twitter:creator" content="@valmitta">`;
+    <meta name="twitter:site" content="@cheetahcheck">
+    <meta name="twitter:creator" content="@cheetahcheck">`;
   }
 
   getPostHogScript() {
@@ -134,7 +135,7 @@ class WebsiteGenerator {
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Valmitta. Lighthouse performance monitoring of ${websiteCount} websites.</p>
+            <p>&copy; 2025 CheetahCheck. Track the fastest websites. Lighthouse performance monitoring of ${websiteCount} websites.</p>
         </div>
     </footer>
 
@@ -383,12 +384,12 @@ class WebsiteGenerator {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valmitta - Web Performance Analytics Dashboard</title>
-    <meta name="description" content="Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics">
+    <title>CheetahCheck - Track the Fastest Websites</title>
+    <meta name="description" content="Track the fastest websites with CheetahCheck. Performance analytics monitoring ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics">
     <meta name="keywords" content="web performance, lighthouse, accessibility, SEO, performance analytics, website optimization">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
-${this.getSocialMetaTags('Valmitta - Web Performance Analytics Dashboard', `Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics`, 'index.html')}
+${this.getSocialMetaTags('CheetahCheck - Track the Fastest Websites', `Track the fastest websites with CheetahCheck. Performance analytics monitoring ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics`, 'index.html')}
 ${this.getPostHogScript()}
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -401,16 +402,16 @@ ${this.getPostHogScript()}
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://valmitta.com/#organization",
-          "name": "Valmitta",
-          "url": "https://valmitta.com",
+          "@id": "https://cheetahcheck.com/#organization",
+          "name": "CheetahCheck",
+          "url": "https://cheetahcheck.com",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://valmitta.com/logo.png",
+            "url": "https://cheetahcheck.com/logo.png",
             "width": 400,
             "height": 120
           },
-          "description": "Global website performance analysis with Lighthouse metrics across ${allScores.length} websites from ${this.domainsData.length} countries",
+          "description": "Track the fastest websites with global performance analysis using Lighthouse metrics across ${allScores.length} websites from ${this.domainsData.length} countries",
           "foundingDate": "2025",
           "sameAs": [
             "https://github.com/freducom/lighthouse-global-tester"
@@ -418,32 +419,32 @@ ${this.getPostHogScript()}
         },
         {
           "@type": "WebSite",
-          "@id": "https://valmitta.com/#website", 
-          "url": "https://valmitta.com",
-          "name": "Valmitta",
-          "description": "Comprehensive web performance analytics dashboard",
+          "@id": "https://cheetahcheck.com/#website", 
+          "url": "https://cheetahcheck.com",
+          "name": "CheetahCheck",
+          "description": "Track the fastest websites",
           "publisher": {
-            "@id": "https://valmitta.com/#organization"
+            "@id": "https://cheetahcheck.com/#organization"
           },
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://valmitta.com/search?q={search_term_string}"
+              "urlTemplate": "https://cheetahcheck.com/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
         },
         {
           "@type": "SoftwareApplication",
-          "@id": "https://valmitta.com/#software",
-          "name": "Valmitta",
+          "@id": "https://cheetahcheck.com/#software",
+          "name": "CheetahCheck",
           "applicationCategory": "WebApplication",
           "operatingSystem": "Any",
-          "description": "Comprehensive web performance analytics tracking ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics",
-          "url": "https://valmitta.com",
+          "description": "Track the fastest websites with global performance analysis using Lighthouse metrics across ${allScores.length} websites from ${this.domainsData.length} countries",
+          "url": "https://cheetahcheck.com",
           "author": {
-            "@id": "https://valmitta.com/#organization"
+            "@id": "https://cheetahcheck.com/#organization"
           },
           "offers": {
             "@type": "Offer",
@@ -454,11 +455,11 @@ ${this.getPostHogScript()}
         },
         {
           "@type": "Dataset",
-          "@id": "https://valmitta.com/#dataset",
+          "@id": "https://cheetahcheck.com/#dataset",
           "name": "Global Website Performance Dataset", 
           "description": "Lighthouse performance metrics for ${allScores.length} websites across ${this.domainsData.length} countries",
           "creator": {
-            "@id": "https://valmitta.com/#organization"
+            "@id": "https://cheetahcheck.com/#organization"
           },
           "dateModified": "${new Date().toISOString()}",
           "keywords": ["web performance", "lighthouse", "accessibility", "SEO", "performance analytics"]
@@ -1202,13 +1203,13 @@ ${this.getPostHogScript()}
       "@graph": [
         {
           "@type": "Report",
-          "@id": "https://valmitta.com/country-${this.normalizeCountry(countryData.country).toLowerCase().replace(/\\s+/g, '-')}.html#report",
+          "@id": "https://cheetahcheck.com/country-${this.normalizeCountry(countryData.country).toLowerCase().replace(/\\s+/g, '-')}.html#report",
           "name": "${countryData.country} Website Performance Report",
           "description": "Lighthouse performance analysis of ${countryScores.length} websites from ${countryData.country}",
           "author": {
             "@type": "Organization",
             "name": "Valmitta",
-            "url": "https://valmitta.com"
+            "url": "https://cheetahcheck.com"
           },
           "dateCreated": "${new Date().toISOString()}",
           "about": {
@@ -1219,13 +1220,13 @@ ${this.getPostHogScript()}
         },
         {
           "@type": "Dataset",
-          "@id": "https://valmitta.com/country-${this.normalizeCountry(countryData.country).toLowerCase().replace(/\\s+/g, '-')}.html#dataset",
+          "@id": "https://cheetahcheck.com/country-${this.normalizeCountry(countryData.country).toLowerCase().replace(/\\s+/g, '-')}.html#dataset",
           "name": "${countryData.country} Website Performance Data",
           "description": "Performance metrics for ${countryScores.length} websites from ${countryData.country}",
           "creator": {
             "@type": "Organization",
             "name": "Valmitta",
-            "url": "https://valmitta.com"
+            "url": "https://cheetahcheck.com"
           },
           "spatialCoverage": {
             "@type": "Place",
@@ -2340,13 +2341,13 @@ ${this.getPostHogScript()}
       "@graph": [
         {
           "@type": "Report",
-          "@id": "https://valmitta.com/domain-${site.url.replace(/\\./g, '-')}.html#report",
+          "@id": "https://cheetahcheck.com/domain-${site.url.replace(/\\./g, '-')}.html#report",
           "name": "${site.url} Performance Report",
           "description": "Lighthouse performance history and insights for ${site.url}",
           "author": {
             "@type": "Organization",
             "name": "Valmitta",
-            "url": "https://valmitta.com"
+            "url": "https://cheetahcheck.com"
           },
           "dateCreated": "${new Date().toISOString()}",
           "about": {
@@ -2357,7 +2358,7 @@ ${this.getPostHogScript()}
         },
         {
           "@type": "PerformanceMetrics",
-          "@id": "https://valmitta.com/domain-${site.url.replace(/\\./g, '-')}.html#metrics",
+          "@id": "https://cheetahcheck.com/domain-${site.url.replace(/\\./g, '-')}.html#metrics",
           "name": "${site.url} Performance Metrics",
           "description": "Latest Lighthouse scores for ${site.url}",
           "performanceScore": ${site.performance},
@@ -4078,27 +4079,32 @@ input[type="text"]:focus, input[type="search"]:focus {
       "theme_color": "#0D3B66",
       "icons": [
         {
-          "src": "favicon_16.png",
+          "src": "cheetahcheck_favicon_16x16.png",
           "sizes": "16x16",
           "type": "image/png"
         },
         {
-          "src": "favicon_32.png",
+          "src": "cheetahcheck_favicon_32x32.png",
           "sizes": "32x32",
           "type": "image/png"
         },
         {
-          "src": "favicon_64.png",
+          "src": "cheetahcheck_favicon_48x48.png",
+          "sizes": "48x48",
+          "type": "image/png"
+        },
+        {
+          "src": "cheetahcheck_favicon_64x64.png",
           "sizes": "64x64",
           "type": "image/png"
         },
         {
-          "src": "favicon_128.png",
+          "src": "cheetahcheck_favicon_128x128.png",
           "sizes": "128x128",
           "type": "image/png"
         },
         {
-          "src": "favicon_256.png",
+          "src": "cheetahcheck_favicon_256x256.png",
           "sizes": "256x256",
           "type": "image/png"
         },

@@ -21,7 +21,7 @@ class APIDocsGenerator {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Documentation - Valmitta Lighthouse API</title>
+    <title>API Documentation - CheetahCheck API</title>
     ${this.getFaviconHTML()}
     ${this.getSocialMetaTags()}
     ${this.getPostHogScript()}
@@ -249,10 +249,10 @@ class APIDocsGenerator {
     <header class="header">
         <div class="header-content">
             <div class="logo-section">
-                <img src="logo.png" alt="Valmitta Logo" class="logo">
+                <img src="logo.png" alt="CheetahCheck Logo" class="logo">
                 <div class="site-title">
-                    <h1>Valmitta API</h1>
-                    <p class="subtitle">Lighthouse Performance Data API</p>
+                    <h1>CheetahCheck API</h1>
+                    <p class="subtitle">Track the Fastest Websites API</p>
                 </div>
             </div>
             
@@ -285,7 +285,7 @@ class APIDocsGenerator {
             
             <div class="endpoint-section">
                 <h3>API Base URL</h3>
-                <div class="endpoint-url">https://valmitta.com/api/</div>
+                <div class="endpoint-url">https://cheetahcheck.com/api/</div>
                 
                 <div class="rate-limit-info">
                     <h4>📈 Rate Limits & Usage</h4>
@@ -636,7 +636,7 @@ class APIDocsGenerator {
                 <div class="json-example">
                     <pre>// Get overview data
 async function getOverview() {
-    const response = await fetch('https://valmitta.com/api/overview.json');
+    const response = await fetch('https://cheetahcheck.com/api/overview.json');
     const data = await response.json();
     console.log('Global averages:', data.global_averages);
 }
@@ -644,7 +644,7 @@ async function getOverview() {
 // Get country-specific data
 async function getCountryData(country) {
     const slug = country.toLowerCase().replace(/\\s+/g, '-');
-    const response = await fetch(\`https://valmitta.com/api/countries/\${slug}.json\`);
+    const response = await fetch(\`https://cheetahcheck.com/api/countries/\${slug}.json\`);
     const data = await response.json();
     return data;
 }
@@ -652,7 +652,7 @@ async function getCountryData(country) {
 // Get website performance history
 async function getWebsiteHistory(website) {
     const slug = website.replace(/\\./g, '-');
-    const response = await fetch(\`https://valmitta.com/api/websites/\${slug}.json\`);
+    const response = await fetch(\`https://cheetahcheck.com/api/websites/\${slug}.json\`);
     const data = await response.json();
     return data.historical_data;
 }</pre>
@@ -666,7 +666,7 @@ async function getWebsiteHistory(website) {
 
 # Get overview data
 def get_overview():
-    url = 'https://valmitta.com/api/overview.json'
+    url = 'https://cheetahcheck.com/api/overview.json'
     response = requests.get(url)
     data = response.json()
     return data['global_averages']
@@ -674,13 +674,13 @@ def get_overview():
 # Get industry data
 def get_industry_data(industry):
     slug = industry.lower().replace(' ', '-')
-    url = f'https://valmitta.com/api/industries/{slug}.json'
+    url = f'https://cheetahcheck.com/api/industries/{slug}.json'
     response = requests.get(url)
     return response.json()
 
 # Get all countries
 def get_all_countries():
-    url = 'https://valmitta.com/api/countries.json'
+    url = 'https://cheetahcheck.com/api/countries.json'
     response = requests.get(url)
     data = response.json()
     return data['countries']</pre>
@@ -691,13 +691,13 @@ def get_all_countries():
                 <h3>cURL</h3>
                 <div class="json-example">
                     <pre># Get overview
-curl "https://valmitta.com/api/overview.json"
+curl "https://cheetahcheck.com/api/overview.json"
 
 # Get specific country data
-curl "https://valmitta.com/api/countries/united-states.json"
+curl "https://cheetahcheck.com/api/countries/united-states.json"
 
 # Get website data with pretty printing
-curl -s "https://valmitta.com/api/websites/google-com.json" | jq '.'</pre>
+curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
                 </div>
             </div>
         </div>
@@ -743,7 +743,7 @@ curl -s "https://valmitta.com/api/websites/google-com.json" | jq '.'</pre>
 
         <div class="endpoint-section">
             <h3>🤝 Support & Contributing</h3>
-            <p>This API is part of the open-source Valmitta project. For issues, feature requests, or contributions:</p>
+            <p>This API is part of the open-source CheetahCheck project. For issues, feature requests, or contributions:</p>
             <ul>
                 <li><strong>GitHub Repository:</strong> <a href="https://github.com/freducom/lighthouse-global-tester" target="_blank">lighthouse-global-tester</a></li>
                 <li><strong>Data Updates:</strong> API data is automatically updated when lighthouse tests are run</li>
@@ -756,7 +756,7 @@ curl -s "https://valmitta.com/api/websites/google-com.json" | jq '.'</pre>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Valmitta</h3>
+                <h3>CheetahCheck</h3>
                 <p>Global lighthouse performance monitoring across ${allScores.length} websites in ${sampleCountries.length} countries.</p>
             </div>
             
@@ -790,7 +790,7 @@ curl -s "https://valmitta.com/api/websites/google-com.json" | jq '.'</pre>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Valmitta. Lighthouse performance data updated regularly.</p>
+            <p>&copy; 2025 CheetahCheck. Track the fastest websites. Lighthouse performance data updated regularly.</p>
         </div>
     </footer>
 
@@ -806,32 +806,33 @@ curl -s "https://valmitta.com/api/websites/google-com.json" | jq '.'</pre>
 
   // Helper methods (same as in generate-website.js)
   getFaviconHTML() {
-    return `    <link rel="icon" type="image/png" sizes="16x16" href="favicon_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="favicon_64.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="favicon_128.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="favicon_256.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="favicon_128.png">
-    <link rel="apple-touch-icon" sizes="256x256" href="favicon_256.png">`;
+    return `    <link rel="icon" type="image/png" sizes="16x16" href="cheetahcheck_favicon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="cheetahcheck_favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="cheetahcheck_favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="cheetahcheck_favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="cheetahcheck_favicon_128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="cheetahcheck_favicon_256x256.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="cheetahcheck_favicon_128x128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="cheetahcheck_favicon_256x256.png">`;
   }
 
   getSocialMetaTags() {
-    const baseUrl = 'https://valmitta.com';
+    const baseUrl = 'https://cheetahcheck.com';
     const ogImageUrl = `${baseUrl}/openGraph_1200x630.png`;
     const twitterImageUrl = `${baseUrl}/twitterCard_1200x675.png`;
     
     return `    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Valmitta API Documentation - Lighthouse Performance Data API">
-    <meta property="og:description" content="Comprehensive REST API for lighthouse performance data across 300+ websites globally. Free, public access with JSON endpoints.">
+    <meta property="og:title" content="CheetahCheck API Documentation - Lighthouse Performance Data API">
+    <meta property="og:description" content="Track the fastest websites with CheetahCheck's REST API for lighthouse performance data across 300+ websites globally. Free, public access with JSON endpoints.">
     <meta property="og:image" content="${ogImageUrl}">
     <meta property="og:url" content="${baseUrl}/api-docs.html">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Valmitta">
+    <meta property="og:site_name" content="CheetahCheck">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Valmitta API Documentation">
-    <meta name="twitter:description" content="REST API for lighthouse performance data across 300+ websites globally.">
+    <meta name="twitter:title" content="CheetahCheck API Documentation">
+    <meta name="twitter:description" content="Track the fastest websites via REST API for lighthouse performance data across 300+ websites globally.">
     <meta name="twitter:image" content="${twitterImageUrl}">`;
   }
 
