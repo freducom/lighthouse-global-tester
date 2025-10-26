@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.538Z",
+    "generated_at": "2025-10-26T16:21:14.512Z",
     "country": "United States",
     "flag": "🇺🇸",
-    "website_count": 55
+    "website_count": 56
   },
   "averages": {
     "performance": 47,
-    "accessibility": 89,
+    "accessibility": 90,
     "best_practices": 81,
-    "seo": 89,
+    "seo": 90,
     "pwa": 42
   },
   "websites": [
@@ -23,7 +23,7 @@
         "seo": 67,
         "pwa": 0
       },
-      "test_date": "2025-10-23 07:02:41"
+      "test_date": "2025-10-26 14:14:00"
     },
     {
       "url": "amazon.com",
@@ -218,6 +218,18 @@
       "test_date": "2025-10-26 08:49:59"
     },
     {
+      "url": "berkeley.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:13:48"
+    },
+    {
       "url": "reddit.com",
       "industry": "Social Media",
       "scores": {
@@ -300,6 +312,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-23 07:05:58"
+    },
+    {
+      "url": "axios.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 13:41:52"
     },
     {
       "url": "slack.com",
@@ -566,18 +590,6 @@
       "test_date": "2025-10-23 16:48:40"
     },
     {
-      "url": "axios.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 27,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 13:22:22"
-    },
-    {
       "url": "twitch.tv",
       "industry": "Media",
       "scores": {
@@ -612,6 +624,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 10:17:12"
+    },
+    {
+      "url": "bankofamerica.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 26,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:09:27"
     },
     {
       "url": "tesla.com",
@@ -650,18 +674,6 @@
       "test_date": "2025-10-23 07:31:01"
     },
     {
-      "url": "bankofamerica.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 22,
-        "accessibility": 78,
-        "best_practices": 83,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 06:58:52"
-    },
-    {
       "url": "hubspot.com",
       "industry": "Marketing",
       "scores": {
@@ -693,6 +705,17 @@
         "performance": 68,
         "accessibility": 97,
         "best_practices": 88,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Education",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 100,
         "seo": 93,
         "pwa": 33
       }
@@ -745,7 +768,7 @@
       "industry": "Media",
       "website_count": 15,
       "averages": {
-        "performance": 38,
+        "performance": 40,
         "accessibility": 88,
         "best_practices": 82,
         "seo": 92,

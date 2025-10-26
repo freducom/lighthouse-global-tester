@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.655Z",
+    "generated_at": "2025-10-26T16:21:14.643Z",
     "url": "autotalli.com",
     "country": "Finland",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 24,
     "accessibility": 98,
     "best_practices": 67,
     "seo": 93,
     "pwa": 89,
-    "test_date": "2025-10-26 13:20:46"
+    "test_date": "2025-10-26 13:40:18"
   },
   "historical_data": [
+    {
+      "performance": 24,
+      "accessibility": 98,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 89,
+      "test_date": "2025-10-26 13:40:18"
+    },
     {
       "performance": 33,
       "accessibility": 98,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
+    "performance": -9,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 13:20:46",
-    "test_date_previous": "2025-10-26 12:41:57"
+    "test_date_current": "2025-10-26 13:40:18",
+    "test_date_previous": "2025-10-26 13:20:46"
   }
 }

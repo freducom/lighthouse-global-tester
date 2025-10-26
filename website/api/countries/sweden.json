@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.555Z",
+    "generated_at": "2025-10-26T16:21:14.531Z",
     "country": "Sweden",
     "flag": "🇸🇪",
     "website_count": 23
@@ -110,18 +110,6 @@
       "test_date": "2025-10-24 04:16:25"
     },
     {
-      "url": "bambuser.com",
-      "industry": "Video",
-      "scores": {
-        "performance": 50,
-        "accessibility": 91,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 13:24:14"
-    },
-    {
       "url": "ica.se",
       "industry": "E-commerce",
       "scores": {
@@ -192,6 +180,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 03:01:21"
+    },
+    {
+      "url": "bambuser.com",
+      "industry": "Video",
+      "scores": {
+        "performance": 43,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 13:43:41"
     },
     {
       "url": "flashback.org",
@@ -394,7 +394,7 @@
       "industry": "Video",
       "website_count": 1,
       "averages": {
-        "performance": 50,
+        "performance": 43,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 93,

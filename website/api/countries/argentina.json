@@ -1,41 +1,53 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.538Z",
+    "generated_at": "2025-10-26T16:21:14.512Z",
     "country": "Argentina",
     "flag": "🌍",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 98,
-    "best_practices": 83,
-    "seo": 100,
-    "pwa": 33
+    "performance": 25,
+    "accessibility": 94,
+    "best_practices": 75,
+    "seo": 90,
+    "pwa": 39
   },
   "websites": [
     {
       "url": "bancogalicia.com",
       "industry": "Finance",
       "scores": {
-        "performance": 38,
+        "performance": 41,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:24:57"
+      "test_date": "2025-10-26 13:44:24"
+    },
+    {
+      "url": "bbva.com.ar",
+      "industry": "Finance",
+      "scores": {
+        "performance": 8,
+        "accessibility": 89,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 14:11:40"
     }
   ],
   "industries": [
     {
       "industry": "Finance",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
+        "performance": 25,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 39
       }
     }
   ]

@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.607Z",
+    "generated_at": "2025-10-26T16:21:14.587Z",
     "industry": "Finance",
-    "website_count": 40
+    "website_count": 48
   },
   "averages": {
-    "performance": 46,
+    "performance": 44,
     "accessibility": 88,
-    "best_practices": 80,
+    "best_practices": 79,
     "seo": 89,
     "pwa": 37
   },
@@ -16,25 +16,37 @@
       "url": "bancogalicia.com",
       "country": "Argentina",
       "scores": {
-        "performance": 38,
+        "performance": 41,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:24:57"
+      "test_date": "2025-10-26 13:44:24"
+    },
+    {
+      "url": "bbva.com.ar",
+      "country": "Argentina",
+      "scores": {
+        "performance": 8,
+        "accessibility": 89,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 14:11:40"
     },
     {
       "url": "bankofcanada.ca",
       "country": "Canada",
       "scores": {
-        "performance": 33,
+        "performance": 15,
         "accessibility": 96,
         "best_practices": 83,
-        "seo": 84,
+        "seo": 83,
         "pwa": 44
       },
-      "test_date": "2025-10-19 19:59:27"
+      "test_date": "2025-10-26 14:09:44"
     },
     {
       "url": "rbcroyalbank.com",
@@ -95,6 +107,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-26 08:46:06"
+    },
+    {
+      "url": "banknorwegian.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 57,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 14:08:01"
     },
     {
       "url": "op.fi",
@@ -160,25 +184,25 @@
       "url": "axisbank.com",
       "country": "India",
       "scores": {
-        "performance": 46,
+        "performance": 52,
         "accessibility": 80,
         "best_practices": 0,
         "seo": 84,
         "pwa": 56
       },
-      "test_date": "2025-10-26 13:22:41"
+      "test_date": "2025-10-26 13:42:10"
     },
     {
       "url": "bankbazaar.com",
       "country": "India",
       "scores": {
-        "performance": 87,
+        "performance": 77,
         "accessibility": 90,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:25:11"
+      "test_date": "2025-10-26 13:44:36"
     },
     {
       "url": "moneycontrol.com",
@@ -191,6 +215,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:47:14"
+    },
+    {
+      "url": "bankofireland.com",
+      "country": "Ireland",
+      "scores": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:10:20"
     },
     {
       "url": "bizportal.co.il",
@@ -229,6 +265,18 @@
       "test_date": "2025-10-26 10:19:35"
     },
     {
+      "url": "bankofafrica.ma",
+      "country": "Morocco",
+      "scores": {
+        "performance": 25,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:09:05"
+    },
+    {
       "url": "ing.nl",
       "country": "Netherlands",
       "scores": {
@@ -265,6 +313,18 @@
       "test_date": "2025-10-23 15:44:31"
     },
     {
+      "url": "bdo.com.ph",
+      "country": "Philippines",
+      "scores": {
+        "performance": 0,
+        "accessibility": 66,
+        "best_practices": 0,
+        "seo": 71,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:13:17"
+    },
+    {
       "url": "aliorbank.pl",
       "country": "Poland",
       "scores": {
@@ -292,13 +352,25 @@
       "url": "bancatransilvania.ro",
       "country": "Romania",
       "scores": {
-        "performance": 51,
+        "performance": 50,
         "accessibility": 58,
         "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:24:39"
+      "test_date": "2025-10-26 13:44:06"
+    },
+    {
+      "url": "bcr.ro",
+      "country": "Romania",
+      "scores": {
+        "performance": 45,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:12:08"
     },
     {
       "url": "alrajhibank.com.sa",
@@ -364,13 +436,37 @@
       "url": "balderton.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 52,
+        "performance": 54,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:23:52"
+      "test_date": "2025-10-26 13:43:19"
+    },
+    {
+      "url": "bankofengland.co.uk",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 70,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:10:01"
+    },
+    {
+      "url": "barclays.co.uk",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 55,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:10:42"
     },
     {
       "url": "natwest.com",
@@ -400,13 +496,13 @@
       "url": "bankofamerica.com",
       "country": "United States",
       "scores": {
-        "performance": 22,
+        "performance": 26,
         "accessibility": 78,
         "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:58:52"
+      "test_date": "2025-10-26 14:09:27"
     },
     {
       "url": "berkshirehathaway.com",
@@ -418,7 +514,7 @@
         "seo": 67,
         "pwa": 0
       },
-      "test_date": "2025-10-23 07:02:41"
+      "test_date": "2025-10-26 14:14:00"
     },
     {
       "url": "bloomberg.com",
@@ -496,20 +592,20 @@
   "countries": [
     {
       "country": "Argentina",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
+        "performance": 25,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 39
       }
     },
     {
       "country": "Canada",
       "website_count": 4,
       "averages": {
-        "performance": 28,
+        "performance": 23,
         "accessibility": 96,
         "best_practices": 62,
         "seo": 86,
@@ -529,13 +625,13 @@
     },
     {
       "country": "Finland",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
         "performance": 60,
-        "accessibility": 90,
-        "best_practices": 94,
-        "seo": 90,
-        "pwa": 42
+        "accessibility": 91,
+        "best_practices": 93,
+        "seo": 92,
+        "pwa": 47
       }
     },
     {
@@ -553,11 +649,22 @@
       "country": "India",
       "website_count": 3,
       "averages": {
-        "performance": 52,
+        "performance": 51,
         "accessibility": 81,
         "best_practices": 44,
         "seo": 89,
         "pwa": 41
+      }
+    },
+    {
+      "country": "Ireland",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
       }
     },
     {
@@ -584,12 +691,12 @@
     },
     {
       "country": "Morocco",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 84,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 82,
+        "performance": 55,
+        "accessibility": 84,
+        "best_practices": 84,
+        "seo": 88,
         "pwa": 33
       }
     },
@@ -616,6 +723,17 @@
       }
     },
     {
+      "country": "Philippines",
+      "website_count": 1,
+      "averages": {
+        "performance": 0,
+        "accessibility": 66,
+        "best_practices": 0,
+        "seo": 71,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Poland",
       "website_count": 2,
       "averages": {
@@ -628,12 +746,12 @@
     },
     {
       "country": "Romania",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 51,
-        "accessibility": 58,
-        "best_practices": 83,
-        "seo": 92,
+        "performance": 48,
+        "accessibility": 72,
+        "best_practices": 88,
+        "seo": 96,
         "pwa": 33
       }
     },
@@ -683,12 +801,12 @@
     },
     {
       "country": "United Kingdom",
-      "website_count": 3,
+      "website_count": 5,
       "averages": {
-        "performance": 49,
+        "performance": 55,
         "accessibility": 91,
-        "best_practices": 92,
-        "seo": 82,
+        "best_practices": 90,
+        "seo": 88,
         "pwa": 33
       }
     },

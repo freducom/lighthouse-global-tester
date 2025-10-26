@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.557Z",
+    "generated_at": "2025-10-26T16:21:14.534Z",
     "country": "Poland",
     "flag": "🇵🇱",
     "website_count": 14
@@ -110,6 +110,18 @@
       "test_date": "2025-10-23 03:00:12"
     },
     {
+      "url": "autocentrum.pl",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 34,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 13:39:09"
+    },
+    {
       "url": "pracuj.pl",
       "industry": "Jobs",
       "scores": {
@@ -120,18 +132,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 08:34:22"
-    },
-    {
-      "url": "autocentrum.pl",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 32,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 56
-      },
-      "test_date": "2025-10-26 13:19:41"
     },
     {
       "url": "nofluffjobs.com",
@@ -187,7 +187,7 @@
       "industry": "Automotive",
       "website_count": 1,
       "averages": {
-        "performance": 32,
+        "performance": 34,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 93,

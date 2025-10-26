@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.608Z",
+    "generated_at": "2025-10-26T16:21:14.588Z",
     "industry": "Telecom",
-    "website_count": 10
+    "website_count": 11
   },
   "averages": {
     "performance": 35,
-    "accessibility": 89,
+    "accessibility": 90,
     "best_practices": 83,
-    "seo": 91,
+    "seo": 90,
     "pwa": 34
   },
   "websites": [
+    {
+      "url": "bell.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 43,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:13:34"
+    },
     {
       "url": "shaw.ca",
       "country": "Canada",
@@ -136,12 +148,12 @@
   "countries": [
     {
       "country": "Canada",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 25,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 86,
+        "performance": 34,
+        "accessibility": 95,
+        "best_practices": 79,
+        "seo": 83,
         "pwa": 33
       }
     },

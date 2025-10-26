@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.469Z",
+    "generated_at": "2025-10-26T16:21:14.425Z",
     "total_industries": 25
   },
   "industries": [
@@ -30,11 +30,11 @@
     },
     {
       "industry": "Education",
-      "website_count": 9,
+      "website_count": 10,
       "averages": {
-        "performance": 54,
-        "accessibility": 86,
-        "best_practices": 87,
+        "performance": 55,
+        "accessibility": 88,
+        "best_practices": 88,
         "seo": 87,
         "pwa": 33
       },
@@ -42,11 +42,11 @@
     },
     {
       "industry": "Finance",
-      "website_count": 40,
+      "website_count": 48,
       "averages": {
-        "performance": 46,
+        "performance": 44,
         "accessibility": 88,
-        "best_practices": 80,
+        "best_practices": 79,
         "seo": 89,
         "pwa": 37
       },
@@ -78,13 +78,13 @@
     },
     {
       "industry": "Jobs",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 57,
-        "accessibility": 84,
+        "performance": 55,
+        "accessibility": 86,
         "best_practices": 74,
         "seo": 91,
-        "pwa": 49
+        "pwa": 46
       },
       "api_endpoint": "industries/jobs.json"
     },
@@ -104,11 +104,11 @@
       "industry": "Marketplace",
       "website_count": 18,
       "averages": {
-        "performance": 45,
+        "performance": 44,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 92,
-        "pwa": 53
+        "pwa": 52
       },
       "api_endpoint": "industries/marketplace.json"
     },
@@ -246,12 +246,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 10,
+      "website_count": 11,
       "averages": {
         "performance": 35,
-        "accessibility": 89,
+        "accessibility": 90,
         "best_practices": 83,
-        "seo": 91,
+        "seo": 90,
         "pwa": 34
       },
       "api_endpoint": "industries/telecom.json"
@@ -262,7 +262,7 @@
       "averages": {
         "performance": 46,
         "accessibility": 88,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 92,
         "pwa": 43
       },
@@ -272,7 +272,7 @@
       "industry": "Video",
       "website_count": 1,
       "averages": {
-        "performance": 50,
+        "performance": 43,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 93,

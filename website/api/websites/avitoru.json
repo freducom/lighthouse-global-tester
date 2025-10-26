@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.689Z",
+    "generated_at": "2025-10-26T16:21:14.674Z",
     "url": "avito.ru",
     "country": "Russia",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 8,
-    "accessibility": 65,
-    "best_practices": 75,
+    "performance": 9,
+    "accessibility": 56,
+    "best_practices": 67,
     "seo": 93,
-    "pwa": 89,
-    "test_date": "2025-10-26 13:21:51"
+    "pwa": 78,
+    "test_date": "2025-10-26 13:41:19"
   },
   "historical_data": [
+    {
+      "performance": 9,
+      "accessibility": 56,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-10-26 13:41:19"
+    },
     {
       "performance": 8,
       "accessibility": 65,
@@ -49,11 +57,11 @@
   ],
   "trends": {
     "performance": 1,
-    "accessibility": 1,
-    "best_practices": 8,
+    "accessibility": -9,
+    "best_practices": -8,
     "seo": 0,
-    "pwa": 0,
-    "test_date_current": "2025-10-26 13:21:51",
-    "test_date_previous": "2025-10-26 12:44:07"
+    "pwa": -11,
+    "test_date_current": "2025-10-26 13:41:19",
+    "test_date_previous": "2025-10-26 13:21:51"
   }
 }

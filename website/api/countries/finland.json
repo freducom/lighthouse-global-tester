@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.552Z",
+    "generated_at": "2025-10-26T16:21:14.528Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 27
+    "website_count": 28
   },
   "averages": {
     "performance": 49,
     "accessibility": 90,
     "best_practices": 88,
     "seo": 96,
-    "pwa": 46
+    "pwa": 47
   },
   "websites": [
     {
@@ -120,6 +120,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "banknorwegian.fi",
+      "industry": "Finance",
+      "scores": {
+        "performance": 57,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 14:08:01"
     },
     {
       "url": "sokos.fi",
@@ -254,18 +266,6 @@
       "test_date": "2025-10-24 04:12:00"
     },
     {
-      "url": "autotalli.com",
-      "industry": "Marketplace",
-      "scores": {
-        "performance": 33,
-        "accessibility": 98,
-        "best_practices": 67,
-        "seo": 93,
-        "pwa": 89
-      },
-      "test_date": "2025-10-26 13:20:46"
-    },
-    {
       "url": "posti.fi",
       "industry": "Government",
       "scores": {
@@ -281,13 +281,13 @@
       "url": "autodoc.fi",
       "industry": "Automotive",
       "scores": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 95,
         "best_practices": 75,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:20:11"
+      "test_date": "2025-10-26 13:39:37"
     },
     {
       "url": "savonsanomat.fi",
@@ -336,6 +336,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 02:59:22"
+    },
+    {
+      "url": "autotalli.com",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 24,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-26 13:40:18"
     }
   ],
   "industries": [
@@ -343,7 +355,7 @@
       "industry": "Automotive",
       "website_count": 1,
       "averages": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 95,
         "best_practices": 75,
         "seo": 99,
@@ -374,13 +386,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
         "performance": 60,
-        "accessibility": 90,
-        "best_practices": 94,
-        "seo": 90,
-        "pwa": 42
+        "accessibility": 91,
+        "best_practices": 93,
+        "seo": 92,
+        "pwa": 47
       }
     },
     {
@@ -409,7 +421,7 @@
       "industry": "Marketplace",
       "website_count": 3,
       "averages": {
-        "performance": 34,
+        "performance": 31,
         "accessibility": 83,
         "best_practices": 78,
         "seo": 98,

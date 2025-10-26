@@ -1,38 +1,38 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.532Z",
-    "total_websites": 468
+    "generated_at": "2025-10-26T16:21:14.504Z",
+    "total_websites": 479
   },
   "distribution": {
     "performance": {
       "excellent": 15,
-      "good": 40,
-      "average": 105,
-      "poor": 308
+      "good": 41,
+      "average": 108,
+      "poor": 315
     },
     "accessibility": {
-      "excellent": 223,
-      "good": 201,
-      "average": 35,
+      "excellent": 229,
+      "good": 205,
+      "average": 36,
       "poor": 9
     },
     "best_practices": {
-      "excellent": 155,
-      "good": 231,
-      "average": 70,
-      "poor": 12
+      "excellent": 159,
+      "good": 235,
+      "average": 72,
+      "poor": 13
     },
     "seo": {
-      "excellent": 299,
-      "good": 162,
+      "excellent": 305,
+      "good": 167,
       "average": 7,
       "poor": 0
     },
     "pwa": {
       "excellent": 11,
       "good": 54,
-      "average": 62,
-      "poor": 341
+      "average": 63,
+      "poor": 351
     }
   },
   "by_country": [
@@ -49,13 +49,13 @@
     },
     {
       "country": "Argentina",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
+        "performance": 25,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 39
       }
     },
     {
@@ -82,13 +82,13 @@
     },
     {
       "country": "Bangladesh",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 19,
+        "performance": 27,
         "accessibility": 91,
-        "best_practices": 79,
-        "seo": 95,
-        "pwa": 95
+        "best_practices": 78,
+        "seo": 93,
+        "pwa": 74
       }
     },
     {
@@ -126,11 +126,11 @@
     },
     {
       "country": "Canada",
-      "website_count": 17,
+      "website_count": 18,
       "averages": {
-        "performance": 39,
+        "performance": 38,
         "accessibility": 94,
-        "best_practices": 71,
+        "best_practices": 72,
         "seo": 88,
         "pwa": 44
       }
@@ -225,13 +225,13 @@
     },
     {
       "country": "Finland",
-      "website_count": 27,
+      "website_count": 28,
       "averages": {
         "performance": 49,
         "accessibility": 90,
         "best_practices": 88,
         "seo": 96,
-        "pwa": 46
+        "pwa": 47
       }
     },
     {
@@ -251,7 +251,7 @@
       "averages": {
         "performance": 42,
         "accessibility": 88,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 93,
         "pwa": 51
       }
@@ -313,13 +313,13 @@
     },
     {
       "country": "Ireland",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 48,
-        "accessibility": 87,
+        "performance": 44,
+        "accessibility": 89,
         "best_practices": 83,
         "seo": 87,
-        "pwa": 50
+        "pwa": 48
       }
     },
     {
@@ -392,7 +392,7 @@
       "country": "Lithuania",
       "website_count": 3,
       "averages": {
-        "performance": 68,
+        "performance": 67,
         "accessibility": 56,
         "best_practices": 75,
         "seo": 83,
@@ -445,12 +445,12 @@
     },
     {
       "country": "Morocco",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 84,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 82,
+        "performance": 55,
+        "accessibility": 84,
+        "best_practices": 84,
+        "seo": 88,
         "pwa": 33
       }
     },
@@ -521,6 +521,17 @@
       }
     },
     {
+      "country": "Philippines",
+      "website_count": 1,
+      "averages": {
+        "performance": 0,
+        "accessibility": 66,
+        "best_practices": 0,
+        "seo": 71,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Poland",
       "website_count": 14,
       "averages": {
@@ -533,12 +544,12 @@
     },
     {
       "country": "Romania",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 51,
-        "accessibility": 58,
-        "best_practices": 83,
-        "seo": 92,
+        "performance": 48,
+        "accessibility": 72,
+        "best_practices": 88,
+        "seo": 96,
         "pwa": 33
       }
     },
@@ -547,10 +558,10 @@
       "website_count": 9,
       "averages": {
         "performance": 39,
-        "accessibility": 74,
-        "best_practices": 61,
+        "accessibility": 73,
+        "best_practices": 60,
         "seo": 91,
-        "pwa": 62
+        "pwa": 61
       }
     },
     {
@@ -687,23 +698,23 @@
     },
     {
       "country": "United Kingdom",
-      "website_count": 23,
+      "website_count": 25,
       "averages": {
-        "performance": 39,
+        "performance": 42,
         "accessibility": 89,
         "best_practices": 83,
-        "seo": 89,
-        "pwa": 46
+        "seo": 90,
+        "pwa": 45
       }
     },
     {
       "country": "United States",
-      "website_count": 55,
+      "website_count": 56,
       "averages": {
         "performance": 47,
-        "accessibility": 89,
+        "accessibility": 90,
         "best_practices": 81,
-        "seo": 89,
+        "seo": 90,
         "pwa": 42
       }
     },
@@ -766,22 +777,22 @@
     },
     {
       "industry": "Education",
-      "website_count": 9,
+      "website_count": 10,
       "averages": {
-        "performance": 54,
-        "accessibility": 86,
-        "best_practices": 87,
+        "performance": 55,
+        "accessibility": 88,
+        "best_practices": 88,
         "seo": 87,
         "pwa": 33
       }
     },
     {
       "industry": "Finance",
-      "website_count": 40,
+      "website_count": 48,
       "averages": {
-        "performance": 46,
+        "performance": 44,
         "accessibility": 88,
-        "best_practices": 80,
+        "best_practices": 79,
         "seo": 89,
         "pwa": 37
       }
@@ -810,13 +821,13 @@
     },
     {
       "industry": "Jobs",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 57,
-        "accessibility": 84,
+        "performance": 55,
+        "accessibility": 86,
         "best_practices": 74,
         "seo": 91,
-        "pwa": 49
+        "pwa": 46
       }
     },
     {
@@ -834,11 +845,11 @@
       "industry": "Marketplace",
       "website_count": 18,
       "averages": {
-        "performance": 45,
+        "performance": 44,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 92,
-        "pwa": 53
+        "pwa": 52
       }
     },
     {
@@ -964,12 +975,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 10,
+      "website_count": 11,
       "averages": {
         "performance": 35,
-        "accessibility": 89,
+        "accessibility": 90,
         "best_practices": 83,
-        "seo": 91,
+        "seo": 90,
         "pwa": 34
       }
     },
@@ -979,7 +990,7 @@
       "averages": {
         "performance": 46,
         "accessibility": 88,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 92,
         "pwa": 43
       }
@@ -988,7 +999,7 @@
       "industry": "Video",
       "website_count": 1,
       "averages": {
-        "performance": 50,
+        "performance": 43,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 93,

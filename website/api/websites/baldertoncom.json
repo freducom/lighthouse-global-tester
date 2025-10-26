@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.702Z",
+    "generated_at": "2025-10-26T16:21:14.690Z",
     "url": "balderton.com",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 54,
     "accessibility": 83,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-26 13:23:52"
+    "test_date": "2025-10-26 13:43:19"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 83,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-10-26 13:43:19"
+    },
     {
       "performance": 52,
       "accessibility": 83,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 13:23:52",
-    "test_date_previous": "2025-10-26 12:46:11"
+    "test_date_current": "2025-10-26 13:43:19",
+    "test_date_previous": "2025-10-26 13:23:52"
   }
 }

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.546Z",
+    "generated_at": "2025-10-26T16:21:14.522Z",
     "country": "Canada",
     "flag": "🇨🇦",
-    "website_count": 17
+    "website_count": 18
   },
   "averages": {
-    "performance": 39,
+    "performance": 38,
     "accessibility": 94,
-    "best_practices": 71,
+    "best_practices": 72,
     "seo": 88,
     "pwa": 44
   },
@@ -60,6 +60,18 @@
         "pwa": 22
       },
       "test_date": "2025-10-19 20:00:05"
+    },
+    {
+      "url": "bell.ca",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 43,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 14:13:34"
     },
     {
       "url": "cbc.ca",
@@ -134,18 +146,6 @@
       "test_date": "2025-10-19 19:58:30"
     },
     {
-      "url": "bankofcanada.ca",
-      "industry": "Finance",
-      "scores": {
-        "performance": 33,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 44
-      },
-      "test_date": "2025-10-19 19:59:27"
-    },
-    {
       "url": "realtor.ca",
       "industry": "Real Estate",
       "scores": {
@@ -216,6 +216,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 12:18:52"
+    },
+    {
+      "url": "bankofcanada.ca",
+      "industry": "Finance",
+      "scores": {
+        "performance": 15,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 14:09:44"
     }
   ],
   "industries": [
@@ -223,7 +235,7 @@
       "industry": "Finance",
       "website_count": 4,
       "averages": {
-        "performance": 28,
+        "performance": 23,
         "accessibility": 96,
         "best_practices": 62,
         "seo": 86,
@@ -298,12 +310,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 25,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 86,
+        "performance": 34,
+        "accessibility": 95,
+        "best_practices": 79,
+        "seo": 83,
         "pwa": 33
       }
     },

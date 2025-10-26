@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T15:50:34.542Z",
+    "generated_at": "2025-10-26T16:21:14.517Z",
     "country": "Germany",
     "flag": "🇩🇪",
     "website_count": 22
@@ -8,7 +8,7 @@
   "averages": {
     "performance": 42,
     "accessibility": 88,
-    "best_practices": 89,
+    "best_practices": 88,
     "seo": 93,
     "pwa": 51
   },
@@ -218,6 +218,18 @@
       "test_date": "2025-10-25 10:08:45"
     },
     {
+      "url": "bahn.de",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 30,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 13:42:30"
+    },
+    {
       "url": "sueddeutsche.de",
       "industry": "Media",
       "scores": {
@@ -228,18 +240,6 @@
         "pwa": 56
       },
       "test_date": "2025-10-24 04:11:39"
-    },
-    {
-      "url": "bahn.de",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 28,
-        "accessibility": 82,
-        "best_practices": 100,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 13:23:01"
     },
     {
       "url": "otto.de",
@@ -349,9 +349,9 @@
       "industry": "Transportation",
       "website_count": 1,
       "averages": {
-        "performance": 28,
+        "performance": 30,
         "accessibility": 82,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 91,
         "pwa": 33
       }
