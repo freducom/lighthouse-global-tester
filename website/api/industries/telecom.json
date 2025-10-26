@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.859Z",
+    "generated_at": "2025-10-26T13:10:43.363Z",
     "industry": "Telecom",
-    "website_count": 9
+    "website_count": 10
   },
   "averages": {
-    "performance": 34,
-    "accessibility": 88,
-    "best_practices": 84,
-    "seo": 93,
+    "performance": 35,
+    "accessibility": 89,
+    "best_practices": 83,
+    "seo": 91,
     "pwa": 34
   },
   "websites": [
@@ -119,6 +119,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 00:50:27"
+    },
+    {
+      "url": "att.com",
+      "country": "United States",
+      "scores": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:19:21"
     }
   ],
   "countries": [
@@ -207,6 +219,17 @@
         "accessibility": 97,
         "best_practices": 92,
         "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 75,
         "pwa": 33
       }
     }

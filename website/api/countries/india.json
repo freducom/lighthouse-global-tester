@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.803Z",
+    "generated_at": "2025-10-26T13:10:43.301Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 14
+    "website_count": 18
   },
   "averages": {
-    "performance": 45,
+    "performance": 46,
     "accessibility": 82,
-    "best_practices": 74,
-    "seo": 86,
-    "pwa": 52
+    "best_practices": 70,
+    "seo": 87,
+    "pwa": 49
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:04:24"
+    },
+    {
+      "url": "bankbazaar.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 73,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:22:40"
     },
     {
       "url": "cricbuzz.com",
@@ -74,6 +86,18 @@
       "test_date": "2025-10-19 19:45:59"
     },
     {
+      "url": "annauniv.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 50,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 08:44:18"
+    },
+    {
       "url": "business-standard.com",
       "industry": "Media",
       "scores": {
@@ -86,6 +110,18 @@
       "test_date": "2025-10-19 19:49:28"
     },
     {
+      "url": "axisbank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 49,
+        "accessibility": 80,
+        "best_practices": 0,
+        "seo": 84,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 12:20:01"
+    },
+    {
       "url": "rediff.com",
       "industry": "Portal",
       "scores": {
@@ -96,18 +132,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 12:20:27"
-    },
-    {
-      "url": "annauniv.edu",
-      "industry": "Education",
-      "scores": {
-        "performance": 43,
-        "accessibility": 68,
-        "best_practices": 67,
-        "seo": 75,
-        "pwa": 22
-      },
-      "test_date": "2025-10-26 08:24:38"
     },
     {
       "url": "flipkart.com",
@@ -143,7 +167,19 @@
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:20:06"
+      "test_date": "2025-10-26 08:39:46"
+    },
+    {
+      "url": "atherenergy.com",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 29,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:16:09"
     },
     {
       "url": "ndtv.com",
@@ -156,6 +192,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-22 16:16:12"
+    },
+    {
+      "url": "bajajauto.com",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 27,
+        "accessibility": 69,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:20:59"
     },
     {
       "url": "moneycontrol.com",
@@ -184,6 +232,17 @@
   ],
   "industries": [
     {
+      "industry": "Automotive",
+      "website_count": 2,
+      "averages": {
+        "performance": 28,
+        "accessibility": 76,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
@@ -198,7 +257,7 @@
       "industry": "Education",
       "website_count": 2,
       "averages": {
-        "performance": 38,
+        "performance": 41,
         "accessibility": 70,
         "best_practices": 80,
         "seo": 75,
@@ -207,13 +266,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 24,
-        "accessibility": 73,
-        "best_practices": 50,
-        "seo": 83,
-        "pwa": 33
+        "performance": 49,
+        "accessibility": 81,
+        "best_practices": 44,
+        "seo": 89,
+        "pwa": 41
       }
     },
     {

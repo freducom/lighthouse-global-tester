@@ -18,7 +18,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="arbetsformedlingen.se - Performance History">
     <meta property="og:description" content="Lighthouse performance history and insights for arbetsformedlingen.se. View detailed metrics and performance trends.">
-    <meta property="og:image" content="https://freducom.github.io/lighthouse-global-tester/social_share.png">
+    <meta property="og:image" content="https://freducom.github.io/lighthouse-global-tester/social_share-opengraph.png">
     <meta property="og:url" content="https://freducom.github.io/lighthouse-global-tester/domain-arbetsformedlingen-se.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="CheetahCheck">
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="arbetsformedlingen.se - Performance History">
     <meta name="twitter:description" content="Lighthouse performance history and insights for arbetsformedlingen.se. View detailed metrics and performance trends.">
-    <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/social_share.png">
+    <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/social_share-twitter.png">
     <meta name="twitter:site" content="@cheetahcheck">
     <meta name="twitter:creator" content="@cheetahcheck">
     <!-- PostHog Analytics -->
@@ -59,7 +59,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T12:33:42.520Z",
+          "dateCreated": "2025-10-26T13:10:43.005Z",
           "about": {
             "@type": "WebSite",
             "name": "arbetsformedlingen.se",
@@ -71,11 +71,11 @@
           "@id": "https://cheetahcheck.com/domain-arbetsformedlingen.se.html#metrics",
           "name": "arbetsformedlingen.se Performance Metrics",
           "description": "Latest Lighthouse scores for arbetsformedlingen.se",
-          "performanceScore": 65,
+          "performanceScore": 68,
           "accessibilityScore": 100,
           "bestPracticesScore": 100,
-          "seoScore": 92,
-          "dateRecorded": "2025-10-19 20:29:33"
+          "seoScore": 99,
+          "dateRecorded": "2025-10-26 10:11:04"
         }
       ]
     }
@@ -93,14 +93,14 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇸🇪 Sweden</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 8:29:33 PM</span>
+                <span class="last-scan">Last scanned: 10/26/2025, 10:11:04 AM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">65%</div>
+                <div class="stat-number average">68%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -110,7 +110,7 @@
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
-                <div class="stat-number excellent">92%</div>
+                <div class="stat-number excellent">99%</div>
                 <div class="stat-description">excellent performance</div>
             </div>
             <div class="stat-card best-practices">
@@ -122,9 +122,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -135,8 +135,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 65%"></div>
-                        <span class="score-text">65%</span>
+                        <div class="score-fill performance" style="width: 68%"></div>
+                        <span class="score-text">68%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -156,8 +156,8 @@
                 <div class="score-item">
                     <span class="score-label">SEO:</span>
                     <div class="score-bar">
-                        <div class="score-fill seo" style="width: 92%"></div>
-                        <span class="score-text">92%</span>
+                        <div class="score-fill seo" style="width: 99%"></div>
+                        <span class="score-text">99%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -171,11 +171,58 @@
         </section>
 
         <footer class="footer">
-            <p>📊 <a href="https://arbetsformedlingen.se" target="_blank" rel="noopener">arbetsformedlingen.se</a> Performance History | Last tested: 10/19/2025</p>
+            <p>📊 <a href="https://arbetsformedlingen.se" target="_blank" rel="noopener">arbetsformedlingen.se</a> Performance History | Last tested: 10/26/2025</p>
             <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
         </footer>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":216,"url":"arbetsformedlingen.se","performance":65,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-19 20:29:33","country":"Sweden","industry":"Government"},{"id":780,"url":"arbetsformedlingen.se","performance":68,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-26 10:11:04","country":"Sweden","industry":"Government"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.913Z",
+    "generated_at": "2025-10-26T13:10:43.424Z",
     "url": "ansa.it",
     "country": "Italy",
     "industry": "Media"
@@ -11,9 +11,17 @@
     "best_practices": 75,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-26 08:25:08"
+    "test_date": "2025-10-26 08:44:52"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 93,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-26 08:44:52"
+    },
     {
       "performance": 31,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 08:25:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 08:44:52",
+    "test_date_previous": "2025-10-26 08:25:08"
+  }
 }

@@ -1,30 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.741Z",
-    "total_industries": 24
+    "generated_at": "2025-10-26T13:10:43.229Z",
+    "total_industries": 25
   },
   "industries": [
     {
       "industry": "Automotive",
-      "website_count": 5,
+      "website_count": 9,
       "averages": {
         "performance": 30,
-        "accessibility": 92,
-        "best_practices": 61,
-        "seo": 93,
-        "pwa": 51
+        "accessibility": 88,
+        "best_practices": 68,
+        "seo": 92,
+        "pwa": 46
       },
       "api_endpoint": "industries/automotive.json"
     },
     {
       "industry": "E-commerce",
-      "website_count": 32,
+      "website_count": 34,
       "averages": {
-        "performance": 47,
-        "accessibility": 84,
-        "best_practices": 82,
-        "seo": 92,
-        "pwa": 46
+        "performance": 45,
+        "accessibility": 85,
+        "best_practices": 81,
+        "seo": 91,
+        "pwa": 47
       },
       "api_endpoint": "industries/e-commerce.json"
     },
@@ -32,7 +32,7 @@
       "industry": "Education",
       "website_count": 9,
       "averages": {
-        "performance": 53,
+        "performance": 54,
         "accessibility": 86,
         "best_practices": 87,
         "seo": 87,
@@ -42,11 +42,11 @@
     },
     {
       "industry": "Finance",
-      "website_count": 33,
+      "website_count": 39,
       "averages": {
-        "performance": 44,
-        "accessibility": 90,
-        "best_practices": 82,
+        "performance": 47,
+        "accessibility": 89,
+        "best_practices": 80,
         "seo": 89,
         "pwa": 37
       },
@@ -66,13 +66,13 @@
     },
     {
       "industry": "Government",
-      "website_count": 19,
+      "website_count": 20,
       "averages": {
-        "performance": 58,
-        "accessibility": 86,
+        "performance": 57,
+        "accessibility": 87,
         "best_practices": 91,
         "seo": 94,
-        "pwa": 39
+        "pwa": 40
       },
       "api_endpoint": "industries/government.json"
     },
@@ -102,25 +102,25 @@
     },
     {
       "industry": "Marketplace",
-      "website_count": 16,
+      "website_count": 18,
       "averages": {
-        "performance": 43,
-        "accessibility": 87,
+        "performance": 44,
+        "accessibility": 85,
         "best_practices": 83,
         "seo": 92,
-        "pwa": 52
+        "pwa": 53
       },
       "api_endpoint": "industries/marketplace.json"
     },
     {
       "industry": "Media",
-      "website_count": 230,
+      "website_count": 234,
       "averages": {
         "performance": 43,
         "accessibility": 86,
         "best_practices": 80,
         "seo": 91,
-        "pwa": 46
+        "pwa": 45
       },
       "api_endpoint": "industries/media.json"
     },
@@ -198,12 +198,12 @@
     },
     {
       "industry": "Software",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 39,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 79,
+        "performance": 33,
+        "accessibility": 89,
+        "best_practices": 79,
+        "seo": 86,
         "pwa": 33
       },
       "api_endpoint": "industries/software.json"
@@ -246,27 +246,39 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 9,
+      "website_count": 10,
       "averages": {
-        "performance": 34,
-        "accessibility": 88,
-        "best_practices": 84,
-        "seo": 93,
+        "performance": 35,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 91,
         "pwa": 34
       },
       "api_endpoint": "industries/telecom.json"
     },
     {
       "industry": "Transportation",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 49,
-        "accessibility": 90,
-        "best_practices": 88,
-        "seo": 93,
-        "pwa": 44
+        "performance": 45,
+        "accessibility": 88,
+        "best_practices": 89,
+        "seo": 92,
+        "pwa": 43
       },
       "api_endpoint": "industries/transportation.json"
+    },
+    {
+      "industry": "Video",
+      "website_count": 1,
+      "averages": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "api_endpoint": "industries/video.json"
     },
     {
       "industry": "Weather",

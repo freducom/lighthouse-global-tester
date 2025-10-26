@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.810Z",
+    "generated_at": "2025-10-26T13:10:43.309Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 25
+    "website_count": 27
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 89,
-    "best_practices": 90,
+    "performance": 49,
+    "accessibility": 90,
+    "best_practices": 88,
     "seo": 96,
-    "pwa": 45
+    "pwa": 46
   },
   "websites": [
     {
@@ -86,6 +86,18 @@
       "test_date": "2025-10-25 06:15:39"
     },
     {
+      "url": "apelago.fi",
+      "industry": "Finance",
+      "scores": {
+        "performance": 63,
+        "accessibility": 75,
+        "best_practices": 100,
+        "seo": 83,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 08:46:06"
+    },
+    {
       "url": "vr.fi",
       "industry": "Transportation",
       "scores": {
@@ -96,18 +108,6 @@
         "pwa": 67
       },
       "test_date": "2025-10-25 00:51:41"
-    },
-    {
-      "url": "apelago.fi",
-      "industry": "Finance",
-      "scores": {
-        "performance": 58,
-        "accessibility": 75,
-        "best_practices": 100,
-        "seo": 83,
-        "pwa": 67
-      },
-      "test_date": "2025-10-26 08:26:25"
     },
     {
       "url": "helsinki.fi",
@@ -182,6 +182,18 @@
       "test_date": "2025-10-24 16:00:30"
     },
     {
+      "url": "amiedu.fi",
+      "industry": "Education",
+      "scores": {
+        "performance": 41,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:38:46"
+    },
+    {
       "url": "verkkokauppa.com",
       "industry": "E-commerce",
       "scores": {
@@ -192,18 +204,6 @@
         "pwa": 100
       },
       "test_date": "2025-10-24 22:14:50"
-    },
-    {
-      "url": "amiedu.fi",
-      "industry": "Education",
-      "scores": {
-        "performance": 40,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 08:19:01"
     },
     {
       "url": "is.fi",
@@ -266,6 +266,18 @@
       "test_date": "2025-10-23 08:30:07"
     },
     {
+      "url": "autodoc.fi",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 31,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:16:24"
+    },
+    {
       "url": "savonsanomat.fi",
       "industry": "Media",
       "scores": {
@@ -312,9 +324,32 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 02:59:22"
+    },
+    {
+      "url": "autotalli.com",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 20,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-26 12:17:00"
     }
   ],
   "industries": [
+    {
+      "industry": "Automotive",
+      "website_count": 1,
+      "averages": {
+        "performance": 31,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      }
+    },
     {
       "industry": "E-commerce",
       "website_count": 2,
@@ -341,7 +376,7 @@
       "industry": "Finance",
       "website_count": 4,
       "averages": {
-        "performance": 59,
+        "performance": 60,
         "accessibility": 90,
         "best_practices": 94,
         "seo": 90,
@@ -372,13 +407,13 @@
     },
     {
       "industry": "Marketplace",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 35,
-        "accessibility": 75,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 50
+        "performance": 30,
+        "accessibility": 83,
+        "best_practices": 78,
+        "seo": 98,
+        "pwa": 63
       }
     },
     {

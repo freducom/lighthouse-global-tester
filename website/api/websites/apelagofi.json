@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.899Z",
+    "generated_at": "2025-10-26T13:10:43.407Z",
     "url": "apelago.fi",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 63,
     "accessibility": 75,
     "best_practices": 100,
     "seo": 83,
     "pwa": 67,
-    "test_date": "2025-10-26 08:26:25"
+    "test_date": "2025-10-26 08:46:06"
   },
   "historical_data": [
+    {
+      "performance": 63,
+      "accessibility": 75,
+      "best_practices": 100,
+      "seo": 83,
+      "pwa": 67,
+      "test_date": "2025-10-26 08:46:06"
+    },
     {
       "performance": 58,
       "accessibility": 75,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 08:26:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 08:46:06",
+    "test_date_previous": "2025-10-26 08:26:25"
+  }
 }

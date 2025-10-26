@@ -18,7 +18,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Sports Industry - Performance Analysis">
     <meta property="og:description" content="Lighthouse performance analysis for sports industry websites. Compare metrics and rankings.">
-    <meta property="og:image" content="https://freducom.github.io/lighthouse-global-tester/social_share.png">
+    <meta property="og:image" content="https://freducom.github.io/lighthouse-global-tester/social_share-opengraph.png">
     <meta property="og:url" content="https://freducom.github.io/lighthouse-global-tester/industry-sports.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="CheetahCheck">
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sports Industry - Performance Analysis">
     <meta name="twitter:description" content="Lighthouse performance analysis for sports industry websites. Compare metrics and rankings.">
-    <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/social_share.png">
+    <meta name="twitter:image" content="https://freducom.github.io/lighthouse-global-tester/social_share-twitter.png">
     <meta name="twitter:site" content="@cheetahcheck">
     <meta name="twitter:creator" content="@cheetahcheck">
     <!-- PostHog Analytics -->
@@ -574,19 +574,82 @@
             return 'needs improvement';
         }
 
-        function getCountryFlag(country) {
-            const flags = {
-                'Australia': '🇦🇺', 'United States': '🇺🇸', 'United Kingdom': '🇬🇧',
-                'Germany': '🇩🇪', 'France': '🇫🇷', 'Canada': '🇨🇦', 'Japan': '🇯🇵',
-                'Brazil': '🇧🇷', 'India': '🇮🇳', 'Russia': '🇷🇺', 'Sweden': '🇸🇪',
-                'Netherlands': '🇳🇱', 'Finland': '🇫🇮', 'South Korea': '🇰🇷',
-                'Israel': '🇮🇱', 'Pakistan': '🇵🇰', 'Global': '🌍'
-            };
-            return flags[country] || '🌍';
-        }
-        
         function normalizeCountry(country) {
             return country === 'Unknown' ? 'Global' : country;
+        }
+
+        function getCountryFlag(country) {
+            const normalizedCountry = normalizeCountry(country);
+            const flags = {
+              // North America
+              'United States': '🇺🇸', 'Canada': '🇨🇦', 'Mexico': '🇲🇽', 'Guatemala': '🇬🇹',
+              'Belize': '🇧🇿', 'El Salvador': '🇸🇻', 'Honduras': '🇭🇳', 'Nicaragua': '🇳🇮',
+              'Costa Rica': '🇨🇷', 'Panama': '🇵🇦', 'Cuba': '🇨🇺', 'Jamaica': '🇯🇲',
+              'Haiti': '�🇹', 'Dominican Republic': '🇩🇴', 'Bahamas': '🇧�🇸', 'Barbados': '🇧🇧',
+              'Trinidad and Tobago': '🇹🇹', 'Saint Lucia': '🇱🇨', 'Grenada': '🇬🇩',
+              'Saint Vincent and the Grenadines': '🇻🇨', 'Antigua and Barbuda': '🇦🇬',
+              'Dominica': '🇩🇲', 'Saint Kitts and Nevis': '🇰🇳',
+              
+              // South America
+              'Brazil': '🇧🇷', 'Argentina': '🇦🇷', 'Chile': '🇨🇱', 'Peru': '🇵🇪',
+              'Colombia': '🇨🇴', 'Venezuela': '🇻🇪', 'Ecuador': '🇪🇨', 'Bolivia': '🇧🇴',
+              'Paraguay': '🇵🇾', 'Uruguay': '🇺🇾', 'Guyana': '🇬🇾', 'Suriname': '🇸🇷',
+              'French Guiana': '🇬🇫',
+              
+              // Europe
+              'United Kingdom': '🇬🇧', 'Germany': '🇩🇪', 'France': '🇫🇷', 'Italy': '🇮🇹',
+              'Spain': '🇪🇸', 'Netherlands': '🇳🇱', 'Belgium': '🇧🇪', 'Switzerland': '��',
+              'Austria': '🇦🇹', 'Poland': '🇵🇱', 'Czech Republic': '🇨🇿', 'Czechia': '🇨🇿',
+              'Slovakia': '🇸🇰', 'Hungary': '🇭🇺', 'Romania': '🇷🇴', 'Bulgaria': '🇧�',
+              'Greece': '🇬�🇷', 'Portugal': '🇵🇹', 'Norway': '🇳🇴', 'Sweden': '��',
+              'Denmark': '🇩🇰', 'Finland': '🇫🇮', 'Iceland': '🇮�', 'Ireland': '🇮🇪',
+              'Luxembourg': '🇱🇺', 'Malta': '🇲🇹', 'Cyprus': '�🇨�', 'Estonia': '🇪🇪',
+              'Latvia': '🇱🇻', 'Lithuania': '🇱🇹', 'Slovenia': '🇸🇮', 'Croatia': '🇭🇷',
+              'Bosnia and Herzegovina': '🇧🇦', 'Serbia': '🇷🇸', 'Montenegro': '🇲🇪',
+              'Albania': '🇦🇱', 'North Macedonia': '🇲�', 'Moldova': '🇲🇩', 'Ukraine': '�🇺🇦',
+              'Belarus': '🇧🇾', 'Russia': '🇷🇺', 'Turkey': '🇹🇷',
+              
+              // Asia
+              'China': '🇨🇳', 'Japan': '🇯🇵', 'South Korea': '🇰🇷', 'North Korea': '🇰🇵',
+              'Mongolia': '🇲🇳', 'Taiwan': '🇹🇼', 'Hong Kong': '🇭🇰', 'Macau': '🇲🇴',
+              'India': '🇮🇳', 'Pakistan': '🇵🇰', 'Bangladesh': '🇧🇩', 'Sri Lanka': '🇱🇰',
+              'Nepal': '🇳🇵', 'Bhutan': '🇧🇹', 'Maldives': '🇲🇻', 'Afghanistan': '��🇫',
+              'Iran': '🇮🇷', 'Iraq': '🇮🇶', 'Syria': '🇸🇾', 'Lebanon': '🇱🇧',
+              'Jordan': '🇯🇴', 'Israel': '🇮🇱', 'Palestine': '🇵🇸', 'Saudi Arabia': '🇸�',
+              'Yemen': '🇾�🇪', 'Oman': '🇴🇲', 'United Arab Emirates': '🇦🇪', 'Qatar': '🇶🇦',
+              'Bahrain': '🇧🇭', 'Kuwait': '🇰🇼', 'Kazakhstan': '🇰🇿', 'Uzbekistan': '🇺🇿',
+              'Turkmenistan': '🇹🇲', 'Kyrgyzstan': '🇰🇬', 'Tajikistan': '🇹🇯',
+              'Thailand': '🇹🇭', 'Vietnam': '🇻🇳', 'Cambodia': '🇰🇭', 'Laos': '🇱🇦',
+              'Myanmar': '🇲🇲', 'Malaysia': '🇲🇾', 'Singapore': '🇸🇬', 'Indonesia': '�🇩',
+              'Brunei': '🇧�🇳', 'Philippines': '🇵🇭', 'Timor-Leste': '🇹🇱',
+              
+              // Africa
+              'Egypt': '🇪🇬', 'Libya': '🇱🇾', 'Tunisia': '🇹🇳', 'Algeria': '🇩🇿',
+              'Morocco': '🇲🇦', 'Sudan': '🇸🇩', 'South Sudan': '🇸🇸', 'Ethiopia': '🇪🇹',
+              'Eritrea': '🇪🇷', 'Djibouti': '🇩🇯', 'Somalia': '🇸🇴', 'Kenya': '🇰🇪',
+              'Uganda': '🇺�', 'Tanzania': '🇹🇿', 'Rwanda': '🇷🇼', 'Burundi': '🇧�🇮',
+              'Democratic Republic of the Congo': '🇨🇩', 'Republic of the Congo': '🇨🇬',
+              'Central African Republic': '🇨🇫', 'Cameroon': '🇨🇲', 'Chad': '🇹🇩',
+              'Niger': '🇳🇪', 'Nigeria': '🇳🇬', 'Benin': '🇧🇯', 'Togo': '🇹🇬',
+              'Ghana': '🇬🇭', 'Burkina Faso': '🇧🇫', 'Mali': '🇲🇱', 'Senegal': '🇸🇳',
+              'Mauritania': '🇲🇷', 'Gambia': '🇬🇲', 'Guinea-Bissau': '🇬🇼', 'Guinea': '🇬🇳',
+              'Sierra Leone': '🇸🇱', 'Liberia': '🇱🇷', 'Ivory Coast': '🇨🇮', 'Gabon': '🇬🇦',
+              'Equatorial Guinea': '🇬🇶', 'Sao Tome and Principe': '🇸🇹', 'Angola': '🇦🇴',
+              'Zambia': '🇿🇲', 'Malawi': '🇲🇼', 'Mozambique': '🇲🇿', 'Zimbabwe': '🇿🇼',
+              'Botswana': '🇧🇼', 'Namibia': '🇳🇦', 'South Africa': '🇿🇦', 'Lesotho': '🇱🇸',
+              'Eswatini': '🇸🇿', 'Madagascar': '🇲🇬', 'Mauritius': '🇲🇺', 'Seychelles': '🇸🇨',
+              'Comoros': '🇰🇲', 'Cape Verde': '🇨🇻',
+              
+              // Oceania
+              'Australia': '🇦🇺', 'New Zealand': '🇳🇿', 'Papua New Guinea': '🇵🇬',
+              'Fiji': '🇫�', 'Solomon Islands': '🇸🇧', 'Vanuatu': '🇻🇺', 'Samoa': '🇼🇸',
+              'Tonga': '🇹🇴', 'Kiribati': '�🇰🇮', 'Tuvalu': '🇹🇻', 'Nauru': '🇳🇷',
+              'Palau': '🇵🇼', 'Marshall Islands': '🇲🇭', 'Micronesia': '🇫🇲',
+              
+              // Special entries
+              'Global': '🌍', 'Unknown': '🌍'
+            };
+            return flags[normalizedCountry] || '🌍';
         }
         
         // Format dates in user's locale

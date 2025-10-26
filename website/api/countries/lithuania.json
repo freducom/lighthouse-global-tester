@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.817Z",
+    "generated_at": "2025-10-26T13:10:43.316Z",
     "country": "Lithuania",
     "flag": "🇱🇹",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 58,
-    "accessibility": 58,
-    "best_practices": 71,
+    "performance": 67,
+    "accessibility": 56,
+    "best_practices": 75,
     "seo": 83,
-    "pwa": 50
+    "pwa": 44
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 22:09:25"
+    },
+    {
+      "url": "autoplius.lt",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 85,
+        "accessibility": 52,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:16:39"
     },
     {
       "url": "vz.lt",
@@ -41,9 +53,9 @@
   "industries": [
     {
       "industry": "Marketplace",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 88,
+        "performance": 87,
         "accessibility": 52,
         "best_practices": 83,
         "seo": 83,

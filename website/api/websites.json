@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.767Z",
-    "total_websites": 444
+    "generated_at": "2025-10-26T13:10:43.260Z",
+    "total_websites": 467
   },
   "websites": [
     {
@@ -275,13 +275,13 @@
       "country": "Japan",
       "industry": "Social Media",
       "scores": {
-        "performance": 44,
+        "performance": 43,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:11:59",
+      "test_date": "2025-10-26 08:32:51",
       "api_endpoint": "websites/ameblojp.json"
     },
     {
@@ -291,11 +291,11 @@
       "scores": {
         "performance": 2,
         "accessibility": 93,
-        "best_practices": 75,
+        "best_practices": 58,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:15:29",
+      "test_date": "2025-10-26 08:35:10",
       "api_endpoint": "websites/americanascombr.json"
     },
     {
@@ -303,13 +303,13 @@
       "country": "Finland",
       "industry": "Education",
       "scores": {
-        "performance": 40,
+        "performance": 41,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:19:01",
+      "test_date": "2025-10-26 08:38:46",
       "api_endpoint": "websites/amiedufi.json"
     },
     {
@@ -317,13 +317,13 @@
       "country": "Costa Rica",
       "industry": "Media",
       "scores": {
-        "performance": 44,
+        "performance": 42,
         "accessibility": 75,
         "best_practices": 67,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:19:28",
+      "test_date": "2025-10-26 08:39:13",
       "api_endpoint": "websites/amprensacom.json"
     },
     {
@@ -337,7 +337,7 @@
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:20:06",
+      "test_date": "2025-10-26 08:39:46",
       "api_endpoint": "websites/amritaedu.json"
     },
     {
@@ -345,13 +345,13 @@
       "country": "Angola",
       "industry": "Media",
       "scores": {
-        "performance": 49,
+        "performance": 51,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:20:35",
+      "test_date": "2025-10-26 08:40:17",
       "api_endpoint": "websites/angola24horascom.json"
     },
     {
@@ -359,13 +359,13 @@
       "country": "India",
       "industry": "Education",
       "scores": {
-        "performance": 43,
+        "performance": 50,
         "accessibility": 68,
         "best_practices": 67,
         "seo": 75,
         "pwa": 22
       },
-      "test_date": "2025-10-26 08:24:38",
+      "test_date": "2025-10-26 08:44:18",
       "api_endpoint": "websites/annaunivedu.json"
     },
     {
@@ -379,7 +379,7 @@
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:25:08",
+      "test_date": "2025-10-26 08:44:52",
       "api_endpoint": "websites/ansait.json"
     },
     {
@@ -387,13 +387,13 @@
       "country": "United States",
       "industry": "Technology",
       "scores": {
-        "performance": 41,
+        "performance": 43,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:26:07",
+      "test_date": "2025-10-26 08:45:50",
       "api_endpoint": "websites/anthropiccom.json"
     },
     {
@@ -401,13 +401,13 @@
       "country": "Finland",
       "industry": "Finance",
       "scores": {
-        "performance": 58,
+        "performance": 63,
         "accessibility": 75,
         "best_practices": 100,
         "seo": 83,
         "pwa": 67
       },
-      "test_date": "2025-10-26 08:26:25",
+      "test_date": "2025-10-26 08:46:06",
       "api_endpoint": "websites/apelagofi.json"
     },
     {
@@ -421,7 +421,7 @@
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:30:05",
+      "test_date": "2025-10-26 08:49:46",
       "api_endpoint": "websites/apotease.json"
     },
     {
@@ -429,27 +429,83 @@
       "country": "United States",
       "industry": "Technology",
       "scores": {
-        "performance": 58,
+        "performance": 57,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:30:19",
+      "test_date": "2025-10-26 08:49:59",
       "api_endpoint": "websites/applecom.json"
+    },
+    {
+      "url": "arabic.rt.com",
+      "country": "Egypt",
+      "industry": "Media",
+      "scores": {
+        "performance": 56,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 10:09:11",
+      "api_endpoint": "websites/arabicrtcom.json"
+    },
+    {
+      "url": "arabnews.com",
+      "country": "Saudi Arabia",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 88,
+        "best_practices": 58,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:10:13",
+      "api_endpoint": "websites/arabnewscom.json"
+    },
+    {
+      "url": "aranzulla.it",
+      "country": "Italy",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:10:30",
+      "api_endpoint": "websites/aranzullait.json"
+    },
+    {
+      "url": "arbeitsagentur.de",
+      "country": "Germany",
+      "industry": "Government",
+      "scores": {
+        "performance": 58,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 10:10:47",
+      "api_endpoint": "websites/arbeitsagenturde.json"
     },
     {
       "url": "arbetsformedlingen.se",
       "country": "Sweden",
       "industry": "Government",
       "scores": {
-        "performance": 65,
+        "performance": 68,
         "accessibility": 100,
         "best_practices": 100,
-        "seo": 92,
+        "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:29:33",
+      "test_date": "2025-10-26 10:11:04",
       "api_endpoint": "websites/arbetsformedlingense.json"
     },
     {
@@ -457,42 +513,308 @@
       "country": "United Kingdom",
       "industry": "E-commerce",
       "scores": {
-        "performance": 40,
-        "accessibility": 99,
+        "performance": 26,
+        "accessibility": 97,
         "best_practices": 83,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:35:28",
+      "test_date": "2025-10-26 10:11:28",
       "api_endpoint": "websites/argoscouk.json"
+    },
+    {
+      "url": "arukereso.hu",
+      "country": "Hungary",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 29,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 10:11:47",
+      "api_endpoint": "websites/arukeresohu.json"
+    },
+    {
+      "url": "asda.com",
+      "country": "United Kingdom",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 18,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 10:15:19",
+      "api_endpoint": "websites/asdacom.json"
+    },
+    {
+      "url": "atherenergy.com",
+      "country": "India",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 29,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:16:09",
+      "api_endpoint": "websites/atherenergycom.json"
+    },
+    {
+      "url": "atlassian.com",
+      "country": "United States",
+      "industry": "Software",
+      "scores": {
+        "performance": 26,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:17:12",
+      "api_endpoint": "websites/atlassiancom.json"
+    },
+    {
+      "url": "att.com",
+      "country": "United States",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:19:21",
+      "api_endpoint": "websites/attcom.json"
+    },
+    {
+      "url": "attijariwafabank.com",
+      "country": "Morocco",
+      "industry": "Finance",
+      "scores": {
+        "performance": 84,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:19:35",
+      "api_endpoint": "websites/attijariwafabankcom.json"
     },
     {
       "url": "australia.gov.au",
       "country": "Australia",
       "industry": "Government",
       "scores": {
-        "performance": 60,
+        "performance": 38,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:04:26",
+      "test_date": "2025-10-26 12:15:31",
       "api_endpoint": "websites/australiagovau.json"
+    },
+    {
+      "url": "autocentrum.pl",
+      "country": "Poland",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 35,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 12:15:54",
+      "api_endpoint": "websites/autocentrumpl.json"
+    },
+    {
+      "url": "autodoc.fi",
+      "country": "Finland",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 31,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:16:24",
+      "api_endpoint": "websites/autodocfi.json"
+    },
+    {
+      "url": "autoplius.lt",
+      "country": "Lithuania",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 85,
+        "accessibility": 52,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:16:39",
+      "api_endpoint": "websites/autopliuslt.json"
+    },
+    {
+      "url": "autotalli.com",
+      "country": "Finland",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 20,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-26 12:17:00",
+      "api_endpoint": "websites/autotallicom.json"
     },
     {
       "url": "avito.ru",
       "country": "Russia",
       "industry": "Marketplace",
       "scores": {
-        "performance": 10,
+        "performance": 7,
         "accessibility": 64,
-        "best_practices": 58,
+        "best_practices": 67,
         "seo": 93,
         "pwa": 89
       },
-      "test_date": "2025-10-19 20:07:42",
+      "test_date": "2025-10-26 12:19:07",
       "api_endpoint": "websites/avitoru.json"
+    },
+    {
+      "url": "axios.com",
+      "country": "United States",
+      "industry": "Media",
+      "scores": {
+        "performance": 48,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:19:41",
+      "api_endpoint": "websites/axioscom.json"
+    },
+    {
+      "url": "axisbank.com",
+      "country": "India",
+      "industry": "Finance",
+      "scores": {
+        "performance": 49,
+        "accessibility": 80,
+        "best_practices": 0,
+        "seo": 84,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 12:20:01",
+      "api_endpoint": "websites/axisbankcom.json"
+    },
+    {
+      "url": "bahn.de",
+      "country": "Germany",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 25,
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:20:21",
+      "api_endpoint": "websites/bahnde.json"
+    },
+    {
+      "url": "bajajauto.com",
+      "country": "India",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 27,
+        "accessibility": 69,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:20:59",
+      "api_endpoint": "websites/bajajautocom.json"
+    },
+    {
+      "url": "balderton.com",
+      "country": "United Kingdom",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:21:19",
+      "api_endpoint": "websites/baldertoncom.json"
+    },
+    {
+      "url": "bambuser.com",
+      "country": "Sweden",
+      "industry": "Video",
+      "scores": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:21:44",
+      "api_endpoint": "websites/bambusercom.json"
+    },
+    {
+      "url": "bancatransilvania.ro",
+      "country": "Romania",
+      "industry": "Finance",
+      "scores": {
+        "performance": 48,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:22:08",
+      "api_endpoint": "websites/bancatransilvaniaro.json"
+    },
+    {
+      "url": "bancogalicia.com",
+      "country": "Argentina",
+      "industry": "Finance",
+      "scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:22:26",
+      "api_endpoint": "websites/bancogaliciacom.json"
+    },
+    {
+      "url": "bankbazaar.com",
+      "country": "India",
+      "industry": "Finance",
+      "scores": {
+        "performance": 73,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:22:40",
+      "api_endpoint": "websites/bankbazaarcom.json"
     },
     {
       "url": "bankofamerica.com",

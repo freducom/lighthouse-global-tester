@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.827Z",
+    "generated_at": "2025-10-26T13:10:43.327Z",
     "country": "Saudi Arabia",
     "flag": "🌍",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 65,
-    "best_practices": 88,
-    "seo": 90,
+    "performance": 39,
+    "accessibility": 73,
+    "best_practices": 78,
+    "seo": 88,
     "pwa": 33
   },
   "websites": [
@@ -36,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:01:40"
+    },
+    {
+      "url": "arabnews.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 88,
+        "best_practices": 58,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:10:13"
     }
   ],
   "industries": [
@@ -52,12 +64,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 40,
-        "accessibility": 55,
-        "best_practices": 83,
-        "seo": 82,
+        "performance": 35,
+        "accessibility": 72,
+        "best_practices": 71,
+        "seo": 83,
         "pwa": 33
       }
     }

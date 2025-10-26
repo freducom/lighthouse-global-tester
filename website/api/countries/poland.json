@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.815Z",
+    "generated_at": "2025-10-26T13:10:43.314Z",
     "country": "Poland",
     "flag": "🇵🇱",
-    "website_count": 12
+    "website_count": 13
   },
   "averages": {
-    "performance": 46,
+    "performance": 45,
     "accessibility": 89,
     "best_practices": 80,
     "seo": 94,
@@ -110,6 +110,18 @@
       "test_date": "2025-10-23 03:00:12"
     },
     {
+      "url": "autocentrum.pl",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 35,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 12:15:54"
+    },
+    {
       "url": "pracuj.pl",
       "industry": "Jobs",
       "scores": {
@@ -159,6 +171,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "Automotive",
+      "website_count": 1,
+      "averages": {
+        "performance": 35,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      }
+    },
     {
       "industry": "E-commerce",
       "website_count": 1,

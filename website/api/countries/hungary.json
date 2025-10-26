@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.817Z",
+    "generated_at": "2025-10-26T13:10:43.316Z",
     "country": "Hungary",
     "flag": "🇭🇺",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 25,
-    "accessibility": 80,
-    "best_practices": 75,
-    "seo": 92,
+    "performance": 26,
+    "accessibility": 82,
+    "best_practices": 81,
+    "seo": 93,
     "pwa": 44
   },
   "websites": [
+    {
+      "url": "arukereso.hu",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 29,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 10:11:47"
+    },
     {
       "url": "nosalty.hu",
       "industry": "Media",
@@ -51,6 +63,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 29,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 97,
+        "pwa": 44
+      }
+    },
     {
       "industry": "Media",
       "website_count": 2,

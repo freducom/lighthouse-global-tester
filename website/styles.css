@@ -875,7 +875,29 @@ body {
     .industry-metrics {
         display: none;
     }
+}
+
+/* Responsive behavior for country metrics - matches industry behavior */
+@media (max-width: 768px) {
+    /* Hide rightmost country metrics on smaller screens */
+    .country-metrics .metric:nth-child(3) {
+        display: none; /* Hide "SEO" metric first */
     }
+}
+
+@media (max-width: 640px) {
+    /* Hide Accessibility metric next */
+    .country-metrics .metric:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    /* On very small screens, hide all metrics, keep only country name */
+    .country-metrics {
+        display: none;
+    }
+}
     
     .header h1 {
         font-size: 2em;

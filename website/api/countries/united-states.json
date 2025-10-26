@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.799Z",
+    "generated_at": "2025-10-26T13:10:43.295Z",
     "country": "United States",
     "flag": "🇺🇸",
-    "website_count": 52
+    "website_count": 55
   },
   "averages": {
-    "performance": 48,
+    "performance": 47,
     "accessibility": 89,
     "best_practices": 81,
-    "seo": 90,
+    "seo": 89,
     "pwa": 42
   },
   "websites": [
@@ -194,18 +194,6 @@
       "test_date": "2025-10-23 06:51:59"
     },
     {
-      "url": "apple.com",
-      "industry": "Technology",
-      "scores": {
-        "performance": 58,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 08:30:19"
-    },
-    {
       "url": "stripe.com",
       "industry": "Finance",
       "scores": {
@@ -216,6 +204,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 02:58:56"
+    },
+    {
+      "url": "apple.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 57,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:49:59"
     },
     {
       "url": "reddit.com",
@@ -266,6 +266,18 @@
       "test_date": "2025-10-25 06:13:28"
     },
     {
+      "url": "axios.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 48,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:19:41"
+    },
+    {
       "url": "mailchimp.com",
       "industry": "Marketing",
       "scores": {
@@ -314,6 +326,18 @@
       "test_date": "2025-10-23 22:10:09"
     },
     {
+      "url": "anthropic.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:45:50"
+    },
+    {
       "url": "figma.com",
       "industry": "Website editor",
       "scores": {
@@ -348,18 +372,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 20:18:30"
-    },
-    {
-      "url": "anthropic.com",
-      "industry": "Technology",
-      "scores": {
-        "performance": 41,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 08:26:07"
     },
     {
       "url": "netflix.com",
@@ -408,6 +420,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 06:56:42"
+    },
+    {
+      "url": "att.com",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:19:21"
     },
     {
       "url": "microsoft.com",
@@ -578,6 +602,18 @@
       "test_date": "2025-10-25 03:01:14"
     },
     {
+      "url": "atlassian.com",
+      "industry": "Software",
+      "scores": {
+        "performance": 26,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:17:12"
+    },
+    {
       "url": "tesla.com",
       "industry": "Automotive",
       "scores": {
@@ -707,13 +743,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 14,
+      "website_count": 15,
       "averages": {
-        "performance": 39,
+        "performance": 40,
         "accessibility": 88,
         "best_practices": 81,
         "seo": 92,
-        "pwa": 43
+        "pwa": 42
       }
     },
     {
@@ -750,6 +786,17 @@
       }
     },
     {
+      "industry": "Software",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Technology",
       "website_count": 6,
       "averages": {
@@ -757,6 +804,17 @@
         "accessibility": 89,
         "best_practices": 75,
         "seo": 89,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 75,
         "pwa": 33
       }
     },

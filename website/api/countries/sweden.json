@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T12:33:42.813Z",
+    "generated_at": "2025-10-26T13:10:43.312Z",
     "country": "Sweden",
     "flag": "🇸🇪",
-    "website_count": 22
+    "website_count": 23
   },
   "averages": {
-    "performance": 49,
-    "accessibility": 95,
+    "performance": 48,
+    "accessibility": 94,
     "best_practices": 89,
-    "seo": 94,
+    "seo": 95,
     "pwa": 44
   },
   "websites": [
@@ -35,7 +35,19 @@
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:30:05"
+      "test_date": "2025-10-26 08:49:46"
+    },
+    {
+      "url": "arbetsformedlingen.se",
+      "industry": "Government",
+      "scores": {
+        "performance": 68,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 10:11:04"
     },
     {
       "url": "dn.se",
@@ -48,18 +60,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:27:12"
-    },
-    {
-      "url": "arbetsformedlingen.se",
-      "industry": "Government",
-      "scores": {
-        "performance": 65,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:29:33"
     },
     {
       "url": "regeringen.se",
@@ -218,6 +218,18 @@
       "test_date": "2025-10-24 06:14:40"
     },
     {
+      "url": "bambuser.com",
+      "industry": "Video",
+      "scores": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:21:44"
+    },
+    {
       "url": "refined.com",
       "industry": "Website editor",
       "scores": {
@@ -316,10 +328,10 @@
       "industry": "Government",
       "website_count": 3,
       "averages": {
-        "performance": 58,
+        "performance": 59,
         "accessibility": 100,
         "best_practices": 86,
-        "seo": 91,
+        "seo": 94,
         "pwa": 33
       }
     },
@@ -376,6 +388,17 @@
         "best_practices": 92,
         "seo": 97,
         "pwa": 50
+      }
+    },
+    {
+      "industry": "Video",
+      "website_count": 1,
+      "averages": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
       }
     },
     {
