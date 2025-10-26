@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.625Z",
-    "total_websites": 424
+    "generated_at": "2025-10-26T08:29:02.905Z",
+    "total_websites": 435
   },
   "websites": [
     {
@@ -89,32 +89,186 @@
       "api_endpoint": "websites/aftonbladetse.json"
     },
     {
+      "url": "aktualne.cz",
+      "country": "Czechia",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 07:55:21",
+      "api_endpoint": "websites/aktualnecz.json"
+    },
+    {
+      "url": "aliorbank.pl",
+      "country": "Poland",
+      "industry": "Finance",
+      "scores": {
+        "performance": 23,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 07:59:12",
+      "api_endpoint": "websites/aliorbankpl.json"
+    },
+    {
+      "url": "allegro.pl",
+      "country": "Poland",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 79,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 07:59:30",
+      "api_endpoint": "websites/allegropl.json"
+    },
+    {
+      "url": "almasryalyoum.com",
+      "country": "Egypt",
+      "industry": "Media",
+      "scores": {
+        "performance": 19,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 78
+      },
+      "test_date": "2025-10-26 08:00:26",
+      "api_endpoint": "websites/almasryalyoumcom.json"
+    },
+    {
+      "url": "alphatv.gr",
+      "country": "Greece",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:00:46",
+      "api_endpoint": "websites/alphatvgr.json"
+    },
+    {
+      "url": "alrajhibank.com.sa",
+      "country": "Saudi Arabia",
+      "industry": "Finance",
+      "scores": {
+        "performance": 48,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:01:17",
+      "api_endpoint": "websites/alrajhibankcomsa.json"
+    },
+    {
+      "url": "alriyadh.com",
+      "country": "Saudi Arabia",
+      "industry": "Media",
+      "scores": {
+        "performance": 40,
+        "accessibility": 55,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:01:40",
+      "api_endpoint": "websites/alriyadhcom.json"
+    },
+    {
+      "url": "altbalaji.com",
+      "country": "India",
+      "industry": "Media",
+      "scores": {
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 08:02:27",
+      "api_endpoint": "websites/altbalajicom.json"
+    },
+    {
+      "url": "alwasat.ly",
+      "country": "Libya",
+      "industry": "Media",
+      "scores": {
+        "performance": 82,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:03:43",
+      "api_endpoint": "websites/alwasatly.json"
+    },
+    {
       "url": "amazon.com",
       "country": "United States",
       "industry": "E-commerce",
       "scores": {
-        "performance": 56,
-        "accessibility": 94,
-        "best_practices": 75,
-        "seo": 84,
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:53:39",
+      "test_date": "2025-10-26 08:03:56",
       "api_endpoint": "websites/amazoncom.json"
+    },
+    {
+      "url": "amazon.com.mx",
+      "country": "Mexico",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:04:10",
+      "api_endpoint": "websites/amazoncommx.json"
     },
     {
       "url": "amazon.in",
       "country": "India",
       "industry": "E-commerce",
       "scores": {
-        "performance": 53,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 100
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
       },
-      "test_date": "2025-10-22 08:33:06",
+      "test_date": "2025-10-26 08:04:24",
       "api_endpoint": "websites/amazonin.json"
+    },
+    {
+      "url": "amd.com",
+      "country": "United States",
+      "industry": "Technology",
+      "scores": {
+        "performance": 30,
+        "accessibility": 85,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:04:48",
+      "api_endpoint": "websites/amdcom.json"
     },
     {
       "url": "ameblo.jp",

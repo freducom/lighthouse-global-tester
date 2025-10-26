@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.684Z",
+    "generated_at": "2025-10-26T08:29:02.967Z",
     "country": "Mexico",
     "flag": "🌍",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 96,
-    "best_practices": 80,
-    "seo": 93,
+    "performance": 55,
+    "accessibility": 97,
+    "best_practices": 85,
+    "seo": 91,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "amazon.com.mx",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:04:10"
+    },
     {
       "url": "walmart.com.mx",
       "industry": "E-commerce",
@@ -53,12 +65,12 @@
   "industries": [
     {
       "industry": "E-commerce",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 56,
+        "performance": 75,
         "accessibility": 100,
-        "best_practices": 75,
-        "seo": 83,
+        "best_practices": 88,
+        "seo": 84,
         "pwa": 33
       }
     },

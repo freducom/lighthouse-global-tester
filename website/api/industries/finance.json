@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.710Z",
+    "generated_at": "2025-10-26T08:29:02.995Z",
     "industry": "Finance",
-    "website_count": 30
+    "website_count": 32
   },
   "averages": {
-    "performance": 45,
-    "accessibility": 91,
+    "performance": 44,
+    "accessibility": 90,
     "best_practices": 81,
-    "seo": 88,
+    "seo": 89,
     "pwa": 37
   },
   "websites": [
@@ -203,6 +203,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 15:44:31"
+    },
+    {
+      "url": "aliorbank.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 23,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 07:59:12"
+    },
+    {
+      "url": "alrajhibank.com.sa",
+      "country": "Saudi Arabia",
+      "scores": {
+        "performance": 48,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:01:17"
     },
     {
       "url": "fin24.com",
@@ -470,6 +494,28 @@
         "accessibility": 89,
         "best_practices": 75,
         "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Poland",
+      "website_count": 1,
+      "averages": {
+        "performance": 23,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Saudi Arabia",
+      "website_count": 1,
+      "averages": {
+        "performance": 48,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 97,
         "pwa": 33
       }
     },

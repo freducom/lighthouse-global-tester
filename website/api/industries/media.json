@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.709Z",
+    "generated_at": "2025-10-26T08:29:02.994Z",
     "industry": "Media",
-    "website_count": 221
+    "website_count": 227
   },
   "averages": {
     "performance": 43,
-    "accessibility": 87,
+    "accessibility": 86,
     "best_practices": 80,
     "seo": 91,
     "pwa": 46
@@ -421,6 +421,18 @@
       "test_date": "2025-10-23 08:35:35"
     },
     {
+      "url": "aktualne.cz",
+      "country": "Czechia",
+      "scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 07:55:21"
+    },
+    {
       "url": "lidovky.cz",
       "country": "Czechia",
       "scores": {
@@ -467,6 +479,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 18:15:20"
+    },
+    {
+      "url": "almasryalyoum.com",
+      "country": "Egypt",
+      "scores": {
+        "performance": 19,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 78
+      },
+      "test_date": "2025-10-26 08:00:26"
     },
     {
       "url": "elwatannews.com",
@@ -793,6 +817,18 @@
       "test_date": "2025-10-25 10:16:16"
     },
     {
+      "url": "alphatv.gr",
+      "country": "Greece",
+      "scores": {
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:00:46"
+    },
+    {
       "url": "ethnos.gr",
       "country": "Greece",
       "scores": {
@@ -863,6 +899,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-23 03:01:04"
+    },
+    {
+      "url": "altbalaji.com",
+      "country": "India",
+      "scores": {
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 08:02:27"
     },
     {
       "url": "business-standard.com",
@@ -1381,6 +1429,18 @@
       "test_date": "2025-10-24 04:16:59"
     },
     {
+      "url": "alwasat.ly",
+      "country": "Libya",
+      "scores": {
+        "performance": 82,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:03:43"
+    },
+    {
       "url": "libya24.tv",
       "country": "Libya",
       "scores": {
@@ -1763,6 +1823,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-24 08:14:33"
+    },
+    {
+      "url": "alriyadh.com",
+      "country": "Saudi Arabia",
+      "scores": {
+        "performance": 40,
+        "accessibility": 55,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:01:40"
     },
     {
       "url": "pravda.sk",
@@ -2767,13 +2839,13 @@
     },
     {
       "country": "Czechia",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 42,
-        "accessibility": 68,
-        "best_practices": 72,
-        "seo": 82,
-        "pwa": 33
+        "performance": 38,
+        "accessibility": 71,
+        "best_practices": 71,
+        "seo": 83,
+        "pwa": 39
       }
     },
     {
@@ -2789,13 +2861,13 @@
     },
     {
       "country": "Egypt",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 31,
-        "accessibility": 89,
-        "best_practices": 61,
-        "seo": 91,
-        "pwa": 33
+        "performance": 28,
+        "accessibility": 85,
+        "best_practices": 63,
+        "seo": 89,
+        "pwa": 44
       }
     },
     {
@@ -2844,13 +2916,13 @@
     },
     {
       "country": "Greece",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 50,
-        "accessibility": 88,
-        "best_practices": 77,
-        "seo": 95,
-        "pwa": 36
+        "performance": 48,
+        "accessibility": 87,
+        "best_practices": 80,
+        "seo": 93,
+        "pwa": 35
       }
     },
     {
@@ -2866,11 +2938,11 @@
     },
     {
       "country": "India",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 45,
-        "accessibility": 84,
-        "best_practices": 78,
+        "performance": 39,
+        "accessibility": 83,
+        "best_practices": 65,
         "seo": 88,
         "pwa": 69
       }
@@ -2965,12 +3037,12 @@
     },
     {
       "country": "Libya",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 43,
-        "accessibility": 84,
-        "best_practices": 83,
-        "seo": 82,
+        "performance": 53,
+        "accessibility": 88,
+        "best_practices": 81,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -3104,6 +3176,17 @@
         "best_practices": 69,
         "seo": 95,
         "pwa": 67
+      }
+    },
+    {
+      "country": "Saudi Arabia",
+      "website_count": 1,
+      "averages": {
+        "performance": 40,
+        "accessibility": 55,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
       }
     },
     {

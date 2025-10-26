@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.674Z",
+    "generated_at": "2025-10-26T08:29:02.956Z",
     "country": "Libya",
     "flag": "🇱🇾",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 43,
-    "accessibility": 84,
-    "best_practices": 83,
-    "seo": 82,
+    "performance": 53,
+    "accessibility": 88,
+    "best_practices": 81,
+    "seo": 84,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "alwasat.ly",
+      "industry": "Media",
+      "scores": {
+        "performance": 82,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:03:43"
+    },
     {
       "url": "libya24.tv",
       "industry": "Media",
@@ -53,12 +65,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 43,
-        "accessibility": 84,
-        "best_practices": 83,
-        "seo": 82,
+        "performance": 53,
+        "accessibility": 88,
+        "best_practices": 81,
+        "seo": 84,
         "pwa": 33
       }
     }

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.677Z",
+    "generated_at": "2025-10-26T08:29:02.960Z",
     "country": "Czechia",
     "flag": "🇨🇿",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 68,
-    "best_practices": 72,
-    "seo": 82,
-    "pwa": 33
+    "performance": 38,
+    "accessibility": 71,
+    "best_practices": 71,
+    "seo": 83,
+    "pwa": 39
   },
   "websites": [
     {
@@ -48,18 +48,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 20:29:38"
+    },
+    {
+      "url": "aktualne.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 07:55:21"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 42,
-        "accessibility": 68,
-        "best_practices": 72,
-        "seo": 82,
-        "pwa": 33
+        "performance": 38,
+        "accessibility": 71,
+        "best_practices": 71,
+        "seo": 83,
+        "pwa": 39
       }
     }
   ]

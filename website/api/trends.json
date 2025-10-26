@@ -1,30 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.844Z",
-    "websites_with_trends": 153,
-    "total_websites": 424
+    "generated_at": "2025-10-26T08:29:03.114Z",
+    "websites_with_trends": 164,
+    "total_websites": 435
   },
   "global_trends": {
     "average_changes": {
-      "performance": -1.9,
-      "accessibility": -0.4,
-      "best_practices": -1.9,
-      "seo": -0.3,
-      "pwa": 0.2
+      "performance": -1.4,
+      "accessibility": -0.3,
+      "best_practices": -1.8,
+      "seo": -0.4,
+      "pwa": -0.2
     },
     "improvements": {
-      "performance": 58,
-      "accessibility": 22,
-      "best_practices": 15,
+      "performance": 62,
+      "accessibility": 24,
+      "best_practices": 16,
       "seo": 12,
       "pwa": 3
     },
     "declines": {
-      "performance": 81,
+      "performance": 85,
       "accessibility": 21,
-      "best_practices": 33,
-      "seo": 19,
-      "pwa": 0
+      "best_practices": 34,
+      "seo": 21,
+      "pwa": 1
     }
   },
   "website_trends": [
@@ -519,6 +519,32 @@
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "almasryalyoum.com",
+      "country": "Egypt",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 19,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 23,
+        "accessibility": 70,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 2,
+        "best_practices": 0,
+        "seo": -1,
         "pwa": 0
       }
     },
@@ -1069,6 +1095,32 @@
       }
     },
     {
+      "url": "alphatv.gr",
+      "country": "Greece",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 43,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "kathimerini.gr",
       "country": "Greece",
       "industry": "Media",
@@ -1170,6 +1222,58 @@
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
+      }
+    },
+    {
+      "url": "altbalaji.com",
+      "country": "India",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "amazon.in",
+      "country": "India",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 56,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 100
+      },
+      "changes": {
+        "performance": 36,
+        "accessibility": 6,
+        "best_practices": 8,
+        "seo": -8,
+        "pwa": -67
       }
     },
     {
@@ -1745,6 +1849,32 @@
       }
     },
     {
+      "url": "alwasat.ly",
+      "country": "Libya",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 82,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 59,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 23,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "news24.lu",
       "country": "Luxembourg",
       "industry": "Media",
@@ -1816,6 +1946,32 @@
       },
       "changes": {
         "performance": -4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "amazon.com.mx",
+      "country": "Mexico",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2135,6 +2291,58 @@
       }
     },
     {
+      "url": "aliorbank.pl",
+      "country": "Poland",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 23,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 24,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "allegro.pl",
+      "country": "Poland",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 79,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 75,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "nofluffjobs.com",
       "country": "Poland",
       "industry": "Jobs",
@@ -2365,6 +2573,58 @@
         "accessibility": -11,
         "best_practices": 0,
         "seo": 1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "alrajhibank.com.sa",
+      "country": "Saudi Arabia",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 48,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "alriyadh.com",
+      "country": "Saudi Arabia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 40,
+        "accessibility": 55,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 55,
+        "best_practices": 83,
+        "seo": 82,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
         "pwa": 0
       }
     },
@@ -3205,17 +3465,43 @@
       "country": "United States",
       "industry": "E-commerce",
       "current_scores": {
-        "performance": 56,
-        "accessibility": 94,
-        "best_practices": 75,
-        "seo": 84,
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 54,
-        "accessibility": 94,
-        "best_practices": 75,
-        "seo": 84,
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "amd.com",
+      "country": "United States",
+      "industry": "Technology",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 85,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 28,
+        "accessibility": 85,
+        "best_practices": 100,
+        "seo": 86,
         "pwa": 33
       },
       "changes": {

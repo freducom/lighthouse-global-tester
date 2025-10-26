@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.601Z",
+    "generated_at": "2025-10-26T08:29:02.879Z",
     "total_industries": 24
   },
   "industries": [
@@ -18,13 +18,13 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 29,
+      "website_count": 31,
       "averages": {
-        "performance": 41,
-        "accessibility": 83,
-        "best_practices": 79,
+        "performance": 46,
+        "accessibility": 84,
+        "best_practices": 81,
         "seo": 92,
-        "pwa": 49
+        "pwa": 47
       },
       "api_endpoint": "industries/e-commerce.json"
     },
@@ -42,12 +42,12 @@
     },
     {
       "industry": "Finance",
-      "website_count": 30,
+      "website_count": 32,
       "averages": {
-        "performance": 45,
-        "accessibility": 91,
+        "performance": 44,
+        "accessibility": 90,
         "best_practices": 81,
-        "seo": 88,
+        "seo": 89,
         "pwa": 37
       },
       "api_endpoint": "industries/finance.json"
@@ -114,10 +114,10 @@
     },
     {
       "industry": "Media",
-      "website_count": 221,
+      "website_count": 227,
       "averages": {
         "performance": 43,
-        "accessibility": 87,
+        "accessibility": 86,
         "best_practices": 80,
         "seo": 91,
         "pwa": 46
@@ -234,12 +234,12 @@
     },
     {
       "industry": "Technology",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 42,
+        "performance": 40,
         "accessibility": 84,
-        "best_practices": 69,
-        "seo": 90,
+        "best_practices": 74,
+        "seo": 89,
         "pwa": 33
       },
       "api_endpoint": "industries/technology.json"

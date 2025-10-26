@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.545Z",
+    "generated_at": "2025-10-26T08:29:02.820Z",
     "api_version": "1.0",
-    "total_websites": 424,
-    "countries_count": 58,
+    "total_websites": 435,
+    "countries_count": 59,
     "industries_count": 24,
-    "last_scan_date": "2025-10-25 12:21:43"
+    "last_scan_date": "2025-10-26 08:04:48"
   },
   "global_averages": {
     "performance": 45,
@@ -105,26 +105,26 @@
         "test_date": "2025-10-21 17:42:31"
       },
       {
-        "url": "wikipedia.org",
-        "country": "United States",
-        "industry": "Media",
-        "performance": 93,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 99,
+        "url": "amazon.com.mx",
+        "country": "Mexico",
+        "industry": "E-commerce",
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
         "pwa": 33,
-        "test_date": "2025-10-25 04:13:16"
+        "test_date": "2025-10-26 08:04:10"
       },
       {
-        "url": "thaiall.com",
-        "country": "Thailand",
-        "industry": "Education",
-        "performance": 92,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 96,
-        "pwa": 44,
-        "test_date": "2025-10-24 10:16:42"
+        "url": "amazon.com",
+        "country": "United States",
+        "industry": "E-commerce",
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:03:56"
       }
     ],
     "accessibility": [
@@ -138,6 +138,39 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-22 08:37:37"
+      },
+      {
+        "url": "amazon.com.mx",
+        "country": "Mexico",
+        "industry": "E-commerce",
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:04:10"
+      },
+      {
+        "url": "amazon.com",
+        "country": "United States",
+        "industry": "E-commerce",
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:03:56"
+      },
+      {
+        "url": "amazon.in",
+        "country": "India",
+        "industry": "E-commerce",
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:04:24"
       },
       {
         "url": "news24.lu",
@@ -204,39 +237,6 @@
         "seo": 85,
         "pwa": 33,
         "test_date": "2025-10-19 19:44:15"
-      },
-      {
-        "url": "ontario.ca",
-        "country": "Canada",
-        "industry": "Government",
-        "performance": 74,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-23 02:58:53"
-      },
-      {
-        "url": "gov.uk",
-        "country": "United Kingdom",
-        "industry": "Government",
-        "performance": 73,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
-        "pwa": 33,
-        "test_date": "2025-10-23 07:36:21"
-      },
-      {
-        "url": "etsy.com",
-        "country": "United States",
-        "industry": "Marketplace",
-        "performance": 68,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 56,
-        "test_date": "2025-10-23 07:04:36"
       }
     ],
     "best_practices": [
@@ -250,6 +250,28 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-22 08:37:37"
+      },
+      {
+        "url": "amazon.com.mx",
+        "country": "Mexico",
+        "industry": "E-commerce",
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:04:10"
+      },
+      {
+        "url": "amazon.in",
+        "country": "India",
+        "industry": "E-commerce",
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:04:24"
       },
       {
         "url": "mitid.dk",
@@ -327,28 +349,6 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-24 18:15:20"
-      },
-      {
-        "url": "nhs.uk",
-        "country": "United Kingdom",
-        "industry": "Government",
-        "performance": 54,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-23 07:36:10"
-      },
-      {
-        "url": "svt.se",
-        "country": "Sweden",
-        "industry": "Media",
-        "performance": 51,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
-        "pwa": 89,
-        "test_date": "2025-10-24 04:16:25"
       }
     ],
     "seo": [
@@ -498,17 +498,6 @@
         "test_date": "2025-10-23 02:58:41"
       },
       {
-        "url": "amazon.in",
-        "country": "India",
-        "industry": "E-commerce",
-        "performance": 53,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 100,
-        "test_date": "2025-10-22 08:33:06"
-      },
-      {
         "url": "unian.ua",
         "country": "Ukraine",
         "industry": "Media",
@@ -573,6 +562,17 @@
         "seo": 86,
         "pwa": 100,
         "test_date": "2025-10-20 18:18:18"
+      },
+      {
+        "url": "realtor.ca",
+        "country": "Canada",
+        "industry": "Real Estate",
+        "performance": 33,
+        "accessibility": 81,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 100,
+        "test_date": "2025-10-23 12:19:53"
       }
     ]
   },
@@ -599,6 +599,17 @@
         "seo": 100,
         "pwa": 44,
         "test_date": "2025-10-23 07:32:45"
+      },
+      {
+        "url": "altbalaji.com",
+        "country": "India",
+        "industry": "Media",
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67,
+        "test_date": "2025-10-26 08:02:27"
       },
       {
         "url": "mercedes-benz.de",
@@ -676,17 +687,6 @@
         "seo": 90,
         "pwa": 78,
         "test_date": "2025-10-23 21:51:01"
-      },
-      {
-        "url": "itv.com",
-        "country": "United Kingdom",
-        "industry": "Media",
-        "performance": 13,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 33,
-        "test_date": "2025-10-23 07:36:57"
       }
     ],
     "accessibility": [
@@ -847,6 +847,17 @@
         "test_date": "2025-10-21 17:42:31"
       },
       {
+        "url": "altbalaji.com",
+        "country": "India",
+        "industry": "Media",
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67,
+        "test_date": "2025-10-26 08:02:27"
+      },
+      {
         "url": "stuff.co.nz",
         "country": "New Zealand",
         "industry": "Media",
@@ -900,17 +911,6 @@
         "seo": 93,
         "pwa": 100,
         "test_date": "2025-10-19 19:58:45"
-      },
-      {
-        "url": "malta.com",
-        "country": "Malta",
-        "industry": "Portal",
-        "performance": 60,
-        "accessibility": 72,
-        "best_practices": 42,
-        "seo": 69,
-        "pwa": 0,
-        "test_date": "2025-10-22 08:48:17"
       }
     ],
     "seo": [

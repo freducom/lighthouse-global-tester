@@ -1747,6 +1747,38 @@ input[type="text"]:focus, input[type="search"]:focus {
     }
 }
 
+/* About page tile styling */
+.about-tile {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-tile h2 {
+    color: #0D3B66;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about-tile p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-tile p:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .filter-container {
         padding: 20px;

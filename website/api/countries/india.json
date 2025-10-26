@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.658Z",
+    "generated_at": "2025-10-26T08:29:02.940Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 11
+    "website_count": 12
   },
   "averages": {
     "performance": 47,
-    "accessibility": 84,
-    "best_practices": 78,
-    "seo": 89,
-    "pwa": 61
+    "accessibility": 85,
+    "best_practices": 73,
+    "seo": 88,
+    "pwa": 56
   },
   "websites": [
+    {
+      "url": "amazon.in",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:04:24"
+    },
     {
       "url": "cricbuzz.com",
       "industry": "Sports",
@@ -60,18 +72,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:45:59"
-    },
-    {
-      "url": "amazon.in",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 53,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 100
-      },
-      "test_date": "2025-10-22 08:33:06"
     },
     {
       "url": "business-standard.com",
@@ -144,6 +144,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:47:14"
+    },
+    {
+      "url": "altbalaji.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 7,
+        "accessibility": 79,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 08:02:27"
     }
   ],
   "industries": [
@@ -151,11 +163,11 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 46,
-        "accessibility": 91,
-        "best_practices": 88,
-        "seo": 90,
-        "pwa": 100
+        "performance": 65,
+        "accessibility": 94,
+        "best_practices": 96,
+        "seo": 86,
+        "pwa": 67
       }
     },
     {
@@ -171,11 +183,11 @@
     },
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 45,
-        "accessibility": 84,
-        "best_practices": 78,
+        "performance": 39,
+        "accessibility": 83,
+        "best_practices": 65,
         "seo": 88,
         "pwa": 69
       }

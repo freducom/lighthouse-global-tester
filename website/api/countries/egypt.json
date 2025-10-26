@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.673Z",
+    "generated_at": "2025-10-26T08:29:02.956Z",
     "country": "Egypt",
     "flag": "🇪🇬",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 32,
-    "accessibility": 91,
+    "performance": 29,
+    "accessibility": 87,
     "best_practices": 63,
-    "seo": 91,
-    "pwa": 42
+    "seo": 90,
+    "pwa": 49
   },
   "websites": [
     {
@@ -60,18 +60,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-20 16:04:20"
+    },
+    {
+      "url": "almasryalyoum.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 19,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 78
+      },
+      "test_date": "2025-10-26 08:00:26"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 31,
-        "accessibility": 89,
-        "best_practices": 61,
-        "seo": 91,
-        "pwa": 33
+        "performance": 28,
+        "accessibility": 85,
+        "best_practices": 63,
+        "seo": 89,
+        "pwa": 44
       }
     },
     {

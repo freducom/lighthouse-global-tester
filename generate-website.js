@@ -145,7 +145,7 @@ class WebsiteGenerator {
             
             <div class="footer-section">
                 <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
-                <p><a href="api-docs.html">📚 API Documentation</a> | <a href="latest-updated.html">📅 Latest Scan</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+                <p><a href="about.html">🐆 About</a> | <a href="api-docs.html">📚 API Documentation</a> | <a href="latest-updated.html">📅 Latest Scan</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
         
@@ -351,6 +351,7 @@ class WebsiteGenerator {
     await this.generateAllIndustriesPage();
     await this.generateAllCompaniesPage();
     await this.generateLatestUpdatedPage();
+    await this.generateAboutPage();
     await this.generateAssets();
 
     console.log('✅ Static website generated successfully!');
@@ -4357,6 +4358,38 @@ input[type="text"]:focus, input[type="search"]:focus {
     }
 }
 
+/* About page tile styling */
+.about-tile {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-tile h2 {
+    color: #0D3B66;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about-tile p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-tile p:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .filter-container {
         padding: 20px;
@@ -5619,6 +5652,117 @@ ${this.getFooterHTML(latestScanResults.length, 0)}
 
         // Initial check
         updateOfflineStatus();`;
+  }
+
+  async generateAboutPage() {
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CheetahCheck</title>
+    <meta name="description" content="Learn about CheetahCheck's journey: from inspiration to AI-powered website performance tracking using Google Lighthouse">
+    <meta name="theme-color" content="#0D3B66">
+${this.getFaviconHTML()}
+${this.getSocialMetaTags('About CheetahCheck', 'Learn about CheetahCheck\'s journey: from inspiration to AI-powered website performance tracking using Google Lighthouse', 'about.html')}
+${this.getPostHogScript()}
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🐆 About CheetahCheck</h1>
+            <p class="subtitle">The story behind tracking the fastest websites</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="about-tile">
+                <h2>🚀 The Beginning: A Quest for Performance</h2>
+                <p>It all started with a simple yet persistent question: <em>How do the world's most popular websites actually perform?</em> As a developer, I'd always been fascinated by the invisible race happening behind every click, every page load, every user interaction. While we often judge websites by their visual appeal or functionality, there's a whole dimension of user experience that happens in milliseconds—the performance layer that can make or break a user's journey.</p>
+                
+                <p>I wanted to create something that would continuously track and monitor website performance over time, not just as a one-off test, but as an ongoing observatory of how the digital landscape evolves. The goal was ambitious: build a comprehensive performance tracking system that could reveal patterns, trends, and insights about how the world's most visited websites optimize (or fail to optimize) their user experience.</p>
+            </section>
+
+            <section class="about-tile">
+                <h2>💡 Why Google Lighthouse?</h2>
+                <p>After evaluating various performance measurement tools, Google Lighthouse emerged as the clear choice—and for good reason. Lighthouse has become the gold standard for web performance auditing, and it's not hard to see why.</p>
+                
+                <p><strong>The metrics that matter:</strong> Lighthouse doesn't just measure loading time; it captures the metrics that directly impact user experience. Performance metrics like First Contentful Paint (FCP), Largest Contentful Paint (LCP), and Cumulative Layout Shift (CLS) reflect what users actually feel when they interact with a website. These aren't abstract numbers—they represent real moments of frustration or delight in a user's journey.</p>
+                
+                <p><strong>Beyond performance:</strong> What sets Lighthouse apart is its holistic approach. It evaluates websites across five critical dimensions: Performance, Accessibility, Best Practices, SEO, and Progressive Web App features. This multi-faceted analysis provides a complete picture of website quality, not just speed.</p>
+                
+                <p><strong>Industry adoption:</strong> Lighthouse powers Core Web Vitals, which Google uses as ranking signals. When you optimize for Lighthouse, you're optimizing for what both users and search engines value. It's become the lingua franca of web performance.</p>
+            </section>
+
+            <section class="about-tile">
+                <h2>🤖 The AI-Powered Development Journey</h2>
+                <p>Here's where the story gets interesting: CheetahCheck is a testament to the power of AI-assisted development. This entire project—from concept to execution—was built through "vibe coding" with AI assistance.</p>
+                
+                <p><strong>What is vibe coding?</strong> It's development driven by intuition, creativity, and rapid iteration, powered by AI pair programming. Instead of meticulous planning and extensive documentation, I described what I wanted to build, and AI helped bring those ideas to life. The result? A fully functional, feature-rich performance monitoring platform built in record time.</p>
+                
+                <p><strong>The AI contribution:</strong> Nearly every line of code, every design decision, and even the project's branding came from AI collaboration. The only manual interventions were deleting a few excessive emojis that even I thought were too much! The CheetahCheck name, logo design, color scheme, and user interface—all emerged from creative conversations with AI.</p>
+                
+                <p><strong>Testing the limits:</strong> Part of my motivation was to push the boundaries of what's possible with AI-assisted development. Could an AI help build something this complex and functional? The answer, as you can see, is a resounding yes.</p>
+            </section>
+
+            <section class="about-tile">
+                <h2>⚙️ The Technical Architecture</h2>
+                <p><strong>GitHub Pages deployment:</strong> CheetahCheck runs entirely on GitHub Pages, proving that powerful web applications don't always need complex server infrastructure. The entire site is static, generated from dynamic data, and served globally through GitHub's CDN.</p>
+                
+                <p><strong>Automated pipeline:</strong> Every two hours, the system springs into action. Fresh Lighthouse tests run against hundreds of websites, data gets processed and analyzed, and the entire website regenerates automatically. It's a fully autonomous system that captures the ever-changing performance landscape of the web.</p>
+                
+                <p><strong>Data-driven insights:</strong> The system doesn't just collect data—it finds patterns. By tracking performance over time, CheetahCheck reveals which countries excel at web performance, which industries prioritize user experience, and how individual websites evolve their optimization strategies.</p>
+            </section>
+
+            <section class="about-tile">
+                <h2>🎯 The Vision Forward</h2>
+                <p>CheetahCheck represents more than just a performance monitoring tool—it's a glimpse into the future of AI-assisted development and automated web analysis. Every aspect, from the technical implementation to this very text you're reading (yes, even this about page was generated by Claude Sonnet 3.5), demonstrates how AI can be a creative partner in building meaningful digital experiences.</p>
+                
+                <p>The project continues to evolve, automatically adapting to new websites, changing performance patterns, and emerging web standards. It's a living laboratory for understanding how the web performs and how AI can help us build better tools to measure and improve digital experiences.</p>
+                
+                <p><strong>Join the journey:</strong> Whether you're a developer curious about performance optimization, a business owner wanting to understand how your site stacks up, or simply someone fascinated by the intersection of AI and web development, CheetahCheck offers insights into the hidden world of web performance.</p>
+
+                <p><strong>MANUAL HUMAN EDIT:</strong> You don't have to join any journey or get insipired. All the text above is generated by AI and although factually correct, doesn't represent my style of communicating. -Fredu fredu@fredu.com</p>
+            </section>
+
+            <section class="about-tile">
+                <h2>📊 By the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">🌍</div>
+                        <div class="stat-label">Global Coverage</div>
+                        <p>Monitoring websites from dozens of countries worldwide</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">⏰</div>
+                        <div class="stat-label">Every 2 Hours</div>
+                        <p>Automatic updates with fresh performance data</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">🤖</div>
+                        <div class="stat-label">100% AI-Built</div>
+                        <p>From code to content, crafted with artificial intelligence</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">📈</div>
+                        <div class="stat-label">5 Key Metrics</div>
+                        <p>Performance, Accessibility, SEO, Best Practices, PWA</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+${this.getFooterHTML(0, 0)}
+    </div>
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'about.html'), html);
   }
 }
 

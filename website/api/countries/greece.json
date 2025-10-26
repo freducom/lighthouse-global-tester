@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.675Z",
+    "generated_at": "2025-10-26T08:29:02.958Z",
     "country": "Greece",
     "flag": "🇬🇷",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 88,
-    "best_practices": 77,
-    "seo": 95,
-    "pwa": 36
+    "performance": 48,
+    "accessibility": 87,
+    "best_practices": 80,
+    "seo": 93,
+    "pwa": 35
   },
   "websites": [
     {
@@ -50,6 +50,18 @@
       "test_date": "2025-10-20 16:10:15"
     },
     {
+      "url": "alphatv.gr",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:00:46"
+    },
+    {
       "url": "news247.gr",
       "industry": "Media",
       "scores": {
@@ -65,13 +77,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 50,
-        "accessibility": 88,
-        "best_practices": 77,
-        "seo": 95,
-        "pwa": 36
+        "performance": 48,
+        "accessibility": 87,
+        "best_practices": 80,
+        "seo": 93,
+        "pwa": 35
       }
     }
   ]

@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T07:50:36.710Z",
+    "generated_at": "2025-10-26T08:29:02.995Z",
     "industry": "E-commerce",
-    "website_count": 29
+    "website_count": 31
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 83,
-    "best_practices": 79,
+    "performance": 46,
+    "accessibility": 84,
+    "best_practices": 81,
     "seo": 92,
-    "pwa": 49
+    "pwa": 47
   },
   "websites": [
     {
@@ -160,13 +160,13 @@
       "url": "amazon.in",
       "country": "India",
       "scores": {
-        "performance": 53,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 100
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
       },
-      "test_date": "2025-10-22 08:33:06"
+      "test_date": "2025-10-26 08:04:24"
     },
     {
       "url": "flipkart.com",
@@ -193,6 +193,18 @@
       "test_date": "2025-10-23 12:18:12"
     },
     {
+      "url": "amazon.com.mx",
+      "country": "Mexico",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:04:10"
+    },
+    {
       "url": "walmart.com.mx",
       "country": "Mexico",
       "scores": {
@@ -215,6 +227,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:24:41"
+    },
+    {
+      "url": "allegro.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 79,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 07:59:30"
     },
     {
       "url": "ozon.ru",
@@ -340,13 +364,13 @@
       "url": "amazon.com",
       "country": "United States",
       "scores": {
-        "performance": 56,
-        "accessibility": 94,
-        "best_practices": 75,
-        "seo": 84,
+        "performance": 94,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:53:39"
+      "test_date": "2025-10-26 08:03:56"
     },
     {
       "url": "shopify.com",
@@ -432,11 +456,11 @@
       "country": "India",
       "website_count": 2,
       "averages": {
-        "performance": 46,
-        "accessibility": 91,
-        "best_practices": 88,
-        "seo": 90,
-        "pwa": 100
+        "performance": 65,
+        "accessibility": 94,
+        "best_practices": 96,
+        "seo": 86,
+        "pwa": 67
       }
     },
     {
@@ -452,12 +476,12 @@
     },
     {
       "country": "Mexico",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 56,
+        "performance": 75,
         "accessibility": 100,
-        "best_practices": 75,
-        "seo": 83,
+        "best_practices": 88,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -470,6 +494,17 @@
         "best_practices": 0,
         "seo": 92,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Poland",
+      "website_count": 1,
+      "averages": {
+        "performance": 79,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 67
       }
     },
     {
@@ -542,10 +577,10 @@
       "country": "United States",
       "website_count": 2,
       "averages": {
-        "performance": 49,
-        "accessibility": 94,
-        "best_practices": 79,
-        "seo": 92,
+        "performance": 68,
+        "accessibility": 97,
+        "best_practices": 88,
+        "seo": 93,
         "pwa": 33
       }
     }
