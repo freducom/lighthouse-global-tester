@@ -294,6 +294,91 @@ class GlobalLighthouseTester {
     return results;
   }
 
+  async testTop20Untested() {
+    console.log('🔍 Finding top 20 untested sites...');
+    
+    // Get all tested domains from database
+    const testedScores = await this.db.getAllLatestScores();
+    const testedSet = new Set(testedScores.map(score => score.url));
+    
+    // Find untested domains across all countries
+    const untestedDomains = [];
+    for (const countryData of this.domainsByCountry) {
+      for (const domainInfo of countryData.top_domains) {
+        if (!testedSet.has(domainInfo.domain)) {
+          untestedDomains.push({
+            domain: domainInfo.domain,
+            country: countryData.country,
+            industry: domainInfo.industry
+          });
+        }
+      }
+    }
+    
+    // Sort alphabetically and take first 20
+    untestedDomains.sort((a, b) => a.domain.localeCompare(b.domain));
+    const top20Untested = untestedDomains.slice(0, 20);
+    
+    console.log(`📋 Found ${untestedDomains.length} untested domains total`);
+    console.log(`🎯 Testing top 20 untested sites:`);
+    
+    for (let i = 0; i < top20Untested.length; i++) {
+      const item = top20Untested[i];
+      console.log(`${i + 1}. ${item.domain} (${item.country})`);
+    }
+    
+    console.log('\n🚀 Starting tests...\n');
+    
+    const results = [];
+    for (let i = 0; i < top20Untested.length; i++) {
+      const item = top20Untested[i];
+      console.log(`\n📊 Testing ${i + 1}/${top20Untested.length}: ${item.domain} (${item.country})`);
+      
+      try {
+        const result = await this.testWebsite(item.domain, item.country, item.industry);
+        if (result) {
+          results.push({
+            domain: item.domain,
+            country: item.country,
+            industry: item.industry,
+            score: result.performance,
+            success: true
+          });
+          console.log(`✅ ${item.domain}: ${result.performance}`);
+        } else {
+          results.push({
+            domain: item.domain,
+            country: item.country,
+            industry: item.industry,
+            error: 'Test returned null result',
+            success: false
+          });
+          console.log(`❌ ${item.domain}: Test returned null result`);
+        }
+      } catch (error) {
+        console.error(`❌ Error testing ${item.domain}:`, error.message);
+        results.push({
+          domain: item.domain,
+          country: item.country,
+          industry: item.industry,
+          error: error.message,
+          success: false
+        });
+      }
+      
+      // Wait between tests
+      if (i < top20Untested.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
+    }
+    
+    console.log(`\n📈 Completed testing ${results.length} domains`);
+    console.log(`✅ Successful: ${results.filter(r => r.success).length}`);
+    console.log(`❌ Failed: ${results.filter(r => !r.success).length}`);
+    
+    return results;
+  }
+
   async showResultsByCountry() {
     try {
       console.log('\n🌎 Lighthouse Scores by Country:\n');
@@ -415,6 +500,9 @@ async function main() {
   
   if (args.includes('--now')) {
     await tester.runNow();
+    process.exit(0);
+  } else if (args.includes('--top20-untested')) {
+    await tester.testTop20Untested();
     process.exit(0);
   } else if (args.includes('--hourly-batch')) {
     const batchIndex = args.indexOf('--hourly-batch');

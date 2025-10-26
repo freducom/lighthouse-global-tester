@@ -6,8 +6,8 @@ on:
     - cron: '0 */2 * * *'
   workflow_dispatch:  # Allow manual triggering
     inputs:
-      test_all:
-        description: 'Test all websites (ignore rotation)'
+      test_top20_untested:
+        description: 'Test 20 first untested sites'
         required: false
         default: false
         type: boolean
@@ -61,9 +61,9 @@ jobs:
         continue-on-error: true
         id: lighthouse-tests
         run: |
-          if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-            echo "🌍 Manual trigger: Testing all websites across all countries..."
-            node global-tester.js --now
+          if [ "${{ github.event.inputs.test_top20_untested }}" = "true" ]; then
+            echo "� Manual trigger: Testing top 20 untested sites..."
+            node global-tester.js --top20-untested
           else
             # Calculate bi-hourly batch index (0-83 for 84 batches per week)
             # Day of week (0=Sunday, 1=Monday, ..., 6=Saturday) and hour of day (0-23)
@@ -116,8 +116,8 @@ jobs:
             git add lighthouse_scores.db
             
             # Create commit message with test summary
-            if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-              COMMIT_MSG="Update database: Full lighthouse test results ($(date '+%Y-%m-%d %H:%M UTC'))"
+            if [ "${{ github.event.inputs.test_top20_untested }}" = "true" ]; then
+              COMMIT_MSG="Update database: Top 20 untested sites results ($(date '+%Y-%m-%d %H:%M UTC'))"
             else
               DAY_OF_WEEK=$(date +%w)
               HOUR_OF_DAY=$(date +%H)
@@ -201,9 +201,9 @@ jobs:
           echo "## 🚀 Daily Lighthouse Testing Summary" >> $GITHUB_STEP_SUMMARY
           echo "**Testing Date:** $(date)" >> $GITHUB_STEP_SUMMARY
           
-          if [ "${{ github.event.inputs.test_all }}" = "true" ]; then
-            echo "**Mode:** Manual full testing (all websites)" >> $GITHUB_STEP_SUMMARY
-            echo "**Websites Tested:** All websites across all countries" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.event.inputs.test_top20_untested }}" = "true" ]; then
+            echo "**Mode:** Manual top 20 untested sites testing" >> $GITHUB_STEP_SUMMARY
+            echo "**Websites Tested:** Top 20 alphabetically first untested sites" >> $GITHUB_STEP_SUMMARY
           else
             DAY_OF_WEEK=$(date +%w)
             HOUR_OF_DAY=$(date +%H)
