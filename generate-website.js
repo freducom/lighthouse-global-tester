@@ -2930,6 +2930,16 @@ body {
     margin: 10px 0;
 }
 
+.country-rankings {
+    margin-top: 20px;
+    overflow: visible;
+}
+
+.country-rankings h3 {
+    margin-bottom: 15px;
+    color: #1c1e21;
+}
+
 .industry-rankings {
     margin-top: 20px;
     overflow: visible;
