@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:29:51.258Z",
+    "generated_at": "2025-10-26T15:50:34.538Z",
     "country": "United States",
     "flag": "🇺🇸",
     "website_count": 55
@@ -302,18 +302,6 @@
       "test_date": "2025-10-23 07:05:58"
     },
     {
-      "url": "axios.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 44,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 12:44:40"
-    },
-    {
       "url": "slack.com",
       "industry": "Technology",
       "scores": {
@@ -578,6 +566,18 @@
       "test_date": "2025-10-23 16:48:40"
     },
     {
+      "url": "axios.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 13:22:22"
+    },
+    {
       "url": "twitch.tv",
       "industry": "Media",
       "scores": {
@@ -745,7 +745,7 @@
       "industry": "Media",
       "website_count": 15,
       "averages": {
-        "performance": 40,
+        "performance": 38,
         "accessibility": 88,
         "best_practices": 82,
         "seo": 92,

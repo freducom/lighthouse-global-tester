@@ -253,6 +253,84 @@ class WebsiteGenerator {
     <link rel="apple-touch-icon" sizes="256x256" href="cheetahcheck_favicon_256x256.png">`;
   }
 
+  getPWAHTML() {
+    return `    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="CheetahCheck">
+    <meta name="mobile-web-app-capable" content="yes">`;
+  }
+
+  getPWAInstallScript() {
+    return `
+    <!-- PWA Install Popup -->
+    <div id="installPopup" class="install-popup">
+        <div class="install-popup-header">
+            <div class="install-popup-icon">🚀</div>
+            <h3 class="install-popup-title">Install CheetahCheck</h3>
+        </div>
+        <p class="install-popup-description">
+            Get quick access to website performance analytics right from your home screen!
+        </p>
+        <div class="install-popup-actions">
+            <button id="dismissInstall" class="dismiss-btn">Not now</button>
+            <button id="installApp" class="install-btn">Install</button>
+        </div>
+    </div>
+
+    <script>
+        let deferredPrompt;
+        const installPopup = document.getElementById('installPopup');
+        const installBtn = document.getElementById('installApp');
+        const dismissBtn = document.getElementById('dismissInstall');
+
+        // Listen for the beforeinstallprompt event
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Check if user has dismissed the popup before
+            const dismissed = localStorage.getItem('pwa-install-dismissed');
+            const installed = localStorage.getItem('pwa-installed');
+            
+            // Only show on mobile and if not dismissed or installed
+            if (window.innerWidth <= 768 && !dismissed && !installed) {
+                setTimeout(() => {
+                    installPopup.classList.add('show');
+                }, 2000); // Show after 2 seconds
+            }
+        });
+
+        // Install button click
+        installBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                
+                if (outcome === 'accepted') {
+                    localStorage.setItem('pwa-installed', 'true');
+                }
+                
+                deferredPrompt = null;
+            }
+            installPopup.classList.remove('show');
+        });
+
+        // Dismiss button click
+        dismissBtn.addEventListener('click', () => {
+            localStorage.setItem('pwa-install-dismissed', 'true');
+            installPopup.classList.remove('show');
+        });
+
+        // Hide popup when app is installed
+        window.addEventListener('appinstalled', () => {
+            localStorage.setItem('pwa-installed', 'true');
+            installPopup.classList.remove('show');
+        });
+    </script>`;
+  }
+
   getSocialMetaTags(title, description, url = '', type = 'website') {
     const baseUrl = 'https://freducom.github.io/lighthouse-global-tester';
     const fullUrl = url ? `${baseUrl}/${url}` : baseUrl;
@@ -546,6 +624,14 @@ class WebsiteGenerator {
     const websiteStats = this.calculateWebsiteStats(allScores);
     const topSites = allScores.sort((a, b) => b.performance - a.performance).slice(0, 10);
     
+    // Find best and worst performing websites
+    const bestWebsite = allScores.reduce((best, site) => 
+      site.performance > best.performance ? site : best
+    );
+    const worstWebsite = allScores.reduce((worst, site) => 
+      site.performance < worst.performance ? site : worst
+    );
+    
     // Get unique countries and industries for filter dropdowns
     const uniqueCountries = [...new Set(allScores.map(site => this.normalizeCountry(site.country)))].sort();
     const uniqueIndustries = [...new Set(allScores.map(site => site.industry || 'Unknown'))].sort();
@@ -561,6 +647,7 @@ class WebsiteGenerator {
     <meta name="keywords" content="web performance, lighthouse, accessibility, SEO, performance analytics, website optimization">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getPWAHTML()}
 ${this.getSocialMetaTags('CheetahCheck - Track the Fastest Websites', `Track the fastest websites with CheetahCheck. Performance analytics monitoring ${allScores.length} websites across ${this.domainsData.length} countries using Google Lighthouse metrics`, 'index.html')}
 ${this.getPostHogScript()}
     <link rel="stylesheet" href="styles.css">
@@ -675,16 +762,24 @@ ${this.getPostHogScript()}
                     <div id="global-acc-desc" class="stat-trend">Average across ${allScores.length} sites</div>
                 </div>
                 
-                <div class="stat-card seo" role="img" aria-labelledby="global-seo-title" aria-describedby="global-seo-desc">
-                    <h3 id="global-seo-title">🔍 SEO</h3>
-                    <div class="stat-number" aria-label="${stats.avgSeo} percent SEO score">${stats.avgSeo}%</div>
-                    <div id="global-seo-desc" class="stat-trend">Average across ${allScores.length} sites</div>
+                <div class="stat-card best-website" role="img" aria-labelledby="best-website-title" aria-describedby="best-website-desc">
+                    <h3 id="best-website-title">🏆 Best Website</h3>
+                    <div class="stat-number" aria-label="${bestWebsite.performance} percent performance score">${bestWebsite.performance}%</div>
+                    <div id="best-website-desc" class="stat-trend">
+                        <a href="domain-${bestWebsite.url.replace(/\./g, '-')}.html" class="website-link">
+                            ${bestWebsite.url}
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="stat-card best-practices" role="img" aria-labelledby="global-bp-title" aria-describedby="global-bp-desc">
-                    <h3 id="global-bp-title">✨ Best Practices</h3>
-                    <div class="stat-number" aria-label="${stats.avgBestPractices} percent best practices score">${stats.avgBestPractices}%</div>
-                    <div id="global-bp-desc" class="stat-trend">Average across ${allScores.length} sites</div>
+                <div class="stat-card worst-website" role="img" aria-labelledby="worst-website-title" aria-describedby="worst-website-desc">
+                    <h3 id="worst-website-title">📊 Worst Website</h3>
+                    <div class="stat-number" aria-label="${worstWebsite.performance} percent performance score">${worstWebsite.performance}%</div>
+                    <div id="worst-website-desc" class="stat-trend">
+                        <a href="domain-${worstWebsite.url.replace(/\./g, '-')}.html" class="website-link">
+                            ${worstWebsite.url}
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -1376,6 +1471,8 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
         });
     </script>
 
+${this.getPWAInstallScript()}
+
 </body>
 </html>`;
 
@@ -1422,10 +1519,11 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${countryData.country} - Valmitta</title>
+    <title>${countryData.country} - CheetahCheck</title>
     <meta name="description" content="Lighthouse performance analysis for ${countryData.country} websites">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getPWAHTML()}
 ${this.getSocialMetaTags(`${countryData.country} - Website Performance Analysis`, `Lighthouse performance analysis for ${countryData.country} websites. View detailed metrics and rankings.`, fileName)}
 ${this.getPostHogScript()}
     <link rel="stylesheet" href="styles.css">
@@ -1946,6 +2044,9 @@ ${this.getFooterHTML(countryScores.length, this.domainsData.length)}
         });
         
     </script>
+
+${this.getPWAInstallScript()}
+
 </body>
 </html>`;
 
@@ -1964,8 +2065,13 @@ ${this.getFooterHTML(countryScores.length, this.domainsData.length)}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global - Valmitta</title>
+    <title>Global - CheetahCheck</title>
+    <meta name="description" content="Global website performance analysis with CheetahCheck">
+    <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getPWAHTML()}
+${this.getSocialMetaTags('Global Website Performance Analysis', 'Global website performance analysis with CheetahCheck. View detailed metrics and rankings.', fileName)}
+${this.getPostHogScript()}
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -2065,6 +2171,9 @@ ${this.getFaviconHTML()}
             return 'poor';
         }
     </script>
+
+${this.getPWAInstallScript()}
+
 </body>
 </html>`;
 
@@ -2117,10 +2226,12 @@ ${this.getFaviconHTML()}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${industry} Industry - Valmitta</title>
+    <title>${industry} Industry - CheetahCheck</title>
     <meta name="description" content="Lighthouse performance analysis for ${industry.toLowerCase()} industry websites">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getPWAHTML()}
+${this.getSocialMetaTags(`${industry} Industry - Website Performance Analysis`, `Lighthouse performance analysis for ${industry.toLowerCase()} industry websites. View detailed metrics and rankings.`, fileName)}
 ${this.getSocialMetaTags(`${industry} Industry - Performance Analysis`, `Lighthouse performance analysis for ${industry.toLowerCase()} industry websites. Compare metrics and rankings.`, fileName)}
 ${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
@@ -2585,6 +2696,9 @@ ${this.getFooterHTML(industryScores.length, this.domainsData.length)}
         });
         
     </script>
+
+${this.getPWAInstallScript()}
+
 </body>
 </html>`;
 
@@ -2609,6 +2723,8 @@ ${this.getFooterHTML(industryScores.length, this.domainsData.length)}
     <meta name="description" content="Lighthouse performance history and insights for ${site.url}">
     <meta name="theme-color" content="#0D3B66">
 ${this.getFaviconHTML()}
+${this.getPWAHTML()}
+${this.getSocialMetaTags(`${site.url} - Performance History`, `Lighthouse performance history and insights for ${site.url}. Track website speed and optimization over time.`, fileName)}
 ${this.getSocialMetaTags(`${site.url} - Performance History`, `Lighthouse performance history and insights for ${site.url}. View detailed metrics and performance trends.`, fileName)}
 ${this.getPostHogScript()}
     <link rel="manifest" href="manifest.json">
@@ -2953,8 +3069,22 @@ body {
 
 .stat-card.performance { border-left-color: #E07A00; }
 .stat-card.accessibility { border-left-color: #1E6091; }
-.stat-card.seo { border-left-color: #FFB703; }
-.stat-card.best-practices { border-left-color: #081C34; }
+.stat-card.best-website { border-left-color: #22C55E; }
+.stat-card.worst-website { border-left-color: #EF4444; }
+
+.website-link {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    word-break: break-all;
+    transition: color 0.2s ease;
+}
+
+.website-link:hover {
+    color: #166fe5;
+    text-decoration: underline;
+}
 
 .stat-card h3 {
     font-size: 0.9em;
@@ -2963,6 +3093,14 @@ body {
     letter-spacing: 0.5px;
     color: #65676b;
     margin-bottom: 10px;
+}
+
+.stat-card.best-website h3 {
+    color: #000000;
+}
+
+.stat-card.worst-website h3 {
+    color: #FFFFFF;
 }
 
 .stat-number {
@@ -4758,15 +4896,124 @@ input[type="text"]:focus, input[type="search"]:focus {
         justify-content: center;
     }
 }
+
+/* ============================================
+   PWA INSTALL POPUP
+   ============================================ */
+
+.install-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0D3B66 0%, #1E6091 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(13, 59, 102, 0.3);
+    z-index: 10000;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.install-popup.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.install-popup-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.install-popup-icon {
+    font-size: 28px;
+}
+
+.install-popup-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.install-popup-description {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.install-popup-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.install-btn {
+    background: linear-gradient(135deg, #FFB703 0%, #E07A00 100%);
+    color: #081C34;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.install-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 183, 3, 0.4);
+}
+
+.dismiss-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.dismiss-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 480px) {
+    .install-popup {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        padding: 16px;
+    }
+    
+    .install-popup-actions {
+        flex-direction: column;
+    }
+    
+    .install-btn,
+    .dismiss-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
 `;
 
     fs.writeFileSync(path.join(this.outputDir, 'styles.css'), css);
 
     // Generate Web App Manifest
     const manifest = {
-      "name": "Valmitta",
-      "short_name": "Valmitta",
-      "description": "Global website performance analysis with Lighthouse",
+      "name": "CheetahCheck - Track the Fastest Websites",
+      "short_name": "CheetahCheck",
+      "description": "Track the fastest websites with CheetahCheck. Performance analytics monitoring websites across countries using Google Lighthouse metrics.",
       "start_url": "/",
       "display": "standalone",
       "background_color": "#0D3B66",

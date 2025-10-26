@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:29:51.276Z",
+    "generated_at": "2025-10-26T15:50:34.557Z",
     "country": "Poland",
     "flag": "🇵🇱",
-    "website_count": 13
+    "website_count": 14
   },
   "averages": {
-    "performance": 45,
-    "accessibility": 89,
+    "performance": 44,
+    "accessibility": 88,
     "best_practices": 80,
-    "seo": 94,
-    "pwa": 54
+    "seo": 93,
+    "pwa": 52
   },
   "websites": [
     {
@@ -110,18 +110,6 @@
       "test_date": "2025-10-23 03:00:12"
     },
     {
-      "url": "autocentrum.pl",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 34,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 56
-      },
-      "test_date": "2025-10-26 12:40:54"
-    },
-    {
       "url": "pracuj.pl",
       "industry": "Jobs",
       "scores": {
@@ -134,6 +122,18 @@
       "test_date": "2025-10-23 08:34:22"
     },
     {
+      "url": "autocentrum.pl",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 32,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 13:19:41"
+    },
+    {
       "url": "nofluffjobs.com",
       "industry": "Jobs",
       "scores": {
@@ -144,6 +144,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-22 20:28:02"
+    },
+    {
+      "url": "bankier.pl",
+      "industry": "Finance",
+      "scores": {
+        "performance": 29,
+        "accessibility": 75,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 13:27:18"
     },
     {
       "url": "olx.pl",
@@ -175,7 +187,7 @@
       "industry": "Automotive",
       "website_count": 1,
       "averages": {
-        "performance": 34,
+        "performance": 32,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 93,
@@ -206,12 +218,12 @@
     },
     {
       "industry": "Finance",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 23,
-        "accessibility": 89,
-        "best_practices": 92,
-        "seo": 100,
+        "performance": 26,
+        "accessibility": 82,
+        "best_practices": 84,
+        "seo": 96,
         "pwa": 33
       }
     },
