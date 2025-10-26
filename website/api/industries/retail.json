@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.482Z",
+    "generated_at": "2025-10-26T18:00:09.803Z",
     "industry": "Retail",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 93,
+    "performance": 23,
+    "accessibility": 85,
     "best_practices": 67,
-    "seo": 91,
+    "seo": 85,
     "pwa": 33
   },
   "websites": [
@@ -23,6 +23,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 03:00:21"
+    },
+    {
+      "url": "bestbuy.com",
+      "country": "United States",
+      "scores": {
+        "performance": 8,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:39:20"
     }
   ],
   "countries": [
@@ -34,6 +46,17 @@
         "accessibility": 93,
         "best_practices": 67,
         "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 1,
+      "averages": {
+        "performance": 8,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 79,
         "pwa": 33
       }
     }

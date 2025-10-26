@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.437Z",
+    "generated_at": "2025-10-26T18:00:09.731Z",
     "country": "China",
     "flag": "🇨🇳",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 49,
-    "best_practices": 71,
-    "seo": 82,
-    "pwa": 46
+    "performance": 40,
+    "accessibility": 53,
+    "best_practices": 74,
+    "seo": 85,
+    "pwa": 44
   },
   "websites": [
     {
@@ -84,6 +84,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-23 10:20:10"
+    },
+    {
+      "url": "bilibili.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 18,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:41:58"
     }
   ],
   "industries": [
@@ -95,6 +107,17 @@
         "accessibility": 55,
         "best_practices": 79,
         "seo": 87,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 18,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 100,
         "pwa": 33
       }
     },

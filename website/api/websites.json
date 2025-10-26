@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.362Z",
-    "total_websites": 479
+    "generated_at": "2025-10-26T18:00:09.620Z",
+    "total_websites": 486
   },
   "websites": [
     {
@@ -1041,59 +1041,157 @@
       "api_endpoint": "websites/berkshirehathawaycom.json"
     },
     {
+      "url": "bestbuy.com",
+      "country": "United States",
+      "industry": "Retail",
+      "scores": {
+        "performance": 8,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:39:20",
+      "api_endpoint": "websites/bestbuycom.json"
+    },
+    {
+      "url": "bharatpetroleum.in",
+      "country": "India",
+      "industry": "Energy",
+      "scores": {
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 58,
+        "seo": 72,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:39:52",
+      "api_endpoint": "websites/bharatpetroleumin.json"
+    },
+    {
+      "url": "bikroy.com",
+      "country": "Bangladesh",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 37,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:41:11",
+      "api_endpoint": "websites/bikroycom.json"
+    },
+    {
       "url": "bild.de",
       "country": "Germany",
       "industry": "Media",
       "scores": {
-        "performance": 40,
+        "performance": 41,
         "accessibility": 96,
         "best_practices": 92,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-19 19:41:29",
+      "test_date": "2025-10-26 16:41:38",
       "api_endpoint": "websites/bildde.json"
+    },
+    {
+      "url": "bilibili.com",
+      "country": "China",
+      "industry": "Media",
+      "scores": {
+        "performance": 18,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:41:58",
+      "api_endpoint": "websites/bilibilicom.json"
     },
     {
       "url": "bing.com",
       "country": "United States",
       "industry": "Search Engine",
       "scores": {
-        "performance": 80,
-        "accessibility": 91,
+        "performance": 77,
+        "accessibility": 100,
         "best_practices": 75,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:53:21",
+      "test_date": "2025-10-26 16:42:13",
       "api_endpoint": "websites/bingcom.json"
+    },
+    {
+      "url": "biobiochile.cl",
+      "country": "Chile",
+      "industry": "Media",
+      "scores": {
+        "performance": 6,
+        "accessibility": 74,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:44:17",
+      "api_endpoint": "websites/biobiochilecl.json"
     },
     {
       "url": "bizportal.co.il",
       "country": "Israel",
       "industry": "Finance",
       "scores": {
-        "performance": 71,
-        "accessibility": 92,
-        "best_practices": 75,
+        "performance": 23,
+        "accessibility": 93,
+        "best_practices": 67,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:22:43",
+      "test_date": "2025-10-26 16:49:47",
       "api_endpoint": "websites/bizportalcoil.json"
+    },
+    {
+      "url": "blackrock.com",
+      "country": "United States",
+      "industry": "Finance",
+      "scores": {
+        "performance": 25,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:50:45",
+      "api_endpoint": "websites/blackrockcom.json"
+    },
+    {
+      "url": "blick.ch",
+      "country": "Switzerland",
+      "industry": "Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:51:03",
+      "api_endpoint": "websites/blickch.json"
     },
     {
       "url": "blocket.se",
       "country": "Sweden",
       "industry": "Marketplace",
       "scores": {
-        "performance": 28,
+        "performance": 32,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:27:29",
+      "test_date": "2025-10-26 16:51:32",
       "api_endpoint": "websites/blocketse.json"
     },
     {

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.253Z",
+    "generated_at": "2025-10-26T18:00:09.507Z",
     "api_version": "1.0",
-    "total_websites": 479,
+    "total_websites": 486,
     "countries_count": 65,
-    "industries_count": 25,
-    "last_scan_date": "2025-10-26 16:06:32"
+    "industries_count": 26,
+    "last_scan_date": "2025-10-26 16:51:32"
   },
   "global_averages": {
-    "performance": 45,
+    "performance": 44,
     "accessibility": 86,
     "best_practices": 80,
     "seo": 91,
@@ -217,6 +217,17 @@
         "test_date": "2025-10-22 14:19:45"
       },
       {
+        "url": "bing.com",
+        "country": "United States",
+        "industry": "Search Engine",
+        "performance": 77,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33,
+        "test_date": "2025-10-26 16:42:13"
+      },
+      {
         "url": "linkedin.com",
         "country": "United States",
         "industry": "Social Media",
@@ -226,17 +237,6 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-23 07:02:29"
-      },
-      {
-        "url": "gmx.net",
-        "country": "Germany",
-        "industry": "Portal",
-        "performance": 75,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 85,
-        "pwa": 33,
-        "test_date": "2025-10-19 19:44:15"
       }
     ],
     "best_practices": [
@@ -601,6 +601,17 @@
         "test_date": "2025-10-21 18:20:35"
       },
       {
+        "url": "biobiochile.cl",
+        "country": "Chile",
+        "industry": "Media",
+        "performance": 6,
+        "accessibility": 74,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33,
+        "test_date": "2025-10-26 16:44:17"
+      },
+      {
         "url": "altbalaji.com",
         "country": "India",
         "industry": "Media",
@@ -621,6 +632,17 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-22 12:20:09"
+      },
+      {
+        "url": "bestbuy.com",
+        "country": "United States",
+        "industry": "Retail",
+        "performance": 8,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33,
+        "test_date": "2025-10-26 16:39:20"
       },
       {
         "url": "avito.ru",
@@ -665,28 +687,6 @@
         "seo": 68,
         "pwa": 89,
         "test_date": "2025-10-22 18:26:43"
-      },
-      {
-        "url": "nationtv.tv",
-        "country": "Thailand",
-        "industry": "Media",
-        "performance": 11,
-        "accessibility": 96,
-        "best_practices": 75,
-        "seo": 99,
-        "pwa": 89,
-        "test_date": "2025-10-22 16:14:17"
-      },
-      {
-        "url": "skaties.lv",
-        "country": "Latvia",
-        "industry": "Media",
-        "performance": 11,
-        "accessibility": 78,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 78,
-        "test_date": "2025-10-23 21:51:01"
       }
     ],
     "accessibility": [

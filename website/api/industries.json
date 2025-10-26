@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.326Z",
-    "total_industries": 25
+    "generated_at": "2025-10-26T18:00:09.582Z",
+    "total_industries": 26
   },
   "industries": [
     {
@@ -41,10 +41,22 @@
       "api_endpoint": "industries/education.json"
     },
     {
-      "industry": "Finance",
-      "website_count": 48,
+      "industry": "Energy",
+      "website_count": 1,
       "averages": {
-        "performance": 45,
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 58,
+        "seo": 72,
+        "pwa": 33
+      },
+      "api_endpoint": "industries/energy.json"
+    },
+    {
+      "industry": "Finance",
+      "website_count": 49,
+      "averages": {
+        "performance": 44,
         "accessibility": 88,
         "best_practices": 79,
         "seo": 89,
@@ -102,21 +114,21 @@
     },
     {
       "industry": "Marketplace",
-      "website_count": 18,
+      "website_count": 19,
       "averages": {
         "performance": 44,
         "accessibility": 85,
-        "best_practices": 83,
+        "best_practices": 82,
         "seo": 92,
-        "pwa": 52
+        "pwa": 51
       },
       "api_endpoint": "industries/marketplace.json"
     },
     {
       "industry": "Media",
-      "website_count": 234,
+      "website_count": 237,
       "averages": {
-        "performance": 43,
+        "performance": 42,
         "accessibility": 86,
         "best_practices": 80,
         "seo": 91,
@@ -162,12 +174,12 @@
     },
     {
       "industry": "Retail",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 37,
-        "accessibility": 93,
+        "performance": 23,
+        "accessibility": 85,
         "best_practices": 67,
-        "seo": 91,
+        "seo": 85,
         "pwa": 33
       },
       "api_endpoint": "industries/retail.json"
@@ -176,8 +188,8 @@
       "industry": "Search Engine",
       "website_count": 5,
       "averages": {
-        "performance": 56,
-        "accessibility": 80,
+        "performance": 55,
+        "accessibility": 82,
         "best_practices": 87,
         "seo": 84,
         "pwa": 33

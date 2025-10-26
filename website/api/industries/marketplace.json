@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.481Z",
+    "generated_at": "2025-10-26T18:00:09.803Z",
     "industry": "Marketplace",
-    "website_count": 18
+    "website_count": 19
   },
   "averages": {
     "performance": 44,
     "accessibility": 85,
-    "best_practices": 83,
+    "best_practices": 82,
     "seo": 92,
-    "pwa": 52
+    "pwa": 51
   },
   "websites": [
     {
@@ -23,6 +23,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-25 04:14:27"
+    },
+    {
+      "url": "bikroy.com",
+      "country": "Bangladesh",
+      "scores": {
+        "performance": 37,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:41:11"
     },
     {
       "url": "autotalli.com",
@@ -172,13 +184,13 @@
       "url": "blocket.se",
       "country": "Sweden",
       "scores": {
-        "performance": 28,
+        "performance": 32,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:27:29"
+      "test_date": "2025-10-26 16:51:32"
     },
     {
       "url": "sahibinden.com",
@@ -239,6 +251,17 @@
         "best_practices": 100,
         "seo": 96,
         "pwa": 78
+      }
+    },
+    {
+      "country": "Bangladesh",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 98,
+        "pwa": 33
       }
     },
     {
@@ -344,7 +367,7 @@
       "country": "Sweden",
       "website_count": 1,
       "averages": {
-        "performance": 28,
+        "performance": 32,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 92,

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.549Z",
+    "generated_at": "2025-10-26T18:00:09.879Z",
     "url": "bizportal.co.il",
     "country": "Israel",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 71,
-    "accessibility": 92,
-    "best_practices": 75,
+    "performance": 23,
+    "accessibility": 93,
+    "best_practices": 67,
     "seo": 97,
     "pwa": 33,
-    "test_date": "2025-10-19 20:22:43"
+    "test_date": "2025-10-26 16:49:47"
   },
   "historical_data": [
+    {
+      "performance": 23,
+      "accessibility": 93,
+      "best_practices": 67,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-10-26 16:49:47"
+    },
     {
       "performance": 71,
       "accessibility": 92,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:22:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -48,
+    "accessibility": 1,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 16:49:47",
+    "test_date_previous": "2025-10-19 20:22:43"
+  }
 }

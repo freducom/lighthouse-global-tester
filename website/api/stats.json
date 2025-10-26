@@ -1,30 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.397Z",
-    "total_websites": 479
+    "generated_at": "2025-10-26T18:00:09.663Z",
+    "total_websites": 486
   },
   "distribution": {
     "performance": {
       "excellent": 15,
-      "good": 41,
+      "good": 40,
       "average": 106,
-      "poor": 317
+      "poor": 325
     },
     "accessibility": {
-      "excellent": 229,
-      "good": 205,
+      "excellent": 230,
+      "good": 211,
       "average": 36,
       "poor": 9
     },
     "best_practices": {
-      "excellent": 159,
+      "excellent": 161,
       "good": 235,
-      "average": 72,
+      "average": 77,
       "poor": 13
     },
     "seo": {
-      "excellent": 305,
-      "good": 167,
+      "excellent": 310,
+      "good": 169,
       "average": 7,
       "poor": 0
     },
@@ -32,7 +32,7 @@
       "excellent": 11,
       "good": 54,
       "average": 63,
-      "poor": 351
+      "poor": 358
     }
   },
   "by_country": [
@@ -82,13 +82,13 @@
     },
     {
       "country": "Bangladesh",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 29,
-        "accessibility": 91,
-        "best_practices": 78,
-        "seo": 93,
-        "pwa": 74
+        "performance": 31,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 94,
+        "pwa": 64
       }
     },
     {
@@ -137,24 +137,24 @@
     },
     {
       "country": "Chile",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 39,
-        "accessibility": 84,
-        "best_practices": 77,
-        "seo": 86,
+        "performance": 34,
+        "accessibility": 83,
+        "best_practices": 75,
+        "seo": 88,
         "pwa": 31
       }
     },
     {
       "country": "China",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 44,
-        "accessibility": 49,
-        "best_practices": 71,
-        "seo": 82,
-        "pwa": 46
+        "performance": 40,
+        "accessibility": 53,
+        "best_practices": 74,
+        "seo": 85,
+        "pwa": 44
       }
     },
     {
@@ -280,13 +280,13 @@
     },
     {
       "country": "India",
-      "website_count": 18,
+      "website_count": 19,
       "averages": {
         "performance": 46,
         "accessibility": 82,
         "best_practices": 70,
-        "seo": 87,
-        "pwa": 49
+        "seo": 86,
+        "pwa": 48
       }
     },
     {
@@ -326,9 +326,9 @@
       "country": "Israel",
       "website_count": 10,
       "averages": {
-        "performance": 39,
+        "performance": 34,
         "accessibility": 73,
-        "best_practices": 76,
+        "best_practices": 75,
         "seo": 90,
         "pwa": 35
       }
@@ -643,13 +643,13 @@
     },
     {
       "country": "Switzerland",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
         "performance": 38,
         "accessibility": 96,
-        "best_practices": 85,
-        "seo": 97,
-        "pwa": 46
+        "best_practices": 86,
+        "seo": 96,
+        "pwa": 44
       }
     },
     {
@@ -709,13 +709,13 @@
     },
     {
       "country": "United States",
-      "website_count": 56,
+      "website_count": 58,
       "averages": {
-        "performance": 47,
-        "accessibility": 90,
+        "performance": 46,
+        "accessibility": 89,
         "best_practices": 81,
         "seo": 90,
-        "pwa": 42
+        "pwa": 41
       }
     },
     {
@@ -787,10 +787,21 @@
       }
     },
     {
-      "industry": "Finance",
-      "website_count": 48,
+      "industry": "Energy",
+      "website_count": 1,
       "averages": {
-        "performance": 45,
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 58,
+        "seo": 72,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 49,
+      "averages": {
+        "performance": 44,
         "accessibility": 88,
         "best_practices": 79,
         "seo": 89,
@@ -843,20 +854,20 @@
     },
     {
       "industry": "Marketplace",
-      "website_count": 18,
+      "website_count": 19,
       "averages": {
         "performance": 44,
         "accessibility": 85,
-        "best_practices": 83,
+        "best_practices": 82,
         "seo": 92,
-        "pwa": 52
+        "pwa": 51
       }
     },
     {
       "industry": "Media",
-      "website_count": 234,
+      "website_count": 237,
       "averages": {
-        "performance": 43,
+        "performance": 42,
         "accessibility": 86,
         "best_practices": 80,
         "seo": 91,
@@ -898,12 +909,12 @@
     },
     {
       "industry": "Retail",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 37,
-        "accessibility": 93,
+        "performance": 23,
+        "accessibility": 85,
         "best_practices": 67,
-        "seo": 91,
+        "seo": 85,
         "pwa": 33
       }
     },
@@ -911,8 +922,8 @@
       "industry": "Search Engine",
       "website_count": 5,
       "averages": {
-        "performance": 56,
-        "accessibility": 80,
+        "performance": 55,
+        "accessibility": 82,
         "best_practices": 87,
         "seo": 84,
         "pwa": 33

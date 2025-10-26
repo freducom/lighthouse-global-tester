@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.637Z",
-    "websites_with_trends": 203,
-    "total_websites": 479
+    "generated_at": "2025-10-26T18:00:09.969Z",
+    "websites_with_trends": 206,
+    "total_websites": 486
   },
   "global_trends": {
     "average_changes": {
-      "performance": -0.8,
+      "performance": -1.1,
       "accessibility": -0.3,
       "best_practices": -1.6,
-      "seo": -0.3,
+      "seo": -0.2,
       "pwa": -0.2
     },
     "improvements": {
-      "performance": 83,
-      "accessibility": 24,
+      "performance": 84,
+      "accessibility": 26,
       "best_practices": 15,
       "seo": 13,
       "pwa": 3
     },
     "declines": {
-      "performance": 96,
+      "performance": 98,
       "accessibility": 22,
-      "best_practices": 36,
+      "best_practices": 37,
       "seo": 21,
       "pwa": 2
     }
@@ -1277,6 +1277,32 @@
       }
     },
     {
+      "url": "bild.de",
+      "country": "Germany",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 40,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "focus.de",
       "country": "Germany",
       "industry": "Media",
@@ -2078,6 +2104,32 @@
         "performance": -6,
         "accessibility": 0,
         "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bizportal.co.il",
+      "country": "Israel",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 23,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 97,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 71,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 97,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -48,
+        "accessibility": 1,
+        "best_practices": -8,
         "seo": 0,
         "pwa": 0
       }
@@ -3669,6 +3721,32 @@
       }
     },
     {
+      "url": "blocket.se",
+      "country": "Sweden",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 32,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 28,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "expressen.se",
       "country": "Sweden",
       "industry": "Media",
@@ -4583,22 +4661,22 @@
       "country": "United States",
       "industry": "Search Engine",
       "current_scores": {
+        "performance": 77,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 80,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 90,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 71,
-        "accessibility": 91,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 9,
-        "accessibility": 0,
+        "performance": -3,
+        "accessibility": 9,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0

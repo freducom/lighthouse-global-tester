@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.572Z",
+    "generated_at": "2025-10-26T18:00:09.902Z",
     "url": "blocket.se",
     "country": "Sweden",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 32,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-19 20:27:29"
+    "test_date": "2025-10-26 16:51:32"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-10-26 16:51:32"
+    },
     {
       "performance": 28,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:27:29"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 16:51:32",
+    "test_date_previous": "2025-10-19 20:27:29"
+  }
 }

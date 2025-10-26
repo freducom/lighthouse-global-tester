@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:31:47.442Z",
+    "generated_at": "2025-10-26T18:00:09.751Z",
     "country": "Chile",
     "flag": "🇨🇱",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 84,
-    "best_practices": 77,
-    "seo": 86,
+    "performance": 34,
+    "accessibility": 83,
+    "best_practices": 75,
+    "seo": 88,
     "pwa": 31
   },
   "websites": [
@@ -72,6 +72,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-20 16:05:25"
+    },
+    {
+      "url": "biobiochile.cl",
+      "industry": "Media",
+      "scores": {
+        "performance": 6,
+        "accessibility": 74,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:44:17"
     }
   ],
   "industries": [
@@ -88,13 +100,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 35,
-        "accessibility": 82,
-        "best_practices": 75,
-        "seo": 84,
-        "pwa": 30
+        "performance": 29,
+        "accessibility": 80,
+        "best_practices": 73,
+        "seo": 86,
+        "pwa": 31
       }
     }
   ]
