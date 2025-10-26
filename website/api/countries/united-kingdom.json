@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.298Z",
+    "generated_at": "2025-10-26T13:29:51.260Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
     "website_count": 23
@@ -38,6 +38,18 @@
       "test_date": "2025-10-23 07:36:21"
     },
     {
+      "url": "balderton.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 58,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:46:11"
+    },
+    {
       "url": "metro.co.uk",
       "industry": "Media",
       "scores": {
@@ -72,18 +84,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:36:10"
-    },
-    {
-      "url": "balderton.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 52,
-        "accessibility": 83,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 12:21:19"
     },
     {
       "url": "independent.co.uk",
@@ -306,7 +306,7 @@
       "industry": "Finance",
       "website_count": 3,
       "averages": {
-        "performance": 49,
+        "performance": 51,
         "accessibility": 91,
         "best_practices": 92,
         "seo": 82,

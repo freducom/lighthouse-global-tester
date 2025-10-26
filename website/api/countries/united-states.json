@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.295Z",
+    "generated_at": "2025-10-26T13:29:51.258Z",
     "country": "United States",
     "flag": "🇺🇸",
     "website_count": 55
@@ -266,18 +266,6 @@
       "test_date": "2025-10-25 06:13:28"
     },
     {
-      "url": "axios.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 48,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 12:19:41"
-    },
-    {
       "url": "mailchimp.com",
       "industry": "Marketing",
       "scores": {
@@ -312,6 +300,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-23 07:05:58"
+    },
+    {
+      "url": "axios.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 12:44:40"
     },
     {
       "url": "slack.com",
@@ -747,7 +747,7 @@
       "averages": {
         "performance": 40,
         "accessibility": 88,
-        "best_practices": 81,
+        "best_practices": 82,
         "seo": 92,
         "pwa": 42
       }

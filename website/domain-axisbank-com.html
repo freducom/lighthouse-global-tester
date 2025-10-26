@@ -59,7 +59,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T13:10:42.969Z",
+          "dateCreated": "2025-10-26T13:29:50.915Z",
           "about": {
             "@type": "WebSite",
             "name": "axisbank.com",
@@ -71,11 +71,11 @@
           "@id": "https://cheetahcheck.com/domain-axisbank.com.html#metrics",
           "name": "axisbank.com Performance Metrics",
           "description": "Latest Lighthouse scores for axisbank.com",
-          "performanceScore": 49,
+          "performanceScore": 53,
           "accessibilityScore": 80,
           "bestPracticesScore": 0,
           "seoScore": 84,
-          "dateRecorded": "2025-10-26 12:20:01"
+          "dateRecorded": "2025-10-26 12:44:57"
         }
       ]
     }
@@ -93,15 +93,15 @@
             <p class="subtitle">Performance history and insights</p>
             <div class="domain-info">
                 <span class="country-tag">🇮🇳 India</span>
-                <span class="last-scan">Last scanned: 10/26/2025, 12:20:01 PM</span>
+                <span class="last-scan">Last scanned: 10/26/2025, 12:44:57 PM</span>
             </div>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">49%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number average">53%</div>
+                <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
@@ -122,9 +122,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -135,8 +135,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 49%"></div>
-                        <span class="score-text">49%</span>
+                        <div class="score-fill performance" style="width: 53%"></div>
+                        <span class="score-text">53%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -170,12 +170,218 @@
             </div>
         </section>
 
-        <footer class="footer">
-            <p>📊 <a href="https://axisbank.com" target="_blank" rel="noopener">axisbank.com</a> Performance History | Last tested: 10/26/2025</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-        </footer>
+        <section class="section">
+            <h2>🔬 Test This Site Yourself</h2>
+            <div class="pagespeed-tile">
+                <div class="pagespeed-content">
+                    <h3>Google PageSpeed Insights</h3>
+                    <p>This site uses Google Lighthouse tests to create insights. Test this website's performance, accessibility, SEO, and best practices objectively using real browser data - with Google's PageSpeed Insights.</p>
+                    <a href="https://pagespeed.web.dev/analysis?url=https://axisbank.com" target="_blank" rel="noopener" class="pagespeed-button">
+                        🚀 Test axisbank.com now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 467 websites.</p>
+        </div>
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":795,"url":"axisbank.com","performance":49,"accessibility":80,"best_practices":0,"seo":84,"pwa":56,"test_date":"2025-10-26 12:20:01","country":"India","industry":"Finance"},{"id":810,"url":"axisbank.com","performance":53,"accessibility":80,"best_practices":0,"seo":84,"pwa":56,"test_date":"2025-10-26 12:44:57","country":"India","industry":"Finance"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

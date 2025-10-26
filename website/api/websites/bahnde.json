@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.412Z",
+    "generated_at": "2025-10-26T13:29:51.378Z",
     "url": "bahn.de",
     "country": "Germany",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 27,
     "accessibility": 82,
-    "best_practices": 100,
+    "best_practices": 92,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-26 12:20:21"
+    "test_date": "2025-10-26 12:45:17"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 82,
+      "best_practices": 92,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-10-26 12:45:17"
+    },
     {
       "performance": 25,
       "accessibility": 82,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 12:20:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 12:45:17",
+    "test_date_previous": "2025-10-26 12:20:21"
+  }
 }

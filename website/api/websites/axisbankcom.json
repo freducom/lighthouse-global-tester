@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.417Z",
+    "generated_at": "2025-10-26T13:29:51.383Z",
     "url": "axisbank.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 53,
     "accessibility": 80,
     "best_practices": 0,
     "seo": 84,
     "pwa": 56,
-    "test_date": "2025-10-26 12:20:01"
+    "test_date": "2025-10-26 12:44:57"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 80,
+      "best_practices": 0,
+      "seo": 84,
+      "pwa": 56,
+      "test_date": "2025-10-26 12:44:57"
+    },
     {
       "performance": 49,
       "accessibility": 80,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 12:20:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 12:44:57",
+    "test_date_previous": "2025-10-26 12:20:01"
+  }
 }

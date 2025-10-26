@@ -57,7 +57,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T13:10:42.831Z",
+          "dateCreated": "2025-10-26T13:29:50.784Z",
           "about": {
             "@type": "Place",
             "name": "Poland",
@@ -78,7 +78,7 @@
             "@type": "Place",
             "name": "Poland"
           },
-          "dateModified": "2025-10-26T13:10:42.831Z",
+          "dateModified": "2025-10-26T13:29:50.784Z",
           "keywords": ["Poland", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -586,15 +586,15 @@
                                     <time datetime="2025-10-23 03:00:12">10/23/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-down" 
                                 data-url="autocentrum.pl" 
                                 data-industry="Automotive"
-                                data-performance="35"
+                                data-performance="34"
                                 data-accessibility="85"
                                 data-seo="93"
                                 data-best-practices="83"
                                 data-pwa="56"
-                                data-test-date="2025-10-26 12:15:54">
+                                data-test-date="2025-10-26 12:40:54">
                                 <td class="rank" aria-label="Rank 9">#9</td>
                                 <td>
                                     <a href="domain-autocentrum-pl.html" 
@@ -611,8 +611,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 35 percent, needs improvement">
-                                    35%
+                                    aria-label="Performance score: 34 percent, needs improvement, trend: -1 points">
+                                    34%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-1</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 85 percent, good performance">
@@ -630,9 +630,9 @@
                                     aria-label="PWA score: 56 percent, average performance">
                                     56%
                                 </td>
-                                <td class="date" data-date="2025-10-26 12:15:54"
+                                <td class="date" data-date="2025-10-26 12:40:54"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 12:15:54">10/26/2025</time>
+                                    <time datetime="2025-10-26 12:40:54">10/26/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -837,19 +837,160 @@
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 Poland Performance Data | 13 websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 13 websites.</p>
+        </div>
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>
     </div>
 
     <script>
-        const countryData = [{"url":"allegro.pl","country":"Poland","industry":"E-commerce","performance":79,"accessibility":84,"best_practices":92,"seo":92,"pwa":67,"test_date":"2025-10-26 07:59:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"wp.pl","country":"Poland","industry":"Portal","performance":61,"accessibility":84,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-25 06:15:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tvn24.pl","country":"Poland","industry":"Media","performance":59,"accessibility":79,"best_practices":92,"seo":91,"pwa":78,"test_date":"2025-10-24 18:19:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"o2.pl","country":"Poland","industry":"Portal","performance":54,"accessibility":96,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-22 22:15:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"uw.edu.pl","country":"Poland","industry":"Education","performance":51,"accessibility":89,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-24 22:12:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"onet.pl","country":"Poland","industry":"Portal","performance":50,"accessibility":79,"best_practices":67,"seo":98,"pwa":100,"test_date":"2025-10-23 02:58:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"salesmanago.com","country":"Poland","industry":"Marketing","performance":44,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-23 16:49:08","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"orange.pl","country":"Poland","industry":"Telecom","performance":40,"accessibility":98,"best_practices":58,"seo":96,"pwa":33,"test_date":"2025-10-23 03:00:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"autocentrum.pl","country":"Poland","industry":"Automotive","performance":35,"accessibility":85,"best_practices":83,"seo":93,"pwa":56,"test_date":"2025-10-26 12:15:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"pracuj.pl","country":"Poland","industry":"Jobs","performance":33,"accessibility":94,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-23 08:34:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nofluffjobs.com","country":"Poland","industry":"Jobs","performance":31,"accessibility":84,"best_practices":67,"seo":93,"pwa":67,"test_date":"2025-10-22 20:28:02","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"aliorbank.pl","country":"Poland","industry":"Finance","performance":23,"accessibility":89,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-26 07:59:12","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"olx.pl","country":"Poland","industry":"Marketplace","performance":23,"accessibility":98,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-23 02:58:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"allegro.pl","country":"Poland","industry":"E-commerce","performance":79,"accessibility":84,"best_practices":92,"seo":92,"pwa":67,"test_date":"2025-10-26 07:59:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"wp.pl","country":"Poland","industry":"Portal","performance":61,"accessibility":84,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-25 06:15:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tvn24.pl","country":"Poland","industry":"Media","performance":59,"accessibility":79,"best_practices":92,"seo":91,"pwa":78,"test_date":"2025-10-24 18:19:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"o2.pl","country":"Poland","industry":"Portal","performance":54,"accessibility":96,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-22 22:15:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"uw.edu.pl","country":"Poland","industry":"Education","performance":51,"accessibility":89,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-24 22:12:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"onet.pl","country":"Poland","industry":"Portal","performance":50,"accessibility":79,"best_practices":67,"seo":98,"pwa":100,"test_date":"2025-10-23 02:58:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"salesmanago.com","country":"Poland","industry":"Marketing","performance":44,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-23 16:49:08","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"orange.pl","country":"Poland","industry":"Telecom","performance":40,"accessibility":98,"best_practices":58,"seo":96,"pwa":33,"test_date":"2025-10-23 03:00:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"autocentrum.pl","country":"Poland","industry":"Automotive","performance":34,"accessibility":85,"best_practices":83,"seo":93,"pwa":56,"test_date":"2025-10-26 12:40:54","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"pracuj.pl","country":"Poland","industry":"Jobs","performance":33,"accessibility":94,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-23 08:34:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nofluffjobs.com","country":"Poland","industry":"Jobs","performance":31,"accessibility":84,"best_practices":67,"seo":93,"pwa":67,"test_date":"2025-10-22 20:28:02","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"aliorbank.pl","country":"Poland","industry":"Finance","performance":23,"accessibility":89,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-26 07:59:12","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"olx.pl","country":"Poland","industry":"Marketplace","performance":23,"accessibility":98,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-23 02:58:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

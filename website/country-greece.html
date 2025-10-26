@@ -57,7 +57,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T13:10:42.837Z",
+          "dateCreated": "2025-10-26T13:29:50.795Z",
           "about": {
             "@type": "Place",
             "name": "Greece",
@@ -78,7 +78,7 @@
             "@type": "Place",
             "name": "Greece"
           },
-          "dateModified": "2025-10-26T13:10:42.837Z",
+          "dateModified": "2025-10-26T13:29:50.795Z",
           "keywords": ["Greece", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -445,15 +445,156 @@
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 Greece Performance Data | 5 websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 5 websites.</p>
+        </div>
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>
     </div>
 
     <script>

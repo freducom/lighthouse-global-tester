@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.428Z",
+    "generated_at": "2025-10-26T13:29:51.393Z",
     "url": "autoplius.lt",
     "country": "Lithuania",
     "industry": "Marketplace"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-26 12:16:39"
+    "test_date": "2025-10-26 12:41:37"
   },
   "historical_data": [
+    {
+      "performance": 85,
+      "accessibility": 52,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-10-26 12:41:37"
+    },
     {
       "performance": 85,
       "accessibility": 52,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 12:16:39"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 12:41:37",
+    "test_date_previous": "2025-10-26 12:16:39"
+  }
 }

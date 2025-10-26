@@ -654,7 +654,7 @@ ${this.getPostHogScript()}
             <div class="logo-container">
                 <img src="logo.png" alt="Valmitta" class="header-logo">
             </div>
-            <p class="subtitle">${allScores.length} websites – only one can be the fastest</p>
+            <p class="subtitle">${allScores.length} tracked websites – only one can be the fastest</p>
             
         </header>
 
@@ -1645,15 +1645,7 @@ ${this.getPostHogScript()}
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 ${this.normalizeCountry(countryData.country)} Performance Data | ${countryScores.length} websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                </div>
-            </div>
-        </footer>
+${this.getFooterHTML(countryScores.length, this.domainsData.length)}
     </div>
 
     <script>
@@ -2304,15 +2296,7 @@ ${this.getPostHogScript()}
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 ${industry} Industry Performance Data | ${industryScores.length} websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
-                </div>
-            </div>
-        </footer>
+${this.getFooterHTML(industryScores.length, this.domainsData.length)}
     </div>
 
     <script>
@@ -2764,10 +2748,20 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-        <footer class="footer">
-            <p>📊 <a href="https://${site.url}" target="_blank" rel="noopener">${site.url}</a> Performance History | Last tested: ${new Date(site.test_date).toLocaleDateString()}</p>
-            <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-        </footer>
+        <section class="section">
+            <h2>🔬 Test This Site Yourself</h2>
+            <div class="pagespeed-tile">
+                <div class="pagespeed-content">
+                    <h3>Google PageSpeed Insights</h3>
+                    <p>This site uses Google Lighthouse tests to create insights. Test this website's performance, accessibility, SEO, and best practices objectively using real browser data - with Google's PageSpeed Insights.</p>
+                    <a href="https://pagespeed.web.dev/analysis?url=https://${site.url}" target="_blank" rel="noopener" class="pagespeed-button">
+                        🚀 Test ${site.url} now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+${this.getFooterHTML(allScores.length, this.domainsData.length)}
     </div>
 
     ${domainHistory.length > 1 ? `
@@ -4680,6 +4674,64 @@ input[type="text"]:focus, input[type="search"]:focus {
     margin-bottom: 10px;
 }
 
+/* PageSpeed Insights tile styling */
+.pagespeed-tile {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e5e7eb;
+}
+
+.pagespeed-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.pagespeed-content h3 {
+    color: #0D3B66;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagespeed-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+.pagespeed-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.pagespeed-button:hover {
+    background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+.pagespeed-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(66, 133, 244, 0.3);
+}
+
 @media (max-width: 768px) {
     .filter-container {
         padding: 20px;
@@ -4845,7 +4897,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-${this.getFooterHTML(0, countryStats.all.length)}
+${this.getFooterHTML(allScores.length, this.domainsData.length)}
     </div>
 
     <script>
@@ -4959,7 +5011,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-${this.getFooterHTML(0, industryStats.all.length)}
+${this.getFooterHTML(allScores.length, this.domainsData.length)}
     </div>
 
     <script>
@@ -5126,7 +5178,7 @@ ${this.getPostHogScript()}
             </div>
         </section>
 
-${this.getFooterHTML(rankedSites.length, 0)}
+${this.getFooterHTML(allScores.length, this.domainsData.length)}
     </div>
 
     <script>
@@ -5667,7 +5719,7 @@ ${this.getPostHogScript()}
             </section>
         </main>
 
-${this.getFooterHTML(latestScanResults.length, 0)}
+${this.getFooterHTML(latestScanResults.length, this.domainsData.length)}
     </div>
 
     <script>
@@ -6021,7 +6073,7 @@ ${this.getPostHogScript()}
             </section>
         </main>
 
-${this.getFooterHTML()}
+${this.getFooterHTML(queuedSites.length, allDomains.length)}
     </div>
 
     <script>

@@ -57,7 +57,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T13:10:42.823Z",
+          "dateCreated": "2025-10-26T13:29:50.776Z",
           "about": {
             "@type": "Place",
             "name": "Germany",
@@ -78,7 +78,7 @@
             "@type": "Place",
             "name": "Germany"
           },
-          "dateModified": "2025-10-26T13:10:42.823Z",
+          "dateModified": "2025-10-26T13:29:50.776Z",
           "keywords": ["Germany", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -120,9 +120,9 @@
                 <div class="stat-number" aria-hidden="true">93%</div>
                 <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 89 percent">
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 88 percent">
                 <h3>Best Practices</h3>
-                <div class="stat-number" aria-hidden="true">89%</div>
+                <div class="stat-number" aria-hidden="true">88%</div>
                 <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
         </section>
@@ -1076,15 +1076,15 @@
                                     <time datetime="2025-10-24 04:11:39">10/24/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="bahn.de" 
                                 data-industry="Transportation"
-                                data-performance="25"
+                                data-performance="27"
                                 data-accessibility="82"
                                 data-seo="91"
-                                data-best-practices="100"
+                                data-best-practices="92"
                                 data-pwa="33"
-                                data-test-date="2025-10-26 12:20:21">
+                                data-test-date="2025-10-26 12:45:17">
                                 <td class="rank" aria-label="Rank 19">#19</td>
                                 <td>
                                     <a href="domain-bahn-de.html" 
@@ -1101,8 +1101,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 25 percent, needs improvement">
-                                    25%
+                                    aria-label="Performance score: 27 percent, needs improvement, trend: +2 points">
+                                    27%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 82 percent, good performance">
@@ -1113,16 +1113,16 @@
                                     91%
                                 </td>
                                 <td class="score bp-excellent"
-                                    aria-label="Best Practices score: 100 percent, excellent performance">
-                                    100%
+                                    aria-label="Best Practices score: 92 percent, excellent performance, trend: -8 points">
+                                    92%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-8</span>
                                 </td>
                                 <td class="score pwa-poor"
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-26 12:20:21"
+                                <td class="date" data-date="2025-10-26 12:45:17"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 12:20:21">10/26/2025</time>
+                                    <time datetime="2025-10-26 12:45:17">10/26/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -1278,19 +1278,160 @@
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 Germany Performance Data | 22 websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 22 websites.</p>
+        </div>
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>
     </div>
 
     <script>
-        const countryData = [{"url":"web.de","country":"Germany","industry":"Portal","performance":88,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-25 03:03:39","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":23,"text":"+23","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"gmx.net","country":"Germany","industry":"Portal","performance":75,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:44:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"arbeitsagentur.de","country":"Germany","industry":"Government","performance":58,"accessibility":100,"best_practices":100,"seo":86,"pwa":56,"test_date":"2025-10-26 10:10:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"heise.de","country":"Germany","industry":"Media","performance":56,"accessibility":83,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:44:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"chip.de","country":"Germany","industry":"Media","performance":48,"accessibility":91,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:43:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"focus.de","country":"Germany","industry":"Media","performance":48,"accessibility":88,"best_practices":100,"seo":100,"pwa":89,"test_date":"2025-10-20 20:11:07","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bmw.de","country":"Germany","industry":"Automotive","performance":46,"accessibility":100,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-22 08:31:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tagesschau.de","country":"Germany","industry":"Media","performance":46,"accessibility":88,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-24 06:18:01","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":9,"text":"+9","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"spiegel.de","country":"Germany","industry":"Media","performance":45,"accessibility":98,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-24 00:40:36","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"welt.de","country":"Germany","industry":"Media","performance":41,"accessibility":92,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-25 04:11:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bild.de","country":"Germany","industry":"Media","performance":40,"accessibility":96,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 19:41:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sparkasse.de","country":"Germany","industry":"Finance","performance":40,"accessibility":92,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-24 00:40:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"saturn.de","country":"Germany","industry":"E-commerce","performance":39,"accessibility":90,"best_practices":92,"seo":97,"pwa":78,"test_date":"2025-10-23 19:31:29","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"volkswagen.de","country":"Germany","industry":"Automotive","performance":39,"accessibility":97,"best_practices":83,"seo":95,"pwa":33,"test_date":"2025-10-25 00:51:27","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"zeit.de","country":"Germany","industry":"Media","performance":39,"accessibility":86,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-25 10:16:16","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"t-online.de","country":"Germany","industry":"Portal","performance":35,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-24 06:15:06","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-13,"text":"-13","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"zalando.de","country":"Germany","industry":"E-commerce","performance":30,"accessibility":0,"best_practices":75,"seo":100,"pwa":22,"test_date":"2025-10-25 10:08:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sueddeutsche.de","country":"Germany","industry":"Media","performance":28,"accessibility":91,"best_practices":100,"seo":93,"pwa":56,"test_date":"2025-10-24 04:11:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bahn.de","country":"Germany","industry":"Transportation","performance":25,"accessibility":82,"best_practices":100,"seo":91,"pwa":33,"test_date":"2025-10-26 12:20:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"otto.de","country":"Germany","industry":"E-commerce","performance":25,"accessibility":91,"best_practices":75,"seo":85,"pwa":67,"test_date":"2025-10-23 03:01:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"postbank.de","country":"Germany","industry":"Finance","performance":17,"accessibility":85,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-23 08:29:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mercedes-benz.de","country":"Germany","industry":"Automotive","performance":7,"accessibility":100,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-22 12:20:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"web.de","country":"Germany","industry":"Portal","performance":88,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-25 03:03:39","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":23,"text":"+23","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"gmx.net","country":"Germany","industry":"Portal","performance":75,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-10-19 19:44:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"arbeitsagentur.de","country":"Germany","industry":"Government","performance":58,"accessibility":100,"best_practices":100,"seo":86,"pwa":56,"test_date":"2025-10-26 10:10:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"heise.de","country":"Germany","industry":"Media","performance":56,"accessibility":83,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:44:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"chip.de","country":"Germany","industry":"Media","performance":48,"accessibility":91,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:43:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"focus.de","country":"Germany","industry":"Media","performance":48,"accessibility":88,"best_practices":100,"seo":100,"pwa":89,"test_date":"2025-10-20 20:11:07","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bmw.de","country":"Germany","industry":"Automotive","performance":46,"accessibility":100,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-22 08:31:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tagesschau.de","country":"Germany","industry":"Media","performance":46,"accessibility":88,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-10-24 06:18:01","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":9,"text":"+9","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"spiegel.de","country":"Germany","industry":"Media","performance":45,"accessibility":98,"best_practices":100,"seo":93,"pwa":78,"test_date":"2025-10-24 00:40:36","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"welt.de","country":"Germany","industry":"Media","performance":41,"accessibility":92,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-25 04:11:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bild.de","country":"Germany","industry":"Media","performance":40,"accessibility":96,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 19:41:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sparkasse.de","country":"Germany","industry":"Finance","performance":40,"accessibility":92,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-24 00:40:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"saturn.de","country":"Germany","industry":"E-commerce","performance":39,"accessibility":90,"best_practices":92,"seo":97,"pwa":78,"test_date":"2025-10-23 19:31:29","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"volkswagen.de","country":"Germany","industry":"Automotive","performance":39,"accessibility":97,"best_practices":83,"seo":95,"pwa":33,"test_date":"2025-10-25 00:51:27","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"zeit.de","country":"Germany","industry":"Media","performance":39,"accessibility":86,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-25 10:16:16","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"t-online.de","country":"Germany","industry":"Portal","performance":35,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-24 06:15:06","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-13,"text":"-13","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"zalando.de","country":"Germany","industry":"E-commerce","performance":30,"accessibility":0,"best_practices":75,"seo":100,"pwa":22,"test_date":"2025-10-25 10:08:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sueddeutsche.de","country":"Germany","industry":"Media","performance":28,"accessibility":91,"best_practices":100,"seo":93,"pwa":56,"test_date":"2025-10-24 04:11:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bahn.de","country":"Germany","industry":"Transportation","performance":27,"accessibility":82,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-10-26 12:45:17","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"otto.de","country":"Germany","industry":"E-commerce","performance":25,"accessibility":91,"best_practices":75,"seo":85,"pwa":67,"test_date":"2025-10-23 03:01:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"postbank.de","country":"Germany","industry":"Finance","performance":17,"accessibility":85,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-23 08:29:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mercedes-benz.de","country":"Germany","industry":"Automotive","performance":7,"accessibility":100,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-22 12:20:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

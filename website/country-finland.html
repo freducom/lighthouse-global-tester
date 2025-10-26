@@ -57,7 +57,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T13:10:42.828Z",
+          "dateCreated": "2025-10-26T13:29:50.781Z",
           "about": {
             "@type": "Place",
             "name": "Finland",
@@ -78,7 +78,7 @@
             "@type": "Place",
             "name": "Finland"
           },
-          "dateModified": "2025-10-26T13:10:42.828Z",
+          "dateModified": "2025-10-26T13:29:50.781Z",
           "keywords": ["Finland", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -1223,15 +1223,15 @@
                                     <time datetime="2025-10-23 08:30:07">10/23/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-down" 
                                 data-url="autodoc.fi" 
                                 data-industry="Automotive"
-                                data-performance="31"
+                                data-performance="30"
                                 data-accessibility="95"
                                 data-seo="99"
                                 data-best-practices="75"
                                 data-pwa="33"
-                                data-test-date="2025-10-26 12:16:24">
+                                data-test-date="2025-10-26 12:41:23">
                                 <td class="rank" aria-label="Rank 22">#22</td>
                                 <td>
                                     <a href="domain-autodoc-fi.html" 
@@ -1248,8 +1248,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 31 percent, needs improvement">
-                                    31%
+                                    aria-label="Performance score: 30 percent, needs improvement, trend: -1 points">
+                                    30%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-1</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 95 percent, excellent performance">
@@ -1267,9 +1267,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-26 12:16:24"
+                                <td class="date" data-date="2025-10-26 12:41:23"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 12:16:24">10/26/2025</time>
+                                    <time datetime="2025-10-26 12:41:23">10/26/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row trending-down" 
@@ -1468,15 +1468,15 @@
                                     <time datetime="2025-10-23 02:59:22">10/23/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="autotalli.com" 
                                 data-industry="Marketplace"
-                                data-performance="20"
+                                data-performance="23"
                                 data-accessibility="98"
                                 data-seo="93"
                                 data-best-practices="67"
                                 data-pwa="89"
-                                data-test-date="2025-10-26 12:17:00">
+                                data-test-date="2025-10-26 12:41:57">
                                 <td class="rank" aria-label="Rank 27">#27</td>
                                 <td>
                                     <a href="domain-autotalli-com.html" 
@@ -1493,8 +1493,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 20 percent, needs improvement">
-                                    20%
+                                    aria-label="Performance score: 23 percent, needs improvement, trend: +3 points">
+                                    23%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 98 percent, excellent performance">
@@ -1512,9 +1512,9 @@
                                     aria-label="PWA score: 89 percent, good performance">
                                     89%
                                 </td>
-                                <td class="date" data-date="2025-10-26 12:17:00"
+                                <td class="date" data-date="2025-10-26 12:41:57"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 12:17:00">10/26/2025</time>
+                                    <time datetime="2025-10-26 12:41:57">10/26/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -1523,19 +1523,160 @@
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 Finland Performance Data | 27 websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 27 websites.</p>
+        </div>
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>
     </div>
 
     <script>
-        const countryData = [{"url":"emathstudio.com","country":"Finland","industry":"Education","performance":100,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-22 08:37:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"flipsite.io","country":"Finland","industry":"Website editor","performance":100,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-20 20:10:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"openocean.vc","country":"Finland","industry":"Finance","performance":78,"accessibility":98,"best_practices":100,"seo":89,"pwa":33,"test_date":"2025-10-23 02:59:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"superherocapital.com","country":"Finland","industry":"Finance","performance":74,"accessibility":90,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-24 04:12:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"valohai.com","country":"Finland","industry":"Technology","performance":73,"accessibility":86,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-24 22:14:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"wpseoai.com","country":"Finland","industry":"Marketing","performance":65,"accessibility":90,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-25 06:15:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"apelago.fi","country":"Finland","industry":"Finance","performance":63,"accessibility":75,"best_practices":100,"seo":83,"pwa":67,"test_date":"2025-10-26 08:46:06","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":5,"text":"+5","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vr.fi","country":"Finland","industry":"Transportation","performance":60,"accessibility":97,"best_practices":100,"seo":100,"pwa":67,"test_date":"2025-10-25 00:51:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"helsinki.fi","country":"Finland","industry":"Education","performance":57,"accessibility":93,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:17:04","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sokos.fi","country":"Finland","industry":"E-commerce","performance":50,"accessibility":93,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 22:15:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"hs.fi","country":"Finland","industry":"Media","performance":46,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 20:15:25","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":10,"text":"+10","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vero.fi","country":"Finland","industry":"Government","performance":46,"accessibility":100,"best_practices":67,"seo":93,"pwa":44,"test_date":"2025-10-24 22:15:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yle.fi","country":"Finland","industry":"Media","performance":44,"accessibility":83,"best_practices":83,"seo":98,"pwa":33,"test_date":"2025-10-25 08:12:32","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-24 16:00:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":22,"text":"+22","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"amiedu.fi","country":"Finland","industry":"Education","performance":41,"accessibility":81,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-26 08:38:46","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"verkkokauppa.com","country":"Finland","industry":"E-commerce","performance":40,"accessibility":100,"best_practices":92,"seo":100,"pwa":100,"test_date":"2025-10-24 22:14:50","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"is.fi","country":"Finland","industry":"Media","performance":37,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-21 17:42:52","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":17,"text":"+17","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mtv.fi","country":"Finland","industry":"Media","performance":35,"accessibility":84,"best_practices":100,"seo":92,"pwa":78,"test_date":"2025-10-22 14:57:04","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"iltalehti.fi","country":"Finland","industry":"Media","performance":34,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:14:50","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"suomi24.fi","country":"Finland","industry":"Social Media","performance":33,"accessibility":78,"best_practices":75,"seo":83,"pwa":33,"test_date":"2025-10-24 04:12:00","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-31,"text":"-31","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"posti.fi","country":"Finland","industry":"Government","performance":32,"accessibility":91,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 08:30:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"autodoc.fi","country":"Finland","industry":"Automotive","performance":31,"accessibility":95,"best_practices":75,"seo":99,"pwa":33,"test_date":"2025-10-26 12:16:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"savonsanomat.fi","country":"Finland","industry":"Media","performance":28,"accessibility":84,"best_practices":75,"seo":99,"pwa":89,"test_date":"2025-10-23 19:32:33","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vaadin.com","country":"Finland","industry":"Technology","performance":28,"accessibility":68,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-24 22:13:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"oikotie.fi","country":"Finland","industry":"Marketplace","performance":26,"accessibility":52,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-23 00:48:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"op.fi","country":"Finland","industry":"Finance","performance":26,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 02:59:22","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-10,"text":"-10","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"autotalli.com","country":"Finland","industry":"Marketplace","performance":20,"accessibility":98,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:17:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"emathstudio.com","country":"Finland","industry":"Education","performance":100,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-22 08:37:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"flipsite.io","country":"Finland","industry":"Website editor","performance":100,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-20 20:10:45","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"openocean.vc","country":"Finland","industry":"Finance","performance":78,"accessibility":98,"best_practices":100,"seo":89,"pwa":33,"test_date":"2025-10-23 02:59:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"superherocapital.com","country":"Finland","industry":"Finance","performance":74,"accessibility":90,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-24 04:12:38","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"valohai.com","country":"Finland","industry":"Technology","performance":73,"accessibility":86,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-24 22:14:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"wpseoai.com","country":"Finland","industry":"Marketing","performance":65,"accessibility":90,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-25 06:15:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"apelago.fi","country":"Finland","industry":"Finance","performance":63,"accessibility":75,"best_practices":100,"seo":83,"pwa":67,"test_date":"2025-10-26 08:46:06","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":5,"text":"+5","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vr.fi","country":"Finland","industry":"Transportation","performance":60,"accessibility":97,"best_practices":100,"seo":100,"pwa":67,"test_date":"2025-10-25 00:51:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"helsinki.fi","country":"Finland","industry":"Education","performance":57,"accessibility":93,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-19 20:17:04","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sokos.fi","country":"Finland","industry":"E-commerce","performance":50,"accessibility":93,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 22:15:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"hs.fi","country":"Finland","industry":"Media","performance":46,"accessibility":99,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-19 20:15:25","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":10,"text":"+10","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vero.fi","country":"Finland","industry":"Government","performance":46,"accessibility":100,"best_practices":67,"seo":93,"pwa":44,"test_date":"2025-10-24 22:15:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yle.fi","country":"Finland","industry":"Media","performance":44,"accessibility":83,"best_practices":83,"seo":98,"pwa":33,"test_date":"2025-10-25 08:12:32","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tori.fi","country":"Finland","industry":"Marketplace","performance":43,"accessibility":98,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-10-24 16:00:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":22,"text":"+22","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"amiedu.fi","country":"Finland","industry":"Education","performance":41,"accessibility":81,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-26 08:38:46","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"verkkokauppa.com","country":"Finland","industry":"E-commerce","performance":40,"accessibility":100,"best_practices":92,"seo":100,"pwa":100,"test_date":"2025-10-24 22:14:50","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"is.fi","country":"Finland","industry":"Media","performance":37,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-21 17:42:52","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":17,"text":"+17","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mtv.fi","country":"Finland","industry":"Media","performance":35,"accessibility":84,"best_practices":100,"seo":92,"pwa":78,"test_date":"2025-10-22 14:57:04","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"up","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"iltalehti.fi","country":"Finland","industry":"Media","performance":34,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-19 20:14:50","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"suomi24.fi","country":"Finland","industry":"Social Media","performance":33,"accessibility":78,"best_practices":75,"seo":83,"pwa":33,"test_date":"2025-10-24 04:12:00","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-31,"text":"-31","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"posti.fi","country":"Finland","industry":"Government","performance":32,"accessibility":91,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 08:30:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"autodoc.fi","country":"Finland","industry":"Automotive","performance":30,"accessibility":95,"best_practices":75,"seo":99,"pwa":33,"test_date":"2025-10-26 12:41:23","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"savonsanomat.fi","country":"Finland","industry":"Media","performance":28,"accessibility":84,"best_practices":75,"seo":99,"pwa":89,"test_date":"2025-10-23 19:32:33","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":3,"text":"+3","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vaadin.com","country":"Finland","industry":"Technology","performance":28,"accessibility":68,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-24 22:13:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"oikotie.fi","country":"Finland","industry":"Marketplace","performance":26,"accessibility":52,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-23 00:48:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"op.fi","country":"Finland","industry":"Finance","performance":26,"accessibility":98,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-23 02:59:22","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-10,"text":"-10","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"autotalli.com","country":"Finland","industry":"Marketplace","performance":23,"accessibility":98,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:41:57","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

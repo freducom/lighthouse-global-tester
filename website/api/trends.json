@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.499Z",
-    "websites_with_trends": 177,
+    "generated_at": "2025-10-26T13:29:51.503Z",
+    "websites_with_trends": 190,
     "total_websites": 467
   },
   "global_trends": {
     "average_changes": {
-      "performance": -1.5,
+      "performance": -1.1,
       "accessibility": -0.3,
-      "best_practices": -1.7,
+      "best_practices": -1.6,
       "seo": -0.3,
       "pwa": -0.2
     },
     "improvements": {
-      "performance": 67,
+      "performance": 75,
       "accessibility": 24,
       "best_practices": 16,
       "seo": 13,
       "pwa": 3
     },
     "declines": {
-      "performance": 90,
+      "performance": 93,
       "accessibility": 22,
-      "best_practices": 34,
+      "best_practices": 35,
       "seo": 21,
       "pwa": 1
     }
@@ -55,25 +55,51 @@
       }
     },
     {
+      "url": "bancogalicia.com",
+      "country": "Argentina",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "australia.gov.au",
       "country": "Australia",
       "industry": "Government",
       "current_scores": {
-        "performance": 38,
+        "performance": 31,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 60,
+        "performance": 38,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
       "changes": {
-        "performance": -22,
+        "performance": -7,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -731,6 +757,58 @@
       }
     },
     {
+      "url": "autodoc.fi",
+      "country": "Finland",
+      "industry": "Automotive",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 31,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "autotalli.com",
+      "country": "Finland",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 23,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 20,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "flipsite.io",
       "country": "Finland",
       "industry": "Website editor",
@@ -1038,6 +1116,32 @@
         "performance": -1,
         "accessibility": 3,
         "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bahn.de",
+      "country": "Germany",
+      "industry": "Transportation",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 25,
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 0,
+        "best_practices": -8,
         "seo": 0,
         "pwa": 0
       }
@@ -1478,6 +1582,84 @@
       },
       "changes": {
         "performance": 7,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "axisbank.com",
+      "country": "India",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 53,
+        "accessibility": 80,
+        "best_practices": 0,
+        "seo": 84,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 49,
+        "accessibility": 80,
+        "best_practices": 0,
+        "seo": 84,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bajajauto.com",
+      "country": "India",
+      "industry": "Automotive",
+      "current_scores": {
+        "performance": 28,
+        "accessibility": 69,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 27,
+        "accessibility": 69,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bankbazaar.com",
+      "country": "India",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 79,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 73,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2109,6 +2291,32 @@
       }
     },
     {
+      "url": "autoplius.lt",
+      "country": "Lithuania",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 85,
+        "accessibility": 52,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 85,
+        "accessibility": 52,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "news24.lu",
       "country": "Luxembourg",
       "industry": "Media",
@@ -2577,6 +2785,32 @@
       }
     },
     {
+      "url": "autocentrum.pl",
+      "country": "Poland",
+      "industry": "Automotive",
+      "current_scores": {
+        "performance": 34,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 35,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "nofluffjobs.com",
       "country": "Poland",
       "industry": "Jobs",
@@ -2629,6 +2863,32 @@
       }
     },
     {
+      "url": "bancatransilvania.ro",
+      "country": "Romania",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 52,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 48,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "avito.ru",
       "country": "Russia",
       "industry": "Marketplace",
@@ -2640,16 +2900,16 @@
         "pwa": 89
       },
       "previous_scores": {
-        "performance": 10,
+        "performance": 7,
         "accessibility": 64,
-        "best_practices": 58,
+        "best_practices": 67,
         "seo": 93,
         "pwa": 89
       },
       "changes": {
-        "performance": -3,
+        "performance": 0,
         "accessibility": 0,
-        "best_practices": 9,
+        "best_practices": 0,
         "seo": 0,
         "pwa": 0
       }
@@ -3149,6 +3409,32 @@
       }
     },
     {
+      "url": "bambuser.com",
+      "country": "Sweden",
+      "industry": "Video",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 9,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "expressen.se",
       "country": "Sweden",
       "industry": "Media",
@@ -3455,6 +3741,32 @@
       "changes": {
         "performance": -14,
         "accessibility": -2,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "balderton.com",
+      "country": "United Kingdom",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 58,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 52,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
@@ -3872,6 +4184,32 @@
         "performance": -1,
         "accessibility": 0,
         "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "axios.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 48,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -4,
+        "accessibility": 0,
+        "best_practices": 9,
         "seo": 0,
         "pwa": 0
       }

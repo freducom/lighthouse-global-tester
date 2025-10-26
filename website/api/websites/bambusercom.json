@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T13:10:43.443Z",
+    "generated_at": "2025-10-26T13:29:51.417Z",
     "url": "bambuser.com",
     "country": "Sweden",
     "industry": "Video"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 44,
     "accessibility": 91,
     "best_practices": 75,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-26 12:21:44"
+    "test_date": "2025-10-26 12:46:33"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 91,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-26 12:46:33"
+    },
     {
       "performance": 35,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 12:21:44"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 9,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 12:46:33",
+    "test_date_previous": "2025-10-26 12:21:44"
+  }
 }

@@ -57,7 +57,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T13:10:42.827Z",
+          "dateCreated": "2025-10-26T13:29:50.779Z",
           "about": {
             "@type": "Place",
             "name": "Russia",
@@ -78,7 +78,7 @@
             "@type": "Place",
             "name": "Russia"
           },
-          "dateModified": "2025-10-26T13:10:42.827Z",
+          "dateModified": "2025-10-26T13:29:50.779Z",
           "keywords": ["Russia", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -586,7 +586,7 @@
                                     <time datetime="2025-10-25 08:11:54">10/25/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row trending-down" 
+                            <tr class="site-row " 
                                 data-url="avito.ru" 
                                 data-industry="Marketplace"
                                 data-performance="7"
@@ -594,7 +594,7 @@
                                 data-seo="93"
                                 data-best-practices="67"
                                 data-pwa="89"
-                                data-test-date="2025-10-26 12:19:07">
+                                data-test-date="2025-10-26 12:44:07">
                                 <td class="rank" aria-label="Rank 9">#9</td>
                                 <td>
                                     <a href="domain-avito-ru.html" 
@@ -611,8 +611,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 7 percent, needs improvement, trend: -3 points">
-                                    7%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-3</span>
+                                    aria-label="Performance score: 7 percent, needs improvement">
+                                    7%
                                 </td>
                                 <td class="score acc-average"
                                     aria-label="Accessibility score: 64 percent, average performance">
@@ -623,16 +623,16 @@
                                     93%
                                 </td>
                                 <td class="score bp-average"
-                                    aria-label="Best Practices score: 67 percent, average performance, trend: +9 points">
-                                    67%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+9</span>
+                                    aria-label="Best Practices score: 67 percent, average performance">
+                                    67%
                                 </td>
                                 <td class="score pwa-good"
                                     aria-label="PWA score: 89 percent, good performance">
                                     89%
                                 </td>
-                                <td class="date" data-date="2025-10-26 12:19:07"
+                                <td class="date" data-date="2025-10-26 12:44:07"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 12:19:07">10/26/2025</time>
+                                    <time datetime="2025-10-26 12:44:07">10/26/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -641,19 +641,160 @@
         </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p>📊 Russia Performance Data | 9 websites tested</p>
-                <p>🚀 <a href="https://flipsite.io" target="_blank" rel="noopener" aria-label="Visit flipsite.io to build high-performing websites">Build websites that score 100% on all lighthouse tests with flipsite.io</a></p>
-                <div class="footer-meta">
-                    <p><small><a href="index.html" aria-label="Back to global homepage">← Back to Global View</a></small></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 9 websites.</p>
+        </div>
+    </footer>
+
+        <!-- Website Suggestion Modal -->
+        <div id="websiteModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>💡 Suggest a Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
+                        <div class="form-group">
+                            <label for="websiteUrl">Website URL *</label>
+                            <input type="url" id="websiteUrl" name="url" required 
+                                   placeholder="https://example.com" 
+                                   aria-describedby="url-help">
+                            <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteCategory">Category</label>
+                            <select id="websiteCategory" name="category">
+                                <option value="">Select a category (optional)</option>
+                                <option value="e-commerce">E-commerce</option>
+                                <option value="news-media">News & Media</option>
+                                <option value="technology">Technology</option>
+                                <option value="education">Education</option>
+                                <option value="government">Government</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="travel">Travel</option>
+                                <option value="food-beverage">Food & Beverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="websiteDescription">Why should we include this website?</label>
+                            <textarea id="websiteDescription" name="description" rows="3" 
+                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      maxlength="500"></textarea>
+                            <small>Optional: Help us understand the value of including this website</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <script>
+        function openWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-hidden', 'false');
+            
+            // Focus the first input for accessibility
+            setTimeout(() => {
+                document.getElementById('websiteUrl').focus();
+            }, 100);
+            
+            // Trap focus within modal
+            modal.addEventListener('keydown', trapFocus);
+        }
+
+        function closeWebsiteModal() {
+            const modal = document.getElementById('websiteModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            modal.removeEventListener('keydown', trapFocus);
+            
+            // Reset form
+            document.getElementById('websiteForm').reset();
+        }
+
+        function trapFocus(e) {
+            if (e.key === 'Escape') {
+                closeWebsiteModal();
+                return;
+            }
+            
+            if (e.key === 'Tab') {
+                const modal = document.getElementById('websiteModal');
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        function handleWebsiteSubmission(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Here you could send to your backend/API
+            console.log('Website suggestion submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your suggestion! We\'ll review it and consider adding it to our lighthouse monitoring.');
+            
+            // Close modal
+            closeWebsiteModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('websiteModal');
+            if (event.target === modal) {
+                closeWebsiteModal();
+            }
+        }
+        </script>
     </div>
 
     <script>
-        const countryData = [{"url":"ok.ru","country":"Russia","industry":"Social Media","performance":81,"accessibility":90,"best_practices":58,"seo":77,"pwa":67,"test_date":"2025-10-23 00:52:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"rbc.ru","country":"Russia","industry":"Media","performance":51,"accessibility":72,"best_practices":58,"seo":93,"pwa":56,"test_date":"2025-10-23 12:18:32","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":5,"text":"+5","class":"delta-positive"},"best_practices_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ria.ru","country":"Russia","industry":"Media","performance":42,"accessibility":79,"best_practices":67,"seo":92,"pwa":56,"test_date":"2025-10-23 15:45:11","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tass.ru","country":"Russia","industry":"Media","performance":41,"accessibility":93,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-24 08:14:33","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":7,"text":"+7","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vk.com","country":"Russia","industry":"Social Media","performance":35,"accessibility":89,"best_practices":0,"seo":92,"pwa":100,"test_date":"2025-10-25 00:46:47","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":33,"accessibility":63,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-22 08:44:08","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":33,"text":"+33","class":"delta-positive"},"accessibility_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ozon.ru","country":"Russia","industry":"E-commerce","performance":32,"accessibility":63,"best_practices":58,"seo":90,"pwa":33,"test_date":"2025-10-23 04:11:44","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yandex.ru","country":"Russia","industry":"Search Engine","performance":31,"accessibility":55,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-25 08:11:54","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"accessibility_delta":{"delta":-11,"text":"-11","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":1,"text":"+1","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":7,"accessibility":64,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:19:07","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const countryData = [{"url":"ok.ru","country":"Russia","industry":"Social Media","performance":81,"accessibility":90,"best_practices":58,"seo":77,"pwa":67,"test_date":"2025-10-23 00:52:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"rbc.ru","country":"Russia","industry":"Media","performance":51,"accessibility":72,"best_practices":58,"seo":93,"pwa":56,"test_date":"2025-10-23 12:18:32","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":5,"text":"+5","class":"delta-positive"},"best_practices_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ria.ru","country":"Russia","industry":"Media","performance":42,"accessibility":79,"best_practices":67,"seo":92,"pwa":56,"test_date":"2025-10-23 15:45:11","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tass.ru","country":"Russia","industry":"Media","performance":41,"accessibility":93,"best_practices":83,"seo":100,"pwa":89,"test_date":"2025-10-24 08:14:33","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":7,"text":"+7","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vk.com","country":"Russia","industry":"Social Media","performance":35,"accessibility":89,"best_practices":0,"seo":92,"pwa":100,"test_date":"2025-10-25 00:46:47","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":8,"text":"+8","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":33,"accessibility":63,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-22 08:44:08","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":33,"text":"+33","class":"delta-positive"},"accessibility_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ozon.ru","country":"Russia","industry":"E-commerce","performance":32,"accessibility":63,"best_practices":58,"seo":90,"pwa":33,"test_date":"2025-10-23 04:11:44","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yandex.ru","country":"Russia","industry":"Search Engine","performance":31,"accessibility":55,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-10-25 08:11:54","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"accessibility_delta":{"delta":-11,"text":"-11","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":1,"text":"+1","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"avito.ru","country":"Russia","industry":"Marketplace","performance":7,"accessibility":64,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:44:07","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

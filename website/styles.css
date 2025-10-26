@@ -1848,6 +1848,64 @@ input[type="text"]:focus, input[type="search"]:focus {
     margin-bottom: 10px;
 }
 
+/* PageSpeed Insights tile styling */
+.pagespeed-tile {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e5e7eb;
+}
+
+.pagespeed-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.pagespeed-content h3 {
+    color: #0D3B66;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagespeed-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+.pagespeed-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.pagespeed-button:hover {
+    background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+.pagespeed-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(66, 133, 244, 0.3);
+}
+
 @media (max-width: 768px) {
     .filter-container {
         padding: 20px;
