@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.947Z",
+    "generated_at": "2025-10-26T12:33:42.810Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 23
+    "website_count": 25
   },
   "averages": {
     "performance": 50,
-    "accessibility": 90,
-    "best_practices": 89,
+    "accessibility": 89,
+    "best_practices": 90,
     "seo": 96,
     "pwa": 45
   },
@@ -98,6 +98,18 @@
       "test_date": "2025-10-25 00:51:41"
     },
     {
+      "url": "apelago.fi",
+      "industry": "Finance",
+      "scores": {
+        "performance": 58,
+        "accessibility": 75,
+        "best_practices": 100,
+        "seo": 83,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 08:26:25"
+    },
+    {
       "url": "helsinki.fi",
       "industry": "Education",
       "scores": {
@@ -180,6 +192,18 @@
         "pwa": 100
       },
       "test_date": "2025-10-24 22:14:50"
+    },
+    {
+      "url": "amiedu.fi",
+      "industry": "Education",
+      "scores": {
+        "performance": 40,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:19:01"
     },
     {
       "url": "is.fi",
@@ -304,24 +328,24 @@
     },
     {
       "industry": "Education",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 79,
-        "accessibility": 97,
-        "best_practices": 96,
-        "seo": 97,
+        "performance": 66,
+        "accessibility": 91,
+        "best_practices": 95,
+        "seo": 95,
         "pwa": 33
       }
     },
     {
       "industry": "Finance",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
         "performance": 59,
-        "accessibility": 95,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 33
+        "accessibility": 90,
+        "best_practices": 94,
+        "seo": 90,
+        "pwa": 42
       }
     },
     {

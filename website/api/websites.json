@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.905Z",
-    "total_websites": 435
+    "generated_at": "2025-10-26T12:33:42.767Z",
+    "total_websites": 444
   },
   "websites": [
     {
@@ -275,13 +275,13 @@
       "country": "Japan",
       "industry": "Social Media",
       "scores": {
-        "performance": 68,
+        "performance": 44,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:57:03",
+      "test_date": "2025-10-26 08:11:59",
       "api_endpoint": "websites/ameblojp.json"
     },
     {
@@ -289,27 +289,153 @@
       "country": "Brazil",
       "industry": "E-commerce",
       "scores": {
-        "performance": 14,
-        "accessibility": 87,
-        "best_practices": 83,
+        "performance": 2,
+        "accessibility": 93,
+        "best_practices": 75,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:51:49",
+      "test_date": "2025-10-26 08:15:29",
       "api_endpoint": "websites/americanascombr.json"
+    },
+    {
+      "url": "amiedu.fi",
+      "country": "Finland",
+      "industry": "Education",
+      "scores": {
+        "performance": 40,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:19:01",
+      "api_endpoint": "websites/amiedufi.json"
+    },
+    {
+      "url": "amprensa.com",
+      "country": "Costa Rica",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 75,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:19:28",
+      "api_endpoint": "websites/amprensacom.json"
+    },
+    {
+      "url": "amrita.edu",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 32,
+        "accessibility": 72,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:20:06",
+      "api_endpoint": "websites/amritaedu.json"
+    },
+    {
+      "url": "angola24horas.com",
+      "country": "Angola",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:20:35",
+      "api_endpoint": "websites/angola24horascom.json"
+    },
+    {
+      "url": "annauniv.edu",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 43,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 08:24:38",
+      "api_endpoint": "websites/annaunivedu.json"
+    },
+    {
+      "url": "ansa.it",
+      "country": "Italy",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 93,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:25:08",
+      "api_endpoint": "websites/ansait.json"
+    },
+    {
+      "url": "anthropic.com",
+      "country": "United States",
+      "industry": "Technology",
+      "scores": {
+        "performance": 41,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:26:07",
+      "api_endpoint": "websites/anthropiccom.json"
+    },
+    {
+      "url": "apelago.fi",
+      "country": "Finland",
+      "industry": "Finance",
+      "scores": {
+        "performance": 58,
+        "accessibility": 75,
+        "best_practices": 100,
+        "seo": 83,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 08:26:25",
+      "api_endpoint": "websites/apelagofi.json"
+    },
+    {
+      "url": "apotea.se",
+      "country": "Sweden",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 86,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:30:05",
+      "api_endpoint": "websites/apotease.json"
     },
     {
       "url": "apple.com",
       "country": "United States",
       "industry": "Technology",
       "scores": {
-        "performance": 48,
+        "performance": 58,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:53:56",
+      "test_date": "2025-10-26 08:30:19",
       "api_endpoint": "websites/applecom.json"
     },
     {

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.955Z",
+    "generated_at": "2025-10-26T12:33:42.819Z",
     "country": "Italy",
     "flag": "🇮🇹",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 43,
-    "accessibility": 85,
-    "best_practices": 85,
-    "seo": 86,
-    "pwa": 50
+    "performance": 41,
+    "accessibility": 87,
+    "best_practices": 83,
+    "seo": 89,
+    "pwa": 47
   },
   "websites": [
     {
@@ -60,6 +60,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-21 22:20:20"
+    },
+    {
+      "url": "ansa.it",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 93,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:25:08"
     }
   ],
   "industries": [
@@ -76,12 +88,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 39,
-        "accessibility": 80,
-        "best_practices": 83,
-        "seo": 84,
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 80,
+        "seo": 89,
         "pwa": 33
       }
     },

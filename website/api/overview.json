@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.820Z",
+    "generated_at": "2025-10-26T12:33:42.681Z",
     "api_version": "1.0",
-    "total_websites": 435,
-    "countries_count": 59,
+    "total_websites": 444,
+    "countries_count": 61,
     "industries_count": 24,
-    "last_scan_date": "2025-10-26 08:04:48"
+    "last_scan_date": "2025-10-26 08:30:19"
   },
   "global_averages": {
     "performance": 45,
     "accessibility": 86,
     "best_practices": 81,
     "seo": 91,
-    "pwa": 45
+    "pwa": 44
   },
   "top_performers": {
     "performance": [
@@ -340,15 +340,15 @@
         "test_date": "2025-10-19 20:27:12"
       },
       {
-        "url": "tv2.dk",
-        "country": "Denmark",
-        "industry": "Media",
-        "performance": 56,
+        "url": "apple.com",
+        "country": "United States",
+        "industry": "Technology",
+        "performance": 58,
         "accessibility": 100,
         "best_practices": 100,
-        "seo": 100,
+        "seo": 90,
         "pwa": 33,
-        "test_date": "2025-10-24 18:15:20"
+        "test_date": "2025-10-26 08:30:19"
       }
     ],
     "seo": [
@@ -579,6 +579,17 @@
   "bottom_performers": {
     "performance": [
       {
+        "url": "americanas.com.br",
+        "country": "Brazil",
+        "industry": "E-commerce",
+        "performance": 2,
+        "accessibility": 93,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33,
+        "test_date": "2025-10-26 08:15:29"
+      },
+      {
         "url": "kaubamaja.ee",
         "country": "Estonia",
         "industry": "E-commerce",
@@ -676,17 +687,6 @@
         "seo": 99,
         "pwa": 89,
         "test_date": "2025-10-22 16:14:17"
-      },
-      {
-        "url": "skaties.lv",
-        "country": "Latvia",
-        "industry": "Media",
-        "performance": 11,
-        "accessibility": 78,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 78,
-        "test_date": "2025-10-23 21:51:01"
       }
     ],
     "accessibility": [
@@ -1071,6 +1071,17 @@
         "test_date": "2025-10-22 08:48:17"
       },
       {
+        "url": "annauniv.edu",
+        "country": "India",
+        "industry": "Education",
+        "performance": 43,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 22,
+        "test_date": "2025-10-26 08:24:38"
+      },
+      {
         "url": "hockeycanada.ca",
         "country": "Canada",
         "industry": "Sports",
@@ -1124,17 +1135,6 @@
         "seo": 92,
         "pwa": 22,
         "test_date": "2025-10-25 04:14:54"
-      },
-      {
-        "url": "standardmedia.co.ke",
-        "country": "Kenya",
-        "industry": "Media",
-        "performance": 46,
-        "accessibility": 98,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 22,
-        "test_date": "2025-10-24 02:54:49"
       }
     ]
   }

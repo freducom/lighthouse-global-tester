@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.995Z",
+    "generated_at": "2025-10-26T12:33:42.859Z",
     "industry": "E-commerce",
-    "website_count": 31
+    "website_count": 32
   },
   "averages": {
-    "performance": 46,
+    "performance": 47,
     "accessibility": 84,
-    "best_practices": 81,
+    "best_practices": 82,
     "seo": 92,
-    "pwa": 47
+    "pwa": 46
   },
   "websites": [
     {
       "url": "americanas.com.br",
       "country": "Brazil",
       "scores": {
-        "performance": 14,
-        "accessibility": 87,
-        "best_practices": 83,
+        "performance": 2,
+        "accessibility": 93,
+        "best_practices": 75,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:51:49"
+      "test_date": "2025-10-26 08:15:29"
     },
     {
       "url": "mercadolivre.com.br",
@@ -277,6 +277,18 @@
       "test_date": "2025-10-19 20:10:27"
     },
     {
+      "url": "apotea.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 86,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:30:05"
+    },
+    {
       "url": "coop.se",
       "country": "Sweden",
       "scores": {
@@ -390,9 +402,9 @@
       "country": "Brazil",
       "website_count": 2,
       "averages": {
-        "performance": 40,
-        "accessibility": 92,
-        "best_practices": 83,
+        "performance": 34,
+        "accessibility": 95,
+        "best_practices": 79,
         "seo": 93,
         "pwa": 33
       }
@@ -542,13 +554,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 43,
-        "accessibility": 93,
-        "best_practices": 86,
-        "seo": 98,
-        "pwa": 56
+        "performance": 54,
+        "accessibility": 90,
+        "best_practices": 88,
+        "seo": 94,
+        "pwa": 50
       }
     },
     {

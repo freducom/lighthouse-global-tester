@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.995Z",
+    "generated_at": "2025-10-26T12:33:42.860Z",
     "industry": "Education",
-    "website_count": 6
+    "website_count": 9
   },
   "averages": {
-    "performance": 61,
-    "accessibility": 93,
-    "best_practices": 89,
-    "seo": 90,
-    "pwa": 35
+    "performance": 53,
+    "accessibility": 86,
+    "best_practices": 87,
+    "seo": 87,
+    "pwa": 33
   },
   "websites": [
+    {
+      "url": "amiedu.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 40,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:19:01"
+    },
     {
       "url": "emathstudio.com",
       "country": "Finland",
@@ -35,6 +47,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "amrita.edu",
+      "country": "India",
+      "scores": {
+        "performance": 32,
+        "accessibility": 72,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:20:06"
+    },
+    {
+      "url": "annauniv.edu",
+      "country": "India",
+      "scores": {
+        "performance": 43,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 08:24:38"
     },
     {
       "url": "uw.edu.pl",
@@ -88,13 +124,24 @@
   "countries": [
     {
       "country": "Finland",
+      "website_count": 3,
+      "averages": {
+        "performance": 66,
+        "accessibility": 91,
+        "best_practices": 95,
+        "seo": 95,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "India",
       "website_count": 2,
       "averages": {
-        "performance": 79,
-        "accessibility": 97,
-        "best_practices": 96,
-        "seo": 97,
-        "pwa": 33
+        "performance": 38,
+        "accessibility": 70,
+        "best_practices": 80,
+        "seo": 75,
+        "pwa": 28
       }
     },
     {

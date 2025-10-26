@@ -145,12 +145,12 @@ class WebsiteGenerator {
             
             <div class="footer-section">
                 <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
-                <p><a href="about.html">🐆 About</a> | <a href="api-docs.html">📚 API Documentation</a> | <a href="latest-updated.html">📅 Latest Scan</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Track the fastest websites. Lighthouse performance monitoring of ${websiteCount} websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of ${websiteCount} websites.</p>
         </div>
     </footer>
 
@@ -351,6 +351,7 @@ class WebsiteGenerator {
     await this.generateAllIndustriesPage();
     await this.generateAllCompaniesPage();
     await this.generateLatestUpdatedPage();
+    await this.generateQueuedSitesPage();
     await this.generateAboutPage();
     await this.generateAssets();
 
@@ -512,7 +513,7 @@ ${this.getPostHogScript()}
                 <h2 id="global-stats-heading" class="sr-only">Global Performance Statistics</h2>
                 
                 <div class="stat-card performance" role="img" aria-labelledby="global-perf-title" aria-describedby="global-perf-desc">
-                    <h3 id="global-perf-title">🚀 Global Performance</h3>
+                    <h3 id="global-perf-title">🚀 Performance</h3>
                     <div class="stat-number" aria-label="${stats.avgPerformance} percent performance score">${stats.avgPerformance}%</div>
                     <div id="global-perf-desc" class="stat-trend">Average across ${allScores.length} sites</div>
                 </div>
@@ -520,26 +521,26 @@ ${this.getPostHogScript()}
                 <div class="stat-card accessibility" role="img" aria-labelledby="global-acc-title" aria-describedby="global-acc-desc">
                     <h3 id="global-acc-title">♿ Accessibility</h3>
                     <div class="stat-number" aria-label="${stats.avgAccessibility} percent accessibility score">${stats.avgAccessibility}%</div>
-                    <div id="global-acc-desc" class="stat-trend">Global accessibility compliance</div>
+                    <div id="global-acc-desc" class="stat-trend">Average across ${allScores.length} sites</div>
                 </div>
                 
                 <div class="stat-card seo" role="img" aria-labelledby="global-seo-title" aria-describedby="global-seo-desc">
-                    <h3 id="global-seo-title">🔍 SEO Score</h3>
+                    <h3 id="global-seo-title">🔍 SEO</h3>
                     <div class="stat-number" aria-label="${stats.avgSeo} percent SEO score">${stats.avgSeo}%</div>
-                    <div id="global-seo-desc" class="stat-trend">Search engine optimization</div>
+                    <div id="global-seo-desc" class="stat-trend">Average across ${allScores.length} sites</div>
                 </div>
                 
                 <div class="stat-card best-practices" role="img" aria-labelledby="global-bp-title" aria-describedby="global-bp-desc">
                     <h3 id="global-bp-title">✨ Best Practices</h3>
                     <div class="stat-number" aria-label="${stats.avgBestPractices} percent best practices score">${stats.avgBestPractices}%</div>
-                    <div id="global-bp-desc" class="stat-trend">Code quality standards</div>
+                    <div id="global-bp-desc" class="stat-trend">Average across ${allScores.length} sites</div>
                 </div>
             </section>
 
             <div class="content-grid">
                 <!-- Country Comparison Section -->
                 <section class="section" aria-labelledby="country-rankings-heading" id="country-rankings">
-                    <h2 id="country-rankings-heading">� Top 5 Countries by Performance</h2>
+                    <h2 id="country-rankings-heading">🌍 Top 5 Countries by Performance</h2>
                     
                     <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
                         <h3 id="country-comparison-heading" class="sr-only">Country Performance Comparison</h3>
@@ -4390,6 +4391,53 @@ input[type="text"]:focus, input[type="search"]:focus {
     margin-bottom: 0;
 }
 
+/* Queued sites styling */
+.queued-site {
+    background: rgba(255, 193, 7, 0.05);
+    border-left: 3px solid #ffc107;
+}
+
+.queued-site:hover {
+    background: rgba(255, 193, 7, 0.1);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.status-badge.queued {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    color: #856404;
+    border: 1px solid #ffc107;
+}
+
+.domain-name {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-weight: 500;
+    color: #0D3B66;
+}
+
+.country-name, .industry-name {
+    color: #666;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.empty-state h3 {
+    color: #0D3B66;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
     .filter-container {
         padding: 20px;
@@ -5592,6 +5640,253 @@ ${this.getFooterHTML(latestScanResults.length, 0)}
 
     fs.writeFileSync(path.join(this.outputDir, 'latest-updated.html'), html);
     console.log('✅ Latest Updated Statistics page generated successfully');
+  }
+
+  async generateQueuedSitesPage() {
+    console.log('⏳ Generating Queued Sites page...');
+    
+    // Load domains from domains.json
+    let allDomains = [];
+    try {
+      const domainsData = JSON.parse(fs.readFileSync('domains.json', 'utf8'));
+      domainsData.forEach(countryData => {
+        countryData.top_domains.forEach(domain => {
+          allDomains.push({
+            domain: domain.domain,
+            country: countryData.country,
+            industry: domain.industry
+          });
+        });
+      });
+    } catch (error) {
+      console.error('Error reading domains.json:', error);
+      return;
+    }
+
+    // Get all domains that have scores in the database
+    const domainsWithScores = await new Promise((resolve, reject) => {
+      this.db.db.all(
+        'SELECT DISTINCT url FROM lighthouse_scores',
+        (err, rows) => {
+          if (err) reject(err);
+          else resolve(rows.map(row => row.url));
+        }
+      );
+    });
+
+    // Find domains that are in domains.json but not in the database
+    const queuedSites = allDomains.filter(site => 
+      !domainsWithScores.includes(site.domain)
+    );
+
+    const queuedCount = queuedSites.length;
+    
+    const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queued Sites - CheetahCheck</title>
+    <meta name="description" content="${queuedCount} websites queued for performance testing with Google Lighthouse">
+    <meta name="theme-color" content="#0D3B66">
+${this.getFaviconHTML()}
+${this.getSocialMetaTags('Queued Sites - CheetahCheck', `${queuedCount} websites queued for performance testing with Google Lighthouse`, 'queued-sites.html')}
+${this.getPostHogScript()}
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header" role="banner">
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
+                    <li aria-current="page">⏳ Queued Sites</li>
+                </ol>
+            </nav>
+            <h1>⏳ Queued Sites</h1>
+            <p class="subtitle">
+                ${queuedCount} websites waiting to be tested with Google Lighthouse
+            </p>
+        </header>
+
+        <main id="main-content" role="main">
+            <section class="section" aria-labelledby="queued-heading">
+                <h2 id="queued-heading">🔄 Sites Pending Performance Analysis</h2>
+                <p class="section-description">
+                    These websites are in our monitoring queue but haven't been analyzed yet. 
+                    They will be automatically tested in the next scan cycle.
+                </p>
+                
+                <div class="search-container">
+                    <label for="searchInput" class="sr-only">Search queued websites by name, country, or industry</label>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="🔍 Search queued websites..." 
+                           aria-describedby="search-help"
+                           autocomplete="off" />
+                    <div id="search-help" class="sr-only">Type to filter websites by name, country, or industry. Results update automatically as you type.</div>
+                    <div id="search-results-announced" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+                </div>
+                
+                <div class="table-container">
+                    <table class="results-table" id="resultsTable" role="table" aria-labelledby="queued-heading">
+                        <caption class="sr-only">
+                            ${queuedCount} websites queued for Google Lighthouse performance testing, 
+                            showing domain name, country, and industry classification.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" aria-sort="none">#</th>
+                                <th scope="col" aria-sort="none">Website</th>
+                                <th scope="col" aria-sort="none">Country</th>
+                                <th scope="col" aria-sort="none">Industry</th>
+                                <th scope="col" aria-sort="none">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            ${queuedSites.map((site, index) => `
+                                <tr class="site-row queued-site">
+                                    <td class="rank" aria-label="Position ${index + 1}">#${index + 1}</td>
+                                    <td>
+                                        <span class="domain-name" title="Domain queued for testing">
+                                            ${site.domain}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="country-name">
+                                            ${this.getCountryFlag(site.country)} ${this.normalizeCountry(site.country)}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="industry-name">
+                                            ${site.industry || 'Unknown'}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="status-badge queued" title="Waiting for next scan cycle">
+                                            ⏳ Queued
+                                        </span>
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+                
+                ${queuedCount === 0 ? `
+                <div class="empty-state">
+                    <h3>✅ No Sites Queued</h3>
+                    <p>All websites from our monitoring list have been tested! Check back later as we add new sites to monitor.</p>
+                </div>
+                ` : ''}
+            </section>
+        </main>
+
+${this.getFooterHTML()}
+    </div>
+
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const tableBody = document.getElementById('tableBody');
+            const rows = tableBody.getElementsByTagName('tr');
+            let visibleCount = 0;
+            
+            for (let i = 0; i < rows.length; i++) {
+                const row = rows[i];
+                const domain = row.cells[1].textContent.toLowerCase();
+                const country = row.cells[2].textContent.toLowerCase();
+                const industry = row.cells[3].textContent.toLowerCase();
+                
+                const isVisible = domain.includes(searchTerm) || 
+                                country.includes(searchTerm) || 
+                                industry.includes(searchTerm);
+                
+                row.style.display = isVisible ? '' : 'none';
+                if (isVisible) visibleCount++;
+            }
+            
+            // Update search results announcement for screen readers
+            const announcement = document.getElementById('search-results-announced');
+            if (searchTerm) {
+                announcement.textContent = \`Found \${visibleCount} queued websites matching "\${searchTerm}"\`;
+            } else {
+                announcement.textContent = '';
+            }
+        });
+
+        // Table sorting functionality
+        function sortTable(columnIndex, dataType = 'text') {
+            const table = document.getElementById('resultsTable');
+            const tbody = table.getElementsByTagName('tbody')[0];
+            const rows = Array.from(tbody.getElementsByTagName('tr'));
+            
+            // Determine sort direction
+            const th = table.getElementsByTagName('th')[columnIndex];
+            const currentSort = th.getAttribute('aria-sort');
+            const isAscending = currentSort !== 'ascending';
+            
+            // Reset all sort indicators
+            const allThs = table.getElementsByTagName('th');
+            for (let i = 0; i < allThs.length; i++) {
+                allThs[i].setAttribute('aria-sort', 'none');
+            }
+            
+            // Set current sort indicator
+            th.setAttribute('aria-sort', isAscending ? 'ascending' : 'descending');
+            
+            // Sort rows
+            rows.sort((a, b) => {
+                let aVal = a.cells[columnIndex].textContent.trim();
+                let bVal = b.cells[columnIndex].textContent.trim();
+                
+                if (dataType === 'number') {
+                    aVal = parseInt(aVal.replace('#', '')) || 0;
+                    bVal = parseInt(bVal.replace('#', '')) || 0;
+                } else {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                }
+                
+                if (isAscending) {
+                    return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+                } else {
+                    return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+                }
+            });
+            
+            // Re-append sorted rows
+            rows.forEach(row => tbody.appendChild(row));
+            
+            // Update row numbers
+            rows.forEach((row, index) => {
+                if (row.style.display !== 'none') {
+                    row.cells[0].textContent = \`#\${index + 1}\`;
+                }
+            });
+        }
+        
+        // Add click handlers to sortable headers
+        document.addEventListener('DOMContentLoaded', function() {
+            const headers = document.querySelectorAll('th[aria-sort]');
+            headers.forEach((header, index) => {
+                header.style.cursor = 'pointer';
+                header.addEventListener('click', () => {
+                    const dataType = index === 0 ? 'number' : 'text';
+                    sortTable(index, dataType);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'queued-sites.html'), html);
+    console.log('✅ Queued Sites page generated successfully');
   }
 
   calculateStatsForScores(scores) {

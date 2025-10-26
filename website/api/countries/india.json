@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.940Z",
+    "generated_at": "2025-10-26T12:33:42.803Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 12
+    "website_count": 14
   },
   "averages": {
-    "performance": 47,
-    "accessibility": 85,
-    "best_practices": 73,
-    "seo": 88,
-    "pwa": 56
+    "performance": 45,
+    "accessibility": 82,
+    "best_practices": 74,
+    "seo": 86,
+    "pwa": 52
   },
   "websites": [
     {
@@ -98,6 +98,18 @@
       "test_date": "2025-10-23 12:20:27"
     },
     {
+      "url": "annauniv.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 43,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 75,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 08:24:38"
+    },
+    {
       "url": "flipkart.com",
       "industry": "E-commerce",
       "scores": {
@@ -120,6 +132,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-19 19:49:11"
+    },
+    {
+      "url": "amrita.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 32,
+        "accessibility": 72,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 08:20:06"
     },
     {
       "url": "ndtv.com",
@@ -168,6 +192,17 @@
         "best_practices": 96,
         "seo": 86,
         "pwa": 67
+      }
+    },
+    {
+      "industry": "Education",
+      "website_count": 2,
+      "averages": {
+        "performance": 38,
+        "accessibility": 70,
+        "best_practices": 80,
+        "seo": 75,
+        "pwa": 28
       }
     },
     {

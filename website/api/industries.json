@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:02.879Z",
+    "generated_at": "2025-10-26T12:33:42.741Z",
     "total_industries": 24
   },
   "industries": [
@@ -18,35 +18,35 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 31,
+      "website_count": 32,
       "averages": {
-        "performance": 46,
+        "performance": 47,
         "accessibility": 84,
-        "best_practices": 81,
+        "best_practices": 82,
         "seo": 92,
-        "pwa": 47
+        "pwa": 46
       },
       "api_endpoint": "industries/e-commerce.json"
     },
     {
       "industry": "Education",
-      "website_count": 6,
+      "website_count": 9,
       "averages": {
-        "performance": 61,
-        "accessibility": 93,
-        "best_practices": 89,
-        "seo": 90,
-        "pwa": 35
+        "performance": 53,
+        "accessibility": 86,
+        "best_practices": 87,
+        "seo": 87,
+        "pwa": 33
       },
       "api_endpoint": "industries/education.json"
     },
     {
       "industry": "Finance",
-      "website_count": 32,
+      "website_count": 33,
       "averages": {
         "performance": 44,
         "accessibility": 90,
-        "best_practices": 81,
+        "best_practices": 82,
         "seo": 89,
         "pwa": 37
       },
@@ -114,7 +114,7 @@
     },
     {
       "industry": "Media",
-      "website_count": 227,
+      "website_count": 230,
       "averages": {
         "performance": 43,
         "accessibility": 86,
@@ -188,7 +188,7 @@
       "industry": "Social Media",
       "website_count": 16,
       "averages": {
-        "performance": 49,
+        "performance": 47,
         "accessibility": 81,
         "best_practices": 72,
         "seo": 90,
@@ -234,12 +234,12 @@
     },
     {
       "industry": "Technology",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 40,
-        "accessibility": 84,
-        "best_practices": 74,
-        "seo": 89,
+        "performance": 42,
+        "accessibility": 86,
+        "best_practices": 77,
+        "seo": 90,
         "pwa": 33
       },
       "api_endpoint": "industries/technology.json"

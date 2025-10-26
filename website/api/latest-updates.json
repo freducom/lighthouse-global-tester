@@ -1,43 +1,43 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T08:29:03.086Z",
+    "generated_at": "2025-10-26T12:33:42.947Z",
     "scan_count": 1,
-    "scan_date": "2025-10-26 08:04:48"
+    "scan_date": "2025-10-26 08:30:19"
   },
   "results": [
     {
-      "url": "amd.com",
+      "url": "apple.com",
       "country": "United States",
       "industry": "Technology",
       "scores": {
-        "performance": 30,
-        "accessibility": 85,
+        "performance": 58,
+        "accessibility": 100,
         "best_practices": 100,
-        "seo": 86,
+        "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:04:48"
+      "test_date": "2025-10-26 08:30:19"
     }
   ],
   "summary": {
     "averages": {
-      "performance": 30,
-      "accessibility": 85,
+      "performance": 58,
+      "accessibility": 100,
       "best_practices": 100,
-      "seo": 86,
+      "seo": 90,
       "pwa": 33
     },
     "top_performers": [
       {
-        "url": "amd.com",
+        "url": "apple.com",
         "country": "United States",
         "industry": "Technology",
-        "performance": 30,
-        "accessibility": 85,
+        "performance": 58,
+        "accessibility": 100,
         "best_practices": 100,
-        "seo": 86,
+        "seo": 90,
         "pwa": 33,
-        "test_date": "2025-10-26 08:04:48"
+        "test_date": "2025-10-26 08:30:19"
       }
     ],
     "countries_scanned": 1,
