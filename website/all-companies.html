@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Companies - Valmitta</title>
+    <title>All Companies - CheetahCheck</title>
     <meta name="description" content="Complete rankings of all companies by lighthouse performance analysis">
     <meta name="theme-color" content="#0D3B66">
     <link rel="icon" type="image/png" sizes="16x16" href="cheetahcheck_favicon_16x16.png">
@@ -54,8 +54,30 @@
         </header>
 
         <section class="section">
+            <div class="filter-container">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label for="countryFilter">Country:</label>
+                        <select id="countryFilter">
+                            <option value="">All Countries</option>
+                            <option value="australia">🇦🇺 Australia</option><option value="austria">🇦🇹 Austria</option><option value="bangladesh">🌍 Bangladesh</option><option value="belgium">🇧🇪 Belgium</option><option value="bolivia">🇧🇴 Bolivia</option><option value="brazil">🇧🇷 Brazil</option><option value="canada">🇨🇦 Canada</option><option value="chile">🇨🇱 Chile</option><option value="china">🇨🇳 China</option><option value="cuba">🇨🇺 Cuba</option><option value="czechia">🇨🇿 Czechia</option><option value="denmark">🇩🇰 Denmark</option><option value="egypt">🇪🇬 Egypt</option><option value="estonia">🇪🇪 Estonia</option><option value="finland">🇫🇮 Finland</option><option value="france">🇫🇷 France</option><option value="germany">🇩🇪 Germany</option><option value="greece">🇬🇷 Greece</option><option value="hungary">🇭🇺 Hungary</option><option value="india">🇮🇳 India</option><option value="indonesia">🇮🇩 Indonesia</option><option value="iran">🇮🇷 Iran</option><option value="ireland">🇮🇪 Ireland</option><option value="israel">🇮🇱 Israel</option><option value="italy">🇮🇹 Italy</option><option value="japan">🇯🇵 Japan</option><option value="kenya">🇰🇪 Kenya</option><option value="latvia">🇱🇻 Latvia</option><option value="libya">🇱🇾 Libya</option><option value="lithuania">🇱🇹 Lithuania</option><option value="luxembourg">🇱🇺 Luxembourg</option><option value="malaysia">🇲🇾 Malaysia</option><option value="malta">🇲🇹 Malta</option><option value="mexico">🌍 Mexico</option><option value="namibia">🇳🇦 Namibia</option><option value="netherlands">🇳🇱 Netherlands</option><option value="new zealand">🇳🇿 New Zealand</option><option value="norway">🇳🇴 Norway</option><option value="pakistan">🌍 Pakistan</option><option value="paraguay">🇵🇾 Paraguay</option><option value="poland">🇵🇱 Poland</option><option value="russia">🇷🇺 Russia</option><option value="singapore">🇸🇬 Singapore</option><option value="slovakia">🇸🇰 Slovakia</option><option value="south africa">🇿🇦 South Africa</option><option value="south korea">🇰🇷 South Korea</option><option value="spain">🇪🇸 Spain</option><option value="sweden">🇸🇪 Sweden</option><option value="switzerland">🇨🇭 Switzerland</option><option value="taiwan">🇹🇼 Taiwan</option><option value="thailand">🇹🇭 Thailand</option><option value="turkey">🇹🇷 Turkey</option><option value="ukraine">🇺🇦 Ukraine</option><option value="united kingdom">🇬🇧 United Kingdom</option><option value="united states">🇺🇸 United States</option><option value="uruguay">🇺🇾 Uruguay</option><option value="vietnam">🇻🇳 Vietnam</option><option value="zambia">🇿🇲 Zambia</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="industryFilter">Industry:</label>
+                        <select id="industryFilter">
+                            <option value="">All Industries</option>
+                            <option value="automotive">Automotive</option><option value="e-commerce">E-commerce</option><option value="education">Education</option><option value="finance">Finance</option><option value="food & drink">Food & Drink</option><option value="government">Government</option><option value="jobs">Jobs</option><option value="marketing">Marketing</option><option value="marketplace">Marketplace</option><option value="media">Media</option><option value="non-profit">Non-profit</option><option value="portal">Portal</option><option value="real estate">Real Estate</option><option value="retail">Retail</option><option value="search engine">Search Engine</option><option value="social media">Social Media</option><option value="software">Software</option><option value="sports">Sports</option><option value="tech">Tech</option><option value="technology">Technology</option><option value="telecom">Telecom</option><option value="transportation">Transportation</option><option value="weather">Weather</option><option value="website editor">Website editor</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button id="clearFilters" class="clear-btn">Clear Filters</button>
+                    </div>
+                </div>
+            </div>
+            
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Search among all 424 websites..." />
+                <input type="text" id="searchInput" placeholder="🔍 Search within filtered results..." />
             </div>
             
             <div class="sort-controls">
@@ -5759,6 +5781,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('searchInput');
+            const countryFilter = document.getElementById('countryFilter');
+            const industryFilter = document.getElementById('industryFilter');
+            const clearFiltersBtn = document.getElementById('clearFilters');
             const tableBody = document.getElementById('tableBody');
             const rows = Array.from(tableBody.querySelectorAll('tr'));
 
@@ -5773,13 +5798,66 @@
             }
             formatAllDates();
 
+            // Filter and search functionality
+            function applyFiltersAndSearch() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCountry = countryFilter.value;
+                const selectedIndustry = industryFilter.value;
+                
+                let visibleCount = 0;
+                
+                rows.forEach(row => {
+                    const url = row.getAttribute('data-url') || '';
+                    const country = row.getAttribute('data-country') || '';
+                    const industry = row.getAttribute('data-industry') || '';
+                    
+                    // Check filters
+                    const countryMatch = !selectedCountry || country.toLowerCase() === selectedCountry;
+                    const industryMatch = !selectedIndustry || industry.toLowerCase() === selectedIndustry;
+                    
+                    // Check search within filtered results
+                    const searchMatch = !searchTerm || 
+                        url.toLowerCase().includes(searchTerm) || 
+                        country.toLowerCase().includes(searchTerm) || 
+                        industry.toLowerCase().includes(searchTerm);
+                    
+                    if (countryMatch && industryMatch && searchMatch) {
+                        row.style.display = '';
+                        visibleCount++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+                
+                // Update search placeholder with current filter context
+                updateSearchPlaceholder(visibleCount);
+                
+                // Update ranks after filtering
+                updateRanks();
+            }
+            
+            function updateSearchPlaceholder(visibleCount) {
+                const selectedCountry = countryFilter.options[countryFilter.selectedIndex]?.text || 'All Countries';
+                const selectedIndustry = industryFilter.options[industryFilter.selectedIndex]?.text || 'All Industries';
+                
+                if (countryFilter.value || industryFilter.value) {
+                    const filterText = [];
+                    if (countryFilter.value) filterText.push(selectedCountry);
+                    if (industryFilter.value) filterText.push(selectedIndustry);
+                    searchInput.placeholder = `🔍 Search within ${visibleCount} websites (${filterText.join(' + ')})...`;
+                } else {
+                    searchInput.placeholder = `🔍 Search among all ${visibleCount} websites...`;
+                }
+            }
+
             // Sorting functionality
             function sortData(column, order = 'desc') {
                 const table = document.querySelector('table');
                 const tbody = table.querySelector('tbody');
-                const rows = Array.from(tbody.querySelectorAll('tr'));
+                const visibleRows = Array.from(tbody.querySelectorAll('tr:not([style*="display: none"])'));
+                const hiddenRows = Array.from(tbody.querySelectorAll('tr[style*="display: none"]'));
                 
-                rows.sort((a, b) => {
+                visibleRows.sort((a, b) => {
                     let aVal = a.querySelector(`td:nth-child(${column + 1})`);
                     let bVal = b.querySelector(`td:nth-child(${column + 1})`);
                     
@@ -5804,9 +5882,10 @@
                     return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
                 });
                 
-                // Clear and re-append sorted rows
+                // Clear and re-append rows (visible first, then hidden)
                 tbody.innerHTML = '';
-                rows.forEach(row => tbody.appendChild(row));
+                visibleRows.forEach(row => tbody.appendChild(row));
+                hiddenRows.forEach(row => tbody.appendChild(row));
                 
                 // Update sort indicators
                 updateSortIndicators(column, order);
@@ -5841,24 +5920,20 @@
                 });
             }
 
-            searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
-                
-                rows.forEach(row => {
-                    const url = row.getAttribute('data-url') || '';
-                    const country = row.getAttribute('data-country') || '';
-                    const industry = row.getAttribute('data-industry') || '';
-                    
-                    if (url.includes(searchTerm) || country.includes(searchTerm) || industry.includes(searchTerm)) {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
-                
-                // Update ranks after filtering
-                updateRanks();
+            // Event listeners
+            searchInput.addEventListener('input', applyFiltersAndSearch);
+            countryFilter.addEventListener('change', applyFiltersAndSearch);
+            industryFilter.addEventListener('change', applyFiltersAndSearch);
+            
+            clearFiltersBtn.addEventListener('click', function() {
+                countryFilter.value = '';
+                industryFilter.value = '';
+                searchInput.value = '';
+                applyFiltersAndSearch();
             });
+
+            // Initialize placeholder
+            applyFiltersAndSearch();
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sort-header[data-column]').forEach(button => {
