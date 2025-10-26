@@ -537,44 +537,48 @@ ${this.getPostHogScript()}
 
             <div class="content-grid">
                 <!-- Country Comparison Section -->
-                <section class="section" aria-labelledby="country-comparison-heading" id="country-comparison">
-                    <h2 id="country-comparison-heading">🏆 Best & Worst Performing Countries</h2>
+                <section class="section" aria-labelledby="country-rankings-heading" id="country-rankings">
+                    <h2 id="country-rankings-heading">� Top 5 Countries by Performance</h2>
+                    
                     <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
-                        <a href="${this.getCountryUrl(countryStats.best.name)}" class="best-country country-tile-link" role="button" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
-                            <h3 id="best-country-title">Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h3>
+                        <h3 id="country-comparison-heading" class="sr-only">Country Performance Comparison</h3>
+                        <div class="best-country" role="img" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
+                            <h4 id="best-country-title">Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h4>
                             <div class="country-score" aria-label="${countryStats.best.avgPerformance} percent average performance">${countryStats.best.avgPerformance}%</div>
                             <p id="best-country-desc">Performance Leader</p>
-                        </a>
-                        <a href="${countryStats.secondBest ? this.getCountryUrl(countryStats.secondBest.name) : '#'}" class="second-best-country country-tile-link" role="button" aria-labelledby="second-best-title" aria-describedby="second-best-desc">
-                            <h3 id="second-best-title">Runner-up: ${countryStats.secondBest ? countryStats.secondBest.name : 'N/A'} ${countryStats.secondBest ? this.getCountryFlag(countryStats.secondBest.name) : ''}</h3>
-                            <div class="country-score" aria-label="${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0} percent average performance">${countryStats.secondBest ? countryStats.secondBest.avgPerformance : 0}%</div>
-                            <p id="second-best-desc">Strong Performer</p>
-                        </a>
-                        <a href="${countryStats.secondWorst ? this.getCountryUrl(countryStats.secondWorst.name) : '#'}" class="second-worst-country country-tile-link" role="button" aria-labelledby="second-worst-title" aria-describedby="second-worst-desc">
-                            <h3 id="second-worst-title">Almost last: ${countryStats.secondWorst ? countryStats.secondWorst.name : 'N/A'} ${countryStats.secondWorst ? this.getCountryFlag(countryStats.secondWorst.name) : ''}</h3>
-                            <div class="country-score" aria-label="${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0} percent average performance">${countryStats.secondWorst ? countryStats.secondWorst.avgPerformance : 0}%</div>
-                            <p id="second-worst-desc">Improvement Potential</p>
-                        </a>
-                        <a href="${this.getCountryUrl(countryStats.worst.name)}" class="worst-country country-tile-link" role="button" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
-                            <h3 id="worst-country-title">Worst: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h3>
+                        </div>
+                        <div class="worst-country" role="img" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
+                            <h4 id="worst-country-title">Worst: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h4>
                             <div class="country-score" aria-label="${countryStats.worst.avgPerformance} percent average performance">${countryStats.worst.avgPerformance}%</div>
                             <p id="worst-country-desc">Growth Opportunity</p>
-                        </a>
+                        </div>
                     </div>
                     
-                    <!-- Website Comparison Section -->
-                    <h2 id="website-comparison-heading" style="margin-top: 40px;">🏆 Best & Worst Performing Websites</h2>
-                    <div class="website-comparison" role="group" aria-labelledby="website-comparison-heading">
-                        <a href="domain-${websiteStats.best.url.replace(/\./g, '-')}.html" class="best-website website-tile-link" role="button" aria-labelledby="best-website-title" aria-describedby="best-website-desc">
-                            <h3 id="best-website-title">Best: ${websiteStats.best.url}</h3>
-                            <div class="website-score" aria-label="${websiteStats.best.performance} percent performance">${websiteStats.best.performance}%</div>
-                            <p id="best-website-desc">${this.getCountryFlag(websiteStats.best.country)} ${this.normalizeCountry(websiteStats.best.country)}</p>
-                        </a>
-                        <a href="domain-${websiteStats.worst.url.replace(/\./g, '-')}.html" class="worst-website website-tile-link" role="button" aria-labelledby="worst-website-title" aria-describedby="worst-website-desc">
-                            <h3 id="worst-website-title">Worst: ${websiteStats.worst.url}</h3>
-                            <div class="website-score" aria-label="${websiteStats.worst.performance} percent performance">${websiteStats.worst.performance}%</div>
-                            <p id="worst-website-desc">${this.getCountryFlag(websiteStats.worst.country)} ${this.normalizeCountry(websiteStats.worst.country)}</p>
-                        </a>
+                    <div class="country-rankings" aria-labelledby="top-countries-heading">
+                        <h3 id="top-countries-heading">🏆 Top 5 Countries</h3>
+                        <div class="country-list" role="list">
+                            ${countryStats.top5.map((country, index) => `
+                                <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" 
+                                   class="country-item" 
+                                   role="listitem"
+                                   aria-describedby="country-${index}-desc">
+                                    <div class="country-rank" aria-label="Rank ${index + 1}">#${index + 1}</div>
+                                    <div class="country-flag">${this.getCountryFlag(country.name)}</div>
+                                    <div class="country-name">${country.name}</div>
+                                    <div id="country-${index}-desc" class="country-metrics" aria-label="Performance ${country.avgPerformance}%, Accessibility ${country.avgAccessibility}%, SEO ${country.avgSeo}%">
+                                        <span class="metric" aria-label="Performance ${country.avgPerformance} percent">P: ${country.avgPerformance}%</span>
+                                        <span class="metric" aria-label="Accessibility ${country.avgAccessibility} percent">A: ${country.avgAccessibility}%</span>
+                                        <span class="metric" aria-label="SEO ${country.avgSeo} percent">SEO: ${country.avgSeo}%</span>
+                                    </div>
+                                </a>
+                            `).join('')}
+                        </div>
+                        <div class="see-all-link">
+                            <a href="all-countries.html" class="btn-see-all" aria-describedby="see-all-countries-desc">
+                                See all countries
+                            </a>
+                            <div id="see-all-countries-desc" class="sr-only">View comprehensive list of all country performance rankings</div>
+                        </div>
                     </div>
                 </section>
 
@@ -626,25 +630,6 @@ ${this.getPostHogScript()}
 
             <!-- Global Websites Section -->
             <section class="section" aria-labelledby="global-websites-heading" id="global-websites">
-            <h2>🌍 Top 5 Country Rankings</h2>
-                <div class="country-grid">
-                ${countryStats.all.slice(0, 5).map((country, index) => `
-                    <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" class="country-card">
-                        <div class="country-rank">#${index + 1}</div>
-                        <div class="country-flag">${this.getCountryFlag(country.name)}</div>
-                        <h3>${country.name}</h3>
-                        <div class="country-metrics">
-                            <span class="metric">P: ${country.avgPerformance}%</span>
-                            <span class="metric">A: ${country.avgAccessibility}%</span>
-                            <span class="metric">SEO: ${country.avgSeo}%</span>
-                        </div>
-                    </a>
-                `).join('')}
-            </div>
-            <div class="see-all-link">
-                <a href="all-countries.html" class="btn-see-all">See all countries</a>
-            </div>
-            </section>
 
                 <h2 id="global-websites-heading">🏅 Global Top 10 Websites</h2>
                 
@@ -3009,6 +2994,56 @@ body {
     text-decoration: underline;
 }
 
+/* Country List Styles - Match Industry Styles */
+.country-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    color: inherit;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.country-item:hover {
+    background: #e9ecef;
+    border-color: #007bff;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+.country-rank {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+    color: #1c1e21;
+}
+
+.country-flag {
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+.country-name {
+    flex: 1;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.country-metrics {
+    display: flex;
+    gap: 10px;
+}
+
 .country-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -3034,7 +3069,7 @@ body {
     color: #081C34 !important;
 }
 
-.country-rank {
+.country-card .country-rank-badge {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -3047,7 +3082,7 @@ body {
     border: 1px solid #FFD166;
 }
 
-.country-flag {
+.country-card .country-flag {
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -3058,7 +3093,7 @@ body {
     font-weight: 600;
 }
 
-.country-metrics {
+.country-card .country-metrics {
     display: flex;
     justify-content: space-around;
     font-size: 0.8em;
@@ -4996,7 +5031,8 @@ ${this.getFooterHTML(rankedSites.length, 0)}
       secondBest: countryAverages.length > 1 ? countryAverages[1] : null,
       worst: countryAverages[countryAverages.length - 1],
       secondWorst: countryAverages.length > 2 ? countryAverages[countryAverages.length - 2] : null,
-      all: countryAverages
+      all: countryAverages,
+      top5: countryAverages.slice(0, 5)
     };
   }
 

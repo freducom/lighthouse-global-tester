@@ -111,7 +111,7 @@
           "creator": {
             "@id": "https://cheetahcheck.com/#organization"
           },
-          "dateModified": "2025-10-26T07:31:45.755Z",
+          "dateModified": "2025-10-26T07:46:14.744Z",
           "keywords": ["web performance", "lighthouse", "accessibility", "SEO", "performance analytics"]
         }
       ]
@@ -168,44 +168,104 @@
 
             <div class="content-grid">
                 <!-- Country Comparison Section -->
-                <section class="section" aria-labelledby="country-comparison-heading" id="country-comparison">
-                    <h2 id="country-comparison-heading">🏆 Best & Worst Performing Countries</h2>
+                <section class="section" aria-labelledby="country-rankings-heading" id="country-rankings">
+                    <h2 id="country-rankings-heading">� Top 5 Countries by Performance</h2>
+                    
                     <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
-                        <a href="country-iran.html" class="best-country country-tile-link" role="button" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
-                            <h3 id="best-country-title">Best: Iran 🇮🇷</h3>
+                        <h3 id="country-comparison-heading" class="sr-only">Country Performance Comparison</h3>
+                        <div class="best-country" role="img" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
+                            <h4 id="best-country-title">Best: Iran 🇮🇷</h4>
                             <div class="country-score" aria-label="64 percent average performance">64%</div>
                             <p id="best-country-desc">Performance Leader</p>
-                        </a>
-                        <a href="country-ukraine.html" class="second-best-country country-tile-link" role="button" aria-labelledby="second-best-title" aria-describedby="second-best-desc">
-                            <h3 id="second-best-title">Runner-up: Ukraine 🇺🇦</h3>
-                            <div class="country-score" aria-label="54 percent average performance">54%</div>
-                            <p id="second-best-desc">Strong Performer</p>
-                        </a>
-                        <a href="country-estonia.html" class="second-worst-country country-tile-link" role="button" aria-labelledby="second-worst-title" aria-describedby="second-worst-desc">
-                            <h3 id="second-worst-title">Almost last: Estonia 🇪🇪</h3>
-                            <div class="country-score" aria-label="28 percent average performance">28%</div>
-                            <p id="second-worst-desc">Improvement Potential</p>
-                        </a>
-                        <a href="country-south-africa.html" class="worst-country country-tile-link" role="button" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
-                            <h3 id="worst-country-title">Worst: South Africa 🇿🇦</h3>
+                        </div>
+                        <div class="worst-country" role="img" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
+                            <h4 id="worst-country-title">Worst: South Africa 🇿🇦</h4>
                             <div class="country-score" aria-label="28 percent average performance">28%</div>
                             <p id="worst-country-desc">Growth Opportunity</p>
-                        </a>
+                        </div>
                     </div>
                     
-                    <!-- Website Comparison Section -->
-                    <h2 id="website-comparison-heading" style="margin-top: 40px;">🏆 Best & Worst Performing Websites</h2>
-                    <div class="website-comparison" role="group" aria-labelledby="website-comparison-heading">
-                        <a href="domain-emathstudio-com.html" class="best-website website-tile-link" role="button" aria-labelledby="best-website-title" aria-describedby="best-website-desc">
-                            <h3 id="best-website-title">Best: emathstudio.com</h3>
-                            <div class="website-score" aria-label="100 percent performance">100%</div>
-                            <p id="best-website-desc">🇫🇮 Finland</p>
-                        </a>
-                        <a href="domain-bbc-co-uk.html" class="worst-website website-tile-link" role="button" aria-labelledby="worst-website-title" aria-describedby="worst-website-desc">
-                            <h3 id="worst-website-title">Worst: bbc.co.uk</h3>
-                            <div class="website-score" aria-label="4 percent performance">4%</div>
-                            <p id="worst-website-desc">🇬🇧 United Kingdom</p>
-                        </a>
+                    <div class="country-rankings" aria-labelledby="top-countries-heading">
+                        <h3 id="top-countries-heading">🏆 Top 5 Countries</h3>
+                        <div class="country-list" role="list">
+                            
+                                <a href="country-iran.html" 
+                                   class="country-item" 
+                                   role="listitem"
+                                   aria-describedby="country-0-desc">
+                                    <div class="country-rank" aria-label="Rank 1">#1</div>
+                                    <div class="country-flag">🇮🇷</div>
+                                    <div class="country-name">Iran</div>
+                                    <div id="country-0-desc" class="country-metrics" aria-label="Performance 64%, Accessibility 81%, SEO 88%">
+                                        <span class="metric" aria-label="Performance 64 percent">P: 64%</span>
+                                        <span class="metric" aria-label="Accessibility 81 percent">A: 81%</span>
+                                        <span class="metric" aria-label="SEO 88 percent">SEO: 88%</span>
+                                    </div>
+                                </a>
+                            
+                                <a href="country-ukraine.html" 
+                                   class="country-item" 
+                                   role="listitem"
+                                   aria-describedby="country-1-desc">
+                                    <div class="country-rank" aria-label="Rank 2">#2</div>
+                                    <div class="country-flag">🇺🇦</div>
+                                    <div class="country-name">Ukraine</div>
+                                    <div id="country-1-desc" class="country-metrics" aria-label="Performance 54%, Accessibility 79%, SEO 92%">
+                                        <span class="metric" aria-label="Performance 54 percent">P: 54%</span>
+                                        <span class="metric" aria-label="Accessibility 79 percent">A: 79%</span>
+                                        <span class="metric" aria-label="SEO 92 percent">SEO: 92%</span>
+                                    </div>
+                                </a>
+                            
+                                <a href="country-zambia.html" 
+                                   class="country-item" 
+                                   role="listitem"
+                                   aria-describedby="country-2-desc">
+                                    <div class="country-rank" aria-label="Rank 3">#3</div>
+                                    <div class="country-flag">🇿🇲</div>
+                                    <div class="country-name">Zambia</div>
+                                    <div id="country-2-desc" class="country-metrics" aria-label="Performance 54%, Accessibility 91%, SEO 86%">
+                                        <span class="metric" aria-label="Performance 54 percent">P: 54%</span>
+                                        <span class="metric" aria-label="Accessibility 91 percent">A: 91%</span>
+                                        <span class="metric" aria-label="SEO 86 percent">SEO: 86%</span>
+                                    </div>
+                                </a>
+                            
+                                <a href="country-netherlands.html" 
+                                   class="country-item" 
+                                   role="listitem"
+                                   aria-describedby="country-3-desc">
+                                    <div class="country-rank" aria-label="Rank 4">#4</div>
+                                    <div class="country-flag">🇳🇱</div>
+                                    <div class="country-name">Netherlands</div>
+                                    <div id="country-3-desc" class="country-metrics" aria-label="Performance 53%, Accessibility 94%, SEO 91%">
+                                        <span class="metric" aria-label="Performance 53 percent">P: 53%</span>
+                                        <span class="metric" aria-label="Accessibility 94 percent">A: 94%</span>
+                                        <span class="metric" aria-label="SEO 91 percent">SEO: 91%</span>
+                                    </div>
+                                </a>
+                            
+                                <a href="country-pakistan.html" 
+                                   class="country-item" 
+                                   role="listitem"
+                                   aria-describedby="country-4-desc">
+                                    <div class="country-rank" aria-label="Rank 5">#5</div>
+                                    <div class="country-flag">🌍</div>
+                                    <div class="country-name">Pakistan</div>
+                                    <div id="country-4-desc" class="country-metrics" aria-label="Performance 52%, Accessibility 77%, SEO 90%">
+                                        <span class="metric" aria-label="Performance 52 percent">P: 52%</span>
+                                        <span class="metric" aria-label="Accessibility 77 percent">A: 77%</span>
+                                        <span class="metric" aria-label="SEO 90 percent">SEO: 90%</span>
+                                    </div>
+                                </a>
+                            
+                        </div>
+                        <div class="see-all-link">
+                            <a href="all-countries.html" class="btn-see-all" aria-describedby="see-all-countries-desc">
+                                See all countries
+                            </a>
+                            <div id="see-all-countries-desc" class="sr-only">View comprehensive list of all country performance rankings</div>
+                        </div>
                     </div>
                 </section>
 
@@ -309,69 +369,6 @@
 
             <!-- Global Websites Section -->
             <section class="section" aria-labelledby="global-websites-heading" id="global-websites">
-            <h2>🌍 Top 5 Country Rankings</h2>
-                <div class="country-grid">
-                
-                    <a href="country-iran.html" class="country-card">
-                        <div class="country-rank">#1</div>
-                        <div class="country-flag">🇮🇷</div>
-                        <h3>Iran</h3>
-                        <div class="country-metrics">
-                            <span class="metric">P: 64%</span>
-                            <span class="metric">A: 81%</span>
-                            <span class="metric">SEO: 88%</span>
-                        </div>
-                    </a>
-                
-                    <a href="country-ukraine.html" class="country-card">
-                        <div class="country-rank">#2</div>
-                        <div class="country-flag">🇺🇦</div>
-                        <h3>Ukraine</h3>
-                        <div class="country-metrics">
-                            <span class="metric">P: 54%</span>
-                            <span class="metric">A: 79%</span>
-                            <span class="metric">SEO: 92%</span>
-                        </div>
-                    </a>
-                
-                    <a href="country-zambia.html" class="country-card">
-                        <div class="country-rank">#3</div>
-                        <div class="country-flag">🇿🇲</div>
-                        <h3>Zambia</h3>
-                        <div class="country-metrics">
-                            <span class="metric">P: 54%</span>
-                            <span class="metric">A: 91%</span>
-                            <span class="metric">SEO: 86%</span>
-                        </div>
-                    </a>
-                
-                    <a href="country-netherlands.html" class="country-card">
-                        <div class="country-rank">#4</div>
-                        <div class="country-flag">🇳🇱</div>
-                        <h3>Netherlands</h3>
-                        <div class="country-metrics">
-                            <span class="metric">P: 53%</span>
-                            <span class="metric">A: 94%</span>
-                            <span class="metric">SEO: 91%</span>
-                        </div>
-                    </a>
-                
-                    <a href="country-pakistan.html" class="country-card">
-                        <div class="country-rank">#5</div>
-                        <div class="country-flag">🌍</div>
-                        <h3>Pakistan</h3>
-                        <div class="country-metrics">
-                            <span class="metric">P: 52%</span>
-                            <span class="metric">A: 77%</span>
-                            <span class="metric">SEO: 90%</span>
-                        </div>
-                    </a>
-                
-            </div>
-            <div class="see-all-link">
-                <a href="all-countries.html" class="btn-see-all">See all countries</a>
-            </div>
-            </section>
 
                 <h2 id="global-websites-heading">🏅 Global Top 10 Websites</h2>
                 
@@ -1369,7 +1366,7 @@
 
     <script>
         // Update the last updated time to show in user's local timezone
-        const generationTime = new Date('2025-10-26T07:31:45.721Z'); // Actual generation time from server
+        const generationTime = new Date('2025-10-26T07:46:14.663Z'); // Actual generation time from server
         document.addEventListener('DOMContentLoaded', function() {
             const updateTimeElement = document.getElementById('updateTime');
             if (updateTimeElement) {

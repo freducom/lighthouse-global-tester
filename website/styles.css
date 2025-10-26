@@ -384,6 +384,56 @@ body {
     text-decoration: underline;
 }
 
+/* Country List Styles - Match Industry Styles */
+.country-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    color: inherit;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.country-item:hover {
+    background: #e9ecef;
+    border-color: #007bff;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+.country-rank {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+    color: #1c1e21;
+}
+
+.country-flag {
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+.country-name {
+    flex: 1;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.country-metrics {
+    display: flex;
+    gap: 10px;
+}
+
 .country-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -409,7 +459,7 @@ body {
     color: #081C34 !important;
 }
 
-.country-rank {
+.country-card .country-rank-badge {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -422,7 +472,7 @@ body {
     border: 1px solid #FFD166;
 }
 
-.country-flag {
+.country-card .country-flag {
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -433,7 +483,7 @@ body {
     font-weight: 600;
 }
 
-.country-metrics {
+.country-card .country-metrics {
     display: flex;
     justify-content: space-around;
     font-size: 0.8em;
