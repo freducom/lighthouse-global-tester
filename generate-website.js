@@ -453,7 +453,7 @@ class WebsiteGenerator {
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of ${websiteCount} websites.</p>
+            <p>&copy; ${new Date().getFullYear()} CheetahCheck. Google Lighthouse performance monitoring of ${websiteCount} websites.</p>
         </div>
     </footer>
 

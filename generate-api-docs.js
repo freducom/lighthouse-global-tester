@@ -789,7 +789,7 @@ curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Track the fastest websites. Lighthouse performance data updated regularly.</p>
+            <p>&copy; ${new Date().getFullYear()} CheetahCheck. Track the fastest websites. Lighthouse performance data updated regularly.</p>
         </div>
     </footer>
 
