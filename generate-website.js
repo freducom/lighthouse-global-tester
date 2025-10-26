@@ -406,7 +406,7 @@ class WebsiteGenerator {
   }
 
   getSocialMetaTags(title, description, url = '', type = 'website') {
-    const baseUrl = 'https://freducom.github.io/lighthouse-global-tester';
+    const baseUrl = 'https://cheetahcheck.com';
     const fullUrl = url ? `${baseUrl}/${url}` : baseUrl;
     const openGraphImageUrl = `${baseUrl}/social_share-opengraph.png`;
     const twitterImageUrl = `${baseUrl}/social_share-twitter.png`;
