@@ -4977,7 +4977,7 @@ input[type="text"]:focus, input[type="search"]:focus {
 
 .install-popup {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     left: 20px;
     right: 20px;
     background: linear-gradient(135deg, #0D3B66 0%, #1E6091 100%);
@@ -4988,6 +4988,7 @@ input[type="text"]:focus, input[type="search"]:focus {
     z-index: 10000;
     transform: translateY(100px);
     opacity: 0;
+    pointer-events: none;
     transition: all 0.3s ease-out;
     max-width: 400px;
     margin: 0 auto;
@@ -4996,6 +4997,7 @@ input[type="text"]:focus, input[type="search"]:focus {
 .install-popup.show {
     transform: translateY(0);
     opacity: 1;
+    pointer-events: auto;
 }
 
 .install-popup-header {
@@ -5065,7 +5067,7 @@ input[type="text"]:focus, input[type="search"]:focus {
     .install-popup {
         left: 16px;
         right: 16px;
-        bottom: 16px;
+        bottom: 70px;
         padding: 16px;
     }
     
