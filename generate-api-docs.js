@@ -818,13 +818,12 @@ curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
 
   getSocialMetaTags() {
     const baseUrl = 'https://cheetahcheck.com';
-    const ogImageUrl = `${baseUrl}/openGraph_1200x630.png`;
-    const twitterImageUrl = `${baseUrl}/twitterCard_1200x675.png`;
+    const socialImageUrl = `${baseUrl}/social_share.png`;
     
     return `    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="CheetahCheck API Documentation - Lighthouse Performance Data API">
     <meta property="og:description" content="Track the fastest websites with CheetahCheck's REST API for lighthouse performance data across 300+ websites globally. Free, public access with JSON endpoints.">
-    <meta property="og:image" content="${ogImageUrl}">
+    <meta property="og:image" content="${socialImageUrl}">
     <meta property="og:url" content="${baseUrl}/api-docs.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="CheetahCheck">
@@ -833,7 +832,7 @@ curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CheetahCheck API Documentation">
     <meta name="twitter:description" content="Track the fastest websites via REST API for lighthouse performance data across 300+ websites globally.">
-    <meta name="twitter:image" content="${twitterImageUrl}">`;
+    <meta name="twitter:image" content="${socialImageUrl}">`;
   }
 
   getPostHogScript() {

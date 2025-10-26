@@ -90,13 +90,12 @@ class WebsiteGenerator {
   getSocialMetaTags(title, description, url = '', type = 'website') {
     const baseUrl = 'https://freducom.github.io/lighthouse-global-tester';
     const fullUrl = url ? `${baseUrl}/${url}` : baseUrl;
-    const ogImageUrl = `${baseUrl}/openGraph_1200x630.png`;
-    const twitterImageUrl = `${baseUrl}/twitterCard_1200x675.png`;
+    const socialImageUrl = `${baseUrl}/social_share.png`;
     
     return `    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
-    <meta property="og:image" content="${ogImageUrl}">
+    <meta property="og:image" content="${socialImageUrl}">
     <meta property="og:url" content="${fullUrl}">
     <meta property="og:type" content="${type}">
     <meta property="og:site_name" content="CheetahCheck">
@@ -106,7 +105,7 @@ class WebsiteGenerator {
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="${twitterImageUrl}">
+    <meta name="twitter:image" content="${socialImageUrl}">
     <meta name="twitter:site" content="@cheetahcheck">
     <meta name="twitter:creator" content="@cheetahcheck">`;
   }
@@ -482,11 +481,8 @@ ${this.getPostHogScript()}
             <div class="logo-container">
                 <img src="logo.png" alt="Valmitta" class="header-logo">
             </div>
-            <p class="subtitle">Website performance tracking of ${allScores.length} websites with Google Lighthouse</p>
+            <p class="subtitle">${allScores.length} websites – only one can be the fastest</p>
             
-            <div class="last-updated" id="lastUpdated">
-                Last updated: <time id="updateTime" datetime="${new Date().toISOString()}">Loading...</time>
-            </div>
         </header>
 
         <main id="main-content" role="main">
