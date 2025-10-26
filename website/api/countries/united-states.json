@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.512Z",
+    "generated_at": "2025-10-26T16:31:47.404Z",
     "country": "United States",
     "flag": "🇺🇸",
     "website_count": 56
@@ -23,7 +23,7 @@
         "seo": 67,
         "pwa": 0
       },
-      "test_date": "2025-10-26 14:14:00"
+      "test_date": "2025-10-26 16:06:32"
     },
     {
       "url": "amazon.com",
@@ -218,18 +218,6 @@
       "test_date": "2025-10-26 08:49:59"
     },
     {
-      "url": "berkeley.edu",
-      "industry": "Education",
-      "scores": {
-        "performance": 56,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 14:13:48"
-    },
-    {
       "url": "reddit.com",
       "industry": "Social Media",
       "scores": {
@@ -384,6 +372,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 20:18:30"
+    },
+    {
+      "url": "berkeley.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 16:06:20"
     },
     {
       "url": "netflix.com",
@@ -626,18 +626,6 @@
       "test_date": "2025-10-26 10:17:12"
     },
     {
-      "url": "bankofamerica.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 26,
-        "accessibility": 78,
-        "best_practices": 83,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 14:09:27"
-    },
-    {
       "url": "tesla.com",
       "industry": "Automotive",
       "scores": {
@@ -672,6 +660,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:31:01"
+    },
+    {
+      "url": "bankofamerica.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 23,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 15:58:39"
     },
     {
       "url": "hubspot.com",
@@ -713,7 +713,7 @@
       "industry": "Education",
       "website_count": 1,
       "averages": {
-        "performance": 56,
+        "performance": 40,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 93,

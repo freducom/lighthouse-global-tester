@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.624Z",
+    "generated_at": "2025-10-26T16:31:47.519Z",
     "url": "bbva.com.ar",
     "country": "Argentina",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 8,
+    "performance": 11,
     "accessibility": 89,
     "best_practices": 67,
     "seo": 79,
     "pwa": 44,
-    "test_date": "2025-10-26 14:11:40"
+    "test_date": "2025-10-26 16:04:13"
   },
   "historical_data": [
+    {
+      "performance": 11,
+      "accessibility": 89,
+      "best_practices": 67,
+      "seo": 79,
+      "pwa": 44,
+      "test_date": "2025-10-26 16:04:13"
+    },
     {
       "performance": 8,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 14:11:40"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 16:04:13",
+    "test_date_previous": "2025-10-26 14:11:40"
+  }
 }

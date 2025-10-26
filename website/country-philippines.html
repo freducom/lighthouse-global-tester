@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T16:21:13.985Z",
+          "dateCreated": "2025-10-26T16:31:46.905Z",
           "about": {
             "@type": "Place",
             "name": "Philippines",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Philippines"
           },
-          "dateModified": "2025-10-26T16:21:13.985Z",
+          "dateModified": "2025-10-26T16:31:46.905Z",
           "keywords": ["Philippines", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -111,9 +111,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Philippines</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 0 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 20 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">0%</div>
+                <div class="stat-number" aria-hidden="true">20%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 66 percent">
@@ -200,15 +200,15 @@
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="bdo.com.ph" 
                                 data-industry="Finance"
-                                data-performance="0"
+                                data-performance="20"
                                 data-accessibility="66"
                                 data-seo="71"
                                 data-best-practices="0"
                                 data-pwa="33"
-                                data-test-date="2025-10-26 14:13:17">
+                                data-test-date="2025-10-26 16:05:50">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-bdo-com-ph.html" 
@@ -225,8 +225,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 0 percent, needs improvement">
-                                    0%
+                                    aria-label="Performance score: 20 percent, needs improvement, trend: +20 points">
+                                    20%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+20</span>
                                 </td>
                                 <td class="score acc-average"
                                     aria-label="Accessibility score: 66 percent, average performance">
@@ -244,9 +244,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-26 14:13:17"
+                                <td class="date" data-date="2025-10-26 16:05:50"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 14:13:17">10/26/2025</time>
+                                    <time datetime="2025-10-26 16:05:50">10/26/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -408,7 +408,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"bdo.com.ph","country":"Philippines","industry":"Finance","performance":0,"accessibility":66,"best_practices":0,"seo":71,"pwa":33,"test_date":"2025-10-26 14:13:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"bdo.com.ph","country":"Philippines","industry":"Finance","performance":20,"accessibility":66,"best_practices":0,"seo":71,"pwa":33,"test_date":"2025-10-26 16:05:50","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":20,"text":"+20","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

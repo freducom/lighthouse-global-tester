@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.635Z",
+    "generated_at": "2025-10-26T16:31:47.526Z",
     "url": "bell.ca",
     "country": "Canada",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 39,
     "accessibility": 94,
     "best_practices": 75,
     "seo": 79,
     "pwa": 33,
-    "test_date": "2025-10-26 14:13:34"
+    "test_date": "2025-10-26 16:06:07"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 94,
+      "best_practices": 75,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-10-26 16:06:07"
+    },
     {
       "performance": 43,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 14:13:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 16:06:07",
+    "test_date_previous": "2025-10-26 14:13:34"
+  }
 }

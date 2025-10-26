@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.694Z",
+    "generated_at": "2025-10-26T16:31:47.585Z",
     "url": "berkeley.edu",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 40,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-26 14:13:48"
+    "test_date": "2025-10-26 16:06:20"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-26 16:06:20"
+    },
     {
       "performance": 56,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 14:13:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -16,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 16:06:20",
+    "test_date_previous": "2025-10-26 14:13:48"
+  }
 }

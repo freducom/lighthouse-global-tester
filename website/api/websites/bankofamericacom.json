@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.694Z",
+    "generated_at": "2025-10-26T16:31:47.585Z",
     "url": "bankofamerica.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 23,
     "accessibility": 78,
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-26 14:09:27"
+    "test_date": "2025-10-26 15:58:39"
   },
   "historical_data": [
+    {
+      "performance": 23,
+      "accessibility": 78,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-10-26 15:58:39"
+    },
     {
       "performance": 26,
       "accessibility": 78,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 14:09:27",
-    "test_date_previous": "2025-10-23 06:58:52"
+    "test_date_current": "2025-10-26 15:58:39",
+    "test_date_previous": "2025-10-26 14:09:27"
   }
 }

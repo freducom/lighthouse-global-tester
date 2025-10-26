@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.528Z",
+    "generated_at": "2025-10-26T16:31:47.420Z",
     "country": "Finland",
     "flag": "🇫🇮",
     "website_count": 28
   },
   "averages": {
-    "performance": 49,
+    "performance": 48,
     "accessibility": 90,
     "best_practices": 88,
     "seo": 96,
@@ -122,18 +122,6 @@
       "test_date": "2025-10-19 20:17:04"
     },
     {
-      "url": "banknorwegian.fi",
-      "industry": "Finance",
-      "scores": {
-        "performance": 57,
-        "accessibility": 94,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 67
-      },
-      "test_date": "2025-10-26 14:08:01"
-    },
-    {
       "url": "sokos.fi",
       "industry": "E-commerce",
       "scores": {
@@ -204,6 +192,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:38:46"
+    },
+    {
+      "url": "banknorwegian.fi",
+      "industry": "Finance",
+      "scores": {
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 15:54:58"
     },
     {
       "url": "verkkokauppa.com",
@@ -388,7 +388,7 @@
       "industry": "Finance",
       "website_count": 5,
       "averages": {
-        "performance": 60,
+        "performance": 56,
         "accessibility": 91,
         "best_practices": 93,
         "seo": 92,

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.690Z",
+    "generated_at": "2025-10-26T16:31:47.580Z",
     "url": "bankofengland.co.uk",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 70,
+    "performance": 77,
     "accessibility": 95,
     "best_practices": 83,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-26 14:10:01"
+    "test_date": "2025-10-26 15:59:13"
   },
   "historical_data": [
+    {
+      "performance": 77,
+      "accessibility": 95,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-10-26 15:59:13"
+    },
     {
       "performance": 70,
       "accessibility": 95,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 14:10:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 15:59:13",
+    "test_date_previous": "2025-10-26 14:10:01"
+  }
 }

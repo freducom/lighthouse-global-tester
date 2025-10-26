@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T16:21:14.674Z",
+    "generated_at": "2025-10-26T16:31:47.565Z",
     "url": "bcr.ro",
     "country": "Romania",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 46,
     "accessibility": 86,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-26 14:12:08"
+    "test_date": "2025-10-26 16:04:44"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 86,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-26 16:04:44"
+    },
     {
       "performance": 45,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 14:12:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 16:04:44",
+    "test_date_previous": "2025-10-26 14:12:08"
+  }
 }

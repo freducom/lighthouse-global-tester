@@ -5528,6 +5528,11 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
                 const selectedCountry = countryFilter.value;
                 const selectedIndustry = industryFilter.value;
                 
+                console.log('Applying filters:', { selectedCountry, selectedIndustry, searchTerm });
+                
+                // Update URL parameters
+                updateURLParameters(selectedCountry, selectedIndustry);
+                
                 let visibleCount = 0;
                 
                 rows.forEach(row => {
@@ -5553,13 +5558,59 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
                     }
                 });
                 
+                console.log('Visible rows after filtering:', visibleCount);
+                
                 // Update search placeholder with current filter context
                 updateSearchPlaceholder(visibleCount);
                 
                 // Update ranks after filtering
                 updateRanks();
             }
-            
+
+            function updateURLParameters(country, industry) {
+                const url = new URL(window.location);
+                
+                // Update or remove country parameter
+                if (country) {
+                    url.searchParams.set('country', country);
+                } else {
+                    url.searchParams.delete('country');
+                }
+                
+                // Update or remove industry parameter
+                if (industry) {
+                    url.searchParams.set('industry', industry);
+                } else {
+                    url.searchParams.delete('industry');
+                }
+                
+                // Update URL without refreshing page
+                window.history.replaceState({}, '', url);
+            }
+
+            function initializeFiltersFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const countryParam = urlParams.get('country');
+                const industryParam = urlParams.get('industry');
+                
+                console.log('URL Parameters:', { country: countryParam, industry: industryParam });
+                
+                // Set country filter if parameter exists
+                if (countryParam) {
+                    countryFilter.value = countryParam;
+                    console.log('Set country filter to:', countryParam);
+                }
+                
+                // Set industry filter if parameter exists
+                if (industryParam) {
+                    industryFilter.value = industryParam;
+                    console.log('Set industry filter to:', industryParam);
+                }
+                
+                // Always apply filters to ensure proper initialization
+                applyFiltersAndSearch();
+            }
+
             function updateSearchPlaceholder(visibleCount) {
                 const selectedCountry = countryFilter.options[countryFilter.selectedIndex]?.text || 'All Countries';
                 const selectedIndustry = industryFilter.options[industryFilter.selectedIndex]?.text || 'All Industries';
@@ -5653,11 +5704,18 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
                 countryFilter.value = '';
                 industryFilter.value = '';
                 searchInput.value = '';
+                
+                // Clear URL parameters
+                const url = new URL(window.location);
+                url.searchParams.delete('country');
+                url.searchParams.delete('industry');
+                window.history.replaceState({}, '', url);
+                
                 applyFiltersAndSearch();
             });
 
-            // Initialize placeholder
-            applyFiltersAndSearch();
+            // Initialize filters from URL parameters on page load
+            initializeFiltersFromURL();
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sort-header[data-column]').forEach(button => {
