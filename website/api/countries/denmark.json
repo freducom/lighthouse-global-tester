@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.569Z",
+    "generated_at": "2025-10-26T19:17:30.519Z",
     "country": "Denmark",
     "flag": "🇩🇰",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 62,
-    "accessibility": 98,
+    "performance": 57,
+    "accessibility": 92,
     "best_practices": 94,
-    "seo": 97,
+    "seo": 96,
     "pwa": 44
   },
   "websites": [
@@ -48,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 08:17:42"
+    },
+    {
+      "url": "bold.dk",
+      "industry": "Sports",
+      "scores": {
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 18:32:40"
     }
   ],
   "industries": [
@@ -71,6 +83,17 @@
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Sports",
+      "website_count": 1,
+      "averages": {
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
       }
     },
     {

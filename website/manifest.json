@@ -6,6 +6,10 @@
   "display": "standalone",
   "background_color": "#0D3B66",
   "theme_color": "#0D3B66",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "cheetahcheck_favicon_16x16.png",
@@ -40,7 +44,39 @@
     {
       "src": "logo.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "analytics",
+    "productivity",
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "Global Performance",
+      "short_name": "Global",
+      "description": "View global website performance rankings",
+      "url": "/country-global.html",
+      "icons": [
+        {
+          "src": "cheetahcheck_favicon_128x128.png",
+          "sizes": "128x128"
+        }
+      ]
+    },
+    {
+      "name": "Latest Scans",
+      "short_name": "Latest",
+      "description": "View latest performance scans",
+      "url": "/latest-updated.html",
+      "icons": [
+        {
+          "src": "cheetahcheck_favicon_128x128.png",
+          "sizes": "128x128"
+        }
+      ]
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.629Z",
+    "generated_at": "2025-10-26T19:17:30.580Z",
     "industry": "Sports",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
     "performance": 44,
-    "accessibility": 80,
-    "best_practices": 80,
-    "seo": 86,
+    "accessibility": 79,
+    "best_practices": 81,
+    "seo": 87,
     "pwa": 40
   },
   "websites": [
@@ -23,6 +23,18 @@
         "pwa": 22
       },
       "test_date": "2025-10-19 20:00:05"
+    },
+    {
+      "url": "bold.dk",
+      "country": "Denmark",
+      "scores": {
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 18:32:40"
     },
     {
       "url": "yallakora.com",
@@ -107,6 +119,17 @@
         "best_practices": 83,
         "seo": 76,
         "pwa": 22
+      }
+    },
+    {
+      "country": "Denmark",
+      "website_count": 1,
+      "averages": {
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
       }
     },
     {

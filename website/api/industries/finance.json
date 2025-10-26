@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.628Z",
+    "generated_at": "2025-10-26T19:17:30.579Z",
     "industry": "Finance",
-    "website_count": 49
+    "website_count": 52
   },
   "averages": {
     "performance": 44,
@@ -47,6 +47,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-26 15:58:56"
+    },
+    {
+      "url": "bmo.com",
+      "country": "Canada",
+      "scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:06"
     },
     {
       "url": "rbcroyalbank.com",
@@ -155,6 +167,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 04:12:38"
+    },
+    {
+      "url": "boerse.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:50"
     },
     {
       "url": "postbank.de",
@@ -323,6 +347,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:05:50"
+    },
+    {
+      "url": "bpi.com.ph",
+      "country": "Philippines",
+      "scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:39:08"
     },
     {
       "url": "aliorbank.pl",
@@ -615,13 +651,13 @@
     },
     {
       "country": "Canada",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 30,
-        "accessibility": 96,
-        "best_practices": 62,
+        "performance": 29,
+        "accessibility": 97,
+        "best_practices": 63,
         "seo": 86,
-        "pwa": 36
+        "pwa": 35
       }
     },
     {
@@ -648,13 +684,13 @@
     },
     {
       "country": "Germany",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 29,
-        "accessibility": 89,
-        "best_practices": 88,
-        "seo": 93,
-        "pwa": 45
+        "performance": 38,
+        "accessibility": 90,
+        "best_practices": 86,
+        "seo": 87,
+        "pwa": 41
       }
     },
     {
@@ -736,12 +772,12 @@
     },
     {
       "country": "Philippines",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 20,
-        "accessibility": 66,
-        "best_practices": 0,
-        "seo": 71,
+        "performance": 23,
+        "accessibility": 73,
+        "best_practices": 42,
+        "seo": 67,
         "pwa": 33
       }
     },

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.572Z",
+    "generated_at": "2025-10-26T19:17:30.522Z",
     "country": "Turkey",
     "flag": "🇹🇷",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 54,
-    "accessibility": 87,
-    "best_practices": 83,
-    "seo": 90,
-    "pwa": 50
+    "performance": 51,
+    "accessibility": 89,
+    "best_practices": 87,
+    "seo": 92,
+    "pwa": 44
   },
   "websites": [
     {
@@ -48,6 +48,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-21 18:16:17"
+    },
+    {
+      "url": "blogcu.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 18:27:25"
     },
     {
       "url": "ntv.com.tr",
@@ -94,6 +106,17 @@
         "best_practices": 79,
         "seo": 93,
         "pwa": 39
+      }
+    },
+    {
+      "industry": "Social Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 41,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22
       }
     }
   ]

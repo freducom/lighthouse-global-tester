@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.554Z",
+    "generated_at": "2025-10-26T19:17:30.506Z",
     "country": "Canada",
     "flag": "🇨🇦",
-    "website_count": 18
+    "website_count": 19
   },
   "averages": {
-    "performance": 40,
+    "performance": 39,
     "accessibility": 94,
-    "best_practices": 72,
+    "best_practices": 71,
     "seo": 88,
-    "pwa": 44
+    "pwa": 43
   },
   "websites": [
     {
@@ -194,6 +194,18 @@
       "test_date": "2025-10-24 08:15:02"
     },
     {
+      "url": "bmo.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:06"
+    },
+    {
       "url": "shaw.ca",
       "industry": "Telecom",
       "scores": {
@@ -233,13 +245,13 @@
   "industries": [
     {
       "industry": "Finance",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 30,
-        "accessibility": 96,
-        "best_practices": 62,
+        "performance": 29,
+        "accessibility": 97,
+        "best_practices": 63,
         "seo": 86,
-        "pwa": 36
+        "pwa": 35
       }
     },
     {

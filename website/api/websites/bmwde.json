@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.700Z",
+    "generated_at": "2025-10-26T19:17:30.644Z",
     "url": "bmw.de",
     "country": "Germany",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 36,
     "accessibility": 100,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-22 08:31:37"
+    "test_date": "2025-10-26 18:31:25"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-26 18:31:25"
+    },
     {
       "performance": 46,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 08:31:37"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 18:31:25",
+    "test_date_previous": "2025-10-22 08:31:37"
+  }
 }

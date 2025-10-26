@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.562Z",
+    "generated_at": "2025-10-26T19:17:30.511Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 28
+    "website_count": 30
   },
   "averages": {
     "performance": 48,
     "accessibility": 90,
     "best_practices": 88,
     "seo": 96,
-    "pwa": 47
+    "pwa": 46
   },
   "websites": [
     {
@@ -120,6 +120,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "bonalive.com",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:36:51"
     },
     {
       "url": "sokos.fi",
@@ -254,6 +266,18 @@
       "test_date": "2025-10-19 20:14:50"
     },
     {
+      "url": "boozt.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 34,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:48"
+    },
+    {
       "url": "suomi24.fi",
       "industry": "Social Media",
       "scores": {
@@ -364,13 +388,13 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 45,
-        "accessibility": 97,
-        "best_practices": 96,
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 89,
         "seo": 100,
-        "pwa": 67
+        "pwa": 55
       }
     },
     {
@@ -404,6 +428,17 @@
         "best_practices": 80,
         "seo": 97,
         "pwa": 39
+      }
+    },
+    {
+      "industry": "Healthcare",
+      "website_count": 1,
+      "averages": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 95,
+        "pwa": 33
       }
     },
     {

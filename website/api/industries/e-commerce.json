@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.629Z",
+    "generated_at": "2025-10-26T19:17:30.580Z",
     "industry": "E-commerce",
-    "website_count": 34
+    "website_count": 35
   },
   "averages": {
     "performance": 45,
     "accessibility": 85,
     "best_practices": 81,
-    "seo": 91,
+    "seo": 92,
     "pwa": 47
   },
   "websites": [
@@ -95,6 +95,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-21 18:20:35"
+    },
+    {
+      "url": "boozt.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 34,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:48"
     },
     {
       "url": "sokos.fi",
@@ -232,13 +244,13 @@
       "url": "bol.com",
       "country": "Netherlands",
       "scores": {
-        "performance": 71,
+        "performance": 88,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:24:41"
+      "test_date": "2025-10-26 18:32:08"
     },
     {
       "url": "allegro.pl",
@@ -468,13 +480,13 @@
     },
     {
       "country": "Finland",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 45,
-        "accessibility": 97,
-        "best_practices": 96,
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 89,
         "seo": 100,
-        "pwa": 67
+        "pwa": 55
       }
     },
     {
@@ -536,7 +548,7 @@
       "country": "Netherlands",
       "website_count": 1,
       "averages": {
-        "performance": 71,
+        "performance": 88,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,

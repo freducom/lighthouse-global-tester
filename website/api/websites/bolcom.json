@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.722Z",
+    "generated_at": "2025-10-26T19:17:30.663Z",
     "url": "bol.com",
     "country": "Netherlands",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 71,
+    "performance": 88,
     "accessibility": 86,
     "best_practices": 0,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-19 20:24:41"
+    "test_date": "2025-10-26 18:32:08"
   },
   "historical_data": [
+    {
+      "performance": 88,
+      "accessibility": 86,
+      "best_practices": 0,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-10-26 18:32:08"
+    },
     {
       "performance": 71,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:24:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 17,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 18:32:08",
+    "test_date_previous": "2025-10-19 20:24:41"
+  }
 }

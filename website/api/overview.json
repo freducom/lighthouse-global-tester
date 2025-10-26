@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.384Z",
+    "generated_at": "2025-10-26T19:17:30.329Z",
     "api_version": "1.0",
-    "total_websites": 486,
+    "total_websites": 497,
     "countries_count": 65,
-    "industries_count": 26,
-    "last_scan_date": "2025-10-26 16:51:32"
+    "industries_count": 29,
+    "last_scan_date": "2025-10-26 18:39:40"
   },
   "global_averages": {
     "performance": 44,
@@ -441,6 +441,17 @@
         "test_date": "2025-10-25 00:51:41"
       },
       {
+        "url": "blogcu.com",
+        "country": "Turkey",
+        "industry": "Social Media",
+        "performance": 41,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22,
+        "test_date": "2025-10-26 18:27:25"
+      },
+      {
         "url": "sokos.fi",
         "country": "Finland",
         "industry": "E-commerce",
@@ -450,17 +461,6 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-23 22:15:43"
-      },
-      {
-        "url": "rabobank.nl",
-        "country": "Netherlands",
-        "industry": "Finance",
-        "performance": 47,
-        "accessibility": 92,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-23 10:23:52"
       }
     ],
     "pwa": [
@@ -894,12 +894,12 @@
         "url": "bol.com",
         "country": "Netherlands",
         "industry": "E-commerce",
-        "performance": 71,
+        "performance": 88,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
         "pwa": 33,
-        "test_date": "2025-10-19 20:24:41"
+        "test_date": "2025-10-26 18:32:08"
       },
       {
         "url": "vk.com",
@@ -914,6 +914,17 @@
       }
     ],
     "seo": [
+      {
+        "url": "bpi.com.ph",
+        "country": "Philippines",
+        "industry": "Finance",
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33,
+        "test_date": "2025-10-26 18:39:08"
+      },
       {
         "url": "libyaobserver.ly",
         "country": "Libya",
@@ -1012,17 +1023,6 @@
         "seo": 71,
         "pwa": 33,
         "test_date": "2025-10-26 16:05:50"
-      },
-      {
-        "url": "neweralive.na",
-        "country": "Namibia",
-        "industry": "Media",
-        "performance": 30,
-        "accessibility": 88,
-        "best_practices": 75,
-        "seo": 71,
-        "pwa": 33,
-        "test_date": "2025-10-22 19:39:32"
       }
     ],
     "pwa": [

@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.794Z",
-    "websites_with_trends": 206,
-    "total_websites": 486
+    "generated_at": "2025-10-26T19:17:30.738Z",
+    "websites_with_trends": 208,
+    "total_websites": 497
   },
   "global_trends": {
     "average_changes": {
-      "performance": -1.1,
+      "performance": -1,
       "accessibility": -0.3,
       "best_practices": -1.6,
       "seo": -0.2,
       "pwa": -0.2
     },
     "improvements": {
-      "performance": 84,
+      "performance": 85,
       "accessibility": 26,
       "best_practices": 15,
       "seo": 13,
       "pwa": 3
     },
     "declines": {
-      "performance": 98,
+      "performance": 99,
       "accessibility": 22,
       "best_practices": 37,
       "seo": 21,
@@ -1296,6 +1296,32 @@
       },
       "changes": {
         "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bmw.de",
+      "country": "Germany",
+      "industry": "Automotive",
+      "current_scores": {
+        "performance": 36,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -10,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2674,6 +2700,32 @@
       },
       "changes": {
         "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bol.com",
+      "country": "Netherlands",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 88,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 71,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 17,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,

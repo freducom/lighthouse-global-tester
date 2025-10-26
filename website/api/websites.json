@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.500Z",
-    "total_websites": 486
+    "generated_at": "2025-10-26T19:17:30.450Z",
+    "total_websites": 497
   },
   "websites": [
     {
@@ -1195,6 +1195,20 @@
       "api_endpoint": "websites/blocketse.json"
     },
     {
+      "url": "blogcu.com",
+      "country": "Turkey",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 18:27:25",
+      "api_endpoint": "websites/blogcucom.json"
+    },
+    {
       "url": "bloomberg.com",
       "country": "United States",
       "industry": "Finance",
@@ -1209,32 +1223,172 @@
       "api_endpoint": "websites/bloombergcom.json"
     },
     {
+      "url": "bmo.com",
+      "country": "Canada",
+      "industry": "Finance",
+      "scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:06",
+      "api_endpoint": "websites/bmocom.json"
+    },
+    {
       "url": "bmw.de",
       "country": "Germany",
       "industry": "Automotive",
       "scores": {
-        "performance": 46,
+        "performance": 36,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-22 08:31:37",
+      "test_date": "2025-10-26 18:31:25",
       "api_endpoint": "websites/bmwde.json"
+    },
+    {
+      "url": "boerse.de",
+      "country": "Germany",
+      "industry": "Finance",
+      "scores": {
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:50",
+      "api_endpoint": "websites/boersede.json"
     },
     {
       "url": "bol.com",
       "country": "Netherlands",
       "industry": "E-commerce",
       "scores": {
-        "performance": 71,
+        "performance": 88,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:24:41",
+      "test_date": "2025-10-26 18:32:08",
       "api_endpoint": "websites/bolcom.json"
+    },
+    {
+      "url": "bold.dk",
+      "country": "Denmark",
+      "industry": "Sports",
+      "scores": {
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 18:32:40",
+      "api_endpoint": "websites/bolddk.json"
+    },
+    {
+      "url": "bonalive.com",
+      "country": "Finland",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:36:51",
+      "api_endpoint": "websites/bonalivecom.json"
+    },
+    {
+      "url": "bonniernews.se",
+      "country": "Sweden",
+      "industry": "Media",
+      "scores": {
+        "performance": 52,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:37:48",
+      "api_endpoint": "websites/bonniernewsse.json"
+    },
+    {
+      "url": "booking.com",
+      "country": "United States",
+      "industry": "Travel",
+      "scores": {
+        "performance": 27,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:20",
+      "api_endpoint": "websites/bookingcom.json"
+    },
+    {
+      "url": "booli.se",
+      "country": "Sweden",
+      "industry": "Realestate",
+      "scores": {
+        "performance": 45,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:34",
+      "api_endpoint": "websites/boolise.json"
+    },
+    {
+      "url": "boozt.com",
+      "country": "Finland",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 34,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:48",
+      "api_endpoint": "websites/booztcom.json"
+    },
+    {
+      "url": "bpi.com.ph",
+      "country": "Philippines",
+      "industry": "Finance",
+      "scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:39:08",
+      "api_endpoint": "websites/bpicomph.json"
+    },
+    {
+      "url": "bring.se",
+      "country": "Sweden",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 51,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:39:40",
+      "api_endpoint": "websites/bringse.json"
     },
     {
       "url": "business-standard.com",

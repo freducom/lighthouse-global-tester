@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.566Z",
+    "generated_at": "2025-10-26T19:17:30.515Z",
     "country": "Sweden",
     "flag": "🇸🇪",
-    "website_count": 23
+    "website_count": 26
   },
   "averages": {
     "performance": 49,
     "accessibility": 94,
     "best_practices": 89,
     "seo": 95,
-    "pwa": 44
+    "pwa": 43
   },
   "websites": [
     {
@@ -86,6 +86,18 @@
       "test_date": "2025-10-24 16:12:30"
     },
     {
+      "url": "bonniernews.se",
+      "industry": "Media",
+      "scores": {
+        "performance": 52,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:37:48"
+    },
+    {
       "url": "aftonbladet.se",
       "industry": "Media",
       "scores": {
@@ -108,6 +120,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-24 04:16:25"
+    },
+    {
+      "url": "bring.se",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 51,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:39:40"
     },
     {
       "url": "ica.se",
@@ -144,6 +168,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 04:16:10"
+    },
+    {
+      "url": "booli.se",
+      "industry": "Realestate",
+      "scores": {
+        "performance": 45,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:34"
     },
     {
       "url": "coop.se",
@@ -348,13 +384,24 @@
     },
     {
       "industry": "Media",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
         "performance": 50,
-        "accessibility": 97,
+        "accessibility": 96,
         "best_practices": 93,
         "seo": 98,
-        "pwa": 57
+        "pwa": 54
+      }
+    },
+    {
+      "industry": "Realestate",
+      "website_count": 1,
+      "averages": {
+        "performance": 45,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
       }
     },
     {
@@ -381,13 +428,13 @@
     },
     {
       "industry": "Transportation",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 47,
-        "accessibility": 98,
+        "performance": 48,
+        "accessibility": 94,
         "best_practices": 92,
-        "seo": 97,
-        "pwa": 50
+        "seo": 95,
+        "pwa": 44
       }
     },
     {

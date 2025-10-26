@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.564Z",
+    "generated_at": "2025-10-26T19:17:30.513Z",
     "country": "Netherlands",
     "flag": "🇳🇱",
     "website_count": 10
   },
   "averages": {
-    "performance": 53,
+    "performance": 55,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 91,
     "pwa": 35
   },
   "websites": [
+    {
+      "url": "bol.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 88,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:32:08"
+    },
     {
       "url": "ad.nl",
       "industry": "Media",
@@ -36,18 +48,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 22:10:17"
-    },
-    {
-      "url": "bol.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 71,
-        "accessibility": 86,
-        "best_practices": 0,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:24:41"
     },
     {
       "url": "rijksoverheid.nl",
@@ -139,7 +139,7 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 71,
+        "performance": 88,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,

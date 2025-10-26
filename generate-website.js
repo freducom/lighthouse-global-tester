@@ -344,12 +344,30 @@ class WebsiteGenerator {
             <div class="install-popup-icon">🚀</div>
             <h3 class="install-popup-title">Install CheetahCheck</h3>
         </div>
-        <p class="install-popup-description">
-            Get quick access to website performance analytics right from your home screen!
-        </p>
-        <div class="install-popup-actions">
-            <button id="dismissInstall" class="dismiss-btn">Not now</button>
-            <button id="installApp" class="install-btn">Install</button>
+        <div id="androidInstallContent" class="install-content">
+            <p class="install-popup-description">
+                Get quick access to website performance analytics right from your home screen!
+            </p>
+            <div class="install-popup-actions">
+                <button id="dismissInstall" class="dismiss-btn">Not now</button>
+                <button id="installApp" class="install-btn">Install</button>
+            </div>
+        </div>
+        <div id="iosInstallContent" class="install-content" style="display: none;">
+            <p class="install-popup-description">
+                Install CheetahCheck for quick access to website performance analytics!
+            </p>
+            <div class="ios-install-steps">
+                <ol>
+                    <li>Tap the <strong>Share button</strong> <span style="font-size: 16px;">📤</span> in Safari</li>
+                    <li>Scroll down and tap <strong>"Add to Home Screen"</strong> <span style="font-size: 16px;">📱</span></li>
+                    <li>Tap <strong>"Add"</strong> to confirm</li>
+                </ol>
+            </div>
+            <div class="install-popup-actions">
+                <button id="dismissInstallIOS" class="dismiss-btn">Not now</button>
+                <button id="iosInstallGotIt" class="install-btn">Got it!</button>
+            </div>
         </div>
     </div>
 
@@ -358,25 +376,64 @@ class WebsiteGenerator {
         const installPopup = document.getElementById('installPopup');
         const installBtn = document.getElementById('installApp');
         const dismissBtn = document.getElementById('dismissInstall');
+        const dismissBtnIOS = document.getElementById('dismissInstallIOS');
+        const iosGotItBtn = document.getElementById('iosInstallGotIt');
+        const androidContent = document.getElementById('androidInstallContent');
+        const iosContent = document.getElementById('iosInstallContent');
 
-        // Listen for the beforeinstallprompt event
+        // Detect iOS
+        function isIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        }
+
+        // Detect if running as PWA
+        function isRunningStandalone() {
+            return window.navigator.standalone === true || window.matchMedia('(display-mode: standalone)').matches;
+        }
+
+        // Check if user should see install prompt
+        function shouldShowInstallPrompt() {
+            const dismissed = localStorage.getItem('pwa-install-dismissed');
+            const installed = localStorage.getItem('pwa-installed');
+            const isMobile = window.innerWidth <= 768;
+            const isStandalone = isRunningStandalone();
+            
+            return isMobile && !dismissed && !installed && !isStandalone;
+        }
+
+        // Show install popup for iOS
+        function showIOSInstallPrompt() {
+            if (shouldShowInstallPrompt()) {
+                androidContent.style.display = 'none';
+                iosContent.style.display = 'block';
+                setTimeout(() => {
+                    installPopup.classList.add('show');
+                }, 2000);
+            }
+        }
+
+        // Listen for the beforeinstallprompt event (Android/Chrome)
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
             
-            // Check if user has dismissed the popup before
-            const dismissed = localStorage.getItem('pwa-install-dismissed');
-            const installed = localStorage.getItem('pwa-installed');
-            
-            // Only show on mobile and if not dismissed or installed
-            if (window.innerWidth <= 768 && !dismissed && !installed) {
+            if (shouldShowInstallPrompt()) {
+                androidContent.style.display = 'block';
+                iosContent.style.display = 'none';
                 setTimeout(() => {
                     installPopup.classList.add('show');
-                }, 2000); // Show after 2 seconds
+                }, 2000);
             }
         });
 
-        // Install button click
+        // Check for iOS on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            if (isIOS() && !deferredPrompt) {
+                showIOSInstallPrompt();
+            }
+        });
+
+        // Android install button click
         installBtn.addEventListener('click', async () => {
             if (deferredPrompt) {
                 deferredPrompt.prompt();
@@ -391,8 +448,20 @@ class WebsiteGenerator {
             installPopup.classList.remove('show');
         });
 
-        // Dismiss button click
+        // iOS "Got it!" button click
+        iosGotItBtn.addEventListener('click', () => {
+            localStorage.setItem('pwa-install-dismissed', 'true');
+            installPopup.classList.remove('show');
+        });
+
+        // Dismiss button click (Android)
         dismissBtn.addEventListener('click', () => {
+            localStorage.setItem('pwa-install-dismissed', 'true');
+            installPopup.classList.remove('show');
+        });
+
+        // Dismiss button click (iOS)
+        dismissBtnIOS.addEventListener('click', () => {
             localStorage.setItem('pwa-install-dismissed', 'true');
             installPopup.classList.remove('show');
         });
@@ -5063,6 +5132,49 @@ input[type="text"]:focus, input[type="search"]:focus {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* iOS Install Instructions */
+.ios-install-steps {
+    margin: 16px 0;
+}
+
+.ios-install-steps ol {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.ios-install-steps li {
+    counter-increment: step-counter;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.ios-install-steps li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 183, 3, 0.2);
+    color: #FFB703;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ios-install-steps strong {
+    color: #FFB703;
+    font-weight: 600;
+}
+
 @media (max-width: 480px) {
     .install-popup {
         left: 16px;
@@ -5094,6 +5206,10 @@ input[type="text"]:focus, input[type="search"]:focus {
       "display": "standalone",
       "background_color": "#0D3B66",
       "theme_color": "#0D3B66",
+      "orientation": "portrait-primary",
+      "scope": "/",
+      "lang": "en",
+      "dir": "ltr",
       "icons": [
         {
           "src": "cheetahcheck_favicon_16x16.png",
@@ -5128,7 +5244,25 @@ input[type="text"]:focus, input[type="search"]:focus {
         {
           "src": "logo.png",
           "sizes": "512x512",
-          "type": "image/png"
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
+      ],
+      "categories": ["analytics", "productivity", "utilities"],
+      "shortcuts": [
+        {
+          "name": "Global Performance",
+          "short_name": "Global",
+          "description": "View global website performance rankings",
+          "url": "/country-global.html",
+          "icons": [{ "src": "cheetahcheck_favicon_128x128.png", "sizes": "128x128" }]
+        },
+        {
+          "name": "Latest Scans",
+          "short_name": "Latest",
+          "description": "View latest performance scans",
+          "url": "/latest-updated.html",
+          "icons": [{ "src": "cheetahcheck_favicon_128x128.png", "sizes": "128x128" }]
         }
       ]
     };

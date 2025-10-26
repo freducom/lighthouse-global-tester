@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.548Z",
+    "generated_at": "2025-10-26T19:17:30.500Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 22
+    "website_count": 23
   },
   "averages": {
     "performance": 42,
     "accessibility": 88,
     "best_practices": 88,
     "seo": 93,
-    "pwa": 51
+    "pwa": 50
   },
   "websites": [
     {
@@ -50,6 +50,18 @@
       "test_date": "2025-10-26 10:10:47"
     },
     {
+      "url": "boerse.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:50"
+    },
+    {
       "url": "heise.de",
       "industry": "Media",
       "scores": {
@@ -84,18 +96,6 @@
         "pwa": 89
       },
       "test_date": "2025-10-20 20:11:07"
-    },
-    {
-      "url": "bmw.de",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 46,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 08:31:37"
     },
     {
       "url": "tagesschau.de",
@@ -194,6 +194,18 @@
       "test_date": "2025-10-25 10:16:16"
     },
     {
+      "url": "bmw.de",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 36,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:31:25"
+    },
+    {
       "url": "t-online.de",
       "industry": "Portal",
       "scores": {
@@ -283,7 +295,7 @@
       "industry": "Automotive",
       "website_count": 3,
       "averages": {
-        "performance": 31,
+        "performance": 27,
         "accessibility": 99,
         "best_practices": 83,
         "seo": 98,
@@ -303,13 +315,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 29,
-        "accessibility": 89,
-        "best_practices": 88,
-        "seo": 93,
-        "pwa": 45
+        "performance": 38,
+        "accessibility": 90,
+        "best_practices": 86,
+        "seo": 87,
+        "pwa": 41
       }
     },
     {

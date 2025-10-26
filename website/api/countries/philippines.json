@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.583Z",
+    "generated_at": "2025-10-26T19:17:30.533Z",
     "country": "Philippines",
     "flag": "🌍",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 20,
-    "accessibility": 66,
-    "best_practices": 0,
-    "seo": 71,
+    "performance": 23,
+    "accessibility": 73,
+    "best_practices": 42,
+    "seo": 67,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "bpi.com.ph",
+      "industry": "Finance",
+      "scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:39:08"
+    },
     {
       "url": "bdo.com.ph",
       "industry": "Finance",
@@ -29,12 +41,12 @@
   "industries": [
     {
       "industry": "Finance",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 20,
-        "accessibility": 66,
-        "best_practices": 0,
-        "seo": 71,
+        "performance": 23,
+        "accessibility": 73,
+        "best_practices": 42,
+        "seo": 67,
         "pwa": 33
       }
     }

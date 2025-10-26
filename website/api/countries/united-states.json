@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.543Z",
+    "generated_at": "2025-10-26T19:17:30.495Z",
     "country": "United States",
     "flag": "🇺🇸",
-    "website_count": 58
+    "website_count": 59
   },
   "averages": {
     "performance": 46,
@@ -590,6 +590,18 @@
       "test_date": "2025-10-23 16:48:40"
     },
     {
+      "url": "booking.com",
+      "industry": "Travel",
+      "scores": {
+        "performance": 27,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:38:20"
+    },
+    {
       "url": "twitch.tv",
       "industry": "Media",
       "scores": {
@@ -873,6 +885,17 @@
         "accessibility": 98,
         "best_practices": 75,
         "seo": 75,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Travel",
+      "website_count": 1,
+      "averages": {
+        "performance": 27,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 90,
         "pwa": 33
       }
     },

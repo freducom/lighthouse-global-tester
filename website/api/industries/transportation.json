@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T18:24:49.630Z",
+    "generated_at": "2025-10-26T19:17:30.580Z",
     "industry": "Transportation",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 46,
+    "performance": 47,
     "accessibility": 88,
-    "best_practices": 88,
+    "best_practices": 89,
     "seo": 92,
-    "pwa": 43
+    "pwa": 42
   },
   "websites": [
     {
@@ -59,6 +59,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 22:03:21"
+    },
+    {
+      "url": "bring.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 51,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 18:39:40"
     },
     {
       "url": "postnord.se",
@@ -144,13 +156,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 47,
-        "accessibility": 98,
+        "performance": 48,
+        "accessibility": 94,
         "best_practices": 92,
-        "seo": 97,
-        "pwa": 50
+        "seo": 95,
+        "pwa": 44
       }
     },
     {
