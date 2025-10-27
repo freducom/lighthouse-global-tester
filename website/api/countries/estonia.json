@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.520Z",
+    "generated_at": "2025-10-27T12:55:34.281Z",
     "country": "Estonia",
     "flag": "🇪🇪",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 28,
+    "performance": 34,
     "accessibility": 88,
-    "best_practices": 87,
+    "best_practices": 86,
     "seo": 93,
-    "pwa": 44
+    "pwa": 50
   },
   "websites": [
+    {
+      "url": "cvkeskus.ee",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 59,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 06:27:03"
+    },
     {
       "url": "euronics.ee",
       "industry": "E-commerce",
@@ -95,6 +107,17 @@
         "best_practices": 83,
         "seo": 92,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Jobs",
+      "website_count": 1,
+      "averages": {
+        "performance": 59,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
       }
     },
     {

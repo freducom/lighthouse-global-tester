@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.668Z",
+    "generated_at": "2025-10-27T12:55:34.584Z",
     "url": "bpi.com.ph",
     "country": "Philippines",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 37,
     "accessibility": 79,
     "best_practices": 83,
     "seo": 62,
     "pwa": 33,
-    "test_date": "2025-10-26 18:39:08"
+    "test_date": "2025-10-26 19:47:31"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 79,
+      "best_practices": 83,
+      "seo": 62,
+      "pwa": 33,
+      "test_date": "2025-10-26 19:47:31"
+    },
     {
       "performance": 26,
       "accessibility": 79,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 18:39:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 11,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 19:47:31",
+    "test_date_previous": "2025-10-26 18:39:08"
+  }
 }

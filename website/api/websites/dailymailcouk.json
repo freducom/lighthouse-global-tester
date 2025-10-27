@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.685Z",
+    "generated_at": "2025-10-27T12:55:34.627Z",
     "url": "dailymail.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 36,
-    "accessibility": 71,
+    "performance": 32,
+    "accessibility": 70,
     "best_practices": 67,
-    "seo": 78,
+    "seo": 79,
     "pwa": 33,
-    "test_date": "2025-10-23 07:33:09"
+    "test_date": "2025-10-27 06:30:44"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 70,
+      "best_practices": 67,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-10-27 06:30:44"
+    },
     {
       "performance": 36,
       "accessibility": 71,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
-    "accessibility": 10,
+    "performance": -4,
+    "accessibility": -1,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:33:09",
-    "test_date_previous": "2025-10-19 19:38:26"
+    "test_date_current": "2025-10-27 06:30:44",
+    "test_date_previous": "2025-10-23 07:33:09"
   }
 }

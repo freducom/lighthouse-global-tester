@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.502Z",
+    "generated_at": "2025-10-27T12:55:34.247Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 19
+    "website_count": 25
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 82,
-    "best_practices": 70,
+    "performance": 41,
+    "accessibility": 83,
+    "best_practices": 69,
     "seo": 86,
     "pwa": 48
   },
@@ -36,18 +36,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 13:44:36"
-    },
-    {
-      "url": "cricbuzz.com",
-      "industry": "Sports",
-      "scores": {
-        "performance": 72,
-        "accessibility": 84,
-        "best_practices": 92,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 19:46:43"
     },
     {
       "url": "hindustantimes.com",
@@ -110,18 +98,6 @@
       "test_date": "2025-10-26 08:44:18"
     },
     {
-      "url": "business-standard.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 49,
-        "accessibility": 89,
-        "best_practices": 92,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 19:49:28"
-    },
-    {
       "url": "rediff.com",
       "industry": "Portal",
       "scores": {
@@ -132,6 +108,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 12:20:27"
+    },
+    {
+      "url": "cricbuzz.com",
+      "industry": "Sports",
+      "scores": {
+        "performance": 45,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:20:57"
     },
     {
       "url": "bharatpetroleum.in",
@@ -146,6 +134,30 @@
       "test_date": "2025-10-26 16:39:52"
     },
     {
+      "url": "browserstack.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 42,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:10:48"
+    },
+    {
+      "url": "byjus.com",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 41,
+        "accessibility": 70,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:28:12"
+    },
+    {
       "url": "flipkart.com",
       "industry": "E-commerce",
       "scores": {
@@ -156,6 +168,18 @@
         "pwa": 100
       },
       "test_date": "2025-10-20 18:18:18"
+    },
+    {
+      "url": "aha.video",
+      "industry": "Media",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-10-27 07:12:00"
     },
     {
       "url": "zee5.com",
@@ -170,6 +194,18 @@
       "test_date": "2025-10-19 19:49:11"
     },
     {
+      "url": "aiims.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 33,
+        "accessibility": 69,
+        "best_practices": 50,
+        "seo": 50,
+        "pwa": 0
+      },
+      "test_date": "2025-10-27 07:12:51"
+    },
+    {
       "url": "amrita.edu",
       "industry": "Education",
       "scores": {
@@ -180,6 +216,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:39:46"
+    },
+    {
+      "url": "clevertap.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 31,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:13:16"
     },
     {
       "url": "atherenergy.com",
@@ -216,6 +264,30 @@
         "pwa": 89
       },
       "test_date": "2025-10-22 16:16:12"
+    },
+    {
+      "url": "business-standard.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:13:52"
+    },
+    {
+      "url": "1mg.com",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 25,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-10-27 07:00:03"
     },
     {
       "url": "moneycontrol.com",
@@ -266,14 +338,25 @@
       }
     },
     {
-      "industry": "Education",
-      "website_count": 2,
+      "industry": "Edtech",
+      "website_count": 1,
       "averages": {
         "performance": 41,
         "accessibility": 70,
-        "best_practices": 80,
-        "seo": 75,
-        "pwa": 28
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Education",
+      "website_count": 3,
+      "averages": {
+        "performance": 38,
+        "accessibility": 70,
+        "best_practices": 70,
+        "seo": 67,
+        "pwa": 18
       }
     },
     {
@@ -299,14 +382,36 @@
       }
     },
     {
-      "industry": "Media",
-      "website_count": 6,
+      "industry": "Healthcare",
+      "website_count": 1,
       "averages": {
-        "performance": 39,
-        "accessibility": 83,
+        "performance": 25,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Marketing",
+      "website_count": 1,
+      "averages": {
+        "performance": 31,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 7,
+      "averages": {
+        "performance": 35,
+        "accessibility": 85,
         "best_practices": 65,
-        "seo": 88,
-        "pwa": 69
+        "seo": 90,
+        "pwa": 73
       }
     },
     {
@@ -324,9 +429,9 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 72,
-        "accessibility": 84,
-        "best_practices": 92,
+        "performance": 45,
+        "accessibility": 87,
+        "best_practices": 75,
         "seo": 99,
         "pwa": 33
       }
@@ -339,6 +444,17 @@
         "accessibility": 89,
         "best_practices": 83,
         "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Technology",
+      "website_count": 1,
+      "averages": {
+        "performance": 42,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
         "pwa": 33
       }
     }

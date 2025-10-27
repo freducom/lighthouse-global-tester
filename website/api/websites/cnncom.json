@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.690Z",
+    "generated_at": "2025-10-27T12:55:34.641Z",
     "url": "cnn.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 30,
     "accessibility": 96,
     "best_practices": 83,
-    "seo": 85,
+    "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-23 06:54:56"
+    "test_date": "2025-10-27 03:18:38"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-27 03:18:38"
+    },
     {
       "performance": 37,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 06:54:56"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 8,
+    "pwa": 0,
+    "test_date_current": "2025-10-27 03:18:38",
+    "test_date_previous": "2025-10-23 06:54:56"
+  }
 }

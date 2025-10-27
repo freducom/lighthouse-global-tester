@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.516Z",
+    "generated_at": "2025-10-27T12:55:34.275Z",
     "country": "Ireland",
     "flag": "🇮🇪",
-    "website_count": 7
+    "website_count": 9
   },
   "averages": {
-    "performance": 45,
-    "accessibility": 89,
-    "best_practices": 83,
-    "seo": 87,
-    "pwa": 48
+    "performance": 46,
+    "accessibility": 87,
+    "best_practices": 84,
+    "seo": 88,
+    "pwa": 44
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 16:13:22"
+    },
+    {
+      "url": "daa.ie",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 56,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:27:44"
     },
     {
       "url": "irishexaminer.com",
@@ -60,6 +72,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-21 12:56:48"
+    },
+    {
+      "url": "aib.ie",
+      "industry": "Finance",
+      "scores": {
+        "performance": 41,
+        "accessibility": 72,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:12:20"
     },
     {
       "url": "irishtimes.com",
@@ -101,12 +125,12 @@
   "industries": [
     {
       "industry": "Finance",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 30,
-        "accessibility": 99,
-        "best_practices": 83,
-        "seo": 83,
+        "performance": 36,
+        "accessibility": 86,
+        "best_practices": 88,
+        "seo": 91,
         "pwa": 33
       }
     },
@@ -119,6 +143,17 @@
         "best_practices": 83,
         "seo": 87,
         "pwa": 50
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
       }
     }
   ]

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.538Z",
+    "generated_at": "2025-10-27T12:55:34.321Z",
     "country": "Kenya",
     "flag": "🇰🇪",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
     "performance": 39,
-    "accessibility": 91,
-    "best_practices": 73,
-    "seo": 88,
-    "pwa": 28
+    "accessibility": 92,
+    "best_practices": 72,
+    "seo": 90,
+    "pwa": 31
   },
   "websites": [
     {
@@ -36,6 +36,18 @@
         "pwa": 22
       },
       "test_date": "2025-10-24 02:54:49"
+    },
+    {
+      "url": "businessdailyafrica.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 40,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 20:15:57"
     },
     {
       "url": "safaricom.co.ke",
@@ -65,13 +77,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
         "performance": 41,
-        "accessibility": 98,
-        "best_practices": 70,
-        "seo": 89,
-        "pwa": 26
+        "accessibility": 97,
+        "best_practices": 69,
+        "seo": 92,
+        "pwa": 30
       }
     },
     {

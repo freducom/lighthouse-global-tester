@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.500Z",
+    "generated_at": "2025-10-27T12:55:34.242Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 23
+    "website_count": 26
   },
   "averages": {
-    "performance": 42,
+    "performance": 43,
     "accessibility": 88,
     "best_practices": 88,
-    "seo": 93,
-    "pwa": 50
+    "seo": 92,
+    "pwa": 49
   },
   "websites": [
     {
@@ -38,6 +38,18 @@
       "test_date": "2025-10-19 19:44:15"
     },
     {
+      "url": "bund.de",
+      "industry": "Government",
+      "scores": {
+        "performance": 60,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:12:21"
+    },
+    {
       "url": "arbeitsagentur.de",
       "industry": "Government",
       "scores": {
@@ -48,18 +60,6 @@
         "pwa": 56
       },
       "test_date": "2025-10-26 10:10:47"
-    },
-    {
-      "url": "boerse.de",
-      "industry": "Finance",
-      "scores": {
-        "performance": 57,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 75,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 18:31:50"
     },
     {
       "url": "heise.de",
@@ -74,16 +74,28 @@
       "test_date": "2025-10-19 19:44:00"
     },
     {
-      "url": "chip.de",
-      "industry": "Media",
+      "url": "boerse.de",
+      "industry": "Finance",
       "scores": {
-        "performance": 48,
-        "accessibility": 91,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 56
+        "performance": 56,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
       },
-      "test_date": "2025-10-19 19:43:17"
+      "test_date": "2025-10-26 19:39:56"
+    },
+    {
+      "url": "comdirect.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 49,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:20:13"
     },
     {
       "url": "focus.de",
@@ -96,6 +108,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-20 20:11:07"
+    },
+    {
+      "url": "chip.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 47,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 00:51:07"
     },
     {
       "url": "tagesschau.de",
@@ -120,6 +144,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-24 00:40:36"
+    },
+    {
+      "url": "consorsbank.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 45,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-10-27 04:21:00"
     },
     {
       "url": "welt.de",
@@ -194,18 +230,6 @@
       "test_date": "2025-10-25 10:16:16"
     },
     {
-      "url": "bmw.de",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 36,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 18:31:25"
-    },
-    {
       "url": "t-online.de",
       "industry": "Portal",
       "scores": {
@@ -216,6 +240,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-24 06:15:06"
+    },
+    {
+      "url": "bmw.de",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 33,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:39:30"
     },
     {
       "url": "zalando.de",
@@ -295,7 +331,7 @@
       "industry": "Automotive",
       "website_count": 3,
       "averages": {
-        "performance": 27,
+        "performance": 26,
         "accessibility": 99,
         "best_practices": 83,
         "seo": 98,
@@ -315,33 +351,33 @@
     },
     {
       "industry": "Finance",
-      "website_count": 3,
+      "website_count": 5,
       "averages": {
-        "performance": 38,
+        "performance": 41,
         "accessibility": 90,
-        "best_practices": 86,
+        "best_practices": 88,
         "seo": 87,
-        "pwa": 41
+        "pwa": 40
       }
     },
     {
       "industry": "Government",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 58,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 86,
-        "pwa": 56
+        "performance": 59,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 45
       }
     },
     {
       "industry": "Media",
       "website_count": 9,
       "averages": {
-        "performance": 44,
+        "performance": 43,
         "accessibility": 90,
-        "best_practices": 93,
+        "best_practices": 94,
         "seo": 95,
         "pwa": 58
       }

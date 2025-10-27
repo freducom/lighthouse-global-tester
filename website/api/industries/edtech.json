@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "generated_at": "2025-10-27T12:55:34.391Z",
+    "industry": "Edtech",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 37,
+    "accessibility": 80,
+    "best_practices": 84,
+    "seo": 93,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "3dbear.io",
+      "country": "Finland",
+      "scores": {
+        "performance": 32,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:30:21"
+    },
+    {
+      "url": "byjus.com",
+      "country": "India",
+      "scores": {
+        "performance": 41,
+        "accessibility": 70,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:28:12"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 32,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "India",
+      "website_count": 1,
+      "averages": {
+        "performance": 41,
+        "accessibility": 70,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      }
+    }
+  ]
+}

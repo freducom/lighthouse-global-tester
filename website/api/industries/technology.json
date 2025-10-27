@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.581Z",
+    "generated_at": "2025-10-27T12:55:34.392Z",
     "industry": "Technology",
-    "website_count": 8
+    "website_count": 10
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 86,
-    "best_practices": 77,
+    "performance": 40,
+    "accessibility": 88,
+    "best_practices": 78,
     "seo": 90,
     "pwa": 33
   },
@@ -35,6 +35,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 22:14:30"
+    },
+    {
+      "url": "browserstack.com",
+      "country": "India",
+      "scores": {
+        "performance": 42,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:10:48"
     },
     {
       "url": "amd.com",
@@ -71,6 +83,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:49:59"
+    },
+    {
+      "url": "cisco.com",
+      "country": "United States",
+      "scores": {
+        "performance": 29,
+        "accessibility": 91,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:53:45"
     },
     {
       "url": "microsoft.com",
@@ -122,12 +146,23 @@
       }
     },
     {
-      "country": "United States",
-      "website_count": 6,
+      "country": "India",
+      "website_count": 1,
       "averages": {
-        "performance": 39,
+        "performance": 42,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 7,
+      "averages": {
+        "performance": 37,
         "accessibility": 89,
-        "best_practices": 75,
+        "best_practices": 74,
         "seo": 89,
         "pwa": 33
       }

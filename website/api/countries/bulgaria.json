@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generated_at": "2025-10-27T12:55:34.314Z",
+    "country": "Bulgaria",
+    "flag": "🌍",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 71,
+    "accessibility": 70,
+    "best_practices": 88,
+    "seo": 91,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "btv.bg",
+      "industry": "Media",
+      "scores": {
+        "performance": 85,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:11:59"
+    },
+    {
+      "url": "abv.bg",
+      "industry": "Portal",
+      "scores": {
+        "performance": 57,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:01:05"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 85,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 57,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    }
+  ]
+}

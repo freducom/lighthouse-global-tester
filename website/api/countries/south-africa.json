@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.524Z",
+    "generated_at": "2025-10-27T12:55:34.288Z",
     "country": "South Africa",
     "flag": "🇿🇦",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
-    "performance": 28,
-    "accessibility": 90,
-    "best_practices": 76,
-    "seo": 87,
-    "pwa": 57
+    "performance": 36,
+    "accessibility": 89,
+    "best_practices": 79,
+    "seo": 86,
+    "pwa": 54
   },
   "websites": [
+    {
+      "url": "businesstech.co.za",
+      "industry": "Media",
+      "scores": {
+        "performance": 87,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:16:29"
+    },
     {
       "url": "iol.co.za",
       "industry": "Media",
@@ -111,13 +123,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 30,
-        "accessibility": 90,
-        "best_practices": 77,
-        "seo": 87,
-        "pwa": 50
+        "performance": 41,
+        "accessibility": 88,
+        "best_practices": 80,
+        "seo": 86,
+        "pwa": 46
       }
     }
   ]

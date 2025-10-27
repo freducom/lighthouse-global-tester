@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.535Z",
+    "generated_at": "2025-10-27T12:55:34.317Z",
     "country": "Costa Rica",
     "flag": "🇨🇷",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 75,
-    "best_practices": 67,
-    "seo": 79,
+    "performance": 45,
+    "accessibility": 79,
+    "best_practices": 63,
+    "seo": 83,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "adondeircr.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 47,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:06:18"
+    },
     {
       "url": "amprensa.com",
       "industry": "Media",
@@ -29,12 +41,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 42,
-        "accessibility": 75,
-        "best_practices": 67,
-        "seo": 79,
+        "performance": 45,
+        "accessibility": 79,
+        "best_practices": 63,
+        "seo": 83,
         "pwa": 33
       }
     }

@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.529Z",
+    "generated_at": "2025-10-27T12:55:34.299Z",
     "country": "Slovakia",
     "flag": "🇸🇰",
-    "website_count": 6
+    "website_count": 8
   },
   "averages": {
-    "performance": 36,
-    "accessibility": 84,
-    "best_practices": 78,
-    "seo": 90,
-    "pwa": 41
+    "performance": 37,
+    "accessibility": 85,
+    "best_practices": 77,
+    "seo": 93,
+    "pwa": 46
   },
   "websites": [
+    {
+      "url": "aktuality.sk",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 75,
+        "best_practices": 67,
+        "seo": 98,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 07:34:13"
+    },
     {
       "url": "sme.sk",
       "industry": "Media",
@@ -84,18 +96,30 @@
         "pwa": 67
       },
       "test_date": "2025-10-25 12:14:55"
+    },
+    {
+      "url": "cas.sk",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 22:18:29"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
         "performance": 36,
         "accessibility": 87,
-        "best_practices": 78,
-        "seo": 92,
-        "pwa": 42
+        "best_practices": 77,
+        "seo": 94,
+        "pwa": 47
       }
     },
     {

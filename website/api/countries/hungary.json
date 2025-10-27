@@ -1,18 +1,42 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.520Z",
+    "generated_at": "2025-10-27T12:55:34.280Z",
     "country": "Hungary",
     "flag": "🇭🇺",
-    "website_count": 4
+    "website_count": 6
   },
   "averages": {
-    "performance": 26,
+    "performance": 36,
     "accessibility": 82,
-    "best_practices": 81,
-    "seo": 93,
-    "pwa": 44
+    "best_practices": 78,
+    "seo": 94,
+    "pwa": 48
   },
   "websites": [
+    {
+      "url": "444.hu",
+      "industry": "Media",
+      "scores": {
+        "performance": 58,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 19:30:36"
+    },
+    {
+      "url": "24.hu",
+      "industry": "Media",
+      "scores": {
+        "performance": 55,
+        "accessibility": 71,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 19:28:33"
+    },
     {
       "url": "arukereso.hu",
       "industry": "E-commerce",
@@ -76,13 +100,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 27,
-        "accessibility": 77,
+        "performance": 42,
+        "accessibility": 80,
         "best_practices": 71,
         "seo": 95,
-        "pwa": 50
+        "pwa": 53
       }
     },
     {

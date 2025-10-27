@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.509Z",
+    "generated_at": "2025-10-27T12:55:34.261Z",
     "country": "South Korea",
     "flag": "🇰🇷",
     "website_count": 10
   },
   "averages": {
-    "performance": 33,
+    "performance": 34,
     "accessibility": 78,
-    "best_practices": 78,
+    "best_practices": 75,
     "seo": 89,
     "pwa": 33
   },
@@ -98,18 +98,6 @@
       "test_date": "2025-10-25 08:13:26"
     },
     {
-      "url": "chosun.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 26,
-        "accessibility": 61,
-        "best_practices": 58,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:11:26"
-    },
-    {
       "url": "mk.co.kr",
       "industry": "Media",
       "scores": {
@@ -122,16 +110,28 @@
       "test_date": "2025-10-22 14:20:19"
     },
     {
+      "url": "chosun.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 62,
+        "best_practices": 42,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:52:51"
+    },
+    {
       "url": "coupang.com",
       "industry": "E-commerce",
       "scores": {
-        "performance": 14,
+        "performance": 24,
         "accessibility": 79,
-        "best_practices": 67,
-        "seo": 82,
+        "best_practices": 58,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:10:27"
+      "test_date": "2025-10-27 04:28:36"
     }
   ],
   "industries": [
@@ -139,10 +139,10 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 14,
+        "performance": 24,
         "accessibility": 79,
-        "best_practices": 67,
-        "seo": 82,
+        "best_practices": 58,
+        "seo": 83,
         "pwa": 33
       }
     },
@@ -152,7 +152,7 @@
       "averages": {
         "performance": 32,
         "accessibility": 74,
-        "best_practices": 79,
+        "best_practices": 75,
         "seo": 93,
         "pwa": 33
       }

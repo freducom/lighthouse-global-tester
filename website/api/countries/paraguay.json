@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.536Z",
+    "generated_at": "2025-10-27T12:55:34.319Z",
     "country": "Paraguay",
     "flag": "🇵🇾",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 29,
-    "accessibility": 89,
-    "best_practices": 79,
-    "seo": 94,
+    "performance": 36,
+    "accessibility": 92,
+    "best_practices": 80,
+    "seo": 95,
     "pwa": 56
   },
   "websites": [
+    {
+      "url": "abc.com.py",
+      "industry": "Media",
+      "scores": {
+        "performance": 50,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 19:31:46"
+    },
     {
       "url": "npy.com.py",
       "industry": "Media",
@@ -41,12 +53,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 29,
-        "accessibility": 89,
-        "best_practices": 79,
-        "seo": 94,
+        "performance": 36,
+        "accessibility": 92,
+        "best_practices": 80,
+        "seo": 95,
         "pwa": 56
       }
     }

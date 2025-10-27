@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.580Z",
+    "generated_at": "2025-10-27T12:55:34.389Z",
     "industry": "Telecom",
-    "website_count": 11
+    "website_count": 13
   },
   "averages": {
-    "performance": 35,
-    "accessibility": 90,
+    "performance": 33,
+    "accessibility": 91,
     "best_practices": 83,
     "seo": 90,
     "pwa": 34
@@ -97,6 +97,18 @@
       "test_date": "2025-10-23 03:00:12"
     },
     {
+      "url": "comviq.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:20:40"
+    },
+    {
       "url": "telia.se",
       "country": "Sweden",
       "scores": {
@@ -107,6 +119,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 10:11:18"
+    },
+    {
+      "url": "bt.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 13,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:11:05"
     },
     {
       "url": "sky.com",
@@ -214,23 +238,23 @@
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 37,
-        "accessibility": 93,
-        "best_practices": 92,
-        "seo": 100,
+        "performance": 32,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 93,
         "pwa": 33
       }
     },
     {
       "country": "United Kingdom",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 35,
-        "accessibility": 97,
-        "best_practices": 92,
-        "seo": 97,
+        "performance": 28,
+        "accessibility": 95,
+        "best_practices": 84,
+        "seo": 95,
         "pwa": 33
       }
     },

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.535Z",
+    "generated_at": "2025-10-27T12:55:34.315Z",
     "country": "Morocco",
     "flag": "🌍",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 56,
-    "accessibility": 84,
-    "best_practices": 84,
-    "seo": 88,
-    "pwa": 33
+    "performance": 37,
+    "accessibility": 83,
+    "best_practices": 78,
+    "seo": 87,
+    "pwa": 44
   },
   "websites": [
     {
@@ -36,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 15:58:17"
+    },
+    {
+      "url": "2m.ma",
+      "industry": "Media",
+      "scores": {
+        "performance": 0,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 07:00:49"
     }
   ],
   "industries": [
@@ -48,6 +60,17 @@
         "best_practices": 84,
         "seo": 88,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 0,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 67
       }
     }
   ]

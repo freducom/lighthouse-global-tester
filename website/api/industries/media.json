@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.578Z",
+    "generated_at": "2025-10-27T12:55:34.386Z",
     "industry": "Media",
-    "website_count": 238
+    "website_count": 275
   },
   "averages": {
     "performance": 42,
@@ -337,28 +337,64 @@
       "test_date": "2025-10-19 19:53:15"
     },
     {
+      "url": "btv.bg",
+      "country": "Bulgaria",
+      "scores": {
+        "performance": 85,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:11:59"
+    },
+    {
+      "url": "canadiangeographic.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 36,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 22:12:37"
+    },
+    {
       "url": "cbc.ca",
       "country": "Canada",
       "scores": {
-        "performance": 40,
-        "accessibility": 98,
+        "performance": 33,
+        "accessibility": 91,
         "best_practices": 83,
-        "seo": 90,
+        "seo": 83,
         "pwa": 56
       },
-      "test_date": "2025-10-19 19:57:57"
+      "test_date": "2025-10-26 22:19:32"
+    },
+    {
+      "url": "cp24.com",
+      "country": "Canada",
+      "scores": {
+        "performance": 5,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:35:12"
     },
     {
       "url": "ctvnews.ca",
       "country": "Canada",
       "scores": {
-        "performance": 34,
+        "performance": 6,
         "accessibility": 89,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:58:30"
+      "test_date": "2025-10-27 06:21:37"
     },
     {
       "url": "globalnews.ca",
@@ -371,6 +407,18 @@
         "pwa": 100
       },
       "test_date": "2025-10-19 19:58:45"
+    },
+    {
+      "url": "24horas.cl",
+      "country": "Chile",
+      "scores": {
+        "performance": 49,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:29:12"
     },
     {
       "url": "biobiochile.cl",
@@ -445,6 +493,18 @@
       "test_date": "2025-10-26 16:41:58"
     },
     {
+      "url": "adondeircr.com",
+      "country": "Costa Rica",
+      "scores": {
+        "performance": 47,
+        "accessibility": 83,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:06:18"
+    },
+    {
       "url": "amprensa.com",
       "country": "Costa Rica",
       "scores": {
@@ -479,6 +539,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-26 07:55:21"
+    },
+    {
+      "url": "ceskatelevize.cz",
+      "country": "Czechia",
+      "scores": {
+        "performance": 36,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:46:36"
     },
     {
       "url": "lidovky.cz",
@@ -517,6 +589,18 @@
       "test_date": "2025-10-23 04:17:27"
     },
     {
+      "url": "bt.dk",
+      "country": "Denmark",
+      "scores": {
+        "performance": 29,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:11:44"
+    },
+    {
       "url": "tv2.dk",
       "country": "Denmark",
       "scores": {
@@ -527,6 +611,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 18:15:20"
+    },
+    {
+      "url": "akhbarelyom.com",
+      "country": "Egypt",
+      "scores": {
+        "performance": 36,
+        "accessibility": 69,
+        "best_practices": 50,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:20:05"
     },
     {
       "url": "almasryalyoum.com",
@@ -551,6 +647,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-26 10:09:11"
+    },
+    {
+      "url": "dailynewsegypt.com",
+      "country": "Egypt",
+      "scores": {
+        "performance": 54,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:31:07"
     },
     {
       "url": "elwatannews.com",
@@ -673,6 +781,18 @@
       "test_date": "2025-10-25 08:12:32"
     },
     {
+      "url": "20minutes.fr",
+      "country": "France",
+      "scores": {
+        "performance": 72,
+        "accessibility": 81,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:28:01"
+    },
+    {
       "url": "franceinfo.fr",
       "country": "France",
       "scores": {
@@ -784,13 +904,13 @@
       "url": "chip.de",
       "country": "Germany",
       "scores": {
-        "performance": 48,
+        "performance": 47,
         "accessibility": 91,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 93,
         "pwa": 56
       },
-      "test_date": "2025-10-19 19:43:17"
+      "test_date": "2025-10-27 00:51:07"
     },
     {
       "url": "focus.de",
@@ -937,6 +1057,30 @@
       "test_date": "2025-10-23 21:50:11"
     },
     {
+      "url": "24.hu",
+      "country": "Hungary",
+      "scores": {
+        "performance": 55,
+        "accessibility": 71,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-10-26 19:28:33"
+    },
+    {
+      "url": "444.hu",
+      "country": "Hungary",
+      "scores": {
+        "performance": 58,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 19:30:36"
+    },
+    {
       "url": "nosalty.hu",
       "country": "Hungary",
       "scores": {
@@ -961,6 +1105,18 @@
       "test_date": "2025-10-23 03:01:04"
     },
     {
+      "url": "aha.video",
+      "country": "India",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-10-27 07:12:00"
+    },
+    {
       "url": "altbalaji.com",
       "country": "India",
       "scores": {
@@ -976,13 +1132,13 @@
       "url": "business-standard.com",
       "country": "India",
       "scores": {
-        "performance": 49,
+        "performance": 27,
         "accessibility": 89,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:49:28"
+      "test_date": "2025-10-26 20:13:52"
     },
     {
       "url": "hindustantimes.com",
@@ -1381,6 +1537,18 @@
       "test_date": "2025-10-26 10:10:30"
     },
     {
+      "url": "corriere.it",
+      "country": "Italy",
+      "scores": {
+        "performance": 32,
+        "accessibility": 72,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:27:00"
+    },
+    {
       "url": "la7.it",
       "country": "Italy",
       "scores": {
@@ -1408,13 +1576,25 @@
       "url": "cookpad.com",
       "country": "Japan",
       "scores": {
-        "performance": 73,
+        "performance": 65,
         "accessibility": 79,
-        "best_practices": 92,
-        "seo": 89,
+        "best_practices": 100,
+        "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:57:15"
+      "test_date": "2025-10-27 04:21:59"
+    },
+    {
+      "url": "businessdailyafrica.com",
+      "country": "Kenya",
+      "scores": {
+        "performance": 40,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 20:15:57"
     },
     {
       "url": "kenyans.co.ke",
@@ -1513,6 +1693,18 @@
       "test_date": "2025-10-24 04:16:59"
     },
     {
+      "url": "akhbarlibya.com",
+      "country": "Libya",
+      "scores": {
+        "performance": 61,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:33:26"
+    },
+    {
       "url": "alwasat.ly",
       "country": "Libya",
       "scores": {
@@ -1559,6 +1751,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 04:14:04"
+    },
+    {
+      "url": "15min.lt",
+      "country": "Lithuania",
+      "scores": {
+        "performance": 33,
+        "accessibility": 73,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 78
+      },
+      "test_date": "2025-10-26 19:25:30"
+    },
+    {
+      "url": "alfa.lt",
+      "country": "Lithuania",
+      "scores": {
+        "performance": 10,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 22
+      },
+      "test_date": "2025-10-27 07:35:17"
     },
     {
       "url": "vz.lt",
@@ -1681,6 +1897,18 @@
       "test_date": "2025-10-22 14:11:35"
     },
     {
+      "url": "2m.ma",
+      "country": "Morocco",
+      "scores": {
+        "performance": 0,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 07:00:49"
+    },
+    {
       "url": "namibian.com.na",
       "country": "Namibia",
       "scores": {
@@ -1765,6 +1993,18 @@
       "test_date": "2025-10-24 08:15:55"
     },
     {
+      "url": "1news.co.nz",
+      "country": "New Zealand",
+      "scores": {
+        "performance": 42,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:27:32"
+    },
+    {
       "url": "stuff.co.nz",
       "country": "New Zealand",
       "scores": {
@@ -1787,6 +2027,42 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 20:24:18"
+    },
+    {
+      "url": "aftenposten.no",
+      "country": "Norway",
+      "scores": {
+        "performance": 44,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:10:59"
+    },
+    {
+      "url": "dagbladet.no",
+      "country": "Norway",
+      "scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:28:15"
+    },
+    {
+      "url": "dagen.no",
+      "country": "Norway",
+      "scores": {
+        "performance": 35,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:28:45"
     },
     {
       "url": "nettavisen.no",
@@ -1837,6 +2113,18 @@
       "test_date": "2025-10-24 22:15:38"
     },
     {
+      "url": "abc.com.py",
+      "country": "Paraguay",
+      "scores": {
+        "performance": 50,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 19:31:46"
+    },
+    {
       "url": "lanacion.com.py",
       "country": "Paraguay",
       "scores": {
@@ -1861,6 +2149,18 @@
       "test_date": "2025-10-22 20:30:47"
     },
     {
+      "url": "abs-cbn.com",
+      "country": "Philippines",
+      "scores": {
+        "performance": 25,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:32:23"
+    },
+    {
       "url": "tvn24.pl",
       "country": "Poland",
       "scores": {
@@ -1871,6 +2171,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-24 18:19:28"
+    },
+    {
+      "url": "adevarul.ro",
+      "country": "Romania",
+      "scores": {
+        "performance": 70,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:05:11"
     },
     {
       "url": "rbc.ru",
@@ -1933,6 +2245,42 @@
       "test_date": "2025-10-26 10:10:13"
     },
     {
+      "url": "channelnewsasia.com",
+      "country": "Singapore",
+      "scores": {
+        "performance": 25,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:48:58"
+    },
+    {
+      "url": "aktuality.sk",
+      "country": "Slovakia",
+      "scores": {
+        "performance": 41,
+        "accessibility": 75,
+        "best_practices": 67,
+        "seo": 98,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 07:34:13"
+    },
+    {
+      "url": "cas.sk",
+      "country": "Slovakia",
+      "scores": {
+        "performance": 33,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 22:18:29"
+    },
+    {
       "url": "pravda.sk",
       "country": "Slovakia",
       "scores": {
@@ -1993,6 +2341,18 @@
       "test_date": "2025-10-25 12:14:55"
     },
     {
+      "url": "businesstech.co.za",
+      "country": "South Africa",
+      "scores": {
+        "performance": 87,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:16:29"
+    },
+    {
       "url": "ewn.co.za",
       "country": "South Africa",
       "scores": {
@@ -2045,12 +2405,12 @@
       "country": "South Korea",
       "scores": {
         "performance": 26,
-        "accessibility": 61,
-        "best_practices": 58,
+        "accessibility": 62,
+        "best_practices": 42,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:11:26"
+      "test_date": "2025-10-27 00:52:51"
     },
     {
       "url": "hani.co.kr",
@@ -2089,6 +2449,42 @@
       "test_date": "2025-10-25 08:13:26"
     },
     {
+      "url": "20minutos.es",
+      "country": "Spain",
+      "scores": {
+        "performance": 54,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:28:16"
+    },
+    {
+      "url": "abc.es",
+      "country": "Spain",
+      "scores": {
+        "performance": 54,
+        "accessibility": 75,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:32:04"
+    },
+    {
+      "url": "cincodias.com",
+      "country": "Spain",
+      "scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 00:53:17"
+    },
+    {
       "url": "lavanguardia.com",
       "country": "Spain",
       "scores": {
@@ -2116,13 +2512,13 @@
       "url": "bonniernews.se",
       "country": "Sweden",
       "scores": {
-        "performance": 52,
+        "performance": 51,
         "accessibility": 93,
         "best_practices": 92,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-26 18:37:48"
+      "test_date": "2025-10-26 19:45:52"
     },
     {
       "url": "dn.se",
@@ -2183,6 +2579,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-24 04:16:25"
+    },
+    {
+      "url": "20min.ch",
+      "country": "Switzerland",
+      "scores": {
+        "performance": 44,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:27:46"
     },
     {
       "url": "blick.ch",
@@ -2365,6 +2773,18 @@
       "test_date": "2025-10-22 22:10:01"
     },
     {
+      "url": "censor.net",
+      "country": "Ukraine",
+      "scores": {
+        "performance": 55,
+        "accessibility": 90,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 22:21:23"
+    },
+    {
       "url": "lb.ua",
       "country": "Ukraine",
       "scores": {
@@ -2428,25 +2848,25 @@
       "url": "channel4.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 43,
+        "performance": 33,
         "accessibility": 88,
         "best_practices": 83,
         "seo": 93,
         "pwa": 78
       },
-      "test_date": "2025-10-23 07:36:41"
+      "test_date": "2025-10-27 00:48:15"
     },
     {
       "url": "dailymail.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 36,
-        "accessibility": 71,
+        "performance": 32,
+        "accessibility": 70,
         "best_practices": 67,
-        "seo": 78,
+        "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:33:09"
+      "test_date": "2025-10-27 06:30:44"
     },
     {
       "url": "independent.co.uk",
@@ -2560,25 +2980,37 @@
       "url": "cnbc.com",
       "country": "United States",
       "scores": {
-        "performance": 29,
-        "accessibility": 82,
-        "best_practices": 83,
-        "seo": 90,
+        "performance": 11,
+        "accessibility": 83,
+        "best_practices": 75,
+        "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:09:34"
+      "test_date": "2025-10-27 03:17:15"
+    },
+    {
+      "url": "cnet.com",
+      "country": "United States",
+      "scores": {
+        "performance": 25,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 03:17:48"
     },
     {
       "url": "cnn.com",
       "country": "United States",
       "scores": {
-        "performance": 37,
+        "performance": 30,
         "accessibility": 96,
         "best_practices": 83,
-        "seo": 85,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:54:56"
+      "test_date": "2025-10-27 03:18:38"
     },
     {
       "url": "disneyplus.com",
@@ -2723,6 +3155,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 08:17:57"
+    },
+    {
+      "url": "busqueda.com.uy",
+      "country": "Uruguay",
+      "scores": {
+        "performance": 42,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 20:16:50"
     },
     {
       "url": "subrayado.com.uy",
@@ -2948,24 +3392,35 @@
       }
     },
     {
-      "country": "Canada",
-      "website_count": 3,
+      "country": "Bulgaria",
+      "website_count": 1,
       "averages": {
-        "performance": 45,
-        "accessibility": 96,
-        "best_practices": 58,
+        "performance": 85,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Canada",
+      "website_count": 5,
+      "averages": {
+        "performance": 28,
+        "accessibility": 93,
+        "best_practices": 65,
         "seo": 92,
-        "pwa": 63
+        "pwa": 51
       }
     },
     {
       "country": "Chile",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 29,
-        "accessibility": 80,
-        "best_practices": 73,
-        "seo": 86,
+        "performance": 33,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 87,
         "pwa": 31
       }
     },
@@ -2982,12 +3437,12 @@
     },
     {
       "country": "Costa Rica",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 42,
-        "accessibility": 75,
-        "best_practices": 67,
-        "seo": 79,
+        "performance": 45,
+        "accessibility": 79,
+        "best_practices": 63,
+        "seo": 83,
         "pwa": 33
       }
     },
@@ -3004,35 +3459,35 @@
     },
     {
       "country": "Czechia",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
         "performance": 38,
-        "accessibility": 71,
-        "best_practices": 71,
-        "seo": 83,
-        "pwa": 39
+        "accessibility": 73,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 38
       }
     },
     {
       "country": "Denmark",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 56,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
+        "performance": 43,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 93,
         "pwa": 33
       }
     },
     {
       "country": "Egypt",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 34,
-        "accessibility": 87,
+        "performance": 37,
+        "accessibility": 86,
         "best_practices": 67,
         "seo": 91,
-        "pwa": 47
+        "pwa": 43
       }
     },
     {
@@ -3059,22 +3514,22 @@
     },
     {
       "country": "France",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 46,
-        "accessibility": 87,
-        "best_practices": 90,
-        "seo": 93,
-        "pwa": 70
+        "performance": 48,
+        "accessibility": 86,
+        "best_practices": 88,
+        "seo": 94,
+        "pwa": 65
       }
     },
     {
       "country": "Germany",
       "website_count": 9,
       "averages": {
-        "performance": 44,
+        "performance": 43,
         "accessibility": 90,
-        "best_practices": 93,
+        "best_practices": 94,
         "seo": 95,
         "pwa": 58
       }
@@ -3092,24 +3547,24 @@
     },
     {
       "country": "Hungary",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 27,
-        "accessibility": 77,
+        "performance": 42,
+        "accessibility": 80,
         "best_practices": 71,
         "seo": 95,
-        "pwa": 50
+        "pwa": 53
       }
     },
     {
       "country": "India",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 39,
-        "accessibility": 83,
+        "performance": 35,
+        "accessibility": 85,
         "best_practices": 65,
-        "seo": 88,
-        "pwa": 69
+        "seo": 90,
+        "pwa": 73
       }
     },
     {
@@ -3158,11 +3613,11 @@
     },
     {
       "country": "Italy",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 39,
-        "accessibility": 85,
-        "best_practices": 81,
+        "performance": 37,
+        "accessibility": 82,
+        "best_practices": 80,
         "seo": 88,
         "pwa": 33
       }
@@ -3171,22 +3626,22 @@
       "country": "Japan",
       "website_count": 1,
       "averages": {
-        "performance": 73,
+        "performance": 65,
         "accessibility": 79,
-        "best_practices": 92,
-        "seo": 89,
+        "best_practices": 100,
+        "seo": 82,
         "pwa": 33
       }
     },
     {
       "country": "Kenya",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
         "performance": 41,
-        "accessibility": 98,
-        "best_practices": 70,
-        "seo": 89,
-        "pwa": 26
+        "accessibility": 97,
+        "best_practices": 69,
+        "seo": 92,
+        "pwa": 30
       }
     },
     {
@@ -3202,24 +3657,24 @@
     },
     {
       "country": "Libya",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 53,
-        "accessibility": 88,
-        "best_practices": 81,
-        "seo": 84,
+        "performance": 54,
+        "accessibility": 89,
+        "best_practices": 82,
+        "seo": 86,
         "pwa": 33
       }
     },
     {
       "country": "Lithuania",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 27,
-        "accessibility": 64,
-        "best_practices": 58,
-        "seo": 82,
-        "pwa": 67
+        "performance": 23,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 56
       }
     },
     {
@@ -3267,6 +3722,17 @@
       }
     },
     {
+      "country": "Morocco",
+      "website_count": 1,
+      "averages": {
+        "performance": 0,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 67
+      }
+    },
+    {
       "country": "Namibia",
       "website_count": 4,
       "averages": {
@@ -3290,35 +3756,46 @@
     },
     {
       "country": "New Zealand",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 51,
-        "accessibility": 74,
-        "best_practices": 42,
+        "performance": 48,
+        "accessibility": 76,
+        "best_practices": 58,
         "seo": 83,
-        "pwa": 45
+        "pwa": 41
       }
     },
     {
       "country": "Norway",
-      "website_count": 4,
+      "website_count": 7,
       "averages": {
         "performance": 44,
-        "accessibility": 95,
-        "best_practices": 92,
+        "accessibility": 93,
+        "best_practices": 86,
         "seo": 95,
-        "pwa": 42
+        "pwa": 38
       }
     },
     {
       "country": "Paraguay",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 29,
-        "accessibility": 89,
-        "best_practices": 79,
-        "seo": 94,
+        "performance": 36,
+        "accessibility": 92,
+        "best_practices": 80,
+        "seo": 95,
         "pwa": 56
+      }
+    },
+    {
+      "country": "Philippines",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
       }
     },
     {
@@ -3330,6 +3807,17 @@
         "best_practices": 92,
         "seo": 91,
         "pwa": 78
+      }
+    },
+    {
+      "country": "Romania",
+      "website_count": 1,
+      "averages": {
+        "performance": 70,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
       }
     },
     {
@@ -3355,25 +3843,36 @@
       }
     },
     {
+      "country": "Singapore",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Slovakia",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
         "performance": 36,
         "accessibility": 87,
-        "best_practices": 78,
-        "seo": 92,
-        "pwa": 42
+        "best_practices": 77,
+        "seo": 94,
+        "pwa": 47
       }
     },
     {
       "country": "South Africa",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 30,
-        "accessibility": 90,
-        "best_practices": 77,
-        "seo": 87,
-        "pwa": 50
+        "performance": 41,
+        "accessibility": 88,
+        "best_practices": 80,
+        "seo": 86,
+        "pwa": 46
       }
     },
     {
@@ -3382,20 +3881,20 @@
       "averages": {
         "performance": 32,
         "accessibility": 74,
-        "best_practices": 79,
+        "best_practices": 75,
         "seo": 93,
         "pwa": 33
       }
     },
     {
       "country": "Spain",
-      "website_count": 1,
+      "website_count": 4,
       "averages": {
-        "performance": 36,
-        "accessibility": 83,
-        "best_practices": 67,
+        "performance": 47,
+        "accessibility": 88,
+        "best_practices": 77,
         "seo": 92,
-        "pwa": 33
+        "pwa": 44
       }
     },
     {
@@ -3411,13 +3910,13 @@
     },
     {
       "country": "Switzerland",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 38,
-        "accessibility": 96,
-        "best_practices": 86,
-        "seo": 96,
-        "pwa": 44
+        "performance": 39,
+        "accessibility": 93,
+        "best_practices": 85,
+        "seo": 95,
+        "pwa": 43
       }
     },
     {
@@ -3455,20 +3954,20 @@
     },
     {
       "country": "Ukraine",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 53,
-        "accessibility": 85,
-        "best_practices": 79,
+        "performance": 54,
+        "accessibility": 86,
+        "best_practices": 77,
         "seo": 92,
-        "pwa": 56
+        "pwa": 51
       }
     },
     {
       "country": "United Kingdom",
       "website_count": 11,
       "averages": {
-        "performance": 33,
+        "performance": 32,
         "accessibility": 87,
         "best_practices": 77,
         "seo": 89,
@@ -3477,24 +3976,24 @@
     },
     {
       "country": "United States",
-      "website_count": 15,
+      "website_count": 16,
       "averages": {
-        "performance": 40,
+        "performance": 37,
         "accessibility": 88,
-        "best_practices": 82,
-        "seo": 92,
-        "pwa": 42
+        "best_practices": 81,
+        "seo": 93,
+        "pwa": 43
       }
     },
     {
       "country": "Uruguay",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 48,
-        "accessibility": 65,
-        "best_practices": 79,
-        "seo": 89,
-        "pwa": 33
+        "performance": 46,
+        "accessibility": 72,
+        "best_practices": 78,
+        "seo": 93,
+        "pwa": 37
       }
     },
     {

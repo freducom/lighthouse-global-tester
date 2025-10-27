@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.685Z",
+    "generated_at": "2025-10-27T12:55:34.627Z",
     "url": "channel4.com",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 33,
     "accessibility": 88,
     "best_practices": 83,
     "seo": 93,
     "pwa": 78,
-    "test_date": "2025-10-23 07:36:41"
+    "test_date": "2025-10-27 00:48:15"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 88,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-10-27 00:48:15"
+    },
     {
       "performance": 43,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 07:36:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-27 00:48:15",
+    "test_date_previous": "2025-10-23 07:36:41"
+  }
 }

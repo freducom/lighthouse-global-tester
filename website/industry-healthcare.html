@@ -67,37 +67,35 @@
 </head>
 <body>
     <div class="container">
+        
         <header class="header" role="banner">
-            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                    <li aria-current="page">🏭 Healthcare</li>
-                </ol>
-            </nav>
-            <h1>🏭 Healthcare Industry Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of 1 websites in the healthcare industry</p>
+            <div class="logo-container">
+                <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
+            </div>
+            <p class="subtitle">🏭 Healthcare Industry - Comprehensive analysis of 6 websites</p>
+            <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
         </header>
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Healthcare Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 55 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 45 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-average" aria-hidden="true">55%</div>
+                <div class="stat-value perf-poor" aria-hidden="true">45%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card" role="img" aria-label="Average accessibility score: 100 percent">
+            <div class="stat-card" role="img" aria-label="Average accessibility score: 92 percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-value acc-excellent" aria-hidden="true">100%</div>
+                <div class="stat-value acc-excellent" aria-hidden="true">92%</div>
                 <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
-            <div class="stat-card" role="img" aria-label="Average SEO score: 95 percent">
+            <div class="stat-card" role="img" aria-label="Average SEO score: 92 percent">
                 <h3>Average SEO</h3>
-                <div class="stat-value seo-excellent" aria-hidden="true">95%</div>
+                <div class="stat-value seo-excellent" aria-hidden="true">92%</div>
                 <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card" role="img" aria-label="Average best practices score: 92 percent">
+            <div class="stat-card" role="img" aria-label="Average best practices score: 86 percent">
                 <h3>Average Best Practices</h3>
-                <div class="stat-value bp-excellent" aria-hidden="true">92%</div>
+                <div class="stat-value bp-good" aria-hidden="true">86%</div>
                 <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
         </section>
@@ -132,7 +130,7 @@
                 <div class="table-container">
                     <table class="results-table" id="resultsTable" role="table" aria-labelledby="websites-heading">
                         <caption class="sr-only">
-                            Lighthouse performance data for 1 websites in the Healthcare industry, 
+                            Lighthouse performance data for 6 websites in the Healthcare industry, 
                             sorted by performance score in descending order. 
                             Table includes website URL, country, and scores for performance, accessibility, SEO, best practices, and PWA compliance.
                         </caption>
@@ -190,6 +188,48 @@
                             <tr class="site-row">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
+                                    <a href="domain-cdc-gov.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for cdc.gov">
+                                        cdc.gov
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-united-states.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from United States">
+                                        🇺🇸 United States
+                                    </a>
+                                </td>
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 67 percent, average performance">
+                                    67%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 88 percent, good performance">
+                                    88%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 84 percent, good performance">
+                                    84%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score pwa-average"
+                                    aria-label="PWA score: 56 percent, average performance">
+                                    56%
+                                </td>
+                                <td class="date" data-date="2025-10-26 22:20:31"
+                                    aria-label="Last tested on 10/26/2025">
+                                    <time datetime="2025-10-26 22:20:31">10/26/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 2">#2</td>
+                                <td>
                                     <a href="domain-bonalive-com.html" 
                                        class="domain-link"
                                        aria-label="View detailed report for bonalive.com">
@@ -204,8 +244,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 55 percent, average performance">
-                                    55%
+                                    aria-label="Performance score: 62 percent, average performance">
+                                    62%
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 100 percent, excellent performance">
@@ -223,9 +263,177 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-26 18:36:51"
+                                <td class="date" data-date="2025-10-26 19:44:54"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 18:36:51">10/26/2025</time>
+                                    <time datetime="2025-10-26 19:44:54">10/26/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 3">#3</td>
+                                <td>
+                                    <a href="domain-clevelandclinic-org.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for clevelandclinic.org">
+                                        clevelandclinic.org
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-united-states.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from United States">
+                                        🇺🇸 United States
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 49 percent, needs improvement">
+                                    49%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score seo-good"
+                                    aria-label="SEO score: 82 percent, good performance">
+                                    82%
+                                </td>
+                                <td class="score bp-excellent"
+                                    aria-label="Best Practices score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-27 03:12:48"
+                                    aria-label="Last tested on 10/27/2025">
+                                    <time datetime="2025-10-27 03:12:48">10/27/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 4">#4</td>
+                                <td>
+                                    <a href="domain-1177-se.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for 1177.se">
+                                        1177.se
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-sweden.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Sweden">
+                                        🇸🇪 Sweden
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 34 percent, needs improvement">
+                                    34%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 89 percent, good performance">
+                                    89%
+                                </td>
+                                <td class="date" data-date="2025-10-26 19:25:10"
+                                    aria-label="Last tested on 10/26/2025">
+                                    <time datetime="2025-10-26 19:25:10">10/26/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 5">#5</td>
+                                <td>
+                                    <a href="domain-cardiosignal-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for cardiosignal.com">
+                                        cardiosignal.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-finland.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from Finland">
+                                        🇫🇮 Finland
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 30 percent, needs improvement">
+                                    30%
+                                </td>
+                                <td class="score acc-good"
+                                    aria-label="Accessibility score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 100 percent, excellent performance">
+                                    100%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 83 percent, good performance">
+                                    83%
+                                </td>
+                                <td class="score pwa-poor"
+                                    aria-label="PWA score: 33 percent, needs improvement">
+                                    33%
+                                </td>
+                                <td class="date" data-date="2025-10-26 22:17:18"
+                                    aria-label="Last tested on 10/26/2025">
+                                    <time datetime="2025-10-26 22:17:18">10/26/2025</time>
+                                </td>
+                            </tr>
+                        
+                            <tr class="site-row">
+                                <td class="rank" aria-label="Rank 6">#6</td>
+                                <td>
+                                    <a href="domain-1mg-com.html" 
+                                       class="domain-link"
+                                       aria-label="View detailed report for 1mg.com">
+                                        1mg.com
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="country-india.html" 
+                                       class="country-link"
+                                       aria-label="View all websites from India">
+                                        🇮🇳 India
+                                    </a>
+                                </td>
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 25 percent, needs improvement">
+                                    25%
+                                </td>
+                                <td class="score acc-excellent"
+                                    aria-label="Accessibility score: 97 percent, excellent performance">
+                                    97%
+                                </td>
+                                <td class="score seo-excellent"
+                                    aria-label="SEO score: 92 percent, excellent performance">
+                                    92%
+                                </td>
+                                <td class="score bp-good"
+                                    aria-label="Best Practices score: 75 percent, good performance">
+                                    75%
+                                </td>
+                                <td class="score pwa-good"
+                                    aria-label="PWA score: 89 percent, good performance">
+                                    89%
+                                </td>
+                                <td class="date" data-date="2025-10-27 07:00:03"
+                                    aria-label="Last tested on 10/27/2025">
+                                    <time datetime="2025-10-27 07:00:03">10/27/2025</time>
                                 </td>
                             </tr>
                         
@@ -246,7 +454,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 6 websites.</p>
         </div>
     </footer>
 
@@ -388,7 +596,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"bonalive.com","country":"Finland","industry":"Healthcare","performance":55,"accessibility":100,"best_practices":92,"seo":95,"pwa":33,"test_date":"2025-10-26 18:36:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"cdc.gov","country":"United States","industry":"Healthcare","performance":67,"accessibility":88,"best_practices":100,"seo":84,"pwa":56,"test_date":"2025-10-26 22:20:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bonalive.com","country":"Finland","industry":"Healthcare","performance":62,"accessibility":100,"best_practices":92,"seo":95,"pwa":33,"test_date":"2025-10-26 19:44:54","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":7,"text":"+7","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"clevelandclinic.org","country":"United States","industry":"Healthcare","performance":49,"accessibility":83,"best_practices":92,"seo":82,"pwa":33,"test_date":"2025-10-27 03:12:48","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"1177.se","country":"Sweden","industry":"Healthcare","performance":34,"accessibility":100,"best_practices":75,"seo":100,"pwa":89,"test_date":"2025-10-26 19:25:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"cardiosignal.com","country":"Finland","industry":"Healthcare","performance":30,"accessibility":83,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-26 22:17:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"1mg.com","country":"India","industry":"Healthcare","performance":25,"accessibility":97,"best_practices":75,"seo":92,"pwa":89,"test_date":"2025-10-27 07:00:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

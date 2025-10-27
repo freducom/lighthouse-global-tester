@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.523Z",
+    "generated_at": "2025-10-27T12:55:34.286Z",
     "country": "New Zealand",
     "flag": "🇳🇿",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
     "performance": 40,
-    "accessibility": 84,
-    "best_practices": 58,
-    "seo": 89,
-    "pwa": 50
+    "accessibility": 83,
+    "best_practices": 65,
+    "seo": 88,
+    "pwa": 47
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 20:24:18"
+    },
+    {
+      "url": "1news.co.nz",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:27:32"
     },
     {
       "url": "reservebank.govt.nz",
@@ -87,13 +99,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 51,
-        "accessibility": 74,
-        "best_practices": 42,
+        "performance": 48,
+        "accessibility": 76,
+        "best_practices": 58,
         "seo": 83,
-        "pwa": 45
+        "pwa": 41
       }
     }
   ]

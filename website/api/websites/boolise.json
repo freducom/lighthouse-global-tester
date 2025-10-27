@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.676Z",
+    "generated_at": "2025-10-27T12:55:34.608Z",
     "url": "booli.se",
     "country": "Sweden",
     "industry": "Realestate"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 51,
     "accessibility": 81,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-26 18:38:34"
+    "test_date": "2025-10-26 19:46:37"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-26 19:46:37"
+    },
     {
       "performance": 45,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 18:38:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 19:46:37",
+    "test_date_previous": "2025-10-26 18:38:34"
+  }
 }

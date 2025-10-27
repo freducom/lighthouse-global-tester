@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.682Z",
+    "generated_at": "2025-10-27T12:55:34.620Z",
     "url": "blogcu.com",
     "country": "Turkey",
     "industry": "Social Media"
   },
   "latest_scores": {
-    "performance": 41,
+    "performance": 51,
     "accessibility": 97,
     "best_practices": 100,
     "seo": 100,
     "pwa": 22,
-    "test_date": "2025-10-26 18:27:25"
+    "test_date": "2025-10-26 19:34:53"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 97,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 22,
+      "test_date": "2025-10-26 19:34:53"
+    },
     {
       "performance": 41,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 18:27:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 19:34:53",
+    "test_date_previous": "2025-10-26 18:27:25"
+  }
 }

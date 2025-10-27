@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T19:17:30.084Z",
+          "dateCreated": "2025-10-27T12:55:33.548Z",
           "about": {
             "@type": "WebSite",
             "name": "bonalive.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-bonalive.com.html#metrics",
           "name": "bonalive.com Performance Metrics",
           "description": "Latest Lighthouse scores for bonalive.com",
-          "performanceScore": 55,
+          "performanceScore": 62,
           "accessibilityScore": 100,
           "bestPracticesScore": 92,
           "seoScore": 95,
-          "dateRecorded": "2025-10-26 18:36:51"
+          "dateRecorded": "2025-10-26 19:44:54"
         }
       ]
     }
@@ -105,24 +105,19 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="breadcrumb">
-                <a href="index.html">🏠 Home</a> > 
-                <a href="country-finland.html">🇫🇮 Finland</a> > 
-                bonalive.com
+        
+        <header class="header" role="banner">
+            <div class="logo-container">
+                <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
             </div>
-            <h1>📊 bonalive.com</h1>
-            <p class="subtitle">Performance history and insights</p>
-            <div class="domain-info">
-                <span class="country-tag">🇫🇮 Finland</span>
-                <span class="last-scan">Last scanned: 10/26/2025, 6:36:51 PM</span>
-            </div>
+            <p class="subtitle">📊 bonalive.com - Performance history and insights from Finland</p>
+            <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">55%</div>
+                <div class="stat-number average">62%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -144,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -157,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 55%"></div>
-                        <span class="score-text">55%</span>
+                        <div class="score-fill performance" style="width: 62%"></div>
+                        <span class="score-text">62%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -216,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 497 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 589 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +352,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":895,"url":"bonalive.com","performance":55,"accessibility":100,"best_practices":92,"seo":95,"pwa":33,"test_date":"2025-10-26 18:36:51","country":"Finland","industry":"Healthcare"},{"id":926,"url":"bonalive.com","performance":62,"accessibility":100,"best_practices":92,"seo":95,"pwa":33,"test_date":"2025-10-26 19:44:54","country":"Finland","industry":"Healthcare"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

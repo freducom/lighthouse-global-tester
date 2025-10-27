@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.650Z",
+    "generated_at": "2025-10-27T12:55:34.540Z",
     "url": "business-standard.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 27,
     "accessibility": 89,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-19 19:49:28"
+    "test_date": "2025-10-26 20:13:52"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-10-26 20:13:52"
+    },
     {
       "performance": 49,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:49:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -22,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 20:13:52",
+    "test_date_previous": "2025-10-19 19:49:28"
+  }
 }

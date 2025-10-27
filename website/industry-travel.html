@@ -67,15 +67,13 @@
 </head>
 <body>
     <div class="container">
+        
         <header class="header" role="banner">
-            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                    <li aria-current="page">🏭 Travel</li>
-                </ol>
-            </nav>
-            <h1>🏭 Travel Industry Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of 1 websites in the travel industry</p>
+            <div class="logo-container">
+                <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
+            </div>
+            <p class="subtitle">🏭 Travel Industry - Comprehensive analysis of 1 websites</p>
+            <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
         </header>
 
         <section class="stats-grid" aria-labelledby="stats-heading">
@@ -223,9 +221,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-26 18:38:20"
+                                <td class="date" data-date="2025-10-26 19:46:23"
                                     aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 18:38:20">10/26/2025</time>
+                                    <time datetime="2025-10-26 19:46:23">10/26/2025</time>
                                 </td>
                             </tr>
                         
@@ -388,7 +386,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"booking.com","country":"United States","industry":"Travel","performance":27,"accessibility":79,"best_practices":67,"seo":90,"pwa":33,"test_date":"2025-10-26 18:38:20","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"booking.com","country":"United States","industry":"Travel","performance":27,"accessibility":79,"best_practices":67,"seo":90,"pwa":33,"test_date":"2025-10-26 19:46:23","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

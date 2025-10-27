@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.515Z",
+    "generated_at": "2025-10-27T12:55:34.273Z",
     "country": "Sweden",
     "flag": "🇸🇪",
-    "website_count": 26
+    "website_count": 36
   },
   "averages": {
-    "performance": 49,
-    "accessibility": 94,
-    "best_practices": 89,
-    "seo": 95,
-    "pwa": 43
+    "performance": 47,
+    "accessibility": 92,
+    "best_practices": 90,
+    "seo": 93,
+    "pwa": 44
   },
   "websites": [
     {
@@ -36,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:49:46"
+    },
+    {
+      "url": "adlibris.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 77,
+        "accessibility": 74,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 07:05:54"
     },
     {
       "url": "arbetsformedlingen.se",
@@ -86,16 +98,40 @@
       "test_date": "2025-10-24 16:12:30"
     },
     {
-      "url": "bonniernews.se",
-      "industry": "Media",
+      "url": "cygni.se",
+      "industry": "Consulting",
       "scores": {
-        "performance": 52,
-        "accessibility": 93,
+        "performance": 64,
+        "accessibility": 100,
         "best_practices": 92,
-        "seo": 97,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 18:37:48"
+      "test_date": "2025-10-27 06:27:17"
+    },
+    {
+      "url": "bring.se",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 54,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:47:58"
+    },
+    {
+      "url": "cninordic.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 71,
+        "pwa": 11
+      },
+      "test_date": "2025-10-27 03:18:10"
     },
     {
       "url": "aftonbladet.se",
@@ -122,16 +158,28 @@
       "test_date": "2025-10-24 04:16:25"
     },
     {
-      "url": "bring.se",
-      "industry": "Transportation",
+      "url": "bonniernews.se",
+      "industry": "Media",
       "scores": {
         "performance": 51,
-        "accessibility": 85,
+        "accessibility": 93,
         "best_practices": 92,
-        "seo": 92,
+        "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-26 18:39:40"
+      "test_date": "2025-10-26 19:45:52"
+    },
+    {
+      "url": "booli.se",
+      "industry": "Realestate",
+      "scores": {
+        "performance": 51,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:46:37"
     },
     {
       "url": "ica.se",
@@ -170,28 +218,28 @@
       "test_date": "2025-10-24 04:16:10"
     },
     {
-      "url": "booli.se",
-      "industry": "Realestate",
+      "url": "cdon.se",
+      "industry": "Marketplace",
       "scores": {
-        "performance": 45,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 18:38:34"
-    },
-    {
-      "url": "coop.se",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 44,
+        "performance": 46,
         "accessibility": 100,
         "best_practices": 100,
-        "seo": 93,
+        "seo": 100,
         "pwa": 78
       },
-      "test_date": "2025-10-19 20:28:21"
+      "test_date": "2025-10-26 22:21:07"
+    },
+    {
+      "url": "chalmers.se",
+      "industry": "Education",
+      "scores": {
+        "performance": 45,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-27 00:47:55"
     },
     {
       "url": "skatteverket.se",
@@ -254,6 +302,18 @@
       "test_date": "2025-10-24 10:11:18"
     },
     {
+      "url": "coop.se",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 37,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 04:22:36"
+    },
+    {
       "url": "systembolaget.se",
       "industry": "E-commerce",
       "scores": {
@@ -264,6 +324,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 06:14:40"
+    },
+    {
+      "url": "1177.se",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 89
+      },
+      "test_date": "2025-10-26 19:25:10"
     },
     {
       "url": "refined.com",
@@ -290,6 +362,18 @@
       "test_date": "2025-10-24 00:48:24"
     },
     {
+      "url": "abb.com",
+      "industry": "Engineering",
+      "scores": {
+        "performance": 33,
+        "accessibility": 65,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:31:27"
+    },
+    {
       "url": "blocket.se",
       "industry": "Marketplace",
       "scores": {
@@ -302,6 +386,18 @@
       "test_date": "2025-10-26 16:51:32"
     },
     {
+      "url": "byggmax.se",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 30,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:27:11"
+    },
+    {
       "url": "postnord.se",
       "industry": "Transportation",
       "scores": {
@@ -312,6 +408,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 08:33:41"
+    },
+    {
+      "url": "creandum.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 28,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:17:15"
+    },
+    {
+      "url": "comviq.se",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:20:40"
     },
     {
       "url": "klarna.com",
@@ -328,36 +448,58 @@
   ],
   "industries": [
     {
-      "industry": "E-commerce",
-      "website_count": 4,
+      "industry": "Consulting",
+      "website_count": 1,
       "averages": {
-        "performance": 54,
-        "accessibility": 90,
+        "performance": 64,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "E-commerce",
+      "website_count": 6,
+      "averages": {
+        "performance": 52,
+        "accessibility": 87,
         "best_practices": 88,
-        "seo": 94,
-        "pwa": 50
+        "seo": 91,
+        "pwa": 52
       }
     },
     {
       "industry": "Education",
+      "website_count": 2,
+      "averages": {
+        "performance": 44,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 93,
+        "pwa": 39
+      }
+    },
+    {
+      "industry": "Engineering",
       "website_count": 1,
       "averages": {
-        "performance": 43,
-        "accessibility": 100,
-        "best_practices": 92,
+        "performance": 33,
+        "accessibility": 65,
+        "best_practices": 83,
         "seo": 85,
         "pwa": 33
       }
     },
     {
       "industry": "Finance",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 57,
-        "accessibility": 94,
-        "best_practices": 96,
-        "seo": 93,
-        "pwa": 33
+        "performance": 49,
+        "accessibility": 89,
+        "best_practices": 94,
+        "seo": 87,
+        "pwa": 28
       }
     },
     {
@@ -372,14 +514,25 @@
       }
     },
     {
-      "industry": "Marketplace",
+      "industry": "Healthcare",
       "website_count": 1,
       "averages": {
-        "performance": 32,
+        "performance": 34,
         "accessibility": 100,
         "best_practices": 75,
-        "seo": 92,
-        "pwa": 33
+        "seo": 100,
+        "pwa": 89
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 2,
+      "averages": {
+        "performance": 39,
+        "accessibility": 100,
+        "best_practices": 88,
+        "seo": 96,
+        "pwa": 56
       }
     },
     {
@@ -397,7 +550,7 @@
       "industry": "Realestate",
       "website_count": 1,
       "averages": {
-        "performance": 45,
+        "performance": 51,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 100,
@@ -417,12 +570,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 37,
-        "accessibility": 93,
-        "best_practices": 92,
-        "seo": 100,
+        "performance": 32,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 93,
         "pwa": 33
       }
     },
@@ -430,7 +583,7 @@
       "industry": "Transportation",
       "website_count": 3,
       "averages": {
-        "performance": 48,
+        "performance": 49,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 95,

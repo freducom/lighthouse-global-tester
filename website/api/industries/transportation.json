@@ -1,17 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.580Z",
+    "generated_at": "2025-10-27T12:55:34.387Z",
     "industry": "Transportation",
-    "website_count": 8
+    "website_count": 13
   },
   "averages": {
-    "performance": 47,
-    "accessibility": 88,
-    "best_practices": 89,
-    "seo": 92,
-    "pwa": 42
+    "performance": 42,
+    "accessibility": 87,
+    "best_practices": 84,
+    "seo": 91,
+    "pwa": 39
   },
   "websites": [
+    {
+      "url": "aerolineas.com.ar",
+      "country": "Argentina",
+      "scores": {
+        "performance": 37,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:10:33"
+    },
+    {
+      "url": "aircanada.com",
+      "country": "Canada",
+      "scores": {
+        "performance": 25,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:13:53"
+    },
     {
       "url": "westjet.com",
       "country": "Canada",
@@ -49,6 +73,30 @@
       "test_date": "2025-10-26 13:42:30"
     },
     {
+      "url": "cathaypacific.com",
+      "country": "Hong Kong",
+      "scores": {
+        "performance": 25,
+        "accessibility": 53,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 22:19:10"
+    },
+    {
+      "url": "daa.ie",
+      "country": "Ireland",
+      "scores": {
+        "performance": 56,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:27:44"
+    },
+    {
       "url": "ns.nl",
       "country": "Netherlands",
       "scores": {
@@ -64,13 +112,13 @@
       "url": "bring.se",
       "country": "Sweden",
       "scores": {
-        "performance": 51,
+        "performance": 54,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 18:39:40"
+      "test_date": "2025-10-26 19:47:58"
     },
     {
       "url": "postnord.se",
@@ -107,17 +155,40 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 10:16:14"
+    },
+    {
+      "url": "aa.com",
+      "country": "United States",
+      "scores": {
+        "performance": 22,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:30:57"
     }
   ],
   "countries": [
     {
-      "country": "Canada",
+      "country": "Argentina",
       "website_count": 1,
       "averages": {
+        "performance": 37,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Canada",
+      "website_count": 2,
+      "averages": {
         "performance": 25,
-        "accessibility": 86,
+        "accessibility": 92,
         "best_practices": 67,
-        "seo": 86,
+        "seo": 89,
         "pwa": 33
       }
     },
@@ -144,6 +215,28 @@
       }
     },
     {
+      "country": "Hong Kong",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 53,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 44
+      }
+    },
+    {
+      "country": "Ireland",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Netherlands",
       "website_count": 1,
       "averages": {
@@ -158,7 +251,7 @@
       "country": "Sweden",
       "website_count": 3,
       "averages": {
-        "performance": 48,
+        "performance": 49,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 95,
@@ -173,6 +266,17 @@
         "accessibility": 59,
         "best_practices": 83,
         "seo": 77,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 1,
+      "averages": {
+        "performance": 22,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 96,
         "pwa": 33
       }
     }

@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.533Z",
+    "generated_at": "2025-10-27T12:55:34.310Z",
     "country": "Philippines",
     "flag": "🌍",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 23,
-    "accessibility": 73,
-    "best_practices": 42,
-    "seo": 67,
+    "performance": 27,
+    "accessibility": 74,
+    "best_practices": 53,
+    "seo": 72,
     "pwa": 33
   },
   "websites": [
@@ -17,13 +17,25 @@
       "url": "bpi.com.ph",
       "industry": "Finance",
       "scores": {
-        "performance": 26,
+        "performance": 37,
         "accessibility": 79,
         "best_practices": 83,
         "seo": 62,
         "pwa": 33
       },
-      "test_date": "2025-10-26 18:39:08"
+      "test_date": "2025-10-26 19:47:31"
+    },
+    {
+      "url": "abs-cbn.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:32:23"
     },
     {
       "url": "bdo.com.ph",
@@ -43,10 +55,21 @@
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 23,
+        "performance": 29,
         "accessibility": 73,
         "best_practices": 42,
         "seo": 67,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 25,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 84,
         "pwa": 33
       }
     }

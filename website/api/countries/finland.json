@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.511Z",
+    "generated_at": "2025-10-27T12:55:34.267Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 30
+    "website_count": 38
   },
   "averages": {
     "performance": 48,
-    "accessibility": 90,
-    "best_practices": 88,
+    "accessibility": 91,
+    "best_practices": 89,
     "seo": 96,
-    "pwa": 46
+    "pwa": 45
   },
   "websites": [
     {
@@ -74,6 +74,18 @@
       "test_date": "2025-10-24 22:14:30"
     },
     {
+      "url": "colossalorder.fi",
+      "industry": "Gaming",
+      "scores": {
+        "performance": 68,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:19:31"
+    },
+    {
       "url": "wpseoai.com",
       "industry": "Marketing",
       "scores": {
@@ -98,6 +110,30 @@
       "test_date": "2025-10-26 08:46:06"
     },
     {
+      "url": "codento.com",
+      "industry": "Consulting",
+      "scores": {
+        "performance": 63,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:18:51"
+    },
+    {
+      "url": "bonalive.com",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 62,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:44:54"
+    },
+    {
       "url": "vr.fi",
       "industry": "Transportation",
       "scores": {
@@ -108,6 +144,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-25 00:51:41"
+    },
+    {
+      "url": "aktia.fi",
+      "industry": "Finance",
+      "scores": {
+        "performance": 60,
+        "accessibility": 95,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:33:49"
     },
     {
       "url": "helsinki.fi",
@@ -122,16 +170,16 @@
       "test_date": "2025-10-19 20:17:04"
     },
     {
-      "url": "bonalive.com",
-      "industry": "Healthcare",
+      "url": "cgi.fi",
+      "industry": "Consulting",
       "scores": {
-        "performance": 55,
+        "performance": 57,
         "accessibility": 100,
-        "best_practices": 92,
-        "seo": 95,
-        "pwa": 33
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 67
       },
-      "test_date": "2025-10-26 18:36:51"
+      "test_date": "2025-10-27 00:47:42"
     },
     {
       "url": "sokos.fi",
@@ -144,6 +192,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 22:15:43"
+    },
+    {
+      "url": "aalto.fi",
+      "industry": "Education",
+      "scores": {
+        "performance": 49,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 19:31:10"
     },
     {
       "url": "hs.fi",
@@ -302,6 +362,18 @@
       "test_date": "2025-10-23 08:30:07"
     },
     {
+      "url": "3dbear.io",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 32,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:30:21"
+    },
+    {
       "url": "autodoc.fi",
       "industry": "Automotive",
       "scores": {
@@ -312,6 +384,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 13:39:37"
+    },
+    {
+      "url": "cardiosignal.com",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 30,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 22:17:18"
+    },
+    {
+      "url": "businessfinland.fi",
+      "industry": "Government",
+      "scores": {
+        "performance": 29,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:16:15"
     },
     {
       "url": "savonsanomat.fi",
@@ -387,6 +483,17 @@
       }
     },
     {
+      "industry": "Consulting",
+      "website_count": 2,
+      "averages": {
+        "performance": 60,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 90,
+        "pwa": 50
+      }
+    },
+    {
       "industry": "E-commerce",
       "website_count": 3,
       "averages": {
@@ -398,46 +505,68 @@
       }
     },
     {
-      "industry": "Education",
-      "website_count": 3,
+      "industry": "Edtech",
+      "website_count": 1,
       "averages": {
-        "performance": 66,
-        "accessibility": 91,
-        "best_practices": 95,
-        "seo": 95,
+        "performance": 32,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
         "pwa": 33
       }
     },
     {
-      "industry": "Finance",
-      "website_count": 5,
+      "industry": "Education",
+      "website_count": 4,
       "averages": {
-        "performance": 56,
-        "accessibility": 91,
-        "best_practices": 93,
-        "seo": 92,
-        "pwa": 47
+        "performance": 62,
+        "accessibility": 93,
+        "best_practices": 94,
+        "seo": 94,
+        "pwa": 36
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 6,
+      "averages": {
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 95,
+        "seo": 93,
+        "pwa": 44
+      }
+    },
+    {
+      "industry": "Gaming",
+      "website_count": 1,
+      "averages": {
+        "performance": 68,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
       }
     },
     {
       "industry": "Government",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 39,
-        "accessibility": 96,
-        "best_practices": 80,
+        "performance": 36,
+        "accessibility": 95,
+        "best_practices": 84,
         "seo": 97,
-        "pwa": 39
+        "pwa": 37
       }
     },
     {
       "industry": "Healthcare",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 55,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 95,
+        "performance": 46,
+        "accessibility": 92,
+        "best_practices": 88,
+        "seo": 98,
         "pwa": 33
       }
     },

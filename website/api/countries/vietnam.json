@@ -1,18 +1,42 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.531Z",
+    "generated_at": "2025-10-27T12:55:34.303Z",
     "country": "Vietnam",
     "flag": "🇻🇳",
-    "website_count": 3
+    "website_count": 5
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 87,
-    "best_practices": 67,
+    "performance": 45,
+    "accessibility": 83,
+    "best_practices": 75,
     "seo": 93,
-    "pwa": 37
+    "pwa": 35
   },
   "websites": [
+    {
+      "url": "24h.com.vn",
+      "industry": "Portal",
+      "scores": {
+        "performance": 59,
+        "accessibility": 55,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:28:51"
+    },
+    {
+      "url": "cafef.vn",
+      "industry": "Finance",
+      "scores": {
+        "performance": 48,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:29:14"
+    },
     {
       "url": "soha.vn",
       "industry": "Media",
@@ -52,6 +76,17 @@
   ],
   "industries": [
     {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 48,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Media",
       "website_count": 3,
       "averages": {
@@ -60,6 +95,17 @@
         "best_practices": 67,
         "seo": 93,
         "pwa": 37
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 59,
+        "accessibility": 55,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
       }
     }
   ]

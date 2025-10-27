@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.580Z",
+    "generated_at": "2025-10-27T12:55:34.390Z",
     "industry": "Retail",
-    "website_count": 2
+    "website_count": 5
   },
   "averages": {
-    "performance": 23,
-    "accessibility": 85,
-    "best_practices": 67,
-    "seo": 85,
-    "pwa": 33
+    "performance": 34,
+    "accessibility": 79,
+    "best_practices": 52,
+    "seo": 83,
+    "pwa": 38
   },
   "websites": [
+    {
+      "url": "canadiantire.ca",
+      "country": "Canada",
+      "scores": {
+        "performance": 21,
+        "accessibility": 81,
+        "best_practices": 42,
+        "seo": 71,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 22:13:08"
+    },
     {
       "url": "walmart.ca",
       "country": "Canada",
@@ -25,6 +37,18 @@
       "test_date": "2025-10-25 03:00:21"
     },
     {
+      "url": "adidas.com",
+      "country": "United States",
+      "scores": {
+        "performance": 85,
+        "accessibility": 56,
+        "best_practices": 0,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:05:29"
+    },
+    {
       "url": "bestbuy.com",
       "country": "United States",
       "scores": {
@@ -35,28 +59,40 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:39:20"
+    },
+    {
+      "url": "costco.com",
+      "country": "United States",
+      "scores": {
+        "performance": 17,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:27:32"
     }
   ],
   "countries": [
     {
       "country": "Canada",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 37,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 91,
-        "pwa": 33
+        "performance": 29,
+        "accessibility": 87,
+        "best_practices": 55,
+        "seo": 81,
+        "pwa": 45
       }
     },
     {
       "country": "United States",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 8,
-        "accessibility": 76,
-        "best_practices": 67,
-        "seo": 79,
+        "performance": 37,
+        "accessibility": 74,
+        "best_practices": 50,
+        "seo": 84,
         "pwa": 33
       }
     }

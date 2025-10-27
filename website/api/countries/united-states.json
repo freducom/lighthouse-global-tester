@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.495Z",
+    "generated_at": "2025-10-27T12:55:34.231Z",
     "country": "United States",
     "flag": "🇺🇸",
-    "website_count": 59
+    "website_count": 73
   },
   "averages": {
-    "performance": 46,
+    "performance": 44,
     "accessibility": 89,
-    "best_practices": 81,
-    "seo": 90,
+    "best_practices": 79,
+    "seo": 89,
     "pwa": 41
   },
   "websites": [
@@ -60,6 +60,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-23 07:02:14"
+    },
+    {
+      "url": "adidas.com",
+      "industry": "Retail",
+      "scores": {
+        "performance": 85,
+        "accessibility": 56,
+        "best_practices": 0,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:05:29"
     },
     {
       "url": "patreon.com",
@@ -134,6 +146,18 @@
       "test_date": "2025-10-23 06:53:04"
     },
     {
+      "url": "cornell.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 69,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:26:10"
+    },
+    {
       "url": "etsy.com",
       "industry": "Marketplace",
       "scores": {
@@ -144,6 +168,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-23 07:04:36"
+    },
+    {
+      "url": "cdc.gov",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 67,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 84,
+        "pwa": 56
+      },
+      "test_date": "2025-10-26 22:20:31"
     },
     {
       "url": "nasa.gov",
@@ -266,6 +302,18 @@
       "test_date": "2025-10-25 06:13:28"
     },
     {
+      "url": "clevelandclinic.org",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 49,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:12:48"
+    },
+    {
       "url": "mailchimp.com",
       "industry": "Marketing",
       "scores": {
@@ -386,6 +434,18 @@
       "test_date": "2025-10-26 16:06:20"
     },
     {
+      "url": "columbia.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 40,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 73,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:19:52"
+    },
+    {
       "url": "netflix.com",
       "industry": "Media",
       "scores": {
@@ -408,18 +468,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 04:11:21"
-    },
-    {
-      "url": "cnn.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 37,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 06:54:56"
     },
     {
       "url": "foxnews.com",
@@ -470,6 +518,30 @@
       "test_date": "2025-10-24 20:27:15"
     },
     {
+      "url": "coursera.org",
+      "industry": "Education",
+      "scores": {
+        "performance": 36,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:29:03"
+    },
+    {
+      "url": "coinbase.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 35,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 03:19:09"
+    },
+    {
       "url": "x.com",
       "industry": "Social Media",
       "scores": {
@@ -480,6 +552,30 @@
         "pwa": 89
       },
       "test_date": "2025-10-25 06:15:53"
+    },
+    {
+      "url": "citigroup.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 34,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:54:04"
+    },
+    {
+      "url": "airbnb.com",
+      "industry": "Hospitality",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 07:13:26"
     },
     {
       "url": "msnbc.com",
@@ -518,18 +614,6 @@
       "test_date": "2025-10-23 07:05:41"
     },
     {
-      "url": "chase.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 30,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 06:58:27"
-    },
-    {
       "url": "amd.com",
       "industry": "Technology",
       "scores": {
@@ -542,16 +626,28 @@
       "test_date": "2025-10-26 08:04:48"
     },
     {
-      "url": "cnbc.com",
+      "url": "cnn.com",
       "industry": "Media",
       "scores": {
-        "performance": 29,
-        "accessibility": 82,
+        "performance": 30,
+        "accessibility": 96,
         "best_practices": 83,
-        "seo": 90,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:09:34"
+      "test_date": "2025-10-27 03:18:38"
+    },
+    {
+      "url": "cisco.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 29,
+        "accessibility": 91,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:53:45"
     },
     {
       "url": "bloomberg.com",
@@ -599,7 +695,7 @@
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 18:38:20"
+      "test_date": "2025-10-26 19:46:23"
     },
     {
       "url": "twitch.tv",
@@ -638,6 +734,18 @@
       "test_date": "2025-10-26 10:17:12"
     },
     {
+      "url": "capitalone.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 26,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 22:13:34"
+    },
+    {
       "url": "tesla.com",
       "industry": "Automotive",
       "scores": {
@@ -660,6 +768,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:50:45"
+    },
+    {
+      "url": "cnet.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 03:17:48"
     },
     {
       "url": "npr.org",
@@ -698,6 +818,30 @@
       "test_date": "2025-10-26 15:58:39"
     },
     {
+      "url": "aa.com",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 22,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:30:57"
+    },
+    {
+      "url": "chase.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 19,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:49:58"
+    },
+    {
       "url": "hubspot.com",
       "industry": "Marketing",
       "scores": {
@@ -708,6 +852,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:01:58"
+    },
+    {
+      "url": "costco.com",
+      "industry": "Retail",
+      "scores": {
+        "performance": 17,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:27:32"
+    },
+    {
+      "url": "cnbc.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 11,
+        "accessibility": 83,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:17:15"
     },
     {
       "url": "bestbuy.com",
@@ -747,24 +915,24 @@
     },
     {
       "industry": "Education",
-      "website_count": 1,
+      "website_count": 4,
       "averages": {
-        "performance": 40,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 93,
+        "performance": 46,
+        "accessibility": 96,
+        "best_practices": 81,
+        "seo": 82,
         "pwa": 33
       }
     },
     {
       "industry": "Finance",
-      "website_count": 9,
+      "website_count": 12,
       "averages": {
-        "performance": 42,
-        "accessibility": 89,
+        "performance": 38,
+        "accessibility": 91,
         "best_practices": 79,
-        "seo": 85,
-        "pwa": 29
+        "seo": 86,
+        "pwa": 33
       }
     },
     {
@@ -776,6 +944,28 @@
         "best_practices": 90,
         "seo": 93,
         "pwa": 47
+      }
+    },
+    {
+      "industry": "Healthcare",
+      "website_count": 2,
+      "averages": {
+        "performance": 58,
+        "accessibility": 86,
+        "best_practices": 96,
+        "seo": 83,
+        "pwa": 45
+      }
+    },
+    {
+      "industry": "Hospitality",
+      "website_count": 1,
+      "averages": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 56
       }
     },
     {
@@ -802,13 +992,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 15,
+      "website_count": 16,
       "averages": {
-        "performance": 40,
+        "performance": 37,
         "accessibility": 88,
-        "best_practices": 82,
-        "seo": 92,
-        "pwa": 42
+        "best_practices": 81,
+        "seo": 93,
+        "pwa": 43
       }
     },
     {
@@ -824,12 +1014,12 @@
     },
     {
       "industry": "Retail",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 8,
-        "accessibility": 76,
-        "best_practices": 67,
-        "seo": 79,
+        "performance": 37,
+        "accessibility": 74,
+        "best_practices": 50,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -868,11 +1058,11 @@
     },
     {
       "industry": "Technology",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 39,
+        "performance": 37,
         "accessibility": 89,
-        "best_practices": 75,
+        "best_practices": 74,
         "seo": 89,
         "pwa": 33
       }
@@ -885,6 +1075,17 @@
         "accessibility": 98,
         "best_practices": 75,
         "seo": 75,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Transportation",
+      "website_count": 1,
+      "averages": {
+        "performance": 22,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 96,
         "pwa": 33
       }
     },

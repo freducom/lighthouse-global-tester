@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.522Z",
+    "generated_at": "2025-10-27T12:55:34.284Z",
     "country": "Turkey",
     "flag": "🇹🇷",
     "website_count": 5
   },
   "averages": {
-    "performance": 51,
+    "performance": 53,
     "accessibility": 89,
     "best_practices": 87,
     "seo": 92,
@@ -38,6 +38,18 @@
       "test_date": "2025-10-24 16:13:06"
     },
     {
+      "url": "blogcu.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22
+      },
+      "test_date": "2025-10-26 19:34:53"
+    },
+    {
       "url": "kamuajans.com",
       "industry": "Media",
       "scores": {
@@ -48,18 +60,6 @@
         "pwa": 44
       },
       "test_date": "2025-10-21 18:16:17"
-    },
-    {
-      "url": "blogcu.com",
-      "industry": "Social Media",
-      "scores": {
-        "performance": 41,
-        "accessibility": 97,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 22
-      },
-      "test_date": "2025-10-26 18:27:25"
     },
     {
       "url": "ntv.com.tr",
@@ -112,7 +112,7 @@
       "industry": "Social Media",
       "website_count": 1,
       "averages": {
-        "performance": 41,
+        "performance": 51,
         "accessibility": 97,
         "best_practices": 100,
         "seo": 100,

@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.580Z",
+    "generated_at": "2025-10-27T12:55:34.389Z",
     "industry": "Portal",
-    "website_count": 24
+    "website_count": 27
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 78,
+    "performance": 51,
+    "accessibility": 76,
     "best_practices": 77,
     "seo": 89,
-    "pwa": 47
+    "pwa": 46
   },
   "websites": [
     {
@@ -47,6 +47,30 @@
         "pwa": 89
       },
       "test_date": "2025-10-24 20:26:13"
+    },
+    {
+      "url": "abv.bg",
+      "country": "Bulgaria",
+      "scores": {
+        "performance": 57,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:01:05"
+    },
+    {
+      "url": "163.com",
+      "country": "China",
+      "scores": {
+        "performance": 56,
+        "accessibility": 50,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:26:25"
     },
     {
       "url": "qq.com",
@@ -289,6 +313,18 @@
       "test_date": "2025-10-23 06:53:04"
     },
     {
+      "url": "24h.com.vn",
+      "country": "Vietnam",
+      "scores": {
+        "performance": 59,
+        "accessibility": 55,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:28:51"
+    },
+    {
       "url": "zambia.co.zm",
       "country": "Zambia",
       "scores": {
@@ -325,14 +361,25 @@
       }
     },
     {
-      "country": "China",
-      "website_count": 2,
+      "country": "Bulgaria",
+      "website_count": 1,
       "averages": {
-        "performance": 37,
-        "accessibility": 40,
-        "best_practices": 88,
-        "seo": 79,
-        "pwa": 45
+        "performance": 57,
+        "accessibility": 58,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "China",
+      "website_count": 3,
+      "averages": {
+        "performance": 43,
+        "accessibility": 43,
+        "best_practices": 81,
+        "seo": 81,
+        "pwa": 41
       }
     },
     {
@@ -464,6 +511,17 @@
         "accessibility": 87,
         "best_practices": 100,
         "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Vietnam",
+      "website_count": 1,
+      "averages": {
+        "performance": 59,
+        "accessibility": 55,
+        "best_practices": 92,
+        "seo": 84,
         "pwa": 33
       }
     },

@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.581Z",
+    "generated_at": "2025-10-27T12:55:34.391Z",
     "industry": "Education",
-    "website_count": 10
+    "website_count": 16
   },
   "averages": {
-    "performance": 53,
-    "accessibility": 88,
-    "best_practices": 88,
-    "seo": 87,
-    "pwa": 33
+    "performance": 50,
+    "accessibility": 89,
+    "best_practices": 84,
+    "seo": 84,
+    "pwa": 32
   },
   "websites": [
+    {
+      "url": "aalto.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 49,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 19:31:10"
+    },
     {
       "url": "amiedu.fi",
       "country": "Finland",
@@ -47,6 +59,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:17:04"
+    },
+    {
+      "url": "aiims.edu",
+      "country": "India",
+      "scores": {
+        "performance": 33,
+        "accessibility": 69,
+        "best_practices": 50,
+        "seo": 50,
+        "pwa": 0
+      },
+      "test_date": "2025-10-27 07:12:51"
     },
     {
       "url": "amrita.edu",
@@ -97,6 +121,18 @@
       "test_date": "2025-10-23 21:49:48"
     },
     {
+      "url": "chalmers.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 45,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-27 00:47:55"
+    },
+    {
       "url": "su.se",
       "country": "Sweden",
       "scores": {
@@ -131,29 +167,65 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:06:20"
+    },
+    {
+      "url": "columbia.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 40,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 73,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:19:52"
+    },
+    {
+      "url": "cornell.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 69,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 69,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:26:10"
+    },
+    {
+      "url": "coursera.org",
+      "country": "United States",
+      "scores": {
+        "performance": 36,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:29:03"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 66,
-        "accessibility": 91,
-        "best_practices": 95,
-        "seo": 95,
-        "pwa": 33
+        "performance": 62,
+        "accessibility": 93,
+        "best_practices": 94,
+        "seo": 94,
+        "pwa": 36
       }
     },
     {
       "country": "India",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 41,
+        "performance": 38,
         "accessibility": 70,
-        "best_practices": 80,
-        "seo": 75,
-        "pwa": 28
+        "best_practices": 70,
+        "seo": 67,
+        "pwa": 18
       }
     },
     {
@@ -180,13 +252,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 43,
+        "performance": 44,
         "accessibility": 100,
-        "best_practices": 92,
-        "seo": 85,
-        "pwa": 33
+        "best_practices": 96,
+        "seo": 93,
+        "pwa": 39
       }
     },
     {
@@ -202,12 +274,12 @@
     },
     {
       "country": "United States",
-      "website_count": 1,
+      "website_count": 4,
       "averages": {
-        "performance": 40,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 93,
+        "performance": 46,
+        "accessibility": 96,
+        "best_practices": 81,
+        "seo": 82,
         "pwa": 33
       }
     }

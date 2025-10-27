@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.537Z",
+    "generated_at": "2025-10-27T12:55:34.319Z",
     "country": "Uruguay",
     "flag": "🇺🇾",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 48,
-    "accessibility": 65,
-    "best_practices": 79,
-    "seo": 89,
-    "pwa": 33
+    "performance": 46,
+    "accessibility": 72,
+    "best_practices": 78,
+    "seo": 93,
+    "pwa": 37
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 22:13:12"
+    },
+    {
+      "url": "busqueda.com.uy",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-26 20:16:50"
     },
     {
       "url": "subrayado.com.uy",
@@ -41,13 +53,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 48,
-        "accessibility": 65,
-        "best_practices": 79,
-        "seo": 89,
-        "pwa": 33
+        "performance": 46,
+        "accessibility": 72,
+        "best_practices": 78,
+        "seo": 93,
+        "pwa": 37
       }
     }
   ]

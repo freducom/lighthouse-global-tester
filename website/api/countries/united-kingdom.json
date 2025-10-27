@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.498Z",
+    "generated_at": "2025-10-27T12:55:34.237Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
-    "website_count": 25
+    "website_count": 27
   },
   "averages": {
-    "performance": 42,
+    "performance": 39,
     "accessibility": 89,
-    "best_practices": 83,
+    "best_practices": 79,
     "seo": 90,
-    "pwa": 45
+    "pwa": 44
   },
   "websites": [
     {
@@ -134,18 +134,6 @@
       "test_date": "2025-10-24 10:15:24"
     },
     {
-      "url": "channel4.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 43,
-        "accessibility": 88,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 78
-      },
-      "test_date": "2025-10-23 07:36:41"
-    },
-    {
       "url": "mirror.co.uk",
       "industry": "Media",
       "scores": {
@@ -182,18 +170,6 @@
       "test_date": "2025-10-23 16:48:07"
     },
     {
-      "url": "dailymail.co.uk",
-      "industry": "Media",
-      "scores": {
-        "performance": 36,
-        "accessibility": 71,
-        "best_practices": 67,
-        "seo": 78,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 07:33:09"
-    },
-    {
       "url": "sky.com",
       "industry": "Telecom",
       "scores": {
@@ -216,6 +192,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 00:50:27"
+    },
+    {
+      "url": "channel4.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 00:48:15"
+    },
+    {
+      "url": "dailymail.co.uk",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 70,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:30:44"
     },
     {
       "url": "standard.co.uk",
@@ -312,18 +312,42 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:36:57"
+    },
+    {
+      "url": "bt.com",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 13,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:11:05"
+    },
+    {
+      "url": "coop.co.uk",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 0,
+        "accessibility": 69,
+        "best_practices": 0,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 04:22:15"
     }
   ],
   "industries": [
     {
       "industry": "E-commerce",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 31,
-        "accessibility": 92,
-        "best_practices": 77,
-        "seo": 90,
-        "pwa": 42
+        "performance": 25,
+        "accessibility": 87,
+        "best_practices": 62,
+        "seo": 87,
+        "pwa": 40
       }
     },
     {
@@ -352,7 +376,7 @@
       "industry": "Media",
       "website_count": 11,
       "averages": {
-        "performance": 33,
+        "performance": 32,
         "accessibility": 87,
         "best_practices": 77,
         "seo": 89,
@@ -361,12 +385,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 35,
-        "accessibility": 97,
-        "best_practices": 92,
-        "seo": 97,
+        "performance": 28,
+        "accessibility": 95,
+        "best_practices": 84,
+        "seo": 95,
         "pwa": 33
       }
     },

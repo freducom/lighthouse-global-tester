@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.579Z",
+    "generated_at": "2025-10-27T12:55:34.388Z",
     "industry": "Marketplace",
-    "website_count": 19
+    "website_count": 20
   },
   "averages": {
     "performance": 44,
-    "accessibility": 85,
-    "best_practices": 82,
+    "accessibility": 86,
+    "best_practices": 83,
     "seo": 92,
-    "pwa": 51
+    "pwa": 53
   },
   "websites": [
     {
@@ -193,6 +193,18 @@
       "test_date": "2025-10-26 16:51:32"
     },
     {
+      "url": "cdon.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-26 22:21:07"
+    },
+    {
       "url": "sahibinden.com",
       "country": "Turkey",
       "scores": {
@@ -365,13 +377,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 32,
+        "performance": 39,
         "accessibility": 100,
-        "best_practices": 75,
-        "seo": 92,
-        "pwa": 33
+        "best_practices": 88,
+        "seo": 96,
+        "pwa": 56
       }
     },
     {

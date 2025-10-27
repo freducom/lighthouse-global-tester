@@ -252,23 +252,17 @@
         🔌 Website Offline
     </div>
     
-    <!-- Header -->
-    <header class="header" role="banner">
-        <div class="logo-container">
-            <img src="logo.png" alt="CheetahCheck" class="header-logo">
-        </div>
-        <h1>📚 CheetahCheck API Documentation</h1>
-        <p class="subtitle">Track the fastest websites with our REST API</p>
+    <div class="container">
         
-        <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-            <ol class="breadcrumb-list">
-                <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                <li aria-current="page">📚 API Documentation</li>
-            </ol>
-        </nav>
-    </header>
+        <header class="header" role="banner">
+            <div class="logo-container">
+                <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
+            </div>
+            <p class="subtitle">📚 API Documentation - REST API for website performance data</p>
+            <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
+        </header>
 
-    <main class="api-docs">
+        <main class="api-docs">
         <!-- Table of Contents -->
         <div class="toc">
             <h2>📚 API Documentation</h2>
@@ -324,7 +318,7 @@
   "meta": {
     "generated_at": "2025-10-23T10:30:00.000Z",
     "api_version": "1.0",
-    "total_websites": 497,
+    "total_websites": 589,
     "countries_count": 5,
     "industries_count": 5
   },
@@ -402,7 +396,7 @@
                     <pre>{
   "meta": {
     "generated_at": "2025-10-23T10:30:00.000Z",
-    "total_websites": 497
+    "total_websites": 589
   },
   "websites": [
     {
@@ -515,6 +509,9 @@
                                 <td>Media</td>
                                 <td>api/industries/media.json</td>
                             </tr><tr>
+                                <td>Transportation</td>
+                                <td>api/industries/transportation.json</td>
+                            </tr><tr>
                                 <td>Finance</td>
                                 <td>api/industries/finance.json</td>
                             </tr><tr>
@@ -523,9 +520,6 @@
                             </tr><tr>
                                 <td>Real Estate</td>
                                 <td>api/industries/real-estate.json</td>
-                            </tr><tr>
-                                <td>Jobs</td>
-                                <td>api/industries/jobs.json</td>
                             </tr>
                         <tr><td colspan="2"><em>...and more industries</em></td></tr>
                     </tbody>
@@ -577,6 +571,10 @@
                                 <td>api/websites/angola24horascom.json</td>
                                 <td>Angola</td>
                             </tr><tr>
+                                <td>aerolineas.com.ar</td>
+                                <td>api/websites/aerolineascomar.json</td>
+                                <td>Argentina</td>
+                            </tr><tr>
                                 <td>bancogalicia.com</td>
                                 <td>api/websites/bancogaliciacom.json</td>
                                 <td>Argentina</td>
@@ -588,12 +586,8 @@
                                 <td>9news.com.au</td>
                                 <td>api/websites/9newscomau.json</td>
                                 <td>Australia</td>
-                            </tr><tr>
-                                <td>abc.net.au</td>
-                                <td>api/websites/abcnetau.json</td>
-                                <td>Australia</td>
                             </tr>
-                        <tr><td colspan="3"><em>...and 492 more websites</em></td></tr>
+                        <tr><td colspan="3"><em>...and 584 more websites</em></td></tr>
                     </tbody>
                 </table>
                 
@@ -640,7 +634,7 @@
                     <pre>{
   "meta": {
     "generated_at": "2025-10-23T10:30:00.000Z",
-    "total_websites": 497
+    "total_websites": 589
   },
   "distribution": {
     "performance": {
@@ -801,7 +795,7 @@ curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>CheetahCheck</h3>
-                <p>Global lighthouse performance monitoring across 497 websites in 5 countries.</p>
+                <p>Global lighthouse performance monitoring across 589 websites in 5 countries.</p>
             </div>
             
             <div class="footer-section">
@@ -957,5 +951,7 @@ curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
         window.addEventListener('online', updateOfflineStatus);
         window.addEventListener('offline', updateOfflineStatus);
     </script>
+    
+    </div> <!-- Close container -->
 </body>
 </html>

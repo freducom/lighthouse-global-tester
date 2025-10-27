@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.626Z",
+    "generated_at": "2025-10-27T12:55:34.478Z",
     "url": "canada.ca",
     "country": "Canada",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 54,
     "accessibility": 100,
-    "best_practices": 83,
+    "best_practices": 67,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-10-19 19:59:43"
+    "test_date": "2025-10-26 22:12:12"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 100,
+      "best_practices": 67,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-10-26 22:12:12"
+    },
     {
       "performance": 60,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:59:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -6,
+    "accessibility": 0,
+    "best_practices": -16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 22:12:12",
+    "test_date_previous": "2025-10-19 19:59:43"
+  }
 }

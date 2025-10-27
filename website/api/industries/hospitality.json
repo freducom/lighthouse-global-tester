@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2025-10-27T12:55:34.393Z",
+    "industry": "Hospitality",
+    "website_count": 1
+  },
+  "averages": {
+    "performance": 34,
+    "accessibility": 100,
+    "best_practices": 83,
+    "seo": 99,
+    "pwa": 56
+  },
+  "websites": [
+    {
+      "url": "airbnb.com",
+      "country": "United States",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 07:13:26"
+    }
+  ],
+  "countries": [
+    {
+      "country": "United States",
+      "website_count": 1,
+      "averages": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 56
+      }
+    }
+  ]
+}

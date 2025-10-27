@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.521Z",
+    "generated_at": "2025-10-27T12:55:34.281Z",
     "country": "Lithuania",
     "flag": "🇱🇹",
-    "website_count": 3
+    "website_count": 5
   },
   "averages": {
-    "performance": 67,
-    "accessibility": 56,
-    "best_practices": 75,
-    "seo": 83,
-    "pwa": 44
+    "performance": 49,
+    "accessibility": 64,
+    "best_practices": 73,
+    "seo": 85,
+    "pwa": 47
   },
   "websites": [
     {
@@ -38,6 +38,18 @@
       "test_date": "2025-10-26 13:39:51"
     },
     {
+      "url": "15min.lt",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 73,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 78
+      },
+      "test_date": "2025-10-26 19:25:30"
+    },
+    {
       "url": "vz.lt",
       "industry": "Media",
       "scores": {
@@ -48,6 +60,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-25 00:52:50"
+    },
+    {
+      "url": "alfa.lt",
+      "industry": "Media",
+      "scores": {
+        "performance": 10,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 22
+      },
+      "test_date": "2025-10-27 07:35:17"
     }
   ],
   "industries": [
@@ -64,13 +88,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 27,
-        "accessibility": 64,
-        "best_practices": 58,
-        "seo": 82,
-        "pwa": 67
+        "performance": 23,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 56
       }
     }
   ]

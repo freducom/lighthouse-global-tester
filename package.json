@@ -34,8 +34,7 @@
     "deploy-daily": "npm run test-daily && npm run generate",
     "deploy-smart": "npm run test-smart && npm run generate",
     "dev": "npm run generate && npm run serve",
-    "migrate": "node migrate-db.js",
-    "setup": "npm install && npm run migrate"
+    "setup": "npm install"
   },
   "dependencies": {
     "lighthouse": "^10.4.0",

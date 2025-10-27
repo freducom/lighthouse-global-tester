@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.524Z",
+    "generated_at": "2025-10-27T12:55:34.289Z",
     "country": "Egypt",
     "flag": "🇪🇬",
-    "website_count": 6
+    "website_count": 8
   },
   "averages": {
-    "performance": 34,
-    "accessibility": 89,
+    "performance": 37,
+    "accessibility": 87,
     "best_practices": 67,
     "seo": 91,
-    "pwa": 50
+    "pwa": 46
   },
   "websites": [
     {
@@ -26,6 +26,18 @@
       "test_date": "2025-10-26 10:09:11"
     },
     {
+      "url": "dailynewsegypt.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 54,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:31:07"
+    },
+    {
       "url": "syria.tv",
       "industry": "Media",
       "scores": {
@@ -36,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 06:14:17"
+    },
+    {
+      "url": "akhbarelyom.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 69,
+        "best_practices": 50,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:20:05"
     },
     {
       "url": "yallakora.com",
@@ -89,13 +113,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 34,
-        "accessibility": 87,
+        "performance": 37,
+        "accessibility": 86,
         "best_practices": 67,
         "seo": 91,
-        "pwa": 47
+        "pwa": 43
       }
     },
     {

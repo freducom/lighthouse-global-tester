@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.529Z",
+    "generated_at": "2025-10-27T12:55:34.298Z",
     "country": "Czechia",
     "flag": "🇨🇿",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
     "performance": 38,
-    "accessibility": 71,
-    "best_practices": 71,
-    "seo": 83,
-    "pwa": 39
+    "accessibility": 73,
+    "best_practices": 75,
+    "seo": 86,
+    "pwa": 38
   },
   "websites": [
     {
@@ -50,6 +50,18 @@
       "test_date": "2025-10-22 20:29:38"
     },
     {
+      "url": "ceskatelevize.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 00:46:36"
+    },
+    {
       "url": "aktualne.cz",
       "industry": "Media",
       "scores": {
@@ -65,13 +77,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
         "performance": 38,
-        "accessibility": 71,
-        "best_practices": 71,
-        "seo": 83,
-        "pwa": 39
+        "accessibility": 73,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 38
       }
     }
   ]

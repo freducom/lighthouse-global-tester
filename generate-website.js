@@ -25,6 +25,25 @@ class WebsiteGenerator {
     this.domainsData = JSON.parse(fs.readFileSync('./domains.json', 'utf8'));
   }
 
+  getHeaderHTML(subtitle, isHomepage = false) {
+    const logoElement = isHomepage 
+      ? `<img src="logo.png" alt="CheetahCheck" class="header-logo">`
+      : `<a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>`;
+    
+    const backLink = isHomepage 
+      ? '' 
+      : `<p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>`;
+    
+    return `
+        <header class="header" role="banner">
+            <div class="logo-container">
+                ${logoElement}
+            </div>
+            <p class="subtitle">${subtitle}</p>
+            ${backLink}
+        </header>`;
+  }
+
   getCountryFlag(country) {
     const normalizedCountry = this.normalizeCountry(country);
     // Trim any whitespace to avoid lookup issues
@@ -880,13 +899,7 @@ ${this.getPostHogScript()}
     <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
     
     <div class="container">
-        <header class="header" role="banner">
-            <div class="logo-container">
-                <img src="logo.png" alt="Valmitta" class="header-logo">
-            </div>
-            <p class="subtitle">${allScores.length} tracked websites – only one can be the fastest</p>
-            
-        </header>
+        ${this.getHeaderHTML(`${allScores.length} tracked websites – only one can be the fastest`, true)}
 
         <main id="main-content" role="main">
             <!-- Global Statistics Section -->
@@ -1616,6 +1629,7 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
 
 ${this.getPWAInstallScript()}
 
+    </div> <!-- Close container -->
 </body>
 </html>`;
 
@@ -1721,16 +1735,7 @@ ${this.getPostHogScript()}
     </div>
     
     <div class="container">
-        <header class="header" role="banner">
-            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                    <li aria-current="page">${this.getCleanCountryFlag(countryData.country)} ${countryData.country}</li>
-                </ol>
-            </nav>
-            <h1>${this.getCleanCountryFlag(countryData.country)} ${countryData.country} Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of ${countryScores.length} websites from ${countryData.country}</p>
-        </header>
+        ${this.getHeaderHTML(`${this.getCleanCountryFlag(countryData.country)} ${countryData.country} - Comprehensive lighthouse analysis of ${countryScores.length} websites`)}
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for ${countryData.country}</h2>
@@ -2382,16 +2387,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header" role="banner">
-            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                    <li aria-current="page">🏭 ${industry}</li>
-                </ol>
-            </nav>
-            <h1>🏭 ${industry} Industry Performance Analysis</h1>
-            <p class="subtitle">Comprehensive lighthouse analysis of ${industryScores.length} websites in the ${industry.toLowerCase()} industry</p>
-        </header>
+        ${this.getHeaderHTML(`🏭 ${industry} Industry - Comprehensive analysis of ${industryScores.length} websites`)}
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for ${industry} Industry</h2>
@@ -2913,19 +2909,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="breadcrumb">
-                <a href="index.html">🏠 Home</a> > 
-                <a href="country-${this.normalizeCountry(site.country).toLowerCase().replace(/\s+/g, '-')}.html">${this.getCleanCountryFlag(this.normalizeCountry(site.country))} ${this.normalizeCountry(site.country)}</a> > 
-                ${site.url}
-            </div>
-            <h1>📊 ${site.url}</h1>
-            <p class="subtitle">Performance history and insights</p>
-            <div class="domain-info">
-                <span class="country-tag">${this.getCleanCountryFlag(this.normalizeCountry(site.country))} ${this.normalizeCountry(site.country)}</span>
-                <span class="last-scan">Last scanned: ${new Date(site.test_date).toLocaleString()}</span>
-            </div>
-        </header>
+        ${this.getHeaderHTML(`📊 ${site.url} - Performance history and insights from ${this.normalizeCountry(site.country)}`)}
 
         <div class="stats-grid">
             <div class="stat-card performance">
@@ -3143,6 +3127,24 @@ body {
     font-size: 1.2em;
     opacity: 0.9;
     margin-bottom: 15px;
+}
+
+.back-to-frontpage {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.back-to-frontpage a {
+    color: #0D3B66;
+    text-decoration: none;
+    font-size: 0.9em;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.back-to-frontpage a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .last-updated {
@@ -5310,13 +5312,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>🌍 All Countries</h1>
-            <p class="subtitle">Complete rankings of all ${countryStats.all.length} countries by performance</p>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">← Back to Home</a>
-            </div>
-        </header>
+        ${this.getHeaderHTML(`🌍 All Countries - Complete rankings of all ${countryStats.all.length} countries by performance`)}
 
         <section class="section">
             <div class="search-container">
@@ -5424,13 +5420,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>🏭 All Industries</h1>
-            <p class="subtitle">Complete rankings of all ${industryStats.all.length} industries by performance</p>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">← Back to Home</a>
-            </div>
-        </header>
+        ${this.getHeaderHTML(`🏭 All Industries - Complete rankings of all ${industryStats.all.length} industries by performance`)}
 
         <section class="section">
             <div class="search-container">
@@ -5549,13 +5539,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>🏢 All Companies</h1>
-            <p class="subtitle">Complete rankings of all ${rankedSites.length} websites by performance</p>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">← Back to Home</a>
-            </div>
-        </header>
+        ${this.getHeaderHTML(`🏢 All Companies - Complete rankings of all ${rankedSites.length} websites by performance`)}
 
         <section class="section">
             <div class="filter-container">
@@ -6098,18 +6082,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header" role="banner">
-            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                    <li aria-current="page">📅 Latest Updated Statistics</li>
-                </ol>
-            </nav>
-            <h1>📅 Latest Updated Statistics</h1>
-            <p class="subtitle">
-                Most recent lighthouse scan from <time datetime="${latestScanDate}">${formattedScanDate}</time>
-            </p>
-        </header>
+        ${this.getHeaderHTML(`📅 Latest Updated Statistics - Most recent scan from ${formattedScanDate}`)}
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Latest Scan</h2>
@@ -6502,18 +6475,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header" role="banner">
-            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-                <ol class="breadcrumb-list">
-                    <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                    <li aria-current="page">⏳ Queued Sites</li>
-                </ol>
-            </nav>
-            <h1>⏳ Queued Sites</h1>
-            <p class="subtitle">
-                ${queuedCount} websites waiting to be tested with Google Lighthouse
-            </p>
-        </header>
+        ${this.getHeaderHTML(`⏳ Queued Sites - ${queuedCount} websites waiting to be tested`)}
 
         <main id="main-content" role="main">
             <section class="section" aria-labelledby="queued-heading">
@@ -6771,13 +6733,7 @@ ${this.getPostHogScript()}
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>🐆 About CheetahCheck</h1>
-            <p class="subtitle">The story behind tracking the fastest websites</p>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">← Back to Home</a>
-            </div>
-        </header>
+        ${this.getHeaderHTML(`🐆 About CheetahCheck - The story behind tracking the fastest websites`)}
 
         <main class="content">
             <section class="about-tile">

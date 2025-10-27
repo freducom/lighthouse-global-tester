@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "generated_at": "2025-10-27T12:55:34.392Z",
+    "industry": "Consulting",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 61,
+    "accessibility": 97,
+    "best_practices": 95,
+    "seo": 88,
+    "pwa": 44
+  },
+  "websites": [
+    {
+      "url": "cgi.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 57,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 00:47:42"
+    },
+    {
+      "url": "codento.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 63,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 03:18:51"
+    },
+    {
+      "url": "cygni.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 64,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 06:27:17"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Finland",
+      "website_count": 2,
+      "averages": {
+        "performance": 60,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 90,
+        "pwa": 50
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 64,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      }
+    }
+  ]
+}

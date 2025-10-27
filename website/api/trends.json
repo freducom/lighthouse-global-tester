@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.738Z",
-    "websites_with_trends": 208,
-    "total_websites": 497
+    "generated_at": "2025-10-27T12:55:34.713Z",
+    "websites_with_trends": 230,
+    "total_websites": 589
   },
   "global_trends": {
     "average_changes": {
-      "performance": -1,
+      "performance": -1.4,
       "accessibility": -0.3,
-      "best_practices": -1.6,
-      "seo": -0.2,
+      "best_practices": -1.7,
+      "seo": -0.3,
       "pwa": -0.2
     },
     "improvements": {
-      "performance": 85,
-      "accessibility": 26,
-      "best_practices": 15,
-      "seo": 13,
+      "performance": 90,
+      "accessibility": 27,
+      "best_practices": 17,
+      "seo": 16,
       "pwa": 3
     },
     "declines": {
-      "performance": 99,
-      "accessibility": 22,
-      "best_practices": 37,
-      "seo": 21,
+      "performance": 113,
+      "accessibility": 24,
+      "best_practices": 44,
+      "seo": 23,
       "pwa": 2
     }
   },
@@ -497,28 +497,80 @@
       }
     },
     {
+      "url": "bmo.com",
+      "country": "Canada",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 26,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "canada.ca",
+      "country": "Canada",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 54,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 60,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": -16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "cbc.ca",
       "country": "Canada",
       "industry": "Media",
       "current_scores": {
+        "performance": 33,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 56
+      },
+      "previous_scores": {
         "performance": 40,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 90,
         "pwa": 56
       },
-      "previous_scores": {
-        "performance": 35,
-        "accessibility": 91,
-        "best_practices": 83,
-        "seo": 83,
-        "pwa": 56
-      },
       "changes": {
-        "performance": 5,
-        "accessibility": 7,
+        "performance": -7,
+        "accessibility": -7,
         "best_practices": 0,
-        "seo": 7,
+        "seo": -7,
         "pwa": 0
       }
     },
@@ -527,23 +579,23 @@
       "country": "Canada",
       "industry": "Media",
       "current_scores": {
+        "performance": 6,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 34,
         "accessibility": 89,
         "best_practices": 92,
         "seo": 92,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 37,
-        "accessibility": 89,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -3,
+        "performance": -28,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": -9,
         "seo": 0,
         "pwa": 0
       }
@@ -757,6 +809,32 @@
       }
     },
     {
+      "url": "bold.dk",
+      "country": "Denmark",
+      "industry": "Sports",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "almasryalyoum.com",
       "country": "Egypt",
       "industry": "Media",
@@ -932,6 +1010,32 @@
       },
       "changes": {
         "performance": -16,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bonalive.com",
+      "country": "Finland",
+      "industry": "Healthcare",
+      "current_scores": {
+        "performance": 62,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 95,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 95,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 7,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -1307,23 +1411,75 @@
       "country": "Germany",
       "industry": "Automotive",
       "current_scores": {
-        "performance": 36,
+        "performance": 33,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 46,
+        "performance": 36,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
       "changes": {
-        "performance": -10,
+        "performance": -3,
         "accessibility": 0,
         "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "boerse.de",
+      "country": "Germany",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 56,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "chip.de",
+      "country": "Germany",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 47,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 48,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 8,
         "seo": 0,
         "pwa": 0
       }
@@ -1849,6 +2005,58 @@
       }
     },
     {
+      "url": "business-standard.com",
+      "country": "India",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 49,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -22,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "cricbuzz.com",
+      "country": "India",
+      "industry": "Sports",
+      "current_scores": {
+        "performance": 45,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 72,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -27,
+        "accessibility": 3,
+        "best_practices": -17,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "flipkart.com",
       "country": "India",
       "industry": "E-commerce",
@@ -2269,24 +2477,24 @@
       "country": "Japan",
       "industry": "Media",
       "current_scores": {
+        "performance": 65,
+        "accessibility": 79,
+        "best_practices": 100,
+        "seo": 82,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 73,
         "accessibility": 79,
         "best_practices": 92,
         "seo": 89,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 72,
-        "accessibility": 79,
-        "best_practices": 92,
-        "seo": 89,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 1,
+        "performance": -8,
         "accessibility": 0,
-        "best_practices": 0,
-        "seo": 0,
+        "best_practices": 8,
+        "seo": -7,
         "pwa": 0
       }
     },
@@ -2711,21 +2919,21 @@
       "country": "Netherlands",
       "industry": "E-commerce",
       "current_scores": {
-        "performance": 88,
+        "performance": 90,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 71,
+        "performance": 88,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
         "pwa": 33
       },
       "changes": {
-        "performance": 17,
+        "performance": 2,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -3038,6 +3246,32 @@
       },
       "changes": {
         "performance": 20,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bpi.com.ph",
+      "country": "Philippines",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 37,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 11,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -3539,6 +3773,58 @@
       }
     },
     {
+      "url": "chosun.com",
+      "country": "South Korea",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 62,
+        "best_practices": 42,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 26,
+        "accessibility": 61,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 1,
+        "best_practices": -16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "coupang.com",
+      "country": "South Korea",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 24,
+        "accessibility": 79,
+        "best_practices": 58,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 14,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 82,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 10,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 1,
+        "pwa": 0
+      }
+    },
+    {
       "url": "mk.co.kr",
       "country": "South Korea",
       "industry": "Media",
@@ -3799,6 +4085,136 @@
       }
     },
     {
+      "url": "bonniernews.se",
+      "country": "Sweden",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 51,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 52,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "booli.se",
+      "country": "Sweden",
+      "industry": "Realestate",
+      "current_scores": {
+        "performance": 51,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 45,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "bring.se",
+      "country": "Sweden",
+      "industry": "Transportation",
+      "current_scores": {
+        "performance": 54,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 51,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "cdon.se",
+      "country": "Sweden",
+      "industry": "Marketplace",
+      "current_scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 47,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "coop.se",
+      "country": "Sweden",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 37,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 44,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -7,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "expressen.se",
       "country": "Sweden",
       "industry": "Media",
@@ -4000,6 +4416,32 @@
       },
       "changes": {
         "performance": 2,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "blogcu.com",
+      "country": "Turkey",
+      "industry": "Social Media",
+      "current_scores": {
+        "performance": 51,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22
+      },
+      "previous_scores": {
+        "performance": 41,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 22
+      },
+      "changes": {
+        "performance": 10,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -4215,28 +4657,54 @@
       }
     },
     {
+      "url": "channel4.com",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 43,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -10,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "dailymail.co.uk",
       "country": "United Kingdom",
       "industry": "Media",
       "current_scores": {
+        "performance": 32,
+        "accessibility": 70,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 36,
         "accessibility": 71,
         "best_practices": 67,
         "seo": 78,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 43,
-        "accessibility": 61,
-        "best_practices": 67,
-        "seo": 78,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -7,
-        "accessibility": 10,
+        "performance": -4,
+        "accessibility": -1,
         "best_practices": 0,
-        "seo": 0,
+        "seo": 1,
         "pwa": 0
       }
     },
@@ -4731,6 +5199,110 @@
         "accessibility": 9,
         "best_practices": 0,
         "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "booking.com",
+      "country": "United States",
+      "industry": "Travel",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 27,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "chase.com",
+      "country": "United States",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 19,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 30,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -11,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "cnbc.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 11,
+        "accessibility": 83,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 29,
+        "accessibility": 82,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -18,
+        "accessibility": 1,
+        "best_practices": -8,
+        "seo": 1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "cnn.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 37,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -7,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 8,
         "pwa": 0
       }
     },

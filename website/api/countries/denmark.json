@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.519Z",
+    "generated_at": "2025-10-27T12:55:34.278Z",
     "country": "Denmark",
     "flag": "🇩🇰",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 57,
+    "performance": 52,
     "accessibility": 92,
-    "best_practices": 94,
-    "seo": 96,
-    "pwa": 44
+    "best_practices": 93,
+    "seo": 94,
+    "pwa": 42
   },
   "websites": [
     {
@@ -53,13 +53,25 @@
       "url": "bold.dk",
       "industry": "Sports",
       "scores": {
-        "performance": 43,
+        "performance": 44,
         "accessibility": 75,
         "best_practices": 92,
         "seo": 92,
         "pwa": 44
       },
-      "test_date": "2025-10-26 18:32:40"
+      "test_date": "2025-10-26 19:40:43"
+    },
+    {
+      "url": "bt.dk",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 20:11:44"
     }
   ],
   "industries": [
@@ -76,12 +88,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 56,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
+        "performance": 43,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 93,
         "pwa": 33
       }
     },
@@ -89,7 +101,7 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 43,
+        "performance": 44,
         "accessibility": 75,
         "best_practices": 92,
         "seo": 92,

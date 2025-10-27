@@ -7,6 +7,25 @@ class APIDocsGenerator {
     this.outputDir = './website';
   }
 
+  getHeaderHTML(subtitle, isHomepage = false) {
+    const logoElement = isHomepage 
+      ? `<img src="logo.png" alt="CheetahCheck" class="header-logo">`
+      : `<a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>`;
+    
+    const backLink = isHomepage 
+      ? '' 
+      : `<p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>`;
+    
+    return `
+        <header class="header" role="banner">
+            <div class="logo-container">
+                ${logoElement}
+            </div>
+            <p class="subtitle">${subtitle}</p>
+            ${backLink}
+        </header>`;
+  }
+
   async generateAPIDocs() {
     console.log('📚 Generating API documentation...');
     
@@ -245,23 +264,10 @@ class APIDocsGenerator {
 <body>
     ${this.getOfflineBadgeHTML()}
     
-    <!-- Header -->
-    <header class="header" role="banner">
-        <div class="logo-container">
-            <img src="logo.png" alt="CheetahCheck" class="header-logo">
-        </div>
-        <h1>📚 CheetahCheck API Documentation</h1>
-        <p class="subtitle">Track the fastest websites with our REST API</p>
-        
-        <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-            <ol class="breadcrumb-list">
-                <li><a href="index.html" aria-label="Return to homepage">🏠 Home</a></li>
-                <li aria-current="page">📚 API Documentation</li>
-            </ol>
-        </nav>
-    </header>
+    <div class="container">
+        ${this.getHeaderHTML('📚 API Documentation - REST API for website performance data')}
 
-    <main class="api-docs">
+        <main class="api-docs">
         <!-- Table of Contents -->
         <div class="toc">
             <h2>📚 API Documentation</h2>
@@ -796,6 +802,8 @@ curl -s "https://cheetahcheck.com/api/websites/google-com.json" | jq '.'</pre>
     ${this.getContactFormHTML()}
     ${this.getContactFormJS()}
     ${this.getOfflineDetectionJS()}
+    
+    </div> <!-- Close container -->
 </body>
 </html>`;
 

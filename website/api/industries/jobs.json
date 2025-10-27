@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.579Z",
+    "generated_at": "2025-10-27T12:55:34.388Z",
     "industry": "Jobs",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
-    "performance": 55,
+    "performance": 56,
     "accessibility": 86,
-    "best_practices": 74,
+    "best_practices": 75,
     "seo": 91,
-    "pwa": 46
+    "pwa": 51
   },
   "websites": [
     {
@@ -35,6 +35,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:05:11"
+    },
+    {
+      "url": "cvkeskus.ee",
+      "country": "Estonia",
+      "scores": {
+        "performance": 59,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 06:27:03"
     },
     {
       "url": "jobz.pk",
@@ -106,6 +118,17 @@
         "best_practices": 75,
         "seo": 89,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Estonia",
+      "website_count": 1,
+      "averages": {
+        "performance": 59,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
       }
     },
     {

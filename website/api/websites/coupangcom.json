@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.674Z",
+    "generated_at": "2025-10-27T12:55:34.601Z",
     "url": "coupang.com",
     "country": "South Korea",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 14,
+    "performance": 24,
     "accessibility": 79,
-    "best_practices": 67,
-    "seo": 82,
+    "best_practices": 58,
+    "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-19 20:10:27"
+    "test_date": "2025-10-27 04:28:36"
   },
   "historical_data": [
+    {
+      "performance": 24,
+      "accessibility": 79,
+      "best_practices": 58,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-10-27 04:28:36"
+    },
     {
       "performance": 14,
       "accessibility": 79,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:10:27"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 10,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 1,
+    "pwa": 0,
+    "test_date_current": "2025-10-27 04:28:36",
+    "test_date_previous": "2025-10-19 20:10:27"
+  }
 }

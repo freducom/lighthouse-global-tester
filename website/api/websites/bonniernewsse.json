@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.676Z",
+    "generated_at": "2025-10-27T12:55:34.607Z",
     "url": "bonniernews.se",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 51,
     "accessibility": 93,
     "best_practices": 92,
     "seo": 97,
     "pwa": 33,
-    "test_date": "2025-10-26 18:37:48"
+    "test_date": "2025-10-26 19:45:52"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-10-26 19:45:52"
+    },
     {
       "performance": 52,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 18:37:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-26 19:45:52",
+    "test_date_previous": "2025-10-26 18:37:48"
+  }
 }

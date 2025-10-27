@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.528Z",
+    "generated_at": "2025-10-27T12:55:34.297Z",
     "country": "Switzerland",
     "flag": "🇨🇭",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 96,
-    "best_practices": 86,
-    "seo": 96,
-    "pwa": 44
+    "performance": 39,
+    "accessibility": 93,
+    "best_practices": 85,
+    "seo": 95,
+    "pwa": 43
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 16:43:05"
+    },
+    {
+      "url": "20min.ch",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-26 19:27:46"
     },
     {
       "url": "blick.ch",
@@ -101,13 +113,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 38,
-        "accessibility": 96,
-        "best_practices": 86,
-        "seo": 96,
-        "pwa": 44
+        "performance": 39,
+        "accessibility": 93,
+        "best_practices": 85,
+        "seo": 95,
+        "pwa": 43
       }
     }
   ]

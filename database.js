@@ -690,6 +690,177 @@ class Database {
     return allocation;
   }
 
+  // Statistics methods for stats page
+  getGlobalStats() {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        WITH latest_scores AS (
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
+          FROM lighthouse_scores ls1
+          WHERE test_date = (
+            SELECT MAX(test_date) 
+            FROM lighthouse_scores ls2 
+            WHERE ls2.url = ls1.url
+          )
+        )
+        SELECT 
+          COUNT(*) as total_sites,
+          COUNT(DISTINCT country) as total_countries,
+          COUNT(DISTINCT industry) as total_industries,
+          ROUND(AVG(performance), 1) as avg_performance,
+          ROUND(AVG(accessibility), 1) as avg_accessibility,
+          ROUND(AVG(best_practices), 1) as avg_best_practices,
+          ROUND(AVG(seo), 1) as avg_seo,
+          ROUND(AVG(pwa), 1) as avg_pwa,
+          MIN(performance) as min_performance,
+          MAX(performance) as max_performance,
+          COUNT(CASE WHEN performance >= 90 THEN 1 END) as excellent_performance_count,
+          COUNT(CASE WHEN performance >= 50 AND performance < 90 THEN 1 END) as good_performance_count,
+          COUNT(CASE WHEN performance < 50 THEN 1 END) as poor_performance_count
+        FROM latest_scores
+      `, (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows[0] || {});
+      });
+    });
+  }
+
+  getCountryStats() {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        WITH latest_scores AS (
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
+          FROM lighthouse_scores ls1
+          WHERE test_date = (
+            SELECT MAX(test_date) 
+            FROM lighthouse_scores ls2 
+            WHERE ls2.url = ls1.url
+          )
+        )
+        SELECT 
+          country,
+          COUNT(*) as site_count,
+          ROUND(AVG(performance), 1) as avg_performance,
+          ROUND(AVG(accessibility), 1) as avg_accessibility,
+          ROUND(AVG(best_practices), 1) as avg_best_practices,
+          ROUND(AVG(seo), 1) as avg_seo,
+          ROUND(AVG(pwa), 1) as avg_pwa,
+          MAX(performance) as best_performance,
+          MIN(performance) as worst_performance
+        FROM latest_scores
+        GROUP BY country
+        ORDER BY avg_performance DESC
+      `, (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+  }
+
+  getIndustryStats() {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        WITH latest_scores AS (
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
+          FROM lighthouse_scores ls1
+          WHERE test_date = (
+            SELECT MAX(test_date) 
+            FROM lighthouse_scores ls2 
+            WHERE ls2.url = ls1.url
+          )
+        )
+        SELECT 
+          industry,
+          COUNT(*) as site_count,
+          ROUND(AVG(performance), 1) as avg_performance,
+          ROUND(AVG(accessibility), 1) as avg_accessibility,
+          ROUND(AVG(best_practices), 1) as avg_best_practices,
+          ROUND(AVG(seo), 1) as avg_seo,
+          ROUND(AVG(pwa), 1) as avg_pwa,
+          MAX(performance) as best_performance,
+          MIN(performance) as worst_performance
+        FROM latest_scores
+        GROUP BY industry
+        ORDER BY avg_performance DESC
+      `, (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+  }
+
+  getPerformanceTrends() {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        SELECT 
+          DATE(test_date) as test_date,
+          ROUND(AVG(performance), 1) as avg_performance,
+          ROUND(AVG(accessibility), 1) as avg_accessibility,
+          ROUND(AVG(best_practices), 1) as avg_best_practices,
+          ROUND(AVG(seo), 1) as avg_seo,
+          ROUND(AVG(pwa), 1) as avg_pwa,
+          COUNT(*) as sites_tested
+        FROM lighthouse_scores
+        WHERE test_date >= DATE('now', '-30 days')
+        GROUP BY DATE(test_date)
+        ORDER BY test_date ASC
+      `, (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+  }
+
+  getBestAndWorstSites() {
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        WITH latest_scores AS (
+          SELECT url, country, industry, performance, accessibility, best_practices, seo, pwa, test_date
+          FROM lighthouse_scores ls1
+          WHERE test_date = (
+            SELECT MAX(test_date) 
+            FROM lighthouse_scores ls2 
+            WHERE ls2.url = ls1.url
+          )
+        ),
+        overall_scores AS (
+          SELECT 
+            url, country, industry, performance, accessibility, best_practices, seo, pwa,
+            ROUND((performance + accessibility + best_practices + seo + pwa) / 5.0, 1) as overall_score
+          FROM latest_scores
+        ),
+        best_sites AS (
+          SELECT 
+            'best' as category,
+            url, country, industry, performance, accessibility, best_practices, seo, pwa, overall_score
+          FROM overall_scores
+          ORDER BY overall_score DESC, performance DESC
+          LIMIT 10
+        ),
+        worst_sites AS (
+          SELECT 
+            'worst' as category,
+            url, country, industry, performance, accessibility, best_practices, seo, pwa, overall_score
+          FROM overall_scores
+          ORDER BY overall_score ASC, performance ASC
+          LIMIT 10
+        )
+        SELECT * FROM best_sites
+        UNION ALL
+        SELECT * FROM worst_sites
+      `, (err, rows) => {
+        if (err) reject(err);
+        else {
+          const result = {
+            best: rows.filter(r => r.category === 'best'),
+            worst: rows.filter(r => r.category === 'worst')
+          };
+          resolve(result);
+        }
+      });
+    });
+  }
+
   close() {
     this.db.close();
   }

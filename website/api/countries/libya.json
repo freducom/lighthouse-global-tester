@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-26T19:17:30.525Z",
+    "generated_at": "2025-10-27T12:55:34.290Z",
     "country": "Libya",
     "flag": "🇱🇾",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 53,
-    "accessibility": 88,
-    "best_practices": 81,
-    "seo": 84,
+    "performance": 54,
+    "accessibility": 89,
+    "best_practices": 82,
+    "seo": 86,
     "pwa": 33
   },
   "websites": [
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:03:43"
+    },
+    {
+      "url": "akhbarlibya.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 07:33:26"
     },
     {
       "url": "libya24.tv",
@@ -65,12 +77,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 53,
-        "accessibility": 88,
-        "best_practices": 81,
-        "seo": 84,
+        "performance": 54,
+        "accessibility": 89,
+        "best_practices": 82,
+        "seo": 86,
         "pwa": 33
       }
     }

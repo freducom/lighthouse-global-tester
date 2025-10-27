@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-26T19:17:30.091Z",
+          "dateCreated": "2025-10-27T12:55:33.566Z",
           "about": {
             "@type": "WebSite",
             "name": "chip.de",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-chip.de.html#metrics",
           "name": "chip.de Performance Metrics",
           "description": "Latest Lighthouse scores for chip.de",
-          "performanceScore": 48,
+          "performanceScore": 47,
           "accessibilityScore": 91,
-          "bestPracticesScore": 92,
+          "bestPracticesScore": 100,
           "seoScore": 93,
-          "dateRecorded": "2025-10-19 19:43:17"
+          "dateRecorded": "2025-10-27 00:51:07"
         }
       ]
     }
@@ -105,24 +105,19 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="breadcrumb">
-                <a href="index.html">🏠 Home</a> > 
-                <a href="country-germany.html">🇩🇪 Germany</a> > 
-                chip.de
+        
+        <header class="header" role="banner">
+            <div class="logo-container">
+                <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
             </div>
-            <h1>📊 chip.de</h1>
-            <p class="subtitle">Performance history and insights</p>
-            <div class="domain-info">
-                <span class="country-tag">🇩🇪 Germany</span>
-                <span class="last-scan">Last scanned: 10/19/2025, 7:43:17 PM</span>
-            </div>
+            <p class="subtitle">📊 chip.de - Performance history and insights from Germany</p>
+            <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
         </header>
 
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">48%</div>
+                <div class="stat-number poor">47%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -137,16 +132,16 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number excellent">92%</div>
+                <div class="stat-number excellent">100%</div>
                 <div class="stat-description">excellent performance</div>
             </div>
         </div>
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -157,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 48%"></div>
-                        <span class="score-text">48%</span>
+                        <div class="score-fill performance" style="width: 47%"></div>
+                        <span class="score-text">47%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -171,8 +166,8 @@
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 92%"></div>
-                        <span class="score-text">92%</span>
+                        <div class="score-fill best-practices" style="width: 100%"></div>
+                        <span class="score-text">100%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -216,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 497 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 589 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +352,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":97,"url":"chip.de","performance":48,"accessibility":91,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-10-19 19:43:17","country":"Germany","industry":"Media"},{"id":964,"url":"chip.de","performance":47,"accessibility":91,"best_practices":100,"seo":93,"pwa":56,"test_date":"2025-10-27 00:51:07","country":"Germany","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>
