@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2025-10-28T09:31:27.119Z",
+    "industry": "Delivery",
+    "website_count": 1
+  },
+  "averages": {
+    "performance": 75,
+    "accessibility": 81,
+    "best_practices": 92,
+    "seo": 82,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "doordash.com",
+      "country": "United States",
+      "scores": {
+        "performance": 75,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:22:30"
+    }
+  ],
+  "countries": [
+    {
+      "country": "United States",
+      "website_count": 1,
+      "averages": {
+        "performance": 75,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      }
+    }
+  ]
+}

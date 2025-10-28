@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.643Z",
+    "generated_at": "2025-10-28T09:31:27.428Z",
     "url": "disneyplus.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 45,
-    "accessibility": 92,
-    "best_practices": 100,
+    "performance": 34,
+    "accessibility": 84,
+    "best_practices": 92,
     "seo": 92,
     "pwa": 78,
-    "test_date": "2025-10-23 07:05:58"
+    "test_date": "2025-10-27 10:24:09"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 84,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 78,
+      "test_date": "2025-10-27 10:24:09"
+    },
     {
       "performance": 45,
       "accessibility": 92,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 07:05:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -11,
+    "accessibility": -8,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-27 10:24:09",
+    "test_date_previous": "2025-10-23 07:05:58"
+  }
 }

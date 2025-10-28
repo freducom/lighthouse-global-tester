@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.392Z",
+    "generated_at": "2025-10-28T09:31:27.116Z",
     "industry": "Technology",
-    "website_count": 10
+    "website_count": 13
   },
   "averages": {
     "performance": 40,
-    "accessibility": 88,
+    "accessibility": 89,
     "best_practices": 78,
     "seo": 90,
-    "pwa": 33
+    "pwa": 36
   },
   "websites": [
     {
@@ -47,6 +47,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 20:10:48"
+    },
+    {
+      "url": "detectify.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 44
+      },
+      "test_date": "2025-10-27 10:12:41"
     },
     {
       "url": "amd.com",
@@ -95,6 +107,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 00:53:45"
+    },
+    {
+      "url": "databricks.com",
+      "country": "United States",
+      "scores": {
+        "performance": 35,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 08:18:24"
+    },
+    {
+      "url": "dell.com",
+      "country": "United States",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:31:15"
     },
     {
       "url": "microsoft.com",
@@ -157,14 +193,25 @@
       }
     },
     {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 44
+      }
+    },
+    {
       "country": "United States",
-      "website_count": 7,
+      "website_count": 9,
       "averages": {
         "performance": 37,
-        "accessibility": 89,
+        "accessibility": 91,
         "best_practices": 74,
-        "seo": 89,
-        "pwa": 33
+        "seo": 90,
+        "pwa": 36
       }
     }
   ]

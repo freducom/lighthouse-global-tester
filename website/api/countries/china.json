@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.302Z",
+    "generated_at": "2025-10-28T09:31:27.021Z",
     "country": "China",
     "flag": "🇨🇳",
-    "website_count": 8
+    "website_count": 9
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 53,
-    "best_practices": 73,
+    "performance": 40,
+    "accessibility": 54,
+    "best_practices": 65,
     "seo": 85,
-    "pwa": 43
+    "pwa": 42
   },
   "websites": [
     {
@@ -98,6 +98,18 @@
       "test_date": "2025-10-23 10:20:10"
     },
     {
+      "url": "douyin.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 67,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:23:31"
+    },
+    {
       "url": "bilibili.com",
       "industry": "Media",
       "scores": {
@@ -146,13 +158,13 @@
     },
     {
       "industry": "Social Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 41,
-        "accessibility": 52,
-        "best_practices": 46,
-        "seo": 81,
-        "pwa": 61
+        "performance": 36,
+        "accessibility": 57,
+        "best_practices": 31,
+        "seo": 82,
+        "pwa": 52
       }
     }
   ]

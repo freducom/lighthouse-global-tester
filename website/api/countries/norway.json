@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.278Z",
+    "generated_at": "2025-10-28T09:31:27.000Z",
     "country": "Norway",
     "flag": "🇳🇴",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 93,
-    "best_practices": 86,
+    "performance": 45,
+    "accessibility": 94,
+    "best_practices": 88,
     "seo": 95,
-    "pwa": 38
+    "pwa": 37
   },
   "websites": [
     {
@@ -36,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 06:28:15"
+    },
+    {
+      "url": "dnb.no",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:20:18"
     },
     {
       "url": "vg.no",
@@ -99,6 +111,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Media",
       "website_count": 7,

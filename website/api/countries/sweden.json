@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.273Z",
+    "generated_at": "2025-10-28T09:31:26.995Z",
     "country": "Sweden",
     "flag": "🇸🇪",
-    "website_count": 36
+    "website_count": 39
   },
   "averages": {
-    "performance": 47,
+    "performance": 48,
     "accessibility": 92,
     "best_practices": 90,
     "seo": 93,
-    "pwa": 44
+    "pwa": 43
   },
   "websites": [
     {
@@ -38,6 +38,18 @@
       "test_date": "2025-10-26 08:49:46"
     },
     {
+      "url": "doktor.se",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:21:51"
+    },
+    {
       "url": "adlibris.com",
       "industry": "E-commerce",
       "scores": {
@@ -60,18 +72,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 10:11:04"
-    },
-    {
-      "url": "dn.se",
-      "industry": "Media",
-      "scores": {
-        "performance": 65,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:27:12"
     },
     {
       "url": "regeringen.se",
@@ -108,6 +108,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 06:27:17"
+    },
+    {
+      "url": "doctrin.se",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 57,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:21:37"
     },
     {
       "url": "bring.se",
@@ -206,6 +218,18 @@
       "test_date": "2025-10-20 18:14:33"
     },
     {
+      "url": "dn.se",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:18:15"
+    },
+    {
       "url": "svd.se",
       "industry": "Media",
       "scores": {
@@ -288,6 +312,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-20 18:17:46"
+    },
+    {
+      "url": "detectify.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 44
+      },
+      "test_date": "2025-10-27 10:12:41"
     },
     {
       "url": "telia.se",
@@ -525,6 +561,17 @@
       }
     },
     {
+      "industry": "Healthtech",
+      "website_count": 2,
+      "averages": {
+        "performance": 70,
+        "accessibility": 93,
+        "best_practices": 96,
+        "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Marketplace",
       "website_count": 2,
       "averages": {
@@ -539,7 +586,7 @@
       "industry": "Media",
       "website_count": 7,
       "averages": {
-        "performance": 50,
+        "performance": 47,
         "accessibility": 96,
         "best_practices": 93,
         "seo": 98,
@@ -566,6 +613,17 @@
         "best_practices": 75,
         "seo": 84,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Technology",
+      "website_count": 1,
+      "averages": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 44
       }
     },
     {

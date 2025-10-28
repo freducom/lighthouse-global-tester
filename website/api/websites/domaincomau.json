@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.463Z",
+    "generated_at": "2025-10-28T09:31:27.198Z",
     "url": "domain.com.au",
     "country": "Australia",
     "industry": "Real Estate"
   },
   "latest_scores": {
-    "performance": 33,
-    "accessibility": 94,
-    "best_practices": 92,
+    "performance": 30,
+    "accessibility": 96,
+    "best_practices": 83,
     "seo": 92,
     "pwa": 78,
-    "test_date": "2025-10-19 20:03:31"
+    "test_date": "2025-10-27 12:22:15"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 78,
+      "test_date": "2025-10-27 12:22:15"
+    },
     {
       "performance": 33,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:03:31"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 2,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-27 12:22:15",
+    "test_date_previous": "2025-10-19 20:03:31"
+  }
 }

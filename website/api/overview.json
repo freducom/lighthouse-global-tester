@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:33.965Z",
+    "generated_at": "2025-10-28T09:31:26.587Z",
     "api_version": "1.0",
-    "total_websites": 589,
+    "total_websites": 620,
     "countries_count": 69,
-    "industries_count": 34,
-    "last_scan_date": "2025-10-27 07:35:17"
+    "industries_count": 36,
+    "last_scan_date": "2025-10-27 12:28:44"
   },
   "global_averages": {
-    "performance": 44,
+    "performance": 43,
     "accessibility": 86,
     "best_practices": 80,
     "seo": 90,
@@ -195,6 +195,17 @@
         "test_date": "2025-10-25 03:03:39"
       },
       {
+        "url": "doktor.se",
+        "country": "Sweden",
+        "industry": "Healthtech",
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-27 12:21:51"
+      },
+      {
         "url": "abril.com.br",
         "country": "Brazil",
         "industry": "Media",
@@ -226,17 +237,6 @@
         "seo": 90,
         "pwa": 33,
         "test_date": "2025-10-26 16:42:13"
-      },
-      {
-        "url": "linkedin.com",
-        "country": "United States",
-        "industry": "Social Media",
-        "performance": 76,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-23 07:02:29"
       }
     ],
     "best_practices": [
@@ -272,6 +272,17 @@
         "seo": 85,
         "pwa": 33,
         "test_date": "2025-10-26 08:04:24"
+      },
+      {
+        "url": "doktor.se",
+        "country": "Sweden",
+        "industry": "Healthtech",
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-27 12:21:51"
       },
       {
         "url": "mitid.dk",
@@ -329,17 +340,6 @@
         "test_date": "2025-10-23 07:04:36"
       },
       {
-        "url": "dn.se",
-        "country": "Sweden",
-        "industry": "Media",
-        "performance": 65,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-19 20:27:12"
-      },
-      {
         "url": "arbeitsagentur.de",
         "country": "Germany",
         "industry": "Government",
@@ -364,6 +364,17 @@
         "test_date": "2025-10-22 08:37:37"
       },
       {
+        "url": "doktor.se",
+        "country": "Sweden",
+        "industry": "Healthtech",
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-27 12:21:51"
+      },
+      {
         "url": "ontario.ca",
         "country": "Canada",
         "industry": "Government",
@@ -373,17 +384,6 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-23 02:58:53"
-      },
-      {
-        "url": "dn.se",
-        "country": "Sweden",
-        "industry": "Media",
-        "performance": 65,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-19 20:27:12"
       },
       {
         "url": "tv2.dk",
@@ -406,6 +406,28 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-23 07:36:10"
+      },
+      {
+        "url": "dnb.no",
+        "country": "Norway",
+        "industry": "Finance",
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-27 12:20:18"
+      },
+      {
+        "url": "dn.se",
+        "country": "Sweden",
+        "industry": "Media",
+        "performance": 49,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-27 12:18:15"
       },
       {
         "url": "cdon.se",
@@ -439,28 +461,6 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-20 20:10:45"
-      },
-      {
-        "url": "trafikverket.se",
-        "country": "Sweden",
-        "industry": "Transportation",
-        "performance": 65,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 67,
-        "test_date": "2025-10-24 16:12:30"
-      },
-      {
-        "url": "vr.fi",
-        "country": "Finland",
-        "industry": "Transportation",
-        "performance": 60,
-        "accessibility": 97,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 67,
-        "test_date": "2025-10-25 00:51:41"
       }
     ],
     "pwa": [
@@ -474,6 +474,17 @@
         "seo": 100,
         "pwa": 100,
         "test_date": "2025-10-24 22:14:50"
+      },
+      {
+        "url": "dw.com",
+        "country": "Germany",
+        "industry": "Media",
+        "performance": 61,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 100,
+        "test_date": "2025-10-27 12:28:44"
       },
       {
         "url": "prothomalo.com",
@@ -562,17 +573,6 @@
         "seo": 92,
         "pwa": 100,
         "test_date": "2025-10-25 00:46:47"
-      },
-      {
-        "url": "flipkart.com",
-        "country": "India",
-        "industry": "E-commerce",
-        "performance": 38,
-        "accessibility": 87,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 100,
-        "test_date": "2025-10-20 18:18:18"
       }
     ]
   },
@@ -713,6 +713,17 @@
         "test_date": "2025-10-26 13:38:47"
       },
       {
+        "url": "denik.cz",
+        "country": "Czechia",
+        "industry": "Media",
+        "performance": 58,
+        "accessibility": 0,
+        "best_practices": 83,
+        "seo": 97,
+        "pwa": 56,
+        "test_date": "2025-10-27 08:32:01"
+      },
+      {
         "url": "my.gov.au",
         "country": "Australia",
         "industry": "Government",
@@ -733,6 +744,28 @@
         "seo": 83,
         "pwa": 33,
         "test_date": "2025-10-23 22:15:21"
+      },
+      {
+        "url": "daraz.com.bd",
+        "country": "Bangladesh",
+        "industry": "E-commerce",
+        "performance": 50,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33,
+        "test_date": "2025-10-27 08:17:31"
+      },
+      {
+        "url": "daraz.pk",
+        "country": "Pakistan",
+        "industry": "Marketplace",
+        "performance": 52,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33,
+        "test_date": "2025-10-27 08:17:53"
       },
       {
         "url": "uypress.net",
@@ -766,39 +799,6 @@
         "seo": 83,
         "pwa": 33,
         "test_date": "2025-10-22 04:14:28"
-      },
-      {
-        "url": "taobao.com",
-        "country": "China",
-        "industry": "E-commerce",
-        "performance": 56,
-        "accessibility": 44,
-        "best_practices": 58,
-        "seo": 85,
-        "pwa": 33,
-        "test_date": "2025-10-24 06:21:32"
-      },
-      {
-        "url": "qq.com",
-        "country": "China",
-        "industry": "Portal",
-        "performance": 29,
-        "accessibility": 47,
-        "best_practices": 92,
-        "seo": 74,
-        "pwa": 56,
-        "test_date": "2025-10-23 10:20:10"
-      },
-      {
-        "url": "163.com",
-        "country": "China",
-        "industry": "Portal",
-        "performance": 56,
-        "accessibility": 50,
-        "best_practices": 67,
-        "seo": 85,
-        "pwa": 33,
-        "test_date": "2025-10-26 19:26:25"
       }
     ],
     "best_practices": [
@@ -845,6 +845,17 @@
         "seo": 79,
         "pwa": 33,
         "test_date": "2025-10-23 07:31:01"
+      },
+      {
+        "url": "douyin.com",
+        "country": "China",
+        "industry": "Social Media",
+        "performance": 26,
+        "accessibility": 67,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-10-27 12:23:31"
       },
       {
         "url": "coop.co.uk",
@@ -900,17 +911,6 @@
         "seo": 84,
         "pwa": 56,
         "test_date": "2025-10-26 13:42:10"
-      },
-      {
-        "url": "stuff.co.nz",
-        "country": "New Zealand",
-        "industry": "Media",
-        "performance": 30,
-        "accessibility": 86,
-        "best_practices": 0,
-        "seo": 90,
-        "pwa": 56,
-        "test_date": "2025-10-24 03:00:50"
       }
     ],
     "seo": [

@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.388Z",
+    "generated_at": "2025-10-28T09:31:27.112Z",
     "industry": "Marketplace",
-    "website_count": 20
+    "website_count": 22
   },
   "averages": {
     "performance": 44,
-    "accessibility": 86,
+    "accessibility": 84,
     "best_practices": 83,
     "seo": 92,
     "pwa": 53
@@ -35,6 +35,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:41:11"
+    },
+    {
+      "url": "dba.dk",
+      "country": "Denmark",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 08:20:49"
     },
     {
       "url": "autotalli.com",
@@ -143,6 +155,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-24 16:12:16"
+    },
+    {
+      "url": "daraz.pk",
+      "country": "Pakistan",
+      "scores": {
+        "performance": 52,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:17:53"
     },
     {
       "url": "olx.com.pk",
@@ -277,6 +301,17 @@
       }
     },
     {
+      "country": "Denmark",
+      "website_count": 1,
+      "averages": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      }
+    },
+    {
       "country": "Finland",
       "website_count": 3,
       "averages": {
@@ -344,13 +379,13 @@
     },
     {
       "country": "Pakistan",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 31,
-        "accessibility": 86,
+        "performance": 42,
+        "accessibility": 62,
         "best_practices": 75,
-        "seo": 100,
-        "pwa": 56
+        "seo": 93,
+        "pwa": 45
       }
     },
     {

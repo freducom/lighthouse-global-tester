@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.242Z",
+    "generated_at": "2025-10-28T09:31:26.960Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 26
+    "website_count": 28
   },
   "averages": {
-    "performance": 43,
-    "accessibility": 88,
-    "best_practices": 88,
+    "performance": 44,
+    "accessibility": 89,
+    "best_practices": 89,
     "seo": 92,
-    "pwa": 49
+    "pwa": 50
   },
   "websites": [
     {
@@ -36,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:44:15"
+    },
+    {
+      "url": "dw.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-10-27 12:28:44"
     },
     {
       "url": "bund.de",
@@ -156,6 +168,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-27 04:21:00"
+    },
+    {
+      "url": "deutsche-bank.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:14:04"
     },
     {
       "url": "welt.de",
@@ -351,13 +375,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 41,
-        "accessibility": 90,
-        "best_practices": 88,
-        "seo": 87,
-        "pwa": 40
+        "performance": 42,
+        "accessibility": 91,
+        "best_practices": 90,
+        "seo": 88,
+        "pwa": 39
       }
     },
     {
@@ -373,13 +397,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 9,
+      "website_count": 10,
       "averages": {
-        "performance": 43,
-        "accessibility": 90,
-        "best_practices": 94,
+        "performance": 45,
+        "accessibility": 91,
+        "best_practices": 93,
         "seo": 95,
-        "pwa": 58
+        "pwa": 62
       }
     },
     {

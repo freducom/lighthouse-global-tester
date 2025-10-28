@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.276Z",
+    "generated_at": "2025-10-28T09:31:26.997Z",
     "country": "Austria",
     "flag": "🇦🇹",
-    "website_count": 8
+    "website_count": 9
   },
   "averages": {
-    "performance": 43,
-    "accessibility": 88,
-    "best_practices": 86,
+    "performance": 44,
+    "accessibility": 89,
+    "best_practices": 87,
     "seo": 89,
-    "pwa": 50
+    "pwa": 48
   },
   "websites": [
     {
@@ -36,6 +36,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-21 22:12:57"
+    },
+    {
+      "url": "derstandard.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 87,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:12:20"
     },
     {
       "url": "oe24.at",
@@ -124,13 +136,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 44,
-        "accessibility": 87,
-        "best_practices": 84,
+        "performance": 45,
+        "accessibility": 88,
+        "best_practices": 85,
         "seo": 88,
-        "pwa": 46
+        "pwa": 44
       }
     }
   ]

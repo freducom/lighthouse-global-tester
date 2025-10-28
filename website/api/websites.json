@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.154Z",
-    "total_websites": 589
+    "generated_at": "2025-10-28T09:31:26.864Z",
+    "total_websites": 620
   },
   "websites": [
     {
@@ -2903,60 +2903,494 @@
       "api_endpoint": "websites/dailynewsegyptcom.json"
     },
     {
+      "url": "dantri.com.vn",
+      "country": "Vietnam",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:17:10",
+      "api_endpoint": "websites/dantricomvn.json"
+    },
+    {
+      "url": "daraz.com.bd",
+      "country": "Bangladesh",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 50,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:17:31",
+      "api_endpoint": "websites/darazcombd.json"
+    },
+    {
+      "url": "daraz.pk",
+      "country": "Pakistan",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 52,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:17:53",
+      "api_endpoint": "websites/darazpk.json"
+    },
+    {
+      "url": "databricks.com",
+      "country": "United States",
+      "industry": "Technology",
+      "scores": {
+        "performance": 35,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 08:18:24",
+      "api_endpoint": "websites/databrickscom.json"
+    },
+    {
       "url": "daum.net",
       "country": "South Korea",
       "industry": "Portal",
       "scores": {
-        "performance": 32,
-        "accessibility": 81,
+        "performance": 39,
+        "accessibility": 79,
         "best_practices": 58,
-        "seo": 98,
+        "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:08:52",
+      "test_date": "2025-10-27 08:18:45",
       "api_endpoint": "websites/daumnet.json"
+    },
+    {
+      "url": "dawn.com",
+      "country": "Pakistan",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:20:30",
+      "api_endpoint": "websites/dawncom.json"
+    },
+    {
+      "url": "dba.dk",
+      "country": "Denmark",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 08:20:49",
+      "api_endpoint": "websites/dbadk.json"
+    },
+    {
+      "url": "dell.com",
+      "country": "United States",
+      "industry": "Technology",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:31:15",
+      "api_endpoint": "websites/dellcom.json"
+    },
+    {
+      "url": "demorgen.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "scores": {
+        "performance": 70,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:31:41",
+      "api_endpoint": "websites/demorgenbe.json"
+    },
+    {
+      "url": "denik.cz",
+      "country": "Czechia",
+      "industry": "Media",
+      "scores": {
+        "performance": 58,
+        "accessibility": 0,
+        "best_practices": 83,
+        "seo": 97,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 08:32:01",
+      "api_endpoint": "websites/denikcz.json"
+    },
+    {
+      "url": "deredactie.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 58,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:35:34",
+      "api_endpoint": "websites/deredactiebe.json"
+    },
+    {
+      "url": "derstandard.at",
+      "country": "Austria",
+      "industry": "Media",
+      "scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 87,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:12:20",
+      "api_endpoint": "websites/derstandardat.json"
+    },
+    {
+      "url": "detectify.com",
+      "country": "Sweden",
+      "industry": "Technology",
+      "scores": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 44
+      },
+      "test_date": "2025-10-27 10:12:41",
+      "api_endpoint": "websites/detectifycom.json"
+    },
+    {
+      "url": "deutsche-bank.de",
+      "country": "Germany",
+      "industry": "Finance",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:14:04",
+      "api_endpoint": "websites/deutsche-bankde.json"
+    },
+    {
+      "url": "diena.lv",
+      "country": "Latvia",
+      "industry": "Media",
+      "scores": {
+        "performance": 15,
+        "accessibility": 48,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:21:28",
+      "api_endpoint": "websites/dienalv.json"
+    },
+    {
+      "url": "diggers.news",
+      "country": "Zambia",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 85,
+        "best_practices": 58,
+        "seo": 83,
+        "pwa": 22
+      },
+      "test_date": "2025-10-27 10:21:53",
+      "api_endpoint": "websites/diggersnews.json"
+    },
+    {
+      "url": "digi24.ro",
+      "country": "Romania",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 10:22:17",
+      "api_endpoint": "websites/digi24ro.json"
+    },
+    {
+      "url": "digia.com",
+      "country": "Finland",
+      "industry": "Software",
+      "scores": {
+        "performance": 44,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:23:12",
+      "api_endpoint": "websites/digiacom.json"
+    },
+    {
+      "url": "discover.com",
+      "country": "United States",
+      "industry": "Finance",
+      "scores": {
+        "performance": 24,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:23:46",
+      "api_endpoint": "websites/discovercom.json"
     },
     {
       "url": "disneyplus.com",
       "country": "United States",
       "industry": "Media",
       "scores": {
-        "performance": 45,
-        "accessibility": 92,
-        "best_practices": 100,
+        "performance": 34,
+        "accessibility": 84,
+        "best_practices": 92,
         "seo": 92,
         "pwa": 78
       },
-      "test_date": "2025-10-23 07:05:58",
+      "test_date": "2025-10-27 10:24:09",
       "api_endpoint": "websites/disneypluscom.json"
+    },
+    {
+      "url": "dmi.dk",
+      "country": "Denmark",
+      "industry": "Weather",
+      "scores": {
+        "performance": 48,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:24:29",
+      "api_endpoint": "websites/dmidk.json"
     },
     {
       "url": "dn.se",
       "country": "Sweden",
       "industry": "Media",
       "scores": {
-        "performance": 65,
+        "performance": 49,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:27:12",
+      "test_date": "2025-10-27 12:18:15",
       "api_endpoint": "websites/dnse.json"
+    },
+    {
+      "url": "dna.fi",
+      "country": "Finland",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 11,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 12:18:39",
+      "api_endpoint": "websites/dnafi.json"
+    },
+    {
+      "url": "dnaindia.com",
+      "country": "India",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 22
+      },
+      "test_date": "2025-10-27 12:19:23",
+      "api_endpoint": "websites/dnaindiacom.json"
+    },
+    {
+      "url": "dnb.no",
+      "country": "Norway",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:20:18",
+      "api_endpoint": "websites/dnbno.json"
+    },
+    {
+      "url": "dnes.bg",
+      "country": "Bulgaria",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 91,
+        "best_practices": 58,
+        "seo": 99,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 12:21:20",
+      "api_endpoint": "websites/dnesbg.json"
+    },
+    {
+      "url": "doctrin.se",
+      "country": "Sweden",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 57,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:21:37",
+      "api_endpoint": "websites/doctrinse.json"
+    },
+    {
+      "url": "doktor.se",
+      "country": "Sweden",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:21:51",
+      "api_endpoint": "websites/doktorse.json"
     },
     {
       "url": "domain.com.au",
       "country": "Australia",
       "industry": "Real Estate",
       "scores": {
-        "performance": 33,
-        "accessibility": 94,
-        "best_practices": 92,
+        "performance": 30,
+        "accessibility": 96,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 78
       },
-      "test_date": "2025-10-19 20:03:31",
+      "test_date": "2025-10-27 12:22:15",
       "api_endpoint": "websites/domaincomau.json"
+    },
+    {
+      "url": "doordash.com",
+      "country": "United States",
+      "industry": "Delivery",
+      "scores": {
+        "performance": 75,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:22:30",
+      "api_endpoint": "websites/doordashcom.json"
+    },
+    {
+      "url": "douyin.com",
+      "country": "China",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 67,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:23:31",
+      "api_endpoint": "websites/douyincom.json"
+    },
+    {
+      "url": "dr.dk",
+      "country": "Denmark",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:23:56",
+      "api_endpoint": "websites/drdk.json"
+    },
+    {
+      "url": "du.ac.in",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 44,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 72,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:27:48",
+      "api_endpoint": "websites/duacin.json"
+    },
+    {
+      "url": "du.ae",
+      "country": "United Arab Emirates",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 30,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:28:18",
+      "api_endpoint": "websites/duae.json"
+    },
+    {
+      "url": "dw.com",
+      "country": "Germany",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-10-27 12:28:44",
+      "api_endpoint": "websites/dwcom.json"
     },
     {
       "url": "ebay.com",

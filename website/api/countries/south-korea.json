@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.261Z",
+    "generated_at": "2025-10-28T09:31:26.979Z",
     "country": "South Korea",
     "flag": "🇰🇷",
     "website_count": 10
@@ -50,6 +50,18 @@
       "test_date": "2025-10-22 16:14:58"
     },
     {
+      "url": "daum.net",
+      "industry": "Portal",
+      "scores": {
+        "performance": 39,
+        "accessibility": 79,
+        "best_practices": 58,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:18:45"
+    },
+    {
       "url": "zum.com",
       "industry": "Portal",
       "scores": {
@@ -72,18 +84,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-22 16:12:46"
-    },
-    {
-      "url": "daum.net",
-      "industry": "Portal",
-      "scores": {
-        "performance": 32,
-        "accessibility": 81,
-        "best_practices": 58,
-        "seo": 98,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 20:08:52"
     },
     {
       "url": "yna.co.kr",
@@ -161,7 +161,7 @@
       "industry": "Portal",
       "website_count": 3,
       "averages": {
-        "performance": 34,
+        "performance": 36,
         "accessibility": 78,
         "best_practices": 69,
         "seo": 93,

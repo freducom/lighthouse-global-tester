@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.267Z",
+    "generated_at": "2025-10-28T09:31:26.986Z",
     "country": "Finland",
     "flag": "🇫🇮",
-    "website_count": 38
+    "website_count": 40
   },
   "averages": {
-    "performance": 48,
+    "performance": 47,
     "accessibility": 91,
     "best_practices": 89,
     "seo": 96,
@@ -242,6 +242,18 @@
       "test_date": "2025-10-25 08:12:32"
     },
     {
+      "url": "digia.com",
+      "industry": "Software",
+      "scores": {
+        "performance": 44,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:23:12"
+    },
+    {
       "url": "tori.fi",
       "industry": "Marketplace",
       "scores": {
@@ -468,6 +480,18 @@
         "pwa": 89
       },
       "test_date": "2025-10-26 13:40:18"
+    },
+    {
+      "url": "dna.fi",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 11,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 12:18:39"
     }
   ],
   "industries": [
@@ -615,6 +639,17 @@
       }
     },
     {
+      "industry": "Software",
+      "website_count": 1,
+      "averages": {
+        "performance": 44,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Technology",
       "website_count": 2,
       "averages": {
@@ -623,6 +658,17 @@
         "best_practices": 83,
         "seo": 93,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 11,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
       }
     },
     {

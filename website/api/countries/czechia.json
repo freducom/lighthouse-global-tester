@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.298Z",
+    "generated_at": "2025-10-28T09:31:27.017Z",
     "country": "Czechia",
     "flag": "🇨🇿",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 73,
-    "best_practices": 75,
-    "seo": 86,
-    "pwa": 38
+    "performance": 41,
+    "accessibility": 61,
+    "best_practices": 77,
+    "seo": 88,
+    "pwa": 41
   },
   "websites": [
+    {
+      "url": "denik.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 58,
+        "accessibility": 0,
+        "best_practices": 83,
+        "seo": 97,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 08:32:01"
+    },
     {
       "url": "lidovky.cz",
       "industry": "Media",
@@ -77,13 +89,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 38,
-        "accessibility": 73,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 38
+        "performance": 41,
+        "accessibility": 61,
+        "best_practices": 77,
+        "seo": 88,
+        "pwa": 41
       }
     }
   ]

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.231Z",
+    "generated_at": "2025-10-28T09:31:26.952Z",
     "country": "United States",
     "flag": "🇺🇸",
-    "website_count": 73
+    "website_count": 77
   },
   "averages": {
     "performance": 44,
@@ -108,6 +108,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 07:02:29"
+    },
+    {
+      "url": "doordash.com",
+      "industry": "Delivery",
+      "scores": {
+        "performance": 75,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:22:30"
     },
     {
       "url": "whitehouse.gov",
@@ -338,18 +350,6 @@
       "test_date": "2025-10-23 07:04:58"
     },
     {
-      "url": "disneyplus.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 45,
-        "accessibility": 92,
-        "best_practices": 100,
-        "seo": 92,
-        "pwa": 78
-      },
-      "test_date": "2025-10-23 07:05:58"
-    },
-    {
       "url": "axios.com",
       "industry": "Media",
       "scores": {
@@ -470,6 +470,18 @@
       "test_date": "2025-10-25 04:11:21"
     },
     {
+      "url": "dell.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:31:15"
+    },
+    {
       "url": "foxnews.com",
       "industry": "Media",
       "scores": {
@@ -542,6 +554,18 @@
       "test_date": "2025-10-27 03:19:09"
     },
     {
+      "url": "databricks.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 35,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 08:18:24"
+    },
+    {
       "url": "x.com",
       "industry": "Social Media",
       "scores": {
@@ -576,6 +600,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-27 07:13:26"
+    },
+    {
+      "url": "disneyplus.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-27 10:24:09"
     },
     {
       "url": "msnbc.com",
@@ -794,6 +830,18 @@
       "test_date": "2025-10-23 07:10:28"
     },
     {
+      "url": "discover.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 24,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:23:46"
+    },
+    {
       "url": "zoom.us",
       "industry": "Technology",
       "scores": {
@@ -903,6 +951,17 @@
       }
     },
     {
+      "industry": "Delivery",
+      "website_count": 1,
+      "averages": {
+        "performance": 75,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
@@ -926,11 +985,11 @@
     },
     {
       "industry": "Finance",
-      "website_count": 12,
+      "website_count": 13,
       "averages": {
-        "performance": 38,
+        "performance": 37,
         "accessibility": 91,
-        "best_practices": 79,
+        "best_practices": 77,
         "seo": 86,
         "pwa": 33
       }
@@ -1058,13 +1117,13 @@
     },
     {
       "industry": "Technology",
-      "website_count": 7,
+      "website_count": 9,
       "averages": {
         "performance": 37,
-        "accessibility": 89,
+        "accessibility": 91,
         "best_practices": 74,
-        "seo": 89,
-        "pwa": 33
+        "seo": 90,
+        "pwa": 36
       }
     },
     {

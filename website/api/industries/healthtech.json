@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "generated_at": "2025-10-28T09:31:27.119Z",
+    "industry": "Healthtech",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 70,
+    "accessibility": 93,
+    "best_practices": 96,
+    "seo": 97,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "doctrin.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 57,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:21:37"
+    },
+    {
+      "url": "doktor.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:21:51"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Sweden",
+      "website_count": 2,
+      "averages": {
+        "performance": 70,
+        "accessibility": 93,
+        "best_practices": 96,
+        "seo": 97,
+        "pwa": 33
+      }
+    }
+  ]
+}

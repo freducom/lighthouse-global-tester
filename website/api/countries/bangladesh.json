@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.324Z",
+    "generated_at": "2025-10-28T09:31:27.047Z",
     "country": "Bangladesh",
     "flag": "🌍",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 31,
-    "accessibility": 90,
+    "performance": 35,
+    "accessibility": 79,
     "best_practices": 75,
-    "seo": 94,
-    "pwa": 64
+    "seo": 92,
+    "pwa": 58
   },
   "websites": [
+    {
+      "url": "daraz.com.bd",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 50,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:17:31"
+    },
     {
       "url": "bdjobs.com",
       "industry": "Jobs",
@@ -63,6 +75,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Jobs",
       "website_count": 1,

@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.389Z",
+    "generated_at": "2025-10-28T09:31:27.112Z",
     "industry": "E-commerce",
-    "website_count": 40
+    "website_count": 41
   },
   "averages": {
     "performance": 44,
-    "accessibility": 84,
+    "accessibility": 83,
     "best_practices": 78,
     "seo": 90,
     "pwa": 46
   },
   "websites": [
+    {
+      "url": "daraz.com.bd",
+      "country": "Bangladesh",
+      "scores": {
+        "performance": 50,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:17:31"
+    },
     {
       "url": "americanas.com.br",
       "country": "Brazil",
@@ -494,6 +506,17 @@
     }
   ],
   "countries": [
+    {
+      "country": "Bangladesh",
+      "website_count": 1,
+      "averages": {
+        "performance": 50,
+        "accessibility": 38,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
     {
       "country": "Brazil",
       "website_count": 2,

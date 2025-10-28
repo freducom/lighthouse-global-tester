@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.295Z",
+    "generated_at": "2025-10-28T09:31:27.014Z",
     "country": "Belgium",
     "flag": "🇧🇪",
-    "website_count": 5
+    "website_count": 7
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 90,
-    "best_practices": 80,
-    "seo": 92,
-    "pwa": 42
+    "performance": 50,
+    "accessibility": 91,
+    "best_practices": 79,
+    "seo": 91,
+    "pwa": 40
   },
   "websites": [
+    {
+      "url": "demorgen.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 70,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:31:41"
+    },
     {
       "url": "vrt.be",
       "industry": "Media",
@@ -36,6 +48,18 @@
         "pwa": 22
       },
       "test_date": "2025-10-25 04:14:54"
+    },
+    {
+      "url": "deredactie.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 58,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 08:35:34"
     },
     {
       "url": "lameuse.be",
@@ -77,13 +101,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 46,
-        "accessibility": 90,
-        "best_practices": 80,
-        "seo": 92,
-        "pwa": 42
+        "performance": 50,
+        "accessibility": 91,
+        "best_practices": 79,
+        "seo": 91,
+        "pwa": 40
       }
     }
   ]

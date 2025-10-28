@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.387Z",
+    "generated_at": "2025-10-28T09:31:27.111Z",
     "industry": "Finance",
-    "website_count": 63
+    "website_count": 66
   },
   "averages": {
     "performance": 43,
@@ -217,6 +217,18 @@
       "test_date": "2025-10-27 04:21:00"
     },
     {
+      "url": "deutsche-bank.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:14:04"
+    },
+    {
       "url": "postbank.de",
       "country": "Germany",
       "scores": {
@@ -383,6 +395,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 15:44:31"
+    },
+    {
+      "url": "dnb.no",
+      "country": "Norway",
+      "scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:20:18"
     },
     {
       "url": "bdo.com.ph",
@@ -709,6 +733,18 @@
       "test_date": "2025-10-27 03:19:09"
     },
     {
+      "url": "discover.com",
+      "country": "United States",
+      "scores": {
+        "performance": 24,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:23:46"
+    },
+    {
       "url": "intuit.com",
       "country": "United States",
       "scores": {
@@ -816,13 +852,13 @@
     },
     {
       "country": "Germany",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 41,
-        "accessibility": 90,
-        "best_practices": 88,
-        "seo": 87,
-        "pwa": 40
+        "performance": 42,
+        "accessibility": 91,
+        "best_practices": 90,
+        "seo": 88,
+        "pwa": 39
       }
     },
     {
@@ -898,6 +934,17 @@
         "performance": 30,
         "accessibility": 89,
         "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Norway",
+      "website_count": 1,
+      "averages": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 33
       }
@@ -1003,11 +1050,11 @@
     },
     {
       "country": "United States",
-      "website_count": 12,
+      "website_count": 13,
       "averages": {
-        "performance": 38,
+        "performance": 37,
         "accessibility": 91,
-        "best_practices": 79,
+        "best_practices": 77,
         "seo": 86,
         "pwa": 33
       }

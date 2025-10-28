@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.278Z",
+    "generated_at": "2025-10-28T09:31:27.001Z",
     "country": "Denmark",
     "flag": "🇩🇰",
-    "website_count": 5
+    "website_count": 8
   },
   "averages": {
-    "performance": 52,
+    "performance": 47,
     "accessibility": 92,
-    "best_practices": 93,
-    "seo": 94,
-    "pwa": 42
+    "best_practices": 92,
+    "seo": 95,
+    "pwa": 43
   },
   "websites": [
     {
@@ -50,6 +50,18 @@
       "test_date": "2025-10-25 08:17:42"
     },
     {
+      "url": "dmi.dk",
+      "industry": "Weather",
+      "scores": {
+        "performance": 48,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 10:24:29"
+    },
+    {
       "url": "bold.dk",
       "industry": "Sports",
       "scores": {
@@ -60,6 +72,30 @@
         "pwa": 44
       },
       "test_date": "2025-10-26 19:40:43"
+    },
+    {
+      "url": "dba.dk",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 08:20:49"
+    },
+    {
+      "url": "dr.dk",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:23:56"
     },
     {
       "url": "bt.dk",
@@ -87,12 +123,23 @@
       }
     },
     {
-      "industry": "Media",
-      "website_count": 2,
+      "industry": "Marketplace",
+      "website_count": 1,
       "averages": {
         "performance": 43,
-        "accessibility": 96,
-        "best_practices": 96,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 67
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 38,
+        "accessibility": 92,
+        "best_practices": 95,
         "seo": 93,
         "pwa": 33
       }
@@ -115,6 +162,17 @@
         "performance": 48,
         "accessibility": 93,
         "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Weather",
+      "website_count": 1,
+      "averages": {
+        "performance": 48,
+        "accessibility": 94,
+        "best_practices": 75,
         "seo": 100,
         "pwa": 33
       }

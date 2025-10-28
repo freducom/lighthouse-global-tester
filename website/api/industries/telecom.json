@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.389Z",
+    "generated_at": "2025-10-28T09:31:27.113Z",
     "industry": "Telecom",
-    "website_count": 13
+    "website_count": 15
   },
   "averages": {
-    "performance": 33,
-    "accessibility": 91,
-    "best_practices": 83,
+    "performance": 31,
+    "accessibility": 92,
+    "best_practices": 81,
     "seo": 90,
-    "pwa": 34
+    "pwa": 36
   },
   "websites": [
     {
@@ -59,6 +59,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-24 10:10:58"
+    },
+    {
+      "url": "dna.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 11,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-10-27 12:18:39"
     },
     {
       "url": "safaricom.co.ke",
@@ -119,6 +131,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 10:11:18"
+    },
+    {
+      "url": "du.ae",
+      "country": "United Arab Emirates",
+      "scores": {
+        "performance": 30,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:28:18"
     },
     {
       "url": "bt.com",
@@ -204,6 +228,17 @@
       }
     },
     {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 11,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 67
+      }
+    },
+    {
       "country": "Kenya",
       "website_count": 1,
       "averages": {
@@ -244,6 +279,17 @@
         "accessibility": 96,
         "best_practices": 96,
         "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "United Arab Emirates",
+      "website_count": 1,
+      "averages": {
+        "performance": 30,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 90,
         "pwa": 33
       }
     },

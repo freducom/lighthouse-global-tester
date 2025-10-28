@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.390Z",
+    "generated_at": "2025-10-28T09:31:27.114Z",
     "industry": "Social Media",
-    "website_count": 17
+    "website_count": 18
   },
   "averages": {
-    "performance": 48,
-    "accessibility": 82,
-    "best_practices": 74,
-    "seo": 91,
-    "pwa": 53
+    "performance": 46,
+    "accessibility": 81,
+    "best_practices": 70,
+    "seo": 90,
+    "pwa": 52
   },
   "websites": [
+    {
+      "url": "douyin.com",
+      "country": "China",
+      "scores": {
+        "performance": 26,
+        "accessibility": 67,
+        "best_practices": 0,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-27 12:23:31"
+    },
     {
       "url": "weibo.com",
       "country": "China",
@@ -220,13 +232,13 @@
   "countries": [
     {
       "country": "China",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 41,
-        "accessibility": 52,
-        "best_practices": 46,
-        "seo": 81,
-        "pwa": 61
+        "performance": 36,
+        "accessibility": 57,
+        "best_practices": 31,
+        "seo": 82,
+        "pwa": 52
       }
     },
     {

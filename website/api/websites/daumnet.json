@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.601Z",
+    "generated_at": "2025-10-28T09:31:27.366Z",
     "url": "daum.net",
     "country": "South Korea",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 32,
-    "accessibility": 81,
+    "performance": 39,
+    "accessibility": 79,
     "best_practices": 58,
-    "seo": 98,
+    "seo": 97,
     "pwa": 33,
-    "test_date": "2025-10-19 20:08:52"
+    "test_date": "2025-10-27 08:18:45"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 79,
+      "best_practices": 58,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-10-27 08:18:45"
+    },
     {
       "performance": 32,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:08:52"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": -2,
+    "best_practices": 0,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-10-27 08:18:45",
+    "test_date_previous": "2025-10-19 20:08:52"
+  }
 }

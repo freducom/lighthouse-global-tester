@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.313Z",
+    "generated_at": "2025-10-28T09:31:27.033Z",
     "country": "Romania",
     "flag": "🌍",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 55,
-    "accessibility": 80,
-    "best_practices": 86,
-    "seo": 97,
-    "pwa": 33
+    "performance": 48,
+    "accessibility": 82,
+    "best_practices": 85,
+    "seo": 96,
+    "pwa": 39
   },
   "websites": [
     {
@@ -48,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 16:04:44"
+    },
+    {
+      "url": "digi24.ro",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-27 10:22:17"
     }
   ],
   "industries": [
@@ -64,13 +76,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 70,
-        "accessibility": 95,
+        "performance": 48,
+        "accessibility": 93,
         "best_practices": 83,
-        "seo": 99,
-        "pwa": 33
+        "seo": 96,
+        "pwa": 45
       }
     }
   ]

@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-27T12:55:34.713Z",
-    "websites_with_trends": 230,
-    "total_websites": 589
+    "generated_at": "2025-10-28T09:31:27.531Z",
+    "websites_with_trends": 235,
+    "total_websites": 620
   },
   "global_trends": {
     "average_changes": {
-      "performance": -1.4,
+      "performance": -1.6,
       "accessibility": -0.3,
-      "best_practices": -1.7,
+      "best_practices": -1.8,
       "seo": -0.3,
       "pwa": -0.2
     },
     "improvements": {
-      "performance": 90,
-      "accessibility": 27,
+      "performance": 91,
+      "accessibility": 28,
       "best_practices": 17,
       "seo": 16,
       "pwa": 3
     },
     "declines": {
-      "performance": 113,
-      "accessibility": 24,
-      "best_practices": 44,
-      "seo": 23,
+      "performance": 117,
+      "accessibility": 26,
+      "best_practices": 46,
+      "seo": 24,
       "pwa": 2
     }
   },
@@ -128,6 +128,32 @@
         "performance": 0,
         "accessibility": 0,
         "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "domain.com.au",
+      "country": "Australia",
+      "industry": "Real Estate",
+      "current_scores": {
+        "performance": 30,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 2,
+        "best_practices": -9,
         "seo": 0,
         "pwa": 0
       }
@@ -1480,6 +1506,32 @@
         "performance": -1,
         "accessibility": 0,
         "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "deutsche-bank.de",
+      "country": "Germany",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 61,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -17,
+        "accessibility": 0,
+        "best_practices": 0,
         "seo": 0,
         "pwa": 0
       }
@@ -3825,6 +3877,32 @@
       }
     },
     {
+      "url": "daum.net",
+      "country": "South Korea",
+      "industry": "Portal",
+      "current_scores": {
+        "performance": 39,
+        "accessibility": 79,
+        "best_practices": 58,
+        "seo": 97,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 32,
+        "accessibility": 81,
+        "best_practices": 58,
+        "seo": 98,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 7,
+        "accessibility": -2,
+        "best_practices": 0,
+        "seo": -1,
+        "pwa": 0
+      }
+    },
+    {
       "url": "mk.co.kr",
       "country": "South Korea",
       "industry": "Media",
@@ -4208,6 +4286,32 @@
       },
       "changes": {
         "performance": -7,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "dn.se",
+      "country": "Sweden",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 49,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 65,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -16,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -5303,6 +5407,32 @@
         "accessibility": 0,
         "best_practices": 0,
         "seo": 8,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "disneyplus.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 34,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 45,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -11,
+        "accessibility": -8,
+        "best_practices": -8,
+        "seo": 0,
         "pwa": 0
       }
     },
