@@ -4,877 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics - CheetahCheck</title>
-    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across 589 websites in 69 countries.">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Statistics - CheetahCheck">
-    <meta property="og:description" content="Global website performance statistics and trends across 589 monitored websites">
-    <meta property="og:image" content="https://cheetahcheck.com/cheetah-social.png">
-    <meta property="og:url" content="https://cheetahcheck.com/stats.html">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Statistics - CheetahCheck">
-    <meta name="twitter:description" content="Global website performance statistics and trends">
-    <meta name="twitter:image" content="https://cheetahcheck.com/cheetah-social.png">
+    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across 620 websites in 69 countries.">
     
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="cheetahcheck_favicon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="cheetahcheck_favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="cheetahcheck_favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="cheetahcheck_favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="cheetahcheck_favicon_128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="cheetahcheck_favicon_256x256.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="cheetahcheck_favicon_128x128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="cheetahcheck_favicon_256x256.png">
+        <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="CheetahCheck">
+    <meta name="mobile-web-app-capable" content="yes">
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Statistics - CheetahCheck",
-      "description": "Comprehensive global website performance statistics",
-      "url": "https://cheetahcheck.com/stats.html",
-      "mainEntity": {
-        "@type": "Dataset",
-        "name": "Global Website Performance Statistics",
-        "description": "Performance metrics for 589 websites across 69 countries",
-        "keywords": "website performance, lighthouse scores, web analytics, performance monitoring"
-      }
-    }
-    </script>
 </head>
 <body>
-    
-    <!-- Offline Badge -->
-    <div id="offline-badge" class="offline-badge" style="display: none;">
-        🔌 Website Offline
-    </div>
-    
-    <!-- Live Region for Dynamic Announcements -->
-    <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
-    
     <div class="container">
+        
         <header class="header" role="banner">
             <div class="logo-container">
-                <a href="index.html">
-                    <img src="logo.png" alt="CheetahCheck" class="header-logo">
-                </a>
+                <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
             </div>
-            <p class="tagline">Performance Statistics</p>
-            
-            
-            <div class="back-to-home">
-                <a href="index.html" class="back-link">← Back to Home</a>
-            </div>
-            
+            <p class="subtitle">Performance Statistics</p>
+            <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
         </header>
     
-    <main class="container">
-        <div class="stats-header">
-            <h1>📊 Global Performance Statistics</h1>
-            <p class="stats-subtitle">Comprehensive analytics across 589 websites in 69 countries and 34 industries</p>
-        </div>
+        <main class="container">
 
-        <!-- Global Overview Stats -->
-        <section class="stats-grid">
-            <div class="stat-tile">
-                <div class="stat-icon">🌐</div>
-                <div class="stat-content">
-                    <div class="stat-number">589</div>
-                    <div class="stat-label">Total Websites</div>
+            <!-- Global Overview Stats (Real Data) -->
+            <section class="stats-grid">
+                <div class="stat-tile">
+                    <div class="stat-icon">🌐</div>
+                    <div class="stat-content">
+                        <div class="stat-number">620</div>
+                        <div class="stat-label">Total Websites</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">🏴󠁿</div>
-                <div class="stat-content">
-                    <div class="stat-number">69</div>
-                    <div class="stat-label">Countries</div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">🏴󠁿</div>
+                    <div class="stat-content">
+                        <div class="stat-number">69</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">🏢</div>
-                <div class="stat-content">
-                    <div class="stat-number">34</div>
-                    <div class="stat-label">Industries</div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">🏭</div>
+                    <div class="stat-content">
+                        <div class="stat-number">36</div>
+                        <div class="stat-label">Industries</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">⚡</div>
-                <div class="stat-content">
-                    <div class="stat-number">43.6</div>
-                    <div class="stat-label">Avg Performance</div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-content">
+                        <div class="stat-number">44</div>
+                        <div class="stat-label">Avg Performance</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">♿</div>
-                <div class="stat-content">
-                    <div class="stat-number">86.1</div>
-                    <div class="stat-label">Avg Accessibility</div>
-                </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">🔧</div>
-                <div class="stat-content">
-                    <div class="stat-number">80</div>
-                    <div class="stat-label">Avg Best Practices</div>
-                </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">🔍</div>
-                <div class="stat-content">
-                    <div class="stat-number">90.3</div>
-                    <div class="stat-label">Avg SEO</div>
-                </div>
-            </div>
-            
-            <div class="stat-tile">
-                <div class="stat-icon">📱</div>
-                <div class="stat-content">
-                    <div class="stat-number">43.2</div>
-                    <div class="stat-label">Avg PWA</div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Performance Distribution -->
-        <section class="chart-section">
-            <h2>Performance Score Distribution</h2>
-            <div class="performance-distribution">
-                <div class="perf-category excellent">
-                    <div class="perf-number">16</div>
-                    <div class="perf-label">Excellent (90+)</div>
-                    <div class="perf-percentage">3%</div>
+            <!-- Performance Distribution (Real Data) -->
+            <section class="chart-section">
+                <h2>Performance Score Distribution</h2>
+                <p class="chart-description">Real distribution from 620 tested websites</p>
+                <div class="performance-distribution">
+                    <div class="perf-category excellent">
+                        <div class="perf-number">16</div>
+                        <div class="perf-label">Excellent (90+)</div>
+                        <div class="perf-percentage">3%</div>
+                    </div>
+                    <div class="perf-category good">
+                        <div class="perf-number">188</div>
+                        <div class="perf-label">Good (50-89)</div>
+                        <div class="perf-percentage">30%</div>
+                    </div>
+                    <div class="perf-category poor">
+                        <div class="perf-number">416</div>
+                        <div class="perf-label">Poor (0-49)</div>
+                        <div class="perf-percentage">67%</div>
+                    </div>
                 </div>
-                <div class="perf-category good">
-                    <div class="perf-number">179</div>
-                    <div class="perf-label">Good (50-89)</div>
-                    <div class="perf-percentage">30%</div>
+            </section>
+
+            <!-- Top Industries Performance (Real Data) -->
+            <section class="chart-section">
+                <h2>🏭 Top Industries by Performance</h2>
+                <p class="chart-description">Real industry performance averages from tested websites</p>
+                <div class="chart-container">
+                    <canvas id="topIndustriesChart"></canvas>
                 </div>
-                <div class="perf-category poor">
-                    <div class="perf-number">394</div>
-                    <div class="perf-label">Poor (0-49)</div>
-                    <div class="perf-percentage">67%</div>
+            </section>
+
+            <!-- Top Countries Performance (Real Data) -->
+            <section class="chart-section">
+                <h2>🌍 Top Countries by Performance</h2>
+                <p class="chart-description">Leading countries in web performance scores</p>
+                <div class="chart-container">
+                    <canvas id="topCountriesChart"></canvas>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Performance Trends Chart -->
-        
-        <section class="chart-section">
-            <h2>Performance Trends (Last 30 Days)</h2>
-            <div class="chart-container">
-                <canvas id="trendsChart"></canvas>
-            </div>
-        </section>
-        
-
-        <!-- Top Countries -->
-        <section class="chart-section">
-            <h2>Top Performing Countries</h2>
-            <div class="rankings-grid">
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">1</div>
-                        <div class="ranking-flag">🇲🇾</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-malaysia.html">Malaysia</a>
-                            </div>
-                            <div class="ranking-stats">
-                                3 sites • Avg: 79
-                            </div>
-                        </div>
-                        <div class="ranking-score">79</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">2</div>
-                        <div class="ranking-flag">🇧🇴</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-bolivia.html">Bolivia</a>
-                            </div>
-                            <div class="ranking-stats">
-                                3 sites • Avg: 78.7
-                            </div>
-                        </div>
-                        <div class="ranking-score">78.7</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">3</div>
-                        <div class="ranking-flag">🇧🇬</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-bulgaria.html">Bulgaria</a>
-                            </div>
-                            <div class="ranking-stats">
-                                2 sites • Avg: 71
-                            </div>
-                        </div>
-                        <div class="ranking-score">71</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">4</div>
-                        <div class="ranking-flag">🇮🇷</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-iran.html">Iran</a>
-                            </div>
-                            <div class="ranking-stats">
-                                8 sites • Avg: 63.9
-                            </div>
-                        </div>
-                        <div class="ranking-score">63.9</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">5</div>
-                        <div class="ranking-flag">🇷🇴</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-romania.html">Romania</a>
-                            </div>
-                            <div class="ranking-stats">
-                                3 sites • Avg: 55.3
-                            </div>
-                        </div>
-                        <div class="ranking-score">55.3</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">6</div>
-                        <div class="ranking-flag">🇳🇱</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-netherlands.html">Netherlands</a>
-                            </div>
-                            <div class="ranking-stats">
-                                10 sites • Avg: 55
-                            </div>
-                        </div>
-                        <div class="ranking-score">55</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">7</div>
-                        <div class="ranking-flag">🇲🇽</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-mexico.html">Mexico</a>
-                            </div>
-                            <div class="ranking-stats">
-                                4 sites • Avg: 55
-                            </div>
-                        </div>
-                        <div class="ranking-score">55</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">8</div>
-                        <div class="ranking-flag">🇱🇾</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-libya.html">Libya</a>
-                            </div>
-                            <div class="ranking-stats">
-                                5 sites • Avg: 54.4
-                            </div>
-                        </div>
-                        <div class="ranking-score">54.4</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">9</div>
-                        <div class="ranking-flag">🇿🇲</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-zambia.html">Zambia</a>
-                            </div>
-                            <div class="ranking-stats">
-                                8 sites • Avg: 53.9
-                            </div>
-                        </div>
-                        <div class="ranking-score">53.9</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">10</div>
-                        <div class="ranking-flag">🇺🇦</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="country-ukraine.html">Ukraine</a>
-                            </div>
-                            <div class="ranking-stats">
-                                8 sites • Avg: 53.9
-                            </div>
-                        </div>
-                        <div class="ranking-score">53.9</div>
-                    </div>
-                
-            </div>
-        </section>
-
-        <!-- Top Industries -->
-        <section class="chart-section">
-            <h2>Top Performing Industries</h2>
-            <div class="rankings-grid">
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">1</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-gaming.html">Gaming</a>
-                            </div>
-                            <div class="ranking-stats">
-                                1 sites • Avg: 68
-                            </div>
-                        </div>
-                        <div class="ranking-score">68</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">2</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-consulting.html">Consulting</a>
-                            </div>
-                            <div class="ranking-stats">
-                                3 sites • Avg: 61.3
-                            </div>
-                        </div>
-                        <div class="ranking-score">61.3</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">3</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-tech.html">Tech</a>
-                            </div>
-                            <div class="ranking-stats">
-                                1 sites • Avg: 57
-                            </div>
-                        </div>
-                        <div class="ranking-score">57</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">4</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-jobs.html">Jobs</a>
-                            </div>
-                            <div class="ranking-stats">
-                                7 sites • Avg: 55.9
-                            </div>
-                        </div>
-                        <div class="ranking-score">55.9</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">5</div>
-                        <div class="ranking-flag">🏛️</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-government.html">Government</a>
-                            </div>
-                            <div class="ranking-stats">
-                                22 sites • Avg: 55.8
-                            </div>
-                        </div>
-                        <div class="ranking-score">55.8</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">6</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-website-editor.html">Website editor</a>
-                            </div>
-                            <div class="ranking-stats">
-                                7 sites • Avg: 55.6
-                            </div>
-                        </div>
-                        <div class="ranking-score">55.6</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">7</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-search-engine.html">Search Engine</a>
-                            </div>
-                            <div class="ranking-stats">
-                                5 sites • Avg: 55
-                            </div>
-                        </div>
-                        <div class="ranking-score">55</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">8</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-realestate.html">Realestate</a>
-                            </div>
-                            <div class="ranking-stats">
-                                1 sites • Avg: 51
-                            </div>
-                        </div>
-                        <div class="ranking-score">51</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">9</div>
-                        <div class="ranking-flag">🏢</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-portal.html">Portal</a>
-                            </div>
-                            <div class="ranking-stats">
-                                27 sites • Avg: 50.6
-                            </div>
-                        </div>
-                        <div class="ranking-score">50.6</div>
-                    </div>
-                
-                    <div class="ranking-item">
-                        <div class="ranking-position">10</div>
-                        <div class="ranking-flag">🎓</div>
-                        <div class="ranking-content">
-                            <div class="ranking-name">
-                                <a href="industry-education.html">Education</a>
-                            </div>
-                            <div class="ranking-stats">
-                                16 sites • Avg: 50.1
-                            </div>
-                        </div>
-                        <div class="ranking-score">50.1</div>
-                    </div>
-                
-            </div>
-        </section>
-
-        <!-- Best Performing Sites -->
-        <section class="chart-section">
-            <h2>🏆 Top Performing Websites</h2>
-            <div class="sites-grid">
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#1</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-mitid-dk.html" target="_blank">mitid.dk</a>
-                            </div>
-                            <div class="site-location">🇩🇰 Denmark • Government</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 81</span>
-                                <span class="score-badge acc">♿ 100</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 92</span>
-                                <span class="score-badge pwa">📱 67</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">88</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#2</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-lemonde-fr.html" target="_blank">lemonde.fr</a>
-                            </div>
-                            <div class="site-location">🇫🇷 France • Media</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 63</span>
-                                <span class="score-badge acc">♿ 94</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 93</span>
-                                <span class="score-badge pwa">📱 89</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">87.8</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#3</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-svt-se.html" target="_blank">svt.se</a>
-                            </div>
-                            <div class="site-location">🇸🇪 Sweden • Media</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 51</span>
-                                <span class="score-badge acc">♿ 100</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 99</span>
-                                <span class="score-badge pwa">📱 89</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">87.8</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#4</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-emathstudio-com.html" target="_blank">emathstudio.com</a>
-                            </div>
-                            <div class="site-location">🇫🇮 Finland • Education</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 100</span>
-                                <span class="score-badge acc">♿ 100</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 100</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">86.6</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#5</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-mediapart-fr.html" target="_blank">mediapart.fr</a>
-                            </div>
-                            <div class="site-location">🇫🇷 France • Media</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 65</span>
-                                <span class="score-badge acc">♿ 98</span>
-                                <span class="score-badge bp">🔧 92</span>
-                                <span class="score-badge seo">🔍 100</span>
-                                <span class="score-badge pwa">📱 78</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">86.6</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#6</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-verkkokauppa-com.html" target="_blank">verkkokauppa.com</a>
-                            </div>
-                            <div class="site-location">🇫🇮 Finland • E-commerce</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 40</span>
-                                <span class="score-badge acc">♿ 100</span>
-                                <span class="score-badge bp">🔧 92</span>
-                                <span class="score-badge seo">🔍 100</span>
-                                <span class="score-badge pwa">📱 100</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">86.4</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#7</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-flipsite-io.html" target="_blank">flipsite.io</a>
-                            </div>
-                            <div class="site-location">🇫🇮 Finland • Website editor</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 100</span>
-                                <span class="score-badge acc">♿ 98</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 100</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">86.2</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#8</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-trafikverket-se.html" target="_blank">trafikverket.se</a>
-                            </div>
-                            <div class="site-location">🇸🇪 Sweden • Transportation</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 65</span>
-                                <span class="score-badge acc">♿ 98</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 100</span>
-                                <span class="score-badge pwa">📱 67</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">86</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#9</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-whitehouse-gov.html" target="_blank">whitehouse.gov</a>
-                            </div>
-                            <div class="site-location">🇺🇸 United States • Government</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 74</span>
-                                <span class="score-badge acc">♿ 92</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 83</span>
-                                <span class="score-badge pwa">📱 78</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">85.4</div>
-                    </div>
-                
-                    <div class="site-card excellent">
-                        <div class="site-rank">#10</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-franceinfo-fr.html" target="_blank">franceinfo.fr</a>
-                            </div>
-                            <div class="site-location">🇫🇷 France • Media</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 59</span>
-                                <span class="score-badge acc">♿ 75</span>
-                                <span class="score-badge bp">🔧 100</span>
-                                <span class="score-badge seo">🔍 92</span>
-                                <span class="score-badge pwa">📱 100</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">85.2</div>
-                    </div>
-                
-            </div>
-        </section>
-
-        <!-- Worst Performing Sites -->
-        <section class="chart-section">
-            <h2>🚨 Sites Needing Improvement</h2>
-            <div class="sites-grid">
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#1</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-coop-co-uk.html" target="_blank">coop.co.uk</a>
-                            </div>
-                            <div class="site-location">�� United Kingdom • E-commerce</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 0</span>
-                                <span class="score-badge acc">♿ 69</span>
-                                <span class="score-badge bp">🔧 0</span>
-                                <span class="score-badge seo">🔍 75</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">35.4</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#2</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-bdo-com-ph.html" target="_blank">bdo.com.ph</a>
-                            </div>
-                            <div class="site-location">🇵🇭 Philippines • Finance</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 20</span>
-                                <span class="score-badge acc">♿ 66</span>
-                                <span class="score-badge bp">🔧 0</span>
-                                <span class="score-badge seo">🔍 71</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">38</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#3</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-zoom-us.html" target="_blank">zoom.us</a>
-                            </div>
-                            <div class="site-location">🇺🇸 United States • Technology</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 23</span>
-                                <span class="score-badge acc">♿ 66</span>
-                                <span class="score-badge bp">🔧 0</span>
-                                <span class="score-badge seo">🔍 79</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">40.2</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#4</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-aiims-edu.html" target="_blank">aiims.edu</a>
-                            </div>
-                            <div class="site-location">🇮🇳 India • Education</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 33</span>
-                                <span class="score-badge acc">♿ 69</span>
-                                <span class="score-badge bp">🔧 50</span>
-                                <span class="score-badge seo">🔍 50</span>
-                                <span class="score-badge pwa">📱 0</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">40.4</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#5</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-zalando-de.html" target="_blank">zalando.de</a>
-                            </div>
-                            <div class="site-location">🇩🇪 Germany • E-commerce</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 30</span>
-                                <span class="score-badge acc">♿ 0</span>
-                                <span class="score-badge bp">🔧 75</span>
-                                <span class="score-badge seo">🔍 100</span>
-                                <span class="score-badge pwa">📱 22</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">45.4</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#6</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-td-com.html" target="_blank">td.com</a>
-                            </div>
-                            <div class="site-location">🇨🇦 Canada • Finance</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 26</span>
-                                <span class="score-badge acc">♿ 92</span>
-                                <span class="score-badge bp">🔧 0</span>
-                                <span class="score-badge seo">🔍 77</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">45.6</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#7</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-tesla-com.html" target="_blank">tesla.com</a>
-                            </div>
-                            <div class="site-location">🇺🇸 United States • Automotive</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 25</span>
-                                <span class="score-badge acc">♿ 69</span>
-                                <span class="score-badge bp">🔧 0</span>
-                                <span class="score-badge seo">🔍 74</span>
-                                <span class="score-badge pwa">📱 67</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">47</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#8</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-altbalaji-com.html" target="_blank">altbalaji.com</a>
-                            </div>
-                            <div class="site-location">🇮🇳 India • Media</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 7</span>
-                                <span class="score-badge acc">♿ 79</span>
-                                <span class="score-badge bp">🔧 0</span>
-                                <span class="score-badge seo">🔍 85</span>
-                                <span class="score-badge pwa">📱 67</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">47.6</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#9</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-malta-com.html" target="_blank">malta.com</a>
-                            </div>
-                            <div class="site-location">🇲🇹 Malta • Portal</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 60</span>
-                                <span class="score-badge acc">♿ 72</span>
-                                <span class="score-badge bp">🔧 42</span>
-                                <span class="score-badge seo">🔍 69</span>
-                                <span class="score-badge pwa">📱 0</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">48.6</div>
-                    </div>
-                
-                    <div class="site-card poor">
-                        <div class="site-rank">#10</div>
-                        <div class="site-content">
-                            <div class="site-url">
-                                <a href="domain-sport5-co-il.html" target="_blank">sport5.co.il</a>
-                            </div>
-                            <div class="site-location">🇮🇱 Israel • Sports</div>
-                            <div class="site-scores">
-                                <span class="score-badge perf">⚡ 28</span>
-                                <span class="score-badge acc">♿ 61</span>
-                                <span class="score-badge bp">🔧 58</span>
-                                <span class="score-badge seo">🔍 70</span>
-                                <span class="score-badge pwa">📱 33</span>
-                            </div>
-                        </div>
-                        <div class="site-overall">50</div>
-                    </div>
-                
-            </div>
-        </section>
-
-        <!-- Country vs Industry Performance Chart -->
-        <section class="chart-section">
-            <h2>Country vs Industry Performance</h2>
-            <div class="charts-row">
-                <div class="chart-container half">
-                    <h3>Countries</h3>
-                    <canvas id="countriesChart"></canvas>
+            <!-- Industry Benchmarking (Real Data) -->
+            <section class="chart-section">
+                <h2>🎯 Industry Benchmarking</h2>
+                <p class="chart-description">Top 5 industries by number of domains tested - showing performance across all metrics</p>
+                <div class="chart-container">
+                    <canvas id="industryBenchmarkChart"></canvas>
                 </div>
-                <div class="chart-container half">
-                    <h3>Industries</h3>
-                    <canvas id="industriesChart"></canvas>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-        <!-- Footer -->
+            <!-- Industry Performance Correlation (Real Data) -->
+            <section class="chart-section">
+                <h2>📊 Industry Performance Correlation</h2>
+                <p class="chart-description">Correlation between industry type and performance scores - bubble size represents number of websites</p>
+                <div class="chart-container">
+                    <canvas id="industryCorrelationChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Regional Performance Analysis (Real Data) -->
+            <section class="chart-section">
+                <h2>🌍 Regional Performance Analysis</h2>
+                <p class="chart-description">Performance distribution by major regions</p>
+                <div class="chart-container">
+                    <canvas id="regionalAnalysisChart"></canvas>
+                </div>
+            </section>
+
+        </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             
             <div class="footer-section">
                 <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
-                <p><a href="about.html">About</a> | <a href="stats.html">Statistics</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+                <p><a href="stats.html">Stats</a> | <a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of undefined websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 620 websites.</p>
         </div>
     </footer>
 
@@ -1013,277 +292,801 @@
             }
         }
         </script>
+    </div>
 
     <script>
-        // Initialize Feather icons
-        feather.replace();
+        // ALL CHARTS USE ONLY REAL DATA FROM THE DATABASE
 
-        // Performance Trends Chart
-        
-        const trendsCtx = document.getElementById('trendsChart');
-        if (trendsCtx) {
-            new Chart(trendsCtx, {
-                type: 'line',
+        // Top Industries Chart (Real Data)
+        const topIndustriesCtx = document.getElementById('topIndustriesChart');
+        if (topIndustriesCtx) {
+            new Chart(topIndustriesCtx, {
+                type: 'bar',
                 data: {
-                    labels: ["10/19/2025","10/20/2025","10/21/2025","10/22/2025","10/23/2025","10/24/2025","10/25/2025","10/26/2025","10/27/2025"],
-                    datasets: [
-                        {
-                            label: 'Performance',
-                            data: [49.4,43.5,47.8,46,44.2,43.5,46.3,43.3,39],
-                            borderColor: '#ff6b35',
-                            backgroundColor: 'rgba(255, 107, 53, 0.1)',
-                            tension: 0.3
-                        },
-                        {
-                            label: 'Accessibility',
-                            data: [86.3,87.7,84.5,86.1,88.2,87,85.3,84,87.2],
-                            borderColor: '#4ecdc4',
-                            backgroundColor: 'rgba(78, 205, 196, 0.1)',
-                            tension: 0.3
-                        },
-                        {
-                            label: 'Best Practices',
-                            data: [83.5,82.9,75,80.2,82.3,79.7,78.5,79.3,78.1],
-                            borderColor: '#45b7d1',
-                            backgroundColor: 'rgba(69, 183, 209, 0.1)',
-                            tension: 0.3
-                        },
-                        {
-                            label: 'SEO',
-                            data: [91.9,90.5,89.5,90.7,90.7,90.8,91.3,89.9,89.2],
-                            borderColor: '#96ceb4',
-                            backgroundColor: 'rgba(150, 206, 180, 0.1)',
-                            tension: 0.3
-                        },
-                        {
-                            label: 'PWA',
-                            data: [46.9,48.7,40.9,44.5,43.7,46.8,44.1,39.6,41.5],
-                            borderColor: '#fcea2b',
-                            backgroundColor: 'rgba(252, 234, 43, 0.1)',
-                            tension: 0.3
-                        }
-                    ]
+                    labels: ['Delivery', 'Healthtech', 'Gaming', 'Consulting', 'Tech', 'Jobs', 'Government', 'Website editor', 'Search Engine', 'Realestate'],
+                    datasets: [{
+                        label: 'Average Performance Score',
+                        data: [75, 69.5, 68, 61.3, 57, 55.9, 55.8, 55.6, 55, 51],
+                        backgroundColor: [
+                            '#22C55E', '#16A34A', '#15803D', '#FFB703', '#E07A00', '#D97706',
+                            '#EF4444', '#DC2626', '#B91C1C', '#991B1B'
+                        ],
+                        borderRadius: 4
+                    }]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
                     plugins: {
-                        legend: {
-                            position: 'top',
-                        },
+                        legend: { display: false },
                         title: {
                             display: true,
-                            text: 'Average Scores Over Time'
+                            text: 'Real Performance Data by Industry'
                         }
                     },
                     scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 100
-                        }
-                    }
-                }
-            });
-        }
-        
-
-        // Countries Chart
-        const countriesCtx = document.getElementById('countriesChart');
-        if (countriesCtx) {
-            new Chart(countriesCtx, {
-                type: 'bar',
-                data: {
-                    labels: ["Malaysia","Bolivia","Bulgaria","Iran","Romania","Netherlands","Mexico","Libya","Zambia","Ukraine"],
-                    datasets: [{
-                        label: 'Average Performance',
-                        data: [79,78.7,71,63.9,55.3,55,55,54.4,53.9,53.9],
-                        backgroundColor: 'rgba(255, 107, 53, 0.8)',
-                        borderColor: '#ff6b35',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            display: false
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 100
-                        }
+                        x: { beginAtZero: true, max: 100 }
                     }
                 }
             });
         }
 
-        // Industries Chart
-        const industriesCtx = document.getElementById('industriesChart');
-        if (industriesCtx) {
-            new Chart(industriesCtx, {
+        // Top Countries Chart (Real Data)
+        const topCountriesCtx = document.getElementById('topCountriesChart');
+        if (topCountriesCtx) {
+            new Chart(topCountriesCtx, {
                 type: 'bar',
                 data: {
-                    labels: ["Gaming","Consulting","Tech","Jobs","Government","Website editor","Search Engine","Realestate","Portal","Education"],
+                    labels: ['🇲🇾 Malaysia', '🇧🇴 Bolivia', '🇮🇷 Iran', '🇧🇬 Bulgaria', '🇳🇱 Netherlands', '🇲🇽 Mexico', '🇱🇾 Libya', '🇺🇦 Ukraine', '🇹🇷 Turkey', '🇿🇲 Zambia'],
                     datasets: [{
-                        label: 'Average Performance',
-                        data: [68,61.3,57,55.9,55.8,55.6,55,51,50.6,50.1],
-                        backgroundColor: 'rgba(78, 205, 196, 0.8)',
-                        borderColor: '#4ecdc4',
-                        borderWidth: 1
+                        label: 'Average Performance Score',
+                        data: [79, 78.7, 63.9, 58.7, 55, 55, 54.4, 53.9, 53, 51.8],
+                        backgroundColor: '#22C55E',
+                        borderRadius: 4
                     }]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
-                        legend: {
-                            display: false
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Top 10 Countries by Performance Score'
                         }
                     },
                     scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+
+        // Industry Benchmarking (Real Data - Top 5 by Domain Count)
+        const industryBenchmarkCtx = document.getElementById('industryBenchmarkChart');
+        if (industryBenchmarkCtx) {
+            // Sort industries by site count and get top 5
+            const industriesBySiteCount = [{
+                industry: 'Delivery',
+                site_count: 1,
+                performance: 75,
+                accessibility: 81,
+                best_practices: 92,
+                seo: 82,
+                pwa: 33
+            }, {
+                industry: 'Healthtech',
+                site_count: 2,
+                performance: 69.5,
+                accessibility: 93,
+                best_practices: 96,
+                seo: 96.5,
+                pwa: 33
+            }, {
+                industry: 'Gaming',
+                site_count: 1,
+                performance: 68,
+                accessibility: 96,
+                best_practices: 100,
+                seo: 100,
+                pwa: 33
+            }, {
+                industry: 'Consulting',
+                site_count: 3,
+                performance: 61.3,
+                accessibility: 97.3,
+                best_practices: 94.7,
+                seo: 88.3,
+                pwa: 44.3
+            }, {
+                industry: 'Tech',
+                site_count: 1,
+                performance: 57,
+                accessibility: 89,
+                best_practices: 83,
+                seo: 93,
+                pwa: 33
+            }, {
+                industry: 'Jobs',
+                site_count: 7,
+                performance: 55.9,
+                accessibility: 86.4,
+                best_practices: 75.1,
+                seo: 91,
+                pwa: 50.7
+            }, {
+                industry: 'Government',
+                site_count: 22,
+                performance: 55.8,
+                accessibility: 87.8,
+                best_practices: 90.3,
+                seo: 93.5,
+                pwa: 39.1
+            }, {
+                industry: 'Website editor',
+                site_count: 7,
+                performance: 55.6,
+                accessibility: 93.4,
+                best_practices: 88.1,
+                seo: 92.1,
+                pwa: 37.9
+            }, {
+                industry: 'Search Engine',
+                site_count: 5,
+                performance: 55,
+                accessibility: 81.8,
+                best_practices: 86.8,
+                seo: 83.8,
+                pwa: 33
+            }, {
+                industry: 'Realestate',
+                site_count: 1,
+                performance: 51,
+                accessibility: 81,
+                best_practices: 92,
+                seo: 100,
+                pwa: 33
+            }, {
+                industry: 'Portal',
+                site_count: 27,
+                performance: 50.8,
+                accessibility: 75.7,
+                best_practices: 77.3,
+                seo: 89.4,
+                pwa: 45.5
+            }, {
+                industry: 'Education',
+                site_count: 17,
+                performance: 49.7,
+                accessibility: 88.2,
+                best_practices: 84.4,
+                seo: 83.6,
+                pwa: 32.4
+            }, {
+                industry: 'Social Media',
+                site_count: 18,
+                performance: 46.3,
+                accessibility: 80.7,
+                best_practices: 69.9,
+                seo: 90.2,
+                pwa: 51.7
+            }, {
+                industry: 'Healthcare',
+                site_count: 6,
+                performance: 44.5,
+                accessibility: 91.8,
+                best_practices: 86.2,
+                seo: 92.2,
+                pwa: 55.5
+            }, {
+                industry: 'Marketplace',
+                site_count: 22,
+                performance: 44.3,
+                accessibility: 84,
+                best_practices: 83.3,
+                seo: 92.5,
+                pwa: 52.5
+            }, {
+                industry: 'E-commerce',
+                site_count: 41,
+                performance: 43.7,
+                accessibility: 82.8,
+                best_practices: 78.2,
+                seo: 90.3,
+                pwa: 45.6
+            }, {
+                industry: 'Video',
+                site_count: 1,
+                performance: 43,
+                accessibility: 91,
+                best_practices: 75,
+                seo: 93,
+                pwa: 33
+            }, {
+                industry: 'Finance',
+                site_count: 66,
+                performance: 42.9,
+                accessibility: 89.1,
+                best_practices: 80.4,
+                seo: 88.8,
+                pwa: 37
+            }, {
+                industry: 'Media',
+                site_count: 288,
+                performance: 42,
+                accessibility: 85.9,
+                best_practices: 79.4,
+                seo: 91.1,
+                pwa: 44.7
+            }, {
+                industry: 'Energy',
+                site_count: 1,
+                performance: 42,
+                accessibility: 88,
+                best_practices: 58,
+                seo: 72,
+                pwa: 33
+            }, {
+                industry: 'Transportation',
+                site_count: 13,
+                performance: 41.6,
+                accessibility: 86.7,
+                best_practices: 84,
+                seo: 90.8,
+                pwa: 39.1
+            }, {
+                industry: 'Marketing',
+                site_count: 5,
+                performance: 41,
+                accessibility: 93.4,
+                best_practices: 83.2,
+                seo: 90.2,
+                pwa: 33
+            }, {
+                industry: 'Sports',
+                site_count: 8,
+                performance: 40.8,
+                accessibility: 79.8,
+                best_practices: 79.3,
+                seo: 86.6,
+                pwa: 40.1
+            }, {
+                industry: 'Weather',
+                site_count: 2,
+                performance: 40.5,
+                accessibility: 96,
+                best_practices: 79,
+                seo: 95,
+                pwa: 50
+            }, {
+                industry: 'Technology',
+                site_count: 13,
+                performance: 39.7,
+                accessibility: 89.5,
+                best_practices: 78.2,
+                seo: 89.5,
+                pwa: 35.6
+            }, {
+                industry: 'Non-profit',
+                site_count: 2,
+                performance: 39,
+                accessibility: 84.5,
+                best_practices: 83,
+                seo: 85.5,
+                pwa: 33
+            }, {
+                industry: 'Edtech',
+                site_count: 2,
+                performance: 36.5,
+                accessibility: 79.5,
+                best_practices: 83.5,
+                seo: 93,
+                pwa: 33
+            }, {
+                industry: 'Software',
+                site_count: 3,
+                performance: 36.3,
+                accessibility: 88.7,
+                best_practices: 80.3,
+                seo: 90.7,
+                pwa: 33
+            }, {
+                industry: 'Food & Drink',
+                site_count: 1,
+                performance: 35,
+                accessibility: 88,
+                best_practices: 75,
+                seo: 82,
+                pwa: 33
+            }, {
+                industry: 'Hospitality',
+                site_count: 1,
+                performance: 34,
+                accessibility: 100,
+                best_practices: 83,
+                seo: 99,
+                pwa: 56
+            }, {
+                industry: 'Retail',
+                site_count: 5,
+                performance: 33.6,
+                accessibility: 79.4,
+                best_practices: 51.8,
+                seo: 82.6,
+                pwa: 37.6
+            }, {
+                industry: 'Engineering',
+                site_count: 1,
+                performance: 33,
+                accessibility: 65,
+                best_practices: 83,
+                seo: 85,
+                pwa: 33
+            }, {
+                industry: 'Real Estate',
+                site_count: 2,
+                performance: 31.5,
+                accessibility: 88.5,
+                best_practices: 79,
+                seo: 89,
+                pwa: 89
+            }, {
+                industry: 'Telecom',
+                site_count: 15,
+                performance: 31,
+                accessibility: 91.7,
+                best_practices: 81.1,
+                seo: 90.3,
+                pwa: 36
+            }, {
+                industry: 'Automotive',
+                site_count: 9,
+                performance: 28.8,
+                accessibility: 87.9,
+                best_practices: 68.3,
+                seo: 92.1,
+                pwa: 45.6
+            }, {
+                industry: 'Travel',
+                site_count: 1,
+                performance: 27,
+                accessibility: 79,
+                best_practices: 67,
+                seo: 90,
+                pwa: 33
+            }].sort((a, b) => b.site_count - a.site_count).slice(0, 5);
+            
+            const datasets = industriesBySiteCount.map((ind, index) => ({
+                label: ind.industry + ' (' + ind.site_count + ' sites)',
+                data: [ind.performance, ind.accessibility, ind.best_practices, ind.seo, ind.pwa],
+                borderColor: ['#22C55E', '#3B82F6', '#8B5CF6', '#FFB703', '#EF4444'][index],
+                backgroundColor: ['rgba(34, 197, 94, 0.2)', 'rgba(59, 130, 246, 0.2)', 'rgba(139, 92, 246, 0.2)', 'rgba(255, 183, 3, 0.2)', 'rgba(239, 68, 68, 0.2)'][index],
+                pointBackgroundColor: ['#22C55E', '#3B82F6', '#8B5CF6', '#FFB703', '#EF4444'][index]
+            }));
+            
+            // Add global average
+            datasets.push({
+                label: 'Global Average',
+                data: [43.5, 85.9, 79.8, 90.4, 43],
+                borderColor: '#6B7280',
+                backgroundColor: 'rgba(107, 114, 128, 0.1)',
+                pointBackgroundColor: '#6B7280',
+                borderDash: [5, 5]
+            });
+
+            new Chart(industryBenchmarkCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Performance', 'Accessibility', 'Best Practices', 'SEO', 'PWA'],
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Top 5 Industries by Domain Count'
+                        }
+                    },
+                    scales: {
+                        r: {
+                            suggestedMin: 0,
+                            suggestedMax: 100
+                        }
+                    }
+                }
+            });
+        }
+
+        // Industry Performance Correlation (Real Data - Bubble Chart)
+        const industryCorrelationCtx = document.getElementById('industryCorrelationChart');
+        if (industryCorrelationCtx) {
+            // Create bubble chart data showing correlation between industry and performance
+            const industryData = [{
+                label: 'Delivery',
+                x: 1, // Industry index (categorical x-axis)
+                y: 75, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#22C55E80'
+            }, {
+                label: 'Healthtech',
+                x: 2, // Industry index (categorical x-axis)
+                y: 69.5, // Performance score
+                r: 6, // Bubble size based on number of sites
+                backgroundColor: '#16A34A80'
+            }, {
+                label: 'Gaming',
+                x: 3, // Industry index (categorical x-axis)
+                y: 68, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#15803D80'
+            }, {
+                label: 'Consulting',
+                x: 4, // Industry index (categorical x-axis)
+                y: 61.3, // Performance score
+                r: 9, // Bubble size based on number of sites
+                backgroundColor: '#FFB70380'
+            }, {
+                label: 'Tech',
+                x: 5, // Industry index (categorical x-axis)
+                y: 57, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#E07A0080'
+            }, {
+                label: 'Jobs',
+                x: 6, // Industry index (categorical x-axis)
+                y: 55.9, // Performance score
+                r: 21, // Bubble size based on number of sites
+                backgroundColor: '#D9770680'
+            }, {
+                label: 'Government',
+                x: 7, // Industry index (categorical x-axis)
+                y: 55.8, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#EF444480'
+            }, {
+                label: 'Website editor',
+                x: 8, // Industry index (categorical x-axis)
+                y: 55.6, // Performance score
+                r: 21, // Bubble size based on number of sites
+                backgroundColor: '#DC262680'
+            }, {
+                label: 'Search Engine',
+                x: 9, // Industry index (categorical x-axis)
+                y: 55, // Performance score
+                r: 15, // Bubble size based on number of sites
+                backgroundColor: '#B91C1C80'
+            }, {
+                label: 'Realestate',
+                x: 10, // Industry index (categorical x-axis)
+                y: 51, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#991B1B80'
+            }, {
+                label: 'Portal',
+                x: 11, // Industry index (categorical x-axis)
+                y: 50.8, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#8B5CF680'
+            }, {
+                label: 'Education',
+                x: 12, // Industry index (categorical x-axis)
+                y: 49.7, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#7C3AED80'
+            }, {
+                label: 'Social Media',
+                x: 13, // Industry index (categorical x-axis)
+                y: 46.3, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#6366F180'
+            }, {
+                label: 'Healthcare',
+                x: 14, // Industry index (categorical x-axis)
+                y: 44.5, // Performance score
+                r: 18, // Bubble size based on number of sites
+                backgroundColor: '#4F46E580'
+            }, {
+                label: 'Marketplace',
+                x: 15, // Industry index (categorical x-axis)
+                y: 44.3, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#3B82F680'
+            }, {
+                label: 'E-commerce',
+                x: 16, // Industry index (categorical x-axis)
+                y: 43.7, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#2563EB80'
+            }, {
+                label: 'Video',
+                x: 17, // Industry index (categorical x-axis)
+                y: 43, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#1D4ED880'
+            }, {
+                label: 'Finance',
+                x: 18, // Industry index (categorical x-axis)
+                y: 42.9, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#1E40AF80'
+            }, {
+                label: 'Media',
+                x: 19, // Industry index (categorical x-axis)
+                y: 42, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#1E3A8A80'
+            }, {
+                label: 'Energy',
+                x: 20, // Industry index (categorical x-axis)
+                y: 42, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#312E8180'
+            }, {
+                label: 'Transportation',
+                x: 21, // Industry index (categorical x-axis)
+                y: 41.6, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#10B98180'
+            }, {
+                label: 'Marketing',
+                x: 22, // Industry index (categorical x-axis)
+                y: 41, // Performance score
+                r: 15, // Bubble size based on number of sites
+                backgroundColor: '#05966980'
+            }, {
+                label: 'Sports',
+                x: 23, // Industry index (categorical x-axis)
+                y: 40.8, // Performance score
+                r: 24, // Bubble size based on number of sites
+                backgroundColor: '#04785780'
+            }, {
+                label: 'Weather',
+                x: 24, // Industry index (categorical x-axis)
+                y: 40.5, // Performance score
+                r: 6, // Bubble size based on number of sites
+                backgroundColor: '#065F4680'
+            }, {
+                label: 'Technology',
+                x: 25, // Industry index (categorical x-axis)
+                y: 39.7, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#064E3B80'
+            }, {
+                label: 'Non-profit',
+                x: 26, // Industry index (categorical x-axis)
+                y: 39, // Performance score
+                r: 6, // Bubble size based on number of sites
+                backgroundColor: '#F59E0B80'
+            }, {
+                label: 'Edtech',
+                x: 27, // Industry index (categorical x-axis)
+                y: 36.5, // Performance score
+                r: 6, // Bubble size based on number of sites
+                backgroundColor: '#D9770680'
+            }, {
+                label: 'Software',
+                x: 28, // Industry index (categorical x-axis)
+                y: 36.3, // Performance score
+                r: 9, // Bubble size based on number of sites
+                backgroundColor: '#B4530980'
+            }, {
+                label: 'Food & Drink',
+                x: 29, // Industry index (categorical x-axis)
+                y: 35, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#92400E80'
+            }, {
+                label: 'Hospitality',
+                x: 30, // Industry index (categorical x-axis)
+                y: 34, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#78350F80'
+            }, {
+                label: 'Retail',
+                x: 31, // Industry index (categorical x-axis)
+                y: 33.6, // Performance score
+                r: 15, // Bubble size based on number of sites
+                backgroundColor: '#EF444480'
+            }, {
+                label: 'Engineering',
+                x: 32, // Industry index (categorical x-axis)
+                y: 33, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#DC262680'
+            }, {
+                label: 'Real Estate',
+                x: 33, // Industry index (categorical x-axis)
+                y: 31.5, // Performance score
+                r: 6, // Bubble size based on number of sites
+                backgroundColor: '#B91C1C80'
+            }, {
+                label: 'Telecom',
+                x: 34, // Industry index (categorical x-axis)
+                y: 31, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#991B1B80'
+            }, {
+                label: 'Automotive',
+                x: 35, // Industry index (categorical x-axis)
+                y: 28.8, // Performance score
+                r: 25, // Bubble size based on number of sites
+                backgroundColor: '#7F1D1D80'
+            }, {
+                label: 'Travel',
+                x: 36, // Industry index (categorical x-axis)
+                y: 27, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#6B728080'
+            }];
+
+            new Chart(industryCorrelationCtx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Industries',
+                        data: industryData,
+                        borderColor: '#22C55E',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Industry Performance Correlation (Bubble size = # of websites)'
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(context) {
+                                    return context[0].raw.label;
+                                },
+                                label: function(context) {
+                                    const data = context.raw;
+                                    const siteCount = Math.round(data.r / 3);
+                                    return [
+                                        `Performance: ${data.y}`,
+                                        `Websites: ${siteCount}`,
+                                        `Industry rank: #${data.x}`
+                                    ];
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            position: 'bottom',
+                            title: {
+                                display: true,
+                                text: 'Industry Rank (by Performance)'
+                            },
+                            min: 0,
+                            max: 37,
+                            ticks: {
+                                stepSize: 1,
+                                callback: function(value) {
+                                    if (value === 0 || value > 36) return '';
+                                    const industries = ['Delivery', 'Healthtech', 'Gaming', 'Consulting', 'Tech', 'Jobs', 'Government', 'Website editor', 'Search Engine', 'Realestate', 'Portal', 'Education', 'Social Media', 'Healthcare', 'Marketplace', 'E-commerce', 'Video', 'Finance', 'Media', 'Energy', 'Transportation', 'Marketing', 'Sports', 'Weather', 'Technology', 'Non-profit', 'Edtech', 'Software', 'Food & Drink', 'Hospitality', 'Retail', 'Engineering', 'Real Estate', 'Telecom', 'Automotive', 'Travel'];
+                                    return industries[value - 1] ? industries[value - 1].substring(0, 8) + '...' : '';
+                                }
+                            }
+                        },
                         y: {
                             beginAtZero: true,
-                            max: 100
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: 'Average Performance Score'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Regional Performance Analysis (Real Data - Horizontal Bar Comparison)
+        const regionalAnalysisCtx = document.getElementById('regionalAnalysisChart');
+        if (regionalAnalysisCtx) {
+            // Calculate regional averages from real country data
+            const regions = {
+                'Europe': [58.7, 55, 53.9, 53, 51, 50.1, 49.7, 49, 48.4, 48, 47.9, 47.8, 47.4, 47.4, 44.8, 44.1, 43.6, 43.6, 43.4, 40.1, 39.4, 39, 38.5, 36.8, 36.5, 36, 33.5, 12],
+                'Asia': [79, 49.4, 44.9, 41.7, 40.9, 40.3, 39.1, 34.8, 34.3, 32.5, 29.8, 27.3, 25, 23],
+                'North America': [55, 44, 34.1],
+                'South America': [78.7, 48.2, 45.7, 36, 35.7, 29.7],
+                'Africa': [51.8, 40.2, 39.2, 37.3, 36.5, 36.1],
+                'Middle East': [63.9, 54.4, 39, 34, 28.3],
+                'Oceania': [46.6, 40]
+            };
+            
+            const regionalAverages = Object.entries(regions).map(([region, scores]) => ({
+                region,
+                average: scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0,
+                count: scores.length
+            })).filter(r => r.count > 0);
+
+            // Sort by performance (highest first) and calculate differences from median
+            const sortedRegions = regionalAverages.sort((a, b) => b.average - a.average);
+            const medianIndex = Math.floor(sortedRegions.length / 2);
+            const medianScore = sortedRegions[medianIndex].average;
+            
+            const regionLabels = sortedRegions.map(r => r.region);
+            const differences = sortedRegions.map(r => r.average - medianScore);
+
+            new Chart(regionalAnalysisCtx, {
+                type: 'bar',
+                data: {
+                    labels: regionLabels,
+                    datasets: [{
+                        label: 'Performance Difference',
+                        data: differences,
+                        backgroundColor: differences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
+                        borderColor: differences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Regional Performance vs Median'
+                        },
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const diff = context.parsed.x;
+                                    const actualScore = medianScore + diff;
+                                    if (diff === 0) {
+                                        return context.label + ': ' + actualScore.toFixed(1) + ' (median)';
+                                    } else {
+                                        const sign = diff > 0 ? '+' : '';
+                                        return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs median)';
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Performance Difference from Median Region'
+                            },
+                            grid: {
+                                color: function(context) {
+                                    return context.tick.value === 0 ? '#374151' : '#E5E7EB';
+                                }
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Region'
+                            }
                         }
                     }
                 }
             });
         }
     </script>
-
-    
-    <!-- PWA Install Popup -->
-    <div id="installPopup" class="install-popup">
-        <div class="install-popup-header">
-            <div class="install-popup-icon">🚀</div>
-            <h3 class="install-popup-title">Install CheetahCheck</h3>
-        </div>
-        <div id="androidInstallContent" class="install-content">
-            <p class="install-popup-description">
-                Get quick access to website performance analytics right from your home screen!
-            </p>
-            <div class="install-popup-actions">
-                <button id="dismissInstall" class="dismiss-btn">Not now</button>
-                <button id="installApp" class="install-btn">Install</button>
-            </div>
-        </div>
-        <div id="iosInstallContent" class="install-content" style="display: none;">
-            <p class="install-popup-description">
-                Install CheetahCheck for quick access to website performance analytics!
-            </p>
-            <div class="ios-install-steps">
-                <ol>
-                    <li>Tap the <strong>Share button</strong> <span style="font-size: 16px;">📤</span> in Safari</li>
-                    <li>Scroll down and tap <strong>"Add to Home Screen"</strong> <span style="font-size: 16px;">📱</span></li>
-                    <li>Tap <strong>"Add"</strong> to confirm</li>
-                </ol>
-            </div>
-            <div class="install-popup-actions">
-                <button id="dismissInstallIOS" class="dismiss-btn">Not now</button>
-                <button id="iosInstallGotIt" class="install-btn">Got it!</button>
-            </div>
-        </div>
-    </div>
-
+    <!-- PostHog Analytics -->
     <script>
-        let deferredPrompt;
-        const installPopup = document.getElementById('installPopup');
-        const installBtn = document.getElementById('installApp');
-        const dismissBtn = document.getElementById('dismissInstall');
-        const dismissBtnIOS = document.getElementById('dismissInstallIOS');
-        const iosGotItBtn = document.getElementById('iosInstallGotIt');
-        const androidContent = document.getElementById('androidInstallContent');
-        const iosContent = document.getElementById('iosInstallContent');
-
-        // Detect iOS
-        function isIOS() {
-            return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-        }
-
-        // Detect if running as PWA
-        function isRunningStandalone() {
-            return window.navigator.standalone === true || window.matchMedia('(display-mode: standalone)').matches;
-        }
-
-        // Check if user should see install prompt
-        function shouldShowInstallPrompt() {
-            const dismissed = localStorage.getItem('pwa-install-dismissed');
-            const installed = localStorage.getItem('pwa-installed');
-            const isMobile = window.innerWidth <= 768;
-            const isStandalone = isRunningStandalone();
-            
-            return isMobile && !dismissed && !installed && !isStandalone;
-        }
-
-        // Show install popup for iOS
-        function showIOSInstallPrompt() {
-            if (shouldShowInstallPrompt()) {
-                androidContent.style.display = 'none';
-                iosContent.style.display = 'block';
-                setTimeout(() => {
-                    installPopup.classList.add('show');
-                }, 2000);
-            }
-        }
-
-        // Listen for the beforeinstallprompt event (Android/Chrome)
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            
-            if (shouldShowInstallPrompt()) {
-                androidContent.style.display = 'block';
-                iosContent.style.display = 'none';
-                setTimeout(() => {
-                    installPopup.classList.add('show');
-                }, 2000);
-            }
-        });
-
-        // Check for iOS on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            if (isIOS() && !deferredPrompt) {
-                showIOSInstallPrompt();
-            }
-        });
-
-        // Android install button click
-        installBtn.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                
-                if (outcome === 'accepted') {
-                    localStorage.setItem('pwa-installed', 'true');
-                }
-                
-                deferredPrompt = null;
-            }
-            installPopup.classList.remove('show');
-        });
-
-        // iOS "Got it!" button click
-        iosGotItBtn.addEventListener('click', () => {
-            localStorage.setItem('pwa-install-dismissed', 'true');
-            installPopup.classList.remove('show');
-        });
-
-        // Dismiss button click (Android)
-        dismissBtn.addEventListener('click', () => {
-            localStorage.setItem('pwa-install-dismissed', 'true');
-            installPopup.classList.remove('show');
-        });
-
-        // Dismiss button click (iOS)
-        dismissBtnIOS.addEventListener('click', () => {
-            localStorage.setItem('pwa-install-dismissed', 'true');
-            installPopup.classList.remove('show');
-        });
-
-        // Hide popup when app is installed
-        window.addEventListener('appinstalled', () => {
-            localStorage.setItem('pwa-installed', 'true');
-            installPopup.classList.remove('show');
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init yi Ar jr mi Or Mr capture Li calculateEventProperties Nr register register_once register_for_session unregister unregister_for_session Br getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zr Lr createPersonProfile Hr Rr qr opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug L Ur getPageViewId captureTraceFeedback captureTraceMetric Pr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_txSL3d2o8C7Y5fzys73cLBx88FYqcThmBOQ4XiIObgh', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only'
         });
     </script>
 </body>

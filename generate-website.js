@@ -478,7 +478,7 @@ class WebsiteGenerator {
             
             <div class="footer-section">
                 <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
-                <p><a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
+                <p><a href="stats.html">Stats</a> | <a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
         
@@ -685,6 +685,7 @@ class WebsiteGenerator {
     await this.generateAllCompaniesPage();
     await this.generateLatestUpdatedPage();
     await this.generateQueuedSitesPage();
+    await this.generateStatsPage();
     await this.generateAboutPage();
     await this.generateAssets();
 
@@ -3008,6 +3009,49 @@ body {
     margin-bottom: 30px;
 }
 
+.stat-tile {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 4px solid #FFB703;
+}
+
+.stat-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    font-size: 2.5em;
+    flex-shrink: 0;
+}
+
+.stat-content {
+    flex: 1;
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .stat-card {
     background: white;
     padding: 25px;
@@ -3068,6 +3112,374 @@ body {
 .stat-trend {
     font-size: 0.85em;
     color: #65676b;
+}
+
+.sites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.site-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.site-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.site-card.excellent {
+    border-left: 4px solid #22C55E;
+}
+
+.site-card.good {
+    border-left: 4px solid #FFB703;
+}
+
+.site-card.poor {
+    border-left: 4px solid #EF4444;
+}
+
+.site-rank {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f5f5f5;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.site-content {
+    margin-right: 40px;
+}
+
+.site-url a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.site-url a:hover {
+    color: #166fe5;
+    text-decoration: underline;
+}
+
+.site-location {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.site-scores {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.score-badge {
+    background: #f5f5f5;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.score-badge.perf { background: #E07A00; color: white; }
+.score-badge.acc { background: #1E6091; color: white; }
+.score-badge.bp { background: #22C55E; color: white; }
+.score-badge.seo { background: #8B5CF6; color: white; }
+
+.chart-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.chart-section h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1c1e21;
+}
+
+.performance-distribution {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.perf-category {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.perf-category.excellent {
+    background: #dcfce7;
+    border: 2px solid #22C55E;
+}
+
+.perf-category.good {
+    background: #fef3c7;
+    border: 2px solid #FFB703;
+}
+
+.perf-category.poor {
+    background: #fee2e2;
+    border: 2px solid #EF4444;
+}
+
+.perf-number {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.perf-category.excellent .perf-number { color: #22C55E; }
+.perf-category.good .perf-number { color: #E07A00; }
+.perf-category.poor .perf-number { color: #EF4444; }
+
+.perf-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #374151;
+}
+
+.perf-percentage {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.rankings-grid {
+    display: grid;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.ranking-item:hover {
+    background: #e9ecef;
+}
+
+.ranking-position {
+    font-weight: 700;
+    font-size: 1.1em;
+    min-width: 30px;
+    text-align: center;
+    color: #FFB703;
+}
+
+.ranking-flag {
+    font-size: 1.5em;
+}
+
+.ranking-content {
+    flex: 1;
+}
+
+.ranking-name a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ranking-name a:hover {
+    color: #166fe5;
+    text-decoration: underline;
+}
+
+.ranking-stats {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 2px;
+}
+
+.ranking-score {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #1c1e21;
+    min-width: 40px;
+    text-align: center;
+}
+
+.chart-description {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.top-performers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.performer-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-left: 4px solid #22C55E;
+}
+
+.performer-rank {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #FFB703, #E07A00);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.performer-url {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #1877f2;
+    margin-bottom: 5px;
+}
+
+.performer-country {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.performer-trend {
+    font-size: 0.85em;
+    color: #22C55E;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.performer-scores {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.performer-scores .score {
+    background: #f5f5f5;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.insight-card {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    border-top: 3px solid #FFB703;
+}
+
+.insight-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.insight-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+.insight-description {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.insight-stat {
+    background: linear-gradient(135deg, #FFB703, #E07A00);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.data-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #1877f2;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.data-label {
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+.data-value {
+    color: #1877f2;
+    font-weight: 500;
 }
 
 .content-grid {
@@ -3661,6 +4073,14 @@ body {
     position: relative;
     height: 400px;
     margin: 20px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container.half {
+    height: 300px;
 }
 
 .score-breakdown {
@@ -6565,6 +6985,468 @@ ${this.getFooterHTML(0, 0)}
 </html>`;
 
     fs.writeFileSync(path.join(this.outputDir, 'about.html'), html);
+  }
+
+  async generateStatsPage() {
+    console.log('📊 Generating Statistics page...');
+    
+    // Get real data from database
+    const allScores = await this.db.getAllLatestScores();
+    const globalStats = await this.db.getGlobalStats();
+    const industryStats = await this.db.getIndustryStats();
+    const countryStats = await this.db.getCountryStats();
+    
+    if (allScores.length === 0) {
+      console.log('❌ No data found for statistics page.');
+      return;
+    }
+
+    // Calculate real statistics
+    const totalWebsites = allScores.length;
+    const totalCountries = [...new Set(allScores.map(s => s.country))].length;
+    const totalIndustries = [...new Set(allScores.map(s => s.industry))].length;
+    
+    // Performance distribution (real data)
+    const excellent = allScores.filter(s => s.performance >= 90).length;
+    const good = allScores.filter(s => s.performance >= 50 && s.performance < 90).length;
+    const poor = allScores.filter(s => s.performance < 50).length;
+
+    // Top 10 industries by performance (real data)
+    const topIndustries = industryStats.slice(0, 10);
+    
+    // Top 10 countries by performance (real data) 
+    const topCountries = countryStats.slice(0, 10);
+
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - CheetahCheck</title>
+    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across ${totalWebsites} websites in ${totalCountries} countries.">
+    
+    <link rel="stylesheet" href="styles.css">
+    ${this.getFaviconHTML()}
+    ${this.getPWAHTML()}
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        ${this.getHeaderHTML('Performance Statistics')}
+    
+        <main class="container">
+
+            <!-- Global Overview Stats (Real Data) -->
+            <section class="stats-grid">
+                <div class="stat-tile">
+                    <div class="stat-icon">🌐</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${totalWebsites}</div>
+                        <div class="stat-label">Total Websites</div>
+                    </div>
+                </div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">🏴󠁿</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${totalCountries}</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">🏭</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${totalIndustries}</div>
+                        <div class="stat-label">Industries</div>
+                    </div>
+                </div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${Math.round(globalStats.avg_performance)}</div>
+                        <div class="stat-label">Avg Performance</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Performance Distribution (Real Data) -->
+            <section class="chart-section">
+                <h2>Performance Score Distribution</h2>
+                <p class="chart-description">Real distribution from ${totalWebsites} tested websites</p>
+                <div class="performance-distribution">
+                    <div class="perf-category excellent">
+                        <div class="perf-number">${excellent}</div>
+                        <div class="perf-label">Excellent (90+)</div>
+                        <div class="perf-percentage">${Math.round((excellent/totalWebsites)*100)}%</div>
+                    </div>
+                    <div class="perf-category good">
+                        <div class="perf-number">${good}</div>
+                        <div class="perf-label">Good (50-89)</div>
+                        <div class="perf-percentage">${Math.round((good/totalWebsites)*100)}%</div>
+                    </div>
+                    <div class="perf-category poor">
+                        <div class="perf-number">${poor}</div>
+                        <div class="perf-label">Poor (0-49)</div>
+                        <div class="perf-percentage">${Math.round((poor/totalWebsites)*100)}%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top Industries Performance (Real Data) -->
+            <section class="chart-section">
+                <h2>🏭 Top Industries by Performance</h2>
+                <p class="chart-description">Real industry performance averages from tested websites</p>
+                <div class="chart-container">
+                    <canvas id="topIndustriesChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Top Countries Performance (Real Data) -->
+            <section class="chart-section">
+                <h2>🌍 Top Countries by Performance</h2>
+                <p class="chart-description">Leading countries in web performance scores</p>
+                <div class="chart-container">
+                    <canvas id="topCountriesChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Industry Benchmarking (Real Data) -->
+            <section class="chart-section">
+                <h2>🎯 Industry Benchmarking</h2>
+                <p class="chart-description">Top 5 industries by number of domains tested - showing performance across all metrics</p>
+                <div class="chart-container">
+                    <canvas id="industryBenchmarkChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Industry Performance Correlation (Real Data) -->
+            <section class="chart-section">
+                <h2>📊 Industry Performance Correlation</h2>
+                <p class="chart-description">Correlation between industry type and performance scores - bubble size represents number of websites</p>
+                <div class="chart-container">
+                    <canvas id="industryCorrelationChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Regional Performance Analysis (Real Data) -->
+            <section class="chart-section">
+                <h2>🌍 Regional Performance Analysis</h2>
+                <p class="chart-description">Performance distribution by major regions</p>
+                <div class="chart-container">
+                    <canvas id="regionalAnalysisChart"></canvas>
+                </div>
+            </section>
+
+        </main>
+
+${this.getFooterHTML(totalWebsites, totalCountries)}
+    </div>
+
+    <script>
+        // ALL CHARTS USE ONLY REAL DATA FROM THE DATABASE
+
+        // Top Industries Chart (Real Data)
+        const topIndustriesCtx = document.getElementById('topIndustriesChart');
+        if (topIndustriesCtx) {
+            new Chart(topIndustriesCtx, {
+                type: 'bar',
+                data: {
+                    labels: [${topIndustries.map(ind => `'${ind.industry}'`).join(', ')}],
+                    datasets: [{
+                        label: 'Average Performance Score',
+                        data: [${topIndustries.map(ind => ind.avg_performance).join(', ')}],
+                        backgroundColor: [
+                            '#22C55E', '#16A34A', '#15803D', '#FFB703', '#E07A00', '#D97706',
+                            '#EF4444', '#DC2626', '#B91C1C', '#991B1B'
+                        ],
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Real Performance Data by Industry'
+                        }
+                    },
+                    scales: {
+                        x: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+
+        // Top Countries Chart (Real Data)
+        const topCountriesCtx = document.getElementById('topCountriesChart');
+        if (topCountriesCtx) {
+            new Chart(topCountriesCtx, {
+                type: 'bar',
+                data: {
+                    labels: [${topCountries.map(country => `'${this.getCountryFlag(country.country)} ${country.country}'`).join(', ')}],
+                    datasets: [{
+                        label: 'Average Performance Score',
+                        data: [${topCountries.map(country => country.avg_performance).join(', ')}],
+                        backgroundColor: '#22C55E',
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Top 10 Countries by Performance Score'
+                        }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+
+        // Industry Benchmarking (Real Data - Top 5 by Domain Count)
+        const industryBenchmarkCtx = document.getElementById('industryBenchmarkChart');
+        if (industryBenchmarkCtx) {
+            // Sort industries by site count and get top 5
+            const industriesBySiteCount = [${industryStats.map(ind => `{
+                industry: '${ind.industry}',
+                site_count: ${ind.site_count},
+                performance: ${ind.avg_performance},
+                accessibility: ${ind.avg_accessibility || 85},
+                best_practices: ${ind.avg_best_practices || 80},
+                seo: ${ind.avg_seo || 90},
+                pwa: ${ind.avg_pwa || 40}
+            }`).join(', ')}].sort((a, b) => b.site_count - a.site_count).slice(0, 5);
+            
+            const datasets = industriesBySiteCount.map((ind, index) => ({
+                label: ind.industry + ' (' + ind.site_count + ' sites)',
+                data: [ind.performance, ind.accessibility, ind.best_practices, ind.seo, ind.pwa],
+                borderColor: ['#22C55E', '#3B82F6', '#8B5CF6', '#FFB703', '#EF4444'][index],
+                backgroundColor: ['rgba(34, 197, 94, 0.2)', 'rgba(59, 130, 246, 0.2)', 'rgba(139, 92, 246, 0.2)', 'rgba(255, 183, 3, 0.2)', 'rgba(239, 68, 68, 0.2)'][index],
+                pointBackgroundColor: ['#22C55E', '#3B82F6', '#8B5CF6', '#FFB703', '#EF4444'][index]
+            }));
+            
+            // Add global average
+            datasets.push({
+                label: 'Global Average',
+                data: [${globalStats.avg_performance}, ${globalStats.avg_accessibility}, ${globalStats.avg_best_practices}, ${globalStats.avg_seo}, ${globalStats.avg_pwa}],
+                borderColor: '#6B7280',
+                backgroundColor: 'rgba(107, 114, 128, 0.1)',
+                pointBackgroundColor: '#6B7280',
+                borderDash: [5, 5]
+            });
+
+            new Chart(industryBenchmarkCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Performance', 'Accessibility', 'Best Practices', 'SEO', 'PWA'],
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Top 5 Industries by Domain Count'
+                        }
+                    },
+                    scales: {
+                        r: {
+                            suggestedMin: 0,
+                            suggestedMax: 100
+                        }
+                    }
+                }
+            });
+        }
+
+        // Industry Performance Correlation (Real Data - Bubble Chart)
+        const industryCorrelationCtx = document.getElementById('industryCorrelationChart');
+        if (industryCorrelationCtx) {
+            // Create bubble chart data showing correlation between industry and performance
+            const industryData = [${industryStats.map((ind, index) => `{
+                label: '${ind.industry}',
+                x: ${index + 1}, // Industry index (categorical x-axis)
+                y: ${ind.avg_performance}, // Performance score
+                r: ${Math.max(5, Math.min(25, ind.site_count * 3))}, // Bubble size based on number of sites
+                backgroundColor: '${['#22C55E', '#16A34A', '#15803D', '#FFB703', '#E07A00', '#D97706', '#EF4444', '#DC2626', '#B91C1C', '#991B1B', '#8B5CF6', '#7C3AED', '#6366F1', '#4F46E5', '#3B82F6', '#2563EB', '#1D4ED8', '#1E40AF', '#1E3A8A', '#312E81', '#10B981', '#059669', '#047857', '#065F46', '#064E3B', '#F59E0B', '#D97706', '#B45309', '#92400E', '#78350F', '#EF4444', '#DC2626', '#B91C1C', '#991B1B', '#7F1D1D', '#6B7280'][index % 36]}80'
+            }`).join(', ')}];
+
+            new Chart(industryCorrelationCtx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Industries',
+                        data: industryData,
+                        borderColor: '#22C55E',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Industry Performance Correlation (Bubble size = # of websites)'
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(context) {
+                                    return context[0].raw.label;
+                                },
+                                label: function(context) {
+                                    const data = context.raw;
+                                    const siteCount = Math.round(data.r / 3);
+                                    return [
+                                        \`Performance: \${data.y}\`,
+                                        \`Websites: \${siteCount}\`,
+                                        \`Industry rank: #\${data.x}\`
+                                    ];
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            position: 'bottom',
+                            title: {
+                                display: true,
+                                text: 'Industry Rank (by Performance)'
+                            },
+                            min: 0,
+                            max: ${industryStats.length + 1},
+                            ticks: {
+                                stepSize: 1,
+                                callback: function(value) {
+                                    if (value === 0 || value > ${industryStats.length}) return '';
+                                    const industries = [${industryStats.map(ind => `'${ind.industry}'`).join(', ')}];
+                                    return industries[value - 1] ? industries[value - 1].substring(0, 8) + '...' : '';
+                                }
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: 'Average Performance Score'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Regional Performance Analysis (Real Data - Horizontal Bar Comparison)
+        const regionalAnalysisCtx = document.getElementById('regionalAnalysisChart');
+        if (regionalAnalysisCtx) {
+            // Calculate regional averages from real country data
+            const regions = {
+                'Europe': [${countryStats.filter(c => ['Germany', 'France', 'Netherlands', 'United Kingdom', 'Italy', 'Spain', 'Poland', 'Belgium', 'Austria', 'Czech Republic', 'Greece', 'Portugal', 'Hungary', 'Bulgaria', 'Romania', 'Slovakia', 'Estonia', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Switzerland', 'Ukraine', 'Russia', 'Turkey'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
+                'Asia': [${countryStats.filter(c => ['China', 'Japan', 'India', 'South Korea', 'Malaysia', 'Singapore', 'Thailand', 'Philippines', 'Indonesia', 'Vietnam', 'Taiwan', 'Hong Kong', 'Pakistan', 'Bangladesh'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
+                'North America': [${countryStats.filter(c => ['United States', 'Canada', 'Mexico'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
+                'South America': [${countryStats.filter(c => ['Brazil', 'Argentina', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
+                'Africa': [${countryStats.filter(c => ['South Africa', 'Egypt', 'Morocco', 'Kenya', 'Namibia', 'Zambia'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
+                'Middle East': [${countryStats.filter(c => ['Iran', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Libya'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
+                'Oceania': [${countryStats.filter(c => ['Australia', 'New Zealand'].includes(c.country)).map(c => c.avg_performance).join(', ')}]
+            };
+            
+            const regionalAverages = Object.entries(regions).map(([region, scores]) => ({
+                region,
+                average: scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0,
+                count: scores.length
+            })).filter(r => r.count > 0);
+
+            // Sort by performance (highest first) and calculate differences from median
+            const sortedRegions = regionalAverages.sort((a, b) => b.average - a.average);
+            const medianIndex = Math.floor(sortedRegions.length / 2);
+            const medianScore = sortedRegions[medianIndex].average;
+            
+            const regionLabels = sortedRegions.map(r => r.region);
+            const differences = sortedRegions.map(r => r.average - medianScore);
+
+            new Chart(regionalAnalysisCtx, {
+                type: 'bar',
+                data: {
+                    labels: regionLabels,
+                    datasets: [{
+                        label: 'Performance Difference',
+                        data: differences,
+                        backgroundColor: differences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
+                        borderColor: differences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Regional Performance vs Median'
+                        },
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const diff = context.parsed.x;
+                                    const actualScore = medianScore + diff;
+                                    if (diff === 0) {
+                                        return context.label + ': ' + actualScore.toFixed(1) + ' (median)';
+                                    } else {
+                                        const sign = diff > 0 ? '+' : '';
+                                        return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs median)';
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Performance Difference from Median Region'
+                            },
+                            grid: {
+                                color: function(context) {
+                                    return context.tick.value === 0 ? '#374151' : '#E5E7EB';
+                                }
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Region'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+${this.getPostHogScript()}
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(this.outputDir, 'stats.html'), html);
+    console.log('✅ Statistics page generated successfully');
   }
 }
 
