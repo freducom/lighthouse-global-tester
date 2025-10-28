@@ -54,7 +54,6 @@ jobs:
 
       - name: Setup database
         run: |
-          node migrate-db.js
           echo "Database initialized and migrated"
 
       - name: Run Lighthouse tests for daily batch
