@@ -18,6 +18,26 @@ const Database = require('./database');
 const fs = require('fs');
 const path = require('path');
 
+// Utility function to normalize URLs to base domain only
+function normalizeUrlToBaseDomain(url) {
+  let normalizedUrl = url;
+  
+  // First, ensure URL has proper protocol for parsing
+  if (!normalizedUrl.startsWith('http://') && !normalizedUrl.startsWith('https://')) {
+    normalizedUrl = 'https://' + normalizedUrl;
+  }
+  
+  // Extract just the base domain by parsing the URL and getting hostname only
+  try {
+    const urlObj = new URL(normalizedUrl);
+    return urlObj.hostname; // Return just the hostname (e.g., "example.com")
+  } catch (urlError) {
+    console.warn(`⚠️ Could not parse URL ${url}, using as-is:`, urlError.message);
+    // Fallback: try to extract domain manually by removing protocol and path
+    return url.replace(/^https?:\/\//, '').split('/')[0];
+  }
+}
+
 // Global flag mapping function - used throughout the application
 function getCountryFlag(country) {
   // Normalize country name
@@ -2661,8 +2681,15 @@ ${this.getPWAInstallScript()}
     const allScores = await this.db.getAllLatestScores();
     
     for (const site of allScores) {
+      // Normalize the URL to base domain to ensure consistent filename generation
+      const normalizedDomain = normalizeUrlToBaseDomain(site.url);
       const domainHistory = await this.db.getScores(site.url, 50);
-      const fileName = `domain-${site.url.replace(/\./g, '-')}.html`;
+      const fileName = `domain-${normalizedDomain.replace(/\./g, '-')}.html`;
+      
+      // Log if normalization changed the domain
+      if (normalizedDomain !== site.url) {
+        console.log(`🔧 Normalized domain for file generation: ${site.url} → ${normalizedDomain}`);
+      }
       
       const html = `
 <!DOCTYPE html>

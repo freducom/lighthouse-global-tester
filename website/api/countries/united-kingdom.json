@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.777Z",
+    "generated_at": "2025-10-28T20:11:23.695Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
-    "website_count": 27
+    "website_count": 29
   },
   "averages": {
     "performance": 39,
     "accessibility": 89,
-    "best_practices": 79,
+    "best_practices": 78,
     "seo": 90,
-    "pwa": 44
+    "pwa": 45
   },
   "websites": [
     {
@@ -62,6 +62,18 @@
       "test_date": "2025-10-23 07:37:27"
     },
     {
+      "url": "indexventures.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 56,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 16:39:25"
+    },
+    {
       "url": "barclays.co.uk",
       "industry": "Finance",
       "scores": {
@@ -110,18 +122,6 @@
       "test_date": "2025-10-26 13:43:19"
     },
     {
-      "url": "independent.co.uk",
-      "industry": "Media",
-      "scores": {
-        "performance": 50,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 89
-      },
-      "test_date": "2025-10-23 07:34:43"
-    },
-    {
       "url": "tesco.com",
       "industry": "E-commerce",
       "scores": {
@@ -132,6 +132,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 10:15:24"
+    },
+    {
+      "url": "hsbc.co.uk",
+      "industry": "Finance",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 12:25:21"
     },
     {
       "url": "mirror.co.uk",
@@ -302,6 +314,18 @@
       "test_date": "2025-10-26 10:15:19"
     },
     {
+      "url": "independent.co.uk",
+      "industry": "Media",
+      "scores": {
+        "performance": 18,
+        "accessibility": 89,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 16:37:57"
+    },
+    {
       "url": "itv.com",
       "industry": "Media",
       "scores": {
@@ -352,13 +376,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 56,
+        "performance": 54,
         "accessibility": 91,
-        "best_practices": 90,
-        "seo": 88,
-        "pwa": 33
+        "best_practices": 86,
+        "seo": 89,
+        "pwa": 39
       }
     },
     {
@@ -376,9 +400,9 @@
       "industry": "Media",
       "website_count": 11,
       "averages": {
-        "performance": 32,
-        "accessibility": 87,
-        "best_practices": 77,
+        "performance": 29,
+        "accessibility": 86,
+        "best_practices": 76,
         "seo": 89,
         "pwa": 56
       }

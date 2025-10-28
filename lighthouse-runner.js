@@ -25,10 +25,33 @@ class LighthouseRunner {
     let chrome = null;
     let chromeKilled = false;
     
-    // Ensure URL has proper protocol
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      url = 'https://' + url;
+    // Normalize URL to base domain only (remove paths, trailing slashes, etc.)
+    let normalizedUrl = url;
+    
+    // First, ensure URL has proper protocol
+    if (!normalizedUrl.startsWith('http://') && !normalizedUrl.startsWith('https://')) {
+      normalizedUrl = 'https://' + normalizedUrl;
     }
+    
+    // Extract just the base domain by parsing the URL and reconstructing with protocol + hostname only
+    try {
+      const urlObj = new URL(normalizedUrl);
+      normalizedUrl = `${urlObj.protocol}//${urlObj.hostname}`;
+      
+      // Log if we've modified the original URL
+      if (normalizedUrl !== url && !url.startsWith('http')) {
+        // Only log if the original URL had paths (not just protocol addition)
+        const originalWithProtocol = url.startsWith('http') ? url : 'https://' + url;
+        if (normalizedUrl !== originalWithProtocol) {
+          console.log(`🔧 Normalized URL: ${url} → ${normalizedUrl}`);
+        }
+      }
+    } catch (urlError) {
+      console.warn(`⚠️ Could not parse URL ${normalizedUrl}, using as-is:`, urlError.message);
+    }
+    
+    // Use the normalized URL for the rest of the function
+    url = normalizedUrl;
     
     try {
       chrome = await chromeLauncher.launch({

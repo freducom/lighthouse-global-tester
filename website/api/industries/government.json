@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.910Z",
+    "generated_at": "2025-10-28T20:11:23.834Z",
     "industry": "Government",
-    "website_count": 22
+    "website_count": 24
   },
   "averages": {
     "performance": 56,
-    "accessibility": 88,
-    "best_practices": 90,
+    "accessibility": 87,
+    "best_practices": 91,
     "seo": 94,
     "pwa": 39
   },
@@ -71,6 +71,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 19:35:08"
+    },
+    {
+      "url": "ict.go.cr",
+      "country": "Costa Rica",
+      "scores": {
+        "performance": 64,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:14:42"
     },
     {
       "url": "mitid.dk",
@@ -155,6 +167,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-22 06:26:16"
+    },
+    {
+      "url": "inegi.org.mx",
+      "country": "Mexico",
+      "scores": {
+        "performance": 56,
+        "accessibility": 79,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:14:35"
     },
     {
       "url": "rijksoverheid.nl",
@@ -301,6 +325,17 @@
       }
     },
     {
+      "country": "Costa Rica",
+      "website_count": 1,
+      "averages": {
+        "performance": 64,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Denmark",
       "website_count": 1,
       "averages": {
@@ -342,6 +377,17 @@
         "best_practices": 92,
         "seo": 100,
         "pwa": 44
+      }
+    },
+    {
+      "country": "Mexico",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 79,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
       }
     },
     {

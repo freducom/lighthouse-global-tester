@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics - CheetahCheck</title>
-    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across 620 websites in 69 countries.">
+    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across 669 websites in 69 countries.">
     
     <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" sizes="16x16" href="cheetahcheck_favicon_16x16.png">
@@ -42,7 +42,7 @@
                 <div class="stat-tile">
                     <div class="stat-icon">🌐</div>
                     <div class="stat-content">
-                        <div class="stat-number">620</div>
+                        <div class="stat-number">669</div>
                         <div class="stat-label">Total Websites</div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                 <div class="stat-tile">
                     <div class="stat-icon">🏭</div>
                     <div class="stat-content">
-                        <div class="stat-number">36</div>
+                        <div class="stat-number">38</div>
                         <div class="stat-label">Industries</div>
                     </div>
                 </div>
@@ -75,20 +75,20 @@
             <!-- Performance Distribution (Real Data) -->
             <section class="chart-section">
                 <h2>Performance Score Distribution</h2>
-                <p class="chart-description">Real distribution from 620 tested websites</p>
+                <p class="chart-description">Real distribution from 669 tested websites</p>
                 <div class="performance-distribution">
                     <div class="perf-category excellent">
-                        <div class="perf-number">16</div>
+                        <div class="perf-number">17</div>
                         <div class="perf-label">Excellent (90+)</div>
                         <div class="perf-percentage">3%</div>
                     </div>
                     <div class="perf-category good">
-                        <div class="perf-number">188</div>
+                        <div class="perf-number">206</div>
                         <div class="perf-label">Good (50-89)</div>
-                        <div class="perf-percentage">30%</div>
+                        <div class="perf-percentage">31%</div>
                     </div>
                     <div class="perf-category poor">
-                        <div class="perf-number">416</div>
+                        <div class="perf-number">446</div>
                         <div class="perf-label">Poor (0-49)</div>
                         <div class="perf-percentage">67%</div>
                     </div>
@@ -153,7 +153,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 620 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 669 websites.</p>
         </div>
     </footer>
 
@@ -303,10 +303,10 @@
             new Chart(topIndustriesCtx, {
                 type: 'bar',
                 data: {
-                    labels: ['Delivery', 'Healthtech', 'Gaming', 'Consulting', 'Tech', 'Jobs', 'Government', 'Website editor', 'Search Engine', 'Realestate'],
+                    labels: ['Healthtech', 'Gaming', 'Consulting', 'Tech', 'Government', 'Jobs', 'Website editor', 'Search Engine', 'Delivery', 'Portal'],
                     datasets: [{
                         label: 'Average Performance Score',
-                        data: [75, 69.5, 68, 61.3, 57, 55.9, 55.8, 55.6, 55, 51],
+                        data: [69.5, 68, 61.3, 57, 56.2, 55.9, 55.6, 55, 54, 51.5],
                         backgroundColor: [
                             '#22C55E', '#16A34A', '#15803D', '#FFB703', '#E07A00', '#D97706',
                             '#EF4444', '#DC2626', '#B91C1C', '#991B1B'
@@ -338,10 +338,10 @@
             new Chart(topCountriesCtx, {
                 type: 'bar',
                 data: {
-                    labels: ['🇲🇾 Malaysia', '🇧🇴 Bolivia', '🇮🇷 Iran', '🇧🇬 Bulgaria', '🇳🇱 Netherlands', '🇲🇽 Mexico', '🇱🇾 Libya', '🇺🇦 Ukraine', '🇹🇷 Turkey', '🇿🇲 Zambia'],
+                    labels: ['🇲🇾 Malaysia', '🇧🇴 Bolivia', '🇮🇷 Iran', '🇧🇬 Bulgaria', '🇲🇽 Mexico', '🇳🇱 Netherlands', '🇱🇾 Libya', '🇺🇦 Ukraine', '🇧🇪 Belgium', '🇿🇲 Zambia'],
                     datasets: [{
                         label: 'Average Performance Score',
-                        data: [79, 78.7, 63.9, 58.7, 55, 55, 54.4, 53.9, 53, 51.8],
+                        data: [79, 78.7, 63.9, 58.7, 55.2, 54.4, 54.4, 53.9, 53.1, 51.8],
                         backgroundColor: '#22C55E',
                         borderRadius: 4
                     }]
@@ -368,14 +368,6 @@
         if (industryBenchmarkCtx) {
             // Sort industries by site count and get top 5
             const industriesBySiteCount = [{
-                industry: 'Delivery',
-                site_count: 1,
-                performance: 75,
-                accessibility: 81,
-                best_practices: 92,
-                seo: 82,
-                pwa: 33
-            }, {
                 industry: 'Healthtech',
                 site_count: 2,
                 performance: 69.5,
@@ -408,6 +400,14 @@
                 seo: 93,
                 pwa: 33
             }, {
+                industry: 'Government',
+                site_count: 24,
+                performance: 56.2,
+                accessibility: 87.3,
+                best_practices: 90.8,
+                seo: 93.8,
+                pwa: 38.6
+            }, {
                 industry: 'Jobs',
                 site_count: 7,
                 performance: 55.9,
@@ -415,14 +415,6 @@
                 best_practices: 75.1,
                 seo: 91,
                 pwa: 50.7
-            }, {
-                industry: 'Government',
-                site_count: 22,
-                performance: 55.8,
-                accessibility: 87.8,
-                best_practices: 90.3,
-                seo: 93.5,
-                pwa: 39.1
             }, {
                 industry: 'Website editor',
                 site_count: 7,
@@ -440,37 +432,45 @@
                 seo: 83.8,
                 pwa: 33
             }, {
-                industry: 'Realestate',
-                site_count: 1,
-                performance: 51,
-                accessibility: 81,
+                industry: 'Delivery',
+                site_count: 2,
+                performance: 54,
+                accessibility: 90.5,
                 best_practices: 92,
-                seo: 100,
+                seo: 91,
                 pwa: 33
             }, {
                 industry: 'Portal',
-                site_count: 27,
-                performance: 50.8,
-                accessibility: 75.7,
-                best_practices: 77.3,
-                seo: 89.4,
-                pwa: 45.5
+                site_count: 28,
+                performance: 51.5,
+                accessibility: 75.9,
+                best_practices: 77.8,
+                seo: 89.3,
+                pwa: 47.1
+            }, {
+                industry: 'Social',
+                site_count: 1,
+                performance: 49,
+                accessibility: 90,
+                best_practices: 75,
+                seo: 94,
+                pwa: 67
             }, {
                 industry: 'Education',
-                site_count: 17,
-                performance: 49.7,
-                accessibility: 88.2,
-                best_practices: 84.4,
-                seo: 83.6,
-                pwa: 32.4
+                site_count: 21,
+                performance: 48.8,
+                accessibility: 87.6,
+                best_practices: 85.7,
+                seo: 83.7,
+                pwa: 31.4
             }, {
                 industry: 'Social Media',
-                site_count: 18,
-                performance: 46.3,
-                accessibility: 80.7,
-                best_practices: 69.9,
-                seo: 90.2,
-                pwa: 51.7
+                site_count: 17,
+                performance: 45.6,
+                accessibility: 80.2,
+                best_practices: 69.6,
+                seo: 89.6,
+                pwa: 50.8
             }, {
                 industry: 'Healthcare',
                 site_count: 6,
@@ -488,13 +488,13 @@
                 seo: 92.5,
                 pwa: 52.5
             }, {
-                industry: 'E-commerce',
-                site_count: 41,
+                industry: 'Finance',
+                site_count: 75,
                 performance: 43.7,
-                accessibility: 82.8,
-                best_practices: 78.2,
-                seo: 90.3,
-                pwa: 45.6
+                accessibility: 89.1,
+                best_practices: 80.6,
+                seo: 89.2,
+                pwa: 37.7
             }, {
                 industry: 'Video',
                 site_count: 1,
@@ -504,21 +504,21 @@
                 seo: 93,
                 pwa: 33
             }, {
-                industry: 'Finance',
-                site_count: 66,
-                performance: 42.9,
-                accessibility: 89.1,
-                best_practices: 80.4,
-                seo: 88.8,
-                pwa: 37
+                industry: 'Marketing',
+                site_count: 6,
+                performance: 42.3,
+                accessibility: 92,
+                best_practices: 66.7,
+                seo: 91.8,
+                pwa: 33
             }, {
-                industry: 'Media',
-                site_count: 288,
-                performance: 42,
-                accessibility: 85.9,
-                best_practices: 79.4,
-                seo: 91.1,
-                pwa: 44.7
+                industry: 'E-commerce',
+                site_count: 45,
+                performance: 42.2,
+                accessibility: 82.5,
+                best_practices: 77.9,
+                seo: 89.9,
+                pwa: 44.8
             }, {
                 industry: 'Energy',
                 site_count: 1,
@@ -528,6 +528,14 @@
                 seo: 72,
                 pwa: 33
             }, {
+                industry: 'Media',
+                site_count: 304,
+                performance: 41.8,
+                accessibility: 85.7,
+                best_practices: 79.2,
+                seo: 90.9,
+                pwa: 44.4
+            }, {
                 industry: 'Transportation',
                 site_count: 13,
                 performance: 41.6,
@@ -536,13 +544,21 @@
                 seo: 90.8,
                 pwa: 39.1
             }, {
-                industry: 'Marketing',
-                site_count: 5,
-                performance: 41,
-                accessibility: 93.4,
-                best_practices: 83.2,
-                seo: 90.2,
+                industry: 'Realestate',
+                site_count: 2,
+                performance: 41.5,
+                accessibility: 89.5,
+                best_practices: 92,
+                seo: 100,
                 pwa: 33
+            }, {
+                industry: 'Technology',
+                site_count: 17,
+                performance: 40.8,
+                accessibility: 89.5,
+                best_practices: 78.5,
+                seo: 88.2,
+                pwa: 35
             }, {
                 industry: 'Sports',
                 site_count: 8,
@@ -560,13 +576,13 @@
                 seo: 95,
                 pwa: 50
             }, {
-                industry: 'Technology',
-                site_count: 13,
-                performance: 39.7,
-                accessibility: 89.5,
-                best_practices: 78.2,
-                seo: 89.5,
-                pwa: 35.6
+                industry: 'Manufacturing',
+                site_count: 1,
+                performance: 40,
+                accessibility: 100,
+                best_practices: 75,
+                seo: 93,
+                pwa: 33
             }, {
                 industry: 'Non-profit',
                 site_count: 2,
@@ -600,6 +616,22 @@
                 seo: 82,
                 pwa: 33
             }, {
+                industry: 'Retail',
+                site_count: 7,
+                performance: 34.3,
+                accessibility: 84.1,
+                best_practices: 56,
+                seo: 86.3,
+                pwa: 36.3
+            }, {
+                industry: 'Telecom',
+                site_count: 17,
+                performance: 34.1,
+                accessibility: 90,
+                best_practices: 79.8,
+                seo: 90.5,
+                pwa: 35
+            }, {
                 industry: 'Hospitality',
                 site_count: 1,
                 performance: 34,
@@ -608,13 +640,13 @@
                 seo: 99,
                 pwa: 56
             }, {
-                industry: 'Retail',
-                site_count: 5,
-                performance: 33.6,
-                accessibility: 79.4,
-                best_practices: 51.8,
-                seo: 82.6,
-                pwa: 37.6
+                industry: 'Automotive',
+                site_count: 10,
+                performance: 33.7,
+                accessibility: 88.3,
+                best_practices: 70.7,
+                seo: 92.1,
+                pwa: 48.8
             }, {
                 industry: 'Engineering',
                 site_count: 1,
@@ -631,22 +663,6 @@
                 best_practices: 79,
                 seo: 89,
                 pwa: 89
-            }, {
-                industry: 'Telecom',
-                site_count: 15,
-                performance: 31,
-                accessibility: 91.7,
-                best_practices: 81.1,
-                seo: 90.3,
-                pwa: 36
-            }, {
-                industry: 'Automotive',
-                site_count: 9,
-                performance: 28.8,
-                accessibility: 87.9,
-                best_practices: 68.3,
-                seo: 92.1,
-                pwa: 45.6
             }, {
                 industry: 'Travel',
                 site_count: 1,
@@ -668,7 +684,7 @@
             // Add global average
             datasets.push({
                 label: 'Global Average',
-                data: [43.5, 85.9, 79.8, 90.4, 43],
+                data: [43.5, 85.9, 79.7, 90.3, 42.7],
                 borderColor: '#6B7280',
                 backgroundColor: 'rgba(107, 114, 128, 0.1)',
                 pointBackgroundColor: '#6B7280',
@@ -705,34 +721,34 @@
         if (industryCorrelationCtx) {
             // Create bubble chart data showing correlation between industry and performance
             const industryData = [{
-                label: 'Delivery',
-                x: 1, // Industry index (categorical x-axis)
-                y: 75, // Performance score
-                r: 5, // Bubble size based on number of sites
-                backgroundColor: '#22C55E80'
-            }, {
                 label: 'Healthtech',
-                x: 2, // Industry index (categorical x-axis)
+                x: 1, // Industry index (categorical x-axis)
                 y: 69.5, // Performance score
                 r: 6, // Bubble size based on number of sites
-                backgroundColor: '#16A34A80'
+                backgroundColor: '#22C55E80'
             }, {
                 label: 'Gaming',
-                x: 3, // Industry index (categorical x-axis)
+                x: 2, // Industry index (categorical x-axis)
                 y: 68, // Performance score
                 r: 5, // Bubble size based on number of sites
-                backgroundColor: '#15803D80'
+                backgroundColor: '#16A34A80'
             }, {
                 label: 'Consulting',
-                x: 4, // Industry index (categorical x-axis)
+                x: 3, // Industry index (categorical x-axis)
                 y: 61.3, // Performance score
                 r: 9, // Bubble size based on number of sites
-                backgroundColor: '#FFB70380'
+                backgroundColor: '#15803D80'
             }, {
                 label: 'Tech',
-                x: 5, // Industry index (categorical x-axis)
+                x: 4, // Industry index (categorical x-axis)
                 y: 57, // Performance score
                 r: 5, // Bubble size based on number of sites
+                backgroundColor: '#FFB70380'
+            }, {
+                label: 'Government',
+                x: 5, // Industry index (categorical x-axis)
+                y: 56.2, // Performance score
+                r: 25, // Bubble size based on number of sites
                 backgroundColor: '#E07A0080'
             }, {
                 label: 'Jobs',
@@ -741,45 +757,45 @@
                 r: 21, // Bubble size based on number of sites
                 backgroundColor: '#D9770680'
             }, {
-                label: 'Government',
-                x: 7, // Industry index (categorical x-axis)
-                y: 55.8, // Performance score
-                r: 25, // Bubble size based on number of sites
-                backgroundColor: '#EF444480'
-            }, {
                 label: 'Website editor',
-                x: 8, // Industry index (categorical x-axis)
+                x: 7, // Industry index (categorical x-axis)
                 y: 55.6, // Performance score
                 r: 21, // Bubble size based on number of sites
-                backgroundColor: '#DC262680'
+                backgroundColor: '#EF444480'
             }, {
                 label: 'Search Engine',
-                x: 9, // Industry index (categorical x-axis)
+                x: 8, // Industry index (categorical x-axis)
                 y: 55, // Performance score
                 r: 15, // Bubble size based on number of sites
+                backgroundColor: '#DC262680'
+            }, {
+                label: 'Delivery',
+                x: 9, // Industry index (categorical x-axis)
+                y: 54, // Performance score
+                r: 6, // Bubble size based on number of sites
                 backgroundColor: '#B91C1C80'
             }, {
-                label: 'Realestate',
+                label: 'Portal',
                 x: 10, // Industry index (categorical x-axis)
-                y: 51, // Performance score
-                r: 5, // Bubble size based on number of sites
+                y: 51.5, // Performance score
+                r: 25, // Bubble size based on number of sites
                 backgroundColor: '#991B1B80'
             }, {
-                label: 'Portal',
+                label: 'Social',
                 x: 11, // Industry index (categorical x-axis)
-                y: 50.8, // Performance score
-                r: 25, // Bubble size based on number of sites
+                y: 49, // Performance score
+                r: 5, // Bubble size based on number of sites
                 backgroundColor: '#8B5CF680'
             }, {
                 label: 'Education',
                 x: 12, // Industry index (categorical x-axis)
-                y: 49.7, // Performance score
+                y: 48.8, // Performance score
                 r: 25, // Bubble size based on number of sites
                 backgroundColor: '#7C3AED80'
             }, {
                 label: 'Social Media',
                 x: 13, // Industry index (categorical x-axis)
-                y: 46.3, // Performance score
+                y: 45.6, // Performance score
                 r: 25, // Bubble size based on number of sites
                 backgroundColor: '#6366F180'
             }, {
@@ -795,7 +811,7 @@
                 r: 25, // Bubble size based on number of sites
                 backgroundColor: '#3B82F680'
             }, {
-                label: 'E-commerce',
+                label: 'Finance',
                 x: 16, // Industry index (categorical x-axis)
                 y: 43.7, // Performance score
                 r: 25, // Bubble size based on number of sites
@@ -807,15 +823,15 @@
                 r: 5, // Bubble size based on number of sites
                 backgroundColor: '#1D4ED880'
             }, {
-                label: 'Finance',
+                label: 'Marketing',
                 x: 18, // Industry index (categorical x-axis)
-                y: 42.9, // Performance score
-                r: 25, // Bubble size based on number of sites
+                y: 42.3, // Performance score
+                r: 18, // Bubble size based on number of sites
                 backgroundColor: '#1E40AF80'
             }, {
-                label: 'Media',
+                label: 'E-commerce',
                 x: 19, // Industry index (categorical x-axis)
-                y: 42, // Performance score
+                y: 42.2, // Performance score
                 r: 25, // Bubble size based on number of sites
                 backgroundColor: '#1E3A8A80'
             }, {
@@ -825,101 +841,113 @@
                 r: 5, // Bubble size based on number of sites
                 backgroundColor: '#312E8180'
             }, {
-                label: 'Transportation',
+                label: 'Media',
                 x: 21, // Industry index (categorical x-axis)
-                y: 41.6, // Performance score
+                y: 41.8, // Performance score
                 r: 25, // Bubble size based on number of sites
                 backgroundColor: '#10B98180'
             }, {
-                label: 'Marketing',
+                label: 'Transportation',
                 x: 22, // Industry index (categorical x-axis)
-                y: 41, // Performance score
-                r: 15, // Bubble size based on number of sites
+                y: 41.6, // Performance score
+                r: 25, // Bubble size based on number of sites
                 backgroundColor: '#05966980'
             }, {
-                label: 'Sports',
+                label: 'Realestate',
                 x: 23, // Industry index (categorical x-axis)
-                y: 40.8, // Performance score
-                r: 24, // Bubble size based on number of sites
+                y: 41.5, // Performance score
+                r: 6, // Bubble size based on number of sites
                 backgroundColor: '#04785780'
             }, {
-                label: 'Weather',
+                label: 'Technology',
                 x: 24, // Industry index (categorical x-axis)
-                y: 40.5, // Performance score
-                r: 6, // Bubble size based on number of sites
+                y: 40.8, // Performance score
+                r: 25, // Bubble size based on number of sites
                 backgroundColor: '#065F4680'
             }, {
-                label: 'Technology',
+                label: 'Sports',
                 x: 25, // Industry index (categorical x-axis)
-                y: 39.7, // Performance score
-                r: 25, // Bubble size based on number of sites
+                y: 40.8, // Performance score
+                r: 24, // Bubble size based on number of sites
                 backgroundColor: '#064E3B80'
             }, {
-                label: 'Non-profit',
+                label: 'Weather',
                 x: 26, // Industry index (categorical x-axis)
-                y: 39, // Performance score
+                y: 40.5, // Performance score
                 r: 6, // Bubble size based on number of sites
                 backgroundColor: '#F59E0B80'
             }, {
-                label: 'Edtech',
+                label: 'Manufacturing',
                 x: 27, // Industry index (categorical x-axis)
-                y: 36.5, // Performance score
-                r: 6, // Bubble size based on number of sites
+                y: 40, // Performance score
+                r: 5, // Bubble size based on number of sites
                 backgroundColor: '#D9770680'
             }, {
-                label: 'Software',
+                label: 'Non-profit',
                 x: 28, // Industry index (categorical x-axis)
-                y: 36.3, // Performance score
-                r: 9, // Bubble size based on number of sites
+                y: 39, // Performance score
+                r: 6, // Bubble size based on number of sites
                 backgroundColor: '#B4530980'
             }, {
-                label: 'Food & Drink',
+                label: 'Edtech',
                 x: 29, // Industry index (categorical x-axis)
-                y: 35, // Performance score
-                r: 5, // Bubble size based on number of sites
+                y: 36.5, // Performance score
+                r: 6, // Bubble size based on number of sites
                 backgroundColor: '#92400E80'
             }, {
-                label: 'Hospitality',
+                label: 'Software',
                 x: 30, // Industry index (categorical x-axis)
-                y: 34, // Performance score
-                r: 5, // Bubble size based on number of sites
+                y: 36.3, // Performance score
+                r: 9, // Bubble size based on number of sites
                 backgroundColor: '#78350F80'
             }, {
-                label: 'Retail',
+                label: 'Food & Drink',
                 x: 31, // Industry index (categorical x-axis)
-                y: 33.6, // Performance score
-                r: 15, // Bubble size based on number of sites
+                y: 35, // Performance score
+                r: 5, // Bubble size based on number of sites
                 backgroundColor: '#EF444480'
             }, {
-                label: 'Engineering',
+                label: 'Retail',
                 x: 32, // Industry index (categorical x-axis)
-                y: 33, // Performance score
-                r: 5, // Bubble size based on number of sites
+                y: 34.3, // Performance score
+                r: 21, // Bubble size based on number of sites
                 backgroundColor: '#DC262680'
             }, {
-                label: 'Real Estate',
+                label: 'Telecom',
                 x: 33, // Industry index (categorical x-axis)
-                y: 31.5, // Performance score
-                r: 6, // Bubble size based on number of sites
+                y: 34.1, // Performance score
+                r: 25, // Bubble size based on number of sites
                 backgroundColor: '#B91C1C80'
             }, {
-                label: 'Telecom',
+                label: 'Hospitality',
                 x: 34, // Industry index (categorical x-axis)
-                y: 31, // Performance score
-                r: 25, // Bubble size based on number of sites
+                y: 34, // Performance score
+                r: 5, // Bubble size based on number of sites
                 backgroundColor: '#991B1B80'
             }, {
                 label: 'Automotive',
                 x: 35, // Industry index (categorical x-axis)
-                y: 28.8, // Performance score
+                y: 33.7, // Performance score
                 r: 25, // Bubble size based on number of sites
                 backgroundColor: '#7F1D1D80'
             }, {
-                label: 'Travel',
+                label: 'Engineering',
                 x: 36, // Industry index (categorical x-axis)
-                y: 27, // Performance score
+                y: 33, // Performance score
                 r: 5, // Bubble size based on number of sites
                 backgroundColor: '#6B728080'
+            }, {
+                label: 'Real Estate',
+                x: 37, // Industry index (categorical x-axis)
+                y: 31.5, // Performance score
+                r: 6, // Bubble size based on number of sites
+                backgroundColor: '#22C55E80'
+            }, {
+                label: 'Travel',
+                x: 38, // Industry index (categorical x-axis)
+                y: 27, // Performance score
+                r: 5, // Bubble size based on number of sites
+                backgroundColor: '#16A34A80'
             }];
 
             new Chart(industryCorrelationCtx, {
@@ -969,12 +997,12 @@
                                 text: 'Industry Rank (by Performance)'
                             },
                             min: 0,
-                            max: 37,
+                            max: 39,
                             ticks: {
                                 stepSize: 1,
                                 callback: function(value) {
-                                    if (value === 0 || value > 36) return '';
-                                    const industries = ['Delivery', 'Healthtech', 'Gaming', 'Consulting', 'Tech', 'Jobs', 'Government', 'Website editor', 'Search Engine', 'Realestate', 'Portal', 'Education', 'Social Media', 'Healthcare', 'Marketplace', 'E-commerce', 'Video', 'Finance', 'Media', 'Energy', 'Transportation', 'Marketing', 'Sports', 'Weather', 'Technology', 'Non-profit', 'Edtech', 'Software', 'Food & Drink', 'Hospitality', 'Retail', 'Engineering', 'Real Estate', 'Telecom', 'Automotive', 'Travel'];
+                                    if (value === 0 || value > 38) return '';
+                                    const industries = ['Healthtech', 'Gaming', 'Consulting', 'Tech', 'Government', 'Jobs', 'Website editor', 'Search Engine', 'Delivery', 'Portal', 'Social', 'Education', 'Social Media', 'Healthcare', 'Marketplace', 'Finance', 'Video', 'Marketing', 'E-commerce', 'Energy', 'Media', 'Transportation', 'Realestate', 'Technology', 'Sports', 'Weather', 'Manufacturing', 'Non-profit', 'Edtech', 'Software', 'Food & Drink', 'Retail', 'Telecom', 'Hospitality', 'Automotive', 'Engineering', 'Real Estate', 'Travel'];
                                     return industries[value - 1] ? industries[value - 1].substring(0, 8) + '...' : '';
                                 }
                             }
@@ -997,11 +1025,11 @@
         if (regionalAnalysisCtx) {
             // Calculate regional averages from real country data
             const regions = {
-                'Europe': [58.7, 55, 53.9, 53, 51, 50.1, 49.7, 49, 48.4, 48, 47.9, 47.8, 47.4, 47.4, 44.8, 44.1, 43.6, 43.6, 43.4, 40.1, 39.4, 39, 38.5, 36.8, 36.5, 36, 33.5, 12],
-                'Asia': [79, 49.4, 44.9, 41.7, 40.9, 40.3, 39.1, 34.8, 34.3, 32.5, 29.8, 27.3, 25, 23],
-                'North America': [55, 44, 34.1],
+                'Europe': [58.7, 54.4, 53.9, 53.1, 51, 50.2, 49.7, 49, 48.4, 48, 47.4, 46.9, 46.5, 46.1, 45.3, 45.1, 44.8, 44, 41.2, 40.1, 39.4, 38.7, 38.5, 37.6, 36.8, 36.5, 33.5, 12],
+                'Asia': [79, 49.4, 44.9, 43.2, 42.5, 41.7, 40.3, 39.1, 36.8, 34.8, 34.3, 32.5, 29.8, 24],
+                'North America': [55.2, 43.6, 34.1],
                 'South America': [78.7, 48.2, 45.7, 36, 35.7, 29.7],
-                'Africa': [51.8, 40.2, 39.2, 37.3, 36.5, 36.1],
+                'Africa': [51.8, 43.7, 41.8, 39.2, 36.5, 36.1],
                 'Middle East': [63.9, 54.4, 39, 34, 28.3],
                 'Oceania': [46.6, 40]
             };

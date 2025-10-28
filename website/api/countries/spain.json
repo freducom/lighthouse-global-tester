@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.827Z",
+    "generated_at": "2025-10-28T20:11:23.745Z",
     "country": "Spain",
     "flag": "🇪🇸",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 43,
-    "accessibility": 90,
-    "best_practices": 80,
-    "seo": 92,
-    "pwa": 42
+    "performance": 41,
+    "accessibility": 85,
+    "best_practices": 77,
+    "seo": 91,
+    "pwa": 41
   },
   "websites": [
     {
@@ -62,6 +62,18 @@
       "test_date": "2025-10-22 00:53:15"
     },
     {
+      "url": "ideal.es",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 63,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:15:12"
+    },
+    {
       "url": "marca.com",
       "industry": "Sports",
       "scores": {
@@ -77,13 +89,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 47,
-        "accessibility": 88,
-        "best_practices": 77,
-        "seo": 92,
-        "pwa": 44
+        "performance": 44,
+        "accessibility": 83,
+        "best_practices": 73,
+        "seo": 91,
+        "pwa": 42
       }
     },
     {

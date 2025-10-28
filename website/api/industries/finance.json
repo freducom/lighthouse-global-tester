@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.910Z",
+    "generated_at": "2025-10-28T20:11:23.834Z",
     "industry": "Finance",
-    "website_count": 66
+    "website_count": 75
   },
   "averages": {
-    "performance": 43,
+    "performance": 44,
     "accessibility": 89,
-    "best_practices": 80,
+    "best_practices": 81,
     "seo": 89,
-    "pwa": 37
+    "pwa": 38
   },
   "websites": [
     {
@@ -145,6 +145,30 @@
       "test_date": "2025-10-26 15:54:58"
     },
     {
+      "url": "holvi.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 25,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:23:07"
+    },
+    {
+      "url": "if.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 36,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:17:38"
+    },
+    {
       "url": "op.fi",
       "country": "Finland",
       "scores": {
@@ -229,6 +253,18 @@
       "test_date": "2025-10-27 10:14:04"
     },
     {
+      "url": "ing.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 58,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 18:19:01"
+    },
+    {
       "url": "postbank.de",
       "country": "Germany",
       "scores": {
@@ -275,6 +311,42 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 13:44:36"
+    },
+    {
+      "url": "hdfcbank.com",
+      "country": "India",
+      "scores": {
+        "performance": 79,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:33:39"
+    },
+    {
+      "url": "icicibank.com",
+      "country": "India",
+      "scores": {
+        "performance": 51,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:14:19"
+    },
+    {
+      "url": "idfcfirstbank.com",
+      "country": "India",
+      "scores": {
+        "performance": 52,
+        "accessibility": 64,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:16:40"
     },
     {
       "url": "moneycontrol.com",
@@ -364,13 +436,13 @@
       "url": "ing.nl",
       "country": "Netherlands",
       "scores": {
-        "performance": 64,
+        "performance": 58,
         "accessibility": 96,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:25:34"
+      "test_date": "2025-10-28 18:19:54"
     },
     {
       "url": "rabobank.nl",
@@ -455,6 +527,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 13:27:18"
+    },
+    {
+      "url": "ing.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 56,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 18:20:17"
     },
     {
       "url": "bancatransilvania.ro",
@@ -611,6 +695,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 15:59:54"
+    },
+    {
+      "url": "hsbc.co.uk",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 12:25:21"
+    },
+    {
+      "url": "indexventures.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 56,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 16:39:25"
     },
     {
       "url": "natwest.com",
@@ -841,35 +949,35 @@
     },
     {
       "country": "Finland",
-      "website_count": 6,
+      "website_count": 8,
       "averages": {
-        "performance": 57,
-        "accessibility": 92,
-        "best_practices": 95,
-        "seo": 93,
-        "pwa": 44
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 90,
+        "seo": 94,
+        "pwa": 42
       }
     },
     {
       "country": "Germany",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 91,
-        "best_practices": 90,
+        "best_practices": 89,
         "seo": 88,
-        "pwa": 39
+        "pwa": 43
       }
     },
     {
       "country": "India",
-      "website_count": 3,
+      "website_count": 6,
       "averages": {
-        "performance": 51,
+        "performance": 56,
         "accessibility": 81,
-        "best_practices": 44,
-        "seo": 89,
-        "pwa": 41
+        "best_practices": 65,
+        "seo": 88,
+        "pwa": 37
       }
     },
     {
@@ -920,7 +1028,7 @@
       "country": "Netherlands",
       "website_count": 2,
       "averages": {
-        "performance": 56,
+        "performance": 53,
         "accessibility": 94,
         "best_practices": 100,
         "seo": 97,
@@ -962,13 +1070,13 @@
     },
     {
       "country": "Poland",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 26,
-        "accessibility": 82,
-        "best_practices": 84,
-        "seo": 96,
-        "pwa": 33
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 86,
+        "seo": 97,
+        "pwa": 37
       }
     },
     {
@@ -1039,13 +1147,13 @@
     },
     {
       "country": "United Kingdom",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 56,
+        "performance": 54,
         "accessibility": 91,
-        "best_practices": 90,
-        "seo": 88,
-        "pwa": 33
+        "best_practices": 86,
+        "seo": 89,
+        "pwa": 39
       }
     },
     {

@@ -1,5 +1,25 @@
 const sqlite3 = require('sqlite3').verbose();
 
+// Utility function to normalize URLs to base domain only
+function normalizeUrlToBaseDomain(url) {
+  let normalizedUrl = url;
+  
+  // First, ensure URL has proper protocol for parsing
+  if (!normalizedUrl.startsWith('http://') && !normalizedUrl.startsWith('https://')) {
+    normalizedUrl = 'https://' + normalizedUrl;
+  }
+  
+  // Extract just the base domain by parsing the URL and getting hostname only
+  try {
+    const urlObj = new URL(normalizedUrl);
+    return urlObj.hostname; // Return just the hostname (e.g., "example.com")
+  } catch (urlError) {
+    console.warn(`⚠️ Could not parse URL ${url}, using as-is:`, urlError.message);
+    // Fallback: try to extract domain manually by removing protocol and path
+    return url.replace(/^https?:\/\//, '').split('/')[0];
+  }
+}
+
 class Database {
   constructor() {
     this.db = new sqlite3.Database('./lighthouse_scores.db');
@@ -48,6 +68,14 @@ class Database {
 
   saveScore(url, country, industry, scores) {
     return new Promise((resolve, reject) => {
+      // Normalize URL to base domain before saving
+      const normalizedUrl = normalizeUrlToBaseDomain(url);
+      
+      // Log if normalization changed the URL
+      if (normalizedUrl !== url) {
+        console.log(`🔧 Normalized URL for database: ${url} → ${normalizedUrl}`);
+      }
+      
       const performance = scores.performance || 0;
       const accessibility = scores.accessibility || 0;
       const bestPractices = scores.bestPractices || 0;
@@ -56,8 +84,8 @@ class Database {
       
       // Check if test failed (all scores are 0)
       if (performance === 0 && accessibility === 0 && bestPractices === 0 && seo === 0 && pwa === 0) {
-        console.log(`⚠️ Test failed for ${url} - recording failure and skipping save`);
-        this.saveFailedTest(url).then(() => {
+        console.log(`⚠️ Test failed for ${normalizedUrl} - recording failure and skipping save`);
+        this.saveFailedTest(normalizedUrl).then(() => {
           resolve(null); // Return null to indicate no save occurred
         }).catch(reject);
         return;
@@ -70,7 +98,7 @@ class Database {
       `);
       
       stmt.run([
-        url,
+        normalizedUrl,
         country,
         industry,
         performance,
@@ -349,12 +377,15 @@ class Database {
 
   saveFailedTest(url) {
     return new Promise((resolve, reject) => {
+      // Normalize URL to base domain before saving
+      const normalizedUrl = normalizeUrlToBaseDomain(url);
+      
       const stmt = this.db.prepare(`
         INSERT INTO lighthouse_failed_tests (url)
         VALUES (?)
       `);
       
-      stmt.run([url], function(err) {
+      stmt.run([normalizedUrl], function(err) {
         if (err) reject(err);
         else resolve(this.lastID);
       });

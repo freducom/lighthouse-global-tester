@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:36.076Z",
+    "generated_at": "2025-10-28T20:11:24.012Z",
     "url": "ing.nl",
     "country": "Netherlands",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 64,
+    "performance": 58,
     "accessibility": 96,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-19 20:25:34"
+    "test_date": "2025-10-28 18:19:54"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-28 18:19:54"
+    },
     {
       "performance": 64,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:25:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-28 18:19:54",
+    "test_date_previous": "2025-10-19 20:25:34"
+  }
 }

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.916Z",
+    "generated_at": "2025-10-28T20:11:23.840Z",
     "industry": "Delivery",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 75,
-    "accessibility": 81,
+    "performance": 54,
+    "accessibility": 91,
     "best_practices": 92,
-    "seo": 82,
+    "seo": 91,
     "pwa": 33
   },
   "websites": [
@@ -23,17 +23,29 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 12:22:30"
+    },
+    {
+      "url": "instacart.com",
+      "country": "United States",
+      "scores": {
+        "performance": 33,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:24:53"
     }
   ],
   "countries": [
     {
       "country": "United States",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 75,
-        "accessibility": 81,
+        "performance": 54,
+        "accessibility": 91,
         "best_practices": 92,
-        "seo": 82,
+        "seo": 91,
         "pwa": 33
       }
     }

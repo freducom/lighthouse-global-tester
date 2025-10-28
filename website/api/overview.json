@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.458Z",
+    "generated_at": "2025-10-28T20:11:23.361Z",
     "api_version": "1.0",
-    "total_websites": 620,
+    "total_websites": 669,
     "countries_count": 69,
-    "industries_count": 36,
-    "last_scan_date": "2025-10-27 12:28:44"
+    "industries_count": 38,
+    "last_scan_date": "2025-10-28 18:26:08"
   },
   "global_averages": {
     "performance": 43,
@@ -94,6 +94,17 @@
         "test_date": "2025-10-23 22:15:58"
       },
       {
+        "url": "hotstar.com",
+        "country": "India",
+        "industry": "Media",
+        "performance": 95,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78,
+        "test_date": "2025-10-28 12:24:22"
+      },
+      {
         "url": "irna.ir",
         "country": "Iran",
         "industry": "Media",
@@ -114,17 +125,6 @@
         "seo": 85,
         "pwa": 33,
         "test_date": "2025-10-26 08:04:10"
-      },
-      {
-        "url": "amazon.com",
-        "country": "United States",
-        "industry": "E-commerce",
-        "performance": 94,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 85,
-        "pwa": 33,
-        "test_date": "2025-10-26 08:03:56"
       }
     ],
     "accessibility": [
@@ -452,15 +452,15 @@
         "test_date": "2025-10-27 00:47:55"
       },
       {
-        "url": "flipsite.io",
+        "url": "iltasanomat.fi",
         "country": "Finland",
-        "industry": "Website editor",
-        "performance": 100,
-        "accessibility": 98,
+        "industry": "Media",
+        "performance": 18,
+        "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-20 20:10:45"
+        "pwa": 44,
+        "test_date": "2025-10-28 16:33:50"
       }
     ],
     "pwa": [
@@ -520,6 +520,17 @@
         "test_date": "2025-10-23 02:58:41"
       },
       {
+        "url": "hindustantimes.com",
+        "country": "India",
+        "industry": "Media",
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 100,
+        "test_date": "2025-10-28 10:36:26"
+      },
+      {
         "url": "unian.ua",
         "country": "Ukraine",
         "industry": "Media",
@@ -551,17 +562,6 @@
         "seo": 92,
         "pwa": 100,
         "test_date": "2025-10-20 20:13:06"
-      },
-      {
-        "url": "hindustantimes.com",
-        "country": "India",
-        "industry": "Media",
-        "performance": 58,
-        "accessibility": 76,
-        "best_practices": 58,
-        "seo": 92,
-        "pwa": 100,
-        "test_date": "2025-10-19 19:47:54"
       },
       {
         "url": "vk.com",

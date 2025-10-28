@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.830Z",
+    "generated_at": "2025-10-28T20:11:23.746Z",
     "country": "Belgium",
     "flag": "🇧🇪",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 91,
-    "best_practices": 79,
-    "seo": 91,
-    "pwa": 40
+    "performance": 53,
+    "accessibility": 92,
+    "best_practices": 80,
+    "seo": 90,
+    "pwa": 39
   },
   "websites": [
+    {
+      "url": "hln.be",
+      "industry": "Media",
+      "scores": {
+        "performance": 74,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:44:05"
+    },
     {
       "url": "demorgen.be",
       "industry": "Media",
@@ -101,13 +113,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 50,
-        "accessibility": 91,
-        "best_practices": 79,
-        "seo": 91,
-        "pwa": 40
+        "performance": 53,
+        "accessibility": 92,
+        "best_practices": 80,
+        "seo": 90,
+        "pwa": 39
       }
     }
   ]

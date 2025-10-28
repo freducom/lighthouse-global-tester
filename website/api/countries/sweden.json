@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.805Z",
+    "generated_at": "2025-10-28T20:11:23.725Z",
     "country": "Sweden",
     "flag": "🇸🇪",
-    "website_count": 39
+    "website_count": 43
   },
   "averages": {
-    "performance": 48,
-    "accessibility": 92,
-    "best_practices": 90,
+    "performance": 47,
+    "accessibility": 93,
+    "best_practices": 89,
     "seo": 93,
-    "pwa": 43
+    "pwa": 42
   },
   "websites": [
     {
@@ -194,18 +194,6 @@
       "test_date": "2025-10-26 19:46:37"
     },
     {
-      "url": "ica.se",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 49,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 56
-      },
-      "test_date": "2025-10-19 20:28:01"
-    },
-    {
       "url": "expressen.se",
       "industry": "Media",
       "scores": {
@@ -300,6 +288,42 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 13:43:41"
+    },
+    {
+      "url": "ikea.se",
+      "industry": "Retail",
+      "scores": {
+        "performance": 43,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 16:29:57"
+    },
+    {
+      "url": "ica.se",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-28 14:13:59"
+    },
+    {
+      "url": "husqvarna.com",
+      "industry": "Manufacturing",
+      "scores": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:34:41"
     },
     {
       "url": "flashback.org",
@@ -422,6 +446,18 @@
       "test_date": "2025-10-26 16:51:32"
     },
     {
+      "url": "hemnet.se",
+      "industry": "Realestate",
+      "scores": {
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:34:58"
+    },
+    {
       "url": "byggmax.se",
       "industry": "E-commerce",
       "scores": {
@@ -480,6 +516,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-21 20:23:47"
+    },
+    {
+      "url": "hm.com/se",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 24,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:19:22"
     }
   ],
   "industries": [
@@ -496,13 +544,13 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 52,
-        "accessibility": 87,
-        "best_practices": 88,
-        "seo": 91,
-        "pwa": 52
+        "performance": 47,
+        "accessibility": 86,
+        "best_practices": 87,
+        "seo": 90,
+        "pwa": 49
       }
     },
     {
@@ -572,6 +620,17 @@
       }
     },
     {
+      "industry": "Manufacturing",
+      "website_count": 1,
+      "averages": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Marketplace",
       "website_count": 2,
       "averages": {
@@ -595,12 +654,23 @@
     },
     {
       "industry": "Realestate",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 51,
-        "accessibility": 81,
+        "performance": 42,
+        "accessibility": 90,
         "best_practices": 92,
         "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Retail",
+      "website_count": 1,
+      "averages": {
+        "performance": 43,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 92,
         "pwa": 33
       }
     },

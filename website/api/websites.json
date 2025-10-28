@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.684Z",
-    "total_websites": 620
+    "generated_at": "2025-10-28T20:11:23.616Z",
+    "total_websites": 669
   },
   "websites": [
     {
@@ -1083,6 +1083,34 @@
       "api_endpoint": "websites/asdacom.json"
     },
     {
+      "url": "ashokleyland.com",
+      "country": "India",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 78,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 11:10:12",
+      "api_endpoint": "websites/ashokleylandcom.json"
+    },
+    {
+      "url": "asiaone.com",
+      "country": "Singapore",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 11:10:59",
+      "api_endpoint": "websites/asiaonecom.json"
+    },
+    {
       "url": "atherenergy.com",
       "country": "India",
       "industry": "Automotive",
@@ -1599,6 +1627,20 @@
       },
       "test_date": "2025-10-26 16:39:52",
       "api_endpoint": "websites/bharatpetroleumin.json"
+    },
+    {
+      "url": "bigbasket.com",
+      "country": "India",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 12,
+        "accessibility": 85,
+        "best_practices": 58,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 11:15:26",
+      "api_endpoint": "websites/bigbasketcom.json"
     },
     {
       "url": "bikroy.com",
@@ -3883,17 +3925,45 @@
       "api_endpoint": "websites/hanicokr.json"
     },
     {
+      "url": "hdfcbank.com",
+      "country": "India",
+      "industry": "Finance",
+      "scores": {
+        "performance": 79,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:33:39",
+      "api_endpoint": "websites/hdfcbankcom.json"
+    },
+    {
+      "url": "hedengren.com",
+      "country": "Finland",
+      "industry": "Technology",
+      "scores": {
+        "performance": 56,
+        "accessibility": 77,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:33:55",
+      "api_endpoint": "websites/hedengrencom.json"
+    },
+    {
       "url": "heise.de",
       "country": "Germany",
       "industry": "Media",
       "scores": {
-        "performance": 56,
+        "performance": 51,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 93,
         "pwa": 56
       },
-      "test_date": "2025-10-19 19:44:00",
+      "test_date": "2025-10-28 10:34:21",
       "api_endpoint": "websites/heisede.json"
     },
     {
@@ -3901,28 +3971,126 @@
       "country": "Finland",
       "industry": "Education",
       "scores": {
-        "performance": 57,
-        "accessibility": 93,
+        "performance": 55,
+        "accessibility": 86,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:34:37",
+      "api_endpoint": "websites/helsinkifi.json"
+    },
+    {
+      "url": "hemnet.se",
+      "country": "Sweden",
+      "industry": "Realestate",
+      "scores": {
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:34:58",
+      "api_endpoint": "websites/hemnetse.json"
+    },
+    {
+      "url": "hepsiburada.com",
+      "country": "Turkey",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 37,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 10:35:24",
+      "api_endpoint": "websites/hepsiburadacom.json"
+    },
+    {
+      "url": "heute.at",
+      "country": "Austria",
+      "industry": "Media",
+      "scores": {
+        "performance": 54,
+        "accessibility": 84,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:17:04",
-      "api_endpoint": "websites/helsinkifi.json"
+      "test_date": "2025-10-28 10:35:55",
+      "api_endpoint": "websites/heuteat.json"
     },
     {
       "url": "hindustantimes.com",
       "country": "India",
       "industry": "Media",
       "scores": {
-        "performance": 58,
-        "accessibility": 76,
-        "best_practices": 58,
-        "seo": 92,
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
         "pwa": 100
       },
-      "test_date": "2025-10-19 19:47:54",
+      "test_date": "2025-10-28 10:36:26",
       "api_endpoint": "websites/hindustantimescom.json"
+    },
+    {
+      "url": "hirkereso.hu",
+      "country": "Hungary",
+      "industry": "Media",
+      "scores": {
+        "performance": 66,
+        "accessibility": 65,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:36:39",
+      "api_endpoint": "websites/hirkeresohu.json"
+    },
+    {
+      "url": "hkt.com",
+      "country": "Hong Kong",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 60,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 10:43:50",
+      "api_endpoint": "websites/hktcom.json"
+    },
+    {
+      "url": "hln.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "scores": {
+        "performance": 74,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:44:05",
+      "api_endpoint": "websites/hlnbe.json"
+    },
+    {
+      "url": "hm.com/se",
+      "country": "Sweden",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 24,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:19:22",
+      "api_endpoint": "websites/hmcomse.json"
     },
     {
       "url": "hockeycanada.ca",
@@ -3939,31 +4107,115 @@
       "api_endpoint": "websites/hockeycanadaca.json"
     },
     {
+      "url": "holvi.com",
+      "country": "Finland",
+      "industry": "Finance",
+      "scores": {
+        "performance": 25,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:23:07",
+      "api_endpoint": "websites/holvicom.json"
+    },
+    {
+      "url": "homedepot.com",
+      "country": "United States",
+      "industry": "Retail",
+      "scores": {
+        "performance": 29,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:23:45",
+      "api_endpoint": "websites/homedepotcom.json"
+    },
+    {
+      "url": "hotnews.ro",
+      "country": "Romania",
+      "industry": "Media",
+      "scores": {
+        "performance": 60,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 12:24:06",
+      "api_endpoint": "websites/hotnewsro.json"
+    },
+    {
+      "url": "hotstar.com",
+      "country": "India",
+      "industry": "Media",
+      "scores": {
+        "performance": 95,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 12:24:22",
+      "api_endpoint": "websites/hotstarcom.json"
+    },
+    {
+      "url": "hp.com",
+      "country": "United States",
+      "industry": "Technology",
+      "scores": {
+        "performance": 38,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:24:42",
+      "api_endpoint": "websites/hpcom.json"
+    },
+    {
       "url": "hs.fi",
       "country": "Finland",
       "industry": "Media",
       "scores": {
-        "performance": 46,
+        "performance": 13,
         "accessibility": 99,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-19 20:15:25",
+      "test_date": "2025-10-28 12:25:02",
       "api_endpoint": "websites/hsfi.json"
+    },
+    {
+      "url": "hsbc.co.uk",
+      "country": "United Kingdom",
+      "industry": "Finance",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 12:25:21",
+      "api_endpoint": "websites/hsbccouk.json"
     },
     {
       "url": "hubspot.com",
       "country": "United States",
       "industry": "Marketing",
       "scores": {
-        "performance": 18,
+        "performance": 20,
         "accessibility": 98,
-        "best_practices": 83,
-        "seo": 86,
+        "best_practices": 0,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:01:58",
+      "test_date": "2025-10-28 12:33:01",
       "api_endpoint": "websites/hubspotcom.json"
     },
     {
@@ -3971,28 +4223,252 @@
       "country": "United States",
       "industry": "Media",
       "scores": {
-        "performance": 31,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 78
+        "performance": 35,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 76,
+        "pwa": 33
       },
-      "test_date": "2025-10-23 07:05:41",
+      "test_date": "2025-10-28 12:33:31",
       "api_endpoint": "websites/hulucom.json"
+    },
+    {
+      "url": "hurriyet.com.tr",
+      "country": "Turkey",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 95,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:34:24",
+      "api_endpoint": "websites/hurriyetcomtr.json"
+    },
+    {
+      "url": "husqvarna.com",
+      "country": "Sweden",
+      "industry": "Manufacturing",
+      "scores": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:34:41",
+      "api_endpoint": "websites/husqvarnacom.json"
+    },
+    {
+      "url": "iam.ma",
+      "country": "Morocco",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 55,
+        "accessibility": 68,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:10:27",
+      "api_endpoint": "websites/iamma.json"
     },
     {
       "url": "ica.se",
       "country": "Sweden",
       "industry": "E-commerce",
       "scores": {
-        "performance": 49,
+        "performance": 41,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-19 20:28:01",
+      "test_date": "2025-10-28 14:13:59",
       "api_endpoint": "websites/icase.json"
+    },
+    {
+      "url": "icicibank.com",
+      "country": "India",
+      "industry": "Finance",
+      "scores": {
+        "performance": 51,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:14:19",
+      "api_endpoint": "websites/icicibankcom.json"
+    },
+    {
+      "url": "ict.go.cr",
+      "country": "Costa Rica",
+      "industry": "Government",
+      "scores": {
+        "performance": 64,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:14:42",
+      "api_endpoint": "websites/ictgocr.json"
+    },
+    {
+      "url": "ideal.es",
+      "country": "Spain",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 63,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:15:12",
+      "api_endpoint": "websites/ideales.json"
+    },
+    {
+      "url": "idealo.de",
+      "country": "Germany",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 44,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:16:13",
+      "api_endpoint": "websites/idealode.json"
+    },
+    {
+      "url": "idfcfirstbank.com",
+      "country": "India",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 64,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:16:40",
+      "api_endpoint": "websites/idfcfirstbankcom.json"
+    },
+    {
+      "url": "idnes.cz",
+      "country": "Czechia",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:17:15",
+      "api_endpoint": "websites/idnescz.json"
+    },
+    {
+      "url": "if.fi",
+      "country": "Finland",
+      "industry": "Finance",
+      "scores": {
+        "performance": 36,
+        "accessibility": 97,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:17:38",
+      "api_endpoint": "websites/iffi.json"
+    },
+    {
+      "url": "ihned.cz",
+      "country": "Czechia",
+      "industry": "Media",
+      "scores": {
+        "performance": 22,
+        "accessibility": 84,
+        "best_practices": 58,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 14:18:11",
+      "api_endpoint": "websites/ihnedcz.json"
+    },
+    {
+      "url": "iisc.ac.in",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 53,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:18:43",
+      "api_endpoint": "websites/iiscacin.json"
+    },
+    {
+      "url": "iitb.ac.in",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 44,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 14:19:07",
+      "api_endpoint": "websites/iitbacin.json"
+    },
+    {
+      "url": "iitd.ac.in",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 29,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 14:19:44",
+      "api_endpoint": "websites/iitdacin.json"
+    },
+    {
+      "url": "iitk.ac.in",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 55,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:20:16",
+      "api_endpoint": "websites/iitkacin.json"
+    },
+    {
+      "url": "ikea.se",
+      "country": "Sweden",
+      "industry": "Retail",
+      "scores": {
+        "performance": 43,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 16:29:57",
+      "api_endpoint": "websites/ikease.json"
     },
     {
       "url": "iltalehti.fi",
@@ -4001,68 +4477,278 @@
       "scores": {
         "performance": 34,
         "accessibility": 98,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:14:50",
+      "test_date": "2025-10-28 16:33:29",
       "api_endpoint": "websites/iltalehtifi.json"
+    },
+    {
+      "url": "iltasanomat.fi",
+      "country": "Finland",
+      "industry": "Media",
+      "scores": {
+        "performance": 18,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 16:33:50",
+      "api_endpoint": "websites/iltasanomatfi.json"
     },
     {
       "url": "independent.co.uk",
       "country": "United Kingdom",
       "industry": "Media",
       "scores": {
-        "performance": 50,
-        "accessibility": 96,
-        "best_practices": 83,
+        "performance": 18,
+        "accessibility": 89,
+        "best_practices": 67,
         "seo": 100,
         "pwa": 89
       },
-      "test_date": "2025-10-23 07:34:43",
+      "test_date": "2025-10-28 16:37:57",
       "api_endpoint": "websites/independentcouk.json"
+    },
+    {
+      "url": "independent.ie",
+      "country": "Ireland",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 88,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 16:38:19",
+      "api_endpoint": "websites/independentie.json"
+    },
+    {
+      "url": "index.hu",
+      "country": "Hungary",
+      "industry": "Media",
+      "scores": {
+        "performance": 19,
+        "accessibility": 75,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 16:39:05",
+      "api_endpoint": "websites/indexhu.json"
+    },
+    {
+      "url": "indexventures.com",
+      "country": "United Kingdom",
+      "industry": "Finance",
+      "scores": {
+        "performance": 56,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 16:39:25",
+      "api_endpoint": "websites/indexventurescom.json"
     },
     {
       "url": "indiatimes.com",
       "country": "India",
       "industry": "Media",
       "scores": {
-        "performance": 53,
+        "performance": 33,
         "accessibility": 94,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:45:59",
+      "test_date": "2025-10-28 16:46:26",
       "api_endpoint": "websites/indiatimescom.json"
+    },
+    {
+      "url": "indiatoday.in",
+      "country": "India",
+      "industry": "Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 16:47:07",
+      "api_endpoint": "websites/indiatodayin.json"
+    },
+    {
+      "url": "inegi.org.mx",
+      "country": "Mexico",
+      "industry": "Government",
+      "scores": {
+        "performance": 56,
+        "accessibility": 79,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:14:35",
+      "api_endpoint": "websites/inegiorgmx.json"
+    },
+    {
+      "url": "informante.web.na",
+      "country": "Namibia",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 71,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:18:08",
+      "api_endpoint": "websites/informantewebna.json"
+    },
+    {
+      "url": "infosys.com",
+      "country": "India",
+      "industry": "Technology",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:18:32",
+      "api_endpoint": "websites/infosyscom.json"
+    },
+    {
+      "url": "ing.de",
+      "country": "Germany",
+      "industry": "Finance",
+      "scores": {
+        "performance": 58,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 18:19:01",
+      "api_endpoint": "websites/ingde.json"
     },
     {
       "url": "ing.nl",
       "country": "Netherlands",
       "industry": "Finance",
       "scores": {
-        "performance": 64,
+        "performance": 58,
         "accessibility": 96,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:25:34",
+      "test_date": "2025-10-28 18:19:54",
       "api_endpoint": "websites/ingnl.json"
     },
     {
-      "url": "instagram.com",
-      "country": "United States",
-      "industry": "Social Media",
+      "url": "ing.pl",
+      "country": "Poland",
+      "industry": "Finance",
       "scores": {
-        "performance": 59,
+        "performance": 56,
         "accessibility": 89,
-        "best_practices": 75,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 18:20:17",
+      "api_endpoint": "websites/ingpl.json"
+    },
+    {
+      "url": "inmobi.com",
+      "country": "India",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 47,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:23:27",
+      "api_endpoint": "websites/inmobicom.json"
+    },
+    {
+      "url": "inquirer.net",
+      "country": "Philippines",
+      "industry": "Media",
+      "scores": {
+        "performance": 65,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 18:23:42",
+      "api_endpoint": "websites/inquirernet.json"
+    },
+    {
+      "url": "instacart.com",
+      "country": "United States",
+      "industry": "Delivery",
+      "scores": {
+        "performance": 33,
+        "accessibility": 100,
+        "best_practices": 92,
         "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:24:53",
+      "api_endpoint": "websites/instacartcom.json"
+    },
+    {
+      "url": "instagram.com",
+      "country": "India",
+      "industry": "Social",
+      "scores": {
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 94,
         "pwa": 67
       },
-      "test_date": "2025-10-23 06:52:39",
+      "test_date": "2025-10-28 18:25:31",
       "api_endpoint": "websites/instagramcom.json"
+    },
+    {
+      "url": "intel.com",
+      "country": "United States",
+      "industry": "Technology",
+      "scores": {
+        "performance": 51,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:25:46",
+      "api_endpoint": "websites/intelcom.json"
+    },
+    {
+      "url": "interia.pl",
+      "country": "Poland",
+      "industry": "Portal",
+      "scores": {
+        "performance": 71,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 18:26:08",
+      "api_endpoint": "websites/interiapl.json"
     },
     {
       "url": "intuit.com",

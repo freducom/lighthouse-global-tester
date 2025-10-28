@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.911Z",
+    "generated_at": "2025-10-28T20:11:23.835Z",
     "industry": "E-commerce",
-    "website_count": 41
+    "website_count": 45
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 83,
+    "performance": 42,
+    "accessibility": 82,
     "best_practices": 78,
     "seo": 90,
-    "pwa": 46
+    "pwa": 45
   },
   "websites": [
     {
@@ -145,6 +145,18 @@
       "test_date": "2025-10-24 22:14:50"
     },
     {
+      "url": "idealo.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 44,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:16:13"
+    },
+    {
       "url": "otto.de",
       "country": "Germany",
       "scores": {
@@ -203,6 +215,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:04:24"
+    },
+    {
+      "url": "bigbasket.com",
+      "country": "India",
+      "scores": {
+        "performance": 12,
+        "accessibility": 85,
+        "best_practices": 58,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 11:15:26"
     },
     {
       "url": "flipkart.com",
@@ -373,16 +397,28 @@
       "test_date": "2025-10-27 04:22:36"
     },
     {
+      "url": "hm.com/se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 24,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:19:22"
+    },
+    {
       "url": "ica.se",
       "country": "Sweden",
       "scores": {
-        "performance": 49,
+        "performance": 41,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-19 20:28:01"
+      "test_date": "2025-10-28 14:13:59"
     },
     {
       "url": "systembolaget.se",
@@ -395,6 +431,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 06:14:40"
+    },
+    {
+      "url": "hepsiburada.com",
+      "country": "Turkey",
+      "scores": {
+        "performance": 37,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 10:35:24"
     },
     {
       "url": "trendyol.com",
@@ -574,13 +622,13 @@
     },
     {
       "country": "Germany",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 31,
-        "accessibility": 60,
+        "performance": 35,
+        "accessibility": 63,
         "best_practices": 81,
-        "seo": 94,
-        "pwa": 56
+        "seo": 90,
+        "pwa": 50
       }
     },
     {
@@ -596,13 +644,13 @@
     },
     {
       "country": "India",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 65,
-        "accessibility": 94,
-        "best_practices": 96,
-        "seo": 86,
-        "pwa": 67
+        "performance": 47,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 55
       }
     },
     {
@@ -695,24 +743,24 @@
     },
     {
       "country": "Sweden",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 52,
-        "accessibility": 87,
-        "best_practices": 88,
-        "seo": 91,
-        "pwa": 52
+        "performance": 47,
+        "accessibility": 86,
+        "best_practices": 87,
+        "seo": 90,
+        "pwa": 49
       }
     },
     {
       "country": "Turkey",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 54,
-        "accessibility": 87,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 89
+        "performance": 46,
+        "accessibility": 83,
+        "best_practices": 79,
+        "seo": 88,
+        "pwa": 67
       }
     },
     {

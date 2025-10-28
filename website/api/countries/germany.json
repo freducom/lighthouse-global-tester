@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.780Z",
+    "generated_at": "2025-10-28T20:11:23.698Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 28
+    "website_count": 30
   },
   "averages": {
     "performance": 44,
-    "accessibility": 89,
+    "accessibility": 88,
     "best_practices": 89,
     "seo": 92,
     "pwa": 50
@@ -74,16 +74,16 @@
       "test_date": "2025-10-26 10:10:47"
     },
     {
-      "url": "heise.de",
-      "industry": "Media",
+      "url": "ing.de",
+      "industry": "Finance",
       "scores": {
-        "performance": 56,
-        "accessibility": 83,
-        "best_practices": 92,
+        "performance": 58,
+        "accessibility": 91,
+        "best_practices": 83,
         "seo": 93,
-        "pwa": 56
+        "pwa": 67
       },
-      "test_date": "2025-10-19 19:44:00"
+      "test_date": "2025-10-28 18:19:01"
     },
     {
       "url": "boerse.de",
@@ -96,6 +96,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 19:39:56"
+    },
+    {
+      "url": "heise.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 51,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-28 10:34:21"
     },
     {
       "url": "comdirect.de",
@@ -180,6 +192,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 10:14:04"
+    },
+    {
+      "url": "idealo.de",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 44,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:16:13"
     },
     {
       "url": "welt.de",
@@ -364,24 +388,24 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 31,
-        "accessibility": 60,
+        "performance": 35,
+        "accessibility": 63,
         "best_practices": 81,
-        "seo": 94,
-        "pwa": 56
+        "seo": 90,
+        "pwa": 50
       }
     },
     {
       "industry": "Finance",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 91,
-        "best_practices": 90,
+        "best_practices": 89,
         "seo": 88,
-        "pwa": 39
+        "pwa": 43
       }
     },
     {

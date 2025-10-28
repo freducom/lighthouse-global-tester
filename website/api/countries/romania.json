@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.844Z",
+    "generated_at": "2025-10-28T20:11:23.760Z",
     "country": "Romania",
     "flag": "🌍",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 48,
-    "accessibility": 82,
-    "best_practices": 85,
-    "seo": 96,
-    "pwa": 39
+    "performance": 50,
+    "accessibility": 83,
+    "best_practices": 82,
+    "seo": 95,
+    "pwa": 40
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 07:05:11"
+    },
+    {
+      "url": "hotnews.ro",
+      "industry": "Media",
+      "scores": {
+        "performance": 60,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 12:24:06"
     },
     {
       "url": "bancatransilvania.ro",
@@ -76,13 +88,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 48,
-        "accessibility": 93,
-        "best_practices": 83,
-        "seo": 96,
-        "pwa": 45
+        "performance": 52,
+        "accessibility": 91,
+        "best_practices": 78,
+        "seo": 94,
+        "pwa": 44
       }
     }
   ]

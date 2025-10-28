@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:36.045Z",
+    "generated_at": "2025-10-28T20:11:23.977Z",
     "url": "hindustantimes.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 58,
-    "accessibility": 76,
-    "best_practices": 58,
-    "seo": 92,
+    "performance": 28,
+    "accessibility": 96,
+    "best_practices": 83,
+    "seo": 93,
     "pwa": 100,
-    "test_date": "2025-10-19 19:47:54"
+    "test_date": "2025-10-28 10:36:26"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 100,
+      "test_date": "2025-10-28 10:36:26"
+    },
     {
       "performance": 58,
       "accessibility": 76,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:47:54"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -30,
+    "accessibility": 20,
+    "best_practices": 25,
+    "seo": 1,
+    "pwa": 0,
+    "test_date_current": "2025-10-28 10:36:26",
+    "test_date_previous": "2025-10-19 19:47:54"
+  }
 }

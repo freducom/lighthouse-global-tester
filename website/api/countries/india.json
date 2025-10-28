@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.782Z",
+    "generated_at": "2025-10-28T20:11:23.702Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 27
+    "website_count": 41
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 83,
-    "best_practices": 70,
-    "seo": 85,
-    "pwa": 47
+    "performance": 43,
+    "accessibility": 84,
+    "best_practices": 74,
+    "seo": 87,
+    "pwa": 46
   },
   "websites": [
+    {
+      "url": "hotstar.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 95,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 12:24:22"
+    },
     {
       "url": "amazon.in",
       "industry": "E-commerce",
@@ -24,6 +36,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 08:04:24"
+    },
+    {
+      "url": "hdfcbank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 79,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:33:39"
+    },
+    {
+      "url": "ashokleyland.com",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 78,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 11:10:12"
     },
     {
       "url": "bankbazaar.com",
@@ -38,18 +74,6 @@
       "test_date": "2025-10-26 13:44:36"
     },
     {
-      "url": "hindustantimes.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 58,
-        "accessibility": 76,
-        "best_practices": 58,
-        "seo": 92,
-        "pwa": 100
-      },
-      "test_date": "2025-10-19 19:47:54"
-    },
-    {
       "url": "timesofindia.com",
       "industry": "Tech",
       "scores": {
@@ -62,16 +86,28 @@
       "test_date": "2025-10-19 19:46:30"
     },
     {
-      "url": "indiatimes.com",
-      "industry": "Media",
+      "url": "iitk.ac.in",
+      "industry": "Education",
       "scores": {
-        "performance": 53,
-        "accessibility": 94,
-        "best_practices": 92,
-        "seo": 91,
+        "performance": 55,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:45:59"
+      "test_date": "2025-10-28 14:20:16"
+    },
+    {
+      "url": "iisc.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 53,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:18:43"
     },
     {
       "url": "axisbank.com",
@@ -86,6 +122,30 @@
       "test_date": "2025-10-26 13:42:10"
     },
     {
+      "url": "idfcfirstbank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 64,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:16:40"
+    },
+    {
+      "url": "icicibank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 51,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:14:19"
+    },
+    {
       "url": "annauniv.edu",
       "industry": "Education",
       "scores": {
@@ -98,6 +158,18 @@
       "test_date": "2025-10-26 08:44:18"
     },
     {
+      "url": "instagram.com",
+      "industry": "Social",
+      "scores": {
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 94,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 18:25:31"
+    },
+    {
       "url": "rediff.com",
       "industry": "Portal",
       "scores": {
@@ -108,6 +180,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 12:20:27"
+    },
+    {
+      "url": "inmobi.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 47,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:23:27"
     },
     {
       "url": "cricbuzz.com",
@@ -132,6 +216,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 12:27:48"
+    },
+    {
+      "url": "iitb.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 44,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 14:19:07"
     },
     {
       "url": "bharatpetroleum.in",
@@ -168,6 +264,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 20:28:12"
+    },
+    {
+      "url": "indiatoday.in",
+      "industry": "Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 16:47:07"
     },
     {
       "url": "flipkart.com",
@@ -218,6 +326,30 @@
       "test_date": "2025-10-27 07:12:51"
     },
     {
+      "url": "indiatimes.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 16:46:26"
+    },
+    {
+      "url": "infosys.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:18:32"
+    },
+    {
       "url": "amrita.edu",
       "industry": "Education",
       "scores": {
@@ -266,6 +398,18 @@
       "test_date": "2025-10-27 12:19:23"
     },
     {
+      "url": "iitd.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 29,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 14:19:44"
+    },
+    {
       "url": "bajajauto.com",
       "industry": "Automotive",
       "scores": {
@@ -276,6 +420,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 13:43:03"
+    },
+    {
+      "url": "hindustantimes.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 100
+      },
+      "test_date": "2025-10-28 10:36:26"
     },
     {
       "url": "ndtv.com",
@@ -326,6 +482,18 @@
       "test_date": "2025-10-19 19:47:14"
     },
     {
+      "url": "bigbasket.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 12,
+        "accessibility": 85,
+        "best_practices": 58,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 11:15:26"
+    },
+    {
       "url": "altbalaji.com",
       "industry": "Media",
       "scores": {
@@ -341,24 +509,24 @@
   "industries": [
     {
       "industry": "Automotive",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 29,
-        "accessibility": 76,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 33
+        "performance": 45,
+        "accessibility": 81,
+        "best_practices": 81,
+        "seo": 88,
+        "pwa": 48
       }
     },
     {
       "industry": "E-commerce",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 65,
-        "accessibility": 94,
-        "best_practices": 96,
-        "seo": 86,
-        "pwa": 67
+        "performance": 47,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 55
       }
     },
     {
@@ -374,13 +542,13 @@
     },
     {
       "industry": "Education",
-      "website_count": 4,
+      "website_count": 8,
       "averages": {
-        "performance": 40,
-        "accessibility": 71,
-        "best_practices": 73,
-        "seo": 68,
-        "pwa": 22
+        "performance": 43,
+        "accessibility": 79,
+        "best_practices": 81,
+        "seo": 77,
+        "pwa": 25
       }
     },
     {
@@ -396,13 +564,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 3,
+      "website_count": 6,
       "averages": {
-        "performance": 51,
+        "performance": 56,
         "accessibility": 81,
-        "best_practices": 44,
-        "seo": 89,
-        "pwa": 41
+        "best_practices": 65,
+        "seo": 88,
+        "pwa": 37
       }
     },
     {
@@ -418,24 +586,24 @@
     },
     {
       "industry": "Marketing",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 31,
-        "accessibility": 81,
+        "performance": 39,
+        "accessibility": 83,
         "best_practices": 67,
-        "seo": 86,
+        "seo": 90,
         "pwa": 33
       }
     },
     {
       "industry": "Media",
-      "website_count": 8,
+      "website_count": 10,
       "averages": {
-        "performance": 35,
+        "performance": 36,
         "accessibility": 86,
-        "best_practices": 66,
-        "seo": 90,
-        "pwa": 67
+        "best_practices": 68,
+        "seo": 91,
+        "pwa": 69
       }
     },
     {
@@ -447,6 +615,17 @@
         "best_practices": 67,
         "seo": 85,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Social",
+      "website_count": 1,
+      "averages": {
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 94,
+        "pwa": 67
       }
     },
     {
@@ -473,12 +652,12 @@
     },
     {
       "industry": "Technology",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 42,
-        "accessibility": 99,
-        "best_practices": 92,
-        "seo": 89,
+        "performance": 38,
+        "accessibility": 97,
+        "best_practices": 80,
+        "seo": 86,
         "pwa": 33
       }
     }

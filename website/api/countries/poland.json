@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.810Z",
+    "generated_at": "2025-10-28T20:11:23.730Z",
     "country": "Poland",
     "flag": "🇵🇱",
-    "website_count": 14
+    "website_count": 16
   },
   "averages": {
-    "performance": 44,
+    "performance": 46,
     "accessibility": 88,
-    "best_practices": 80,
+    "best_practices": 81,
     "seo": 93,
-    "pwa": 52
+    "pwa": 54
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 67
       },
       "test_date": "2025-10-26 07:59:30"
+    },
+    {
+      "url": "interia.pl",
+      "industry": "Portal",
+      "scores": {
+        "performance": 71,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 18:26:08"
     },
     {
       "url": "wp.pl",
@@ -48,6 +60,18 @@
         "pwa": 78
       },
       "test_date": "2025-10-24 18:19:28"
+    },
+    {
+      "url": "ing.pl",
+      "industry": "Finance",
+      "scores": {
+        "performance": 56,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 18:20:17"
     },
     {
       "url": "o2.pl",
@@ -218,13 +242,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 26,
-        "accessibility": 82,
-        "best_practices": 84,
-        "seo": 96,
-        "pwa": 33
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 86,
+        "seo": 97,
+        "pwa": 37
       }
     },
     {
@@ -273,13 +297,13 @@
     },
     {
       "industry": "Portal",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 55,
-        "accessibility": 86,
-        "best_practices": 78,
-        "seo": 97,
-        "pwa": 78
+        "performance": 59,
+        "accessibility": 85,
+        "best_practices": 82,
+        "seo": 94,
+        "pwa": 81
       }
     },
     {

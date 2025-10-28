@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.815Z",
+    "generated_at": "2025-10-28T20:11:23.735Z",
     "country": "Hungary",
     "flag": "🇭🇺",
-    "website_count": 6
+    "website_count": 8
   },
   "averages": {
-    "performance": 36,
-    "accessibility": 82,
-    "best_practices": 78,
-    "seo": 94,
-    "pwa": 48
+    "performance": 38,
+    "accessibility": 79,
+    "best_practices": 77,
+    "seo": 92,
+    "pwa": 46
   },
   "websites": [
+    {
+      "url": "hirkereso.hu",
+      "industry": "Media",
+      "scores": {
+        "performance": 66,
+        "accessibility": 65,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:36:39"
+    },
     {
       "url": "444.hu",
       "industry": "Media",
@@ -84,6 +96,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-20 20:13:38"
+    },
+    {
+      "url": "index.hu",
+      "industry": "Media",
+      "scores": {
+        "performance": 19,
+        "accessibility": 75,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 16:39:05"
     }
   ],
   "industries": [
@@ -100,13 +124,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 6,
       "averages": {
         "performance": 42,
-        "accessibility": 80,
-        "best_practices": 71,
-        "seo": 95,
-        "pwa": 53
+        "accessibility": 77,
+        "best_practices": 72,
+        "seo": 92,
+        "pwa": 48
       }
     },
     {

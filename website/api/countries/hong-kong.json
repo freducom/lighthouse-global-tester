@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.846Z",
+    "generated_at": "2025-10-28T20:11:23.761Z",
     "country": "Hong Kong",
     "flag": "🌍",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 25,
-    "accessibility": 53,
+    "performance": 43,
+    "accessibility": 70,
     "best_practices": 83,
-    "seo": 79,
-    "pwa": 44
+    "seo": 85,
+    "pwa": 33
   },
   "websites": [
+    {
+      "url": "hkt.com",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 60,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 10:43:50"
+    },
     {
       "url": "cathaypacific.com",
       "industry": "Transportation",
@@ -27,6 +39,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 60,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 22
+      }
+    },
     {
       "industry": "Transportation",
       "website_count": 1,

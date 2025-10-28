@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.847Z",
+    "generated_at": "2025-10-28T20:11:23.762Z",
     "country": "Costa Rica",
     "flag": "🇨🇷",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 45,
-    "accessibility": 79,
-    "best_practices": 63,
-    "seo": 83,
+    "performance": 51,
+    "accessibility": 80,
+    "best_practices": 72,
+    "seo": 86,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "ict.go.cr",
+      "industry": "Government",
+      "scores": {
+        "performance": 64,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:14:42"
+    },
     {
       "url": "adondeircr.com",
       "industry": "Media",
@@ -39,6 +51,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 64,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Media",
       "website_count": 2,

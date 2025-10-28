@@ -1,30 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:36.217Z",
-    "websites_with_trends": 235,
-    "total_websites": 620
+    "generated_at": "2025-10-28T20:11:24.166Z",
+    "websites_with_trends": 242,
+    "total_websites": 669
   },
   "global_trends": {
     "average_changes": {
-      "performance": -1.6,
-      "accessibility": -0.3,
-      "best_practices": -1.8,
+      "performance": -2.1,
+      "accessibility": -0.4,
+      "best_practices": -2,
       "seo": -0.3,
-      "pwa": -0.2
+      "pwa": -0.4
     },
     "improvements": {
-      "performance": 91,
-      "accessibility": 28,
-      "best_practices": 17,
-      "seo": 16,
-      "pwa": 3
+      "performance": 92,
+      "accessibility": 29,
+      "best_practices": 21,
+      "seo": 18,
+      "pwa": 2
     },
     "declines": {
-      "performance": 117,
-      "accessibility": 26,
-      "best_practices": 46,
-      "seo": 24,
-      "pwa": 2
+      "performance": 123,
+      "accessibility": 29,
+      "best_practices": 50,
+      "seo": 27,
+      "pwa": 3
     }
   },
   "website_trends": [
@@ -1099,24 +1099,24 @@
       "country": "Finland",
       "industry": "Education",
       "current_scores": {
+        "performance": 55,
+        "accessibility": 86,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 57,
         "accessibility": 93,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 62,
-        "accessibility": 93,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -5,
-        "accessibility": 0,
-        "best_practices": 0,
-        "seo": 0,
+        "performance": -2,
+        "accessibility": -7,
+        "best_practices": 8,
+        "seo": -7,
         "pwa": 0
       }
     },
@@ -1125,23 +1125,23 @@
       "country": "Finland",
       "industry": "Media",
       "current_scores": {
+        "performance": 13,
+        "accessibility": 99,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
         "performance": 46,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 100,
         "pwa": 44
       },
-      "previous_scores": {
-        "performance": 36,
-        "accessibility": 99,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 44
-      },
       "changes": {
-        "performance": 10,
+        "performance": -33,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": 8,
         "seo": 0,
         "pwa": 0
       }
@@ -1153,7 +1153,7 @@
       "current_scores": {
         "performance": 34,
         "accessibility": 98,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
@@ -1167,7 +1167,7 @@
       "changes": {
         "performance": 0,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": 9,
         "seo": 0,
         "pwa": 0
       }
@@ -1558,6 +1558,32 @@
         "performance": -6,
         "accessibility": 0,
         "best_practices": 8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "heise.de",
+      "country": "Germany",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 51,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 56,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -5,
+        "accessibility": 0,
+        "best_practices": 0,
         "seo": 0,
         "pwa": 0
       }
@@ -2131,6 +2157,84 @@
         "accessibility": 4,
         "best_practices": 0,
         "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "hindustantimes.com",
+      "country": "India",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 28,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 100
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 76,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 100
+      },
+      "changes": {
+        "performance": -30,
+        "accessibility": 20,
+        "best_practices": 25,
+        "seo": 1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "indiatimes.com",
+      "country": "India",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 33,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 53,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -20,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "instagram.com",
+      "country": "India",
+      "industry": "Social",
+      "current_scores": {
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 94,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 57,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -8,
+        "accessibility": -1,
+        "best_practices": 0,
+        "seo": -6,
         "pwa": 0
       }
     },
@@ -3015,6 +3119,32 @@
         "accessibility": 1,
         "best_practices": -9,
         "seo": 1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "ing.nl",
+      "country": "Netherlands",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 58,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 64,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
         "pwa": 0
       }
     },
@@ -4371,6 +4501,32 @@
       }
     },
     {
+      "url": "ica.se",
+      "country": "Sweden",
+      "industry": "E-commerce",
+      "current_scores": {
+        "performance": 41,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 49,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -8,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "klarna.com",
       "country": "Sweden",
       "industry": "Finance",
@@ -4817,25 +4973,25 @@
       "country": "United Kingdom",
       "industry": "Media",
       "current_scores": {
+        "performance": 18,
+        "accessibility": 89,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 89
+      },
+      "previous_scores": {
         "performance": 50,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 100,
         "pwa": 89
       },
-      "previous_scores": {
-        "performance": 55,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 78
-      },
       "changes": {
-        "performance": -5,
-        "accessibility": -2,
-        "best_practices": 0,
+        "performance": -32,
+        "accessibility": -7,
+        "best_practices": -16,
         "seo": 0,
-        "pwa": 11
+        "pwa": 0
       }
     },
     {
@@ -5515,29 +5671,55 @@
       }
     },
     {
-      "url": "instagram.com",
+      "url": "hubspot.com",
       "country": "United States",
-      "industry": "Social Media",
+      "industry": "Marketing",
       "current_scores": {
-        "performance": 59,
-        "accessibility": 89,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 67
+        "performance": 20,
+        "accessibility": 98,
+        "best_practices": 0,
+        "seo": 93,
+        "pwa": 33
       },
       "previous_scores": {
-        "performance": 61,
-        "accessibility": 89,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 67
+        "performance": 18,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
       },
       "changes": {
-        "performance": -2,
+        "performance": 2,
         "accessibility": 0,
-        "best_practices": 0,
-        "seo": 0,
+        "best_practices": -83,
+        "seo": 7,
         "pwa": 0
+      }
+    },
+    {
+      "url": "hulu.com",
+      "country": "United States",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 76,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 31,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": -13,
+        "best_practices": -17,
+        "seo": -16,
+        "pwa": -45
       }
     },
     {

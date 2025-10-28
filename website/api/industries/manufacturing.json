@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2025-10-28T20:11:23.839Z",
+    "industry": "Manufacturing",
+    "website_count": 1
+  },
+  "averages": {
+    "performance": 40,
+    "accessibility": 100,
+    "best_practices": 75,
+    "seo": 93,
+    "pwa": 33
+  },
+  "websites": [
+    {
+      "url": "husqvarna.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 12:34:41"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      }
+    }
+  ]
+}

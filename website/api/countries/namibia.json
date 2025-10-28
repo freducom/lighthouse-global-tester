@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.854Z",
+    "generated_at": "2025-10-28T20:11:23.768Z",
     "country": "Namibia",
     "flag": "🇳🇦",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 86,
-    "best_practices": 80,
-    "seo": 84,
+    "performance": 44,
+    "accessibility": 83,
+    "best_practices": 83,
+    "seo": 85,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "informante.web.na",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 71,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:18:08"
+    },
     {
       "url": "ncci.org.na",
       "industry": "Non-profit",
@@ -77,12 +89,12 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 36,
-        "accessibility": 87,
-        "best_practices": 79,
-        "seo": 84,
+        "performance": 41,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 85,
         "pwa": 33
       }
     },

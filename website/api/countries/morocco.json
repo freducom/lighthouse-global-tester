@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.845Z",
+    "generated_at": "2025-10-28T20:11:23.761Z",
     "country": "Morocco",
     "flag": "🌍",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 83,
-    "best_practices": 78,
-    "seo": 87,
-    "pwa": 44
+    "performance": 42,
+    "accessibility": 79,
+    "best_practices": 73,
+    "seo": 88,
+    "pwa": 42
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 10:19:35"
+    },
+    {
+      "url": "iam.ma",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 55,
+        "accessibility": 68,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:10:27"
     },
     {
       "url": "bankofafrica.ma",
@@ -71,6 +83,17 @@
         "best_practices": 67,
         "seo": 85,
         "pwa": 67
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 55,
+        "accessibility": 68,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 33
       }
     }
   ]

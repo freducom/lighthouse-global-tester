@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.839Z",
+    "generated_at": "2025-10-28T20:11:23.755Z",
     "country": "Singapore",
     "flag": "🇸🇬",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 23,
-    "accessibility": 80,
-    "best_practices": 78,
-    "seo": 82,
+    "performance": 24,
+    "accessibility": 81,
+    "best_practices": 79,
+    "seo": 81,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "asiaone.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 11:10:59"
+    },
     {
       "url": "channelnewsasia.com",
       "industry": "Media",
@@ -64,12 +76,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 25,
-        "accessibility": 76,
-        "best_practices": 67,
-        "seo": 79,
+        "performance": 26,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 78,
         "pwa": 33
       }
     },

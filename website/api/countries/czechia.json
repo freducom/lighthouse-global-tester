@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.833Z",
+    "generated_at": "2025-10-28T20:11:23.749Z",
     "country": "Czechia",
     "flag": "🇨🇿",
-    "website_count": 6
+    "website_count": 8
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 61,
-    "best_practices": 77,
-    "seo": 88,
-    "pwa": 41
+    "performance": 38,
+    "accessibility": 65,
+    "best_practices": 73,
+    "seo": 87,
+    "pwa": 40
   },
   "websites": [
     {
@@ -74,6 +74,18 @@
       "test_date": "2025-10-27 00:46:36"
     },
     {
+      "url": "idnes.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 72,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:17:15"
+    },
+    {
       "url": "aktualne.cz",
       "industry": "Media",
       "scores": {
@@ -84,18 +96,30 @@
         "pwa": 56
       },
       "test_date": "2025-10-26 07:55:21"
+    },
+    {
+      "url": "ihned.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 22,
+        "accessibility": 84,
+        "best_practices": 58,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 14:18:11"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 6,
+      "website_count": 8,
       "averages": {
-        "performance": 41,
-        "accessibility": 61,
-        "best_practices": 77,
-        "seo": 88,
-        "pwa": 41
+        "performance": 38,
+        "accessibility": 65,
+        "best_practices": 73,
+        "seo": 87,
+        "pwa": 40
       }
     }
   ]

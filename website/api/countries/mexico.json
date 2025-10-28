@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.854Z",
+    "generated_at": "2025-10-28T20:11:23.769Z",
     "country": "Mexico",
     "flag": "🌍",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
     "performance": 55,
-    "accessibility": 97,
-    "best_practices": 85,
-    "seo": 91,
+    "accessibility": 93,
+    "best_practices": 88,
+    "seo": 93,
     "pwa": 33
   },
   "websites": [
@@ -36,6 +36,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 03:00:38"
+    },
+    {
+      "url": "inegi.org.mx",
+      "industry": "Government",
+      "scores": {
+        "performance": 56,
+        "accessibility": 79,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 18:14:35"
     },
     {
       "url": "mercadolibre.com.mx",
@@ -71,6 +83,17 @@
         "accessibility": 100,
         "best_practices": 88,
         "seo": 84,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 79,
+        "best_practices": 100,
+        "seo": 100,
         "pwa": 33
       }
     },

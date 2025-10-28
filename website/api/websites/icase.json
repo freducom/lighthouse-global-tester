@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:36.112Z",
+    "generated_at": "2025-10-28T20:11:24.050Z",
     "url": "ica.se",
     "country": "Sweden",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 41,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-19 20:28:01"
+    "test_date": "2025-10-28 14:13:59"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-10-28 14:13:59"
+    },
     {
       "performance": 49,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 20:28:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -8,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-28 14:13:59",
+    "test_date_previous": "2025-10-19 20:28:01"
+  }
 }

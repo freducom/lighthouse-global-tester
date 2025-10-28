@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:36.045Z",
+    "generated_at": "2025-10-28T20:11:23.979Z",
     "url": "indiatimes.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 33,
     "accessibility": 94,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-19 19:45:59"
+    "test_date": "2025-10-28 16:46:26"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-10-28 16:46:26"
+    },
     {
       "performance": 53,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-19 19:45:59"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -20,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-28 16:46:26",
+    "test_date_previous": "2025-10-19 19:45:59"
+  }
 }

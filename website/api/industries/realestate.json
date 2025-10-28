@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.916Z",
+    "generated_at": "2025-10-28T20:11:23.839Z",
     "industry": "Realestate",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 51,
-    "accessibility": 81,
+    "performance": 42,
+    "accessibility": 90,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33
@@ -23,15 +23,27 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 19:46:37"
+    },
+    {
+      "url": "hemnet.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 10:34:58"
     }
   ],
   "countries": [
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 51,
-        "accessibility": 81,
+        "performance": 42,
+        "accessibility": 90,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33

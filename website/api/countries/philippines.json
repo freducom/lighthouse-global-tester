@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.841Z",
+    "generated_at": "2025-10-28T20:11:23.757Z",
     "country": "Philippines",
     "flag": "🌍",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 27,
-    "accessibility": 74,
-    "best_practices": 53,
-    "seo": 72,
-    "pwa": 33
+    "performance": 37,
+    "accessibility": 78,
+    "best_practices": 60,
+    "seo": 76,
+    "pwa": 36
   },
   "websites": [
+    {
+      "url": "inquirer.net",
+      "industry": "Media",
+      "scores": {
+        "performance": 65,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 44
+      },
+      "test_date": "2025-10-28 18:23:42"
+    },
     {
       "url": "bpi.com.ph",
       "industry": "Finance",
@@ -64,13 +76,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 25,
-        "accessibility": 78,
-        "best_practices": 75,
-        "seo": 84,
-        "pwa": 33
+        "performance": 45,
+        "accessibility": 84,
+        "best_practices": 79,
+        "seo": 85,
+        "pwa": 39
       }
     }
   ]

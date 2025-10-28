@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T16:26:35.912Z",
+    "generated_at": "2025-10-28T20:11:23.835Z",
     "industry": "Telecom",
-    "website_count": 15
+    "website_count": 17
   },
   "averages": {
-    "performance": 31,
-    "accessibility": 92,
-    "best_practices": 81,
+    "performance": 34,
+    "accessibility": 90,
+    "best_practices": 80,
     "seo": 90,
-    "pwa": 36
+    "pwa": 35
   },
   "websites": [
     {
@@ -73,6 +73,18 @@
       "test_date": "2025-10-27 12:18:39"
     },
     {
+      "url": "hkt.com",
+      "country": "Hong Kong",
+      "scores": {
+        "performance": 60,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 22
+      },
+      "test_date": "2025-10-28 10:43:50"
+    },
+    {
       "url": "safaricom.co.ke",
       "country": "Kenya",
       "scores": {
@@ -83,6 +95,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-23 16:47:35"
+    },
+    {
+      "url": "iam.ma",
+      "country": "Morocco",
+      "scores": {
+        "performance": 55,
+        "accessibility": 68,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 14:10:27"
     },
     {
       "url": "ptcl.com.pk",
@@ -239,6 +263,17 @@
       }
     },
     {
+      "country": "Hong Kong",
+      "website_count": 1,
+      "averages": {
+        "performance": 60,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 22
+      }
+    },
+    {
       "country": "Kenya",
       "website_count": 1,
       "averages": {
@@ -246,6 +281,17 @@
         "accessibility": 70,
         "best_practices": 83,
         "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Morocco",
+      "website_count": 1,
+      "averages": {
+        "performance": 55,
+        "accessibility": 68,
+        "best_practices": 58,
+        "seo": 93,
         "pwa": 33
       }
     },
