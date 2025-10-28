@@ -7380,24 +7380,25 @@ ${this.getFooterHTML(totalWebsites, totalCountries)}
             });
         }
 
-        // Regional Performance Analysis (Real Data - Horizontal Bar Comparison)
+        // Regional Performance Analysis (Real Data - Interactive Horizontal Bar Chart)
         const regionalAnalysisCtx = document.getElementById('regionalAnalysisChart');
         if (regionalAnalysisCtx) {
-            // Calculate regional averages from real country data
-            const regions = {
-                'Europe': [${countryStats.filter(c => ['Germany', 'France', 'Netherlands', 'United Kingdom', 'Italy', 'Spain', 'Poland', 'Belgium', 'Austria', 'Czech Republic', 'Greece', 'Portugal', 'Hungary', 'Bulgaria', 'Romania', 'Slovakia', 'Estonia', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Switzerland', 'Ukraine', 'Russia', 'Turkey'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
-                'Asia': [${countryStats.filter(c => ['China', 'Japan', 'India', 'South Korea', 'Malaysia', 'Singapore', 'Thailand', 'Philippines', 'Indonesia', 'Vietnam', 'Taiwan', 'Hong Kong', 'Pakistan', 'Bangladesh'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
-                'North America': [${countryStats.filter(c => ['United States', 'Canada', 'Mexico'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
-                'South America': [${countryStats.filter(c => ['Brazil', 'Argentina', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
-                'Africa': [${countryStats.filter(c => ['South Africa', 'Egypt', 'Morocco', 'Kenya', 'Namibia', 'Zambia'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
-                'Middle East': [${countryStats.filter(c => ['Iran', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Libya'].includes(c.country)).map(c => c.avg_performance).join(', ')}],
-                'Oceania': [${countryStats.filter(c => ['Australia', 'New Zealand'].includes(c.country)).map(c => c.avg_performance).join(', ')}]
+            // Store country data for each region for interactive functionality
+            const regionCountryData = {
+                'Europe': ${JSON.stringify(countryStats.filter(c => ['Germany', 'France', 'Netherlands', 'United Kingdom', 'Italy', 'Spain', 'Poland', 'Belgium', 'Austria', 'Czech Republic', 'Greece', 'Portugal', 'Hungary', 'Bulgaria', 'Romania', 'Slovakia', 'Estonia', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Switzerland', 'Ukraine', 'Russia', 'Turkey'].includes(c.country)))},
+                'Asia': ${JSON.stringify(countryStats.filter(c => ['China', 'Japan', 'India', 'South Korea', 'Malaysia', 'Singapore', 'Thailand', 'Philippines', 'Indonesia', 'Vietnam', 'Taiwan', 'Hong Kong', 'Pakistan', 'Bangladesh'].includes(c.country)))},
+                'North America': ${JSON.stringify(countryStats.filter(c => ['United States', 'Canada', 'Mexico'].includes(c.country)))},
+                'South America': ${JSON.stringify(countryStats.filter(c => ['Brazil', 'Argentina', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay'].includes(c.country)))},
+                'Africa': ${JSON.stringify(countryStats.filter(c => ['South Africa', 'Egypt', 'Morocco', 'Kenya', 'Namibia', 'Zambia'].includes(c.country)))},
+                'Middle East': ${JSON.stringify(countryStats.filter(c => ['Iran', 'Israel', 'Saudi Arabia', 'United Arab Emirates', 'Libya'].includes(c.country)))},
+                'Oceania': ${JSON.stringify(countryStats.filter(c => ['Australia', 'New Zealand'].includes(c.country)))}
             };
-            
-            const regionalAverages = Object.entries(regions).map(([region, scores]) => ({
+
+            // Calculate regional averages
+            const regionalAverages = Object.entries(regionCountryData).map(([region, countries]) => ({
                 region,
-                average: scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0,
-                count: scores.length
+                average: countries.length > 0 ? countries.reduce((sum, c) => sum + c.avg_performance, 0) / countries.length : 0,
+                count: countries.length
             })).filter(r => r.count > 0);
 
             // Sort by performance (highest first) and calculate differences from median
@@ -7405,67 +7406,200 @@ ${this.getFooterHTML(totalWebsites, totalCountries)}
             const medianIndex = Math.floor(sortedRegions.length / 2);
             const medianScore = sortedRegions[medianIndex].average;
             
-            const regionLabels = sortedRegions.map(r => r.region);
-            const differences = sortedRegions.map(r => r.average - medianScore);
+            let currentView = 'regional'; // Track current view: 'regional' or region name
+            let regionalChart = null;
 
-            new Chart(regionalAnalysisCtx, {
-                type: 'bar',
-                data: {
-                    labels: regionLabels,
-                    datasets: [{
-                        label: 'Performance Difference',
-                        data: differences,
-                        backgroundColor: differences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
-                        borderColor: differences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    indexAxis: 'y',
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Regional Performance vs Median'
+            function createRegionalChart() {
+                const regionLabels = sortedRegions.map(r => r.region);
+                const differences = sortedRegions.map(r => r.average - medianScore);
+
+                const config = {
+                    type: 'bar',
+                    data: {
+                        labels: regionLabels,
+                        datasets: [{
+                            label: 'Performance Difference',
+                            data: differences,
+                            backgroundColor: differences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
+                            borderColor: differences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
                         },
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const diff = context.parsed.x;
-                                    const actualScore = medianScore + diff;
-                                    if (diff === 0) {
-                                        return context.label + ': ' + actualScore.toFixed(1) + ' (median)';
-                                    } else {
-                                        const sign = diff > 0 ? '+' : '';
-                                        return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs median)';
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Regional Performance vs Median (Click to explore countries)'
+                            },
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const diff = context.parsed.x;
+                                        const actualScore = medianScore + diff;
+                                        if (diff === 0) {
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (median)';
+                                        } else {
+                                            const sign = diff > 0 ? '+' : '';
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs median)';
+                                        }
+                                    },
+                                    afterLabel: function() {
+                                        return 'Click to see countries in this region';
                                     }
                                 }
                             }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            title: {
-                                display: true,
-                                text: 'Performance Difference from Median Region'
-                            },
-                            grid: {
-                                color: function(context) {
-                                    return context.tick.value === 0 ? '#374151' : '#E5E7EB';
-                                }
+                        },
+                        onClick: function(event, elements) {
+                            if (elements.length > 0) {
+                                const elementIndex = elements[0].index;
+                                const regionName = regionLabels[elementIndex];
+                                showCountriesInRegion(regionName);
                             }
                         },
-                        y: {
-                            title: {
-                                display: true,
-                                text: 'Region'
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Performance Difference from Median Region'
+                                },
+                                grid: {
+                                    color: function(context) {
+                                        return context.tick.value === 0 ? '#374151' : '#E5E7EB';
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Region'
+                                }
                             }
                         }
                     }
+                };
+
+                if (regionalChart) {
+                    regionalChart.destroy();
                 }
-            });
+                regionalChart = new Chart(regionalAnalysisCtx, config);
+                currentView = 'regional';
+            }
+
+            function showCountriesInRegion(regionName) {
+                const countries = regionCountryData[regionName];
+                if (!countries || countries.length === 0) return;
+
+                // Sort countries by performance and calculate differences from region median
+                const sortedCountries = countries.sort((a, b) => b.avg_performance - a.avg_performance);
+                const regionMedianIndex = Math.floor(sortedCountries.length / 2);
+                const regionMedianScore = sortedCountries[regionMedianIndex].avg_performance;
+
+                const countryLabels = sortedCountries.map(c => c.country);
+                const countryDifferences = sortedCountries.map(c => c.avg_performance - regionMedianScore);
+
+                const config = {
+                    type: 'bar',
+                    data: {
+                        labels: countryLabels,
+                        datasets: [{
+                            label: 'Performance Difference',
+                            data: countryDifferences,
+                            backgroundColor: countryDifferences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
+                            borderColor: countryDifferences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: regionName + ' Countries vs Regional Median'
+                            },
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const diff = context.parsed.x;
+                                        const actualScore = regionMedianScore + diff;
+                                        if (diff === 0) {
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (regional median)';
+                                        } else {
+                                            const sign = diff > 0 ? '+' : '';
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs regional median)';
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Performance Difference from Regional Median'
+                                },
+                                grid: {
+                                    color: function(context) {
+                                        return context.tick.value === 0 ? '#374151' : '#E5E7EB';
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Country'
+                                }
+                            }
+                        }
+                    }
+                };
+
+                if (regionalChart) {
+                    regionalChart.destroy();
+                }
+                regionalChart = new Chart(regionalAnalysisCtx, config);
+                currentView = regionName;
+
+                // Add back button
+                addBackButton();
+            }
+
+            function addBackButton() {
+                // Remove existing back button if any
+                const existingBtn = document.getElementById('regionalBackBtn');
+                if (existingBtn) {
+                    existingBtn.remove();
+                }
+
+                // Create back button
+                const backBtn = document.createElement('button');
+                backBtn.id = 'regionalBackBtn';
+                backBtn.innerHTML = '← Back to Regional View';
+                backBtn.style.cssText = 'margin-top: 10px; padding: 8px 16px; background: #3B82F6; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;';
+                backBtn.onclick = function() {
+                    createRegionalChart();
+                    backBtn.remove();
+                };
+
+                // Insert after the chart container
+                const chartSection = regionalAnalysisCtx.closest('.chart-section');
+                if (chartSection) {
+                    chartSection.appendChild(backBtn);
+                }
+            }
+
+            // Initialize with regional view
+            createRegionalChart();
         }
     </script>
 ${this.getPostHogScript()}

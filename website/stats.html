@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics - CheetahCheck</title>
-    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across 669 websites in 69 countries.">
+    <meta name="description" content="Comprehensive statistics and analytics for CheetahCheck's global website performance monitoring across 668 websites in 69 countries.">
     
     <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" sizes="16x16" href="cheetahcheck_favicon_16x16.png">
@@ -42,7 +42,7 @@
                 <div class="stat-tile">
                     <div class="stat-icon">🌐</div>
                     <div class="stat-content">
-                        <div class="stat-number">669</div>
+                        <div class="stat-number">668</div>
                         <div class="stat-label">Total Websites</div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
             <!-- Performance Distribution (Real Data) -->
             <section class="chart-section">
                 <h2>Performance Score Distribution</h2>
-                <p class="chart-description">Real distribution from 669 tested websites</p>
+                <p class="chart-description">Real distribution from 668 tested websites</p>
                 <div class="performance-distribution">
                     <div class="perf-category excellent">
                         <div class="perf-number">17</div>
@@ -88,7 +88,7 @@
                         <div class="perf-percentage">31%</div>
                     </div>
                     <div class="perf-category poor">
-                        <div class="perf-number">446</div>
+                        <div class="perf-number">445</div>
                         <div class="perf-label">Poor (0-49)</div>
                         <div class="perf-percentage">67%</div>
                     </div>
@@ -153,7 +153,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 669 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 668 websites.</p>
         </div>
     </footer>
 
@@ -504,6 +504,14 @@
                 seo: 93,
                 pwa: 33
             }, {
+                industry: 'E-commerce',
+                site_count: 44,
+                performance: 42.6,
+                accessibility: 82.5,
+                best_practices: 77.8,
+                seo: 90,
+                pwa: 45
+            }, {
                 industry: 'Marketing',
                 site_count: 6,
                 performance: 42.3,
@@ -511,14 +519,6 @@
                 best_practices: 66.7,
                 seo: 91.8,
                 pwa: 33
-            }, {
-                industry: 'E-commerce',
-                site_count: 45,
-                performance: 42.2,
-                accessibility: 82.5,
-                best_practices: 77.9,
-                seo: 89.9,
-                pwa: 44.8
             }, {
                 industry: 'Energy',
                 site_count: 1,
@@ -823,16 +823,16 @@
                 r: 5, // Bubble size based on number of sites
                 backgroundColor: '#1D4ED880'
             }, {
-                label: 'Marketing',
+                label: 'E-commerce',
                 x: 18, // Industry index (categorical x-axis)
-                y: 42.3, // Performance score
-                r: 18, // Bubble size based on number of sites
+                y: 42.6, // Performance score
+                r: 25, // Bubble size based on number of sites
                 backgroundColor: '#1E40AF80'
             }, {
-                label: 'E-commerce',
+                label: 'Marketing',
                 x: 19, // Industry index (categorical x-axis)
-                y: 42.2, // Performance score
-                r: 25, // Bubble size based on number of sites
+                y: 42.3, // Performance score
+                r: 18, // Bubble size based on number of sites
                 backgroundColor: '#1E3A8A80'
             }, {
                 label: 'Energy',
@@ -1002,7 +1002,7 @@
                                 stepSize: 1,
                                 callback: function(value) {
                                     if (value === 0 || value > 38) return '';
-                                    const industries = ['Healthtech', 'Gaming', 'Consulting', 'Tech', 'Government', 'Jobs', 'Website editor', 'Search Engine', 'Delivery', 'Portal', 'Social', 'Education', 'Social Media', 'Healthcare', 'Marketplace', 'Finance', 'Video', 'Marketing', 'E-commerce', 'Energy', 'Media', 'Transportation', 'Realestate', 'Technology', 'Sports', 'Weather', 'Manufacturing', 'Non-profit', 'Edtech', 'Software', 'Food & Drink', 'Retail', 'Telecom', 'Hospitality', 'Automotive', 'Engineering', 'Real Estate', 'Travel'];
+                                    const industries = ['Healthtech', 'Gaming', 'Consulting', 'Tech', 'Government', 'Jobs', 'Website editor', 'Search Engine', 'Delivery', 'Portal', 'Social', 'Education', 'Social Media', 'Healthcare', 'Marketplace', 'Finance', 'Video', 'E-commerce', 'Marketing', 'Energy', 'Media', 'Transportation', 'Realestate', 'Technology', 'Sports', 'Weather', 'Manufacturing', 'Non-profit', 'Edtech', 'Software', 'Food & Drink', 'Retail', 'Telecom', 'Hospitality', 'Automotive', 'Engineering', 'Real Estate', 'Travel'];
                                     return industries[value - 1] ? industries[value - 1].substring(0, 8) + '...' : '';
                                 }
                             }
@@ -1020,24 +1020,25 @@
             });
         }
 
-        // Regional Performance Analysis (Real Data - Horizontal Bar Comparison)
+        // Regional Performance Analysis (Real Data - Interactive Horizontal Bar Chart)
         const regionalAnalysisCtx = document.getElementById('regionalAnalysisChart');
         if (regionalAnalysisCtx) {
-            // Calculate regional averages from real country data
-            const regions = {
-                'Europe': [58.7, 54.4, 53.9, 53.1, 51, 50.2, 49.7, 49, 48.4, 48, 47.4, 46.9, 46.5, 46.1, 45.3, 45.1, 44.8, 44, 41.2, 40.1, 39.4, 38.7, 38.5, 37.6, 36.8, 36.5, 33.5, 12],
-                'Asia': [79, 49.4, 44.9, 43.2, 42.5, 41.7, 40.3, 39.1, 36.8, 34.8, 34.3, 32.5, 29.8, 24],
-                'North America': [55.2, 43.6, 34.1],
-                'South America': [78.7, 48.2, 45.7, 36, 35.7, 29.7],
-                'Africa': [51.8, 43.7, 41.8, 39.2, 36.5, 36.1],
-                'Middle East': [63.9, 54.4, 39, 34, 28.3],
-                'Oceania': [46.6, 40]
+            // Store country data for each region for interactive functionality
+            const regionCountryData = {
+                'Europe': [{"country":"Bulgaria","site_count":3,"avg_performance":58.7,"avg_accessibility":76.7,"avg_best_practices":77.7,"avg_seo":93.7,"avg_pwa":40.7,"best_performance":85,"worst_performance":34},{"country":"Netherlands","site_count":10,"avg_performance":54.4,"avg_accessibility":94.3,"avg_best_practices":82.6,"avg_seo":90.8,"avg_pwa":35.3,"best_performance":90,"worst_performance":16},{"country":"Ukraine","site_count":8,"avg_performance":53.9,"avg_accessibility":80.6,"avg_best_practices":76.3,"avg_seo":92,"avg_pwa":54.1,"best_performance":69,"worst_performance":38},{"country":"Belgium","site_count":8,"avg_performance":53.1,"avg_accessibility":91.8,"avg_best_practices":80.3,"avg_seo":89.5,"avg_pwa":38.8,"best_performance":74,"worst_performance":28},{"country":"Luxembourg","site_count":5,"avg_performance":51,"avg_accessibility":90.2,"avg_best_practices":86.8,"avg_seo":92.8,"avg_pwa":42,"best_performance":90,"worst_performance":21},{"country":"Romania","site_count":5,"avg_performance":50.2,"avg_accessibility":83.4,"avg_best_practices":81.6,"avg_seo":94.8,"avg_pwa":39.8,"best_performance":70,"worst_performance":25},{"country":"Malta","site_count":3,"avg_performance":49.7,"avg_accessibility":86.3,"avg_best_practices":66.7,"avg_seo":89.7,"avg_pwa":29.7,"best_performance":60,"worst_performance":34},{"country":"Lithuania","site_count":5,"avg_performance":49,"avg_accessibility":64.2,"avg_best_practices":73.2,"avg_seo":85,"avg_pwa":46.6,"best_performance":88,"worst_performance":10},{"country":"France","site_count":9,"avg_performance":48.4,"avg_accessibility":86,"avg_best_practices":88,"avg_seo":94.1,"avg_pwa":65.4,"best_performance":72,"worst_performance":32},{"country":"Greece","site_count":5,"avg_performance":48,"avg_accessibility":86.8,"avg_best_practices":80,"avg_seo":93,"avg_pwa":35.2,"best_performance":61,"worst_performance":26},{"country":"Denmark","site_count":8,"avg_performance":47.4,"avg_accessibility":92.1,"avg_best_practices":91.8,"avg_seo":95.3,"avg_pwa":42.9,"best_performance":81,"worst_performance":29},{"country":"Sweden","site_count":42,"avg_performance":47,"avg_accessibility":92.8,"avg_best_practices":89.6,"avg_seo":93,"avg_pwa":42.4,"best_performance":90,"worst_performance":24},{"country":"Turkey","site_count":7,"avg_performance":46.9,"avg_accessibility":88.4,"avg_best_practices":82.1,"avg_seo":91.9,"avg_pwa":42.6,"best_performance":80,"worst_performance":26},{"country":"Poland","site_count":16,"avg_performance":46.1,"avg_accessibility":87.7,"avg_best_practices":81.3,"avg_seo":93.3,"avg_pwa":54.1,"best_performance":79,"worst_performance":23},{"country":"Finland","site_count":44,"avg_performance":45.3,"avg_accessibility":91.2,"avg_best_practices":89.3,"avg_seo":95.7,"avg_pwa":44,"best_performance":100,"worst_performance":11},{"country":"Austria","site_count":10,"avg_performance":45.1,"avg_accessibility":88.9,"avg_best_practices":87.5,"avg_seo":89.3,"avg_pwa":46.6,"best_performance":64,"worst_performance":30},{"country":"Norway","site_count":8,"avg_performance":44.8,"avg_accessibility":93.8,"avg_best_practices":87.5,"avg_seo":95.4,"avg_pwa":37.3,"best_performance":57,"worst_performance":30},{"country":"Germany","site_count":30,"avg_performance":44,"avg_accessibility":88.4,"avg_best_practices":88.6,"avg_seo":91.5,"avg_pwa":49.9,"best_performance":88,"worst_performance":7},{"country":"Spain","site_count":6,"avg_performance":41.2,"avg_accessibility":85.2,"avg_best_practices":76.5,"avg_seo":90.7,"avg_pwa":40.5,"best_performance":54,"worst_performance":28},{"country":"Italy","site_count":7,"avg_performance":40.1,"avg_accessibility":84.9,"avg_best_practices":82,"avg_seo":88.1,"avg_pwa":42.7,"best_performance":58,"worst_performance":31},{"country":"Russia","site_count":9,"avg_performance":39.4,"avg_accessibility":73.3,"avg_best_practices":60.1,"avg_seo":91.1,"avg_pwa":60.6,"best_performance":81,"worst_performance":9},{"country":"United Kingdom","site_count":29,"avg_performance":38.7,"avg_accessibility":88.7,"avg_best_practices":78.4,"avg_seo":89.7,"avg_pwa":44.6,"best_performance":88,"worst_performance":0},{"country":"Switzerland","site_count":8,"avg_performance":38.5,"avg_accessibility":93.1,"avg_best_practices":85.3,"avg_seo":95.1,"avg_pwa":42.9,"best_performance":56,"worst_performance":31},{"country":"Hungary","site_count":8,"avg_performance":37.6,"avg_accessibility":79.3,"avg_best_practices":76.9,"avg_seo":91.5,"avg_pwa":45.6,"best_performance":66,"worst_performance":19},{"country":"Latvia","site_count":6,"avg_performance":36.8,"avg_accessibility":76.8,"avg_best_practices":79.2,"avg_seo":85.2,"avg_pwa":44.3,"best_performance":100,"worst_performance":11},{"country":"Slovakia","site_count":8,"avg_performance":36.5,"avg_accessibility":84.9,"avg_best_practices":77,"avg_seo":92.5,"avg_pwa":45.6,"best_performance":41,"worst_performance":33},{"country":"Estonia","site_count":6,"avg_performance":33.5,"avg_accessibility":88.3,"avg_best_practices":86.2,"avg_seo":93,"avg_pwa":49.8,"best_performance":59,"worst_performance":4},{"country":"Portugal","site_count":1,"avg_performance":12,"avg_accessibility":87,"avg_best_practices":58,"avg_seo":88,"avg_pwa":33,"best_performance":12,"worst_performance":12}],
+                'Asia': [{"country":"Malaysia","site_count":3,"avg_performance":79,"avg_accessibility":83.3,"avg_best_practices":92,"avg_seo":85.7,"avg_pwa":33,"best_performance":81,"worst_performance":76},{"country":"Pakistan","site_count":7,"avg_performance":49.4,"avg_accessibility":72.3,"avg_best_practices":73.9,"avg_seo":90.1,"avg_pwa":44.3,"best_performance":89,"worst_performance":25},{"country":"Japan","site_count":7,"avg_performance":44.9,"avg_accessibility":79.4,"avg_best_practices":90.4,"avg_seo":89,"avg_pwa":33,"best_performance":65,"worst_performance":9},{"country":"India","site_count":41,"avg_performance":43.2,"avg_accessibility":84.2,"avg_best_practices":73.6,"avg_seo":86.6,"avg_pwa":45.6,"best_performance":95,"worst_performance":7},{"country":"Hong Kong","site_count":2,"avg_performance":42.5,"avg_accessibility":69.5,"avg_best_practices":83,"avg_seo":84.5,"avg_pwa":33,"best_performance":60,"worst_performance":25},{"country":"Vietnam","site_count":6,"avg_performance":41.7,"avg_accessibility":81.7,"avg_best_practices":73.7,"avg_seo":92.5,"avg_pwa":34.8,"best_performance":59,"worst_performance":27},{"country":"China","site_count":9,"avg_performance":40.3,"avg_accessibility":54.1,"avg_best_practices":64.9,"avg_seo":84.7,"avg_pwa":41.8,"best_performance":56,"worst_performance":18},{"country":"Thailand","site_count":7,"avg_performance":39.1,"avg_accessibility":94.7,"avg_best_practices":76,"avg_seo":96.1,"avg_pwa":52.3,"best_performance":92,"worst_performance":11},{"country":"Philippines","site_count":4,"avg_performance":36.8,"avg_accessibility":78.3,"avg_best_practices":60.3,"avg_seo":75.5,"avg_pwa":35.8,"best_performance":65,"worst_performance":20},{"country":"Bangladesh","site_count":5,"avg_performance":34.8,"avg_accessibility":79.4,"avg_best_practices":75,"avg_seo":92.4,"avg_pwa":57.6,"best_performance":50,"worst_performance":10},{"country":"South Korea","site_count":10,"avg_performance":34.3,"avg_accessibility":77.6,"avg_best_practices":75.1,"avg_seo":89.3,"avg_pwa":33,"best_performance":44,"worst_performance":24},{"country":"Taiwan","site_count":2,"avg_performance":32.5,"avg_accessibility":83.5,"avg_best_practices":83.5,"avg_seo":100,"avg_pwa":33,"best_performance":37,"worst_performance":28},{"country":"Indonesia","site_count":6,"avg_performance":29.8,"avg_accessibility":87.7,"avg_best_practices":79,"avg_seo":92.2,"avg_pwa":36.7,"best_performance":35,"worst_performance":25},{"country":"Singapore","site_count":4,"avg_performance":24,"avg_accessibility":80.5,"avg_best_practices":79,"avg_seo":80.8,"avg_pwa":33,"best_performance":27,"worst_performance":21}],
+                'North America': [{"country":"Mexico","site_count":5,"avg_performance":55.2,"avg_accessibility":93.2,"avg_best_practices":88.2,"avg_seo":92.8,"avg_pwa":33,"best_performance":94,"worst_performance":26},{"country":"United States","site_count":80,"avg_performance":43.6,"avg_accessibility":89.5,"avg_best_practices":77.5,"avg_seo":89.1,"avg_pwa":39.6,"best_performance":100,"worst_performance":8},{"country":"Canada","site_count":23,"avg_performance":34.1,"avg_accessibility":93.2,"avg_best_practices":69.5,"avg_seo":87.4,"avg_pwa":42.3,"best_performance":74,"worst_performance":5}],
+                'South America': [{"country":"Bolivia","site_count":3,"avg_performance":78.7,"avg_accessibility":83.7,"avg_best_practices":100,"avg_seo":94.7,"avg_pwa":33,"best_performance":98,"worst_performance":67},{"country":"Brazil","site_count":10,"avg_performance":48.2,"avg_accessibility":85.4,"avg_best_practices":79.1,"avg_seo":89.3,"avg_pwa":47.6,"best_performance":81,"worst_performance":2},{"country":"Uruguay","site_count":3,"avg_performance":45.7,"avg_accessibility":72.3,"avg_best_practices":77.7,"avg_seo":92.7,"avg_pwa":36.7,"best_performance":60,"worst_performance":35},{"country":"Chile","site_count":7,"avg_performance":36,"avg_accessibility":81.3,"avg_best_practices":76.1,"avg_seo":88.1,"avg_pwa":31.4,"best_performance":58,"worst_performance":6},{"country":"Paraguay","site_count":3,"avg_performance":35.7,"avg_accessibility":92.3,"avg_best_practices":80.3,"avg_seo":95,"avg_pwa":55.7,"best_performance":50,"worst_performance":22},{"country":"Argentina","site_count":3,"avg_performance":29.7,"avg_accessibility":93.7,"avg_best_practices":75,"avg_seo":89.7,"avg_pwa":36.7,"best_performance":41,"worst_performance":11}],
+                'Africa': [{"country":"Zambia","site_count":9,"avg_performance":51.8,"avg_accessibility":90.1,"avg_best_practices":80.6,"avg_seo":85.2,"avg_pwa":30.7,"best_performance":100,"worst_performance":21},{"country":"Namibia","site_count":6,"avg_performance":43.7,"avg_accessibility":83.2,"avg_best_practices":83.2,"avg_seo":85.3,"avg_pwa":33,"best_performance":61,"worst_performance":25},{"country":"Morocco","site_count":4,"avg_performance":41.8,"avg_accessibility":79.3,"avg_best_practices":73,"avg_seo":88.3,"avg_pwa":41.5,"best_performance":84,"worst_performance":0},{"country":"Kenya","site_count":5,"avg_performance":39.2,"avg_accessibility":91.6,"avg_best_practices":71.8,"avg_seo":89.8,"avg_pwa":30.8,"best_performance":50,"worst_performance":27},{"country":"Egypt","site_count":8,"avg_performance":36.5,"avg_accessibility":87.3,"avg_best_practices":66.6,"avg_seo":91.3,"avg_pwa":45.8,"best_performance":56,"worst_performance":19},{"country":"South Africa","site_count":7,"avg_performance":36.1,"avg_accessibility":88.6,"avg_best_practices":78.6,"avg_seo":85.9,"avg_pwa":53.9,"best_performance":87,"worst_performance":10}],
+                'Middle East': [{"country":"Iran","site_count":8,"avg_performance":63.9,"avg_accessibility":81,"avg_best_practices":70.9,"avg_seo":88,"avg_pwa":35.9,"best_performance":99,"worst_performance":29},{"country":"Libya","site_count":5,"avg_performance":54.4,"avg_accessibility":89.4,"avg_best_practices":81.6,"avg_seo":86,"avg_pwa":33,"best_performance":82,"worst_performance":35},{"country":"Saudi Arabia","site_count":3,"avg_performance":39,"avg_accessibility":72.7,"avg_best_practices":77.7,"avg_seo":87.7,"avg_pwa":33,"best_performance":48,"worst_performance":29},{"country":"Israel","site_count":10,"avg_performance":34,"avg_accessibility":73.1,"avg_best_practices":74.9,"avg_seo":89.7,"avg_pwa":35.2,"best_performance":42,"worst_performance":23},{"country":"United Arab Emirates","site_count":3,"avg_performance":28.3,"avg_accessibility":90.7,"avg_best_practices":69.3,"avg_seo":83.3,"avg_pwa":40.7,"best_performance":30,"worst_performance":27}],
+                'Oceania': [{"country":"Australia","site_count":8,"avg_performance":46.6,"avg_accessibility":66.9,"avg_best_practices":86.4,"avg_seo":93,"avg_pwa":47.1,"best_performance":65,"worst_performance":30},{"country":"New Zealand","site_count":5,"avg_performance":40,"avg_accessibility":83.2,"avg_best_practices":65,"avg_seo":88.2,"avg_pwa":46.6,"best_performance":71,"worst_performance":27}]
             };
-            
-            const regionalAverages = Object.entries(regions).map(([region, scores]) => ({
+
+            // Calculate regional averages
+            const regionalAverages = Object.entries(regionCountryData).map(([region, countries]) => ({
                 region,
-                average: scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0,
-                count: scores.length
+                average: countries.length > 0 ? countries.reduce((sum, c) => sum + c.avg_performance, 0) / countries.length : 0,
+                count: countries.length
             })).filter(r => r.count > 0);
 
             // Sort by performance (highest first) and calculate differences from median
@@ -1045,67 +1046,200 @@
             const medianIndex = Math.floor(sortedRegions.length / 2);
             const medianScore = sortedRegions[medianIndex].average;
             
-            const regionLabels = sortedRegions.map(r => r.region);
-            const differences = sortedRegions.map(r => r.average - medianScore);
+            let currentView = 'regional'; // Track current view: 'regional' or region name
+            let regionalChart = null;
 
-            new Chart(regionalAnalysisCtx, {
-                type: 'bar',
-                data: {
-                    labels: regionLabels,
-                    datasets: [{
-                        label: 'Performance Difference',
-                        data: differences,
-                        backgroundColor: differences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
-                        borderColor: differences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    indexAxis: 'y',
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Regional Performance vs Median'
+            function createRegionalChart() {
+                const regionLabels = sortedRegions.map(r => r.region);
+                const differences = sortedRegions.map(r => r.average - medianScore);
+
+                const config = {
+                    type: 'bar',
+                    data: {
+                        labels: regionLabels,
+                        datasets: [{
+                            label: 'Performance Difference',
+                            data: differences,
+                            backgroundColor: differences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
+                            borderColor: differences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
                         },
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const diff = context.parsed.x;
-                                    const actualScore = medianScore + diff;
-                                    if (diff === 0) {
-                                        return context.label + ': ' + actualScore.toFixed(1) + ' (median)';
-                                    } else {
-                                        const sign = diff > 0 ? '+' : '';
-                                        return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs median)';
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Regional Performance vs Median (Click to explore countries)'
+                            },
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const diff = context.parsed.x;
+                                        const actualScore = medianScore + diff;
+                                        if (diff === 0) {
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (median)';
+                                        } else {
+                                            const sign = diff > 0 ? '+' : '';
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs median)';
+                                        }
+                                    },
+                                    afterLabel: function() {
+                                        return 'Click to see countries in this region';
                                     }
                                 }
                             }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            title: {
-                                display: true,
-                                text: 'Performance Difference from Median Region'
-                            },
-                            grid: {
-                                color: function(context) {
-                                    return context.tick.value === 0 ? '#374151' : '#E5E7EB';
-                                }
+                        },
+                        onClick: function(event, elements) {
+                            if (elements.length > 0) {
+                                const elementIndex = elements[0].index;
+                                const regionName = regionLabels[elementIndex];
+                                showCountriesInRegion(regionName);
                             }
                         },
-                        y: {
-                            title: {
-                                display: true,
-                                text: 'Region'
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Performance Difference from Median Region'
+                                },
+                                grid: {
+                                    color: function(context) {
+                                        return context.tick.value === 0 ? '#374151' : '#E5E7EB';
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Region'
+                                }
                             }
                         }
                     }
+                };
+
+                if (regionalChart) {
+                    regionalChart.destroy();
                 }
-            });
+                regionalChart = new Chart(regionalAnalysisCtx, config);
+                currentView = 'regional';
+            }
+
+            function showCountriesInRegion(regionName) {
+                const countries = regionCountryData[regionName];
+                if (!countries || countries.length === 0) return;
+
+                // Sort countries by performance and calculate differences from region median
+                const sortedCountries = countries.sort((a, b) => b.avg_performance - a.avg_performance);
+                const regionMedianIndex = Math.floor(sortedCountries.length / 2);
+                const regionMedianScore = sortedCountries[regionMedianIndex].avg_performance;
+
+                const countryLabels = sortedCountries.map(c => c.country);
+                const countryDifferences = sortedCountries.map(c => c.avg_performance - regionMedianScore);
+
+                const config = {
+                    type: 'bar',
+                    data: {
+                        labels: countryLabels,
+                        datasets: [{
+                            label: 'Performance Difference',
+                            data: countryDifferences,
+                            backgroundColor: countryDifferences.map(diff => diff > 0 ? '#10B981' : diff < 0 ? '#EF4444' : '#6B7280'),
+                            borderColor: countryDifferences.map(diff => diff > 0 ? '#059669' : diff < 0 ? '#DC2626' : '#4B5563'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: regionName + ' Countries vs Regional Median'
+                            },
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const diff = context.parsed.x;
+                                        const actualScore = regionMedianScore + diff;
+                                        if (diff === 0) {
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (regional median)';
+                                        } else {
+                                            const sign = diff > 0 ? '+' : '';
+                                            return context.label + ': ' + actualScore.toFixed(1) + ' (' + sign + diff.toFixed(1) + ' vs regional median)';
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Performance Difference from Regional Median'
+                                },
+                                grid: {
+                                    color: function(context) {
+                                        return context.tick.value === 0 ? '#374151' : '#E5E7EB';
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Country'
+                                }
+                            }
+                        }
+                    }
+                };
+
+                if (regionalChart) {
+                    regionalChart.destroy();
+                }
+                regionalChart = new Chart(regionalAnalysisCtx, config);
+                currentView = regionName;
+
+                // Add back button
+                addBackButton();
+            }
+
+            function addBackButton() {
+                // Remove existing back button if any
+                const existingBtn = document.getElementById('regionalBackBtn');
+                if (existingBtn) {
+                    existingBtn.remove();
+                }
+
+                // Create back button
+                const backBtn = document.createElement('button');
+                backBtn.id = 'regionalBackBtn';
+                backBtn.innerHTML = '← Back to Regional View';
+                backBtn.style.cssText = 'margin-top: 10px; padding: 8px 16px; background: #3B82F6; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;';
+                backBtn.onclick = function() {
+                    createRegionalChart();
+                    backBtn.remove();
+                };
+
+                // Insert after the chart container
+                const chartSection = regionalAnalysisCtx.closest('.chart-section');
+                if (chartSection) {
+                    chartSection.appendChild(backBtn);
+                }
+            }
+
+            // Initialize with regional view
+            createRegionalChart();
         }
     </script>
     <!-- PostHog Analytics -->
