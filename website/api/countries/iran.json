@@ -1,41 +1,53 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.302Z",
+    "generated_at": "2025-10-29T07:39:55.877Z",
     "country": "Iran",
     "flag": "🇮🇷",
     "website_count": 8
   },
   "averages": {
-    "performance": 64,
-    "accessibility": 81,
-    "best_practices": 71,
-    "seo": 88,
+    "performance": 68,
+    "accessibility": 83,
+    "best_practices": 72,
+    "seo": 89,
     "pwa": 36
   },
   "websites": [
+    {
+      "url": "irna.ir",
+      "industry": "Media",
+      "scores": {
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:33:40"
+    },
     {
       "url": "isna.ir",
       "industry": "Media",
       "scores": {
         "performance": 99,
         "accessibility": 91,
-        "best_practices": 100,
-        "seo": 72,
+        "best_practices": 0,
+        "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-21 17:43:06"
+      "test_date": "2025-10-28 20:34:40"
     },
     {
-      "url": "irna.ir",
+      "url": "iribnews.ir",
       "industry": "Media",
       "scores": {
-        "performance": 94,
-        "accessibility": 69,
-        "best_practices": 0,
-        "seo": 84,
+        "performance": 82,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-21 17:42:31"
+      "test_date": "2025-10-28 20:29:27"
     },
     {
       "url": "tejaratnews.com",
@@ -48,18 +60,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-24 08:15:25"
-    },
-    {
-      "url": "iribnews.ir",
-      "industry": "Media",
-      "scores": {
-        "performance": 58,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-21 17:38:10"
     },
     {
       "url": "mehrnews.com",
@@ -101,13 +101,13 @@
       "url": "khabaronline.ir",
       "industry": "Media",
       "scores": {
-        "performance": 29,
+        "performance": 32,
         "accessibility": 62,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 81,
         "pwa": 33
       },
-      "test_date": "2025-10-21 20:20:06"
+      "test_date": "2025-10-29 00:49:32"
     }
   ],
   "industries": [
@@ -115,10 +115,10 @@
       "industry": "Media",
       "website_count": 8,
       "averages": {
-        "performance": 64,
-        "accessibility": 81,
-        "best_practices": 71,
-        "seo": 88,
+        "performance": 68,
+        "accessibility": 83,
+        "best_practices": 72,
+        "seo": 89,
         "pwa": 36
       }
     }

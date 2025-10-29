@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.254Z",
+    "generated_at": "2025-10-29T07:39:55.835Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
     "website_count": 29
@@ -326,18 +326,6 @@
       "test_date": "2025-10-28 16:37:57"
     },
     {
-      "url": "itv.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 13,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 07:36:57"
-    },
-    {
       "url": "bt.com",
       "industry": "Telecom",
       "scores": {
@@ -348,6 +336,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 20:11:05"
+    },
+    {
+      "url": "itv.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 12,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:34:56"
     },
     {
       "url": "coop.co.uk",

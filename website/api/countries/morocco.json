@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.321Z",
+    "generated_at": "2025-10-29T07:39:55.892Z",
     "country": "Morocco",
     "flag": "🌍",
-    "website_count": 4
+    "website_count": 7
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 79,
-    "best_practices": 73,
-    "seo": 88,
-    "pwa": 42
+    "performance": 44,
+    "accessibility": 81,
+    "best_practices": 75,
+    "seo": 87,
+    "pwa": 38
   },
   "websites": [
     {
@@ -26,6 +26,18 @@
       "test_date": "2025-10-26 10:19:35"
     },
     {
+      "url": "jumia.ma",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 81,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:15:44"
+    },
+    {
       "url": "iam.ma",
       "industry": "Telecom",
       "scores": {
@@ -38,6 +50,18 @@
       "test_date": "2025-10-28 14:10:27"
     },
     {
+      "url": "le360.ma",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 04:35:25"
+    },
+    {
       "url": "bankofafrica.ma",
       "industry": "Finance",
       "scores": {
@@ -48,6 +72,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 15:58:17"
+    },
+    {
+      "url": "inwi.ma",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 25,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:25:35"
     },
     {
       "url": "2m.ma",
@@ -64,6 +100,17 @@
   ],
   "industries": [
     {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 81,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Finance",
       "website_count": 2,
       "averages": {
@@ -76,23 +123,23 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 0,
-        "accessibility": 81,
-        "best_practices": 67,
-        "seo": 85,
-        "pwa": 67
+        "performance": 19,
+        "accessibility": 82,
+        "best_practices": 71,
+        "seo": 88,
+        "pwa": 50
       }
     },
     {
       "industry": "Telecom",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 55,
-        "accessibility": 68,
-        "best_practices": 58,
-        "seo": 93,
+        "performance": 40,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 89,
         "pwa": 33
       }
     }

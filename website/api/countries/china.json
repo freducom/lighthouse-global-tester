@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.311Z",
+    "generated_at": "2025-10-29T07:39:55.884Z",
     "country": "China",
     "flag": "🇨🇳",
     "website_count": 9
   },
   "averages": {
-    "performance": 40,
+    "performance": 42,
     "accessibility": 54,
     "best_practices": 65,
     "seo": 85,
     "pwa": 42
   },
   "websites": [
+    {
+      "url": "jd.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 66,
+        "accessibility": 65,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:10:02"
+    },
     {
       "url": "taobao.com",
       "industry": "E-commerce",
@@ -36,18 +48,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 19:26:25"
-    },
-    {
-      "url": "jd.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 52,
-        "accessibility": 65,
-        "best_practices": 100,
-        "seo": 88,
-        "pwa": 33
-      },
-      "test_date": "2025-10-21 18:12:11"
     },
     {
       "url": "weibo.com",
@@ -127,7 +127,7 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 54,
+        "performance": 61,
         "accessibility": 55,
         "best_practices": 79,
         "seo": 87,

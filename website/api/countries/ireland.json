@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.287Z",
+    "generated_at": "2025-10-29T07:39:55.865Z",
     "country": "Ireland",
     "flag": "🇮🇪",
     "website_count": 10
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 87,
+    "performance": 45,
+    "accessibility": 88,
     "best_practices": 82,
-    "seo": 88,
+    "seo": 89,
     "pwa": 43
   },
   "websites": [
@@ -26,6 +26,18 @@
       "test_date": "2025-10-24 16:13:22"
     },
     {
+      "url": "irishexaminer.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 62,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-28 20:29:44"
+    },
+    {
       "url": "daa.ie",
       "industry": "Transportation",
       "scores": {
@@ -36,18 +48,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 06:27:44"
-    },
-    {
-      "url": "irishexaminer.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 52,
-        "accessibility": 85,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 67
-      },
-      "test_date": "2025-10-21 17:38:27"
     },
     {
       "url": "thejournal.ie",
@@ -86,18 +86,6 @@
       "test_date": "2025-10-27 07:12:20"
     },
     {
-      "url": "irishtimes.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 35,
-        "accessibility": 82,
-        "best_practices": 92,
-        "seo": 84,
-        "pwa": 33
-      },
-      "test_date": "2025-10-21 17:42:12"
-    },
-    {
       "url": "rte.ie",
       "industry": "Media",
       "scores": {
@@ -108,6 +96,18 @@
         "pwa": 56
       },
       "test_date": "2025-10-23 16:42:48"
+    },
+    {
+      "url": "irishtimes.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:33:29"
     },
     {
       "url": "independent.ie",
@@ -150,10 +150,10 @@
       "industry": "Media",
       "website_count": 7,
       "averages": {
-        "performance": 45,
-        "accessibility": 87,
-        "best_practices": 80,
-        "seo": 88,
+        "performance": 46,
+        "accessibility": 89,
+        "best_practices": 81,
+        "seo": 89,
         "pwa": 48
       }
     },

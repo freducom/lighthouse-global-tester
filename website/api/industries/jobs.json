@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.392Z",
+    "generated_at": "2025-10-29T07:39:55.963Z",
     "industry": "Jobs",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
     "performance": 56,
     "accessibility": 86,
-    "best_practices": 75,
-    "seo": 91,
-    "pwa": 51
+    "best_practices": 78,
+    "seo": 90,
+    "pwa": 49
   },
   "websites": [
     {
@@ -49,16 +49,28 @@
       "test_date": "2025-10-27 06:27:03"
     },
     {
+      "url": "jobilla.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 58,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:11:51"
+    },
+    {
       "url": "jobz.pk",
       "country": "Pakistan",
       "scores": {
-        "performance": 80,
-        "accessibility": 70,
-        "best_practices": 67,
+        "performance": 79,
+        "accessibility": 55,
+        "best_practices": 83,
         "seo": 87,
         "pwa": 33
       },
-      "test_date": "2025-10-21 18:12:33"
+      "test_date": "2025-10-28 22:12:13"
     },
     {
       "url": "rozee.pk",
@@ -132,12 +144,23 @@
       }
     },
     {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 58,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Pakistan",
       "website_count": 2,
       "averages": {
-        "performance": 85,
-        "accessibility": 76,
-        "best_practices": 80,
+        "performance": 84,
+        "accessibility": 68,
+        "best_practices": 88,
         "seo": 85,
         "pwa": 33
       }

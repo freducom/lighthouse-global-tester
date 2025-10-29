@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.485Z",
+    "generated_at": "2025-10-29T07:39:56.044Z",
     "url": "laprensaaustral.cl",
     "country": "Chile",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 59,
     "accessibility": 76,
     "best_practices": 75,
     "seo": 81,
     "pwa": 22,
-    "test_date": "2025-10-22 00:45:06"
+    "test_date": "2025-10-29 04:21:57"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 76,
+      "best_practices": 75,
+      "seo": 81,
+      "pwa": 22,
+      "test_date": "2025-10-29 04:21:57"
+    },
     {
       "performance": 58,
       "accessibility": 76,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 00:45:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 04:21:57",
+    "test_date_previous": "2025-10-22 00:45:06"
+  }
 }

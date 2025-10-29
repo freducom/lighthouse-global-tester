@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.394Z",
+    "generated_at": "2025-10-29T07:39:55.964Z",
     "industry": "Education",
-    "website_count": 21
+    "website_count": 26
   },
   "averages": {
     "performance": 49,
-    "accessibility": 88,
-    "best_practices": 86,
-    "seo": 84,
-    "pwa": 31
+    "accessibility": 89,
+    "best_practices": 88,
+    "seo": 85,
+    "pwa": 33
   },
   "websites": [
     {
@@ -59,6 +59,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-28 10:34:37"
+    },
+    {
+      "url": "jamk.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:09:36"
     },
     {
       "url": "aiims.edu",
@@ -157,6 +169,18 @@
       "test_date": "2025-10-28 14:20:16"
     },
     {
+      "url": "jnu.ac.in",
+      "country": "India",
+      "scores": {
+        "performance": 37,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:10:50"
+    },
+    {
       "url": "uw.edu.pl",
       "country": "Poland",
       "scores": {
@@ -191,6 +215,30 @@
         "pwa": 44
       },
       "test_date": "2025-10-27 00:47:55"
+    },
+    {
+      "url": "ki.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 54,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-29 00:56:57"
+    },
+    {
+      "url": "kth.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 87,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:16:14"
     },
     {
       "url": "su.se",
@@ -263,29 +311,41 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 04:29:03"
+    },
+    {
+      "url": "khanacademy.org",
+      "country": "United States",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:53:16"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 61,
-        "accessibility": 92,
-        "best_practices": 96,
+        "performance": 58,
+        "accessibility": 93,
+        "best_practices": 95,
         "seo": 93,
-        "pwa": 36
+        "pwa": 35
       }
     },
     {
       "country": "India",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 43,
-        "accessibility": 79,
+        "performance": 42,
+        "accessibility": 78,
         "best_practices": 81,
         "seo": 77,
-        "pwa": 25
+        "pwa": 26
       }
     },
     {
@@ -312,13 +372,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 44,
-        "accessibility": 100,
-        "best_practices": 96,
-        "seo": 93,
-        "pwa": 39
+        "performance": 57,
+        "accessibility": 99,
+        "best_practices": 98,
+        "seo": 96,
+        "pwa": 42
       }
     },
     {
@@ -334,12 +394,12 @@
     },
     {
       "country": "United States",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 46,
+        "performance": 44,
         "accessibility": 96,
-        "best_practices": 81,
-        "seo": 82,
+        "best_practices": 85,
+        "seo": 84,
         "pwa": 33
       }
     }

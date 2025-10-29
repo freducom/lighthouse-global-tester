@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.636Z",
+    "generated_at": "2025-10-29T07:39:56.130Z",
     "url": "itv.com",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 13,
+    "performance": 12,
     "accessibility": 94,
     "best_practices": 83,
-    "seo": 84,
+    "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-23 07:36:57"
+    "test_date": "2025-10-28 20:34:56"
   },
   "historical_data": [
+    {
+      "performance": 12,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-10-28 20:34:56"
+    },
     {
       "performance": 13,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 07:36:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-10-28 20:34:56",
+    "test_date_previous": "2025-10-23 07:36:57"
+  }
 }

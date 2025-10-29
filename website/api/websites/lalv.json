@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.565Z",
+    "generated_at": "2025-10-29T07:39:56.086Z",
     "url": "la.lv",
     "country": "Latvia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 37,
     "accessibility": 71,
     "best_practices": 83,
     "seo": 78,
     "pwa": 33,
-    "test_date": "2025-10-21 22:19:53"
+    "test_date": "2025-10-29 03:21:08"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 71,
+      "best_practices": 83,
+      "seo": 78,
+      "pwa": 33,
+      "test_date": "2025-10-29 03:21:08"
+    },
     {
       "performance": 36,
       "accessibility": 71,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-21 22:19:53"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 03:21:08",
+    "test_date_previous": "2025-10-21 22:19:53"
+  }
 }

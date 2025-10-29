@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generated_at": "2025-10-29T07:39:55.889Z",
+    "country": "Nigeria",
+    "flag": "🌍",
+    "website_count": 2
+  },
+  "averages": {
+    "performance": 40,
+    "accessibility": 95,
+    "best_practices": 75,
+    "seo": 96,
+    "pwa": 89
+  },
+  "websites": [
+    {
+      "url": "jumia.com.ng",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 47,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 22:15:31"
+    },
+    {
+      "url": "konga.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 33,
+        "accessibility": 95,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-10-29 03:14:10"
+    }
+  ],
+  "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 2,
+      "averages": {
+        "performance": 40,
+        "accessibility": 95,
+        "best_practices": 75,
+        "seo": 96,
+        "pwa": 89
+      }
+    }
+  ]
+}

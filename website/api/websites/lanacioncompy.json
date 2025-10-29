@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.587Z",
+    "generated_at": "2025-10-29T07:39:56.099Z",
     "url": "lanacion.com.py",
     "country": "Paraguay",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 22,
+    "performance": 32,
     "accessibility": 83,
     "best_practices": 83,
     "seo": 89,
     "pwa": 78,
-    "test_date": "2025-10-22 00:43:49"
+    "test_date": "2025-10-29 04:20:26"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 83,
+      "best_practices": 83,
+      "seo": 89,
+      "pwa": 78,
+      "test_date": "2025-10-29 04:20:26"
+    },
     {
       "performance": 22,
       "accessibility": 83,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 00:43:49"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 04:20:26",
+    "test_date_previous": "2025-10-22 00:43:49"
+  }
 }

@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.396Z",
+    "generated_at": "2025-10-29T07:39:55.965Z",
     "industry": "Marketing",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
-    "performance": 42,
+    "performance": 40,
     "accessibility": 92,
-    "best_practices": 67,
-    "seo": 92,
-    "pwa": 33
+    "best_practices": 69,
+    "seo": 91,
+    "pwa": 31
   },
   "websites": [
+    {
+      "url": "leadoo.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 27,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 22
+      },
+      "test_date": "2025-10-29 06:15:53"
+    },
     {
       "url": "wpseoai.com",
       "country": "Finland",
@@ -88,13 +100,13 @@
   "countries": [
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 65,
-        "accessibility": 90,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33
+        "performance": 46,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 28
       }
     },
     {

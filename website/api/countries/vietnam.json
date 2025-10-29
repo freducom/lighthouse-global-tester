@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.312Z",
+    "generated_at": "2025-10-29T07:39:55.885Z",
     "country": "Vietnam",
     "flag": "🇻🇳",
     "website_count": 6
   },
   "averages": {
-    "performance": 42,
+    "performance": 41,
     "accessibility": 82,
-    "best_practices": 74,
+    "best_practices": 75,
     "seo": 93,
     "pwa": 35
   },
@@ -50,18 +50,6 @@
       "test_date": "2025-10-23 22:14:54"
     },
     {
-      "url": "kenh14.vn",
-      "industry": "Media",
-      "scores": {
-        "performance": 38,
-        "accessibility": 83,
-        "best_practices": 58,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-21 20:15:15"
-    },
-    {
       "url": "tuoitre.vn",
       "industry": "Media",
       "scores": {
@@ -72,6 +60,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-24 18:15:04"
+    },
+    {
+      "url": "kenh14.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 31,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:45:15"
     },
     {
       "url": "dantri.com.vn",
@@ -102,9 +102,9 @@
       "industry": "Media",
       "website_count": 4,
       "averages": {
-        "performance": 36,
+        "performance": 34,
         "accessibility": 85,
-        "best_practices": 67,
+        "best_practices": 69,
         "seo": 93,
         "pwa": 36
       }

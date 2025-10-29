@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.393Z",
+    "generated_at": "2025-10-29T07:39:55.963Z",
     "industry": "Retail",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 34,
-    "accessibility": 84,
-    "best_practices": 56,
-    "seo": 86,
-    "pwa": 36
+    "performance": 35,
+    "accessibility": 82,
+    "best_practices": 61,
+    "seo": 85,
+    "pwa": 37
   },
   "websites": [
     {
@@ -35,6 +35,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-25 03:00:21"
+    },
+    {
+      "url": "kesko.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 42,
+        "accessibility": 69,
+        "best_practices": 92,
+        "seo": 74,
+        "pwa": 44
+      },
+      "test_date": "2025-10-29 00:46:50"
     },
     {
       "url": "ikea.se",
@@ -107,6 +119,17 @@
         "best_practices": 55,
         "seo": 81,
         "pwa": 45
+      }
+    },
+    {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 42,
+        "accessibility": 69,
+        "best_practices": 92,
+        "seo": 74,
+        "pwa": 44
       }
     },
     {

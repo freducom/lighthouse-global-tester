@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-28T20:19:54.633Z",
+          "dateCreated": "2025-10-29T07:39:54.693Z",
           "about": {
             "@type": "Place",
             "name": "Estonia",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Estonia"
           },
-          "dateModified": "2025-10-28T20:19:54.633Z",
+          "dateModified": "2025-10-29T07:39:54.693Z",
           "keywords": ["Estonia", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -443,7 +443,7 @@
                                     <time datetime="2025-10-23 00:48:02">10/23/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row trending-up" 
+                            <tr class="site-row " 
                                 data-url="kaubamaja.ee" 
                                 data-industry="E-commerce"
                                 data-performance="4"
@@ -451,7 +451,7 @@
                                 data-seo="91"
                                 data-best-practices="92"
                                 data-pwa="78"
-                                data-test-date="2025-10-21 18:20:35">
+                                data-test-date="2025-10-28 22:23:23">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-kaubamaja-ee.html" 
@@ -468,8 +468,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 4 percent, needs improvement, trend: +3 points">
-                                    4%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
+                                    aria-label="Performance score: 4 percent, needs improvement">
+                                    4%
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 76 percent, good performance">
@@ -487,9 +487,9 @@
                                     aria-label="PWA score: 78 percent, good performance">
                                     78%
                                 </td>
-                                <td class="date" data-date="2025-10-21 18:20:35"
-                                    aria-label="Last tested on 10/21/2025">
-                                    <time datetime="2025-10-21 18:20:35">10/21/2025</time>
+                                <td class="date" data-date="2025-10-28 22:23:23"
+                                    aria-label="Last tested on 10/28/2025">
+                                    <time datetime="2025-10-28 22:23:23">10/28/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -503,7 +503,7 @@
         <div class="footer-content">
             
             <div class="footer-section">
-                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Test your site</button></p>
                 <p><a href="stats.html">Stats</a> | <a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
@@ -517,11 +517,11 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>💡 Suggest a Website</h2>
-                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                    <h2>� Test Your Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -529,6 +529,14 @@
                                    placeholder="https://example.com" 
                                    aria-describedby="url-help">
                             <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail">Email Address *</label>
+                            <input type="email" id="userEmail" name="email" required 
+                                   placeholder="your@email.com" 
+                                   aria-describedby="email-help">
+                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -550,16 +558,16 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="websiteDescription">Why should we include this website?</label>
+                            <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Help us understand the value of including this website</small>
+                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
                             <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
-                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                            <button type="submit" class="btn-primary">Submit for Testing</button>
                         </div>
                     </form>
                 </div>
@@ -651,7 +659,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"cvkeskus.ee","country":"Estonia","industry":"Jobs","performance":59,"accessibility":92,"best_practices":83,"seo":93,"pwa":78,"test_date":"2025-10-27 06:27:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"euronics.ee","country":"Estonia","industry":"E-commerce","performance":44,"accessibility":79,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-20 16:11:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"swedbank.ee","country":"Estonia","industry":"Finance","performance":38,"accessibility":98,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-24 04:16:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"telia.ee","country":"Estonia","industry":"Telecom","performance":30,"accessibility":100,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-24 10:10:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ohtuleht.ee","country":"Estonia","industry":"Media","performance":26,"accessibility":85,"best_practices":75,"seo":97,"pwa":33,"test_date":"2025-10-23 00:48:02","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"kaubamaja.ee","country":"Estonia","industry":"E-commerce","performance":4,"accessibility":76,"best_practices":92,"seo":91,"pwa":78,"test_date":"2025-10-21 18:20:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const countryData = [{"url":"cvkeskus.ee","country":"Estonia","industry":"Jobs","performance":59,"accessibility":92,"best_practices":83,"seo":93,"pwa":78,"test_date":"2025-10-27 06:27:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"euronics.ee","country":"Estonia","industry":"E-commerce","performance":44,"accessibility":79,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-20 16:11:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"swedbank.ee","country":"Estonia","industry":"Finance","performance":38,"accessibility":98,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-10-24 04:16:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"telia.ee","country":"Estonia","industry":"Telecom","performance":30,"accessibility":100,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-24 10:10:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ohtuleht.ee","country":"Estonia","industry":"Media","performance":26,"accessibility":85,"best_practices":75,"seo":97,"pwa":33,"test_date":"2025-10-23 00:48:02","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"kaubamaja.ee","country":"Estonia","industry":"E-commerce","performance":4,"accessibility":76,"best_practices":92,"seo":91,"pwa":78,"test_date":"2025-10-28 22:23:23","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

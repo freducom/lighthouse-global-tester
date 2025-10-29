@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-28T20:19:54.643Z",
+          "dateCreated": "2025-10-29T07:39:54.700Z",
           "about": {
             "@type": "Place",
             "name": "Belgium",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Belgium"
           },
-          "dateModified": "2025-10-28T20:19:54.643Z",
+          "dateModified": "2025-10-29T07:39:54.700Z",
           "keywords": ["Belgium", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -109,9 +109,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Belgium</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 53 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 52 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">53%</div>
+                <div class="stat-number" aria-hidden="true">52%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 92 percent">
@@ -443,15 +443,15 @@
                                     <time datetime="2025-10-27 08:35:34">10/27/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-down" 
                                 data-url="lameuse.be" 
                                 data-industry="Media"
-                                data-performance="46"
+                                data-performance="36"
                                 data-accessibility="88"
                                 data-seo="92"
                                 data-best-practices="75"
                                 data-pwa="67"
-                                data-test-date="2025-10-21 22:20:59">
+                                data-test-date="2025-10-29 04:16:38">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-lameuse-be.html" 
@@ -468,8 +468,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 46 percent, needs improvement">
-                                    46%
+                                    aria-label="Performance score: 36 percent, needs improvement, trend: -10 points">
+                                    36%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-10</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 88 percent, good performance">
@@ -487,9 +487,9 @@
                                     aria-label="PWA score: 67 percent, average performance">
                                     67%
                                 </td>
-                                <td class="date" data-date="2025-10-21 22:20:59"
-                                    aria-label="Last tested on 10/21/2025">
-                                    <time datetime="2025-10-21 22:20:59">10/21/2025</time>
+                                <td class="date" data-date="2025-10-29 04:16:38"
+                                    aria-label="Last tested on 10/29/2025">
+                                    <time datetime="2025-10-29 04:16:38">10/29/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row trending-up" 
@@ -601,7 +601,7 @@
         <div class="footer-content">
             
             <div class="footer-section">
-                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Test your site</button></p>
                 <p><a href="stats.html">Stats</a> | <a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
@@ -615,11 +615,11 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>💡 Suggest a Website</h2>
-                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                    <h2>� Test Your Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -627,6 +627,14 @@
                                    placeholder="https://example.com" 
                                    aria-describedby="url-help">
                             <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail">Email Address *</label>
+                            <input type="email" id="userEmail" name="email" required 
+                                   placeholder="your@email.com" 
+                                   aria-describedby="email-help">
+                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -648,16 +656,16 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="websiteDescription">Why should we include this website?</label>
+                            <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Help us understand the value of including this website</small>
+                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
                             <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
-                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                            <button type="submit" class="btn-primary">Submit for Testing</button>
                         </div>
                     </form>
                 </div>
@@ -749,7 +757,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"hln.be","country":"Belgium","industry":"Media","performance":74,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-28 10:44:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"demorgen.be","country":"Belgium","industry":"Media","performance":70,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-27 08:31:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"vrt.be","country":"Belgium","industry":"Media","performance":61,"accessibility":91,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-25 00:51:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"wiw.be","country":"Belgium","industry":"Media","performance":61,"accessibility":82,"best_practices":100,"seo":92,"pwa":22,"test_date":"2025-10-25 04:14:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"deredactie.be","country":"Belgium","industry":"Media","performance":49,"accessibility":90,"best_practices":58,"seo":100,"pwa":33,"test_date":"2025-10-27 08:35:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lameuse.be","country":"Belgium","industry":"Media","performance":46,"accessibility":88,"best_practices":75,"seo":92,"pwa":67,"test_date":"2025-10-21 22:20:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"rtbf.be","country":"Belgium","industry":"Media","performance":36,"accessibility":97,"best_practices":83,"seo":99,"pwa":33,"test_date":"2025-10-23 15:56:22","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nieuwsblad.be","country":"Belgium","industry":"Media","performance":28,"accessibility":90,"best_practices":75,"seo":86,"pwa":56,"test_date":"2025-10-22 20:27:29","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const countryData = [{"url":"hln.be","country":"Belgium","industry":"Media","performance":74,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-28 10:44:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"demorgen.be","country":"Belgium","industry":"Media","performance":70,"accessibility":98,"best_practices":92,"seo":77,"pwa":33,"test_date":"2025-10-27 08:31:41","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"vrt.be","country":"Belgium","industry":"Media","performance":61,"accessibility":91,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-25 00:51:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"wiw.be","country":"Belgium","industry":"Media","performance":61,"accessibility":82,"best_practices":100,"seo":92,"pwa":22,"test_date":"2025-10-25 04:14:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"deredactie.be","country":"Belgium","industry":"Media","performance":49,"accessibility":90,"best_practices":58,"seo":100,"pwa":33,"test_date":"2025-10-27 08:35:34","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lameuse.be","country":"Belgium","industry":"Media","performance":36,"accessibility":88,"best_practices":75,"seo":92,"pwa":67,"test_date":"2025-10-29 04:16:38","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-10,"text":"-10","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"rtbf.be","country":"Belgium","industry":"Media","performance":36,"accessibility":97,"best_practices":83,"seo":99,"pwa":33,"test_date":"2025-10-23 15:56:22","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nieuwsblad.be","country":"Belgium","industry":"Media","performance":28,"accessibility":90,"best_practices":75,"seo":86,"pwa":56,"test_date":"2025-10-22 20:27:29","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

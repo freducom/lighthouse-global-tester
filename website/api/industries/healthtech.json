@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.397Z",
+    "generated_at": "2025-10-29T07:39:55.965Z",
     "industry": "Healthtech",
-    "website_count": 2
+    "website_count": 4
   },
   "averages": {
-    "performance": 70,
-    "accessibility": 93,
-    "best_practices": 96,
+    "performance": 57,
+    "accessibility": 92,
+    "best_practices": 98,
     "seo": 97,
     "pwa": 33
   },
@@ -35,16 +35,40 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 12:21:51"
+    },
+    {
+      "url": "kry.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 38,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:16:00"
+    },
+    {
+      "url": "lifesum.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 52,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 06:23:46"
     }
   ],
   "countries": [
     {
       "country": "Sweden",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 70,
-        "accessibility": 93,
-        "best_practices": 96,
+        "performance": 57,
+        "accessibility": 92,
+        "best_practices": 98,
         "seo": 97,
         "pwa": 33
       }

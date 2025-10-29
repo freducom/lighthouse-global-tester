@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.395Z",
+    "generated_at": "2025-10-29T07:39:55.964Z",
     "industry": "Gaming",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 68,
+    "performance": 73,
     "accessibility": 96,
     "best_practices": 100,
-    "seo": 100,
+    "seo": 93,
     "pwa": 33
   },
   "websites": [
@@ -23,6 +23,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 03:19:31"
+    },
+    {
+      "url": "king.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 78,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 01:00:43"
     }
   ],
   "countries": [
@@ -34,6 +46,17 @@
         "accessibility": 96,
         "best_practices": 100,
         "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 78,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 86,
         "pwa": 33
       }
     }

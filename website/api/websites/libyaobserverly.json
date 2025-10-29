@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.568Z",
+    "generated_at": "2025-10-29T07:39:56.088Z",
     "url": "libyaobserver.ly",
     "country": "Libya",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 42,
     "accessibility": 79,
     "best_practices": 67,
     "seo": 63,
     "pwa": 33,
-    "test_date": "2025-10-22 04:14:04"
+    "test_date": "2025-10-29 06:23:05"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 79,
+      "best_practices": 67,
+      "seo": 63,
+      "pwa": 33,
+      "test_date": "2025-10-29 06:23:05"
+    },
     {
       "performance": 36,
       "accessibility": 79,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 04:14:04"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 06:23:05",
+    "test_date_previous": "2025-10-22 04:14:04"
+  }
 }

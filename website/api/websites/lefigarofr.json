@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.517Z",
+    "generated_at": "2025-10-29T07:39:56.060Z",
     "url": "lefigaro.fr",
     "country": "France",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 34,
-    "accessibility": 70,
+    "performance": 32,
+    "accessibility": 76,
     "best_practices": 92,
-    "seo": 93,
+    "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-22 03:08:05"
+    "test_date": "2025-10-29 06:16:13"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 76,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-10-29 06:16:13"
+    },
     {
       "performance": 34,
       "accessibility": 70,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 03:08:05"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 6,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 06:16:13",
+    "test_date_previous": "2025-10-22 03:08:05"
+  }
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.393Z",
+    "generated_at": "2025-10-29T07:39:55.963Z",
     "industry": "Telecom",
-    "website_count": 17
+    "website_count": 18
   },
   "averages": {
     "performance": 34,
@@ -107,6 +107,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-28 14:10:27"
+    },
+    {
+      "url": "inwi.ma",
+      "country": "Morocco",
+      "scores": {
+        "performance": 25,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:25:35"
     },
     {
       "url": "ptcl.com.pk",
@@ -286,12 +298,12 @@
     },
     {
       "country": "Morocco",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 55,
-        "accessibility": 68,
-        "best_practices": 58,
-        "seo": 93,
+        "performance": 40,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 89,
         "pwa": 33
       }
     },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.298Z",
+    "generated_at": "2025-10-29T07:39:55.874Z",
     "country": "Italy",
     "flag": "🇮🇹",
     "website_count": 7
@@ -62,18 +62,6 @@
       "test_date": "2025-10-24 03:02:30"
     },
     {
-      "url": "la7.it",
-      "industry": "Media",
-      "scores": {
-        "performance": 32,
-        "accessibility": 79,
-        "best_practices": 83,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-10-21 22:20:20"
-    },
-    {
       "url": "corriere.it",
       "industry": "Media",
       "scores": {
@@ -84,6 +72,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-27 04:27:00"
+    },
+    {
+      "url": "la7.it",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:21:32"
     },
     {
       "url": "ansa.it",
@@ -115,7 +115,7 @@
       "website_count": 5,
       "averages": {
         "performance": 37,
-        "accessibility": 82,
+        "accessibility": 83,
         "best_practices": 80,
         "seo": 88,
         "pwa": 33

@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-28T20:19:54.665Z",
+          "dateCreated": "2025-10-29T07:39:54.710Z",
           "about": {
             "@type": "Place",
             "name": "Bolivia",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Bolivia"
           },
-          "dateModified": "2025-10-28T20:19:54.665Z",
+          "dateModified": "2025-10-29T07:39:54.710Z",
           "keywords": ["Bolivia", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -255,7 +255,7 @@
                                 data-seo="92"
                                 data-best-practices="100"
                                 data-pwa="33"
-                                data-test-date="2025-10-22 00:44:03">
+                                data-test-date="2025-10-29 04:20:59">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-laprensa-com-bo.html" 
@@ -291,9 +291,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-22 00:44:03"
-                                    aria-label="Last tested on 10/22/2025">
-                                    <time datetime="2025-10-22 00:44:03">10/22/2025</time>
+                                <td class="date" data-date="2025-10-29 04:20:59"
+                                    aria-label="Last tested on 10/29/2025">
+                                    <time datetime="2025-10-29 04:20:59">10/29/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -356,7 +356,7 @@
         <div class="footer-content">
             
             <div class="footer-section">
-                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Test your site</button></p>
                 <p><a href="stats.html">Stats</a> | <a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
@@ -370,11 +370,11 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>💡 Suggest a Website</h2>
-                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                    <h2>� Test Your Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -382,6 +382,14 @@
                                    placeholder="https://example.com" 
                                    aria-describedby="url-help">
                             <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail">Email Address *</label>
+                            <input type="email" id="userEmail" name="email" required 
+                                   placeholder="your@email.com" 
+                                   aria-describedby="email-help">
+                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -403,16 +411,16 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="websiteDescription">Why should we include this website?</label>
+                            <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Help us understand the value of including this website</small>
+                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
                             <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
-                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                            <button type="submit" class="btn-primary">Submit for Testing</button>
                         </div>
                     </form>
                 </div>
@@ -504,7 +512,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"sol.bo","country":"Bolivia","industry":"Portal","performance":98,"accessibility":89,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 22:15:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"laprensa.com.bo","country":"Bolivia","industry":"Media","performance":71,"accessibility":74,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-22 00:44:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"opinion.com.bo","country":"Bolivia","industry":"Media","performance":67,"accessibility":88,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 02:59:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"sol.bo","country":"Bolivia","industry":"Portal","performance":98,"accessibility":89,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-23 22:15:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"laprensa.com.bo","country":"Bolivia","industry":"Media","performance":71,"accessibility":74,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-29 04:20:59","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"opinion.com.bo","country":"Bolivia","industry":"Media","performance":67,"accessibility":88,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 02:59:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

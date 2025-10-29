@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.486Z",
+    "generated_at": "2025-10-29T07:39:56.044Z",
     "url": "latercera.com",
     "country": "Chile",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 46,
     "accessibility": 92,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-22 00:52:47"
+    "test_date": "2025-10-29 04:29:48"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-10-29 04:29:48"
+    },
     {
       "performance": 32,
       "accessibility": 92,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 00:52:47"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 14,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 04:29:48",
+    "test_date_previous": "2025-10-22 00:52:47"
+  }
 }

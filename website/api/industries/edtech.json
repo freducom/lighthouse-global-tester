@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.394Z",
+    "generated_at": "2025-10-29T07:39:55.964Z",
     "industry": "Edtech",
-    "website_count": 2
+    "website_count": 5
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 80,
-    "best_practices": 84,
-    "seo": 93,
-    "pwa": 33
+    "performance": 38,
+    "accessibility": 81,
+    "best_practices": 83,
+    "seo": 90,
+    "pwa": 44
   },
   "websites": [
     {
@@ -23,6 +23,42 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 19:30:21"
+    },
+    {
+      "url": "kide.app",
+      "country": "Finland",
+      "scores": {
+        "performance": 40,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-10-29 01:00:28"
+    },
+    {
+      "url": "kodarit.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 01:04:37"
+    },
+    {
+      "url": "kokoa.io",
+      "country": "Finland",
+      "scores": {
+        "performance": 40,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:09:34"
     },
     {
       "url": "byjus.com",
@@ -40,13 +76,13 @@
   "countries": [
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 4,
       "averages": {
-        "performance": 32,
-        "accessibility": 89,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
+        "performance": 37,
+        "accessibility": 84,
+        "best_practices": 85,
+        "seo": 91,
+        "pwa": 47
       }
     },
     {

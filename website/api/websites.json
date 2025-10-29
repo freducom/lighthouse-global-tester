@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.177Z",
-    "total_websites": 668
+    "generated_at": "2025-10-29T07:39:55.756Z",
+    "total_websites": 699
   },
   "websites": [
     {
@@ -4751,6 +4751,20 @@
       "api_endpoint": "websites/intuitcom.json"
     },
     {
+      "url": "inwi.ma",
+      "country": "Morocco",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 25,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:25:35",
+      "api_endpoint": "websites/inwima.json"
+    },
+    {
       "url": "iol.co.za",
       "country": "South Africa",
       "industry": "Media",
@@ -4769,13 +4783,13 @@
       "country": "Iran",
       "industry": "Media",
       "scores": {
-        "performance": 58,
-        "accessibility": 100,
+        "performance": 82,
+        "accessibility": 97,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-21 17:38:10",
+      "test_date": "2025-10-28 20:29:27",
       "api_endpoint": "websites/iribnewsir.json"
     },
     {
@@ -4783,13 +4797,13 @@
       "country": "Ireland",
       "industry": "Media",
       "scores": {
-        "performance": 52,
-        "accessibility": 85,
-        "best_practices": 92,
-        "seo": 86,
+        "performance": 62,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 93,
         "pwa": 67
       },
-      "test_date": "2025-10-21 17:38:27",
+      "test_date": "2025-10-28 20:29:44",
       "api_endpoint": "websites/irishexaminercom.json"
     },
     {
@@ -4811,13 +4825,13 @@
       "country": "Ireland",
       "industry": "Media",
       "scores": {
-        "performance": 35,
+        "performance": 34,
         "accessibility": 82,
         "best_practices": 92,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-21 17:42:12",
+      "test_date": "2025-10-28 20:33:29",
       "api_endpoint": "websites/irishtimescom.json"
     },
     {
@@ -4825,13 +4839,13 @@
       "country": "Iran",
       "industry": "Media",
       "scores": {
-        "performance": 94,
-        "accessibility": 69,
-        "best_practices": 0,
-        "seo": 84,
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-21 17:42:31",
+      "test_date": "2025-10-28 20:33:40",
       "api_endpoint": "websites/irnair.json"
     },
     {
@@ -4839,13 +4853,13 @@
       "country": "United States",
       "industry": "Government",
       "scores": {
-        "performance": 59,
+        "performance": 65,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:07:16",
+      "test_date": "2025-10-28 20:34:00",
       "api_endpoint": "websites/irsgov.json"
     },
     {
@@ -4853,13 +4867,13 @@
       "country": "Finland",
       "industry": "Media",
       "scores": {
-        "performance": 37,
+        "performance": 17,
         "accessibility": 100,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-21 17:42:52",
+      "test_date": "2025-10-28 20:34:21",
       "api_endpoint": "websites/isfi.json"
     },
     {
@@ -4869,11 +4883,11 @@
       "scores": {
         "performance": 99,
         "accessibility": 91,
-        "best_practices": 100,
-        "seo": 72,
+        "best_practices": 0,
+        "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-21 17:43:06",
+      "test_date": "2025-10-28 20:34:40",
       "api_endpoint": "websites/isnair.json"
     },
     {
@@ -4881,55 +4895,167 @@
       "country": "United Kingdom",
       "industry": "Media",
       "scores": {
-        "performance": 13,
+        "performance": 12,
         "accessibility": 94,
         "best_practices": 83,
-        "seo": 84,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:36:57",
+      "test_date": "2025-10-28 20:34:56",
       "api_endpoint": "websites/itvcom.json"
+    },
+    {
+      "url": "ixigo.com",
+      "country": "India",
+      "industry": "Travel",
+      "scores": {
+        "performance": 55,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 20:35:13",
+      "api_endpoint": "websites/ixigocom.json"
+    },
+    {
+      "url": "izettle.com",
+      "country": "Sweden",
+      "industry": "Finance",
+      "scores": {
+        "performance": 43,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 20:35:30",
+      "api_endpoint": "websites/izettlecom.json"
+    },
+    {
+      "url": "jamk.fi",
+      "country": "Finland",
+      "industry": "Education",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:09:36",
+      "api_endpoint": "websites/jamkfi.json"
     },
     {
       "url": "jd.com",
       "country": "China",
       "industry": "E-commerce",
       "scores": {
-        "performance": 52,
+        "performance": 66,
         "accessibility": 65,
         "best_practices": 100,
         "seo": 88,
         "pwa": 33
       },
-      "test_date": "2025-10-21 18:12:11",
+      "test_date": "2025-10-28 22:10:02",
       "api_endpoint": "websites/jdcom.json"
+    },
+    {
+      "url": "jiomart.com",
+      "country": "India",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 56,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 22:10:25",
+      "api_endpoint": "websites/jiomartcom.json"
+    },
+    {
+      "url": "jnu.ac.in",
+      "country": "India",
+      "industry": "Education",
+      "scores": {
+        "performance": 37,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:10:50",
+      "api_endpoint": "websites/jnuacin.json"
+    },
+    {
+      "url": "jobilla.com",
+      "country": "Finland",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 58,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:11:51",
+      "api_endpoint": "websites/jobillacom.json"
     },
     {
       "url": "jobz.pk",
       "country": "Pakistan",
       "industry": "Jobs",
       "scores": {
-        "performance": 80,
-        "accessibility": 70,
-        "best_practices": 67,
+        "performance": 79,
+        "accessibility": 55,
+        "best_practices": 83,
         "seo": 87,
         "pwa": 33
       },
-      "test_date": "2025-10-21 18:12:33",
+      "test_date": "2025-10-28 22:12:13",
       "api_endpoint": "websites/jobzpk.json"
+    },
+    {
+      "url": "jumia.com.ng",
+      "country": "Nigeria",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 47,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 22:15:31",
+      "api_endpoint": "websites/jumiacomng.json"
+    },
+    {
+      "url": "jumia.ma",
+      "country": "Morocco",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 81,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:15:44",
+      "api_endpoint": "websites/jumiama.json"
     },
     {
       "url": "kamuajans.com",
       "country": "Turkey",
       "industry": "Media",
       "scores": {
-        "performance": 44,
+        "performance": 46,
         "accessibility": 89,
         "best_practices": 75,
         "seo": 97,
         "pwa": 44
       },
-      "test_date": "2025-10-21 18:16:17",
+      "test_date": "2025-10-28 22:19:19",
       "api_endpoint": "websites/kamuajanscom.json"
     },
     {
@@ -4937,13 +5063,13 @@
       "country": "Thailand",
       "industry": "Portal",
       "scores": {
-        "performance": 37,
+        "performance": 14,
         "accessibility": 93,
         "best_practices": 50,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-21 18:19:41",
+      "test_date": "2025-10-28 22:22:35",
       "api_endpoint": "websites/kapookcom.json"
     },
     {
@@ -4951,13 +5077,13 @@
       "country": "Greece",
       "industry": "Media",
       "scores": {
-        "performance": 61,
-        "accessibility": 91,
+        "performance": 64,
+        "accessibility": 89,
         "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-21 18:20:02",
+      "test_date": "2025-10-28 22:22:56",
       "api_endpoint": "websites/kathimerinigr.json"
     },
     {
@@ -4971,91 +5097,315 @@
         "seo": 91,
         "pwa": 78
       },
-      "test_date": "2025-10-21 18:20:35",
+      "test_date": "2025-10-28 22:23:23",
       "api_endpoint": "websites/kaubamajaee.json"
+    },
+    {
+      "url": "kela.fi",
+      "country": "Finland",
+      "industry": "Government",
+      "scores": {
+        "performance": 54,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:27:10",
+      "api_endpoint": "websites/kelafi.json"
     },
     {
       "url": "kenh14.vn",
       "country": "Vietnam",
       "industry": "Media",
       "scores": {
-        "performance": 38,
-        "accessibility": 83,
-        "best_practices": 58,
+        "performance": 31,
+        "accessibility": 85,
+        "best_practices": 67,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-21 20:15:15",
+      "test_date": "2025-10-29 00:45:15",
       "api_endpoint": "websites/kenh14vn.json"
+    },
+    {
+      "url": "kenyabuzz.com",
+      "country": "Kenya",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 69,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:46:01",
+      "api_endpoint": "websites/kenyabuzzcom.json"
     },
     {
       "url": "kenyans.co.ke",
       "country": "Kenya",
       "industry": "Media",
       "scores": {
-        "performance": 50,
+        "performance": 45,
         "accessibility": 98,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-21 20:19:07",
+      "test_date": "2025-10-29 00:46:24",
       "api_endpoint": "websites/kenyanscoke.json"
+    },
+    {
+      "url": "kesko.fi",
+      "country": "Finland",
+      "industry": "Retail",
+      "scores": {
+        "performance": 42,
+        "accessibility": 69,
+        "best_practices": 92,
+        "seo": 74,
+        "pwa": 44
+      },
+      "test_date": "2025-10-29 00:46:50",
+      "api_endpoint": "websites/keskofi.json"
     },
     {
       "url": "khabaronline.ir",
       "country": "Iran",
       "industry": "Media",
       "scores": {
-        "performance": 29,
+        "performance": 32,
         "accessibility": 62,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 81,
         "pwa": 33
       },
-      "test_date": "2025-10-21 20:20:06",
+      "test_date": "2025-10-29 00:49:32",
       "api_endpoint": "websites/khabaronlineir.json"
+    },
+    {
+      "url": "khanacademy.org",
+      "country": "United States",
+      "industry": "Education",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:53:16",
+      "api_endpoint": "websites/khanacademyorg.json"
+    },
+    {
+      "url": "ki.se",
+      "country": "Sweden",
+      "industry": "Education",
+      "scores": {
+        "performance": 54,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-29 00:56:57",
+      "api_endpoint": "websites/kise.json"
+    },
+    {
+      "url": "kide.app",
+      "country": "Finland",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 40,
+        "accessibility": 78,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-10-29 01:00:28",
+      "api_endpoint": "websites/kideapp.json"
+    },
+    {
+      "url": "king.com",
+      "country": "Sweden",
+      "industry": "Gaming",
+      "scores": {
+        "performance": 78,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 01:00:43",
+      "api_endpoint": "websites/kingcom.json"
     },
     {
       "url": "klarna.com",
       "country": "Sweden",
       "industry": "Finance",
       "scores": {
-        "performance": 24,
+        "performance": 37,
         "accessibility": 90,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 92,
+        "pwa": 56
+      },
+      "test_date": "2025-10-29 01:01:03",
+      "api_endpoint": "websites/klarnacom.json"
+    },
+    {
+      "url": "kodarit.com",
+      "country": "Finland",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 36,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-21 20:23:47",
-      "api_endpoint": "websites/klarnacom.json"
+      "test_date": "2025-10-29 01:04:37",
+      "api_endpoint": "websites/kodaritcom.json"
+    },
+    {
+      "url": "kokoa.io",
+      "country": "Finland",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 40,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:09:34",
+      "api_endpoint": "websites/kokoaio.json"
+    },
+    {
+      "url": "kone.com",
+      "country": "Finland",
+      "industry": "Engineering",
+      "scores": {
+        "performance": 59,
+        "accessibility": 97,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:13:15",
+      "api_endpoint": "websites/konecom.json"
+    },
+    {
+      "url": "konecranes.com",
+      "country": "Finland",
+      "industry": "Manufacturing",
+      "scores": {
+        "performance": 48,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:13:34",
+      "api_endpoint": "websites/konecranescom.json"
+    },
+    {
+      "url": "konga.com",
+      "country": "Nigeria",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 33,
+        "accessibility": 95,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-10-29 03:14:10",
+      "api_endpoint": "websites/kongacom.json"
+    },
+    {
+      "url": "kotak.com",
+      "country": "India",
+      "industry": "Finance",
+      "scores": {
+        "performance": 36,
+        "accessibility": 74,
+        "best_practices": 58,
+        "seo": 78,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:15:21",
+      "api_endpoint": "websites/kotakcom.json"
     },
     {
       "url": "krone.at",
       "country": "Austria",
       "industry": "Media",
       "scores": {
-        "performance": 55,
+        "performance": 42,
         "accessibility": 78,
-        "best_practices": 75,
+        "best_practices": 67,
         "seo": 91,
         "pwa": 56
       },
-      "test_date": "2025-10-21 22:12:57",
+      "test_date": "2025-10-29 03:15:48",
       "api_endpoint": "websites/kroneat.json"
+    },
+    {
+      "url": "kry.se",
+      "country": "Sweden",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 38,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:16:00",
+      "api_endpoint": "websites/kryse.json"
+    },
+    {
+      "url": "kth.se",
+      "country": "Sweden",
+      "industry": "Education",
+      "scores": {
+        "performance": 87,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:16:14",
+      "api_endpoint": "websites/kthse.json"
+    },
+    {
+      "url": "kundo.se",
+      "country": "Sweden",
+      "industry": "Technology",
+      "scores": {
+        "performance": 55,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:19:42",
+      "api_endpoint": "websites/kundose.json"
     },
     {
       "url": "kurier.at",
       "country": "Austria",
       "industry": "Media",
       "scores": {
-        "performance": 41,
-        "accessibility": 90,
-        "best_practices": 83,
-        "seo": 83,
+        "performance": 60,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 90,
         "pwa": 56
       },
-      "test_date": "2025-10-21 22:16:35",
+      "test_date": "2025-10-29 03:20:05",
       "api_endpoint": "websites/kurierat.json"
     },
     {
@@ -5063,13 +5413,13 @@
       "country": "Latvia",
       "industry": "Media",
       "scores": {
-        "performance": 36,
+        "performance": 37,
         "accessibility": 71,
         "best_practices": 83,
         "seo": 78,
         "pwa": 33
       },
-      "test_date": "2025-10-21 22:19:53",
+      "test_date": "2025-10-29 03:21:08",
       "api_endpoint": "websites/lalv.json"
     },
     {
@@ -5078,12 +5428,12 @@
       "industry": "Media",
       "scores": {
         "performance": 32,
-        "accessibility": 79,
+        "accessibility": 81,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-21 22:20:20",
+      "test_date": "2025-10-29 03:21:32",
       "api_endpoint": "websites/la7it.json"
     },
     {
@@ -5091,13 +5441,13 @@
       "country": "Belgium",
       "industry": "Media",
       "scores": {
-        "performance": 46,
+        "performance": 36,
         "accessibility": 88,
         "best_practices": 75,
         "seo": 92,
         "pwa": 67
       },
-      "test_date": "2025-10-21 22:20:59",
+      "test_date": "2025-10-29 04:16:38",
       "api_endpoint": "websites/lameusebe.json"
     },
     {
@@ -5105,14 +5455,28 @@
       "country": "Paraguay",
       "industry": "Media",
       "scores": {
-        "performance": 22,
+        "performance": 32,
         "accessibility": 83,
         "best_practices": 83,
         "seo": 89,
         "pwa": 78
       },
-      "test_date": "2025-10-22 00:43:49",
+      "test_date": "2025-10-29 04:20:26",
       "api_endpoint": "websites/lanacioncompy.json"
+    },
+    {
+      "url": "lansforsakringar.se",
+      "country": "Sweden",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 04:20:45",
+      "api_endpoint": "websites/lansforsakringarse.json"
     },
     {
       "url": "laprensa.com.bo",
@@ -5125,7 +5489,7 @@
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-22 00:44:03",
+      "test_date": "2025-10-29 04:20:59",
       "api_endpoint": "websites/laprensacombo.json"
     },
     {
@@ -5133,13 +5497,13 @@
       "country": "Chile",
       "industry": "Media",
       "scores": {
-        "performance": 58,
+        "performance": 59,
         "accessibility": 76,
         "best_practices": 75,
         "seo": 81,
         "pwa": 22
       },
-      "test_date": "2025-10-22 00:45:06",
+      "test_date": "2025-10-29 04:21:57",
       "api_endpoint": "websites/laprensaaustralcl.json"
     },
     {
@@ -5147,13 +5511,13 @@
       "country": "Chile",
       "industry": "Media",
       "scores": {
-        "performance": 32,
+        "performance": 46,
         "accessibility": 92,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-22 00:52:47",
+      "test_date": "2025-10-29 04:29:48",
       "api_endpoint": "websites/laterceracom.json"
     },
     {
@@ -5161,41 +5525,83 @@
       "country": "Spain",
       "industry": "Media",
       "scores": {
-        "performance": 36,
-        "accessibility": 83,
+        "performance": 42,
+        "accessibility": 81,
         "best_practices": 67,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-22 00:53:15",
+      "test_date": "2025-10-29 04:30:15",
       "api_endpoint": "websites/lavanguardiacom.json"
+    },
+    {
+      "url": "lazada.com.ph",
+      "country": "Philippines",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 41,
+        "accessibility": 31,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 04:31:27",
+      "api_endpoint": "websites/lazadacomph.json"
     },
     {
       "url": "lb.ua",
       "country": "Ukraine",
       "industry": "Media",
       "scores": {
-        "performance": 46,
-        "accessibility": 85,
-        "best_practices": 75,
+        "performance": 49,
+        "accessibility": 87,
+        "best_practices": 58,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-22 03:04:30",
+      "test_date": "2025-10-29 04:31:44",
       "api_endpoint": "websites/lbua.json"
+    },
+    {
+      "url": "le360.ma",
+      "country": "Morocco",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 04:35:25",
+      "api_endpoint": "websites/le360ma.json"
+    },
+    {
+      "url": "leadoo.com",
+      "country": "Finland",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 27,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 22
+      },
+      "test_date": "2025-10-29 06:15:53",
+      "api_endpoint": "websites/leadoocom.json"
     },
     {
       "url": "lefigaro.fr",
       "country": "France",
       "industry": "Media",
       "scores": {
-        "performance": 34,
-        "accessibility": 70,
+        "performance": 32,
+        "accessibility": 76,
         "best_practices": 92,
-        "seo": 93,
+        "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-22 03:08:05",
+      "test_date": "2025-10-29 06:16:13",
       "api_endpoint": "websites/lefigarofr.json"
     },
     {
@@ -5209,7 +5615,7 @@
         "seo": 93,
         "pwa": 89
       },
-      "test_date": "2025-10-22 03:08:19",
+      "test_date": "2025-10-29 06:19:49",
       "api_endpoint": "websites/lemondefr.json"
     },
     {
@@ -5217,13 +5623,13 @@
       "country": "France",
       "industry": "Media",
       "scores": {
-        "performance": 34,
+        "performance": 31,
         "accessibility": 82,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-22 03:08:40",
+      "test_date": "2025-10-29 06:20:10",
       "api_endpoint": "websites/leparisienfr.json"
     },
     {
@@ -5245,13 +5651,13 @@
       "country": "Switzerland",
       "industry": "Media",
       "scores": {
-        "performance": 34,
+        "performance": 38,
         "accessibility": 100,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 100,
         "pwa": 89
       },
-      "test_date": "2025-10-22 03:10:08",
+      "test_date": "2025-10-29 06:20:39",
       "api_endpoint": "websites/letempsch.json"
     },
     {
@@ -5259,13 +5665,13 @@
       "country": "France",
       "industry": "Media",
       "scores": {
-        "performance": 33,
+        "performance": 38,
         "accessibility": 96,
         "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-22 04:12:31",
+      "test_date": "2025-10-29 06:20:58",
       "api_endpoint": "websites/liberationfr.json"
     },
     {
@@ -5273,13 +5679,13 @@
       "country": "Libya",
       "industry": "Media",
       "scores": {
-        "performance": 58,
-        "accessibility": 85,
+        "performance": 60,
+        "accessibility": 84,
         "best_practices": 100,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-22 04:12:53",
+      "test_date": "2025-10-29 06:21:30",
       "api_endpoint": "websites/libya24tv.json"
     },
     {
@@ -5287,13 +5693,13 @@
       "country": "Libya",
       "industry": "Media",
       "scores": {
-        "performance": 35,
+        "performance": 26,
         "accessibility": 89,
-        "best_practices": 83,
-        "seo": 91,
+        "best_practices": 92,
+        "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-22 04:13:31",
+      "test_date": "2025-10-29 06:22:30",
       "api_endpoint": "websites/libyaheraldcom.json"
     },
     {
@@ -5301,13 +5707,13 @@
       "country": "Libya",
       "industry": "Media",
       "scores": {
-        "performance": 36,
+        "performance": 42,
         "accessibility": 79,
         "best_practices": 67,
         "seo": 63,
         "pwa": 33
       },
-      "test_date": "2025-10-22 04:14:04",
+      "test_date": "2025-10-29 06:23:05",
       "api_endpoint": "websites/libyaobserverly.json"
     },
     {
@@ -5315,14 +5721,42 @@
       "country": "Czechia",
       "industry": "Media",
       "scores": {
-        "performance": 49,
-        "accessibility": 43,
-        "best_practices": 83,
+        "performance": 55,
+        "accessibility": 48,
+        "best_practices": 67,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-22 04:14:28",
+      "test_date": "2025-10-29 06:23:33",
       "api_endpoint": "websites/lidovkycz.json"
+    },
+    {
+      "url": "lifesum.com",
+      "country": "Sweden",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 52,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 06:23:46",
+      "api_endpoint": "websites/lifesumcom.json"
+    },
+    {
+      "url": "lime-technologies.com",
+      "country": "Sweden",
+      "industry": "CRM",
+      "scores": {
+        "performance": 31,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 06:24:23",
+      "api_endpoint": "websites/lime-technologiescom.json"
     },
     {
       "url": "line.me",

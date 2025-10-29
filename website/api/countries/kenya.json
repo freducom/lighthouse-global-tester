@@ -1,30 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.326Z",
+    "generated_at": "2025-10-29T07:39:55.896Z",
     "country": "Kenya",
     "flag": "🇰🇪",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 92,
-    "best_practices": 72,
-    "seo": 90,
+    "performance": 38,
+    "accessibility": 88,
+    "best_practices": 75,
+    "seo": 86,
     "pwa": 31
   },
   "websites": [
-    {
-      "url": "kenyans.co.ke",
-      "industry": "Media",
-      "scores": {
-        "performance": 50,
-        "accessibility": 98,
-        "best_practices": 67,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-21 20:19:07"
-    },
     {
       "url": "standardmedia.co.ke",
       "industry": "Media",
@@ -38,6 +26,18 @@
       "test_date": "2025-10-24 02:54:49"
     },
     {
+      "url": "kenyans.co.ke",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:46:24"
+    },
+    {
       "url": "businessdailyafrica.com",
       "industry": "Media",
       "scores": {
@@ -48,6 +48,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-26 20:15:57"
+    },
+    {
+      "url": "kenyabuzz.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 69,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:46:01"
     },
     {
       "url": "safaricom.co.ke",
@@ -77,13 +89,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 41,
-        "accessibility": 97,
-        "best_practices": 69,
-        "seo": 92,
-        "pwa": 30
+        "performance": 38,
+        "accessibility": 91,
+        "best_practices": 73,
+        "seo": 87,
+        "pwa": 31
       }
     },
     {

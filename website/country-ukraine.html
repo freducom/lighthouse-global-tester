@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-28T20:19:54.632Z",
+          "dateCreated": "2025-10-29T07:39:54.692Z",
           "about": {
             "@type": "Place",
             "name": "Ukraine",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Ukraine"
           },
-          "dateModified": "2025-10-28T20:19:54.632Z",
+          "dateModified": "2025-10-29T07:39:54.692Z",
           "keywords": ["Ukraine", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -124,9 +124,9 @@
                 <div class="stat-number" aria-hidden="true">92%</div>
                 <p class="sr-only">SEO measures search engine optimization and discoverability</p>
             </div>
-            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 76 percent">
+            <div class="stat-card best-practices" role="img" aria-label="Average best practices score: 74 percent">
                 <h3>Best Practices</h3>
-                <div class="stat-number" aria-hidden="true">76%</div>
+                <div class="stat-number" aria-hidden="true">74%</div>
                 <p class="sr-only">Best practices measures security and modern web standards compliance</p>
             </div>
         </section>
@@ -443,15 +443,15 @@
                                     <time datetime="2025-10-24 00:41:27">10/24/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="lb.ua" 
                                 data-industry="Media"
-                                data-performance="46"
-                                data-accessibility="85"
+                                data-performance="49"
+                                data-accessibility="87"
                                 data-seo="91"
-                                data-best-practices="75"
+                                data-best-practices="58"
                                 data-pwa="33"
-                                data-test-date="2025-10-22 03:04:30">
+                                data-test-date="2025-10-29 04:31:44">
                                 <td class="rank" aria-label="Rank 6">#6</td>
                                 <td>
                                     <a href="domain-lb-ua.html" 
@@ -468,28 +468,28 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 46 percent, needs improvement">
-                                    46%
+                                    aria-label="Performance score: 49 percent, needs improvement, trend: +3 points">
+                                    49%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+3</span>
                                 </td>
                                 <td class="score acc-good"
-                                    aria-label="Accessibility score: 85 percent, good performance">
-                                    85%
+                                    aria-label="Accessibility score: 87 percent, good performance, trend: +2 points">
+                                    87%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
                                 </td>
                                 <td class="score seo-excellent"
                                     aria-label="SEO score: 91 percent, excellent performance">
                                     91%
                                 </td>
-                                <td class="score bp-good"
-                                    aria-label="Best Practices score: 75 percent, good performance">
-                                    75%
+                                <td class="score bp-average"
+                                    aria-label="Best Practices score: 58 percent, average performance, trend: -17 points">
+                                    58%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-17</span>
                                 </td>
                                 <td class="score pwa-poor"
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-22 03:04:30"
-                                    aria-label="Last tested on 10/22/2025">
-                                    <time datetime="2025-10-22 03:04:30">10/22/2025</time>
+                                <td class="date" data-date="2025-10-29 04:31:44"
+                                    aria-label="Last tested on 10/29/2025">
+                                    <time datetime="2025-10-29 04:31:44">10/29/2025</time>
                                 </td>
                             </tr>
                             <tr class="site-row " 
@@ -601,7 +601,7 @@
         <div class="footer-content">
             
             <div class="footer-section">
-                <p><button onclick="openWebsiteModal()" class="suggest-btn">Add your website</button></p>
+                <p><button onclick="openWebsiteModal()" class="suggest-btn">Test your site</button></p>
                 <p><a href="stats.html">Stats</a> | <a href="about.html">About</a> | <a href="api-docs.html">API Documentation</a> | <a href="latest-updated.html">Latest Scan</a> | <a href="queued-sites.html">Queued Sites</a> | <a href="https://flipsite.io" target="_blank">Build 100% scoring sites</a></p>
             </div>
         </div>
@@ -615,11 +615,11 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>💡 Suggest a Website</h2>
-                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close suggestion form">&times;</button>
+                    <h2>� Test Your Website</h2>
+                    <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Help us expand our lighthouse analysis by suggesting high-quality websites to include in our monitoring.</p>
+                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -627,6 +627,14 @@
                                    placeholder="https://example.com" 
                                    aria-describedby="url-help">
                             <small id="url-help">Enter the full URL including https://</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail">Email Address *</label>
+                            <input type="email" id="userEmail" name="email" required 
+                                   placeholder="your@email.com" 
+                                   aria-describedby="email-help">
+                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -648,16 +656,16 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="websiteDescription">Why should we include this website?</label>
+                            <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Brief description of why this website would be valuable for lighthouse analysis..." 
+                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Help us understand the value of including this website</small>
+                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
                             <button type="button" onclick="closeWebsiteModal()" class="btn-secondary">Cancel</button>
-                            <button type="submit" class="btn-primary">Submit Suggestion</button>
+                            <button type="submit" class="btn-primary">Submit for Testing</button>
                         </div>
                     </form>
                 </div>
@@ -749,7 +757,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"unian.ua","country":"Ukraine","industry":"Media","performance":69,"accessibility":85,"best_practices":75,"seo":93,"pwa":100,"test_date":"2025-10-24 20:20:35","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"news.finance.ua","country":"Ukraine","industry":"Finance","performance":67,"accessibility":63,"best_practices":67,"seo":91,"pwa":89,"test_date":"2025-10-22 19:44:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tsn.ua","country":"Ukraine","industry":"Media","performance":60,"accessibility":95,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-24 18:14:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"censor.net","country":"Ukraine","industry":"Media","performance":55,"accessibility":90,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-26 22:21:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sport.ua","country":"Ukraine","industry":"Sports","performance":50,"accessibility":78,"best_practices":92,"seo":92,"pwa":56,"test_date":"2025-10-24 00:41:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lb.ua","country":"Ukraine","industry":"Media","performance":46,"accessibility":85,"best_practices":75,"seo":91,"pwa":33,"test_date":"2025-10-22 03:04:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ukr.net","country":"Ukraine","industry":"Portal","performance":46,"accessibility":76,"best_practices":67,"seo":95,"pwa":33,"test_date":"2025-10-24 20:13:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"pravda.com.ua","country":"Ukraine","industry":"Media","performance":38,"accessibility":73,"best_practices":75,"seo":83,"pwa":33,"test_date":"2025-10-23 08:34:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"unian.ua","country":"Ukraine","industry":"Media","performance":69,"accessibility":85,"best_practices":75,"seo":93,"pwa":100,"test_date":"2025-10-24 20:20:35","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"news.finance.ua","country":"Ukraine","industry":"Finance","performance":67,"accessibility":63,"best_practices":67,"seo":91,"pwa":89,"test_date":"2025-10-22 19:44:03","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":19,"text":"+19","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tsn.ua","country":"Ukraine","industry":"Media","performance":60,"accessibility":95,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-24 18:14:26","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"censor.net","country":"Ukraine","industry":"Media","performance":55,"accessibility":90,"best_practices":67,"seo":91,"pwa":33,"test_date":"2025-10-26 22:21:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sport.ua","country":"Ukraine","industry":"Sports","performance":50,"accessibility":78,"best_practices":92,"seo":92,"pwa":56,"test_date":"2025-10-24 00:41:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lb.ua","country":"Ukraine","industry":"Media","performance":49,"accessibility":87,"best_practices":58,"seo":91,"pwa":33,"test_date":"2025-10-29 04:31:44","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":2,"text":"+2","class":"delta-positive"},"best_practices_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ukr.net","country":"Ukraine","industry":"Portal","performance":46,"accessibility":76,"best_practices":67,"seo":95,"pwa":33,"test_date":"2025-10-24 20:13:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"pravda.com.ua","country":"Ukraine","industry":"Media","performance":38,"accessibility":73,"best_practices":75,"seo":83,"pwa":33,"test_date":"2025-10-23 08:34:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

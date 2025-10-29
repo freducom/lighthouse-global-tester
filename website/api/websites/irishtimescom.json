@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.555Z",
+    "generated_at": "2025-10-29T07:39:56.080Z",
     "url": "irishtimes.com",
     "country": "Ireland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 34,
     "accessibility": 82,
     "best_practices": 92,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-21 17:42:12"
+    "test_date": "2025-10-28 20:33:29"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 82,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-10-28 20:33:29"
+    },
     {
       "performance": 35,
       "accessibility": 82,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-21 17:42:12",
-    "test_date_previous": "2025-10-21 13:10:02"
+    "test_date_current": "2025-10-28 20:33:29",
+    "test_date_previous": "2025-10-21 17:42:12"
   }
 }

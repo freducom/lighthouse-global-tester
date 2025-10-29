@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.736Z",
-    "websites_with_trends": 242,
-    "total_websites": 668
+    "generated_at": "2025-10-29T07:39:56.215Z",
+    "websites_with_trends": 265,
+    "total_websites": 699
   },
   "global_trends": {
     "average_changes": {
-      "performance": -2.1,
-      "accessibility": -0.4,
-      "best_practices": -2,
-      "seo": -0.3,
-      "pwa": -0.4
+      "performance": -1.6,
+      "accessibility": -0.1,
+      "best_practices": -1.6,
+      "seo": -0.2,
+      "pwa": -0.3
     },
     "improvements": {
-      "performance": 92,
-      "accessibility": 29,
-      "best_practices": 21,
-      "seo": 18,
-      "pwa": 2
+      "performance": 108,
+      "accessibility": 36,
+      "best_practices": 31,
+      "seo": 22,
+      "pwa": 3
     },
     "declines": {
-      "performance": 123,
-      "accessibility": 29,
-      "best_practices": 50,
-      "seo": 27,
+      "performance": 126,
+      "accessibility": 33,
+      "best_practices": 52,
+      "seo": 28,
       "pwa": 3
     }
   },
@@ -211,6 +211,58 @@
       }
     },
     {
+      "url": "krone.at",
+      "country": "Austria",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 78,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 55,
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -13,
+        "accessibility": 0,
+        "best_practices": -8,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "kurier.at",
+      "country": "Austria",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 60,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 41,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": 19,
+        "accessibility": 6,
+        "best_practices": 9,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
       "url": "salzburg24.at",
       "country": "Austria",
       "industry": "Media",
@@ -256,6 +308,32 @@
       },
       "changes": {
         "performance": 5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "lameuse.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 36,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -10,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -311,6 +389,32 @@
         "accessibility": -1,
         "best_practices": 0,
         "seo": -1,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "laprensa.com.bo",
+      "country": "Bolivia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 71,
+        "accessibility": 74,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 71,
+        "accessibility": 74,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
         "pwa": 0
       }
     },
@@ -757,25 +861,77 @@
       }
     },
     {
+      "url": "laprensaaustral.cl",
+      "country": "Chile",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 59,
+        "accessibility": 76,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 22
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 76,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 22
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "latercera.com",
+      "country": "Chile",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 46,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 32,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 14,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "jd.com",
       "country": "China",
       "industry": "E-commerce",
       "current_scores": {
-        "performance": 52,
+        "performance": 66,
         "accessibility": 65,
         "best_practices": 100,
         "seo": 88,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 57,
+        "performance": 52,
         "accessibility": 65,
         "best_practices": 100,
         "seo": 88,
         "pwa": 33
       },
       "changes": {
-        "performance": -5,
+        "performance": 14,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -804,6 +960,32 @@
         "performance": -2,
         "accessibility": 0,
         "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "lidovky.cz",
+      "country": "Czechia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 55,
+        "accessibility": 48,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 49,
+        "accessibility": 43,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 5,
+        "best_practices": -16,
         "seo": 0,
         "pwa": 0
       }
@@ -898,14 +1080,14 @@
         "pwa": 78
       },
       "previous_scores": {
-        "performance": 1,
+        "performance": 4,
         "accessibility": 76,
         "best_practices": 92,
         "seo": 91,
         "pwa": 78
       },
       "changes": {
-        "performance": 3,
+        "performance": 0,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -1177,23 +1359,23 @@
       "country": "Finland",
       "industry": "Media",
       "current_scores": {
+        "performance": 17,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "previous_scores": {
         "performance": 37,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 100,
         "pwa": 44
       },
-      "previous_scores": {
-        "performance": 20,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 44
-      },
       "changes": {
-        "performance": 17,
+        "performance": -20,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": 8,
         "seo": 0,
         "pwa": 0
       }
@@ -1376,6 +1558,110 @@
         "performance": -1,
         "accessibility": 3,
         "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "lefigaro.fr",
+      "country": "France",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 32,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 56
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 70,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "changes": {
+        "performance": -2,
+        "accessibility": 6,
+        "best_practices": 0,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "lemonde.fr",
+      "country": "France",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 63,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 63,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "leparisien.fr",
+      "country": "France",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 31,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 84,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 82,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -3,
+        "accessibility": 0,
+        "best_practices": 9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "liberation.fr",
+      "country": "France",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 33,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 5,
+        "accessibility": 0,
+        "best_practices": 0,
         "seo": 0,
         "pwa": 0
       }
@@ -1801,22 +2087,22 @@
       "country": "Greece",
       "industry": "Media",
       "current_scores": {
+        "performance": 64,
+        "accessibility": 89,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 61,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 67,
-        "accessibility": 91,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -6,
-        "accessibility": 0,
+        "performance": 3,
+        "accessibility": -2,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
@@ -2295,22 +2581,22 @@
       "country": "Iran",
       "industry": "Media",
       "current_scores": {
+        "performance": 82,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 58,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 80,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 99,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -22,
-        "accessibility": 0,
+        "performance": 24,
+        "accessibility": -3,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
@@ -2321,24 +2607,24 @@
       "country": "Iran",
       "industry": "Media",
       "current_scores": {
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 75,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 94,
         "accessibility": 69,
         "best_practices": 0,
         "seo": 84,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 99,
-        "accessibility": 91,
-        "best_practices": 100,
-        "seo": 72,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -5,
-        "accessibility": -22,
-        "best_practices": -100,
-        "seo": 12,
+        "performance": 5,
+        "accessibility": 22,
+        "best_practices": 100,
+        "seo": -9,
         "pwa": 0
       }
     },
@@ -2349,22 +2635,22 @@
       "current_scores": {
         "performance": 99,
         "accessibility": 91,
-        "best_practices": 100,
-        "seo": 72,
-        "pwa": 33
-      },
-      "previous_scores": {
-        "performance": 80,
-        "accessibility": 91,
         "best_practices": 0,
         "seo": 89,
         "pwa": 33
       },
-      "changes": {
-        "performance": 19,
-        "accessibility": 0,
+      "previous_scores": {
+        "performance": 99,
+        "accessibility": 91,
         "best_practices": 100,
-        "seo": -17,
+        "seo": 72,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": -100,
+        "seo": 17,
         "pwa": 0
       }
     },
@@ -2373,23 +2659,23 @@
       "country": "Iran",
       "industry": "Media",
       "current_scores": {
+        "performance": 32,
+        "accessibility": 62,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 29,
         "accessibility": 62,
         "best_practices": 67,
         "seo": 81,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 30,
-        "accessibility": 62,
-        "best_practices": 75,
-        "seo": 81,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -1,
+        "performance": 3,
         "accessibility": 0,
-        "best_practices": -8,
+        "best_practices": 8,
         "seo": 0,
         "pwa": 0
       }
@@ -2425,24 +2711,24 @@
       "country": "Ireland",
       "industry": "Media",
       "current_scores": {
+        "performance": 62,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 67
+      },
+      "previous_scores": {
         "performance": 52,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 86,
         "pwa": 67
       },
-      "previous_scores": {
-        "performance": 57,
-        "accessibility": 85,
-        "best_practices": 100,
-        "seo": 86,
-        "pwa": 67
-      },
       "changes": {
-        "performance": -5,
-        "accessibility": 0,
-        "best_practices": -8,
-        "seo": 0,
+        "performance": 10,
+        "accessibility": 9,
+        "best_practices": 8,
+        "seo": 7,
         "pwa": 0
       }
     },
@@ -2451,7 +2737,7 @@
       "country": "Ireland",
       "industry": "Media",
       "current_scores": {
-        "performance": 35,
+        "performance": 34,
         "accessibility": 82,
         "best_practices": 92,
         "seo": 84,
@@ -2465,7 +2751,7 @@
         "pwa": 33
       },
       "changes": {
-        "performance": 0,
+        "performance": -1,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2571,6 +2857,32 @@
       "changes": {
         "performance": 0,
         "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "la7.it",
+      "country": "Italy",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 32,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 32,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 2,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
@@ -2763,23 +3075,23 @@
       "country": "Kenya",
       "industry": "Media",
       "current_scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 50,
         "accessibility": 98,
         "best_practices": 67,
         "seo": 93,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 47,
-        "accessibility": 98,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 3,
+        "performance": -5,
         "accessibility": 0,
-        "best_practices": -8,
+        "best_practices": 8,
         "seo": 0,
         "pwa": 0
       }
@@ -2804,6 +3116,32 @@
       },
       "changes": {
         "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "la.lv",
+      "country": "Latvia",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 37,
+        "accessibility": 71,
+        "best_practices": 83,
+        "seo": 78,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 71,
+        "best_practices": 83,
+        "seo": 78,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -2882,6 +3220,84 @@
       },
       "changes": {
         "performance": 23,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "libya24.tv",
+      "country": "Libya",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 60,
+        "accessibility": 84,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 58,
+        "accessibility": 85,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": -1,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "libyaherald.com",
+      "country": "Libya",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 26,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 35,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -9,
+        "accessibility": 0,
+        "best_practices": 9,
+        "seo": 7,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "libyaobserver.ly",
+      "country": "Libya",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 63,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 63,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -3357,6 +3773,32 @@
       }
     },
     {
+      "url": "jobz.pk",
+      "country": "Pakistan",
+      "industry": "Jobs",
+      "current_scores": {
+        "performance": 79,
+        "accessibility": 55,
+        "best_practices": 83,
+        "seo": 87,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 80,
+        "accessibility": 70,
+        "best_practices": 67,
+        "seo": 87,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": -15,
+        "best_practices": 16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "rozee.pk",
       "country": "Pakistan",
       "industry": "Jobs",
@@ -3376,6 +3818,32 @@
       },
       "changes": {
         "performance": 5,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "lanacion.com.py",
+      "country": "Paraguay",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 32,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 22,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": 10,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -4189,6 +4657,32 @@
       }
     },
     {
+      "url": "lavanguardia.com",
+      "country": "Spain",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 36,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": -2,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "apotea.se",
       "country": "Sweden",
       "industry": "E-commerce",
@@ -4531,25 +5025,25 @@
       "country": "Sweden",
       "industry": "Finance",
       "current_scores": {
+        "performance": 37,
+        "accessibility": 90,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 56
+      },
+      "previous_scores": {
         "performance": 24,
         "accessibility": 90,
         "best_practices": 92,
         "seo": 92,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 27,
-        "accessibility": 90,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -3,
+        "performance": 13,
         "accessibility": 0,
-        "best_practices": 0,
+        "best_practices": 8,
         "seo": 0,
-        "pwa": 0
+        "pwa": 23
       }
     },
     {
@@ -4631,6 +5125,32 @@
       }
     },
     {
+      "url": "letemps.ch",
+      "country": "Switzerland",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 89
+      },
+      "previous_scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 89
+      },
+      "changes": {
+        "performance": 4,
+        "accessibility": 0,
+        "best_practices": -9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "rts.ch",
       "country": "Switzerland",
       "industry": "Media",
@@ -4661,21 +5181,21 @@
       "country": "Thailand",
       "industry": "Portal",
       "current_scores": {
-        "performance": 37,
+        "performance": 14,
         "accessibility": 93,
         "best_practices": 50,
         "seo": 92,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 35,
+        "performance": 37,
         "accessibility": 93,
         "best_practices": 50,
         "seo": 92,
         "pwa": 33
       },
       "changes": {
-        "performance": 2,
+        "performance": -23,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -4713,22 +5233,22 @@
       "country": "Turkey",
       "industry": "Media",
       "current_scores": {
-        "performance": 44,
+        "performance": 46,
         "accessibility": 89,
         "best_practices": 75,
         "seo": 97,
         "pwa": 44
       },
       "previous_scores": {
-        "performance": 46,
-        "accessibility": 88,
+        "performance": 44,
+        "accessibility": 89,
         "best_practices": 75,
         "seo": 97,
         "pwa": 44
       },
       "changes": {
-        "performance": -2,
-        "accessibility": 1,
+        "performance": 2,
+        "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
         "pwa": 0
@@ -4756,6 +5276,32 @@
         "performance": 1,
         "accessibility": 0,
         "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "lb.ua",
+      "country": "Ukraine",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 49,
+        "accessibility": 87,
+        "best_practices": 58,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 46,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 3,
+        "accessibility": 2,
+        "best_practices": -17,
         "seo": 0,
         "pwa": 0
       }
@@ -4991,6 +5537,32 @@
         "accessibility": -7,
         "best_practices": -16,
         "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "itv.com",
+      "country": "United Kingdom",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 12,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 13,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": -1,
         "pwa": 0
       }
     },
@@ -5723,6 +6295,32 @@
       }
     },
     {
+      "url": "irs.gov",
+      "country": "United States",
+      "industry": "Government",
+      "current_scores": {
+        "performance": 65,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 59,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 6,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "msnbc.com",
       "country": "United States",
       "industry": "Media",
@@ -6299,23 +6897,23 @@
       "country": "Vietnam",
       "industry": "Media",
       "current_scores": {
+        "performance": 31,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 38,
         "accessibility": 83,
         "best_practices": 58,
         "seo": 90,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 44,
-        "accessibility": 83,
-        "best_practices": 58,
-        "seo": 90,
-        "pwa": 33
-      },
       "changes": {
-        "performance": -6,
-        "accessibility": 0,
-        "best_practices": 0,
+        "performance": -7,
+        "accessibility": 2,
+        "best_practices": 9,
         "seo": 0,
         "pwa": 0
       }

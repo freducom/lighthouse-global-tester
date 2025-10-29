@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.464Z",
+    "generated_at": "2025-10-29T07:39:56.033Z",
     "url": "kurier.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 41,
-    "accessibility": 90,
-    "best_practices": 83,
-    "seo": 83,
+    "performance": 60,
+    "accessibility": 96,
+    "best_practices": 92,
+    "seo": 90,
     "pwa": 56,
-    "test_date": "2025-10-21 22:16:35"
+    "test_date": "2025-10-29 03:20:05"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 96,
+      "best_practices": 92,
+      "seo": 90,
+      "pwa": 56,
+      "test_date": "2025-10-29 03:20:05"
+    },
     {
       "performance": 41,
       "accessibility": 90,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-21 22:16:35"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 19,
+    "accessibility": 6,
+    "best_practices": 9,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 03:20:05",
+    "test_date_previous": "2025-10-21 22:16:35"
+  }
 }

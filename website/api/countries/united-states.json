@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.248Z",
+    "generated_at": "2025-10-29T07:39:55.831Z",
     "country": "United States",
     "flag": "🇺🇸",
-    "website_count": 80
+    "website_count": 81
   },
   "averages": {
     "performance": 44,
@@ -209,13 +209,13 @@
       "url": "irs.gov",
       "industry": "Government",
       "scores": {
-        "performance": 59,
+        "performance": 65,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:07:16"
+      "test_date": "2025-10-28 20:34:00"
     },
     {
       "url": "facebook.com",
@@ -638,6 +638,18 @@
       "test_date": "2025-10-27 10:24:09"
     },
     {
+      "url": "khanacademy.org",
+      "industry": "Education",
+      "scores": {
+        "performance": 34,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 00:53:16"
+    },
+    {
       "url": "msnbc.com",
       "industry": "Media",
       "scores": {
@@ -1010,12 +1022,12 @@
     },
     {
       "industry": "Education",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 46,
+        "performance": 44,
         "accessibility": 96,
-        "best_practices": 81,
-        "seo": 82,
+        "best_practices": 85,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -1034,7 +1046,7 @@
       "industry": "Government",
       "website_count": 4,
       "averages": {
-        "performance": 59,
+        "performance": 60,
         "accessibility": 88,
         "best_practices": 90,
         "seo": 93,

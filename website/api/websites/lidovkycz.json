@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.492Z",
+    "generated_at": "2025-10-29T07:39:56.047Z",
     "url": "lidovky.cz",
     "country": "Czechia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 49,
-    "accessibility": 43,
-    "best_practices": 83,
+    "performance": 55,
+    "accessibility": 48,
+    "best_practices": 67,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-22 04:14:28"
+    "test_date": "2025-10-29 06:23:33"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 48,
+      "best_practices": 67,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-10-29 06:23:33"
+    },
     {
       "performance": 49,
       "accessibility": 43,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 04:14:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 5,
+    "best_practices": -16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 06:23:33",
+    "test_date_previous": "2025-10-22 04:14:28"
+  }
 }

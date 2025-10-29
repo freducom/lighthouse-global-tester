@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.261Z",
+    "generated_at": "2025-10-29T07:39:55.842Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 41
+    "website_count": 45
   },
   "averages": {
     "performance": 43,
     "accessibility": 84,
     "best_practices": 74,
-    "seo": 87,
-    "pwa": 46
+    "seo": 86,
+    "pwa": 47
   },
   "websites": [
     {
@@ -86,6 +86,18 @@
       "test_date": "2025-10-19 19:46:30"
     },
     {
+      "url": "jiomart.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 56,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-28 22:10:25"
+    },
+    {
       "url": "iitk.ac.in",
       "industry": "Education",
       "scores": {
@@ -96,6 +108,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-28 14:20:16"
+    },
+    {
+      "url": "ixigo.com",
+      "industry": "Travel",
+      "scores": {
+        "performance": 55,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 89
+      },
+      "test_date": "2025-10-28 20:35:13"
     },
     {
       "url": "iisc.ac.in",
@@ -314,6 +338,30 @@
       "test_date": "2025-10-19 19:49:11"
     },
     {
+      "url": "jnu.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 37,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-28 22:10:50"
+    },
+    {
+      "url": "kotak.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 36,
+        "accessibility": 74,
+        "best_practices": 58,
+        "seo": 78,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:15:21"
+    },
+    {
       "url": "aiims.edu",
       "industry": "Education",
       "scores": {
@@ -520,13 +568,13 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 47,
-        "accessibility": 91,
+        "performance": 50,
+        "accessibility": 88,
         "best_practices": 83,
-        "seo": 89,
-        "pwa": 55
+        "seo": 90,
+        "pwa": 61
       }
     },
     {
@@ -542,13 +590,13 @@
     },
     {
       "industry": "Education",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 43,
-        "accessibility": 79,
+        "performance": 42,
+        "accessibility": 78,
         "best_practices": 81,
         "seo": 77,
-        "pwa": 25
+        "pwa": 26
       }
     },
     {
@@ -564,13 +612,13 @@
     },
     {
       "industry": "Finance",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 56,
-        "accessibility": 81,
-        "best_practices": 65,
-        "seo": 88,
-        "pwa": 37
+        "performance": 53,
+        "accessibility": 80,
+        "best_practices": 64,
+        "seo": 86,
+        "pwa": 36
       }
     },
     {
@@ -659,6 +707,17 @@
         "best_practices": 80,
         "seo": 86,
         "pwa": 33
+      }
+    },
+    {
+      "industry": "Travel",
+      "website_count": 1,
+      "averages": {
+        "performance": 55,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 89
       }
     }
   ]

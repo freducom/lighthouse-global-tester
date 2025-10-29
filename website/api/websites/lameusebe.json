@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.470Z",
+    "generated_at": "2025-10-29T07:39:56.036Z",
     "url": "lameuse.be",
     "country": "Belgium",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 36,
     "accessibility": 88,
     "best_practices": 75,
     "seo": 92,
     "pwa": 67,
-    "test_date": "2025-10-21 22:20:59"
+    "test_date": "2025-10-29 04:16:38"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 88,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 67,
+      "test_date": "2025-10-29 04:16:38"
+    },
     {
       "performance": 46,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-21 22:20:59"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 04:16:38",
+    "test_date_previous": "2025-10-21 22:20:59"
+  }
 }

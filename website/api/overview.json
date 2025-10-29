@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:55.956Z",
+    "generated_at": "2025-10-29T07:39:55.552Z",
     "api_version": "1.0",
-    "total_websites": 668,
-    "countries_count": 69,
-    "industries_count": 38,
-    "last_scan_date": "2025-10-28 18:26:08"
+    "total_websites": 699,
+    "countries_count": 70,
+    "industries_count": 39,
+    "last_scan_date": "2025-10-29 06:24:23"
   },
   "global_averages": {
     "performance": 44,
@@ -72,15 +72,26 @@
         "test_date": "2025-10-25 10:12:38"
       },
       {
-        "url": "isna.ir",
+        "url": "irna.ir",
         "country": "Iran",
         "industry": "Media",
         "performance": 99,
         "accessibility": 91,
         "best_practices": 100,
-        "seo": 72,
+        "seo": 75,
         "pwa": 33,
-        "test_date": "2025-10-21 17:43:06"
+        "test_date": "2025-10-28 20:33:40"
+      },
+      {
+        "url": "isna.ir",
+        "country": "Iran",
+        "industry": "Media",
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 0,
+        "seo": 89,
+        "pwa": 33,
+        "test_date": "2025-10-28 20:34:40"
       },
       {
         "url": "sol.bo",
@@ -103,17 +114,6 @@
         "seo": 93,
         "pwa": 78,
         "test_date": "2025-10-28 12:24:22"
-      },
-      {
-        "url": "irna.ir",
-        "country": "Iran",
-        "industry": "Media",
-        "performance": 94,
-        "accessibility": 69,
-        "best_practices": 0,
-        "seo": 84,
-        "pwa": 33,
-        "test_date": "2025-10-21 17:42:31"
       },
       {
         "url": "amazon.com.mx",
@@ -195,6 +195,17 @@
         "test_date": "2025-10-25 03:03:39"
       },
       {
+        "url": "kth.se",
+        "country": "Sweden",
+        "industry": "Education",
+        "performance": 87,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-29 03:16:14"
+      },
+      {
         "url": "doktor.se",
         "country": "Sweden",
         "industry": "Healthtech",
@@ -226,17 +237,6 @@
         "seo": 92,
         "pwa": 67,
         "test_date": "2025-10-22 14:19:45"
-      },
-      {
-        "url": "bing.com",
-        "country": "United States",
-        "industry": "Search Engine",
-        "performance": 77,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 33,
-        "test_date": "2025-10-26 16:42:13"
       }
     ],
     "best_practices": [
@@ -272,6 +272,17 @@
         "seo": 85,
         "pwa": 33,
         "test_date": "2025-10-26 08:04:24"
+      },
+      {
+        "url": "kth.se",
+        "country": "Sweden",
+        "industry": "Education",
+        "performance": 87,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-29 03:16:14"
       },
       {
         "url": "doktor.se",
@@ -338,17 +349,6 @@
         "seo": 93,
         "pwa": 56,
         "test_date": "2025-10-23 07:04:36"
-      },
-      {
-        "url": "arbeitsagentur.de",
-        "country": "Germany",
-        "industry": "Government",
-        "performance": 58,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 86,
-        "pwa": 56,
-        "test_date": "2025-10-26 10:10:47"
       }
     ],
     "seo": [
@@ -362,6 +362,17 @@
         "seo": 100,
         "pwa": 33,
         "test_date": "2025-10-22 08:37:37"
+      },
+      {
+        "url": "kth.se",
+        "country": "Sweden",
+        "industry": "Education",
+        "performance": 87,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-10-29 03:16:14"
       },
       {
         "url": "doktor.se",
@@ -450,17 +461,6 @@
         "seo": 100,
         "pwa": 44,
         "test_date": "2025-10-27 00:47:55"
-      },
-      {
-        "url": "iltasanomat.fi",
-        "country": "Finland",
-        "industry": "Media",
-        "performance": 18,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 44,
-        "test_date": "2025-10-28 16:33:50"
       }
     ],
     "pwa": [
@@ -620,7 +620,7 @@
         "best_practices": 92,
         "seo": 91,
         "pwa": 78,
-        "test_date": "2025-10-21 18:20:35"
+        "test_date": "2025-10-28 22:23:23"
       },
       {
         "url": "cp24.com",
@@ -735,6 +735,17 @@
         "test_date": "2025-10-22 14:57:26"
       },
       {
+        "url": "lazada.com.ph",
+        "country": "Philippines",
+        "industry": "E-commerce",
+        "performance": 41,
+        "accessibility": 31,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33,
+        "test_date": "2025-10-29 04:31:27"
+      },
+      {
         "url": "sohu.com",
         "country": "China",
         "industry": "Portal",
@@ -788,17 +799,6 @@
         "seo": 85,
         "pwa": 33,
         "test_date": "2025-10-19 20:20:16"
-      },
-      {
-        "url": "lidovky.cz",
-        "country": "Czechia",
-        "industry": "Media",
-        "performance": 49,
-        "accessibility": 43,
-        "best_practices": 83,
-        "seo": 83,
-        "pwa": 33,
-        "test_date": "2025-10-22 04:14:28"
       }
     ],
     "best_practices": [
@@ -880,17 +880,6 @@
         "test_date": "2025-10-24 10:16:00"
       },
       {
-        "url": "irna.ir",
-        "country": "Iran",
-        "industry": "Media",
-        "performance": 94,
-        "accessibility": 69,
-        "best_practices": 0,
-        "seo": 84,
-        "pwa": 33,
-        "test_date": "2025-10-21 17:42:31"
-      },
-      {
         "url": "altbalaji.com",
         "country": "India",
         "industry": "Media",
@@ -911,6 +900,17 @@
         "seo": 84,
         "pwa": 56,
         "test_date": "2025-10-26 13:42:10"
+      },
+      {
+        "url": "stuff.co.nz",
+        "country": "New Zealand",
+        "industry": "Media",
+        "performance": 30,
+        "accessibility": 86,
+        "best_practices": 0,
+        "seo": 90,
+        "pwa": 56,
+        "test_date": "2025-10-24 03:00:50"
       }
     ],
     "seo": [
@@ -940,12 +940,12 @@
         "url": "libyaobserver.ly",
         "country": "Libya",
         "industry": "Media",
-        "performance": 36,
+        "performance": 42,
         "accessibility": 79,
         "best_practices": 67,
         "seo": 63,
         "pwa": 33,
-        "test_date": "2025-10-22 04:14:04"
+        "test_date": "2025-10-29 06:23:05"
       },
       {
         "url": "zambiatoday.com",
@@ -1129,12 +1129,12 @@
         "url": "laprensaaustral.cl",
         "country": "Chile",
         "industry": "Media",
-        "performance": 58,
+        "performance": 59,
         "accessibility": 76,
         "best_practices": 75,
         "seo": 81,
         "pwa": 22,
-        "test_date": "2025-10-22 00:45:06"
+        "test_date": "2025-10-29 04:21:57"
       }
     ]
   }

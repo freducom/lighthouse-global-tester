@@ -1,17 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.397Z",
+    "generated_at": "2025-10-29T07:39:55.965Z",
     "industry": "Manufacturing",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 100,
-    "best_practices": 75,
-    "seo": 93,
+    "performance": 44,
+    "accessibility": 99,
+    "best_practices": 79,
+    "seo": 92,
     "pwa": 33
   },
   "websites": [
+    {
+      "url": "konecranes.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 48,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 03:13:34"
+    },
     {
       "url": "husqvarna.com",
       "country": "Sweden",
@@ -26,6 +38,17 @@
     }
   ],
   "countries": [
+    {
+      "country": "Finland",
+      "website_count": 1,
+      "averages": {
+        "performance": 48,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
     {
       "country": "Sweden",
       "website_count": 1,

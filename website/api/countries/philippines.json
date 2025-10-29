@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-28T20:19:56.316Z",
+    "generated_at": "2025-10-29T07:39:55.888Z",
     "country": "Philippines",
     "flag": "🌍",
-    "website_count": 4
+    "website_count": 5
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 78,
+    "performance": 38,
+    "accessibility": 69,
     "best_practices": 60,
-    "seo": 76,
-    "pwa": 36
+    "seo": 78,
+    "pwa": 35
   },
   "websites": [
     {
@@ -24,6 +24,18 @@
         "pwa": 44
       },
       "test_date": "2025-10-28 18:23:42"
+    },
+    {
+      "url": "lazada.com.ph",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 41,
+        "accessibility": 31,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 04:31:27"
     },
     {
       "url": "bpi.com.ph",
@@ -63,6 +75,17 @@
     }
   ],
   "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 41,
+        "accessibility": 31,
+        "best_practices": 58,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Finance",
       "website_count": 2,
