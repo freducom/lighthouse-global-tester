@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:33:29.450Z",
+    "generated_at": "2025-11-04T09:57:34.471Z",
     "country": "Sweden",
     "flag": "🇸🇪",
     "website_count": 99
   },
   "averages": {
-    "performance": 51,
+    "performance": 50,
     "accessibility": 92,
     "best_practices": 91,
     "seo": 93,
@@ -950,18 +950,6 @@
       "test_date": "2025-11-03 22:16:37"
     },
     {
-      "url": "hemnet.se",
-      "industry": "Realestate",
-      "scores": {
-        "performance": 37,
-        "accessibility": 98,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-11-04 08:18:37"
-    },
-    {
       "url": "systembolaget.se",
       "industry": "E-commerce",
       "scores": {
@@ -1152,6 +1140,18 @@
         "pwa": 33
       },
       "test_date": "2025-11-03 04:19:18"
+    },
+    {
+      "url": "hemnet.se",
+      "industry": "Realestate",
+      "scores": {
+        "performance": 27,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 09:10:53"
     },
     {
       "url": "byggmax.se",
@@ -1427,7 +1427,7 @@
       "industry": "Realestate",
       "website_count": 2,
       "averages": {
-        "performance": 41,
+        "performance": 36,
         "accessibility": 90,
         "best_practices": 92,
         "seo": 100,

@@ -942,7 +942,7 @@ ${this.getPostHogScript()}
                 </div>
                 
                 <div class="search-container">
-                    <label for="searchInput" class="sr-only">Search websites by domain, country, or industry</label>
+                    <label for="searchIntput" class="sr-only">Search websites by domain, country, or industry</label>
                     <input type="search" 
                            id="searchInput" 
                            aria-describedby="search-instructions"
@@ -1178,6 +1178,9 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
             const selectedCountry = countryFilter.value;
             const selectedIndustry = industryFilter.value;
             
+            // Update URL parameters
+            updateURLParameters(selectedCountry, selectedIndustry);
+            
             // Clear previous timeout to debounce search
             clearTimeout(searchTimeout);
             
@@ -1219,6 +1222,48 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
                 }
             }, 300); // 300ms debounce
         }
+
+        function updateURLParameters(country, industry) {
+            const url = new URL(window.location);
+            
+            // Update or remove country parameter
+            if (country) {
+                url.searchParams.set('country', country);
+            } else {
+                url.searchParams.delete('country');
+            }
+            
+            // Update or remove industry parameter
+            if (industry) {
+                url.searchParams.set('industry', industry);
+            } else {
+                url.searchParams.delete('industry');
+            }
+            
+            // Update URL without refreshing page
+            window.history.replaceState({}, '', url);
+        }
+
+        function initializeFiltersFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const countryParam = urlParams.get('country');
+            const industryParam = urlParams.get('industry');
+            
+            // Set country filter if parameter exists
+            if (countryParam) {
+                countryFilter.value = countryParam;
+            }
+            
+            // Set industry filter if parameter exists
+            if (industryParam) {
+                industryFilter.value = industryParam;
+            }
+            
+            // Apply filters if any were set from URL
+            if (countryParam || industryParam) {
+                applyFiltersAndSearch();
+            }
+        }
         
         function updateSearchPlaceholder(visibleCount) {
             const selectedCountry = countryFilter.options[countryFilter.selectedIndex]?.text || 'All Countries';
@@ -1243,9 +1288,19 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
             countryFilter.value = '';
             industryFilter.value = '';
             searchInput.value = '';
+            
+            // Clear URL parameters
+            const url = new URL(window.location);
+            url.searchParams.delete('country');
+            url.searchParams.delete('industry');
+            window.history.replaceState({}, '', url);
+            
             applyFiltersAndSearch();
         });
 
+        // Initialize filters from URL parameters on page load
+        initializeFiltersFromURL();
+        
         // Initialize
         applyFiltersAndSearch();
         
@@ -6056,13 +6111,99 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
             }, 300);
         }
 
+        // Filter functionality with URL parameters
+        function applyFiltersAndSearch() {
+            const selectedCountry = countryFilter.value;
+            const selectedIndustry = industryFilter.value;
+            
+            // Update URL parameters
+            updateURLParameters(selectedCountry, selectedIndustry);
+            
+            filteredData = allData.filter(site => {
+                // Check filters
+                const countryMatch = !selectedCountry || site.country.toLowerCase() === selectedCountry;
+                const industryMatch = !selectedIndustry || (site.industry || 'unknown').toLowerCase() === selectedIndustry;
+                
+                return countryMatch && industryMatch;
+            });
+            
+            // Re-apply current sort to filtered data
+            sortData(currentSort.column, currentSort.order);
+        }
+
+        function updateURLParameters(country, industry) {
+            const url = new URL(window.location);
+            
+            // Update or remove country parameter
+            if (country) {
+                url.searchParams.set('country', country);
+            } else {
+                url.searchParams.delete('country');
+            }
+            
+            // Update or remove industry parameter
+            if (industry) {
+                url.searchParams.set('industry', industry);
+            } else {
+                url.searchParams.delete('industry');
+            }
+            
+            // Update URL without refreshing page
+            window.history.replaceState({}, '', url);
+        }
+
+        function initializeFiltersFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const countryParam = urlParams.get('country');
+            const industryParam = urlParams.get('industry');
+            
+            // Set country filter if parameter exists
+            if (countryParam) {
+                countryFilter.value = countryParam;
+            }
+            
+            // Set industry filter if parameter exists
+            if (industryParam) {
+                industryFilter.value = industryParam;
+            }
+            
+            // Apply filters if any were set from URL
+            if (countryParam || industryParam) {
+                applyFiltersAndSearch();
+            }
+        }
+
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
             // Initial table population
             updateAllCompaniesTable(allData);
             
+            // Initialize filters from URL parameters
+            initializeFiltersFromURL();
+            
             // Add search functionality
             searchInput.addEventListener('input', handleSearch);
+            
+            // Add filter functionality
+            countryFilter.addEventListener('change', applyFiltersAndSearch);
+            industryFilter.addEventListener('change', applyFiltersAndSearch);
+            
+            // Add clear filters functionality
+            clearFiltersBtn.addEventListener('click', function() {
+                countryFilter.value = '';
+                industryFilter.value = '';
+                searchInput.value = '';
+                
+                // Clear URL parameters
+                const url = new URL(window.location);
+                url.searchParams.delete('country');
+                url.searchParams.delete('industry');
+                window.history.replaceState({}, '', url);
+                
+                // Reset to all data
+                filteredData = [...allData];
+                sortData(currentSort.column, currentSort.order);
+            });
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sortable-header').forEach(header => {

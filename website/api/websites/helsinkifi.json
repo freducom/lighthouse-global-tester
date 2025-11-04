@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:33:30.045Z",
+    "generated_at": "2025-11-04T09:57:35.281Z",
     "url": "helsinki.fi",
     "country": "Finland",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 56,
     "accessibility": 93,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-04 08:18:16"
+    "test_date": "2025-11-04 09:10:30"
   },
   "historical_data": [
+    {
+      "performance": 56,
+      "accessibility": 93,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-04 09:10:30"
+    },
     {
       "performance": 55,
       "accessibility": 93,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 7,
+    "performance": 1,
+    "accessibility": 0,
     "best_practices": 0,
-    "seo": 7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 08:18:16",
-    "test_date_previous": "2025-10-28 10:34:37"
+    "test_date_current": "2025-11-04 09:10:30",
+    "test_date_previous": "2025-11-04 08:18:16"
   }
 }

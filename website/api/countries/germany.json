@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:33:29.366Z",
+    "generated_at": "2025-11-04T09:57:34.365Z",
     "country": "Germany",
     "flag": "🇩🇪",
     "website_count": 38
@@ -170,6 +170,18 @@
       "test_date": "2025-11-03 00:58:22"
     },
     {
+      "url": "heise.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 50,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-04 09:10:14"
+    },
+    {
       "url": "commerzbank.de",
       "industry": "Finance",
       "scores": {
@@ -192,18 +204,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-29 12:33:21"
-    },
-    {
-      "url": "heise.de",
-      "industry": "Media",
-      "scores": {
-        "performance": 45,
-        "accessibility": 83,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 56
-      },
-      "test_date": "2025-11-04 08:17:59"
     },
     {
       "url": "idealo.de",
@@ -519,7 +519,7 @@
       "industry": "Media",
       "website_count": 13,
       "averages": {
-        "performance": 42,
+        "performance": 43,
         "accessibility": 91,
         "best_practices": 92,
         "seo": 95,
