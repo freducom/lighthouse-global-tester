@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.148Z",
+    "generated_at": "2025-11-04T09:04:16.878Z",
     "url": "lusakatimes.com",
     "country": "Zambia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 13,
     "accessibility": 95,
     "best_practices": 83,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-22 06:25:57"
+    "test_date": "2025-10-29 10:11:31"
   },
   "historical_data": [
+    {
+      "performance": 13,
+      "accessibility": 95,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-10-29 10:11:31"
+    },
     {
       "performance": 34,
       "accessibility": 95,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 06:25:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -21,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 10:11:31",
+    "test_date_previous": "2025-10-22 06:25:57"
+  }
 }

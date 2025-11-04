@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.047Z",
+    "generated_at": "2025-11-04T09:04:16.428Z",
     "url": "denik.cz",
     "country": "Czechia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 33,
     "accessibility": 0,
     "best_practices": 83,
-    "seo": 97,
+    "seo": 90,
     "pwa": 56,
-    "test_date": "2025-10-27 08:32:01"
+    "test_date": "2025-11-03 06:32:18"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 0,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 56,
+      "test_date": "2025-11-03 06:32:18"
+    },
     {
       "performance": 58,
       "accessibility": 0,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 08:32:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -25,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 06:32:18",
+    "test_date_previous": "2025-10-27 08:32:01"
+  }
 }

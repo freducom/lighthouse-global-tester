@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.952Z",
+          "dateCreated": "2025-11-04T09:04:11.953Z",
           "about": {
             "@type": "WebSite",
             "name": "telegraaf.nl",
@@ -97,7 +97,7 @@
           "accessibilityScore": 97,
           "bestPracticesScore": 75,
           "seoScore": 91,
-          "dateRecorded": "2025-10-24 08:15:55"
+          "dateRecorded": "2025-10-31 16:22:54"
         }
       ]
     }
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":196,"url":"telegraaf.nl","performance":37,"accessibility":88,"best_practices":75,"seo":85,"pwa":44,"test_date":"2025-10-19 20:23:38","country":"Netherlands","industry":"Media"},{"id":626,"url":"telegraaf.nl","performance":30,"accessibility":97,"best_practices":75,"seo":91,"pwa":56,"test_date":"2025-10-24 08:15:55","country":"Netherlands","industry":"Media"}];
+        const historyData = [{"id":196,"url":"telegraaf.nl","performance":37,"accessibility":88,"best_practices":75,"seo":85,"pwa":44,"test_date":"2025-10-19 20:23:38","country":"Netherlands","industry":"Media"},{"id":626,"url":"telegraaf.nl","performance":30,"accessibility":97,"best_practices":75,"seo":91,"pwa":56,"test_date":"2025-10-24 08:15:55","country":"Netherlands","industry":"Media"},{"id":1557,"url":"telegraaf.nl","performance":30,"accessibility":97,"best_practices":75,"seo":91,"pwa":56,"test_date":"2025-10-31 16:22:54","country":"Netherlands","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

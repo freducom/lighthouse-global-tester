@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.096Z",
+    "generated_at": "2025-11-04T09:04:16.659Z",
     "url": "trademe.co.nz",
     "country": "New Zealand",
     "industry": "Marketplace"
@@ -9,11 +9,19 @@
     "performance": 27,
     "accessibility": 98,
     "best_practices": 75,
-    "seo": 92,
+    "seo": 85,
     "pwa": 78,
-    "test_date": "2025-10-24 16:12:16"
+    "test_date": "2025-10-31 22:17:19"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 98,
+      "best_practices": 75,
+      "seo": 85,
+      "pwa": 78,
+      "test_date": "2025-10-31 22:17:19"
+    },
     {
       "performance": 27,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 16:12:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 22:17:19",
+    "test_date_previous": "2025-10-24 16:12:16"
+  }
 }

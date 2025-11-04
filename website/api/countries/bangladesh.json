@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.899Z",
+    "generated_at": "2025-11-04T09:04:15.766Z",
     "country": "Bangladesh",
     "flag": "🌍",
     "website_count": 5
   },
   "averages": {
-    "performance": 35,
-    "accessibility": 79,
-    "best_practices": 75,
+    "performance": 39,
+    "accessibility": 80,
+    "best_practices": 70,
     "seo": 92,
     "pwa": 58
   },
   "websites": [
+    {
+      "url": "bdjobs.com",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 77,
+        "accessibility": 91,
+        "best_practices": 67,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 14:08:46"
+    },
     {
       "url": "daraz.com.bd",
       "industry": "E-commerce",
@@ -26,40 +38,28 @@
       "test_date": "2025-10-27 08:17:31"
     },
     {
-      "url": "bdjobs.com",
-      "industry": "Jobs",
-      "scores": {
-        "performance": 49,
-        "accessibility": 91,
-        "best_practices": 75,
-        "seo": 89,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 16:05:11"
-    },
-    {
       "url": "bikroy.com",
       "industry": "Marketplace",
       "scores": {
-        "performance": 37,
-        "accessibility": 87,
+        "performance": 35,
+        "accessibility": 89,
         "best_practices": 67,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:41:11"
+      "test_date": "2025-11-02 14:13:02"
     },
     {
       "url": "prothomalo.com",
       "industry": "Media",
       "scores": {
-        "performance": 28,
+        "performance": 25,
         "accessibility": 97,
-        "best_practices": 83,
+        "best_practices": 67,
         "seo": 100,
         "pwa": 100
       },
-      "test_date": "2025-10-23 10:14:19"
+      "test_date": "2025-10-30 16:13:11"
     },
     {
       "url": "thefinancialexpress.com.bd",
@@ -90,9 +90,9 @@
       "industry": "Jobs",
       "website_count": 1,
       "averages": {
-        "performance": 49,
+        "performance": 77,
         "accessibility": 91,
-        "best_practices": 75,
+        "best_practices": 67,
         "seo": 89,
         "pwa": 33
       }
@@ -101,8 +101,8 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 37,
-        "accessibility": 87,
+        "performance": 35,
+        "accessibility": 89,
         "best_practices": 67,
         "seo": 98,
         "pwa": 33
@@ -112,9 +112,9 @@
       "industry": "Media",
       "website_count": 2,
       "averages": {
-        "performance": 19,
+        "performance": 18,
         "accessibility": 91,
-        "best_practices": 79,
+        "best_practices": 71,
         "seo": 95,
         "pwa": 95
       }

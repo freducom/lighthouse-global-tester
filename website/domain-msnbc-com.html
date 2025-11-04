@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:55.007Z",
+          "dateCreated": "2025-11-04T09:04:12.153Z",
           "about": {
             "@type": "WebSite",
             "name": "msnbc.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-msnbc.com.html#metrics",
           "name": "msnbc.com Performance Metrics",
           "description": "Latest Lighthouse scores for msnbc.com",
-          "performanceScore": 33,
-          "accessibilityScore": 87,
-          "bestPracticesScore": 83,
+          "performanceScore": 26,
+          "accessibilityScore": 77,
+          "bestPracticesScore": 92,
           "seoScore": 84,
-          "dateRecorded": "2025-10-23 07:10:03"
+          "dateRecorded": "2025-10-29 18:42:02"
         }
       ]
     }
@@ -117,12 +117,12 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">33%</div>
+                <div class="stat-number poor">26%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">87%</div>
+                <div class="stat-number good">77%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
@@ -132,8 +132,8 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number good">83%</div>
-                <div class="stat-description">good performance</div>
+                <div class="stat-number excellent">92%</div>
+                <div class="stat-description">excellent performance</div>
             </div>
         </div>
 
@@ -152,22 +152,22 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 33%"></div>
-                        <span class="score-text">33%</span>
+                        <div class="score-fill performance" style="width: 26%"></div>
+                        <span class="score-text">26%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 87%"></div>
-                        <span class="score-text">87%</span>
+                        <div class="score-fill accessibility" style="width: 77%"></div>
+                        <span class="score-text">77%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 83%"></div>
-                        <span class="score-text">83%</span>
+                        <div class="score-fill best-practices" style="width: 92%"></div>
+                        <span class="score-text">92%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":369,"url":"msnbc.com","performance":32,"accessibility":76,"best_practices":92,"seo":77,"pwa":44,"test_date":"2025-10-22 14:56:47","country":"United States","industry":"Media"},{"id":481,"url":"msnbc.com","performance":33,"accessibility":87,"best_practices":83,"seo":84,"pwa":44,"test_date":"2025-10-23 07:10:03","country":"United States","industry":"Media"}];
+        const historyData = [{"id":369,"url":"msnbc.com","performance":32,"accessibility":76,"best_practices":92,"seo":77,"pwa":44,"test_date":"2025-10-22 14:56:47","country":"United States","industry":"Media"},{"id":481,"url":"msnbc.com","performance":33,"accessibility":87,"best_practices":83,"seo":84,"pwa":44,"test_date":"2025-10-23 07:10:03","country":"United States","industry":"Media"},{"id":1273,"url":"msnbc.com","performance":26,"accessibility":77,"best_practices":92,"seo":84,"pwa":44,"test_date":"2025-10-29 18:42:02","country":"United States","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

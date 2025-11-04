@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.093Z",
+    "generated_at": "2025-11-04T09:04:16.650Z",
     "url": "travel-namibia.com",
     "country": "Namibia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 37,
     "accessibility": 88,
     "best_practices": 75,
     "seo": 78,
     "pwa": 33,
-    "test_date": "2025-10-24 16:12:50"
+    "test_date": "2025-11-01 00:46:04"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 88,
+      "best_practices": 75,
+      "seo": 78,
+      "pwa": 33,
+      "test_date": "2025-11-01 00:46:04"
+    },
     {
       "performance": 47,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 16:12:50"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 00:46:04",
+    "test_date_previous": "2025-10-24 16:12:50"
+  }
 }

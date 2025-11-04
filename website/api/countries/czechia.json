@@ -1,77 +1,65 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.882Z",
+    "generated_at": "2025-11-04T09:04:15.699Z",
     "country": "Czechia",
     "flag": "🇨🇿",
     "website_count": 8
   },
   "averages": {
-    "performance": 39,
+    "performance": 38,
     "accessibility": 66,
     "best_practices": 71,
-    "seo": 87,
+    "seo": 86,
     "pwa": 40
   },
   "websites": [
     {
-      "url": "denik.cz",
-      "industry": "Media",
-      "scores": {
-        "performance": 58,
-        "accessibility": 0,
-        "best_practices": 83,
-        "seo": 97,
-        "pwa": 56
-      },
-      "test_date": "2025-10-27 08:32:01"
-    },
-    {
       "url": "lidovky.cz",
       "industry": "Media",
       "scores": {
-        "performance": 55,
+        "performance": 57,
         "accessibility": 48,
         "best_practices": 67,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-29 06:23:33"
+      "test_date": "2025-10-29 07:50:35"
     },
     {
       "url": "parlamentnilisty.cz",
       "industry": "Media",
       "scores": {
-        "performance": 42,
-        "accessibility": 77,
+        "performance": 46,
+        "accessibility": 75,
         "best_practices": 67,
-        "seo": 74,
+        "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-23 04:17:27"
-    },
-    {
-      "url": "novinky.cz",
-      "industry": "Media",
-      "scores": {
-        "performance": 36,
-        "accessibility": 84,
-        "best_practices": 67,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 20:29:38"
+      "test_date": "2025-10-30 10:22:13"
     },
     {
       "url": "ceskatelevize.cz",
       "industry": "Media",
       "scores": {
-        "performance": 36,
+        "performance": 43,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-27 00:46:36"
+      "test_date": "2025-11-02 22:08:27"
+    },
+    {
+      "url": "novinky.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 03:11:03"
     },
     {
       "url": "idnes.cz",
@@ -89,13 +77,25 @@
       "url": "aktualne.cz",
       "industry": "Media",
       "scores": {
-        "performance": 26,
-        "accessibility": 79,
+        "performance": 33,
+        "accessibility": 78,
         "best_practices": 67,
         "seo": 85,
         "pwa": 56
       },
-      "test_date": "2025-10-26 07:55:21"
+      "test_date": "2025-11-02 04:22:49"
+    },
+    {
+      "url": "denik.cz",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 0,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 56
+      },
+      "test_date": "2025-11-03 06:32:18"
     },
     {
       "url": "ihned.cz",
@@ -115,10 +115,10 @@
       "industry": "Media",
       "website_count": 8,
       "averages": {
-        "performance": 39,
+        "performance": 38,
         "accessibility": 66,
         "best_practices": 71,
-        "seo": 87,
+        "seo": 86,
         "pwa": 40
       }
     }

@@ -1,30 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.867Z",
+    "generated_at": "2025-11-04T09:04:15.627Z",
     "country": "Poland",
     "flag": "🇵🇱",
-    "website_count": 16
+    "website_count": 24
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 88,
+    "performance": 45,
+    "accessibility": 85,
     "best_practices": 81,
-    "seo": 93,
-    "pwa": 54
+    "seo": 92,
+    "pwa": 53
   },
   "websites": [
-    {
-      "url": "allegro.pl",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 79,
-        "accessibility": 84,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 67
-      },
-      "test_date": "2025-10-26 07:59:30"
-    },
     {
       "url": "interia.pl",
       "industry": "Portal",
@@ -38,28 +26,64 @@
       "test_date": "2025-10-28 18:26:08"
     },
     {
-      "url": "wp.pl",
-      "industry": "Portal",
+      "url": "allegro.pl",
+      "industry": "E-commerce",
       "scores": {
-        "performance": 61,
+        "performance": 69,
         "accessibility": 84,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 56
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 67
       },
-      "test_date": "2025-10-25 06:15:16"
+      "test_date": "2025-11-02 04:24:39"
+    },
+    {
+      "url": "gov.pl",
+      "industry": "Government",
+      "scores": {
+        "performance": 63,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:19:22"
     },
     {
       "url": "tvn24.pl",
       "industry": "Media",
       "scores": {
-        "performance": 59,
+        "performance": 62,
         "accessibility": 79,
         "best_practices": 92,
-        "seo": 91,
+        "seo": 90,
         "pwa": 78
       },
-      "test_date": "2025-10-24 18:19:28"
+      "test_date": "2025-11-01 00:54:33"
+    },
+    {
+      "url": "poczta-polska.pl",
+      "industry": "Government",
+      "scores": {
+        "performance": 60,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 13:36:16"
+    },
+    {
+      "url": "wp.pl",
+      "industry": "Portal",
+      "scores": {
+        "performance": 59,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-01 14:15:19"
     },
     {
       "url": "ing.pl",
@@ -74,76 +98,136 @@
       "test_date": "2025-10-28 18:20:17"
     },
     {
-      "url": "o2.pl",
-      "industry": "Portal",
-      "scores": {
-        "performance": 54,
-        "accessibility": 96,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 78
-      },
-      "test_date": "2025-10-22 22:15:13"
-    },
-    {
       "url": "uw.edu.pl",
       "industry": "Education",
       "scores": {
-        "performance": 51,
+        "performance": 54,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-24 22:12:34"
+      "test_date": "2025-11-01 06:16:37"
     },
     {
-      "url": "onet.pl",
+      "url": "o2.pl",
       "industry": "Portal",
       "scores": {
-        "performance": 50,
-        "accessibility": 79,
+        "performance": 52,
+        "accessibility": 96,
         "best_practices": 67,
-        "seo": 98,
-        "pwa": 100
+        "seo": 100,
+        "pwa": 78
       },
-      "test_date": "2025-10-23 02:58:41"
+      "test_date": "2025-10-30 06:14:58"
+    },
+    {
+      "url": "pg.edu.pl",
+      "industry": "Education",
+      "scores": {
+        "performance": 52,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 12:26:51"
+    },
+    {
+      "url": "polsatnews.pl",
+      "industry": "Media",
+      "scores": {
+        "performance": 48,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 89
+      },
+      "test_date": "2025-10-30 13:38:26"
     },
     {
       "url": "salesmanago.com",
       "industry": "Marketing",
       "scores": {
-        "performance": 44,
+        "performance": 47,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 16:49:08"
+      "test_date": "2025-10-30 22:19:08"
     },
     {
-      "url": "orange.pl",
-      "industry": "Telecom",
+      "url": "money.pl",
+      "industry": "Finance",
       "scores": {
-        "performance": 40,
-        "accessibility": 98,
-        "best_practices": 58,
-        "seo": 96,
+        "performance": 44,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-29 18:27:00"
+    },
+    {
+      "url": "gazeta.pl",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 03:00:12"
+      "test_date": "2025-11-04 00:55:01"
+    },
+    {
+      "url": "aliorbank.pl",
+      "industry": "Finance",
+      "scores": {
+        "performance": 42,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 04:24:19"
     },
     {
       "url": "autocentrum.pl",
       "industry": "Automotive",
       "scores": {
-        "performance": 34,
+        "performance": 40,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 93,
         "pwa": 56
       },
-      "test_date": "2025-10-26 13:39:09"
+      "test_date": "2025-11-02 10:15:09"
+    },
+    {
+      "url": "orange.pl",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 08:21:32"
+    },
+    {
+      "url": "onet.pl",
+      "industry": "Portal",
+      "scores": {
+        "performance": 36,
+        "accessibility": 79,
+        "best_practices": 58,
+        "seo": 98,
+        "pwa": 100
+      },
+      "test_date": "2025-10-30 08:17:36"
     },
     {
       "url": "pracuj.pl",
@@ -155,55 +239,67 @@
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 08:34:22"
+      "test_date": "2025-10-30 14:08:44"
     },
     {
-      "url": "nofluffjobs.com",
-      "industry": "Jobs",
+      "url": "plus.pl",
+      "industry": "Telecom",
       "scores": {
         "performance": 31,
-        "accessibility": 84,
-        "best_practices": 67,
-        "seo": 93,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 91,
         "pwa": 67
       },
-      "test_date": "2025-10-22 20:28:02"
+      "test_date": "2025-10-30 13:35:50"
     },
     {
       "url": "bankier.pl",
       "industry": "Finance",
       "scores": {
-        "performance": 29,
+        "performance": 30,
         "accessibility": 75,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:27:18"
+      "test_date": "2025-11-02 12:20:32"
+    },
+    {
+      "url": "nofluffjobs.com",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 27,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-30 03:05:06"
     },
     {
       "url": "olx.pl",
       "industry": "Marketplace",
       "scores": {
-        "performance": 23,
+        "performance": 24,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-23 02:58:23"
+      "test_date": "2025-10-30 08:13:21"
     },
     {
-      "url": "aliorbank.pl",
-      "industry": "Finance",
+      "url": "play.pl",
+      "industry": "Telecom",
       "scores": {
-        "performance": 23,
-        "accessibility": 89,
-        "best_practices": 92,
-        "seo": 100,
+        "performance": 5,
+        "accessibility": 66,
+        "best_practices": 75,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 07:59:12"
+      "test_date": "2025-10-30 13:35:30"
     }
   ],
   "industries": [
@@ -211,7 +307,7 @@
       "industry": "Automotive",
       "website_count": 1,
       "averages": {
-        "performance": 34,
+        "performance": 40,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 93,
@@ -222,40 +318,51 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 79,
+        "performance": 69,
         "accessibility": 84,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 67
       }
     },
     {
       "industry": "Education",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 51,
-        "accessibility": 89,
-        "best_practices": 83,
-        "seo": 82,
-        "pwa": 33
+        "performance": 53,
+        "accessibility": 86,
+        "best_practices": 88,
+        "seo": 87,
+        "pwa": 39
       }
     },
     {
       "industry": "Finance",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 36,
-        "accessibility": 84,
+        "performance": 43,
+        "accessibility": 86,
         "best_practices": 86,
-        "seo": 97,
-        "pwa": 37
+        "seo": 96,
+        "pwa": 47
+      }
+    },
+    {
+      "industry": "Government",
+      "website_count": 2,
+      "averages": {
+        "performance": 62,
+        "accessibility": 87,
+        "best_practices": 88,
+        "seo": 89,
+        "pwa": 33
       }
     },
     {
       "industry": "Jobs",
       "website_count": 2,
       "averages": {
-        "performance": 32,
+        "performance": 30,
         "accessibility": 89,
         "best_practices": 71,
         "seo": 93,
@@ -266,7 +373,7 @@
       "industry": "Marketing",
       "website_count": 1,
       "averages": {
-        "performance": 44,
+        "performance": 47,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
@@ -277,7 +384,7 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 23,
+        "performance": 24,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 85,
@@ -286,35 +393,35 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 59,
-        "accessibility": 79,
-        "best_practices": 92,
-        "seo": 91,
-        "pwa": 78
+        "performance": 51,
+        "accessibility": 80,
+        "best_practices": 89,
+        "seo": 89,
+        "pwa": 67
       }
     },
     {
       "industry": "Portal",
       "website_count": 4,
       "averages": {
-        "performance": 59,
+        "performance": 55,
         "accessibility": 85,
-        "best_practices": 82,
+        "best_practices": 73,
         "seo": 94,
         "pwa": 81
       }
     },
     {
       "industry": "Telecom",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 40,
-        "accessibility": 98,
-        "best_practices": 58,
-        "seo": 96,
-        "pwa": 33
+        "performance": 24,
+        "accessibility": 79,
+        "best_practices": 72,
+        "seo": 93,
+        "pwa": 44
       }
     }
   ]

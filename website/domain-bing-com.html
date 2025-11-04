@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.999Z",
+          "dateCreated": "2025-11-04T09:04:12.130Z",
           "about": {
             "@type": "WebSite",
             "name": "bing.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-bing.com.html#metrics",
           "name": "bing.com Performance Metrics",
           "description": "Latest Lighthouse scores for bing.com",
-          "performanceScore": 77,
+          "performanceScore": 98,
           "accessibilityScore": 100,
           "bestPracticesScore": 75,
           "seoScore": 90,
-          "dateRecorded": "2025-10-26 16:42:13"
+          "dateRecorded": "2025-11-02 14:16:53"
         }
       ]
     }
@@ -117,8 +117,8 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number good">77%</div>
-                <div class="stat-description">good performance</div>
+                <div class="stat-number excellent">98%</div>
+                <div class="stat-description">excellent performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 77%"></div>
-                        <span class="score-text">77%</span>
+                        <div class="score-fill performance" style="width: 98%"></div>
+                        <span class="score-text">98%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":46,"url":"bing.com","performance":71,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 18:08:50","country":"United States","industry":"Search Engine"},{"id":79,"url":"bing.com","performance":71,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 19:37:21","country":"United States","industry":"Search Engine"},{"id":447,"url":"bing.com","performance":80,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-23 06:53:21","country":"United States","industry":"Search Engine"},{"id":883,"url":"bing.com","performance":77,"accessibility":100,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-26 16:42:13","country":"United States","industry":"Search Engine"}];
+        const historyData = [{"id":46,"url":"bing.com","performance":71,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 18:08:50","country":"United States","industry":"Search Engine"},{"id":79,"url":"bing.com","performance":71,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-19 19:37:21","country":"United States","industry":"Search Engine"},{"id":447,"url":"bing.com","performance":80,"accessibility":91,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-23 06:53:21","country":"United States","industry":"Search Engine"},{"id":883,"url":"bing.com","performance":77,"accessibility":100,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-10-26 16:42:13","country":"United States","industry":"Search Engine"},{"id":1824,"url":"bing.com","performance":98,"accessibility":100,"best_practices":75,"seo":90,"pwa":33,"test_date":"2025-11-02 14:16:53","country":"United States","industry":"Search Engine"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.964Z",
+    "generated_at": "2025-11-04T09:04:16.078Z",
     "industry": "Edtech",
-    "website_count": 5
+    "website_count": 19
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 81,
-    "best_practices": 83,
-    "seo": 90,
+    "performance": 52,
+    "accessibility": 86,
+    "best_practices": 84,
+    "seo": 89,
     "pwa": 44
   },
   "websites": [
@@ -16,13 +16,73 @@
       "url": "3dbear.io",
       "country": "Finland",
       "scores": {
-        "performance": 32,
+        "performance": 26,
         "accessibility": 89,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:30:21"
+      "test_date": "2025-11-02 00:59:38"
+    },
+    {
+      "url": "educationalliancefinland.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 58,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:30:00"
+    },
+    {
+      "url": "edufix.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 58,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 71,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:30:31"
+    },
+    {
+      "url": "eduten.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 78,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-11-03 12:30:46"
+    },
+    {
+      "url": "eduvo.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 50,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:31:06"
+    },
+    {
+      "url": "emathstudio.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 78,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 16:19:19"
     },
     {
       "url": "kide.app",
@@ -61,39 +121,147 @@
       "test_date": "2025-10-29 03:09:34"
     },
     {
+      "url": "lumoeducation.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 70,
+        "accessibility": 90,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 22
+      },
+      "test_date": "2025-10-29 08:31:02"
+    },
+    {
+      "url": "qridi.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 50,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 16:25:01"
+    },
+    {
+      "url": "sanako.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 67,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:43:23"
+    },
+    {
+      "url": "schooldaywellbeing.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 55,
+        "accessibility": 90,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:51:51"
+    },
+    {
+      "url": "seppo.io",
+      "country": "Finland",
+      "scores": {
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 03:08:54"
+    },
+    {
+      "url": "thinglink.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 66,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 20:24:31"
+    },
+    {
       "url": "byjus.com",
       "country": "India",
       "scores": {
-        "performance": 41,
+        "performance": 55,
         "accessibility": 70,
         "best_practices": 75,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:28:12"
+      "test_date": "2025-11-02 18:32:05"
+    },
+    {
+      "url": "simplilearn.com",
+      "country": "India",
+      "scores": {
+        "performance": 35,
+        "accessibility": 73,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 78
+      },
+      "test_date": "2025-10-31 04:22:25"
+    },
+    {
+      "url": "unacademy.com",
+      "country": "India",
+      "scores": {
+        "performance": 67,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 100
+      },
+      "test_date": "2025-11-01 04:12:57"
+    },
+    {
+      "url": "vedantu.com",
+      "country": "India",
+      "scores": {
+        "performance": 21,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 67
+      },
+      "test_date": "2025-11-01 06:21:03"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 4,
+      "website_count": 15,
       "averages": {
-        "performance": 37,
-        "accessibility": 84,
-        "best_practices": 85,
-        "seo": 91,
-        "pwa": 47
+        "performance": 54,
+        "accessibility": 89,
+        "best_practices": 88,
+        "seo": 89,
+        "pwa": 37
       }
     },
     {
       "country": "India",
-      "website_count": 1,
+      "website_count": 4,
       "averages": {
-        "performance": 41,
-        "accessibility": 70,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 33
+        "performance": 45,
+        "accessibility": 73,
+        "best_practices": 71,
+        "seo": 87,
+        "pwa": 70
       }
     }
   ]

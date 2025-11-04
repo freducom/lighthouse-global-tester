@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.054Z",
+    "generated_at": "2025-11-04T09:04:16.472Z",
     "url": "hedengren.com",
     "country": "Finland",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 62,
     "accessibility": 77,
     "best_practices": 92,
     "seo": 77,
     "pwa": 33,
-    "test_date": "2025-10-28 10:33:55"
+    "test_date": "2025-11-04 08:17:33"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 77,
+      "best_practices": 92,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-04 08:17:33"
+    },
     {
       "performance": 56,
       "accessibility": 77,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 10:33:55"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 08:17:33",
+    "test_date_previous": "2025-10-28 10:33:55"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.034Z",
+    "generated_at": "2025-11-04T09:04:16.386Z",
     "url": "orf.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 64,
-    "accessibility": 99,
+    "performance": 55,
+    "accessibility": 91,
     "best_practices": 75,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 03:00:29"
+    "test_date": "2025-10-30 08:22:11"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 91,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-30 08:22:11"
+    },
     {
       "performance": 64,
       "accessibility": 99,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 03:00:29"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -9,
+    "accessibility": -8,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 08:22:11",
+    "test_date_previous": "2025-10-23 03:00:29"
+  }
 }

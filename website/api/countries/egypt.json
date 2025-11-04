@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.875Z",
+    "generated_at": "2025-11-04T09:04:15.670Z",
     "country": "Egypt",
     "flag": "🇪🇬",
     "website_count": 8
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 87,
-    "best_practices": 67,
+    "performance": 39,
+    "accessibility": 86,
+    "best_practices": 68,
     "seo": 91,
     "pwa": 46
   },
@@ -17,37 +17,49 @@
       "url": "arabic.rt.com",
       "industry": "Media",
       "scores": {
-        "performance": 56,
+        "performance": 64,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 98,
         "pwa": 56
       },
-      "test_date": "2025-10-26 10:09:11"
+      "test_date": "2025-11-02 08:17:32"
+    },
+    {
+      "url": "youm7.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 16:23:31"
     },
     {
       "url": "dailynewsegypt.com",
       "industry": "Media",
       "scores": {
-        "performance": 54,
+        "performance": 39,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-27 06:31:07"
+      "test_date": "2025-11-03 06:15:55"
     },
     {
-      "url": "syria.tv",
+      "url": "elwatannews.com",
       "industry": "Media",
       "scores": {
-        "performance": 51,
-        "accessibility": 83,
-        "best_practices": 58,
-        "seo": 93,
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 80,
         "pwa": 33
       },
-      "test_date": "2025-10-24 06:14:17"
+      "test_date": "2025-11-03 16:17:21"
     },
     {
       "url": "akhbarelyom.com",
@@ -65,49 +77,37 @@
       "url": "yallakora.com",
       "industry": "Sports",
       "scores": {
-        "performance": 34,
-        "accessibility": 96,
-        "best_practices": 67,
-        "seo": 91,
+        "performance": 36,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 90,
         "pwa": 67
       },
-      "test_date": "2025-10-25 08:11:24"
-    },
-    {
-      "url": "youm7.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 22,
-        "accessibility": 96,
-        "best_practices": 50,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-25 08:17:20"
-    },
-    {
-      "url": "elwatannews.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 20,
-        "accessibility": 88,
-        "best_practices": 75,
-        "seo": 80,
-        "pwa": 33
-      },
-      "test_date": "2025-10-20 16:04:20"
+      "test_date": "2025-11-01 16:16:28"
     },
     {
       "url": "almasryalyoum.com",
       "industry": "Media",
       "scores": {
-        "performance": 19,
+        "performance": 33,
         "accessibility": 72,
-        "best_practices": 67,
+        "best_practices": 58,
         "seo": 85,
         "pwa": 78
       },
-      "test_date": "2025-10-26 08:00:26"
+      "test_date": "2025-11-02 04:25:39"
+    },
+    {
+      "url": "syria.tv",
+      "industry": "Media",
+      "scores": {
+        "performance": 16,
+        "accessibility": 85,
+        "best_practices": 50,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 12:23:15"
     }
   ],
   "industries": [
@@ -115,8 +115,8 @@
       "industry": "Media",
       "website_count": 7,
       "averages": {
-        "performance": 37,
-        "accessibility": 86,
+        "performance": 39,
+        "accessibility": 87,
         "best_practices": 67,
         "seo": 91,
         "pwa": 43
@@ -126,10 +126,10 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 34,
-        "accessibility": 96,
-        "best_practices": 67,
-        "seo": 91,
+        "performance": 36,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 90,
         "pwa": 67
       }
     }

@@ -1,29 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.874Z",
+    "generated_at": "2025-11-04T09:04:15.662Z",
     "country": "New Zealand",
     "flag": "🇳🇿",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 83,
-    "best_practices": 65,
-    "seo": 88,
-    "pwa": 47
+    "performance": 50,
+    "accessibility": 84,
+    "best_practices": 57,
+    "seo": 86,
+    "pwa": 48
   },
   "websites": [
+    {
+      "url": "reservebank.govt.nz",
+      "industry": "Finance",
+      "scores": {
+        "performance": 90,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 20:11:26"
+    },
     {
       "url": "unknown.co.nz",
       "industry": "Media",
       "scores": {
-        "performance": 71,
+        "performance": 80,
         "accessibility": 61,
         "best_practices": 83,
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-24 20:24:18"
+      "test_date": "2025-11-01 04:18:07"
     },
     {
       "url": "1news.co.nz",
@@ -38,28 +50,28 @@
       "test_date": "2025-10-26 19:27:32"
     },
     {
-      "url": "reservebank.govt.nz",
-      "industry": "Finance",
-      "scores": {
-        "performance": 30,
-        "accessibility": 89,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 15:44:31"
-    },
-    {
       "url": "stuff.co.nz",
       "industry": "Media",
       "scores": {
-        "performance": 30,
+        "performance": 32,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 90,
         "pwa": 56
       },
-      "test_date": "2025-10-24 03:00:50"
+      "test_date": "2025-10-31 10:17:58"
+    },
+    {
+      "url": "newshub.co.nz",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 87,
+        "best_practices": 0,
+        "seo": 90,
+        "pwa": 56
+      },
+      "test_date": "2025-10-30 00:57:24"
     },
     {
       "url": "trademe.co.nz",
@@ -68,10 +80,10 @@
         "performance": 27,
         "accessibility": 98,
         "best_practices": 75,
-        "seo": 92,
+        "seo": 85,
         "pwa": 78
       },
-      "test_date": "2025-10-24 16:12:16"
+      "test_date": "2025-10-31 22:17:19"
     }
   ],
   "industries": [
@@ -79,10 +91,10 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 30,
-        "accessibility": 89,
-        "best_practices": 75,
-        "seo": 100,
+        "performance": 90,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 92,
         "pwa": 33
       }
     },
@@ -93,19 +105,19 @@
         "performance": 27,
         "accessibility": 98,
         "best_practices": 75,
-        "seo": 92,
+        "seo": 85,
         "pwa": 78
       }
     },
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 48,
-        "accessibility": 76,
-        "best_practices": 58,
-        "seo": 83,
-        "pwa": 41
+        "performance": 45,
+        "accessibility": 79,
+        "best_practices": 44,
+        "seo": 85,
+        "pwa": 45
       }
     }
   ]

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.110Z",
+    "generated_at": "2025-11-04T09:04:16.706Z",
     "url": "chosun.com",
     "country": "South Korea",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 26,
-    "accessibility": 62,
-    "best_practices": 42,
+    "performance": 25,
+    "accessibility": 60,
+    "best_practices": 58,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-27 00:52:51"
+    "test_date": "2025-11-02 22:17:50"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 60,
+      "best_practices": 58,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-02 22:17:50"
+    },
     {
       "performance": 26,
       "accessibility": 62,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 1,
-    "best_practices": -16,
+    "performance": -1,
+    "accessibility": -2,
+    "best_practices": 16,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-27 00:52:51",
-    "test_date_previous": "2025-10-19 20:11:26"
+    "test_date_current": "2025-11-02 22:17:50",
+    "test_date_previous": "2025-10-27 00:52:51"
   }
 }

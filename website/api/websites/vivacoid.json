@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.078Z",
+    "generated_at": "2025-11-04T09:04:16.599Z",
     "url": "viva.co.id",
     "country": "Indonesia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 28,
     "accessibility": 91,
     "best_practices": 75,
     "seo": 97,
     "pwa": 44,
-    "test_date": "2025-10-25 00:46:21"
+    "test_date": "2025-11-01 08:21:45"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 91,
+      "best_practices": 75,
+      "seo": 97,
+      "pwa": 44,
+      "test_date": "2025-11-01 08:21:45"
+    },
     {
       "performance": 35,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 00:46:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 08:21:45",
+    "test_date_previous": "2025-10-25 00:46:21"
+  }
 }

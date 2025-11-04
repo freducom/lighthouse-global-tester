@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.087Z",
+    "generated_at": "2025-11-04T09:04:16.621Z",
     "url": "libya24.tv",
     "country": "Libya",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 60,
-    "accessibility": 84,
+    "performance": 58,
+    "accessibility": 85,
     "best_practices": 100,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-29 06:21:30"
+    "test_date": "2025-10-29 07:48:44"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 85,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-10-29 07:48:44"
+    },
     {
       "performance": 60,
       "accessibility": 84,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
-    "accessibility": -1,
+    "performance": -2,
+    "accessibility": 1,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 06:21:30",
-    "test_date_previous": "2025-10-22 04:12:53"
+    "test_date_current": "2025-10-29 07:48:44",
+    "test_date_previous": "2025-10-29 06:21:30"
   }
 }

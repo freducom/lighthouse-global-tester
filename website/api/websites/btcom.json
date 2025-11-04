@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.129Z",
+    "generated_at": "2025-11-04T09:04:16.797Z",
     "url": "bt.com",
     "country": "United Kingdom",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 13,
+    "performance": 12,
     "accessibility": 93,
     "best_practices": 67,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-26 20:11:05"
+    "test_date": "2025-11-02 18:12:25"
   },
   "historical_data": [
+    {
+      "performance": 12,
+      "accessibility": 93,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-02 18:12:25"
+    },
     {
       "performance": 13,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 20:11:05"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 18:12:25",
+    "test_date_previous": "2025-10-26 20:11:05"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.128Z",
+    "generated_at": "2025-11-04T09:04:16.794Z",
     "url": "argos.co.uk",
     "country": "United Kingdom",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 37,
     "accessibility": 97,
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-26 10:11:28"
+    "test_date": "2025-11-02 08:19:17"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-02 08:19:17"
+    },
     {
       "performance": 26,
       "accessibility": 97,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -14,
-    "accessibility": -2,
+    "performance": 11,
+    "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 10:11:28",
-    "test_date_previous": "2025-10-23 07:35:28"
+    "test_date_current": "2025-11-02 08:19:17",
+    "test_date_previous": "2025-10-26 10:11:28"
   }
 }

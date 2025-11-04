@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.089Z",
+    "generated_at": "2025-11-04T09:04:16.625Z",
     "url": "news24.lu",
     "country": "Luxembourg",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 90,
+    "performance": 78,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-10-22 19:51:00"
+    "test_date": "2025-10-30 00:53:29"
   },
   "historical_data": [
+    {
+      "performance": 78,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-10-30 00:53:29"
+    },
     {
       "performance": 90,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -5,
+    "performance": -12,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-22 19:51:00",
-    "test_date_previous": "2025-10-22 18:26:59"
+    "test_date_current": "2025-10-30 00:53:29",
+    "test_date_previous": "2025-10-22 19:51:00"
   }
 }

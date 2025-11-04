@@ -1,29 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.875Z",
+    "generated_at": "2025-11-04T09:04:15.666Z",
     "country": "South Africa",
     "flag": "🇿🇦",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 36,
-    "accessibility": 89,
-    "best_practices": 79,
+    "performance": 37,
+    "accessibility": 88,
+    "best_practices": 80,
     "seo": 86,
-    "pwa": 54
+    "pwa": 51
   },
   "websites": [
     {
       "url": "businesstech.co.za",
       "industry": "Media",
       "scores": {
-        "performance": 87,
+        "performance": 89,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:16:29"
+      "test_date": "2025-11-02 18:21:53"
+    },
+    {
+      "url": "takealot.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 84,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 14:15:09"
     },
     {
       "url": "iol.co.za",
@@ -38,40 +50,16 @@
       "test_date": "2025-10-21 12:52:42"
     },
     {
-      "url": "superbalist.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 33,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 98,
-        "pwa": 56
-      },
-      "test_date": "2025-10-24 04:12:21"
-    },
-    {
       "url": "ewn.co.za",
       "industry": "Media",
       "scores": {
-        "performance": 31,
+        "performance": 32,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 95,
         "pwa": 33
       },
-      "test_date": "2025-10-20 16:12:56"
-    },
-    {
-      "url": "sowetanlive.co.za",
-      "industry": "Media",
-      "scores": {
-        "performance": 27,
-        "accessibility": 86,
-        "best_practices": 83,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 00:39:52"
+      "test_date": "2025-11-03 18:34:41"
     },
     {
       "url": "fin24.com",
@@ -96,18 +84,42 @@
         "pwa": 89
       },
       "test_date": "2025-10-22 18:26:43"
+    },
+    {
+      "url": "sowetanlive.co.za",
+      "industry": "Media",
+      "scores": {
+        "performance": 7,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 08:14:01"
+    },
+    {
+      "url": "superbalist.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 5,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 56
+      },
+      "test_date": "2025-10-31 12:18:34"
     }
   ],
   "industries": [
     {
       "industry": "E-commerce",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 33,
+        "performance": 45,
         "accessibility": 85,
-        "best_practices": 83,
-        "seo": 98,
-        "pwa": 56
+        "best_practices": 88,
+        "seo": 92,
+        "pwa": 45
       }
     },
     {
@@ -125,7 +137,7 @@
       "industry": "Media",
       "website_count": 5,
       "averages": {
-        "performance": 41,
+        "performance": 38,
         "accessibility": 88,
         "best_practices": 80,
         "seo": 86,

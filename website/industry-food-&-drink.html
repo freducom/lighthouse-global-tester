@@ -78,9 +78,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Food & Drink Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 35 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 34 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-poor" aria-hidden="true">35%</div>
+                <div class="stat-value perf-poor" aria-hidden="true">34%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average accessibility score: 88 percent">
@@ -202,8 +202,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 35 percent, needs improvement">
-                                    35%
+                                    aria-label="Performance score: 34 percent, needs improvement">
+                                    34%
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 88 percent, good performance">
@@ -221,9 +221,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-24 15:55:19"
-                                    aria-label="Last tested on 10/24/2025">
-                                    <time datetime="2025-10-24 15:55:19">10/24/2025</time>
+                                <td class="date" data-date="2025-10-31 22:09:34"
+                                    aria-label="Last tested on 10/31/2025">
+                                    <time datetime="2025-10-31 22:09:34">10/31/2025</time>
                                 </td>
                             </tr>
                         
@@ -252,11 +252,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -271,7 +270,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -295,9 +293,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -394,7 +391,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"timhortons.ca","country":"Canada","industry":"Food & Drink","performance":35,"accessibility":88,"best_practices":75,"seo":82,"pwa":33,"test_date":"2025-10-24 15:55:19","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const industryData = [{"url":"timhortons.ca","country":"Canada","industry":"Food & Drink","performance":34,"accessibility":88,"best_practices":75,"seo":82,"pwa":33,"test_date":"2025-10-31 22:09:34","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

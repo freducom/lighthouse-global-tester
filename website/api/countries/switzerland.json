@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.882Z",
+    "generated_at": "2025-11-04T09:04:15.697Z",
     "country": "Switzerland",
     "flag": "🇨🇭",
     "website_count": 8
   },
   "averages": {
-    "performance": 39,
+    "performance": 36,
     "accessibility": 93,
-    "best_practices": 84,
-    "seo": 95,
+    "best_practices": 83,
+    "seo": 93,
     "pwa": 43
   },
   "websites": [
@@ -17,37 +17,13 @@
       "url": "rts.ch",
       "industry": "Media",
       "scores": {
-        "performance": 56,
-        "accessibility": 99,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 16:43:05"
-    },
-    {
-      "url": "20min.ch",
-      "industry": "Media",
-      "scores": {
-        "performance": 44,
-        "accessibility": 72,
-        "best_practices": 83,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 19:27:46"
-    },
-    {
-      "url": "blick.ch",
-      "industry": "Media",
-      "scores": {
-        "performance": 39,
-        "accessibility": 95,
-        "best_practices": 92,
+        "performance": 54,
+        "accessibility": 92,
+        "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:51:03"
+      "test_date": "2025-10-30 22:11:28"
     },
     {
       "url": "tagesanzeiger.ch",
@@ -56,58 +32,82 @@
         "performance": 38,
         "accessibility": 96,
         "best_practices": 83,
-        "seo": 93,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-24 06:16:59"
+      "test_date": "2025-10-31 14:12:49"
     },
     {
       "url": "letemps.ch",
       "industry": "Media",
       "scores": {
-        "performance": 38,
+        "performance": 37,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 100,
         "pwa": 89
       },
-      "test_date": "2025-10-29 06:20:39"
+      "test_date": "2025-10-29 07:47:54"
     },
     {
-      "url": "swissinfo.ch",
+      "url": "blick.ch",
       "industry": "Media",
       "scores": {
         "performance": 34,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 100,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-24 04:17:20"
+      "test_date": "2025-11-02 16:09:48"
     },
     {
       "url": "watson.ch",
       "industry": "Media",
       "scores": {
-        "performance": 32,
+        "performance": 33,
         "accessibility": 86,
         "best_practices": 83,
         "seo": 91,
         "pwa": 56
       },
-      "test_date": "2025-10-25 03:02:18"
+      "test_date": "2025-11-01 10:21:27"
     },
     {
       "url": "nzz.ch",
       "industry": "Media",
       "scores": {
-        "performance": 31,
-        "accessibility": 99,
+        "performance": 32,
+        "accessibility": 100,
         "best_practices": 83,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-22 22:14:51"
+      "test_date": "2025-10-30 06:14:37"
+    },
+    {
+      "url": "swissinfo.ch",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 12:22:29"
+    },
+    {
+      "url": "20min.ch",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 00:53:02"
     }
   ],
   "industries": [
@@ -115,10 +115,10 @@
       "industry": "Media",
       "website_count": 8,
       "averages": {
-        "performance": 39,
+        "performance": 36,
         "accessibility": 93,
-        "best_practices": 84,
-        "seo": 95,
+        "best_practices": 83,
+        "seo": 93,
         "pwa": 43
       }
     }

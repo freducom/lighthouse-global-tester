@@ -1,75 +1,159 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.964Z",
+    "generated_at": "2025-11-04T09:04:16.079Z",
     "industry": "Consulting",
-    "website_count": 3
+    "website_count": 10
   },
   "averages": {
-    "performance": 61,
-    "accessibility": 97,
-    "best_practices": 95,
-    "seo": 88,
-    "pwa": 44
+    "performance": 57,
+    "accessibility": 96,
+    "best_practices": 91,
+    "seo": 90,
+    "pwa": 39
   },
   "websites": [
     {
       "url": "cgi.fi",
       "country": "Finland",
       "scores": {
-        "performance": 57,
+        "performance": 62,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 86,
         "pwa": 67
       },
-      "test_date": "2025-10-27 00:47:42"
+      "test_date": "2025-11-02 22:09:32"
     },
     {
       "url": "codento.com",
       "country": "Finland",
       "scores": {
-        "performance": 63,
+        "performance": 61,
         "accessibility": 92,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-27 03:18:51"
+      "test_date": "2025-11-03 00:56:57"
+    },
+    {
+      "url": "gofore.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 67,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:12:08"
+    },
+    {
+      "url": "reaktor.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 41,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 18:21:10"
+    },
+    {
+      "url": "siili.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 37,
+        "accessibility": 97,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 04:21:23"
+    },
+    {
+      "url": "solita.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 32,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 06:28:38"
+    },
+    {
+      "url": "tieto.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 67,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-31 20:24:46"
     },
     {
       "url": "cygni.se",
       "country": "Sweden",
       "scores": {
-        "performance": 64,
+        "performance": 79,
         "accessibility": 100,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-27 06:27:17"
+      "test_date": "2025-11-03 04:30:15"
+    },
+    {
+      "url": "tietoevry.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 66,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 44
+      },
+      "test_date": "2025-10-31 20:25:01"
+    },
+    {
+      "url": "valtech.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 55,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 06:19:00"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 2,
+      "website_count": 7,
       "averages": {
-        "performance": 60,
+        "performance": 52,
         "accessibility": 96,
-        "best_practices": 96,
-        "seo": 90,
-        "pwa": 50
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 39
       }
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 64,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 33
+        "performance": 67,
+        "accessibility": 97,
+        "best_practices": 89,
+        "seo": 92,
+        "pwa": 37
       }
     }
   ]

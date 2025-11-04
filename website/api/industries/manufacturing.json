@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.965Z",
+    "generated_at": "2025-11-04T09:04:16.081Z",
     "industry": "Manufacturing",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 99,
-    "best_practices": 79,
-    "seo": 92,
+    "performance": 46,
+    "accessibility": 94,
+    "best_practices": 80,
+    "seo": 90,
     "pwa": 33
   },
   "websites": [
@@ -23,6 +23,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-29 03:13:34"
+    },
+    {
+      "url": "electrolux.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 50,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 14:25:00"
     },
     {
       "url": "husqvarna.com",
@@ -51,12 +63,12 @@
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 40,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 93,
+        "performance": 45,
+        "accessibility": 93,
+        "best_practices": 79,
+        "seo": 90,
         "pwa": 33
       }
     }

@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "generated_at": "2025-11-04T09:04:16.081Z",
+    "industry": "Industry",
+    "website_count": 4
+  },
+  "averages": {
+    "performance": 51,
+    "accessibility": 93,
+    "best_practices": 90,
+    "seo": 90,
+    "pwa": 42
+  },
+  "websites": [
+    {
+      "url": "metsagroup.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 38,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 56
+      },
+      "test_date": "2025-10-29 16:12:51"
+    },
+    {
+      "url": "storaenso.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 69,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 10:12:06"
+    },
+    {
+      "url": "upm.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 27,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 44
+      },
+      "test_date": "2025-11-01 04:23:25"
+    },
+    {
+      "url": "sandvik.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 70,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:43:35"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Finland",
+      "website_count": 3,
+      "averages": {
+        "performance": 45,
+        "accessibility": 90,
+        "best_practices": 86,
+        "seo": 86,
+        "pwa": 44
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 1,
+      "averages": {
+        "performance": 70,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      }
+    }
+  ]
+}

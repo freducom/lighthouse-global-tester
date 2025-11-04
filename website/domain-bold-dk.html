@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.893Z",
+          "dateCreated": "2025-11-04T09:04:11.671Z",
           "about": {
             "@type": "WebSite",
             "name": "bold.dk",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-bold.dk.html#metrics",
           "name": "bold.dk Performance Metrics",
           "description": "Latest Lighthouse scores for bold.dk",
-          "performanceScore": 44,
+          "performanceScore": 42,
           "accessibilityScore": 75,
           "bestPracticesScore": 92,
           "seoScore": 92,
-          "dateRecorded": "2025-10-26 19:40:43"
+          "dateRecorded": "2025-11-02 16:16:30"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">44%</div>
+                <div class="stat-number poor">42%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 44%"></div>
-                        <span class="score-text">44%</span>
+                        <div class="score-fill performance" style="width: 42%"></div>
+                        <span class="score-text">42%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":894,"url":"bold.dk","performance":43,"accessibility":75,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-26 18:32:40","country":"Denmark","industry":"Sports"},{"id":925,"url":"bold.dk","performance":44,"accessibility":75,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-26 19:40:43","country":"Denmark","industry":"Sports"}];
+        const historyData = [{"id":894,"url":"bold.dk","performance":43,"accessibility":75,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-26 18:32:40","country":"Denmark","industry":"Sports"},{"id":925,"url":"bold.dk","performance":44,"accessibility":75,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-26 19:40:43","country":"Denmark","industry":"Sports"},{"id":1833,"url":"bold.dk","performance":42,"accessibility":75,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-11-02 16:16:30","country":"Denmark","industry":"Sports"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

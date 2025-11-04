@@ -870,134 +870,44 @@ ${this.getPostHogScript()}
         ${this.getHeaderHTML(`${allScores.length} tracked websites – only one can be the fastest`, true)}
 
         <main id="main-content" role="main">
-            <!-- Global Statistics Section -->
-            <section class="stats-grid" aria-labelledby="global-stats-heading" id="global-stats">
-                <h2 id="global-stats-heading" class="sr-only">Global Performance Statistics</h2>
-                
-                <div class="stat-card performance" role="img" aria-labelledby="global-perf-title" aria-describedby="global-perf-desc">
-                    <h3 id="global-perf-title">🚀 Performance</h3>
-                    <div class="stat-number" aria-label="${stats.avgPerformance} percent performance score">${stats.avgPerformance}%</div>
-                    <div id="global-perf-desc" class="stat-trend">Average across ${allScores.length} sites</div>
-                </div>
-                
-                <div class="stat-card accessibility" role="img" aria-labelledby="global-acc-title" aria-describedby="global-acc-desc">
-                    <h3 id="global-acc-title">♿ Accessibility</h3>
-                    <div class="stat-number" aria-label="${stats.avgAccessibility} percent accessibility score">${stats.avgAccessibility}%</div>
-                    <div id="global-acc-desc" class="stat-trend">Average across ${allScores.length} sites</div>
-                </div>
-                
-                <div class="stat-card best-website" role="img" aria-labelledby="best-website-title" aria-describedby="best-website-desc">
-                    <h3 id="best-website-title">🏆 Best Website</h3>
-                    <div class="stat-number" aria-label="${bestWebsite.performance} percent performance score">${bestWebsite.performance}%</div>
-                    <div id="best-website-desc" class="stat-trend">
-                        <a href="domain-${bestWebsite.url.replace(/\./g, '-')}.html" class="website-link">
-                            ${bestWebsite.url}
-                        </a>
+            <!-- Global Overview Stats (Real Data) -->
+            <section class="stats-grid">
+                <div class="stat-tile">
+                    <div class="stat-icon">🌐</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${allScores.length}</div>
+                        <div class="stat-label">Total Websites</div>
                     </div>
                 </div>
                 
-                <div class="stat-card worst-website" role="img" aria-labelledby="worst-website-title" aria-describedby="worst-website-desc">
-                    <h3 id="worst-website-title">📊 Worst Website</h3>
-                    <div class="stat-number" aria-label="${worstWebsite.performance} percent performance score">${worstWebsite.performance}%</div>
-                    <div id="worst-website-desc" class="stat-trend">
-                        <a href="domain-${worstWebsite.url.replace(/\./g, '-')}.html" class="website-link">
-                            ${worstWebsite.url}
-                        </a>
+                <div class="stat-tile">
+                    <div class="stat-icon">🏴󠁿</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${this.domainsData.length}</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">🏭</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${[...new Set(allScores.map(score => score.industry).filter(industry => industry))].length}</div>
+                        <div class="stat-label">Industries</div>
+                    </div>
+                </div>
+                
+                <div class="stat-tile">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-content">
+                        <div class="stat-number">${stats.avgPerformance}</div>
+                        <div class="stat-label">Avg Performance</div>
                     </div>
                 </div>
             </section>
 
-            <div class="content-grid">
-                <!-- Country Comparison Section -->
-                <section class="section" aria-labelledby="country-rankings-heading" id="country-rankings">
-                    <h2 id="country-rankings-heading">🌍 Top 5 Countries by Performance</h2>
-                    
-                    <div class="country-comparison" role="group" aria-labelledby="country-comparison-heading">
-                        <h3 id="country-comparison-heading" class="sr-only">Country Performance Comparison</h3>
-                        <div class="best-country" role="img" aria-labelledby="best-country-title" aria-describedby="best-country-desc">
-                            <h4 id="best-country-title">Best: ${countryStats.best.name} ${this.getCountryFlag(countryStats.best.name)}</h4>
-                            <div class="country-score" aria-label="${countryStats.best.avgPerformance} percent average performance">${countryStats.best.avgPerformance}%</div>
-                            <p id="best-country-desc">Performance Leader</p>
-                        </div>
-                        <div class="worst-country" role="img" aria-labelledby="worst-country-title" aria-describedby="worst-country-desc">
-                            <h4 id="worst-country-title">Worst: ${countryStats.worst.name} ${this.getCountryFlag(countryStats.worst.name)}</h4>
-                            <div class="country-score" aria-label="${countryStats.worst.avgPerformance} percent average performance">${countryStats.worst.avgPerformance}%</div>
-                            <p id="worst-country-desc">Growth Opportunity</p>
-                        </div>
-                    </div>
-                    
-                    <div class="country-rankings" aria-labelledby="top-countries-heading">
-                        <h3 id="top-countries-heading">🏆 Top 5 Countries</h3>
-                        <div class="country-list" role="list">
-                            ${countryStats.top5.map((country, index) => `
-                                <a href="country-${country.name.toLowerCase().replace(/\s+/g, '-')}.html" 
-                                   class="country-item" 
-                                   role="listitem"
-                                   aria-describedby="country-${index}-desc">
-                                    <div class="country-rank" aria-label="Rank ${index + 1}">#${index + 1}</div>
-                                    <div class="country-flag">${this.getCountryFlag(country.name)}</div>
-                                    <div class="country-name">${country.name}</div>
-                                    <div id="country-${index}-desc" class="country-metrics" aria-label="Performance ${country.avgPerformance}%, Accessibility ${country.avgAccessibility}%, SEO ${country.avgSeo}%">
-                                        <span class="metric" aria-label="Performance ${country.avgPerformance} percent">P: ${country.avgPerformance}%</span>
-                                        <span class="metric" aria-label="Accessibility ${country.avgAccessibility} percent">A: ${country.avgAccessibility}%</span>
-                                        <span class="metric" aria-label="SEO ${country.avgSeo} percent">SEO: ${country.avgSeo}%</span>
-                                    </div>
-                                </a>
-                            `).join('')}
-                        </div>
-                        <div class="see-all-link">
-                            <a href="all-countries.html" class="btn-see-all" aria-describedby="see-all-countries-desc">
-                                See all countries
-                            </a>
-                            <div id="see-all-countries-desc" class="sr-only">View comprehensive list of all country performance rankings</div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Industry Rankings Section -->
-                <section class="section" aria-labelledby="industry-rankings-heading" id="industry-rankings">
-                    <h2 id="industry-rankings-heading">🏭 Top 5 Industries by Performance</h2>
-                    
-                    <div class="industry-comparison" role="group" aria-labelledby="industry-comparison-heading">
-                        <h3 id="industry-comparison-heading" class="sr-only">Industry Performance Comparison</h3>
-                        <div class="best-industry" role="img" aria-labelledby="best-industry-title" aria-describedby="best-industry-desc">
-                            <h4 id="best-industry-title">Best: ${industryStats.best.name}</h4>
-                            <div class="industry-score" aria-label="${industryStats.best.avgPerformance} percent average performance">${industryStats.best.avgPerformance}%</div>
-                            <p id="best-industry-desc">Performance Leader</p>
-                        </div>
-                        <div class="worst-industry" role="img" aria-labelledby="worst-industry-title" aria-describedby="worst-industry-desc">
-                            <h4 id="worst-industry-title">Worst: ${industryStats.worst.name}</h4>
-                            <div class="industry-score" aria-label="${industryStats.worst.avgPerformance} percent average performance">${industryStats.worst.avgPerformance}%</div>
-                            <p id="worst-industry-desc">Growth Opportunity</p>
-                        </div>
-                    </div>
-                    
-                    <div class="industry-rankings" aria-labelledby="top-industries-heading">
-                        <h3 id="top-industries-heading">🏆 Top 5 Industries</h3>
-                        <div class="industry-list" role="list">
-                            ${industryStats.top5.map((industry, index) => `
-                                <a href="industry-${industry.name.toLowerCase().replace(/\s+/g, '-')}.html" 
-                                   class="industry-item" 
-                                   role="listitem"
-                                   aria-describedby="industry-${index}-desc">
-                                    <div class="industry-rank" aria-label="Rank ${index + 1}">#${index + 1}</div>
-                                    <div class="industry-name">${industry.name}</div>
-                                    <div id="industry-${index}-desc" class="industry-metrics" aria-label="Performance ${industry.avgPerformance}%, Accessibility ${industry.avgAccessibility}%, SEO ${industry.avgSeo}%">
-                                        <span class="metric" aria-label="Performance ${industry.avgPerformance} percent">P: ${industry.avgPerformance}%</span>
-                                        <span class="metric" aria-label="Accessibility ${industry.avgAccessibility} percent">A: ${industry.avgAccessibility}%</span>
-                                        <span class="metric" aria-label="SEO ${industry.avgSeo} percent">SEO: ${industry.avgSeo}%</span>
-                                    </div>
-                                </a>
-                            `).join('')}
-                        </div>
-                        <div class="see-all-link">
-                            <a href="all-industries.html" class="btn-see-all" aria-describedby="see-all-industries-desc">
-                                See all industries
-                            </a>
-                            <div id="see-all-industries-desc" class="sr-only">View comprehensive list of all industry performance rankings</div>
-                        </div>
-                    </div>
-                </section>
+            <!-- Link to Stats Page -->
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="stats.html" style="color: #0D3B66; text-decoration: none; font-weight: 500; transition: color 0.2s;">View global stats</a>
             </div>
 
             <!-- Global Websites Section -->

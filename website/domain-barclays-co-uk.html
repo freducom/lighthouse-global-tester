@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.991Z",
+          "dateCreated": "2025-11-04T09:04:12.107Z",
           "about": {
             "@type": "WebSite",
             "name": "barclays.co.uk",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-barclays.co.uk.html#metrics",
           "name": "barclays.co.uk Performance Metrics",
           "description": "Latest Lighthouse scores for barclays.co.uk",
-          "performanceScore": 55,
+          "performanceScore": 65,
           "accessibilityScore": 86,
           "bestPracticesScore": 92,
           "seoScore": 93,
-          "dateRecorded": "2025-10-26 15:59:54"
+          "dateRecorded": "2025-11-02 12:24:31"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">55%</div>
+                <div class="stat-number average">65%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 55%"></div>
-                        <span class="score-text">55%</span>
+                        <div class="score-fill performance" style="width: 65%"></div>
+                        <span class="score-text">65%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":855,"url":"barclays.co.uk","performance":55,"accessibility":86,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-26 14:10:42","country":"United Kingdom","industry":"Finance"},{"id":870,"url":"barclays.co.uk","performance":55,"accessibility":86,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-26 15:59:54","country":"United Kingdom","industry":"Finance"}];
+        const historyData = [{"id":855,"url":"barclays.co.uk","performance":55,"accessibility":86,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-26 14:10:42","country":"United Kingdom","industry":"Finance"},{"id":870,"url":"barclays.co.uk","performance":55,"accessibility":86,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-26 15:59:54","country":"United Kingdom","industry":"Finance"},{"id":1811,"url":"barclays.co.uk","performance":65,"accessibility":86,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-11-02 12:24:31","country":"United Kingdom","industry":"Finance"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

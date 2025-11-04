@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.115Z",
+    "generated_at": "2025-11-04T09:04:16.721Z",
     "url": "cdon.se",
     "country": "Sweden",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 46,
-    "accessibility": 100,
+    "performance": 47,
+    "accessibility": 99,
     "best_practices": 100,
     "seo": 100,
     "pwa": 78,
-    "test_date": "2025-10-26 22:21:07"
+    "test_date": "2025-11-02 20:25:37"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 99,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-02 20:25:37"
+    },
+    {
+      "performance": 47,
+      "accessibility": 99,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-02 20:25:18"
+    },
     {
       "performance": 46,
       "accessibility": 100,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 0,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 22:21:07",
-    "test_date_previous": "2025-10-26 22:20:49"
+    "test_date_current": "2025-11-02 20:25:37",
+    "test_date_previous": "2025-11-02 20:25:18"
   }
 }

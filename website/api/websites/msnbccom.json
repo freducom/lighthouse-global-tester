@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.142Z",
+    "generated_at": "2025-11-04T09:04:16.854Z",
     "url": "msnbc.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 33,
-    "accessibility": 87,
-    "best_practices": 83,
+    "performance": 26,
+    "accessibility": 77,
+    "best_practices": 92,
     "seo": 84,
     "pwa": 44,
-    "test_date": "2025-10-23 07:10:03"
+    "test_date": "2025-10-29 18:42:02"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 77,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 44,
+      "test_date": "2025-10-29 18:42:02"
+    },
     {
       "performance": 33,
       "accessibility": 87,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
-    "accessibility": 11,
-    "best_practices": -9,
-    "seo": 7,
+    "performance": -7,
+    "accessibility": -10,
+    "best_practices": 9,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:10:03",
-    "test_date_previous": "2025-10-22 14:56:47"
+    "test_date_current": "2025-10-29 18:42:02",
+    "test_date_previous": "2025-10-23 07:10:03"
   }
 }

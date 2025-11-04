@@ -1,30 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.896Z",
+    "generated_at": "2025-11-04T09:04:15.751Z",
     "country": "Kenya",
     "flag": "🇰🇪",
     "website_count": 6
   },
   "averages": {
-    "performance": 38,
+    "performance": 36,
     "accessibility": 88,
-    "best_practices": 75,
-    "seo": 86,
-    "pwa": 31
+    "best_practices": 76,
+    "seo": 87,
+    "pwa": 33
   },
   "websites": [
-    {
-      "url": "standardmedia.co.ke",
-      "industry": "Media",
-      "scores": {
-        "performance": 46,
-        "accessibility": 98,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 22
-      },
-      "test_date": "2025-10-24 02:54:49"
-    },
     {
       "url": "kenyans.co.ke",
       "industry": "Media",
@@ -50,6 +38,18 @@
       "test_date": "2025-10-26 20:15:57"
     },
     {
+      "url": "safaricom.co.ke",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 35,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 22:17:38"
+    },
+    {
       "url": "kenyabuzz.com",
       "industry": "Media",
       "scores": {
@@ -62,28 +62,28 @@
       "test_date": "2025-10-29 00:46:01"
     },
     {
-      "url": "safaricom.co.ke",
-      "industry": "Telecom",
+      "url": "nation.africa",
+      "industry": "Media",
       "scores": {
-        "performance": 33,
-        "accessibility": 70,
-        "best_practices": 83,
-        "seo": 83,
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 16:47:35"
+      "test_date": "2025-10-29 22:11:15"
     },
     {
-      "url": "nation.africa",
+      "url": "standardmedia.co.ke",
       "industry": "Media",
       "scores": {
         "performance": 27,
         "accessibility": 98,
-        "best_practices": 67,
-        "seo": 81,
+        "best_practices": 75,
+        "seo": 93,
         "pwa": 22
       },
-      "test_date": "2025-10-22 16:13:48"
+      "test_date": "2025-10-31 08:26:55"
     }
   ],
   "industries": [
@@ -91,18 +91,18 @@
       "industry": "Media",
       "website_count": 5,
       "averages": {
-        "performance": 38,
+        "performance": 36,
         "accessibility": 91,
-        "best_practices": 73,
-        "seo": 87,
-        "pwa": 31
+        "best_practices": 75,
+        "seo": 88,
+        "pwa": 33
       }
     },
     {
       "industry": "Telecom",
       "website_count": 1,
       "averages": {
-        "performance": 33,
+        "performance": 35,
         "accessibility": 70,
         "best_practices": 83,
         "seo": 83,

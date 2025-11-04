@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.110Z",
+    "generated_at": "2025-11-04T09:04:16.705Z",
     "url": "superbalist.com",
     "country": "South Africa",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 5,
     "accessibility": 85,
     "best_practices": 83,
     "seo": 98,
     "pwa": 56,
-    "test_date": "2025-10-24 04:12:21"
+    "test_date": "2025-10-31 12:18:34"
   },
   "historical_data": [
+    {
+      "performance": 5,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 56,
+      "test_date": "2025-10-31 12:18:34"
+    },
     {
       "performance": 33,
       "accessibility": 85,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 04:12:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -28,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 12:18:34",
+    "test_date_previous": "2025-10-24 04:12:21"
+  }
 }

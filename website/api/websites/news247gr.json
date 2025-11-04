@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.066Z",
+    "generated_at": "2025-11-04T09:04:16.531Z",
     "url": "news247.gr",
     "country": "Greece",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 26,
-    "accessibility": 92,
-    "best_practices": 83,
+    "performance": 27,
+    "accessibility": 90,
+    "best_practices": 75,
     "seo": 96,
     "pwa": 33,
-    "test_date": "2025-10-22 19:53:03"
+    "test_date": "2025-10-30 00:54:34"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 90,
+      "best_practices": 75,
+      "seo": 96,
+      "pwa": 33,
+      "test_date": "2025-10-30 00:54:34"
+    },
     {
       "performance": 26,
       "accessibility": 92,
@@ -33,11 +41,11 @@
   ],
   "trends": {
     "performance": 1,
-    "accessibility": 2,
-    "best_practices": 8,
+    "accessibility": -2,
+    "best_practices": -8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-22 19:53:03",
-    "test_date_previous": "2025-10-22 18:28:00"
+    "test_date_current": "2025-10-30 00:54:34",
+    "test_date_previous": "2025-10-22 19:53:03"
   }
 }

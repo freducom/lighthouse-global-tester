@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.046Z",
+    "generated_at": "2025-11-04T09:04:16.428Z",
     "url": "ceskatelevize.cz",
     "country": "Czechia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 43,
     "accessibility": 83,
     "best_practices": 92,
     "seo": 97,
     "pwa": 33,
-    "test_date": "2025-10-27 00:46:36"
+    "test_date": "2025-11-02 22:08:27"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 83,
+      "best_practices": 92,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-11-02 22:08:27"
+    },
     {
       "performance": 36,
       "accessibility": 83,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 00:46:36"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 22:08:27",
+    "test_date_previous": "2025-10-27 00:46:36"
+  }
 }

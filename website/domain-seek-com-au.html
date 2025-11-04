@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.873Z",
+          "dateCreated": "2025-11-04T09:04:11.610Z",
           "about": {
             "@type": "WebSite",
             "name": "seek.com.au",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-seek.com.au.html#metrics",
           "name": "seek.com.au Performance Metrics",
           "description": "Latest Lighthouse scores for seek.com.au",
-          "performanceScore": 50,
+          "performanceScore": 53,
           "accessibilityScore": 93,
           "bestPracticesScore": 67,
           "seoScore": 100,
-          "dateRecorded": "2025-10-23 19:34:20"
+          "dateRecorded": "2025-10-31 03:08:00"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">50%</div>
+                <div class="stat-number average">53%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 50%"></div>
-                        <span class="score-text">50%</span>
+                        <div class="score-fill performance" style="width: 53%"></div>
+                        <span class="score-text">53%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":146,"url":"seek.com.au","performance":59,"accessibility":93,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-19 20:03:17","country":"Australia","industry":"Jobs"},{"id":556,"url":"seek.com.au","performance":55,"accessibility":93,"best_practices":67,"seo":100,"pwa":78,"test_date":"2025-10-23 18:17:32","country":"Australia","industry":"Jobs"},{"id":563,"url":"seek.com.au","performance":50,"accessibility":93,"best_practices":67,"seo":100,"pwa":78,"test_date":"2025-10-23 19:34:20","country":"Australia","industry":"Jobs"}];
+        const historyData = [{"id":146,"url":"seek.com.au","performance":59,"accessibility":93,"best_practices":75,"seo":100,"pwa":78,"test_date":"2025-10-19 20:03:17","country":"Australia","industry":"Jobs"},{"id":556,"url":"seek.com.au","performance":55,"accessibility":93,"best_practices":67,"seo":100,"pwa":78,"test_date":"2025-10-23 18:17:32","country":"Australia","industry":"Jobs"},{"id":563,"url":"seek.com.au","performance":50,"accessibility":93,"best_practices":67,"seo":100,"pwa":78,"test_date":"2025-10-23 19:34:20","country":"Australia","industry":"Jobs"},{"id":1470,"url":"seek.com.au","performance":53,"accessibility":93,"best_practices":67,"seo":100,"pwa":78,"test_date":"2025-10-31 03:08:00","country":"Australia","industry":"Jobs"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

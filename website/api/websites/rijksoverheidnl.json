@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.095Z",
+    "generated_at": "2025-11-04T09:04:16.655Z",
     "url": "rijksoverheid.nl",
     "country": "Netherlands",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 69,
+    "performance": 70,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 97,
     "pwa": 33,
-    "test_date": "2025-10-23 15:45:29"
+    "test_date": "2025-10-30 20:15:56"
   },
   "historical_data": [
+    {
+      "performance": 70,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-10-30 20:15:56"
+    },
     {
       "performance": 69,
       "accessibility": 98,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 15:45:29",
-    "test_date_previous": "2025-10-23 14:12:05"
+    "test_date_current": "2025-10-30 20:15:56",
+    "test_date_previous": "2025-10-23 15:45:29"
   }
 }

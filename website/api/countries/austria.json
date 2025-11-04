@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.866Z",
+    "generated_at": "2025-11-04T09:04:15.621Z",
     "country": "Austria",
     "flag": "🇦🇹",
     "website_count": 10
   },
   "averages": {
     "performance": 46,
-    "accessibility": 90,
+    "accessibility": 89,
     "best_practices": 88,
     "seo": 90,
     "pwa": 47
   },
   "websites": [
     {
-      "url": "orf.at",
+      "url": "derstandard.at",
       "industry": "Media",
       "scores": {
-        "performance": 64,
-        "accessibility": 99,
-        "best_practices": 75,
-        "seo": 100,
+        "performance": 63,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 87,
         "pwa": 33
       },
-      "test_date": "2025-10-23 03:00:29"
+      "test_date": "2025-11-03 08:15:11"
     },
     {
       "url": "kurier.at",
@@ -38,40 +38,52 @@
       "test_date": "2025-10-29 03:20:05"
     },
     {
-      "url": "derstandard.at",
+      "url": "orf.at",
       "industry": "Media",
       "scores": {
         "performance": 55,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 87,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-27 10:12:20"
+      "test_date": "2025-10-30 08:22:11"
     },
     {
       "url": "heute.at",
       "industry": "Media",
       "scores": {
-        "performance": 54,
+        "performance": 50,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-28 10:35:55"
+      "test_date": "2025-11-04 08:19:34"
+    },
+    {
+      "url": "meinbezirk.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 70,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 14:34:13"
     },
     {
       "url": "oe24.at",
       "industry": "Media",
       "scores": {
-        "performance": 47,
+        "performance": 49,
         "accessibility": 88,
         "best_practices": 100,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-23 00:47:18"
+      "test_date": "2025-10-30 06:22:45"
     },
     {
       "url": "krone.at",
@@ -86,52 +98,40 @@
       "test_date": "2025-10-29 03:15:48"
     },
     {
-      "url": "salzburg24.at",
-      "industry": "Media",
-      "scores": {
-        "performance": 40,
-        "accessibility": 94,
-        "best_practices": 92,
-        "seo": 85,
-        "pwa": 78
-      },
-      "test_date": "2025-10-23 16:49:31"
-    },
-    {
       "url": "willhaben.at",
       "industry": "Marketplace",
       "scores": {
-        "performance": 35,
+        "performance": 33,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 96,
         "pwa": 78
       },
-      "test_date": "2025-10-25 04:14:27"
-    },
-    {
-      "url": "meinbezirk.at",
-      "industry": "Media",
-      "scores": {
-        "performance": 30,
-        "accessibility": 70,
-        "best_practices": 83,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 12:18:43"
+      "test_date": "2025-11-01 12:28:24"
     },
     {
       "url": "vienna.at",
       "industry": "Media",
       "scores": {
-        "performance": 30,
+        "performance": 29,
         "accessibility": 88,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-24 22:16:12"
+      "test_date": "2025-11-01 08:12:11"
+    },
+    {
+      "url": "salzburg24.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 78
+      },
+      "test_date": "2025-10-31 00:42:47"
     }
   ],
   "industries": [
@@ -139,7 +139,7 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 35,
+        "performance": 33,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 96,
@@ -151,7 +151,7 @@
       "website_count": 9,
       "averages": {
         "performance": 47,
-        "accessibility": 89,
+        "accessibility": 88,
         "best_practices": 86,
         "seo": 89,
         "pwa": 43

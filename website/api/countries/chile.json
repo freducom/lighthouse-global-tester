@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.894Z",
+    "generated_at": "2025-11-04T09:04:15.735Z",
     "country": "Chile",
     "flag": "🇨🇱",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 38,
+    "performance": 30,
     "accessibility": 81,
-    "best_practices": 75,
-    "seo": 88,
-    "pwa": 31
+    "best_practices": 77,
+    "seo": 89,
+    "pwa": 32
   },
   "websites": [
     {
@@ -26,30 +26,6 @@
       "test_date": "2025-10-29 04:21:57"
     },
     {
-      "url": "mercadolibre.cl",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 56,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 96,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 12:19:07"
-    },
-    {
-      "url": "24horas.cl",
-      "industry": "Media",
-      "scores": {
-        "performance": 49,
-        "accessibility": 73,
-        "best_practices": 83,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 19:29:12"
-    },
-    {
       "url": "latercera.com",
       "industry": "Media",
       "scores": {
@@ -62,28 +38,64 @@
       "test_date": "2025-10-29 04:29:48"
     },
     {
-      "url": "t13.cl",
-      "industry": "Media",
+      "url": "mercadolibre.cl",
+      "industry": "E-commerce",
       "scores": {
-        "performance": 31,
-        "accessibility": 77,
+        "performance": 32,
+        "accessibility": 96,
         "best_practices": 83,
-        "seo": 79,
+        "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-24 06:15:46"
+      "test_date": "2025-10-29 14:34:38"
+    },
+    {
+      "url": "24horas.cl",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 00:55:51"
     },
     {
       "url": "emol.com",
       "industry": "Media",
       "scores": {
-        "performance": 20,
-        "accessibility": 81,
-        "best_practices": 50,
-        "seo": 77,
+        "performance": 27,
+        "accessibility": 89,
+        "best_practices": 67,
+        "seo": 76,
         "pwa": 33
       },
-      "test_date": "2025-10-20 16:05:25"
+      "test_date": "2025-11-03 16:20:01"
+    },
+    {
+      "url": "t13.cl",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 14:11:41"
+    },
+    {
+      "url": "elmostrador.cl",
+      "industry": "Media",
+      "scores": {
+        "performance": 13,
+        "accessibility": 72,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 16:12:19"
     },
     {
       "url": "biobiochile.cl",
@@ -103,7 +115,7 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 56,
+        "performance": 32,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 96,
@@ -112,12 +124,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 35,
+        "performance": 30,
         "accessibility": 79,
-        "best_practices": 74,
-        "seo": 87,
+        "best_practices": 76,
+        "seo": 88,
         "pwa": 31
       }
     }

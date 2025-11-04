@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.089Z",
+    "generated_at": "2025-11-04T09:04:16.624Z",
     "url": "esch.lu",
     "country": "Luxembourg",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 56,
     "accessibility": 95,
     "best_practices": 100,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-20 16:05:57"
+    "test_date": "2025-11-03 18:17:33"
   },
   "historical_data": [
+    {
+      "performance": 56,
+      "accessibility": 95,
+      "best_practices": 100,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-03 18:17:33"
+    },
     {
       "performance": 57,
       "accessibility": 95,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-20 16:05:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 18:17:33",
+    "test_date_previous": "2025-10-20 16:05:57"
+  }
 }

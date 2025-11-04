@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.145Z",
+    "generated_at": "2025-11-04T09:04:16.870Z",
     "url": "wellsfargo.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 48,
     "accessibility": 100,
     "best_practices": 58,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-25 04:11:21"
+    "test_date": "2025-11-01 12:24:45"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 100,
+      "best_practices": 58,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-01 12:24:45"
+    },
     {
       "performance": 38,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -20,
+    "performance": 10,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-25 04:11:21",
-    "test_date_previous": "2025-10-23 06:59:08"
+    "test_date_current": "2025-11-01 12:24:45",
+    "test_date_previous": "2025-10-25 04:11:21"
   }
 }

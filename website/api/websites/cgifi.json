@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.053Z",
+    "generated_at": "2025-11-04T09:04:16.444Z",
     "url": "cgi.fi",
     "country": "Finland",
     "industry": "Consulting"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 62,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 86,
     "pwa": 67,
-    "test_date": "2025-10-27 00:47:42"
+    "test_date": "2025-11-02 22:09:32"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 67,
+      "test_date": "2025-11-02 22:09:32"
+    },
     {
       "performance": 57,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 00:47:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 22:09:32",
+    "test_date_previous": "2025-10-27 00:47:42"
+  }
 }

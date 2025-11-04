@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.060Z",
+    "generated_at": "2025-11-04T09:04:16.516Z",
     "url": "liberation.fr",
     "country": "France",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 37,
     "accessibility": 96,
     "best_practices": 75,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-29 06:20:58"
+    "test_date": "2025-10-29 07:48:13"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-29 07:48:13"
+    },
     {
       "performance": 38,
       "accessibility": 96,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 06:20:58",
-    "test_date_previous": "2025-10-22 04:12:31"
+    "test_date_current": "2025-10-29 07:48:13",
+    "test_date_previous": "2025-10-29 06:20:58"
   }
 }

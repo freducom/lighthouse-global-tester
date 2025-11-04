@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:55.010Z",
+          "dateCreated": "2025-11-04T09:04:12.189Z",
           "about": {
             "@type": "WebSite",
             "name": "whitehouse.gov",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-whitehouse.gov.html#metrics",
           "name": "whitehouse.gov Performance Metrics",
           "description": "Latest Lighthouse scores for whitehouse.gov",
-          "performanceScore": 74,
+          "performanceScore": 71,
           "accessibilityScore": 92,
           "bestPracticesScore": 100,
-          "seoScore": 83,
-          "dateRecorded": "2025-10-25 04:13:05"
+          "seoScore": 86,
+          "dateRecorded": "2025-11-01 12:27:00"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number good">74%</div>
+                <div class="stat-number good">71%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -127,7 +127,7 @@
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
-                <div class="stat-number good">83%</div>
+                <div class="stat-number good">86%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card best-practices">
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 74%"></div>
-                        <span class="score-text">74%</span>
+                        <div class="score-fill performance" style="width: 71%"></div>
+                        <span class="score-text">71%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -173,8 +173,8 @@
                 <div class="score-item">
                     <span class="score-label">SEO:</span>
                     <div class="score-bar">
-                        <div class="score-fill seo" style="width: 83%"></div>
-                        <span class="score-text">83%</span>
+                        <div class="score-fill seo" style="width: 86%"></div>
+                        <span class="score-text">86%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":477,"url":"whitehouse.gov","performance":66,"accessibility":92,"best_practices":100,"seo":83,"pwa":78,"test_date":"2025-10-23 07:07:30","country":"United States","industry":"Government"},{"id":696,"url":"whitehouse.gov","performance":74,"accessibility":92,"best_practices":100,"seo":83,"pwa":78,"test_date":"2025-10-25 04:13:05","country":"United States","industry":"Government"}];
+        const historyData = [{"id":477,"url":"whitehouse.gov","performance":66,"accessibility":92,"best_practices":100,"seo":83,"pwa":78,"test_date":"2025-10-23 07:07:30","country":"United States","industry":"Government"},{"id":696,"url":"whitehouse.gov","performance":74,"accessibility":92,"best_practices":100,"seo":83,"pwa":78,"test_date":"2025-10-25 04:13:05","country":"United States","industry":"Government"},{"id":1670,"url":"whitehouse.gov","performance":71,"accessibility":92,"best_practices":100,"seo":86,"pwa":78,"test_date":"2025-11-01 12:27:00","country":"United States","industry":"Government"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

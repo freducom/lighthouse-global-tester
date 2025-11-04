@@ -1,41 +1,53 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.832Z",
+    "generated_at": "2025-11-04T09:04:15.464Z",
     "country": "Argentina",
     "flag": "🌍",
-    "website_count": 3
+    "website_count": 5
   },
   "averages": {
-    "performance": 30,
-    "accessibility": 94,
+    "performance": 37,
+    "accessibility": 92,
     "best_practices": 75,
-    "seo": 90,
-    "pwa": 37
+    "seo": 92,
+    "pwa": 35
   },
   "websites": [
+    {
+      "url": "mercadolibre.com.ar",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 67,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 14:34:52"
+    },
+    {
+      "url": "personal.com.ar",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 65,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 12:23:05"
+    },
     {
       "url": "bancogalicia.com",
       "industry": "Finance",
       "scores": {
-        "performance": 41,
+        "performance": 36,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:44:24"
-    },
-    {
-      "url": "aerolineas.com.ar",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 37,
-        "accessibility": 94,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-27 07:10:33"
+      "test_date": "2025-11-02 12:17:06"
     },
     {
       "url": "bbva.com.ar",
@@ -48,14 +60,37 @@
         "pwa": 44
       },
       "test_date": "2025-10-26 16:04:13"
+    },
+    {
+      "url": "aerolineas.com.ar",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 5,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 03:18:39"
     }
   ],
   "industries": [
     {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 67,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 26,
+        "performance": 24,
         "accessibility": 94,
         "best_practices": 75,
         "seo": 90,
@@ -63,10 +98,21 @@
       }
     },
     {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 65,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Transportation",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 5,
         "accessibility": 94,
         "best_practices": 75,
         "seo": 90,

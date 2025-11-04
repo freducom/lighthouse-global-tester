@@ -1,40 +1,40 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.963Z",
+    "generated_at": "2025-11-04T09:04:16.076Z",
     "industry": "Government",
-    "website_count": 25
+    "website_count": 41
   },
   "averages": {
-    "performance": 56,
-    "accessibility": 88,
-    "best_practices": 91,
-    "seo": 94,
-    "pwa": 38
+    "performance": 61,
+    "accessibility": 89,
+    "best_practices": 89,
+    "seo": 91,
+    "pwa": 36
   },
   "websites": [
     {
       "url": "australia.gov.au",
       "country": "Australia",
       "scores": {
-        "performance": 38,
+        "performance": 59,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:38:47"
+      "test_date": "2025-11-02 10:14:46"
     },
     {
       "url": "my.gov.au",
       "country": "Australia",
       "scores": {
-        "performance": 65,
+        "performance": 61,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-22 14:57:26"
+      "test_date": "2025-10-29 20:13:48"
     },
     {
       "url": "canada.ca",
@@ -46,31 +46,31 @@
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 22:12:12"
+      "test_date": "2025-11-02 20:14:16"
     },
     {
       "url": "ontario.ca",
       "country": "Canada",
       "scores": {
-        "performance": 74,
+        "performance": 85,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 02:58:53"
+      "test_date": "2025-10-30 08:18:24"
     },
     {
       "url": "servicecanada.gc.ca",
       "country": "Canada",
       "scores": {
-        "performance": 35,
+        "performance": 49,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-23 19:35:08"
+      "test_date": "2025-10-31 03:09:24"
     },
     {
       "url": "ict.go.cr",
@@ -88,25 +88,49 @@
       "url": "mitid.dk",
       "country": "Denmark",
       "scores": {
-        "performance": 81,
+        "performance": 86,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 92,
         "pwa": 67
       },
-      "test_date": "2025-10-22 14:19:45"
+      "test_date": "2025-10-29 16:34:49"
+    },
+    {
+      "url": "eesti.ee",
+      "country": "Estonia",
+      "scores": {
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:32:21"
     },
     {
       "url": "businessfinland.fi",
       "country": "Finland",
       "scores": {
-        "performance": 29,
-        "accessibility": 95,
-        "best_practices": 92,
-        "seo": 99,
+        "performance": 68,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:16:15"
+      "test_date": "2025-11-02 18:21:38"
+    },
+    {
+      "url": "finlex.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 20:22:32"
     },
     {
       "url": "kela.fi",
@@ -121,6 +145,30 @@
       "test_date": "2025-10-28 22:27:10"
     },
     {
+      "url": "migri.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 57,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 16:20:55"
+    },
+    {
+      "url": "poliisi.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 71,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 13:37:03"
+    },
+    {
       "url": "posti.fi",
       "country": "Finland",
       "scores": {
@@ -130,55 +178,151 @@
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 08:30:07"
+      "test_date": "2025-10-30 14:02:36"
+    },
+    {
+      "url": "syke.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 86,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 12:22:44"
     },
     {
       "url": "vero.fi",
       "country": "Finland",
       "scores": {
-        "performance": 46,
+        "performance": 52,
         "accessibility": 100,
         "best_practices": 67,
         "seo": 93,
         "pwa": 44
       },
-      "test_date": "2025-10-24 22:15:10"
+      "test_date": "2025-11-01 06:22:05"
     },
     {
       "url": "arbeitsagentur.de",
       "country": "Germany",
       "scores": {
-        "performance": 58,
+        "performance": 64,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 86,
         "pwa": 56
       },
-      "test_date": "2025-10-26 10:10:47"
+      "test_date": "2025-11-02 08:18:30"
     },
     {
       "url": "bund.de",
       "country": "Germany",
       "scores": {
-        "performance": 60,
+        "performance": 55,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:12:21"
+      "test_date": "2025-11-02 18:16:21"
+    },
+    {
+      "url": "epfindia.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 47,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 0
+      },
+      "test_date": "2025-11-03 16:23:45"
+    },
+    {
+      "url": "mea.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 40,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 12:33:48"
+    },
+    {
+      "url": "mha.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 49,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 73,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 16:16:44"
+    },
+    {
+      "url": "mygov.in",
+      "country": "India",
+      "scores": {
+        "performance": 45,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 20:14:36"
+    },
+    {
+      "url": "niti.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 01:03:05"
+    },
+    {
+      "url": "pgportal.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 54,
+        "accessibility": 66,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 22
+      },
+      "test_date": "2025-10-30 12:27:21"
+    },
+    {
+      "url": "uidai.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 99,
+        "accessibility": 97,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 03:16:36"
     },
     {
       "url": "luxembourg.lu",
       "country": "Luxembourg",
       "scores": {
-        "performance": 48,
+        "performance": 41,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-22 06:26:16"
+      "test_date": "2025-10-29 10:12:08"
     },
     {
       "url": "inegi.org.mx",
@@ -196,73 +340,121 @@
       "url": "rijksoverheid.nl",
       "country": "Netherlands",
       "scores": {
-        "performance": 69,
+        "performance": 70,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-23 15:45:29"
+      "test_date": "2025-10-30 20:15:56"
+    },
+    {
+      "url": "gov.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 63,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:19:22"
+    },
+    {
+      "url": "poczta-polska.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 60,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 13:36:16"
+    },
+    {
+      "url": "gov.sg",
+      "country": "Singapore",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:20:16"
     },
     {
       "url": "arbetsformedlingen.se",
       "country": "Sweden",
       "scores": {
-        "performance": 68,
+        "performance": 62,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-26 10:11:04"
+      "test_date": "2025-11-02 08:18:51"
+    },
+    {
+      "url": "polisen.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 80,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 13:37:16"
     },
     {
       "url": "regeringen.se",
       "country": "Sweden",
       "scores": {
-        "performance": 65,
+        "performance": 69,
         "accessibility": 100,
         "best_practices": 67,
-        "seo": 99,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 12:24:42"
+      "test_date": "2025-10-30 18:28:09"
     },
     {
       "url": "skatteverket.se",
       "country": "Sweden",
       "scores": {
-        "performance": 44,
+        "performance": 60,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-23 22:09:11"
+      "test_date": "2025-10-31 04:27:59"
     },
     {
       "url": "gov.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 73,
+        "performance": 94,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:36:21"
+      "test_date": "2025-11-04 04:20:26"
     },
     {
       "url": "nhs.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 54,
+        "performance": 52,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:36:10"
+      "test_date": "2025-10-30 00:58:05"
     },
     {
       "url": "irs.gov",
@@ -280,37 +472,37 @@
       "url": "nasa.gov",
       "country": "United States",
       "scores": {
-        "performance": 66,
+        "performance": 52,
         "accessibility": 93,
         "best_practices": 92,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-23 07:06:56"
+      "test_date": "2025-10-29 20:23:32"
     },
     {
       "url": "usps.com",
       "country": "United States",
       "scores": {
-        "performance": 36,
+        "performance": 56,
         "accessibility": 66,
         "best_practices": 75,
-        "seo": 90,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-24 20:27:15"
+      "test_date": "2025-11-01 04:30:02"
     },
     {
       "url": "whitehouse.gov",
       "country": "United States",
       "scores": {
-        "performance": 74,
+        "performance": 71,
         "accessibility": 92,
         "best_practices": 100,
-        "seo": 83,
+        "seo": 86,
         "pwa": 78
       },
-      "test_date": "2025-10-25 04:13:05"
+      "test_date": "2025-11-01 12:27:00"
     }
   ],
   "countries": [
@@ -318,7 +510,7 @@
       "country": "Australia",
       "website_count": 2,
       "averages": {
-        "performance": 52,
+        "performance": 60,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 90,
@@ -329,7 +521,7 @@
       "country": "Canada",
       "website_count": 3,
       "averages": {
-        "performance": 54,
+        "performance": 63,
         "accessibility": 100,
         "best_practices": 81,
         "seo": 94,
@@ -351,7 +543,7 @@
       "country": "Denmark",
       "website_count": 1,
       "averages": {
-        "performance": 81,
+        "performance": 86,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 92,
@@ -359,13 +551,24 @@
       }
     },
     {
-      "country": "Finland",
-      "website_count": 4,
+      "country": "Estonia",
+      "website_count": 1,
       "averages": {
-        "performance": 40,
+        "performance": 32,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Finland",
+      "website_count": 8,
+      "averages": {
+        "performance": 64,
         "accessibility": 97,
-        "best_practices": 88,
-        "seo": 98,
+        "best_practices": 89,
+        "seo": 97,
         "pwa": 36
       }
     },
@@ -373,7 +576,7 @@
       "country": "Germany",
       "website_count": 2,
       "averages": {
-        "performance": 59,
+        "performance": 60,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 83,
@@ -381,10 +584,21 @@
       }
     },
     {
+      "country": "India",
+      "website_count": 7,
+      "averages": {
+        "performance": 54,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 27
+      }
+    },
+    {
       "country": "Luxembourg",
       "website_count": 1,
       "averages": {
-        "performance": 48,
+        "performance": 41,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 100,
@@ -406,7 +620,7 @@
       "country": "Netherlands",
       "website_count": 1,
       "averages": {
-        "performance": 69,
+        "performance": 70,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 97,
@@ -414,21 +628,43 @@
       }
     },
     {
-      "country": "Sweden",
-      "website_count": 3,
+      "country": "Poland",
+      "website_count": 2,
       "averages": {
-        "performance": 59,
-        "accessibility": 100,
-        "best_practices": 86,
-        "seo": 94,
+        "performance": 62,
+        "accessibility": 87,
+        "best_practices": 88,
+        "seo": 89,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Singapore",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Sweden",
+      "website_count": 4,
+      "averages": {
+        "performance": 68,
+        "accessibility": 100,
+        "best_practices": 90,
+        "seo": 96,
+        "pwa": 36
       }
     },
     {
       "country": "United Kingdom",
       "website_count": 2,
       "averages": {
-        "performance": 64,
+        "performance": 73,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
@@ -439,10 +675,10 @@
       "country": "United States",
       "website_count": 4,
       "averages": {
-        "performance": 60,
+        "performance": 61,
         "accessibility": 88,
         "best_practices": 90,
-        "seo": 93,
+        "seo": 92,
         "pwa": 47
       }
     }

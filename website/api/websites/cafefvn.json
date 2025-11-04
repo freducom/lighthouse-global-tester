@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.147Z",
+    "generated_at": "2025-11-04T09:04:16.876Z",
     "url": "cafef.vn",
     "country": "Vietnam",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 27,
     "accessibility": 97,
     "best_practices": 83,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-26 20:29:14"
+    "test_date": "2025-11-02 20:10:23"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-02 20:10:23"
+    },
     {
       "performance": 48,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 20:29:14"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -21,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 20:10:23",
+    "test_date_previous": "2025-10-26 20:29:14"
+  }
 }

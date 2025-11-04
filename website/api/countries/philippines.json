@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.888Z",
+    "generated_at": "2025-11-04T09:04:15.717Z",
     "country": "Philippines",
     "flag": "🌍",
-    "website_count": 5
+    "website_count": 7
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 69,
-    "best_practices": 60,
+    "performance": 32,
+    "accessibility": 71,
+    "best_practices": 63,
     "seo": 78,
-    "pwa": 35
+    "pwa": 43
   },
   "websites": [
     {
@@ -38,59 +38,83 @@
       "test_date": "2025-10-29 04:31:27"
     },
     {
-      "url": "bpi.com.ph",
-      "industry": "Finance",
+      "url": "shopee.ph",
+      "industry": "E-commerce",
       "scores": {
-        "performance": 37,
-        "accessibility": 79,
+        "performance": 29,
+        "accessibility": 76,
         "best_practices": 83,
-        "seo": 62,
-        "pwa": 33
+        "seo": 92,
+        "pwa": 89
       },
-      "test_date": "2025-10-26 19:47:31"
-    },
-    {
-      "url": "abs-cbn.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 25,
-        "accessibility": 78,
-        "best_practices": 75,
-        "seo": 84,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 19:32:23"
+      "test_date": "2025-10-31 04:17:15"
     },
     {
       "url": "bdo.com.ph",
       "industry": "Finance",
       "scores": {
-        "performance": 20,
+        "performance": 28,
         "accessibility": 66,
         "best_practices": 0,
         "seo": 71,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:05:50"
+      "test_date": "2025-11-02 14:09:26"
+    },
+    {
+      "url": "bpi.com.ph",
+      "industry": "Finance",
+      "scores": {
+        "performance": 27,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 62,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 16:19:54"
+    },
+    {
+      "url": "smart.com.ph",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 21,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 61,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 06:15:58"
+    },
+    {
+      "url": "abs-cbn.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 16,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 03:13:37"
     }
   ],
   "industries": [
     {
       "industry": "E-commerce",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 41,
-        "accessibility": 31,
-        "best_practices": 58,
-        "seo": 86,
-        "pwa": 33
+        "performance": 35,
+        "accessibility": 54,
+        "best_practices": 71,
+        "seo": 89,
+        "pwa": 61
       }
     },
     {
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 29,
+        "performance": 28,
         "accessibility": 73,
         "best_practices": 42,
         "seo": 67,
@@ -101,11 +125,22 @@
       "industry": "Media",
       "website_count": 2,
       "averages": {
-        "performance": 45,
-        "accessibility": 84,
-        "best_practices": 79,
-        "seo": 85,
+        "performance": 41,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 88,
         "pwa": 39
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 21,
+        "accessibility": 68,
+        "best_practices": 67,
+        "seo": 61,
+        "pwa": 33
       }
     }
   ]

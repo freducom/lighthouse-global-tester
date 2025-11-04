@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.132Z",
+    "generated_at": "2025-11-04T09:04:16.811Z",
     "url": "telegraph.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
+    "performance": 37,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-24 08:16:28"
+    "test_date": "2025-10-31 16:23:26"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-10-31 16:23:26"
+    },
     {
       "performance": 27,
       "accessibility": 98,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -17,
+    "performance": 10,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": 1,
+    "best_practices": 0,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-24 08:16:28",
-    "test_date_previous": "2025-10-23 07:33:55"
+    "test_date_current": "2025-10-31 16:23:26",
+    "test_date_previous": "2025-10-24 08:16:28"
   }
 }

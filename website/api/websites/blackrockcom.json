@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.135Z",
+    "generated_at": "2025-11-04T09:04:16.831Z",
     "url": "blackrock.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 36,
     "accessibility": 85,
-    "best_practices": 75,
+    "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-26 16:50:45"
+    "test_date": "2025-11-02 14:20:56"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-02 14:20:56"
+    },
     {
       "performance": 25,
       "accessibility": 85,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 16:50:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 11,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 14:20:56",
+    "test_date_previous": "2025-10-26 16:50:45"
+  }
 }

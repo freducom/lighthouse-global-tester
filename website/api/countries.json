@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.626Z",
+    "generated_at": "2025-11-04T09:04:14.672Z",
     "total_countries": 70
   },
   "countries": [
@@ -8,7 +8,7 @@
       "country": "Angola",
       "website_count": 1,
       "averages": {
-        "performance": 51,
+        "performance": 47,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 99,
@@ -19,13 +19,13 @@
     },
     {
       "country": "Argentina",
-      "website_count": 3,
+      "website_count": 5,
       "averages": {
-        "performance": 30,
-        "accessibility": 94,
+        "performance": 37,
+        "accessibility": 92,
         "best_practices": 75,
-        "seo": 90,
-        "pwa": 37
+        "seo": 92,
+        "pwa": 35
       },
       "flag": "🌍",
       "api_endpoint": "countries/argentina.json"
@@ -48,7 +48,7 @@
       "website_count": 10,
       "averages": {
         "performance": 46,
-        "accessibility": 90,
+        "accessibility": 89,
         "best_practices": 88,
         "seo": 90,
         "pwa": 47
@@ -60,9 +60,9 @@
       "country": "Bangladesh",
       "website_count": 5,
       "averages": {
-        "performance": 35,
-        "accessibility": 79,
-        "best_practices": 75,
+        "performance": 39,
+        "accessibility": 80,
+        "best_practices": 70,
         "seo": 92,
         "pwa": 58
       },
@@ -73,9 +73,9 @@
       "country": "Belgium",
       "website_count": 8,
       "averages": {
-        "performance": 52,
-        "accessibility": 92,
-        "best_practices": 80,
+        "performance": 51,
+        "accessibility": 93,
+        "best_practices": 83,
         "seo": 90,
         "pwa": 39
       },
@@ -84,13 +84,13 @@
     },
     {
       "country": "Bolivia",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 79,
-        "accessibility": 84,
-        "best_practices": 100,
-        "seo": 95,
-        "pwa": 33
+        "performance": 68,
+        "accessibility": 85,
+        "best_practices": 94,
+        "seo": 92,
+        "pwa": 36
       },
       "flag": "🇧🇴",
       "api_endpoint": "countries/bolivia.json"
@@ -99,23 +99,23 @@
       "country": "Brazil",
       "website_count": 10,
       "averages": {
-        "performance": 48,
-        "accessibility": 85,
+        "performance": 41,
+        "accessibility": 87,
         "best_practices": 79,
-        "seo": 89,
-        "pwa": 48
+        "seo": 90,
+        "pwa": 49
       },
       "flag": "🇧🇷",
       "api_endpoint": "countries/brazil.json"
     },
     {
       "country": "Bulgaria",
-      "website_count": 3,
+      "website_count": 9,
       "averages": {
-        "performance": 59,
-        "accessibility": 77,
-        "best_practices": 78,
-        "seo": 94,
+        "performance": 30,
+        "accessibility": 87,
+        "best_practices": 70,
+        "seo": 92,
         "pwa": 41
       },
       "flag": "🌍",
@@ -125,10 +125,10 @@
       "country": "Canada",
       "website_count": 23,
       "averages": {
-        "performance": 34,
+        "performance": 38,
         "accessibility": 93,
-        "best_practices": 70,
-        "seo": 87,
+        "best_practices": 67,
+        "seo": 88,
         "pwa": 42
       },
       "flag": "🇨🇦",
@@ -136,13 +136,13 @@
     },
     {
       "country": "Chile",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 38,
+        "performance": 30,
         "accessibility": 81,
-        "best_practices": 75,
-        "seo": 88,
-        "pwa": 31
+        "best_practices": 77,
+        "seo": 89,
+        "pwa": 32
       },
       "flag": "🇨🇱",
       "api_endpoint": "countries/chile.json"
@@ -153,7 +153,7 @@
       "averages": {
         "performance": 42,
         "accessibility": 54,
-        "best_practices": 65,
+        "best_practices": 69,
         "seo": 85,
         "pwa": 42
       },
@@ -164,8 +164,8 @@
       "country": "Costa Rica",
       "website_count": 3,
       "averages": {
-        "performance": 51,
-        "accessibility": 80,
+        "performance": 52,
+        "accessibility": 81,
         "best_practices": 72,
         "seo": 86,
         "pwa": 33
@@ -175,13 +175,13 @@
     },
     {
       "country": "Cuba",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 50,
-        "accessibility": 72,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 22
+        "performance": 64,
+        "accessibility": 75,
+        "best_practices": 72,
+        "seo": 92,
+        "pwa": 29
       },
       "flag": "🇨🇺",
       "api_endpoint": "countries/cuba.json"
@@ -190,10 +190,10 @@
       "country": "Czechia",
       "website_count": 8,
       "averages": {
-        "performance": 39,
+        "performance": 38,
         "accessibility": 66,
         "best_practices": 71,
-        "seo": 87,
+        "seo": 86,
         "pwa": 40
       },
       "flag": "🇨🇿",
@@ -201,13 +201,13 @@
     },
     {
       "country": "Denmark",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 47,
-        "accessibility": 92,
+        "performance": 46,
+        "accessibility": 90,
         "best_practices": 92,
-        "seo": 95,
-        "pwa": 43
+        "seo": 93,
+        "pwa": 42
       },
       "flag": "🇩🇰",
       "api_endpoint": "countries/denmark.json"
@@ -216,9 +216,9 @@
       "country": "Egypt",
       "website_count": 8,
       "averages": {
-        "performance": 37,
-        "accessibility": 87,
-        "best_practices": 67,
+        "performance": 39,
+        "accessibility": 86,
+        "best_practices": 68,
         "seo": 91,
         "pwa": 46
       },
@@ -227,26 +227,26 @@
     },
     {
       "country": "Estonia",
-      "website_count": 6,
+      "website_count": 10,
       "averages": {
-        "performance": 34,
-        "accessibility": 88,
+        "performance": 36,
+        "accessibility": 85,
         "best_practices": 86,
-        "seo": 93,
-        "pwa": 50
+        "seo": 89,
+        "pwa": 43
       },
       "flag": "🇪🇪",
       "api_endpoint": "countries/estonia.json"
     },
     {
       "country": "Finland",
-      "website_count": 54,
+      "website_count": 130,
       "averages": {
-        "performance": 45,
+        "performance": 49,
         "accessibility": 91,
-        "best_practices": 89,
-        "seo": 94,
-        "pwa": 43
+        "best_practices": 88,
+        "seo": 92,
+        "pwa": 40
       },
       "flag": "🇫🇮",
       "api_endpoint": "countries/finland.json"
@@ -255,9 +255,9 @@
       "country": "France",
       "website_count": 9,
       "averages": {
-        "performance": 48,
+        "performance": 51,
         "accessibility": 87,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 95,
         "pwa": 65
       },
@@ -266,13 +266,13 @@
     },
     {
       "country": "Germany",
-      "website_count": 30,
+      "website_count": 38,
       "averages": {
         "performance": 44,
-        "accessibility": 88,
+        "accessibility": 90,
         "best_practices": 89,
         "seo": 92,
-        "pwa": 50
+        "pwa": 48
       },
       "flag": "🇩🇪",
       "api_endpoint": "countries/germany.json"
@@ -281,23 +281,23 @@
       "country": "Greece",
       "website_count": 5,
       "averages": {
-        "performance": 49,
+        "performance": 48,
         "accessibility": 86,
-        "best_practices": 80,
+        "best_practices": 78,
         "seo": 93,
-        "pwa": 35
+        "pwa": 33
       },
       "flag": "🇬🇷",
       "api_endpoint": "countries/greece.json"
     },
     {
       "country": "Hong Kong",
-      "website_count": 2,
+      "website_count": 5,
       "averages": {
-        "performance": 43,
-        "accessibility": 70,
-        "best_practices": 83,
-        "seo": 85,
+        "performance": 32,
+        "accessibility": 74,
+        "best_practices": 80,
+        "seo": 83,
         "pwa": 33
       },
       "flag": "🌍",
@@ -307,10 +307,10 @@
       "country": "Hungary",
       "website_count": 8,
       "averages": {
-        "performance": 38,
-        "accessibility": 79,
-        "best_practices": 77,
-        "seo": 92,
+        "performance": 29,
+        "accessibility": 77,
+        "best_practices": 76,
+        "seo": 91,
         "pwa": 46
       },
       "flag": "🇭🇺",
@@ -318,13 +318,13 @@
     },
     {
       "country": "India",
-      "website_count": 45,
+      "website_count": 107,
       "averages": {
-        "performance": 43,
-        "accessibility": 84,
-        "best_practices": 74,
-        "seo": 86,
-        "pwa": 47
+        "performance": 47,
+        "accessibility": 82,
+        "best_practices": 76,
+        "seo": 85,
+        "pwa": 48
       },
       "flag": "🇮🇳",
       "api_endpoint": "countries/india.json"
@@ -335,7 +335,7 @@
       "averages": {
         "performance": 30,
         "accessibility": 88,
-        "best_practices": 79,
+        "best_practices": 74,
         "seo": 92,
         "pwa": 37
       },
@@ -344,13 +344,13 @@
     },
     {
       "country": "Iran",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 68,
-        "accessibility": 83,
-        "best_practices": 72,
+        "performance": 65,
+        "accessibility": 86,
+        "best_practices": 73,
         "seo": 89,
-        "pwa": 36
+        "pwa": 34
       },
       "flag": "🇮🇷",
       "api_endpoint": "countries/iran.json"
@@ -359,9 +359,9 @@
       "country": "Ireland",
       "website_count": 10,
       "averages": {
-        "performance": 45,
+        "performance": 44,
         "accessibility": 88,
-        "best_practices": 82,
+        "best_practices": 83,
         "seo": 89,
         "pwa": 43
       },
@@ -372,10 +372,10 @@
       "country": "Israel",
       "website_count": 10,
       "averages": {
-        "performance": 34,
-        "accessibility": 73,
-        "best_practices": 75,
-        "seo": 90,
+        "performance": 40,
+        "accessibility": 72,
+        "best_practices": 77,
+        "seo": 89,
         "pwa": 35
       },
       "flag": "🇮🇱",
@@ -383,13 +383,13 @@
     },
     {
       "country": "Italy",
-      "website_count": 7,
+      "website_count": 9,
       "averages": {
-        "performance": 40,
-        "accessibility": 85,
-        "best_practices": 82,
-        "seo": 88,
-        "pwa": 43
+        "performance": 43,
+        "accessibility": 84,
+        "best_practices": 80,
+        "seo": 87,
+        "pwa": 41
       },
       "flag": "🇮🇹",
       "api_endpoint": "countries/italy.json"
@@ -398,9 +398,9 @@
       "country": "Japan",
       "website_count": 7,
       "averages": {
-        "performance": 45,
-        "accessibility": 79,
-        "best_practices": 90,
+        "performance": 42,
+        "accessibility": 81,
+        "best_practices": 87,
         "seo": 89,
         "pwa": 33
       },
@@ -411,11 +411,11 @@
       "country": "Kenya",
       "website_count": 6,
       "averages": {
-        "performance": 38,
+        "performance": 36,
         "accessibility": 88,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 31
+        "best_practices": 76,
+        "seo": 87,
+        "pwa": 33
       },
       "flag": "🇰🇪",
       "api_endpoint": "countries/kenya.json"
@@ -424,9 +424,9 @@
       "country": "Latvia",
       "website_count": 6,
       "averages": {
-        "performance": 37,
+        "performance": 38,
         "accessibility": 77,
-        "best_practices": 79,
+        "best_practices": 81,
         "seo": 85,
         "pwa": 44
       },
@@ -437,9 +437,9 @@
       "country": "Libya",
       "website_count": 5,
       "averages": {
-        "performance": 54,
+        "performance": 53,
         "accessibility": 89,
-        "best_practices": 83,
+        "best_practices": 85,
         "seo": 87,
         "pwa": 33
       },
@@ -451,23 +451,23 @@
       "website_count": 5,
       "averages": {
         "performance": 49,
-        "accessibility": 64,
-        "best_practices": 73,
-        "seo": 85,
-        "pwa": 47
+        "accessibility": 67,
+        "best_practices": 78,
+        "seo": 88,
+        "pwa": 49
       },
       "flag": "🇱🇹",
       "api_endpoint": "countries/lithuania.json"
     },
     {
       "country": "Luxembourg",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 51,
-        "accessibility": 90,
-        "best_practices": 87,
+        "performance": 44,
+        "accessibility": 92,
+        "best_practices": 85,
         "seo": 93,
-        "pwa": 42
+        "pwa": 44
       },
       "flag": "🇱🇺",
       "api_endpoint": "countries/luxembourg.json"
@@ -476,7 +476,7 @@
       "country": "Malaysia",
       "website_count": 3,
       "averages": {
-        "performance": 79,
+        "performance": 83,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 86,
@@ -487,13 +487,13 @@
     },
     {
       "country": "Malta",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 50,
+        "performance": 53,
         "accessibility": 86,
-        "best_practices": 67,
-        "seo": 90,
-        "pwa": 30
+        "best_practices": 50,
+        "seo": 84,
+        "pwa": 31
       },
       "flag": "🇲🇹",
       "api_endpoint": "countries/malta.json"
@@ -502,7 +502,7 @@
       "country": "Mexico",
       "website_count": 5,
       "averages": {
-        "performance": 55,
+        "performance": 59,
         "accessibility": 93,
         "best_practices": 88,
         "seo": 93,
@@ -513,13 +513,13 @@
     },
     {
       "country": "Morocco",
-      "website_count": 7,
+      "website_count": 9,
       "averages": {
-        "performance": 44,
-        "accessibility": 81,
-        "best_practices": 75,
-        "seo": 87,
-        "pwa": 38
+        "performance": 45,
+        "accessibility": 83,
+        "best_practices": 74,
+        "seo": 88,
+        "pwa": 37
       },
       "flag": "🌍",
       "api_endpoint": "countries/morocco.json"
@@ -541,7 +541,7 @@
       "country": "Netherlands",
       "website_count": 10,
       "averages": {
-        "performance": 54,
+        "performance": 51,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 91,
@@ -552,38 +552,38 @@
     },
     {
       "country": "New Zealand",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 40,
-        "accessibility": 83,
-        "best_practices": 65,
-        "seo": 88,
-        "pwa": 47
+        "performance": 50,
+        "accessibility": 84,
+        "best_practices": 57,
+        "seo": 86,
+        "pwa": 48
       },
       "flag": "🇳🇿",
       "api_endpoint": "countries/new-zealand.json"
     },
     {
       "country": "Nigeria",
-      "website_count": 2,
+      "website_count": 7,
       "averages": {
-        "performance": 40,
-        "accessibility": 95,
-        "best_practices": 75,
-        "seo": 96,
-        "pwa": 89
+        "performance": 48,
+        "accessibility": 86,
+        "best_practices": 80,
+        "seo": 88,
+        "pwa": 48
       },
       "flag": "🌍",
       "api_endpoint": "countries/nigeria.json"
     },
     {
       "country": "Norway",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 45,
-        "accessibility": 94,
-        "best_practices": 88,
-        "seo": 95,
+        "performance": 47,
+        "accessibility": 93,
+        "best_practices": 89,
+        "seo": 94,
         "pwa": 37
       },
       "flag": "🇳🇴",
@@ -591,13 +591,13 @@
     },
     {
       "country": "Pakistan",
-      "website_count": 7,
+      "website_count": 9,
       "averages": {
         "performance": 49,
-        "accessibility": 70,
-        "best_practices": 76,
+        "accessibility": 74,
+        "best_practices": 79,
         "seo": 90,
-        "pwa": 44
+        "pwa": 42
       },
       "flag": "🌍",
       "api_endpoint": "countries/pakistan.json"
@@ -606,7 +606,7 @@
       "country": "Paraguay",
       "website_count": 3,
       "averages": {
-        "performance": 39,
+        "performance": 40,
         "accessibility": 92,
         "best_practices": 80,
         "seo": 95,
@@ -617,38 +617,38 @@
     },
     {
       "country": "Philippines",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 38,
-        "accessibility": 69,
-        "best_practices": 60,
+        "performance": 32,
+        "accessibility": 71,
+        "best_practices": 63,
         "seo": 78,
-        "pwa": 35
+        "pwa": 43
       },
       "flag": "🌍",
       "api_endpoint": "countries/philippines.json"
     },
     {
       "country": "Poland",
-      "website_count": 16,
+      "website_count": 24,
       "averages": {
-        "performance": 46,
-        "accessibility": 88,
+        "performance": 45,
+        "accessibility": 85,
         "best_practices": 81,
-        "seo": 93,
-        "pwa": 54
+        "seo": 92,
+        "pwa": 53
       },
       "flag": "🇵🇱",
       "api_endpoint": "countries/poland.json"
     },
     {
       "country": "Portugal",
-      "website_count": 1,
+      "website_count": 7,
       "averages": {
-        "performance": 12,
-        "accessibility": 87,
-        "best_practices": 58,
-        "seo": 88,
+        "performance": 41,
+        "accessibility": 88,
+        "best_practices": 78,
+        "seo": 92,
         "pwa": 33
       },
       "flag": "🌍",
@@ -656,13 +656,13 @@
     },
     {
       "country": "Romania",
-      "website_count": 5,
+      "website_count": 8,
       "averages": {
-        "performance": 50,
-        "accessibility": 83,
-        "best_practices": 82,
-        "seo": 95,
-        "pwa": 40
+        "performance": 40,
+        "accessibility": 91,
+        "best_practices": 71,
+        "seo": 92,
+        "pwa": 37
       },
       "flag": "🌍",
       "api_endpoint": "countries/romania.json"
@@ -671,36 +671,36 @@
       "country": "Russia",
       "website_count": 9,
       "averages": {
-        "performance": 39,
-        "accessibility": 73,
-        "best_practices": 60,
-        "seo": 91,
-        "pwa": 61
+        "performance": 43,
+        "accessibility": 75,
+        "best_practices": 64,
+        "seo": 92,
+        "pwa": 59
       },
       "flag": "🇷🇺",
       "api_endpoint": "countries/russia.json"
     },
     {
       "country": "Saudi Arabia",
-      "website_count": 3,
+      "website_count": 9,
       "averages": {
-        "performance": 39,
-        "accessibility": 73,
-        "best_practices": 78,
-        "seo": 88,
-        "pwa": 33
+        "performance": 38,
+        "accessibility": 83,
+        "best_practices": 64,
+        "seo": 86,
+        "pwa": 39
       },
       "flag": "🌍",
       "api_endpoint": "countries/saudi-arabia.json"
     },
     {
       "country": "Singapore",
-      "website_count": 4,
+      "website_count": 6,
       "averages": {
-        "performance": 24,
-        "accessibility": 81,
-        "best_practices": 79,
-        "seo": 81,
+        "performance": 30,
+        "accessibility": 83,
+        "best_practices": 78,
+        "seo": 85,
         "pwa": 33
       },
       "flag": "🇸🇬",
@@ -710,10 +710,10 @@
       "country": "Slovakia",
       "website_count": 8,
       "averages": {
-        "performance": 37,
+        "performance": 39,
         "accessibility": 85,
-        "best_practices": 77,
-        "seo": 93,
+        "best_practices": 81,
+        "seo": 91,
         "pwa": 46
       },
       "flag": "🇸🇰",
@@ -721,13 +721,13 @@
     },
     {
       "country": "South Africa",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 36,
-        "accessibility": 89,
-        "best_practices": 79,
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 80,
         "seo": 86,
-        "pwa": 54
+        "pwa": 51
       },
       "flag": "🇿🇦",
       "api_endpoint": "countries/south-africa.json"
@@ -736,8 +736,8 @@
       "country": "South Korea",
       "website_count": 10,
       "averages": {
-        "performance": 34,
-        "accessibility": 78,
+        "performance": 37,
+        "accessibility": 77,
         "best_practices": 75,
         "seo": 89,
         "pwa": 33
@@ -747,26 +747,26 @@
     },
     {
       "country": "Spain",
-      "website_count": 6,
+      "website_count": 9,
       "averages": {
         "performance": 42,
-        "accessibility": 85,
-        "best_practices": 77,
-        "seo": 91,
-        "pwa": 41
+        "accessibility": 86,
+        "best_practices": 79,
+        "seo": 89,
+        "pwa": 48
       },
       "flag": "🇪🇸",
       "api_endpoint": "countries/spain.json"
     },
     {
       "country": "Sweden",
-      "website_count": 51,
+      "website_count": 99,
       "averages": {
-        "performance": 49,
-        "accessibility": 93,
+        "performance": 51,
+        "accessibility": 92,
         "best_practices": 91,
         "seo": 93,
-        "pwa": 42
+        "pwa": 41
       },
       "flag": "🇸🇪",
       "api_endpoint": "countries/sweden.json"
@@ -775,10 +775,10 @@
       "country": "Switzerland",
       "website_count": 8,
       "averages": {
-        "performance": 39,
+        "performance": 36,
         "accessibility": 93,
-        "best_practices": 84,
-        "seo": 95,
+        "best_practices": 83,
+        "seo": 93,
         "pwa": 43
       },
       "flag": "🇨🇭",
@@ -788,7 +788,7 @@
       "country": "Taiwan",
       "website_count": 2,
       "averages": {
-        "performance": 33,
+        "performance": 38,
         "accessibility": 84,
         "best_practices": 84,
         "seo": 100,
@@ -801,10 +801,10 @@
       "country": "Thailand",
       "website_count": 7,
       "averages": {
-        "performance": 36,
-        "accessibility": 95,
-        "best_practices": 76,
-        "seo": 96,
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 75,
+        "seo": 94,
         "pwa": 52
       },
       "flag": "🇹🇭",
@@ -814,10 +814,10 @@
       "country": "Turkey",
       "website_count": 7,
       "averages": {
-        "performance": 47,
+        "performance": 46,
         "accessibility": 88,
-        "best_practices": 82,
-        "seo": 92,
+        "best_practices": 83,
+        "seo": 91,
         "pwa": 43
       },
       "flag": "🇹🇷",
@@ -825,11 +825,11 @@
     },
     {
       "country": "Ukraine",
-      "website_count": 8,
+      "website_count": 10,
       "averages": {
-        "performance": 54,
-        "accessibility": 81,
-        "best_practices": 74,
+        "performance": 56,
+        "accessibility": 80,
+        "best_practices": 76,
         "seo": 92,
         "pwa": 54
       },
@@ -838,64 +838,64 @@
     },
     {
       "country": "United Arab Emirates",
-      "website_count": 3,
+      "website_count": 8,
       "averages": {
-        "performance": 28,
-        "accessibility": 91,
-        "best_practices": 69,
-        "seo": 83,
-        "pwa": 41
+        "performance": 25,
+        "accessibility": 83,
+        "best_practices": 70,
+        "seo": 84,
+        "pwa": 43
       },
       "flag": "🌍",
       "api_endpoint": "countries/united-arab-emirates.json"
     },
     {
       "country": "United Kingdom",
-      "website_count": 29,
+      "website_count": 33,
       "averages": {
-        "performance": 39,
-        "accessibility": 89,
-        "best_practices": 78,
-        "seo": 90,
-        "pwa": 45
+        "performance": 43,
+        "accessibility": 88,
+        "best_practices": 80,
+        "seo": 89,
+        "pwa": 44
       },
       "flag": "🇬🇧",
       "api_endpoint": "countries/united-kingdom.json"
     },
     {
       "country": "United States",
-      "website_count": 81,
+      "website_count": 124,
       "averages": {
-        "performance": 44,
-        "accessibility": 90,
-        "best_practices": 78,
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 80,
         "seo": 89,
-        "pwa": 40
+        "pwa": 39
       },
       "flag": "🇺🇸",
       "api_endpoint": "countries/united-states.json"
     },
     {
       "country": "Uruguay",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 46,
-        "accessibility": 72,
-        "best_practices": 78,
-        "seo": 93,
-        "pwa": 37
+        "performance": 57,
+        "accessibility": 75,
+        "best_practices": 81,
+        "seo": 92,
+        "pwa": 36
       },
       "flag": "🇺🇾",
       "api_endpoint": "countries/uruguay.json"
     },
     {
       "country": "Vietnam",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 41,
-        "accessibility": 82,
+        "performance": 33,
+        "accessibility": 83,
         "best_practices": 75,
-        "seo": 93,
+        "seo": 91,
         "pwa": 35
       },
       "flag": "🇻🇳",
@@ -905,9 +905,9 @@
       "country": "Zambia",
       "website_count": 9,
       "averages": {
-        "performance": 52,
+        "performance": 55,
         "accessibility": 90,
-        "best_practices": 81,
+        "best_practices": 80,
         "seo": 85,
         "pwa": 31
       },

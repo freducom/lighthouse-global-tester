@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.121Z",
+    "generated_at": "2025-11-04T09:04:16.764Z",
     "url": "standoutcapital.com",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 90,
+    "performance": 94,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-24 02:55:04"
+    "test_date": "2025-10-31 08:27:10"
   },
   "historical_data": [
+    {
+      "performance": 94,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-31 08:27:10"
+    },
     {
       "performance": 90,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 02:55:04"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 08:27:10",
+    "test_date_previous": "2025-10-24 02:55:04"
+  }
 }

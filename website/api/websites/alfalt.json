@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.088Z",
+    "generated_at": "2025-11-04T09:04:16.623Z",
     "url": "alfa.lt",
     "country": "Lithuania",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 10,
+    "performance": 14,
     "accessibility": 80,
-    "best_practices": 75,
+    "best_practices": 83,
     "seo": 92,
-    "pwa": 22,
-    "test_date": "2025-10-27 07:35:17"
+    "pwa": 33,
+    "test_date": "2025-11-02 04:23:53"
   },
   "historical_data": [
+    {
+      "performance": 14,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-02 04:23:53"
+    },
     {
       "performance": 10,
       "accessibility": 80,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 07:35:17"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 11,
+    "test_date_current": "2025-11-02 04:23:53",
+    "test_date_previous": "2025-10-27 07:35:17"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.090Z",
+    "generated_at": "2025-11-04T09:04:16.627Z",
     "url": "mymoney.com.my",
     "country": "Malaysia",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 80,
+    "performance": 81,
     "accessibility": 88,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-22 14:57:58"
+    "test_date": "2025-10-29 20:15:09"
   },
   "historical_data": [
+    {
+      "performance": 81,
+      "accessibility": 88,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-29 20:15:09"
+    },
     {
       "performance": 80,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 14:57:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 20:15:09",
+    "test_date_previous": "2025-10-22 14:57:58"
+  }
 }

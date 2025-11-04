@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.962Z",
+    "generated_at": "2025-11-04T09:04:16.075Z",
     "industry": "Finance",
-    "website_count": 78
+    "website_count": 125
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 89,
-    "best_practices": 81,
+    "performance": 47,
+    "accessibility": 88,
+    "best_practices": 82,
     "seo": 89,
-    "pwa": 38
+    "pwa": 37
   },
   "websites": [
     {
       "url": "bancogalicia.com",
       "country": "Argentina",
       "scores": {
-        "performance": 41,
+        "performance": 36,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:44:24"
+      "test_date": "2025-11-02 12:17:06"
     },
     {
       "url": "bbva.com.ar",
@@ -37,76 +37,100 @@
       "test_date": "2025-10-26 16:04:13"
     },
     {
+      "url": "fibank.bg",
+      "country": "Bulgaria",
+      "scores": {
+        "performance": 44,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 20:14:08"
+    },
+    {
+      "url": "unicreditbulbank.bg",
+      "country": "Bulgaria",
+      "scores": {
+        "performance": 48,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 04:13:39"
+    },
+    {
       "url": "bankofcanada.ca",
       "country": "Canada",
       "scores": {
-        "performance": 44,
-        "accessibility": 96,
+        "performance": 43,
+        "accessibility": 94,
         "best_practices": 83,
-        "seo": 83,
+        "seo": 84,
         "pwa": 44
       },
-      "test_date": "2025-10-26 15:58:56"
+      "test_date": "2025-11-02 12:23:44"
     },
     {
       "url": "bmo.com",
       "country": "Canada",
       "scores": {
-        "performance": 26,
+        "performance": 30,
         "accessibility": 100,
         "best_practices": 67,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:39:13"
+      "test_date": "2025-11-02 16:15:16"
     },
     {
       "url": "rbcroyalbank.com",
       "country": "Canada",
       "scores": {
-        "performance": 16,
-        "accessibility": 97,
+        "performance": 13,
+        "accessibility": 100,
         "best_practices": 83,
-        "seo": 91,
+        "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-23 12:18:52"
+      "test_date": "2025-10-30 18:19:04"
     },
     {
       "url": "scotiabank.com",
       "country": "Canada",
       "scores": {
-        "performance": 35,
+        "performance": 37,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 19:33:56"
+      "test_date": "2025-10-31 03:06:14"
     },
     {
       "url": "td.com",
       "country": "Canada",
       "scores": {
-        "performance": 26,
+        "performance": 20,
         "accessibility": 92,
         "best_practices": 0,
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-24 08:15:02"
+      "test_date": "2025-10-31 16:14:45"
     },
     {
       "url": "swedbank.ee",
       "country": "Estonia",
       "scores": {
-        "performance": 38,
+        "performance": 39,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-24 04:16:45"
+      "test_date": "2025-10-31 12:20:44"
     },
     {
       "url": "aktia.fi",
@@ -118,31 +142,43 @@
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:33:49"
+      "test_date": "2025-11-02 04:21:45"
     },
     {
       "url": "apelago.fi",
       "country": "Finland",
       "scores": {
-        "performance": 63,
+        "performance": 65,
         "accessibility": 75,
         "best_practices": 100,
         "seo": 83,
         "pwa": 67
       },
-      "test_date": "2025-10-26 08:46:06"
+      "test_date": "2025-11-02 08:16:28"
     },
     {
       "url": "banknorwegian.fi",
       "country": "Finland",
       "scores": {
-        "performance": 41,
+        "performance": 72,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-26 15:54:58"
+      "test_date": "2025-11-02 12:20:44"
+    },
+    {
+      "url": "gorillacapital.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 62,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:15:22"
     },
     {
       "url": "holvi.com",
@@ -169,88 +205,160 @@
       "test_date": "2025-10-28 14:17:38"
     },
     {
+      "url": "mandatum.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 57,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 22
+      },
+      "test_date": "2025-10-29 12:21:49"
+    },
+    {
+      "url": "nordea.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 65,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 03:06:54"
+    },
+    {
+      "url": "northzone.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 81,
+        "accessibility": 74,
+        "best_practices": 100,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 03:08:24"
+    },
+    {
       "url": "op.fi",
       "country": "Finland",
       "scores": {
-        "performance": 26,
+        "performance": 30,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 02:59:22"
+      "test_date": "2025-10-30 08:18:46"
     },
     {
       "url": "openocean.vc",
       "country": "Finland",
       "scores": {
-        "performance": 78,
+        "performance": 73,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-23 02:59:36"
+      "test_date": "2025-10-30 08:19:56"
+    },
+    {
+      "url": "s-pankki.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 42,
+        "accessibility": 94,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 22:12:25"
+    },
+    {
+      "url": "sampo.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 30,
+        "accessibility": 98,
+        "best_practices": 0,
+        "seo": 79,
+        "pwa": 11
+      },
+      "test_date": "2025-10-31 00:43:06"
     },
     {
       "url": "superherocapital.com",
       "country": "Finland",
       "scores": {
-        "performance": 74,
+        "performance": 75,
         "accessibility": 90,
         "best_practices": 83,
-        "seo": 86,
+        "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-24 04:12:38"
+      "test_date": "2025-10-31 12:19:05"
     },
     {
       "url": "boerse.de",
       "country": "Germany",
       "scores": {
-        "performance": 56,
+        "performance": 59,
         "accessibility": 92,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:39:56"
+      "test_date": "2025-11-02 16:15:50"
     },
     {
       "url": "comdirect.de",
       "country": "Germany",
       "scores": {
-        "performance": 49,
+        "performance": 50,
         "accessibility": 91,
         "best_practices": 100,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-27 03:20:13"
+      "test_date": "2025-11-03 00:58:22"
+    },
+    {
+      "url": "commerzbank.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 49,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 03:12:38"
     },
     {
       "url": "consorsbank.de",
       "country": "Germany",
       "scores": {
-        "performance": 45,
+        "performance": 43,
         "accessibility": 90,
         "best_practices": 83,
         "seo": 93,
         "pwa": 44
       },
-      "test_date": "2025-10-27 04:21:00"
+      "test_date": "2025-11-03 03:13:20"
     },
     {
       "url": "deutsche-bank.de",
       "country": "Germany",
       "scores": {
-        "performance": 44,
+        "performance": 29,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-27 10:14:04"
+      "test_date": "2025-11-03 08:17:01"
     },
     {
       "url": "ing.de",
@@ -265,40 +373,88 @@
       "test_date": "2025-10-28 18:19:01"
     },
     {
+      "url": "mcfcorpfin.com",
+      "country": "Germany",
+      "scores": {
+        "performance": 45,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 12:33:21"
+    },
+    {
       "url": "postbank.de",
       "country": "Germany",
       "scores": {
-        "performance": 17,
+        "performance": 14,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 08:29:50"
+      "test_date": "2025-10-30 14:02:18"
+    },
+    {
+      "url": "sparda-bank.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 90,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 08:14:13"
     },
     {
       "url": "sparkasse.de",
       "country": "Germany",
       "scores": {
-        "performance": 40,
+        "performance": 42,
         "accessibility": 92,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-24 00:40:09"
+      "test_date": "2025-10-31 08:14:31"
+    },
+    {
+      "url": "targobank.de",
+      "country": "Germany",
+      "scores": {
+        "performance": 68,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 14:16:12"
+    },
+    {
+      "url": "hangseng.com",
+      "country": "Hong Kong",
+      "scores": {
+        "performance": 9,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 06:31:05"
     },
     {
       "url": "axisbank.com",
       "country": "India",
       "scores": {
-        "performance": 52,
-        "accessibility": 80,
-        "best_practices": 0,
+        "performance": 53,
+        "accessibility": 85,
+        "best_practices": 75,
         "seo": 84,
         "pwa": 56
       },
-      "test_date": "2025-10-26 13:42:10"
+      "test_date": "2025-11-02 10:18:22"
     },
     {
       "url": "bankbazaar.com",
@@ -310,19 +466,31 @@
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:44:36"
+      "test_date": "2025-11-02 12:17:20"
+    },
+    {
+      "url": "groww.in",
+      "country": "India",
+      "scores": {
+        "performance": 45,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 95,
+        "pwa": 67
+      },
+      "test_date": "2025-11-04 06:19:46"
     },
     {
       "url": "hdfcbank.com",
       "country": "India",
       "scores": {
-        "performance": 79,
+        "performance": 82,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-28 10:33:39"
+      "test_date": "2025-11-04 08:17:18"
     },
     {
       "url": "icicibank.com",
@@ -373,64 +541,160 @@
       "test_date": "2025-10-19 19:47:14"
     },
     {
+      "url": "paytm.com",
+      "country": "India",
+      "scores": {
+        "performance": 52,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 12:18:42"
+    },
+    {
+      "url": "phonepe.com",
+      "country": "India",
+      "scores": {
+        "performance": 48,
+        "accessibility": 80,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 78
+      },
+      "test_date": "2025-10-30 12:31:47"
+    },
+    {
+      "url": "policybazaar.com",
+      "country": "India",
+      "scores": {
+        "performance": 37,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 13:36:41"
+    },
+    {
+      "url": "rbi.org.in",
+      "country": "India",
+      "scores": {
+        "performance": 53,
+        "accessibility": 83,
+        "best_practices": 33,
+        "seo": 67,
+        "pwa": 11
+      },
+      "test_date": "2025-10-30 18:19:26"
+    },
+    {
+      "url": "rblbank.com",
+      "country": "India",
+      "scores": {
+        "performance": 17,
+        "accessibility": 72,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 18:20:12"
+    },
+    {
+      "url": "sbi.co.in",
+      "country": "India",
+      "scores": {
+        "performance": 99,
+        "accessibility": 77,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:50:50"
+    },
+    {
+      "url": "sebi.gov.in",
+      "country": "India",
+      "scores": {
+        "performance": 39,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 73,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 03:07:35"
+    },
+    {
+      "url": "zerodha.com",
+      "country": "India",
+      "scores": {
+        "performance": 77,
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 18:19:06"
+    },
+    {
       "url": "aib.ie",
       "country": "Ireland",
       "scores": {
-        "performance": 41,
+        "performance": 38,
         "accessibility": 72,
         "best_practices": 92,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:12:20"
+      "test_date": "2025-11-02 04:15:11"
     },
     {
       "url": "bankofireland.com",
       "country": "Ireland",
       "scores": {
-        "performance": 30,
+        "performance": 42,
         "accessibility": 99,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-26 15:59:31"
+      "test_date": "2025-11-02 12:24:19"
     },
     {
       "url": "bizportal.co.il",
       "country": "Israel",
       "scores": {
-        "performance": 23,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 97,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 16:49:47"
-    },
-    {
-      "url": "mymoney.com.my",
-      "country": "Malaysia",
-      "scores": {
-        "performance": 80,
-        "accessibility": 88,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 14:57:58"
-    },
-    {
-      "url": "attijariwafabank.com",
-      "country": "Morocco",
-      "scores": {
-        "performance": 84,
+        "performance": 87,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-26 10:19:35"
+      "test_date": "2025-11-02 14:20:31"
+    },
+    {
+      "url": "mymoney.com.my",
+      "country": "Malaysia",
+      "scores": {
+        "performance": 81,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 20:15:09"
+    },
+    {
+      "url": "attijariwafabank.com",
+      "country": "Morocco",
+      "scores": {
+        "performance": 87,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 10:14:33"
     },
     {
       "url": "bankofafrica.ma",
@@ -442,7 +706,7 @@
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 15:58:17"
+      "test_date": "2025-11-02 12:22:59"
     },
     {
       "url": "ing.nl",
@@ -460,85 +724,109 @@
       "url": "rabobank.nl",
       "country": "Netherlands",
       "scores": {
-        "performance": 47,
+        "performance": 37,
         "accessibility": 92,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 10:23:52"
+      "test_date": "2025-10-30 16:32:04"
     },
     {
       "url": "reservebank.govt.nz",
       "country": "New Zealand",
       "scores": {
-        "performance": 30,
-        "accessibility": 89,
-        "best_practices": 75,
-        "seo": 100,
+        "performance": 90,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-23 15:44:31"
+      "test_date": "2025-10-30 20:11:26"
+    },
+    {
+      "url": "gtbank.com",
+      "country": "Nigeria",
+      "scores": {
+        "performance": 62,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-04 06:21:08"
     },
     {
       "url": "dnb.no",
       "country": "Norway",
       "scores": {
-        "performance": 52,
+        "performance": 59,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-27 12:20:18"
+      "test_date": "2025-11-03 10:14:23"
+    },
+    {
+      "url": "hbl.com",
+      "country": "Pakistan",
+      "scores": {
+        "performance": 37,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 08:13:49"
     },
     {
       "url": "bdo.com.ph",
       "country": "Philippines",
       "scores": {
-        "performance": 20,
+        "performance": 28,
         "accessibility": 66,
         "best_practices": 0,
         "seo": 71,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:05:50"
+      "test_date": "2025-11-02 14:09:26"
     },
     {
       "url": "bpi.com.ph",
       "country": "Philippines",
       "scores": {
-        "performance": 37,
+        "performance": 27,
         "accessibility": 79,
         "best_practices": 83,
         "seo": 62,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:47:31"
+      "test_date": "2025-11-02 16:19:54"
     },
     {
       "url": "aliorbank.pl",
       "country": "Poland",
       "scores": {
-        "performance": 23,
+        "performance": 42,
         "accessibility": 89,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 07:59:12"
+      "test_date": "2025-11-02 04:24:19"
     },
     {
       "url": "bankier.pl",
       "country": "Poland",
       "scores": {
-        "performance": 29,
+        "performance": 30,
         "accessibility": 75,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:27:18"
+      "test_date": "2025-11-02 12:20:32"
     },
     {
       "url": "ing.pl",
@@ -553,40 +841,76 @@
       "test_date": "2025-10-28 18:20:17"
     },
     {
+      "url": "money.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 44,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-10-29 18:27:00"
+    },
+    {
+      "url": "millenniumbcp.pt",
+      "country": "Portugal",
+      "scores": {
+        "performance": 27,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 16:24:46"
+    },
+    {
       "url": "bancatransilvania.ro",
       "country": "Romania",
       "scores": {
-        "performance": 50,
-        "accessibility": 58,
-        "best_practices": 83,
+        "performance": 36,
+        "accessibility": 80,
+        "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:44:06"
+      "test_date": "2025-11-02 12:16:48"
     },
     {
       "url": "bcr.ro",
       "country": "Romania",
       "scores": {
-        "performance": 46,
+        "performance": 30,
         "accessibility": 86,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:04:44"
+      "test_date": "2025-11-02 14:08:18"
     },
     {
       "url": "alrajhibank.com.sa",
       "country": "Saudi Arabia",
       "scores": {
-        "performance": 48,
+        "performance": 45,
         "accessibility": 75,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:01:17"
+      "test_date": "2025-11-02 06:14:01"
+    },
+    {
+      "url": "stcpay.com.sa",
+      "country": "Saudi Arabia",
+      "scores": {
+        "performance": 57,
+        "accessibility": 88,
+        "best_practices": 0,
+        "seo": 62,
+        "pwa": 11
+      },
+      "test_date": "2025-10-31 10:11:54"
     },
     {
       "url": "fin24.com",
@@ -610,19 +934,43 @@
         "seo": 71,
         "pwa": 11
       },
-      "test_date": "2025-10-27 03:18:10"
+      "test_date": "2025-11-03 00:56:13"
     },
     {
       "url": "creandum.com",
       "country": "Sweden",
       "scores": {
-        "performance": 28,
+        "performance": 27,
         "accessibility": 82,
         "best_practices": 92,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-27 06:17:15"
+      "test_date": "2025-11-03 04:19:18"
+    },
+    {
+      "url": "folksam.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 22:16:37"
+    },
+    {
+      "url": "handelsbanken.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 73,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 06:30:38"
     },
     {
       "url": "izettle.com",
@@ -661,76 +1009,196 @@
       "test_date": "2025-10-29 04:20:45"
     },
     {
+      "url": "monterro.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 52,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 18:30:48"
+    },
+    {
+      "url": "nordea.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 62,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 03:07:15"
+    },
+    {
+      "url": "qred.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 43,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 16:24:44"
+    },
+    {
+      "url": "revolut.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 33,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 20:15:17"
+    },
+    {
+      "url": "seb.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 53,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 03:07:06"
+    },
+    {
       "url": "standoutcapital.com",
       "country": "Sweden",
       "scores": {
-        "performance": 90,
+        "performance": 94,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-24 02:55:04"
+      "test_date": "2025-10-31 08:27:10"
+    },
+    {
+      "url": "svea.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 66,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 12:20:10"
+    },
+    {
+      "url": "swedbank.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 33,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-10-31 12:20:58"
+    },
+    {
+      "url": "tink.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 37,
+        "accessibility": 75,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 22:09:59"
+    },
+    {
+      "url": "trustly.net",
+      "country": "Sweden",
+      "scores": {
+        "performance": 43,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 00:47:51"
     },
     {
       "url": "news.finance.ua",
       "country": "Ukraine",
       "scores": {
-        "performance": 67,
+        "performance": 52,
         "accessibility": 63,
         "best_practices": 67,
         "seo": 91,
         "pwa": 89
       },
-      "test_date": "2025-10-22 19:44:03"
+      "test_date": "2025-10-30 00:44:39"
     },
     {
       "url": "adcb.com",
       "country": "United Arab Emirates",
       "scores": {
-        "performance": 28,
-        "accessibility": 99,
+        "performance": 27,
+        "accessibility": 92,
         "best_practices": 83,
         "seo": 86,
         "pwa": 56
       },
-      "test_date": "2025-10-27 07:04:54"
+      "test_date": "2025-11-02 03:15:01"
     },
     {
       "url": "balderton.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 54,
+        "performance": 58,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:43:19"
+      "test_date": "2025-11-02 12:15:44"
     },
     {
       "url": "bankofengland.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 77,
+        "performance": 82,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-26 15:59:13"
+      "test_date": "2025-11-02 12:24:01"
     },
     {
       "url": "barclays.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 55,
+        "performance": 65,
         "accessibility": 86,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 15:59:54"
+      "test_date": "2025-11-02 12:24:31"
+    },
+    {
+      "url": "ft.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 46,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 00:49:44"
     },
     {
       "url": "hsbc.co.uk",
@@ -757,40 +1225,64 @@
       "test_date": "2025-10-28 16:39:25"
     },
     {
+      "url": "lloydsbank.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 37,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 08:19:07"
+    },
+    {
       "url": "natwest.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 54,
+        "performance": 48,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-22 16:14:31"
+      "test_date": "2025-10-29 22:12:04"
+    },
+    {
+      "url": "octopusventures.com",
+      "country": "United Kingdom",
+      "scores": {
+        "performance": 43,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 06:18:34"
     },
     {
       "url": "santander.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 41,
+        "performance": 58,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 19:30:31"
+      "test_date": "2025-10-31 00:47:14"
     },
     {
       "url": "bankofamerica.com",
       "country": "United States",
       "scores": {
-        "performance": 23,
+        "performance": 26,
         "accessibility": 78,
-        "best_practices": 83,
+        "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 15:58:39"
+      "test_date": "2025-11-02 12:23:23"
     },
     {
       "url": "berkshirehathaway.com",
@@ -802,19 +1294,19 @@
         "seo": 67,
         "pwa": 0
       },
-      "test_date": "2025-10-26 16:06:32"
+      "test_date": "2025-11-02 14:10:06"
     },
     {
       "url": "blackrock.com",
       "country": "United States",
       "scores": {
-        "performance": 25,
+        "performance": 36,
         "accessibility": 85,
-        "best_practices": 75,
+        "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:50:45"
+      "test_date": "2025-11-02 14:20:56"
     },
     {
       "url": "bloomberg.com",
@@ -832,61 +1324,85 @@
       "url": "capitalone.com",
       "country": "United States",
       "scores": {
-        "performance": 26,
+        "performance": 27,
         "accessibility": 94,
         "best_practices": 67,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 22:13:34"
+      "test_date": "2025-11-02 20:15:45"
     },
     {
       "url": "chase.com",
       "country": "United States",
       "scores": {
-        "performance": 19,
+        "performance": 51,
         "accessibility": 92,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-27 00:49:58"
+      "test_date": "2025-11-02 22:14:27"
     },
     {
       "url": "citigroup.com",
       "country": "United States",
       "scores": {
-        "performance": 34,
+        "performance": 38,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-27 00:54:04"
+      "test_date": "2025-11-02 22:18:51"
     },
     {
       "url": "coinbase.com",
       "country": "United States",
       "scores": {
-        "performance": 35,
+        "performance": 34,
         "accessibility": 96,
         "best_practices": 92,
         "seo": 85,
         "pwa": 67
       },
-      "test_date": "2025-10-27 03:19:09"
+      "test_date": "2025-11-03 00:57:15"
     },
     {
       "url": "discover.com",
       "country": "United States",
       "scores": {
-        "performance": 24,
+        "performance": 28,
         "accessibility": 93,
         "best_practices": 50,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-27 10:23:46"
+      "test_date": "2025-11-03 08:26:33"
+    },
+    {
+      "url": "fidelity.com",
+      "country": "United States",
+      "scores": {
+        "performance": 26,
+        "accessibility": 88,
+        "best_practices": 42,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 20:14:33"
+    },
+    {
+      "url": "goldmansachs.com",
+      "country": "United States",
+      "scores": {
+        "performance": 24,
+        "accessibility": 0,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:12:52"
     },
     {
       "url": "intuit.com",
@@ -901,52 +1417,100 @@
       "test_date": "2025-10-23 07:30:27"
     },
     {
+      "url": "morningstar.com",
+      "country": "United States",
+      "scores": {
+        "performance": 28,
+        "accessibility": 82,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 18:34:51"
+    },
+    {
       "url": "nyse.com",
       "country": "United States",
       "scores": {
-        "performance": 42,
+        "performance": 25,
         "accessibility": 77,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 68,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:09:01"
+      "test_date": "2025-10-30 04:29:29"
+    },
+    {
+      "url": "paypal.com",
+      "country": "United States",
+      "scores": {
+        "performance": 51,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 12:18:25"
+    },
+    {
+      "url": "robinhood.com",
+      "country": "United States",
+      "scores": {
+        "performance": 32,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 78,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 20:20:14"
     },
     {
       "url": "stripe.com",
       "country": "United States",
       "scores": {
-        "performance": 57,
+        "performance": 56,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-24 02:58:56"
+      "test_date": "2025-10-31 10:16:14"
+    },
+    {
+      "url": "vanguard.com",
+      "country": "United States",
+      "scores": {
+        "performance": 48,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 06:19:18"
     },
     {
       "url": "wellsfargo.com",
       "country": "United States",
       "scores": {
-        "performance": 38,
+        "performance": 48,
         "accessibility": 100,
         "best_practices": 58,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-25 04:11:21"
+      "test_date": "2025-11-01 12:24:45"
     },
     {
       "url": "cafef.vn",
       "country": "Vietnam",
       "scores": {
-        "performance": 48,
+        "performance": 27,
         "accessibility": 97,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:29:14"
+      "test_date": "2025-11-02 20:10:23"
     }
   ],
   "countries": [
@@ -954,11 +1518,22 @@
       "country": "Argentina",
       "website_count": 2,
       "averages": {
-        "performance": 26,
+        "performance": 24,
         "accessibility": 94,
         "best_practices": 75,
         "seo": 90,
         "pwa": 39
+      }
+    },
+    {
+      "country": "Bulgaria",
+      "website_count": 2,
+      "averages": {
+        "performance": 46,
+        "accessibility": 89,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 33
       }
     },
     {
@@ -968,7 +1543,7 @@
         "performance": 29,
         "accessibility": 97,
         "best_practices": 63,
-        "seo": 86,
+        "seo": 88,
         "pwa": 35
       }
     },
@@ -976,7 +1551,7 @@
       "country": "Estonia",
       "website_count": 1,
       "averages": {
-        "performance": 38,
+        "performance": 39,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 92,
@@ -985,42 +1560,53 @@
     },
     {
       "country": "Finland",
-      "website_count": 8,
+      "website_count": 14,
       "averages": {
-        "performance": 50,
-        "accessibility": 93,
-        "best_practices": 90,
-        "seo": 94,
-        "pwa": 42
+        "performance": 55,
+        "accessibility": 90,
+        "best_practices": 85,
+        "seo": 91,
+        "pwa": 36
       }
     },
     {
       "country": "Germany",
-      "website_count": 7,
+      "website_count": 11,
       "averages": {
-        "performance": 44,
-        "accessibility": 91,
-        "best_practices": 89,
-        "seo": 88,
-        "pwa": 43
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 39
+      }
+    },
+    {
+      "country": "Hong Kong",
+      "website_count": 1,
+      "averages": {
+        "performance": 9,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 33
       }
     },
     {
       "country": "India",
-      "website_count": 7,
+      "website_count": 16,
       "averages": {
         "performance": 53,
-        "accessibility": 80,
-        "best_practices": 64,
-        "seo": 86,
-        "pwa": 36
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 38
       }
     },
     {
       "country": "Ireland",
       "website_count": 2,
       "averages": {
-        "performance": 36,
+        "performance": 40,
         "accessibility": 86,
         "best_practices": 88,
         "seo": 91,
@@ -1031,10 +1617,10 @@
       "country": "Israel",
       "website_count": 1,
       "averages": {
-        "performance": 23,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 97,
+        "performance": 87,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
         "pwa": 33
       }
     },
@@ -1042,7 +1628,7 @@
       "country": "Malaysia",
       "website_count": 1,
       "averages": {
-        "performance": 80,
+        "performance": 81,
         "accessibility": 88,
         "best_practices": 92,
         "seo": 100,
@@ -1053,7 +1639,7 @@
       "country": "Morocco",
       "website_count": 2,
       "averages": {
-        "performance": 56,
+        "performance": 58,
         "accessibility": 84,
         "best_practices": 84,
         "seo": 88,
@@ -1064,7 +1650,7 @@
       "country": "Netherlands",
       "website_count": 2,
       "averages": {
-        "performance": 53,
+        "performance": 48,
         "accessibility": 94,
         "best_practices": 100,
         "seo": 97,
@@ -1075,18 +1661,29 @@
       "country": "New Zealand",
       "website_count": 1,
       "averages": {
-        "performance": 30,
-        "accessibility": 89,
-        "best_practices": 75,
-        "seo": 100,
+        "performance": 90,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 92,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Nigeria",
+      "website_count": 1,
+      "averages": {
+        "performance": 62,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
       }
     },
     {
       "country": "Norway",
       "website_count": 1,
       "averages": {
-        "performance": 52,
+        "performance": 59,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
@@ -1094,10 +1691,21 @@
       }
     },
     {
+      "country": "Pakistan",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Philippines",
       "website_count": 2,
       "averages": {
-        "performance": 29,
+        "performance": 28,
         "accessibility": 73,
         "best_practices": 42,
         "seo": 67,
@@ -1106,35 +1714,46 @@
     },
     {
       "country": "Poland",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 36,
-        "accessibility": 84,
+        "performance": 43,
+        "accessibility": 86,
         "best_practices": 86,
+        "seo": 96,
+        "pwa": 47
+      }
+    },
+    {
+      "country": "Portugal",
+      "website_count": 1,
+      "averages": {
+        "performance": 27,
+        "accessibility": 86,
+        "best_practices": 92,
         "seo": 97,
-        "pwa": 37
+        "pwa": 33
       }
     },
     {
       "country": "Romania",
       "website_count": 2,
       "averages": {
-        "performance": 48,
-        "accessibility": 72,
-        "best_practices": 88,
+        "performance": 33,
+        "accessibility": 83,
+        "best_practices": 84,
         "seo": 96,
         "pwa": 33
       }
     },
     {
       "country": "Saudi Arabia",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 48,
-        "accessibility": 75,
-        "best_practices": 92,
-        "seo": 97,
-        "pwa": 33
+        "performance": 51,
+        "accessibility": 82,
+        "best_practices": 50,
+        "seo": 80,
+        "pwa": 22
       }
     },
     {
@@ -1150,20 +1769,20 @@
     },
     {
       "country": "Sweden",
-      "website_count": 6,
+      "website_count": 17,
       "averages": {
-        "performance": 50,
+        "performance": 49,
         "accessibility": 92,
-        "best_practices": 93,
-        "seo": 88,
-        "pwa": 33
+        "best_practices": 94,
+        "seo": 92,
+        "pwa": 34
       }
     },
     {
       "country": "Ukraine",
       "website_count": 1,
       "averages": {
-        "performance": 67,
+        "performance": 52,
         "accessibility": 63,
         "best_practices": 67,
         "seo": 91,
@@ -1174,8 +1793,8 @@
       "country": "United Arab Emirates",
       "website_count": 1,
       "averages": {
-        "performance": 28,
-        "accessibility": 99,
+        "performance": 27,
+        "accessibility": 92,
         "best_practices": 83,
         "seo": 86,
         "pwa": 56
@@ -1183,23 +1802,23 @@
     },
     {
       "country": "United Kingdom",
-      "website_count": 7,
+      "website_count": 10,
       "averages": {
         "performance": 54,
-        "accessibility": 91,
-        "best_practices": 86,
-        "seo": 89,
+        "accessibility": 92,
+        "best_practices": 87,
+        "seo": 88,
         "pwa": 39
       }
     },
     {
       "country": "United States",
-      "website_count": 13,
+      "website_count": 19,
       "averages": {
-        "performance": 37,
-        "accessibility": 91,
+        "performance": 39,
+        "accessibility": 86,
         "best_practices": 77,
-        "seo": 86,
+        "seo": 87,
         "pwa": 33
       }
     },
@@ -1207,7 +1826,7 @@
       "country": "Vietnam",
       "website_count": 1,
       "averages": {
-        "performance": 48,
+        "performance": 27,
         "accessibility": 97,
         "best_practices": 83,
         "seo": 99,

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.072Z",
+    "generated_at": "2025-11-04T09:04:16.557Z",
     "url": "hdfcbank.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 79,
+    "performance": 82,
     "accessibility": 81,
     "best_practices": 92,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-28 10:33:39"
+    "test_date": "2025-11-04 08:17:18"
   },
   "historical_data": [
+    {
+      "performance": 82,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-04 08:17:18"
+    },
     {
       "performance": 79,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 10:33:39"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 08:17:18",
+    "test_date_previous": "2025-10-28 10:33:39"
+  }
 }

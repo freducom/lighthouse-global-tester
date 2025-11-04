@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.103Z",
+    "generated_at": "2025-11-04T09:04:16.686Z",
     "url": "wp.pl",
     "country": "Poland",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 61,
+    "performance": 59,
     "accessibility": 84,
-    "best_practices": 92,
+    "best_practices": 75,
     "seo": 93,
     "pwa": 56,
-    "test_date": "2025-10-25 06:15:16"
+    "test_date": "2025-11-01 14:15:19"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 84,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 56,
+      "test_date": "2025-11-01 14:15:19"
+    },
     {
       "performance": 61,
       "accessibility": 84,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 06:15:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": -17,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 14:15:19",
+    "test_date_previous": "2025-10-25 06:15:16"
+  }
 }

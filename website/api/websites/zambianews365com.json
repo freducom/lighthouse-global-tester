@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.149Z",
+    "generated_at": "2025-11-04T09:04:16.879Z",
     "url": "zambianews365.com",
     "country": "Zambia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 70,
+    "performance": 68,
     "accessibility": 97,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-25 10:11:05"
+    "test_date": "2025-11-01 18:14:08"
   },
   "historical_data": [
+    {
+      "performance": 68,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-01 18:14:08"
+    },
     {
       "performance": 70,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 10:11:05"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 18:14:08",
+    "test_date_previous": "2025-10-25 10:11:05"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.131Z",
+    "generated_at": "2025-11-04T09:04:16.806Z",
     "url": "sainsburys.co.uk",
     "country": "United Kingdom",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 35,
     "accessibility": 92,
     "best_practices": 58,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-23 16:48:07"
+    "test_date": "2025-10-30 22:18:09"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 92,
+      "best_practices": 58,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-10-30 22:18:09"
+    },
     {
       "performance": 37,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 16:48:07",
-    "test_date_previous": "2025-10-23 16:17:09"
+    "test_date_current": "2025-10-30 22:18:09",
+    "test_date_previous": "2025-10-23 16:48:07"
   }
 }

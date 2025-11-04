@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.114Z",
+    "generated_at": "2025-11-04T09:04:16.715Z",
     "url": "arbetsformedlingen.se",
     "country": "Sweden",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 68,
+    "performance": 62,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-26 10:11:04"
+    "test_date": "2025-11-02 08:18:51"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-02 08:18:51"
+    },
     {
       "performance": 68,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": -6,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 10:11:04",
-    "test_date_previous": "2025-10-19 20:29:33"
+    "test_date_current": "2025-11-02 08:18:51",
+    "test_date_previous": "2025-10-26 10:11:04"
   }
 }

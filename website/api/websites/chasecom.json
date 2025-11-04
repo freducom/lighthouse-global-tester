@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.136Z",
+    "generated_at": "2025-11-04T09:04:16.833Z",
     "url": "chase.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 19,
+    "performance": 51,
     "accessibility": 92,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-27 00:49:58"
+    "test_date": "2025-11-02 22:14:27"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-02 22:14:27"
+    },
     {
       "performance": 19,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -11,
+    "performance": 32,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-27 00:49:58",
-    "test_date_previous": "2025-10-23 06:58:27"
+    "test_date_current": "2025-11-02 22:14:27",
+    "test_date_previous": "2025-10-27 00:49:58"
   }
 }

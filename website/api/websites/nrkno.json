@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.098Z",
+    "generated_at": "2025-11-04T09:04:16.667Z",
     "url": "nrk.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 41,
+    "performance": 53,
     "accessibility": 93,
     "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-22 22:03:02"
+    "test_date": "2025-10-30 04:17:27"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 93,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-10-30 04:17:27"
+    },
     {
       "performance": 41,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 22:03:02"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 12,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 04:17:27",
+    "test_date_previous": "2025-10-22 22:03:02"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.139Z",
+    "generated_at": "2025-11-04T09:04:16.841Z",
     "url": "doordash.com",
     "country": "United States",
     "industry": "Delivery"
   },
   "latest_scores": {
-    "performance": 75,
-    "accessibility": 81,
-    "best_practices": 92,
-    "seo": 82,
-    "pwa": 33,
-    "test_date": "2025-10-27 12:22:30"
+    "performance": 11,
+    "accessibility": 93,
+    "best_practices": 75,
+    "seo": 100,
+    "pwa": 22,
+    "test_date": "2025-11-03 10:16:56"
   },
   "historical_data": [
+    {
+      "performance": 11,
+      "accessibility": 93,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 22,
+      "test_date": "2025-11-03 10:16:56"
+    },
     {
       "performance": 75,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 12:22:30"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -64,
+    "accessibility": 12,
+    "best_practices": -17,
+    "seo": 18,
+    "pwa": -11,
+    "test_date_current": "2025-11-03 10:16:56",
+    "test_date_previous": "2025-10-27 12:22:30"
+  }
 }

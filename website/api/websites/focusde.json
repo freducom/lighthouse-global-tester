@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.063Z",
+    "generated_at": "2025-11-04T09:04:16.522Z",
     "url": "focus.de",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 56,
     "accessibility": 88,
     "best_practices": 100,
     "seo": 100,
     "pwa": 89,
-    "test_date": "2025-10-20 20:11:07"
+    "test_date": "2025-11-03 22:14:43"
   },
   "historical_data": [
+    {
+      "performance": 56,
+      "accessibility": 88,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-03 22:14:43"
+    },
     {
       "performance": 48,
       "accessibility": 88,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
+    "performance": 8,
     "accessibility": 0,
-    "best_practices": 8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-20 20:11:07",
-    "test_date_previous": "2025-10-19 19:42:14"
+    "test_date_current": "2025-11-03 22:14:43",
+    "test_date_previous": "2025-10-20 20:11:07"
   }
 }

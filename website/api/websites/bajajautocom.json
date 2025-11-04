@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.070Z",
+    "generated_at": "2025-11-04T09:04:16.540Z",
     "url": "bajajauto.com",
     "country": "India",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 26,
     "accessibility": 69,
     "best_practices": 75,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-26 13:43:03"
+    "test_date": "2025-11-02 12:15:26"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 69,
+      "best_practices": 75,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-02 12:15:26"
+    },
     {
       "performance": 28,
       "accessibility": 69,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 13:43:03",
-    "test_date_previous": "2025-10-26 13:23:37"
+    "test_date_current": "2025-11-02 12:15:26",
+    "test_date_previous": "2025-10-26 13:43:03"
   }
 }

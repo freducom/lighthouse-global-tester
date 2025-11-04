@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.044Z",
+    "generated_at": "2025-11-04T09:04:16.422Z",
     "url": "163.com",
     "country": "China",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 56,
-    "accessibility": 50,
-    "best_practices": 67,
+    "performance": 55,
+    "accessibility": 49,
+    "best_practices": 92,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-26 19:26:25"
+    "test_date": "2025-11-02 00:47:51"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 49,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-02 00:47:51"
+    },
     {
       "performance": 56,
       "accessibility": 50,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 19:26:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": -1,
+    "best_practices": 25,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 00:47:51",
+    "test_date_previous": "2025-10-26 19:26:25"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.062Z",
+    "generated_at": "2025-11-04T09:04:16.519Z",
     "url": "boerse.de",
     "country": "Germany",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 59,
     "accessibility": 92,
-    "best_practices": 83,
+    "best_practices": 92,
     "seo": 75,
     "pwa": 33,
-    "test_date": "2025-10-26 19:39:56"
+    "test_date": "2025-11-02 16:15:50"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-02 16:15:50"
+    },
     {
       "performance": 56,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 3,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": 9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 19:39:56",
-    "test_date_previous": "2025-10-26 18:31:50"
+    "test_date_current": "2025-11-02 16:15:50",
+    "test_date_previous": "2025-10-26 19:39:56"
   }
 }

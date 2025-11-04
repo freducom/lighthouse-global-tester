@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.067Z",
+    "generated_at": "2025-11-04T09:04:16.533Z",
     "url": "hkt.com",
     "country": "Hong Kong",
     "industry": "Telecom"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 90,
     "pwa": 22,
-    "test_date": "2025-10-28 10:43:50"
+    "test_date": "2025-11-04 08:29:00"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 22,
+      "test_date": "2025-11-04 08:29:00"
+    },
     {
       "performance": 60,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 10:43:50"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 08:29:00",
+    "test_date_previous": "2025-10-28 10:43:50"
+  }
 }

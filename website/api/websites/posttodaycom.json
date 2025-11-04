@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.124Z",
+    "generated_at": "2025-11-04T09:04:16.782Z",
     "url": "posttoday.com",
     "country": "Thailand",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
-    "accessibility": 100,
-    "best_practices": 83,
+    "performance": 36,
+    "accessibility": 98,
+    "best_practices": 75,
     "seo": 96,
     "pwa": 78,
-    "test_date": "2025-10-23 08:34:04"
+    "test_date": "2025-10-30 14:06:54"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 98,
+      "best_practices": 75,
+      "seo": 96,
+      "pwa": 78,
+      "test_date": "2025-10-30 14:06:54"
+    },
     {
       "performance": 35,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 08:34:04"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": -2,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 14:06:54",
+    "test_date_previous": "2025-10-23 08:34:04"
+  }
 }

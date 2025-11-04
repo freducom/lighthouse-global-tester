@@ -1,113 +1,125 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.868Z",
+    "generated_at": "2025-11-04T09:04:15.630Z",
     "country": "Norway",
     "flag": "🇳🇴",
-    "website_count": 8
+    "website_count": 9
   },
   "averages": {
-    "performance": 45,
-    "accessibility": 94,
-    "best_practices": 88,
-    "seo": 95,
+    "performance": 47,
+    "accessibility": 93,
+    "best_practices": 89,
+    "seo": 94,
     "pwa": 37
   },
   "websites": [
     {
+      "url": "dnb.no",
+      "industry": "Finance",
+      "scores": {
+        "performance": 59,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 10:14:23"
+    },
+    {
       "url": "schibsted.no",
       "industry": "Media",
       "scores": {
-        "performance": 57,
+        "performance": 55,
         "accessibility": 92,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 19:32:52"
-    },
-    {
-      "url": "dagbladet.no",
-      "industry": "Media",
-      "scores": {
-        "performance": 52,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-27 06:28:15"
-    },
-    {
-      "url": "dnb.no",
-      "industry": "Finance",
-      "scores": {
-        "performance": 52,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-27 12:20:18"
-    },
-    {
-      "url": "vg.no",
-      "industry": "Media",
-      "scores": {
-        "performance": 47,
-        "accessibility": 93,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 22:15:38"
-    },
-    {
-      "url": "aftenposten.no",
-      "industry": "Media",
-      "scores": {
-        "performance": 44,
-        "accessibility": 78,
-        "best_practices": 83,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-10-27 07:10:59"
+      "test_date": "2025-10-31 00:51:27"
     },
     {
       "url": "nrk.no",
       "industry": "Media",
       "scores": {
-        "performance": 41,
+        "performance": 53,
         "accessibility": 93,
         "best_practices": 100,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-22 22:03:02"
+      "test_date": "2025-10-30 04:17:27"
+    },
+    {
+      "url": "e24.no",
+      "industry": "Media",
+      "scores": {
+        "performance": 52,
+        "accessibility": 77,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:18:55"
+    },
+    {
+      "url": "vg.no",
+      "industry": "Media",
+      "scores": {
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 08:11:40"
+    },
+    {
+      "url": "dagbladet.no",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 04:31:15"
     },
     {
       "url": "dagen.no",
       "industry": "Media",
       "scores": {
-        "performance": 35,
+        "performance": 43,
         "accessibility": 94,
-        "best_practices": 67,
+        "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-27 06:28:45"
+      "test_date": "2025-11-03 04:31:43"
     },
     {
       "url": "nettavisen.no",
       "industry": "Media",
       "scores": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 93,
         "pwa": 67
       },
-      "test_date": "2025-10-22 16:17:16"
+      "test_date": "2025-10-29 22:20:40"
+    },
+    {
+      "url": "aftenposten.no",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 04:13:32"
     }
   ],
   "industries": [
@@ -115,7 +127,7 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 52,
+        "performance": 59,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
@@ -124,13 +136,13 @@
     },
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 44,
-        "accessibility": 93,
-        "best_practices": 86,
-        "seo": 95,
-        "pwa": 38
+        "performance": 45,
+        "accessibility": 92,
+        "best_practices": 87,
+        "seo": 94,
+        "pwa": 37
       }
     }
   ]

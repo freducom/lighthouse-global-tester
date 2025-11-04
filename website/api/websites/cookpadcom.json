@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.084Z",
+    "generated_at": "2025-11-04T09:04:16.614Z",
     "url": "cookpad.com",
     "country": "Japan",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 66,
     "accessibility": 79,
     "best_practices": 100,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-10-27 04:21:59"
+    "test_date": "2025-11-03 03:14:16"
   },
   "historical_data": [
+    {
+      "performance": 66,
+      "accessibility": 79,
+      "best_practices": 100,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-03 03:14:16"
+    },
     {
       "performance": 65,
       "accessibility": 79,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -8,
+    "performance": 1,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": -7,
+    "best_practices": 0,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-27 04:21:59",
-    "test_date_previous": "2025-10-19 19:57:15"
+    "test_date_current": "2025-11-03 03:14:16",
+    "test_date_previous": "2025-10-27 04:21:59"
   }
 }

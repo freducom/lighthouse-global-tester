@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.034Z",
+    "generated_at": "2025-11-04T09:04:16.387Z",
     "url": "vienna.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 30,
+    "performance": 29,
     "accessibility": 88,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-24 22:16:12"
+    "test_date": "2025-11-01 08:12:11"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 88,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-01 08:12:11"
+    },
     {
       "performance": 30,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 22:16:12"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 08:12:11",
+    "test_date_previous": "2025-10-24 22:16:12"
+  }
 }

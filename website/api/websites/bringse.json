@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.115Z",
+    "generated_at": "2025-11-04T09:04:16.720Z",
     "url": "bring.se",
     "country": "Sweden",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 54,
+    "performance": 40,
     "accessibility": 85,
     "best_practices": 92,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-26 19:47:58"
+    "test_date": "2025-11-02 18:11:12"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-02 18:11:12"
+    },
     {
       "performance": 54,
       "accessibility": 85,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": -14,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 19:47:58",
-    "test_date_previous": "2025-10-26 18:39:40"
+    "test_date_current": "2025-11-02 18:11:12",
+    "test_date_previous": "2025-10-26 19:47:58"
   }
 }

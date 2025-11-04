@@ -1,65 +1,77 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.895Z",
+    "generated_at": "2025-11-04T09:04:15.741Z",
     "country": "Uruguay",
     "flag": "🇺🇾",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 72,
-    "best_practices": 78,
-    "seo": 93,
-    "pwa": 37
+    "performance": 57,
+    "accessibility": 75,
+    "best_practices": 81,
+    "seo": 92,
+    "pwa": 36
   },
   "websites": [
+    {
+      "url": "elpais.com.uy",
+      "industry": "Media",
+      "scores": {
+        "performance": 80,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 16:13:35"
+    },
     {
       "url": "uypress.net",
       "industry": "Media",
       "scores": {
-        "performance": 60,
+        "performance": 68,
         "accessibility": 39,
         "best_practices": 83,
-        "seo": 78,
+        "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-24 22:13:12"
+      "test_date": "2025-11-01 06:17:06"
     },
     {
       "url": "busqueda.com.uy",
       "industry": "Media",
       "scores": {
-        "performance": 42,
+        "performance": 49,
         "accessibility": 87,
         "best_practices": 75,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-26 20:16:50"
+      "test_date": "2025-11-02 18:22:15"
     },
     {
       "url": "subrayado.com.uy",
       "industry": "Media",
       "scores": {
-        "performance": 35,
+        "performance": 29,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-24 03:02:55"
+      "test_date": "2025-10-31 10:20:09"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 46,
-        "accessibility": 72,
-        "best_practices": 78,
-        "seo": 93,
-        "pwa": 37
+        "performance": 57,
+        "accessibility": 75,
+        "best_practices": 81,
+        "seo": 92,
+        "pwa": 36
       }
     }
   ]

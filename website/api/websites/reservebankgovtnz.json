@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.096Z",
+    "generated_at": "2025-11-04T09:04:16.658Z",
     "url": "reservebank.govt.nz",
     "country": "New Zealand",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 30,
-    "accessibility": 89,
-    "best_practices": 75,
-    "seo": 100,
+    "performance": 90,
+    "accessibility": 88,
+    "best_practices": 92,
+    "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-23 15:44:31"
+    "test_date": "2025-10-30 20:11:26"
   },
   "historical_data": [
+    {
+      "performance": 90,
+      "accessibility": 88,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-10-30 20:11:26"
+    },
     {
       "performance": 30,
       "accessibility": 89,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
-    "accessibility": -8,
-    "best_practices": 0,
-    "seo": 0,
+    "performance": 60,
+    "accessibility": -1,
+    "best_practices": 17,
+    "seo": -8,
     "pwa": 0,
-    "test_date_current": "2025-10-23 15:44:31",
-    "test_date_previous": "2025-10-23 14:10:35"
+    "test_date_current": "2025-10-30 20:11:26",
+    "test_date_previous": "2025-10-23 15:44:31"
   }
 }

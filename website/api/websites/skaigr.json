@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.066Z",
+    "generated_at": "2025-11-04T09:04:16.531Z",
     "url": "skai.gr",
     "country": "Greece",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 64,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 98,
-    "pwa": 44,
-    "test_date": "2025-10-23 21:50:11"
+    "pwa": 33,
+    "test_date": "2025-10-31 04:26:45"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-10-31 04:26:45"
+    },
     {
       "performance": 60,
       "accessibility": 94,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
+    "performance": 4,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
-    "pwa": 0,
-    "test_date_current": "2025-10-23 21:50:11",
-    "test_date_previous": "2025-10-23 21:26:47"
+    "pwa": -11,
+    "test_date_current": "2025-10-31 04:26:45",
+    "test_date_previous": "2025-10-23 21:50:11"
   }
 }

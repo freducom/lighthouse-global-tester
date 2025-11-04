@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.965Z",
+          "dateCreated": "2025-11-04T09:04:12.001Z",
           "about": {
             "@type": "WebSite",
             "name": "alriyadh.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-alriyadh.com.html#metrics",
           "name": "alriyadh.com Performance Metrics",
           "description": "Latest Lighthouse scores for alriyadh.com",
-          "performanceScore": 40,
+          "performanceScore": 55,
           "accessibilityScore": 55,
           "bestPracticesScore": 83,
           "seoScore": 82,
-          "dateRecorded": "2025-10-26 08:01:40"
+          "dateRecorded": "2025-11-02 06:14:24"
         }
       ]
     }
@@ -117,8 +117,8 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">40%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number average">55%</div>
+                <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 40%"></div>
-                        <span class="score-text">40%</span>
+                        <div class="score-fill performance" style="width: 55%"></div>
+                        <span class="score-text">55%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":732,"url":"alriyadh.com","performance":46,"accessibility":55,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-26 07:45:18","country":"Saudi Arabia","industry":"Media"},{"id":745,"url":"alriyadh.com","performance":40,"accessibility":55,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-26 08:01:40","country":"Saudi Arabia","industry":"Media"}];
+        const historyData = [{"id":732,"url":"alriyadh.com","performance":46,"accessibility":55,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-26 07:45:18","country":"Saudi Arabia","industry":"Media"},{"id":745,"url":"alriyadh.com","performance":40,"accessibility":55,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-26 08:01:40","country":"Saudi Arabia","industry":"Media"},{"id":1758,"url":"alriyadh.com","performance":55,"accessibility":55,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-11-02 06:14:24","country":"Saudi Arabia","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

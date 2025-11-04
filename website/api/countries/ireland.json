@@ -1,30 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.865Z",
+    "generated_at": "2025-11-04T09:04:15.618Z",
     "country": "Ireland",
     "flag": "🇮🇪",
     "website_count": 10
   },
   "averages": {
-    "performance": 45,
+    "performance": 44,
     "accessibility": 88,
-    "best_practices": 82,
+    "best_practices": 83,
     "seo": 89,
     "pwa": 43
   },
   "websites": [
-    {
-      "url": "tribune.ie",
-      "industry": "Media",
-      "scores": {
-        "performance": 71,
-        "accessibility": 95,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 16:13:22"
-    },
     {
       "url": "irishexaminer.com",
       "industry": "Media",
@@ -38,28 +26,28 @@
       "test_date": "2025-10-28 20:29:44"
     },
     {
+      "url": "tribune.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 60,
+        "accessibility": 95,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 00:46:48"
+    },
+    {
       "url": "daa.ie",
       "industry": "Transportation",
       "scores": {
-        "performance": 56,
+        "performance": 57,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-27 06:27:44"
-    },
-    {
-      "url": "thejournal.ie",
-      "industry": "Media",
-      "scores": {
-        "performance": 48,
-        "accessibility": 79,
-        "best_practices": 75,
-        "seo": 85,
-        "pwa": 44
-      },
-      "test_date": "2025-10-24 12:22:17"
+      "test_date": "2025-11-03 04:30:44"
     },
     {
       "url": "irishmirror.ie",
@@ -74,28 +62,40 @@
       "test_date": "2025-10-21 12:56:48"
     },
     {
+      "url": "thejournal.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 44
+      },
+      "test_date": "2025-10-31 18:34:57"
+    },
+    {
+      "url": "bankofireland.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 42,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 12:24:19"
+    },
+    {
       "url": "aib.ie",
       "industry": "Finance",
       "scores": {
-        "performance": 41,
+        "performance": 38,
         "accessibility": 72,
         "best_practices": 92,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:12:20"
-    },
-    {
-      "url": "rte.ie",
-      "industry": "Media",
-      "scores": {
-        "performance": 34,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 56
-      },
-      "test_date": "2025-10-23 16:42:48"
+      "test_date": "2025-11-02 04:15:11"
     },
     {
       "url": "irishtimes.com",
@@ -122,16 +122,16 @@
       "test_date": "2025-10-28 16:38:19"
     },
     {
-      "url": "bankofireland.com",
-      "industry": "Finance",
+      "url": "rte.ie",
+      "industry": "Media",
       "scores": {
-        "performance": 30,
-        "accessibility": 99,
+        "performance": 24,
+        "accessibility": 85,
         "best_practices": 83,
-        "seo": 83,
-        "pwa": 33
+        "seo": 84,
+        "pwa": 56
       },
-      "test_date": "2025-10-26 15:59:31"
+      "test_date": "2025-10-30 22:09:50"
     }
   ],
   "industries": [
@@ -139,7 +139,7 @@
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 36,
+        "performance": 40,
         "accessibility": 86,
         "best_practices": 88,
         "seo": 91,
@@ -150,9 +150,9 @@
       "industry": "Media",
       "website_count": 7,
       "averages": {
-        "performance": 46,
+        "performance": 43,
         "accessibility": 89,
-        "best_practices": 81,
+        "best_practices": 82,
         "seo": 89,
         "pwa": 48
       }
@@ -161,7 +161,7 @@
       "industry": "Transportation",
       "website_count": 1,
       "averages": {
-        "performance": 56,
+        "performance": 57,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,

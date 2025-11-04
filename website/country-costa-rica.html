@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.710Z",
+          "dateCreated": "2025-11-04T09:04:10.924Z",
           "about": {
             "@type": "Place",
             "name": "Costa Rica",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Costa Rica"
           },
-          "dateModified": "2025-10-29T07:39:54.710Z",
+          "dateModified": "2025-11-04T09:04:10.924Z",
           "keywords": ["Costa Rica", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -109,14 +109,14 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Costa Rica</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 51 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 52 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">51%</div>
+                <div class="stat-number" aria-hidden="true">52%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
-            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 80 percent">
+            <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 81 percent">
                 <h3>Average Accessibility</h3>
-                <div class="stat-number" aria-hidden="true">80%</div>
+                <div class="stat-number" aria-hidden="true">81%</div>
                 <p class="sr-only">Accessibility measures compliance with web standards for users with disabilities</p>
             </div>
             <div class="stat-card seo" role="img" aria-label="Average SEO score: 86 percent">
@@ -255,7 +255,7 @@
                                 data-seo="86"
                                 data-best-practices="58"
                                 data-pwa="33"
-                                data-test-date="2025-10-27 07:06:18">
+                                data-test-date="2025-11-02 03:17:34">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-adondeircr-com.html" 
@@ -291,20 +291,20 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-27 07:06:18"
-                                    aria-label="Last tested on 10/27/2025">
-                                    <time datetime="2025-10-27 07:06:18">10/27/2025</time>
+                                <td class="date" data-date="2025-11-02 03:17:34"
+                                    aria-label="Last tested on 11/2/2025">
+                                    <time datetime="2025-11-02 03:17:34">11/2/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row trending-down" 
+                            <tr class="site-row trending-up" 
                                 data-url="amprensa.com" 
                                 data-industry="Media"
-                                data-performance="42"
-                                data-accessibility="75"
+                                data-performance="46"
+                                data-accessibility="77"
                                 data-seo="79"
                                 data-best-practices="67"
                                 data-pwa="33"
-                                data-test-date="2025-10-26 08:39:13">
+                                data-test-date="2025-11-02 06:21:19">
                                 <td class="rank" aria-label="Rank 3">#3</td>
                                 <td>
                                     <a href="domain-amprensa-com.html" 
@@ -321,12 +321,12 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 42 percent, needs improvement, trend: -2 points">
-                                    42%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-2</span>
+                                    aria-label="Performance score: 46 percent, needs improvement, trend: +4 points">
+                                    46%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+4</span>
                                 </td>
                                 <td class="score acc-good"
-                                    aria-label="Accessibility score: 75 percent, good performance">
-                                    75%
+                                    aria-label="Accessibility score: 77 percent, good performance, trend: +2 points">
+                                    77%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+2</span>
                                 </td>
                                 <td class="score seo-good"
                                     aria-label="SEO score: 79 percent, good performance">
@@ -340,9 +340,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-26 08:39:13"
-                                    aria-label="Last tested on 10/26/2025">
-                                    <time datetime="2025-10-26 08:39:13">10/26/2025</time>
+                                <td class="date" data-date="2025-11-02 06:21:19"
+                                    aria-label="Last tested on 11/2/2025">
+                                    <time datetime="2025-11-02 06:21:19">11/2/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -370,11 +370,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -389,7 +388,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -413,9 +411,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -512,7 +509,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"ict.go.cr","country":"Costa Rica","industry":"Government","performance":64,"accessibility":83,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-28 14:14:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"adondeircr.com","country":"Costa Rica","industry":"Media","performance":47,"accessibility":83,"best_practices":58,"seo":86,"pwa":33,"test_date":"2025-10-27 07:06:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"amprensa.com","country":"Costa Rica","industry":"Media","performance":42,"accessibility":75,"best_practices":67,"seo":79,"pwa":33,"test_date":"2025-10-26 08:39:13","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const countryData = [{"url":"ict.go.cr","country":"Costa Rica","industry":"Government","performance":64,"accessibility":83,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-28 14:14:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"adondeircr.com","country":"Costa Rica","industry":"Media","performance":47,"accessibility":83,"best_practices":58,"seo":86,"pwa":33,"test_date":"2025-11-02 03:17:34","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"amprensa.com","country":"Costa Rica","industry":"Media","performance":46,"accessibility":77,"best_practices":67,"seo":79,"pwa":33,"test_date":"2025-11-02 06:21:19","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":2,"text":"+2","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

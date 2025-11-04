@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.131Z",
+    "generated_at": "2025-11-04T09:04:16.808Z",
     "url": "sky.com",
     "country": "United Kingdom",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 30,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-23 22:09:44"
+    "test_date": "2025-10-31 06:14:54"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-31 06:14:54"
+    },
     {
       "performance": 36,
       "accessibility": 100,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
+    "performance": -6,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 22:09:44",
-    "test_date_previous": "2025-10-23 07:35:08"
+    "test_date_current": "2025-10-31 06:14:54",
+    "test_date_previous": "2025-10-23 22:09:44"
   }
 }

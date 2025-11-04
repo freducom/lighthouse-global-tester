@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.071Z",
+    "generated_at": "2025-11-04T09:04:16.544Z",
     "url": "byjus.com",
     "country": "India",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 41,
+    "performance": 55,
     "accessibility": 70,
     "best_practices": 75,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-26 20:28:12"
+    "test_date": "2025-11-02 18:32:05"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 70,
+      "best_practices": 75,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-02 18:32:05"
+    },
     {
       "performance": 41,
       "accessibility": 70,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 20:28:12"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 14,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 18:32:05",
+    "test_date_previous": "2025-10-26 20:28:12"
+  }
 }

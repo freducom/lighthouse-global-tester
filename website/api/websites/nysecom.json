@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.143Z",
+    "generated_at": "2025-11-04T09:04:16.857Z",
     "url": "nyse.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 25,
     "accessibility": 77,
-    "best_practices": 83,
+    "best_practices": 92,
     "seo": 68,
     "pwa": 33,
-    "test_date": "2025-10-23 07:09:01"
+    "test_date": "2025-10-30 04:29:29"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 77,
+      "best_practices": 92,
+      "seo": 68,
+      "pwa": 33,
+      "test_date": "2025-10-30 04:29:29"
+    },
     {
       "performance": 42,
       "accessibility": 77,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 17,
+    "performance": -17,
     "accessibility": 0,
-    "best_practices": -9,
+    "best_practices": 9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:09:01",
-    "test_date_previous": "2025-10-22 22:10:38"
+    "test_date_current": "2025-10-30 04:29:29",
+    "test_date_previous": "2025-10-23 07:09:01"
   }
 }

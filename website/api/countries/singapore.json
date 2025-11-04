@@ -1,29 +1,53 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.887Z",
+    "generated_at": "2025-11-04T09:04:15.713Z",
     "country": "Singapore",
     "flag": "🇸🇬",
-    "website_count": 4
+    "website_count": 6
   },
   "averages": {
-    "performance": 24,
-    "accessibility": 81,
-    "best_practices": 79,
-    "seo": 81,
+    "performance": 30,
+    "accessibility": 83,
+    "best_practices": 78,
+    "seo": 85,
     "pwa": 33
   },
   "websites": [
     {
+      "url": "gov.sg",
+      "industry": "Government",
+      "scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:20:16"
+    },
+    {
       "url": "asiaone.com",
       "industry": "Media",
       "scores": {
-        "performance": 27,
-        "accessibility": 81,
+        "performance": 28,
+        "accessibility": 78,
         "best_practices": 83,
-        "seo": 76,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-28 11:10:59"
+      "test_date": "2025-11-02 10:09:26"
+    },
+    {
+      "url": "funzing.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 28,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 00:50:03"
     },
     {
       "url": "channelnewsasia.com",
@@ -53,16 +77,27 @@
       "url": "sgbic.org",
       "industry": "Non-profit",
       "scores": {
-        "performance": 21,
+        "performance": 20,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 21:40:36"
+      "test_date": "2025-10-31 03:19:24"
     }
   ],
   "industries": [
+    {
+      "industry": "E-commerce",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 77,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Education",
       "website_count": 1,
@@ -75,13 +110,24 @@
       }
     },
     {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Media",
       "website_count": 2,
       "averages": {
-        "performance": 26,
-        "accessibility": 79,
+        "performance": 27,
+        "accessibility": 77,
         "best_practices": 75,
-        "seo": 78,
+        "seo": 81,
         "pwa": 33
       }
     },
@@ -89,7 +135,7 @@
       "industry": "Non-profit",
       "website_count": 1,
       "averages": {
-        "performance": 21,
+        "performance": 20,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 86,

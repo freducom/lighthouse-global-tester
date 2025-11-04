@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.039Z",
+    "generated_at": "2025-11-04T09:04:16.405Z",
     "url": "abv.bg",
     "country": "Bulgaria",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 25,
     "accessibility": 58,
-    "best_practices": 83,
+    "best_practices": 67,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-27 07:01:05"
+    "test_date": "2025-11-02 03:14:04"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 58,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-02 03:14:04"
+    },
     {
       "performance": 57,
       "accessibility": 58,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 07:01:05"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -32,
+    "accessibility": 0,
+    "best_practices": -16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 03:14:04",
+    "test_date_previous": "2025-10-27 07:01:05"
+  }
 }

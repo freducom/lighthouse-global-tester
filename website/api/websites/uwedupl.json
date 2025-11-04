@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.103Z",
+    "generated_at": "2025-11-04T09:04:16.685Z",
     "url": "uw.edu.pl",
     "country": "Poland",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 51,
+    "performance": 54,
     "accessibility": 89,
     "best_practices": 83,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-10-24 22:12:34"
+    "test_date": "2025-11-01 06:16:37"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-01 06:16:37"
+    },
     {
       "performance": 51,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 22:12:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 06:16:37",
+    "test_date_previous": "2025-10-24 22:12:34"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.120Z",
+    "generated_at": "2025-11-04T09:04:16.759Z",
     "url": "regeringen.se",
     "country": "Sweden",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 69,
     "accessibility": 100,
     "best_practices": 67,
-    "seo": 99,
+    "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 12:24:42"
+    "test_date": "2025-10-30 18:28:09"
   },
   "historical_data": [
+    {
+      "performance": 69,
+      "accessibility": 100,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-30 18:28:09"
+    },
     {
       "performance": 65,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 12:24:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 1,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 18:28:09",
+    "test_date_previous": "2025-10-23 12:24:42"
+  }
 }

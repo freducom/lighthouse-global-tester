@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.086Z",
+    "generated_at": "2025-11-04T09:04:16.619Z",
     "url": "lsm.lv",
     "country": "Latvia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 36,
     "accessibility": 91,
     "best_practices": 92,
     "seo": 99,
     "pwa": 89,
-    "test_date": "2025-10-22 06:22:03"
+    "test_date": "2025-10-29 08:26:37"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-10-29 08:26:37"
+    },
     {
       "performance": 38,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 06:22:03"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 08:26:37",
+    "test_date_previous": "2025-10-22 06:22:03"
+  }
 }

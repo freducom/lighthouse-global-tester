@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.963Z",
+          "dateCreated": "2025-11-04T09:04:11.991Z",
           "about": {
             "@type": "WebSite",
             "name": "avito.ru",
@@ -94,10 +94,10 @@
           "name": "avito.ru Performance Metrics",
           "description": "Latest Lighthouse scores for avito.ru",
           "performanceScore": 9,
-          "accessibilityScore": 56,
-          "bestPracticesScore": 67,
-          "seoScore": 93,
-          "dateRecorded": "2025-10-26 13:41:19"
+          "accessibilityScore": 75,
+          "bestPracticesScore": 83,
+          "seoScore": 100,
+          "dateRecorded": "2025-11-02 10:17:25"
         }
       ]
     }
@@ -122,18 +122,18 @@
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number average">56%</div>
-                <div class="stat-description">average performance</div>
+                <div class="stat-number good">75%</div>
+                <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
-                <div class="stat-number excellent">93%</div>
+                <div class="stat-number excellent">100%</div>
                 <div class="stat-description">excellent performance</div>
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number average">67%</div>
-                <div class="stat-description">average performance</div>
+                <div class="stat-number good">83%</div>
+                <div class="stat-description">good performance</div>
             </div>
         </div>
 
@@ -159,22 +159,22 @@
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 56%"></div>
-                        <span class="score-text">56%</span>
+                        <div class="score-fill accessibility" style="width: 75%"></div>
+                        <span class="score-text">75%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 67%"></div>
-                        <span class="score-text">67%</span>
+                        <div class="score-fill best-practices" style="width: 83%"></div>
+                        <span class="score-text">83%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">SEO:</span>
                     <div class="score-bar">
-                        <div class="score-fill seo" style="width: 93%"></div>
-                        <span class="score-text">93%</span>
+                        <div class="score-fill seo" style="width: 100%"></div>
+                        <span class="score-text">100%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":160,"url":"avito.ru","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","country":"Russia","industry":"Marketplace"},{"id":793,"url":"avito.ru","performance":7,"accessibility":64,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:19:07","country":"Russia","industry":"Marketplace"},{"id":808,"url":"avito.ru","performance":7,"accessibility":64,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:44:07","country":"Russia","industry":"Marketplace"},{"id":823,"url":"avito.ru","performance":8,"accessibility":65,"best_practices":75,"seo":93,"pwa":89,"test_date":"2025-10-26 13:21:51","country":"Russia","industry":"Marketplace"},{"id":839,"url":"avito.ru","performance":9,"accessibility":56,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-10-26 13:41:19","country":"Russia","industry":"Marketplace"}];
+        const historyData = [{"id":160,"url":"avito.ru","performance":10,"accessibility":64,"best_practices":58,"seo":93,"pwa":89,"test_date":"2025-10-19 20:07:42","country":"Russia","industry":"Marketplace"},{"id":793,"url":"avito.ru","performance":7,"accessibility":64,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:19:07","country":"Russia","industry":"Marketplace"},{"id":808,"url":"avito.ru","performance":7,"accessibility":64,"best_practices":67,"seo":93,"pwa":89,"test_date":"2025-10-26 12:44:07","country":"Russia","industry":"Marketplace"},{"id":823,"url":"avito.ru","performance":8,"accessibility":65,"best_practices":75,"seo":93,"pwa":89,"test_date":"2025-10-26 13:21:51","country":"Russia","industry":"Marketplace"},{"id":839,"url":"avito.ru","performance":9,"accessibility":56,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-10-26 13:41:19","country":"Russia","industry":"Marketplace"},{"id":1794,"url":"avito.ru","performance":9,"accessibility":75,"best_practices":83,"seo":100,"pwa":78,"test_date":"2025-11-02 10:17:25","country":"Russia","industry":"Marketplace"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

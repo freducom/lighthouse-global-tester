@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.877Z",
+    "generated_at": "2025-11-04T09:04:15.678Z",
     "country": "Iran",
     "flag": "🇮🇷",
-    "website_count": 8
+    "website_count": 9
   },
   "averages": {
-    "performance": 68,
-    "accessibility": 83,
-    "best_practices": 72,
+    "performance": 65,
+    "accessibility": 86,
+    "best_practices": 73,
     "seo": 89,
-    "pwa": 36
+    "pwa": 34
   },
   "websites": [
     {
@@ -50,52 +50,64 @@
       "test_date": "2025-10-28 20:29:27"
     },
     {
-      "url": "tejaratnews.com",
+      "url": "majzooban.org",
       "industry": "Media",
       "scores": {
-        "performance": 61,
-        "accessibility": 97,
-        "best_practices": 75,
-        "seo": 91,
-        "pwa": 33
+        "performance": 64,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 22
       },
-      "test_date": "2025-10-24 08:15:25"
+      "test_date": "2025-10-29 10:26:53"
     },
     {
       "url": "mehrnews.com",
       "industry": "Media",
       "scores": {
-        "performance": 57,
+        "performance": 59,
         "accessibility": 77,
-        "best_practices": 75,
+        "best_practices": 67,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-22 10:17:02"
-    },
-    {
-      "url": "tasnimnews.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 57,
-        "accessibility": 62,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 08:13:36"
+      "test_date": "2025-10-29 14:33:51"
     },
     {
       "url": "yjc.ir",
       "industry": "Media",
       "scores": {
-        "performance": 56,
-        "accessibility": 90,
+        "performance": 57,
+        "accessibility": 96,
         "best_practices": 75,
         "seo": 92,
         "pwa": 56
       },
-      "test_date": "2025-10-25 08:12:14"
+      "test_date": "2025-11-01 16:18:25"
+    },
+    {
+      "url": "tejaratnews.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 53,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 16:22:07"
+    },
+    {
+      "url": "tasnimnews.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 64,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 14:16:40"
     },
     {
       "url": "khabaronline.ir",
@@ -113,13 +125,13 @@
   "industries": [
     {
       "industry": "Media",
-      "website_count": 8,
+      "website_count": 9,
       "averages": {
-        "performance": 68,
-        "accessibility": 83,
-        "best_practices": 72,
+        "performance": 65,
+        "accessibility": 86,
+        "best_practices": 73,
         "seo": 89,
-        "pwa": 36
+        "pwa": 34
       }
     }
   ]

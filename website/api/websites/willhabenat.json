@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.034Z",
+    "generated_at": "2025-11-04T09:04:16.388Z",
     "url": "willhaben.at",
     "country": "Austria",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 33,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 96,
     "pwa": 78,
-    "test_date": "2025-10-25 04:14:27"
+    "test_date": "2025-11-01 12:28:24"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 96,
+      "pwa": 78,
+      "test_date": "2025-11-01 12:28:24"
+    },
     {
       "performance": 35,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 04:14:27"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 12:28:24",
+    "test_date_previous": "2025-10-25 04:14:27"
+  }
 }

@@ -1,112 +1,148 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.963Z",
+    "generated_at": "2025-11-04T09:04:16.076Z",
     "industry": "Marketplace",
-    "website_count": 22
+    "website_count": 26
   },
   "averages": {
-    "performance": 44,
-    "accessibility": 84,
-    "best_practices": 83,
-    "seo": 92,
-    "pwa": 53
+    "performance": 41,
+    "accessibility": 86,
+    "best_practices": 84,
+    "seo": 91,
+    "pwa": 49
   },
   "websites": [
     {
       "url": "willhaben.at",
       "country": "Austria",
       "scores": {
-        "performance": 35,
+        "performance": 33,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 96,
         "pwa": 78
       },
-      "test_date": "2025-10-25 04:14:27"
+      "test_date": "2025-11-01 12:28:24"
     },
     {
       "url": "bikroy.com",
       "country": "Bangladesh",
       "scores": {
-        "performance": 37,
-        "accessibility": 87,
+        "performance": 35,
+        "accessibility": 89,
         "best_practices": 67,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:41:11"
+      "test_date": "2025-11-02 14:13:02"
+    },
+    {
+      "url": "olx.bg",
+      "country": "Bulgaria",
+      "scores": {
+        "performance": 26,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 06:32:08"
     },
     {
       "url": "dba.dk",
       "country": "Denmark",
       "scores": {
-        "performance": 43,
+        "performance": 45,
         "accessibility": 98,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-27 08:20:49"
+      "test_date": "2025-11-03 06:22:16"
     },
     {
       "url": "autotalli.com",
       "country": "Finland",
       "scores": {
-        "performance": 24,
+        "performance": 28,
         "accessibility": 98,
         "best_practices": 67,
         "seo": 93,
         "pwa": 89
       },
-      "test_date": "2025-10-26 13:40:18"
+      "test_date": "2025-11-02 10:16:25"
+    },
+    {
+      "url": "etuovi.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 8,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 18:32:36"
     },
     {
       "url": "oikotie.fi",
       "country": "Finland",
       "scores": {
-        "performance": 26,
+        "performance": 28,
         "accessibility": 52,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 00:48:18"
+      "test_date": "2025-10-30 06:23:45"
     },
     {
       "url": "tori.fi",
       "country": "Finland",
       "scores": {
-        "performance": 43,
+        "performance": 33,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-24 16:00:30"
+      "test_date": "2025-10-31 22:15:59"
+    },
+    {
+      "url": "vertaamo.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 50,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 95,
+        "pwa": 22
+      },
+      "test_date": "2025-11-01 08:11:15"
     },
     {
       "url": "subito.it",
       "country": "Italy",
       "scores": {
-        "performance": 37,
+        "performance": 40,
         "accessibility": 95,
         "best_practices": 83,
-        "seo": 85,
+        "seo": 77,
         "pwa": 67
       },
-      "test_date": "2025-10-24 03:02:30"
+      "test_date": "2025-10-31 10:19:44"
     },
     {
       "url": "autoplius.lt",
       "country": "Lithuania",
       "scores": {
-        "performance": 87,
+        "performance": 89,
         "accessibility": 52,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:39:51"
+      "test_date": "2025-11-02 10:15:58"
     },
     {
       "url": "skelbiu.lt",
@@ -118,19 +154,19 @@
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-23 22:09:25"
+      "test_date": "2025-10-31 04:28:14"
     },
     {
       "url": "mercadolibre.com.mx",
       "country": "Mexico",
       "scores": {
-        "performance": 44,
+        "performance": 57,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-22 12:19:22"
+      "test_date": "2025-10-29 14:35:07"
     },
     {
       "url": "marktplaats.nl",
@@ -151,106 +187,118 @@
         "performance": 27,
         "accessibility": 98,
         "best_practices": 75,
-        "seo": 92,
+        "seo": 85,
         "pwa": 78
       },
-      "test_date": "2025-10-24 16:12:16"
+      "test_date": "2025-10-31 22:17:19"
     },
     {
       "url": "daraz.pk",
       "country": "Pakistan",
       "scores": {
-        "performance": 52,
-        "accessibility": 38,
+        "performance": 38,
+        "accessibility": 31,
         "best_practices": 75,
-        "seo": 86,
+        "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-27 08:17:53"
+      "test_date": "2025-11-03 06:17:39"
     },
     {
       "url": "olx.com.pk",
       "country": "Pakistan",
       "scores": {
-        "performance": 31,
+        "performance": 24,
         "accessibility": 86,
         "best_practices": 75,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-23 00:53:37"
+      "test_date": "2025-10-30 06:33:10"
     },
     {
       "url": "olx.pl",
       "country": "Poland",
       "scores": {
-        "performance": 23,
+        "performance": 24,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-23 02:58:23"
+      "test_date": "2025-10-30 08:13:21"
+    },
+    {
+      "url": "olx.ro",
+      "country": "Romania",
+      "scores": {
+        "performance": 24,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 08:13:40"
     },
     {
       "url": "avito.ru",
       "country": "Russia",
       "scores": {
         "performance": 9,
-        "accessibility": 56,
-        "best_practices": 67,
-        "seo": 93,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 100,
         "pwa": 78
       },
-      "test_date": "2025-10-26 13:41:19"
+      "test_date": "2025-11-02 10:17:25"
     },
     {
       "url": "blocket.se",
       "country": "Sweden",
       "scores": {
-        "performance": 32,
+        "performance": 27,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:51:32"
+      "test_date": "2025-11-02 16:10:19"
     },
     {
       "url": "cdon.se",
       "country": "Sweden",
       "scores": {
-        "performance": 46,
-        "accessibility": 100,
+        "performance": 47,
+        "accessibility": 99,
         "best_practices": 100,
         "seo": 100,
         "pwa": 78
       },
-      "test_date": "2025-10-26 22:21:07"
+      "test_date": "2025-11-02 20:25:37"
     },
     {
       "url": "sahibinden.com",
       "country": "Turkey",
       "scores": {
-        "performance": 80,
+        "performance": 82,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-23 16:47:50"
+      "test_date": "2025-10-30 22:17:53"
     },
     {
       "url": "ebay.com",
       "country": "United States",
       "scores": {
-        "performance": 45,
-        "accessibility": 97,
+        "performance": 38,
+        "accessibility": 86,
         "best_practices": 83,
-        "seo": 98,
+        "seo": 91,
         "pwa": 78
       },
-      "test_date": "2025-10-23 07:04:58"
+      "test_date": "2025-11-03 12:21:01"
     },
     {
       "url": "etsy.com",
@@ -268,13 +316,13 @@
       "url": "patreon.com",
       "country": "United States",
       "scores": {
-        "performance": 81,
+        "performance": 80,
         "accessibility": 81,
         "best_practices": 83,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-23 04:17:41"
+      "test_date": "2025-10-30 12:17:29"
     }
   ],
   "countries": [
@@ -282,7 +330,7 @@
       "country": "Austria",
       "website_count": 1,
       "averages": {
-        "performance": 35,
+        "performance": 33,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 96,
@@ -293,10 +341,21 @@
       "country": "Bangladesh",
       "website_count": 1,
       "averages": {
-        "performance": 37,
-        "accessibility": 87,
+        "performance": 35,
+        "accessibility": 89,
         "best_practices": 67,
         "seo": 98,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Bulgaria",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 85,
         "pwa": 33
       }
     },
@@ -304,32 +363,32 @@
       "country": "Denmark",
       "website_count": 1,
       "averages": {
-        "performance": 43,
+        "performance": 45,
         "accessibility": 98,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 67
       }
     },
     {
       "country": "Finland",
-      "website_count": 3,
+      "website_count": 5,
       "averages": {
-        "performance": 31,
-        "accessibility": 83,
-        "best_practices": 78,
-        "seo": 98,
-        "pwa": 63
+        "performance": 29,
+        "accessibility": 88,
+        "best_practices": 80,
+        "seo": 96,
+        "pwa": 49
       }
     },
     {
       "country": "Italy",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 40,
         "accessibility": 95,
         "best_practices": 83,
-        "seo": 85,
+        "seo": 77,
         "pwa": 67
       }
     },
@@ -337,7 +396,7 @@
       "country": "Lithuania",
       "website_count": 2,
       "averages": {
-        "performance": 88,
+        "performance": 89,
         "accessibility": 52,
         "best_practices": 83,
         "seo": 83,
@@ -348,7 +407,7 @@
       "country": "Mexico",
       "website_count": 1,
       "averages": {
-        "performance": 44,
+        "performance": 57,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 96,
@@ -373,7 +432,7 @@
         "performance": 27,
         "accessibility": 98,
         "best_practices": 75,
-        "seo": 92,
+        "seo": 85,
         "pwa": 78
       }
     },
@@ -381,10 +440,10 @@
       "country": "Pakistan",
       "website_count": 2,
       "averages": {
-        "performance": 42,
-        "accessibility": 62,
+        "performance": 31,
+        "accessibility": 59,
         "best_practices": 75,
-        "seo": 93,
+        "seo": 90,
         "pwa": 45
       }
     },
@@ -392,10 +451,21 @@
       "country": "Poland",
       "website_count": 1,
       "averages": {
-        "performance": 23,
+        "performance": 24,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "country": "Romania",
+      "website_count": 1,
+      "averages": {
+        "performance": 24,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -404,9 +474,9 @@
       "website_count": 1,
       "averages": {
         "performance": 9,
-        "accessibility": 56,
-        "best_practices": 67,
-        "seo": 93,
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 100,
         "pwa": 78
       }
     },
@@ -414,7 +484,7 @@
       "country": "Sweden",
       "website_count": 2,
       "averages": {
-        "performance": 39,
+        "performance": 37,
         "accessibility": 100,
         "best_practices": 88,
         "seo": 96,
@@ -425,7 +495,7 @@
       "country": "Turkey",
       "website_count": 1,
       "averages": {
-        "performance": 80,
+        "performance": 82,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 83,
@@ -436,10 +506,10 @@
       "country": "United States",
       "website_count": 3,
       "averages": {
-        "performance": 65,
-        "accessibility": 93,
+        "performance": 62,
+        "accessibility": 89,
         "best_practices": 89,
-        "seo": 91,
+        "seo": 89,
         "pwa": 56
       }
     }

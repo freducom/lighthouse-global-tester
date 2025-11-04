@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.142Z",
+    "generated_at": "2025-11-04T09:04:16.855Z",
     "url": "netflix.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 38,
-    "accessibility": 92,
+    "performance": 46,
+    "accessibility": 87,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 07:05:20"
+    "test_date": "2025-10-29 22:15:54"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 87,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-29 22:15:54"
+    },
     {
       "performance": 38,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 7,
-    "accessibility": 5,
+    "performance": 8,
+    "accessibility": -5,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:05:20",
-    "test_date_previous": "2025-10-22 16:16:37"
+    "test_date_current": "2025-10-29 22:15:54",
+    "test_date_previous": "2025-10-23 07:05:20"
   }
 }

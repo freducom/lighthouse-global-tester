@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.048Z",
+    "generated_at": "2025-11-04T09:04:16.432Z",
     "url": "dr.dk",
     "country": "Denmark",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 30,
-    "accessibility": 85,
-    "best_practices": 92,
-    "seo": 92,
+    "performance": 32,
+    "accessibility": 74,
+    "best_practices": 100,
+    "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-27 12:23:56"
+    "test_date": "2025-11-03 10:17:56"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 74,
+      "best_practices": 100,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-03 10:17:56"
+    },
     {
       "performance": 30,
       "accessibility": 85,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 12:23:56"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": -11,
+    "best_practices": 8,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 10:17:56",
+    "test_date_previous": "2025-10-27 12:23:56"
+  }
 }

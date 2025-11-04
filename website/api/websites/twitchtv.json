@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.145Z",
+    "generated_at": "2025-11-04T09:04:16.866Z",
     "url": "twitch.tv",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
     "performance": 26,
-    "accessibility": 90,
-    "best_practices": 83,
+    "accessibility": 100,
+    "best_practices": 75,
     "seo": 97,
-    "pwa": 67,
-    "test_date": "2025-10-24 18:23:16"
+    "pwa": 56,
+    "test_date": "2025-11-01 03:11:02"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 97,
+      "pwa": 56,
+      "test_date": "2025-11-01 03:11:02"
+    },
     {
       "performance": 26,
       "accessibility": 90,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -4,
-    "accessibility": -10,
-    "best_practices": -9,
-    "seo": 1,
-    "pwa": 11,
-    "test_date_current": "2025-10-24 18:23:16",
-    "test_date_previous": "2025-10-23 07:10:46"
+    "performance": 0,
+    "accessibility": 10,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": -11,
+    "test_date_current": "2025-11-01 03:11:02",
+    "test_date_previous": "2025-10-24 18:23:16"
   }
 }

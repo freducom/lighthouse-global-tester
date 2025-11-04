@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.145Z",
+    "generated_at": "2025-11-04T09:04:16.871Z",
     "url": "whitehouse.gov",
     "country": "United States",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 74,
+    "performance": 71,
     "accessibility": 92,
     "best_practices": 100,
-    "seo": 83,
+    "seo": 86,
     "pwa": 78,
-    "test_date": "2025-10-25 04:13:05"
+    "test_date": "2025-11-01 12:27:00"
   },
   "historical_data": [
+    {
+      "performance": 71,
+      "accessibility": 92,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 78,
+      "test_date": "2025-11-01 12:27:00"
+    },
     {
       "performance": 74,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 3,
     "pwa": 0,
-    "test_date_current": "2025-10-25 04:13:05",
-    "test_date_previous": "2025-10-23 07:07:30"
+    "test_date_current": "2025-11-01 12:27:00",
+    "test_date_previous": "2025-10-25 04:13:05"
   }
 }

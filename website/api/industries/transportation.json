@@ -1,76 +1,100 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.962Z",
+    "generated_at": "2025-11-04T09:04:16.074Z",
     "industry": "Transportation",
-    "website_count": 13
+    "website_count": 26
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 87,
-    "best_practices": 84,
-    "seo": 91,
-    "pwa": 39
+    "performance": 38,
+    "accessibility": 88,
+    "best_practices": 78,
+    "seo": 90,
+    "pwa": 41
   },
   "websites": [
     {
       "url": "aerolineas.com.ar",
       "country": "Argentina",
       "scores": {
-        "performance": 37,
+        "performance": 5,
         "accessibility": 94,
         "best_practices": 75,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:10:33"
+      "test_date": "2025-11-02 03:18:39"
     },
     {
       "url": "aircanada.com",
       "country": "Canada",
       "scores": {
-        "performance": 25,
+        "performance": 26,
         "accessibility": 98,
-        "best_practices": 67,
+        "best_practices": 0,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:13:53"
+      "test_date": "2025-11-02 04:17:48"
     },
     {
       "url": "westjet.com",
       "country": "Canada",
       "scores": {
-        "performance": 25,
+        "performance": 27,
         "accessibility": 86,
         "best_practices": 67,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-25 04:12:53"
+      "test_date": "2025-11-01 12:26:13"
+    },
+    {
+      "url": "finnair.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 59,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 22:09:55"
+    },
+    {
+      "url": "trafi.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 35,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 67
+      },
+      "test_date": "2025-10-31 22:17:41"
     },
     {
       "url": "vr.fi",
       "country": "Finland",
       "scores": {
-        "performance": 60,
+        "performance": 53,
         "accessibility": 97,
         "best_practices": 100,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-25 00:51:41"
+      "test_date": "2025-11-01 10:11:18"
     },
     {
       "url": "bahn.de",
       "country": "Germany",
       "scores": {
-        "performance": 30,
+        "performance": 40,
         "accessibility": 82,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:42:30"
+      "test_date": "2025-11-02 10:18:41"
     },
     {
       "url": "cathaypacific.com",
@@ -85,76 +109,148 @@
       "test_date": "2025-10-26 22:19:10"
     },
     {
+      "url": "olacabs.com",
+      "country": "India",
+      "scores": {
+        "performance": 39,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 06:28:28"
+    },
+    {
+      "url": "rapido.bike",
+      "country": "India",
+      "scores": {
+        "performance": 55,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 88,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 16:37:03"
+    },
+    {
+      "url": "uber.com",
+      "country": "India",
+      "scores": {
+        "performance": 33,
+        "accessibility": 83,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 03:11:51"
+    },
+    {
       "url": "daa.ie",
       "country": "Ireland",
       "scores": {
-        "performance": 56,
+        "performance": 57,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-27 06:27:44"
+      "test_date": "2025-11-03 04:30:44"
     },
     {
       "url": "ns.nl",
       "country": "Netherlands",
       "scores": {
-        "performance": 26,
+        "performance": 27,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-22 22:03:21"
+      "test_date": "2025-10-30 04:17:44"
+    },
+    {
+      "url": "saudia.com",
+      "country": "Saudi Arabia",
+      "scores": {
+        "performance": 31,
+        "accessibility": 95,
+        "best_practices": 0,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:49:17"
     },
     {
       "url": "bring.se",
       "country": "Sweden",
       "scores": {
-        "performance": 54,
+        "performance": 40,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:47:58"
+      "test_date": "2025-11-02 18:11:12"
     },
     {
       "url": "postnord.se",
       "country": "Sweden",
       "scores": {
-        "performance": 28,
+        "performance": 42,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-23 08:33:41"
+      "test_date": "2025-10-30 14:06:32"
     },
     {
       "url": "trafikverket.se",
       "country": "Sweden",
       "scores": {
-        "performance": 65,
+        "performance": 63,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-10-24 16:12:30"
+      "test_date": "2025-10-31 22:17:55"
+    },
+    {
+      "url": "emirates.com",
+      "country": "United Arab Emirates",
+      "scores": {
+        "performance": 34,
+        "accessibility": 82,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 89
+      },
+      "test_date": "2025-11-03 16:19:40"
+    },
+    {
+      "url": "etihad.com",
+      "country": "United Arab Emirates",
+      "scores": {
+        "performance": 29,
+        "accessibility": 72,
+        "best_practices": 92,
+        "seo": 68,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 18:25:13"
     },
     {
       "url": "tfl.gov.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 88,
+        "performance": 90,
         "accessibility": 59,
         "best_practices": 83,
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-24 10:16:14"
+      "test_date": "2025-10-31 18:21:52"
     },
     {
       "url": "aa.com",
@@ -167,6 +263,66 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 19:30:57"
+    },
+    {
+      "url": "fedex.com",
+      "country": "United States",
+      "scores": {
+        "performance": 39,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 20:12:52"
+    },
+    {
+      "url": "lyft.com",
+      "country": "United States",
+      "scores": {
+        "performance": 54,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 10:13:04"
+    },
+    {
+      "url": "southwest.com",
+      "country": "United States",
+      "scores": {
+        "performance": 17,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 08:13:11"
+    },
+    {
+      "url": "united.com",
+      "country": "United States",
+      "scores": {
+        "performance": 23,
+        "accessibility": 97,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 78
+      },
+      "test_date": "2025-11-01 04:14:29"
+    },
+    {
+      "url": "ups.com",
+      "country": "United States",
+      "scores": {
+        "performance": 34,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 04:23:51"
     }
   ],
   "countries": [
@@ -174,7 +330,7 @@
       "country": "Argentina",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 5,
         "accessibility": 94,
         "best_practices": 75,
         "seo": 90,
@@ -185,31 +341,31 @@
       "country": "Canada",
       "website_count": 2,
       "averages": {
-        "performance": 25,
+        "performance": 27,
         "accessibility": 92,
-        "best_practices": 67,
+        "best_practices": 34,
         "seo": 89,
         "pwa": 33
       }
     },
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 60,
-        "accessibility": 97,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 67
+        "performance": 49,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 56
       }
     },
     {
       "country": "Germany",
       "website_count": 1,
       "averages": {
-        "performance": 30,
+        "performance": 40,
         "accessibility": 82,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 91,
         "pwa": 33
       }
@@ -226,10 +382,21 @@
       }
     },
     {
+      "country": "India",
+      "website_count": 3,
+      "averages": {
+        "performance": 42,
+        "accessibility": 88,
+        "best_practices": 89,
+        "seo": 86,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Ireland",
       "website_count": 1,
       "averages": {
-        "performance": 56,
+        "performance": 57,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,
@@ -240,7 +407,7 @@
       "country": "Netherlands",
       "website_count": 1,
       "averages": {
-        "performance": 26,
+        "performance": 27,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 100,
@@ -248,10 +415,21 @@
       }
     },
     {
+      "country": "Saudi Arabia",
+      "website_count": 1,
+      "averages": {
+        "performance": 31,
+        "accessibility": 95,
+        "best_practices": 0,
+        "seo": 91,
+        "pwa": 33
+      }
+    },
+    {
       "country": "Sweden",
       "website_count": 3,
       "averages": {
-        "performance": 49,
+        "performance": 48,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 95,
@@ -259,10 +437,21 @@
       }
     },
     {
+      "country": "United Arab Emirates",
+      "website_count": 2,
+      "averages": {
+        "performance": 32,
+        "accessibility": 77,
+        "best_practices": 80,
+        "seo": 79,
+        "pwa": 61
+      }
+    },
+    {
       "country": "United Kingdom",
       "website_count": 1,
       "averages": {
-        "performance": 88,
+        "performance": 90,
         "accessibility": 59,
         "best_practices": 83,
         "seo": 77,
@@ -271,13 +460,13 @@
     },
     {
       "country": "United States",
-      "website_count": 1,
+      "website_count": 6,
       "averages": {
-        "performance": 22,
-        "accessibility": 87,
-        "best_practices": 75,
-        "seo": 96,
-        "pwa": 33
+        "performance": 32,
+        "accessibility": 93,
+        "best_practices": 76,
+        "seo": 94,
+        "pwa": 41
       }
     }
   ]

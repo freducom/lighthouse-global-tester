@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.140Z",
+    "generated_at": "2025-11-04T09:04:16.846Z",
     "url": "google.com",
     "country": "United States",
     "industry": "Search Engine"
   },
   "latest_scores": {
-    "performance": 69,
-    "accessibility": 98,
-    "best_practices": 92,
-    "seo": 85,
+    "performance": 57,
+    "accessibility": 96,
+    "best_practices": 100,
+    "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-23 06:51:26"
+    "test_date": "2025-11-04 04:15:03"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-04 04:15:03"
+    },
     {
       "performance": 69,
       "accessibility": 98,
@@ -80,12 +88,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 0,
-    "best_practices": -8,
-    "seo": 0,
+    "performance": -12,
+    "accessibility": -2,
+    "best_practices": 8,
+    "seo": -2,
     "pwa": 0,
-    "test_date_current": "2025-10-23 06:51:26",
-    "test_date_previous": "2025-10-22 08:26:46"
+    "test_date_current": "2025-11-04 04:15:03",
+    "test_date_previous": "2025-10-23 06:51:26"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.062Z",
+    "generated_at": "2025-11-04T09:04:16.521Z",
     "url": "dw.com",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 61,
+    "performance": 41,
     "accessibility": 93,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 100,
     "pwa": 100,
-    "test_date": "2025-10-27 12:28:44"
+    "test_date": "2025-11-03 12:18:11"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 100,
+      "test_date": "2025-11-03 12:18:11"
+    },
     {
       "performance": 61,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 12:28:44"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -20,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 12:18:11",
+    "test_date_previous": "2025-10-27 12:28:44"
+  }
 }

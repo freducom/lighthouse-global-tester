@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generated_at": "2025-11-04T09:04:16.080Z",
+    "industry": "Food",
+    "website_count": 3
+  },
+  "averages": {
+    "performance": 49,
+    "accessibility": 91,
+    "best_practices": 97,
+    "seo": 88,
+    "pwa": 56
+  },
+  "websites": [
+    {
+      "url": "fazer.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 40,
+        "accessibility": 90,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 20:12:15"
+    },
+    {
+      "url": "paulig.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 63,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 78
+      },
+      "test_date": "2025-10-30 12:18:04"
+    },
+    {
+      "url": "valio.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 43,
+        "accessibility": 89,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-01 06:17:50"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Finland",
+      "website_count": 3,
+      "averages": {
+        "performance": 49,
+        "accessibility": 91,
+        "best_practices": 97,
+        "seo": 88,
+        "pwa": 56
+      }
+    }
+  ]
+}

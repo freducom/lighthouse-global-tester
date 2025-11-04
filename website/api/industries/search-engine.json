@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.965Z",
+    "generated_at": "2025-11-04T09:04:16.083Z",
     "industry": "Search Engine",
     "website_count": 5
   },
   "averages": {
-    "performance": 55,
-    "accessibility": 82,
-    "best_practices": 87,
-    "seo": 84,
+    "performance": 51,
+    "accessibility": 84,
+    "best_practices": 85,
+    "seo": 83,
     "pwa": 33
   },
   "websites": [
@@ -16,25 +16,25 @@
       "url": "goo.ne.jp",
       "country": "Japan",
       "scores": {
-        "performance": 58,
-        "accessibility": 70,
-        "best_practices": 92,
+        "performance": 27,
+        "accessibility": 81,
+        "best_practices": 83,
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:56:14"
+      "test_date": "2025-11-04 04:14:47"
     },
     {
       "url": "yandex.ru",
       "country": "Russia",
       "scores": {
-        "performance": 31,
+        "performance": 33,
         "accessibility": 55,
         "best_practices": 83,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-25 08:11:54"
+      "test_date": "2025-11-01 16:16:59"
     },
     {
       "url": "naver.com",
@@ -42,35 +42,35 @@
       "scores": {
         "performance": 40,
         "accessibility": 86,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 76,
         "pwa": 33
       },
-      "test_date": "2025-10-22 16:14:58"
+      "test_date": "2025-10-29 22:12:33"
     },
     {
       "url": "bing.com",
       "country": "United States",
       "scores": {
-        "performance": 77,
+        "performance": 98,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:42:13"
+      "test_date": "2025-11-02 14:16:53"
     },
     {
       "url": "google.com",
       "country": "United States",
       "scores": {
-        "performance": 69,
-        "accessibility": 98,
-        "best_practices": 92,
-        "seo": 85,
+        "performance": 57,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-23 06:51:26"
+      "test_date": "2025-11-04 04:15:03"
     }
   ],
   "countries": [
@@ -78,9 +78,9 @@
       "country": "Japan",
       "website_count": 1,
       "averages": {
-        "performance": 58,
-        "accessibility": 70,
-        "best_practices": 92,
+        "performance": 27,
+        "accessibility": 81,
+        "best_practices": 83,
         "seo": 77,
         "pwa": 33
       }
@@ -89,7 +89,7 @@
       "country": "Russia",
       "website_count": 1,
       "averages": {
-        "performance": 31,
+        "performance": 33,
         "accessibility": 55,
         "best_practices": 83,
         "seo": 91,
@@ -102,7 +102,7 @@
       "averages": {
         "performance": 40,
         "accessibility": 86,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 76,
         "pwa": 33
       }
@@ -111,10 +111,10 @@
       "country": "United States",
       "website_count": 2,
       "averages": {
-        "performance": 73,
-        "accessibility": 99,
-        "best_practices": 84,
-        "seo": 88,
+        "performance": 78,
+        "accessibility": 98,
+        "best_practices": 88,
+        "seo": 87,
         "pwa": 33
       }
     }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.108Z",
+    "generated_at": "2025-11-04T09:04:16.702Z",
     "url": "sport.sk",
     "country": "Slovakia",
     "industry": "Sports"
@@ -9,11 +9,19 @@
     "performance": 37,
     "accessibility": 68,
     "best_practices": 75,
-    "seo": 83,
+    "seo": 76,
     "pwa": 33,
-    "test_date": "2025-10-24 00:41:06"
+    "test_date": "2025-10-31 08:15:28"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 68,
+      "best_practices": 75,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-10-31 08:15:28"
+    },
     {
       "performance": 37,
       "accessibility": 68,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 00:41:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 08:15:28",
+    "test_date_previous": "2025-10-24 00:41:06"
+  }
 }

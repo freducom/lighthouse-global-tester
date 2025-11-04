@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.139Z",
+    "generated_at": "2025-11-04T09:04:16.552Z",
     "url": "facebook.com",
-    "country": "United States",
-    "industry": "Social Media"
+    "country": "India",
+    "industry": "Social"
   },
   "latest_scores": {
     "performance": 58,
-    "accessibility": 71,
-    "best_practices": 75,
+    "accessibility": 78,
+    "best_practices": 67,
     "seo": 93,
     "pwa": 78,
-    "test_date": "2025-10-23 06:51:59"
+    "test_date": "2025-11-03 20:11:19"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 78,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-03 20:11:19"
+    },
+    {
+      "performance": 46,
+      "accessibility": 78,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-03 20:10:57"
+    },
     {
       "performance": 58,
       "accessibility": 71,
@@ -72,12 +88,12 @@
     }
   ],
   "trends": {
-    "performance": -5,
+    "performance": 12,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 06:51:59",
-    "test_date_previous": "2025-10-22 08:27:19"
+    "test_date_current": "2025-11-03 20:11:19",
+    "test_date_previous": "2025-11-03 20:10:57"
   }
 }

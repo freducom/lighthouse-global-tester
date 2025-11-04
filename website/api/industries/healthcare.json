@@ -1,64 +1,112 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.964Z",
+    "generated_at": "2025-11-04T09:04:16.079Z",
     "industry": "Healthcare",
-    "website_count": 6
+    "website_count": 13
   },
   "averages": {
-    "performance": 45,
+    "performance": 50,
     "accessibility": 92,
-    "best_practices": 86,
+    "best_practices": 88,
     "seo": 92,
-    "pwa": 56
+    "pwa": 44
   },
   "websites": [
     {
       "url": "bonalive.com",
       "country": "Finland",
       "scores": {
-        "performance": 62,
+        "performance": 55,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 95,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:44:54"
+      "test_date": "2025-11-02 16:17:28"
     },
     {
       "url": "cardiosignal.com",
       "country": "Finland",
       "scores": {
-        "performance": 30,
+        "performance": 33,
         "accessibility": 83,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 22:17:18"
+      "test_date": "2025-11-02 20:19:28"
+    },
+    {
+      "url": "planmeca.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 61,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 80,
+        "pwa": 22
+      },
+      "test_date": "2025-10-30 13:34:58"
     },
     {
       "url": "1mg.com",
       "country": "India",
       "scores": {
-        "performance": 25,
+        "performance": 33,
         "accessibility": 97,
-        "best_practices": 75,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 89
       },
-      "test_date": "2025-10-27 07:00:03"
+      "test_date": "2025-11-02 00:49:24"
+    },
+    {
+      "url": "pharmeasy.in",
+      "country": "India",
+      "scores": {
+        "performance": 59,
+        "accessibility": 82,
+        "best_practices": 67,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 12:27:49"
+    },
+    {
+      "url": "practo.com",
+      "country": "India",
+      "scores": {
+        "performance": 53,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-10-30 14:08:25"
     },
     {
       "url": "1177.se",
       "country": "Sweden",
       "scores": {
-        "performance": 34,
+        "performance": 18,
         "accessibility": 100,
-        "best_practices": 75,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 89
       },
-      "test_date": "2025-10-26 19:25:10"
+      "test_date": "2025-11-02 00:46:09"
+    },
+    {
+      "url": "regionstockholm.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 20:10:17"
     },
     {
       "url": "cdc.gov",
@@ -70,64 +118,100 @@
         "seo": 84,
         "pwa": 56
       },
-      "test_date": "2025-10-26 22:20:31"
+      "test_date": "2025-11-02 20:25:00"
     },
     {
       "url": "clevelandclinic.org",
       "country": "United States",
       "scores": {
-        "performance": 49,
+        "performance": 57,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-27 03:12:48"
+      "test_date": "2025-11-03 00:49:30"
+    },
+    {
+      "url": "fda.gov",
+      "country": "United States",
+      "scores": {
+        "performance": 64,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 91,
+        "pwa": 22
+      },
+      "test_date": "2025-11-03 20:12:32"
+    },
+    {
+      "url": "mayo.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 59,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 12:33:05"
+    },
+    {
+      "url": "nih.gov",
+      "country": "United States",
+      "scores": {
+        "performance": 36,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 22
+      },
+      "test_date": "2025-10-30 00:59:05"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 46,
+        "performance": 50,
         "accessibility": 92,
-        "best_practices": 88,
-        "seo": 98,
-        "pwa": 33
+        "best_practices": 86,
+        "seo": 92,
+        "pwa": 29
       }
     },
     {
       "country": "India",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 25,
-        "accessibility": 97,
-        "best_practices": 75,
-        "seo": 92,
-        "pwa": 89
+        "performance": 48,
+        "accessibility": 85,
+        "best_practices": 78,
+        "seo": 89,
+        "pwa": 67
       }
     },
     {
       "country": "Sweden",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 34,
+        "performance": 35,
         "accessibility": 100,
-        "best_practices": 75,
+        "best_practices": 96,
         "seo": 100,
-        "pwa": 89
+        "pwa": 61
       }
     },
     {
       "country": "United States",
-      "website_count": 2,
+      "website_count": 5,
       "averages": {
-        "performance": 58,
-        "accessibility": 86,
-        "best_practices": 96,
-        "seo": 83,
-        "pwa": 45
+        "performance": 57,
+        "accessibility": 93,
+        "best_practices": 93,
+        "seo": 90,
+        "pwa": 33
       }
     }
   ]

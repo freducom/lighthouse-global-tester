@@ -1,40 +1,40 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.963Z",
+    "generated_at": "2025-11-04T09:04:16.077Z",
     "industry": "Retail",
-    "website_count": 8
+    "website_count": 12
   },
   "averages": {
-    "performance": 35,
-    "accessibility": 82,
-    "best_practices": 61,
-    "seo": 85,
-    "pwa": 37
+    "performance": 34,
+    "accessibility": 86,
+    "best_practices": 70,
+    "seo": 87,
+    "pwa": 42
   },
   "websites": [
     {
       "url": "canadiantire.ca",
       "country": "Canada",
       "scores": {
-        "performance": 21,
+        "performance": 25,
         "accessibility": 81,
-        "best_practices": 42,
+        "best_practices": 50,
         "seo": 71,
         "pwa": 56
       },
-      "test_date": "2025-10-26 22:13:08"
+      "test_date": "2025-11-02 20:15:18"
     },
     {
       "url": "walmart.ca",
       "country": "Canada",
       "scores": {
-        "performance": 37,
+        "performance": 36,
         "accessibility": 93,
         "best_practices": 67,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-25 03:00:21"
+      "test_date": "2025-11-01 10:19:01"
     },
     {
       "url": "kesko.fi",
@@ -47,6 +47,30 @@
         "pwa": 44
       },
       "test_date": "2025-10-29 00:46:50"
+    },
+    {
+      "url": "s-kanava.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 25,
+        "accessibility": 90,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-30 22:11:51"
+    },
+    {
+      "url": "tokmanni.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 28,
+        "accessibility": 74,
+        "best_practices": 75,
+        "seo": 79,
+        "pwa": 56
+      },
+      "test_date": "2025-10-31 22:15:03"
     },
     {
       "url": "ikea.se",
@@ -64,37 +88,37 @@
       "url": "adidas.com",
       "country": "United States",
       "scores": {
-        "performance": 85,
+        "performance": 86,
         "accessibility": 56,
         "best_practices": 0,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:05:29"
+      "test_date": "2025-11-02 03:16:41"
     },
     {
       "url": "bestbuy.com",
       "country": "United States",
       "scores": {
         "performance": 8,
-        "accessibility": 76,
-        "best_practices": 67,
+        "accessibility": 91,
+        "best_practices": 75,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:39:20"
+      "test_date": "2025-11-02 14:10:45"
     },
     {
       "url": "costco.com",
       "country": "United States",
       "scores": {
-        "performance": 17,
+        "performance": 14,
         "accessibility": 91,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-27 04:27:32"
+      "test_date": "2025-11-03 03:19:46"
     },
     {
       "url": "homedepot.com",
@@ -107,6 +131,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-28 12:23:45"
+    },
+    {
+      "url": "target.com",
+      "country": "United States",
+      "scores": {
+        "performance": 29,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 14:15:56"
+    },
+    {
+      "url": "walmart.com",
+      "country": "United States",
+      "scores": {
+        "performance": 40,
+        "accessibility": 100,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 10:19:17"
     }
   ],
   "countries": [
@@ -114,22 +162,22 @@
       "country": "Canada",
       "website_count": 2,
       "averages": {
-        "performance": 29,
+        "performance": 31,
         "accessibility": 87,
-        "best_practices": 55,
+        "best_practices": 59,
         "seo": 81,
         "pwa": 45
       }
     },
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 42,
-        "accessibility": 69,
-        "best_practices": 92,
-        "seo": 74,
-        "pwa": 44
+        "performance": 32,
+        "accessibility": 78,
+        "best_practices": 89,
+        "seo": 84,
+        "pwa": 59
       }
     },
     {
@@ -145,12 +193,12 @@
     },
     {
       "country": "United States",
-      "website_count": 4,
+      "website_count": 6,
       "averages": {
-        "performance": 35,
-        "accessibility": 79,
-        "best_practices": 50,
-        "seo": 88,
+        "performance": 34,
+        "accessibility": 89,
+        "best_practices": 63,
+        "seo": 89,
         "pwa": 33
       }
     }

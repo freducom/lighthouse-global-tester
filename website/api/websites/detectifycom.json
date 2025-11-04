@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.116Z",
+    "generated_at": "2025-11-04T09:04:16.727Z",
     "url": "detectify.com",
     "country": "Sweden",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 45,
     "accessibility": 91,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 79,
     "pwa": 44,
-    "test_date": "2025-10-27 10:12:41"
+    "test_date": "2025-11-03 08:15:33"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 79,
+      "pwa": 44,
+      "test_date": "2025-11-03 08:15:33"
+    },
     {
       "performance": 39,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 10:12:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 08:15:33",
+    "test_date_previous": "2025-10-27 10:12:41"
+  }
 }

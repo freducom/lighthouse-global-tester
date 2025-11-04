@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.039Z",
+    "generated_at": "2025-11-04T09:04:16.410Z",
     "url": "aircanada.com",
     "country": "Canada",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 26,
     "accessibility": 98,
-    "best_practices": 67,
+    "best_practices": 0,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-27 07:13:53"
+    "test_date": "2025-11-02 04:17:48"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 98,
+      "best_practices": 0,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-02 04:17:48"
+    },
     {
       "performance": 25,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 07:13:53"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": -67,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 04:17:48",
+    "test_date_previous": "2025-10-27 07:13:53"
+  }
 }

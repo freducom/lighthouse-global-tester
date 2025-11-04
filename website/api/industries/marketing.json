@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.965Z",
+    "generated_at": "2025-11-04T09:04:16.081Z",
     "industry": "Marketing",
-    "website_count": 7
+    "website_count": 9
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 92,
-    "best_practices": 69,
-    "seo": 91,
+    "performance": 41,
+    "accessibility": 91,
+    "best_practices": 68,
+    "seo": 92,
     "pwa": 31
   },
   "websites": [
@@ -16,37 +16,61 @@
       "url": "leadoo.com",
       "country": "Finland",
       "scores": {
-        "performance": 27,
+        "performance": 26,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,
         "pwa": 22
       },
-      "test_date": "2025-10-29 06:15:53"
+      "test_date": "2025-10-29 07:42:07"
+    },
+    {
+      "url": "smartly.io",
+      "country": "Finland",
+      "scores": {
+        "performance": 33,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 22
+      },
+      "test_date": "2025-10-31 06:16:22"
+    },
+    {
+      "url": "supermetrics.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 30,
+        "accessibility": 82,
+        "best_practices": 50,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 12:19:33"
     },
     {
       "url": "wpseoai.com",
       "country": "Finland",
       "scores": {
-        "performance": 65,
+        "performance": 64,
         "accessibility": 90,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-25 06:15:39"
+      "test_date": "2025-11-01 14:15:40"
     },
     {
       "url": "clevertap.com",
       "country": "India",
       "scores": {
-        "performance": 31,
+        "performance": 57,
         "accessibility": 81,
         "best_practices": 67,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-27 03:13:16"
+      "test_date": "2025-11-03 00:49:59"
     },
     {
       "url": "inmobi.com",
@@ -64,13 +88,13 @@
       "url": "salesmanago.com",
       "country": "Poland",
       "scores": {
-        "performance": 44,
+        "performance": 47,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 16:49:08"
+      "test_date": "2025-10-30 22:19:08"
     },
     {
       "url": "hubspot.com",
@@ -100,12 +124,12 @@
   "countries": [
     {
       "country": "Finland",
-      "website_count": 2,
+      "website_count": 4,
       "averages": {
-        "performance": 46,
-        "accessibility": 91,
-        "best_practices": 92,
-        "seo": 93,
+        "performance": 38,
+        "accessibility": 90,
+        "best_practices": 79,
+        "seo": 95,
         "pwa": 28
       }
     },
@@ -113,7 +137,7 @@
       "country": "India",
       "website_count": 2,
       "averages": {
-        "performance": 39,
+        "performance": 52,
         "accessibility": 83,
         "best_practices": 67,
         "seo": 90,
@@ -124,7 +148,7 @@
       "country": "Poland",
       "website_count": 1,
       "averages": {
-        "performance": 44,
+        "performance": 47,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,

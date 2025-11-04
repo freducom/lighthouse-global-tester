@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.969Z",
+          "dateCreated": "2025-11-04T09:04:12.023Z",
           "about": {
             "@type": "WebSite",
             "name": "chosun.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-chosun.com.html#metrics",
           "name": "chosun.com Performance Metrics",
           "description": "Latest Lighthouse scores for chosun.com",
-          "performanceScore": 26,
-          "accessibilityScore": 62,
-          "bestPracticesScore": 42,
+          "performanceScore": 25,
+          "accessibilityScore": 60,
+          "bestPracticesScore": 58,
           "seoScore": 92,
-          "dateRecorded": "2025-10-27 00:52:51"
+          "dateRecorded": "2025-11-02 22:17:50"
         }
       ]
     }
@@ -117,12 +117,12 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">26%</div>
+                <div class="stat-number poor">25%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number average">62%</div>
+                <div class="stat-number average">60%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card seo">
@@ -132,8 +132,8 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number poor">42%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number average">58%</div>
+                <div class="stat-description">average performance</div>
             </div>
         </div>
 
@@ -152,22 +152,22 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 26%"></div>
-                        <span class="score-text">26%</span>
+                        <div class="score-fill performance" style="width: 25%"></div>
+                        <span class="score-text">25%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 62%"></div>
-                        <span class="score-text">62%</span>
+                        <div class="score-fill accessibility" style="width: 60%"></div>
+                        <span class="score-text">60%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 42%"></div>
-                        <span class="score-text">42%</span>
+                        <div class="score-fill best-practices" style="width: 58%"></div>
+                        <span class="score-text">58%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":167,"url":"chosun.com","performance":26,"accessibility":61,"best_practices":58,"seo":92,"pwa":33,"test_date":"2025-10-19 20:11:26","country":"South Korea","industry":"Media"},{"id":965,"url":"chosun.com","performance":26,"accessibility":62,"best_practices":42,"seo":92,"pwa":33,"test_date":"2025-10-27 00:52:51","country":"South Korea","industry":"Media"}];
+        const historyData = [{"id":167,"url":"chosun.com","performance":26,"accessibility":61,"best_practices":58,"seo":92,"pwa":33,"test_date":"2025-10-19 20:11:26","country":"South Korea","industry":"Media"},{"id":965,"url":"chosun.com","performance":26,"accessibility":62,"best_practices":42,"seo":92,"pwa":33,"test_date":"2025-10-27 00:52:51","country":"South Korea","industry":"Media"},{"id":1870,"url":"chosun.com","performance":25,"accessibility":60,"best_practices":58,"seo":92,"pwa":33,"test_date":"2025-11-02 22:17:50","country":"South Korea","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

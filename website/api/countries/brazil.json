@@ -1,41 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.844Z",
+    "generated_at": "2025-11-04T09:04:15.522Z",
     "country": "Brazil",
     "flag": "🇧🇷",
     "website_count": 10
   },
   "averages": {
-    "performance": 48,
-    "accessibility": 85,
+    "performance": 41,
+    "accessibility": 87,
     "best_practices": 79,
-    "seo": 89,
-    "pwa": 48
+    "seo": 90,
+    "pwa": 49
   },
   "websites": [
-    {
-      "url": "abril.com.br",
-      "industry": "Media",
-      "scores": {
-        "performance": 81,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-19 19:54:49"
-    },
     {
       "url": "mercadolivre.com.br",
       "industry": "E-commerce",
       "scores": {
-        "performance": 65,
+        "performance": 66,
         "accessibility": 96,
-        "best_practices": 83,
+        "best_practices": 75,
         "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-22 12:19:37"
+      "test_date": "2025-10-29 14:35:21"
     },
     {
       "url": "estadao.com.br",
@@ -50,6 +38,18 @@
       "test_date": "2025-10-19 19:55:13"
     },
     {
+      "url": "abril.com.br",
+      "industry": "Media",
+      "scores": {
+        "performance": 60,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 03:13:10"
+    },
+    {
       "url": "g1.globo.com",
       "industry": "Media",
       "scores": {
@@ -60,30 +60,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 19:52:52"
-    },
-    {
-      "url": "globo.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 56,
-        "accessibility": 82,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 67
-      },
-      "test_date": "2025-10-19 19:50:49"
-    },
-    {
-      "url": "uol.com.br",
-      "industry": "Portal",
-      "scores": {
-        "performance": 52,
-        "accessibility": 64,
-        "best_practices": 67,
-        "seo": 92,
-        "pwa": 89
-      },
-      "test_date": "2025-10-24 20:26:13"
     },
     {
       "url": "r7.com",
@@ -98,16 +74,28 @@
       "test_date": "2025-10-19 19:53:15"
     },
     {
+      "url": "uol.com.br",
+      "industry": "Portal",
+      "scores": {
+        "performance": 32,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 89
+      },
+      "test_date": "2025-11-01 04:19:50"
+    },
+    {
       "url": "folha.uol.com.br",
       "industry": "Media",
       "scores": {
-        "performance": 36,
+        "performance": 32,
         "accessibility": 88,
         "best_practices": 83,
         "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-20 20:12:11"
+      "test_date": "2025-11-03 22:16:17"
     },
     {
       "url": "terra.com.br",
@@ -122,16 +110,28 @@
       "test_date": "2025-10-19 19:54:39"
     },
     {
+      "url": "globo.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 78
+      },
+      "test_date": "2025-11-04 03:23:19"
+    },
+    {
       "url": "americanas.com.br",
       "industry": "E-commerce",
       "scores": {
         "performance": 2,
         "accessibility": 93,
-        "best_practices": 58,
+        "best_practices": 67,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:35:10"
+      "test_date": "2025-11-02 06:20:36"
     }
   ],
   "industries": [
@@ -150,20 +150,20 @@
       "industry": "Media",
       "website_count": 6,
       "averages": {
-        "performance": 56,
+        "performance": 46,
         "accessibility": 89,
-        "best_practices": 82,
-        "seo": 88,
-        "pwa": 37
+        "best_practices": 79,
+        "seo": 89,
+        "pwa": 39
       }
     },
     {
       "industry": "Portal",
       "website_count": 2,
       "averages": {
-        "performance": 41,
-        "accessibility": 67,
-        "best_practices": 80,
+        "performance": 31,
+        "accessibility": 71,
+        "best_practices": 88,
         "seo": 89,
         "pwa": 95
       }

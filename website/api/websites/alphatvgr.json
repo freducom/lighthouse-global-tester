@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.066Z",
+    "generated_at": "2025-11-04T09:04:16.530Z",
     "url": "alphatv.gr",
     "country": "Greece",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 34,
     "accessibility": 81,
     "best_practices": 92,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-26 08:00:46"
+    "test_date": "2025-11-02 06:13:38"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-02 06:13:38"
+    },
     {
       "performance": 42,
       "accessibility": 81,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": -8,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 08:00:46",
-    "test_date_previous": "2025-10-26 07:44:23"
+    "test_date_current": "2025-11-02 06:13:38",
+    "test_date_previous": "2025-10-26 08:00:46"
   }
 }

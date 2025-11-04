@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.093Z",
+    "generated_at": "2025-11-04T09:04:16.649Z",
     "url": "observer24.com.na",
     "country": "Namibia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 26,
     "accessibility": 93,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-23 00:43:35"
+    "test_date": "2025-10-30 06:18:07"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-30 06:18:07"
+    },
     {
       "performance": 25,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 00:43:35"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 06:18:07",
+    "test_date_previous": "2025-10-23 00:43:35"
+  }
 }

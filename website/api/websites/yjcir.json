@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.079Z",
+    "generated_at": "2025-11-04T09:04:16.603Z",
     "url": "yjc.ir",
     "country": "Iran",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 56,
-    "accessibility": 90,
+    "performance": 57,
+    "accessibility": 96,
     "best_practices": 75,
     "seo": 92,
     "pwa": 56,
-    "test_date": "2025-10-25 08:12:14"
+    "test_date": "2025-11-01 16:18:25"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-01 16:18:25"
+    },
     {
       "performance": 56,
       "accessibility": 90,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 08:12:14"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 6,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 16:18:25",
+    "test_date_previous": "2025-10-25 08:12:14"
+  }
 }

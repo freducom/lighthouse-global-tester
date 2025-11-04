@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.040Z",
+    "generated_at": "2025-11-04T09:04:16.413Z",
     "url": "cbc.ca",
     "country": "Canada",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 33,
-    "accessibility": 91,
+    "performance": 35,
+    "accessibility": 93,
     "best_practices": 83,
     "seo": 83,
     "pwa": 56,
-    "test_date": "2025-10-26 22:19:32"
+    "test_date": "2025-11-02 20:24:01"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 56,
+      "test_date": "2025-11-02 20:24:01"
+    },
     {
       "performance": 33,
       "accessibility": 91,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
-    "accessibility": -7,
+    "performance": 2,
+    "accessibility": 2,
     "best_practices": 0,
-    "seo": -7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 22:19:32",
-    "test_date_previous": "2025-10-19 19:57:57"
+    "test_date_current": "2025-11-02 20:24:01",
+    "test_date_previous": "2025-10-26 22:19:32"
   }
 }

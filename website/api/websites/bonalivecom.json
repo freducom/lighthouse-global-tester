@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.052Z",
+    "generated_at": "2025-11-04T09:04:16.442Z",
     "url": "bonalive.com",
     "country": "Finland",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 55,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 95,
     "pwa": 33,
-    "test_date": "2025-10-26 19:44:54"
+    "test_date": "2025-11-02 16:17:28"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 95,
+      "pwa": 33,
+      "test_date": "2025-11-02 16:17:28"
+    },
     {
       "performance": 62,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 7,
+    "performance": -7,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 19:44:54",
-    "test_date_previous": "2025-10-26 18:36:51"
+    "test_date_current": "2025-11-02 16:17:28",
+    "test_date_previous": "2025-10-26 19:44:54"
   }
 }

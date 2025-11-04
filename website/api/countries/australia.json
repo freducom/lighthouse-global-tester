@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.849Z",
+    "generated_at": "2025-11-04T09:04:15.536Z",
     "country": "Australia",
     "flag": "🇦🇺",
     "website_count": 8
@@ -17,25 +17,37 @@
       "url": "my.gov.au",
       "industry": "Government",
       "scores": {
-        "performance": 65,
+        "performance": 61,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-22 14:57:26"
+      "test_date": "2025-10-29 20:13:48"
     },
     {
-      "url": "abc.net.au",
-      "industry": "Media",
+      "url": "australia.gov.au",
+      "industry": "Government",
       "scores": {
-        "performance": 53,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 100,
+        "performance": 59,
+        "accessibility": 0,
+        "best_practices": 100,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-19 20:02:15"
+      "test_date": "2025-11-02 10:14:46"
+    },
+    {
+      "url": "seek.com.au",
+      "industry": "Jobs",
+      "scores": {
+        "performance": 53,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 78
+      },
+      "test_date": "2025-10-31 03:08:00"
     },
     {
       "url": "9news.com.au",
@@ -48,18 +60,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:03:01"
-    },
-    {
-      "url": "seek.com.au",
-      "industry": "Jobs",
-      "scores": {
-        "performance": 50,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 100,
-        "pwa": 78
-      },
-      "test_date": "2025-10-23 19:34:20"
     },
     {
       "url": "smh.com.au",
@@ -86,28 +86,28 @@
       "test_date": "2025-10-19 20:02:01"
     },
     {
-      "url": "australia.gov.au",
-      "industry": "Government",
+      "url": "abc.net.au",
+      "industry": "Media",
       "scores": {
-        "performance": 38,
-        "accessibility": 0,
-        "best_practices": 100,
-        "seo": 86,
+        "performance": 35,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:38:47"
+      "test_date": "2025-11-02 03:12:57"
     },
     {
       "url": "domain.com.au",
       "industry": "Real Estate",
       "scores": {
-        "performance": 30,
+        "performance": 32,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 92,
         "pwa": 78
       },
-      "test_date": "2025-10-27 12:22:15"
+      "test_date": "2025-11-03 10:15:55"
     }
   ],
   "industries": [
@@ -115,7 +115,7 @@
       "industry": "Government",
       "website_count": 2,
       "averages": {
-        "performance": 52,
+        "performance": 60,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 90,
@@ -126,7 +126,7 @@
       "industry": "Jobs",
       "website_count": 1,
       "averages": {
-        "performance": 50,
+        "performance": 53,
         "accessibility": 93,
         "best_practices": 67,
         "seo": 100,
@@ -137,7 +137,7 @@
       "industry": "Media",
       "website_count": 4,
       "averages": {
-        "performance": 48,
+        "performance": 43,
         "accessibility": 87,
         "best_practices": 85,
         "seo": 93,
@@ -148,7 +148,7 @@
       "industry": "Real Estate",
       "website_count": 1,
       "averages": {
-        "performance": 30,
+        "performance": 32,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 92,

@@ -1,75 +1,180 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.891Z",
+    "generated_at": "2025-11-04T09:04:15.727Z",
     "country": "Bulgaria",
     "flag": "🌍",
-    "website_count": 3
+    "website_count": 9
   },
   "averages": {
-    "performance": 59,
-    "accessibility": 77,
-    "best_practices": 78,
-    "seo": 94,
+    "performance": 30,
+    "accessibility": 87,
+    "best_practices": 70,
+    "seo": 92,
     "pwa": 41
   },
   "websites": [
     {
-      "url": "btv.bg",
-      "industry": "Media",
+      "url": "unicreditbulbank.bg",
+      "industry": "Finance",
       "scores": {
-        "performance": 85,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 82,
+        "performance": 48,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 88,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:11:59"
+      "test_date": "2025-11-01 04:13:39"
     },
     {
-      "url": "abv.bg",
-      "industry": "Portal",
+      "url": "fibank.bg",
+      "industry": "Finance",
       "scores": {
-        "performance": 57,
-        "accessibility": 58,
-        "best_practices": 83,
-        "seo": 100,
+        "performance": 44,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-27 07:01:05"
+      "test_date": "2025-11-03 20:14:08"
+    },
+    {
+      "url": "nova.bg",
+      "industry": "Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 92,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 78
+      },
+      "test_date": "2025-10-30 03:09:45"
     },
     {
       "url": "dnes.bg",
       "industry": "Media",
       "scores": {
         "performance": 34,
-        "accessibility": 91,
-        "best_practices": 58,
+        "accessibility": 93,
+        "best_practices": 75,
         "seo": 99,
         "pwa": 56
       },
-      "test_date": "2025-10-27 12:21:20"
+      "test_date": "2025-11-03 10:15:00"
+    },
+    {
+      "url": "novinite.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 03:10:01"
+    },
+    {
+      "url": "olx.bg",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 26,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 06:32:08"
+    },
+    {
+      "url": "vivacom.bg",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 08:22:23"
+    },
+    {
+      "url": "abv.bg",
+      "industry": "Portal",
+      "scores": {
+        "performance": 25,
+        "accessibility": 58,
+        "best_practices": 67,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 03:14:04"
+    },
+    {
+      "url": "btv.bg",
+      "industry": "Media",
+      "scores": {
+        "performance": 0,
+        "accessibility": 81,
+        "best_practices": 0,
+        "seo": 82,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 18:15:54"
     }
   ],
   "industries": [
     {
-      "industry": "Media",
+      "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 60,
-        "accessibility": 86,
-        "best_practices": 75,
-        "seo": 91,
-        "pwa": 45
+        "performance": 46,
+        "accessibility": 89,
+        "best_practices": 88,
+        "seo": 93,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Marketplace",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 4,
+      "averages": {
+        "performance": 26,
+        "accessibility": 88,
+        "best_practices": 54,
+        "seo": 93,
+        "pwa": 50
       }
     },
     {
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 57,
+        "performance": 25,
         "accessibility": 58,
-        "best_practices": 83,
+        "best_practices": 67,
         "seo": 100,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 26,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
         "pwa": 33
       }
     }

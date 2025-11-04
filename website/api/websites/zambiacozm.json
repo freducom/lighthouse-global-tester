@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.148Z",
+    "generated_at": "2025-11-04T09:04:16.878Z",
     "url": "zambia.co.zm",
     "country": "Zambia",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 53,
     "accessibility": 89,
     "best_practices": 67,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-25 10:09:43"
+    "test_date": "2025-11-01 18:12:49"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 89,
+      "best_practices": 67,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-01 18:12:49"
+    },
     {
       "performance": 55,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 10:09:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 18:12:49",
+    "test_date_previous": "2025-10-25 10:09:43"
+  }
 }

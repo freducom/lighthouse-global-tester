@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.876Z",
+          "dateCreated": "2025-11-04T09:04:11.615Z",
           "about": {
             "@type": "WebSite",
             "name": "bdjobs.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-bdjobs.com.html#metrics",
           "name": "bdjobs.com Performance Metrics",
           "description": "Latest Lighthouse scores for bdjobs.com",
-          "performanceScore": 49,
+          "performanceScore": 77,
           "accessibilityScore": 91,
-          "bestPracticesScore": 75,
+          "bestPracticesScore": 67,
           "seoScore": 89,
-          "dateRecorded": "2025-10-26 16:05:11"
+          "dateRecorded": "2025-11-02 14:08:46"
         }
       ]
     }
@@ -117,8 +117,8 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">49%</div>
-                <div class="stat-description">needs improvement</div>
+                <div class="stat-number good">77%</div>
+                <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
@@ -132,8 +132,8 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number good">75%</div>
-                <div class="stat-description">good performance</div>
+                <div class="stat-number average">67%</div>
+                <div class="stat-description">average performance</div>
             </div>
         </div>
 
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 49%"></div>
-                        <span class="score-text">49%</span>
+                        <div class="score-fill performance" style="width: 77%"></div>
+                        <span class="score-text">77%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -166,8 +166,8 @@
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 75%"></div>
-                        <span class="score-text">75%</span>
+                        <div class="score-fill best-practices" style="width: 67%"></div>
+                        <span class="score-text">67%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":859,"url":"bdjobs.com","performance":44,"accessibility":91,"best_practices":75,"seo":89,"pwa":33,"test_date":"2025-10-26 14:12:39","country":"Bangladesh","industry":"Jobs"},{"id":873,"url":"bdjobs.com","performance":49,"accessibility":91,"best_practices":75,"seo":89,"pwa":33,"test_date":"2025-10-26 16:05:11","country":"Bangladesh","industry":"Jobs"}];
+        const historyData = [{"id":859,"url":"bdjobs.com","performance":44,"accessibility":91,"best_practices":75,"seo":89,"pwa":33,"test_date":"2025-10-26 14:12:39","country":"Bangladesh","industry":"Jobs"},{"id":873,"url":"bdjobs.com","performance":49,"accessibility":91,"best_practices":75,"seo":89,"pwa":33,"test_date":"2025-10-26 16:05:11","country":"Bangladesh","industry":"Jobs"},{"id":1814,"url":"bdjobs.com","performance":77,"accessibility":91,"best_practices":67,"seo":89,"pwa":33,"test_date":"2025-11-02 14:08:46","country":"Bangladesh","industry":"Jobs"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

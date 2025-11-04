@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.112Z",
+    "generated_at": "2025-11-04T09:04:16.709Z",
     "url": "20minutos.es",
     "country": "Spain",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 54,
-    "accessibility": 96,
+    "performance": 37,
+    "accessibility": 93,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-26 19:28:16"
+    "test_date": "2025-11-02 00:53:52"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-02 00:53:52"
+    },
     {
       "performance": 54,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 19:28:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -17,
+    "accessibility": -3,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 00:53:52",
+    "test_date_previous": "2025-10-26 19:28:16"
+  }
 }

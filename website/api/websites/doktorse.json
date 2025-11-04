@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.117Z",
+    "generated_at": "2025-11-04T09:04:16.731Z",
     "url": "doktor.se",
     "country": "Sweden",
     "industry": "Healthtech"
   },
   "latest_scores": {
-    "performance": 82,
+    "performance": 79,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-27 12:21:51"
+    "test_date": "2025-11-03 10:15:31"
   },
   "historical_data": [
+    {
+      "performance": 79,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-03 10:15:31"
+    },
     {
       "performance": 82,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 12:21:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 10:15:31",
+    "test_date_previous": "2025-10-27 12:21:51"
+  }
 }

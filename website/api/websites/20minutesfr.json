@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.060Z",
+    "generated_at": "2025-11-04T09:04:16.514Z",
     "url": "20minutes.fr",
     "country": "France",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 72,
+    "performance": 65,
     "accessibility": 81,
     "best_practices": 75,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-26 19:28:01"
+    "test_date": "2025-11-02 00:53:27"
   },
   "historical_data": [
+    {
+      "performance": 65,
+      "accessibility": 81,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-02 00:53:27"
+    },
     {
       "performance": 72,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 19:28:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 00:53:27",
+    "test_date_previous": "2025-10-26 19:28:01"
+  }
 }

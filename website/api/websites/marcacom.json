@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.113Z",
+    "generated_at": "2025-11-04T09:04:16.712Z",
     "url": "marca.com",
     "country": "Spain",
     "industry": "Sports"
   },
   "latest_scores": {
-    "performance": 28,
-    "accessibility": 96,
+    "performance": 37,
+    "accessibility": 91,
     "best_practices": 92,
-    "seo": 90,
+    "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-22 10:11:29"
+    "test_date": "2025-10-29 12:23:20"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-10-29 12:23:20"
+    },
     {
       "performance": 28,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 10:11:29"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 9,
+    "accessibility": -5,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 12:23:20",
+    "test_date_previous": "2025-10-22 10:11:29"
+  }
 }

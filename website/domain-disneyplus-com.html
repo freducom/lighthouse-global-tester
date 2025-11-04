@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:55.003Z",
+          "dateCreated": "2025-11-04T09:04:12.139Z",
           "about": {
             "@type": "WebSite",
             "name": "disneyplus.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-disneyplus.com.html#metrics",
           "name": "disneyplus.com Performance Metrics",
           "description": "Latest Lighthouse scores for disneyplus.com",
-          "performanceScore": 34,
+          "performanceScore": 33,
           "accessibilityScore": 84,
           "bestPracticesScore": 92,
           "seoScore": 92,
-          "dateRecorded": "2025-10-27 10:24:09"
+          "dateRecorded": "2025-11-03 08:26:57"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">34%</div>
+                <div class="stat-number poor">33%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 34%"></div>
-                        <span class="score-text">34%</span>
+                        <div class="score-fill performance" style="width: 33%"></div>
+                        <span class="score-text">33%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":474,"url":"disneyplus.com","performance":45,"accessibility":92,"best_practices":100,"seo":92,"pwa":78,"test_date":"2025-10-23 07:05:58","country":"United States","industry":"Media"},{"id":1042,"url":"disneyplus.com","performance":34,"accessibility":84,"best_practices":92,"seo":92,"pwa":78,"test_date":"2025-10-27 10:24:09","country":"United States","industry":"Media"}];
+        const historyData = [{"id":474,"url":"disneyplus.com","performance":45,"accessibility":92,"best_practices":100,"seo":92,"pwa":78,"test_date":"2025-10-23 07:05:58","country":"United States","industry":"Media"},{"id":1042,"url":"disneyplus.com","performance":34,"accessibility":84,"best_practices":92,"seo":92,"pwa":78,"test_date":"2025-10-27 10:24:09","country":"United States","industry":"Media"},{"id":1926,"url":"disneyplus.com","performance":33,"accessibility":84,"best_practices":92,"seo":92,"pwa":78,"test_date":"2025-11-03 08:26:57","country":"United States","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

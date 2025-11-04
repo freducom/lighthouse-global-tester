@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.107Z",
+    "generated_at": "2025-11-04T09:04:16.698Z",
     "url": "asiaone.com",
     "country": "Singapore",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
-    "accessibility": 81,
+    "performance": 28,
+    "accessibility": 78,
     "best_practices": 83,
-    "seo": 76,
+    "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-28 11:10:59"
+    "test_date": "2025-11-02 10:09:26"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 78,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-02 10:09:26"
+    },
     {
       "performance": 27,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 11:10:59"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": -3,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 10:09:26",
+    "test_date_previous": "2025-10-28 11:10:59"
+  }
 }

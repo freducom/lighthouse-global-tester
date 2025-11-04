@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.123Z",
+    "generated_at": "2025-11-04T09:04:16.779Z",
     "url": "ettoday.net",
     "country": "Taiwan",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 16,
     "accessibility": 87,
     "best_practices": 75,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-20 16:10:56"
+    "test_date": "2025-11-03 18:32:14"
   },
   "historical_data": [
+    {
+      "performance": 16,
+      "accessibility": 87,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-03 18:32:14"
+    },
     {
       "performance": 28,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-20 16:10:56"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -12,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 18:32:14",
+    "test_date_previous": "2025-10-20 16:10:56"
+  }
 }

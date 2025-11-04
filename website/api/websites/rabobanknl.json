@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.095Z",
+    "generated_at": "2025-11-04T09:04:16.654Z",
     "url": "rabobank.nl",
     "country": "Netherlands",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 37,
     "accessibility": 92,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 10:23:52"
+    "test_date": "2025-10-30 16:32:04"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 92,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-30 16:32:04"
+    },
     {
       "performance": 47,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 19,
+    "performance": -10,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": 7,
+    "best_practices": 0,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 10:23:52",
-    "test_date_previous": "2025-10-19 20:25:50"
+    "test_date_current": "2025-10-30 16:32:04",
+    "test_date_previous": "2025-10-23 10:23:52"
   }
 }

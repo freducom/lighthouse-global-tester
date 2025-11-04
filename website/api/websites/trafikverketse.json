@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.122Z",
+    "generated_at": "2025-11-04T09:04:16.770Z",
     "url": "trafikverket.se",
     "country": "Sweden",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 63,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-10-24 16:12:30"
+    "test_date": "2025-10-31 22:17:55"
   },
   "historical_data": [
+    {
+      "performance": 63,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-10-31 22:17:55"
+    },
     {
       "performance": 65,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 16:12:30"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 22:17:55",
+    "test_date_previous": "2025-10-24 16:12:30"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.140Z",
+    "generated_at": "2025-11-04T09:04:16.844Z",
     "url": "figma.com",
     "country": "United States",
     "industry": "Website editor"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 31,
     "accessibility": 92,
     "best_practices": 75,
     "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-23 07:03:06"
+    "test_date": "2025-11-03 20:14:56"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 92,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-11-03 20:14:56"
+    },
     {
       "performance": 42,
       "accessibility": 92,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 9,
+    "performance": -11,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:03:06",
-    "test_date_previous": "2025-10-20 18:16:29"
+    "test_date_current": "2025-11-03 20:14:56",
+    "test_date_previous": "2025-10-23 07:03:06"
   }
 }

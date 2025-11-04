@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.965Z",
+    "generated_at": "2025-11-04T09:04:16.081Z",
     "industry": "Engineering",
-    "website_count": 2
+    "website_count": 3
   },
   "averages": {
-    "performance": 46,
-    "accessibility": 81,
-    "best_practices": 88,
-    "seo": 86,
+    "performance": 54,
+    "accessibility": 86,
+    "best_practices": 89,
+    "seo": 90,
     "pwa": 33
   },
   "websites": [
@@ -25,27 +25,39 @@
       "test_date": "2025-10-29 03:13:15"
     },
     {
+      "url": "wartsila.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 10:19:51"
+    },
+    {
       "url": "abb.com",
       "country": "Sweden",
       "scores": {
-        "performance": 33,
-        "accessibility": 65,
+        "performance": 59,
+        "accessibility": 64,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:31:27"
+      "test_date": "2025-11-02 03:08:54"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 59,
-        "accessibility": 97,
+        "performance": 51,
+        "accessibility": 98,
         "best_practices": 92,
-        "seo": 86,
+        "seo": 93,
         "pwa": 33
       }
     },
@@ -53,8 +65,8 @@
       "country": "Sweden",
       "website_count": 1,
       "averages": {
-        "performance": 33,
-        "accessibility": 65,
+        "performance": 59,
+        "accessibility": 64,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33

@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:55.003Z",
+          "dateCreated": "2025-11-04T09:04:11.833Z",
           "about": {
             "@type": "WebSite",
             "name": "facebook.com",
@@ -94,10 +94,10 @@
           "name": "facebook.com Performance Metrics",
           "description": "Latest Lighthouse scores for facebook.com",
           "performanceScore": 58,
-          "accessibilityScore": 71,
-          "bestPracticesScore": 75,
+          "accessibilityScore": 78,
+          "bestPracticesScore": 67,
           "seoScore": 93,
-          "dateRecorded": "2025-10-23 06:51:59"
+          "dateRecorded": "2025-11-03 20:11:19"
         }
       ]
     }
@@ -110,7 +110,7 @@
             <div class="logo-container">
                 <a href="index.html"><img src="logo.png" alt="CheetahCheck" class="header-logo"></a>
             </div>
-            <p class="subtitle">📊 facebook.com - Performance history and insights from United States</p>
+            <p class="subtitle">📊 facebook.com - Performance history and insights from India</p>
             <p class="back-to-frontpage"><a href="index.html">← Back to frontpage</a></p>
         </header>
 
@@ -122,7 +122,7 @@
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">71%</div>
+                <div class="stat-number good">78%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
@@ -132,8 +132,8 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number good">75%</div>
-                <div class="stat-description">good performance</div>
+                <div class="stat-number average">67%</div>
+                <div class="stat-description">average performance</div>
             </div>
         </div>
 
@@ -159,15 +159,15 @@
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 71%"></div>
-                        <span class="score-text">71%</span>
+                        <div class="score-fill accessibility" style="width: 78%"></div>
+                        <span class="score-text">78%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 75%"></div>
-                        <span class="score-text">75%</span>
+                        <div class="score-fill best-practices" style="width: 67%"></div>
+                        <span class="score-text">67%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":39,"url":"facebook.com","performance":59,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 18:07:05","country":"United States","industry":"Social Media"},{"id":71,"url":"facebook.com","performance":58,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 19:35:28","country":"United States","industry":"Social Media"},{"id":227,"url":"facebook.com","performance":52,"accessibility":78,"best_practices":58,"seo":93,"pwa":78,"test_date":"2025-10-20 18:15:31","country":"United States","industry":"Social Media"},{"id":326,"url":"facebook.com","performance":61,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:22:00","country":"United States","industry":"Social Media"},{"id":336,"url":"facebook.com","performance":60,"accessibility":71,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-10-22 08:25:57","country":"United States","industry":"Social Media"},{"id":339,"url":"facebook.com","performance":63,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:27:19","country":"United States","industry":"Social Media"},{"id":442,"url":"facebook.com","performance":58,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-23 06:51:59","country":"United States","industry":"Social Media"}];
+        const historyData = [{"id":39,"url":"facebook.com","performance":59,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 18:07:05","country":"United States","industry":"Social Media"},{"id":71,"url":"facebook.com","performance":58,"accessibility":78,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-19 19:35:28","country":"United States","industry":"Social Media"},{"id":227,"url":"facebook.com","performance":52,"accessibility":78,"best_practices":58,"seo":93,"pwa":78,"test_date":"2025-10-20 18:15:31","country":"United States","industry":"Social Media"},{"id":326,"url":"facebook.com","performance":61,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:22:00","country":"United States","industry":"Social Media"},{"id":336,"url":"facebook.com","performance":60,"accessibility":71,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-10-22 08:25:57","country":"United States","industry":"Social Media"},{"id":339,"url":"facebook.com","performance":63,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-22 08:27:19","country":"United States","industry":"Social Media"},{"id":442,"url":"facebook.com","performance":58,"accessibility":71,"best_practices":75,"seo":93,"pwa":78,"test_date":"2025-10-23 06:51:59","country":"United States","industry":"Social Media"},{"id":1980,"url":"facebook.com","performance":46,"accessibility":78,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-11-03 20:10:57","country":"United States","industry":"Social Media"},{"id":1981,"url":"facebook.com","performance":58,"accessibility":78,"best_practices":67,"seo":93,"pwa":78,"test_date":"2025-11-03 20:11:19","country":"India","industry":"Social"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

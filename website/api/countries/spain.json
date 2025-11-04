@@ -1,53 +1,65 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.879Z",
+    "generated_at": "2025-11-04T09:04:15.686Z",
     "country": "Spain",
     "flag": "🇪🇸",
-    "website_count": 6
+    "website_count": 9
   },
   "averages": {
     "performance": 42,
-    "accessibility": 85,
-    "best_practices": 77,
-    "seo": 91,
-    "pwa": 41
+    "accessibility": 86,
+    "best_practices": 79,
+    "seo": 89,
+    "pwa": 48
   },
   "websites": [
     {
-      "url": "20minutos.es",
+      "url": "elpais.com",
       "industry": "Media",
       "scores": {
-        "performance": 54,
-        "accessibility": 96,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
+        "performance": 63,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 78
       },
-      "test_date": "2025-10-26 19:28:16"
+      "test_date": "2025-11-03 16:13:10"
     },
     {
-      "url": "abc.es",
+      "url": "elespanol.com",
       "industry": "Media",
       "scores": {
-        "performance": 54,
-        "accessibility": 75,
-        "best_practices": 67,
-        "seo": 92,
+        "performance": 53,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:32:04"
+      "test_date": "2025-11-03 14:25:22"
     },
     {
       "url": "cincodias.com",
       "industry": "Media",
       "scores": {
-        "performance": 45,
+        "performance": 51,
         "accessibility": 98,
         "best_practices": 83,
-        "seo": 91,
+        "seo": 90,
         "pwa": 78
       },
-      "test_date": "2025-10-27 00:53:17"
+      "test_date": "2025-11-02 22:18:07"
+    },
+    {
+      "url": "abc.es",
+      "industry": "Media",
+      "scores": {
+        "performance": 50,
+        "accessibility": 75,
+        "best_practices": 58,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 03:12:36"
     },
     {
       "url": "lavanguardia.com",
@@ -62,6 +74,30 @@
       "test_date": "2025-10-29 04:30:15"
     },
     {
+      "url": "marca.com",
+      "industry": "Sports",
+      "scores": {
+        "performance": 37,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 12:23:20"
+    },
+    {
+      "url": "20minutos.es",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 00:53:52"
+    },
+    {
       "url": "ideal.es",
       "industry": "Media",
       "scores": {
@@ -74,38 +110,38 @@
       "test_date": "2025-10-28 14:15:12"
     },
     {
-      "url": "marca.com",
-      "industry": "Sports",
+      "url": "elmundo.es",
+      "industry": "Media",
       "scores": {
-        "performance": 28,
-        "accessibility": 96,
-        "best_practices": 92,
+        "performance": 12,
+        "accessibility": 98,
+        "best_practices": 83,
         "seo": 90,
-        "pwa": 33
+        "pwa": 78
       },
-      "test_date": "2025-10-22 10:11:29"
+      "test_date": "2025-11-03 16:12:46"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 8,
       "averages": {
-        "performance": 45,
-        "accessibility": 83,
-        "best_practices": 73,
-        "seo": 91,
-        "pwa": 42
+        "performance": 42,
+        "accessibility": 86,
+        "best_practices": 77,
+        "seo": 90,
+        "pwa": 50
       }
     },
     {
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 28,
-        "accessibility": 96,
+        "performance": 37,
+        "accessibility": 91,
         "best_practices": 92,
-        "seo": 90,
+        "seo": 83,
         "pwa": 33
       }
     }

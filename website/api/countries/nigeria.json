@@ -1,18 +1,54 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.889Z",
+    "generated_at": "2025-11-04T09:04:15.718Z",
     "country": "Nigeria",
     "flag": "🌍",
-    "website_count": 2
+    "website_count": 7
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 95,
-    "best_practices": 75,
-    "seo": 96,
-    "pwa": 89
+    "performance": 48,
+    "accessibility": 86,
+    "best_practices": 80,
+    "seo": 88,
+    "pwa": 48
   },
   "websites": [
+    {
+      "url": "thenationonlineng.net",
+      "industry": "Media",
+      "scores": {
+        "performance": 66,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 20:13:18"
+    },
+    {
+      "url": "gtbank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 62,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-04 06:21:08"
+    },
+    {
+      "url": "mtn.ng",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 61,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 58,
+        "pwa": 0
+      },
+      "test_date": "2025-10-29 20:12:42"
+    },
     {
       "url": "jumia.com.ng",
       "industry": "E-commerce",
@@ -36,6 +72,30 @@
         "pwa": 89
       },
       "test_date": "2025-10-29 03:14:10"
+    },
+    {
+      "url": "punchng.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 16:23:50"
+    },
+    {
+      "url": "vanguardngr.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 06:20:01"
     }
   ],
   "industries": [
@@ -48,6 +108,39 @@
         "best_practices": 75,
         "seo": 96,
         "pwa": 89
+      }
+    },
+    {
+      "industry": "Finance",
+      "website_count": 1,
+      "averages": {
+        "performance": 62,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 56
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 43,
+        "accessibility": 88,
+        "best_practices": 80,
+        "seo": 92,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Telecom",
+      "website_count": 1,
+      "averages": {
+        "performance": 61,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 58,
+        "pwa": 0
       }
     }
   ]

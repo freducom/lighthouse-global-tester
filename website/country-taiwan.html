@@ -63,7 +63,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.706Z",
+          "dateCreated": "2025-11-04T09:04:10.914Z",
           "about": {
             "@type": "Place",
             "name": "Taiwan",
@@ -84,7 +84,7 @@
             "@type": "Place",
             "name": "Taiwan"
           },
-          "dateModified": "2025-10-29T07:39:54.706Z",
+          "dateModified": "2025-11-04T09:04:10.914Z",
           "keywords": ["Taiwan", "web performance", "lighthouse", "website analysis"]
         }
       ]
@@ -109,9 +109,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Taiwan</h2>
-            <div class="stat-card performance" role="img" aria-label="Average performance score: 33 percent">
+            <div class="stat-card performance" role="img" aria-label="Average performance score: 38 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-number" aria-hidden="true">33%</div>
+                <div class="stat-number" aria-hidden="true">38%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card accessibility" role="img" aria-label="Average accessibility score: 84 percent">
@@ -198,15 +198,15 @@
                         </thead>
                         <tbody id="tableBody">
                         
-                            <tr class="site-row " 
+                            <tr class="site-row trending-up" 
                                 data-url="tvbs.com.tw" 
                                 data-industry="Media"
-                                data-performance="37"
+                                data-performance="59"
                                 data-accessibility="80"
                                 data-seo="100"
                                 data-best-practices="92"
                                 data-pwa="33"
-                                data-test-date="2025-10-24 18:19:10">
+                                data-test-date="2025-11-01 00:54:17">
                                 <td class="rank" aria-label="Rank 1">#1</td>
                                 <td>
                                     <a href="domain-tvbs-com-tw.html" 
@@ -222,9 +222,9 @@
                                         Media
                                     </a>
                                 </td>
-                                <td class="score perf-poor"
-                                    aria-label="Performance score: 37 percent, needs improvement">
-                                    37%
+                                <td class="score perf-average"
+                                    aria-label="Performance score: 59 percent, average performance, trend: +22 points">
+                                    59%<span class="trend-arrow trend-up">↗</span><span class="performance-delta delta-positive">+22</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 80 percent, good performance">
@@ -242,20 +242,20 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-24 18:19:10"
-                                    aria-label="Last tested on 10/24/2025">
-                                    <time datetime="2025-10-24 18:19:10">10/24/2025</time>
+                                <td class="date" data-date="2025-11-01 00:54:17"
+                                    aria-label="Last tested on 11/1/2025">
+                                    <time datetime="2025-11-01 00:54:17">11/1/2025</time>
                                 </td>
                             </tr>
-                            <tr class="site-row " 
+                            <tr class="site-row trending-down" 
                                 data-url="ettoday.net" 
                                 data-industry="Media"
-                                data-performance="28"
+                                data-performance="16"
                                 data-accessibility="87"
                                 data-seo="100"
                                 data-best-practices="75"
                                 data-pwa="33"
-                                data-test-date="2025-10-20 16:10:56">
+                                data-test-date="2025-11-03 18:32:14">
                                 <td class="rank" aria-label="Rank 2">#2</td>
                                 <td>
                                     <a href="domain-ettoday-net.html" 
@@ -272,8 +272,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 28 percent, needs improvement">
-                                    28%
+                                    aria-label="Performance score: 16 percent, needs improvement, trend: -12 points">
+                                    16%<span class="trend-arrow trend-down">↘</span><span class="performance-delta delta-negative">-12</span>
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 87 percent, good performance">
@@ -291,9 +291,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-20 16:10:56"
-                                    aria-label="Last tested on 10/20/2025">
-                                    <time datetime="2025-10-20 16:10:56">10/20/2025</time>
+                                <td class="date" data-date="2025-11-03 18:32:14"
+                                    aria-label="Last tested on 11/3/2025">
+                                    <time datetime="2025-11-03 18:32:14">11/3/2025</time>
                                 </td>
                             </tr>
                     </tbody>
@@ -321,11 +321,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -340,7 +339,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -364,9 +362,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -463,7 +460,7 @@
     </div>
 
     <script>
-        const countryData = [{"url":"tvbs.com.tw","country":"Taiwan","industry":"Media","performance":37,"accessibility":80,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-24 18:19:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ettoday.net","country":"Taiwan","industry":"Media","performance":28,"accessibility":87,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-20 16:10:56","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const countryData = [{"url":"tvbs.com.tw","country":"Taiwan","industry":"Media","performance":59,"accessibility":80,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-11-01 00:54:17","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":22,"text":"+22","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ettoday.net","country":"Taiwan","industry":"Media","performance":16,"accessibility":87,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-11-03 18:32:14","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-12,"text":"-12","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

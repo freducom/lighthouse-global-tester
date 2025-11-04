@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.095Z",
+    "generated_at": "2025-11-04T09:04:16.653Z",
     "url": "ns.nl",
     "country": "Netherlands",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 27,
     "accessibility": 99,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-22 22:03:21"
+    "test_date": "2025-10-30 04:17:44"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 99,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-30 04:17:44"
+    },
     {
       "performance": 26,
       "accessibility": 99,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 1,
     "accessibility": 0,
-    "best_practices": 9,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-22 22:03:21",
-    "test_date_previous": "2025-10-19 20:24:24"
+    "test_date_current": "2025-10-30 04:17:44",
+    "test_date_previous": "2025-10-22 22:03:21"
   }
 }

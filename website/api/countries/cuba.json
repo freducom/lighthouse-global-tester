@@ -1,41 +1,65 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.893Z",
+    "generated_at": "2025-11-04T09:04:15.732Z",
     "country": "Cuba",
     "flag": "🇨🇺",
-    "website_count": 1
+    "website_count": 3
   },
   "averages": {
-    "performance": 50,
-    "accessibility": 72,
-    "best_practices": 83,
-    "seo": 93,
-    "pwa": 22
+    "performance": 64,
+    "accessibility": 75,
+    "best_practices": 72,
+    "seo": 92,
+    "pwa": 29
   },
   "websites": [
+    {
+      "url": "granma.cu",
+      "industry": "Media",
+      "scores": {
+        "performance": 72,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:22:02"
+    },
+    {
+      "url": "trabajadores.cu",
+      "industry": "Media",
+      "scores": {
+        "performance": 61,
+        "accessibility": 62,
+        "best_practices": 58,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 22:16:50"
+    },
     {
       "url": "prensa-latina.cu",
       "industry": "Media",
       "scores": {
-        "performance": 50,
-        "accessibility": 72,
+        "performance": 60,
+        "accessibility": 78,
         "best_practices": 83,
-        "seo": 93,
+        "seo": 100,
         "pwa": 22
       },
-      "test_date": "2025-10-23 08:35:35"
+      "test_date": "2025-10-30 14:09:53"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 3,
       "averages": {
-        "performance": 50,
-        "accessibility": 72,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 22
+        "performance": 64,
+        "accessibility": 75,
+        "best_practices": 72,
+        "seo": 92,
+        "pwa": 29
       }
     }
   ]

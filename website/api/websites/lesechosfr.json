@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.060Z",
+    "generated_at": "2025-11-04T09:04:16.516Z",
     "url": "lesechos.fr",
     "country": "France",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 44,
-    "accessibility": 95,
+    "performance": 40,
+    "accessibility": 97,
     "best_practices": 83,
     "seo": 100,
     "pwa": 78,
-    "test_date": "2025-10-22 03:09:43"
+    "test_date": "2025-10-29 07:47:35"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-10-29 07:47:35"
+    },
     {
       "performance": 44,
       "accessibility": 95,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 03:09:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 07:47:35",
+    "test_date_previous": "2025-10-22 03:09:43"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.046Z",
+    "generated_at": "2025-11-04T09:04:16.428Z",
     "url": "aktualne.cz",
     "country": "Czechia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 26,
-    "accessibility": 79,
+    "performance": 33,
+    "accessibility": 78,
     "best_practices": 67,
     "seo": 85,
     "pwa": 56,
-    "test_date": "2025-10-26 07:55:21"
+    "test_date": "2025-11-02 04:22:49"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 78,
+      "best_practices": 67,
+      "seo": 85,
+      "pwa": 56,
+      "test_date": "2025-11-02 04:22:49"
+    },
     {
       "performance": 26,
       "accessibility": 79,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 07:55:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": -1,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 04:22:49",
+    "test_date_previous": "2025-10-26 07:55:21"
+  }
 }

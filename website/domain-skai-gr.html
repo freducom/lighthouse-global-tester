@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.917Z",
+          "dateCreated": "2025-11-04T09:04:11.816Z",
           "about": {
             "@type": "WebSite",
             "name": "skai.gr",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-skai.gr.html#metrics",
           "name": "skai.gr Performance Metrics",
           "description": "Latest Lighthouse scores for skai.gr",
-          "performanceScore": 60,
+          "performanceScore": 64,
           "accessibilityScore": 94,
           "bestPracticesScore": 83,
           "seoScore": 98,
-          "dateRecorded": "2025-10-23 21:50:11"
+          "dateRecorded": "2025-10-31 04:26:45"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">60%</div>
+                <div class="stat-number average">64%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 60%"></div>
-                        <span class="score-text">60%</span>
+                        <div class="score-fill performance" style="width: 64%"></div>
+                        <span class="score-text">64%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -180,8 +180,8 @@
                 <div class="score-item">
                     <span class="score-label">PWA:</span>
                     <div class="score-bar">
-                        <div class="score-fill pwa" style="width: 44%"></div>
-                        <span class="score-text">44%</span>
+                        <div class="score-fill pwa" style="width: 33%"></div>
+                        <span class="score-text">33%</span>
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":569,"url":"skai.gr","performance":64,"accessibility":94,"best_practices":83,"seo":98,"pwa":44,"test_date":"2025-10-23 20:22:27","country":"Greece","industry":"Media"},{"id":573,"url":"skai.gr","performance":67,"accessibility":94,"best_practices":83,"seo":98,"pwa":44,"test_date":"2025-10-23 21:26:47","country":"Greece","industry":"Media"},{"id":578,"url":"skai.gr","performance":60,"accessibility":94,"best_practices":83,"seo":98,"pwa":44,"test_date":"2025-10-23 21:50:11","country":"Greece","industry":"Media"}];
+        const historyData = [{"id":569,"url":"skai.gr","performance":64,"accessibility":94,"best_practices":83,"seo":98,"pwa":44,"test_date":"2025-10-23 20:22:27","country":"Greece","industry":"Media"},{"id":573,"url":"skai.gr","performance":67,"accessibility":94,"best_practices":83,"seo":98,"pwa":44,"test_date":"2025-10-23 21:26:47","country":"Greece","industry":"Media"},{"id":578,"url":"skai.gr","performance":60,"accessibility":94,"best_practices":83,"seo":98,"pwa":44,"test_date":"2025-10-23 21:50:11","country":"Greece","industry":"Media"},{"id":1481,"url":"skai.gr","performance":64,"accessibility":94,"best_practices":83,"seo":98,"pwa":33,"test_date":"2025-10-31 04:26:45","country":"Greece","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

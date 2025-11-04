@@ -1,40 +1,145 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.890Z",
+    "generated_at": "2025-11-04T09:04:15.723Z",
     "country": "Portugal",
     "flag": "🌍",
-    "website_count": 1
+    "website_count": 7
   },
   "averages": {
-    "performance": 12,
-    "accessibility": 87,
-    "best_practices": 58,
-    "seo": 88,
+    "performance": 41,
+    "accessibility": 88,
+    "best_practices": 78,
+    "seo": 92,
     "pwa": 33
   },
   "websites": [
     {
+      "url": "worten.pt",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 89,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 14:14:57"
+    },
+    {
+      "url": "sic.pt",
+      "industry": "Media",
+      "scores": {
+        "performance": 42,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 04:20:56"
+    },
+    {
+      "url": "expresso.pt",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 18:35:43"
+    },
+    {
+      "url": "sapo.pt",
+      "industry": "Portal",
+      "scores": {
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:47:54"
+    },
+    {
+      "url": "rtp.pt",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 22:11:11"
+    },
+    {
+      "url": "millenniumbcp.pt",
+      "industry": "Finance",
+      "scores": {
+        "performance": 27,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 16:24:46"
+    },
+    {
       "url": "continente.pt",
       "industry": "E-commerce",
       "scores": {
-        "performance": 12,
+        "performance": 20,
         "accessibility": 87,
         "best_practices": 58,
         "seo": 88,
         "pwa": 33
       },
-      "test_date": "2025-10-27 04:21:47"
+      "test_date": "2025-11-03 03:14:03"
     }
   ],
   "industries": [
     {
       "industry": "E-commerce",
+      "website_count": 2,
+      "averages": {
+        "performance": 55,
+        "accessibility": 84,
+        "best_practices": 71,
+        "seo": 82,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 12,
-        "accessibility": 87,
-        "best_practices": 58,
-        "seo": 88,
+        "performance": 27,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 97,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Media",
+      "website_count": 3,
+      "averages": {
+        "performance": 37,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      }
+    },
+    {
+      "industry": "Portal",
+      "website_count": 1,
+      "averages": {
+        "performance": 37,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 92,
         "pwa": 33
       }
     }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.108Z",
+    "generated_at": "2025-11-04T09:04:16.702Z",
     "url": "ta3.com",
     "country": "Slovakia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 34,
     "accessibility": 80,
-    "best_practices": 67,
+    "best_practices": 83,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-24 06:16:16"
+    "test_date": "2025-10-31 14:12:09"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-10-31 14:12:09"
+    },
     {
       "performance": 39,
       "accessibility": 80,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 06:16:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 14:12:09",
+    "test_date_previous": "2025-10-24 06:16:16"
+  }
 }

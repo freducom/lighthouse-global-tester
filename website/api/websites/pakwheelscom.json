@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.099Z",
+    "generated_at": "2025-11-04T09:04:16.671Z",
     "url": "pakwheels.com",
     "country": "Pakistan",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 28,
     "accessibility": 94,
-    "best_practices": 58,
+    "best_practices": 67,
     "seo": 96,
     "pwa": 89,
-    "test_date": "2025-10-23 04:12:53"
+    "test_date": "2025-10-30 10:17:16"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 94,
+      "best_practices": 67,
+      "seo": 96,
+      "pwa": 89,
+      "test_date": "2025-10-30 10:17:16"
+    },
     {
       "performance": 33,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 04:12:53"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 10:17:16",
+    "test_date_previous": "2025-10-23 04:12:53"
+  }
 }

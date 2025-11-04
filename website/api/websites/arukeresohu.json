@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.067Z",
+    "generated_at": "2025-11-04T09:04:16.534Z",
     "url": "arukereso.hu",
     "country": "Hungary",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 26,
     "accessibility": 87,
-    "best_practices": 100,
+    "best_practices": 92,
     "seo": 97,
     "pwa": 44,
-    "test_date": "2025-10-26 10:11:47"
+    "test_date": "2025-11-02 08:19:38"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 87,
+      "best_practices": 92,
+      "seo": 97,
+      "pwa": 44,
+      "test_date": "2025-11-02 08:19:38"
+    },
     {
       "performance": 29,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 10:11:47"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 08:19:38",
+    "test_date_previous": "2025-10-26 10:11:47"
+  }
 }

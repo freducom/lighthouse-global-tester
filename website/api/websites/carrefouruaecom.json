@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.127Z",
+    "generated_at": "2025-11-04T09:04:16.791Z",
     "url": "carrefouruae.com",
     "country": "United Arab Emirates",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 27,
-    "accessibility": 75,
-    "best_practices": 67,
-    "seo": 74,
+    "performance": 30,
+    "accessibility": 77,
+    "best_practices": 58,
+    "seo": 73,
     "pwa": 33,
-    "test_date": "2025-10-26 22:18:04"
+    "test_date": "2025-11-02 20:19:59"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 77,
+      "best_practices": 58,
+      "seo": 73,
+      "pwa": 33,
+      "test_date": "2025-11-02 20:19:59"
+    },
     {
       "performance": 27,
       "accessibility": 75,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 22:18:04"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 2,
+    "best_practices": -9,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 20:19:59",
+    "test_date_previous": "2025-10-26 22:18:04"
+  }
 }

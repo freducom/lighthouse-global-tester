@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.101Z",
+    "generated_at": "2025-11-04T09:04:16.678Z",
     "url": "autocentrum.pl",
     "country": "Poland",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 40,
     "accessibility": 85,
     "best_practices": 83,
     "seo": 93,
     "pwa": 56,
-    "test_date": "2025-10-26 13:39:09"
+    "test_date": "2025-11-02 10:15:09"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 56,
+      "test_date": "2025-11-02 10:15:09"
+    },
     {
       "performance": 34,
       "accessibility": 85,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": 6,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-26 13:39:09",
-    "test_date_previous": "2025-10-26 13:19:41"
+    "test_date_current": "2025-11-02 10:15:09",
+    "test_date_previous": "2025-10-26 13:39:09"
   }
 }

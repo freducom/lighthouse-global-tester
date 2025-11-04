@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.148Z",
+    "generated_at": "2025-11-04T09:04:16.877Z",
     "url": "soha.vn",
     "country": "Vietnam",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 44,
-    "accessibility": 86,
+    "performance": 28,
+    "accessibility": 84,
     "best_practices": 75,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-23 22:14:54"
+    "test_date": "2025-10-31 06:27:11"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 84,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-10-31 06:27:11"
+    },
     {
       "performance": 44,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 22:14:54"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -16,
+    "accessibility": -2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-31 06:27:11",
+    "test_date_previous": "2025-10-23 22:14:54"
+  }
 }

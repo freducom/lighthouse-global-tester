@@ -1,77 +1,101 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.839Z",
+    "generated_at": "2025-11-04T09:04:15.499Z",
     "country": "Germany",
     "flag": "🇩🇪",
-    "website_count": 30
+    "website_count": 38
   },
   "averages": {
     "performance": 44,
-    "accessibility": 88,
+    "accessibility": 90,
     "best_practices": 89,
     "seo": 92,
-    "pwa": 50
+    "pwa": 48
   },
   "websites": [
+    {
+      "url": "sparda-bank.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 90,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 08:14:13"
+    },
     {
       "url": "web.de",
       "industry": "Portal",
       "scores": {
-        "performance": 88,
+        "performance": 85,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-25 03:03:39"
+      "test_date": "2025-11-01 12:23:53"
     },
     {
       "url": "gmx.net",
       "industry": "Portal",
       "scores": {
-        "performance": 75,
+        "performance": 69,
         "accessibility": 100,
         "best_practices": 75,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-19 19:44:15"
+      "test_date": "2025-11-04 03:27:44"
     },
     {
-      "url": "dw.com",
-      "industry": "Media",
+      "url": "targobank.de",
+      "industry": "Finance",
       "scores": {
-        "performance": 61,
-        "accessibility": 93,
+        "performance": 68,
+        "accessibility": 100,
         "best_practices": 92,
-        "seo": 100,
-        "pwa": 100
-      },
-      "test_date": "2025-10-27 12:28:44"
-    },
-    {
-      "url": "bund.de",
-      "industry": "Government",
-      "scores": {
-        "performance": 60,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 79,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:12:21"
+      "test_date": "2025-10-31 14:16:12"
+    },
+    {
+      "url": "welt.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 66,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 12:25:10"
     },
     {
       "url": "arbeitsagentur.de",
       "industry": "Government",
       "scores": {
-        "performance": 58,
+        "performance": 64,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 86,
         "pwa": 56
       },
-      "test_date": "2025-10-26 10:10:47"
+      "test_date": "2025-11-02 08:18:30"
+    },
+    {
+      "url": "boerse.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 59,
+        "accessibility": 92,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 16:15:50"
     },
     {
       "url": "ing.de",
@@ -86,112 +110,100 @@
       "test_date": "2025-10-28 18:19:01"
     },
     {
-      "url": "boerse.de",
-      "industry": "Finance",
-      "scores": {
-        "performance": 56,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 75,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 19:39:56"
-    },
-    {
-      "url": "heise.de",
-      "industry": "Media",
-      "scores": {
-        "performance": 51,
-        "accessibility": 83,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 56
-      },
-      "test_date": "2025-10-28 10:34:21"
-    },
-    {
-      "url": "comdirect.de",
-      "industry": "Finance",
-      "scores": {
-        "performance": 49,
-        "accessibility": 91,
-        "best_practices": 100,
-        "seo": 79,
-        "pwa": 33
-      },
-      "test_date": "2025-10-27 03:20:13"
-    },
-    {
       "url": "focus.de",
       "industry": "Media",
       "scores": {
-        "performance": 48,
+        "performance": 56,
         "accessibility": 88,
         "best_practices": 100,
         "seo": 100,
         "pwa": 89
       },
-      "test_date": "2025-10-20 20:11:07"
+      "test_date": "2025-11-03 22:14:43"
+    },
+    {
+      "url": "bund.de",
+      "industry": "Government",
+      "scores": {
+        "performance": 55,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 18:16:21"
     },
     {
       "url": "chip.de",
       "industry": "Media",
       "scores": {
-        "performance": 47,
+        "performance": 52,
         "accessibility": 91,
         "best_practices": 100,
         "seo": 93,
-        "pwa": 56
+        "pwa": 67
       },
-      "test_date": "2025-10-27 00:51:07"
-    },
-    {
-      "url": "tagesschau.de",
-      "industry": "Media",
-      "scores": {
-        "performance": 46,
-        "accessibility": 88,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 06:18:01"
+      "test_date": "2025-11-02 22:15:36"
     },
     {
       "url": "spiegel.de",
       "industry": "Media",
       "scores": {
-        "performance": 45,
+        "performance": 50,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 93,
         "pwa": 78
       },
-      "test_date": "2025-10-24 00:40:36"
+      "test_date": "2025-10-31 08:14:57"
     },
     {
-      "url": "consorsbank.de",
+      "url": "comdirect.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 50,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 00:58:22"
+    },
+    {
+      "url": "commerzbank.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 49,
+        "accessibility": 94,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 03:12:38"
+    },
+    {
+      "url": "mcfcorpfin.com",
       "industry": "Finance",
       "scores": {
         "performance": 45,
-        "accessibility": 90,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 44
-      },
-      "test_date": "2025-10-27 04:21:00"
-    },
-    {
-      "url": "deutsche-bank.de",
-      "industry": "Finance",
-      "scores": {
-        "performance": 44,
         "accessibility": 98,
-        "best_practices": 100,
-        "seo": 93,
+        "best_practices": 92,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-27 10:14:04"
+      "test_date": "2025-10-29 12:33:21"
+    },
+    {
+      "url": "heise.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-04 08:17:59"
     },
     {
       "url": "idealo.de",
@@ -206,16 +218,28 @@
       "test_date": "2025-10-28 14:16:13"
     },
     {
-      "url": "welt.de",
-      "industry": "Media",
+      "url": "consorsbank.de",
+      "industry": "Finance",
       "scores": {
-        "performance": 41,
+        "performance": 43,
+        "accessibility": 90,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-11-03 03:13:20"
+    },
+    {
+      "url": "sparkasse.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 42,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 100,
-        "pwa": 33
+        "pwa": 56
       },
-      "test_date": "2025-10-25 04:11:51"
+      "test_date": "2025-10-31 08:14:31"
     },
     {
       "url": "bild.de",
@@ -230,148 +254,220 @@
       "test_date": "2025-10-26 16:41:38"
     },
     {
-      "url": "sparkasse.de",
-      "industry": "Finance",
+      "url": "zeit.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 88,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 78
+      },
+      "test_date": "2025-11-01 18:18:51"
+    },
+    {
+      "url": "dw.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-11-03 12:18:11"
+    },
+    {
+      "url": "bahn.de",
+      "industry": "Transportation",
       "scores": {
         "performance": 40,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 56
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 91,
+        "pwa": 33
       },
-      "test_date": "2025-10-24 00:40:09"
+      "test_date": "2025-11-02 10:18:41"
     },
     {
       "url": "saturn.de",
       "industry": "E-commerce",
       "scores": {
         "performance": 39,
-        "accessibility": 90,
-        "best_practices": 92,
-        "seo": 97,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 100,
         "pwa": 78
       },
-      "test_date": "2025-10-23 19:31:29"
+      "test_date": "2025-10-31 00:48:52"
     },
     {
-      "url": "volkswagen.de",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 39,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 95,
-        "pwa": 33
-      },
-      "test_date": "2025-10-25 00:51:27"
-    },
-    {
-      "url": "zeit.de",
+      "url": "tagesschau.de",
       "industry": "Media",
       "scores": {
         "performance": 39,
-        "accessibility": 86,
-        "best_practices": 92,
-        "seo": 86,
-        "pwa": 78
-      },
-      "test_date": "2025-10-25 10:16:16"
-    },
-    {
-      "url": "t-online.de",
-      "industry": "Portal",
-      "scores": {
-        "performance": 35,
-        "accessibility": 76,
-        "best_practices": 100,
+        "accessibility": 88,
+        "best_practices": 83,
         "seo": 93,
-        "pwa": 89
+        "pwa": 33
       },
-      "test_date": "2025-10-24 06:15:06"
+      "test_date": "2025-10-31 14:13:50"
     },
     {
       "url": "bmw.de",
       "industry": "Automotive",
       "scores": {
-        "performance": 33,
+        "performance": 37,
         "accessibility": 100,
-        "best_practices": 83,
+        "best_practices": 75,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:39:30"
+      "test_date": "2025-11-02 16:15:32"
     },
     {
-      "url": "zalando.de",
+      "url": "n-tv.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 20:15:58"
+    },
+    {
+      "url": "mediamarkt.de",
       "industry": "E-commerce",
       "scores": {
         "performance": 30,
-        "accessibility": 0,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 22
+        "accessibility": 95,
+        "best_practices": 100,
+        "seo": 96,
+        "pwa": 78
       },
-      "test_date": "2025-10-25 10:08:45"
-    },
-    {
-      "url": "bahn.de",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 30,
-        "accessibility": 82,
-        "best_practices": 92,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 13:42:30"
+      "test_date": "2025-10-29 14:32:39"
     },
     {
       "url": "sueddeutsche.de",
       "industry": "Media",
       "scores": {
-        "performance": 28,
+        "performance": 30,
         "accessibility": 91,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 93,
         "pwa": 56
       },
-      "test_date": "2025-10-24 04:11:39"
+      "test_date": "2025-10-31 10:20:50"
+    },
+    {
+      "url": "volkswagen.de",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 30,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 10:09:30"
+    },
+    {
+      "url": "rtl.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 29,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 22:10:50"
+    },
+    {
+      "url": "deutsche-bank.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 29,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 08:17:01"
+    },
+    {
+      "url": "zalando.de",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 27,
+        "accessibility": 0,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 22
+      },
+      "test_date": "2025-11-01 18:11:50"
+    },
+    {
+      "url": "faz.net",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 20:11:47"
     },
     {
       "url": "otto.de",
       "industry": "E-commerce",
       "scores": {
-        "performance": 25,
+        "performance": 17,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 85,
         "pwa": 67
       },
-      "test_date": "2025-10-23 03:01:46"
+      "test_date": "2025-10-30 10:12:25"
+    },
+    {
+      "url": "t-online.de",
+      "industry": "Portal",
+      "scores": {
+        "performance": 17,
+        "accessibility": 76,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-10-31 14:11:10"
     },
     {
       "url": "postbank.de",
       "industry": "Finance",
       "scores": {
-        "performance": 17,
+        "performance": 14,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 08:29:50"
+      "test_date": "2025-10-30 14:02:18"
     },
     {
       "url": "mercedes-benz.de",
       "industry": "Automotive",
       "scores": {
-        "performance": 7,
+        "performance": 5,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-22 12:20:09"
+      "test_date": "2025-10-29 14:35:49"
     }
   ],
   "industries": [
@@ -379,40 +475,40 @@
       "industry": "Automotive",
       "website_count": 3,
       "averages": {
-        "performance": 26,
-        "accessibility": 99,
-        "best_practices": 83,
-        "seo": 98,
+        "performance": 24,
+        "accessibility": 98,
+        "best_practices": 80,
+        "seo": 99,
         "pwa": 33
       }
     },
     {
       "industry": "E-commerce",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 35,
-        "accessibility": 63,
-        "best_practices": 81,
-        "seo": 90,
-        "pwa": 50
+        "performance": 31,
+        "accessibility": 71,
+        "best_practices": 85,
+        "seo": 91,
+        "pwa": 56
       }
     },
     {
       "industry": "Finance",
-      "website_count": 7,
+      "website_count": 11,
       "averages": {
-        "performance": 44,
-        "accessibility": 91,
-        "best_practices": 89,
-        "seo": 88,
-        "pwa": 43
+        "performance": 50,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 39
       }
     },
     {
       "industry": "Government",
       "website_count": 2,
       "averages": {
-        "performance": 59,
+        "performance": 60,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 83,
@@ -421,20 +517,20 @@
     },
     {
       "industry": "Media",
-      "website_count": 10,
+      "website_count": 13,
       "averages": {
-        "performance": 45,
+        "performance": 42,
         "accessibility": 91,
-        "best_practices": 93,
+        "best_practices": 92,
         "seo": 95,
-        "pwa": 62
+        "pwa": 56
       }
     },
     {
       "industry": "Portal",
       "website_count": 3,
       "averages": {
-        "performance": 66,
+        "performance": 57,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 88,
@@ -445,9 +541,9 @@
       "industry": "Transportation",
       "website_count": 1,
       "averages": {
-        "performance": 30,
+        "performance": 40,
         "accessibility": 82,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 91,
         "pwa": 33
       }

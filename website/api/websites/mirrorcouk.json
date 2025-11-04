@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.130Z",
+    "generated_at": "2025-11-04T09:04:16.803Z",
     "url": "mirror.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 41,
-    "accessibility": 77,
-    "best_practices": 75,
+    "performance": 32,
+    "accessibility": 71,
+    "best_practices": 83,
     "seo": 81,
     "pwa": 67,
-    "test_date": "2025-10-23 07:34:25"
+    "test_date": "2025-10-29 16:32:55"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 71,
+      "best_practices": 83,
+      "seo": 81,
+      "pwa": 67,
+      "test_date": "2025-10-29 16:32:55"
+    },
     {
       "performance": 41,
       "accessibility": 77,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
-    "accessibility": 6,
-    "best_practices": -8,
+    "performance": -9,
+    "accessibility": -6,
+    "best_practices": 8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:34:25",
-    "test_date_previous": "2025-10-22 14:19:30"
+    "test_date_current": "2025-10-29 16:32:55",
+    "test_date_previous": "2025-10-23 07:34:25"
   }
 }

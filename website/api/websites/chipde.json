@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.062Z",
+    "generated_at": "2025-11-04T09:04:16.519Z",
     "url": "chip.de",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 52,
     "accessibility": 91,
     "best_practices": 100,
     "seo": 93,
-    "pwa": 56,
-    "test_date": "2025-10-27 00:51:07"
+    "pwa": 67,
+    "test_date": "2025-11-02 22:15:36"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 67,
+      "test_date": "2025-11-02 22:15:36"
+    },
     {
       "performance": 47,
       "accessibility": 91,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 5,
     "accessibility": 0,
-    "best_practices": 8,
+    "best_practices": 0,
     "seo": 0,
-    "pwa": 0,
-    "test_date_current": "2025-10-27 00:51:07",
-    "test_date_previous": "2025-10-19 19:43:17"
+    "pwa": 11,
+    "test_date_current": "2025-11-02 22:15:36",
+    "test_date_previous": "2025-10-27 00:51:07"
   }
 }

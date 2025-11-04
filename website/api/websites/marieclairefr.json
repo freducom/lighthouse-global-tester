@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.061Z",
+    "generated_at": "2025-11-04T09:04:16.517Z",
     "url": "marieclaire.fr",
     "country": "France",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 33,
     "accessibility": 83,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 92,
     "pwa": 89,
-    "test_date": "2025-10-22 10:12:33"
+    "test_date": "2025-10-29 12:24:24"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 83,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 89,
+      "test_date": "2025-10-29 12:24:24"
+    },
     {
       "performance": 32,
       "accessibility": 83,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 10:12:33"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 12:24:24",
+    "test_date_previous": "2025-10-22 10:12:33"
+  }
 }

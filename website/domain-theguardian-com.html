@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.995Z",
+          "dateCreated": "2025-11-04T09:04:12.119Z",
           "about": {
             "@type": "WebSite",
             "name": "theguardian.com",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-theguardian.com.html#metrics",
           "name": "theguardian.com Performance Metrics",
           "description": "Latest Lighthouse scores for theguardian.com",
-          "performanceScore": 20,
-          "accessibilityScore": 89,
+          "performanceScore": 34,
+          "accessibilityScore": 83,
           "bestPracticesScore": 83,
-          "seoScore": 84,
-          "dateRecorded": "2025-10-24 12:21:54"
+          "seoScore": 77,
+          "dateRecorded": "2025-10-31 18:33:23"
         }
       ]
     }
@@ -117,17 +117,17 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">20%</div>
+                <div class="stat-number poor">34%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">89%</div>
+                <div class="stat-number good">83%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
                 <h3>SEO</h3>
-                <div class="stat-number good">84%</div>
+                <div class="stat-number good">77%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card best-practices">
@@ -152,15 +152,15 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 20%"></div>
-                        <span class="score-text">20%</span>
+                        <div class="score-fill performance" style="width: 34%"></div>
+                        <span class="score-text">34%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 89%"></div>
-                        <span class="score-text">89%</span>
+                        <div class="score-fill accessibility" style="width: 83%"></div>
+                        <span class="score-text">83%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -173,8 +173,8 @@
                 <div class="score-item">
                     <span class="score-label">SEO:</span>
                     <div class="score-bar">
-                        <div class="score-fill seo" style="width: 84%"></div>
-                        <span class="score-text">84%</span>
+                        <div class="score-fill seo" style="width: 77%"></div>
+                        <span class="score-text">77%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -362,7 +359,7 @@
 
     
     <script>
-        const historyData = [{"id":49,"url":"theguardian.com","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 18:09:38","country":"United Kingdom","industry":"Media"},{"id":84,"url":"theguardian.com","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42","country":"United Kingdom","industry":"Media"},{"id":491,"url":"theguardian.com","performance":58,"accessibility":89,"best_practices":100,"seo":86,"pwa":78,"test_date":"2025-10-23 07:33:26","country":"United Kingdom","industry":"Media"},{"id":636,"url":"theguardian.com","performance":20,"accessibility":89,"best_practices":83,"seo":84,"pwa":78,"test_date":"2025-10-24 12:21:54","country":"United Kingdom","industry":"Media"}];
+        const historyData = [{"id":49,"url":"theguardian.com","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 18:09:38","country":"United Kingdom","industry":"Media"},{"id":84,"url":"theguardian.com","performance":56,"accessibility":89,"best_practices":92,"seo":86,"pwa":78,"test_date":"2025-10-19 19:38:42","country":"United Kingdom","industry":"Media"},{"id":491,"url":"theguardian.com","performance":58,"accessibility":89,"best_practices":100,"seo":86,"pwa":78,"test_date":"2025-10-23 07:33:26","country":"United Kingdom","industry":"Media"},{"id":636,"url":"theguardian.com","performance":20,"accessibility":89,"best_practices":83,"seo":84,"pwa":78,"test_date":"2025-10-24 12:21:54","country":"United Kingdom","industry":"Media"},{"id":1568,"url":"theguardian.com","performance":34,"accessibility":83,"best_practices":83,"seo":77,"pwa":78,"test_date":"2025-10-31 18:33:23","country":"United Kingdom","industry":"Media"}];
         
         const ctx = document.getElementById('historyChart').getContext('2d');
         new Chart(ctx, {

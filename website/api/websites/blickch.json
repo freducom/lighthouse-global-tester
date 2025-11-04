@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.122Z",
+    "generated_at": "2025-11-04T09:04:16.775Z",
     "url": "blick.ch",
     "country": "Switzerland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 34,
     "accessibility": 95,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-26 16:51:03"
+    "test_date": "2025-11-02 16:09:48"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 95,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-02 16:09:48"
+    },
     {
       "performance": 39,
       "accessibility": 95,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 16:51:03"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 16:09:48",
+    "test_date_previous": "2025-10-26 16:51:03"
+  }
 }

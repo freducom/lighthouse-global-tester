@@ -1,77 +1,89 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.869Z",
+    "generated_at": "2025-11-04T09:04:15.635Z",
     "country": "Ukraine",
     "flag": "🇺🇦",
-    "website_count": 8
+    "website_count": 10
   },
   "averages": {
-    "performance": 54,
-    "accessibility": 81,
-    "best_practices": 74,
+    "performance": 56,
+    "accessibility": 80,
+    "best_practices": 76,
     "seo": 92,
     "pwa": 54
   },
   "websites": [
     {
-      "url": "unian.ua",
+      "url": "gazeta.ua",
       "industry": "Media",
       "scores": {
-        "performance": 69,
-        "accessibility": 85,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 100
+        "performance": 87,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
       },
-      "test_date": "2025-10-24 20:20:35"
-    },
-    {
-      "url": "news.finance.ua",
-      "industry": "Finance",
-      "scores": {
-        "performance": 67,
-        "accessibility": 63,
-        "best_practices": 67,
-        "seo": 91,
-        "pwa": 89
-      },
-      "test_date": "2025-10-22 19:44:03"
+      "test_date": "2025-11-04 00:55:16"
     },
     {
       "url": "tsn.ua",
       "industry": "Media",
       "scores": {
-        "performance": 60,
+        "performance": 69,
         "accessibility": 95,
         "best_practices": 92,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-24 18:14:26"
+      "test_date": "2025-11-01 00:49:14"
     },
     {
       "url": "censor.net",
       "industry": "Media",
       "scores": {
-        "performance": 55,
+        "performance": 61,
         "accessibility": 90,
         "best_practices": 67,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-26 22:21:23"
+      "test_date": "2025-11-02 22:08:10"
     },
     {
-      "url": "sport.ua",
-      "industry": "Sports",
+      "url": "obozrevatel.com",
+      "industry": "Media",
       "scores": {
-        "performance": 50,
-        "accessibility": 78,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 56
+        "performance": 59,
+        "accessibility": 64,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 78
       },
-      "test_date": "2025-10-24 00:41:27"
+      "test_date": "2025-10-30 06:15:58"
+    },
+    {
+      "url": "unian.ua",
+      "industry": "Media",
+      "scores": {
+        "performance": 56,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 100
+      },
+      "test_date": "2025-11-01 04:13:12"
+    },
+    {
+      "url": "news.finance.ua",
+      "industry": "Finance",
+      "scores": {
+        "performance": 52,
+        "accessibility": 63,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 89
+      },
+      "test_date": "2025-10-30 00:44:39"
     },
     {
       "url": "lb.ua",
@@ -86,28 +98,40 @@
       "test_date": "2025-10-29 04:31:44"
     },
     {
-      "url": "ukr.net",
-      "industry": "Portal",
-      "scores": {
-        "performance": 46,
-        "accessibility": 76,
-        "best_practices": 67,
-        "seo": 95,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 20:13:36"
-    },
-    {
       "url": "pravda.com.ua",
       "industry": "Media",
       "scores": {
-        "performance": 38,
+        "performance": 42,
         "accessibility": 73,
         "best_practices": 75,
-        "seo": 83,
+        "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-23 08:34:43"
+      "test_date": "2025-10-30 14:09:05"
+    },
+    {
+      "url": "sport.ua",
+      "industry": "Sports",
+      "scores": {
+        "performance": 42,
+        "accessibility": 78,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-10-31 08:15:47"
+    },
+    {
+      "url": "ukr.net",
+      "industry": "Portal",
+      "scores": {
+        "performance": 38,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 03:17:24"
     }
   ],
   "industries": [
@@ -115,7 +139,7 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 67,
+        "performance": 52,
         "accessibility": 63,
         "best_practices": 67,
         "seo": 91,
@@ -124,23 +148,23 @@
     },
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 54,
-        "accessibility": 86,
-        "best_practices": 73,
+        "performance": 60,
+        "accessibility": 83,
+        "best_practices": 76,
         "seo": 92,
-        "pwa": 51
+        "pwa": 52
       }
     },
     {
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 46,
+        "performance": 38,
         "accessibility": 76,
         "best_practices": 67,
-        "seo": 95,
+        "seo": 96,
         "pwa": 33
       }
     },
@@ -148,10 +172,10 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 50,
+        "performance": 42,
         "accessibility": 78,
         "best_practices": 92,
-        "seo": 92,
+        "seo": 93,
         "pwa": 56
       }
     }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.059Z",
+    "generated_at": "2025-11-04T09:04:16.514Z",
     "url": "wpseoai.com",
     "country": "Finland",
     "industry": "Marketing"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 64,
     "accessibility": 90,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-25 06:15:39"
+    "test_date": "2025-11-01 14:15:40"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-01 14:15:40"
+    },
     {
       "performance": 65,
       "accessibility": 90,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 06:15:39"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 14:15:40",
+    "test_date_previous": "2025-10-25 06:15:39"
+  }
 }

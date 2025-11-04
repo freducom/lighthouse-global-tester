@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.097Z",
+    "generated_at": "2025-11-04T09:04:16.666Z",
     "url": "dnb.no",
     "country": "Norway",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 59,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-27 12:20:18"
+    "test_date": "2025-11-03 10:14:23"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-03 10:14:23"
+    },
     {
       "performance": 52,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 12:20:18"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 10:14:23",
+    "test_date_previous": "2025-10-27 12:20:18"
+  }
 }

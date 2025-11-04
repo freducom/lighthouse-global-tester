@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.147Z",
+    "generated_at": "2025-11-04T09:04:16.875Z",
     "url": "24h.com.vn",
     "country": "Vietnam",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 59,
-    "accessibility": 55,
-    "best_practices": 92,
+    "performance": 32,
+    "accessibility": 71,
+    "best_practices": 83,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-26 19:28:51"
+    "test_date": "2025-11-02 00:55:12"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 71,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-02 00:55:12"
+    },
     {
       "performance": 59,
       "accessibility": 55,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 19:28:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -27,
+    "accessibility": 16,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 00:55:12",
+    "test_date_previous": "2025-10-26 19:28:51"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.146Z",
+    "generated_at": "2025-11-04T09:04:16.874Z",
     "url": "busqueda.com.uy",
     "country": "Uruguay",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 49,
     "accessibility": 87,
     "best_practices": 75,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-10-26 20:16:50"
+    "test_date": "2025-11-02 18:22:15"
   },
   "historical_data": [
+    {
+      "performance": 49,
+      "accessibility": 87,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-02 18:22:15"
+    },
     {
       "performance": 42,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 20:16:50"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 18:22:15",
+    "test_date_previous": "2025-10-26 20:16:50"
+  }
 }

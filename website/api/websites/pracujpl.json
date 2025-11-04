@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.102Z",
+    "generated_at": "2025-11-04T09:04:16.684Z",
     "url": "pracuj.pl",
     "country": "Poland",
     "industry": "Jobs"
@@ -11,9 +11,17 @@
     "best_practices": 75,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-23 08:34:22"
+    "test_date": "2025-10-30 14:08:44"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 94,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-10-30 14:08:44"
+    },
     {
       "performance": 33,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 08:34:22"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 14:08:44",
+    "test_date_previous": "2025-10-23 08:34:22"
+  }
 }

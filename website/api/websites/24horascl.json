@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.043Z",
+    "generated_at": "2025-11-04T09:04:16.419Z",
     "url": "24horas.cl",
     "country": "Chile",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 49,
-    "accessibility": 73,
+    "performance": 32,
+    "accessibility": 74,
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-26 19:29:12"
+    "test_date": "2025-11-02 00:55:51"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 74,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-02 00:55:51"
+    },
     {
       "performance": 49,
       "accessibility": 73,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 19:29:12"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -17,
+    "accessibility": 1,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-02 00:55:51",
+    "test_date_previous": "2025-10-26 19:29:12"
+  }
 }

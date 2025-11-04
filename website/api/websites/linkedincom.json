@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.142Z",
+    "generated_at": "2025-11-04T09:04:16.566Z",
     "url": "linkedin.com",
-    "country": "United States",
-    "industry": "Social Media"
+    "country": "India",
+    "industry": "Social"
   },
   "latest_scores": {
-    "performance": 76,
+    "performance": 75,
     "accessibility": 100,
-    "best_practices": 75,
+    "best_practices": 67,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 07:02:29"
+    "test_date": "2025-10-29 08:14:32"
   },
   "historical_data": [
+    {
+      "performance": 75,
+      "accessibility": 100,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-29 08:14:32"
+    },
+    {
+      "performance": 40,
+      "accessibility": 100,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-29 08:14:19"
+    },
     {
       "performance": 76,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-23 07:02:29"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 35,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 08:14:32",
+    "test_date_previous": "2025-10-29 08:14:19"
+  }
 }

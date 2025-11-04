@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.098Z",
+    "generated_at": "2025-11-04T09:04:16.669Z",
     "url": "dawn.com",
     "country": "Pakistan",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 36,
-    "accessibility": 84,
-    "best_practices": 67,
-    "seo": 97,
+    "performance": 38,
+    "accessibility": 88,
+    "best_practices": 75,
+    "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-27 08:20:30"
+    "test_date": "2025-11-03 06:21:57"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 88,
+      "best_practices": 75,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-03 06:21:57"
+    },
     {
       "performance": 36,
       "accessibility": 84,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 08:20:30"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 4,
+    "best_practices": 8,
+    "seo": 1,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 06:21:57",
+    "test_date_previous": "2025-10-27 08:20:30"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.091Z",
+    "generated_at": "2025-11-04T09:04:16.635Z",
     "url": "walmart.com.mx",
     "country": "Mexico",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 61,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-25 03:00:38"
+    "test_date": "2025-11-01 10:19:34"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-01 10:19:34"
+    },
     {
       "performance": 56,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 03:00:38"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 10:19:34",
+    "test_date_previous": "2025-10-25 03:00:38"
+  }
 }

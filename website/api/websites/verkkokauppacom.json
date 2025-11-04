@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.059Z",
+    "generated_at": "2025-11-04T09:04:16.511Z",
     "url": "verkkokauppa.com",
     "country": "Finland",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 39,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 100,
     "pwa": 100,
-    "test_date": "2025-10-24 22:14:50"
+    "test_date": "2025-11-01 06:21:46"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 100,
+      "test_date": "2025-11-01 06:21:46"
+    },
     {
       "performance": 40,
       "accessibility": 100,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": 9,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-24 22:14:50",
-    "test_date_previous": "2025-10-19 20:16:28"
+    "test_date_current": "2025-11-01 06:21:46",
+    "test_date_previous": "2025-10-24 22:14:50"
   }
 }

@@ -1,77 +1,101 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.874Z",
+    "generated_at": "2025-11-04T09:04:15.658Z",
     "country": "Italy",
     "flag": "🇮🇹",
-    "website_count": 7
+    "website_count": 9
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 85,
-    "best_practices": 82,
-    "seo": 88,
-    "pwa": 43
+    "performance": 43,
+    "accessibility": 84,
+    "best_practices": 80,
+    "seo": 87,
+    "pwa": 41
   },
   "websites": [
-    {
-      "url": "virgilio.it",
-      "industry": "Portal",
-      "scores": {
-        "performance": 58,
-        "accessibility": 87,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 67
-      },
-      "test_date": "2025-10-25 00:44:25"
-    },
     {
       "url": "aranzulla.it",
       "industry": "Media",
       "scores": {
-        "performance": 46,
+        "performance": 70,
         "accessibility": 88,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 10:10:30"
+      "test_date": "2025-11-02 08:18:12"
+    },
+    {
+      "url": "virgilio.it",
+      "industry": "Portal",
+      "scores": {
+        "performance": 60,
+        "accessibility": 87,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-11-01 08:18:56"
     },
     {
       "url": "repubblica.it",
       "industry": "Media",
       "scores": {
-        "performance": 45,
+        "performance": 56,
         "accessibility": 80,
         "best_practices": 83,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-23 15:44:09"
+      "test_date": "2025-10-30 20:11:12"
     },
     {
       "url": "subito.it",
       "industry": "Marketplace",
       "scores": {
-        "performance": 37,
+        "performance": 40,
         "accessibility": 95,
         "best_practices": 83,
-        "seo": 85,
+        "seo": 77,
         "pwa": 67
       },
-      "test_date": "2025-10-24 03:02:30"
+      "test_date": "2025-10-31 10:19:44"
     },
     {
       "url": "corriere.it",
       "industry": "Media",
       "scores": {
-        "performance": 32,
+        "performance": 36,
         "accessibility": 72,
         "best_practices": 75,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-27 04:27:00"
+      "test_date": "2025-11-03 03:19:15"
+    },
+    {
+      "url": "tgcom24.mediaset.it",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 18:22:19"
+    },
+    {
+      "url": "ansa.it",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 93,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 08:15:12"
     },
     {
       "url": "la7.it",
@@ -86,16 +110,16 @@
       "test_date": "2025-10-29 03:21:32"
     },
     {
-      "url": "ansa.it",
+      "url": "gazzetta.it",
       "industry": "Media",
       "scores": {
-        "performance": 31,
-        "accessibility": 93,
-        "best_practices": 75,
-        "seo": 100,
+        "performance": 25,
+        "accessibility": 84,
+        "best_practices": 67,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:44:52"
+      "test_date": "2025-11-04 03:07:44"
     }
   ],
   "industries": [
@@ -103,20 +127,20 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 40,
         "accessibility": 95,
         "best_practices": 83,
-        "seo": 85,
+        "seo": 77,
         "pwa": 67
       }
     },
     {
       "industry": "Media",
-      "website_count": 5,
+      "website_count": 7,
       "averages": {
-        "performance": 37,
-        "accessibility": 83,
-        "best_practices": 80,
+        "performance": 41,
+        "accessibility": 82,
+        "best_practices": 78,
         "seo": 88,
         "pwa": 33
       }
@@ -125,7 +149,7 @@
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 58,
+        "performance": 60,
         "accessibility": 87,
         "best_practices": 92,
         "seo": 93,

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.059Z",
+    "generated_at": "2025-11-04T09:04:16.512Z",
     "url": "vr.fi",
     "country": "Finland",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 53,
     "accessibility": 97,
     "best_practices": 100,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-10-25 00:51:41"
+    "test_date": "2025-11-01 10:11:18"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 97,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-11-01 10:11:18"
+    },
     {
       "performance": 60,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-25 00:51:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-01 10:11:18",
+    "test_date_previous": "2025-10-25 00:51:41"
+  }
 }

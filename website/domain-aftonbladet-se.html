@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-10-29T07:39:54.973Z",
+          "dateCreated": "2025-11-04T09:04:12.033Z",
           "about": {
             "@type": "WebSite",
             "name": "aftonbladet.se",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-aftonbladet.se.html#metrics",
           "name": "aftonbladet.se Performance Metrics",
           "description": "Latest Lighthouse scores for aftonbladet.se",
-          "performanceScore": 51,
-          "accessibilityScore": 98,
+          "performanceScore": 34,
+          "accessibilityScore": 100,
           "bestPracticesScore": 92,
           "seoScore": 100,
-          "dateRecorded": "2025-10-19 20:26:29"
+          "dateRecorded": "2025-11-02 04:13:50"
         }
       ]
     }
@@ -117,12 +117,12 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">51%</div>
-                <div class="stat-description">average performance</div>
+                <div class="stat-number poor">34%</div>
+                <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number excellent">98%</div>
+                <div class="stat-number excellent">100%</div>
                 <div class="stat-description">excellent performance</div>
             </div>
             <div class="stat-card seo">
@@ -139,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -152,15 +152,15 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 51%"></div>
-                        <span class="score-text">51%</span>
+                        <div class="score-fill performance" style="width: 34%"></div>
+                        <span class="score-text">34%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 98%"></div>
-                        <span class="score-text">98%</span>
+                        <div class="score-fill accessibility" style="width: 100%"></div>
+                        <span class="score-text">100%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 699 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1016 websites.</p>
         </div>
     </footer>
 
@@ -219,11 +219,10 @@
         <div id="websiteModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>� Test Your Website</h2>
+                    <h2>Test Your Website</h2>
                     <button class="close-btn" onclick="closeWebsiteModal()" aria-label="Close test form">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Submit your website for comprehensive Lighthouse performance analysis including performance, accessibility, best practices, SEO, and PWA scores.</p>
                     <form id="websiteForm" onsubmit="handleWebsiteSubmission(event)">
                         <div class="form-group">
                             <label for="websiteUrl">Website URL *</label>
@@ -238,7 +237,6 @@
                             <input type="email" id="userEmail" name="email" required 
                                    placeholder="your@email.com" 
                                    aria-describedby="email-help">
-                            <small id="email-help">We'll send you the test results when analysis is complete</small>
                         </div>
                         
                         <div class="form-group">
@@ -262,9 +260,8 @@
                         <div class="form-group">
                             <label for="websiteDescription">Additional Notes (Optional)</label>
                             <textarea id="websiteDescription" name="description" rows="3" 
-                                      placeholder="Any specific pages or aspects you'd like us to focus on during testing..." 
+                                      placeholder="Any feedback or ideas..." 
                                       maxlength="500"></textarea>
-                            <small>Optional: Provide any specific testing instructions or focus areas</small>
                         </div>
                         
                         <div class="form-actions">
@@ -360,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":205,"url":"aftonbladet.se","performance":51,"accessibility":98,"best_practices":92,"seo":100,"pwa":78,"test_date":"2025-10-19 20:26:29","country":"Sweden","industry":"Media"},{"id":1742,"url":"aftonbladet.se","performance":34,"accessibility":100,"best_practices":92,"seo":100,"pwa":78,"test_date":"2025-11-02 04:13:50","country":"Sweden","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

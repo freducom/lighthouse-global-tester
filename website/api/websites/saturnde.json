@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.064Z",
+    "generated_at": "2025-11-04T09:04:16.525Z",
     "url": "saturn.de",
     "country": "Germany",
     "industry": "E-commerce"
   },
   "latest_scores": {
     "performance": 39,
-    "accessibility": 90,
-    "best_practices": 92,
-    "seo": 97,
+    "accessibility": 95,
+    "best_practices": 83,
+    "seo": 100,
     "pwa": 78,
-    "test_date": "2025-10-23 19:31:29"
+    "test_date": "2025-10-31 00:48:52"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 95,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-10-31 00:48:52"
+    },
     {
       "performance": 39,
       "accessibility": 90,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
-    "accessibility": 0,
-    "best_practices": 9,
-    "seo": -3,
+    "performance": 0,
+    "accessibility": 5,
+    "best_practices": -9,
+    "seo": 3,
     "pwa": 0,
-    "test_date_current": "2025-10-23 19:31:29",
-    "test_date_previous": "2025-10-23 18:14:55"
+    "test_date_current": "2025-10-31 00:48:52",
+    "test_date_previous": "2025-10-23 19:31:29"
   }
 }

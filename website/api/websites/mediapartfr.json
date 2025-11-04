@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.061Z",
+    "generated_at": "2025-11-04T09:04:16.517Z",
     "url": "mediapart.fr",
     "country": "France",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 71,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 78,
-    "test_date": "2025-10-22 10:16:36"
+    "test_date": "2025-10-29 14:32:59"
   },
   "historical_data": [
+    {
+      "performance": 71,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-10-29 14:32:59"
+    },
+    {
+      "performance": 73,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-10-29 14:11:32"
+    },
     {
       "performance": 65,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-22 10:16:36"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-29 14:32:59",
+    "test_date_previous": "2025-10-29 14:11:32"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.116Z",
+    "generated_at": "2025-11-04T09:04:16.723Z",
     "url": "cninordic.com",
     "country": "Sweden",
     "industry": "Finance"
@@ -11,9 +11,17 @@
     "best_practices": 92,
     "seo": 71,
     "pwa": 11,
-    "test_date": "2025-10-27 03:18:10"
+    "test_date": "2025-11-03 00:56:13"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 86,
+      "best_practices": 92,
+      "seo": 71,
+      "pwa": 11,
+      "test_date": "2025-11-03 00:56:13"
+    },
     {
       "performance": 52,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 03:18:10"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-03 00:56:13",
+    "test_date_previous": "2025-10-27 03:18:10"
+  }
 }

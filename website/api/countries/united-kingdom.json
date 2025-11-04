@@ -1,65 +1,101 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.835Z",
+    "generated_at": "2025-11-04T09:04:15.484Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
-    "website_count": 29
+    "website_count": 33
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 89,
-    "best_practices": 78,
-    "seo": 90,
-    "pwa": 45
+    "performance": 43,
+    "accessibility": 88,
+    "best_practices": 80,
+    "seo": 89,
+    "pwa": 44
   },
   "websites": [
-    {
-      "url": "tfl.gov.uk",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 88,
-        "accessibility": 59,
-        "best_practices": 83,
-        "seo": 77,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 10:16:14"
-    },
-    {
-      "url": "bankofengland.co.uk",
-      "industry": "Finance",
-      "scores": {
-        "performance": 77,
-        "accessibility": 95,
-        "best_practices": 83,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 15:59:13"
-    },
     {
       "url": "gov.uk",
       "industry": "Government",
       "scores": {
-        "performance": 73,
+        "performance": 94,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:36:21"
+      "test_date": "2025-11-04 04:20:26"
     },
     {
-      "url": "metro.co.uk",
+      "url": "tfl.gov.uk",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 90,
+        "accessibility": 59,
+        "best_practices": 83,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 18:21:52"
+    },
+    {
+      "url": "bankofengland.co.uk",
+      "industry": "Finance",
+      "scores": {
+        "performance": 82,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 12:24:01"
+    },
+    {
+      "url": "standard.co.uk",
       "industry": "Media",
       "scores": {
-        "performance": 57,
-        "accessibility": 78,
-        "best_practices": 67,
-        "seo": 83,
-        "pwa": 44
+        "performance": 70,
+        "accessibility": 80,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 78
       },
-      "test_date": "2025-10-23 07:37:27"
+      "test_date": "2025-10-31 08:26:23"
+    },
+    {
+      "url": "barclays.co.uk",
+      "industry": "Finance",
+      "scores": {
+        "performance": 65,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 12:24:31"
+    },
+    {
+      "url": "santander.co.uk",
+      "industry": "Finance",
+      "scores": {
+        "performance": 58,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 00:47:14"
+    },
+    {
+      "url": "balderton.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 58,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 12:15:44"
     },
     {
       "url": "indexventures.com",
@@ -74,64 +110,52 @@
       "test_date": "2025-10-28 16:39:25"
     },
     {
-      "url": "barclays.co.uk",
-      "industry": "Finance",
-      "scores": {
-        "performance": 55,
-        "accessibility": 86,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 15:59:54"
-    },
-    {
-      "url": "natwest.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 54,
-        "accessibility": 89,
-        "best_practices": 83,
-        "seo": 75,
-        "pwa": 33
-      },
-      "test_date": "2025-10-22 16:14:31"
-    },
-    {
       "url": "nhs.uk",
       "industry": "Government",
       "scores": {
-        "performance": 54,
+        "performance": 52,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-23 07:36:10"
+      "test_date": "2025-10-30 00:58:05"
     },
     {
-      "url": "balderton.com",
+      "url": "metro.co.uk",
+      "industry": "Media",
+      "scores": {
+        "performance": 48,
+        "accessibility": 77,
+        "best_practices": 58,
+        "seo": 83,
+        "pwa": 44
+      },
+      "test_date": "2025-10-29 14:15:21"
+    },
+    {
+      "url": "natwest.com",
       "industry": "Finance",
       "scores": {
-        "performance": 54,
-        "accessibility": 83,
-        "best_practices": 92,
-        "seo": 86,
+        "performance": 48,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-26 13:43:19"
+      "test_date": "2025-10-29 22:12:04"
     },
     {
-      "url": "tesco.com",
-      "industry": "E-commerce",
+      "url": "ft.com",
+      "industry": "Finance",
       "scores": {
-        "performance": 44,
-        "accessibility": 93,
-        "best_practices": 92,
-        "seo": 86,
+        "performance": 46,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-24 10:15:24"
+      "test_date": "2025-11-04 00:49:44"
     },
     {
       "url": "hsbc.co.uk",
@@ -146,64 +170,112 @@
       "test_date": "2025-10-28 12:25:21"
     },
     {
-      "url": "mirror.co.uk",
-      "industry": "Media",
-      "scores": {
-        "performance": 41,
-        "accessibility": 77,
-        "best_practices": 75,
-        "seo": 81,
-        "pwa": 67
-      },
-      "test_date": "2025-10-23 07:34:25"
-    },
-    {
-      "url": "santander.co.uk",
+      "url": "octopusventures.com",
       "industry": "Finance",
       "scores": {
-        "performance": 41,
-        "accessibility": 100,
-        "best_practices": 100,
+        "performance": 43,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 06:18:34"
+    },
+    {
+      "url": "tesco.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 43,
+        "accessibility": 93,
+        "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-23 19:30:31"
+      "test_date": "2025-10-31 18:18:17"
     },
     {
-      "url": "sainsburys.co.uk",
+      "url": "lloydsbank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 37,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 08:19:07"
+    },
+    {
+      "url": "telegraph.co.uk",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 16:23:26"
+    },
+    {
+      "url": "argos.co.uk",
       "industry": "E-commerce",
       "scores": {
         "performance": 37,
-        "accessibility": 92,
-        "best_practices": 58,
-        "seo": 91,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-23 16:48:07"
-    },
-    {
-      "url": "sky.com",
-      "industry": "Telecom",
-      "scores": {
-        "performance": 36,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 22:09:44"
+      "test_date": "2025-11-02 08:19:17"
     },
     {
       "url": "vodafone.co.uk",
       "industry": "Telecom",
       "scores": {
-        "performance": 34,
-        "accessibility": 93,
+        "performance": 36,
+        "accessibility": 91,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-25 00:50:27"
+      "test_date": "2025-11-01 08:26:30"
+    },
+    {
+      "url": "sainsburys.co.uk",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 35,
+        "accessibility": 92,
+        "best_practices": 58,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 22:18:09"
+    },
+    {
+      "url": "theguardian.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 83,
+        "best_practices": 83,
+        "seo": 77,
+        "pwa": 78
+      },
+      "test_date": "2025-10-31 18:33:23"
+    },
+    {
+      "url": "asda.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 33,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 67
+      },
+      "test_date": "2025-11-02 10:08:31"
     },
     {
       "url": "channel4.com",
@@ -215,7 +287,7 @@
         "seo": 93,
         "pwa": 78
       },
-      "test_date": "2025-10-27 00:48:15"
+      "test_date": "2025-11-02 22:10:06"
     },
     {
       "url": "dailymail.co.uk",
@@ -230,88 +302,64 @@
       "test_date": "2025-10-27 06:30:44"
     },
     {
-      "url": "standard.co.uk",
+      "url": "mirror.co.uk",
       "industry": "Media",
       "scores": {
-        "performance": 29,
-        "accessibility": 81,
+        "performance": 32,
+        "accessibility": 71,
         "best_practices": 83,
-        "seo": 100,
-        "pwa": 78
+        "seo": 81,
+        "pwa": 67
       },
-      "test_date": "2025-10-24 00:52:25"
-    },
-    {
-      "url": "telegraph.co.uk",
-      "industry": "Media",
-      "scores": {
-        "performance": 27,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-24 08:16:28"
-    },
-    {
-      "url": "argos.co.uk",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 26,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 98,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 10:11:28"
-    },
-    {
-      "url": "bbc.co.uk",
-      "industry": "Media",
-      "scores": {
-        "performance": 25,
-        "accessibility": 89,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 44
-      },
-      "test_date": "2025-10-26 14:11:14"
+      "test_date": "2025-10-29 16:32:55"
     },
     {
       "url": "thesun.co.uk",
       "industry": "Media",
       "scores": {
-        "performance": 23,
-        "accessibility": 98,
-        "best_practices": 58,
+        "performance": 32,
+        "accessibility": 93,
+        "best_practices": 67,
         "seo": 92,
         "pwa": 44
       },
-      "test_date": "2025-10-24 12:29:55"
+      "test_date": "2025-10-31 20:17:31"
     },
     {
-      "url": "theguardian.com",
+      "url": "sky.com",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 30,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 06:14:54"
+    },
+    {
+      "url": "ee.co.uk",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 30,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:31:59"
+    },
+    {
+      "url": "bbc.co.uk",
       "industry": "Media",
       "scores": {
-        "performance": 20,
-        "accessibility": 89,
+        "performance": 27,
+        "accessibility": 87,
         "best_practices": 83,
-        "seo": 84,
-        "pwa": 78
+        "seo": 100,
+        "pwa": 44
       },
-      "test_date": "2025-10-24 12:21:54"
-    },
-    {
-      "url": "asda.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 18,
-        "accessibility": 85,
-        "best_practices": 75,
-        "seo": 85,
-        "pwa": 67
-      },
-      "test_date": "2025-10-26 10:15:19"
+      "test_date": "2025-11-02 12:25:02"
     },
     {
       "url": "independent.co.uk",
@@ -326,18 +374,6 @@
       "test_date": "2025-10-28 16:37:57"
     },
     {
-      "url": "bt.com",
-      "industry": "Telecom",
-      "scores": {
-        "performance": 13,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 20:11:05"
-    },
-    {
       "url": "itv.com",
       "industry": "Media",
       "scores": {
@@ -350,6 +386,18 @@
       "test_date": "2025-10-28 20:34:56"
     },
     {
+      "url": "bt.com",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 12,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 18:12:25"
+    },
+    {
       "url": "coop.co.uk",
       "industry": "E-commerce",
       "scores": {
@@ -359,7 +407,7 @@
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-27 04:22:15"
+      "test_date": "2025-11-03 03:14:32"
     }
   ],
   "industries": [
@@ -367,7 +415,7 @@
       "industry": "E-commerce",
       "website_count": 5,
       "averages": {
-        "performance": 25,
+        "performance": 30,
         "accessibility": 87,
         "best_practices": 62,
         "seo": 87,
@@ -376,12 +424,12 @@
     },
     {
       "industry": "Finance",
-      "website_count": 7,
+      "website_count": 10,
       "averages": {
         "performance": 54,
-        "accessibility": 91,
-        "best_practices": 86,
-        "seo": 89,
+        "accessibility": 92,
+        "best_practices": 87,
+        "seo": 88,
         "pwa": 39
       }
     },
@@ -389,7 +437,7 @@
       "industry": "Government",
       "website_count": 2,
       "averages": {
-        "performance": 64,
+        "performance": 73,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
@@ -400,18 +448,18 @@
       "industry": "Media",
       "website_count": 11,
       "averages": {
-        "performance": 29,
-        "accessibility": 86,
-        "best_practices": 76,
+        "performance": 34,
+        "accessibility": 85,
+        "best_practices": 77,
         "seo": 89,
         "pwa": 56
       }
     },
     {
       "industry": "Telecom",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 28,
+        "performance": 27,
         "accessibility": 95,
         "best_practices": 84,
         "seo": 95,
@@ -422,7 +470,7 @@
       "industry": "Transportation",
       "website_count": 1,
       "averages": {
-        "performance": 88,
+        "performance": 90,
         "accessibility": 59,
         "best_practices": 83,
         "seo": 77,

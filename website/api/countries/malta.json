@@ -1,72 +1,84 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.884Z",
+    "generated_at": "2025-11-04T09:04:15.704Z",
     "country": "Malta",
     "flag": "🇲🇹",
-    "website_count": 3
+    "website_count": 4
   },
   "averages": {
-    "performance": 50,
+    "performance": 53,
     "accessibility": 86,
-    "best_practices": 67,
-    "seo": 90,
-    "pwa": 30
+    "best_practices": 50,
+    "seo": 84,
+    "pwa": 31
   },
   "websites": [
+    {
+      "url": "gozo.news",
+      "industry": "Media",
+      "scores": {
+        "performance": 66,
+        "accessibility": 83,
+        "best_practices": 0,
+        "seo": 68,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 04:20:50"
+    },
     {
       "url": "malta.com",
       "industry": "Portal",
       "scores": {
-        "performance": 60,
+        "performance": 62,
         "accessibility": 72,
         "best_practices": 42,
         "seo": 69,
         "pwa": 0
       },
-      "test_date": "2025-10-22 08:48:17"
+      "test_date": "2025-10-29 10:35:19"
     },
     {
       "url": "lovinmalta.com",
       "industry": "Media",
       "scores": {
-        "performance": 55,
+        "performance": 45,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-22 06:18:15"
+      "test_date": "2025-10-29 08:19:30"
     },
     {
       "url": "timesofmalta.com",
       "industry": "Media",
       "scores": {
-        "performance": 34,
+        "performance": 37,
         "accessibility": 96,
         "best_practices": 75,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-24 15:28:55"
+      "test_date": "2025-10-31 20:37:38"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 45,
-        "accessibility": 94,
-        "best_practices": 79,
-        "seo": 100,
-        "pwa": 45
+        "performance": 49,
+        "accessibility": 90,
+        "best_practices": 53,
+        "seo": 89,
+        "pwa": 41
       }
     },
     {
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 60,
+        "performance": 62,
         "accessibility": 72,
         "best_practices": 42,
         "seo": 69,

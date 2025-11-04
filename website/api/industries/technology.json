@@ -1,64 +1,88 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.965Z",
+    "generated_at": "2025-11-04T09:04:16.080Z",
     "industry": "Technology",
-    "website_count": 18
+    "website_count": 31
   },
   "averages": {
-    "performance": 42,
-    "accessibility": 89,
-    "best_practices": 79,
-    "seo": 89,
-    "pwa": 35
+    "performance": 40,
+    "accessibility": 88,
+    "best_practices": 80,
+    "seo": 86,
+    "pwa": 36
   },
   "websites": [
+    {
+      "url": "dymesolutions.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 39,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:18:35"
+    },
+    {
+      "url": "ecobiomanager.com",
+      "country": "Finland",
+      "scores": {
+        "performance": 45,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 22
+      },
+      "test_date": "2025-11-03 12:22:01"
+    },
     {
       "url": "hedengren.com",
       "country": "Finland",
       "scores": {
-        "performance": 56,
+        "performance": 62,
         "accessibility": 77,
         "best_practices": 92,
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-28 10:33:55"
+      "test_date": "2025-11-04 08:17:33"
     },
     {
       "url": "vaadin.com",
       "country": "Finland",
       "scores": {
-        "performance": 28,
+        "performance": 31,
         "accessibility": 68,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-24 22:13:29"
+      "test_date": "2025-11-01 06:17:22"
     },
     {
       "url": "valohai.com",
       "country": "Finland",
       "scores": {
-        "performance": 73,
+        "performance": 65,
         "accessibility": 86,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-24 22:14:30"
+      "test_date": "2025-11-01 06:18:46"
     },
     {
       "url": "browserstack.com",
       "country": "India",
       "scores": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-26 20:10:48"
+      "test_date": "2025-11-02 18:12:07"
     },
     {
       "url": "infosys.com",
@@ -73,16 +97,64 @@
       "test_date": "2025-10-28 18:18:32"
     },
     {
+      "url": "ltimindtree.com",
+      "country": "India",
+      "scores": {
+        "performance": 17,
+        "accessibility": 75,
+        "best_practices": 58,
+        "seo": 71,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 08:27:12"
+    },
+    {
+      "url": "tcs.com",
+      "country": "India",
+      "scores": {
+        "performance": 37,
+        "accessibility": 94,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-10-31 14:23:10"
+    },
+    {
+      "url": "tcsion.com",
+      "country": "India",
+      "scores": {
+        "performance": 5,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 0,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 14:23:53"
+    },
+    {
+      "url": "wipro.com",
+      "country": "India",
+      "scores": {
+        "performance": 41,
+        "accessibility": 64,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 14:08:13"
+    },
+    {
       "url": "detectify.com",
       "country": "Sweden",
       "scores": {
-        "performance": 39,
+        "performance": 45,
         "accessibility": 91,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 79,
         "pwa": 44
       },
-      "test_date": "2025-10-27 10:12:41"
+      "test_date": "2025-11-03 08:15:33"
     },
     {
       "url": "kundo.se",
@@ -97,28 +169,64 @@
       "test_date": "2025-10-29 03:19:42"
     },
     {
+      "url": "refined.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 29,
+        "accessibility": 85,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 18:27:53"
+    },
+    {
+      "url": "scrive.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 67,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 03:06:28"
+    },
+    {
+      "url": "volumental.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 56,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 10:09:47"
+    },
+    {
       "url": "amd.com",
       "country": "United States",
       "scores": {
-        "performance": 30,
+        "performance": 32,
         "accessibility": 85,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:04:48"
+      "test_date": "2025-11-02 06:19:06"
     },
     {
       "url": "anthropic.com",
       "country": "United States",
       "scores": {
-        "performance": 43,
+        "performance": 42,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:45:50"
+      "test_date": "2025-11-02 08:16:11"
     },
     {
       "url": "apple.com",
@@ -130,19 +238,19 @@
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:49:59"
+      "test_date": "2025-11-02 08:16:56"
     },
     {
       "url": "cisco.com",
       "country": "United States",
       "scores": {
-        "performance": 29,
+        "performance": 35,
         "accessibility": 91,
         "best_practices": 67,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-27 00:53:45"
+      "test_date": "2025-11-02 22:18:33"
     },
     {
       "url": "databricks.com",
@@ -160,13 +268,13 @@
       "url": "dell.com",
       "country": "United States",
       "scores": {
-        "performance": 38,
+        "performance": 53,
         "accessibility": 100,
-        "best_practices": 67,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-27 08:31:15"
+      "test_date": "2025-11-03 06:31:23"
     },
     {
       "url": "hp.com",
@@ -205,16 +313,64 @@
       "test_date": "2025-10-23 06:54:20"
     },
     {
+      "url": "openai.com",
+      "country": "United States",
+      "scores": {
+        "performance": 34,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 08:19:42"
+    },
+    {
+      "url": "oracle.com",
+      "country": "United States",
+      "scores": {
+        "performance": 46,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 08:21:08"
+    },
+    {
+      "url": "palantir.com",
+      "country": "United States",
+      "scores": {
+        "performance": 32,
+        "accessibility": 87,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 10:17:40"
+    },
+    {
       "url": "slack.com",
       "country": "United States",
       "scores": {
-        "performance": 43,
+        "performance": 37,
         "accessibility": 89,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-23 22:10:09"
+      "test_date": "2025-10-31 06:15:19"
+    },
+    {
+      "url": "snowflake.com",
+      "country": "United States",
+      "scores": {
+        "performance": 30,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 67
+      },
+      "test_date": "2025-10-31 06:21:43"
     },
     {
       "url": "zoom.us",
@@ -232,46 +388,46 @@
   "countries": [
     {
       "country": "Finland",
-      "website_count": 3,
+      "website_count": 5,
       "averages": {
-        "performance": 52,
-        "accessibility": 77,
-        "best_practices": 86,
-        "seo": 88,
-        "pwa": 33
+        "performance": 48,
+        "accessibility": 83,
+        "best_practices": 85,
+        "seo": 90,
+        "pwa": 31
       }
     },
     {
       "country": "India",
-      "website_count": 2,
+      "website_count": 6,
       "averages": {
-        "performance": 38,
-        "accessibility": 97,
-        "best_practices": 80,
-        "seo": 86,
-        "pwa": 33
-      }
-    },
-    {
-      "country": "Sweden",
-      "website_count": 2,
-      "averages": {
-        "performance": 47,
-        "accessibility": 88,
-        "best_practices": 88,
-        "seo": 90,
+        "performance": 30,
+        "accessibility": 83,
+        "best_practices": 71,
+        "seo": 69,
         "pwa": 39
       }
     },
     {
-      "country": "United States",
-      "website_count": 11,
+      "country": "Sweden",
+      "website_count": 5,
       "averages": {
-        "performance": 38,
-        "accessibility": 92,
-        "best_practices": 75,
-        "seo": 90,
+        "performance": 50,
+        "accessibility": 89,
+        "best_practices": 90,
+        "seo": 93,
         "pwa": 35
+      }
+    },
+    {
+      "country": "United States",
+      "website_count": 15,
+      "averages": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 78,
+        "seo": 89,
+        "pwa": 37
       }
     }
   ]

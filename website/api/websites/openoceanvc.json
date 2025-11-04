@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.057Z",
+    "generated_at": "2025-11-04T09:04:16.493Z",
     "url": "openocean.vc",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 78,
+    "performance": 73,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-10-23 02:59:36"
+    "test_date": "2025-10-30 08:19:56"
   },
   "historical_data": [
+    {
+      "performance": 73,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-10-30 08:19:56"
+    },
     {
       "performance": 78,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 02:59:36"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 08:19:56",
+    "test_date_previous": "2025-10-23 02:59:36"
+  }
 }

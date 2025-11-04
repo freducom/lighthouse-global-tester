@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.131Z",
+    "generated_at": "2025-11-04T09:04:16.804Z",
     "url": "nhs.uk",
     "country": "United Kingdom",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 54,
+    "performance": 52,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-23 07:36:10"
+    "test_date": "2025-10-30 00:58:05"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-10-30 00:58:05"
+    },
     {
       "performance": 54,
       "accessibility": 100,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-23 07:36:10",
-    "test_date_previous": "2025-10-22 19:56:44"
+    "test_date_current": "2025-10-30 00:58:05",
+    "test_date_previous": "2025-10-23 07:36:10"
   }
 }

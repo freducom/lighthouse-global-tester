@@ -1,65 +1,41 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.885Z",
+    "generated_at": "2025-11-04T09:04:15.708Z",
     "country": "Vietnam",
     "flag": "🇻🇳",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
-    "performance": 41,
-    "accessibility": 82,
+    "performance": 33,
+    "accessibility": 83,
     "best_practices": 75,
-    "seo": 93,
+    "seo": 91,
     "pwa": 35
   },
   "websites": [
     {
+      "url": "giadinh.net.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 83,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 03:11:53"
+    },
+    {
       "url": "24h.com.vn",
       "industry": "Portal",
       "scores": {
-        "performance": 59,
-        "accessibility": 55,
-        "best_practices": 92,
+        "performance": 32,
+        "accessibility": 71,
+        "best_practices": 83,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:28:51"
-    },
-    {
-      "url": "cafef.vn",
-      "industry": "Finance",
-      "scores": {
-        "performance": 48,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-26 20:29:14"
-    },
-    {
-      "url": "soha.vn",
-      "industry": "Media",
-      "scores": {
-        "performance": 44,
-        "accessibility": 86,
-        "best_practices": 75,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-23 22:14:54"
-    },
-    {
-      "url": "tuoitre.vn",
-      "industry": "Media",
-      "scores": {
-        "performance": 34,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 91,
-        "pwa": 44
-      },
-      "test_date": "2025-10-24 18:15:04"
+      "test_date": "2025-11-02 00:55:12"
     },
     {
       "url": "kenh14.vn",
@@ -77,13 +53,49 @@
       "url": "dantri.com.vn",
       "industry": "Media",
       "scores": {
-        "performance": 27,
+        "performance": 31,
         "accessibility": 76,
         "best_practices": 67,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-27 08:17:10"
+      "test_date": "2025-11-03 06:16:43"
+    },
+    {
+      "url": "tuoitre.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 86,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-11-01 00:50:09"
+    },
+    {
+      "url": "soha.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 06:27:11"
+    },
+    {
+      "url": "cafef.vn",
+      "industry": "Finance",
+      "scores": {
+        "performance": 27,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-02 20:10:23"
     }
   ],
   "industries": [
@@ -91,7 +103,7 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 48,
+        "performance": 27,
         "accessibility": 97,
         "best_practices": 83,
         "seo": 99,
@@ -100,22 +112,22 @@
     },
     {
       "industry": "Media",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
         "performance": 34,
-        "accessibility": 85,
-        "best_practices": 69,
-        "seo": 93,
-        "pwa": 36
+        "accessibility": 83,
+        "best_practices": 72,
+        "seo": 91,
+        "pwa": 35
       }
     },
     {
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 59,
-        "accessibility": 55,
-        "best_practices": 92,
+        "performance": 32,
+        "accessibility": 71,
+        "best_practices": 83,
         "seo": 84,
         "pwa": 33
       }

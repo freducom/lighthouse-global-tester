@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:55.964Z",
+    "generated_at": "2025-11-04T09:04:16.078Z",
     "industry": "Education",
-    "website_count": 26
+    "website_count": 48
   },
   "averages": {
     "performance": 49,
     "accessibility": 89,
-    "best_practices": 88,
-    "seo": 85,
-    "pwa": 33
+    "best_practices": 89,
+    "seo": 88,
+    "pwa": 36
   },
   "websites": [
     {
@@ -18,47 +18,47 @@
       "scores": {
         "performance": 49,
         "accessibility": 99,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 91,
         "pwa": 44
       },
-      "test_date": "2025-10-26 19:31:10"
+      "test_date": "2025-11-02 03:08:36"
     },
     {
       "url": "amiedu.fi",
       "country": "Finland",
       "scores": {
-        "performance": 41,
+        "performance": 43,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:38:46"
+      "test_date": "2025-11-02 06:20:52"
     },
     {
-      "url": "emathstudio.com",
+      "url": "haaga-helia.fi",
       "country": "Finland",
       "scores": {
-        "performance": 100,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
+        "performance": 58,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-22 08:37:37"
+      "test_date": "2025-11-04 06:25:55"
     },
     {
       "url": "helsinki.fi",
       "country": "Finland",
       "scores": {
         "performance": 55,
-        "accessibility": 86,
+        "accessibility": 93,
         "best_practices": 100,
-        "seo": 86,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-28 10:34:37"
+      "test_date": "2025-11-04 08:18:16"
     },
     {
       "url": "jamk.fi",
@@ -73,16 +73,64 @@
       "test_date": "2025-10-28 22:09:36"
     },
     {
+      "url": "lut.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 62,
+        "accessibility": 96,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-10-29 10:11:47"
+    },
+    {
+      "url": "metropolia.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 34,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-10-29 14:39:59"
+    },
+    {
+      "url": "tuni.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 54,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-11-01 00:49:31"
+    },
+    {
+      "url": "utu.fi",
+      "country": "Finland",
+      "scores": {
+        "performance": 40,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 98,
+        "pwa": 56
+      },
+      "test_date": "2025-11-01 06:12:46"
+    },
+    {
       "url": "aiims.edu",
       "country": "India",
       "scores": {
-        "performance": 33,
+        "performance": 32,
         "accessibility": 69,
         "best_practices": 50,
         "seo": 50,
         "pwa": 0
       },
-      "test_date": "2025-10-27 07:12:51"
+      "test_date": "2025-11-02 04:15:41"
     },
     {
       "url": "amrita.edu",
@@ -94,31 +142,31 @@
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-26 08:39:46"
+      "test_date": "2025-11-02 06:21:51"
     },
     {
       "url": "annauniv.edu",
       "country": "India",
       "scores": {
-        "performance": 50,
+        "performance": 43,
         "accessibility": 68,
         "best_practices": 67,
         "seo": 75,
         "pwa": 22
       },
-      "test_date": "2025-10-26 08:44:18"
+      "test_date": "2025-11-02 08:14:46"
     },
     {
       "url": "du.ac.in",
       "country": "India",
       "scores": {
-        "performance": 44,
+        "performance": 42,
         "accessibility": 73,
         "best_practices": 83,
         "seo": 72,
         "pwa": 33
       },
-      "test_date": "2025-10-27 12:27:48"
+      "test_date": "2025-11-03 10:21:50"
     },
     {
       "url": "iisc.ac.in",
@@ -181,16 +229,64 @@
       "test_date": "2025-10-28 22:10:50"
     },
     {
+      "url": "manipal.edu",
+      "country": "India",
+      "scores": {
+        "performance": 24,
+        "accessibility": 61,
+        "best_practices": 58,
+        "seo": 70,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 12:22:52"
+    },
+    {
+      "url": "nptel.ac.in",
+      "country": "India",
+      "scores": {
+        "performance": 70,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 75,
+        "pwa": 33
+      },
+      "test_date": "2025-10-30 04:15:36"
+    },
+    {
+      "url": "vit.ac.in",
+      "country": "India",
+      "scores": {
+        "performance": 31,
+        "accessibility": 81,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 08:20:55"
+    },
+    {
+      "url": "pg.edu.pl",
+      "country": "Poland",
+      "scores": {
+        "performance": 52,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 12:26:51"
+    },
+    {
       "url": "uw.edu.pl",
       "country": "Poland",
       "scores": {
-        "performance": 51,
+        "performance": 54,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-24 22:12:34"
+      "test_date": "2025-11-01 06:16:37"
     },
     {
       "url": "singaporetech.edu.sg",
@@ -208,13 +304,25 @@
       "url": "chalmers.se",
       "country": "Sweden",
       "scores": {
-        "performance": 45,
+        "performance": 42,
         "accessibility": 100,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-27 00:47:55"
+      "test_date": "2025-11-02 22:09:46"
+    },
+    {
+      "url": "gu.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 06:21:25"
     },
     {
       "url": "ki.se",
@@ -241,76 +349,148 @@
       "test_date": "2025-10-29 03:16:14"
     },
     {
+      "url": "liu.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 08:15:14"
+    },
+    {
+      "url": "lu.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 50,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 08:30:47"
+    },
+    {
+      "url": "mittuniversitetet.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 30,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 98,
+        "pwa": 89
+      },
+      "test_date": "2025-10-29 18:16:03"
+    },
+    {
       "url": "su.se",
       "country": "Sweden",
       "scores": {
-        "performance": 43,
+        "performance": 45,
         "accessibility": 100,
         "best_practices": 92,
-        "seo": 85,
+        "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-24 03:01:21"
+      "test_date": "2025-10-31 10:18:23"
+    },
+    {
+      "url": "umu.se",
+      "country": "Sweden",
+      "scores": {
+        "performance": 79,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 03:24:20"
     },
     {
       "url": "thaiall.com",
       "country": "Thailand",
       "scores": {
-        "performance": 92,
+        "performance": 90,
         "accessibility": 97,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 96,
         "pwa": 44
       },
-      "test_date": "2025-10-24 10:16:42"
+      "test_date": "2025-10-31 18:22:42"
     },
     {
       "url": "berkeley.edu",
       "country": "United States",
       "scores": {
-        "performance": 40,
+        "performance": 61,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-26 16:06:20"
+      "test_date": "2025-11-02 14:09:55"
     },
     {
       "url": "columbia.edu",
       "country": "United States",
       "scores": {
-        "performance": 40,
+        "performance": 39,
         "accessibility": 86,
         "best_practices": 75,
         "seo": 73,
         "pwa": 33
       },
-      "test_date": "2025-10-27 03:19:52"
+      "test_date": "2025-11-03 00:58:01"
     },
     {
       "url": "cornell.edu",
       "country": "United States",
       "scores": {
-        "performance": 69,
+        "performance": 67,
         "accessibility": 98,
         "best_practices": 75,
         "seo": 69,
         "pwa": 33
       },
-      "test_date": "2025-10-27 04:26:10"
+      "test_date": "2025-11-03 03:18:24"
     },
     {
       "url": "coursera.org",
       "country": "United States",
       "scores": {
-        "performance": 36,
+        "performance": 48,
         "accessibility": 98,
         "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-27 04:29:03"
+      "test_date": "2025-11-03 03:21:18"
+    },
+    {
+      "url": "edx.org",
+      "country": "United States",
+      "scores": {
+        "performance": 22,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-03 12:31:33"
+    },
+    {
+      "url": "harvard.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 64,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 06:35:15"
     },
     {
       "url": "khanacademy.org",
@@ -323,40 +503,124 @@
         "pwa": 33
       },
       "test_date": "2025-10-29 00:53:16"
+    },
+    {
+      "url": "mit.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 44,
+        "accessibility": 92,
+        "best_practices": 100,
+        "seo": 88,
+        "pwa": 33
+      },
+      "test_date": "2025-10-29 16:33:52"
+    },
+    {
+      "url": "princeton.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 63,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-10-30 14:10:15"
+    },
+    {
+      "url": "stanford.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 42,
+        "accessibility": 0,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-10-31 08:28:06"
+    },
+    {
+      "url": "udemy.com",
+      "country": "United States",
+      "scores": {
+        "performance": 28,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 44
+      },
+      "test_date": "2025-11-01 03:12:09"
+    },
+    {
+      "url": "usc.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 60,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 44
+      },
+      "test_date": "2025-11-01 04:25:45"
+    },
+    {
+      "url": "utexas.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 47,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 04:30:14"
+    },
+    {
+      "url": "yale.edu",
+      "country": "United States",
+      "scores": {
+        "performance": 59,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-01 16:16:00"
     }
   ],
   "countries": [
     {
       "country": "Finland",
-      "website_count": 5,
+      "website_count": 9,
       "averages": {
-        "performance": 58,
-        "accessibility": 93,
+        "performance": 49,
+        "accessibility": 95,
         "best_practices": 95,
-        "seo": 93,
-        "pwa": 35
+        "seo": 95,
+        "pwa": 42
       }
     },
     {
       "country": "India",
-      "website_count": 9,
+      "website_count": 12,
       "averages": {
-        "performance": 42,
-        "accessibility": 78,
+        "performance": 41,
+        "accessibility": 77,
         "best_practices": 81,
         "seo": 77,
-        "pwa": 26
+        "pwa": 28
       }
     },
     {
       "country": "Poland",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 51,
-        "accessibility": 89,
-        "best_practices": 83,
-        "seo": 82,
-        "pwa": 33
+        "performance": 53,
+        "accessibility": 86,
+        "best_practices": 88,
+        "seo": 87,
+        "pwa": 39
       }
     },
     {
@@ -372,35 +636,35 @@
     },
     {
       "country": "Sweden",
-      "website_count": 4,
+      "website_count": 9,
       "averages": {
-        "performance": 57,
+        "performance": 59,
         "accessibility": 99,
-        "best_practices": 98,
+        "best_practices": 94,
         "seo": 96,
-        "pwa": 42
+        "pwa": 43
       }
     },
     {
       "country": "Thailand",
       "website_count": 1,
       "averages": {
-        "performance": 92,
+        "performance": 90,
         "accessibility": 97,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 96,
         "pwa": 44
       }
     },
     {
       "country": "United States",
-      "website_count": 5,
+      "website_count": 14,
       "averages": {
-        "performance": 44,
-        "accessibility": 96,
-        "best_practices": 85,
-        "seo": 84,
-        "pwa": 33
+        "performance": 48,
+        "accessibility": 88,
+        "best_practices": 89,
+        "seo": 89,
+        "pwa": 35
       }
     }
   ]

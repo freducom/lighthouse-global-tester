@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-10-29T07:39:56.042Z",
+    "generated_at": "2025-11-04T09:04:16.415Z",
     "url": "realtor.ca",
     "country": "Canada",
     "industry": "Real Estate"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 29,
     "accessibility": 81,
     "best_practices": 75,
     "seo": 86,
     "pwa": 100,
-    "test_date": "2025-10-23 12:19:53"
+    "test_date": "2025-10-30 18:22:03"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 81,
+      "best_practices": 75,
+      "seo": 86,
+      "pwa": 100,
+      "test_date": "2025-10-30 18:22:03"
+    },
     {
       "performance": 33,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 12:19:53"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-10-30 18:22:03",
+    "test_date_previous": "2025-10-23 12:19:53"
+  }
 }
