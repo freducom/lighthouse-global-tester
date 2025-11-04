@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:34.348Z",
+    "generated_at": "2025-11-04T11:35:45.166Z",
     "country": "United Kingdom",
     "flag": "🇬🇧",
     "website_count": 33
   },
   "averages": {
-    "performance": 43,
+    "performance": 42,
     "accessibility": 88,
     "best_practices": 80,
     "seo": 89,
@@ -158,18 +158,6 @@
       "test_date": "2025-11-04 00:49:44"
     },
     {
-      "url": "hsbc.co.uk",
-      "industry": "Finance",
-      "scores": {
-        "performance": 43,
-        "accessibility": 98,
-        "best_practices": 58,
-        "seo": 93,
-        "pwa": 67
-      },
-      "test_date": "2025-10-28 12:25:21"
-    },
-    {
       "url": "octopusventures.com",
       "industry": "Finance",
       "scores": {
@@ -192,6 +180,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-31 18:18:17"
+    },
+    {
+      "url": "hsbc.co.uk",
+      "industry": "Finance",
+      "scores": {
+        "performance": 42,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-11-04 10:18:30"
     },
     {
       "url": "lloydsbank.com",

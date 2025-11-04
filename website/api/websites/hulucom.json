@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:35.716Z",
+    "generated_at": "2025-11-04T11:35:48.339Z",
     "url": "hulu.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 32,
     "accessibility": 79,
     "best_practices": 75,
     "seo": 76,
     "pwa": 33,
-    "test_date": "2025-10-28 12:33:31"
+    "test_date": "2025-11-04 10:26:37"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 79,
+      "best_practices": 75,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-04 10:26:37"
+    },
     {
       "performance": 35,
       "accessibility": 79,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
-    "accessibility": -13,
-    "best_practices": -17,
-    "seo": -16,
-    "pwa": -45,
-    "test_date_current": "2025-10-28 12:33:31",
-    "test_date_previous": "2025-10-23 07:05:41"
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 10:26:37",
+    "test_date_previous": "2025-10-28 12:33:31"
   }
 }

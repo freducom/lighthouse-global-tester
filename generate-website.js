@@ -867,7 +867,7 @@ ${this.getPostHogScript()}
     <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
     
     <div class="container">
-        ${this.getHeaderHTML(`${allScores.length} tracked websites – only one can be the fastest`, true)}
+        ${this.getHeaderHTML(`Only one website can be the fastest`, true)}
 
         <main id="main-content" role="main">
             <!-- Global Overview Stats (Real Data) -->
@@ -3071,7 +3071,7 @@ body {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 30px;
 }
@@ -4238,6 +4238,11 @@ body {
         gap: 15px;
     }
     
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
     .industry-comparison {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -4249,7 +4254,36 @@ body {
     }
     
     .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 -5px;
+    }
+    
+    .stat-tile {
+        padding: 15px 10px;
+        gap: 0;
+        justify-content: center;
+        text-align: center;
+        min-width: 0;
+    }
+    
+    .stat-icon {
+        display: none;
+    }
+    
+    .stat-content {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .stat-number {
+        font-size: 1.8em;
+        margin-bottom: 3px;
+    }
+    
+    .stat-label {
+        font-size: 0.8em;
+        line-height: 1.2;
     }
     
     .header {

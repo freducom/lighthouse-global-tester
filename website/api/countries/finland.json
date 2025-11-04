@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:34.446Z",
+    "generated_at": "2025-11-04T11:35:45.370Z",
     "country": "Finland",
     "flag": "🇫🇮",
     "website_count": 130
@@ -1154,6 +1154,18 @@
       "test_date": "2025-10-31 22:17:41"
     },
     {
+      "url": "holvi.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 35,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 10:16:15"
+    },
+    {
       "url": "iltalehti.fi",
       "industry": "Media",
       "scores": {
@@ -1478,18 +1490,6 @@
       "test_date": "2025-11-02 00:59:38"
     },
     {
-      "url": "holvi.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 25,
-        "accessibility": 96,
-        "best_practices": 75,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 12:23:07"
-    },
-    {
       "url": "s-kanava.fi",
       "industry": "Retail",
       "scores": {
@@ -1538,6 +1538,18 @@
       "test_date": "2025-10-28 16:33:50"
     },
     {
+      "url": "hs.fi",
+      "industry": "Media",
+      "scores": {
+        "performance": 18,
+        "accessibility": 99,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44
+      },
+      "test_date": "2025-11-04 10:18:11"
+    },
+    {
       "url": "is.fi",
       "industry": "Media",
       "scores": {
@@ -1548,18 +1560,6 @@
         "pwa": 44
       },
       "test_date": "2025-10-28 20:34:21"
-    },
-    {
-      "url": "hs.fi",
-      "industry": "Media",
-      "scores": {
-        "performance": 13,
-        "accessibility": 99,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 44
-      },
-      "test_date": "2025-10-28 12:25:02"
     },
     {
       "url": "etuovi.com",
@@ -1700,7 +1700,7 @@
       "industry": "Finance",
       "website_count": 14,
       "averages": {
-        "performance": 55,
+        "performance": 56,
         "accessibility": 90,
         "best_practices": 85,
         "seo": 91,

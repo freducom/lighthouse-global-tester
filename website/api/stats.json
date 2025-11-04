@@ -1,38 +1,38 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:34.295Z",
-    "total_websites": 1016
+    "generated_at": "2025-11-04T11:35:44.991Z",
+    "total_websites": 1018
   },
   "distribution": {
     "performance": {
       "excellent": 28,
-      "good": 83,
-      "average": 257,
-      "poor": 648
+      "good": 82,
+      "average": 258,
+      "poor": 650
     },
     "accessibility": {
-      "excellent": 485,
+      "excellent": 486,
       "good": 444,
-      "average": 66,
+      "average": 67,
       "poor": 21
     },
     "best_practices": {
-      "excellent": 355,
-      "good": 471,
-      "average": 161,
-      "poor": 29
+      "excellent": 356,
+      "good": 474,
+      "average": 160,
+      "poor": 28
     },
     "seo": {
-      "excellent": 617,
-      "good": 378,
+      "excellent": 618,
+      "good": 379,
       "average": 20,
       "poor": 1
     },
     "pwa": {
       "excellent": 15,
       "good": 106,
-      "average": 108,
-      "poor": 787
+      "average": 109,
+      "poor": 788
     }
   },
   "by_country": [
@@ -95,7 +95,7 @@
       "country": "Belgium",
       "website_count": 8,
       "averages": {
-        "performance": 51,
+        "performance": 49,
         "accessibility": 93,
         "best_practices": 83,
         "seo": 90,
@@ -280,13 +280,13 @@
     },
     {
       "country": "Hong Kong",
-      "website_count": 5,
+      "website_count": 6,
       "averages": {
-        "performance": 32,
-        "accessibility": 74,
-        "best_practices": 80,
-        "seo": 83,
-        "pwa": 33
+        "performance": 28,
+        "accessibility": 77,
+        "best_practices": 78,
+        "seo": 84,
+        "pwa": 39
       }
     },
     {
@@ -592,7 +592,7 @@
       "averages": {
         "performance": 40,
         "accessibility": 91,
-        "best_practices": 71,
+        "best_practices": 73,
         "seo": 92,
         "pwa": 37
       }
@@ -676,7 +676,7 @@
     },
     {
       "country": "Sweden",
-      "website_count": 99,
+      "website_count": 100,
       "averages": {
         "performance": 50,
         "accessibility": 92,
@@ -723,8 +723,8 @@
       "website_count": 7,
       "averages": {
         "performance": 46,
-        "accessibility": 88,
-        "best_practices": 83,
+        "accessibility": 89,
+        "best_practices": 86,
         "seo": 91,
         "pwa": 43
       }
@@ -755,7 +755,7 @@
       "country": "United Kingdom",
       "website_count": 33,
       "averages": {
-        "performance": 43,
+        "performance": 42,
         "accessibility": 88,
         "best_practices": 80,
         "seo": 89,
@@ -768,7 +768,7 @@
       "averages": {
         "performance": 42,
         "accessibility": 88,
-        "best_practices": 80,
+        "best_practices": 81,
         "seo": 89,
         "pwa": 39
       }
@@ -920,11 +920,11 @@
     },
     {
       "industry": "E-commerce",
-      "website_count": 69,
+      "website_count": 70,
       "averages": {
         "performance": 45,
         "accessibility": 82,
-        "best_practices": 78,
+        "best_practices": 79,
         "seo": 89,
         "pwa": 46
       }
@@ -975,7 +975,7 @@
     },
     {
       "industry": "Finance",
-      "website_count": 125,
+      "website_count": 126,
       "averages": {
         "performance": 47,
         "accessibility": 88,
@@ -1098,9 +1098,9 @@
       "industry": "Marketing",
       "website_count": 9,
       "averages": {
-        "performance": 41,
+        "performance": 44,
         "accessibility": 91,
-        "best_practices": 68,
+        "best_practices": 78,
         "seo": 92,
         "pwa": 31
       }
@@ -1209,7 +1209,7 @@
       "website_count": 12,
       "averages": {
         "performance": 34,
-        "accessibility": 86,
+        "accessibility": 87,
         "best_practices": 70,
         "seo": 87,
         "pwa": 42

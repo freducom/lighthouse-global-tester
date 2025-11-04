@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:33.979Z",
-    "total_websites": 1016
+    "generated_at": "2025-11-04T11:35:44.392Z",
+    "total_websites": 1018
   },
   "websites": [
     {
@@ -5231,14 +5231,28 @@
       "country": "Belgium",
       "industry": "Media",
       "scores": {
-        "performance": 74,
+        "performance": 56,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-28 10:44:05",
+      "test_date": "2025-11-04 10:11:57",
       "api_endpoint": "websites/hlnbe.json"
+    },
+    {
+      "url": "hm.com",
+      "country": "Sweden",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 14,
+        "accessibility": 66,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 10:12:22",
+      "api_endpoint": "websites/hmcom.json"
     },
     {
       "url": "hockeycanada.ca",
@@ -5259,13 +5273,13 @@
       "country": "Finland",
       "industry": "Finance",
       "scores": {
-        "performance": 25,
+        "performance": 35,
         "accessibility": 96,
         "best_practices": 75,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:23:07",
+      "test_date": "2025-11-04 10:16:15",
       "api_endpoint": "websites/holvicom.json"
     },
     {
@@ -5273,13 +5287,13 @@
       "country": "United States",
       "industry": "Retail",
       "scores": {
-        "performance": 29,
-        "accessibility": 93,
+        "performance": 31,
+        "accessibility": 94,
         "best_practices": 50,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:23:45",
+      "test_date": "2025-11-04 10:16:50",
       "api_endpoint": "websites/homedepotcom.json"
     },
     {
@@ -5287,13 +5301,13 @@
       "country": "Romania",
       "industry": "Media",
       "scores": {
-        "performance": 60,
+        "performance": 59,
         "accessibility": 88,
-        "best_practices": 67,
+        "best_practices": 83,
         "seo": 91,
         "pwa": 44
       },
-      "test_date": "2025-10-28 12:24:06",
+      "test_date": "2025-11-04 10:17:12",
       "api_endpoint": "websites/hotnewsro.json"
     },
     {
@@ -5301,13 +5315,13 @@
       "country": "India",
       "industry": "Media",
       "scores": {
-        "performance": 95,
+        "performance": 94,
         "accessibility": 71,
         "best_practices": 75,
         "seo": 93,
         "pwa": 78
       },
-      "test_date": "2025-10-28 12:24:22",
+      "test_date": "2025-11-04 10:17:27",
       "api_endpoint": "websites/hotstarcom.json"
     },
     {
@@ -5317,11 +5331,11 @@
       "scores": {
         "performance": 38,
         "accessibility": 98,
-        "best_practices": 75,
+        "best_practices": 92,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:24:42",
+      "test_date": "2025-11-04 10:17:45",
       "api_endpoint": "websites/hpcom.json"
     },
     {
@@ -5329,13 +5343,13 @@
       "country": "Finland",
       "industry": "Media",
       "scores": {
-        "performance": 13,
+        "performance": 18,
         "accessibility": 99,
         "best_practices": 100,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-10-28 12:25:02",
+      "test_date": "2025-11-04 10:18:11",
       "api_endpoint": "websites/hsfi.json"
     },
     {
@@ -5343,27 +5357,41 @@
       "country": "United Kingdom",
       "industry": "Finance",
       "scores": {
-        "performance": 43,
+        "performance": 42,
         "accessibility": 98,
         "best_practices": 58,
         "seo": 93,
         "pwa": 67
       },
-      "test_date": "2025-10-28 12:25:21",
+      "test_date": "2025-11-04 10:18:30",
       "api_endpoint": "websites/hsbccouk.json"
+    },
+    {
+      "url": "hsbc.com.hk",
+      "country": "Hong Kong",
+      "industry": "Finance",
+      "scores": {
+        "performance": 10,
+        "accessibility": 90,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-11-04 10:20:39",
+      "api_endpoint": "websites/hsbccomhk.json"
     },
     {
       "url": "hubspot.com",
       "country": "United States",
       "industry": "Marketing",
       "scores": {
-        "performance": 20,
+        "performance": 43,
         "accessibility": 98,
-        "best_practices": 0,
+        "best_practices": 83,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:33:01",
+      "test_date": "2025-11-04 10:26:07",
       "api_endpoint": "websites/hubspotcom.json"
     },
     {
@@ -5371,13 +5399,13 @@
       "country": "United States",
       "industry": "Media",
       "scores": {
-        "performance": 35,
+        "performance": 32,
         "accessibility": 79,
         "best_practices": 75,
         "seo": 76,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:33:31",
+      "test_date": "2025-11-04 10:26:37",
       "api_endpoint": "websites/hulucom.json"
     },
     {
@@ -5385,13 +5413,13 @@
       "country": "Turkey",
       "industry": "Media",
       "scores": {
-        "performance": 26,
-        "accessibility": 95,
-        "best_practices": 67,
+        "performance": 27,
+        "accessibility": 96,
+        "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:34:24",
+      "test_date": "2025-11-04 10:28:29",
       "api_endpoint": "websites/hurriyetcomtr.json"
     },
     {

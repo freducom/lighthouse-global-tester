@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:34.330Z",
+    "generated_at": "2025-11-04T11:35:45.112Z",
     "country": "United States",
     "flag": "🇺🇸",
     "website_count": 124
@@ -8,7 +8,7 @@
   "averages": {
     "performance": 42,
     "accessibility": 88,
-    "best_practices": 80,
+    "best_practices": 81,
     "seo": 89,
     "pwa": 39
   },
@@ -590,6 +590,18 @@
       "test_date": "2025-11-02 10:17:58"
     },
     {
+      "url": "hubspot.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 10:26:07"
+    },
+    {
       "url": "stanford.edu",
       "industry": "Education",
       "scores": {
@@ -698,18 +710,6 @@
       "test_date": "2025-11-03 20:12:52"
     },
     {
-      "url": "hp.com",
-      "industry": "Technology",
-      "scores": {
-        "performance": 38,
-        "accessibility": 98,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 12:24:42"
-    },
-    {
       "url": "att.com",
       "industry": "Telecom",
       "scores": {
@@ -744,6 +744,18 @@
         "pwa": 78
       },
       "test_date": "2025-11-03 12:21:01"
+    },
+    {
+      "url": "hp.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 38,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 10:17:45"
     },
     {
       "url": "foxnews.com",
@@ -816,18 +828,6 @@
         "pwa": 56
       },
       "test_date": "2025-10-27 08:18:24"
-    },
-    {
-      "url": "hulu.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 35,
-        "accessibility": 79,
-        "best_practices": 75,
-        "seo": 76,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 12:33:31"
     },
     {
       "url": "cisco.com",
@@ -986,6 +986,18 @@
       "test_date": "2025-11-02 06:19:06"
     },
     {
+      "url": "hulu.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 32,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 10:26:37"
+    },
+    {
       "url": "redfin.com",
       "industry": "Realestate",
       "scores": {
@@ -1022,6 +1034,18 @@
       "test_date": "2025-11-03 20:14:56"
     },
     {
+      "url": "homedepot.com",
+      "industry": "Retail",
+      "scores": {
+        "performance": 31,
+        "accessibility": 94,
+        "best_practices": 50,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 10:16:50"
+    },
+    {
       "url": "politico.com",
       "industry": "Media",
       "scores": {
@@ -1056,18 +1080,6 @@
         "pwa": 67
       },
       "test_date": "2025-10-31 06:21:43"
-    },
-    {
-      "url": "homedepot.com",
-      "industry": "Retail",
-      "scores": {
-        "performance": 29,
-        "accessibility": 93,
-        "best_practices": 50,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 12:23:45"
     },
     {
       "url": "target.com",
@@ -1430,18 +1442,6 @@
       "test_date": "2025-11-03 00:54:07"
     },
     {
-      "url": "hubspot.com",
-      "industry": "Marketing",
-      "scores": {
-        "performance": 20,
-        "accessibility": 98,
-        "best_practices": 0,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 12:33:01"
-    },
-    {
       "url": "southwest.com",
       "industry": "Transportation",
       "scores": {
@@ -1606,9 +1606,9 @@
       "industry": "Marketing",
       "website_count": 2,
       "averages": {
-        "performance": 34,
+        "performance": 45,
         "accessibility": 99,
-        "best_practices": 42,
+        "best_practices": 83,
         "seo": 86,
         "pwa": 33
       }
@@ -1661,7 +1661,7 @@
       "industry": "Retail",
       "website_count": 6,
       "averages": {
-        "performance": 34,
+        "performance": 35,
         "accessibility": 89,
         "best_practices": 63,
         "seo": 89,
@@ -1718,7 +1718,7 @@
       "averages": {
         "performance": 39,
         "accessibility": 91,
-        "best_practices": 78,
+        "best_practices": 79,
         "seo": 89,
         "pwa": 37
       }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:34.891Z",
+    "generated_at": "2025-11-04T11:35:46.347Z",
     "industry": "Finance",
-    "website_count": 125
+    "website_count": 126
   },
   "averages": {
     "performance": 47,
@@ -184,13 +184,13 @@
       "url": "holvi.com",
       "country": "Finland",
       "scores": {
-        "performance": 25,
+        "performance": 35,
         "accessibility": 96,
         "best_practices": 75,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-28 12:23:07"
+      "test_date": "2025-11-04 10:16:15"
     },
     {
       "url": "if.fi",
@@ -443,6 +443,18 @@
         "pwa": 33
       },
       "test_date": "2025-11-04 06:31:05"
+    },
+    {
+      "url": "hsbc.com.hk",
+      "country": "Hong Kong",
+      "scores": {
+        "performance": 10,
+        "accessibility": 90,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 67
+      },
+      "test_date": "2025-11-04 10:20:39"
     },
     {
       "url": "axisbank.com",
@@ -1204,13 +1216,13 @@
       "url": "hsbc.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 43,
+        "performance": 42,
         "accessibility": 98,
         "best_practices": 58,
         "seo": 93,
         "pwa": 67
       },
-      "test_date": "2025-10-28 12:25:21"
+      "test_date": "2025-11-04 10:18:30"
     },
     {
       "url": "indexventures.com",
@@ -1562,7 +1574,7 @@
       "country": "Finland",
       "website_count": 14,
       "averages": {
-        "performance": 55,
+        "performance": 56,
         "accessibility": 90,
         "best_practices": 85,
         "seo": 91,
@@ -1582,13 +1594,13 @@
     },
     {
       "country": "Hong Kong",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 9,
-        "accessibility": 87,
+        "performance": 10,
+        "accessibility": 89,
         "best_practices": 67,
-        "seo": 85,
-        "pwa": 33
+        "seo": 89,
+        "pwa": 50
       }
     },
     {

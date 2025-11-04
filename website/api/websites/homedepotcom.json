@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:35.714Z",
+    "generated_at": "2025-11-04T11:35:48.335Z",
     "url": "homedepot.com",
     "country": "United States",
     "industry": "Retail"
   },
   "latest_scores": {
-    "performance": 29,
-    "accessibility": 93,
+    "performance": 31,
+    "accessibility": 94,
     "best_practices": 50,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-28 12:23:45"
+    "test_date": "2025-11-04 10:16:50"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 94,
+      "best_practices": 50,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-04 10:16:50"
+    },
     {
       "performance": 29,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 12:23:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 1,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 10:16:50",
+    "test_date_previous": "2025-10-28 12:23:45"
+  }
 }

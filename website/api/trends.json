@@ -1,30 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:36.187Z",
-    "websites_with_trends": 592,
-    "total_websites": 1016
+    "generated_at": "2025-11-04T11:35:49.135Z",
+    "websites_with_trends": 600,
+    "total_websites": 1018
   },
   "global_trends": {
     "average_changes": {
-      "performance": -0.2,
+      "performance": -0.1,
       "accessibility": -0.2,
-      "best_practices": -0.2,
+      "best_practices": 0.2,
       "seo": -0.1,
       "pwa": 0
     },
     "improvements": {
-      "performance": 276,
-      "accessibility": 53,
-      "best_practices": 72,
-      "seo": 41,
+      "performance": 279,
+      "accessibility": 55,
+      "best_practices": 75,
+      "seo": 40,
       "pwa": 5
     },
     "declines": {
-      "performance": 251,
-      "accessibility": 63,
-      "best_practices": 60,
-      "seo": 42,
-      "pwa": 5
+      "performance": 255,
+      "accessibility": 62,
+      "best_practices": 58,
+      "seo": 41,
+      "pwa": 4
     }
   },
   "website_trends": [
@@ -674,6 +674,32 @@
         "performance": -14,
         "accessibility": 1,
         "best_practices": 9,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "hln.be",
+      "country": "Belgium",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 56,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 74,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 77,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": -18,
+        "accessibility": 0,
+        "best_practices": 0,
         "seo": 0,
         "pwa": 0
       }
@@ -3383,27 +3409,53 @@
       }
     },
     {
+      "url": "holvi.com",
+      "country": "Finland",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 35,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 25,
+        "accessibility": 96,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 10,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "hs.fi",
       "country": "Finland",
       "industry": "Media",
       "current_scores": {
-        "performance": 13,
+        "performance": 18,
         "accessibility": 99,
         "best_practices": 100,
         "seo": 100,
         "pwa": 44
       },
       "previous_scores": {
-        "performance": 46,
+        "performance": 13,
         "accessibility": 99,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 44
       },
       "changes": {
-        "performance": -33,
+        "performance": 5,
         "accessibility": 0,
-        "best_practices": 8,
+        "best_practices": 0,
         "seo": 0,
         "pwa": 0
       }
@@ -5924,6 +5976,32 @@
       },
       "changes": {
         "performance": -19,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "hotstar.com",
+      "country": "India",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 94,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "previous_scores": {
+        "performance": 95,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "changes": {
+        "performance": -1,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -9597,6 +9675,32 @@
       }
     },
     {
+      "url": "hotnews.ro",
+      "country": "Romania",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 59,
+        "accessibility": 88,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 44
+      },
+      "previous_scores": {
+        "performance": 60,
+        "accessibility": 88,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 44
+      },
+      "changes": {
+        "performance": -1,
+        "accessibility": 0,
+        "best_practices": 16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "avito.ru",
       "country": "Russia",
       "industry": "Marketplace",
@@ -12223,6 +12327,32 @@
       }
     },
     {
+      "url": "hurriyet.com.tr",
+      "country": "Turkey",
+      "industry": "Media",
+      "current_scores": {
+        "performance": 27,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 26,
+        "accessibility": 95,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 1,
+        "accessibility": 1,
+        "best_practices": 16,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "kamuajans.com",
       "country": "Turkey",
       "industry": "Media",
@@ -12866,6 +12996,32 @@
       },
       "changes": {
         "performance": 21,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "hsbc.co.uk",
+      "country": "United Kingdom",
+      "industry": "Finance",
+      "current_scores": {
+        "performance": 42,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 67
+      },
+      "previous_scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 93,
+        "pwa": 67
+      },
+      "changes": {
+        "performance": -1,
         "accessibility": 0,
         "best_practices": 0,
         "seo": 0,
@@ -14251,28 +14407,80 @@
       }
     },
     {
+      "url": "homedepot.com",
+      "country": "United States",
+      "industry": "Retail",
+      "current_scores": {
+        "performance": 31,
+        "accessibility": 94,
+        "best_practices": 50,
+        "seo": 99,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 29,
+        "accessibility": 93,
+        "best_practices": 50,
+        "seo": 99,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 2,
+        "accessibility": 1,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "url": "hp.com",
+      "country": "United States",
+      "industry": "Technology",
+      "current_scores": {
+        "performance": 38,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 33
+      },
+      "previous_scores": {
+        "performance": 38,
+        "accessibility": 98,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "changes": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 17,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
       "url": "hubspot.com",
       "country": "United States",
       "industry": "Marketing",
       "current_scores": {
+        "performance": 43,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "previous_scores": {
         "performance": 20,
         "accessibility": 98,
         "best_practices": 0,
         "seo": 93,
         "pwa": 33
       },
-      "previous_scores": {
-        "performance": 18,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 86,
-        "pwa": 33
-      },
       "changes": {
-        "performance": 2,
+        "performance": 23,
         "accessibility": 0,
-        "best_practices": -83,
-        "seo": 7,
+        "best_practices": 83,
+        "seo": 0,
         "pwa": 0
       }
     },
@@ -14281,25 +14489,25 @@
       "country": "United States",
       "industry": "Media",
       "current_scores": {
-        "performance": 35,
+        "performance": 32,
         "accessibility": 79,
         "best_practices": 75,
         "seo": 76,
         "pwa": 33
       },
       "previous_scores": {
-        "performance": 31,
-        "accessibility": 92,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 78
+        "performance": 35,
+        "accessibility": 79,
+        "best_practices": 75,
+        "seo": 76,
+        "pwa": 33
       },
       "changes": {
-        "performance": 4,
-        "accessibility": -13,
-        "best_practices": -17,
-        "seo": -16,
-        "pwa": -45
+        "performance": -3,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
       }
     },
     {

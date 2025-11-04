@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:35.669Z",
+    "generated_at": "2025-11-04T11:35:48.187Z",
     "url": "hsbc.co.uk",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 42,
     "accessibility": 98,
     "best_practices": 58,
     "seo": 93,
     "pwa": 67,
-    "test_date": "2025-10-28 12:25:21"
+    "test_date": "2025-11-04 10:18:30"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 98,
+      "best_practices": 58,
+      "seo": 93,
+      "pwa": 67,
+      "test_date": "2025-11-04 10:18:30"
+    },
     {
       "performance": 43,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 12:25:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 10:18:30",
+    "test_date_previous": "2025-10-28 12:25:21"
+  }
 }

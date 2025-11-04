@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T09:57:35.715Z",
+    "generated_at": "2025-11-04T11:35:48.337Z",
     "url": "hp.com",
     "country": "United States",
     "industry": "Technology"
@@ -8,12 +8,20 @@
   "latest_scores": {
     "performance": 38,
     "accessibility": 98,
-    "best_practices": 75,
+    "best_practices": 92,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-10-28 12:24:42"
+    "test_date": "2025-11-04 10:17:45"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-04 10:17:45"
+    },
     {
       "performance": 38,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-28 12:24:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 17,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 10:17:45",
+    "test_date_previous": "2025-10-28 12:24:42"
+  }
 }
