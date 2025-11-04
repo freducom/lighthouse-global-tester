@@ -4354,6 +4354,36 @@ body {
     }
 }
 
+/* Hide Country and Industry columns on mobile screens */
+@media screen and (max-width: 768px) {
+    /* Hide Country column on mobile screens */
+    .table-container .results-table th:nth-child(3),
+    .table-container .results-table td:nth-child(3) {
+        display: none !important;
+    }
+    
+    /* Hide Industry column on mobile screens */
+    .table-container .results-table th:nth-child(4),
+    .table-container .results-table td:nth-child(4) {
+        display: none !important;
+    }
+}
+
+/* Also hide on smaller screens for extra coverage */
+@media screen and (max-width: 1024px) {
+    /* Hide Country column on tablet and smaller */
+    .results-table th:nth-child(3),
+    .results-table td:nth-child(3) {
+        display: none !important;
+    }
+    
+    /* Hide Industry column on tablet and smaller */
+    .results-table th:nth-child(4),
+    .results-table td:nth-child(4) {
+        display: none !important;
+    }
+}
+
 /* Trend arrows */
 .trend-arrow {
     font-size: 0.9em;
