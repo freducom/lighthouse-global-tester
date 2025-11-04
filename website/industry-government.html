@@ -137,49 +137,32 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by rank">
-                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Rank <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by website name">
-                                        Website <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Website <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by country">
-                                        Country <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Country <span class="sort-indicator"></span>
                                 </th>
-                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
-                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
-                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
                                     </button>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
-                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Accessibility <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
-                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    SEO <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
-                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Best Practices <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
-                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    PWA <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
-                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Last Scanned <span class="sort-indicator"></span>
                                 </th>
                             </tr>
                         </thead>
@@ -2405,70 +2388,159 @@
             });
         }
         
-        // Sorting functionality
-        function sortData(column, order = 'desc') {
-            const table = document.querySelector('table');
-            const tbody = table.querySelector('tbody');
-            const rows = Array.from(tbody.querySelectorAll('tr'));
-            
-            rows.sort((a, b) => {
-                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
-                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+        // Data initialization
+        const industryData = [{"url":"uidai.gov.in","country":"India","industry":"Government","performance":99,"accessibility":97,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-11-01 03:16:36","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"gov.uk","country":"United Kingdom","industry":"Government","performance":94,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-11-04 04:20:26","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":21,"text":"+21","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"finlex.fi","country":"Finland","industry":"Government","performance":92,"accessibility":100,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-11-03 20:22:32","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mitid.dk","country":"Denmark","industry":"Government","performance":86,"accessibility":100,"best_practices":100,"seo":92,"pwa":67,"test_date":"2025-10-29 16:34:49","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":5,"text":"+5","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"syke.fi","country":"Finland","industry":"Government","performance":86,"accessibility":100,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-10-31 12:22:44","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ontario.ca","country":"Canada","industry":"Government","performance":85,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-30 08:18:24","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":11,"text":"+11","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"polisen.se","country":"Sweden","industry":"Government","performance":80,"accessibility":100,"best_practices":100,"seo":100,"pwa":44,"test_date":"2025-10-30 13:37:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"poliisi.fi","country":"Finland","industry":"Government","performance":71,"accessibility":98,"best_practices":100,"seo":100,"pwa":44,"test_date":"2025-10-30 13:37:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"whitehouse.gov","country":"United States","industry":"Government","performance":71,"accessibility":92,"best_practices":100,"seo":86,"pwa":78,"test_date":"2025-11-01 12:27:00","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":3,"text":"+3","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"rijksoverheid.nl","country":"Netherlands","industry":"Government","performance":70,"accessibility":98,"best_practices":100,"seo":97,"pwa":33,"test_date":"2025-10-30 20:15:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"regeringen.se","country":"Sweden","industry":"Government","performance":69,"accessibility":100,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-10-30 18:28:09","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":1,"text":"+1","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"businessfinland.fi","country":"Finland","industry":"Government","performance":68,"accessibility":85,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-11-02 18:21:38","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"down","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":39,"text":"+39","class":"delta-positive"},"accessibility_delta":{"delta":-10,"text":"-10","class":"delta-negative"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"irs.gov","country":"United States","industry":"Government","performance":65,"accessibility":99,"best_practices":92,"seo":98,"pwa":33,"test_date":"2025-10-28 20:34:00","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"arbeitsagentur.de","country":"Germany","industry":"Government","performance":64,"accessibility":100,"best_practices":100,"seo":86,"pwa":56,"test_date":"2025-11-02 08:18:30","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ict.go.cr","country":"Costa Rica","industry":"Government","performance":64,"accessibility":83,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-28 14:14:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"gov.pl","country":"Poland","industry":"Government","performance":63,"accessibility":86,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-11-04 04:19:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"arbetsformedlingen.se","country":"Sweden","industry":"Government","performance":62,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-11-02 08:18:51","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"my.gov.au","country":"Australia","industry":"Government","performance":61,"accessibility":0,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-10-29 20:13:48","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"poczta-polska.pl","country":"Poland","industry":"Government","performance":60,"accessibility":88,"best_practices":92,"seo":86,"pwa":33,"test_date":"2025-10-30 13:36:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"skatteverket.se","country":"Sweden","industry":"Government","performance":60,"accessibility":100,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-31 04:27:59","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":16,"text":"+16","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"australia.gov.au","country":"Australia","industry":"Government","performance":59,"accessibility":0,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-11-02 10:14:46","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":21,"text":"+21","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"migri.fi","country":"Finland","industry":"Government","performance":57,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-29 16:20:55","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"gov.sg","country":"Singapore","industry":"Government","performance":56,"accessibility":100,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-11-04 04:20:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"inegi.org.mx","country":"Mexico","industry":"Government","performance":56,"accessibility":79,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-28 18:14:35","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"usps.com","country":"United States","industry":"Government","performance":56,"accessibility":66,"best_practices":75,"seo":83,"pwa":33,"test_date":"2025-11-01 04:30:02","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":20,"text":"+20","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bund.de","country":"Germany","industry":"Government","performance":55,"accessibility":98,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-11-02 18:16:21","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"canada.ca","country":"Canada","industry":"Government","performance":54,"accessibility":100,"best_practices":67,"seo":90,"pwa":33,"test_date":"2025-11-02 20:14:16","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"kela.fi","country":"Finland","industry":"Government","performance":54,"accessibility":100,"best_practices":100,"seo":98,"pwa":33,"test_date":"2025-10-28 22:27:10","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"pgportal.gov.in","country":"India","industry":"Government","performance":54,"accessibility":66,"best_practices":83,"seo":75,"pwa":22,"test_date":"2025-10-30 12:27:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nasa.gov","country":"United States","industry":"Government","performance":52,"accessibility":93,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-29 20:23:32","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-14,"text":"-14","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nhs.uk","country":"United Kingdom","industry":"Government","performance":52,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-30 00:58:05","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vero.fi","country":"Finland","industry":"Government","performance":52,"accessibility":100,"best_practices":67,"seo":93,"pwa":44,"test_date":"2025-11-01 06:22:05","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":6,"text":"+6","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mha.gov.in","country":"India","industry":"Government","performance":49,"accessibility":96,"best_practices":75,"seo":73,"pwa":33,"test_date":"2025-10-29 16:16:44","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"servicecanada.gc.ca","country":"Canada","industry":"Government","performance":49,"accessibility":100,"best_practices":75,"seo":92,"pwa":33,"test_date":"2025-10-31 03:09:24","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":14,"text":"+14","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"epfindia.gov.in","country":"India","industry":"Government","performance":47,"accessibility":86,"best_practices":83,"seo":62,"pwa":0,"test_date":"2025-11-03 16:23:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mygov.in","country":"India","industry":"Government","performance":45,"accessibility":84,"best_practices":92,"seo":76,"pwa":33,"test_date":"2025-10-29 20:14:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"niti.gov.in","country":"India","industry":"Government","performance":44,"accessibility":98,"best_practices":83,"seo":84,"pwa":33,"test_date":"2025-10-30 01:03:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"luxembourg.lu","country":"Luxembourg","industry":"Government","performance":41,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-10-29 10:12:08","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mea.gov.in","country":"India","industry":"Government","performance":40,"accessibility":87,"best_practices":75,"seo":89,"pwa":33,"test_date":"2025-10-29 12:33:48","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"eesti.ee","country":"Estonia","industry":"Government","performance":32,"accessibility":98,"best_practices":67,"seo":83,"pwa":33,"test_date":"2025-11-03 12:32:21","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"posti.fi","country":"Finland","industry":"Government","performance":32,"accessibility":91,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-30 14:02:36","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...industryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
                 
-                if (!aVal || !bVal) return 0;
-                
-                // Get text content or data attribute value
-                aVal = aVal.textContent.trim();
-                bVal = bVal.textContent.trim();
-                
-                // Handle numeric values
-                const aNum = parseFloat(aVal);
-                const bNum = parseFloat(bVal);
-                
-                if (!isNaN(aNum) && !isNaN(bNum)) {
-                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
                 }
                 
-                // Handle string values
-                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
             });
             
-            // Clear and re-append sorted rows
-            tbody.innerHTML = '';
-            rows.forEach(row => tbody.appendChild(row));
-            
-            // Update sort indicators
-            updateSortIndicators(column, order);
+            currentSort = { column, order };
+            updateIndustryTable(sorted);
+            updateSortIndicators();
         }
         
-        function updateSortIndicators(activeColumn, order) {
-            const headers = document.querySelectorAll('.sortable-header');
-            headers.forEach((header, index) => {
-                const arrow = header.querySelector('.sort-arrow');
-                if (index === activeColumn) {
-                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
-                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+        // Update table with sorted data
+        function updateIndustryTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = data.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-${site.country.toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from ${site.country}">
+                            ${site.country}
+                        </a>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.performance)}" 
+                              aria-label="Performance score ${site.performance} out of 100">
+                            ${site.performance}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.accessibility)}" 
+                              aria-label="Accessibility score ${site.accessibility} out of 100">
+                            ${site.accessibility}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.seo)}" 
+                              aria-label="SEO score ${site.seo} out of 100">
+                            ${site.seo}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.best_practices)}" 
+                              aria-label="Best practices score ${site.best_practices} out of 100">
+                            ${site.best_practices}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.pwa)}" 
+                              aria-label="PWA score ${site.pwa} out of 100">
+                            ${site.pwa}
+                        </span>
+                    </td>
+                    <td class="date" data-date="${site.test_date}">
+                        <time datetime="${site.test_date}" aria-label="Last scanned on ${new Date(site.test_date).toLocaleDateString()}">
+                            ${new Date(site.test_date).toLocaleDateString()}
+                        </time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Helper function to get score class
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 50) return 'good';
+            return 'poor';
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
                 } else {
-                    arrow.textContent = '';
                     header.setAttribute('aria-sort', 'none');
                 }
             });
         }
         
-        function getColumnIndex(sortType) {
-            const columnMap = {
-                'rank': 0,
-                'url': 1, 
-                'country': 2,
-                'performance': 3,
-                'accessibility': 4,
-                'seo': 5,
-                'best_practices': 6,
-                'pwa': 7,
-                'test_date': 8
-            };
-            return columnMap[sortType] || 0;
-        }
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                filteredData = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.country && site.country.toLowerCase().includes(query))
+                );
+                
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${industryData.length} websites in Government`;
+                } else if (filteredData.length === 0) {
+                    announcement = `No results found for "${query}" in Government`;
+                } else {
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Government`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
         
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
@@ -2476,25 +2548,24 @@
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sortable-header').forEach(header => {
-                const button = header.querySelector('.sort-header-btn');
-                if (button) {
-                    button.addEventListener('click', function() {
-                        const sortType = header.getAttribute('data-sort');
-                        const column = getColumnIndex(sortType);
-                        const currentSort = header.getAttribute('aria-sort');
-                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
-                        sortData(column, newOrder);
-                    });
-                }
+                header.addEventListener('click', function() {
+                    const column = this.getAttribute('data-sort');
+                    const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                    sortData(column, newOrder);
+                });
             });
             
             // Add click handlers for quick sort buttons
             document.querySelectorAll('.sort-btn').forEach(button => {
                 button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
                     const sortType = this.getAttribute('data-sort');
                     const order = this.getAttribute('data-order') || 'desc';
-                    const column = getColumnIndex(sortType);
-                    sortData(column, order);
+                    sortData(sortType, order);
                 });
             });
         });

@@ -137,49 +137,32 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by rank">
-                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Rank <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by website name">
-                                        Website <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Website <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by country">
-                                        Country <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Country <span class="sort-indicator"></span>
                                 </th>
-                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
-                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
-                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
                                     </button>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
-                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Accessibility <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
-                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    SEO <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
-                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Best Practices <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
-                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    PWA <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
-                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Last Scanned <span class="sort-indicator"></span>
                                 </th>
                             </tr>
                         </thead>
@@ -1943,70 +1926,159 @@
             });
         }
         
-        // Sorting functionality
-        function sortData(column, order = 'desc') {
-            const table = document.querySelector('table');
-            const tbody = table.querySelector('tbody');
-            const rows = Array.from(tbody.querySelectorAll('tr'));
-            
-            rows.sort((a, b) => {
-                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
-                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+        // Data initialization
+        const industryData = [{"url":"sol.bo","country":"Bolivia","industry":"Portal","performance":98,"accessibility":89,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-31 06:28:17","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"web.de","country":"Germany","industry":"Portal","performance":85,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-11-01 12:23:53","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"interia.pl","country":"Poland","industry":"Portal","performance":71,"accessibility":82,"best_practices":92,"seo":85,"pwa":89,"test_date":"2025-10-28 18:26:08","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"gmx.net","country":"Germany","industry":"Portal","performance":69,"accessibility":100,"best_practices":75,"seo":85,"pwa":33,"test_date":"2025-11-04 03:27:44","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"yahoo.com","country":"United States","industry":"Portal","performance":69,"accessibility":87,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-23 06:53:04","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"malta.com","country":"Malta","industry":"Portal","performance":62,"accessibility":72,"best_practices":42,"seo":69,"pwa":0,"test_date":"2025-10-29 10:35:19","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"virgilio.it","country":"Italy","industry":"Portal","performance":60,"accessibility":87,"best_practices":92,"seo":93,"pwa":67,"test_date":"2025-11-01 08:18:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"wp.pl","country":"Poland","industry":"Portal","performance":59,"accessibility":84,"best_practices":75,"seo":93,"pwa":56,"test_date":"2025-11-01 14:15:19","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-17,"text":"-17","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"163.com","country":"China","industry":"Portal","performance":55,"accessibility":49,"best_practices":92,"seo":85,"pwa":33,"test_date":"2025-11-02 00:47:51","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"best_practices_delta":{"delta":25,"text":"+25","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nate.com","country":"South Korea","industry":"Portal","performance":53,"accessibility":67,"best_practices":67,"seo":84,"pwa":33,"test_date":"2025-10-29 20:23:55","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"down","pwa_trend":"same","performance_delta":{"delta":20,"text":"+20","class":"delta-positive"},"accessibility_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"yahoo.co.jp","country":"Japan","industry":"Portal","performance":53,"accessibility":73,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-11-01 14:16:35","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":4,"text":"+4","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"zambia.co.zm","country":"Zambia","industry":"Portal","performance":53,"accessibility":89,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-11-01 18:12:49","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"o2.pl","country":"Poland","industry":"Portal","performance":52,"accessibility":96,"best_practices":67,"seo":100,"pwa":78,"test_date":"2025-10-30 06:14:58","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"mail.ru","country":"Russia","industry":"Portal","performance":47,"accessibility":63,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-29 10:23:21","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":14,"text":"+14","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sohu.com","country":"China","industry":"Portal","performance":45,"accessibility":33,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-31 06:27:41","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"daum.net","country":"South Korea","industry":"Portal","performance":41,"accessibility":80,"best_practices":58,"seo":98,"pwa":33,"test_date":"2025-11-03 06:21:26","performance_trend":"up","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":1,"text":"+1","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":1,"text":"+1","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ukr.net","country":"Ukraine","industry":"Portal","performance":38,"accessibility":76,"best_practices":67,"seo":96,"pwa":33,"test_date":"2025-11-01 03:17:24","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":1,"text":"+1","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sapo.pt","country":"Portugal","industry":"Portal","performance":37,"accessibility":88,"best_practices":67,"seo":92,"pwa":33,"test_date":"2025-10-31 00:47:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"zum.com","country":"South Korea","industry":"Portal","performance":37,"accessibility":80,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-11-01 20:15:28","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"onet.pl","country":"Poland","industry":"Portal","performance":36,"accessibility":79,"best_practices":58,"seo":98,"pwa":100,"test_date":"2025-10-30 08:17:36","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-14,"text":"-14","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"24h.com.vn","country":"Vietnam","industry":"Portal","performance":32,"accessibility":71,"best_practices":83,"seo":84,"pwa":33,"test_date":"2025-11-02 00:55:12","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-27,"text":"-27","class":"delta-negative"},"accessibility_delta":{"delta":16,"text":"+16","class":"delta-positive"},"best_practices_delta":{"delta":-9,"text":"-9","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"fonecta.fi","country":"Finland","industry":"Portal","performance":32,"accessibility":93,"best_practices":0,"seo":89,"pwa":33,"test_date":"2025-11-03 22:16:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"uol.com.br","country":"Brazil","industry":"Portal","performance":32,"accessibility":72,"best_practices":83,"seo":92,"pwa":89,"test_date":"2025-11-01 04:19:50","performance_trend":"down","accessibility_trend":"up","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-20,"text":"-20","class":"delta-negative"},"accessibility_delta":{"delta":8,"text":"+8","class":"delta-positive"},"best_practices_delta":{"delta":16,"text":"+16","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"rediff.com","country":"India","industry":"Portal","performance":31,"accessibility":83,"best_practices":67,"seo":85,"pwa":33,"test_date":"2025-10-30 18:24:00","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-16,"text":"-16","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"terra.com.br","country":"Brazil","industry":"Portal","performance":30,"accessibility":70,"best_practices":92,"seo":85,"pwa":100,"test_date":"2025-10-19 19:54:39","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"qq.com","country":"China","industry":"Portal","performance":29,"accessibility":49,"best_practices":92,"seo":74,"pwa":56,"test_date":"2025-10-30 16:24:08","performance_trend":"same","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":2,"text":"+2","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"abv.bg","country":"Bulgaria","industry":"Portal","performance":25,"accessibility":58,"best_practices":67,"seo":100,"pwa":33,"test_date":"2025-11-02 03:14:04","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-32,"text":"-32","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-16,"text":"-16","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"t-online.de","country":"Germany","industry":"Portal","performance":17,"accessibility":76,"best_practices":100,"seo":93,"pwa":89,"test_date":"2025-10-31 14:11:10","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-18,"text":"-18","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"freemail.hu","country":"Hungary","industry":"Portal","performance":16,"accessibility":85,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-11-04 00:47:46","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"kapook.com","country":"Thailand","industry":"Portal","performance":14,"accessibility":93,"best_practices":50,"seo":92,"pwa":33,"test_date":"2025-10-28 22:22:35","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-23,"text":"-23","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...industryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
                 
-                if (!aVal || !bVal) return 0;
-                
-                // Get text content or data attribute value
-                aVal = aVal.textContent.trim();
-                bVal = bVal.textContent.trim();
-                
-                // Handle numeric values
-                const aNum = parseFloat(aVal);
-                const bNum = parseFloat(bVal);
-                
-                if (!isNaN(aNum) && !isNaN(bNum)) {
-                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
                 }
                 
-                // Handle string values
-                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
             });
             
-            // Clear and re-append sorted rows
-            tbody.innerHTML = '';
-            rows.forEach(row => tbody.appendChild(row));
-            
-            // Update sort indicators
-            updateSortIndicators(column, order);
+            currentSort = { column, order };
+            updateIndustryTable(sorted);
+            updateSortIndicators();
         }
         
-        function updateSortIndicators(activeColumn, order) {
-            const headers = document.querySelectorAll('.sortable-header');
-            headers.forEach((header, index) => {
-                const arrow = header.querySelector('.sort-arrow');
-                if (index === activeColumn) {
-                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
-                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+        // Update table with sorted data
+        function updateIndustryTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = data.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-${site.country.toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from ${site.country}">
+                            ${site.country}
+                        </a>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.performance)}" 
+                              aria-label="Performance score ${site.performance} out of 100">
+                            ${site.performance}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.accessibility)}" 
+                              aria-label="Accessibility score ${site.accessibility} out of 100">
+                            ${site.accessibility}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.seo)}" 
+                              aria-label="SEO score ${site.seo} out of 100">
+                            ${site.seo}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.best_practices)}" 
+                              aria-label="Best practices score ${site.best_practices} out of 100">
+                            ${site.best_practices}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.pwa)}" 
+                              aria-label="PWA score ${site.pwa} out of 100">
+                            ${site.pwa}
+                        </span>
+                    </td>
+                    <td class="date" data-date="${site.test_date}">
+                        <time datetime="${site.test_date}" aria-label="Last scanned on ${new Date(site.test_date).toLocaleDateString()}">
+                            ${new Date(site.test_date).toLocaleDateString()}
+                        </time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Helper function to get score class
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 50) return 'good';
+            return 'poor';
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
                 } else {
-                    arrow.textContent = '';
                     header.setAttribute('aria-sort', 'none');
                 }
             });
         }
         
-        function getColumnIndex(sortType) {
-            const columnMap = {
-                'rank': 0,
-                'url': 1, 
-                'country': 2,
-                'performance': 3,
-                'accessibility': 4,
-                'seo': 5,
-                'best_practices': 6,
-                'pwa': 7,
-                'test_date': 8
-            };
-            return columnMap[sortType] || 0;
-        }
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                filteredData = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.country && site.country.toLowerCase().includes(query))
+                );
+                
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${industryData.length} websites in Portal`;
+                } else if (filteredData.length === 0) {
+                    announcement = `No results found for "${query}" in Portal`;
+                } else {
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Portal`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
         
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
@@ -2014,25 +2086,24 @@
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sortable-header').forEach(header => {
-                const button = header.querySelector('.sort-header-btn');
-                if (button) {
-                    button.addEventListener('click', function() {
-                        const sortType = header.getAttribute('data-sort');
-                        const column = getColumnIndex(sortType);
-                        const currentSort = header.getAttribute('aria-sort');
-                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
-                        sortData(column, newOrder);
-                    });
-                }
+                header.addEventListener('click', function() {
+                    const column = this.getAttribute('data-sort');
+                    const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                    sortData(column, newOrder);
+                });
             });
             
             // Add click handlers for quick sort buttons
             document.querySelectorAll('.sort-btn').forEach(button => {
                 button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
                     const sortType = this.getAttribute('data-sort');
                     const order = this.getAttribute('data-order') || 'desc';
-                    const column = getColumnIndex(sortType);
-                    sortData(column, order);
+                    sortData(sortType, order);
                 });
             });
         });

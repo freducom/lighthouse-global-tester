@@ -137,49 +137,32 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by rank">
-                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Rank <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by website name">
-                                        Website <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Website <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by country">
-                                        Country <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Country <span class="sort-indicator"></span>
                                 </th>
-                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
-                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
-                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
                                     </button>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
-                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Accessibility <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
-                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    SEO <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
-                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Best Practices <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
-                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    PWA <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
-                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Last Scanned <span class="sort-indicator"></span>
                                 </th>
                             </tr>
                         </thead>
@@ -2447,70 +2430,159 @@
             });
         }
         
-        // Sorting functionality
-        function sortData(column, order = 'desc') {
-            const table = document.querySelector('table');
-            const tbody = table.querySelector('tbody');
-            const rows = Array.from(tbody.querySelectorAll('tr'));
-            
-            rows.sort((a, b) => {
-                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
-                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+        // Data initialization
+        const industryData = [{"url":"personal.com.ar","country":"Argentina","industry":"Telecom","performance":65,"accessibility":81,"best_practices":67,"seo":97,"pwa":33,"test_date":"2025-10-30 12:23:05","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ericsson.com","country":"Sweden","industry":"Telecom","performance":61,"accessibility":91,"best_practices":75,"seo":100,"pwa":44,"test_date":"2025-11-03 16:27:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mtn.ng","country":"Nigeria","industry":"Telecom","performance":61,"accessibility":73,"best_practices":83,"seo":58,"pwa":0,"test_date":"2025-10-29 20:12:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"hkt.com","country":"Hong Kong","industry":"Telecom","performance":60,"accessibility":86,"best_practices":83,"seo":90,"pwa":22,"test_date":"2025-11-04 08:29:00","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"tre.se","country":"Sweden","industry":"Telecom","performance":59,"accessibility":97,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-11-01 00:46:18","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"iam.ma","country":"Morocco","industry":"Telecom","performance":55,"accessibility":68,"best_practices":58,"seo":93,"pwa":33,"test_date":"2025-10-28 14:10:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"telenor.se","country":"Sweden","industry":"Telecom","performance":53,"accessibility":100,"best_practices":100,"seo":100,"pwa":56,"test_date":"2025-10-31 16:23:42","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tele2.se","country":"Sweden","industry":"Telecom","performance":51,"accessibility":98,"best_practices":100,"seo":85,"pwa":33,"test_date":"2025-10-31 16:22:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"elisa.fi","country":"Finland","industry":"Telecom","performance":48,"accessibility":98,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-11-03 14:36:24","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yousee.dk","country":"Denmark","industry":"Telecom","performance":46,"accessibility":93,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-11-01 16:27:16","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"nokia.com","country":"Finland","industry":"Telecom","performance":44,"accessibility":89,"best_practices":83,"seo":100,"pwa":56,"test_date":"2025-10-30 03:05:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"orange.ro","country":"Romania","industry":"Telecom","performance":39,"accessibility":100,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-30 08:21:53","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"att.com","country":"United States","industry":"Telecom","performance":38,"accessibility":98,"best_practices":75,"seo":75,"pwa":33,"test_date":"2025-11-02 10:14:19","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"bell.ca","country":"Canada","industry":"Telecom","performance":37,"accessibility":94,"best_practices":75,"seo":79,"pwa":33,"test_date":"2025-11-02 14:09:42","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"orange.pl","country":"Poland","industry":"Telecom","performance":37,"accessibility":98,"best_practices":58,"seo":96,"pwa":33,"test_date":"2025-10-30 08:21:32","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vodafone.ro","country":"Romania","industry":"Telecom","performance":37,"accessibility":89,"best_practices":0,"seo":93,"pwa":33,"test_date":"2025-11-01 08:27:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"vodafone.co.uk","country":"United Kingdom","industry":"Telecom","performance":36,"accessibility":91,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-11-01 08:26:30","performance_trend":"up","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"safaricom.co.ke","country":"Kenya","industry":"Telecom","performance":35,"accessibility":70,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-30 22:17:38","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"telia.se","country":"Sweden","industry":"Telecom","performance":35,"accessibility":0,"best_practices":92,"seo":100,"pwa":33,"test_date":"2025-10-31 16:35:12","performance_trend":"down","accessibility_trend":"down","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":-93,"text":"-93","class":"delta-negative"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"comviq.se","country":"Sweden","industry":"Telecom","performance":32,"accessibility":98,"best_practices":100,"seo":85,"pwa":33,"test_date":"2025-11-03 03:12:56","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":5,"text":"+5","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"plus.pl","country":"Poland","industry":"Telecom","performance":31,"accessibility":73,"best_practices":83,"seo":91,"pwa":67,"test_date":"2025-10-30 13:35:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"telia.ee","country":"Estonia","industry":"Telecom","performance":31,"accessibility":100,"best_practices":100,"seo":92,"pwa":44,"test_date":"2025-10-31 16:34:16","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"ee.co.uk","country":"United Kingdom","industry":"Telecom","performance":30,"accessibility":96,"best_practices":83,"seo":93,"pwa":33,"test_date":"2025-11-03 12:31:59","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"sky.com","country":"United Kingdom","industry":"Telecom","performance":30,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-31 06:14:54","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-6,"text":"-6","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"dna.fi","country":"Finland","industry":"Telecom","performance":29,"accessibility":99,"best_practices":83,"seo":100,"pwa":67,"test_date":"2025-11-03 10:12:47","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":18,"text":"+18","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"halebop.se","country":"Sweden","industry":"Telecom","performance":29,"accessibility":90,"best_practices":92,"seo":93,"pwa":56,"test_date":"2025-11-04 06:30:13","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"virginmobile.sa","country":"Saudi Arabia","industry":"Telecom","performance":29,"accessibility":78,"best_practices":92,"seo":90,"pwa":33,"test_date":"2025-11-01 08:19:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"t-mobile.com","country":"United States","industry":"Telecom","performance":28,"accessibility":98,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-10-31 12:24:04","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"verizon.com","country":"United States","industry":"Telecom","performance":28,"accessibility":93,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-11-01 06:21:28","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"telia.fi","country":"Finland","industry":"Telecom","performance":27,"accessibility":77,"best_practices":75,"seo":90,"pwa":56,"test_date":"2025-10-31 16:34:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"pccw.com","country":"Hong Kong","industry":"Telecom","performance":26,"accessibility":84,"best_practices":100,"seo":82,"pwa":33,"test_date":"2025-10-30 12:19:11","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"vivacom.bg","country":"Bulgaria","industry":"Telecom","performance":26,"accessibility":99,"best_practices":92,"seo":89,"pwa":33,"test_date":"2025-11-01 08:22:23","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"inwi.ma","country":"Morocco","industry":"Telecom","performance":25,"accessibility":84,"best_practices":75,"seo":84,"pwa":33,"test_date":"2025-10-28 20:25:35","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ptcl.com.pk","country":"Pakistan","industry":"Telecom","performance":25,"accessibility":53,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-23 10:16:17","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"shaw.ca","country":"Canada","industry":"Telecom","performance":25,"accessibility":96,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-23 20:16:54","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"stc.com.sa","country":"Saudi Arabia","industry":"Telecom","performance":25,"accessibility":73,"best_practices":83,"seo":86,"pwa":89,"test_date":"2025-10-31 10:11:35","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"etisalat.ae","country":"United Arab Emirates","industry":"Telecom","performance":24,"accessibility":73,"best_practices":58,"seo":77,"pwa":33,"test_date":"2025-11-03 18:28:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"smart.com.ph","country":"Philippines","industry":"Telecom","performance":21,"accessibility":68,"best_practices":67,"seo":61,"pwa":33,"test_date":"2025-10-31 06:15:58","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"bt.com","country":"United Kingdom","industry":"Telecom","performance":12,"accessibility":93,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-11-02 18:12:25","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"du.ae","country":"United Arab Emirates","industry":"Telecom","performance":10,"accessibility":98,"best_practices":58,"seo":97,"pwa":33,"test_date":"2025-11-03 10:22:18","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":-20,"text":"-20","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"play.pl","country":"Poland","industry":"Telecom","performance":5,"accessibility":66,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-10-30 13:35:30","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"elisa.ee","country":"Estonia","industry":"Telecom","performance":3,"accessibility":88,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-11-03 14:36:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...industryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
                 
-                if (!aVal || !bVal) return 0;
-                
-                // Get text content or data attribute value
-                aVal = aVal.textContent.trim();
-                bVal = bVal.textContent.trim();
-                
-                // Handle numeric values
-                const aNum = parseFloat(aVal);
-                const bNum = parseFloat(bVal);
-                
-                if (!isNaN(aNum) && !isNaN(bNum)) {
-                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
                 }
                 
-                // Handle string values
-                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
             });
             
-            // Clear and re-append sorted rows
-            tbody.innerHTML = '';
-            rows.forEach(row => tbody.appendChild(row));
-            
-            // Update sort indicators
-            updateSortIndicators(column, order);
+            currentSort = { column, order };
+            updateIndustryTable(sorted);
+            updateSortIndicators();
         }
         
-        function updateSortIndicators(activeColumn, order) {
-            const headers = document.querySelectorAll('.sortable-header');
-            headers.forEach((header, index) => {
-                const arrow = header.querySelector('.sort-arrow');
-                if (index === activeColumn) {
-                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
-                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+        // Update table with sorted data
+        function updateIndustryTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = data.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-${site.country.toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from ${site.country}">
+                            ${site.country}
+                        </a>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.performance)}" 
+                              aria-label="Performance score ${site.performance} out of 100">
+                            ${site.performance}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.accessibility)}" 
+                              aria-label="Accessibility score ${site.accessibility} out of 100">
+                            ${site.accessibility}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.seo)}" 
+                              aria-label="SEO score ${site.seo} out of 100">
+                            ${site.seo}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.best_practices)}" 
+                              aria-label="Best practices score ${site.best_practices} out of 100">
+                            ${site.best_practices}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.pwa)}" 
+                              aria-label="PWA score ${site.pwa} out of 100">
+                            ${site.pwa}
+                        </span>
+                    </td>
+                    <td class="date" data-date="${site.test_date}">
+                        <time datetime="${site.test_date}" aria-label="Last scanned on ${new Date(site.test_date).toLocaleDateString()}">
+                            ${new Date(site.test_date).toLocaleDateString()}
+                        </time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Helper function to get score class
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 50) return 'good';
+            return 'poor';
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
                 } else {
-                    arrow.textContent = '';
                     header.setAttribute('aria-sort', 'none');
                 }
             });
         }
         
-        function getColumnIndex(sortType) {
-            const columnMap = {
-                'rank': 0,
-                'url': 1, 
-                'country': 2,
-                'performance': 3,
-                'accessibility': 4,
-                'seo': 5,
-                'best_practices': 6,
-                'pwa': 7,
-                'test_date': 8
-            };
-            return columnMap[sortType] || 0;
-        }
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                filteredData = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.country && site.country.toLowerCase().includes(query))
+                );
+                
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${industryData.length} websites in Telecom`;
+                } else if (filteredData.length === 0) {
+                    announcement = `No results found for "${query}" in Telecom`;
+                } else {
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Telecom`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
         
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
@@ -2518,25 +2590,24 @@
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sortable-header').forEach(header => {
-                const button = header.querySelector('.sort-header-btn');
-                if (button) {
-                    button.addEventListener('click', function() {
-                        const sortType = header.getAttribute('data-sort');
-                        const column = getColumnIndex(sortType);
-                        const currentSort = header.getAttribute('aria-sort');
-                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
-                        sortData(column, newOrder);
-                    });
-                }
+                header.addEventListener('click', function() {
+                    const column = this.getAttribute('data-sort');
+                    const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                    sortData(column, newOrder);
+                });
             });
             
             // Add click handlers for quick sort buttons
             document.querySelectorAll('.sort-btn').forEach(button => {
                 button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
                     const sortType = this.getAttribute('data-sort');
                     const order = this.getAttribute('data-order') || 'desc';
-                    const column = getColumnIndex(sortType);
-                    sortData(column, order);
+                    sortData(sortType, order);
                 });
             });
         });

@@ -137,49 +137,32 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by rank">
-                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Rank <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by website name">
-                                        Website <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Website <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by country">
-                                        Country <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Country <span class="sort-indicator"></span>
                                 </th>
-                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
-                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
-                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
                                     </button>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
-                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Accessibility <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
-                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    SEO <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
-                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Best Practices <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
-                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    PWA <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
-                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Last Scanned <span class="sort-indicator"></span>
                                 </th>
                             </tr>
                         </thead>
@@ -1061,70 +1044,159 @@
             });
         }
         
-        // Sorting functionality
-        function sortData(column, order = 'desc') {
-            const table = document.querySelector('table');
-            const tbody = table.querySelector('tbody');
-            const rows = Array.from(tbody.querySelectorAll('tr'));
-            
-            rows.sort((a, b) => {
-                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
-                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+        // Data initialization
+        const industryData = [{"url":"wpseoai.com","country":"Finland","industry":"Marketing","performance":64,"accessibility":90,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-11-01 14:15:40","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"clevertap.com","country":"India","industry":"Marketing","performance":57,"accessibility":81,"best_practices":67,"seo":86,"pwa":33,"test_date":"2025-11-03 00:49:59","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":26,"text":"+26","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"inmobi.com","country":"India","industry":"Marketing","performance":47,"accessibility":85,"best_practices":67,"seo":93,"pwa":33,"test_date":"2025-10-28 18:23:27","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mailchimp.com","country":"United States","industry":"Marketing","performance":47,"accessibility":100,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-10-23 07:03:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"salesmanago.com","country":"Poland","industry":"Marketing","performance":47,"accessibility":98,"best_practices":83,"seo":100,"pwa":33,"test_date":"2025-10-30 22:19:08","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"smartly.io","country":"Finland","industry":"Marketing","performance":33,"accessibility":95,"best_practices":83,"seo":99,"pwa":22,"test_date":"2025-10-31 06:16:22","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"supermetrics.com","country":"Finland","industry":"Marketing","performance":30,"accessibility":82,"best_practices":50,"seo":93,"pwa":33,"test_date":"2025-10-31 12:19:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"leadoo.com","country":"Finland","industry":"Marketing","performance":26,"accessibility":91,"best_practices":83,"seo":86,"pwa":22,"test_date":"2025-10-29 07:42:07","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"hubspot.com","country":"United States","industry":"Marketing","performance":20,"accessibility":98,"best_practices":0,"seo":93,"pwa":33,"test_date":"2025-10-28 12:33:01","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-83,"text":"-83","class":"delta-negative"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...industryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
                 
-                if (!aVal || !bVal) return 0;
-                
-                // Get text content or data attribute value
-                aVal = aVal.textContent.trim();
-                bVal = bVal.textContent.trim();
-                
-                // Handle numeric values
-                const aNum = parseFloat(aVal);
-                const bNum = parseFloat(bVal);
-                
-                if (!isNaN(aNum) && !isNaN(bNum)) {
-                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
                 }
                 
-                // Handle string values
-                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
             });
             
-            // Clear and re-append sorted rows
-            tbody.innerHTML = '';
-            rows.forEach(row => tbody.appendChild(row));
-            
-            // Update sort indicators
-            updateSortIndicators(column, order);
+            currentSort = { column, order };
+            updateIndustryTable(sorted);
+            updateSortIndicators();
         }
         
-        function updateSortIndicators(activeColumn, order) {
-            const headers = document.querySelectorAll('.sortable-header');
-            headers.forEach((header, index) => {
-                const arrow = header.querySelector('.sort-arrow');
-                if (index === activeColumn) {
-                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
-                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+        // Update table with sorted data
+        function updateIndustryTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = data.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-${site.country.toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from ${site.country}">
+                            ${site.country}
+                        </a>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.performance)}" 
+                              aria-label="Performance score ${site.performance} out of 100">
+                            ${site.performance}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.accessibility)}" 
+                              aria-label="Accessibility score ${site.accessibility} out of 100">
+                            ${site.accessibility}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.seo)}" 
+                              aria-label="SEO score ${site.seo} out of 100">
+                            ${site.seo}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.best_practices)}" 
+                              aria-label="Best practices score ${site.best_practices} out of 100">
+                            ${site.best_practices}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.pwa)}" 
+                              aria-label="PWA score ${site.pwa} out of 100">
+                            ${site.pwa}
+                        </span>
+                    </td>
+                    <td class="date" data-date="${site.test_date}">
+                        <time datetime="${site.test_date}" aria-label="Last scanned on ${new Date(site.test_date).toLocaleDateString()}">
+                            ${new Date(site.test_date).toLocaleDateString()}
+                        </time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Helper function to get score class
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 50) return 'good';
+            return 'poor';
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
                 } else {
-                    arrow.textContent = '';
                     header.setAttribute('aria-sort', 'none');
                 }
             });
         }
         
-        function getColumnIndex(sortType) {
-            const columnMap = {
-                'rank': 0,
-                'url': 1, 
-                'country': 2,
-                'performance': 3,
-                'accessibility': 4,
-                'seo': 5,
-                'best_practices': 6,
-                'pwa': 7,
-                'test_date': 8
-            };
-            return columnMap[sortType] || 0;
-        }
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                filteredData = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.country && site.country.toLowerCase().includes(query))
+                );
+                
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${industryData.length} websites in Marketing`;
+                } else if (filteredData.length === 0) {
+                    announcement = `No results found for "${query}" in Marketing`;
+                } else {
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Marketing`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
         
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
@@ -1132,25 +1204,24 @@
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sortable-header').forEach(header => {
-                const button = header.querySelector('.sort-header-btn');
-                if (button) {
-                    button.addEventListener('click', function() {
-                        const sortType = header.getAttribute('data-sort');
-                        const column = getColumnIndex(sortType);
-                        const currentSort = header.getAttribute('aria-sort');
-                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
-                        sortData(column, newOrder);
-                    });
-                }
+                header.addEventListener('click', function() {
+                    const column = this.getAttribute('data-sort');
+                    const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                    sortData(column, newOrder);
+                });
             });
             
             // Add click handlers for quick sort buttons
             document.querySelectorAll('.sort-btn').forEach(button => {
                 button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
                     const sortType = this.getAttribute('data-sort');
                     const order = this.getAttribute('data-order') || 'desc';
-                    const column = getColumnIndex(sortType);
-                    sortData(column, order);
+                    sortData(sortType, order);
                 });
             });
         });

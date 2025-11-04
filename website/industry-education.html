@@ -137,49 +137,32 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="sortable-header" data-sort="rank" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by rank">
-                                        Rank <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Rank <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="url" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by website name">
-                                        Website <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Website <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="country" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by country">
-                                        Country <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Country <span class="sort-indicator"></span>
                                 </th>
-                                <th scope="col" class="sortable-header" data-sort="performance" aria-sort="descending">
-                                    <button class="sort-header-btn" aria-label="Sort by performance score, currently sorted descending">
-                                        Performance <span class="sort-arrow" aria-hidden="true"></span>
+                                <th scope="col" class="sortable-header sort-desc" data-sort="performance" aria-sort="descending">
+                                    Performance <span class="sort-indicator"></span>
                                     </button>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="accessibility" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by accessibility score">
-                                        Accessibility <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Accessibility <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="seo" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by SEO score">
-                                        SEO <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    SEO <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="best_practices" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by best practices score">
-                                        Best Practices <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Best Practices <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="pwa" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by PWA score">
-                                        PWA <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    PWA <span class="sort-indicator"></span>
                                 </th>
                                 <th scope="col" class="sortable-header" data-sort="test_date" aria-sort="none">
-                                    <button class="sort-header-btn" aria-label="Sort by last scanned date">
-                                        Last Scanned <span class="sort-arrow" aria-hidden="true"></span>
-                                    </button>
+                                    Last Scanned <span class="sort-indicator"></span>
                                 </th>
                             </tr>
                         </thead>
@@ -2741,70 +2724,159 @@
             });
         }
         
-        // Sorting functionality
-        function sortData(column, order = 'desc') {
-            const table = document.querySelector('table');
-            const tbody = table.querySelector('tbody');
-            const rows = Array.from(tbody.querySelectorAll('tr'));
-            
-            rows.sort((a, b) => {
-                let aVal = a.querySelector(`td:nth-child(${column + 1})`);
-                let bVal = b.querySelector(`td:nth-child(${column + 1})`);
+        // Data initialization
+        const industryData = [{"url":"emathstudio.com","country":"Finland","industry":"Education","performance":100,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-22 08:37:37","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"liu.se","country":"Sweden","industry":"Education","performance":98,"accessibility":100,"best_practices":100,"seo":99,"pwa":33,"test_date":"2025-10-29 08:15:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"thaiall.com","country":"Thailand","industry":"Education","performance":90,"accessibility":97,"best_practices":92,"seo":96,"pwa":44,"test_date":"2025-10-31 18:22:42","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":9,"text":"+9","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"kth.se","country":"Sweden","industry":"Education","performance":87,"accessibility":100,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-10-29 03:16:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"umu.se","country":"Sweden","industry":"Education","performance":79,"accessibility":100,"best_practices":92,"seo":99,"pwa":33,"test_date":"2025-11-01 03:24:20","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"nptel.ac.in","country":"India","industry":"Education","performance":70,"accessibility":82,"best_practices":92,"seo":75,"pwa":33,"test_date":"2025-10-30 04:15:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"cornell.edu","country":"United States","industry":"Education","performance":67,"accessibility":98,"best_practices":75,"seo":69,"pwa":33,"test_date":"2025-11-03 03:18:24","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"harvard.edu","country":"United States","industry":"Education","performance":64,"accessibility":98,"best_practices":100,"seo":100,"pwa":33,"test_date":"2025-11-04 06:35:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"princeton.edu","country":"United States","industry":"Education","performance":63,"accessibility":100,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-30 14:10:15","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lut.fi","country":"Finland","industry":"Education","performance":62,"accessibility":96,"best_practices":100,"seo":93,"pwa":44,"test_date":"2025-10-29 10:11:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"berkeley.edu","country":"United States","industry":"Education","performance":61,"accessibility":100,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-11-02 14:09:55","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":21,"text":"+21","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"usc.edu","country":"United States","industry":"Education","performance":60,"accessibility":98,"best_practices":92,"seo":93,"pwa":44,"test_date":"2025-11-01 04:25:45","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"yale.edu","country":"United States","industry":"Education","performance":59,"accessibility":91,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-11-01 16:16:00","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"haaga-helia.fi","country":"Finland","industry":"Education","performance":58,"accessibility":99,"best_practices":83,"seo":92,"pwa":33,"test_date":"2025-11-04 06:25:55","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"helsinki.fi","country":"Finland","industry":"Education","performance":55,"accessibility":93,"best_practices":100,"seo":93,"pwa":33,"test_date":"2025-11-04 08:18:16","performance_trend":"same","accessibility_trend":"up","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":7,"text":"+7","class":"delta-positive"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"iitk.ac.in","country":"India","industry":"Education","performance":55,"accessibility":84,"best_practices":83,"seo":89,"pwa":33,"test_date":"2025-10-28 14:20:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"ki.se","country":"Sweden","industry":"Education","performance":54,"accessibility":94,"best_practices":100,"seo":100,"pwa":56,"test_date":"2025-10-29 00:56:57","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"tuni.fi","country":"Finland","industry":"Education","performance":54,"accessibility":100,"best_practices":100,"seo":100,"pwa":44,"test_date":"2025-11-01 00:49:31","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"uw.edu.pl","country":"Poland","industry":"Education","performance":54,"accessibility":89,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-11-01 06:16:37","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":3,"text":"+3","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"iisc.ac.in","country":"India","industry":"Education","performance":53,"accessibility":87,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-10-28 14:18:43","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"pg.edu.pl","country":"Poland","industry":"Education","performance":52,"accessibility":83,"best_practices":92,"seo":92,"pwa":44,"test_date":"2025-10-30 12:26:51","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"lu.se","country":"Sweden","industry":"Education","performance":50,"accessibility":100,"best_practices":100,"seo":86,"pwa":33,"test_date":"2025-10-29 08:30:47","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"aalto.fi","country":"Finland","industry":"Education","performance":49,"accessibility":99,"best_practices":100,"seo":91,"pwa":44,"test_date":"2025-11-02 03:08:36","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"up","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":8,"text":"+8","class":"delta-positive"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"coursera.org","country":"United States","industry":"Education","performance":48,"accessibility":98,"best_practices":75,"seo":93,"pwa":33,"test_date":"2025-11-03 03:21:18","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":12,"text":"+12","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"utexas.edu","country":"United States","industry":"Education","performance":47,"accessibility":98,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-11-01 04:30:14","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"jamk.fi","country":"Finland","industry":"Education","performance":46,"accessibility":100,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-28 22:09:36","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"su.se","country":"Sweden","industry":"Education","performance":45,"accessibility":100,"best_practices":92,"seo":92,"pwa":33,"test_date":"2025-10-31 10:18:23","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"up","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":7,"text":"+7","class":"delta-positive"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"gu.se","country":"Sweden","industry":"Education","performance":44,"accessibility":98,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-11-04 06:21:25","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"iitb.ac.in","country":"India","industry":"Education","performance":44,"accessibility":96,"best_practices":100,"seo":86,"pwa":22,"test_date":"2025-10-28 14:19:07","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mit.edu","country":"United States","industry":"Education","performance":44,"accessibility":92,"best_practices":100,"seo":88,"pwa":33,"test_date":"2025-10-29 16:33:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"amiedu.fi","country":"Finland","industry":"Education","performance":43,"accessibility":81,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-11-02 06:20:52","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":2,"text":"+2","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"annauniv.edu","country":"India","industry":"Education","performance":43,"accessibility":68,"best_practices":67,"seo":75,"pwa":22,"test_date":"2025-11-02 08:14:46","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-7,"text":"-7","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"chalmers.se","country":"Sweden","industry":"Education","performance":42,"accessibility":100,"best_practices":92,"seo":100,"pwa":44,"test_date":"2025-11-02 22:09:46","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"down","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":-8,"text":"-8","class":"delta-negative"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"du.ac.in","country":"India","industry":"Education","performance":42,"accessibility":73,"best_practices":83,"seo":72,"pwa":33,"test_date":"2025-11-03 10:21:50","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"stanford.edu","country":"United States","industry":"Education","performance":42,"accessibility":0,"best_practices":92,"seo":93,"pwa":33,"test_date":"2025-10-31 08:28:06","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"utu.fi","country":"Finland","industry":"Education","performance":40,"accessibility":98,"best_practices":92,"seo":98,"pwa":56,"test_date":"2025-11-01 06:12:46","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"columbia.edu","country":"United States","industry":"Education","performance":39,"accessibility":86,"best_practices":75,"seo":73,"pwa":33,"test_date":"2025-11-03 00:58:01","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"jnu.ac.in","country":"India","industry":"Education","performance":37,"accessibility":74,"best_practices":83,"seo":79,"pwa":33,"test_date":"2025-10-28 22:10:50","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"khanacademy.org","country":"United States","industry":"Education","performance":34,"accessibility":100,"best_practices":100,"seo":92,"pwa":33,"test_date":"2025-10-29 00:53:16","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"metropolia.fi","country":"Finland","industry":"Education","performance":34,"accessibility":91,"best_practices":92,"seo":100,"pwa":56,"test_date":"2025-10-29 14:39:59","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-5,"text":"-5","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"aiims.edu","country":"India","industry":"Education","performance":32,"accessibility":69,"best_practices":50,"seo":50,"pwa":0,"test_date":"2025-11-02 04:15:41","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"amrita.edu","country":"India","industry":"Education","performance":32,"accessibility":72,"best_practices":92,"seo":75,"pwa":33,"test_date":"2025-11-02 06:21:51","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"vit.ac.in","country":"India","industry":"Education","performance":31,"accessibility":81,"best_practices":83,"seo":90,"pwa":33,"test_date":"2025-11-01 08:20:55","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"mittuniversitetet.se","country":"Sweden","industry":"Education","performance":30,"accessibility":100,"best_practices":75,"seo":98,"pwa":89,"test_date":"2025-10-29 18:16:03","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"iitd.ac.in","country":"India","industry":"Education","performance":29,"accessibility":81,"best_practices":83,"seo":83,"pwa":22,"test_date":"2025-10-28 14:19:44","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"udemy.com","country":"United States","industry":"Education","performance":28,"accessibility":85,"best_practices":83,"seo":90,"pwa":44,"test_date":"2025-11-01 03:12:09","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"manipal.edu","country":"India","industry":"Education","performance":24,"accessibility":61,"best_practices":58,"seo":70,"pwa":33,"test_date":"2025-10-29 12:22:52","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"singaporetech.edu.sg","country":"Singapore","industry":"Education","performance":23,"accessibility":76,"best_practices":83,"seo":82,"pwa":33,"test_date":"2025-10-23 21:49:48","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"edx.org","country":"United States","industry":"Education","performance":22,"accessibility":93,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-11-03 12:31:33","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const searchInput = document.getElementById('searchInput');
+        const tableBody = document.getElementById('tableBody');
+        const liveRegion = document.getElementById('search-results-announced');
+        let searchTimeout;
+        let currentSort = { column: 'performance', order: 'desc' };
+        let filteredData = [...industryData];
+        
+        // Advanced sorting functionality
+        function sortData(column, order = 'asc') {
+            const sorted = [...filteredData].sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
                 
-                if (!aVal || !bVal) return 0;
-                
-                // Get text content or data attribute value
-                aVal = aVal.textContent.trim();
-                bVal = bVal.textContent.trim();
-                
-                // Handle numeric values
-                const aNum = parseFloat(aVal);
-                const bNum = parseFloat(bVal);
-                
-                if (!isNaN(aNum) && !isNaN(bNum)) {
-                    return order === 'desc' ? bNum - aNum : aNum - bNum;
+                // Handle different data types
+                if (column === 'test_date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                } else if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                } else if (typeof aVal === 'number') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
                 }
                 
-                // Handle string values
-                return order === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                if (order === 'asc') {
+                    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                } else {
+                    return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                }
             });
             
-            // Clear and re-append sorted rows
-            tbody.innerHTML = '';
-            rows.forEach(row => tbody.appendChild(row));
-            
-            // Update sort indicators
-            updateSortIndicators(column, order);
+            currentSort = { column, order };
+            updateIndustryTable(sorted);
+            updateSortIndicators();
         }
         
-        function updateSortIndicators(activeColumn, order) {
-            const headers = document.querySelectorAll('.sortable-header');
-            headers.forEach((header, index) => {
-                const arrow = header.querySelector('.sort-arrow');
-                if (index === activeColumn) {
-                    arrow.textContent = order === 'desc' ? ' ↓' : ' ↑';
-                    header.setAttribute('aria-sort', order === 'desc' ? 'descending' : 'ascending');
+        // Update table with sorted data
+        function updateIndustryTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = data.map((site, index) => `
+                <tr class="site-row">
+                    <td class="rank" aria-label="Rank ${index + 1}">#${index + 1}</td>
+                    <td>
+                        <a href="domain-${site.url.replace(/\./g, '-')}.html" 
+                           class="domain-link"
+                           aria-label="View detailed report for ${site.url}">
+                            ${site.url}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="country-${site.country.toLowerCase().replace(/\s+/g, '-')}.html" 
+                           class="country-link"
+                           aria-label="View all websites from ${site.country}">
+                            ${site.country}
+                        </a>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.performance)}" 
+                              aria-label="Performance score ${site.performance} out of 100">
+                            ${site.performance}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.accessibility)}" 
+                              aria-label="Accessibility score ${site.accessibility} out of 100">
+                            ${site.accessibility}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.seo)}" 
+                              aria-label="SEO score ${site.seo} out of 100">
+                            ${site.seo}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.best_practices)}" 
+                              aria-label="Best practices score ${site.best_practices} out of 100">
+                            ${site.best_practices}
+                        </span>
+                    </td>
+                    <td class="score-cell">
+                        <span class="score ${getScoreClass(site.pwa)}" 
+                              aria-label="PWA score ${site.pwa} out of 100">
+                            ${site.pwa}
+                        </span>
+                    </td>
+                    <td class="date" data-date="${site.test_date}">
+                        <time datetime="${site.test_date}" aria-label="Last scanned on ${new Date(site.test_date).toLocaleDateString()}">
+                            ${new Date(site.test_date).toLocaleDateString()}
+                        </time>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Helper function to get score class
+        function getScoreClass(score) {
+            if (score >= 90) return 'excellent';
+            if (score >= 50) return 'good';
+            return 'poor';
+        }
+        
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            document.querySelectorAll('.sortable-header').forEach(header => {
+                const column = header.getAttribute('data-sort');
+                header.classList.remove('sort-asc', 'sort-desc');
+                
+                if (column === currentSort.column) {
+                    header.classList.add(`sort-${currentSort.order}`);
+                    header.setAttribute('aria-sort', currentSort.order === 'asc' ? 'ascending' : 'descending');
                 } else {
-                    arrow.textContent = '';
                     header.setAttribute('aria-sort', 'none');
                 }
             });
         }
         
-        function getColumnIndex(sortType) {
-            const columnMap = {
-                'rank': 0,
-                'url': 1, 
-                'country': 2,
-                'performance': 3,
-                'accessibility': 4,
-                'seo': 5,
-                'best_practices': 6,
-                'pwa': 7,
-                'test_date': 8
-            };
-            return columnMap[sortType] || 0;
-        }
+        // Enhanced search functionality with accessibility features
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            
+            // Clear previous timeout to debounce search
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                filteredData = industryData.filter(site => 
+                    site.url.toLowerCase().includes(query) ||
+                    (site.country && site.country.toLowerCase().includes(query))
+                );
+                
+                // Re-apply current sort to filtered data
+                sortData(currentSort.column, currentSort.order);
+                
+                // Announce results to screen readers
+                let announcement = '';
+                if (query.trim() === '') {
+                    announcement = `Showing all ${industryData.length} websites in Education`;
+                } else if (filteredData.length === 0) {
+                    announcement = `No results found for "${query}" in Education`;
+                } else {
+                    announcement = `Found ${filteredData.length} result${filteredData.length === 1 ? '' : 's'} for "${query}" in Education`;
+                }
+                
+                if (liveRegion) {
+                    liveRegion.textContent = announcement;
+                }
+            }, 300);
+        });
         
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', function() {
@@ -2812,25 +2884,24 @@
             
             // Add click handlers for sortable headers
             document.querySelectorAll('.sortable-header').forEach(header => {
-                const button = header.querySelector('.sort-header-btn');
-                if (button) {
-                    button.addEventListener('click', function() {
-                        const sortType = header.getAttribute('data-sort');
-                        const column = getColumnIndex(sortType);
-                        const currentSort = header.getAttribute('aria-sort');
-                        const newOrder = currentSort === 'descending' ? 'asc' : 'desc';
-                        sortData(column, newOrder);
-                    });
-                }
+                header.addEventListener('click', function() {
+                    const column = this.getAttribute('data-sort');
+                    const newOrder = (currentSort.column === column && currentSort.order === 'asc') ? 'desc' : 'asc';
+                    sortData(column, newOrder);
+                });
             });
             
             // Add click handlers for quick sort buttons
             document.querySelectorAll('.sort-btn').forEach(button => {
                 button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
                     const sortType = this.getAttribute('data-sort');
                     const order = this.getAttribute('data-order') || 'desc';
-                    const column = getColumnIndex(sortType);
-                    sortData(column, order);
+                    sortData(sortType, order);
                 });
             });
         });
