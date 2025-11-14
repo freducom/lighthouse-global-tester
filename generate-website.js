@@ -1077,7 +1077,7 @@ ${this.getFooterHTML(allScores.length, this.domainsData.length)}
                 <form id="websiteForm" onsubmit="submitWebsiteForm(event)">
                     <div class="form-group">
                         <label for="domain">Website Domain <span class="required">*</span></label>
-                        <input type="url" id="domain" name="domain" placeholder="https://example.com" required>
+                        <input type="text" id="domain" name="domain" placeholder="https://example.com" required>
                         <small>Enter the full website URL including https://</small>
                     </div>
                     
@@ -3950,7 +3950,7 @@ body {
 
 .btn-see-all {
     display: inline-block;
-    background: linear-gradient(135deg, #0D3B66 0%, #42a5f5 100%);
+    background: #0D3B66;
     color: white !important;
     padding: 12px 24px;
     border-radius: 24px;
@@ -3961,7 +3961,7 @@ body {
 }
 
 .btn-see-all:hover {
-    background: linear-gradient(135deg, #166dd4 0%, #3a93d4 100%);
+    background: #166dd4;
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(24, 119, 242, 0.4);
     color: white !important;

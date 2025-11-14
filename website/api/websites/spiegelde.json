@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:14.870Z",
+    "generated_at": "2025-11-14T08:57:17.994Z",
     "url": "spiegel.de",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 44,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 86,
     "pwa": 78,
-    "test_date": "2025-11-07 08:16:31"
+    "test_date": "2025-11-14 08:18:27"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 78,
+      "test_date": "2025-11-14 08:18:27"
+    },
     {
       "performance": 49,
       "accessibility": 98,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": -5,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": -7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-07 08:16:31",
-    "test_date_previous": "2025-10-31 08:14:57"
+    "test_date_current": "2025-11-14 08:18:27",
+    "test_date_previous": "2025-11-07 08:16:31"
   }
 }

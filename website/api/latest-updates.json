@@ -1,43 +1,43 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:15.180Z",
+    "generated_at": "2025-11-14T08:57:18.382Z",
     "scan_count": 1,
-    "scan_date": "2025-11-14 06:28:46"
+    "scan_date": "2025-11-14 08:35:36"
   },
   "results": [
     {
-      "url": "solita.fi",
-      "country": "Finland",
-      "industry": "Consulting",
+      "url": "stanford.edu",
+      "country": "United States",
+      "industry": "Education",
       "scores": {
-        "performance": 32,
-        "accessibility": 91,
+        "performance": 58,
+        "accessibility": 0,
         "best_practices": 100,
-        "seo": 79,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-14 06:28:46"
+      "test_date": "2025-11-14 08:35:36"
     }
   ],
   "summary": {
     "averages": {
-      "performance": 32,
-      "accessibility": 91,
+      "performance": 58,
+      "accessibility": 0,
       "best_practices": 100,
-      "seo": 79,
+      "seo": 93,
       "pwa": 33
     },
     "top_performers": [
       {
-        "url": "solita.fi",
-        "country": "Finland",
-        "industry": "Consulting",
-        "performance": 32,
-        "accessibility": 91,
+        "url": "stanford.edu",
+        "country": "United States",
+        "industry": "Education",
+        "performance": 58,
+        "accessibility": 0,
         "best_practices": 100,
-        "seo": 79,
+        "seo": 93,
         "pwa": 33,
-        "test_date": "2025-11-14 06:28:46"
+        "test_date": "2025-11-14 08:35:36"
       }
     ],
     "countries_scanned": 1,

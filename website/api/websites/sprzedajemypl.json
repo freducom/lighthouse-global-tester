@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:15.012Z",
+    "generated_at": "2025-11-14T08:57:18.131Z",
     "url": "sprzedajemy.pl",
     "country": "Poland",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 35,
     "accessibility": 92,
     "best_practices": 92,
     "seo": 100,
     "pwa": 89,
-    "test_date": "2025-11-07 08:26:34"
+    "test_date": "2025-11-14 08:31:04"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-14 08:31:04"
+    },
     {
       "performance": 34,
       "accessibility": 92,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-07 08:26:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 08:31:04",
+    "test_date_previous": "2025-11-07 08:26:34"
+  }
 }

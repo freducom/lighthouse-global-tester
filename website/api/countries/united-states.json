@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:13.060Z",
+    "generated_at": "2025-11-14T08:57:15.934Z",
     "country": "United States",
     "flag": "🇺🇸",
     "website_count": 128
@@ -350,6 +350,18 @@
       "test_date": "2025-11-09 08:17:06"
     },
     {
+      "url": "stanford.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 58,
+        "accessibility": 0,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 08:35:36"
+    },
+    {
       "url": "stripe.com",
       "industry": "Finance",
       "scores": {
@@ -384,18 +396,6 @@
         "pwa": 89
       },
       "test_date": "2025-10-23 07:00:37"
-    },
-    {
-      "url": "stanford.edu",
-      "industry": "Education",
-      "scores": {
-        "performance": 54,
-        "accessibility": 0,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-11-07 08:31:01"
     },
     {
       "url": "oracle.com",
@@ -1466,18 +1466,6 @@
       "test_date": "2025-10-23 07:31:01"
     },
     {
-      "url": "southwest.com",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 23,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-11-07 08:14:29"
-    },
-    {
       "url": "aa.com",
       "industry": "Transportation",
       "scores": {
@@ -1536,6 +1524,18 @@
         "pwa": 33
       },
       "test_date": "2025-11-11 22:16:40"
+    },
+    {
+      "url": "southwest.com",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 12,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 08:13:59"
     },
     {
       "url": "bestbuy.com",
@@ -1786,7 +1786,7 @@
       "industry": "Transportation",
       "website_count": 6,
       "averages": {
-        "performance": 29,
+        "performance": 27,
         "accessibility": 93,
         "best_practices": 76,
         "seo": 94,

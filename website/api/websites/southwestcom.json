@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:15.158Z",
+    "generated_at": "2025-11-14T08:57:18.360Z",
     "url": "southwest.com",
     "country": "United States",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 23,
-    "accessibility": 94,
+    "performance": 12,
+    "accessibility": 91,
     "best_practices": 83,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-11-07 08:14:29"
+    "test_date": "2025-11-14 08:13:59"
   },
   "historical_data": [
+    {
+      "performance": 12,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-14 08:13:59"
+    },
     {
       "performance": 23,
       "accessibility": 94,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 6,
-    "accessibility": 1,
+    "performance": -11,
+    "accessibility": -3,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-07 08:14:29",
-    "test_date_previous": "2025-10-31 08:13:11"
+    "test_date_current": "2025-11-14 08:13:59",
+    "test_date_previous": "2025-11-07 08:14:29"
   }
 }

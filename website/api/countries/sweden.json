@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:13.345Z",
+    "generated_at": "2025-11-14T08:57:16.224Z",
     "country": "Sweden",
     "flag": "🇸🇪",
     "website_count": 101
@@ -38,18 +38,6 @@
       "test_date": "2025-11-12 06:18:09"
     },
     {
-      "url": "standoutcapital.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 90,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-11-07 08:30:05"
-    },
-    {
       "url": "apotea.se",
       "industry": "E-commerce",
       "scores": {
@@ -60,6 +48,18 @@
         "pwa": 33
       },
       "test_date": "2025-11-09 08:16:53"
+    },
+    {
+      "url": "standoutcapital.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 89,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 08:34:41"
     },
     {
       "url": "adlibris.com",
@@ -950,6 +950,18 @@
       "test_date": "2025-11-12 20:22:17"
     },
     {
+      "url": "spotify.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 97,
+        "pwa": 78
+      },
+      "test_date": "2025-11-14 08:28:57"
+    },
+    {
       "url": "coop.se",
       "industry": "E-commerce",
       "scores": {
@@ -1190,18 +1202,6 @@
       "test_date": "2025-11-11 10:11:45"
     },
     {
-      "url": "spotify.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 22,
-        "accessibility": 93,
-        "best_practices": 83,
-        "seo": 97,
-        "pwa": 78
-      },
-      "test_date": "2025-11-07 08:24:27"
-    },
-    {
       "url": "halebop.se",
       "industry": "Telecom",
       "scores": {
@@ -1440,7 +1440,7 @@
       "industry": "Media",
       "website_count": 9,
       "averages": {
-        "performance": 51,
+        "performance": 52,
         "accessibility": 96,
         "best_practices": 94,
         "seo": 95,

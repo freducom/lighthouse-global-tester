@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-14T08:39:13.115Z",
+    "generated_at": "2025-11-14T08:57:15.988Z",
     "country": "Germany",
     "flag": "🇩🇪",
     "website_count": 38
@@ -14,18 +14,6 @@
   },
   "websites": [
     {
-      "url": "sparda-bank.de",
-      "industry": "Finance",
-      "scores": {
-        "performance": 88,
-        "accessibility": 93,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-11-07 08:15:45"
-    },
-    {
       "url": "web.de",
       "industry": "Portal",
       "scores": {
@@ -36,6 +24,18 @@
         "pwa": 33
       },
       "test_date": "2025-11-08 12:18:38"
+    },
+    {
+      "url": "sparda-bank.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 87,
+        "accessibility": 93,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 08:17:38"
     },
     {
       "url": "gmx.net",
@@ -98,6 +98,18 @@
       "test_date": "2025-11-09 18:18:03"
     },
     {
+      "url": "sparkasse.de",
+      "industry": "Finance",
+      "scores": {
+        "performance": 61,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 56
+      },
+      "test_date": "2025-11-14 08:17:59"
+    },
+    {
       "url": "boerse.de",
       "industry": "Finance",
       "scores": {
@@ -156,18 +168,6 @@
         "pwa": 33
       },
       "test_date": "2025-11-10 03:14:07"
-    },
-    {
-      "url": "spiegel.de",
-      "industry": "Media",
-      "scores": {
-        "performance": 49,
-        "accessibility": 98,
-        "best_practices": 100,
-        "seo": 86,
-        "pwa": 78
-      },
-      "test_date": "2025-11-07 08:16:31"
     },
     {
       "url": "idealo.de",
@@ -230,6 +230,18 @@
       "test_date": "2025-11-10 03:14:45"
     },
     {
+      "url": "spiegel.de",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 78
+      },
+      "test_date": "2025-11-14 08:18:27"
+    },
+    {
       "url": "tagesschau.de",
       "industry": "Media",
       "scores": {
@@ -264,18 +276,6 @@
         "pwa": 33
       },
       "test_date": "2025-11-09 16:16:05"
-    },
-    {
-      "url": "sparkasse.de",
-      "industry": "Finance",
-      "scores": {
-        "performance": 40,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 56
-      },
-      "test_date": "2025-11-07 08:16:04"
     },
     {
       "url": "zeit.de",
@@ -497,8 +497,8 @@
       "industry": "Finance",
       "website_count": 11,
       "averages": {
-        "performance": 52,
-        "accessibility": 93,
+        "performance": 54,
+        "accessibility": 94,
         "best_practices": 91,
         "seo": 91,
         "pwa": 39
@@ -519,7 +519,7 @@
       "industry": "Media",
       "website_count": 13,
       "averages": {
-        "performance": 41,
+        "performance": 40,
         "accessibility": 91,
         "best_practices": 94,
         "seo": 95,
