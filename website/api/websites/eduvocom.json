@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.119Z",
+    "generated_at": "2025-11-14T08:39:14.809Z",
     "url": "eduvo.com",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 50,
+    "performance": 54,
     "accessibility": 82,
     "best_practices": 75,
     "seo": 79,
     "pwa": 33,
-    "test_date": "2025-11-03 12:31:06"
+    "test_date": "2025-11-10 12:32:09"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 82,
+      "best_practices": 75,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-11-10 12:32:09"
+    },
     {
       "performance": 50,
       "accessibility": 82,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:31:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:32:09",
+    "test_date_previous": "2025-11-03 12:31:06"
+  }
 }

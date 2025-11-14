@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.218Z",
+    "generated_at": "2025-11-14T08:39:15.115Z",
     "url": "standard.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 70,
-    "accessibility": 80,
-    "best_practices": 92,
-    "seo": 100,
+    "performance": 37,
+    "accessibility": 78,
+    "best_practices": 83,
+    "seo": 99,
     "pwa": 78,
-    "test_date": "2025-10-31 08:26:23"
+    "test_date": "2025-11-07 08:29:19"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 78,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 78,
+      "test_date": "2025-11-07 08:29:19"
+    },
     {
       "performance": 70,
       "accessibility": 80,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 41,
-    "accessibility": -1,
-    "best_practices": 9,
-    "seo": 0,
+    "performance": -33,
+    "accessibility": -2,
+    "best_practices": -9,
+    "seo": -1,
     "pwa": 0,
-    "test_date_current": "2025-10-31 08:26:23",
-    "test_date_previous": "2025-10-24 00:52:25"
+    "test_date_current": "2025-11-07 08:29:19",
+    "test_date_previous": "2025-10-31 08:26:23"
   }
 }

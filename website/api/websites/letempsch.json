@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.101Z",
+    "generated_at": "2025-11-14T08:39:15.086Z",
     "url": "letemps.ch",
     "country": "Switzerland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 35,
     "accessibility": 100,
     "best_practices": 83,
     "seo": 100,
     "pwa": 89,
-    "test_date": "2025-10-29 07:47:54"
+    "test_date": "2025-11-12 04:20:41"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-12 04:20:41"
+    },
+    {
+      "performance": 34,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-05 04:17:50"
+    },
     {
       "performance": 37,
       "accessibility": 100,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 1,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 07:47:54",
-    "test_date_previous": "2025-10-29 06:20:39"
+    "test_date_current": "2025-11-12 04:20:41",
+    "test_date_previous": "2025-11-05 04:17:50"
   }
 }

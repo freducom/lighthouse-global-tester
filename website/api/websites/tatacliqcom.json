@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.526Z",
+    "generated_at": "2025-11-14T08:39:14.924Z",
     "url": "tatacliq.com",
     "country": "India",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 35,
     "accessibility": 91,
-    "best_practices": 67,
+    "best_practices": 58,
     "seo": 100,
     "pwa": 100,
-    "test_date": "2025-10-31 14:22:45"
+    "test_date": "2025-11-07 14:23:53"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 91,
+      "best_practices": 58,
+      "seo": 100,
+      "pwa": 100,
+      "test_date": "2025-11-07 14:23:53"
+    },
     {
       "performance": 37,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 14:22:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 14:23:53",
+    "test_date_previous": "2025-10-31 14:22:45"
+  }
 }

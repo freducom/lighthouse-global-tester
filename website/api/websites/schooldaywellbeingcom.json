@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.203Z",
+    "generated_at": "2025-11-14T08:39:14.839Z",
     "url": "schooldaywellbeing.com",
     "country": "Finland",
     "industry": "Edtech"
@@ -11,9 +11,25 @@
     "best_practices": 67,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-10-31 00:51:51"
+    "test_date": "2025-11-14 00:55:17"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 90,
+      "best_practices": 67,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:55:17"
+    },
+    {
+      "performance": 53,
+      "accessibility": 90,
+      "best_practices": 67,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:53:01"
+    },
     {
       "performance": 55,
       "accessibility": 90,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:51:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:55:17",
+    "test_date_previous": "2025-11-07 00:53:01"
+  }
 }

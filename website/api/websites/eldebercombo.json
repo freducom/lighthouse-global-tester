@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.945Z",
+    "generated_at": "2025-11-14T08:39:14.756Z",
     "url": "eldeber.com.bo",
     "country": "Bolivia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
+    "performance": 32,
     "accessibility": 88,
-    "best_practices": 75,
+    "best_practices": 58,
     "seo": 83,
     "pwa": 44,
-    "test_date": "2025-11-03 14:18:09"
+    "test_date": "2025-11-10 14:18:10"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 88,
+      "best_practices": 58,
+      "seo": 83,
+      "pwa": 44,
+      "test_date": "2025-11-10 14:18:10"
+    },
     {
       "performance": 27,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:18:09"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": -17,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:18:10",
+    "test_date_previous": "2025-11-03 14:18:09"
+  }
 }

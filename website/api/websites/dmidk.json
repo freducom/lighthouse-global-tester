@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.043Z",
+    "generated_at": "2025-11-14T08:39:14.790Z",
     "url": "dmi.dk",
     "country": "Denmark",
     "industry": "Weather"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 37,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-03 10:12:06"
+    "test_date": "2025-11-10 10:12:16"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-10 10:12:16"
+    },
     {
       "performance": 25,
       "accessibility": 94,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -23,
+    "performance": 12,
     "accessibility": 0,
-    "best_practices": 8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 10:12:06",
-    "test_date_previous": "2025-10-27 10:24:29"
+    "test_date_current": "2025-11-10 10:12:16",
+    "test_date_previous": "2025-11-03 10:12:06"
   }
 }

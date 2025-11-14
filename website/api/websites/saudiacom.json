@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.892Z",
+    "generated_at": "2025-11-14T08:39:15.026Z",
     "url": "saudia.com",
     "country": "Saudi Arabia",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 31,
-    "accessibility": 95,
+    "performance": 28,
+    "accessibility": 89,
     "best_practices": 0,
-    "seo": 91,
+    "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-31 00:49:17"
+    "test_date": "2025-11-14 00:51:31"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 89,
+      "best_practices": 0,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:51:31"
+    },
+    {
+      "performance": 31,
+      "accessibility": 89,
+      "best_practices": 0,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:50:27"
+    },
     {
       "performance": 31,
       "accessibility": 95,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:49:17"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:51:31",
+    "test_date_previous": "2025-11-07 00:50:27"
+  }
 }

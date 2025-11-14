@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.430Z",
+    "generated_at": "2025-11-14T08:39:15.164Z",
     "url": "utexas.edu",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 48,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-01 04:30:14"
+    "test_date": "2025-11-08 04:29:52"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-08 04:29:52"
+    },
     {
       "performance": 47,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 04:30:14"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 04:29:52",
+    "test_date_previous": "2025-11-01 04:30:14"
+  }
 }

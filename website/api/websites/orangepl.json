@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.848Z",
+    "generated_at": "2025-11-14T08:39:15.008Z",
     "url": "orange.pl",
     "country": "Poland",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 34,
     "accessibility": 98,
     "best_practices": 58,
-    "seo": 96,
+    "seo": 97,
     "pwa": 33,
-    "test_date": "2025-10-30 08:21:32"
+    "test_date": "2025-11-13 06:27:18"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 98,
+      "best_practices": 58,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-11-13 06:27:18"
+    },
+    {
+      "performance": 35,
+      "accessibility": 98,
+      "best_practices": 58,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-11-06 06:24:24"
+    },
     {
       "performance": 37,
       "accessibility": 98,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -3,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 08:21:32",
-    "test_date_previous": "2025-10-23 03:00:12"
+    "test_date_current": "2025-11-13 06:27:18",
+    "test_date_previous": "2025-11-06 06:24:24"
   }
 }

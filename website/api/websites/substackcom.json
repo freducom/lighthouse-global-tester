@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.386Z",
+    "generated_at": "2025-11-14T08:39:15.159Z",
     "url": "substack.com",
     "country": "United States",
     "industry": "Media"
@@ -11,9 +11,17 @@
     "best_practices": 92,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-10-31 10:20:20"
+    "test_date": "2025-11-07 10:21:26"
   },
   "historical_data": [
+    {
+      "performance": 87,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-07 10:21:26"
+    },
     {
       "performance": 87,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 10:20:20"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 10:21:26",
+    "test_date_previous": "2025-10-31 10:20:20"
+  }
 }

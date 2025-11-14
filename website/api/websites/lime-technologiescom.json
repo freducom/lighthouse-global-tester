@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.033Z",
+    "generated_at": "2025-11-14T08:39:15.065Z",
     "url": "lime-technologies.com",
     "country": "Sweden",
     "industry": "CRM"
   },
   "latest_scores": {
-    "performance": 31,
+    "performance": 26,
     "accessibility": 89,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-29 07:51:26"
+    "test_date": "2025-11-12 06:16:24"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 89,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-12 06:16:24"
+    },
+    {
+      "performance": 30,
+      "accessibility": 89,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-05 06:15:31"
+    },
     {
       "performance": 31,
       "accessibility": 89,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -4,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 07:51:26",
-    "test_date_previous": "2025-10-29 06:24:23"
+    "test_date_current": "2025-11-12 06:16:24",
+    "test_date_previous": "2025-11-05 06:15:31"
   }
 }

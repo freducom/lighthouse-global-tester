@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.525Z",
+    "generated_at": "2025-11-14T08:39:14.924Z",
     "url": "swiggy.com",
     "country": "India",
     "industry": "Delivery"
@@ -11,9 +11,17 @@
     "best_practices": 0,
     "seo": 99,
     "pwa": 89,
-    "test_date": "2025-10-31 12:22:06"
+    "test_date": "2025-11-07 12:23:15"
   },
   "historical_data": [
+    {
+      "performance": 24,
+      "accessibility": 79,
+      "best_practices": 0,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-07 12:23:15"
+    },
     {
       "performance": 24,
       "accessibility": 79,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 12:22:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 12:23:15",
+    "test_date_previous": "2025-10-31 12:22:06"
+  }
 }

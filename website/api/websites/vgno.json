@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.817Z",
+    "generated_at": "2025-11-14T08:39:14.994Z",
     "url": "vg.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 50,
+    "performance": 48,
     "accessibility": 93,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-01 08:11:40"
+    "test_date": "2025-11-08 08:13:27"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-08 08:13:27"
+    },
     {
       "performance": 50,
       "accessibility": 93,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 08:11:40",
-    "test_date_previous": "2025-10-24 22:15:38"
+    "test_date_current": "2025-11-08 08:13:27",
+    "test_date_previous": "2025-11-01 08:11:40"
   }
 }

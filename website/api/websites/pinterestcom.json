@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.363Z",
+    "generated_at": "2025-11-14T08:39:15.152Z",
     "url": "pinterest.com",
     "country": "United States",
     "industry": "Social"
   },
   "latest_scores": {
-    "performance": 0,
+    "performance": 26,
     "accessibility": 100,
-    "best_practices": 83,
+    "best_practices": 92,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-10-30 13:34:00"
+    "test_date": "2025-11-13 12:18:35"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-11-13 12:18:35"
+    },
+    {
+      "performance": 0,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-11-06 12:18:06"
+    },
     {
       "performance": 0,
       "accessibility": 100,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -46,
-    "accessibility": 2,
-    "best_practices": 0,
+    "performance": 26,
+    "accessibility": 0,
+    "best_practices": 9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 13:34:00",
-    "test_date_previous": "2025-10-30 12:32:16"
+    "test_date_current": "2025-11-13 12:18:35",
+    "test_date_previous": "2025-11-06 12:18:06"
   }
 }

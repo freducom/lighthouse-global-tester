@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.600Z",
+    "generated_at": "2025-11-14T08:39:14.942Z",
     "url": "rte.ie",
     "country": "Ireland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 24,
+    "performance": 41,
     "accessibility": 85,
     "best_practices": 83,
     "seo": 84,
     "pwa": 56,
-    "test_date": "2025-10-30 22:09:50"
+    "test_date": "2025-11-13 22:11:02"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 56,
+      "test_date": "2025-11-13 22:11:02"
+    },
+    {
+      "performance": 39,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 56,
+      "test_date": "2025-11-06 22:09:43"
+    },
     {
       "performance": 24,
       "accessibility": 85,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -10,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 22:09:50",
-    "test_date_previous": "2025-10-23 16:42:48"
+    "test_date_current": "2025-11-13 22:11:02",
+    "test_date_previous": "2025-11-06 22:09:43"
   }
 }

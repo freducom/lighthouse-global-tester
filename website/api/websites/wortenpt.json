@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.866Z",
+    "generated_at": "2025-11-14T08:39:15.016Z",
     "url": "worten.pt",
     "country": "Portugal",
     "industry": "E-commerce"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 75,
     "pwa": 33,
-    "test_date": "2025-11-01 14:14:57"
+    "test_date": "2025-11-08 14:09:35"
   },
   "historical_data": [
+    {
+      "performance": 89,
+      "accessibility": 81,
+      "best_practices": 83,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-08 14:09:35"
+    },
     {
       "performance": 89,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 14:14:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 14:09:35",
+    "test_date_previous": "2025-11-01 14:14:57"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.970Z",
+    "generated_at": "2025-11-14T08:39:15.044Z",
     "url": "1177.se",
     "country": "Sweden",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 18,
+    "performance": 33,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 100,
     "pwa": 89,
-    "test_date": "2025-11-02 00:46:09"
+    "test_date": "2025-11-09 00:46:04"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-09 00:46:04"
+    },
     {
       "performance": 18,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -16,
+    "performance": 15,
     "accessibility": 0,
-    "best_practices": 17,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 00:46:09",
-    "test_date_previous": "2025-10-26 19:25:10"
+    "test_date_current": "2025-11-09 00:46:04",
+    "test_date_previous": "2025-11-02 00:46:09"
   }
 }

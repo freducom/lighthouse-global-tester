@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.016Z",
+    "generated_at": "2025-11-14T08:39:15.057Z",
     "url": "foretagarna.se",
     "country": "Sweden",
     "industry": "Business"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 53,
     "accessibility": 84,
     "best_practices": 92,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-11-03 22:21:11"
+    "test_date": "2025-11-10 22:22:12"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 84,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-11-10 22:22:12"
+    },
     {
       "performance": 55,
       "accessibility": 84,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 22:21:11"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 22:22:12",
+    "test_date_previous": "2025-11-03 22:21:11"
+  }
 }

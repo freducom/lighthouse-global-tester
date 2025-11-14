@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.821Z",
+    "generated_at": "2025-11-14T08:39:14.996Z",
     "url": "hbl.com",
     "country": "Pakistan",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 0,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-11-04 09:06:06"
+    "test_date": "2025-11-11 08:13:36"
   },
   "historical_data": [
+    {
+      "performance": 0,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-11 08:13:36"
+    },
     {
       "performance": 32,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -5,
+    "performance": -32,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 09:06:06",
-    "test_date_previous": "2025-11-04 08:13:49"
+    "test_date_current": "2025-11-11 08:13:36",
+    "test_date_previous": "2025-11-04 09:06:06"
   }
 }

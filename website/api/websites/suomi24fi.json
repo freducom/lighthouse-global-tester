@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.213Z",
+    "generated_at": "2025-11-14T08:39:14.843Z",
     "url": "suomi24.fi",
     "country": "Finland",
     "industry": "Social Media"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 34,
     "accessibility": 78,
-    "best_practices": 75,
+    "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-24 04:12:00"
+    "test_date": "2025-11-07 10:22:13"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 78,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-07 10:22:13"
+    },
     {
       "performance": 33,
       "accessibility": 78,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -31,
+    "performance": 1,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-24 04:12:00",
-    "test_date_previous": "2025-10-19 20:16:10"
+    "test_date_current": "2025-11-07 10:22:13",
+    "test_date_previous": "2025-10-24 04:12:00"
   }
 }

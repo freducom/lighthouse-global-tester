@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:38.344Z",
+    "generated_at": "2025-11-14T08:39:10.650Z",
     "api_version": "1.0",
-    "total_websites": 1018,
-    "countries_count": 70,
+    "total_websites": 1048,
+    "countries_count": 71,
     "industries_count": 50,
-    "last_scan_date": "2025-11-04 10:28:29"
+    "last_scan_date": "2025-11-14 06:28:46"
   },
   "global_averages": {
     "performance": 45,
@@ -17,48 +17,48 @@
   "top_performers": {
     "performance": [
       {
-        "url": "myntra.com",
-        "country": "India",
-        "industry": "E-commerce",
-        "performance": 100,
-        "accessibility": 86,
-        "best_practices": 92,
-        "seo": 58,
-        "pwa": 0,
-        "test_date": "2025-10-29 20:15:22"
-      },
-      {
-        "url": "swh.lv",
-        "country": "Latvia",
-        "industry": "Media",
-        "performance": 100,
-        "accessibility": 78,
-        "best_practices": 75,
-        "seo": 67,
-        "pwa": 0,
-        "test_date": "2025-10-31 12:21:12"
-      },
-      {
-        "url": "berkshirehathaway.com",
-        "country": "United States",
-        "industry": "Finance",
-        "performance": 100,
-        "accessibility": 88,
-        "best_practices": 75,
-        "seo": 67,
-        "pwa": 0,
-        "test_date": "2025-11-02 14:10:06"
-      },
-      {
         "url": "sbi.co.in",
         "country": "India",
         "industry": "Finance",
-        "performance": 99,
+        "performance": 100,
         "accessibility": 77,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33,
-        "test_date": "2025-10-31 00:50:50"
+        "test_date": "2025-11-14 00:54:15"
+      },
+      {
+        "url": "sol.bo",
+        "country": "Bolivia",
+        "industry": "Portal",
+        "performance": 99,
+        "accessibility": 89,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-14 06:28:25"
+      },
+      {
+        "url": "flipsite.io",
+        "country": "Finland",
+        "industry": "Website editor",
+        "performance": 99,
+        "accessibility": 98,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-10 22:12:39"
+      },
+      {
+        "url": "myntra.com",
+        "country": "India",
+        "industry": "E-commerce",
+        "performance": 99,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 58,
+        "pwa": 0,
+        "test_date": "2025-11-12 18:19:53"
       },
       {
         "url": "uidai.gov.in",
@@ -69,29 +69,40 @@
         "best_practices": 92,
         "seo": 92,
         "pwa": 33,
-        "test_date": "2025-11-01 03:16:36"
+        "test_date": "2025-11-08 03:09:20"
       },
       {
         "url": "irna.ir",
         "country": "Iran",
         "industry": "Media",
         "performance": 99,
-        "accessibility": 91,
-        "best_practices": 100,
-        "seo": 75,
+        "accessibility": 74,
+        "best_practices": 0,
+        "seo": 84,
         "pwa": 33,
-        "test_date": "2025-10-28 20:33:40"
+        "test_date": "2025-11-11 18:28:15"
       },
       {
-        "url": "isna.ir",
-        "country": "Iran",
+        "url": "swh.lv",
+        "country": "Latvia",
         "industry": "Media",
         "performance": 99,
-        "accessibility": 91,
-        "best_practices": 0,
-        "seo": 89,
-        "pwa": 33,
-        "test_date": "2025-10-28 20:34:40"
+        "accessibility": 78,
+        "best_practices": 75,
+        "seo": 67,
+        "pwa": 0,
+        "test_date": "2025-11-07 12:22:54"
+      },
+      {
+        "url": "berkshirehathaway.com",
+        "country": "United States",
+        "industry": "Finance",
+        "performance": 99,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 67,
+        "pwa": 0,
+        "test_date": "2025-11-09 14:04:36"
       },
       {
         "url": "zambiatoday.com",
@@ -105,94 +116,72 @@
         "test_date": "2025-11-01 18:15:02"
       },
       {
-        "url": "sol.bo",
-        "country": "Bolivia",
-        "industry": "Portal",
-        "performance": 98,
-        "accessibility": 89,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-31 06:28:17"
-      },
-      {
-        "url": "liu.se",
-        "country": "Sweden",
-        "industry": "Education",
-        "performance": 98,
+        "url": "amazon.com.mx",
+        "country": "Mexico",
+        "industry": "E-commerce",
+        "performance": 94,
         "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
+        "best_practices": 92,
+        "seo": 85,
         "pwa": 33,
-        "test_date": "2025-10-29 08:15:14"
+        "test_date": "2025-11-09 06:18:15"
       }
     ],
     "accessibility": [
-      {
-        "url": "liu.se",
-        "country": "Sweden",
-        "industry": "Education",
-        "performance": 98,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
-        "pwa": 33,
-        "test_date": "2025-10-29 08:15:14"
-      },
-      {
-        "url": "bing.com",
-        "country": "United States",
-        "industry": "Search Engine",
-        "performance": 98,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 33,
-        "test_date": "2025-11-02 14:16:53"
-      },
       {
         "url": "amazon.com.mx",
         "country": "Mexico",
         "industry": "E-commerce",
         "performance": 94,
         "accessibility": 100,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 85,
         "pwa": 33,
-        "test_date": "2025-11-02 06:18:24"
-      },
-      {
-        "url": "gov.uk",
-        "country": "United Kingdom",
-        "industry": "Government",
-        "performance": 94,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
-        "pwa": 33,
-        "test_date": "2025-11-04 04:20:26"
+        "test_date": "2025-11-09 06:18:15"
       },
       {
         "url": "amazon.com",
         "country": "United States",
         "industry": "E-commerce",
-        "performance": 93,
+        "performance": 94,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 85,
         "pwa": 33,
-        "test_date": "2025-11-02 06:18:10"
+        "test_date": "2025-11-09 06:18:01"
       },
       {
         "url": "finlex.fi",
         "country": "Finland",
         "industry": "Government",
-        "performance": 92,
+        "performance": 93,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-11-03 20:22:32"
+        "test_date": "2025-11-10 20:22:47"
+      },
+      {
+        "url": "news24.lu",
+        "country": "Luxembourg",
+        "industry": "Media",
+        "performance": 93,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 89,
+        "pwa": 33,
+        "test_date": "2025-11-12 22:15:42"
+      },
+      {
+        "url": "cygni.se",
+        "country": "Sweden",
+        "industry": "Consulting",
+        "performance": 93,
+        "accessibility": 100,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33,
+        "test_date": "2025-11-10 04:26:36"
       },
       {
         "url": "amazon.in",
@@ -200,267 +189,278 @@
         "industry": "E-commerce",
         "performance": 92,
         "accessibility": 100,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 85,
         "pwa": 33,
-        "test_date": "2025-11-02 06:18:38"
+        "test_date": "2025-11-09 06:18:29"
       },
       {
-        "url": "kth.se",
+        "url": "liu.se",
         "country": "Sweden",
         "industry": "Education",
+        "performance": 91,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33,
+        "test_date": "2025-11-12 06:18:09"
+      },
+      {
+        "url": "web.de",
+        "country": "Germany",
+        "industry": "Portal",
         "performance": 87,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-11-08 12:18:38"
+      },
+      {
+        "url": "ontario.ca",
+        "country": "Canada",
+        "industry": "Government",
+        "performance": 84,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-10-29 03:16:14"
-      },
-      {
-        "url": "mitid.dk",
-        "country": "Denmark",
-        "industry": "Government",
-        "performance": 86,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 92,
-        "pwa": 67,
-        "test_date": "2025-10-29 16:34:49"
+        "test_date": "2025-11-13 06:24:10"
       },
       {
         "url": "syke.fi",
         "country": "Finland",
         "industry": "Government",
-        "performance": 86,
+        "performance": 83,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 92,
         "pwa": 33,
-        "test_date": "2025-10-31 12:22:44"
+        "test_date": "2025-11-07 12:23:52"
       }
     ],
     "best_practices": [
       {
-        "url": "liu.se",
-        "country": "Sweden",
-        "industry": "Education",
-        "performance": 98,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
-        "pwa": 33,
-        "test_date": "2025-10-29 08:15:14"
-      },
-      {
-        "url": "amazon.com.mx",
-        "country": "Mexico",
-        "industry": "E-commerce",
-        "performance": 94,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 85,
-        "pwa": 33,
-        "test_date": "2025-11-02 06:18:24"
-      },
-      {
-        "url": "gov.uk",
-        "country": "United Kingdom",
-        "industry": "Government",
-        "performance": 94,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 99,
-        "pwa": 33,
-        "test_date": "2025-11-04 04:20:26"
-      },
-      {
         "url": "amazon.com",
         "country": "United States",
         "industry": "E-commerce",
-        "performance": 93,
+        "performance": 94,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 85,
         "pwa": 33,
-        "test_date": "2025-11-02 06:18:10"
+        "test_date": "2025-11-09 06:18:01"
       },
       {
-        "url": "kth.se",
+        "url": "amazon.in",
+        "country": "India",
+        "industry": "E-commerce",
+        "performance": 92,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 33,
+        "test_date": "2025-11-09 06:18:29"
+      },
+      {
+        "url": "liu.se",
         "country": "Sweden",
         "industry": "Education",
-        "performance": 87,
+        "performance": 91,
         "accessibility": 100,
         "best_practices": 100,
-        "seo": 100,
+        "seo": 99,
         "pwa": 33,
-        "test_date": "2025-10-29 03:16:14"
-      },
-      {
-        "url": "mitid.dk",
-        "country": "Denmark",
-        "industry": "Government",
-        "performance": 86,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 92,
-        "pwa": 67,
-        "test_date": "2025-10-29 16:34:49"
+        "test_date": "2025-11-12 06:18:09"
       },
       {
         "url": "ontario.ca",
         "country": "Canada",
         "industry": "Government",
-        "performance": 85,
+        "performance": 84,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-10-30 08:18:24"
+        "test_date": "2025-11-13 06:24:10"
       },
-      {
-        "url": "polisen.se",
-        "country": "Sweden",
-        "industry": "Government",
-        "performance": 80,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 44,
-        "test_date": "2025-10-30 13:37:16"
-      },
-      {
-        "url": "doktor.se",
-        "country": "Sweden",
-        "industry": "Healthtech",
-        "performance": 79,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-11-03 10:15:31"
-      },
-      {
-        "url": "emathstudio.com",
-        "country": "Finland",
-        "industry": "Edtech",
-        "performance": 78,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-11-03 16:19:19"
-      }
-    ],
-    "seo": [
       {
         "url": "kth.se",
         "country": "Sweden",
         "industry": "Education",
-        "performance": 87,
+        "performance": 83,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-10-29 03:16:14"
-      },
-      {
-        "url": "ontario.ca",
-        "country": "Canada",
-        "industry": "Government",
-        "performance": 85,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-30 08:18:24"
-      },
-      {
-        "url": "polisen.se",
-        "country": "Sweden",
-        "industry": "Government",
-        "performance": 80,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 44,
-        "test_date": "2025-10-30 13:37:16"
-      },
-      {
-        "url": "doktor.se",
-        "country": "Sweden",
-        "industry": "Healthtech",
-        "performance": 79,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-11-03 10:15:31"
-      },
-      {
-        "url": "emathstudio.com",
-        "country": "Finland",
-        "industry": "Edtech",
-        "performance": 78,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-11-03 16:19:19"
+        "test_date": "2025-11-12 00:51:56"
       },
       {
         "url": "sandvik.com",
         "country": "Sweden",
         "industry": "Industry",
-        "performance": 70,
+        "performance": 82,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-10-31 00:43:35"
+        "test_date": "2025-11-14 00:45:38"
+      },
+      {
+        "url": "emathstudio.com",
+        "country": "Finland",
+        "industry": "Edtech",
+        "performance": 80,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-10 16:22:21"
+      },
+      {
+        "url": "polisen.se",
+        "country": "Sweden",
+        "industry": "Government",
+        "performance": 80,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44,
+        "test_date": "2025-11-13 12:21:58"
+      },
+      {
+        "url": "dn.se",
+        "country": "Sweden",
+        "industry": "Media",
+        "performance": 73,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33,
+        "test_date": "2025-11-10 10:12:31"
+      },
+      {
+        "url": "gov.uk",
+        "country": "United Kingdom",
+        "industry": "Government",
+        "performance": 73,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 99,
+        "pwa": 33,
+        "test_date": "2025-11-11 04:18:40"
+      }
+    ],
+    "seo": [
+      {
+        "url": "ontario.ca",
+        "country": "Canada",
+        "industry": "Government",
+        "performance": 84,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-13 06:24:10"
+      },
+      {
+        "url": "kth.se",
+        "country": "Sweden",
+        "industry": "Education",
+        "performance": 83,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-12 00:51:56"
+      },
+      {
+        "url": "sandvik.com",
+        "country": "Sweden",
+        "industry": "Industry",
+        "performance": 82,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-14 00:45:38"
+      },
+      {
+        "url": "emathstudio.com",
+        "country": "Finland",
+        "industry": "Edtech",
+        "performance": 80,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-10 16:22:21"
+      },
+      {
+        "url": "polisen.se",
+        "country": "Sweden",
+        "industry": "Government",
+        "performance": 80,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 44,
+        "test_date": "2025-11-13 12:21:58"
+      },
+      {
+        "url": "nhs.uk",
+        "country": "United Kingdom",
+        "industry": "Government",
+        "performance": 72,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-12 22:20:11"
+      },
+      {
+        "url": "doktor.se",
+        "country": "Sweden",
+        "industry": "Healthtech",
+        "performance": 66,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 33,
+        "test_date": "2025-11-10 10:15:40"
       },
       {
         "url": "tv2.dk",
         "country": "Denmark",
         "industry": "Media",
-        "performance": 64,
+        "performance": 63,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-11-01 00:50:24"
+        "test_date": "2025-11-08 00:49:38"
       },
       {
-        "url": "dnb.no",
-        "country": "Norway",
-        "industry": "Finance",
+        "url": "regionstockholm.se",
+        "country": "Sweden",
+        "industry": "Healthcare",
         "performance": 59,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-11-03 10:14:23"
+        "test_date": "2025-11-13 20:11:11"
       },
       {
         "url": "tuni.fi",
         "country": "Finland",
         "industry": "Education",
-        "performance": 54,
+        "performance": 55,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 44,
-        "test_date": "2025-11-01 00:49:31"
-      },
-      {
-        "url": "telenor.se",
-        "country": "Sweden",
-        "industry": "Telecom",
-        "performance": 53,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 100,
-        "pwa": 56,
-        "test_date": "2025-10-31 16:23:42"
+        "test_date": "2025-11-08 00:47:40"
       }
     ],
     "pwa": [
@@ -468,89 +468,89 @@
         "url": "verkkokauppa.com",
         "country": "Finland",
         "industry": "E-commerce",
-        "performance": 39,
+        "performance": 44,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 100,
         "pwa": 100,
-        "test_date": "2025-11-01 06:21:46"
+        "test_date": "2025-11-08 06:23:48"
       },
       {
         "url": "dw.com",
         "country": "Germany",
         "industry": "Media",
-        "performance": 41,
+        "performance": 45,
         "accessibility": 93,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 100,
         "pwa": 100,
-        "test_date": "2025-11-03 12:18:11"
-      },
-      {
-        "url": "aha.video",
-        "country": "India",
-        "industry": "Media",
-        "performance": 28,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 100,
-        "test_date": "2025-11-02 04:14:52"
+        "test_date": "2025-11-10 12:18:16"
       },
       {
         "url": "prothomalo.com",
         "country": "Bangladesh",
         "industry": "Media",
-        "performance": 25,
-        "accessibility": 97,
-        "best_practices": 67,
+        "performance": 26,
+        "accessibility": 95,
+        "best_practices": 83,
         "seo": 100,
         "pwa": 100,
-        "test_date": "2025-10-30 16:13:11"
+        "test_date": "2025-11-13 16:13:01"
+      },
+      {
+        "url": "aha.video",
+        "country": "India",
+        "industry": "Media",
+        "performance": 30,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 100,
+        "test_date": "2025-11-09 04:13:25"
       },
       {
         "url": "tatacliq.com",
         "country": "India",
         "industry": "E-commerce",
-        "performance": 37,
+        "performance": 35,
         "accessibility": 91,
-        "best_practices": 67,
+        "best_practices": 58,
         "seo": 100,
         "pwa": 100,
-        "test_date": "2025-10-31 14:22:45"
+        "test_date": "2025-11-07 14:23:53"
       },
       {
         "url": "fuzu.com",
         "country": "Finland",
         "industry": "Career",
-        "performance": 39,
+        "performance": 42,
         "accessibility": 83,
         "best_practices": 75,
         "seo": 98,
         "pwa": 100,
-        "test_date": "2025-11-04 00:50:58"
+        "test_date": "2025-11-11 00:51:59"
       },
       {
         "url": "onet.pl",
         "country": "Poland",
         "industry": "Portal",
-        "performance": 36,
+        "performance": 39,
         "accessibility": 79,
-        "best_practices": 58,
+        "best_practices": 67,
         "seo": 98,
         "pwa": 100,
-        "test_date": "2025-10-30 08:17:36"
+        "test_date": "2025-11-13 06:23:21"
       },
       {
         "url": "flipkart.com",
         "country": "India",
         "industry": "E-commerce",
-        "performance": 37,
+        "performance": 35,
         "accessibility": 83,
         "best_practices": 92,
         "seo": 93,
         "pwa": 100,
-        "test_date": "2025-11-03 22:14:04"
+        "test_date": "2025-11-10 22:12:25"
       },
       {
         "url": "hindustantimes.com",
@@ -567,28 +567,17 @@
         "url": "unian.ua",
         "country": "Ukraine",
         "industry": "Media",
-        "performance": 56,
+        "performance": 72,
         "accessibility": 85,
         "best_practices": 75,
         "seo": 93,
         "pwa": 100,
-        "test_date": "2025-11-01 04:13:12"
+        "test_date": "2025-11-08 04:12:00"
       }
     ]
   },
   "bottom_performers": {
     "performance": [
-      {
-        "url": "pinterest.com",
-        "country": "United States",
-        "industry": "Social",
-        "performance": 0,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 67,
-        "test_date": "2025-10-30 13:34:00"
-      },
       {
         "url": "2m.ma",
         "country": "Morocco",
@@ -598,18 +587,29 @@
         "best_practices": 67,
         "seo": 85,
         "pwa": 67,
-        "test_date": "2025-11-02 00:56:33"
+        "test_date": "2025-11-09 00:58:10"
       },
       {
-        "url": "btv.bg",
-        "country": "Bulgaria",
-        "industry": "Media",
+        "url": "hbl.com",
+        "country": "Pakistan",
+        "industry": "Finance",
+        "performance": 0,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33,
+        "test_date": "2025-11-11 08:13:36"
+      },
+      {
+        "url": "rozee.pk",
+        "country": "Pakistan",
+        "industry": "Jobs",
         "performance": 0,
         "accessibility": 81,
         "best_practices": 0,
         "seo": 82,
         "pwa": 33,
-        "test_date": "2025-11-02 18:15:54"
+        "test_date": "2025-11-13 20:23:05"
       },
       {
         "url": "coop.co.uk",
@@ -620,185 +620,185 @@
         "best_practices": 0,
         "seo": 75,
         "pwa": 33,
-        "test_date": "2025-11-03 03:14:32"
+        "test_date": "2025-11-10 03:15:58"
       },
       {
-        "url": "americanas.com.br",
-        "country": "Brazil",
-        "industry": "E-commerce",
-        "performance": 2,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 90,
+        "url": "ing.pl",
+        "country": "Poland",
+        "industry": "Finance",
+        "performance": 0,
+        "accessibility": 69,
+        "best_practices": 75,
+        "seo": 67,
         "pwa": 33,
-        "test_date": "2025-11-02 06:20:36"
-      },
-      {
-        "url": "elisa.ee",
-        "country": "Estonia",
-        "industry": "Telecom",
-        "performance": 3,
-        "accessibility": 88,
-        "best_practices": 83,
-        "seo": 79,
-        "pwa": 33,
-        "test_date": "2025-11-03 14:36:09"
+        "test_date": "2025-11-11 16:20:57"
       },
       {
         "url": "kaubamaja.ee",
         "country": "Estonia",
         "industry": "E-commerce",
-        "performance": 4,
+        "performance": 2,
         "accessibility": 76,
         "best_practices": 92,
         "seo": 91,
         "pwa": 78,
-        "test_date": "2025-10-28 22:23:23"
+        "test_date": "2025-11-11 20:24:40"
       },
       {
-        "url": "superbalist.com",
-        "country": "South Africa",
-        "industry": "E-commerce",
-        "performance": 5,
-        "accessibility": 85,
+        "url": "elisa.ee",
+        "country": "Estonia",
+        "industry": "Telecom",
+        "performance": 2,
+        "accessibility": 88,
         "best_practices": 83,
-        "seo": 98,
-        "pwa": 56,
-        "test_date": "2025-10-31 12:18:34"
+        "seo": 79,
+        "pwa": 33,
+        "test_date": "2025-11-10 14:36:21"
       },
       {
         "url": "mercedes-benz.de",
         "country": "Germany",
         "industry": "Automotive",
-        "performance": 5,
-        "accessibility": 100,
+        "performance": 3,
+        "accessibility": 92,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33,
-        "test_date": "2025-10-29 14:35:49"
+        "test_date": "2025-11-05 12:23:19"
       },
       {
-        "url": "play.pl",
-        "country": "Poland",
-        "industry": "Telecom",
-        "performance": 5,
-        "accessibility": 66,
-        "best_practices": 75,
-        "seo": 93,
+        "url": "americanas.com.br",
+        "country": "Brazil",
+        "industry": "E-commerce",
+        "performance": 3,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 90,
         "pwa": 33,
-        "test_date": "2025-10-30 13:35:30"
+        "test_date": "2025-11-09 06:21:37"
+      },
+      {
+        "url": "tcsion.com",
+        "country": "India",
+        "industry": "Technology",
+        "performance": 3,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 0,
+        "pwa": 33,
+        "test_date": "2025-11-07 14:25:05"
       }
     ],
     "accessibility": [
       {
-        "url": "goldmansachs.com",
-        "country": "United States",
-        "industry": "Finance",
-        "performance": 24,
-        "accessibility": 0,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 33,
-        "test_date": "2025-11-04 04:12:52"
-      },
-      {
         "url": "zalando.de",
         "country": "Germany",
         "industry": "E-commerce",
-        "performance": 27,
+        "performance": 29,
         "accessibility": 0,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 22,
-        "test_date": "2025-11-01 18:11:50"
-      },
-      {
-        "url": "denik.cz",
-        "country": "Czechia",
-        "industry": "Media",
-        "performance": 33,
-        "accessibility": 0,
-        "best_practices": 83,
-        "seo": 90,
-        "pwa": 56,
-        "test_date": "2025-11-03 06:32:18"
-      },
-      {
-        "url": "telia.se",
-        "country": "Sweden",
-        "industry": "Telecom",
-        "performance": 35,
-        "accessibility": 0,
-        "best_practices": 92,
+        "best_practices": 75,
         "seo": 100,
-        "pwa": 33,
-        "test_date": "2025-10-31 16:35:12"
+        "pwa": 22,
+        "test_date": "2025-11-08 18:12:18"
       },
       {
         "url": "newegg.com",
         "country": "United States",
         "industry": "E-commerce",
-        "performance": 39,
+        "performance": 31,
+        "accessibility": 0,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33,
+        "test_date": "2025-11-12 20:26:48"
+      },
+      {
+        "url": "telia.se",
+        "country": "Sweden",
+        "industry": "Telecom",
+        "performance": 36,
         "accessibility": 0,
         "best_practices": 92,
-        "seo": 92,
+        "seo": 100,
         "pwa": 33,
-        "test_date": "2025-10-29 22:24:18"
+        "test_date": "2025-11-07 16:33:23"
+      },
+      {
+        "url": "denik.cz",
+        "country": "Czechia",
+        "industry": "Media",
+        "performance": 41,
+        "accessibility": 0,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 56,
+        "test_date": "2025-11-10 06:34:27"
+      },
+      {
+        "url": "goldmansachs.com",
+        "country": "United States",
+        "industry": "Finance",
+        "performance": 44,
+        "accessibility": 0,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 33,
+        "test_date": "2025-11-11 04:15:24"
       },
       {
         "url": "stanford.edu",
         "country": "United States",
         "industry": "Education",
-        "performance": 42,
+        "performance": 54,
         "accessibility": 0,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33,
-        "test_date": "2025-10-31 08:28:06"
+        "test_date": "2025-11-07 08:31:01"
       },
       {
         "url": "australia.gov.au",
         "country": "Australia",
         "industry": "Government",
-        "performance": 59,
+        "performance": 61,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33,
-        "test_date": "2025-11-02 10:14:46"
+        "test_date": "2025-11-09 10:13:36"
       },
       {
         "url": "my.gov.au",
         "country": "Australia",
         "industry": "Government",
-        "performance": 61,
+        "performance": 66,
         "accessibility": 0,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33,
-        "test_date": "2025-10-29 20:13:48"
+        "test_date": "2025-11-12 18:18:24"
       },
       {
-        "url": "daraz.pk",
-        "country": "Pakistan",
-        "industry": "Marketplace",
-        "performance": 38,
-        "accessibility": 31,
-        "best_practices": 75,
-        "seo": 79,
+        "url": "sohu.com",
+        "country": "China",
+        "industry": "Portal",
+        "performance": 44,
+        "accessibility": 33,
+        "best_practices": 83,
+        "seo": 83,
         "pwa": 33,
-        "test_date": "2025-11-03 06:17:39"
+        "test_date": "2025-11-14 06:28:03"
       },
       {
         "url": "lazada.com.ph",
         "country": "Philippines",
         "industry": "E-commerce",
-        "performance": 41,
-        "accessibility": 31,
+        "performance": 46,
+        "accessibility": 36,
         "best_practices": 58,
         "seo": 86,
         "pwa": 33,
-        "test_date": "2025-10-29 04:31:27"
+        "test_date": "2025-11-12 03:19:09"
       }
     ],
     "best_practices": [
@@ -811,18 +811,18 @@
         "best_practices": 0,
         "seo": 85,
         "pwa": 89,
-        "test_date": "2025-11-01 12:24:25"
+        "test_date": "2025-11-08 12:19:15"
       },
       {
         "url": "adidas.com",
         "country": "United States",
         "industry": "Retail",
-        "performance": 86,
+        "performance": 84,
         "accessibility": 56,
         "best_practices": 0,
         "seo": 83,
         "pwa": 33,
-        "test_date": "2025-11-02 03:16:41"
+        "test_date": "2025-11-09 03:15:45"
       },
       {
         "url": "zoom.us",
@@ -839,12 +839,12 @@
         "url": "bdo.com.ph",
         "country": "Philippines",
         "industry": "Finance",
-        "performance": 28,
+        "performance": 32,
         "accessibility": 66,
         "best_practices": 0,
         "seo": 71,
         "pwa": 33,
-        "test_date": "2025-11-02 14:09:26"
+        "test_date": "2025-11-09 14:03:52"
       },
       {
         "url": "douyin.com",
@@ -853,9 +853,9 @@
         "performance": 25,
         "accessibility": 67,
         "best_practices": 0,
-        "seo": 92,
+        "seo": 79,
         "pwa": 33,
-        "test_date": "2025-11-03 10:17:29"
+        "test_date": "2025-11-10 10:16:53"
       },
       {
         "url": "coop.co.uk",
@@ -866,18 +866,40 @@
         "best_practices": 0,
         "seo": 75,
         "pwa": 33,
-        "test_date": "2025-11-03 03:14:32"
+        "test_date": "2025-11-10 03:15:58"
       },
       {
         "url": "tesla.com",
         "country": "United States",
         "industry": "Automotive",
-        "performance": 25,
+        "performance": 26,
         "accessibility": 69,
         "best_practices": 0,
         "seo": 74,
         "pwa": 67,
-        "test_date": "2025-10-24 10:16:00"
+        "test_date": "2025-11-07 18:19:35"
+      },
+      {
+        "url": "irna.ir",
+        "country": "Iran",
+        "industry": "Media",
+        "performance": 99,
+        "accessibility": 74,
+        "best_practices": 0,
+        "seo": 84,
+        "pwa": 33,
+        "test_date": "2025-11-11 18:28:15"
+      },
+      {
+        "url": "stcpay.com.sa",
+        "country": "Saudi Arabia",
+        "industry": "Finance",
+        "performance": 57,
+        "accessibility": 78,
+        "best_practices": 0,
+        "seo": 62,
+        "pwa": 11,
+        "test_date": "2025-11-07 10:14:39"
       },
       {
         "url": "altbalaji.com",
@@ -889,28 +911,6 @@
         "seo": 85,
         "pwa": 67,
         "test_date": "2025-10-26 08:02:27"
-      },
-      {
-        "url": "swiggy.com",
-        "country": "India",
-        "industry": "Delivery",
-        "performance": 24,
-        "accessibility": 79,
-        "best_practices": 0,
-        "seo": 99,
-        "pwa": 89,
-        "test_date": "2025-10-31 12:22:06"
-      },
-      {
-        "url": "btv.bg",
-        "country": "Bulgaria",
-        "industry": "Media",
-        "performance": 0,
-        "accessibility": 81,
-        "best_practices": 0,
-        "seo": 82,
-        "pwa": 33,
-        "test_date": "2025-11-02 18:15:54"
       }
     ],
     "seo": [
@@ -918,12 +918,12 @@
         "url": "tcsion.com",
         "country": "India",
         "industry": "Technology",
-        "performance": 5,
+        "performance": 3,
         "accessibility": 71,
         "best_practices": 75,
         "seo": 0,
         "pwa": 33,
-        "test_date": "2025-10-31 14:23:53"
+        "test_date": "2025-11-07 14:25:05"
       },
       {
         "url": "aiims.edu",
@@ -934,62 +934,51 @@
         "best_practices": 50,
         "seo": 50,
         "pwa": 0,
-        "test_date": "2025-11-02 04:15:41"
-      },
-      {
-        "url": "mtn.ng",
-        "country": "Nigeria",
-        "industry": "Telecom",
-        "performance": 61,
-        "accessibility": 73,
-        "best_practices": 83,
-        "seo": 58,
-        "pwa": 0,
-        "test_date": "2025-10-29 20:12:42"
+        "test_date": "2025-11-09 04:14:17"
       },
       {
         "url": "myntra.com",
         "country": "India",
         "industry": "E-commerce",
-        "performance": 100,
+        "performance": 99,
         "accessibility": 86,
         "best_practices": 92,
         "seo": 58,
         "pwa": 0,
-        "test_date": "2025-10-29 20:15:22"
+        "test_date": "2025-11-12 18:19:53"
       },
       {
         "url": "smart.com.ph",
         "country": "Philippines",
         "industry": "Telecom",
-        "performance": 21,
+        "performance": 7,
         "accessibility": 68,
-        "best_practices": 67,
+        "best_practices": 58,
         "seo": 61,
         "pwa": 33,
-        "test_date": "2025-10-31 06:15:58"
+        "test_date": "2025-11-14 06:17:17"
       },
       {
         "url": "stcpay.com.sa",
         "country": "Saudi Arabia",
         "industry": "Finance",
         "performance": 57,
-        "accessibility": 88,
+        "accessibility": 78,
         "best_practices": 0,
         "seo": 62,
         "pwa": 11,
-        "test_date": "2025-10-31 10:11:54"
+        "test_date": "2025-11-07 10:14:39"
       },
       {
         "url": "bpi.com.ph",
         "country": "Philippines",
         "industry": "Finance",
-        "performance": 27,
+        "performance": 24,
         "accessibility": 79,
         "best_practices": 83,
         "seo": 62,
         "pwa": 33,
-        "test_date": "2025-11-02 16:19:54"
+        "test_date": "2025-11-09 16:20:50"
       },
       {
         "url": "epfindia.gov.in",
@@ -1000,29 +989,40 @@
         "best_practices": 83,
         "seo": 62,
         "pwa": 0,
-        "test_date": "2025-11-03 16:23:45"
+        "test_date": "2025-11-10 16:24:55"
       },
       {
         "url": "libyaobserver.ly",
         "country": "Libya",
         "industry": "Media",
-        "performance": 44,
+        "performance": 54,
         "accessibility": 79,
         "best_practices": 67,
         "seo": 63,
         "pwa": 33,
-        "test_date": "2025-10-29 07:50:05"
+        "test_date": "2025-11-12 04:23:00"
       },
       {
         "url": "meesho.com",
         "country": "India",
         "industry": "E-commerce",
-        "performance": 89,
+        "performance": 90,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 64,
         "pwa": 0,
-        "test_date": "2025-10-29 14:33:28"
+        "test_date": "2025-11-05 12:20:20"
+      },
+      {
+        "url": "zambiatoday.com",
+        "country": "Zambia",
+        "industry": "Media",
+        "performance": 99,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 64,
+        "pwa": 0,
+        "test_date": "2025-11-01 18:15:02"
       }
     ],
     "pwa": [
@@ -1035,29 +1035,18 @@
         "best_practices": 50,
         "seo": 50,
         "pwa": 0,
-        "test_date": "2025-11-02 04:15:41"
-      },
-      {
-        "url": "mtn.ng",
-        "country": "Nigeria",
-        "industry": "Telecom",
-        "performance": 61,
-        "accessibility": 73,
-        "best_practices": 83,
-        "seo": 58,
-        "pwa": 0,
-        "test_date": "2025-10-29 20:12:42"
+        "test_date": "2025-11-09 04:14:17"
       },
       {
         "url": "myntra.com",
         "country": "India",
         "industry": "E-commerce",
-        "performance": 100,
+        "performance": 99,
         "accessibility": 86,
         "best_practices": 92,
         "seo": 58,
         "pwa": 0,
-        "test_date": "2025-10-29 20:15:22"
+        "test_date": "2025-11-12 18:19:53"
       },
       {
         "url": "epfindia.gov.in",
@@ -1068,18 +1057,18 @@
         "best_practices": 83,
         "seo": 62,
         "pwa": 0,
-        "test_date": "2025-11-03 16:23:45"
+        "test_date": "2025-11-10 16:24:55"
       },
       {
         "url": "meesho.com",
         "country": "India",
         "industry": "E-commerce",
-        "performance": 89,
+        "performance": 90,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 64,
         "pwa": 0,
-        "test_date": "2025-10-29 14:33:28"
+        "test_date": "2025-11-05 12:20:20"
       },
       {
         "url": "zambiatoday.com",
@@ -1096,45 +1085,56 @@
         "url": "swh.lv",
         "country": "Latvia",
         "industry": "Media",
-        "performance": 100,
+        "performance": 99,
         "accessibility": 78,
         "best_practices": 75,
         "seo": 67,
         "pwa": 0,
-        "test_date": "2025-10-31 12:21:12"
+        "test_date": "2025-11-07 12:22:54"
       },
       {
         "url": "berkshirehathaway.com",
         "country": "United States",
         "industry": "Finance",
-        "performance": 100,
+        "performance": 99,
         "accessibility": 88,
         "best_practices": 75,
         "seo": 67,
         "pwa": 0,
-        "test_date": "2025-11-02 14:10:06"
+        "test_date": "2025-11-09 14:04:36"
       },
       {
         "url": "malta.com",
         "country": "Malta",
         "industry": "Portal",
-        "performance": 62,
+        "performance": 33,
         "accessibility": 72,
         "best_practices": 42,
         "seo": 69,
         "pwa": 0,
-        "test_date": "2025-10-29 10:35:19"
+        "test_date": "2025-11-12 10:11:45"
       },
       {
         "url": "stcpay.com.sa",
         "country": "Saudi Arabia",
         "industry": "Finance",
         "performance": 57,
-        "accessibility": 88,
+        "accessibility": 78,
         "best_practices": 0,
         "seo": 62,
         "pwa": 11,
-        "test_date": "2025-10-31 10:11:54"
+        "test_date": "2025-11-07 10:14:39"
+      },
+      {
+        "url": "rbi.org.in",
+        "country": "India",
+        "industry": "Finance",
+        "performance": 53,
+        "accessibility": 83,
+        "best_practices": 33,
+        "seo": 67,
+        "pwa": 11,
+        "test_date": "2025-11-13 18:18:07"
       }
     ]
   }

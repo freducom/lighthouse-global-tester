@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.780Z",
+    "generated_at": "2025-11-14T08:39:14.981Z",
     "url": "framer.com",
     "country": "Netherlands",
     "industry": "Website editor"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 39,
     "accessibility": 94,
     "best_practices": 83,
-    "seo": 85,
+    "seo": 84,
     "pwa": 33,
-    "test_date": "2025-11-04 00:46:54"
+    "test_date": "2025-11-11 00:48:35"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-11 00:48:35"
+    },
     {
       "performance": 46,
       "accessibility": 94,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -4,
+    "performance": -7,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": -1,
     "pwa": 0,
-    "test_date_current": "2025-11-04 00:46:54",
-    "test_date_previous": "2025-10-20 20:12:46"
+    "test_date_current": "2025-11-11 00:48:35",
+    "test_date_previous": "2025-11-04 00:46:54"
   }
 }

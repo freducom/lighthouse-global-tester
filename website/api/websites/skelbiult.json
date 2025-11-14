@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.717Z",
+    "generated_at": "2025-11-14T08:39:14.964Z",
     "url": "skelbiu.lt",
     "country": "Lithuania",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 88,
+    "performance": 91,
     "accessibility": 52,
-    "best_practices": 83,
+    "best_practices": 75,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-31 04:28:14"
+    "test_date": "2025-11-14 04:31:32"
   },
   "historical_data": [
+    {
+      "performance": 91,
+      "accessibility": 52,
+      "best_practices": 75,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-14 04:31:32"
+    },
+    {
+      "performance": 92,
+      "accessibility": 52,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-07 04:28:57"
+    },
     {
       "performance": 88,
       "accessibility": 52,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 04:28:14",
-    "test_date_previous": "2025-10-23 22:09:25"
+    "test_date_current": "2025-11-14 04:31:32",
+    "test_date_previous": "2025-11-07 04:28:57"
   }
 }

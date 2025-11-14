@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.810Z",
+    "generated_at": "2025-11-14T08:39:14.992Z",
     "url": "dagen.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 42,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-03 04:31:43"
+    "test_date": "2025-11-10 04:28:08"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-10 04:28:08"
+    },
     {
       "performance": 43,
       "accessibility": 94,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": 16,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:31:43",
-    "test_date_previous": "2025-10-27 06:28:45"
+    "test_date_current": "2025-11-10 04:28:08",
+    "test_date_previous": "2025-11-03 04:31:43"
   }
 }

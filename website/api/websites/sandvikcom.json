@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.058Z",
+    "generated_at": "2025-11-14T08:39:15.074Z",
     "url": "sandvik.com",
     "country": "Sweden",
     "industry": "Industry"
   },
   "latest_scores": {
-    "performance": 70,
+    "performance": 82,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-31 00:43:35"
+    "test_date": "2025-11-14 00:45:38"
   },
   "historical_data": [
+    {
+      "performance": 82,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:45:38"
+    },
+    {
+      "performance": 68,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:44:40"
+    },
     {
       "performance": 70,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:43:35"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 14,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:45:38",
+    "test_date_previous": "2025-11-07 00:44:40"
+  }
 }

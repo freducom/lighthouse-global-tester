@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.364Z",
+    "generated_at": "2025-11-14T08:39:14.884Z",
     "url": "aha.video",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 30,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 100,
     "pwa": 100,
-    "test_date": "2025-11-02 04:14:52"
+    "test_date": "2025-11-09 04:13:25"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 100,
+      "test_date": "2025-11-09 04:13:25"
+    },
     {
       "performance": 28,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -10,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 04:14:52",
-    "test_date_previous": "2025-10-27 07:12:00"
+    "test_date_current": "2025-11-09 04:13:25",
+    "test_date_previous": "2025-11-02 04:14:52"
   }
 }

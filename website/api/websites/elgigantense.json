@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.008Z",
+    "generated_at": "2025-11-14T08:39:15.054Z",
     "url": "elgiganten.se",
     "country": "Sweden",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 38,
     "accessibility": 86,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-11-03 14:35:48"
+    "test_date": "2025-11-10 14:35:58"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-10 14:35:58"
+    },
     {
       "performance": 39,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:35:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:35:58",
+    "test_date_previous": "2025-11-03 14:35:48"
+  }
 }

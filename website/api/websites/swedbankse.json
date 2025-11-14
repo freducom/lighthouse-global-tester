@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.075Z",
+    "generated_at": "2025-11-14T08:39:15.079Z",
     "url": "swedbank.se",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 48,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-10-31 12:20:58"
+    "test_date": "2025-11-07 12:22:40"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-07 12:22:40"
+    },
     {
       "performance": 33,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 12:20:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 15,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 12:22:40",
+    "test_date_previous": "2025-10-31 12:20:58"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.934Z",
+    "generated_at": "2025-11-14T08:39:14.751Z",
     "url": "thefinancialexpress.com.bd",
     "country": "Bangladesh",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 10,
+    "performance": 7,
     "accessibility": 84,
     "best_practices": 75,
     "seo": 89,
     "pwa": 89,
-    "test_date": "2025-10-24 12:21:28"
+    "test_date": "2025-11-07 18:27:56"
   },
   "historical_data": [
+    {
+      "performance": 7,
+      "accessibility": 84,
+      "best_practices": 75,
+      "seo": 89,
+      "pwa": 89,
+      "test_date": "2025-11-07 18:27:56"
+    },
     {
       "performance": 10,
       "accessibility": 84,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-24 12:21:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 18:27:56",
+    "test_date_previous": "2025-10-24 12:21:28"
+  }
 }

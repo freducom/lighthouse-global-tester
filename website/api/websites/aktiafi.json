@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.090Z",
+    "generated_at": "2025-11-14T08:39:14.801Z",
     "url": "aktia.fi",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 62,
     "accessibility": 95,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-02 04:21:45"
+    "test_date": "2025-11-09 04:19:00"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 95,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-09 04:19:00"
+    },
     {
       "performance": 60,
       "accessibility": 95,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 04:21:45",
-    "test_date_previous": "2025-10-27 07:33:49"
+    "test_date_current": "2025-11-09 04:19:00",
+    "test_date_previous": "2025-11-02 04:21:45"
   }
 }

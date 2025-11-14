@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.916Z",
+    "generated_at": "2025-11-14T08:39:14.744Z",
     "url": "seek.com.au",
     "country": "Australia",
     "industry": "Jobs"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 48,
     "accessibility": 93,
     "best_practices": 67,
     "seo": 100,
     "pwa": 78,
-    "test_date": "2025-10-31 03:08:00"
+    "test_date": "2025-11-14 03:09:32"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 93,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-14 03:09:32"
+    },
+    {
+      "performance": 58,
+      "accessibility": 93,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-07 03:08:02"
+    },
     {
       "performance": 53,
       "accessibility": 93,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": -10,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 03:08:00",
-    "test_date_previous": "2025-10-23 19:34:20"
+    "test_date_current": "2025-11-14 03:09:32",
+    "test_date_previous": "2025-11-07 03:08:02"
   }
 }

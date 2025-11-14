@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.463Z",
+    "generated_at": "2025-11-14T08:39:14.911Z",
     "url": "mxplayer.in",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 81,
+    "performance": 82,
     "accessibility": 48,
     "best_practices": 83,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-29 20:13:36"
+    "test_date": "2025-11-12 18:18:07"
   },
   "historical_data": [
+    {
+      "performance": 82,
+      "accessibility": 48,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-12 18:18:07"
+    },
     {
       "performance": 81,
       "accessibility": 48,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-29 20:13:36"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 18:18:07",
+    "test_date_previous": "2025-10-29 20:13:36"
+  }
 }

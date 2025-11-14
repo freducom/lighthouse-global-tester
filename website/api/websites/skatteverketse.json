@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.064Z",
+    "generated_at": "2025-11-14T08:39:15.076Z",
     "url": "skatteverket.se",
     "country": "Sweden",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 61,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-31 04:27:59"
+    "test_date": "2025-11-14 04:31:18"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-14 04:31:18"
+    },
+    {
+      "performance": 58,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-07 04:28:43"
+    },
     {
       "performance": 60,
       "accessibility": 100,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 16,
+    "performance": 3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 04:27:59",
-    "test_date_previous": "2025-10-23 22:09:11"
+    "test_date_current": "2025-11-14 04:31:18",
+    "test_date_previous": "2025-11-07 04:28:43"
   }
 }

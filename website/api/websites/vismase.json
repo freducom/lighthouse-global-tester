@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.089Z",
+    "generated_at": "2025-11-14T08:39:15.084Z",
     "url": "visma.se",
     "country": "Sweden",
     "industry": "Software"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 43,
     "accessibility": 93,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-01 08:20:18"
+    "test_date": "2025-11-08 08:22:03"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-08 08:22:03"
+    },
     {
       "performance": 47,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 08:20:18"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 08:22:03",
+    "test_date_previous": "2025-11-01 08:20:18"
+  }
 }

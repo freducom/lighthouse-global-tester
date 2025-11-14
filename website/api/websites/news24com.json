@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.935Z",
+    "generated_at": "2025-11-14T08:39:15.035Z",
     "url": "news24.com",
     "country": "South Africa",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 10,
+    "performance": 11,
     "accessibility": 89,
-    "best_practices": 67,
+    "best_practices": 83,
     "seo": 68,
     "pwa": 89,
-    "test_date": "2025-10-22 18:26:43"
+    "test_date": "2025-11-12 22:15:26"
   },
   "historical_data": [
+    {
+      "performance": 11,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 68,
+      "pwa": 89,
+      "test_date": "2025-11-12 22:15:26"
+    },
     {
       "performance": 10,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-22 18:26:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 22:15:26",
+    "test_date_previous": "2025-10-22 18:26:43"
+  }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.040Z",
+    "generated_at": "2025-11-14T08:39:15.069Z",
     "url": "nordiskfilm.com",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 74,
+    "performance": 68,
     "accessibility": 99,
     "best_practices": 100,
-    "seo": 89,
+    "seo": 96,
     "pwa": 33,
-    "test_date": "2025-10-30 03:07:33"
+    "test_date": "2025-11-13 00:48:04"
   },
   "historical_data": [
+    {
+      "performance": 68,
+      "accessibility": 99,
+      "best_practices": 100,
+      "seo": 96,
+      "pwa": 33,
+      "test_date": "2025-11-13 00:48:04"
+    },
+    {
+      "performance": 67,
+      "accessibility": 99,
+      "best_practices": 100,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-06 00:46:45"
+    },
     {
       "performance": 74,
       "accessibility": 99,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 03:07:33"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 00:48:04",
+    "test_date_previous": "2025-11-06 00:46:45"
+  }
 }

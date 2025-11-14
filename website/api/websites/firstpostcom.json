@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.406Z",
+    "generated_at": "2025-11-14T08:39:14.894Z",
     "url": "firstpost.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 34,
     "accessibility": 91,
-    "best_practices": 67,
+    "best_practices": 83,
     "seo": 90,
     "pwa": 78,
-    "test_date": "2025-11-03 22:13:12"
+    "test_date": "2025-11-10 22:11:24"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 78,
+      "test_date": "2025-11-10 22:11:24"
+    },
     {
       "performance": 48,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 22:13:12"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -14,
+    "accessibility": 0,
+    "best_practices": 16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 22:11:24",
+    "test_date_previous": "2025-11-03 22:13:12"
+  }
 }

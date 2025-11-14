@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.033Z",
+    "generated_at": "2025-11-14T08:39:15.066Z",
     "url": "liu.se",
     "country": "Sweden",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 98,
+    "performance": 91,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-29 08:15:14"
+    "test_date": "2025-11-12 06:18:09"
   },
   "historical_data": [
+    {
+      "performance": 91,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-12 06:18:09"
+    },
+    {
+      "performance": 93,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-05 06:17:24"
+    },
     {
       "performance": 98,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 08:15:14"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 06:18:09",
+    "test_date_previous": "2025-11-05 06:17:24"
+  }
 }

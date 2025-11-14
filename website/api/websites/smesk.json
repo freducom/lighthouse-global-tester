@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.913Z",
+    "generated_at": "2025-11-14T08:39:15.032Z",
     "url": "sme.sk",
     "country": "Slovakia",
     "industry": "Media"
   },
   "latest_scores": {
     "performance": 44,
-    "accessibility": 93,
+    "accessibility": 96,
     "best_practices": 83,
     "seo": 86,
     "pwa": 44,
-    "test_date": "2025-10-31 06:16:48"
+    "test_date": "2025-11-14 06:18:10"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 44,
+      "test_date": "2025-11-14 06:18:10"
+    },
+    {
+      "performance": 45,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 44,
+      "test_date": "2025-11-07 06:17:21"
+    },
     {
       "performance": 44,
       "accessibility": 93,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
-    "accessibility": 0,
+    "performance": -1,
+    "accessibility": 3,
     "best_practices": 0,
-    "seo": -7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 06:16:48",
-    "test_date_previous": "2025-10-23 22:10:37"
+    "test_date_current": "2025-11-14 06:18:10",
+    "test_date_previous": "2025-11-07 06:17:21"
   }
 }

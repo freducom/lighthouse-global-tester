@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.464Z",
+    "generated_at": "2025-11-14T08:39:14.911Z",
     "url": "mygov.in",
     "country": "India",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 31,
     "accessibility": 84,
     "best_practices": 92,
     "seo": 76,
     "pwa": 33,
-    "test_date": "2025-10-29 20:14:36"
+    "test_date": "2025-11-12 18:19:12"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 84,
+      "best_practices": 92,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-12 18:19:12"
+    },
+    {
+      "performance": 0,
+      "accessibility": 84,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-05 18:20:02"
+    },
     {
       "performance": 45,
       "accessibility": 84,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 20:14:36"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 31,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 18:19:12",
+    "test_date_previous": "2025-11-05 18:20:02"
+  }
 }

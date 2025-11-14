@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:31.103Z",
+          "dateCreated": "2025-11-14T08:39:05.441Z",
           "about": {
             "@type": "WebSite",
             "name": "geo.tv",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-geo.tv.html#metrics",
           "name": "geo.tv Performance Metrics",
           "description": "Latest Lighthouse scores for geo.tv",
-          "performanceScore": 83,
-          "accessibilityScore": 77,
-          "bestPracticesScore": 83,
+          "performanceScore": 72,
+          "accessibilityScore": 84,
+          "bestPracticesScore": 92,
           "seoScore": 91,
-          "dateRecorded": "2025-11-04 03:08:03"
+          "dateRecorded": "2025-11-11 03:12:02"
         }
       ]
     }
@@ -117,12 +117,12 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number good">83%</div>
+                <div class="stat-number good">72%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">77%</div>
+                <div class="stat-number good">84%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
@@ -132,16 +132,16 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number good">83%</div>
-                <div class="stat-description">good performance</div>
+                <div class="stat-number excellent">92%</div>
+                <div class="stat-description">excellent performance</div>
             </div>
         </div>
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -152,22 +152,22 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 83%"></div>
-                        <span class="score-text">83%</span>
+                        <div class="score-fill performance" style="width: 72%"></div>
+                        <span class="score-text">72%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 77%"></div>
-                        <span class="score-text">77%</span>
+                        <div class="score-fill accessibility" style="width: 84%"></div>
+                        <span class="score-text">84%</span>
                     </div>
                 </div>
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 83%"></div>
-                        <span class="score-text">83%</span>
+                        <div class="score-fill best-practices" style="width: 92%"></div>
+                        <span class="score-text">92%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":2019,"url":"geo.tv","performance":83,"accessibility":77,"best_practices":83,"seo":91,"pwa":33,"test_date":"2025-11-04 03:08:03","country":"Pakistan","industry":"Media"},{"id":2993,"url":"geo.tv","performance":72,"accessibility":84,"best_practices":92,"seo":91,"pwa":33,"test_date":"2025-11-11 03:12:02","country":"Pakistan","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

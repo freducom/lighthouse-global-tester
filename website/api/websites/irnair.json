@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.572Z",
+    "generated_at": "2025-11-14T08:39:14.936Z",
     "url": "irna.ir",
     "country": "Iran",
     "industry": "Media"
   },
   "latest_scores": {
     "performance": 99,
-    "accessibility": 91,
-    "best_practices": 100,
-    "seo": 75,
+    "accessibility": 74,
+    "best_practices": 0,
+    "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-28 20:33:40"
+    "test_date": "2025-11-11 18:28:15"
   },
   "historical_data": [
+    {
+      "performance": 99,
+      "accessibility": 74,
+      "best_practices": 0,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-11 18:28:15"
+    },
+    {
+      "performance": 99,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-04 18:25:38"
+    },
     {
       "performance": 99,
       "accessibility": 91,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
-    "accessibility": 22,
-    "best_practices": 100,
-    "seo": -9,
+    "performance": 0,
+    "accessibility": -17,
+    "best_practices": -100,
+    "seo": 9,
     "pwa": 0,
-    "test_date_current": "2025-10-28 20:33:40",
-    "test_date_previous": "2025-10-21 17:42:31"
+    "test_date_current": "2025-11-11 18:28:15",
+    "test_date_previous": "2025-11-04 18:25:38"
   }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.043Z",
+    "generated_at": "2025-11-14T08:39:15.070Z",
     "url": "paradoxinteractive.com",
     "country": "Sweden",
     "industry": "Gaming"
@@ -11,9 +11,25 @@
     "best_practices": 67,
     "seo": 92,
     "pwa": 56,
-    "test_date": "2025-10-30 10:18:37"
+    "test_date": "2025-11-13 08:22:03"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 98,
+      "best_practices": 67,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-13 08:22:03"
+    },
+    {
+      "performance": 47,
+      "accessibility": 98,
+      "best_practices": 67,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-06 08:21:48"
+    },
     {
       "performance": 43,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 10:18:37"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 08:22:03",
+    "test_date_previous": "2025-11-06 08:21:48"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.808Z",
+    "generated_at": "2025-11-14T08:39:14.991Z",
     "url": "dagbladet.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 46,
-    "accessibility": 100,
+    "performance": 39,
+    "accessibility": 91,
     "best_practices": 83,
-    "seo": 100,
+    "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-03 04:31:15"
+    "test_date": "2025-11-10 04:27:39"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 04:27:39"
+    },
     {
       "performance": 46,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
-    "accessibility": 0,
+    "performance": -7,
+    "accessibility": -9,
     "best_practices": 0,
-    "seo": 0,
+    "seo": -7,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:31:15",
-    "test_date_previous": "2025-10-27 06:28:15"
+    "test_date_current": "2025-11-10 04:27:39",
+    "test_date_previous": "2025-11-03 04:31:15"
   }
 }

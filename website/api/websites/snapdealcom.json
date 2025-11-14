@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.522Z",
+    "generated_at": "2025-11-14T08:39:14.924Z",
     "url": "snapdeal.com",
     "country": "India",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 47,
     "accessibility": 55,
-    "best_practices": 83,
+    "best_practices": 75,
     "seo": 93,
     "pwa": 89,
-    "test_date": "2025-10-31 06:21:14"
+    "test_date": "2025-11-14 06:22:47"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 55,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 89,
+      "test_date": "2025-11-14 06:22:47"
+    },
+    {
+      "performance": 37,
+      "accessibility": 55,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 89,
+      "test_date": "2025-11-07 06:21:52"
+    },
     {
       "performance": 43,
       "accessibility": 55,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 06:21:14"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 10,
+    "accessibility": 0,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 06:22:47",
+    "test_date_previous": "2025-11-07 06:21:52"
+  }
 }

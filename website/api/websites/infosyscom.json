@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.430Z",
+    "generated_at": "2025-11-14T08:39:14.903Z",
     "url": "infosys.com",
     "country": "India",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 47,
     "accessibility": 94,
-    "best_practices": 67,
+    "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-28 18:18:32"
+    "test_date": "2025-11-11 16:19:18"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-11 16:19:18"
+    },
+    {
+      "performance": 33,
+      "accessibility": 94,
+      "best_practices": 67,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-04 16:20:11"
+    },
     {
       "performance": 33,
       "accessibility": 94,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 18:18:32"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 14,
+    "accessibility": 0,
+    "best_practices": 16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 16:19:18",
+    "test_date_previous": "2025-11-04 16:20:11"
+  }
 }

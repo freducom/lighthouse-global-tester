@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.935Z",
+    "generated_at": "2025-11-14T08:39:14.752Z",
     "url": "demorgen.be",
     "country": "Belgium",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 73,
+    "performance": 72,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 77,
     "pwa": 33,
-    "test_date": "2025-11-03 06:31:48"
+    "test_date": "2025-11-10 06:34:05"
   },
   "historical_data": [
+    {
+      "performance": 72,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-10 06:34:05"
+    },
     {
       "performance": 73,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 06:31:48",
-    "test_date_previous": "2025-10-27 08:31:41"
+    "test_date_current": "2025-11-10 06:34:05",
+    "test_date_previous": "2025-11-03 06:31:48"
   }
 }

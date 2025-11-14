@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.732Z",
+    "generated_at": "2025-11-14T08:39:14.969Z",
     "url": "gozo.news",
     "country": "Malta",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 66,
+    "performance": 80,
     "accessibility": 83,
     "best_practices": 0,
     "seo": 68,
     "pwa": 33,
-    "test_date": "2025-11-04 04:20:50"
+    "test_date": "2025-11-11 04:19:03"
   },
   "historical_data": [
+    {
+      "performance": 80,
+      "accessibility": 83,
+      "best_practices": 0,
+      "seo": 68,
+      "pwa": 33,
+      "test_date": "2025-11-11 04:19:03"
+    },
     {
       "performance": 66,
       "accessibility": 83,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 04:20:50"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 14,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 04:19:03",
+    "test_date_previous": "2025-11-04 04:20:50"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.812Z",
+    "generated_at": "2025-11-14T08:39:14.993Z",
     "url": "e24.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 52,
-    "accessibility": 77,
+    "performance": 60,
+    "accessibility": 90,
     "best_practices": 83,
-    "seo": 85,
+    "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-03 12:18:55"
+    "test_date": "2025-11-10 12:18:58"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-10 12:18:58"
+    },
     {
       "performance": 52,
       "accessibility": 77,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:18:55"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 8,
+    "accessibility": 13,
+    "best_practices": 0,
+    "seo": 15,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:18:58",
+    "test_date_previous": "2025-11-03 12:18:55"
+  }
 }

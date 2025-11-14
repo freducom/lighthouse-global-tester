@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:31.841Z",
+          "dateCreated": "2025-11-14T08:39:05.724Z",
           "about": {
             "@type": "WebSite",
             "name": "redfin.com",
@@ -94,10 +94,10 @@
           "name": "redfin.com Performance Metrics",
           "description": "Latest Lighthouse scores for redfin.com",
           "performanceScore": 31,
-          "accessibilityScore": 74,
+          "accessibilityScore": 72,
           "bestPracticesScore": 83,
           "seoScore": 83,
-          "dateRecorded": "2025-10-30 18:23:00"
+          "dateRecorded": "2025-11-13 18:24:20"
         }
       ]
     }
@@ -122,7 +122,7 @@
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">74%</div>
+                <div class="stat-number good">72%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
@@ -139,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -159,8 +159,8 @@
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 74%"></div>
-                        <span class="score-text">74%</span>
+                        <div class="score-fill accessibility" style="width: 72%"></div>
+                        <span class="score-text">72%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":1422,"url":"redfin.com","performance":31,"accessibility":74,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-10-30 18:23:00","country":"United States","industry":"Realestate"},{"id":2405,"url":"redfin.com","performance":49,"accessibility":80,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-11-06 18:28:13","country":"United States","industry":"Realestate"},{"id":3357,"url":"redfin.com","performance":31,"accessibility":72,"best_practices":83,"seo":83,"pwa":33,"test_date":"2025-11-13 18:24:20","country":"United States","industry":"Realestate"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

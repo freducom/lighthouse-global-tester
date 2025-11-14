@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.623Z",
+    "generated_at": "2025-11-14T08:39:14.950Z",
     "url": "la7.it",
     "country": "Italy",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 32,
-    "accessibility": 81,
+    "performance": 31,
+    "accessibility": 79,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-29 03:21:32"
+    "test_date": "2025-11-12 01:00:11"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 79,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-12 01:00:11"
+    },
+    {
+      "performance": 30,
+      "accessibility": 81,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-05 01:02:12"
+    },
     {
       "performance": 32,
       "accessibility": 81,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 2,
+    "performance": 1,
+    "accessibility": -2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 03:21:32",
-    "test_date_previous": "2025-10-21 22:20:20"
+    "test_date_current": "2025-11-12 01:00:11",
+    "test_date_previous": "2025-11-05 01:02:12"
   }
 }

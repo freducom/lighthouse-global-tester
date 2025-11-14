@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.217Z",
+    "generated_at": "2025-11-14T08:39:14.844Z",
     "url": "syke.fi",
     "country": "Finland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 86,
+    "performance": 83,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-31 12:22:44"
+    "test_date": "2025-11-07 12:23:52"
   },
   "historical_data": [
+    {
+      "performance": 83,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-07 12:23:52"
+    },
     {
       "performance": 86,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 12:22:44"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 12:23:52",
+    "test_date_previous": "2025-10-31 12:22:44"
+  }
 }

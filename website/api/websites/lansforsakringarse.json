@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.032Z",
+    "generated_at": "2025-11-14T08:39:15.064Z",
     "url": "lansforsakringar.se",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 53,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-29 04:20:45"
+    "test_date": "2025-11-12 03:09:00"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-12 03:09:00"
+    },
+    {
+      "performance": 53,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-05 03:09:10"
+    },
     {
       "performance": 52,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 04:20:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 03:09:00",
+    "test_date_previous": "2025-11-05 03:09:10"
+  }
 }

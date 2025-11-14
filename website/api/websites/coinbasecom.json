@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.260Z",
+    "generated_at": "2025-11-14T08:39:15.130Z",
     "url": "coinbase.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 34,
-    "accessibility": 96,
+    "performance": 35,
+    "accessibility": 98,
     "best_practices": 92,
-    "seo": 85,
+    "seo": 86,
     "pwa": 67,
-    "test_date": "2025-11-03 00:57:15"
+    "test_date": "2025-11-10 00:56:24"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 67,
+      "test_date": "2025-11-10 00:56:24"
+    },
     {
       "performance": 34,
       "accessibility": 96,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": 0,
+    "performance": 1,
+    "accessibility": 2,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-11-03 00:57:15",
-    "test_date_previous": "2025-10-27 03:19:09"
+    "test_date_current": "2025-11-10 00:56:24",
+    "test_date_previous": "2025-11-03 00:57:15"
   }
 }

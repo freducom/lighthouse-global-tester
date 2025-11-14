@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.051Z",
+    "generated_at": "2025-11-14T08:39:14.791Z",
     "url": "tv2.dk",
     "country": "Denmark",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 64,
+    "performance": 63,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-01 00:50:24"
+    "test_date": "2025-11-08 00:49:38"
   },
   "historical_data": [
+    {
+      "performance": 63,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-08 00:49:38"
+    },
     {
       "performance": 64,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 00:50:24",
-    "test_date_previous": "2025-10-24 18:15:20"
+    "test_date_current": "2025-11-08 00:49:38",
+    "test_date_previous": "2025-11-01 00:50:24"
   }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.783Z",
+    "generated_at": "2025-11-14T08:39:14.981Z",
     "url": "marktplaats.nl",
     "country": "Netherlands",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 16,
+    "performance": 21,
     "accessibility": 85,
     "best_practices": 92,
     "seo": 96,
     "pwa": 33,
-    "test_date": "2025-10-22 10:12:52"
+    "test_date": "2025-11-12 10:21:58"
   },
   "historical_data": [
+    {
+      "performance": 21,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 96,
+      "pwa": 33,
+      "test_date": "2025-11-12 10:21:58"
+    },
+    {
+      "performance": 26,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 96,
+      "pwa": 33,
+      "test_date": "2025-11-05 10:24:38"
+    },
     {
       "performance": 16,
       "accessibility": 85,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -26,
+    "performance": -5,
     "accessibility": 0,
-    "best_practices": 9,
-    "seo": -4,
+    "best_practices": 0,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-22 10:12:52",
-    "test_date_previous": "2025-10-19 20:23:56"
+    "test_date_current": "2025-11-12 10:21:58",
+    "test_date_previous": "2025-11-05 10:24:38"
   }
 }

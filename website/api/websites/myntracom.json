@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.465Z",
+    "generated_at": "2025-11-14T08:39:14.912Z",
     "url": "myntra.com",
     "country": "India",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 86,
     "best_practices": 92,
     "seo": 58,
     "pwa": 0,
-    "test_date": "2025-10-29 20:15:22"
+    "test_date": "2025-11-12 18:19:53"
   },
   "historical_data": [
+    {
+      "performance": 99,
+      "accessibility": 86,
+      "best_practices": 92,
+      "seo": 58,
+      "pwa": 0,
+      "test_date": "2025-11-12 18:19:53"
+    },
+    {
+      "performance": 97,
+      "accessibility": 86,
+      "best_practices": 92,
+      "seo": 58,
+      "pwa": 0,
+      "test_date": "2025-11-05 18:20:47"
+    },
     {
       "performance": 100,
       "accessibility": 86,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 20:15:22"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 18:19:53",
+    "test_date_previous": "2025-11-05 18:20:47"
+  }
 }

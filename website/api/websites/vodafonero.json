@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.876Z",
+    "generated_at": "2025-11-14T08:39:15.019Z",
     "url": "vodafone.ro",
     "country": "Romania",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 34,
     "accessibility": 89,
     "best_practices": 0,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 08:27:29"
+    "test_date": "2025-11-08 08:31:52"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 89,
+      "best_practices": 0,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 08:31:52"
+    },
     {
       "performance": 37,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 08:27:29"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 08:31:52",
+    "test_date_previous": "2025-11-01 08:27:29"
+  }
 }

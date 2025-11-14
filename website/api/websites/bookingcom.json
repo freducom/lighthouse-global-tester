@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.248Z",
+    "generated_at": "2025-11-14T08:39:15.126Z",
     "url": "booking.com",
     "country": "United States",
     "industry": "Travel"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 28,
     "accessibility": 79,
     "best_practices": 67,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-11-02 16:19:03"
+    "test_date": "2025-11-09 16:19:39"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 79,
+      "best_practices": 67,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-09 16:19:39"
+    },
     {
       "performance": 26,
       "accessibility": 79,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 16:19:03",
-    "test_date_previous": "2025-10-26 19:46:23"
+    "test_date_current": "2025-11-09 16:19:39",
+    "test_date_previous": "2025-11-02 16:19:03"
   }
 }

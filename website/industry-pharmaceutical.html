@@ -78,9 +78,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Pharmaceutical Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 55 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 45 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-average" aria-hidden="true">55%</div>
+                <div class="stat-value perf-poor" aria-hidden="true">45%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average accessibility score: 93 percent">
@@ -184,9 +184,9 @@
                                         🇫🇮 Finland
                                     </a>
                                 </td>
-                                <td class="score perf-average"
-                                    aria-label="Performance score: 55 percent, average performance">
-                                    55%
+                                <td class="score perf-poor"
+                                    aria-label="Performance score: 45 percent, needs improvement">
+                                    45%
                                 </td>
                                 <td class="score acc-excellent"
                                     aria-label="Accessibility score: 93 percent, excellent performance">
@@ -204,9 +204,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-30 08:23:12"
-                                    aria-label="Last tested on 10/30/2025">
-                                    <time datetime="2025-10-30 08:23:12">10/30/2025</time>
+                                <td class="date" data-date="2025-11-13 08:13:39"
+                                    aria-label="Last tested on 11/13/2025">
+                                    <time datetime="2025-11-13 08:13:39">11/13/2025</time>
                                 </td>
                             </tr>
                         
@@ -374,7 +374,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"orion.fi","country":"Finland","industry":"Pharmaceutical","performance":55,"accessibility":93,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-30 08:23:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"orion.fi","country":"Finland","industry":"Pharmaceutical","performance":45,"accessibility":93,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-11-13 08:13:39","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -709,7 +709,7 @@
         }
         
         // Data initialization
-        const industryData = [{"url":"orion.fi","country":"Finland","industry":"Pharmaceutical","performance":55,"accessibility":93,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-10-30 08:23:12","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"orion.fi","country":"Finland","industry":"Pharmaceutical","performance":45,"accessibility":93,"best_practices":75,"seo":100,"pwa":33,"test_date":"2025-11-13 08:13:39","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-4,"text":"-4","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

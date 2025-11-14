@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:41.945Z",
+    "generated_at": "2025-11-14T08:39:13.293Z",
     "country": "Netherlands",
     "flag": "🇳🇱",
     "website_count": 10
   },
   "averages": {
     "performance": 51,
-    "accessibility": 94,
+    "accessibility": 93,
     "best_practices": 83,
-    "seo": 91,
+    "seo": 90,
     "pwa": 35
   },
   "websites": [
@@ -17,16 +17,16 @@
       "url": "bol.com",
       "industry": "E-commerce",
       "scores": {
-        "performance": 90,
+        "performance": 84,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-26 19:40:13"
+      "test_date": "2025-11-09 16:16:40"
     },
     {
-      "url": "ad.nl",
+      "url": "nu.nl",
       "industry": "Media",
       "scores": {
         "performance": 72,
@@ -35,79 +35,79 @@
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-11-02 03:14:20"
+      "test_date": "2025-11-13 03:19:41"
     },
     {
       "url": "rijksoverheid.nl",
       "industry": "Government",
       "scores": {
-        "performance": 70,
+        "performance": 69,
         "accessibility": 98,
         "best_practices": 100,
-        "seo": 97,
+        "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-30 20:15:56"
+      "test_date": "2025-11-13 20:17:19"
     },
     {
-      "url": "nu.nl",
+      "url": "ad.nl",
       "industry": "Media",
       "scores": {
-        "performance": 65,
+        "performance": 64,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-30 04:25:39"
+      "test_date": "2025-11-09 03:12:00"
     },
     {
       "url": "ing.nl",
       "industry": "Finance",
       "scores": {
-        "performance": 58,
+        "performance": 55,
         "accessibility": 96,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-28 18:19:54"
-    },
-    {
-      "url": "framer.com",
-      "industry": "Website editor",
-      "scores": {
-        "performance": 46,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-11-04 00:46:54"
+      "test_date": "2025-11-11 16:20:41"
     },
     {
       "url": "rabobank.nl",
       "industry": "Finance",
       "scores": {
-        "performance": 37,
+        "performance": 50,
         "accessibility": 92,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-30 16:32:04"
+      "test_date": "2025-11-13 16:28:12"
+    },
+    {
+      "url": "framer.com",
+      "industry": "Website editor",
+      "scores": {
+        "performance": 39,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 00:48:35"
     },
     {
       "url": "telegraaf.nl",
       "industry": "Media",
       "scores": {
-        "performance": 30,
-        "accessibility": 97,
+        "performance": 31,
+        "accessibility": 88,
         "best_practices": 75,
-        "seo": 91,
+        "seo": 84,
         "pwa": 56
       },
-      "test_date": "2025-10-31 16:22:54"
+      "test_date": "2025-11-07 16:21:16"
     },
     {
       "url": "ns.nl",
@@ -119,19 +119,19 @@
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-30 04:17:44"
+      "test_date": "2025-11-13 03:14:01"
     },
     {
       "url": "marktplaats.nl",
       "industry": "Marketplace",
       "scores": {
-        "performance": 16,
+        "performance": 21,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-22 10:12:52"
+      "test_date": "2025-11-12 10:21:58"
     }
   ],
   "industries": [
@@ -139,7 +139,7 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 90,
+        "performance": 84,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 92,
@@ -150,7 +150,7 @@
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 48,
+        "performance": 53,
         "accessibility": 94,
         "best_practices": 100,
         "seo": 97,
@@ -161,10 +161,10 @@
       "industry": "Government",
       "website_count": 1,
       "averages": {
-        "performance": 70,
+        "performance": 69,
         "accessibility": 98,
         "best_practices": 100,
-        "seo": 97,
+        "seo": 96,
         "pwa": 33
       }
     },
@@ -172,7 +172,7 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 16,
+        "performance": 21,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 96,
@@ -184,9 +184,9 @@
       "website_count": 3,
       "averages": {
         "performance": 56,
-        "accessibility": 98,
+        "accessibility": 95,
         "best_practices": 86,
-        "seo": 82,
+        "seo": 79,
         "pwa": 41
       }
     },
@@ -205,10 +205,10 @@
       "industry": "Website editor",
       "website_count": 1,
       "averages": {
-        "performance": 46,
+        "performance": 39,
         "accessibility": 94,
         "best_practices": 83,
-        "seo": 85,
+        "seo": 84,
         "pwa": 33
       }
     }

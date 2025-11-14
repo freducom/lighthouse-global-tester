@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.183Z",
+    "generated_at": "2025-11-14T08:39:14.833Z",
     "url": "paulig.com",
     "country": "Finland",
     "industry": "Food"
   },
   "latest_scores": {
-    "performance": 63,
+    "performance": 57,
     "accessibility": 93,
     "best_practices": 100,
     "seo": 86,
     "pwa": 78,
-    "test_date": "2025-10-30 12:18:04"
+    "test_date": "2025-11-13 10:12:10"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 93,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 78,
+      "test_date": "2025-11-13 10:12:10"
+    },
+    {
+      "performance": 58,
+      "accessibility": 93,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 78,
+      "test_date": "2025-11-06 10:12:28"
+    },
     {
       "performance": 63,
       "accessibility": 93,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:18:04"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:12:10",
+    "test_date_previous": "2025-11-06 10:12:28"
+  }
 }

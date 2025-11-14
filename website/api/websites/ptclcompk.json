@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.825Z",
+    "generated_at": "2025-11-14T08:39:14.998Z",
     "url": "ptcl.com.pk",
     "country": "Pakistan",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 28,
     "accessibility": 53,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-23 10:16:17"
+    "test_date": "2025-11-13 16:14:49"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 53,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-13 16:14:49"
+    },
     {
       "performance": 25,
       "accessibility": 53,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-23 10:16:17"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 16:14:49",
+    "test_date_previous": "2025-10-23 10:16:17"
+  }
 }

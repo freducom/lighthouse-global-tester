@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.117Z",
+    "generated_at": "2025-11-14T08:39:14.808Z",
     "url": "edufix.fi",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 60,
     "accessibility": 88,
     "best_practices": 92,
     "seo": 71,
     "pwa": 33,
-    "test_date": "2025-11-03 12:30:31"
+    "test_date": "2025-11-10 12:31:38"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 88,
+      "best_practices": 92,
+      "seo": 71,
+      "pwa": 33,
+      "test_date": "2025-11-10 12:31:38"
+    },
     {
       "performance": 58,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:30:31"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:31:38",
+    "test_date_previous": "2025-11-03 12:30:31"
+  }
 }

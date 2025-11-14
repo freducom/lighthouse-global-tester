@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.539Z",
+    "generated_at": "2025-11-14T08:39:14.927Z",
     "url": "twitter.com",
     "country": "India",
     "industry": "Social"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 34,
     "accessibility": 87,
     "best_practices": 92,
     "seo": 91,
     "pwa": 89,
-    "test_date": "2025-11-01 03:11:20"
+    "test_date": "2025-11-08 03:03:19"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 87,
+      "best_practices": 92,
+      "seo": 91,
+      "pwa": 89,
+      "test_date": "2025-11-08 03:03:19"
+    },
     {
       "performance": 38,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 03:11:20"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 03:03:19",
+    "test_date_previous": "2025-11-01 03:11:20"
+  }
 }

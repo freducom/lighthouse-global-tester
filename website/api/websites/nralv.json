@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.702Z",
+    "generated_at": "2025-11-14T08:39:14.959Z",
     "url": "nra.lv",
     "country": "Latvia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 23,
-    "accessibility": 95,
+    "performance": 40,
+    "accessibility": 87,
     "best_practices": 75,
-    "seo": 92,
+    "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-30 04:16:25"
+    "test_date": "2025-11-13 03:11:29"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 87,
+      "best_practices": 75,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-13 03:11:29"
+    },
+    {
+      "performance": 36,
+      "accessibility": 87,
+      "best_practices": 75,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-06 03:12:14"
+    },
     {
       "performance": 23,
       "accessibility": 95,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": 4,
     "accessibility": 0,
-    "best_practices": 8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 04:16:25",
-    "test_date_previous": "2025-10-22 20:31:14"
+    "test_date_current": "2025-11-13 03:11:29",
+    "test_date_previous": "2025-11-06 03:12:14"
   }
 }

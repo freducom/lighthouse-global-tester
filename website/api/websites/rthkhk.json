@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.350Z",
+    "generated_at": "2025-11-14T08:39:14.880Z",
     "url": "rthk.hk",
     "country": "Hong Kong",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 36,
     "accessibility": 60,
     "best_practices": 67,
     "seo": 77,
     "pwa": 33,
-    "test_date": "2025-10-30 22:10:25"
+    "test_date": "2025-11-13 22:11:36"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 60,
+      "best_practices": 67,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-13 22:11:36"
+    },
+    {
+      "performance": 31,
+      "accessibility": 60,
+      "best_practices": 67,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-06 22:10:18"
+    },
     {
       "performance": 38,
       "accessibility": 60,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 22:10:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 22:11:36",
+    "test_date_previous": "2025-11-06 22:10:18"
+  }
 }

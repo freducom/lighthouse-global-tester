@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.091Z",
+    "generated_at": "2025-11-14T08:39:15.085Z",
     "url": "volumental.com",
     "country": "Sweden",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 55,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 10:09:47"
+    "test_date": "2025-11-08 10:09:43"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 10:09:43"
+    },
     {
       "performance": 56,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 10:09:47"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 10:09:43",
+    "test_date_previous": "2025-11-01 10:09:47"
+  }
 }

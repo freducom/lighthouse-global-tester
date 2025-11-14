@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.154Z",
+    "generated_at": "2025-11-14T08:39:15.096Z",
     "url": "sahibinden.com",
     "country": "Turkey",
     "industry": "Marketplace"
@@ -8,12 +8,28 @@
   "latest_scores": {
     "performance": 82,
     "accessibility": 84,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-30 22:17:53"
+    "test_date": "2025-11-13 22:19:03"
   },
   "historical_data": [
+    {
+      "performance": 82,
+      "accessibility": 84,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-13 22:19:03"
+    },
+    {
+      "performance": 84,
+      "accessibility": 84,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-06 22:17:39"
+    },
     {
       "performance": 82,
       "accessibility": 84,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -2,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 22:17:53",
-    "test_date_previous": "2025-10-23 16:47:50"
+    "test_date_current": "2025-11-13 22:19:03",
+    "test_date_previous": "2025-11-06 22:17:39"
   }
 }

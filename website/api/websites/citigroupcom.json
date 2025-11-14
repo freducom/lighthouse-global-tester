@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.253Z",
+    "generated_at": "2025-11-14T08:39:15.128Z",
     "url": "citigroup.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 39,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-02 22:18:51"
+    "test_date": "2025-11-09 22:20:19"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-09 22:20:19"
+    },
     {
       "performance": 38,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 22:18:51",
-    "test_date_previous": "2025-10-27 00:54:04"
+    "test_date_current": "2025-11-09 22:20:19",
+    "test_date_previous": "2025-11-02 22:18:51"
   }
 }

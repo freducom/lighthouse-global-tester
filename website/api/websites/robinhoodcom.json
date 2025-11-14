@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.371Z",
+    "generated_at": "2025-11-14T08:39:15.155Z",
     "url": "robinhood.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 41,
     "accessibility": 90,
     "best_practices": 83,
     "seo": 78,
     "pwa": 33,
-    "test_date": "2025-10-30 20:20:14"
+    "test_date": "2025-11-13 20:21:33"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 78,
+      "pwa": 33,
+      "test_date": "2025-11-13 20:21:33"
+    },
+    {
+      "performance": 34,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 78,
+      "pwa": 33,
+      "test_date": "2025-11-06 20:20:09"
+    },
     {
       "performance": 32,
       "accessibility": 90,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 20:20:14"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 20:21:33",
+    "test_date_previous": "2025-11-06 20:20:09"
+  }
 }

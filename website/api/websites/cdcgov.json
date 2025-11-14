@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.250Z",
+    "generated_at": "2025-11-14T08:39:15.127Z",
     "url": "cdc.gov",
     "country": "United States",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 67,
+    "performance": 64,
     "accessibility": 88,
     "best_practices": 100,
     "seo": 84,
     "pwa": 56,
-    "test_date": "2025-11-02 20:25:00"
+    "test_date": "2025-11-09 20:20:42"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 88,
+      "best_practices": 100,
+      "seo": 84,
+      "pwa": 56,
+      "test_date": "2025-11-09 20:20:42"
+    },
     {
       "performance": 67,
       "accessibility": 88,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 20:25:00",
-    "test_date_previous": "2025-10-26 22:20:31"
+    "test_date_current": "2025-11-09 20:20:42",
+    "test_date_previous": "2025-11-02 20:25:00"
   }
 }

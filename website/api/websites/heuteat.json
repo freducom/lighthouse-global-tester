@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.920Z",
+    "generated_at": "2025-11-14T08:39:14.745Z",
     "url": "heute.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 75,
     "accessibility": 84,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-04 09:11:50"
+    "test_date": "2025-11-11 08:16:49"
   },
   "historical_data": [
+    {
+      "performance": 75,
+      "accessibility": 84,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-11 08:16:49"
+    },
     {
       "performance": 52,
       "accessibility": 84,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": 23,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 09:11:50",
-    "test_date_previous": "2025-11-04 08:19:34"
+    "test_date_current": "2025-11-11 08:16:49",
+    "test_date_previous": "2025-11-04 09:11:50"
   }
 }

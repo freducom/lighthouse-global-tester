@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.982Z",
+    "generated_at": "2025-11-14T08:39:14.770Z",
     "url": "globalnews.ca",
     "country": "Canada",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 25,
     "accessibility": 100,
     "best_practices": 0,
-    "seo": 93,
+    "seo": 86,
     "pwa": 100,
-    "test_date": "2025-10-19 19:58:45"
+    "test_date": "2025-11-11 03:18:18"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 100,
+      "best_practices": 0,
+      "seo": 86,
+      "pwa": 100,
+      "test_date": "2025-11-11 03:18:18"
+    },
     {
       "performance": 62,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -37,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": -7,
     "pwa": 0,
-    "test_date_current": "2025-10-19 19:58:45",
-    "test_date_previous": "2025-10-19 18:15:31"
+    "test_date_current": "2025-11-11 03:18:18",
+    "test_date_previous": "2025-10-19 19:58:45"
   }
 }

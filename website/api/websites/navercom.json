@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.952Z",
+    "generated_at": "2025-11-14T08:39:15.039Z",
     "url": "naver.com",
     "country": "South Korea",
     "industry": "Search Engine"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 41,
     "accessibility": 86,
     "best_practices": 83,
     "seo": 76,
     "pwa": 33,
-    "test_date": "2025-10-29 22:12:33"
+    "test_date": "2025-11-12 20:13:24"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-12 20:13:24"
+    },
+    {
+      "performance": 40,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-05 20:14:48"
+    },
     {
       "performance": 40,
       "accessibility": 86,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": 1,
     "accessibility": 0,
-    "best_practices": -9,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 22:12:33",
-    "test_date_previous": "2025-10-22 16:14:58"
+    "test_date_current": "2025-11-12 20:13:24",
+    "test_date_previous": "2025-11-05 20:14:48"
   }
 }

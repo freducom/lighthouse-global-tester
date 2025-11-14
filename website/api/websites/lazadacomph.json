@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.833Z",
+    "generated_at": "2025-11-14T08:39:15.001Z",
     "url": "lazada.com.ph",
     "country": "Philippines",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 41,
-    "accessibility": 31,
+    "performance": 46,
+    "accessibility": 36,
     "best_practices": 58,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-29 04:31:27"
+    "test_date": "2025-11-12 03:19:09"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 36,
+      "best_practices": 58,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-12 03:19:09"
+    },
+    {
+      "performance": 49,
+      "accessibility": 31,
+      "best_practices": 58,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-05 03:19:58"
+    },
     {
       "performance": 41,
       "accessibility": 31,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 04:31:27"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 5,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 03:19:09",
+    "test_date_previous": "2025-11-05 03:19:58"
+  }
 }

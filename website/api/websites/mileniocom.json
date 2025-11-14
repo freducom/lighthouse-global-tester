@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.748Z",
+    "generated_at": "2025-11-14T08:39:14.972Z",
     "url": "milenio.com",
     "country": "Mexico",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 26,
-    "accessibility": 91,
+    "performance": 25,
+    "accessibility": 94,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-22 14:11:35"
+    "test_date": "2025-11-12 14:15:24"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-12 14:15:24"
+    },
+    {
+      "performance": 26,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 14:13:57"
+    },
     {
       "performance": 26,
       "accessibility": 91,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-22 14:11:35"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 14:15:24",
+    "test_date_previous": "2025-11-05 14:13:57"
+  }
 }

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:41.634Z",
+    "generated_at": "2025-11-14T08:39:13.066Z",
     "country": "Argentina",
     "flag": "🌍",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 37,
-    "accessibility": 92,
-    "best_practices": 75,
-    "seo": 92,
-    "pwa": 35
+    "performance": 36,
+    "accessibility": 90,
+    "best_practices": 76,
+    "seo": 93,
+    "pwa": 44
   },
   "websites": [
     {
@@ -23,31 +23,43 @@
         "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-29 14:34:52"
+      "test_date": "2025-11-12 12:21:50"
     },
     {
       "url": "personal.com.ar",
       "industry": "Telecom",
       "scores": {
         "performance": 65,
-        "accessibility": 81,
-        "best_practices": 67,
+        "accessibility": 73,
+        "best_practices": 75,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-30 12:23:05"
+      "test_date": "2025-11-13 10:17:12"
     },
     {
       "url": "bancogalicia.com",
       "industry": "Finance",
       "scores": {
-        "performance": 36,
+        "performance": 37,
         "accessibility": 98,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-02 12:17:06"
+      "test_date": "2025-11-09 12:17:04"
+    },
+    {
+      "url": "lanacion.com.ar",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-11-12 03:08:19"
     },
     {
       "url": "bbva.com.ar",
@@ -71,7 +83,7 @@
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-11-02 03:18:39"
+      "test_date": "2025-11-09 03:17:31"
     }
   ],
   "industries": [
@@ -98,12 +110,23 @@
       }
     },
     {
+      "industry": "Media",
+      "website_count": 1,
+      "averages": {
+        "performance": 28,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 89
+      }
+    },
+    {
       "industry": "Telecom",
       "website_count": 1,
       "averages": {
         "performance": 65,
-        "accessibility": 81,
-        "best_practices": 67,
+        "accessibility": 73,
+        "best_practices": 75,
         "seo": 97,
         "pwa": 33
       }

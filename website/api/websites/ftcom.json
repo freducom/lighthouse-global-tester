@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.200Z",
+    "generated_at": "2025-11-14T08:39:15.109Z",
     "url": "ft.com",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 50,
     "accessibility": 91,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-04 00:49:44"
+    "test_date": "2025-11-11 00:50:44"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-11 00:50:44"
+    },
     {
       "performance": 46,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 00:49:44"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 00:50:44",
+    "test_date_previous": "2025-11-04 00:49:44"
+  }
 }

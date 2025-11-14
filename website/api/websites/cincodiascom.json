@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.960Z",
+    "generated_at": "2025-11-14T08:39:15.042Z",
     "url": "cincodias.com",
     "country": "Spain",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 51,
-    "accessibility": 98,
+    "performance": 57,
+    "accessibility": 100,
     "best_practices": 83,
-    "seo": 90,
+    "seo": 91,
     "pwa": 78,
-    "test_date": "2025-11-02 22:18:07"
+    "test_date": "2025-11-09 22:19:37"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 78,
+      "test_date": "2025-11-09 22:19:37"
+    },
     {
       "performance": 51,
       "accessibility": 98,
@@ -33,11 +41,11 @@
   ],
   "trends": {
     "performance": 6,
-    "accessibility": 0,
+    "accessibility": 2,
     "best_practices": 0,
-    "seo": -1,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-11-02 22:18:07",
-    "test_date_previous": "2025-10-27 00:53:17"
+    "test_date_current": "2025-11-09 22:19:37",
+    "test_date_previous": "2025-11-02 22:18:07"
   }
 }

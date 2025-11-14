@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.188Z",
+    "generated_at": "2025-11-14T08:39:14.835Z",
     "url": "power.fi",
     "country": "Finland",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 22,
-    "accessibility": 84,
+    "performance": 30,
+    "accessibility": 74,
     "best_practices": 92,
-    "seo": 93,
+    "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-30 14:07:22"
+    "test_date": "2025-11-13 14:15:43"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 74,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-13 14:15:43"
+    },
+    {
+      "performance": 29,
+      "accessibility": 82,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-06 14:15:56"
+    },
     {
       "performance": 22,
       "accessibility": 84,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 14:07:22"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": -8,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 14:15:43",
+    "test_date_previous": "2025-11-06 14:15:56"
+  }
 }

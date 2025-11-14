@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.331Z",
+    "generated_at": "2025-11-14T08:39:15.149Z",
     "url": "npr.org",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 25,
-    "accessibility": 71,
+    "performance": 26,
+    "accessibility": 77,
     "best_practices": 67,
-    "seo": 78,
+    "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-30 04:15:18"
+    "test_date": "2025-11-13 03:09:15"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 77,
+      "best_practices": 67,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-13 03:09:15"
+    },
+    {
+      "performance": 26,
+      "accessibility": 77,
+      "best_practices": 67,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-06 03:11:00"
+    },
     {
       "performance": 25,
       "accessibility": 71,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
-    "accessibility": -3,
+    "performance": 0,
+    "accessibility": 0,
     "best_practices": 0,
-    "seo": -8,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 04:15:18",
-    "test_date_previous": "2025-10-23 07:10:28"
+    "test_date_current": "2025-11-13 03:09:15",
+    "test_date_previous": "2025-11-06 03:11:00"
   }
 }

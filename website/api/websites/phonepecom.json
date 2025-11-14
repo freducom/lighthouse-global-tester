@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.484Z",
+    "generated_at": "2025-11-14T08:39:14.916Z",
     "url": "phonepe.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 54,
     "accessibility": 80,
     "best_practices": 67,
     "seo": 91,
     "pwa": 78,
-    "test_date": "2025-10-30 12:31:47"
+    "test_date": "2025-11-13 10:25:41"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 80,
+      "best_practices": 67,
+      "seo": 91,
+      "pwa": 78,
+      "test_date": "2025-11-13 10:25:41"
+    },
+    {
+      "performance": 51,
+      "accessibility": 80,
+      "best_practices": 67,
+      "seo": 91,
+      "pwa": 78,
+      "test_date": "2025-11-06 10:26:07"
+    },
     {
       "performance": 48,
       "accessibility": 80,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:31:47"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:25:41",
+    "test_date_previous": "2025-11-06 10:26:07"
+  }
 }

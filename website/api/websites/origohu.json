@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.362Z",
+    "generated_at": "2025-11-14T08:39:14.883Z",
     "url": "origo.hu",
     "country": "Hungary",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 23,
+    "performance": 25,
     "accessibility": 76,
     "best_practices": 83,
     "seo": 91,
     "pwa": 56,
-    "test_date": "2025-10-30 08:22:50"
+    "test_date": "2025-11-13 06:31:20"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-13 06:31:20"
+    },
+    {
+      "performance": 25,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-06 06:28:30"
+    },
     {
       "performance": 23,
       "accessibility": 76,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
-    "accessibility": -11,
+    "performance": 0,
+    "accessibility": 0,
     "best_practices": 0,
-    "seo": -7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 08:22:50",
-    "test_date_previous": "2025-10-23 03:01:04"
+    "test_date_current": "2025-11-13 06:31:20",
+    "test_date_previous": "2025-11-06 06:28:30"
   }
 }

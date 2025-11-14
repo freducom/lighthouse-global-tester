@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.054Z",
+    "generated_at": "2025-11-14T08:39:15.073Z",
     "url": "revolut.com",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 31,
     "accessibility": 93,
     "best_practices": 100,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-30 20:15:17"
+    "test_date": "2025-11-13 20:16:33"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 93,
+      "best_practices": 100,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-13 20:16:33"
+    },
+    {
+      "performance": 26,
+      "accessibility": 93,
+      "best_practices": 100,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-06 20:15:08"
+    },
     {
       "performance": 33,
       "accessibility": 93,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 20:15:17"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 20:16:33",
+    "test_date_previous": "2025-11-06 20:15:08"
+  }
 }

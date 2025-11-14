@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.480Z",
+    "generated_at": "2025-11-14T08:39:14.915Z",
     "url": "paytm.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 51,
     "accessibility": 73,
     "best_practices": 83,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-30 12:18:42"
+    "test_date": "2025-11-13 10:12:49"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 73,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-13 10:12:49"
+    },
+    {
+      "performance": 51,
+      "accessibility": 73,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-06 10:13:04"
+    },
     {
       "performance": 52,
       "accessibility": 73,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:18:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:12:49",
+    "test_date_previous": "2025-11-06 10:13:04"
+  }
 }

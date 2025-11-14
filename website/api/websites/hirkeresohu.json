@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.359Z",
+    "generated_at": "2025-11-14T08:39:14.882Z",
     "url": "hirkereso.hu",
     "country": "Hungary",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 72,
+    "performance": 66,
     "accessibility": 65,
     "best_practices": 83,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-04 09:12:45"
+    "test_date": "2025-11-11 08:20:28"
   },
   "historical_data": [
+    {
+      "performance": 66,
+      "accessibility": 65,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-11 08:20:28"
+    },
     {
       "performance": 72,
       "accessibility": 65,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": -6,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 09:12:45",
-    "test_date_previous": "2025-11-04 08:21:50"
+    "test_date_current": "2025-11-11 08:20:28",
+    "test_date_previous": "2025-11-04 09:12:45"
   }
 }

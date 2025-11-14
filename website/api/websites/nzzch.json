@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.102Z",
+    "generated_at": "2025-11-14T08:39:15.087Z",
     "url": "nzz.ch",
     "country": "Switzerland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 32,
-    "accessibility": 100,
+    "performance": 29,
+    "accessibility": 99,
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-30 06:14:37"
+    "test_date": "2025-11-13 04:19:19"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-13 04:19:19"
+    },
+    {
+      "performance": 32,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-06 04:19:27"
+    },
     {
       "performance": 32,
       "accessibility": 100,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
-    "accessibility": 1,
+    "performance": -3,
+    "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 06:14:37",
-    "test_date_previous": "2025-10-22 22:14:51"
+    "test_date_current": "2025-11-13 04:19:19",
+    "test_date_previous": "2025-11-06 04:19:27"
   }
 }

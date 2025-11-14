@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.329Z",
+    "generated_at": "2025-11-14T08:39:15.148Z",
     "url": "notion.so",
     "country": "United States",
     "industry": "Software"
@@ -11,9 +11,25 @@
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 03:09:13"
+    "test_date": "2025-11-13 00:49:47"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-13 00:49:47"
+    },
+    {
+      "performance": 35,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-06 00:48:23"
+    },
     {
       "performance": 34,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 03:09:13"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 00:49:47",
+    "test_date_previous": "2025-11-06 00:48:23"
+  }
 }

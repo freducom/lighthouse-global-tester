@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.173Z",
+    "generated_at": "2025-11-14T08:39:14.828Z",
     "url": "nextgames.com",
     "country": "Finland",
     "industry": "Gaming"
   },
   "latest_scores": {
-    "performance": 64,
+    "performance": 71,
     "accessibility": 91,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 00:57:39"
+    "test_date": "2025-11-12 22:19:45"
   },
   "historical_data": [
+    {
+      "performance": 71,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-12 22:19:45"
+    },
+    {
+      "performance": 67,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 22:30:02"
+    },
     {
       "performance": 64,
       "accessibility": 91,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 00:57:39"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 22:19:45",
+    "test_date_previous": "2025-11-05 22:30:02"
+  }
 }

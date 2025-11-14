@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.222Z",
+    "generated_at": "2025-11-14T08:39:14.845Z",
     "url": "tieto.com",
     "country": "Finland",
     "industry": "Consulting"
   },
   "latest_scores": {
-    "performance": 67,
+    "performance": 59,
     "accessibility": 93,
     "best_practices": 83,
     "seo": 91,
     "pwa": 44,
-    "test_date": "2025-10-31 20:24:46"
+    "test_date": "2025-11-07 20:28:23"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 44,
+      "test_date": "2025-11-07 20:28:23"
+    },
     {
       "performance": 67,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 20:24:46"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -8,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 20:28:23",
+    "test_date_previous": "2025-10-31 20:24:46"
+  }
 }

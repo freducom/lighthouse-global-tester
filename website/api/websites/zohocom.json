@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.557Z",
+    "generated_at": "2025-11-14T08:39:14.932Z",
     "url": "zoho.com",
     "country": "India",
     "industry": "Software"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 63,
     "accessibility": 94,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-01 18:20:48"
+    "test_date": "2025-11-08 18:24:12"
   },
   "historical_data": [
+    {
+      "performance": 63,
+      "accessibility": 94,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-08 18:24:12"
+    },
     {
       "performance": 62,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 18:20:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 18:24:12",
+    "test_date_previous": "2025-11-01 18:20:48"
+  }
 }

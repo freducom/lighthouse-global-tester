@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.139Z",
+    "generated_at": "2025-11-14T08:39:14.818Z",
     "url": "holvi.com",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 40,
     "accessibility": 96,
     "best_practices": 75,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-11-04 10:16:15"
+    "test_date": "2025-11-11 10:15:24"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-11 10:15:24"
+    },
+    {
+      "performance": 38,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-04 11:50:44"
+    },
     {
       "performance": 35,
       "accessibility": 96,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 10:16:15",
-    "test_date_previous": "2025-10-28 12:23:07"
+    "test_date_current": "2025-11-11 10:15:24",
+    "test_date_previous": "2025-11-04 11:50:44"
   }
 }

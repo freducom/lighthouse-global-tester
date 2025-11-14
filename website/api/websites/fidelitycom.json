@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.294Z",
+    "generated_at": "2025-11-14T08:39:15.136Z",
     "url": "fidelity.com",
     "country": "United States",
     "industry": "Finance"
@@ -11,9 +11,17 @@
     "best_practices": 42,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-11-03 20:14:33"
+    "test_date": "2025-11-10 20:15:06"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 88,
+      "best_practices": 42,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-10 20:15:06"
+    },
     {
       "performance": 26,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 20:14:33"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:15:06",
+    "test_date_previous": "2025-11-03 20:14:33"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.292Z",
+    "generated_at": "2025-11-14T08:39:14.865Z",
     "url": "heise.de",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 50,
+    "performance": 48,
     "accessibility": 83,
     "best_practices": 92,
     "seo": 93,
     "pwa": 56,
-    "test_date": "2025-11-04 09:10:14"
+    "test_date": "2025-11-11 08:15:13"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 83,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 56,
+      "test_date": "2025-11-11 08:15:13"
+    },
     {
       "performance": 50,
       "accessibility": 83,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 09:10:14",
-    "test_date_previous": "2025-11-04 08:17:59"
+    "test_date_current": "2025-11-11 08:15:13",
+    "test_date_previous": "2025-11-04 09:10:14"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.249Z",
+    "generated_at": "2025-11-14T08:39:15.126Z",
     "url": "capitalone.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
     "performance": 27,
-    "accessibility": 94,
+    "accessibility": 92,
     "best_practices": 67,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-02 20:15:45"
+    "test_date": "2025-11-09 20:15:49"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 92,
+      "best_practices": 67,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-09 20:15:49"
+    },
     {
       "performance": 27,
       "accessibility": 94,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
-    "accessibility": 0,
+    "performance": 0,
+    "accessibility": -2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 20:15:45",
-    "test_date_previous": "2025-10-26 22:13:34"
+    "test_date_current": "2025-11-09 20:15:49",
+    "test_date_previous": "2025-11-02 20:15:45"
   }
 }

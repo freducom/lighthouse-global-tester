@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.711Z",
+    "generated_at": "2025-11-14T08:39:14.961Z",
     "url": "libyaherald.com",
     "country": "Libya",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 43,
     "accessibility": 89,
-    "best_practices": 92,
-    "seo": 98,
+    "best_practices": 83,
+    "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-29 06:22:30"
+    "test_date": "2025-11-12 04:22:24"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-12 04:22:24"
+    },
+    {
+      "performance": 49,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-05 04:19:35"
+    },
     {
       "performance": 26,
       "accessibility": 89,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -9,
+    "performance": -6,
     "accessibility": 0,
-    "best_practices": 9,
-    "seo": 7,
+    "best_practices": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-10-29 06:22:30",
-    "test_date_previous": "2025-10-22 04:13:31"
+    "test_date_current": "2025-11-12 04:22:24",
+    "test_date_previous": "2025-11-05 04:19:35"
   }
 }

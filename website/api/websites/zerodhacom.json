@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.556Z",
+    "generated_at": "2025-11-14T08:39:14.931Z",
     "url": "zerodha.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 77,
+    "performance": 76,
     "accessibility": 82,
     "best_practices": 100,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-01 18:19:06"
+    "test_date": "2025-11-08 18:22:57"
   },
   "historical_data": [
+    {
+      "performance": 76,
+      "accessibility": 82,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-08 18:22:57"
+    },
     {
       "performance": 77,
       "accessibility": 82,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 18:19:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 18:22:57",
+    "test_date_previous": "2025-11-01 18:19:06"
+  }
 }

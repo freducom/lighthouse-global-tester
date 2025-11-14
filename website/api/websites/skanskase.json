@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.063Z",
+    "generated_at": "2025-11-14T08:39:15.075Z",
     "url": "skanska.se",
     "country": "Sweden",
     "industry": "Construction"
   },
   "latest_scores": {
-    "performance": 19,
+    "performance": 13,
     "accessibility": 85,
     "best_practices": 92,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-31 04:27:08"
+    "test_date": "2025-11-14 04:29:07"
   },
   "historical_data": [
+    {
+      "performance": 13,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-14 04:29:07"
+    },
+    {
+      "performance": 14,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-07 04:26:41"
+    },
     {
       "performance": 19,
       "accessibility": 85,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 04:27:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 04:29:07",
+    "test_date_previous": "2025-11-07 04:26:41"
+  }
 }

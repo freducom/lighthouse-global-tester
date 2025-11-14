@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.822Z",
+    "generated_at": "2025-11-14T08:39:14.996Z",
     "url": "jobz.pk",
     "country": "Pakistan",
     "industry": "Jobs"
   },
   "latest_scores": {
-    "performance": 79,
-    "accessibility": 55,
-    "best_practices": 83,
-    "seo": 87,
+    "performance": 77,
+    "accessibility": 65,
+    "best_practices": 75,
+    "seo": 88,
     "pwa": 33,
-    "test_date": "2025-10-28 22:12:13"
+    "test_date": "2025-11-11 20:14:21"
   },
   "historical_data": [
+    {
+      "performance": 77,
+      "accessibility": 65,
+      "best_practices": 75,
+      "seo": 88,
+      "pwa": 33,
+      "test_date": "2025-11-11 20:14:21"
+    },
+    {
+      "performance": 80,
+      "accessibility": 65,
+      "best_practices": 75,
+      "seo": 87,
+      "pwa": 33,
+      "test_date": "2025-11-04 20:14:28"
+    },
     {
       "performance": 79,
       "accessibility": 55,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": -15,
-    "best_practices": 16,
-    "seo": 0,
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-10-28 22:12:13",
-    "test_date_previous": "2025-10-21 18:12:33"
+    "test_date_current": "2025-11-11 20:14:21",
+    "test_date_previous": "2025-11-04 20:14:28"
   }
 }

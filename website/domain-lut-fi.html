@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:30.394Z",
+          "dateCreated": "2025-11-14T08:39:05.168Z",
           "about": {
             "@type": "WebSite",
             "name": "lut.fi",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-lut.fi.html#metrics",
           "name": "lut.fi Performance Metrics",
           "description": "Latest Lighthouse scores for lut.fi",
-          "performanceScore": 62,
+          "performanceScore": 61,
           "accessibilityScore": 96,
           "bestPracticesScore": 100,
           "seoScore": 93,
-          "dateRecorded": "2025-10-29 10:11:47"
+          "dateRecorded": "2025-11-12 08:14:46"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number average">62%</div>
+                <div class="stat-number average">61%</div>
                 <div class="stat-description">average performance</div>
             </div>
             <div class="stat-card accessibility">
@@ -139,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 62%"></div>
-                        <span class="score-text">62%</span>
+                        <div class="score-fill performance" style="width: 61%"></div>
+                        <span class="score-text">61%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":1213,"url":"lut.fi","performance":62,"accessibility":96,"best_practices":100,"seo":93,"pwa":44,"test_date":"2025-10-29 10:11:47","country":"Finland","industry":"Education"},{"id":2213,"url":"lut.fi","performance":59,"accessibility":96,"best_practices":100,"seo":93,"pwa":44,"test_date":"2025-11-05 08:14:35","country":"Finland","industry":"Education"},{"id":3163,"url":"lut.fi","performance":61,"accessibility":96,"best_practices":100,"seo":93,"pwa":44,"test_date":"2025-11-12 08:14:46","country":"Finland","industry":"Education"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

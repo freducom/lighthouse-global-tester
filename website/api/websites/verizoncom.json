@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.433Z",
+    "generated_at": "2025-11-14T08:39:15.165Z",
     "url": "verizon.com",
     "country": "United States",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 21,
     "accessibility": 93,
     "best_practices": 83,
-    "seo": 79,
+    "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-01 06:21:28"
+    "test_date": "2025-11-08 06:23:31"
   },
   "historical_data": [
+    {
+      "performance": 21,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-08 06:23:31"
+    },
     {
       "performance": 28,
       "accessibility": 93,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 06:21:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 06:23:31",
+    "test_date_previous": "2025-11-01 06:21:28"
+  }
 }

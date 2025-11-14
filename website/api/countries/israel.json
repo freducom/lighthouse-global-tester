@@ -1,30 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:41.930Z",
+    "generated_at": "2025-11-14T08:39:13.285Z",
     "country": "Israel",
     "flag": "🇮🇱",
     "website_count": 10
   },
   "averages": {
-    "performance": 40,
-    "accessibility": 72,
-    "best_practices": 77,
-    "seo": 89,
+    "performance": 35,
+    "accessibility": 73,
+    "best_practices": 75,
+    "seo": 90,
     "pwa": 35
   },
   "websites": [
-    {
-      "url": "bizportal.co.il",
-      "industry": "Finance",
-      "scores": {
-        "performance": 87,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 82,
-        "pwa": 33
-      },
-      "test_date": "2025-11-02 14:20:31"
-    },
     {
       "url": "walla.co.il",
       "industry": "Media",
@@ -59,7 +47,7 @@
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 14:12:29"
+      "test_date": "2025-11-08 14:06:37"
     },
     {
       "url": "mako.co.il",
@@ -132,6 +120,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-19 20:22:17"
+    },
+    {
+      "url": "bizportal.co.il",
+      "industry": "Finance",
+      "scores": {
+        "performance": 28,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-09 14:17:25"
     }
   ],
   "industries": [
@@ -139,10 +139,10 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 87,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 82,
+        "performance": 28,
+        "accessibility": 87,
+        "best_practices": 67,
+        "seo": 90,
         "pwa": 33
       }
     },

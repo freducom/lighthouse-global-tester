@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.165Z",
+    "generated_at": "2025-11-14T08:39:14.826Z",
     "url": "metsagroup.com",
     "country": "Finland",
     "industry": "Industry"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 53,
     "accessibility": 96,
-    "best_practices": 83,
+    "best_practices": 75,
     "seo": 91,
     "pwa": 56,
-    "test_date": "2025-10-29 16:12:51"
+    "test_date": "2025-11-12 14:11:30"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-12 14:11:30"
+    },
+    {
+      "performance": 56,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-05 14:10:17"
+    },
     {
       "performance": 38,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 16:12:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 14:11:30",
+    "test_date_previous": "2025-11-05 14:10:17"
+  }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.585Z",
+    "generated_at": "2025-11-14T08:39:14.937Z",
     "url": "mehrnews.com",
     "country": "Iran",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 53,
     "accessibility": 77,
-    "best_practices": 67,
+    "best_practices": 75,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-29 14:33:51"
+    "test_date": "2025-11-12 12:20:49"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 77,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-12 12:20:49"
+    },
+    {
+      "performance": 50,
+      "accessibility": 78,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:20:45"
+    },
     {
       "performance": 59,
       "accessibility": 77,
@@ -41,11 +57,11 @@
   ],
   "trends": {
     "performance": 3,
-    "accessibility": 0,
+    "accessibility": -1,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:33:51",
-    "test_date_previous": "2025-10-29 14:12:22"
+    "test_date_current": "2025-11-12 12:20:49",
+    "test_date_previous": "2025-11-05 12:20:45"
   }
 }

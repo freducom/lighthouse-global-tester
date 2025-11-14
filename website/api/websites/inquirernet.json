@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.832Z",
+    "generated_at": "2025-11-14T08:39:15.001Z",
     "url": "inquirer.net",
     "country": "Philippines",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 75,
     "accessibility": 90,
     "best_practices": 83,
     "seo": 85,
     "pwa": 44,
-    "test_date": "2025-10-28 18:23:42"
+    "test_date": "2025-11-11 16:23:41"
   },
   "historical_data": [
+    {
+      "performance": 75,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 44,
+      "test_date": "2025-11-11 16:23:41"
+    },
+    {
+      "performance": 71,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 44,
+      "test_date": "2025-11-04 16:23:03"
+    },
     {
       "performance": 65,
       "accessibility": 90,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 18:23:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 16:23:41",
+    "test_date_previous": "2025-11-04 16:23:03"
+  }
 }

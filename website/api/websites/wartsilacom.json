@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.245Z",
+    "generated_at": "2025-11-14T08:39:14.852Z",
     "url": "wartsila.com",
     "country": "Finland",
     "industry": "Engineering"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 45,
     "accessibility": 98,
-    "best_practices": 92,
-    "seo": 100,
+    "best_practices": 83,
+    "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 10:19:51"
+    "test_date": "2025-11-08 10:18:35"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 10:18:35"
+    },
     {
       "performance": 43,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 10:19:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 10:18:35",
+    "test_date_previous": "2025-11-01 10:19:51"
+  }
 }

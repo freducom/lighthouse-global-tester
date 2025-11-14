@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.569Z",
+    "generated_at": "2025-11-14T08:39:14.935Z",
     "url": "iribnews.ir",
     "country": "Iran",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 82,
-    "accessibility": 97,
+    "performance": 80,
+    "accessibility": 100,
     "best_practices": 83,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-28 20:29:27"
+    "test_date": "2025-11-11 18:23:53"
   },
   "historical_data": [
+    {
+      "performance": 80,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-11 18:23:53"
+    },
+    {
+      "performance": 77,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-04 18:24:23"
+    },
     {
       "performance": 82,
       "accessibility": 97,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 24,
-    "accessibility": -3,
+    "performance": 3,
+    "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-28 20:29:27",
-    "test_date_previous": "2025-10-21 17:38:10"
+    "test_date_current": "2025-11-11 18:23:53",
+    "test_date_previous": "2025-11-04 18:24:23"
   }
 }

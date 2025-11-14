@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.486Z",
+    "generated_at": "2025-11-14T08:39:14.917Z",
     "url": "postman.com",
     "country": "India",
     "industry": "Software"
   },
   "latest_scores": {
-    "performance": 34,
-    "accessibility": 80,
+    "performance": 36,
+    "accessibility": 87,
     "best_practices": 83,
-    "seo": 86,
+    "seo": 93,
     "pwa": 89,
-    "test_date": "2025-10-30 14:06:12"
+    "test_date": "2025-11-13 14:14:25"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 87,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 89,
+      "test_date": "2025-11-13 14:14:25"
+    },
+    {
+      "performance": 40,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 89,
+      "test_date": "2025-11-06 14:14:41"
+    },
     {
       "performance": 34,
       "accessibility": 80,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 14:06:12"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 7,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 14:14:25",
+    "test_date_previous": "2025-11-06 14:14:41"
+  }
 }

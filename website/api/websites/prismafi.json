@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.190Z",
+    "generated_at": "2025-11-14T08:39:14.835Z",
     "url": "prisma.fi",
     "country": "Finland",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 38,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 14:11:18"
+    "test_date": "2025-11-06 14:19:36"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-06 14:19:36"
+    },
     {
       "performance": 42,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-30 14:11:18"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-06 14:19:36",
+    "test_date_previous": "2025-10-30 14:11:18"
+  }
 }

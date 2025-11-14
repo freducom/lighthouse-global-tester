@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.845Z",
+    "generated_at": "2025-11-14T08:39:15.007Z",
     "url": "o2.pl",
     "country": "Poland",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 60,
     "accessibility": 96,
-    "best_practices": 67,
+    "best_practices": 75,
     "seo": 100,
     "pwa": 78,
-    "test_date": "2025-10-30 06:14:58"
+    "test_date": "2025-11-13 04:19:44"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-13 04:19:44"
+    },
+    {
+      "performance": 46,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-06 04:19:50"
+    },
     {
       "performance": 52,
       "accessibility": 96,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
+    "performance": 14,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 06:14:58",
-    "test_date_previous": "2025-10-22 22:15:13"
+    "test_date_current": "2025-11-13 04:19:44",
+    "test_date_previous": "2025-11-06 04:19:50"
   }
 }

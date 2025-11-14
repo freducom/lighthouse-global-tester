@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.322Z",
+    "generated_at": "2025-11-14T08:39:14.875Z",
     "url": "ethnos.gr",
     "country": "Greece",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 51,
-    "accessibility": 76,
+    "performance": 43,
+    "accessibility": 74,
     "best_practices": 67,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-20 16:10:15"
+    "test_date": "2025-11-10 18:24:02"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 74,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 18:24:02"
+    },
     {
       "performance": 51,
       "accessibility": 76,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-20 16:10:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -8,
+    "accessibility": -2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 18:24:02",
+    "test_date_previous": "2025-10-20 16:10:15"
+  }
 }

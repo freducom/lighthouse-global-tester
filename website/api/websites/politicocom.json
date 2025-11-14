@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.364Z",
+    "generated_at": "2025-11-14T08:39:15.153Z",
     "url": "politico.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 30,
+    "performance": 28,
     "accessibility": 75,
     "best_practices": 67,
     "seo": 91,
     "pwa": 56,
-    "test_date": "2025-10-30 13:38:03"
+    "test_date": "2025-11-13 12:22:42"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 75,
+      "best_practices": 67,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-13 12:22:42"
+    },
+    {
+      "performance": 27,
+      "accessibility": 75,
+      "best_practices": 67,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-06 12:22:03"
+    },
     {
       "performance": 30,
       "accessibility": 75,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 13:38:03"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 23,
+    "test_date_current": "2025-11-13 12:22:42",
+    "test_date_previous": "2025-11-06 12:22:03"
+  }
 }

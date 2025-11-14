@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.562Z",
+    "generated_at": "2025-11-14T08:39:14.933Z",
     "url": "merdeka.com",
     "country": "Indonesia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 25,
+    "performance": 51,
     "accessibility": 86,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-29 14:36:14"
+    "test_date": "2025-11-12 12:23:03"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-12 12:23:03"
+    },
+    {
+      "performance": 40,
+      "accessibility": 86,
+      "best_practices": 67,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:23:46"
+    },
     {
       "performance": 25,
       "accessibility": 86,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": 11,
     "accessibility": 0,
     "best_practices": 16,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:36:14",
-    "test_date_previous": "2025-10-29 14:14:44"
+    "test_date_current": "2025-11-12 12:23:03",
+    "test_date_previous": "2025-11-05 12:23:46"
   }
 }

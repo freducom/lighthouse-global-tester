@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.014Z",
+    "generated_at": "2025-11-14T08:39:15.056Z",
     "url": "folksam.se",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 43,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-03 22:16:37"
+    "test_date": "2025-11-10 22:17:03"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-10 22:17:03"
+    },
     {
       "performance": 37,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 22:16:37"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 22:17:03",
+    "test_date_previous": "2025-11-03 22:16:37"
+  }
 }

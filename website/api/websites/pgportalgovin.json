@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.481Z",
+    "generated_at": "2025-11-14T08:39:14.916Z",
     "url": "pgportal.gov.in",
     "country": "India",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 54,
+    "performance": 89,
     "accessibility": 66,
     "best_practices": 83,
     "seo": 75,
     "pwa": 22,
-    "test_date": "2025-10-30 12:27:21"
+    "test_date": "2025-11-13 10:21:19"
   },
   "historical_data": [
+    {
+      "performance": 89,
+      "accessibility": 66,
+      "best_practices": 83,
+      "seo": 75,
+      "pwa": 22,
+      "test_date": "2025-11-13 10:21:19"
+    },
+    {
+      "performance": 77,
+      "accessibility": 66,
+      "best_practices": 83,
+      "seo": 75,
+      "pwa": 22,
+      "test_date": "2025-11-06 10:21:41"
+    },
     {
       "performance": 54,
       "accessibility": 66,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:27:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 12,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:21:19",
+    "test_date_previous": "2025-11-06 10:21:41"
+  }
 }

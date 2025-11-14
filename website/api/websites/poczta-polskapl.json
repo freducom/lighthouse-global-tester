@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.852Z",
+    "generated_at": "2025-11-14T08:39:15.010Z",
     "url": "poczta-polska.pl",
     "country": "Poland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 62,
     "accessibility": 88,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-30 13:36:16"
+    "test_date": "2025-11-13 12:20:55"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 88,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-13 12:20:55"
+    },
+    {
+      "performance": 60,
+      "accessibility": 88,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-06 12:20:23"
+    },
     {
       "performance": 60,
       "accessibility": 88,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 13:36:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 12:20:55",
+    "test_date_previous": "2025-11-06 12:20:23"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.124Z",
+    "generated_at": "2025-11-14T08:39:14.811Z",
     "url": "fiat.fi",
     "country": "Finland",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 28,
-    "accessibility": 82,
+    "performance": 35,
+    "accessibility": 74,
     "best_practices": 92,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-03 20:13:48"
+    "test_date": "2025-11-10 20:14:13"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 74,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-10 20:14:13"
+    },
     {
       "performance": 28,
       "accessibility": 82,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 20:13:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": -8,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:14:13",
+    "test_date_previous": "2025-11-03 20:13:48"
+  }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.456Z",
+    "generated_at": "2025-11-14T08:39:14.909Z",
     "url": "mea.gov.in",
     "country": "India",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 16,
     "accessibility": 87,
-    "best_practices": 75,
+    "best_practices": 58,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-10-29 12:33:48"
+    "test_date": "2025-11-12 12:18:36"
   },
   "historical_data": [
+    {
+      "performance": 16,
+      "accessibility": 87,
+      "best_practices": 58,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-12 12:18:36"
+    },
+    {
+      "performance": 20,
+      "accessibility": 87,
+      "best_practices": 58,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:18:21"
+    },
     {
       "performance": 40,
       "accessibility": 87,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 12:33:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 12:18:36",
+    "test_date_previous": "2025-11-05 12:18:21"
+  }
 }

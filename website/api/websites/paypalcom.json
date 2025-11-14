@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.359Z",
+    "generated_at": "2025-11-14T08:39:15.152Z",
     "url": "paypal.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 51,
+    "performance": 42,
     "accessibility": 96,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-30 12:18:25"
+    "test_date": "2025-11-13 10:12:32"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-13 10:12:32"
+    },
+    {
+      "performance": 49,
+      "accessibility": 96,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-06 10:12:47"
+    },
     {
       "performance": 51,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:18:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -7,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:12:32",
+    "test_date_previous": "2025-11-06 10:12:47"
+  }
 }

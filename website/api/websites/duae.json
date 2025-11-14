@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.175Z",
+    "generated_at": "2025-11-14T08:39:15.102Z",
     "url": "du.ae",
     "country": "United Arab Emirates",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 10,
+    "performance": 9,
     "accessibility": 98,
     "best_practices": 58,
     "seo": 97,
     "pwa": 33,
-    "test_date": "2025-11-03 10:22:18"
+    "test_date": "2025-11-10 10:21:40"
   },
   "historical_data": [
+    {
+      "performance": 9,
+      "accessibility": 98,
+      "best_practices": 58,
+      "seo": 97,
+      "pwa": 33,
+      "test_date": "2025-11-10 10:21:40"
+    },
     {
       "performance": 10,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -20,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 10:22:18",
-    "test_date_previous": "2025-10-27 12:28:18"
+    "test_date_current": "2025-11-10 10:21:40",
+    "test_date_previous": "2025-11-03 10:22:18"
   }
 }

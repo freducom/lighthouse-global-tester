@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.163Z",
+    "generated_at": "2025-11-14T08:39:15.099Z",
     "url": "obozrevatel.com",
     "country": "Ukraine",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 68,
     "accessibility": 64,
     "best_practices": 83,
     "seo": 98,
     "pwa": 78,
-    "test_date": "2025-10-30 06:15:58"
+    "test_date": "2025-11-06 04:20:50"
   },
   "historical_data": [
+    {
+      "performance": 68,
+      "accessibility": 64,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 78,
+      "test_date": "2025-11-06 04:20:50"
+    },
     {
       "performance": 59,
       "accessibility": 64,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-30 06:15:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 9,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-06 04:20:50",
+    "test_date_previous": "2025-10-30 06:15:58"
+  }
 }

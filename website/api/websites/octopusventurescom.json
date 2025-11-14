@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.214Z",
+    "generated_at": "2025-11-14T08:39:15.114Z",
     "url": "octopusventures.com",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 42,
     "accessibility": 86,
     "best_practices": 83,
     "seo": 84,
     "pwa": 44,
-    "test_date": "2025-10-30 06:18:34"
+    "test_date": "2025-11-06 04:22:16"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 44,
+      "test_date": "2025-11-06 04:22:16"
+    },
     {
       "performance": 43,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-30 06:18:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-06 04:22:16",
+    "test_date_previous": "2025-10-30 06:18:34"
+  }
 }

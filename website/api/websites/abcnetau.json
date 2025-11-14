@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.910Z",
+    "generated_at": "2025-11-14T08:39:14.742Z",
     "url": "abc.net.au",
     "country": "Australia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 33,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-02 03:12:57"
+    "test_date": "2025-11-09 03:10:37"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-09 03:10:37"
+    },
     {
       "performance": 35,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -18,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 03:12:57",
-    "test_date_previous": "2025-10-19 20:02:15"
+    "test_date_current": "2025-11-09 03:10:37",
+    "test_date_previous": "2025-11-02 03:12:57"
   }
 }

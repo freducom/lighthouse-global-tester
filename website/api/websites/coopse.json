@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.999Z",
+    "generated_at": "2025-11-14T08:39:15.051Z",
     "url": "coop.se",
     "country": "Sweden",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 30,
+    "performance": 34,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 93,
     "pwa": 78,
-    "test_date": "2025-11-03 03:14:55"
+    "test_date": "2025-11-10 03:16:21"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-10 03:16:21"
+    },
     {
       "performance": 30,
       "accessibility": 100,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
+    "performance": 4,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 03:14:55",
-    "test_date_previous": "2025-10-27 04:22:36"
+    "test_date_current": "2025-11-10 03:16:21",
+    "test_date_previous": "2025-11-03 03:14:55"
   }
 }

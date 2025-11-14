@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.300Z",
+    "generated_at": "2025-11-14T08:39:14.867Z",
     "url": "mercedes-benz.de",
     "country": "Germany",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 5,
-    "accessibility": 100,
+    "performance": 3,
+    "accessibility": 92,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-29 14:35:49"
+    "test_date": "2025-11-05 12:23:19"
   },
   "historical_data": [
+    {
+      "performance": 3,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:23:19"
+    },
     {
       "performance": 5,
       "accessibility": 100,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -3,
-    "accessibility": 0,
+    "performance": -2,
+    "accessibility": -8,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:35:49",
-    "test_date_previous": "2025-10-29 14:14:17"
+    "test_date_current": "2025-11-05 12:23:19",
+    "test_date_previous": "2025-10-29 14:35:49"
   }
 }

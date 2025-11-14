@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.156Z",
+    "generated_at": "2025-11-14T08:39:14.823Z",
     "url": "kone.com",
     "country": "Finland",
     "industry": "Engineering"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 60,
     "accessibility": 97,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-29 03:13:15"
+    "test_date": "2025-11-12 00:48:45"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 97,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-12 00:48:45"
+    },
+    {
+      "performance": 59,
+      "accessibility": 97,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-05 00:49:18"
+    },
     {
       "performance": 59,
       "accessibility": 97,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 03:13:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 00:48:45",
+    "test_date_previous": "2025-11-05 00:49:18"
+  }
 }

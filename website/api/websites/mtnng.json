@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.802Z",
+    "generated_at": "2025-11-14T08:39:14.990Z",
     "url": "mtn.ng",
     "country": "Nigeria",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 61,
-    "accessibility": 73,
+    "performance": 36,
+    "accessibility": 82,
     "best_practices": 83,
-    "seo": 58,
-    "pwa": 0,
-    "test_date": "2025-10-29 20:12:42"
+    "seo": 91,
+    "pwa": 33,
+    "test_date": "2025-11-12 18:16:54"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 82,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-12 18:16:54"
+    },
     {
       "performance": 61,
       "accessibility": 73,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-29 20:12:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -25,
+    "accessibility": 9,
+    "best_practices": 0,
+    "seo": 33,
+    "pwa": 33,
+    "test_date_current": "2025-11-12 18:16:54",
+    "test_date_previous": "2025-10-29 20:12:42"
+  }
 }

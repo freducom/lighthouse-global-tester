@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.941Z",
+    "generated_at": "2025-11-14T08:39:14.754Z",
     "url": "rtbf.be",
     "country": "Belgium",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 41,
-    "accessibility": 96,
+    "performance": 34,
+    "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 22:09:24"
+    "test_date": "2025-11-13 22:10:33"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-13 22:10:33"
+    },
+    {
+      "performance": 35,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-06 22:09:16"
+    },
     {
       "performance": 41,
       "accessibility": 96,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
-    "accessibility": -1,
+    "performance": -1,
+    "accessibility": 1,
     "best_practices": 9,
     "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-10-30 22:09:24",
-    "test_date_previous": "2025-10-23 15:56:22"
+    "test_date_current": "2025-11-13 22:10:33",
+    "test_date_previous": "2025-11-06 22:09:16"
   }
 }

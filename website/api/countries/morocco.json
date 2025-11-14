@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.303Z",
+    "generated_at": "2025-11-14T08:39:13.554Z",
     "country": "Morocco",
     "flag": "🌍",
     "website_count": 9
   },
   "averages": {
-    "performance": 45,
-    "accessibility": 83,
-    "best_practices": 74,
-    "seo": 88,
+    "performance": 42,
+    "accessibility": 84,
+    "best_practices": 77,
+    "seo": 87,
     "pwa": 37
   },
   "websites": [
@@ -17,61 +17,37 @@
       "url": "attijariwafabank.com",
       "industry": "Finance",
       "scores": {
-        "performance": 87,
+        "performance": 90,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-11-02 10:14:33"
+      "test_date": "2025-11-09 10:13:24"
     },
     {
       "url": "jumia.ma",
       "industry": "E-commerce",
       "scores": {
-        "performance": 81,
+        "performance": 85,
         "accessibility": 84,
-        "best_practices": 83,
+        "best_practices": 75,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-28 22:15:44"
-    },
-    {
-      "url": "iam.ma",
-      "industry": "Telecom",
-      "scores": {
-        "performance": 55,
-        "accessibility": 68,
-        "best_practices": 58,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 14:10:27"
+      "test_date": "2025-11-11 20:16:49"
     },
     {
       "url": "h24info.ma",
       "industry": "Media",
       "scores": {
-        "performance": 55,
+        "performance": 56,
         "accessibility": 86,
         "best_practices": 67,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-04 06:25:35"
-    },
-    {
-      "url": "le360.ma",
-      "industry": "Media",
-      "scores": {
-        "performance": 37,
-        "accessibility": 82,
-        "best_practices": 75,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 04:35:25"
+      "test_date": "2025-11-11 06:25:34"
     },
     {
       "url": "marjane.ma",
@@ -84,6 +60,30 @@
         "pwa": 33
       },
       "test_date": "2025-10-29 12:25:27"
+    },
+    {
+      "url": "le360.ma",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 04:13:54"
+    },
+    {
+      "url": "iam.ma",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 32,
+        "accessibility": 77,
+        "best_practices": 92,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 12:19:03"
     },
     {
       "url": "bankofafrica.ma",
@@ -119,7 +119,7 @@
         "seo": 85,
         "pwa": 67
       },
-      "test_date": "2025-11-02 00:56:33"
+      "test_date": "2025-11-09 00:58:10"
     }
   ],
   "industries": [
@@ -127,9 +127,9 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 57,
+        "performance": 59,
         "accessibility": 87,
-        "best_practices": 79,
+        "best_practices": 75,
         "seo": 86,
         "pwa": 33
       }
@@ -138,7 +138,7 @@
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 58,
+        "performance": 59,
         "accessibility": 84,
         "best_practices": 84,
         "seo": 88,
@@ -149,8 +149,8 @@
       "industry": "Media",
       "website_count": 3,
       "averages": {
-        "performance": 31,
-        "accessibility": 83,
+        "performance": 30,
+        "accessibility": 84,
         "best_practices": 70,
         "seo": 89,
         "pwa": 44
@@ -160,10 +160,10 @@
       "industry": "Telecom",
       "website_count": 2,
       "averages": {
-        "performance": 40,
-        "accessibility": 76,
-        "best_practices": 67,
-        "seo": 89,
+        "performance": 29,
+        "accessibility": 81,
+        "best_practices": 84,
+        "seo": 85,
         "pwa": 33
       }
     }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.761Z",
+    "generated_at": "2025-11-14T08:39:14.976Z",
     "url": "le360.ma",
     "country": "Morocco",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 37,
-    "accessibility": 82,
+    "performance": 33,
+    "accessibility": 84,
     "best_practices": 75,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-10-29 04:35:25"
+    "test_date": "2025-11-12 04:13:54"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 84,
+      "best_practices": 75,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-12 04:13:54"
+    },
+    {
+      "performance": 29,
+      "accessibility": 82,
+      "best_practices": 75,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-05 04:13:37"
+    },
     {
       "performance": 37,
       "accessibility": 82,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 04:35:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 04:13:54",
+    "test_date_previous": "2025-11-05 04:13:37"
+  }
 }

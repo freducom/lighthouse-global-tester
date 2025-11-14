@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.483Z",
+    "generated_at": "2025-11-14T08:39:14.916Z",
     "url": "pharmeasy.in",
     "country": "India",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 40,
     "accessibility": 82,
-    "best_practices": 67,
-    "seo": 82,
+    "best_practices": 75,
+    "seo": 81,
     "pwa": 33,
-    "test_date": "2025-10-30 12:27:49"
+    "test_date": "2025-11-13 10:21:49"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 82,
+      "best_practices": 75,
+      "seo": 81,
+      "pwa": 33,
+      "test_date": "2025-11-13 10:21:49"
+    },
+    {
+      "performance": 58,
+      "accessibility": 82,
+      "best_practices": 83,
+      "seo": 81,
+      "pwa": 33,
+      "test_date": "2025-11-06 10:22:13"
+    },
     {
       "performance": 59,
       "accessibility": 82,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:27:49"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -18,
+    "accessibility": 0,
+    "best_practices": -8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:21:49",
+    "test_date_previous": "2025-11-06 10:22:13"
+  }
 }

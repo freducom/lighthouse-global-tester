@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.202Z",
+    "generated_at": "2025-11-14T08:39:14.839Z",
     "url": "savonsanomat.fi",
     "country": "Finland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 27,
     "accessibility": 84,
-    "best_practices": 67,
+    "best_practices": 75,
     "seo": 99,
     "pwa": 89,
-    "test_date": "2025-10-31 00:50:32"
+    "test_date": "2025-11-14 00:53:57"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 84,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-14 00:53:57"
+    },
+    {
+      "performance": 30,
+      "accessibility": 84,
+      "best_practices": 67,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-07 00:51:47"
+    },
     {
       "performance": 29,
       "accessibility": 84,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -3,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 00:50:32",
-    "test_date_previous": "2025-10-23 19:32:33"
+    "test_date_current": "2025-11-14 00:53:57",
+    "test_date_previous": "2025-11-07 00:51:47"
   }
 }

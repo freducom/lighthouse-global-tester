@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:31.124Z",
+          "dateCreated": "2025-11-14T08:39:05.449Z",
           "about": {
             "@type": "WebSite",
             "name": "smart.com.ph",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-smart.com.ph.html#metrics",
           "name": "smart.com.ph Performance Metrics",
           "description": "Latest Lighthouse scores for smart.com.ph",
-          "performanceScore": 21,
+          "performanceScore": 7,
           "accessibilityScore": 68,
-          "bestPracticesScore": 67,
+          "bestPracticesScore": 58,
           "seoScore": 61,
-          "dateRecorded": "2025-10-31 06:15:58"
+          "dateRecorded": "2025-11-14 06:17:17"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">21%</div>
+                <div class="stat-number poor">7%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -132,16 +132,16 @@
             </div>
             <div class="stat-card best-practices">
                 <h3>Best Practices</h3>
-                <div class="stat-number average">67%</div>
+                <div class="stat-number average">58%</div>
                 <div class="stat-description">average performance</div>
             </div>
         </div>
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 21%"></div>
-                        <span class="score-text">21%</span>
+                        <div class="score-fill performance" style="width: 7%"></div>
+                        <span class="score-text">7%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -166,8 +166,8 @@
                 <div class="score-item">
                     <span class="score-label">Best Practices:</span>
                     <div class="score-bar">
-                        <div class="score-fill best-practices" style="width: 67%"></div>
-                        <span class="score-text">67%</span>
+                        <div class="score-fill best-practices" style="width: 58%"></div>
+                        <span class="score-text">58%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":1488,"url":"smart.com.ph","performance":21,"accessibility":68,"best_practices":67,"seo":61,"pwa":33,"test_date":"2025-10-31 06:15:58","country":"Philippines","industry":"Telecom"},{"id":2471,"url":"smart.com.ph","performance":21,"accessibility":68,"best_practices":67,"seo":61,"pwa":33,"test_date":"2025-11-07 06:16:29","country":"Philippines","industry":"Telecom"},{"id":3426,"url":"smart.com.ph","performance":7,"accessibility":68,"best_practices":58,"seo":61,"pwa":33,"test_date":"2025-11-14 06:17:17","country":"Philippines","industry":"Telecom"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.944Z",
+    "generated_at": "2025-11-14T08:39:14.755Z",
     "url": "wiw.be",
     "country": "Belgium",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 70,
     "accessibility": 82,
     "best_practices": 100,
     "seo": 92,
     "pwa": 22,
-    "test_date": "2025-11-01 14:12:01"
+    "test_date": "2025-11-08 14:06:04"
   },
   "historical_data": [
+    {
+      "performance": 70,
+      "accessibility": 82,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 22,
+      "test_date": "2025-11-08 14:06:04"
+    },
     {
       "performance": 62,
       "accessibility": 82,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": 8,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 14:12:01",
-    "test_date_previous": "2025-10-25 04:14:54"
+    "test_date_current": "2025-11-08 14:06:04",
+    "test_date_previous": "2025-11-01 14:12:01"
   }
 }

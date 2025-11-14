@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.378Z",
+    "generated_at": "2025-11-14T08:39:15.158Z",
     "url": "snowflake.com",
     "country": "United States",
     "industry": "Technology"
@@ -11,9 +11,25 @@
     "best_practices": 67,
     "seo": 86,
     "pwa": 67,
-    "test_date": "2025-10-31 06:21:43"
+    "test_date": "2025-11-14 06:23:14"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 76,
+      "best_practices": 67,
+      "seo": 86,
+      "pwa": 67,
+      "test_date": "2025-11-14 06:23:14"
+    },
+    {
+      "performance": 29,
+      "accessibility": 76,
+      "best_practices": 67,
+      "seo": 86,
+      "pwa": 67,
+      "test_date": "2025-11-07 06:22:19"
+    },
     {
       "performance": 30,
       "accessibility": 76,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 06:21:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 06:23:14",
+    "test_date_previous": "2025-11-07 06:22:19"
+  }
 }

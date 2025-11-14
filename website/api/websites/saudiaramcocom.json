@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.893Z",
+    "generated_at": "2025-11-14T08:39:15.026Z",
     "url": "saudiaramco.com",
     "country": "Saudi Arabia",
     "industry": "Energy"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 39,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-31 00:49:32"
+    "test_date": "2025-11-14 00:51:47"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:51:47"
+    },
+    {
+      "performance": 33,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:50:42"
+    },
     {
       "performance": 38,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:49:32"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:51:47",
+    "test_date_previous": "2025-11-07 00:50:42"
+  }
 }

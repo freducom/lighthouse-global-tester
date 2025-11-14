@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.132Z",
+    "generated_at": "2025-11-14T08:39:14.815Z",
     "url": "gigantti.fi",
     "country": "Finland",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 37,
     "accessibility": 86,
-    "best_practices": 92,
-    "seo": 91,
+    "best_practices": 83,
+    "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-04 03:12:24"
+    "test_date": "2025-11-11 03:16:30"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-11 03:16:30"
+    },
     {
       "performance": 39,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 03:12:24"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 2,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 03:16:30",
+    "test_date_previous": "2025-11-04 03:12:24"
+  }
 }

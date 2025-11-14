@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.367Z",
+    "generated_at": "2025-11-14T08:39:14.885Z",
     "url": "amazon.in",
     "country": "India",
     "industry": "E-commerce"
@@ -8,12 +8,20 @@
   "latest_scores": {
     "performance": 92,
     "accessibility": 100,
-    "best_practices": 92,
+    "best_practices": 100,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-02 06:18:38"
+    "test_date": "2025-11-09 06:18:29"
   },
   "historical_data": [
+    {
+      "performance": 92,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-09 06:18:29"
+    },
     {
       "performance": 92,
       "accessibility": 100,
@@ -50,10 +58,10 @@
   "trends": {
     "performance": 0,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 06:18:38",
-    "test_date_previous": "2025-10-26 08:04:24"
+    "test_date_current": "2025-11-09 06:18:29",
+    "test_date_previous": "2025-11-02 06:18:38"
   }
 }

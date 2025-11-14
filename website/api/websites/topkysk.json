@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.919Z",
+    "generated_at": "2025-11-14T08:39:15.033Z",
     "url": "topky.sk",
     "country": "Slovakia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
-    "accessibility": 96,
+    "performance": 37,
+    "accessibility": 90,
     "best_practices": 75,
-    "seo": 99,
+    "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-31 22:15:31"
+    "test_date": "2025-11-07 22:15:02"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 90,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-07 22:15:02"
+    },
     {
       "performance": 35,
       "accessibility": 96,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
-    "accessibility": 0,
+    "performance": 2,
+    "accessibility": -6,
     "best_practices": 0,
-    "seo": 0,
+    "seo": -7,
     "pwa": 0,
-    "test_date_current": "2025-10-31 22:15:31",
-    "test_date_previous": "2025-10-24 16:00:11"
+    "test_date_current": "2025-11-07 22:15:02",
+    "test_date_previous": "2025-10-31 22:15:31"
   }
 }

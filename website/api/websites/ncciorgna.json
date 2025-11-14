@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.769Z",
+    "generated_at": "2025-11-14T08:39:14.978Z",
     "url": "ncci.org.na",
     "country": "Namibia",
     "industry": "Non-profit"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 52,
     "accessibility": 80,
     "best_practices": 83,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-29 22:13:05"
+    "test_date": "2025-11-12 20:13:54"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-12 20:13:54"
+    },
+    {
+      "performance": 55,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-05 20:15:19"
+    },
     {
       "performance": 57,
       "accessibility": 80,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 22:13:05",
-    "test_date_previous": "2025-10-22 16:15:19"
+    "test_date_current": "2025-11-12 20:13:54",
+    "test_date_previous": "2025-11-05 20:15:19"
   }
 }

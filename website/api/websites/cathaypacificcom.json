@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.333Z",
+    "generated_at": "2025-11-14T08:39:14.877Z",
     "url": "cathaypacific.com",
     "country": "Hong Kong",
     "industry": "Transportation"
   },
   "latest_scores": {
     "performance": 25,
-    "accessibility": 53,
+    "accessibility": 55,
     "best_practices": 83,
     "seo": 79,
     "pwa": 44,
-    "test_date": "2025-10-26 22:19:10"
+    "test_date": "2025-11-09 20:19:25"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 55,
+      "best_practices": 83,
+      "seo": 79,
+      "pwa": 44,
+      "test_date": "2025-11-09 20:19:25"
+    },
     {
       "performance": 25,
       "accessibility": 53,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 22:19:10"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-09 20:19:25",
+    "test_date_previous": "2025-10-26 22:19:10"
+  }
 }

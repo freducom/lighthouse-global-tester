@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.963Z",
+    "generated_at": "2025-11-14T08:39:15.042Z",
     "url": "elmundo.es",
     "country": "Spain",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 12,
-    "accessibility": 98,
+    "performance": 25,
+    "accessibility": 96,
     "best_practices": 83,
     "seo": 90,
     "pwa": 78,
-    "test_date": "2025-11-03 16:12:46"
+    "test_date": "2025-11-10 16:13:11"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 78,
+      "test_date": "2025-11-10 16:13:11"
+    },
     {
       "performance": 12,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 16:12:46"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 13,
+    "accessibility": -2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 16:13:11",
+    "test_date_previous": "2025-11-03 16:12:46"
+  }
 }

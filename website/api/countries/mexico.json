@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.360Z",
+    "generated_at": "2025-11-14T08:39:13.593Z",
     "country": "Mexico",
     "flag": "🌍",
     "website_count": 5
   },
   "averages": {
-    "performance": 59,
-    "accessibility": 93,
-    "best_practices": 88,
+    "performance": 61,
+    "accessibility": 94,
+    "best_practices": 87,
     "seo": 93,
     "pwa": 33
   },
@@ -19,59 +19,59 @@
       "scores": {
         "performance": 94,
         "accessibility": 100,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-11-02 06:18:24"
-    },
-    {
-      "url": "walmart.com.mx",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 61,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 10:19:34"
-    },
-    {
-      "url": "mercadolibre.com.mx",
-      "industry": "Marketplace",
-      "scores": {
-        "performance": 57,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 96,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 14:35:07"
+      "test_date": "2025-11-09 06:18:15"
     },
     {
       "url": "inegi.org.mx",
       "industry": "Government",
       "scores": {
-        "performance": 56,
-        "accessibility": 79,
+        "performance": 72,
+        "accessibility": 82,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-28 18:14:35"
+      "test_date": "2025-11-11 16:15:19"
+    },
+    {
+      "url": "mercadolibre.com.mx",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 64,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 12:22:05"
+    },
+    {
+      "url": "walmart.com.mx",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 50,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 10:18:19"
     },
     {
       "url": "milenio.com",
       "industry": "Media",
       "scores": {
-        "performance": 26,
-        "accessibility": 91,
+        "performance": 25,
+        "accessibility": 94,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-22 14:11:35"
+      "test_date": "2025-11-12 14:15:24"
     }
   ],
   "industries": [
@@ -79,9 +79,9 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 78,
+        "performance": 72,
         "accessibility": 100,
-        "best_practices": 88,
+        "best_practices": 84,
         "seo": 84,
         "pwa": 33
       }
@@ -90,8 +90,8 @@
       "industry": "Government",
       "website_count": 1,
       "averages": {
-        "performance": 56,
-        "accessibility": 79,
+        "performance": 72,
+        "accessibility": 82,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
@@ -101,7 +101,7 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 57,
+        "performance": 64,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 96,
@@ -112,8 +112,8 @@
       "industry": "Media",
       "website_count": 1,
       "averages": {
-        "performance": 26,
-        "accessibility": 91,
+        "performance": 25,
+        "accessibility": 94,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33

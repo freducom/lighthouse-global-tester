@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.155Z",
+    "generated_at": "2025-11-14T08:39:14.823Z",
     "url": "kokoa.io",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 47,
     "accessibility": 83,
     "best_practices": 83,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-29 03:09:34"
+    "test_date": "2025-11-12 00:45:11"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 83,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-12 00:45:11"
+    },
+    {
+      "performance": 51,
+      "accessibility": 83,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-05 00:45:44"
+    },
     {
       "performance": 40,
       "accessibility": 83,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 03:09:34"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 00:45:11",
+    "test_date_previous": "2025-11-05 00:45:44"
+  }
 }

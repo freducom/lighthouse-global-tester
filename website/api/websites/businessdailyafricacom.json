@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.676Z",
+    "generated_at": "2025-11-14T08:39:14.955Z",
     "url": "businessdailyafrica.com",
     "country": "Kenya",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 21,
     "accessibility": 94,
-    "best_practices": 67,
+    "best_practices": 83,
     "seo": 99,
-    "pwa": 44,
-    "test_date": "2025-10-26 20:15:57"
+    "pwa": 33,
+    "test_date": "2025-11-09 18:21:47"
   },
   "historical_data": [
+    {
+      "performance": 21,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-09 18:21:47"
+    },
     {
       "performance": 40,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-26 20:15:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -19,
+    "accessibility": 0,
+    "best_practices": 16,
+    "seo": 0,
+    "pwa": -11,
+    "test_date_current": "2025-11-09 18:21:47",
+    "test_date_previous": "2025-10-26 20:15:57"
+  }
 }

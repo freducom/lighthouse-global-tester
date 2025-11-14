@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.914Z",
+    "generated_at": "2025-11-14T08:39:14.743Z",
     "url": "my.gov.au",
     "country": "Australia",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 61,
+    "performance": 66,
     "accessibility": 0,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-29 20:13:48"
+    "test_date": "2025-11-12 18:18:24"
   },
   "historical_data": [
+    {
+      "performance": 66,
+      "accessibility": 0,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-12 18:18:24"
+    },
+    {
+      "performance": 71,
+      "accessibility": 0,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-05 18:19:00"
+    },
     {
       "performance": 61,
       "accessibility": 0,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -4,
+    "performance": -5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 20:13:48",
-    "test_date_previous": "2025-10-22 14:57:26"
+    "test_date_current": "2025-11-12 18:18:24",
+    "test_date_previous": "2025-11-05 18:19:00"
   }
 }

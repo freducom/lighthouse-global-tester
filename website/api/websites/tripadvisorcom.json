@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.394Z",
+    "generated_at": "2025-11-14T08:39:15.161Z",
     "url": "tripadvisor.com",
     "country": "United States",
     "industry": "Travel"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 38,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-11-01 00:47:23"
+    "test_date": "2025-11-08 00:45:30"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-08 00:45:30"
+    },
     {
       "performance": 46,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 00:47:23"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -8,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 00:45:30",
+    "test_date_previous": "2025-11-01 00:47:23"
+  }
 }

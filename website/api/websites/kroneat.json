@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.921Z",
+    "generated_at": "2025-11-14T08:39:14.745Z",
     "url": "krone.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 40,
     "accessibility": 78,
-    "best_practices": 67,
+    "best_practices": 75,
     "seo": 91,
     "pwa": 56,
-    "test_date": "2025-10-29 03:15:48"
+    "test_date": "2025-11-12 00:51:28"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 78,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-12 00:51:28"
+    },
+    {
+      "performance": 44,
+      "accessibility": 78,
+      "best_practices": 67,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-05 00:52:00"
+    },
     {
       "performance": 42,
       "accessibility": 78,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -13,
+    "performance": -4,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 03:15:48",
-    "test_date_previous": "2025-10-21 22:12:57"
+    "test_date_current": "2025-11-12 00:51:28",
+    "test_date_previous": "2025-11-05 00:52:00"
   }
 }

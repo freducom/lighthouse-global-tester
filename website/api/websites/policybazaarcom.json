@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.485Z",
+    "generated_at": "2025-11-14T08:39:14.917Z",
     "url": "policybazaar.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 38,
     "accessibility": 68,
     "best_practices": 83,
     "seo": 76,
     "pwa": 33,
-    "test_date": "2025-10-30 13:36:41"
+    "test_date": "2025-11-13 12:21:24"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 68,
+      "best_practices": 83,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-13 12:21:24"
+    },
+    {
+      "performance": 35,
+      "accessibility": 68,
+      "best_practices": 83,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-06 12:20:45"
+    },
     {
       "performance": 37,
       "accessibility": 68,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 13:36:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 12:21:24",
+    "test_date_previous": "2025-11-06 12:20:45"
+  }
 }

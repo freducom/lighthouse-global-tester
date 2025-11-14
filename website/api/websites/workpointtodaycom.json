@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.133Z",
+    "generated_at": "2025-11-14T08:39:15.093Z",
     "url": "workpointtoday.com",
     "country": "Thailand",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 37,
-    "accessibility": 93,
-    "best_practices": 83,
+    "performance": 58,
+    "accessibility": 92,
+    "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-01 14:14:18"
+    "test_date": "2025-11-08 14:08:14"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 92,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-08 14:08:14"
+    },
     {
       "performance": 37,
       "accessibility": 93,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
-    "accessibility": 0,
-    "best_practices": 0,
+    "performance": 21,
+    "accessibility": -1,
+    "best_practices": 17,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 14:14:18",
-    "test_date_previous": "2025-10-25 06:13:54"
+    "test_date_current": "2025-11-08 14:08:14",
+    "test_date_previous": "2025-11-01 14:14:18"
   }
 }

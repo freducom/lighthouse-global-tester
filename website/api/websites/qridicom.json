@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.191Z",
+    "generated_at": "2025-11-14T08:39:14.835Z",
     "url": "qridi.com",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 50,
+    "performance": 64,
     "accessibility": 96,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-30 16:25:01"
+    "test_date": "2025-11-13 16:22:57"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-13 16:22:57"
+    },
+    {
+      "performance": 65,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-06 16:23:01"
+    },
     {
       "performance": 50,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 16:25:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 16:22:57",
+    "test_date_previous": "2025-11-06 16:23:01"
+  }
 }

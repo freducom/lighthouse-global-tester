@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.435Z",
+    "generated_at": "2025-11-14T08:39:15.166Z",
     "url": "walmart.com",
     "country": "United States",
     "industry": "Retail"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 46,
     "accessibility": 100,
     "best_practices": 67,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-11-01 10:19:17"
+    "test_date": "2025-11-08 10:18:02"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 100,
+      "best_practices": 67,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-08 10:18:02"
+    },
     {
       "performance": 40,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 10:19:17"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 10:18:02",
+    "test_date_previous": "2025-11-01 10:19:17"
+  }
 }

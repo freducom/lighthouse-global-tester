@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.190Z",
+    "generated_at": "2025-11-14T08:39:15.106Z",
     "url": "barclays.co.uk",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 65,
+    "performance": 62,
     "accessibility": 86,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-02 12:24:31"
+    "test_date": "2025-11-09 12:22:23"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 86,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-09 12:22:23"
+    },
     {
       "performance": 65,
       "accessibility": 86,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 12:24:31",
-    "test_date_previous": "2025-10-26 15:59:54"
+    "test_date_current": "2025-11-09 12:22:23",
+    "test_date_previous": "2025-11-02 12:24:31"
   }
 }

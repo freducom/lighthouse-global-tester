@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.997Z",
+    "generated_at": "2025-11-14T08:39:15.050Z",
     "url": "comviq.se",
     "country": "Sweden",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 29,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-03 03:12:56"
+    "test_date": "2025-11-10 03:14:25"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-10 03:14:25"
+    },
     {
       "performance": 32,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 03:12:56",
-    "test_date_previous": "2025-10-27 04:20:40"
+    "test_date_current": "2025-11-10 03:14:25",
+    "test_date_previous": "2025-11-03 03:12:56"
   }
 }

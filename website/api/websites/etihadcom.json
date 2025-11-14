@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.178Z",
+    "generated_at": "2025-11-14T08:39:15.103Z",
     "url": "etihad.com",
     "country": "United Arab Emirates",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 30,
     "accessibility": 72,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 68,
     "pwa": 33,
-    "test_date": "2025-11-03 18:25:13"
+    "test_date": "2025-11-10 18:25:03"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 72,
+      "best_practices": 83,
+      "seo": 68,
+      "pwa": 33,
+      "test_date": "2025-11-10 18:25:03"
+    },
     {
       "performance": 29,
       "accessibility": 72,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 18:25:13"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 18:25:03",
+    "test_date_previous": "2025-11-03 18:25:13"
+  }
 }

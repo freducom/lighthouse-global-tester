@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.423Z",
+    "generated_at": "2025-11-14T08:39:14.901Z",
     "url": "iitd.ac.in",
     "country": "India",
     "industry": "Education"
   },
   "latest_scores": {
     "performance": 29,
-    "accessibility": 81,
+    "accessibility": 83,
     "best_practices": 83,
     "seo": 83,
     "pwa": 22,
-    "test_date": "2025-10-28 14:19:44"
+    "test_date": "2025-11-11 12:28:24"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 83,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 22,
+      "test_date": "2025-11-11 12:28:24"
+    },
+    {
+      "performance": 10,
+      "accessibility": 81,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 22,
+      "test_date": "2025-11-04 12:29:13"
+    },
     {
       "performance": 29,
       "accessibility": 81,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 14:19:44"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 19,
+    "accessibility": 2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 12:28:24",
+    "test_date_previous": "2025-11-04 12:29:13"
+  }
 }

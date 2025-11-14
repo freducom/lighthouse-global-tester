@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.976Z",
+    "generated_at": "2025-11-14T08:39:15.046Z",
     "url": "aftonbladet.se",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 34,
-    "accessibility": 100,
+    "performance": 30,
+    "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 78,
-    "test_date": "2025-11-02 04:13:50"
+    "test_date": "2025-11-09 04:12:21"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 78,
+      "test_date": "2025-11-09 04:12:21"
+    },
     {
       "performance": 34,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -17,
-    "accessibility": 2,
+    "performance": -4,
+    "accessibility": -2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 04:13:50",
-    "test_date_previous": "2025-10-19 20:26:29"
+    "test_date_current": "2025-11-09 04:12:21",
+    "test_date_previous": "2025-11-02 04:13:50"
   }
 }

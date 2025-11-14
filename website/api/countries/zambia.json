@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.342Z",
+    "generated_at": "2025-11-14T08:39:13.579Z",
     "country": "Zambia",
     "flag": "🇿🇲",
     "website_count": 9
   },
   "averages": {
-    "performance": 55,
+    "performance": 60,
     "accessibility": 90,
-    "best_practices": 80,
+    "best_practices": 82,
     "seo": 85,
     "pwa": 31
   },
@@ -26,6 +26,18 @@
       "test_date": "2025-11-01 18:15:02"
     },
     {
+      "url": "zambianews365.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 75,
+        "accessibility": 97,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 18:13:57"
+    },
+    {
       "url": "zambiareports.com",
       "industry": "Media",
       "scores": {
@@ -35,91 +47,79 @@
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-01 18:14:48"
-    },
-    {
-      "url": "zambianews365.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 68,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 18:14:08"
-    },
-    {
-      "url": "zambianobserver.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 57,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 18:14:33"
+      "test_date": "2025-11-08 18:15:49"
     },
     {
       "url": "zambia.co.zm",
       "industry": "Portal",
       "scores": {
-        "performance": 53,
+        "performance": 59,
         "accessibility": 89,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 18:12:49"
-    },
-    {
-      "url": "diggers.news",
-      "industry": "Media",
-      "scores": {
-        "performance": 46,
-        "accessibility": 85,
-        "best_practices": 58,
-        "seo": 83,
-        "pwa": 22
-      },
-      "test_date": "2025-11-03 08:24:35"
+      "test_date": "2025-11-08 18:12:37"
     },
     {
       "url": "zambiamonitor.com",
       "industry": "Media",
       "scores": {
-        "performance": 45,
+        "performance": 55,
         "accessibility": 87,
         "best_practices": 75,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-11-01 18:13:18"
+      "test_date": "2025-11-08 18:13:05"
+    },
+    {
+      "url": "diggers.news",
+      "industry": "Media",
+      "scores": {
+        "performance": 52,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 22
+      },
+      "test_date": "2025-11-10 08:23:44"
     },
     {
       "url": "zambianbusinesstimes.com",
       "industry": "Media",
       "scores": {
-        "performance": 44,
+        "performance": 49,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 76,
         "pwa": 56
       },
-      "test_date": "2025-11-01 18:13:44"
+      "test_date": "2025-11-08 18:13:32"
+    },
+    {
+      "url": "zambianobserver.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 49,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 18:15:33"
     },
     {
       "url": "lusakatimes.com",
       "industry": "Media",
       "scores": {
-        "performance": 13,
+        "performance": 31,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-29 10:11:31"
+      "test_date": "2025-11-12 08:14:29"
     }
   ],
   "industries": [
@@ -127,9 +127,9 @@
       "industry": "Media",
       "website_count": 8,
       "averages": {
-        "performance": 55,
+        "performance": 60,
         "accessibility": 90,
-        "best_practices": 81,
+        "best_practices": 83,
         "seo": 85,
         "pwa": 30
       }
@@ -138,9 +138,9 @@
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 53,
+        "performance": 59,
         "accessibility": 89,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 86,
         "pwa": 33
       }

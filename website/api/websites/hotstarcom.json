@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.416Z",
+    "generated_at": "2025-11-14T08:39:14.898Z",
     "url": "hotstar.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 94,
-    "accessibility": 71,
-    "best_practices": 75,
-    "seo": 93,
-    "pwa": 78,
-    "test_date": "2025-11-04 10:17:27"
+    "performance": 64,
+    "accessibility": 86,
+    "best_practices": 92,
+    "seo": 69,
+    "pwa": 33,
+    "test_date": "2025-11-11 10:16:39"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 86,
+      "best_practices": 92,
+      "seo": 69,
+      "pwa": 33,
+      "test_date": "2025-11-11 10:16:39"
+    },
+    {
+      "performance": 95,
+      "accessibility": 71,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-04 11:52:28"
+    },
     {
       "performance": 94,
       "accessibility": 71,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": 0,
-    "best_practices": 0,
-    "seo": 0,
-    "pwa": 0,
-    "test_date_current": "2025-11-04 10:17:27",
-    "test_date_previous": "2025-10-28 12:24:22"
+    "performance": -31,
+    "accessibility": 15,
+    "best_practices": 17,
+    "seo": -24,
+    "pwa": -45,
+    "test_date_current": "2025-11-11 10:16:39",
+    "test_date_previous": "2025-11-04 11:52:28"
   }
 }

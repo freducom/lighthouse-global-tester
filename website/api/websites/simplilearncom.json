@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.520Z",
+    "generated_at": "2025-11-14T08:39:14.923Z",
     "url": "simplilearn.com",
     "country": "India",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 40,
     "accessibility": 73,
     "best_practices": 67,
     "seo": 86,
     "pwa": 78,
-    "test_date": "2025-10-31 04:22:25"
+    "test_date": "2025-11-14 04:25:00"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 73,
+      "best_practices": 67,
+      "seo": 86,
+      "pwa": 78,
+      "test_date": "2025-11-14 04:25:00"
+    },
+    {
+      "performance": 38,
+      "accessibility": 73,
+      "best_practices": 67,
+      "seo": 86,
+      "pwa": 78,
+      "test_date": "2025-11-07 04:23:33"
+    },
     {
       "performance": 35,
       "accessibility": 73,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 04:22:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 04:25:00",
+    "test_date_previous": "2025-11-07 04:23:33"
+  }
 }

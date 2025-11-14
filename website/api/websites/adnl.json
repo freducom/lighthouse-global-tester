@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.777Z",
+    "generated_at": "2025-11-14T08:39:14.980Z",
     "url": "ad.nl",
     "country": "Netherlands",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 72,
+    "performance": 64,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 77,
     "pwa": 33,
-    "test_date": "2025-11-02 03:14:20"
+    "test_date": "2025-11-09 03:12:00"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-09 03:12:00"
+    },
     {
       "performance": 72,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -10,
+    "performance": -8,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 03:14:20",
-    "test_date_previous": "2025-10-19 20:24:09"
+    "test_date_current": "2025-11-09 03:12:00",
+    "test_date_previous": "2025-11-02 03:14:20"
   }
 }

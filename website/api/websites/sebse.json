@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.062Z",
+    "generated_at": "2025-11-14T08:39:15.075Z",
     "url": "seb.se",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 53,
-    "accessibility": 98,
+    "performance": 56,
+    "accessibility": 96,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-31 03:07:06"
+    "test_date": "2025-11-14 03:08:44"
   },
   "historical_data": [
+    {
+      "performance": 56,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-14 03:08:44"
+    },
+    {
+      "performance": 55,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-07 03:07:09"
+    },
     {
       "performance": 53,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 03:07:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 03:08:44",
+    "test_date_previous": "2025-11-07 03:07:09"
+  }
 }

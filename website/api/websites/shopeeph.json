@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.834Z",
+    "generated_at": "2025-11-14T08:39:15.002Z",
     "url": "shopee.ph",
     "country": "Philippines",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 31,
     "accessibility": 76,
     "best_practices": 83,
     "seo": 92,
     "pwa": 89,
-    "test_date": "2025-10-31 04:17:15"
+    "test_date": "2025-11-14 04:17:46"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 89,
+      "test_date": "2025-11-14 04:17:46"
+    },
+    {
+      "performance": 33,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 89,
+      "test_date": "2025-11-07 04:16:09"
+    },
     {
       "performance": 29,
       "accessibility": 76,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 04:17:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 04:17:46",
+    "test_date_previous": "2025-11-07 04:16:09"
+  }
 }

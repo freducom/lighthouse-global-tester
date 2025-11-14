@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.201Z",
+    "generated_at": "2025-11-14T08:39:15.109Z",
     "url": "gov.uk",
     "country": "United Kingdom",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 94,
+    "performance": 73,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-04 04:20:26"
+    "test_date": "2025-11-11 04:18:40"
   },
   "historical_data": [
+    {
+      "performance": 73,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-11 04:18:40"
+    },
     {
       "performance": 94,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 21,
+    "performance": -21,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 04:20:26",
-    "test_date_previous": "2025-10-23 07:36:21"
+    "test_date_current": "2025-11-11 04:18:40",
+    "test_date_previous": "2025-11-04 04:20:26"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.401Z",
+    "generated_at": "2025-11-14T08:39:14.893Z",
     "url": "du.ac.in",
     "country": "India",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 55,
     "accessibility": 73,
     "best_practices": 83,
     "seo": 72,
     "pwa": 33,
-    "test_date": "2025-11-03 10:21:50"
+    "test_date": "2025-11-10 10:21:11"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 73,
+      "best_practices": 83,
+      "seo": 72,
+      "pwa": 33,
+      "test_date": "2025-11-10 10:21:11"
+    },
     {
       "performance": 42,
       "accessibility": 73,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
+    "performance": 13,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 10:21:50",
-    "test_date_previous": "2025-10-27 12:27:48"
+    "test_date_current": "2025-11-10 10:21:11",
+    "test_date_previous": "2025-11-03 10:21:50"
   }
 }

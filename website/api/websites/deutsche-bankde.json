@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.277Z",
+    "generated_at": "2025-11-14T08:39:14.862Z",
     "url": "deutsche-bank.de",
     "country": "Germany",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 27,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-03 08:17:01"
+    "test_date": "2025-11-10 08:19:02"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 08:19:02"
+    },
+    {
+      "performance": 31,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 08:18:41"
+    },
     {
       "performance": 29,
       "accessibility": 98,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
+    "performance": -4,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 08:17:01",
-    "test_date_previous": "2025-11-03 08:16:40"
+    "test_date_current": "2025-11-10 08:19:02",
+    "test_date_previous": "2025-11-10 08:18:41"
   }
 }

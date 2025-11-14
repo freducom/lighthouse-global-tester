@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.376Z",
+    "generated_at": "2025-11-14T08:39:15.157Z",
     "url": "snapchat.com",
     "country": "United States",
     "industry": "Social"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 48,
     "accessibility": 82,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-31 06:20:15"
+    "test_date": "2025-11-14 06:21:44"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 82,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-14 06:21:44"
+    },
+    {
+      "performance": 43,
+      "accessibility": 82,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-07 06:20:54"
+    },
     {
       "performance": 45,
       "accessibility": 82,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 06:20:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 06:21:44",
+    "test_date_previous": "2025-11-07 06:20:54"
+  }
 }

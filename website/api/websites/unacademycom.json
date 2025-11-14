@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.548Z",
+    "generated_at": "2025-11-14T08:39:14.928Z",
     "url": "unacademy.com",
     "country": "India",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 67,
+    "performance": 50,
     "accessibility": 85,
     "best_practices": 75,
     "seo": 91,
     "pwa": 100,
-    "test_date": "2025-11-01 04:12:57"
+    "test_date": "2025-11-08 04:11:44"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 85,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 100,
+      "test_date": "2025-11-08 04:11:44"
+    },
     {
       "performance": 67,
       "accessibility": 85,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 04:12:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -17,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 04:11:44",
+    "test_date_previous": "2025-11-01 04:12:57"
+  }
 }

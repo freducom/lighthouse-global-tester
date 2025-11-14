@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.372Z",
+    "generated_at": "2025-11-14T08:39:14.886Z",
     "url": "annauniv.edu",
     "country": "India",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 54,
     "accessibility": 68,
     "best_practices": 67,
     "seo": 75,
     "pwa": 22,
-    "test_date": "2025-11-02 08:14:46"
+    "test_date": "2025-11-09 08:14:52"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 68,
+      "best_practices": 67,
+      "seo": 75,
+      "pwa": 22,
+      "test_date": "2025-11-09 08:14:52"
+    },
     {
       "performance": 43,
       "accessibility": 68,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
+    "performance": 11,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 08:14:46",
-    "test_date_previous": "2025-10-26 08:44:18"
+    "test_date_current": "2025-11-09 08:14:52",
+    "test_date_previous": "2025-11-02 08:14:46"
   }
 }

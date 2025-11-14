@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.180Z",
+    "generated_at": "2025-11-14T08:39:14.831Z",
     "url": "orion.fi",
     "country": "Finland",
     "industry": "Pharmaceutical"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 45,
     "accessibility": 93,
     "best_practices": 75,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 08:23:12"
+    "test_date": "2025-11-13 08:13:39"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 93,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-13 08:13:39"
+    },
+    {
+      "performance": 49,
+      "accessibility": 93,
+      "best_practices": 75,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-06 08:13:37"
+    },
     {
       "performance": 55,
       "accessibility": 93,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 08:23:12"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 08:13:39",
+    "test_date_previous": "2025-11-06 08:13:37"
+  }
 }

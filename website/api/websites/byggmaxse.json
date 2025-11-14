@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.991Z",
+    "generated_at": "2025-11-14T08:39:15.049Z",
     "url": "byggmax.se",
     "country": "Sweden",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 22,
+    "performance": 33,
     "accessibility": 89,
     "best_practices": 83,
     "seo": 76,
     "pwa": 33,
-    "test_date": "2025-11-02 18:29:59"
+    "test_date": "2025-11-09 18:30:39"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-09 18:30:39"
+    },
     {
       "performance": 22,
       "accessibility": 89,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -8,
+    "performance": 11,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 18:29:59",
-    "test_date_previous": "2025-10-26 20:27:11"
+    "test_date_current": "2025-11-09 18:30:39",
+    "test_date_previous": "2025-11-02 18:29:59"
   }
 }

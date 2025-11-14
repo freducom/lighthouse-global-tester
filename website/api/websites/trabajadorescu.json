@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.020Z",
+    "generated_at": "2025-11-14T08:39:14.785Z",
     "url": "trabajadores.cu",
     "country": "Cuba",
     "industry": "Media"
@@ -11,9 +11,17 @@
     "best_practices": 58,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-31 22:16:50"
+    "test_date": "2025-11-07 22:16:30"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 62,
+      "best_practices": 58,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-07 22:16:30"
+    },
     {
       "performance": 61,
       "accessibility": 62,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 22:16:50"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 22:16:30",
+    "test_date_previous": "2025-10-31 22:16:50"
+  }
 }

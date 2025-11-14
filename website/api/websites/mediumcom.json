@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.320Z",
+    "generated_at": "2025-11-14T08:39:15.144Z",
     "url": "medium.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 66,
     "accessibility": 89,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-29 14:33:12"
+    "test_date": "2025-11-12 12:20:16"
   },
   "historical_data": [
+    {
+      "performance": 66,
+      "accessibility": 89,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-12 12:20:16"
+    },
+    {
+      "performance": 72,
+      "accessibility": 89,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:20:03"
+    },
     {
       "performance": 58,
       "accessibility": 89,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -16,
+    "performance": -6,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:33:12",
-    "test_date_previous": "2025-10-29 14:11:44"
+    "test_date_current": "2025-11-12 12:20:16",
+    "test_date_previous": "2025-11-05 12:20:03"
   }
 }

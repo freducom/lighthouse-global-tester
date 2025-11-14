@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.134Z",
+    "generated_at": "2025-11-14T08:39:14.817Z",
     "url": "haaga-helia.fi",
     "country": "Finland",
     "industry": "Education"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-04 06:25:55"
+    "test_date": "2025-11-11 06:25:53"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-11 06:25:53"
+    },
     {
       "performance": 58,
       "accessibility": 99,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 06:25:55"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 06:25:53",
+    "test_date_previous": "2025-11-04 06:25:55"
+  }
 }

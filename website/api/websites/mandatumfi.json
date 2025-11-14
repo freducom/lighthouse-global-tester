@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.163Z",
+    "generated_at": "2025-11-14T08:39:14.825Z",
     "url": "mandatum.fi",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 50,
     "accessibility": 68,
     "best_practices": 83,
     "seo": 89,
     "pwa": 22,
-    "test_date": "2025-10-29 12:21:49"
+    "test_date": "2025-11-12 10:15:30"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 68,
+      "best_practices": 83,
+      "seo": 89,
+      "pwa": 22,
+      "test_date": "2025-11-12 10:15:30"
+    },
+    {
+      "performance": 59,
+      "accessibility": 68,
+      "best_practices": 83,
+      "seo": 89,
+      "pwa": 22,
+      "test_date": "2025-11-05 10:15:18"
+    },
     {
       "performance": 57,
       "accessibility": 68,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 12:21:49"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -9,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 10:15:30",
+    "test_date_previous": "2025-11-05 10:15:18"
+  }
 }

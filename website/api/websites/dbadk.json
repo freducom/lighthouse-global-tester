@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.038Z",
+    "generated_at": "2025-11-14T08:39:14.789Z",
     "url": "dba.dk",
     "country": "Denmark",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 42,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-11-03 06:22:16"
+    "test_date": "2025-11-10 06:22:14"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-11-10 06:22:14"
+    },
     {
       "performance": 45,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -3,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 06:22:16",
-    "test_date_previous": "2025-10-27 08:20:49"
+    "test_date_current": "2025-11-10 06:22:14",
+    "test_date_previous": "2025-11-03 06:22:16"
   }
 }

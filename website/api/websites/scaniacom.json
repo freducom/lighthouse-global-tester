@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.060Z",
+    "generated_at": "2025-11-14T08:39:15.074Z",
     "url": "scania.com",
     "country": "Sweden",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 54,
     "accessibility": 96,
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-31 00:51:09"
+    "test_date": "2025-11-14 00:54:33"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:54:33"
+    },
+    {
+      "performance": 54,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:52:24"
+    },
     {
       "performance": 55,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:51:09"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:54:33",
+    "test_date_previous": "2025-11-07 00:52:24"
+  }
 }

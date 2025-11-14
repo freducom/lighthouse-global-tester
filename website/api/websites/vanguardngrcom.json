@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.805Z",
+    "generated_at": "2025-11-14T08:39:14.991Z",
     "url": "vanguardngr.com",
     "country": "Nigeria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 45,
     "accessibility": 90,
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-11-01 06:20:01"
+    "test_date": "2025-11-08 06:21:55"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-08 06:21:55"
+    },
     {
       "performance": 32,
       "accessibility": 90,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 06:20:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 13,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 06:21:55",
+    "test_date_previous": "2025-11-01 06:20:01"
+  }
 }

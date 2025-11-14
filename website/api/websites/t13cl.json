@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.004Z",
+    "generated_at": "2025-11-14T08:39:14.778Z",
     "url": "t13.cl",
     "country": "Chile",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 25,
-    "accessibility": 74,
+    "performance": 32,
+    "accessibility": 75,
     "best_practices": 83,
     "seo": 79,
     "pwa": 33,
-    "test_date": "2025-10-31 14:11:41"
+    "test_date": "2025-11-07 14:12:13"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 75,
+      "best_practices": 83,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-11-07 14:12:13"
+    },
     {
       "performance": 25,
       "accessibility": 74,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
-    "accessibility": -3,
+    "performance": 7,
+    "accessibility": 1,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 14:11:41",
-    "test_date_previous": "2025-10-24 06:15:46"
+    "test_date_current": "2025-11-07 14:12:13",
+    "test_date_previous": "2025-10-31 14:11:41"
   }
 }

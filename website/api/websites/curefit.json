@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.399Z",
+    "generated_at": "2025-11-14T08:39:14.892Z",
     "url": "cure.fit",
     "country": "India",
     "industry": "Healthtech"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 33,
     "accessibility": 76,
-    "best_practices": 75,
+    "best_practices": 83,
     "seo": 96,
     "pwa": 78,
-    "test_date": "2025-11-03 04:29:00"
+    "test_date": "2025-11-10 04:25:21"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 96,
+      "pwa": 78,
+      "test_date": "2025-11-10 04:25:21"
+    },
     {
       "performance": 38,
       "accessibility": 76,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 04:29:00"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 04:25:21",
+    "test_date_previous": "2025-11-03 04:29:00"
+  }
 }

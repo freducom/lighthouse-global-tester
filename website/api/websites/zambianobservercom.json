@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.497Z",
+    "generated_at": "2025-11-14T08:39:15.178Z",
     "url": "zambianobserver.com",
     "country": "Zambia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 49,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 18:14:33"
+    "test_date": "2025-11-08 18:15:33"
   },
   "historical_data": [
+    {
+      "performance": 49,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 18:15:33"
+    },
     {
       "performance": 57,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 36,
+    "performance": -8,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 1,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 18:14:33",
-    "test_date_previous": "2025-10-25 10:12:09"
+    "test_date_current": "2025-11-08 18:15:33",
+    "test_date_previous": "2025-11-01 18:14:33"
   }
 }

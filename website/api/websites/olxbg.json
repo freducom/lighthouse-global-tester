@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.967Z",
+    "generated_at": "2025-11-14T08:39:14.764Z",
     "url": "olx.bg",
     "country": "Bulgaria",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 25,
     "accessibility": 98,
     "best_practices": 83,
-    "seo": 85,
+    "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-30 06:32:08"
+    "test_date": "2025-11-13 04:40:02"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-13 04:40:02"
+    },
+    {
+      "performance": 26,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-06 04:33:58"
+    },
     {
       "performance": 26,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 06:32:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 1,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 04:40:02",
+    "test_date_previous": "2025-11-06 04:33:58"
+  }
 }

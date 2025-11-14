@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.176Z",
+    "generated_at": "2025-11-14T08:39:15.102Z",
     "url": "emirates.com",
     "country": "United Arab Emirates",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 34,
-    "accessibility": 82,
+    "performance": 42,
+    "accessibility": 76,
     "best_practices": 67,
-    "seo": 90,
+    "seo": 83,
     "pwa": 89,
-    "test_date": "2025-11-03 16:19:40"
+    "test_date": "2025-11-10 16:22:49"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 76,
+      "best_practices": 67,
+      "seo": 83,
+      "pwa": 89,
+      "test_date": "2025-11-10 16:22:49"
+    },
     {
       "performance": 34,
       "accessibility": 82,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 16:19:40"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 8,
+    "accessibility": -6,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 16:22:49",
+    "test_date_previous": "2025-11-03 16:19:40"
+  }
 }

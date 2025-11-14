@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:30.103Z",
+          "dateCreated": "2025-11-14T08:39:05.029Z",
           "about": {
             "@type": "WebSite",
             "name": "thefinancialexpress.com.bd",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-thefinancialexpress.com.bd.html#metrics",
           "name": "thefinancialexpress.com.bd Performance Metrics",
           "description": "Latest Lighthouse scores for thefinancialexpress.com.bd",
-          "performanceScore": 10,
+          "performanceScore": 7,
           "accessibilityScore": 84,
           "bestPracticesScore": 75,
           "seoScore": 89,
-          "dateRecorded": "2025-10-24 12:21:28"
+          "dateRecorded": "2025-11-07 18:27:56"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">10%</div>
+                <div class="stat-number poor">7%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -139,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 10%"></div>
-                        <span class="score-text">10%</span>
+                        <div class="score-fill performance" style="width: 7%"></div>
+                        <span class="score-text">7%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":635,"url":"thefinancialexpress.com.bd","performance":10,"accessibility":84,"best_practices":75,"seo":89,"pwa":89,"test_date":"2025-10-24 12:21:28","country":"Bangladesh","industry":"Media"},{"id":2549,"url":"thefinancialexpress.com.bd","performance":7,"accessibility":84,"best_practices":75,"seo":89,"pwa":89,"test_date":"2025-11-07 18:27:56","country":"Bangladesh","industry":"Media"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

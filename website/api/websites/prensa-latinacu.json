@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.019Z",
+    "generated_at": "2025-11-14T08:39:14.784Z",
     "url": "prensa-latina.cu",
     "country": "Cuba",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 54,
     "accessibility": 78,
     "best_practices": 83,
-    "seo": 100,
+    "seo": 93,
     "pwa": 22,
-    "test_date": "2025-10-30 14:09:53"
+    "test_date": "2025-11-13 14:18:28"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 78,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 22,
+      "test_date": "2025-11-13 14:18:28"
+    },
+    {
+      "performance": 59,
+      "accessibility": 78,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 22,
+      "test_date": "2025-11-06 14:18:12"
+    },
     {
       "performance": 60,
       "accessibility": 78,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
-    "accessibility": 6,
+    "performance": -5,
+    "accessibility": 0,
     "best_practices": 0,
-    "seo": 7,
+    "seo": -7,
     "pwa": 0,
-    "test_date_current": "2025-10-30 14:09:53",
-    "test_date_previous": "2025-10-23 08:35:35"
+    "test_date_current": "2025-11-13 14:18:28",
+    "test_date_previous": "2025-11-06 14:18:12"
   }
 }

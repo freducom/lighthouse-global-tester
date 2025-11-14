@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.597Z",
+    "generated_at": "2025-11-14T08:39:14.941Z",
     "url": "irishmirror.ie",
     "country": "Ireland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 45,
-    "accessibility": 98,
-    "best_practices": 75,
+    "performance": 35,
+    "accessibility": 97,
+    "best_practices": 83,
     "seo": 92,
     "pwa": 67,
-    "test_date": "2025-10-21 12:56:48"
+    "test_date": "2025-11-04 18:25:03"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 67,
+      "test_date": "2025-11-04 18:25:03"
+    },
     {
       "performance": 45,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-21 12:56:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -10,
+    "accessibility": -1,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-04 18:25:03",
+    "test_date_previous": "2025-10-21 12:56:48"
+  }
 }

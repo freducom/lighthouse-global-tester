@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.162Z",
+    "generated_at": "2025-11-14T08:39:14.825Z",
     "url": "lut.fi",
     "country": "Finland",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 61,
     "accessibility": 96,
     "best_practices": 100,
     "seo": 93,
     "pwa": 44,
-    "test_date": "2025-10-29 10:11:47"
+    "test_date": "2025-11-12 08:14:46"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 44,
+      "test_date": "2025-11-12 08:14:46"
+    },
+    {
+      "performance": 59,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 44,
+      "test_date": "2025-11-05 08:14:35"
+    },
     {
       "performance": 62,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 10:11:47"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 08:14:46",
+    "test_date_previous": "2025-11-05 08:14:35"
+  }
 }

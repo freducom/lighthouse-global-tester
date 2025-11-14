@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.285Z",
+    "generated_at": "2025-11-14T08:39:13.540Z",
     "country": "Portugal",
     "flag": "🌍",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
     "performance": 41,
-    "accessibility": 88,
-    "best_practices": 78,
+    "accessibility": 89,
+    "best_practices": 77,
     "seo": 92,
-    "pwa": 33
+    "pwa": 41
   },
   "websites": [
     {
@@ -23,79 +23,91 @@
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-11-01 14:14:57"
+      "test_date": "2025-11-08 14:09:35"
     },
     {
       "url": "sic.pt",
       "industry": "Media",
       "scores": {
-        "performance": 42,
+        "performance": 55,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-31 04:20:56"
-    },
-    {
-      "url": "expresso.pt",
-      "industry": "Media",
-      "scores": {
-        "performance": 41,
-        "accessibility": 96,
-        "best_practices": 83,
-        "seo": 98,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 18:35:43"
-    },
-    {
-      "url": "sapo.pt",
-      "industry": "Portal",
-      "scores": {
-        "performance": 37,
-        "accessibility": 88,
-        "best_practices": 67,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 00:47:54"
+      "test_date": "2025-11-14 04:21:21"
     },
     {
       "url": "rtp.pt",
       "industry": "Media",
       "scores": {
-        "performance": 29,
+        "performance": 53,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-30 22:11:11"
+      "test_date": "2025-11-13 22:12:24"
+    },
+    {
+      "url": "expresso.pt",
+      "industry": "Media",
+      "scores": {
+        "performance": 45,
+        "accessibility": 96,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 18:35:34"
+    },
+    {
+      "url": "sapo.pt",
+      "industry": "Portal",
+      "scores": {
+        "performance": 31,
+        "accessibility": 96,
+        "best_practices": 67,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 00:50:03"
     },
     {
       "url": "millenniumbcp.pt",
       "industry": "Finance",
       "scores": {
-        "performance": 27,
+        "performance": 25,
         "accessibility": 86,
         "best_practices": 92,
-        "seo": 97,
+        "seo": 96,
         "pwa": 33
       },
-      "test_date": "2025-10-29 16:24:46"
+      "test_date": "2025-11-12 14:15:51"
+    },
+    {
+      "url": "publico.pt",
+      "industry": "Media",
+      "scores": {
+        "performance": 20,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 84,
+        "pwa": 100
+      },
+      "test_date": "2025-11-06 16:18:16"
     },
     {
       "url": "continente.pt",
       "industry": "E-commerce",
       "scores": {
-        "performance": 20,
+        "performance": 9,
         "accessibility": 87,
         "best_practices": 58,
         "seo": 88,
         "pwa": 33
       },
-      "test_date": "2025-11-03 03:14:03"
+      "test_date": "2025-11-10 03:15:29"
     }
   ],
   "industries": [
@@ -103,7 +115,7 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 55,
+        "performance": 49,
         "accessibility": 84,
         "best_practices": 71,
         "seo": 82,
@@ -114,32 +126,32 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 27,
+        "performance": 25,
         "accessibility": 86,
         "best_practices": 92,
-        "seo": 97,
+        "seo": 96,
         "pwa": 33
       }
     },
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 37,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 98,
-        "pwa": 33
+        "performance": 43,
+        "accessibility": 90,
+        "best_practices": 79,
+        "seo": 95,
+        "pwa": 50
       }
     },
     {
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 37,
-        "accessibility": 88,
+        "performance": 31,
+        "accessibility": 96,
         "best_practices": 67,
-        "seo": 92,
+        "seo": 99,
         "pwa": 33
       }
     }

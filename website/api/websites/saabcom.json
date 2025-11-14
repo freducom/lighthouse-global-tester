@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.056Z",
+    "generated_at": "2025-11-14T08:39:15.073Z",
     "url": "saab.com",
     "country": "Sweden",
     "industry": "Defense"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 61,
     "accessibility": 91,
     "best_practices": 83,
     "seo": 84,
     "pwa": 44,
-    "test_date": "2025-10-30 22:12:41"
+    "test_date": "2025-11-13 22:13:53"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 44,
+      "test_date": "2025-11-13 22:13:53"
+    },
+    {
+      "performance": 60,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 44,
+      "test_date": "2025-11-06 22:12:35"
+    },
     {
       "performance": 62,
       "accessibility": 91,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 22:12:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 22:13:53",
+    "test_date_previous": "2025-11-06 22:12:35"
+  }
 }

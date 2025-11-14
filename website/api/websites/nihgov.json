@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.328Z",
+    "generated_at": "2025-11-14T08:39:15.148Z",
     "url": "nih.gov",
     "country": "United States",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 61,
     "accessibility": 98,
-    "best_practices": 83,
+    "best_practices": 92,
     "seo": 93,
     "pwa": 22,
-    "test_date": "2025-10-30 00:59:05"
+    "test_date": "2025-11-12 22:21:11"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 22,
+      "test_date": "2025-11-12 22:21:11"
+    },
+    {
+      "performance": 60,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 22,
+      "test_date": "2025-11-05 22:31:32"
+    },
     {
       "performance": 36,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 00:59:05"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 22:21:11",
+    "test_date_previous": "2025-11-05 22:31:32"
+  }
 }

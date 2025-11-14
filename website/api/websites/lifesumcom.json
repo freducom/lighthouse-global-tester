@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.032Z",
+    "generated_at": "2025-11-14T08:39:15.065Z",
     "url": "lifesum.com",
     "country": "Sweden",
     "industry": "Healthtech"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 57,
     "accessibility": 94,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-29 07:50:48"
+    "test_date": "2025-11-12 04:23:35"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 94,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-12 04:23:35"
+    },
+    {
+      "performance": 65,
+      "accessibility": 94,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 04:20:43"
+    },
     {
       "performance": 52,
       "accessibility": 94,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -8,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 07:50:48",
-    "test_date_previous": "2025-10-29 06:23:46"
+    "test_date_current": "2025-11-12 04:23:35",
+    "test_date_previous": "2025-11-05 04:20:43"
   }
 }

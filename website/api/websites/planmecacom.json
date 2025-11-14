@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.183Z",
+    "generated_at": "2025-11-14T08:39:14.833Z",
     "url": "planmeca.com",
     "country": "Finland",
     "industry": "Healthcare"
@@ -11,9 +11,25 @@
     "best_practices": 83,
     "seo": 80,
     "pwa": 22,
-    "test_date": "2025-10-30 13:34:58"
+    "test_date": "2025-11-13 12:19:26"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 80,
+      "pwa": 22,
+      "test_date": "2025-11-13 12:19:26"
+    },
+    {
+      "performance": 61,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 80,
+      "pwa": 22,
+      "test_date": "2025-11-06 12:19:04"
+    },
     {
       "performance": 61,
       "accessibility": 92,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 13:34:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 12:19:26",
+    "test_date_previous": "2025-11-06 12:19:04"
+  }
 }

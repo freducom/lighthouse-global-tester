@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:41.812Z",
+    "generated_at": "2025-11-14T08:39:13.194Z",
     "country": "Canada",
     "flag": "🇨🇦",
-    "website_count": 23
+    "website_count": 24
   },
   "averages": {
-    "performance": 38,
+    "performance": 36,
     "accessibility": 93,
     "best_practices": 67,
-    "seo": 88,
+    "seo": 87,
     "pwa": 42
   },
   "websites": [
@@ -17,25 +17,13 @@
       "url": "ontario.ca",
       "industry": "Government",
       "scores": {
-        "performance": 85,
+        "performance": 84,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-30 08:18:24"
-    },
-    {
-      "url": "globalnews.ca",
-      "industry": "Media",
-      "scores": {
-        "performance": 62,
-        "accessibility": 100,
-        "best_practices": 0,
-        "seo": 93,
-        "pwa": 100
-      },
-      "test_date": "2025-10-19 19:58:45"
+      "test_date": "2025-11-13 06:24:10"
     },
     {
       "url": "hockeycanada.ca",
@@ -53,97 +41,85 @@
       "url": "canada.ca",
       "industry": "Government",
       "scores": {
-        "performance": 54,
+        "performance": 55,
         "accessibility": 100,
         "best_practices": 67,
-        "seo": 90,
+        "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-11-02 20:14:16"
+      "test_date": "2025-11-09 20:14:17"
     },
     {
       "url": "canadiangeographic.ca",
       "industry": "Media",
       "scores": {
-        "performance": 50,
+        "performance": 49,
         "accessibility": 98,
         "best_practices": 75,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-02 20:14:39"
+      "test_date": "2025-11-09 20:14:40"
+    },
+    {
+      "url": "rogers.com",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 48,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 20:22:42"
     },
     {
       "url": "servicecanada.gc.ca",
       "industry": "Government",
       "scores": {
-        "performance": 49,
+        "performance": 48,
         "accessibility": 100,
         "best_practices": 75,
-        "seo": 92,
+        "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-31 03:09:24"
-    },
-    {
-      "url": "bankofcanada.ca",
-      "industry": "Finance",
-      "scores": {
-        "performance": 43,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 44
-      },
-      "test_date": "2025-11-02 12:23:44"
-    },
-    {
-      "url": "scotiabank.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 37,
-        "accessibility": 100,
-        "best_practices": 83,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 03:06:14"
-    },
-    {
-      "url": "bell.ca",
-      "industry": "Telecom",
-      "scores": {
-        "performance": 37,
-        "accessibility": 94,
-        "best_practices": 75,
-        "seo": 79,
-        "pwa": 33
-      },
-      "test_date": "2025-11-02 14:09:42"
-    },
-    {
-      "url": "walmart.ca",
-      "industry": "Retail",
-      "scores": {
-        "performance": 36,
-        "accessibility": 93,
-        "best_practices": 67,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 10:19:01"
+      "test_date": "2025-11-14 03:10:48"
     },
     {
       "url": "cbc.ca",
       "industry": "Media",
       "scores": {
-        "performance": 35,
-        "accessibility": 93,
+        "performance": 47,
+        "accessibility": 91,
         "best_practices": 83,
         "seo": 83,
         "pwa": 56
       },
-      "test_date": "2025-11-02 20:24:01"
+      "test_date": "2025-11-09 20:19:43"
+    },
+    {
+      "url": "bankofcanada.ca",
+      "industry": "Finance",
+      "scores": {
+        "performance": 37,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 44
+      },
+      "test_date": "2025-11-09 12:21:36"
+    },
+    {
+      "url": "walmart.ca",
+      "industry": "Retail",
+      "scores": {
+        "performance": 35,
+        "accessibility": 93,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 10:17:42"
     },
     {
       "url": "timhortons.ca",
@@ -155,7 +131,19 @@
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-31 22:09:34"
+      "test_date": "2025-11-07 22:09:09"
+    },
+    {
+      "url": "bell.ca",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 34,
+        "accessibility": 94,
+        "best_practices": 75,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-09 14:04:12"
     },
     {
       "url": "theweathernetwork.com",
@@ -179,67 +167,67 @@
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-02 16:15:16"
-    },
-    {
-      "url": "realtor.ca",
-      "industry": "Real Estate",
-      "scores": {
-        "performance": 29,
-        "accessibility": 81,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 100
-      },
-      "test_date": "2025-10-30 18:22:03"
-    },
-    {
-      "url": "westjet.com",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 27,
-        "accessibility": 86,
-        "best_practices": 67,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 12:26:13"
+      "test_date": "2025-11-09 16:15:49"
     },
     {
       "url": "cp24.com",
       "industry": "Media",
       "scores": {
-        "performance": 27,
+        "performance": 28,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-03 03:27:42"
+      "test_date": "2025-11-10 03:29:18"
     },
     {
-      "url": "ctvnews.ca",
-      "industry": "Media",
+      "url": "realtor.ca",
+      "industry": "Real Estate",
       "scores": {
-        "performance": 27,
-        "accessibility": 89,
+        "performance": 28,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 100
+      },
+      "test_date": "2025-11-13 18:23:22"
+    },
+    {
+      "url": "scotiabank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 28,
+        "accessibility": 100,
         "best_practices": 83,
-        "seo": 92,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-03 04:24:40"
+      "test_date": "2025-11-14 03:07:24"
     },
     {
       "url": "aircanada.com",
       "industry": "Transportation",
       "scores": {
-        "performance": 26,
+        "performance": 27,
         "accessibility": 98,
         "best_practices": 0,
-        "seo": 91,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-02 04:17:48"
+      "test_date": "2025-11-09 04:15:10"
+    },
+    {
+      "url": "ctvnews.ca",
+      "industry": "Media",
+      "scores": {
+        "performance": 26,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 04:23:03"
     },
     {
       "url": "shaw.ca",
@@ -254,6 +242,18 @@
       "test_date": "2025-10-23 20:16:54"
     },
     {
+      "url": "westjet.com",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 25,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 12:20:56"
+    },
+    {
       "url": "canadiantire.ca",
       "industry": "Retail",
       "scores": {
@@ -263,7 +263,19 @@
         "seo": 71,
         "pwa": 56
       },
-      "test_date": "2025-11-02 20:15:18"
+      "test_date": "2025-11-09 20:15:17"
+    },
+    {
+      "url": "globalnews.ca",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 100,
+        "best_practices": 0,
+        "seo": 86,
+        "pwa": 100
+      },
+      "test_date": "2025-11-11 03:18:18"
     },
     {
       "url": "td.com",
@@ -275,19 +287,19 @@
         "seo": 77,
         "pwa": 33
       },
-      "test_date": "2025-10-31 16:14:45"
+      "test_date": "2025-11-07 16:13:23"
     },
     {
       "url": "rbcroyalbank.com",
       "industry": "Finance",
       "scores": {
-        "performance": 13,
+        "performance": 20,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-10-30 18:19:04"
+      "test_date": "2025-11-13 18:17:44"
     }
   ],
   "industries": [
@@ -295,7 +307,7 @@
       "industry": "Finance",
       "website_count": 5,
       "averages": {
-        "performance": 29,
+        "performance": 27,
         "accessibility": 97,
         "best_practices": 63,
         "seo": 88,
@@ -317,7 +329,7 @@
       "industry": "Government",
       "website_count": 3,
       "averages": {
-        "performance": 63,
+        "performance": 62,
         "accessibility": 100,
         "best_practices": 81,
         "seo": 94,
@@ -328,10 +340,10 @@
       "industry": "Media",
       "website_count": 5,
       "averages": {
-        "performance": 40,
-        "accessibility": 94,
+        "performance": 35,
+        "accessibility": 93,
         "best_practices": 65,
-        "seo": 92,
+        "seo": 91,
         "pwa": 51
       }
     },
@@ -339,9 +351,9 @@
       "industry": "Real Estate",
       "website_count": 1,
       "averages": {
-        "performance": 29,
+        "performance": 28,
         "accessibility": 81,
-        "best_practices": 75,
+        "best_practices": 67,
         "seo": 86,
         "pwa": 100
       }
@@ -350,7 +362,7 @@
       "industry": "Retail",
       "website_count": 2,
       "averages": {
-        "performance": 31,
+        "performance": 30,
         "accessibility": 87,
         "best_practices": 59,
         "seo": 81,
@@ -370,12 +382,12 @@
     },
     {
       "industry": "Telecom",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 31,
-        "accessibility": 95,
-        "best_practices": 79,
-        "seo": 83,
+        "performance": 36,
+        "accessibility": 96,
+        "best_practices": 80,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -383,10 +395,10 @@
       "industry": "Transportation",
       "website_count": 2,
       "averages": {
-        "performance": 27,
+        "performance": 26,
         "accessibility": 92,
         "best_practices": 34,
-        "seo": 89,
+        "seo": 85,
         "pwa": 33
       }
     },

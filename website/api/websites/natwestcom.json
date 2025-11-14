@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.211Z",
+    "generated_at": "2025-11-14T08:39:15.113Z",
     "url": "natwest.com",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 55,
     "accessibility": 89,
     "best_practices": 83,
     "seo": 75,
     "pwa": 33,
-    "test_date": "2025-10-29 22:12:04"
+    "test_date": "2025-11-12 20:12:57"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-12 20:12:57"
+    },
+    {
+      "performance": 63,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-05 20:14:19"
+    },
     {
       "performance": 48,
       "accessibility": 89,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
+    "performance": -8,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 22:12:04",
-    "test_date_previous": "2025-10-22 16:14:31"
+    "test_date_current": "2025-11-12 20:12:57",
+    "test_date_previous": "2025-11-05 20:14:19"
   }
 }

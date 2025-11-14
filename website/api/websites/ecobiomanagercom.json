@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.115Z",
+    "generated_at": "2025-11-14T08:39:14.807Z",
     "url": "ecobiomanager.com",
     "country": "Finland",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 49,
     "accessibility": 87,
     "best_practices": 83,
     "seo": 86,
     "pwa": 22,
-    "test_date": "2025-11-03 12:22:01"
+    "test_date": "2025-11-10 12:23:12"
   },
   "historical_data": [
+    {
+      "performance": 49,
+      "accessibility": 87,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 22,
+      "test_date": "2025-11-10 12:23:12"
+    },
     {
       "performance": 45,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:22:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:23:12",
+    "test_date_previous": "2025-11-03 12:22:01"
+  }
 }

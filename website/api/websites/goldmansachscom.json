@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.299Z",
+    "generated_at": "2025-11-14T08:39:15.138Z",
     "url": "goldmansachs.com",
     "country": "United States",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 24,
+    "performance": 44,
     "accessibility": 0,
     "best_practices": 75,
-    "seo": 86,
+    "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-04 04:12:52"
+    "test_date": "2025-11-11 04:15:24"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 0,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-11 04:15:24"
+    },
     {
       "performance": 24,
       "accessibility": 0,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 04:12:52"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 20,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 04:15:24",
+    "test_date_previous": "2025-11-04 04:12:52"
+  }
 }

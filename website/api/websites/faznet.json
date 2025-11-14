@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.284Z",
+    "generated_at": "2025-11-14T08:39:14.863Z",
     "url": "faz.net",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
+    "performance": 28,
     "accessibility": 87,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-03 20:11:47"
+    "test_date": "2025-11-10 20:12:05"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 87,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 20:12:05"
+    },
     {
       "performance": 27,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 20:11:47"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:12:05",
+    "test_date_previous": "2025-11-03 20:11:47"
+  }
 }

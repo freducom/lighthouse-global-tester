@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.553Z",
+    "generated_at": "2025-11-14T08:39:14.930Z",
     "url": "yatra.com",
     "country": "India",
     "industry": "Travel"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 39,
     "accessibility": 58,
     "best_practices": 67,
     "seo": 75,
     "pwa": 33,
-    "test_date": "2025-11-01 16:17:57"
+    "test_date": "2025-11-08 16:18:46"
   },
   "historical_data": [
+    {
+      "performance": 39,
+      "accessibility": 58,
+      "best_practices": 67,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-08 16:18:46"
+    },
     {
       "performance": 40,
       "accessibility": 58,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 16:17:57"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 16:18:46",
+    "test_date_previous": "2025-11-01 16:17:57"
+  }
 }

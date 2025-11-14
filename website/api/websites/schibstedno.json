@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.816Z",
+    "generated_at": "2025-11-14T08:39:14.994Z",
     "url": "schibsted.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 52,
     "accessibility": 92,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-31 00:51:27"
+    "test_date": "2025-11-14 00:54:52"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:54:52"
+    },
+    {
+      "performance": 49,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:52:42"
+    },
     {
       "performance": 55,
       "accessibility": 92,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
+    "performance": 3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 00:51:27",
-    "test_date_previous": "2025-10-23 19:32:52"
+    "test_date_current": "2025-11-14 00:54:52",
+    "test_date_previous": "2025-11-07 00:52:42"
   }
 }

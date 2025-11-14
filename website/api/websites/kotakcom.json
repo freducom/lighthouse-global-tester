@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.443Z",
+    "generated_at": "2025-11-14T08:39:14.906Z",
     "url": "kotak.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 36,
-    "accessibility": 74,
+    "performance": 24,
+    "accessibility": 75,
     "best_practices": 58,
     "seo": 78,
     "pwa": 33,
-    "test_date": "2025-10-29 03:15:21"
+    "test_date": "2025-11-12 00:50:58"
   },
   "historical_data": [
+    {
+      "performance": 24,
+      "accessibility": 75,
+      "best_practices": 58,
+      "seo": 78,
+      "pwa": 33,
+      "test_date": "2025-11-12 00:50:58"
+    },
+    {
+      "performance": 23,
+      "accessibility": 75,
+      "best_practices": 58,
+      "seo": 70,
+      "pwa": 33,
+      "test_date": "2025-11-05 00:51:32"
+    },
     {
       "performance": 36,
       "accessibility": 74,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 03:15:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 8,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 00:50:58",
+    "test_date_previous": "2025-11-05 00:51:32"
+  }
 }

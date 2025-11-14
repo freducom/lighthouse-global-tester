@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.492Z",
+    "generated_at": "2025-11-14T08:39:14.920Z",
     "url": "redbus.in",
     "country": "India",
     "industry": "Travel"
   },
   "latest_scores": {
-    "performance": 54,
-    "accessibility": 76,
+    "performance": 46,
+    "accessibility": 68,
     "best_practices": 100,
     "seo": 93,
     "pwa": 56,
-    "test_date": "2025-10-30 18:22:29"
+    "test_date": "2025-11-13 18:23:48"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 68,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 56,
+      "test_date": "2025-11-13 18:23:48"
+    },
+    {
+      "performance": 47,
+      "accessibility": 68,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 56,
+      "test_date": "2025-11-06 18:27:46"
+    },
     {
       "performance": 54,
       "accessibility": 76,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 18:22:29"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 18:23:48",
+    "test_date_previous": "2025-11-06 18:27:46"
+  }
 }

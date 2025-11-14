@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.096Z",
+    "generated_at": "2025-11-14T08:39:13.410Z",
     "country": "Latvia",
     "flag": "🇱🇻",
     "website_count": 6
   },
   "averages": {
-    "performance": 38,
-    "accessibility": 77,
-    "best_practices": 81,
-    "seo": 85,
+    "performance": 40,
+    "accessibility": 76,
+    "best_practices": 78,
+    "seo": 83,
     "pwa": 44
   },
   "websites": [
@@ -17,13 +17,25 @@
       "url": "swh.lv",
       "industry": "Media",
       "scores": {
-        "performance": 100,
+        "performance": 99,
         "accessibility": 78,
         "best_practices": 75,
         "seo": 67,
         "pwa": 0
       },
-      "test_date": "2025-10-31 12:21:12"
+      "test_date": "2025-11-07 12:22:54"
+    },
+    {
+      "url": "nra.lv",
+      "industry": "Media",
+      "scores": {
+        "performance": 40,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 03:11:29"
     },
     {
       "url": "la.lv",
@@ -41,49 +53,37 @@
       "url": "lsm.lv",
       "industry": "Media",
       "scores": {
-        "performance": 36,
+        "performance": 32,
         "accessibility": 91,
         "best_practices": 92,
-        "seo": 99,
+        "seo": 92,
         "pwa": 89
       },
-      "test_date": "2025-10-29 08:26:37"
-    },
-    {
-      "url": "nra.lv",
-      "industry": "Media",
-      "scores": {
-        "performance": 23,
-        "accessibility": 95,
-        "best_practices": 75,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 04:16:25"
+      "test_date": "2025-11-12 06:29:40"
     },
     {
       "url": "skaties.lv",
       "industry": "Media",
       "scores": {
-        "performance": 16,
+        "performance": 18,
         "accessibility": 79,
         "best_practices": 75,
         "seo": 90,
         "pwa": 78
       },
-      "test_date": "2025-10-31 04:27:40"
+      "test_date": "2025-11-14 04:30:58"
     },
     {
       "url": "diena.lv",
       "industry": "Media",
       "scores": {
-        "performance": 15,
+        "performance": 12,
         "accessibility": 48,
-        "best_practices": 83,
+        "best_practices": 67,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-27 10:21:28"
+      "test_date": "2025-11-10 08:23:11"
     }
   ],
   "industries": [
@@ -91,10 +91,10 @@
       "industry": "Media",
       "website_count": 6,
       "averages": {
-        "performance": 38,
-        "accessibility": 77,
-        "best_practices": 81,
-        "seo": 85,
+        "performance": 40,
+        "accessibility": 76,
+        "best_practices": 78,
+        "seo": 83,
         "pwa": 44
       }
     }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.046Z",
+    "generated_at": "2025-11-14T08:39:15.071Z",
     "url": "polisen.se",
     "country": "Sweden",
     "industry": "Government"
@@ -11,9 +11,25 @@
     "best_practices": 100,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-10-30 13:37:16"
+    "test_date": "2025-11-13 12:21:58"
   },
   "historical_data": [
+    {
+      "performance": 80,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-13 12:21:58"
+    },
+    {
+      "performance": 75,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-06 12:21:21"
+    },
     {
       "performance": 80,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 13:37:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 12:21:58",
+    "test_date_previous": "2025-11-06 12:21:21"
+  }
 }

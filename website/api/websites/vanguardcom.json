@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.432Z",
+    "generated_at": "2025-11-14T08:39:15.165Z",
     "url": "vanguard.com",
     "country": "United States",
     "industry": "Finance"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-11-01 06:19:18"
+    "test_date": "2025-11-08 06:19:49"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-08 06:19:49"
+    },
     {
       "performance": 48,
       "accessibility": 92,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 06:19:18"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 06:19:49",
+    "test_date_previous": "2025-11-01 06:19:18"
+  }
 }

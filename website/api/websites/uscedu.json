@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.418Z",
+    "generated_at": "2025-11-14T08:39:15.163Z",
     "url": "usc.edu",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 60,
+    "performance": 58,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 93,
     "pwa": 44,
-    "test_date": "2025-11-01 04:25:45"
+    "test_date": "2025-11-08 04:25:11"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 44,
+      "test_date": "2025-11-08 04:25:11"
+    },
     {
       "performance": 60,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 04:25:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 04:25:11",
+    "test_date_previous": "2025-11-01 04:25:45"
+  }
 }

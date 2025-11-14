@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.971Z",
+    "generated_at": "2025-11-14T08:39:14.766Z",
     "url": "bankofcanada.ca",
     "country": "Canada",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 37,
     "accessibility": 94,
     "best_practices": 83,
-    "seo": 84,
+    "seo": 83,
     "pwa": 44,
-    "test_date": "2025-11-02 12:23:44"
+    "test_date": "2025-11-09 12:21:36"
   },
   "historical_data": [
+    {
+      "performance": 37,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 44,
+      "test_date": "2025-11-09 12:21:36"
+    },
     {
       "performance": 43,
       "accessibility": 94,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": -2,
+    "performance": -6,
+    "accessibility": 0,
     "best_practices": 0,
-    "seo": 1,
+    "seo": -1,
     "pwa": 0,
-    "test_date_current": "2025-11-02 12:23:44",
-    "test_date_previous": "2025-10-26 15:58:56"
+    "test_date_current": "2025-11-09 12:21:36",
+    "test_date_previous": "2025-11-02 12:23:44"
   }
 }

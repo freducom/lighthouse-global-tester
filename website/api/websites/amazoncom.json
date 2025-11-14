@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.230Z",
+    "generated_at": "2025-11-14T08:39:15.120Z",
     "url": "amazon.com",
     "country": "United States",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 93,
+    "performance": 94,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-02 06:18:10"
+    "test_date": "2025-11-09 06:18:01"
   },
   "historical_data": [
+    {
+      "performance": 94,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-09 06:18:01"
+    },
     {
       "performance": 93,
       "accessibility": 100,
@@ -80,12 +88,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 1,
     "accessibility": 0,
-    "best_practices": 8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 06:18:10",
-    "test_date_previous": "2025-10-26 08:03:56"
+    "test_date_current": "2025-11-09 06:18:01",
+    "test_date_previous": "2025-11-02 06:18:10"
   }
 }

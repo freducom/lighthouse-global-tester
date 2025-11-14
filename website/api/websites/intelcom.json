@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.312Z",
+    "generated_at": "2025-11-14T08:39:15.142Z",
     "url": "intel.com",
     "country": "United States",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 51,
+    "performance": 46,
     "accessibility": 90,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-28 18:25:46"
+    "test_date": "2025-11-11 16:25:03"
   },
   "historical_data": [
+    {
+      "performance": 46,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-11 16:25:03"
+    },
+    {
+      "performance": 48,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-04 16:24:21"
+    },
     {
       "performance": 51,
       "accessibility": 90,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 18:25:46"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 16:25:03",
+    "test_date_previous": "2025-11-04 16:24:21"
+  }
 }

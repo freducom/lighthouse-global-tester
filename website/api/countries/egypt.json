@@ -1,41 +1,77 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.135Z",
+    "generated_at": "2025-11-14T08:39:13.433Z",
     "country": "Egypt",
     "flag": "🇪🇬",
-    "website_count": 8
+    "website_count": 9
   },
   "averages": {
-    "performance": 39,
-    "accessibility": 86,
-    "best_practices": 68,
-    "seo": 91,
-    "pwa": 46
+    "performance": 44,
+    "accessibility": 87,
+    "best_practices": 69,
+    "seo": 90,
+    "pwa": 48
   },
   "websites": [
     {
       "url": "arabic.rt.com",
       "industry": "Media",
       "scores": {
-        "performance": 64,
-        "accessibility": 98,
+        "performance": 66,
+        "accessibility": 91,
         "best_practices": 83,
         "seo": 98,
         "pwa": 56
       },
-      "test_date": "2025-11-02 08:17:32"
+      "test_date": "2025-11-09 08:17:43"
     },
     {
       "url": "youm7.com",
       "industry": "Media",
       "scores": {
-        "performance": 49,
+        "performance": 53,
         "accessibility": 98,
         "best_practices": 67,
-        "seo": 99,
+        "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-01 16:23:31"
+      "test_date": "2025-11-08 16:23:11"
+    },
+    {
+      "url": "masrawy.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 50,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 91,
+        "pwa": 67
+      },
+      "test_date": "2025-11-12 10:22:45"
+    },
+    {
+      "url": "elwatannews.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 88,
+        "best_practices": 75,
+        "seo": 80,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 16:21:03"
+    },
+    {
+      "url": "syria.tv",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 83,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-07 12:24:21"
     },
     {
       "url": "dailynewsegypt.com",
@@ -47,19 +83,7 @@
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-11-03 06:15:55"
-    },
-    {
-      "url": "elwatannews.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 37,
-        "accessibility": 88,
-        "best_practices": 75,
-        "seo": 80,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 16:17:21"
+      "test_date": "2025-11-10 06:16:13"
     },
     {
       "url": "akhbarelyom.com",
@@ -77,59 +101,47 @@
       "url": "yallakora.com",
       "industry": "Sports",
       "scores": {
-        "performance": 36,
-        "accessibility": 80,
-        "best_practices": 75,
-        "seo": 90,
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 91,
         "pwa": 67
       },
-      "test_date": "2025-11-01 16:16:28"
+      "test_date": "2025-11-08 16:17:10"
     },
     {
       "url": "almasryalyoum.com",
       "industry": "Media",
       "scores": {
-        "performance": 33,
+        "performance": 35,
         "accessibility": 72,
-        "best_practices": 58,
+        "best_practices": 50,
         "seo": 85,
         "pwa": 78
       },
-      "test_date": "2025-11-02 04:25:39"
-    },
-    {
-      "url": "syria.tv",
-      "industry": "Media",
-      "scores": {
-        "performance": 16,
-        "accessibility": 85,
-        "best_practices": 50,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 12:23:15"
+      "test_date": "2025-11-09 04:23:04"
     }
   ],
   "industries": [
     {
       "industry": "Media",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 39,
-        "accessibility": 87,
-        "best_practices": 67,
-        "seo": 91,
-        "pwa": 43
+        "performance": 46,
+        "accessibility": 86,
+        "best_practices": 70,
+        "seo": 90,
+        "pwa": 46
       }
     },
     {
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 36,
-        "accessibility": 80,
-        "best_practices": 75,
-        "seo": 90,
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 91,
         "pwa": 67
       }
     }

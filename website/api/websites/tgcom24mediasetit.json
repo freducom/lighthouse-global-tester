@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.632Z",
+    "generated_at": "2025-11-14T08:39:14.951Z",
     "url": "tgcom24.mediaset.it",
     "country": "Italy",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 33,
     "accessibility": 76,
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-31 18:22:19"
+    "test_date": "2025-11-07 18:20:19"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-07 18:20:19"
+    },
     {
       "performance": 35,
       "accessibility": 76,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 18:22:19"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 18:20:19",
+    "test_date_previous": "2025-10-31 18:22:19"
+  }
 }

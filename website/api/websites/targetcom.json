@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.389Z",
+    "generated_at": "2025-11-14T08:39:15.160Z",
     "url": "target.com",
     "country": "United States",
     "industry": "Retail"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 30,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-31 14:15:56"
+    "test_date": "2025-11-07 14:18:18"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-07 14:18:18"
+    },
     {
       "performance": 29,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 14:15:56"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 14:18:18",
+    "test_date_previous": "2025-10-31 14:15:56"
+  }
 }

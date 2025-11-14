@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.619Z",
+    "generated_at": "2025-11-14T08:39:14.948Z",
     "url": "aranzulla.it",
     "country": "Italy",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 70,
+    "performance": 65,
     "accessibility": 88,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-02 08:18:12"
+    "test_date": "2025-11-09 08:18:26"
   },
   "historical_data": [
+    {
+      "performance": 65,
+      "accessibility": 88,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-09 08:18:26"
+    },
     {
       "performance": 70,
       "accessibility": 88,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 24,
+    "performance": -5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 08:18:12",
-    "test_date_previous": "2025-10-26 10:10:30"
+    "test_date_current": "2025-11-09 08:18:26",
+    "test_date_previous": "2025-11-02 08:18:12"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.969Z",
+    "generated_at": "2025-11-14T08:39:14.765Z",
     "url": "vivacom.bg",
     "country": "Bulgaria",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 26,
+    "performance": 25,
     "accessibility": 99,
     "best_practices": 92,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-11-01 08:22:23"
+    "test_date": "2025-11-08 08:26:45"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 99,
+      "best_practices": 92,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-08 08:26:45"
+    },
     {
       "performance": 26,
       "accessibility": 99,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 08:22:23"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 08:26:45",
+    "test_date_previous": "2025-11-01 08:22:23"
+  }
 }

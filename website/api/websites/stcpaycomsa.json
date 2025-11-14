@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.895Z",
+    "generated_at": "2025-11-14T08:39:15.027Z",
     "url": "stcpay.com.sa",
     "country": "Saudi Arabia",
     "industry": "Finance"
   },
   "latest_scores": {
     "performance": 57,
-    "accessibility": 88,
+    "accessibility": 78,
     "best_practices": 0,
     "seo": 62,
     "pwa": 11,
-    "test_date": "2025-10-31 10:11:54"
+    "test_date": "2025-11-07 10:14:39"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 78,
+      "best_practices": 0,
+      "seo": 62,
+      "pwa": 11,
+      "test_date": "2025-11-07 10:14:39"
+    },
     {
       "performance": 57,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 10:11:54"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": -10,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 10:14:39",
+    "test_date_previous": "2025-10-31 10:11:54"
+  }
 }

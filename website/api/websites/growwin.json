@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.411Z",
+    "generated_at": "2025-11-14T08:39:14.896Z",
     "url": "groww.in",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 40,
     "accessibility": 80,
     "best_practices": 75,
     "seo": 95,
     "pwa": 67,
-    "test_date": "2025-11-04 06:19:46"
+    "test_date": "2025-11-11 06:19:51"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 80,
+      "best_practices": 75,
+      "seo": 95,
+      "pwa": 67,
+      "test_date": "2025-11-11 06:19:51"
+    },
     {
       "performance": 45,
       "accessibility": 80,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 06:19:46"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 06:19:51",
+    "test_date_previous": "2025-11-04 06:19:46"
+  }
 }

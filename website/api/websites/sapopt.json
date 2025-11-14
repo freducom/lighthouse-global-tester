@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.864Z",
+    "generated_at": "2025-11-14T08:39:15.015Z",
     "url": "sapo.pt",
     "country": "Portugal",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 37,
-    "accessibility": 88,
+    "performance": 31,
+    "accessibility": 96,
     "best_practices": 67,
-    "seo": 92,
+    "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-31 00:47:54"
+    "test_date": "2025-11-14 00:50:03"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 96,
+      "best_practices": 67,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:50:03"
+    },
+    {
+      "performance": 31,
+      "accessibility": 89,
+      "best_practices": 67,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:49:00"
+    },
     {
       "performance": 37,
       "accessibility": 88,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:47:54"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 7,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:50:03",
+    "test_date_previous": "2025-11-07 00:49:00"
+  }
 }

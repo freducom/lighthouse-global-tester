@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.325Z",
+    "generated_at": "2025-11-14T08:39:15.146Z",
     "url": "nasa.gov",
     "country": "United States",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 64,
     "accessibility": 93,
     "best_practices": 92,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-10-29 20:23:32"
+    "test_date": "2025-11-12 18:27:22"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-12 18:27:22"
+    },
+    {
+      "performance": 65,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-05 18:28:22"
+    },
     {
       "performance": 52,
       "accessibility": 93,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -14,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 20:23:32",
-    "test_date_previous": "2025-10-23 07:06:56"
+    "test_date_current": "2025-11-12 18:27:22",
+    "test_date_previous": "2025-11-05 18:28:22"
   }
 }

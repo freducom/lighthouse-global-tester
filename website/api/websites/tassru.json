@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.883Z",
+    "generated_at": "2025-11-14T08:39:15.023Z",
     "url": "tass.ru",
     "country": "Russia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 44,
+    "performance": 43,
     "accessibility": 93,
     "best_practices": 83,
     "seo": 100,
     "pwa": 89,
-    "test_date": "2025-10-31 14:18:52"
+    "test_date": "2025-11-07 14:20:00"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-07 14:20:00"
+    },
     {
       "performance": 44,
       "accessibility": 93,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 14:18:52",
-    "test_date_previous": "2025-10-24 08:14:33"
+    "test_date_current": "2025-11-07 14:20:00",
+    "test_date_previous": "2025-10-31 14:18:52"
   }
 }

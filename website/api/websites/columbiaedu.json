@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.261Z",
+    "generated_at": "2025-11-14T08:39:15.130Z",
     "url": "columbia.edu",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 41,
     "accessibility": 86,
     "best_practices": 75,
     "seo": 73,
     "pwa": 33,
-    "test_date": "2025-11-03 00:58:01"
+    "test_date": "2025-11-10 00:57:19"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 86,
+      "best_practices": 75,
+      "seo": 73,
+      "pwa": 33,
+      "test_date": "2025-11-10 00:57:19"
+    },
     {
       "performance": 39,
       "accessibility": 86,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 00:58:01",
-    "test_date_previous": "2025-10-27 03:19:52"
+    "test_date_current": "2025-11-10 00:57:19",
+    "test_date_previous": "2025-11-03 00:58:01"
   }
 }

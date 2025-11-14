@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.115Z",
+    "generated_at": "2025-11-14T08:39:15.090Z",
     "url": "kapook.com",
     "country": "Thailand",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 14,
+    "performance": 6,
     "accessibility": 93,
     "best_practices": 50,
-    "seo": 92,
+    "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-28 22:22:35"
+    "test_date": "2025-11-04 20:20:29"
   },
   "historical_data": [
+    {
+      "performance": 6,
+      "accessibility": 93,
+      "best_practices": 50,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-04 20:20:29"
+    },
     {
       "performance": 14,
       "accessibility": 93,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -23,
+    "performance": -8,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-10-28 22:22:35",
-    "test_date_previous": "2025-10-21 18:19:41"
+    "test_date_current": "2025-11-04 20:20:29",
+    "test_date_previous": "2025-10-28 22:22:35"
   }
 }

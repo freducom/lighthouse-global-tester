@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.550Z",
+    "generated_at": "2025-11-14T08:39:14.929Z",
     "url": "vit.ac.in",
     "country": "India",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 31,
-    "accessibility": 81,
+    "performance": 33,
+    "accessibility": 79,
     "best_practices": 83,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-11-01 08:20:55"
+    "test_date": "2025-11-08 08:22:40"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 79,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-08 08:22:40"
+    },
     {
       "performance": 31,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 08:20:55"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": -2,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 08:22:40",
+    "test_date_previous": "2025-11-01 08:20:55"
+  }
 }

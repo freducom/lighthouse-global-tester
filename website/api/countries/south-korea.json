@@ -1,30 +1,18 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:41.845Z",
+    "generated_at": "2025-11-14T08:39:13.216Z",
     "country": "South Korea",
     "flag": "🇰🇷",
     "website_count": 10
   },
   "averages": {
-    "performance": 37,
+    "performance": 35,
     "accessibility": 77,
-    "best_practices": 75,
-    "seo": 89,
+    "best_practices": 76,
+    "seo": 90,
     "pwa": 33
   },
   "websites": [
-    {
-      "url": "nate.com",
-      "industry": "Portal",
-      "scores": {
-        "performance": 53,
-        "accessibility": 67,
-        "best_practices": 67,
-        "seo": 84,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 20:23:55"
-    },
     {
       "url": "hani.co.kr",
       "industry": "Media",
@@ -38,76 +26,88 @@
       "test_date": "2025-10-19 20:12:25"
     },
     {
-      "url": "tistory.com",
-      "industry": "Social Media",
-      "scores": {
-        "performance": 41,
-        "accessibility": 81,
-        "best_practices": 92,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 22:10:21"
-    },
-    {
-      "url": "yna.co.kr",
-      "industry": "Media",
-      "scores": {
-        "performance": 41,
-        "accessibility": 76,
-        "best_practices": 92,
-        "seo": 92,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 16:19:40"
-    },
-    {
-      "url": "daum.net",
-      "industry": "Portal",
-      "scores": {
-        "performance": 41,
-        "accessibility": 80,
-        "best_practices": 58,
-        "seo": 98,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 06:21:26"
-    },
-    {
       "url": "naver.com",
       "industry": "Search Engine",
       "scores": {
-        "performance": 40,
+        "performance": 41,
         "accessibility": 86,
         "best_practices": 83,
         "seo": 76,
         "pwa": 33
       },
-      "test_date": "2025-10-29 22:12:33"
+      "test_date": "2025-11-12 20:13:24"
+    },
+    {
+      "url": "daum.net",
+      "industry": "Portal",
+      "scores": {
+        "performance": 40,
+        "accessibility": 79,
+        "best_practices": 58,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 06:21:24"
+    },
+    {
+      "url": "tistory.com",
+      "industry": "Social Media",
+      "scores": {
+        "performance": 39,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-07 22:09:56"
     },
     {
       "url": "zum.com",
       "industry": "Portal",
       "scores": {
-        "performance": 37,
+        "performance": 38,
         "accessibility": 80,
         "best_practices": 83,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-11-01 20:15:28"
+      "test_date": "2025-11-08 20:16:00"
     },
     {
-      "url": "mk.co.kr",
+      "url": "nate.com",
+      "industry": "Portal",
+      "scores": {
+        "performance": 37,
+        "accessibility": 74,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 20:11:15"
+    },
+    {
+      "url": "coupang.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 30,
+        "accessibility": 79,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 03:24:50"
+    },
+    {
+      "url": "yna.co.kr",
       "industry": "Media",
       "scores": {
         "performance": 27,
-        "accessibility": 72,
-        "best_practices": 83,
-        "seo": 99,
+        "accessibility": 76,
+        "best_practices": 92,
+        "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-29 18:16:35"
+      "test_date": "2025-11-08 16:20:23"
     },
     {
       "url": "chosun.com",
@@ -122,16 +122,16 @@
       "test_date": "2025-11-02 22:17:50"
     },
     {
-      "url": "coupang.com",
-      "industry": "E-commerce",
+      "url": "mk.co.kr",
+      "industry": "Media",
       "scores": {
-        "performance": 24,
-        "accessibility": 79,
-        "best_practices": 58,
-        "seo": 83,
+        "performance": 25,
+        "accessibility": 72,
+        "best_practices": 83,
+        "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-11-03 03:20:50"
+      "test_date": "2025-11-12 16:14:27"
     }
   ],
   "industries": [
@@ -139,9 +139,9 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 24,
+        "performance": 30,
         "accessibility": 79,
-        "best_practices": 58,
+        "best_practices": 67,
         "seo": 83,
         "pwa": 33
       }
@@ -150,7 +150,7 @@
       "industry": "Media",
       "website_count": 4,
       "averages": {
-        "performance": 34,
+        "performance": 30,
         "accessibility": 74,
         "best_practices": 77,
         "seo": 93,
@@ -161,10 +161,10 @@
       "industry": "Portal",
       "website_count": 3,
       "averages": {
-        "performance": 44,
-        "accessibility": 76,
+        "performance": 38,
+        "accessibility": 78,
         "best_practices": 69,
-        "seo": 91,
+        "seo": 93,
         "pwa": 33
       }
     },
@@ -172,7 +172,7 @@
       "industry": "Search Engine",
       "website_count": 1,
       "averages": {
-        "performance": 40,
+        "performance": 41,
         "accessibility": 86,
         "best_practices": 83,
         "seo": 76,
@@ -183,7 +183,7 @@
       "industry": "Social Media",
       "website_count": 1,
       "averages": {
-        "performance": 41,
+        "performance": 39,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,

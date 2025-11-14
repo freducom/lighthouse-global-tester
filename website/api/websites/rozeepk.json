@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.826Z",
+    "generated_at": "2025-11-14T08:39:14.998Z",
     "url": "rozee.pk",
     "country": "Pakistan",
     "industry": "Jobs"
   },
   "latest_scores": {
-    "performance": 85,
+    "performance": 0,
     "accessibility": 81,
-    "best_practices": 92,
+    "best_practices": 0,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-10-30 20:23:58"
+    "test_date": "2025-11-13 20:23:05"
   },
   "historical_data": [
+    {
+      "performance": 0,
+      "accessibility": 81,
+      "best_practices": 0,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-13 20:23:05"
+    },
+    {
+      "performance": 88,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-06 20:23:52"
+    },
     {
       "performance": 85,
       "accessibility": 81,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -4,
+    "performance": -88,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -92,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 20:23:58",
-    "test_date_previous": "2025-10-23 15:52:25"
+    "test_date_current": "2025-11-13 20:23:05",
+    "test_date_previous": "2025-11-06 20:23:52"
   }
 }

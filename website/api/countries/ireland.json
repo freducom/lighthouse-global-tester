@@ -1,137 +1,137 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.016Z",
+    "generated_at": "2025-11-14T08:39:13.352Z",
     "country": "Ireland",
     "flag": "🇮🇪",
     "website_count": 10
   },
   "averages": {
-    "performance": 44,
+    "performance": 45,
     "accessibility": 88,
-    "best_practices": 83,
+    "best_practices": 84,
     "seo": 89,
     "pwa": 43
   },
   "websites": [
     {
+      "url": "tribune.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 65,
+        "accessibility": 95,
+        "best_practices": 83,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 00:41:32"
+    },
+    {
       "url": "irishexaminer.com",
       "industry": "Media",
       "scores": {
-        "performance": 62,
+        "performance": 59,
         "accessibility": 94,
         "best_practices": 100,
         "seo": 93,
         "pwa": 67
       },
-      "test_date": "2025-10-28 20:29:44"
-    },
-    {
-      "url": "tribune.ie",
-      "industry": "Media",
-      "scores": {
-        "performance": 60,
-        "accessibility": 95,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 00:46:48"
+      "test_date": "2025-11-11 18:24:10"
     },
     {
       "url": "daa.ie",
       "industry": "Transportation",
       "scores": {
-        "performance": 57,
+        "performance": 55,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-03 04:30:44"
-    },
-    {
-      "url": "irishmirror.ie",
-      "industry": "Media",
-      "scores": {
-        "performance": 45,
-        "accessibility": 98,
-        "best_practices": 75,
-        "seo": 92,
-        "pwa": 67
-      },
-      "test_date": "2025-10-21 12:56:48"
+      "test_date": "2025-11-10 04:27:05"
     },
     {
       "url": "thejournal.ie",
       "industry": "Media",
       "scores": {
-        "performance": 45,
+        "performance": 47,
         "accessibility": 79,
         "best_practices": 75,
         "seo": 85,
         "pwa": 44
       },
-      "test_date": "2025-10-31 18:34:57"
+      "test_date": "2025-11-07 18:32:11"
     },
     {
       "url": "bankofireland.com",
       "industry": "Finance",
       "scores": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 99,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-02 12:24:19"
+      "test_date": "2025-11-09 12:22:11"
     },
     {
       "url": "aib.ie",
       "industry": "Finance",
       "scores": {
-        "performance": 38,
+        "performance": 41,
         "accessibility": 72,
         "best_practices": 92,
         "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-11-02 04:15:11"
+      "test_date": "2025-11-09 04:13:46"
+    },
+    {
+      "url": "rte.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 41,
+        "accessibility": 85,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 56
+      },
+      "test_date": "2025-11-13 22:11:02"
+    },
+    {
+      "url": "irishmirror.ie",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-11-04 18:25:03"
     },
     {
       "url": "irishtimes.com",
       "industry": "Media",
       "scores": {
-        "performance": 34,
+        "performance": 33,
         "accessibility": 82,
         "best_practices": 92,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-28 20:33:29"
+      "test_date": "2025-11-11 18:27:55"
     },
     {
       "url": "independent.ie",
       "industry": "Media",
       "scores": {
         "performance": 31,
-        "accessibility": 88,
-        "best_practices": 58,
+        "accessibility": 90,
+        "best_practices": 67,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-28 16:38:19"
-    },
-    {
-      "url": "rte.ie",
-      "industry": "Media",
-      "scores": {
-        "performance": 24,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 56
-      },
-      "test_date": "2025-10-30 22:09:50"
+      "test_date": "2025-11-11 14:20:34"
     }
   ],
   "industries": [
@@ -139,7 +139,7 @@
       "industry": "Finance",
       "website_count": 2,
       "averages": {
-        "performance": 40,
+        "performance": 43,
         "accessibility": 86,
         "best_practices": 88,
         "seo": 91,
@@ -150,9 +150,9 @@
       "industry": "Media",
       "website_count": 7,
       "averages": {
-        "performance": 43,
+        "performance": 44,
         "accessibility": 89,
-        "best_practices": 82,
+        "best_practices": 83,
         "seo": 89,
         "pwa": 48
       }
@@ -161,7 +161,7 @@
       "industry": "Transportation",
       "website_count": 1,
       "averages": {
-        "performance": 57,
+        "performance": 55,
         "accessibility": 91,
         "best_practices": 83,
         "seo": 86,

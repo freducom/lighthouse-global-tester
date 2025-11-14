@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.354Z",
+    "generated_at": "2025-11-14T08:39:14.881Z",
     "url": "444.hu",
     "country": "Hungary",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 22,
+    "performance": 23,
     "accessibility": 96,
     "best_practices": 83,
     "seo": 99,
     "pwa": 44,
-    "test_date": "2025-11-02 01:00:38"
+    "test_date": "2025-11-09 01:01:10"
   },
   "historical_data": [
+    {
+      "performance": 23,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 44,
+      "test_date": "2025-11-09 01:01:10"
+    },
     {
       "performance": 22,
       "accessibility": 96,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -36,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 01:00:38",
-    "test_date_previous": "2025-10-26 19:30:36"
+    "test_date_current": "2025-11-09 01:01:10",
+    "test_date_previous": "2025-11-02 01:00:38"
   }
 }

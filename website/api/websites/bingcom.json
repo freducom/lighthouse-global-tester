@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.245Z",
+    "generated_at": "2025-11-14T08:39:15.125Z",
     "url": "bing.com",
     "country": "United States",
     "industry": "Search Engine"
   },
   "latest_scores": {
-    "performance": 98,
-    "accessibility": 100,
+    "performance": 80,
+    "accessibility": 98,
     "best_practices": 75,
-    "seo": 90,
+    "seo": 91,
     "pwa": 33,
-    "test_date": "2025-11-02 14:16:53"
+    "test_date": "2025-11-09 14:12:58"
   },
   "historical_data": [
+    {
+      "performance": 80,
+      "accessibility": 98,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-09 14:12:58"
+    },
     {
       "performance": 98,
       "accessibility": 100,
@@ -56,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 21,
-    "accessibility": 0,
+    "performance": -18,
+    "accessibility": -2,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-11-02 14:16:53",
-    "test_date_previous": "2025-10-26 16:42:13"
+    "test_date_current": "2025-11-09 14:12:58",
+    "test_date_previous": "2025-11-02 14:16:53"
   }
 }

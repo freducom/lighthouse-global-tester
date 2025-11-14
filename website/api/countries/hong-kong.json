@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.307Z",
+    "generated_at": "2025-11-14T08:39:13.558Z",
     "country": "Hong Kong",
     "flag": "🌍",
-    "website_count": 6
+    "website_count": 8
   },
   "averages": {
     "performance": 28,
-    "accessibility": 77,
-    "best_practices": 78,
+    "accessibility": 78,
+    "best_practices": 75,
     "seo": 84,
-    "pwa": 39
+    "pwa": 37
   },
   "websites": [
     {
@@ -23,67 +23,91 @@
         "seo": 90,
         "pwa": 22
       },
-      "test_date": "2025-11-04 09:19:52"
-    },
-    {
-      "url": "rthk.hk",
-      "industry": "Media",
-      "scores": {
-        "performance": 38,
-        "accessibility": 60,
-        "best_practices": 67,
-        "seo": 77,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 22:10:25"
+      "test_date": "2025-11-11 08:27:24"
     },
     {
       "url": "pccw.com",
       "industry": "Telecom",
       "scores": {
-        "performance": 26,
+        "performance": 46,
         "accessibility": 84,
         "best_practices": 100,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-30 12:19:11"
+      "test_date": "2025-11-13 10:13:20"
+    },
+    {
+      "url": "rthk.hk",
+      "industry": "Media",
+      "scores": {
+        "performance": 36,
+        "accessibility": 60,
+        "best_practices": 67,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 22:11:36"
+    },
+    {
+      "url": "hket.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 86,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 08:27:05"
     },
     {
       "url": "cathaypacific.com",
       "industry": "Transportation",
       "scores": {
         "performance": 25,
-        "accessibility": 53,
+        "accessibility": 55,
         "best_practices": 83,
         "seo": 79,
         "pwa": 44
       },
-      "test_date": "2025-10-26 22:19:10"
+      "test_date": "2025-11-09 20:19:25"
     },
     {
       "url": "hsbc.com.hk",
       "industry": "Finance",
       "scores": {
-        "performance": 10,
+        "performance": 11,
         "accessibility": 90,
         "best_practices": 67,
         "seo": 93,
         "pwa": 67
       },
-      "test_date": "2025-11-04 10:20:39"
+      "test_date": "2025-11-11 10:18:42"
     },
     {
       "url": "hangseng.com",
       "industry": "Finance",
       "scores": {
-        "performance": 9,
+        "performance": 8,
         "accessibility": 87,
         "best_practices": 67,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-11-04 06:31:05"
+      "test_date": "2025-11-11 06:31:05"
+    },
+    {
+      "url": "mtr.com.hk",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 7,
+        "accessibility": 78,
+        "best_practices": 67,
+        "seo": 74,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 18:17:25"
     }
   ],
   "industries": [
@@ -100,12 +124,12 @@
     },
     {
       "industry": "Media",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 38,
-        "accessibility": 60,
+        "performance": 35,
+        "accessibility": 73,
         "best_practices": 67,
-        "seo": 77,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -113,7 +137,7 @@
       "industry": "Telecom",
       "website_count": 2,
       "averages": {
-        "performance": 44,
+        "performance": 54,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 86,
@@ -122,13 +146,13 @@
     },
     {
       "industry": "Transportation",
-      "website_count": 1,
+      "website_count": 2,
       "averages": {
-        "performance": 25,
-        "accessibility": 53,
-        "best_practices": 83,
-        "seo": 79,
-        "pwa": 44
+        "performance": 16,
+        "accessibility": 67,
+        "best_practices": 75,
+        "seo": 77,
+        "pwa": 39
       }
     }
   ]

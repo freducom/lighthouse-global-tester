@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.035Z",
+    "generated_at": "2025-11-14T08:39:15.067Z",
     "url": "mindoktor.se",
     "country": "Sweden",
     "industry": "Healthtech"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 57,
     "accessibility": 85,
     "best_practices": 83,
     "seo": 87,
     "pwa": 78,
-    "test_date": "2025-10-29 16:28:20"
+    "test_date": "2025-11-12 14:19:04"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 87,
+      "pwa": 78,
+      "test_date": "2025-11-12 14:19:04"
+    },
+    {
+      "performance": 59,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 87,
+      "pwa": 78,
+      "test_date": "2025-11-05 14:17:52"
+    },
     {
       "performance": 53,
       "accessibility": 85,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 16:28:20"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 14:19:04",
+    "test_date_previous": "2025-11-05 14:17:52"
+  }
 }

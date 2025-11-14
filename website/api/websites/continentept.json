@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.860Z",
+    "generated_at": "2025-11-14T08:39:15.013Z",
     "url": "continente.pt",
     "country": "Portugal",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 20,
+    "performance": 9,
     "accessibility": 87,
     "best_practices": 58,
     "seo": 88,
     "pwa": 33,
-    "test_date": "2025-11-03 03:14:03"
+    "test_date": "2025-11-10 03:15:29"
   },
   "historical_data": [
+    {
+      "performance": 9,
+      "accessibility": 87,
+      "best_practices": 58,
+      "seo": 88,
+      "pwa": 33,
+      "test_date": "2025-11-10 03:15:29"
+    },
     {
       "performance": 20,
       "accessibility": 87,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -11,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 03:14:03",
-    "test_date_previous": "2025-10-27 04:21:47"
+    "test_date_current": "2025-11-10 03:15:29",
+    "test_date_previous": "2025-11-03 03:14:03"
   }
 }

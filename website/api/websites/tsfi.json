@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.229Z",
+    "generated_at": "2025-11-14T08:39:14.847Z",
     "url": "ts.fi",
     "country": "Finland",
     "industry": "Media"
   },
   "latest_scores": {
     "performance": 23,
-    "accessibility": 78,
-    "best_practices": 92,
-    "seo": 83,
+    "accessibility": 81,
+    "best_practices": 75,
+    "seo": 76,
     "pwa": 33,
-    "test_date": "2025-11-01 00:48:16"
+    "test_date": "2025-11-08 00:46:25"
   },
   "historical_data": [
+    {
+      "performance": 23,
+      "accessibility": 81,
+      "best_practices": 75,
+      "seo": 76,
+      "pwa": 33,
+      "test_date": "2025-11-08 00:46:25"
+    },
     {
       "performance": 23,
       "accessibility": 78,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 00:48:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 3,
+    "best_practices": -17,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 00:46:25",
+    "test_date_previous": "2025-11-01 00:48:16"
+  }
 }

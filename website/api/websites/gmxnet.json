@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.288Z",
+    "generated_at": "2025-11-14T08:39:14.864Z",
     "url": "gmx.net",
     "country": "Germany",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 69,
+    "performance": 74,
     "accessibility": 100,
     "best_practices": 75,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-04 03:27:44"
+    "test_date": "2025-11-11 03:30:09"
   },
   "historical_data": [
+    {
+      "performance": 74,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-11 03:30:09"
+    },
     {
       "performance": 69,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
+    "performance": 5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 03:27:44",
-    "test_date_previous": "2025-10-19 19:44:15"
+    "test_date_current": "2025-11-11 03:30:09",
+    "test_date_previous": "2025-11-04 03:27:44"
   }
 }

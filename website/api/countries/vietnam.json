@@ -1,29 +1,53 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.226Z",
+    "generated_at": "2025-11-14T08:39:13.502Z",
     "country": "Vietnam",
     "flag": "🇻🇳",
     "website_count": 7
   },
   "averages": {
-    "performance": 33,
-    "accessibility": 83,
-    "best_practices": 75,
-    "seo": 91,
+    "performance": 35,
+    "accessibility": 84,
+    "best_practices": 74,
+    "seo": 92,
     "pwa": 35
   },
   "websites": [
     {
+      "url": "soha.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 47,
+        "accessibility": 84,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 06:27:32"
+    },
+    {
       "url": "giadinh.net.vn",
       "industry": "Media",
       "scores": {
-        "performance": 49,
+        "performance": 45,
         "accessibility": 83,
-        "best_practices": 75,
+        "best_practices": 67,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-04 03:11:53"
+      "test_date": "2025-11-11 03:15:58"
+    },
+    {
+      "url": "kenh14.vn",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 22:10:41"
     },
     {
       "url": "24h.com.vn",
@@ -36,18 +60,6 @@
         "pwa": 33
       },
       "test_date": "2025-11-02 00:55:12"
-    },
-    {
-      "url": "kenh14.vn",
-      "industry": "Media",
-      "scores": {
-        "performance": 31,
-        "accessibility": 85,
-        "best_practices": 67,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 00:45:15"
     },
     {
       "url": "dantri.com.vn",
@@ -65,25 +77,13 @@
       "url": "tuoitre.vn",
       "industry": "Media",
       "scores": {
-        "performance": 30,
-        "accessibility": 86,
+        "performance": 29,
+        "accessibility": 93,
         "best_practices": 75,
-        "seo": 84,
+        "seo": 91,
         "pwa": 44
       },
-      "test_date": "2025-11-01 00:50:09"
-    },
-    {
-      "url": "soha.vn",
-      "industry": "Media",
-      "scores": {
-        "performance": 28,
-        "accessibility": 84,
-        "best_practices": 75,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 06:27:11"
+      "test_date": "2025-11-08 00:49:22"
     },
     {
       "url": "cafef.vn",
@@ -95,7 +95,7 @@
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-11-02 20:10:23"
+      "test_date": "2025-11-09 20:10:28"
     }
   ],
   "industries": [
@@ -114,10 +114,10 @@
       "industry": "Media",
       "website_count": 5,
       "averages": {
-        "performance": 34,
-        "accessibility": 83,
-        "best_practices": 72,
-        "seo": 91,
+        "performance": 37,
+        "accessibility": 84,
+        "best_practices": 70,
+        "seo": 93,
         "pwa": 35
       }
     },

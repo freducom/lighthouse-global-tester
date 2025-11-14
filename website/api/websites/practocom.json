@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.487Z",
+    "generated_at": "2025-11-14T08:39:14.918Z",
     "url": "practo.com",
     "country": "India",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 59,
     "accessibility": 76,
     "best_practices": 83,
     "seo": 92,
     "pwa": 78,
-    "test_date": "2025-10-30 14:08:25"
+    "test_date": "2025-11-13 14:16:46"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 78,
+      "test_date": "2025-11-13 14:16:46"
+    },
+    {
+      "performance": 58,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 78,
+      "test_date": "2025-11-06 14:16:59"
+    },
     {
       "performance": 53,
       "accessibility": 76,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 14:08:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 14:16:46",
+    "test_date_previous": "2025-11-06 14:16:59"
+  }
 }

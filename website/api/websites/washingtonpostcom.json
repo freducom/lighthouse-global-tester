@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.437Z",
+    "generated_at": "2025-11-14T08:39:15.166Z",
     "url": "washingtonpost.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 29,
     "accessibility": 92,
     "best_practices": 67,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 10:20:26"
+    "test_date": "2025-11-08 10:19:08"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 92,
+      "best_practices": 67,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 10:19:08"
+    },
     {
       "performance": 28,
       "accessibility": 92,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": -7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 10:20:26",
-    "test_date_previous": "2025-10-25 03:01:14"
+    "test_date_current": "2025-11-08 10:19:08",
+    "test_date_previous": "2025-11-01 10:20:26"
   }
 }

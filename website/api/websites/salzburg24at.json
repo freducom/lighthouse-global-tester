@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.928Z",
+    "generated_at": "2025-11-14T08:39:14.747Z",
     "url": "salzburg24.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 28,
+    "performance": 27,
     "accessibility": 94,
     "best_practices": 92,
     "seo": 85,
     "pwa": 78,
-    "test_date": "2025-10-31 00:42:47"
+    "test_date": "2025-11-14 00:44:47"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 94,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 78,
+      "test_date": "2025-11-14 00:44:47"
+    },
+    {
+      "performance": 38,
+      "accessibility": 94,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 78,
+      "test_date": "2025-11-07 00:43:50"
+    },
     {
       "performance": 28,
       "accessibility": 94,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -12,
+    "performance": -11,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 00:42:47",
-    "test_date_previous": "2025-10-23 16:49:31"
+    "test_date_current": "2025-11-14 00:44:47",
+    "test_date_previous": "2025-11-07 00:43:50"
   }
 }

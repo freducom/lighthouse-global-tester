@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.314Z",
+    "generated_at": "2025-11-14T08:39:14.872Z",
     "url": "tagesschau.de",
     "country": "Germany",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 43,
     "accessibility": 88,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-31 14:13:50"
+    "test_date": "2025-11-07 14:14:17"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 88,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-07 14:14:17"
+    },
     {
       "performance": 39,
       "accessibility": 88,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
+    "performance": 4,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 14:13:50",
-    "test_date_previous": "2025-10-24 06:18:01"
+    "test_date_current": "2025-11-07 14:14:17",
+    "test_date_previous": "2025-10-31 14:13:50"
   }
 }

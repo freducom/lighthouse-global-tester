@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.961Z",
+    "generated_at": "2025-11-14T08:39:15.042Z",
     "url": "elespanol.com",
     "country": "Spain",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 60,
     "accessibility": 78,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-03 14:25:22"
+    "test_date": "2025-11-10 14:25:32"
   },
   "historical_data": [
+    {
+      "performance": 60,
+      "accessibility": 78,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-10 14:25:32"
+    },
     {
       "performance": 53,
       "accessibility": 78,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:25:22"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:25:32",
+    "test_date_previous": "2025-11-03 14:25:22"
+  }
 }

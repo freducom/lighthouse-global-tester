@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.467Z",
+    "generated_at": "2025-11-14T08:39:14.912Z",
     "url": "news18.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 31,
-    "accessibility": 72,
-    "best_practices": 67,
-    "seo": 76,
-    "pwa": 89,
-    "test_date": "2025-10-30 00:49:46"
+    "performance": 25,
+    "accessibility": 51,
+    "best_practices": 58,
+    "seo": 69,
+    "pwa": 33,
+    "test_date": "2025-11-12 22:14:17"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 51,
+      "best_practices": 58,
+      "seo": 69,
+      "pwa": 33,
+      "test_date": "2025-11-12 22:14:17"
+    },
     {
       "performance": 31,
       "accessibility": 72,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-30 00:49:46"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -6,
+    "accessibility": -21,
+    "best_practices": -9,
+    "seo": -7,
+    "pwa": -56,
+    "test_date_current": "2025-11-12 22:14:17",
+    "test_date_previous": "2025-10-30 00:49:46"
+  }
 }

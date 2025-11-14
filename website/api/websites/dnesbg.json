@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.963Z",
+    "generated_at": "2025-11-14T08:39:14.762Z",
     "url": "dnes.bg",
     "country": "Bulgaria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 33,
     "accessibility": 93,
     "best_practices": 75,
     "seo": 99,
     "pwa": 56,
-    "test_date": "2025-11-03 10:15:00"
+    "test_date": "2025-11-10 10:15:09"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 93,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 56,
+      "test_date": "2025-11-10 10:15:09"
+    },
     {
       "performance": 34,
       "accessibility": 93,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 2,
-    "best_practices": 17,
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 10:15:00",
-    "test_date_previous": "2025-10-27 12:21:20"
+    "test_date_current": "2025-11-10 10:15:09",
+    "test_date_previous": "2025-11-03 10:15:00"
   }
 }

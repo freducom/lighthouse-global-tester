@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.096Z",
+    "generated_at": "2025-11-14T08:39:14.802Z",
     "url": "autodoc.fi",
     "country": "Finland",
     "industry": "Automotive"
   },
   "latest_scores": {
     "performance": 31,
-    "accessibility": 96,
+    "accessibility": 95,
     "best_practices": 75,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-02 10:15:38"
+    "test_date": "2025-11-09 10:14:30"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 95,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-09 10:14:30"
+    },
     {
       "performance": 31,
       "accessibility": 96,
@@ -57,11 +65,11 @@
   ],
   "trends": {
     "performance": 0,
-    "accessibility": 1,
+    "accessibility": -1,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 10:15:38",
-    "test_date_previous": "2025-10-26 13:39:37"
+    "test_date_current": "2025-11-09 10:14:30",
+    "test_date_previous": "2025-11-02 10:15:38"
   }
 }

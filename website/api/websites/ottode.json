@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.302Z",
+    "generated_at": "2025-11-14T08:39:14.868Z",
     "url": "otto.de",
     "country": "Germany",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 17,
+    "performance": 28,
     "accessibility": 91,
-    "best_practices": 75,
+    "best_practices": 92,
     "seo": 85,
     "pwa": 67,
-    "test_date": "2025-10-30 10:12:25"
+    "test_date": "2025-11-13 08:15:22"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 67,
+      "test_date": "2025-11-13 08:15:22"
+    },
+    {
+      "performance": 22,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 67,
+      "test_date": "2025-11-06 08:15:20"
+    },
     {
       "performance": 17,
       "accessibility": 91,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -8,
+    "performance": 6,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 10:12:25",
-    "test_date_previous": "2025-10-23 03:01:46"
+    "test_date_current": "2025-11-13 08:15:22",
+    "test_date_previous": "2025-11-06 08:15:20"
   }
 }

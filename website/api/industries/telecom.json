@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.142Z",
+    "generated_at": "2025-11-14T08:39:14.167Z",
     "industry": "Telecom",
-    "website_count": 42
+    "website_count": 44
   },
   "averages": {
-    "performance": 35,
+    "performance": 33,
     "accessibility": 86,
-    "best_practices": 80,
+    "best_practices": 81,
     "seo": 89,
-    "pwa": 38
+    "pwa": 39
   },
   "websites": [
     {
@@ -17,36 +17,60 @@
       "country": "Argentina",
       "scores": {
         "performance": 65,
-        "accessibility": 81,
-        "best_practices": 67,
+        "accessibility": 73,
+        "best_practices": 75,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-30 12:23:05"
+      "test_date": "2025-11-13 10:17:12"
+    },
+    {
+      "url": "grameenphone.com",
+      "country": "Bangladesh",
+      "scores": {
+        "performance": 27,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-11-11 04:21:19"
     },
     {
       "url": "vivacom.bg",
       "country": "Bulgaria",
       "scores": {
-        "performance": 26,
+        "performance": 25,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-11-01 08:22:23"
+      "test_date": "2025-11-08 08:26:45"
     },
     {
       "url": "bell.ca",
       "country": "Canada",
       "scores": {
-        "performance": 37,
+        "performance": 34,
         "accessibility": 94,
         "best_practices": 75,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-11-02 14:09:42"
+      "test_date": "2025-11-09 14:04:12"
+    },
+    {
+      "url": "rogers.com",
+      "country": "Canada",
+      "scores": {
+        "performance": 48,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 20:22:42"
     },
     {
       "url": "shaw.ca",
@@ -64,25 +88,25 @@
       "url": "yousee.dk",
       "country": "Denmark",
       "scores": {
-        "performance": 46,
+        "performance": 45,
         "accessibility": 93,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-01 16:27:16"
+      "test_date": "2025-11-08 16:26:59"
     },
     {
       "url": "elisa.ee",
       "country": "Estonia",
       "scores": {
-        "performance": 3,
+        "performance": 2,
         "accessibility": 88,
         "best_practices": 83,
         "seo": 79,
         "pwa": 33
       },
-      "test_date": "2025-11-03 14:36:09"
+      "test_date": "2025-11-10 14:36:21"
     },
     {
       "url": "telia.ee",
@@ -90,59 +114,59 @@
       "scores": {
         "performance": 31,
         "accessibility": 100,
-        "best_practices": 100,
+        "best_practices": 92,
         "seo": 92,
         "pwa": 44
       },
-      "test_date": "2025-10-31 16:34:16"
+      "test_date": "2025-11-07 16:32:32"
     },
     {
       "url": "dna.fi",
       "country": "Finland",
       "scores": {
-        "performance": 29,
+        "performance": 13,
         "accessibility": 99,
         "best_practices": 83,
         "seo": 100,
         "pwa": 67
       },
-      "test_date": "2025-11-03 10:12:47"
+      "test_date": "2025-11-10 10:12:56"
     },
     {
       "url": "elisa.fi",
       "country": "Finland",
       "scores": {
-        "performance": 48,
+        "performance": 50,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-03 14:36:24"
+      "test_date": "2025-11-10 14:36:37"
     },
     {
       "url": "nokia.com",
       "country": "Finland",
       "scores": {
-        "performance": 44,
+        "performance": 42,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-30 03:05:30"
+      "test_date": "2025-11-13 00:46:02"
     },
     {
       "url": "telia.fi",
       "country": "Finland",
       "scores": {
-        "performance": 27,
-        "accessibility": 77,
+        "performance": 29,
+        "accessibility": 76,
         "best_practices": 75,
         "seo": 90,
         "pwa": 56
       },
-      "test_date": "2025-10-31 16:34:47"
+      "test_date": "2025-11-07 16:33:02"
     },
     {
       "url": "hkt.com",
@@ -154,43 +178,43 @@
         "seo": 90,
         "pwa": 22
       },
-      "test_date": "2025-11-04 09:19:52"
+      "test_date": "2025-11-11 08:27:24"
     },
     {
       "url": "pccw.com",
       "country": "Hong Kong",
       "scores": {
-        "performance": 26,
+        "performance": 46,
         "accessibility": 84,
         "best_practices": 100,
         "seo": 82,
         "pwa": 33
       },
-      "test_date": "2025-10-30 12:19:11"
+      "test_date": "2025-11-13 10:13:20"
     },
     {
       "url": "safaricom.co.ke",
       "country": "Kenya",
       "scores": {
-        "performance": 35,
+        "performance": 34,
         "accessibility": 70,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-30 22:17:38"
+      "test_date": "2025-11-13 22:18:47"
     },
     {
       "url": "iam.ma",
       "country": "Morocco",
       "scores": {
-        "performance": 55,
-        "accessibility": 68,
-        "best_practices": 58,
-        "seo": 93,
+        "performance": 32,
+        "accessibility": 77,
+        "best_practices": 92,
+        "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-28 14:10:27"
+      "test_date": "2025-11-11 12:19:03"
     },
     {
       "url": "inwi.ma",
@@ -208,61 +232,61 @@
       "url": "mtn.ng",
       "country": "Nigeria",
       "scores": {
-        "performance": 61,
-        "accessibility": 73,
+        "performance": 36,
+        "accessibility": 82,
         "best_practices": 83,
-        "seo": 58,
-        "pwa": 0
+        "seo": 91,
+        "pwa": 33
       },
-      "test_date": "2025-10-29 20:12:42"
+      "test_date": "2025-11-12 18:16:54"
     },
     {
       "url": "ptcl.com.pk",
       "country": "Pakistan",
       "scores": {
-        "performance": 25,
+        "performance": 28,
         "accessibility": 53,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-23 10:16:17"
+      "test_date": "2025-11-13 16:14:49"
     },
     {
       "url": "smart.com.ph",
       "country": "Philippines",
       "scores": {
-        "performance": 21,
+        "performance": 7,
         "accessibility": 68,
-        "best_practices": 67,
+        "best_practices": 58,
         "seo": 61,
         "pwa": 33
       },
-      "test_date": "2025-10-31 06:15:58"
+      "test_date": "2025-11-14 06:17:17"
     },
     {
       "url": "orange.pl",
       "country": "Poland",
       "scores": {
-        "performance": 37,
+        "performance": 34,
         "accessibility": 98,
         "best_practices": 58,
-        "seo": 96,
+        "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-10-30 08:21:32"
+      "test_date": "2025-11-13 06:27:18"
     },
     {
       "url": "play.pl",
       "country": "Poland",
       "scores": {
-        "performance": 5,
-        "accessibility": 66,
+        "performance": 17,
+        "accessibility": 67,
         "best_practices": 75,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-30 13:35:30"
+      "test_date": "2025-11-06 12:19:35"
     },
     {
       "url": "plus.pl",
@@ -274,7 +298,7 @@
         "seo": 91,
         "pwa": 67
       },
-      "test_date": "2025-10-30 13:35:50"
+      "test_date": "2025-11-13 12:20:31"
     },
     {
       "url": "orange.ro",
@@ -292,13 +316,13 @@
       "url": "vodafone.ro",
       "country": "Romania",
       "scores": {
-        "performance": 37,
+        "performance": 34,
         "accessibility": 89,
         "best_practices": 0,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-01 08:27:29"
+      "test_date": "2025-11-08 08:31:52"
     },
     {
       "url": "stc.com.sa",
@@ -316,49 +340,49 @@
       "url": "virginmobile.sa",
       "country": "Saudi Arabia",
       "scores": {
-        "performance": 29,
+        "performance": 32,
         "accessibility": 78,
         "best_practices": 92,
         "seo": 90,
         "pwa": 33
       },
-      "test_date": "2025-11-01 08:19:58"
+      "test_date": "2025-11-08 08:21:44"
     },
     {
       "url": "comviq.se",
       "country": "Sweden",
       "scores": {
-        "performance": 32,
+        "performance": 29,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-11-03 03:12:56"
+      "test_date": "2025-11-10 03:14:25"
     },
     {
       "url": "ericsson.com",
       "country": "Sweden",
       "scores": {
-        "performance": 61,
+        "performance": 68,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-11-03 16:27:27"
+      "test_date": "2025-11-10 16:28:35"
     },
     {
       "url": "halebop.se",
       "country": "Sweden",
       "scores": {
-        "performance": 29,
+        "performance": 20,
         "accessibility": 90,
         "best_practices": 92,
         "seo": 93,
         "pwa": 56
       },
-      "test_date": "2025-11-04 06:30:13"
+      "test_date": "2025-11-11 06:30:08"
     },
     {
       "url": "tele2.se",
@@ -370,55 +394,55 @@
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-31 16:22:23"
+      "test_date": "2025-11-07 16:20:44"
     },
     {
       "url": "telenor.se",
       "country": "Sweden",
       "scores": {
-        "performance": 53,
+        "performance": 54,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 56
       },
-      "test_date": "2025-10-31 16:23:42"
+      "test_date": "2025-11-07 16:21:59"
     },
     {
       "url": "telia.se",
       "country": "Sweden",
       "scores": {
-        "performance": 35,
+        "performance": 36,
         "accessibility": 0,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-31 16:35:12"
+      "test_date": "2025-11-07 16:33:23"
     },
     {
       "url": "tre.se",
       "country": "Sweden",
       "scores": {
-        "performance": 59,
+        "performance": 58,
         "accessibility": 97,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-01 00:46:18"
+      "test_date": "2025-11-08 00:40:55"
     },
     {
       "url": "du.ae",
       "country": "United Arab Emirates",
       "scores": {
-        "performance": 10,
+        "performance": 9,
         "accessibility": 98,
         "best_practices": 58,
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-11-03 10:22:18"
+      "test_date": "2025-11-10 10:21:40"
     },
     {
       "url": "etisalat.ae",
@@ -436,49 +460,49 @@
       "url": "bt.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 12,
+        "performance": 9,
         "accessibility": 93,
         "best_practices": 67,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-02 18:12:25"
+      "test_date": "2025-11-09 18:14:10"
     },
     {
       "url": "ee.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 30,
+        "performance": 26,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-03 12:31:59"
+      "test_date": "2025-11-10 12:33:04"
     },
     {
       "url": "sky.com",
       "country": "United Kingdom",
       "scores": {
-        "performance": 30,
+        "performance": 32,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-31 06:14:54"
+      "test_date": "2025-11-14 06:15:36"
     },
     {
       "url": "vodafone.co.uk",
       "country": "United Kingdom",
       "scores": {
-        "performance": 36,
+        "performance": 38,
         "accessibility": 91,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-01 08:26:30"
+      "test_date": "2025-11-08 08:30:53"
     },
     {
       "url": "att.com",
@@ -508,13 +532,13 @@
       "url": "verizon.com",
       "country": "United States",
       "scores": {
-        "performance": 28,
+        "performance": 21,
         "accessibility": 93,
         "best_practices": 83,
-        "seo": 79,
+        "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 06:21:28"
+      "test_date": "2025-11-08 06:23:31"
     }
   ],
   "countries": [
@@ -523,17 +547,28 @@
       "website_count": 1,
       "averages": {
         "performance": 65,
-        "accessibility": 81,
-        "best_practices": 67,
+        "accessibility": 73,
+        "best_practices": 75,
         "seo": 97,
         "pwa": 33
+      }
+    },
+    {
+      "country": "Bangladesh",
+      "website_count": 1,
+      "averages": {
+        "performance": 27,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
       }
     },
     {
       "country": "Bulgaria",
       "website_count": 1,
       "averages": {
-        "performance": 26,
+        "performance": 25,
         "accessibility": 99,
         "best_practices": 92,
         "seo": 89,
@@ -542,12 +577,12 @@
     },
     {
       "country": "Canada",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 31,
-        "accessibility": 95,
-        "best_practices": 79,
-        "seo": 83,
+        "performance": 36,
+        "accessibility": 96,
+        "best_practices": 80,
+        "seo": 84,
         "pwa": 33
       }
     },
@@ -555,7 +590,7 @@
       "country": "Denmark",
       "website_count": 1,
       "averages": {
-        "performance": 46,
+        "performance": 45,
         "accessibility": 93,
         "best_practices": 83,
         "seo": 100,
@@ -568,7 +603,7 @@
       "averages": {
         "performance": 17,
         "accessibility": 94,
-        "best_practices": 92,
+        "best_practices": 88,
         "seo": 86,
         "pwa": 39
       }
@@ -577,7 +612,7 @@
       "country": "Finland",
       "website_count": 4,
       "averages": {
-        "performance": 37,
+        "performance": 34,
         "accessibility": 91,
         "best_practices": 85,
         "seo": 96,
@@ -588,7 +623,7 @@
       "country": "Hong Kong",
       "website_count": 2,
       "averages": {
-        "performance": 44,
+        "performance": 54,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 86,
@@ -599,7 +634,7 @@
       "country": "Kenya",
       "website_count": 1,
       "averages": {
-        "performance": 35,
+        "performance": 34,
         "accessibility": 70,
         "best_practices": 83,
         "seo": 83,
@@ -610,10 +645,10 @@
       "country": "Morocco",
       "website_count": 2,
       "averages": {
-        "performance": 40,
-        "accessibility": 76,
-        "best_practices": 67,
-        "seo": 89,
+        "performance": 29,
+        "accessibility": 81,
+        "best_practices": 84,
+        "seo": 85,
         "pwa": 33
       }
     },
@@ -621,18 +656,18 @@
       "country": "Nigeria",
       "website_count": 1,
       "averages": {
-        "performance": 61,
-        "accessibility": 73,
+        "performance": 36,
+        "accessibility": 82,
         "best_practices": 83,
-        "seo": 58,
-        "pwa": 0
+        "seo": 91,
+        "pwa": 33
       }
     },
     {
       "country": "Pakistan",
       "website_count": 1,
       "averages": {
-        "performance": 25,
+        "performance": 28,
         "accessibility": 53,
         "best_practices": 83,
         "seo": 83,
@@ -643,9 +678,9 @@
       "country": "Philippines",
       "website_count": 1,
       "averages": {
-        "performance": 21,
+        "performance": 7,
         "accessibility": 68,
-        "best_practices": 67,
+        "best_practices": 58,
         "seo": 61,
         "pwa": 33
       }
@@ -654,10 +689,10 @@
       "country": "Poland",
       "website_count": 3,
       "averages": {
-        "performance": 24,
+        "performance": 27,
         "accessibility": 79,
         "best_practices": 72,
-        "seo": 93,
+        "seo": 94,
         "pwa": 44
       }
     },
@@ -665,7 +700,7 @@
       "country": "Romania",
       "website_count": 2,
       "averages": {
-        "performance": 38,
+        "performance": 37,
         "accessibility": 95,
         "best_practices": 42,
         "seo": 89,
@@ -676,7 +711,7 @@
       "country": "Saudi Arabia",
       "website_count": 2,
       "averages": {
-        "performance": 27,
+        "performance": 29,
         "accessibility": 76,
         "best_practices": 88,
         "seo": 88,
@@ -687,7 +722,7 @@
       "country": "Sweden",
       "website_count": 7,
       "averages": {
-        "performance": 46,
+        "performance": 45,
         "accessibility": 82,
         "best_practices": 92,
         "seo": 95,
@@ -709,7 +744,7 @@
       "country": "United Kingdom",
       "website_count": 4,
       "averages": {
-        "performance": 27,
+        "performance": 26,
         "accessibility": 95,
         "best_practices": 84,
         "seo": 95,
@@ -720,10 +755,10 @@
       "country": "United States",
       "website_count": 3,
       "averages": {
-        "performance": 31,
+        "performance": 29,
         "accessibility": 96,
         "best_practices": 80,
-        "seo": 78,
+        "seo": 80,
         "pwa": 33
       }
     }

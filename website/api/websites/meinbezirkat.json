@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.924Z",
+    "generated_at": "2025-11-14T08:39:14.746Z",
     "url": "meinbezirk.at",
     "country": "Austria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 50,
     "accessibility": 70,
     "best_practices": 83,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-29 14:34:13"
+    "test_date": "2025-11-12 12:21:10"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 70,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-12 12:21:10"
+    },
+    {
+      "performance": 45,
+      "accessibility": 70,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:21:05"
+    },
     {
       "performance": 49,
       "accessibility": 70,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": 5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:34:13",
-    "test_date_previous": "2025-10-29 14:12:40"
+    "test_date_current": "2025-11-12 12:21:10",
+    "test_date_previous": "2025-11-05 12:21:05"
   }
 }

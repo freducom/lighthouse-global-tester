@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.128Z",
+    "generated_at": "2025-11-14T08:39:14.813Z",
     "url": "finnair.com",
     "country": "Finland",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 42,
     "accessibility": 87,
     "best_practices": 92,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-03 22:09:55"
+    "test_date": "2025-11-10 22:10:28"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 87,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-10 22:10:28"
+    },
     {
       "performance": 59,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 22:09:55"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -17,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 22:10:28",
+    "test_date_previous": "2025-11-03 22:09:55"
+  }
 }

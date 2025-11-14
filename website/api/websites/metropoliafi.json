@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.164Z",
+    "generated_at": "2025-11-14T08:39:14.826Z",
     "url": "metropolia.fi",
     "country": "Finland",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 47,
     "accessibility": 91,
     "best_practices": 92,
     "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-29 14:39:59"
+    "test_date": "2025-11-12 14:11:16"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-11-12 14:11:16"
+    },
+    {
+      "performance": 32,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-11-05 14:10:03"
+    },
     {
       "performance": 34,
       "accessibility": 91,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -5,
+    "performance": 15,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:39:59",
-    "test_date_previous": "2025-10-29 14:15:39"
+    "test_date_current": "2025-11-12 14:11:16",
+    "test_date_previous": "2025-11-05 14:10:03"
   }
 }

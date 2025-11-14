@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.085Z",
+    "generated_at": "2025-11-14T08:39:15.083Z",
     "url": "umu.se",
     "country": "Sweden",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 79,
+    "performance": 76,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-01 03:24:20"
+    "test_date": "2025-11-08 03:19:52"
   },
   "historical_data": [
+    {
+      "performance": 76,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-08 03:19:52"
+    },
     {
       "performance": 79,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 03:24:20"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 03:19:52",
+    "test_date_previous": "2025-11-01 03:24:20"
+  }
 }

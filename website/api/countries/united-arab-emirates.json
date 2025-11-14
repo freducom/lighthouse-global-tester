@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.281Z",
+    "generated_at": "2025-11-14T08:39:13.536Z",
     "country": "United Arab Emirates",
     "flag": "🌍",
     "website_count": 8
   },
   "averages": {
-    "performance": 25,
+    "performance": 27,
     "accessibility": 83,
     "best_practices": 70,
-    "seo": 84,
+    "seo": 85,
     "pwa": 43
   },
   "websites": [
+    {
+      "url": "emirates.com",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 42,
+        "accessibility": 76,
+        "best_practices": 67,
+        "seo": 83,
+        "pwa": 89
+      },
+      "test_date": "2025-11-10 16:22:49"
+    },
     {
       "url": "thenationalnews.com",
       "industry": "Media",
@@ -26,52 +38,40 @@
       "test_date": "2025-10-31 20:12:50"
     },
     {
-      "url": "emirates.com",
-      "industry": "Transportation",
+      "url": "adcb.com",
+      "industry": "Finance",
       "scores": {
-        "performance": 34,
-        "accessibility": 82,
-        "best_practices": 67,
-        "seo": 90,
-        "pwa": 89
+        "performance": 32,
+        "accessibility": 99,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 56
       },
-      "test_date": "2025-11-03 16:19:40"
-    },
-    {
-      "url": "carrefouruae.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 30,
-        "accessibility": 77,
-        "best_practices": 58,
-        "seo": 73,
-        "pwa": 33
-      },
-      "test_date": "2025-11-02 20:19:59"
+      "test_date": "2025-11-09 03:15:10"
     },
     {
       "url": "etihad.com",
       "industry": "Transportation",
       "scores": {
-        "performance": 29,
+        "performance": 30,
         "accessibility": 72,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 68,
         "pwa": 33
       },
-      "test_date": "2025-11-03 18:25:13"
+      "test_date": "2025-11-10 18:25:03"
     },
     {
-      "url": "adcb.com",
-      "industry": "Finance",
+      "url": "carrefouruae.com",
+      "industry": "E-commerce",
       "scores": {
-        "performance": 27,
-        "accessibility": 92,
-        "best_practices": 83,
-        "seo": 86,
-        "pwa": 56
+        "performance": 29,
+        "accessibility": 77,
+        "best_practices": 67,
+        "seo": 81,
+        "pwa": 33
       },
-      "test_date": "2025-11-02 03:15:01"
+      "test_date": "2025-11-09 20:18:23"
     },
     {
       "url": "etisalat.ae",
@@ -86,28 +86,28 @@
       "test_date": "2025-11-03 18:28:29"
     },
     {
-      "url": "du.ae",
-      "industry": "Telecom",
-      "scores": {
-        "performance": 10,
-        "accessibility": 98,
-        "best_practices": 58,
-        "seo": 97,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 10:22:18"
-    },
-    {
       "url": "noon.com",
       "industry": "E-commerce",
       "scores": {
-        "performance": 6,
+        "performance": 12,
         "accessibility": 80,
         "best_practices": 67,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-30 03:06:33"
+      "test_date": "2025-11-13 00:47:08"
+    },
+    {
+      "url": "du.ae",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 9,
+        "accessibility": 98,
+        "best_practices": 58,
+        "seo": 97,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 10:21:40"
     }
   ],
   "industries": [
@@ -115,10 +115,10 @@
       "industry": "E-commerce",
       "website_count": 2,
       "averages": {
-        "performance": 18,
+        "performance": 21,
         "accessibility": 79,
-        "best_practices": 63,
-        "seo": 79,
+        "best_practices": 67,
+        "seo": 83,
         "pwa": 33
       }
     },
@@ -126,8 +126,8 @@
       "industry": "Finance",
       "website_count": 1,
       "averages": {
-        "performance": 27,
-        "accessibility": 92,
+        "performance": 32,
+        "accessibility": 99,
         "best_practices": 83,
         "seo": 86,
         "pwa": 56
@@ -159,10 +159,10 @@
       "industry": "Transportation",
       "website_count": 2,
       "averages": {
-        "performance": 32,
-        "accessibility": 77,
-        "best_practices": 80,
-        "seo": 79,
+        "performance": 36,
+        "accessibility": 74,
+        "best_practices": 75,
+        "seo": 76,
         "pwa": 61
       }
     }

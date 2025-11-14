@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.370Z",
+    "generated_at": "2025-11-14T08:39:15.155Z",
     "url": "redfin.com",
     "country": "United States",
     "industry": "Realestate"
   },
   "latest_scores": {
     "performance": 31,
-    "accessibility": 74,
+    "accessibility": 72,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-10-30 18:23:00"
+    "test_date": "2025-11-13 18:24:20"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 72,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-13 18:24:20"
+    },
+    {
+      "performance": 49,
+      "accessibility": 80,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-06 18:28:13"
+    },
     {
       "performance": 31,
       "accessibility": 74,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 18:23:00"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -18,
+    "accessibility": -8,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 18:24:20",
+    "test_date_previous": "2025-11-06 18:28:13"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.452Z",
+    "generated_at": "2025-11-14T08:39:15.170Z",
     "url": "yale.edu",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 65,
     "accessibility": 91,
     "best_practices": 92,
-    "seo": 92,
+    "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-01 16:16:00"
+    "test_date": "2025-11-08 16:16:38"
   },
   "historical_data": [
+    {
+      "performance": 65,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-08 16:16:38"
+    },
     {
       "performance": 59,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 16:16:00"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 7,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 16:16:38",
+    "test_date_previous": "2025-11-01 16:16:00"
+  }
 }

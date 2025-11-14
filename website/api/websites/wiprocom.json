@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.552Z",
+    "generated_at": "2025-11-14T08:39:14.930Z",
     "url": "wipro.com",
     "country": "India",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 41,
+    "performance": 35,
     "accessibility": 64,
     "best_practices": 67,
     "seo": 79,
     "pwa": 33,
-    "test_date": "2025-11-01 14:08:13"
+    "test_date": "2025-11-08 14:02:17"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 64,
+      "best_practices": 67,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-11-08 14:02:17"
+    },
     {
       "performance": 41,
       "accessibility": 64,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 14:08:13"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 14:02:17",
+    "test_date_previous": "2025-11-01 14:08:13"
+  }
 }

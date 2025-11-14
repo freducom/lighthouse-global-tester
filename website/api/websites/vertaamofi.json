@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.241Z",
+    "generated_at": "2025-11-14T08:39:14.851Z",
     "url": "vertaamo.fi",
     "country": "Finland",
     "industry": "Marketplace"
   },
   "latest_scores": {
-    "performance": 50,
+    "performance": 65,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 95,
     "pwa": 22,
-    "test_date": "2025-11-01 08:11:15"
+    "test_date": "2025-11-08 08:13:02"
   },
   "historical_data": [
+    {
+      "performance": 65,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 95,
+      "pwa": 22,
+      "test_date": "2025-11-08 08:13:02"
+    },
     {
       "performance": 50,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 08:11:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 15,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 08:13:02",
+    "test_date_previous": "2025-11-01 08:11:15"
+  }
 }

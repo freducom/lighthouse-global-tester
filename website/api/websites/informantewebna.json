@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.763Z",
+    "generated_at": "2025-11-14T08:39:14.977Z",
     "url": "informante.web.na",
     "country": "Namibia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 61,
+    "performance": 64,
     "accessibility": 71,
     "best_practices": 100,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-28 18:18:08"
+    "test_date": "2025-11-11 16:18:54"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 71,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-11 16:18:54"
+    },
+    {
+      "performance": 61,
+      "accessibility": 71,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-04 16:19:42"
+    },
     {
       "performance": 61,
       "accessibility": 71,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 18:18:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 16:18:54",
+    "test_date_previous": "2025-11-04 16:19:42"
+  }
 }

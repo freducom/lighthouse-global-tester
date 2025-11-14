@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.169Z",
+    "generated_at": "2025-11-14T08:39:15.101Z",
     "url": "unian.ua",
     "country": "Ukraine",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 72,
     "accessibility": 85,
     "best_practices": 75,
     "seo": 93,
     "pwa": 100,
-    "test_date": "2025-11-01 04:13:12"
+    "test_date": "2025-11-08 04:12:00"
   },
   "historical_data": [
+    {
+      "performance": 72,
+      "accessibility": 85,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 100,
+      "test_date": "2025-11-08 04:12:00"
+    },
     {
       "performance": 56,
       "accessibility": 85,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -13,
+    "performance": 16,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 04:13:12",
-    "test_date_previous": "2025-10-24 20:20:35"
+    "test_date_current": "2025-11-08 04:12:00",
+    "test_date_previous": "2025-11-01 04:13:12"
   }
 }

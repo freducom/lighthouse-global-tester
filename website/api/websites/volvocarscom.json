@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.094Z",
+    "generated_at": "2025-11-14T08:39:15.085Z",
     "url": "volvocars.com",
     "country": "Sweden",
     "industry": "Automotive"
   },
   "latest_scores": {
-    "performance": 21,
+    "performance": 25,
     "accessibility": 100,
-    "best_practices": 75,
+    "best_practices": 100,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-01 10:10:45"
+    "test_date": "2025-11-08 10:10:39"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-08 10:10:39"
+    },
     {
       "performance": 21,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 10:10:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 25,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 10:10:39",
+    "test_date_previous": "2025-11-01 10:10:45"
+  }
 }

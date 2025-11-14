@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.668Z",
+    "generated_at": "2025-11-14T08:39:14.954Z",
     "url": "yahoo.co.jp",
     "country": "Japan",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 50,
     "accessibility": 73,
     "best_practices": 83,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-11-01 14:16:35"
+    "test_date": "2025-11-08 14:11:59"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 73,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-08 14:11:59"
+    },
     {
       "performance": 53,
       "accessibility": 73,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 14:16:35",
-    "test_date_previous": "2025-10-25 06:16:31"
+    "test_date_current": "2025-11-08 14:11:59",
+    "test_date_previous": "2025-11-01 14:16:35"
   }
 }

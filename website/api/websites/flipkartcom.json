@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.407Z",
+    "generated_at": "2025-11-14T08:39:14.895Z",
     "url": "flipkart.com",
     "country": "India",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 35,
     "accessibility": 83,
     "best_practices": 92,
     "seo": 93,
     "pwa": 100,
-    "test_date": "2025-11-03 22:14:04"
+    "test_date": "2025-11-10 22:12:25"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 83,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 100,
+      "test_date": "2025-11-10 22:12:25"
+    },
     {
       "performance": 37,
       "accessibility": 83,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": -4,
+    "performance": -2,
+    "accessibility": 0,
     "best_practices": 0,
-    "seo": 7,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 22:14:04",
-    "test_date_previous": "2025-10-20 18:18:18"
+    "test_date_current": "2025-11-10 22:12:25",
+    "test_date_previous": "2025-11-03 22:14:04"
   }
 }

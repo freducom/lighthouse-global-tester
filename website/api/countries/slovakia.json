@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.208Z",
+    "generated_at": "2025-11-14T08:39:13.488Z",
     "country": "Slovakia",
     "flag": "🇸🇰",
     "website_count": 8
@@ -8,7 +8,7 @@
   "averages": {
     "performance": 39,
     "accessibility": 85,
-    "best_practices": 81,
+    "best_practices": 78,
     "seo": 91,
     "pwa": 46
   },
@@ -17,37 +17,49 @@
       "url": "zive.sk",
       "industry": "Media",
       "scores": {
-        "performance": 51,
+        "performance": 50,
         "accessibility": 78,
-        "best_practices": 83,
+        "best_practices": 67,
         "seo": 92,
         "pwa": 67
       },
-      "test_date": "2025-11-01 18:20:25"
+      "test_date": "2025-11-08 18:23:49"
     },
     {
       "url": "sme.sk",
       "industry": "Media",
       "scores": {
         "performance": 44,
-        "accessibility": 93,
+        "accessibility": 96,
         "best_practices": 83,
         "seo": 86,
         "pwa": 44
       },
-      "test_date": "2025-10-31 06:16:48"
+      "test_date": "2025-11-14 06:18:10"
     },
     {
       "url": "aktuality.sk",
       "industry": "Media",
       "scores": {
-        "performance": 42,
+        "performance": 41,
         "accessibility": 75,
         "best_practices": 83,
         "seo": 98,
         "pwa": 78
       },
-      "test_date": "2025-11-02 04:22:13"
+      "test_date": "2025-11-09 04:19:27"
+    },
+    {
+      "url": "topky.sk",
+      "industry": "Media",
+      "scores": {
+        "performance": 37,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-07 22:15:02"
     },
     {
       "url": "pravda.sk",
@@ -55,47 +67,35 @@
       "scores": {
         "performance": 37,
         "accessibility": 89,
-        "best_practices": 83,
+        "best_practices": 92,
         "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-30 14:09:33"
+      "test_date": "2025-11-13 14:18:03"
     },
     {
       "url": "sport.sk",
       "industry": "Sports",
       "scores": {
-        "performance": 37,
+        "performance": 36,
         "accessibility": 68,
-        "best_practices": 75,
-        "seo": 76,
+        "best_practices": 58,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-31 08:15:28"
-    },
-    {
-      "url": "topky.sk",
-      "industry": "Media",
-      "scores": {
-        "performance": 35,
-        "accessibility": 96,
-        "best_practices": 75,
-        "seo": 99,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 22:15:31"
+      "test_date": "2025-11-07 08:17:09"
     },
     {
       "url": "ta3.com",
       "industry": "Media",
       "scores": {
-        "performance": 34,
+        "performance": 36,
         "accessibility": 80,
         "best_practices": 83,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-31 14:12:09"
+      "test_date": "2025-11-07 14:12:41"
     },
     {
       "url": "cas.sk",
@@ -107,7 +107,7 @@
         "seo": 100,
         "pwa": 44
       },
-      "test_date": "2025-11-02 20:20:25"
+      "test_date": "2025-11-09 20:18:50"
     }
   ],
   "industries": [
@@ -117,8 +117,8 @@
       "averages": {
         "performance": 40,
         "accessibility": 87,
-        "best_practices": 82,
-        "seo": 93,
+        "best_practices": 81,
+        "seo": 92,
         "pwa": 47
       }
     },
@@ -126,10 +126,10 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 36,
         "accessibility": 68,
-        "best_practices": 75,
-        "seo": 76,
+        "best_practices": 58,
+        "seo": 83,
         "pwa": 33
       }
     }

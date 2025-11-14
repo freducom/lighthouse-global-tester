@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.861Z",
+    "generated_at": "2025-11-14T08:39:15.013Z",
     "url": "expresso.pt",
     "country": "Portugal",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 41,
+    "performance": 45,
     "accessibility": 96,
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-11-03 18:35:43"
+    "test_date": "2025-11-10 18:35:34"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-10 18:35:34"
+    },
     {
       "performance": 41,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 18:35:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 18:35:34",
+    "test_date_previous": "2025-11-03 18:35:43"
+  }
 }

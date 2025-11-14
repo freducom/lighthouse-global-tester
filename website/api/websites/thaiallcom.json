@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.131Z",
+    "generated_at": "2025-11-14T08:39:15.093Z",
     "url": "thaiall.com",
     "country": "Thailand",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 90,
+    "performance": 94,
     "accessibility": 97,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 96,
     "pwa": 44,
-    "test_date": "2025-10-31 18:22:42"
+    "test_date": "2025-11-07 18:20:37"
   },
   "historical_data": [
+    {
+      "performance": 94,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 96,
+      "pwa": 44,
+      "test_date": "2025-11-07 18:20:37"
+    },
     {
       "performance": 90,
       "accessibility": 97,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
+    "performance": 4,
     "accessibility": 0,
-    "best_practices": 9,
+    "best_practices": -9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 18:22:42",
-    "test_date_previous": "2025-10-24 10:16:42"
+    "test_date_current": "2025-11-07 18:20:37",
+    "test_date_previous": "2025-10-31 18:22:42"
   }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.143Z",
+    "generated_at": "2025-11-14T08:39:14.819Z",
     "url": "iltalehti.fi",
     "country": "Finland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 26,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-28 16:33:29"
+    "test_date": "2025-11-11 14:12:59"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-11 14:12:59"
+    },
+    {
+      "performance": 32,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-04 14:17:27"
+    },
     {
       "performance": 34,
       "accessibility": 98,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -6,
     "accessibility": 0,
-    "best_practices": 9,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-28 16:33:29",
-    "test_date_previous": "2025-10-19 20:14:50"
+    "test_date_current": "2025-11-11 14:12:59",
+    "test_date_previous": "2025-11-04 14:17:27"
   }
 }

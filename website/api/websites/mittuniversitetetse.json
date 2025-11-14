@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.036Z",
+    "generated_at": "2025-11-14T08:39:15.067Z",
     "url": "mittuniversitetet.se",
     "country": "Sweden",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 30,
+    "performance": 31,
     "accessibility": 100,
-    "best_practices": 75,
-    "seo": 98,
+    "best_practices": 58,
+    "seo": 99,
     "pwa": 89,
-    "test_date": "2025-10-29 18:16:03"
+    "test_date": "2025-11-12 16:13:59"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 100,
+      "best_practices": 58,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-12 16:13:59"
+    },
+    {
+      "performance": 35,
+      "accessibility": 100,
+      "best_practices": 67,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-05 16:12:42"
+    },
     {
       "performance": 30,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 18:16:03"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 16:13:59",
+    "test_date_previous": "2025-11-05 16:12:42"
+  }
 }

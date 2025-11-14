@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.926Z",
+    "generated_at": "2025-11-14T08:39:15.034Z",
     "url": "ewn.co.za",
     "country": "South Africa",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 29,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 95,
     "pwa": 33,
-    "test_date": "2025-11-03 18:34:41"
+    "test_date": "2025-11-10 18:34:40"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 95,
+      "pwa": 33,
+      "test_date": "2025-11-10 18:34:40"
+    },
     {
       "performance": 32,
       "accessibility": 94,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 18:34:41",
-    "test_date_previous": "2025-10-20 16:12:56"
+    "test_date_current": "2025-11-10 18:34:40",
+    "test_date_previous": "2025-11-03 18:34:41"
   }
 }

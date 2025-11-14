@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.220Z",
+    "generated_at": "2025-11-14T08:39:15.116Z",
     "url": "tesco.com",
     "country": "United Kingdom",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 38,
     "accessibility": 93,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-31 18:18:17"
+    "test_date": "2025-11-07 18:17:59"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 93,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-07 18:17:59"
+    },
     {
       "performance": 43,
       "accessibility": 93,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": -5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 18:18:17",
-    "test_date_previous": "2025-10-24 10:15:24"
+    "test_date_current": "2025-11-07 18:17:59",
+    "test_date_previous": "2025-10-31 18:18:17"
   }
 }

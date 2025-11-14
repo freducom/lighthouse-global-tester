@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.968Z",
+    "generated_at": "2025-11-14T08:39:14.765Z",
     "url": "unicreditbulbank.bg",
     "country": "Bulgaria",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 45,
     "accessibility": 91,
     "best_practices": 100,
     "seo": 88,
     "pwa": 33,
-    "test_date": "2025-11-01 04:13:39"
+    "test_date": "2025-11-08 04:12:30"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 88,
+      "pwa": 33,
+      "test_date": "2025-11-08 04:12:30"
+    },
     {
       "performance": 48,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 04:13:39"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 04:12:30",
+    "test_date_previous": "2025-11-01 04:13:39"
+  }
 }

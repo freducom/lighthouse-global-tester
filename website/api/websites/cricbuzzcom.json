@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.398Z",
+    "generated_at": "2025-11-14T08:39:14.892Z",
     "url": "cricbuzz.com",
     "country": "India",
     "industry": "Sports"
   },
   "latest_scores": {
-    "performance": 48,
-    "accessibility": 86,
+    "performance": 49,
+    "accessibility": 85,
     "best_practices": 75,
-    "seo": 91,
+    "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-03 04:24:06"
+    "test_date": "2025-11-10 04:22:28"
   },
   "historical_data": [
+    {
+      "performance": 49,
+      "accessibility": 85,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-10 04:22:28"
+    },
     {
       "performance": 48,
       "accessibility": 86,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
+    "performance": 1,
     "accessibility": -1,
     "best_practices": 0,
-    "seo": -8,
+    "seo": 8,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:24:06",
-    "test_date_previous": "2025-10-27 06:20:57"
+    "test_date_current": "2025-11-10 04:22:28",
+    "test_date_previous": "2025-11-03 04:24:06"
   }
 }

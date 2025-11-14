@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.048Z",
+    "generated_at": "2025-11-14T08:39:14.791Z",
     "url": "ekstrabladet.dk",
     "country": "Denmark",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 44,
-    "accessibility": 83,
-    "best_practices": 83,
+    "performance": 47,
+    "accessibility": 85,
+    "best_practices": 92,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-11-03 14:10:41"
+    "test_date": "2025-11-10 14:10:43"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-10 14:10:43"
+    },
     {
       "performance": 44,
       "accessibility": 83,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:10:41"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 2,
+    "best_practices": 9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:10:43",
+    "test_date_previous": "2025-11-03 14:10:41"
+  }
 }

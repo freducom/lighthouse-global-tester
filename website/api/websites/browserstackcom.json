@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.391Z",
+    "generated_at": "2025-11-14T08:39:14.890Z",
     "url": "browserstack.com",
     "country": "India",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 44,
+    "performance": 58,
     "accessibility": 99,
     "best_practices": 92,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-11-02 18:12:07"
+    "test_date": "2025-11-09 18:13:53"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 99,
+      "best_practices": 92,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-09 18:13:53"
+    },
     {
       "performance": 44,
       "accessibility": 99,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": 14,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 18:12:07",
-    "test_date_previous": "2025-10-26 20:10:48"
+    "test_date_current": "2025-11-09 18:13:53",
+    "test_date_previous": "2025-11-02 18:12:07"
   }
 }

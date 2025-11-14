@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.306Z",
+    "generated_at": "2025-11-14T08:39:15.140Z",
     "url": "hubspot.com",
     "country": "United States",
     "industry": "Marketing"
   },
   "latest_scores": {
-    "performance": 43,
+    "performance": 41,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-04 10:26:07"
+    "test_date": "2025-11-11 10:23:00"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-11 10:23:00"
+    },
     {
       "performance": 43,
       "accessibility": 98,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 23,
+    "performance": -2,
     "accessibility": 0,
-    "best_practices": 83,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 10:26:07",
-    "test_date_previous": "2025-10-28 12:33:01"
+    "test_date_current": "2025-11-11 10:23:00",
+    "test_date_previous": "2025-11-04 10:26:07"
   }
 }

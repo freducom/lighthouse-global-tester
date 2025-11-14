@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.166Z",
+    "generated_at": "2025-11-14T08:39:14.827Z",
     "url": "migri.fi",
     "country": "Finland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 61,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-29 16:20:55"
+    "test_date": "2025-11-12 14:14:41"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-12 14:14:41"
+    },
+    {
+      "performance": 59,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 14:12:56"
+    },
     {
       "performance": 57,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 16:20:55"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 14:14:41",
+    "test_date_previous": "2025-11-05 14:12:56"
+  }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.503Z",
+    "generated_at": "2025-11-14T08:39:14.922Z",
     "url": "scroll.in",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 30,
+    "performance": 44,
     "accessibility": 47,
     "best_practices": 83,
     "seo": 86,
     "pwa": 89,
-    "test_date": "2025-10-31 03:06:51"
+    "test_date": "2025-11-14 03:08:29"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 47,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 89,
+      "test_date": "2025-11-14 03:08:29"
+    },
+    {
+      "performance": 48,
+      "accessibility": 47,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 89,
+      "test_date": "2025-11-07 03:06:53"
+    },
     {
       "performance": 30,
       "accessibility": 47,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 03:06:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 03:08:29",
+    "test_date_previous": "2025-11-07 03:06:53"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.255Z",
+    "generated_at": "2025-11-14T08:39:15.129Z",
     "url": "cnbc.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 21,
+    "performance": 14,
     "accessibility": 83,
     "best_practices": 75,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-11-03 00:54:07"
+    "test_date": "2025-11-10 00:54:26"
   },
   "historical_data": [
+    {
+      "performance": 14,
+      "accessibility": 83,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-10 00:54:26"
+    },
     {
       "performance": 21,
       "accessibility": 83,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 10,
+    "performance": -7,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 00:54:07",
-    "test_date_previous": "2025-10-27 03:17:15"
+    "test_date_current": "2025-11-10 00:54:26",
+    "test_date_previous": "2025-11-03 00:54:07"
   }
 }

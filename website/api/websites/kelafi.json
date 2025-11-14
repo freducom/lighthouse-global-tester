@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.151Z",
+    "generated_at": "2025-11-14T08:39:14.821Z",
     "url": "kela.fi",
     "country": "Finland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 54,
+    "performance": 34,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-28 22:27:10"
+    "test_date": "2025-11-11 22:09:41"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-11 22:09:41"
+    },
+    {
+      "performance": 37,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-04 22:02:07"
+    },
     {
       "performance": 54,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 22:27:10"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 22:09:41",
+    "test_date_previous": "2025-11-04 22:02:07"
+  }
 }

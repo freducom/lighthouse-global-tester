@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.078Z",
+    "generated_at": "2025-11-14T08:39:15.080Z",
     "url": "telenor.se",
     "country": "Sweden",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 53,
+    "performance": 54,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-31 16:23:42"
+    "test_date": "2025-11-07 16:21:59"
   },
   "historical_data": [
+    {
+      "performance": 54,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-11-07 16:21:59"
+    },
     {
       "performance": 53,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 16:23:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 16:21:59",
+    "test_date_previous": "2025-10-31 16:23:42"
+  }
 }

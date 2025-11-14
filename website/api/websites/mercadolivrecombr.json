@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.956Z",
+    "generated_at": "2025-11-14T08:39:14.760Z",
     "url": "mercadolivre.com.br",
     "country": "Brazil",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 66,
+    "performance": 67,
     "accessibility": 96,
     "best_practices": 75,
     "seo": 96,
     "pwa": 33,
-    "test_date": "2025-10-29 14:35:21"
+    "test_date": "2025-11-12 12:22:19"
   },
   "historical_data": [
+    {
+      "performance": 67,
+      "accessibility": 96,
+      "best_practices": 75,
+      "seo": 96,
+      "pwa": 33,
+      "test_date": "2025-11-12 12:22:19"
+    },
+    {
+      "performance": 69,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 96,
+      "pwa": 33,
+      "test_date": "2025-11-05 12:22:46"
+    },
     {
       "performance": 66,
       "accessibility": 96,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -2,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:35:21",
-    "test_date_previous": "2025-10-29 14:13:46"
+    "test_date_current": "2025-11-12 12:22:19",
+    "test_date_previous": "2025-11-05 12:22:46"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.192Z",
+    "generated_at": "2025-11-14T08:39:15.107Z",
     "url": "bbc.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
-    "accessibility": 87,
+    "performance": 26,
+    "accessibility": 89,
     "best_practices": 83,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-11-02 12:25:02"
+    "test_date": "2025-11-09 12:22:53"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-09 12:22:53"
+    },
     {
       "performance": 27,
       "accessibility": 87,
@@ -56,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
-    "accessibility": -2,
+    "performance": -1,
+    "accessibility": 2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 12:25:02",
-    "test_date_previous": "2025-10-26 14:11:14"
+    "test_date_current": "2025-11-09 12:22:53",
+    "test_date_previous": "2025-11-02 12:25:02"
   }
 }

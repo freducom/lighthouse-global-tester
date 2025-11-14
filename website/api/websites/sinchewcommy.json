@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.727Z",
+    "generated_at": "2025-11-14T08:39:14.968Z",
     "url": "sinchew.com.my",
     "country": "Malaysia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 84,
+    "performance": 87,
     "accessibility": 81,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-10-31 04:22:40"
+    "test_date": "2025-11-14 04:25:15"
   },
   "historical_data": [
+    {
+      "performance": 87,
+      "accessibility": 81,
+      "best_practices": 83,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-14 04:25:15"
+    },
+    {
+      "performance": 82,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-07 04:23:47"
+    },
     {
       "performance": 84,
       "accessibility": 81,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": 5,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 04:22:40",
-    "test_date_previous": "2025-10-23 21:47:38"
+    "test_date_current": "2025-11-14 04:25:15",
+    "test_date_previous": "2025-11-07 04:23:47"
   }
 }

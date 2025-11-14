@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.882Z",
+    "generated_at": "2025-11-14T08:39:15.022Z",
     "url": "ria.ru",
     "country": "Russia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 48,
-    "accessibility": 79,
-    "best_practices": 67,
+    "performance": 45,
+    "accessibility": 72,
+    "best_practices": 75,
     "seo": 92,
     "pwa": 56,
-    "test_date": "2025-10-30 20:15:39"
+    "test_date": "2025-11-13 20:17:01"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 72,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-13 20:17:01"
+    },
+    {
+      "performance": 40,
+      "accessibility": 72,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-06 20:15:33"
+    },
     {
       "performance": 48,
       "accessibility": 79,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 6,
+    "performance": 5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 20:15:39",
-    "test_date_previous": "2025-10-23 15:45:11"
+    "test_date_current": "2025-11-13 20:17:01",
+    "test_date_previous": "2025-11-06 20:15:33"
   }
 }

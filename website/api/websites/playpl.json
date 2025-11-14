@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.850Z",
+    "generated_at": "2025-11-14T08:39:15.009Z",
     "url": "play.pl",
     "country": "Poland",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 5,
-    "accessibility": 66,
+    "performance": 17,
+    "accessibility": 67,
     "best_practices": 75,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-30 13:35:30"
+    "test_date": "2025-11-06 12:19:35"
   },
   "historical_data": [
+    {
+      "performance": 17,
+      "accessibility": 67,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-06 12:19:35"
+    },
     {
       "performance": 5,
       "accessibility": 66,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-30 13:35:30"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 12,
+    "accessibility": 1,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-06 12:19:35",
+    "test_date_previous": "2025-10-30 13:35:30"
+  }
 }

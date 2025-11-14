@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.981Z",
+    "generated_at": "2025-11-14T08:39:14.769Z",
     "url": "ctvnews.ca",
     "country": "Canada",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
+    "performance": 26,
     "accessibility": 89,
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-03 04:24:40"
+    "test_date": "2025-11-10 04:23:03"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-10 04:23:03"
+    },
     {
       "performance": 27,
       "accessibility": 89,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 21,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:24:40",
-    "test_date_previous": "2025-10-27 06:21:37"
+    "test_date_current": "2025-11-10 04:23:03",
+    "test_date_previous": "2025-11-03 04:24:40"
   }
 }

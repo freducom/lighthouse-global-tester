@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.171Z",
+    "generated_at": "2025-11-14T08:39:15.101Z",
     "url": "adcb.com",
     "country": "United Arab Emirates",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 27,
-    "accessibility": 92,
+    "performance": 32,
+    "accessibility": 99,
     "best_practices": 83,
     "seo": 86,
     "pwa": 56,
-    "test_date": "2025-11-02 03:15:01"
+    "test_date": "2025-11-09 03:15:10"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 56,
+      "test_date": "2025-11-09 03:15:10"
+    },
     {
       "performance": 27,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": -7,
+    "performance": 5,
+    "accessibility": 7,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 03:15:01",
-    "test_date_previous": "2025-10-27 07:04:54"
+    "test_date_current": "2025-11-09 03:15:10",
+    "test_date_previous": "2025-11-02 03:15:01"
   }
 }

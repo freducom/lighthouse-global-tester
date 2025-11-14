@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.591Z",
+    "generated_at": "2025-11-14T08:39:14.939Z",
     "url": "aib.ie",
     "country": "Ireland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 38,
+    "performance": 41,
     "accessibility": 72,
     "best_practices": 92,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-11-02 04:15:11"
+    "test_date": "2025-11-09 04:13:46"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 72,
+      "best_practices": 92,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-09 04:13:46"
+    },
     {
       "performance": 38,
       "accessibility": 72,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -3,
+    "performance": 3,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 04:15:11",
-    "test_date_previous": "2025-10-27 07:12:20"
+    "test_date_current": "2025-11-09 04:13:46",
+    "test_date_previous": "2025-11-02 04:15:11"
   }
 }

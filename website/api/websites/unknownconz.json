@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.798Z",
+    "generated_at": "2025-11-14T08:39:14.986Z",
     "url": "unknown.co.nz",
     "country": "New Zealand",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 80,
+    "performance": 64,
     "accessibility": 61,
     "best_practices": 83,
     "seo": 75,
     "pwa": 33,
-    "test_date": "2025-11-01 04:18:07"
+    "test_date": "2025-11-08 04:17:04"
   },
   "historical_data": [
+    {
+      "performance": 64,
+      "accessibility": 61,
+      "best_practices": 83,
+      "seo": 75,
+      "pwa": 33,
+      "test_date": "2025-11-08 04:17:04"
+    },
     {
       "performance": 80,
       "accessibility": 61,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 9,
+    "performance": -16,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 04:18:07",
-    "test_date_previous": "2025-10-24 20:24:18"
+    "test_date_current": "2025-11-08 04:17:04",
+    "test_date_previous": "2025-11-01 04:18:07"
   }
 }

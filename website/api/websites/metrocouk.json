@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.209Z",
+    "generated_at": "2025-11-14T08:39:15.112Z",
     "url": "metro.co.uk",
     "country": "United Kingdom",
     "industry": "Media"
@@ -11,9 +11,25 @@
     "best_practices": 58,
     "seo": 83,
     "pwa": 44,
-    "test_date": "2025-10-29 14:15:21"
+    "test_date": "2025-11-12 12:23:39"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 77,
+      "best_practices": 58,
+      "seo": 83,
+      "pwa": 44,
+      "test_date": "2025-11-12 12:23:39"
+    },
+    {
+      "performance": 40,
+      "accessibility": 71,
+      "best_practices": 58,
+      "seo": 84,
+      "pwa": 44,
+      "test_date": "2025-11-05 12:25:49"
+    },
     {
       "performance": 48,
       "accessibility": 77,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -9,
-    "accessibility": -1,
-    "best_practices": -9,
-    "seo": 0,
+    "performance": 8,
+    "accessibility": 6,
+    "best_practices": 0,
+    "seo": -1,
     "pwa": 0,
-    "test_date_current": "2025-10-29 14:15:21",
-    "test_date_previous": "2025-10-23 07:37:27"
+    "test_date_current": "2025-11-12 12:23:39",
+    "test_date_previous": "2025-11-05 12:25:49"
   }
 }

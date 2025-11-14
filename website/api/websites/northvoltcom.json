@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.041Z",
+    "generated_at": "2025-11-14T08:39:15.069Z",
     "url": "northvolt.com",
     "country": "Sweden",
     "industry": "Energy"
   },
   "latest_scores": {
-    "performance": 71,
+    "performance": 76,
     "accessibility": 86,
     "best_practices": 100,
     "seo": 93,
     "pwa": 78,
-    "test_date": "2025-10-30 03:07:48"
+    "test_date": "2025-11-13 00:48:19"
   },
   "historical_data": [
+    {
+      "performance": 76,
+      "accessibility": 86,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-13 00:48:19"
+    },
+    {
+      "performance": 72,
+      "accessibility": 86,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-06 00:46:59"
+    },
     {
       "performance": 71,
       "accessibility": 86,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 03:07:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 00:48:19",
+    "test_date_previous": "2025-11-06 00:46:59"
+  }
 }

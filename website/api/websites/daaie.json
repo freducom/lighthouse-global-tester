@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.593Z",
+    "generated_at": "2025-11-14T08:39:14.940Z",
     "url": "daa.ie",
     "country": "Ireland",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 55,
     "accessibility": 91,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-03 04:30:44"
+    "test_date": "2025-11-10 04:27:05"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-10 04:27:05"
+    },
     {
       "performance": 57,
       "accessibility": 91,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:30:44",
-    "test_date_previous": "2025-10-27 06:27:44"
+    "test_date_current": "2025-11-10 04:27:05",
+    "test_date_previous": "2025-11-03 04:30:44"
   }
 }

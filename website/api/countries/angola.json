@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.350Z",
+    "generated_at": "2025-11-14T08:39:13.585Z",
     "country": "Angola",
     "flag": "🇦🇴",
-    "website_count": 1
+    "website_count": 2
   },
   "averages": {
-    "performance": 47,
-    "accessibility": 95,
-    "best_practices": 83,
-    "seo": 99,
+    "performance": 36,
+    "accessibility": 88,
+    "best_practices": 92,
+    "seo": 88,
     "pwa": 33
   },
   "websites": [
@@ -17,21 +17,44 @@
       "url": "angola24horas.com",
       "industry": "Media",
       "scores": {
-        "performance": 47,
+        "performance": 51,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-11-02 06:22:23"
+      "test_date": "2025-11-09 06:23:38"
+    },
+    {
+      "url": "minfin.gov.ao",
+      "industry": "Government",
+      "scores": {
+        "performance": 20,
+        "accessibility": 81,
+        "best_practices": 100,
+        "seo": 77,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 14:19:45"
     }
   ],
   "industries": [
     {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 20,
+        "accessibility": 81,
+        "best_practices": 100,
+        "seo": 77,
+        "pwa": 33
+      }
+    },
+    {
       "industry": "Media",
       "website_count": 1,
       "averages": {
-        "performance": 47,
+        "performance": 51,
         "accessibility": 95,
         "best_practices": 83,
         "seo": 99,

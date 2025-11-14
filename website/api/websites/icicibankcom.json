@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.417Z",
+    "generated_at": "2025-11-14T08:39:14.899Z",
     "url": "icicibank.com",
     "country": "India",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 51,
+    "performance": 50,
     "accessibility": 96,
     "best_practices": 92,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-28 14:14:19"
+    "test_date": "2025-11-11 12:22:56"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 96,
+      "best_practices": 92,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-11 12:22:56"
+    },
+    {
+      "performance": 50,
+      "accessibility": 96,
+      "best_practices": 92,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-04 12:23:32"
+    },
     {
       "performance": 51,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 14:14:19"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 12:22:56",
+    "test_date_previous": "2025-11-04 12:23:32"
+  }
 }

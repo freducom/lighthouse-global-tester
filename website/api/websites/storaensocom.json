@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.212Z",
+    "generated_at": "2025-11-14T08:39:14.842Z",
     "url": "storaenso.com",
     "country": "Finland",
     "industry": "Industry"
   },
   "latest_scores": {
-    "performance": 69,
+    "performance": 80,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-31 10:12:06"
+    "test_date": "2025-11-07 10:14:51"
   },
   "historical_data": [
+    {
+      "performance": 80,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-07 10:14:51"
+    },
     {
       "performance": 69,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 10:12:06"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 11,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 10:14:51",
+    "test_date_previous": "2025-10-31 10:12:06"
+  }
 }

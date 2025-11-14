@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.653Z",
+    "generated_at": "2025-11-14T08:39:14.953Z",
     "url": "line.me",
     "country": "Japan",
     "industry": "Social Media"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 63,
     "accessibility": 91,
     "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-29 08:14:03"
+    "test_date": "2025-11-12 06:16:50"
   },
   "historical_data": [
+    {
+      "performance": 63,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-12 06:16:50"
+    },
+    {
+      "performance": 65,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-05 06:15:57"
+    },
     {
       "performance": 56,
       "accessibility": 91,
@@ -56,12 +72,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 08:14:03",
-    "test_date_previous": "2025-10-22 04:14:55"
+    "test_date_current": "2025-11-12 06:16:50",
+    "test_date_previous": "2025-11-05 06:15:57"
   }
 }

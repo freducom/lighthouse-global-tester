@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.200Z",
+    "generated_at": "2025-11-14T08:39:14.838Z",
     "url": "sanako.com",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 67,
+    "performance": 59,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-10-31 00:43:23"
+    "test_date": "2025-11-14 00:45:24"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-14 00:45:24"
+    },
+    {
+      "performance": 58,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-07 00:44:27"
+    },
     {
       "performance": 67,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 00:43:23"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 00:45:24",
+    "test_date_previous": "2025-11-07 00:44:27"
+  }
 }

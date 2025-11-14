@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.541Z",
+    "generated_at": "2025-11-14T08:39:14.927Z",
     "url": "uber.com",
     "country": "India",
     "industry": "Transportation"
   },
   "latest_scores": {
-    "performance": 33,
-    "accessibility": 83,
+    "performance": 35,
+    "accessibility": 82,
     "best_practices": 100,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-01 03:11:51"
+    "test_date": "2025-11-08 03:03:52"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 82,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-08 03:03:52"
+    },
+    {
+      "performance": 32,
+      "accessibility": 84,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-08 03:03:35"
+    },
     {
       "performance": 33,
       "accessibility": 83,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
-    "accessibility": 0,
+    "performance": 3,
+    "accessibility": -2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 03:11:51",
-    "test_date_previous": "2025-11-01 03:11:35"
+    "test_date_current": "2025-11-08 03:03:52",
+    "test_date_previous": "2025-11-08 03:03:35"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.087Z",
+    "generated_at": "2025-11-14T08:39:14.800Z",
     "url": "aalto.fi",
     "country": "Finland",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 55,
     "accessibility": 99,
     "best_practices": 100,
-    "seo": 91,
+    "seo": 90,
     "pwa": 44,
-    "test_date": "2025-11-02 03:08:36"
+    "test_date": "2025-11-09 03:06:07"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 99,
+      "best_practices": 100,
+      "seo": 90,
+      "pwa": 44,
+      "test_date": "2025-11-09 03:06:07"
+    },
     {
       "performance": 49,
       "accessibility": 99,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": 6,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": 0,
+    "best_practices": 0,
+    "seo": -1,
     "pwa": 0,
-    "test_date_current": "2025-11-02 03:08:36",
-    "test_date_previous": "2025-10-26 19:31:10"
+    "test_date_current": "2025-11-09 03:06:07",
+    "test_date_previous": "2025-11-02 03:08:36"
   }
 }

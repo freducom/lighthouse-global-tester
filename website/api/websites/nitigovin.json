@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.469Z",
+    "generated_at": "2025-11-14T08:39:14.913Z",
     "url": "niti.gov.in",
     "country": "India",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 44,
+    "performance": 35,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-30 01:03:05"
+    "test_date": "2025-11-13 00:44:24"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-13 00:44:24"
+    },
+    {
+      "performance": 43,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-06 00:43:51"
+    },
     {
       "performance": 44,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 01:03:05"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -8,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 00:44:24",
+    "test_date_previous": "2025-11-06 00:43:51"
+  }
 }

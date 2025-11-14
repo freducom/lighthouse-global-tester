@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.077Z",
+    "generated_at": "2025-11-14T08:39:15.080Z",
     "url": "tele2.se",
     "country": "Sweden",
     "industry": "Telecom"
@@ -11,9 +11,17 @@
     "best_practices": 100,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-31 16:22:23"
+    "test_date": "2025-11-07 16:20:44"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-07 16:20:44"
+    },
     {
       "performance": 51,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 16:22:23"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 16:20:44",
+    "test_date_previous": "2025-10-31 16:22:23"
+  }
 }

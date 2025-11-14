@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.065Z",
+    "generated_at": "2025-11-14T08:39:14.796Z",
     "url": "cvkeskus.ee",
     "country": "Estonia",
     "industry": "Jobs"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 59,
     "accessibility": 92,
     "best_practices": 83,
     "seo": 93,
     "pwa": 78,
-    "test_date": "2025-11-03 04:30:00"
+    "test_date": "2025-11-10 04:26:21"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-10 04:26:21"
+    },
     {
       "performance": 58,
       "accessibility": 92,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -1,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:30:00",
-    "test_date_previous": "2025-10-27 06:27:03"
+    "test_date_current": "2025-11-10 04:26:21",
+    "test_date_previous": "2025-11-03 04:30:00"
   }
 }

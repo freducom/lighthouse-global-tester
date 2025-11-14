@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.126Z",
+    "generated_at": "2025-11-14T08:39:14.812Z",
     "url": "fingrid.fi",
     "country": "Finland",
     "industry": "Energy"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 50,
     "accessibility": 81,
     "best_practices": 100,
-    "seo": 70,
+    "seo": 69,
     "pwa": 33,
-    "test_date": "2025-11-03 20:22:21"
+    "test_date": "2025-11-10 20:22:37"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 81,
+      "best_practices": 100,
+      "seo": 69,
+      "pwa": 33,
+      "test_date": "2025-11-10 20:22:37"
+    },
     {
       "performance": 52,
       "accessibility": 81,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 20:22:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:22:37",
+    "test_date_previous": "2025-11-03 20:22:21"
+  }
 }

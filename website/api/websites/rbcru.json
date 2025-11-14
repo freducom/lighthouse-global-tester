@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.881Z",
+    "generated_at": "2025-11-14T08:39:15.022Z",
     "url": "rbc.ru",
     "country": "Russia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 51,
     "accessibility": 65,
     "best_practices": 75,
-    "seo": 93,
+    "seo": 91,
     "pwa": 56,
-    "test_date": "2025-10-30 18:18:47"
+    "test_date": "2025-11-13 18:16:45"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 65,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-13 18:16:45"
+    },
     {
       "performance": 56,
       "accessibility": 65,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
-    "accessibility": -7,
-    "best_practices": 17,
-    "seo": 0,
+    "performance": -5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -2,
     "pwa": 0,
-    "test_date_current": "2025-10-30 18:18:47",
-    "test_date_previous": "2025-10-23 12:18:32"
+    "test_date_current": "2025-11-13 18:16:45",
+    "test_date_previous": "2025-10-30 18:18:47"
   }
 }

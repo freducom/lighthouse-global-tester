@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.208Z",
+    "generated_at": "2025-11-14T08:39:15.111Z",
     "url": "lloydsbank.com",
     "country": "United Kingdom",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 45,
     "accessibility": 99,
     "best_practices": 83,
     "seo": 77,
     "pwa": 33,
-    "test_date": "2025-10-29 08:19:07"
+    "test_date": "2025-11-12 06:22:04"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-12 06:22:04"
+    },
+    {
+      "performance": 43,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-05 06:21:12"
+    },
     {
       "performance": 37,
       "accessibility": 99,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 08:19:07"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 06:22:04",
+    "test_date_previous": "2025-11-05 06:21:12"
+  }
 }

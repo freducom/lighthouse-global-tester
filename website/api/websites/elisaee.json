@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.068Z",
+    "generated_at": "2025-11-14T08:39:14.797Z",
     "url": "elisa.ee",
     "country": "Estonia",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 3,
+    "performance": 2,
     "accessibility": 88,
     "best_practices": 83,
     "seo": 79,
     "pwa": 33,
-    "test_date": "2025-11-03 14:36:09"
+    "test_date": "2025-11-10 14:36:21"
   },
   "historical_data": [
+    {
+      "performance": 2,
+      "accessibility": 88,
+      "best_practices": 83,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-11-10 14:36:21"
+    },
     {
       "performance": 3,
       "accessibility": 88,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:36:09"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:36:21",
+    "test_date_previous": "2025-11-03 14:36:09"
+  }
 }

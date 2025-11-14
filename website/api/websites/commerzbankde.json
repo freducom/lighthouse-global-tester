@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.271Z",
+    "generated_at": "2025-11-14T08:39:14.862Z",
     "url": "commerzbank.de",
     "country": "Germany",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 50,
     "accessibility": 94,
     "best_practices": 100,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-03 03:12:38"
+    "test_date": "2025-11-10 03:14:07"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 94,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-10 03:14:07"
+    },
     {
       "performance": 49,
       "accessibility": 94,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 03:12:38"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 03:14:07",
+    "test_date_previous": "2025-11-03 03:12:38"
+  }
 }

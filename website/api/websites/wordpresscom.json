@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.447Z",
+    "generated_at": "2025-11-14T08:39:15.169Z",
     "url": "wordpress.com",
     "country": "United States",
     "industry": "Website editor"
   },
   "latest_scores": {
-    "performance": 71,
+    "performance": 67,
     "accessibility": 94,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 14:13:48"
+    "test_date": "2025-11-08 14:07:55"
   },
   "historical_data": [
+    {
+      "performance": 67,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 14:07:55"
+    },
     {
       "performance": 71,
       "accessibility": 94,
@@ -48,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 21,
+    "performance": -4,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 14:13:48",
-    "test_date_previous": "2025-10-25 06:13:28"
+    "test_date_current": "2025-11-08 14:07:55",
+    "test_date_previous": "2025-11-01 14:13:48"
   }
 }

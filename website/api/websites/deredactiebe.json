@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.936Z",
+    "generated_at": "2025-11-14T08:39:14.752Z",
     "url": "deredactie.be",
     "country": "Belgium",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
-    "accessibility": 91,
+    "performance": 38,
+    "accessibility": 88,
     "best_practices": 67,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-03 08:14:53"
+    "test_date": "2025-11-10 08:16:52"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 88,
+      "best_practices": 67,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-10 08:16:52"
+    },
     {
       "performance": 35,
       "accessibility": 91,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -14,
-    "accessibility": 1,
-    "best_practices": 9,
+    "performance": 3,
+    "accessibility": -3,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 08:14:53",
-    "test_date_previous": "2025-10-27 08:35:34"
+    "test_date_current": "2025-11-10 08:16:52",
+    "test_date_previous": "2025-11-03 08:14:53"
   }
 }

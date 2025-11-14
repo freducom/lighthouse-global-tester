@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.908Z",
+    "generated_at": "2025-11-14T08:39:15.030Z",
     "url": "aktuality.sk",
     "country": "Slovakia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 41,
     "accessibility": 75,
     "best_practices": 83,
     "seo": 98,
     "pwa": 78,
-    "test_date": "2025-11-02 04:22:13"
+    "test_date": "2025-11-09 04:19:27"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 75,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 78,
+      "test_date": "2025-11-09 04:19:27"
+    },
     {
       "performance": 42,
       "accessibility": 75,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": 16,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 04:22:13",
-    "test_date_previous": "2025-10-27 07:34:13"
+    "test_date_current": "2025-11-09 04:19:27",
+    "test_date_previous": "2025-11-02 04:22:13"
   }
 }

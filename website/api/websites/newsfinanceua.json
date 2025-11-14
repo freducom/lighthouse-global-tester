@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.162Z",
+    "generated_at": "2025-11-14T08:39:15.098Z",
     "url": "news.finance.ua",
     "country": "Ukraine",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 48,
     "accessibility": 63,
     "best_practices": 67,
-    "seo": 91,
+    "seo": 92,
     "pwa": 89,
-    "test_date": "2025-10-30 00:44:39"
+    "test_date": "2025-11-12 22:13:31"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 63,
+      "best_practices": 67,
+      "seo": 92,
+      "pwa": 89,
+      "test_date": "2025-11-12 22:13:31"
+    },
     {
       "performance": 52,
       "accessibility": 63,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -15,
+    "performance": -4,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-10-30 00:44:39",
-    "test_date_previous": "2025-10-22 19:44:03"
+    "test_date_current": "2025-11-12 22:13:31",
+    "test_date_previous": "2025-10-30 00:44:39"
   }
 }

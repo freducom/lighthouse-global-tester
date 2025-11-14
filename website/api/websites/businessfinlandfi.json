@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.103Z",
+    "generated_at": "2025-11-14T08:39:14.804Z",
     "url": "businessfinland.fi",
     "country": "Finland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 68,
+    "performance": 65,
     "accessibility": 85,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-02 18:21:38"
+    "test_date": "2025-11-09 18:22:16"
   },
   "historical_data": [
+    {
+      "performance": 65,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-09 18:22:16"
+    },
     {
       "performance": 68,
       "accessibility": 85,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 39,
-    "accessibility": -10,
-    "best_practices": -9,
-    "seo": -6,
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 18:21:38",
-    "test_date_previous": "2025-10-26 20:16:15"
+    "test_date_current": "2025-11-09 18:22:16",
+    "test_date_previous": "2025-11-02 18:21:38"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.001Z",
+    "generated_at": "2025-11-14T08:39:15.052Z",
     "url": "cygni.se",
     "country": "Sweden",
     "industry": "Consulting"
   },
   "latest_scores": {
-    "performance": 79,
+    "performance": 93,
     "accessibility": 100,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-03 04:30:15"
+    "test_date": "2025-11-10 04:26:36"
   },
   "historical_data": [
+    {
+      "performance": 93,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-10 04:26:36"
+    },
     {
       "performance": 79,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 15,
+    "performance": 14,
     "accessibility": 0,
-    "best_practices": -9,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 04:30:15",
-    "test_date_previous": "2025-10-27 06:27:17"
+    "test_date_current": "2025-11-10 04:26:36",
+    "test_date_previous": "2025-11-03 04:30:15"
   }
 }

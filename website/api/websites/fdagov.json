@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.283Z",
+    "generated_at": "2025-11-14T08:39:15.135Z",
     "url": "fda.gov",
     "country": "United States",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 64,
+    "performance": 61,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 91,
     "pwa": 22,
-    "test_date": "2025-11-03 20:12:32"
+    "test_date": "2025-11-10 20:12:48"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 91,
+      "pwa": 22,
+      "test_date": "2025-11-10 20:12:48"
+    },
     {
       "performance": 64,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 20:12:32"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:12:48",
+    "test_date_previous": "2025-11-03 20:12:32"
+  }
 }

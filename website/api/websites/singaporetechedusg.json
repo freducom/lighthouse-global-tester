@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.904Z",
+    "generated_at": "2025-11-14T08:39:15.030Z",
     "url": "singaporetech.edu.sg",
     "country": "Singapore",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 23,
+    "performance": 29,
     "accessibility": 76,
     "best_practices": 83,
-    "seo": 82,
+    "seo": 81,
     "pwa": 33,
-    "test_date": "2025-10-23 21:49:48"
+    "test_date": "2025-11-14 04:27:25"
   },
   "historical_data": [
+    {
+      "performance": 29,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 81,
+      "pwa": 33,
+      "test_date": "2025-11-14 04:27:25"
+    },
+    {
+      "performance": 32,
+      "accessibility": 76,
+      "best_practices": 83,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-07 04:24:52"
+    },
     {
       "performance": 23,
       "accessibility": 76,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-23 21:49:48"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 04:27:25",
+    "test_date_previous": "2025-11-07 04:24:52"
+  }
 }

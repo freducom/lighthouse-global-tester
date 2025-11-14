@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.015Z",
+    "generated_at": "2025-11-14T08:39:15.057Z",
     "url": "foodora.se",
     "country": "Sweden",
     "industry": "Delivery"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 27,
     "accessibility": 92,
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-03 22:17:28"
+    "test_date": "2025-11-10 22:18:31"
   },
   "historical_data": [
+    {
+      "performance": 27,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-10 22:18:31"
+    },
     {
       "performance": 33,
       "accessibility": 92,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 22:17:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 22:18:31",
+    "test_date_previous": "2025-11-03 22:17:28"
+  }
 }

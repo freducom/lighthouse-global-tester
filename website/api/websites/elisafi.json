@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.120Z",
+    "generated_at": "2025-11-14T08:39:14.809Z",
     "url": "elisa.fi",
     "country": "Finland",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 48,
+    "performance": 50,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-03 14:36:24"
+    "test_date": "2025-11-10 14:36:37"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-10 14:36:37"
+    },
     {
       "performance": 48,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:36:24"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:36:37",
+    "test_date_previous": "2025-11-03 14:36:24"
+  }
 }

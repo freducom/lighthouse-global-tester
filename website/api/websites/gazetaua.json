@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.159Z",
+    "generated_at": "2025-11-14T08:39:15.097Z",
     "url": "gazeta.ua",
     "country": "Ukraine",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 87,
+    "performance": 91,
     "accessibility": 84,
     "best_practices": 83,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-04 00:55:16"
+    "test_date": "2025-11-11 00:56:13"
   },
   "historical_data": [
+    {
+      "performance": 91,
+      "accessibility": 84,
+      "best_practices": 83,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-11 00:56:13"
+    },
     {
       "performance": 87,
       "accessibility": 84,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-04 00:55:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 00:56:13",
+    "test_date_previous": "2025-11-04 00:55:16"
+  }
 }

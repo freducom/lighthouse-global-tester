@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.224Z",
+    "generated_at": "2025-11-14T08:39:15.118Z",
     "url": "vodafone.co.uk",
     "country": "United Kingdom",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 38,
     "accessibility": 91,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-01 08:26:30"
+    "test_date": "2025-11-08 08:30:53"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 91,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-08 08:30:53"
+    },
     {
       "performance": 36,
       "accessibility": 91,
@@ -33,11 +41,11 @@
   ],
   "trends": {
     "performance": 2,
-    "accessibility": -2,
+    "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 08:26:30",
-    "test_date_previous": "2025-10-25 00:50:27"
+    "test_date_current": "2025-11-08 08:30:53",
+    "test_date_previous": "2025-11-01 08:26:30"
   }
 }

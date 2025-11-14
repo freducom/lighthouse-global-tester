@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.152Z",
+    "generated_at": "2025-11-14T08:39:14.170Z",
     "industry": "Gaming",
-    "website_count": 7
+    "website_count": 8
   },
   "averages": {
-    "performance": 66,
-    "accessibility": 94,
-    "best_practices": 93,
-    "seo": 95,
+    "performance": 64,
+    "accessibility": 95,
+    "best_practices": 91,
+    "seo": 92,
     "pwa": 36
   },
   "websites": [
@@ -16,73 +16,85 @@
       "url": "colossalorder.fi",
       "country": "Finland",
       "scores": {
-        "performance": 71,
+        "performance": 70,
         "accessibility": 96,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-03 00:57:38"
+      "test_date": "2025-11-10 00:56:47"
     },
     {
       "url": "fingersoft.com",
       "country": "Finland",
       "scores": {
-        "performance": 85,
+        "performance": 79,
         "accessibility": 87,
         "best_practices": 100,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-03 20:22:01"
+      "test_date": "2025-11-10 20:22:16"
     },
     {
       "url": "nextgames.com",
       "country": "Finland",
       "scores": {
-        "performance": 64,
+        "performance": 71,
         "accessibility": 91,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-30 00:57:39"
+      "test_date": "2025-11-12 22:19:45"
     },
     {
       "url": "remedygames.com",
       "country": "Finland",
       "scores": {
-        "performance": 59,
+        "performance": 58,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-30 20:10:53"
+      "test_date": "2025-11-13 20:11:52"
     },
     {
       "url": "supercell.com",
       "country": "Finland",
       "scores": {
-        "performance": 62,
+        "performance": 68,
         "accessibility": 96,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-31 12:18:46"
+      "test_date": "2025-11-07 12:17:45"
     },
     {
       "url": "king.com",
       "country": "Sweden",
       "scores": {
-        "performance": 78,
+        "performance": 79,
         "accessibility": 96,
         "best_practices": 100,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-10-29 01:00:43"
+      "test_date": "2025-11-11 22:24:06"
+    },
+    {
+      "url": "mojang.com",
+      "country": "Sweden",
+      "scores": {
+        "performance": 41,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 16:16:38"
     },
     {
       "url": "paradoxinteractive.com",
@@ -94,7 +106,7 @@
         "seo": 92,
         "pwa": 56
       },
-      "test_date": "2025-10-30 10:18:37"
+      "test_date": "2025-11-13 08:22:03"
     }
   ],
   "countries": [
@@ -102,7 +114,7 @@
       "country": "Finland",
       "website_count": 5,
       "averages": {
-        "performance": 68,
+        "performance": 69,
         "accessibility": 93,
         "best_practices": 97,
         "seo": 97,
@@ -111,13 +123,13 @@
     },
     {
       "country": "Sweden",
-      "website_count": 2,
+      "website_count": 3,
       "averages": {
-        "performance": 61,
-        "accessibility": 97,
-        "best_practices": 84,
-        "seo": 89,
-        "pwa": 45
+        "performance": 54,
+        "accessibility": 98,
+        "best_practices": 81,
+        "seo": 85,
+        "pwa": 41
       }
     }
   ]

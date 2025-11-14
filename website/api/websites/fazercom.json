@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.123Z",
+    "generated_at": "2025-11-14T08:39:14.811Z",
     "url": "fazer.com",
     "country": "Finland",
     "industry": "Food"
   },
   "latest_scores": {
-    "performance": 40,
+    "performance": 43,
     "accessibility": 90,
     "best_practices": 100,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-11-03 20:12:15"
+    "test_date": "2025-11-10 20:12:31"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-10 20:12:31"
+    },
     {
       "performance": 40,
       "accessibility": 90,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 20:12:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:12:31",
+    "test_date_previous": "2025-11-03 20:12:15"
+  }
 }

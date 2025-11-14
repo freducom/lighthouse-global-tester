@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.837Z",
+    "generated_at": "2025-11-14T08:39:15.003Z",
     "url": "allegro.pl",
     "country": "Poland",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 69,
+    "performance": 75,
     "accessibility": 84,
     "best_practices": 83,
     "seo": 92,
     "pwa": 67,
-    "test_date": "2025-11-02 04:24:39"
+    "test_date": "2025-11-09 04:22:37"
   },
   "historical_data": [
+    {
+      "performance": 75,
+      "accessibility": 84,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 67,
+      "test_date": "2025-11-09 04:22:37"
+    },
     {
       "performance": 69,
       "accessibility": 84,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -10,
+    "performance": 6,
     "accessibility": 0,
-    "best_practices": -9,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 04:24:39",
-    "test_date_previous": "2025-10-26 07:59:30"
+    "test_date_current": "2025-11-09 04:22:37",
+    "test_date_previous": "2025-11-02 04:24:39"
   }
 }

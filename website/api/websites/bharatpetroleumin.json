@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.386Z",
+    "generated_at": "2025-11-14T08:39:14.889Z",
     "url": "bharatpetroleum.in",
     "country": "India",
     "industry": "Energy"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 41,
     "accessibility": 88,
     "best_practices": 58,
     "seo": 72,
     "pwa": 33,
-    "test_date": "2025-11-02 14:11:16"
+    "test_date": "2025-11-09 14:05:49"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 88,
+      "best_practices": 58,
+      "seo": 72,
+      "pwa": 33,
+      "test_date": "2025-11-09 14:05:49"
+    },
     {
       "performance": 42,
       "accessibility": 88,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 14:11:16",
-    "test_date_previous": "2025-10-26 16:39:52"
+    "test_date_current": "2025-11-09 14:05:49",
+    "test_date_previous": "2025-11-02 14:11:16"
   }
 }

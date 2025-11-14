@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.087Z",
+    "generated_at": "2025-11-14T08:39:15.084Z",
     "url": "vattenfall.se",
     "country": "Sweden",
     "industry": "Energy"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 90,
     "pwa": 33,
-    "test_date": "2025-11-01 06:20:23"
+    "test_date": "2025-11-08 06:22:17"
   },
   "historical_data": [
+    {
+      "performance": 56,
+      "accessibility": 87,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 33,
+      "test_date": "2025-11-08 06:22:17"
+    },
     {
       "performance": 56,
       "accessibility": 87,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 06:20:23"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 06:22:17",
+    "test_date_previous": "2025-11-01 06:20:23"
+  }
 }

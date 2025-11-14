@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.696Z",
+    "generated_at": "2025-11-14T08:39:14.957Z",
     "url": "diena.lv",
     "country": "Latvia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 15,
+    "performance": 12,
     "accessibility": 48,
-    "best_practices": 83,
+    "best_practices": 67,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-10-27 10:21:28"
+    "test_date": "2025-11-10 08:23:11"
   },
   "historical_data": [
+    {
+      "performance": 12,
+      "accessibility": 48,
+      "best_practices": 67,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-10 08:23:11"
+    },
     {
       "performance": 15,
       "accessibility": 48,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 10:21:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": -16,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 08:23:11",
+    "test_date_previous": "2025-10-27 10:21:28"
+  }
 }

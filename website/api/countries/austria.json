@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.031Z",
+    "generated_at": "2025-11-14T08:39:13.360Z",
     "country": "Austria",
     "flag": "🇦🇹",
     "website_count": 10
   },
   "averages": {
-    "performance": 46,
+    "performance": 49,
     "accessibility": 89,
     "best_practices": 88,
     "seo": 90,
@@ -14,100 +14,100 @@
   },
   "websites": [
     {
-      "url": "derstandard.at",
-      "industry": "Media",
-      "scores": {
-        "performance": 63,
-        "accessibility": 100,
-        "best_practices": 92,
-        "seo": 87,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 08:15:11"
-    },
-    {
-      "url": "kurier.at",
-      "industry": "Media",
-      "scores": {
-        "performance": 60,
-        "accessibility": 96,
-        "best_practices": 92,
-        "seo": 90,
-        "pwa": 56
-      },
-      "test_date": "2025-10-29 03:20:05"
-    },
-    {
-      "url": "orf.at",
-      "industry": "Media",
-      "scores": {
-        "performance": 55,
-        "accessibility": 91,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 08:22:11"
-    },
-    {
       "url": "heute.at",
       "industry": "Media",
       "scores": {
-        "performance": 52,
+        "performance": 75,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-04 09:11:50"
+      "test_date": "2025-11-11 08:16:49"
+    },
+    {
+      "url": "derstandard.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 68,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 87,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 08:17:14"
+    },
+    {
+      "url": "kurier.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 55,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 90,
+        "pwa": 56
+      },
+      "test_date": "2025-11-12 00:56:31"
+    },
+    {
+      "url": "orf.at",
+      "industry": "Media",
+      "scores": {
+        "performance": 54,
+        "accessibility": 99,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 06:30:50"
     },
     {
       "url": "meinbezirk.at",
       "industry": "Media",
       "scores": {
-        "performance": 49,
+        "performance": 50,
         "accessibility": 70,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-29 14:34:13"
+      "test_date": "2025-11-12 12:21:10"
     },
     {
       "url": "oe24.at",
       "industry": "Media",
       "scores": {
-        "performance": 49,
+        "performance": 50,
         "accessibility": 88,
         "best_practices": 100,
-        "seo": 90,
+        "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-30 06:22:45"
+      "test_date": "2025-11-13 04:30:37"
     },
     {
       "url": "krone.at",
       "industry": "Media",
       "scores": {
-        "performance": 42,
+        "performance": 40,
         "accessibility": 78,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 91,
         "pwa": 56
       },
-      "test_date": "2025-10-29 03:15:48"
+      "test_date": "2025-11-12 00:51:28"
     },
     {
       "url": "willhaben.at",
       "industry": "Marketplace",
       "scores": {
-        "performance": 33,
+        "performance": 38,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 96,
         "pwa": 78
       },
-      "test_date": "2025-11-01 12:28:24"
+      "test_date": "2025-11-08 12:23:04"
     },
     {
       "url": "vienna.at",
@@ -119,19 +119,19 @@
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-01 08:12:11"
+      "test_date": "2025-11-08 08:13:56"
     },
     {
       "url": "salzburg24.at",
       "industry": "Media",
       "scores": {
-        "performance": 28,
+        "performance": 27,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 85,
         "pwa": 78
       },
-      "test_date": "2025-10-31 00:42:47"
+      "test_date": "2025-11-14 00:44:47"
     }
   ],
   "industries": [
@@ -139,7 +139,7 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 33,
+        "performance": 38,
         "accessibility": 98,
         "best_practices": 100,
         "seo": 96,
@@ -150,10 +150,10 @@
       "industry": "Media",
       "website_count": 9,
       "averages": {
-        "performance": 47,
+        "performance": 50,
         "accessibility": 88,
-        "best_practices": 86,
-        "seo": 89,
+        "best_practices": 87,
+        "seo": 90,
         "pwa": 43
       }
     }

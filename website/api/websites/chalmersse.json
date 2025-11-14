@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.995Z",
+    "generated_at": "2025-11-14T08:39:15.050Z",
     "url": "chalmers.se",
     "country": "Sweden",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 45,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-11-02 22:09:46"
+    "test_date": "2025-11-09 22:09:54"
   },
   "historical_data": [
+    {
+      "performance": 45,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-09 22:09:54"
+    },
     {
       "performance": 42,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -3,
+    "performance": 3,
     "accessibility": 0,
-    "best_practices": -8,
+    "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 22:09:46",
-    "test_date_previous": "2025-10-27 00:47:55"
+    "test_date_current": "2025-11-09 22:09:54",
+    "test_date_previous": "2025-11-02 22:09:46"
   }
 }

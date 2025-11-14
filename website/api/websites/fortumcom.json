@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.130Z",
+    "generated_at": "2025-11-14T08:39:14.814Z",
     "url": "fortum.com",
     "country": "Finland",
     "industry": "Energy"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 55,
     "accessibility": 91,
-    "best_practices": 92,
+    "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-03 22:21:26"
+    "test_date": "2025-11-10 22:22:25"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 91,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 22:22:25"
+    },
     {
       "performance": 47,
       "accessibility": 91,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 22:21:26"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 8,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 22:22:25",
+    "test_date_previous": "2025-11-03 22:21:26"
+  }
 }

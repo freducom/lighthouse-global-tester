@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.050Z",
+    "generated_at": "2025-11-14T08:39:15.072Z",
     "url": "refined.com",
     "country": "Sweden",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 29,
+    "performance": 31,
     "accessibility": 85,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-30 18:27:53"
+    "test_date": "2025-11-13 18:28:48"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-13 18:28:48"
+    },
+    {
+      "performance": 33,
+      "accessibility": 85,
+      "best_practices": 92,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-06 18:35:38"
+    },
     {
       "performance": 29,
       "accessibility": 85,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -4,
+    "performance": -2,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -9,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 18:27:53",
-    "test_date_previous": "2025-10-23 12:24:26"
+    "test_date_current": "2025-11-13 18:28:48",
+    "test_date_previous": "2025-11-06 18:35:38"
   }
 }

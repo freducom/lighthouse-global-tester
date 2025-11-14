@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.592Z",
+    "generated_at": "2025-11-14T08:39:14.940Z",
     "url": "bankofireland.com",
     "country": "Ireland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 44,
     "accessibility": 99,
     "best_practices": 83,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-11-02 12:24:19"
+    "test_date": "2025-11-09 12:22:11"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 99,
+      "best_practices": 83,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-09 12:22:11"
+    },
     {
       "performance": 42,
       "accessibility": 99,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 12,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 12:24:19",
-    "test_date_previous": "2025-10-26 15:59:31"
+    "test_date_current": "2025-11-09 12:22:11",
+    "test_date_previous": "2025-11-02 12:24:19"
   }
 }

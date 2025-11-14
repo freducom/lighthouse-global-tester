@@ -78,9 +78,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Construction Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 41 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 39 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-poor" aria-hidden="true">41%</div>
+                <div class="stat-value perf-poor" aria-hidden="true">39%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average accessibility score: 84 percent">
@@ -185,8 +185,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 63 percent, average performance">
-                                    63%
+                                    aria-label="Performance score: 65 percent, average performance">
+                                    65%
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 82 percent, good performance">
@@ -204,9 +204,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-30 12:19:29"
-                                    aria-label="Last tested on 10/30/2025">
-                                    <time datetime="2025-10-30 12:19:29">10/30/2025</time>
+                                <td class="date" data-date="2025-11-13 10:13:37"
+                                    aria-label="Last tested on 11/13/2025">
+                                    <time datetime="2025-11-13 10:13:37">11/13/2025</time>
                                 </td>
                             </tr>
                         
@@ -227,8 +227,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 19 percent, needs improvement">
-                                    19%
+                                    aria-label="Performance score: 13 percent, needs improvement">
+                                    13%
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 85 percent, good performance">
@@ -246,9 +246,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-31 04:27:08"
-                                    aria-label="Last tested on 10/31/2025">
-                                    <time datetime="2025-10-31 04:27:08">10/31/2025</time>
+                                <td class="date" data-date="2025-11-14 04:29:07"
+                                    aria-label="Last tested on 11/14/2025">
+                                    <time datetime="2025-11-14 04:29:07">11/14/2025</time>
                                 </td>
                             </tr>
                         
@@ -416,7 +416,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"peab.se","country":"Sweden","industry":"Construction","performance":63,"accessibility":82,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-30 12:19:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"skanska.se","country":"Sweden","industry":"Construction","performance":19,"accessibility":85,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-10-31 04:27:08","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"peab.se","country":"Sweden","industry":"Construction","performance":65,"accessibility":82,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-11-13 10:13:37","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"skanska.se","country":"Sweden","industry":"Construction","performance":13,"accessibility":85,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-11-14 04:29:07","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -751,7 +751,7 @@
         }
         
         // Data initialization
-        const industryData = [{"url":"peab.se","country":"Sweden","industry":"Construction","performance":63,"accessibility":82,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-10-30 12:19:29","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}},{"url":"skanska.se","country":"Sweden","industry":"Construction","performance":19,"accessibility":85,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-10-31 04:27:08","performance_trend":"none","accessibility_trend":"none","best_practices_trend":"none","seo_trend":"none","pwa_trend":"none","performance_delta":{"delta":0,"text":"","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"","class":"delta-neutral"}}];
+        const industryData = [{"url":"peab.se","country":"Sweden","industry":"Construction","performance":65,"accessibility":82,"best_practices":92,"seo":83,"pwa":33,"test_date":"2025-11-13 10:13:37","performance_trend":"up","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":1,"text":"+1","class":"delta-positive"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"skanska.se","country":"Sweden","industry":"Construction","performance":13,"accessibility":85,"best_practices":92,"seo":84,"pwa":33,"test_date":"2025-11-14 04:29:07","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

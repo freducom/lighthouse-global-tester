@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.076Z",
+    "generated_at": "2025-11-14T08:39:13.396Z",
     "country": "Hungary",
     "flag": "🇭🇺",
     "website_count": 8
   },
   "averages": {
-    "performance": 30,
-    "accessibility": 77,
+    "performance": 35,
+    "accessibility": 78,
     "best_practices": 76,
     "seo": 91,
     "pwa": 46
@@ -17,13 +17,37 @@
       "url": "hirkereso.hu",
       "industry": "Media",
       "scores": {
-        "performance": 72,
+        "performance": 66,
         "accessibility": 65,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-11-04 09:12:45"
+      "test_date": "2025-11-11 08:20:28"
+    },
+    {
+      "url": "freemail.hu",
+      "industry": "Portal",
+      "scores": {
+        "performance": 43,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 00:49:21"
+    },
+    {
+      "url": "index.hu",
+      "industry": "Media",
+      "scores": {
+        "performance": 33,
+        "accessibility": 75,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 44
+      },
+      "test_date": "2025-11-11 14:21:15"
     },
     {
       "url": "24.hu",
@@ -35,79 +59,55 @@
         "seo": 92,
         "pwa": 67
       },
-      "test_date": "2025-11-02 00:54:23"
-    },
-    {
-      "url": "nosalty.hu",
-      "industry": "Media",
-      "scores": {
-        "performance": 27,
-        "accessibility": 67,
-        "best_practices": 58,
-        "seo": 92,
-        "pwa": 44
-      },
-      "test_date": "2025-10-30 03:08:58"
+      "test_date": "2025-11-09 00:53:22"
     },
     {
       "url": "arukereso.hu",
       "industry": "E-commerce",
       "scores": {
-        "performance": 26,
+        "performance": 28,
         "accessibility": 87,
-        "best_practices": 92,
+        "best_practices": 75,
         "seo": 97,
         "pwa": 44
       },
-      "test_date": "2025-11-02 08:19:38"
+      "test_date": "2025-11-09 08:19:45"
+    },
+    {
+      "url": "nosalty.hu",
+      "industry": "Media",
+      "scores": {
+        "performance": 28,
+        "accessibility": 67,
+        "best_practices": 67,
+        "seo": 92,
+        "pwa": 44
+      },
+      "test_date": "2025-11-13 00:49:31"
     },
     {
       "url": "origo.hu",
       "industry": "Media",
       "scores": {
-        "performance": 23,
+        "performance": 25,
         "accessibility": 76,
         "best_practices": 83,
         "seo": 91,
         "pwa": 56
       },
-      "test_date": "2025-10-30 08:22:50"
+      "test_date": "2025-11-13 06:31:20"
     },
     {
       "url": "444.hu",
       "industry": "Media",
       "scores": {
-        "performance": 22,
+        "performance": 23,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 99,
         "pwa": 44
       },
-      "test_date": "2025-11-02 01:00:38"
-    },
-    {
-      "url": "index.hu",
-      "industry": "Media",
-      "scores": {
-        "performance": 19,
-        "accessibility": 75,
-        "best_practices": 67,
-        "seo": 84,
-        "pwa": 44
-      },
-      "test_date": "2025-10-28 16:39:05"
-    },
-    {
-      "url": "freemail.hu",
-      "industry": "Portal",
-      "scores": {
-        "performance": 16,
-        "accessibility": 85,
-        "best_practices": 83,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-11-04 00:47:46"
+      "test_date": "2025-11-09 01:01:10"
     }
   ],
   "industries": [
@@ -115,9 +115,9 @@
       "industry": "E-commerce",
       "website_count": 1,
       "averages": {
-        "performance": 26,
+        "performance": 28,
         "accessibility": 87,
-        "best_practices": 92,
+        "best_practices": 75,
         "seo": 97,
         "pwa": 44
       }
@@ -126,9 +126,9 @@
       "industry": "Media",
       "website_count": 6,
       "averages": {
-        "performance": 33,
+        "performance": 35,
         "accessibility": 75,
-        "best_practices": 72,
+        "best_practices": 75,
         "seo": 91,
         "pwa": 48
       }
@@ -137,8 +137,8 @@
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 16,
-        "accessibility": 85,
+        "performance": 43,
+        "accessibility": 86,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33

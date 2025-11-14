@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.236Z",
+    "generated_at": "2025-11-14T08:39:14.849Z",
     "url": "valio.fi",
     "country": "Finland",
     "industry": "Food"
   },
   "latest_scores": {
     "performance": 43,
-    "accessibility": 89,
-    "best_practices": 92,
-    "seo": 93,
+    "accessibility": 90,
+    "best_practices": 100,
+    "seo": 91,
     "pwa": 56,
-    "test_date": "2025-11-01 06:17:50"
+    "test_date": "2025-11-08 06:18:16"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-08 06:18:16"
+    },
     {
       "performance": 43,
       "accessibility": 89,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 06:17:50"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 1,
+    "best_practices": 8,
+    "seo": -2,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 06:18:16",
+    "test_date_previous": "2025-11-01 06:17:50"
+  }
 }

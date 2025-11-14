@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.937Z",
+    "generated_at": "2025-11-14T08:39:14.753Z",
     "url": "hln.be",
     "country": "Belgium",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 56,
+    "performance": 57,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 77,
     "pwa": 33,
-    "test_date": "2025-11-04 10:11:57"
+    "test_date": "2025-11-11 10:11:21"
   },
   "historical_data": [
+    {
+      "performance": 57,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-11 10:11:21"
+    },
+    {
+      "performance": 55,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-04 11:46:42"
+    },
     {
       "performance": 56,
       "accessibility": 98,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -18,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-04 10:11:57",
-    "test_date_previous": "2025-10-28 10:44:05"
+    "test_date_current": "2025-11-11 10:11:21",
+    "test_date_previous": "2025-11-04 11:46:42"
   }
 }

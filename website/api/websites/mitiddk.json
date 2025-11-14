@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.050Z",
+    "generated_at": "2025-11-14T08:39:14.791Z",
     "url": "mitid.dk",
     "country": "Denmark",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 86,
+    "performance": 41,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 92,
     "pwa": 67,
-    "test_date": "2025-10-29 16:34:49"
+    "test_date": "2025-11-12 16:13:36"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 67,
+      "test_date": "2025-11-12 16:13:36"
+    },
+    {
+      "performance": 61,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 67,
+      "test_date": "2025-11-05 16:12:24"
+    },
     {
       "performance": 86,
       "accessibility": 100,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
+    "performance": -20,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 16:34:49",
-    "test_date_previous": "2025-10-22 14:19:45"
+    "test_date_current": "2025-11-12 16:13:36",
+    "test_date_previous": "2025-11-05 16:12:24"
   }
 }

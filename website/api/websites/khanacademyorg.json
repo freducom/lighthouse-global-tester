@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.315Z",
+    "generated_at": "2025-11-14T08:39:15.143Z",
     "url": "khanacademy.org",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 34,
+    "performance": 14,
     "accessibility": 100,
     "best_practices": 100,
-    "seo": 92,
+    "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-29 00:53:16"
+    "test_date": "2025-11-11 22:16:40"
   },
   "historical_data": [
+    {
+      "performance": 14,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-11 22:16:40"
+    },
+    {
+      "performance": 37,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-04 22:08:54"
+    },
     {
       "performance": 34,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 00:53:16"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -23,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -1,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 22:16:40",
+    "test_date_previous": "2025-11-04 22:08:54"
+  }
 }

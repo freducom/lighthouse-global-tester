@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.053Z",
+    "generated_at": "2025-11-14T08:39:15.073Z",
     "url": "regionstockholm.se",
     "country": "Sweden",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 52,
+    "performance": 59,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 20:10:17"
+    "test_date": "2025-11-13 20:11:11"
   },
   "historical_data": [
+    {
+      "performance": 59,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-13 20:11:11"
+    },
+    {
+      "performance": 52,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-06 20:10:31"
+    },
     {
       "performance": 52,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 20:10:17"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 7,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 20:11:11",
+    "test_date_previous": "2025-11-06 20:10:31"
+  }
 }

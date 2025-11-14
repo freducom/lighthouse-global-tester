@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.116Z",
+    "generated_at": "2025-11-14T08:39:14.807Z",
     "url": "educationalliancefinland.com",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 61,
     "accessibility": 83,
     "best_practices": 83,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-11-03 12:30:00"
+    "test_date": "2025-11-10 12:31:12"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 83,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-10 12:31:12"
+    },
     {
       "performance": 58,
       "accessibility": 83,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:30:00"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:31:12",
+    "test_date_previous": "2025-11-03 12:30:00"
+  }
 }

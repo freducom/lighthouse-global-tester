@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.403Z",
+    "generated_at": "2025-11-14T08:39:14.893Z",
     "url": "epfindia.gov.in",
     "country": "India",
     "industry": "Government"
@@ -11,9 +11,17 @@
     "best_practices": 83,
     "seo": 62,
     "pwa": 0,
-    "test_date": "2025-11-03 16:23:45"
+    "test_date": "2025-11-10 16:24:55"
   },
   "historical_data": [
+    {
+      "performance": 47,
+      "accessibility": 86,
+      "best_practices": 83,
+      "seo": 62,
+      "pwa": 0,
+      "test_date": "2025-11-10 16:24:55"
+    },
     {
       "performance": 47,
       "accessibility": 86,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 16:23:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 16:24:55",
+    "test_date_previous": "2025-11-03 16:23:45"
+  }
 }

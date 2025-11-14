@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.363Z",
+    "generated_at": "2025-11-14T08:39:14.883Z",
     "url": "1mg.com",
     "country": "India",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 32,
     "accessibility": 97,
     "best_practices": 83,
-    "seo": 92,
+    "seo": 100,
     "pwa": 89,
-    "test_date": "2025-11-02 00:49:24"
+    "test_date": "2025-11-09 00:48:19"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 89,
+      "test_date": "2025-11-09 00:48:19"
+    },
     {
       "performance": 33,
       "accessibility": 97,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": 0,
+    "best_practices": 0,
+    "seo": 8,
     "pwa": 0,
-    "test_date_current": "2025-11-02 00:49:24",
-    "test_date_previous": "2025-10-27 07:00:03"
+    "test_date_current": "2025-11-09 00:48:19",
+    "test_date_previous": "2025-11-02 00:49:24"
   }
 }

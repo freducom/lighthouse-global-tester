@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.149Z",
+    "generated_at": "2025-11-14T08:39:15.095Z",
     "url": "kamuajans.com",
     "country": "Turkey",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 46,
-    "accessibility": 89,
-    "best_practices": 75,
-    "seo": 97,
+    "performance": 55,
+    "accessibility": 81,
+    "best_practices": 83,
+    "seo": 90,
     "pwa": 44,
-    "test_date": "2025-10-28 22:19:19"
+    "test_date": "2025-11-11 20:20:26"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 81,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 44,
+      "test_date": "2025-11-11 20:20:26"
+    },
+    {
+      "performance": 57,
+      "accessibility": 81,
+      "best_practices": 83,
+      "seo": 90,
+      "pwa": 44,
+      "test_date": "2025-11-04 20:19:26"
+    },
     {
       "performance": 46,
       "accessibility": 89,
@@ -48,12 +64,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-28 22:19:19",
-    "test_date_previous": "2025-10-21 18:16:17"
+    "test_date_current": "2025-11-11 20:20:26",
+    "test_date_previous": "2025-11-04 20:19:26"
   }
 }

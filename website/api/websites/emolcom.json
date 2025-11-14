@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.000Z",
+    "generated_at": "2025-11-14T08:39:14.777Z",
     "url": "emol.com",
     "country": "Chile",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
+    "performance": 30,
     "accessibility": 89,
     "best_practices": 67,
-    "seo": 76,
+    "seo": 77,
     "pwa": 33,
-    "test_date": "2025-11-03 16:20:01"
+    "test_date": "2025-11-10 16:23:23"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 89,
+      "best_practices": 67,
+      "seo": 77,
+      "pwa": 33,
+      "test_date": "2025-11-10 16:23:23"
+    },
     {
       "performance": 27,
       "accessibility": 89,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 7,
-    "accessibility": 8,
-    "best_practices": 17,
-    "seo": -1,
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 1,
     "pwa": 0,
-    "test_date_current": "2025-11-03 16:20:01",
-    "test_date_previous": "2025-10-20 16:05:25"
+    "test_date_current": "2025-11-10 16:23:23",
+    "test_date_previous": "2025-11-03 16:20:01"
   }
 }

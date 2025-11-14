@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.079Z",
+    "generated_at": "2025-11-14T08:39:15.081Z",
     "url": "telia.se",
     "country": "Sweden",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 36,
     "accessibility": 0,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-31 16:35:12"
+    "test_date": "2025-11-07 16:33:23"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 0,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-07 16:33:23"
+    },
     {
       "performance": 35,
       "accessibility": 0,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
-    "accessibility": -93,
+    "performance": 1,
+    "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 16:35:12",
-    "test_date_previous": "2025-10-24 10:11:18"
+    "test_date_current": "2025-11-07 16:33:23",
+    "test_date_previous": "2025-10-31 16:35:12"
   }
 }

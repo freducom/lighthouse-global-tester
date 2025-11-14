@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.261Z",
+    "generated_at": "2025-11-14T08:39:14.858Z",
     "url": "arbeitsagentur.de",
     "country": "Germany",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 64,
+    "performance": 65,
     "accessibility": 100,
     "best_practices": 100,
     "seo": 86,
     "pwa": 56,
-    "test_date": "2025-11-02 08:18:30"
+    "test_date": "2025-11-09 08:18:43"
   },
   "historical_data": [
+    {
+      "performance": 65,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 86,
+      "pwa": 56,
+      "test_date": "2025-11-09 08:18:43"
+    },
     {
       "performance": 64,
       "accessibility": 100,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 6,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 08:18:30",
-    "test_date_previous": "2025-10-26 10:10:47"
+    "test_date_current": "2025-11-09 08:18:43",
+    "test_date_previous": "2025-11-02 08:18:30"
   }
 }

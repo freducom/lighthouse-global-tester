@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.813Z",
+    "generated_at": "2025-11-14T08:39:14.993Z",
     "url": "nettavisen.no",
     "country": "Norway",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 31,
+    "performance": 28,
     "accessibility": 100,
     "best_practices": 83,
     "seo": 93,
     "pwa": 67,
-    "test_date": "2025-10-29 22:20:40"
+    "test_date": "2025-11-12 20:22:57"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 67,
+      "test_date": "2025-11-12 20:22:57"
+    },
+    {
+      "performance": 33,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 67,
+      "test_date": "2025-11-05 20:24:23"
+    },
     {
       "performance": 31,
       "accessibility": 100,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -5,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 22:20:40",
-    "test_date_previous": "2025-10-22 16:17:16"
+    "test_date_current": "2025-11-12 20:22:57",
+    "test_date_previous": "2025-11-05 20:24:23"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.199Z",
+    "generated_at": "2025-11-14T08:39:15.109Z",
     "url": "ee.co.uk",
     "country": "United Kingdom",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 30,
+    "performance": 26,
     "accessibility": 96,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-03 12:31:59"
+    "test_date": "2025-11-10 12:33:04"
   },
   "historical_data": [
+    {
+      "performance": 26,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-10 12:33:04"
+    },
     {
       "performance": 30,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:31:59"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:33:04",
+    "test_date_previous": "2025-11-03 12:31:59"
+  }
 }

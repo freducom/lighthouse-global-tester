@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.720Z",
+    "generated_at": "2025-11-14T08:39:14.966Z",
     "url": "luxembourg.lu",
     "country": "Luxembourg",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 41,
+    "performance": 43,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-10-29 10:12:08"
+    "test_date": "2025-11-12 08:15:06"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-12 08:15:06"
+    },
+    {
+      "performance": 44,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-05 08:14:55"
+    },
     {
       "performance": 41,
       "accessibility": 100,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": -7,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 10:12:08",
-    "test_date_previous": "2025-10-22 06:26:16"
+    "test_date_current": "2025-11-12 08:15:06",
+    "test_date_previous": "2025-11-05 08:14:55"
   }
 }

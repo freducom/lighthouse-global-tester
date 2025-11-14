@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.214Z",
+    "generated_at": "2025-11-14T08:39:14.843Z",
     "url": "supercell.com",
     "country": "Finland",
     "industry": "Gaming"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 68,
     "accessibility": 96,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-31 12:18:46"
+    "test_date": "2025-11-07 12:17:45"
   },
   "historical_data": [
+    {
+      "performance": 68,
+      "accessibility": 96,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-07 12:17:45"
+    },
     {
       "performance": 62,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 12:18:46"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 12:17:45",
+    "test_date_previous": "2025-10-31 12:18:46"
+  }
 }

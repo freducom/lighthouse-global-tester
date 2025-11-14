@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.060Z",
+    "generated_at": "2025-11-14T08:39:13.385Z",
     "country": "Denmark",
     "flag": "🇩🇰",
     "website_count": 9
   },
   "averages": {
-    "performance": 46,
+    "performance": 41,
     "accessibility": 90,
     "best_practices": 92,
     "seo": 93,
@@ -14,76 +14,88 @@
   },
   "websites": [
     {
-      "url": "mitid.dk",
-      "industry": "Government",
-      "scores": {
-        "performance": 86,
-        "accessibility": 100,
-        "best_practices": 100,
-        "seo": 92,
-        "pwa": 67
-      },
-      "test_date": "2025-10-29 16:34:49"
-    },
-    {
       "url": "tv2.dk",
       "industry": "Media",
       "scores": {
-        "performance": 64,
+        "performance": 63,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-01 00:50:24"
-    },
-    {
-      "url": "yousee.dk",
-      "industry": "Telecom",
-      "scores": {
-        "performance": 46,
-        "accessibility": 93,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 16:27:16"
-    },
-    {
-      "url": "dba.dk",
-      "industry": "Marketplace",
-      "scores": {
-        "performance": 45,
-        "accessibility": 98,
-        "best_practices": 92,
-        "seo": 100,
-        "pwa": 67
-      },
-      "test_date": "2025-11-03 06:22:16"
+      "test_date": "2025-11-08 00:49:38"
     },
     {
       "url": "ekstrabladet.dk",
       "industry": "Media",
       "scores": {
-        "performance": 44,
-        "accessibility": 83,
-        "best_practices": 83,
+        "performance": 47,
+        "accessibility": 85,
+        "best_practices": 92,
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-11-03 14:10:41"
+      "test_date": "2025-11-10 14:10:43"
+    },
+    {
+      "url": "yousee.dk",
+      "industry": "Telecom",
+      "scores": {
+        "performance": 45,
+        "accessibility": 93,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 16:26:59"
+    },
+    {
+      "url": "dba.dk",
+      "industry": "Marketplace",
+      "scores": {
+        "performance": 42,
+        "accessibility": 98,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 67
+      },
+      "test_date": "2025-11-10 06:22:14"
+    },
+    {
+      "url": "mitid.dk",
+      "industry": "Government",
+      "scores": {
+        "performance": 41,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 67
+      },
+      "test_date": "2025-11-12 16:13:36"
     },
     {
       "url": "bold.dk",
       "industry": "Sports",
       "scores": {
-        "performance": 42,
+        "performance": 37,
         "accessibility": 75,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 44
       },
-      "test_date": "2025-11-02 16:16:30"
+      "test_date": "2025-11-09 16:17:10"
+    },
+    {
+      "url": "dmi.dk",
+      "industry": "Weather",
+      "scores": {
+        "performance": 37,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 100,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 10:12:16"
     },
     {
       "url": "dr.dk",
@@ -95,7 +107,7 @@
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-11-03 10:17:56"
+      "test_date": "2025-11-10 10:17:17"
     },
     {
       "url": "bt.dk",
@@ -108,18 +120,6 @@
         "pwa": 33
       },
       "test_date": "2025-10-26 20:11:44"
-    },
-    {
-      "url": "dmi.dk",
-      "industry": "Weather",
-      "scores": {
-        "performance": 25,
-        "accessibility": 94,
-        "best_practices": 83,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 10:12:06"
     }
   ],
   "industries": [
@@ -127,7 +127,7 @@
       "industry": "Government",
       "website_count": 1,
       "averages": {
-        "performance": 86,
+        "performance": 41,
         "accessibility": 100,
         "best_practices": 100,
         "seo": 92,
@@ -138,7 +138,7 @@
       "industry": "Marketplace",
       "website_count": 1,
       "averages": {
-        "performance": 45,
+        "performance": 42,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 100,
@@ -149,9 +149,9 @@
       "industry": "Media",
       "website_count": 4,
       "averages": {
-        "performance": 42,
-        "accessibility": 87,
-        "best_practices": 94,
+        "performance": 43,
+        "accessibility": 88,
+        "best_practices": 96,
         "seo": 89,
         "pwa": 33
       }
@@ -160,9 +160,9 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 42,
+        "performance": 37,
         "accessibility": 75,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 44
       }
@@ -171,7 +171,7 @@
       "industry": "Telecom",
       "website_count": 1,
       "averages": {
-        "performance": 46,
+        "performance": 45,
         "accessibility": 93,
         "best_practices": 83,
         "seo": 100,
@@ -182,7 +182,7 @@
       "industry": "Weather",
       "website_count": 1,
       "averages": {
-        "performance": 25,
+        "performance": 37,
         "accessibility": 94,
         "best_practices": 83,
         "seo": 100,

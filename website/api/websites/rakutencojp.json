@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.660Z",
+    "generated_at": "2025-11-14T08:39:14.954Z",
     "url": "rakuten.co.jp",
     "country": "Japan",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 11,
+    "performance": 9,
     "accessibility": 71,
     "best_practices": 83,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-30 16:36:00"
+    "test_date": "2025-11-13 16:32:01"
   },
   "historical_data": [
+    {
+      "performance": 9,
+      "accessibility": 71,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-13 16:32:01"
+    },
+    {
+      "performance": 28,
+      "accessibility": 67,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-06 16:33:47"
+    },
     {
       "performance": 11,
       "accessibility": 71,
@@ -56,12 +72,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
-    "accessibility": 1,
+    "performance": -19,
+    "accessibility": 4,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 16:36:00",
-    "test_date_previous": "2025-10-23 12:18:12"
+    "test_date_current": "2025-11-13 16:32:01",
+    "test_date_previous": "2025-11-06 16:33:47"
   }
 }

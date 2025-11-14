@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.965Z",
+    "generated_at": "2025-11-14T08:39:14.763Z",
     "url": "nova.bg",
     "country": "Bulgaria",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 39,
+    "performance": 38,
     "accessibility": 92,
-    "best_practices": 67,
+    "best_practices": 75,
     "seo": 99,
     "pwa": 78,
-    "test_date": "2025-10-30 03:09:45"
+    "test_date": "2025-11-13 00:50:19"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 92,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 78,
+      "test_date": "2025-11-13 00:50:19"
+    },
+    {
+      "performance": 37,
+      "accessibility": 92,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 78,
+      "test_date": "2025-11-06 00:48:53"
+    },
     {
       "performance": 39,
       "accessibility": 92,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 03:09:45"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 00:50:19",
+    "test_date_previous": "2025-11-06 00:48:53"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.930Z",
+    "generated_at": "2025-11-14T08:39:15.034Z",
     "url": "fin24.com",
     "country": "South Africa",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 14,
+    "performance": 15,
     "accessibility": 96,
     "best_practices": 67,
     "seo": 75,
     "pwa": 89,
-    "test_date": "2025-10-20 18:17:21"
+    "test_date": "2025-11-10 20:18:37"
   },
   "historical_data": [
+    {
+      "performance": 15,
+      "accessibility": 96,
+      "best_practices": 67,
+      "seo": 75,
+      "pwa": 89,
+      "test_date": "2025-11-10 20:18:37"
+    },
     {
       "performance": 14,
       "accessibility": 96,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-20 18:17:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 20:18:37",
+    "test_date_previous": "2025-10-20 18:17:21"
+  }
 }

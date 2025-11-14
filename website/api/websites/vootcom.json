@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.551Z",
+    "generated_at": "2025-11-14T08:39:14.929Z",
     "url": "voot.com",
     "country": "India",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 79,
+    "performance": 76,
     "accessibility": 71,
     "best_practices": 75,
     "seo": 93,
     "pwa": 78,
-    "test_date": "2025-11-01 10:11:01"
+    "test_date": "2025-11-08 10:10:54"
   },
   "historical_data": [
+    {
+      "performance": 76,
+      "accessibility": 71,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 78,
+      "test_date": "2025-11-08 10:10:54"
+    },
     {
       "performance": 79,
       "accessibility": 71,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 10:11:01"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 10:10:54",
+    "test_date_previous": "2025-11-01 10:11:01"
+  }
 }

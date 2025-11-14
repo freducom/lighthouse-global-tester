@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.067Z",
+    "generated_at": "2025-11-14T08:39:14.797Z",
     "url": "eesti.ee",
     "country": "Estonia",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 32,
+    "performance": 34,
     "accessibility": 98,
     "best_practices": 67,
     "seo": 83,
     "pwa": 33,
-    "test_date": "2025-11-03 12:32:21"
+    "test_date": "2025-11-10 12:33:24"
   },
   "historical_data": [
+    {
+      "performance": 34,
+      "accessibility": 98,
+      "best_practices": 67,
+      "seo": 83,
+      "pwa": 33,
+      "test_date": "2025-11-10 12:33:24"
+    },
     {
       "performance": 32,
       "accessibility": 98,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 12:32:21"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 12:33:24",
+    "test_date_previous": "2025-11-03 12:32:21"
+  }
 }

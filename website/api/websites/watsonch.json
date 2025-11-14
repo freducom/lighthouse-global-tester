@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.110Z",
+    "generated_at": "2025-11-14T08:39:15.088Z",
     "url": "watson.ch",
     "country": "Switzerland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 33,
+    "performance": 36,
     "accessibility": 86,
-    "best_practices": 83,
+    "best_practices": 75,
     "seo": 91,
     "pwa": 56,
-    "test_date": "2025-11-01 10:21:27"
+    "test_date": "2025-11-08 10:20:09"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 86,
+      "best_practices": 75,
+      "seo": 91,
+      "pwa": 56,
+      "test_date": "2025-11-08 10:20:09"
+    },
     {
       "performance": 33,
       "accessibility": 86,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": 3,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 10:21:27",
-    "test_date_previous": "2025-10-25 03:02:18"
+    "test_date_current": "2025-11-08 10:20:09",
+    "test_date_previous": "2025-11-01 10:21:27"
   }
 }

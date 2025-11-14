@@ -867,7 +867,7 @@ ${this.getPostHogScript()}
     <div id="live-region" class="live-region" aria-live="polite" aria-atomic="true"></div>
     
     <div class="container">
-        ${this.getHeaderHTML(`Only one website can be the fastest`, true)}
+        ${this.getHeaderHTML(`Only one can be the fastest`, true)}
 
         <main id="main-content" role="main">
             <!-- Global Overview Stats (Real Data) -->
@@ -880,29 +880,38 @@ ${this.getPostHogScript()}
                     </div>
                 </div>
                 
-                <div class="stat-tile">
-                    <div class="stat-icon">🏴󠁿</div>
-                    <div class="stat-content">
-                        <div class="stat-number">${this.domainsData.length}</div>
-                        <div class="stat-label">Countries</div>
+                <a href="all-countries.html" class="stat-tile-link">
+                    <div class="stat-tile">
+                        <div class="stat-icon">🏴󠁿</div>
+                        <div class="stat-content">
+                            <div class="stat-number">${this.domainsData.length}</div>
+                            <div class="stat-label">Countries</div>
+                            <div class="stat-sublabel">compare countries →</div>
+                        </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="stat-tile">
-                    <div class="stat-icon">🏭</div>
-                    <div class="stat-content">
-                        <div class="stat-number">${[...new Set(allScores.map(score => score.industry).filter(industry => industry))].length}</div>
-                        <div class="stat-label">Industries</div>
+                <a href="all-industries.html" class="stat-tile-link">
+                    <div class="stat-tile">
+                        <div class="stat-icon">🏭</div>
+                        <div class="stat-content">
+                            <div class="stat-number">${[...new Set(allScores.map(score => score.industry).filter(industry => industry))].length}</div>
+                            <div class="stat-label">Industries</div>
+                            <div class="stat-sublabel">compare industries →</div>
+                        </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="stat-tile">
-                    <div class="stat-icon">⚡</div>
-                    <div class="stat-content">
-                        <div class="stat-number">${stats.avgPerformance}</div>
-                        <div class="stat-label">Avg Performance</div>
+                <a href="domain-${topSites[0].url.replace(/\./g, '-')}.html" class="stat-tile-link">
+                    <div class="stat-tile">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-content">
+                            <div class="stat-number">${topSites[0].performance}%</div>
+                            <div class="stat-label">Top Website</div>
+                            <div class="stat-sublabel">view ${topSites[0].url} →</div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </section>
 
             <!-- Link to Stats Page -->
@@ -3093,6 +3102,27 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
+.stat-tile-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.stat-tile-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.stat-tile-link:visited {
+    color: inherit;
+}
+
+.stat-tile-link:focus {
+    outline: 2px solid #0D3B66;
+    outline-offset: 2px;
+    border-radius: 12px;
+}
+
 .stat-icon {
     font-size: 2.5em;
     flex-shrink: 0;
@@ -3117,6 +3147,14 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+.stat-sublabel {
+    font-size: 0.7em;
+    color: #0D3B66;
+    font-weight: 500;
+    margin-top: 2px;
+    font-style: normal;
 }
 
 .stat-card {

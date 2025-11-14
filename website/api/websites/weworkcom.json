@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.442Z",
+    "generated_at": "2025-11-14T08:39:15.168Z",
     "url": "wework.com",
     "country": "United States",
     "industry": "Realestate"
   },
   "latest_scores": {
-    "performance": 45,
+    "performance": 41,
     "accessibility": 100,
     "best_practices": 58,
     "seo": 89,
     "pwa": 33,
-    "test_date": "2025-11-01 12:26:37"
+    "test_date": "2025-11-08 12:21:20"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 100,
+      "best_practices": 58,
+      "seo": 89,
+      "pwa": 33,
+      "test_date": "2025-11-08 12:21:20"
+    },
     {
       "performance": 45,
       "accessibility": 100,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 12:26:37"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 12:21:20",
+    "test_date_previous": "2025-11-01 12:26:37"
+  }
 }

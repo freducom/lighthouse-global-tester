@@ -1,53 +1,65 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.091Z",
+    "generated_at": "2025-11-14T08:39:13.406Z",
     "country": "Lithuania",
     "flag": "🇱🇹",
-    "website_count": 5
+    "website_count": 6
   },
   "averages": {
-    "performance": 49,
-    "accessibility": 67,
-    "best_practices": 78,
+    "performance": 46,
+    "accessibility": 68,
+    "best_practices": 76,
     "seo": 88,
-    "pwa": 49
+    "pwa": 46
   },
   "websites": [
     {
       "url": "autoplius.lt",
       "industry": "Marketplace",
       "scores": {
-        "performance": 89,
+        "performance": 91,
         "accessibility": 52,
         "best_practices": 83,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-02 10:15:58"
+      "test_date": "2025-11-09 10:14:44"
     },
     {
       "url": "skelbiu.lt",
       "industry": "Marketplace",
       "scores": {
-        "performance": 88,
+        "performance": 91,
         "accessibility": 52,
-        "best_practices": 83,
+        "best_practices": 75,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-31 04:28:14"
+      "test_date": "2025-11-14 04:31:32"
+    },
+    {
+      "url": "lrytas.lt",
+      "industry": "Media",
+      "scores": {
+        "performance": 27,
+        "accessibility": 80,
+        "best_practices": 83,
+        "seo": 98,
+        "pwa": 33
+      },
+      "test_date": "2025-11-05 06:26:05"
     },
     {
       "url": "vz.lt",
       "industry": "Media",
       "scores": {
-        "performance": 26,
-        "accessibility": 72,
-        "best_practices": 67,
-        "seo": 88,
+        "performance": 27,
+        "accessibility": 64,
+        "best_practices": 58,
+        "seo": 81,
         "pwa": 67
       },
-      "test_date": "2025-11-01 10:15:16"
+      "test_date": "2025-11-08 10:13:58"
     },
     {
       "url": "15min.lt",
@@ -59,7 +71,7 @@
         "seo": 92,
         "pwa": 78
       },
-      "test_date": "2025-11-02 00:46:55"
+      "test_date": "2025-11-09 00:46:55"
     },
     {
       "url": "alfa.lt",
@@ -71,7 +83,7 @@
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-02 04:23:53"
+      "test_date": "2025-11-09 04:21:50"
     }
   ],
   "industries": [
@@ -79,22 +91,22 @@
       "industry": "Marketplace",
       "website_count": 2,
       "averages": {
-        "performance": 89,
+        "performance": 91,
         "accessibility": 52,
-        "best_practices": 83,
+        "best_practices": 79,
         "seo": 83,
         "pwa": 33
       }
     },
     {
       "industry": "Media",
-      "website_count": 3,
+      "website_count": 4,
       "averages": {
-        "performance": 22,
-        "accessibility": 76,
+        "performance": 24,
+        "accessibility": 75,
         "best_practices": 75,
         "seo": 91,
-        "pwa": 59
+        "pwa": 53
       }
     }
   ]

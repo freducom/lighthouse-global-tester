@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.029Z",
+    "generated_at": "2025-11-14T08:39:15.062Z",
     "url": "klarna.com",
     "country": "Sweden",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 30,
     "accessibility": 90,
-    "best_practices": 100,
+    "best_practices": 92,
     "seo": 92,
-    "pwa": 56,
-    "test_date": "2025-10-29 01:01:03"
+    "pwa": 33,
+    "test_date": "2025-11-11 22:24:31"
   },
   "historical_data": [
+    {
+      "performance": 30,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-11 22:24:31"
+    },
+    {
+      "performance": 36,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-04 22:16:49"
+    },
     {
       "performance": 37,
       "accessibility": 90,
@@ -64,12 +80,12 @@
     }
   ],
   "trends": {
-    "performance": 13,
+    "performance": -6,
     "accessibility": 0,
-    "best_practices": 8,
+    "best_practices": -8,
     "seo": 0,
-    "pwa": 23,
-    "test_date_current": "2025-10-29 01:01:03",
-    "test_date_previous": "2025-10-21 20:23:47"
+    "pwa": -23,
+    "test_date_current": "2025-11-11 22:24:31",
+    "test_date_previous": "2025-11-04 22:16:49"
   }
 }

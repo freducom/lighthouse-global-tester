@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.920Z",
+    "generated_at": "2025-11-14T08:39:15.033Z",
     "url": "zive.sk",
     "country": "Slovakia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 51,
+    "performance": 50,
     "accessibility": 78,
-    "best_practices": 83,
+    "best_practices": 67,
     "seo": 92,
     "pwa": 67,
-    "test_date": "2025-11-01 18:20:25"
+    "test_date": "2025-11-08 18:23:49"
   },
   "historical_data": [
+    {
+      "performance": 50,
+      "accessibility": 78,
+      "best_practices": 67,
+      "seo": 92,
+      "pwa": 67,
+      "test_date": "2025-11-08 18:23:49"
+    },
     {
       "performance": 51,
       "accessibility": 78,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 18,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -16,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-01 18:20:25",
-    "test_date_previous": "2025-10-25 12:14:55"
+    "test_date_current": "2025-11-08 18:23:49",
+    "test_date_previous": "2025-11-01 18:20:25"
   }
 }

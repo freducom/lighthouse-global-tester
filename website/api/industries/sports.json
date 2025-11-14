@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.146Z",
+    "generated_at": "2025-11-14T08:39:14.168Z",
     "industry": "Sports",
     "website_count": 8
   },
   "averages": {
     "performance": 41,
-    "accessibility": 77,
-    "best_practices": 80,
-    "seo": 84,
-    "pwa": 40
+    "accessibility": 79,
+    "best_practices": 76,
+    "seo": 87,
+    "pwa": 44
   },
   "websites": [
     {
@@ -28,37 +28,37 @@
       "url": "bold.dk",
       "country": "Denmark",
       "scores": {
-        "performance": 42,
+        "performance": 37,
         "accessibility": 75,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 44
       },
-      "test_date": "2025-11-02 16:16:30"
+      "test_date": "2025-11-09 16:17:10"
     },
     {
       "url": "yallakora.com",
       "country": "Egypt",
       "scores": {
-        "performance": 36,
-        "accessibility": 80,
-        "best_practices": 75,
-        "seo": 90,
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 91,
         "pwa": 67
       },
-      "test_date": "2025-11-01 16:16:28"
+      "test_date": "2025-11-08 16:17:10"
     },
     {
       "url": "cricbuzz.com",
       "country": "India",
       "scores": {
-        "performance": 48,
-        "accessibility": 86,
+        "performance": 49,
+        "accessibility": 85,
         "best_practices": 75,
-        "seo": 91,
+        "seo": 99,
         "pwa": 33
       },
-      "test_date": "2025-11-03 04:24:06"
+      "test_date": "2025-11-10 04:22:28"
     },
     {
       "url": "sport5.co.il",
@@ -76,37 +76,37 @@
       "url": "sport.sk",
       "country": "Slovakia",
       "scores": {
-        "performance": 37,
+        "performance": 36,
         "accessibility": 68,
-        "best_practices": 75,
-        "seo": 76,
+        "best_practices": 58,
+        "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-10-31 08:15:28"
+      "test_date": "2025-11-07 08:17:09"
     },
     {
       "url": "marca.com",
       "country": "Spain",
       "scores": {
-        "performance": 37,
+        "performance": 35,
         "accessibility": 91,
         "best_practices": 92,
-        "seo": 83,
-        "pwa": 33
+        "seo": 92,
+        "pwa": 67
       },
-      "test_date": "2025-10-29 12:23:20"
+      "test_date": "2025-11-12 10:17:01"
     },
     {
       "url": "sport.ua",
       "country": "Ukraine",
       "scores": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 78,
         "best_practices": 92,
-        "seo": 93,
+        "seo": 92,
         "pwa": 56
       },
-      "test_date": "2025-10-31 08:15:47"
+      "test_date": "2025-11-07 08:17:29"
     }
   ],
   "countries": [
@@ -125,9 +125,9 @@
       "country": "Denmark",
       "website_count": 1,
       "averages": {
-        "performance": 42,
+        "performance": 37,
         "accessibility": 75,
-        "best_practices": 92,
+        "best_practices": 83,
         "seo": 92,
         "pwa": 44
       }
@@ -136,10 +136,10 @@
       "country": "Egypt",
       "website_count": 1,
       "averages": {
-        "performance": 36,
-        "accessibility": 80,
-        "best_practices": 75,
-        "seo": 90,
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 67,
+        "seo": 91,
         "pwa": 67
       }
     },
@@ -147,10 +147,10 @@
       "country": "India",
       "website_count": 1,
       "averages": {
-        "performance": 48,
-        "accessibility": 86,
+        "performance": 49,
+        "accessibility": 85,
         "best_practices": 75,
-        "seo": 91,
+        "seo": 99,
         "pwa": 33
       }
     },
@@ -169,10 +169,10 @@
       "country": "Slovakia",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 36,
         "accessibility": 68,
-        "best_practices": 75,
-        "seo": 76,
+        "best_practices": 58,
+        "seo": 83,
         "pwa": 33
       }
     },
@@ -180,21 +180,21 @@
       "country": "Spain",
       "website_count": 1,
       "averages": {
-        "performance": 37,
+        "performance": 35,
         "accessibility": 91,
         "best_practices": 92,
-        "seo": 83,
-        "pwa": 33
+        "seo": 92,
+        "pwa": 67
       }
     },
     {
       "country": "Ukraine",
       "website_count": 1,
       "averages": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 78,
         "best_practices": 92,
-        "seo": 93,
+        "seo": 92,
         "pwa": 56
       }
     }

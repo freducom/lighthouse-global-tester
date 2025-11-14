@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.148Z",
+    "generated_at": "2025-11-14T08:39:14.820Z",
     "url": "jamk.fi",
     "country": "Finland",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 53,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-28 22:09:36"
+    "test_date": "2025-11-11 20:11:35"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-11 20:11:35"
+    },
+    {
+      "performance": 56,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-04 20:11:55"
+    },
     {
       "performance": 46,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 22:09:36"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 20:11:35",
+    "test_date_previous": "2025-11-04 20:11:55"
+  }
 }

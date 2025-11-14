@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.083Z",
+    "generated_at": "2025-11-14T08:39:15.082Z",
     "url": "tre.se",
     "country": "Sweden",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 59,
+    "performance": 58,
     "accessibility": 97,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-11-01 00:46:18"
+    "test_date": "2025-11-08 00:40:55"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-08 00:40:55"
+    },
     {
       "performance": 59,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 00:46:18"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 00:40:55",
+    "test_date_previous": "2025-11-01 00:46:18"
+  }
 }

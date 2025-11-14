@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.738Z",
+    "generated_at": "2025-11-14T08:39:14.970Z",
     "url": "malta.com",
     "country": "Malta",
     "industry": "Portal"
   },
   "latest_scores": {
-    "performance": 62,
+    "performance": 33,
     "accessibility": 72,
     "best_practices": 42,
     "seo": 69,
     "pwa": 0,
-    "test_date": "2025-10-29 10:35:19"
+    "test_date": "2025-11-12 10:11:45"
   },
   "historical_data": [
+    {
+      "performance": 33,
+      "accessibility": 72,
+      "best_practices": 42,
+      "seo": 69,
+      "pwa": 0,
+      "test_date": "2025-11-12 10:11:45"
+    },
+    {
+      "performance": 56,
+      "accessibility": 72,
+      "best_practices": 42,
+      "seo": 69,
+      "pwa": 0,
+      "test_date": "2025-11-05 10:11:35"
+    },
     {
       "performance": 62,
       "accessibility": 72,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -23,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 10:35:19",
-    "test_date_previous": "2025-10-22 08:48:17"
+    "test_date_current": "2025-11-12 10:11:45",
+    "test_date_previous": "2025-11-05 10:11:35"
   }
 }

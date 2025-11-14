@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.800Z",
+    "generated_at": "2025-11-14T08:39:14.988Z",
     "url": "jumia.com.ng",
     "country": "Nigeria",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 47,
+    "performance": 43,
     "accessibility": 95,
     "best_practices": 92,
     "seo": 99,
     "pwa": 89,
-    "test_date": "2025-10-28 22:15:31"
+    "test_date": "2025-11-11 20:16:35"
   },
   "historical_data": [
+    {
+      "performance": 43,
+      "accessibility": 95,
+      "best_practices": 92,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-11 20:16:35"
+    },
+    {
+      "performance": 44,
+      "accessibility": 95,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 89,
+      "test_date": "2025-11-04 20:15:36"
+    },
     {
       "performance": 47,
       "accessibility": 95,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-28 22:15:31"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -1,
+    "accessibility": 0,
+    "best_practices": 9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-11 20:16:35",
+    "test_date_previous": "2025-11-04 20:15:36"
+  }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.175Z",
+    "generated_at": "2025-11-14T08:39:14.829Z",
     "url": "nokia.com",
     "country": "Finland",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 44,
+    "performance": 42,
     "accessibility": 89,
     "best_practices": 83,
     "seo": 100,
     "pwa": 56,
-    "test_date": "2025-10-30 03:05:30"
+    "test_date": "2025-11-13 00:46:02"
   },
   "historical_data": [
+    {
+      "performance": 42,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-11-13 00:46:02"
+    },
+    {
+      "performance": 37,
+      "accessibility": 89,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 56,
+      "test_date": "2025-11-06 00:44:48"
+    },
     {
       "performance": 44,
       "accessibility": 89,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 03:05:30"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 00:46:02",
+    "test_date_previous": "2025-11-06 00:44:48"
+  }
 }

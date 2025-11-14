@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.561Z",
+    "generated_at": "2025-11-14T08:39:14.933Z",
     "url": "liputan6.com",
     "country": "Indonesia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 36,
+    "performance": 32,
     "accessibility": 91,
-    "best_practices": 83,
+    "best_practices": 67,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-29 08:15:02"
+    "test_date": "2025-11-12 06:17:57"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 91,
+      "best_practices": 67,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-12 06:17:57"
+    },
+    {
+      "performance": 35,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-05 06:17:12"
+    },
     {
       "performance": 36,
       "accessibility": 91,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 4,
+    "performance": -3,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -16,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 08:15:02",
-    "test_date_previous": "2025-10-22 04:15:25"
+    "test_date_current": "2025-11-12 06:17:57",
+    "test_date_previous": "2025-11-05 06:17:12"
   }
 }

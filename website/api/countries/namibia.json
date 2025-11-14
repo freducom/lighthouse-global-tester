@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:42.355Z",
+    "generated_at": "2025-11-14T08:39:13.589Z",
     "country": "Namibia",
     "flag": "🇳🇦",
-    "website_count": 6
+    "website_count": 7
   },
   "averages": {
     "performance": 44,
-    "accessibility": 83,
-    "best_practices": 83,
-    "seo": 85,
+    "accessibility": 84,
+    "best_practices": 82,
+    "seo": 87,
     "pwa": 33
   },
   "websites": [
@@ -17,25 +17,37 @@
       "url": "informante.web.na",
       "industry": "Media",
       "scores": {
-        "performance": 61,
+        "performance": 64,
         "accessibility": 71,
         "best_practices": 100,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-28 18:18:08"
+      "test_date": "2025-11-11 16:18:54"
+    },
+    {
+      "url": "gov.na",
+      "industry": "Government",
+      "scores": {
+        "performance": 55,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 95,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 04:17:16"
     },
     {
       "url": "ncci.org.na",
       "industry": "Non-profit",
       "scores": {
-        "performance": 57,
+        "performance": 52,
         "accessibility": 80,
         "best_practices": 83,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-10-29 22:13:05"
+      "test_date": "2025-11-12 20:13:54"
     },
     {
       "url": "namibian.com.na",
@@ -47,7 +59,7 @@
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-29 20:23:15"
+      "test_date": "2025-11-12 18:27:05"
     },
     {
       "url": "neweralive.na",
@@ -65,13 +77,13 @@
       "url": "travel-namibia.com",
       "industry": "Media",
       "scores": {
-        "performance": 37,
+        "performance": 33,
         "accessibility": 88,
         "best_practices": 75,
         "seo": 78,
         "pwa": 33
       },
-      "test_date": "2025-11-01 00:46:04"
+      "test_date": "2025-11-08 00:40:40"
     },
     {
       "url": "observer24.com.na",
@@ -83,10 +95,21 @@
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-10-30 06:18:07"
+      "test_date": "2025-11-06 04:21:51"
     }
   ],
   "industries": [
+    {
+      "industry": "Government",
+      "website_count": 1,
+      "averages": {
+        "performance": 55,
+        "accessibility": 92,
+        "best_practices": 75,
+        "seo": 95,
+        "pwa": 33
+      }
+    },
     {
       "industry": "Media",
       "website_count": 5,
@@ -102,7 +125,7 @@
       "industry": "Non-profit",
       "website_count": 1,
       "averages": {
-        "performance": 57,
+        "performance": 52,
         "accessibility": 80,
         "best_practices": 83,
         "seo": 85,

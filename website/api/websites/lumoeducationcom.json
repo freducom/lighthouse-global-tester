@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.161Z",
+    "generated_at": "2025-11-14T08:39:14.825Z",
     "url": "lumoeducation.com",
     "country": "Finland",
     "industry": "Edtech"
   },
   "latest_scores": {
-    "performance": 70,
+    "performance": 58,
     "accessibility": 90,
     "best_practices": 100,
     "seo": 99,
     "pwa": 22,
-    "test_date": "2025-10-29 08:31:02"
+    "test_date": "2025-11-12 08:13:51"
   },
   "historical_data": [
+    {
+      "performance": 58,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 22,
+      "test_date": "2025-11-12 08:13:51"
+    },
+    {
+      "performance": 53,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 22,
+      "test_date": "2025-11-05 08:13:42"
+    },
     {
       "performance": 70,
       "accessibility": 90,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 08:31:02"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 08:13:51",
+    "test_date_previous": "2025-11-05 08:13:42"
+  }
 }

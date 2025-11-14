@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.010Z",
+    "generated_at": "2025-11-14T08:39:15.055Z",
     "url": "expressen.se",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 58,
+    "performance": 66,
     "accessibility": 96,
     "best_practices": 100,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-11-03 18:35:17"
+    "test_date": "2025-11-10 18:35:14"
   },
   "historical_data": [
+    {
+      "performance": 66,
+      "accessibility": 96,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-10 18:35:14"
+    },
     {
       "performance": 58,
       "accessibility": 96,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 9,
+    "performance": 8,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 18:35:17",
-    "test_date_previous": "2025-10-20 18:14:33"
+    "test_date_current": "2025-11-10 18:35:14",
+    "test_date_previous": "2025-11-03 18:35:17"
   }
 }

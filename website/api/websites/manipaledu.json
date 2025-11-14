@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.454Z",
+    "generated_at": "2025-11-14T08:39:14.908Z",
     "url": "manipal.edu",
     "country": "India",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 24,
+    "performance": 25,
     "accessibility": 61,
     "best_practices": 58,
     "seo": 70,
     "pwa": 33,
-    "test_date": "2025-10-29 12:22:52"
+    "test_date": "2025-11-12 10:16:34"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 61,
+      "best_practices": 58,
+      "seo": 70,
+      "pwa": 33,
+      "test_date": "2025-11-12 10:16:34"
+    },
+    {
+      "performance": 24,
+      "accessibility": 61,
+      "best_practices": 58,
+      "seo": 70,
+      "pwa": 33,
+      "test_date": "2025-11-05 10:16:21"
+    },
     {
       "performance": 24,
       "accessibility": 61,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 12:22:52"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 10:16:34",
+    "test_date_previous": "2025-11-05 10:16:21"
+  }
 }

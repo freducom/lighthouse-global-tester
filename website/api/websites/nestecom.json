@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.171Z",
+    "generated_at": "2025-11-14T08:39:14.828Z",
     "url": "neste.com",
     "country": "Finland",
     "industry": "Energy"
@@ -11,9 +11,25 @@
     "best_practices": 100,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-29 22:15:30"
+    "test_date": "2025-11-12 20:17:38"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-12 20:17:38"
+    },
+    {
+      "performance": 35,
+      "accessibility": 90,
+      "best_practices": 100,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-05 20:19:02"
+    },
     {
       "performance": 40,
       "accessibility": 90,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 22:15:30"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 5,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 20:17:38",
+    "test_date_previous": "2025-11-05 20:19:02"
+  }
 }

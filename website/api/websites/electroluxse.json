@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.007Z",
+    "generated_at": "2025-11-14T08:39:15.054Z",
     "url": "electrolux.se",
     "country": "Sweden",
     "industry": "Manufacturing"
   },
   "latest_scores": {
-    "performance": 50,
+    "performance": 40,
     "accessibility": 85,
     "best_practices": 83,
-    "seo": 86,
+    "seo": 79,
     "pwa": 33,
-    "test_date": "2025-11-03 14:25:00"
+    "test_date": "2025-11-10 14:25:09"
   },
   "historical_data": [
+    {
+      "performance": 40,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-11-10 14:25:09"
+    },
     {
       "performance": 50,
       "accessibility": 85,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-03 14:25:00"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -10,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": -7,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 14:25:09",
+    "test_date_previous": "2025-11-03 14:25:00"
+  }
 }

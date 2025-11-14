@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.849Z",
+    "generated_at": "2025-11-14T08:39:15.009Z",
     "url": "pg.edu.pl",
     "country": "Poland",
     "industry": "Education"
   },
   "latest_scores": {
     "performance": 52,
-    "accessibility": 83,
+    "accessibility": 90,
     "best_practices": 92,
     "seo": 92,
     "pwa": 44,
-    "test_date": "2025-10-30 12:26:51"
+    "test_date": "2025-11-13 10:20:57"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 44,
+      "test_date": "2025-11-13 10:20:57"
+    },
+    {
+      "performance": 51,
+      "accessibility": 83,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 44,
+      "test_date": "2025-11-06 10:21:20"
+    },
     {
       "performance": 52,
       "accessibility": 83,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 12:26:51"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 7,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 10:20:57",
+    "test_date_previous": "2025-11-06 10:21:20"
+  }
 }

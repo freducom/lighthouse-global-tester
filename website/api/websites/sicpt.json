@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.865Z",
+    "generated_at": "2025-11-14T08:39:15.015Z",
     "url": "sic.pt",
     "country": "Portugal",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 55,
     "accessibility": 96,
     "best_practices": 83,
     "seo": 98,
     "pwa": 33,
-    "test_date": "2025-10-31 04:20:56"
+    "test_date": "2025-11-14 04:21:21"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-14 04:21:21"
+    },
+    {
+      "performance": 41,
+      "accessibility": 96,
+      "best_practices": 83,
+      "seo": 98,
+      "pwa": 33,
+      "test_date": "2025-11-07 04:19:51"
+    },
     {
       "performance": 42,
       "accessibility": 96,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 04:20:56"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 14,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 04:21:21",
+    "test_date_previous": "2025-11-07 04:19:51"
+  }
 }

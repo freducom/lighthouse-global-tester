@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.228Z",
+    "generated_at": "2025-11-14T08:39:15.119Z",
     "url": "adobe.com",
     "country": "United States",
     "industry": "Website editor"
   },
   "latest_scores": {
-    "performance": 90,
-    "accessibility": 90,
+    "performance": 91,
+    "accessibility": 92,
     "best_practices": 92,
     "seo": 84,
     "pwa": 44,
-    "test_date": "2025-11-02 03:17:08"
+    "test_date": "2025-11-09 03:16:13"
   },
   "historical_data": [
+    {
+      "performance": 91,
+      "accessibility": 92,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 44,
+      "test_date": "2025-11-09 03:16:13"
+    },
     {
       "performance": 90,
       "accessibility": 90,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
-    "accessibility": -1,
+    "performance": 1,
+    "accessibility": 2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 03:17:08",
-    "test_date_previous": "2025-10-23 07:02:14"
+    "test_date_current": "2025-11-09 03:16:13",
+    "test_date_previous": "2025-11-02 03:17:08"
   }
 }

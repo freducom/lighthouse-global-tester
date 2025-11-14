@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.265Z",
+    "generated_at": "2025-11-14T08:39:15.132Z",
     "url": "databricks.com",
     "country": "United States",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 35,
+    "performance": 38,
     "accessibility": 97,
     "best_practices": 83,
     "seo": 93,
     "pwa": 56,
-    "test_date": "2025-10-27 08:18:24"
+    "test_date": "2025-11-10 06:20:55"
   },
   "historical_data": [
+    {
+      "performance": 38,
+      "accessibility": 97,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 56,
+      "test_date": "2025-11-10 06:20:55"
+    },
     {
       "performance": 35,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-27 08:18:24"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-10 06:20:55",
+    "test_date_previous": "2025-10-27 08:18:24"
+  }
 }

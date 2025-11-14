@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.160Z",
+    "generated_at": "2025-11-14T08:39:15.098Z",
     "url": "lb.ua",
     "country": "Ukraine",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 51,
     "accessibility": 87,
-    "best_practices": 58,
+    "best_practices": 67,
     "seo": 91,
     "pwa": 33,
-    "test_date": "2025-10-29 04:31:44"
+    "test_date": "2025-11-12 03:19:24"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 87,
+      "best_practices": 67,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-12 03:19:24"
+    },
+    {
+      "performance": 54,
+      "accessibility": 87,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-05 03:20:19"
+    },
     {
       "performance": 49,
       "accessibility": 87,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 3,
-    "accessibility": 2,
-    "best_practices": -17,
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": -16,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 04:31:44",
-    "test_date_previous": "2025-10-22 03:04:30"
+    "test_date_current": "2025-11-12 03:19:24",
+    "test_date_previous": "2025-11-05 03:20:19"
   }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.198Z",
+    "generated_at": "2025-11-14T08:39:14.837Z",
     "url": "s-pankki.fi",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 35,
     "accessibility": 94,
-    "best_practices": 92,
+    "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 22:12:25"
+    "test_date": "2025-11-13 22:13:37"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-13 22:13:37"
+    },
+    {
+      "performance": 33,
+      "accessibility": 94,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-06 22:12:19"
+    },
     {
       "performance": 42,
       "accessibility": 94,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 22:12:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 2,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 22:13:37",
+    "test_date_previous": "2025-11-06 22:12:19"
+  }
 }

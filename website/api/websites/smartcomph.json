@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.835Z",
+    "generated_at": "2025-11-14T08:39:15.002Z",
     "url": "smart.com.ph",
     "country": "Philippines",
     "industry": "Telecom"
   },
   "latest_scores": {
-    "performance": 21,
+    "performance": 7,
     "accessibility": 68,
-    "best_practices": 67,
+    "best_practices": 58,
     "seo": 61,
     "pwa": 33,
-    "test_date": "2025-10-31 06:15:58"
+    "test_date": "2025-11-14 06:17:17"
   },
   "historical_data": [
+    {
+      "performance": 7,
+      "accessibility": 68,
+      "best_practices": 58,
+      "seo": 61,
+      "pwa": 33,
+      "test_date": "2025-11-14 06:17:17"
+    },
+    {
+      "performance": 21,
+      "accessibility": 68,
+      "best_practices": 67,
+      "seo": 61,
+      "pwa": 33,
+      "test_date": "2025-11-07 06:16:29"
+    },
     {
       "performance": 21,
       "accessibility": 68,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-31 06:15:58"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -14,
+    "accessibility": 0,
+    "best_practices": -9,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-14 06:17:17",
+    "test_date_previous": "2025-11-07 06:16:29"
+  }
 }

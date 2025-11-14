@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.246Z",
+    "generated_at": "2025-11-14T08:39:14.852Z",
     "url": "withsecure.com",
     "country": "Finland",
     "industry": "Cybersecurity"
   },
   "latest_scores": {
-    "performance": 61,
+    "performance": 62,
     "accessibility": 85,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-11-01 14:11:43"
+    "test_date": "2025-11-08 14:05:48"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-08 14:05:48"
+    },
     {
       "performance": 61,
       "accessibility": 85,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 14:11:43"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 1,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 14:05:48",
+    "test_date_previous": "2025-11-01 14:11:43"
+  }
 }

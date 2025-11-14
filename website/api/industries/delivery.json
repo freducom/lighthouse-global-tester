@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.158Z",
+    "generated_at": "2025-11-14T08:39:14.172Z",
     "industry": "Delivery",
     "website_count": 7
   },
   "averages": {
-    "performance": 29,
-    "accessibility": 88,
-    "best_practices": 69,
-    "seo": 91,
-    "pwa": 44
+    "performance": 37,
+    "accessibility": 87,
+    "best_practices": 72,
+    "seo": 89,
+    "pwa": 46
   },
   "websites": [
     {
       "url": "wolt.com",
       "country": "Finland",
       "scores": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 95,
         "best_practices": 92,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-01 14:12:54"
+      "test_date": "2025-11-08 14:07:01"
     },
     {
       "url": "swiggy.com",
@@ -34,67 +34,67 @@
         "seo": 99,
         "pwa": 89
       },
-      "test_date": "2025-10-31 12:22:06"
+      "test_date": "2025-11-07 12:23:15"
     },
     {
       "url": "zomato.com",
       "country": "India",
       "scores": {
-        "performance": 41,
+        "performance": 46,
         "accessibility": 74,
         "best_practices": 75,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 20:08:35"
+      "test_date": "2025-11-08 20:09:12"
     },
     {
       "url": "foodora.se",
       "country": "Sweden",
       "scores": {
-        "performance": 33,
+        "performance": 27,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-03 22:17:28"
+      "test_date": "2025-11-10 22:18:31"
     },
     {
       "url": "doordash.com",
       "country": "United States",
       "scores": {
-        "performance": 11,
-        "accessibility": 93,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 22
+        "performance": 77,
+        "accessibility": 81,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 33
       },
-      "test_date": "2025-11-03 10:16:56"
+      "test_date": "2025-11-10 10:16:19"
     },
     {
       "url": "grubhub.com",
       "country": "United States",
       "scores": {
-        "performance": 28,
-        "accessibility": 86,
+        "performance": 29,
+        "accessibility": 88,
         "best_practices": 67,
         "seo": 80,
         "pwa": 67
       },
-      "test_date": "2025-11-04 06:20:51"
+      "test_date": "2025-11-11 06:20:55"
     },
     {
       "url": "instacart.com",
       "country": "United States",
       "scores": {
-        "performance": 33,
+        "performance": 28,
         "accessibility": 100,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-28 18:24:53"
+      "test_date": "2025-11-11 16:24:12"
     }
   ],
   "countries": [
@@ -102,7 +102,7 @@
       "country": "Finland",
       "website_count": 1,
       "averages": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 95,
         "best_practices": 92,
         "seo": 83,
@@ -113,7 +113,7 @@
       "country": "India",
       "website_count": 2,
       "averages": {
-        "performance": 33,
+        "performance": 35,
         "accessibility": 77,
         "best_practices": 38,
         "seo": 93,
@@ -124,7 +124,7 @@
       "country": "Sweden",
       "website_count": 1,
       "averages": {
-        "performance": 33,
+        "performance": 27,
         "accessibility": 92,
         "best_practices": 83,
         "seo": 92,
@@ -135,11 +135,11 @@
       "country": "United States",
       "website_count": 3,
       "averages": {
-        "performance": 24,
-        "accessibility": 93,
-        "best_practices": 78,
-        "seo": 93,
-        "pwa": 41
+        "performance": 45,
+        "accessibility": 90,
+        "best_practices": 84,
+        "seo": 87,
+        "pwa": 44
       }
     }
   ]

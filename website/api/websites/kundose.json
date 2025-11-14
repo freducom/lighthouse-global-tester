@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.031Z",
+    "generated_at": "2025-11-14T08:39:15.064Z",
     "url": "kundo.se",
     "country": "Sweden",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 55,
-    "accessibility": 85,
+    "performance": 51,
+    "accessibility": 88,
     "best_practices": 83,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-29 03:19:42"
+    "test_date": "2025-11-12 00:55:29"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 88,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-12 00:55:29"
+    },
+    {
+      "performance": 55,
+      "accessibility": 85,
+      "best_practices": 83,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-05 00:56:14"
+    },
     {
       "performance": 55,
       "accessibility": 85,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 03:19:42"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -4,
+    "accessibility": 3,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 00:55:29",
+    "test_date_previous": "2025-11-05 00:56:14"
+  }
 }

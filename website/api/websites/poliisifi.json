@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.184Z",
+    "generated_at": "2025-11-14T08:39:14.834Z",
     "url": "poliisi.fi",
     "country": "Finland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 71,
+    "performance": 63,
     "accessibility": 98,
     "best_practices": 100,
     "seo": 100,
     "pwa": 44,
-    "test_date": "2025-10-30 13:37:03"
+    "test_date": "2025-11-13 12:21:46"
   },
   "historical_data": [
+    {
+      "performance": 63,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-13 12:21:46"
+    },
+    {
+      "performance": 63,
+      "accessibility": 98,
+      "best_practices": 100,
+      "seo": 100,
+      "pwa": 44,
+      "test_date": "2025-11-06 12:21:08"
+    },
     {
       "performance": 71,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 13:37:03"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 12:21:46",
+    "test_date_previous": "2025-11-06 12:21:08"
+  }
 }

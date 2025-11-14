@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.080Z",
+    "generated_at": "2025-11-14T08:39:14.799Z",
     "url": "swedbank.ee",
     "country": "Estonia",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 39,
-    "accessibility": 98,
+    "performance": 52,
+    "accessibility": 100,
     "best_practices": 83,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-31 12:20:44"
+    "test_date": "2025-11-07 12:22:26"
   },
   "historical_data": [
+    {
+      "performance": 52,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-07 12:22:26"
+    },
     {
       "performance": 39,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
-    "accessibility": 0,
+    "performance": 13,
+    "accessibility": 2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 12:20:44",
-    "test_date_previous": "2025-10-24 04:16:45"
+    "test_date_current": "2025-11-07 12:22:26",
+    "test_date_previous": "2025-10-31 12:20:44"
   }
 }

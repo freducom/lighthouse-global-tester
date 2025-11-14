@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.789Z",
+    "generated_at": "2025-11-14T08:39:14.984Z",
     "url": "telegraaf.nl",
     "country": "Netherlands",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 30,
-    "accessibility": 97,
+    "performance": 31,
+    "accessibility": 88,
     "best_practices": 75,
-    "seo": 91,
+    "seo": 84,
     "pwa": 56,
-    "test_date": "2025-10-31 16:22:54"
+    "test_date": "2025-11-07 16:21:16"
   },
   "historical_data": [
+    {
+      "performance": 31,
+      "accessibility": 88,
+      "best_practices": 75,
+      "seo": 84,
+      "pwa": 56,
+      "test_date": "2025-11-07 16:21:16"
+    },
     {
       "performance": 30,
       "accessibility": 97,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
-    "accessibility": 0,
+    "performance": 1,
+    "accessibility": -9,
     "best_practices": 0,
-    "seo": 0,
+    "seo": -7,
     "pwa": 0,
-    "test_date_current": "2025-10-31 16:22:54",
-    "test_date_previous": "2025-10-24 08:15:55"
+    "test_date_current": "2025-11-07 16:21:16",
+    "test_date_previous": "2025-10-31 16:22:54"
   }
 }

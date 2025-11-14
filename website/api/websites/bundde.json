@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.268Z",
+    "generated_at": "2025-11-14T08:39:14.860Z",
     "url": "bund.de",
     "country": "Germany",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 55,
+    "performance": 61,
     "accessibility": 98,
     "best_practices": 83,
     "seo": 79,
     "pwa": 33,
-    "test_date": "2025-11-02 18:16:21"
+    "test_date": "2025-11-09 18:18:03"
   },
   "historical_data": [
+    {
+      "performance": 61,
+      "accessibility": 98,
+      "best_practices": 83,
+      "seo": 79,
+      "pwa": 33,
+      "test_date": "2025-11-09 18:18:03"
+    },
     {
       "performance": 55,
       "accessibility": 98,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -5,
+    "performance": 6,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 18:16:21",
-    "test_date_previous": "2025-10-26 20:12:21"
+    "test_date_current": "2025-11-09 18:18:03",
+    "test_date_previous": "2025-11-02 18:16:21"
   }
 }

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:39.805Z",
+    "generated_at": "2025-11-14T08:39:11.830Z",
     "total_industries": 50
   },
   "industries": [
     {
       "industry": "Automotive",
-      "website_count": 15,
+      "website_count": 16,
       "averages": {
-        "performance": 37,
-        "accessibility": 89,
-        "best_practices": 76,
+        "performance": 38,
+        "accessibility": 88,
+        "best_practices": 78,
         "seo": 91,
         "pwa": 44
       },
@@ -20,7 +20,7 @@
       "industry": "Business",
       "website_count": 1,
       "averages": {
-        "performance": 55,
+        "performance": 53,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 100,
@@ -32,7 +32,7 @@
       "industry": "Career",
       "website_count": 1,
       "averages": {
-        "performance": 39,
+        "performance": 42,
         "accessibility": 83,
         "best_practices": 75,
         "seo": 98,
@@ -44,7 +44,7 @@
       "industry": "Conglomerate",
       "website_count": 1,
       "averages": {
-        "performance": 62,
+        "performance": 57,
         "accessibility": 95,
         "best_practices": 100,
         "seo": 98,
@@ -56,7 +56,7 @@
       "industry": "Construction",
       "website_count": 2,
       "averages": {
-        "performance": 41,
+        "performance": 39,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 84,
@@ -70,7 +70,7 @@
       "averages": {
         "performance": 57,
         "accessibility": 96,
-        "best_practices": 91,
+        "best_practices": 92,
         "seo": 90,
         "pwa": 39
       },
@@ -92,7 +92,7 @@
       "industry": "Cybersecurity",
       "website_count": 2,
       "averages": {
-        "performance": 57,
+        "performance": 58,
         "accessibility": 85,
         "best_practices": 92,
         "seo": 93,
@@ -104,7 +104,7 @@
       "industry": "Defense",
       "website_count": 2,
       "averages": {
-        "performance": 64,
+        "performance": 58,
         "accessibility": 90,
         "best_practices": 88,
         "seo": 82,
@@ -116,23 +116,23 @@
       "industry": "Delivery",
       "website_count": 7,
       "averages": {
-        "performance": 29,
-        "accessibility": 88,
-        "best_practices": 69,
-        "seo": 91,
-        "pwa": 44
+        "performance": 37,
+        "accessibility": 87,
+        "best_practices": 72,
+        "seo": 89,
+        "pwa": 46
       },
       "api_endpoint": "industries/delivery.json"
     },
     {
       "industry": "E-commerce",
-      "website_count": 70,
+      "website_count": 71,
       "averages": {
-        "performance": 45,
+        "performance": 44,
         "accessibility": 82,
-        "best_practices": 79,
-        "seo": 89,
-        "pwa": 46
+        "best_practices": 78,
+        "seo": 90,
+        "pwa": 45
       },
       "api_endpoint": "industries/e-commerce.json"
     },
@@ -140,7 +140,7 @@
       "industry": "Edtech",
       "website_count": 19,
       "averages": {
-        "performance": 52,
+        "performance": 51,
         "accessibility": 86,
         "best_practices": 84,
         "seo": 89,
@@ -150,11 +150,11 @@
     },
     {
       "industry": "Education",
-      "website_count": 48,
+      "website_count": 50,
       "averages": {
-        "performance": 49,
+        "performance": 50,
         "accessibility": 89,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 88,
         "pwa": 36
       },
@@ -164,9 +164,9 @@
       "industry": "Energy",
       "website_count": 9,
       "averages": {
-        "performance": 45,
+        "performance": 46,
         "accessibility": 89,
-        "best_practices": 89,
+        "best_practices": 91,
         "seo": 86,
         "pwa": 38
       },
@@ -176,21 +176,21 @@
       "industry": "Engineering",
       "website_count": 3,
       "averages": {
-        "performance": 54,
-        "accessibility": 86,
-        "best_practices": 89,
-        "seo": 90,
+        "performance": 45,
+        "accessibility": 93,
+        "best_practices": 86,
+        "seo": 88,
         "pwa": 33
       },
       "api_endpoint": "industries/engineering.json"
     },
     {
       "industry": "Finance",
-      "website_count": 126,
+      "website_count": 127,
       "averages": {
-        "performance": 47,
+        "performance": 45,
         "accessibility": 88,
-        "best_practices": 82,
+        "best_practices": 81,
         "seo": 89,
         "pwa": 37
       },
@@ -200,9 +200,9 @@
       "industry": "Food",
       "website_count": 3,
       "averages": {
-        "performance": 49,
+        "performance": 48,
         "accessibility": 91,
-        "best_practices": 97,
+        "best_practices": 100,
         "seo": 88,
         "pwa": 56
       },
@@ -222,25 +222,25 @@
     },
     {
       "industry": "Gaming",
-      "website_count": 7,
+      "website_count": 8,
       "averages": {
-        "performance": 66,
-        "accessibility": 94,
-        "best_practices": 93,
-        "seo": 95,
+        "performance": 64,
+        "accessibility": 95,
+        "best_practices": 91,
+        "seo": 92,
         "pwa": 36
       },
       "api_endpoint": "industries/gaming.json"
     },
     {
       "industry": "Government",
-      "website_count": 41,
+      "website_count": 43,
       "averages": {
-        "performance": 61,
+        "performance": 59,
         "accessibility": 89,
-        "best_practices": 89,
+        "best_practices": 88,
         "seo": 91,
-        "pwa": 36
+        "pwa": 35
       },
       "api_endpoint": "industries/government.json"
     },
@@ -248,9 +248,9 @@
       "industry": "Healthcare",
       "website_count": 13,
       "averages": {
-        "performance": 50,
+        "performance": 52,
         "accessibility": 92,
-        "best_practices": 88,
+        "best_practices": 90,
         "seo": 92,
         "pwa": 44
       },
@@ -260,9 +260,9 @@
       "industry": "Healthtech",
       "website_count": 6,
       "averages": {
-        "performance": 53,
+        "performance": 55,
         "accessibility": 88,
-        "best_practices": 92,
+        "best_practices": 93,
         "seo": 95,
         "pwa": 48
       },
@@ -272,7 +272,7 @@
       "industry": "Hospitality",
       "website_count": 1,
       "averages": {
-        "performance": 32,
+        "performance": 33,
         "accessibility": 100,
         "best_practices": 83,
         "seo": 100,
@@ -284,9 +284,9 @@
       "industry": "Industry",
       "website_count": 4,
       "averages": {
-        "performance": 51,
+        "performance": 57,
         "accessibility": 93,
-        "best_practices": 90,
+        "best_practices": 88,
         "seo": 90,
         "pwa": 42
       },
@@ -296,10 +296,10 @@
       "industry": "Jobs",
       "website_count": 8,
       "averages": {
-        "performance": 59,
-        "accessibility": 86,
-        "best_practices": 77,
-        "seo": 90,
+        "performance": 48,
+        "accessibility": 87,
+        "best_practices": 65,
+        "seo": 91,
         "pwa": 49
       },
       "api_endpoint": "industries/jobs.json"
@@ -308,47 +308,47 @@
       "industry": "Manufacturing",
       "website_count": 3,
       "averages": {
-        "performance": 46,
+        "performance": 40,
         "accessibility": 94,
-        "best_practices": 80,
-        "seo": 90,
+        "best_practices": 83,
+        "seo": 88,
         "pwa": 33
       },
       "api_endpoint": "industries/manufacturing.json"
     },
     {
       "industry": "Marketing",
-      "website_count": 9,
+      "website_count": 10,
       "averages": {
-        "performance": 44,
-        "accessibility": 91,
-        "best_practices": 78,
-        "seo": 92,
+        "performance": 43,
+        "accessibility": 92,
+        "best_practices": 76,
+        "seo": 93,
         "pwa": 31
       },
       "api_endpoint": "industries/marketing.json"
     },
     {
       "industry": "Marketplace",
-      "website_count": 26,
+      "website_count": 28,
       "averages": {
-        "performance": 41,
-        "accessibility": 86,
-        "best_practices": 84,
-        "seo": 91,
-        "pwa": 49
+        "performance": 43,
+        "accessibility": 87,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 50
       },
       "api_endpoint": "industries/marketplace.json"
     },
     {
       "industry": "Media",
-      "website_count": 359,
+      "website_count": 373,
       "averages": {
-        "performance": 42,
+        "performance": 43,
         "accessibility": 85,
         "best_practices": 79,
-        "seo": 91,
-        "pwa": 44
+        "seo": 90,
+        "pwa": 45
       },
       "api_endpoint": "industries/media.json"
     },
@@ -356,7 +356,7 @@
       "industry": "Non-profit",
       "website_count": 2,
       "averages": {
-        "performance": 39,
+        "performance": 40,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 86,
@@ -368,7 +368,7 @@
       "industry": "Pharmaceutical",
       "website_count": 1,
       "averages": {
-        "performance": 55,
+        "performance": 45,
         "accessibility": 93,
         "best_practices": 75,
         "seo": 100,
@@ -381,9 +381,9 @@
       "website_count": 30,
       "averages": {
         "performance": 46,
-        "accessibility": 77,
-        "best_practices": 74,
-        "seo": 89,
+        "accessibility": 78,
+        "best_practices": 79,
+        "seo": 90,
         "pwa": 46
       },
       "api_endpoint": "industries/portal.json"
@@ -404,9 +404,9 @@
       "industry": "Real Estate",
       "website_count": 2,
       "averages": {
-        "performance": 31,
+        "performance": 30,
         "accessibility": 89,
-        "best_practices": 79,
+        "best_practices": 67,
         "seo": 89,
         "pwa": 89
       },
@@ -416,9 +416,9 @@
       "industry": "Realestate",
       "website_count": 5,
       "averages": {
-        "performance": 36,
+        "performance": 37,
         "accessibility": 90,
-        "best_practices": 82,
+        "best_practices": 80,
         "seo": 93,
         "pwa": 33
       },
@@ -428,7 +428,7 @@
       "industry": "Research",
       "website_count": 3,
       "averages": {
-        "performance": 49,
+        "performance": 53,
         "accessibility": 95,
         "best_practices": 97,
         "seo": 95,
@@ -440,9 +440,9 @@
       "industry": "Retail",
       "website_count": 12,
       "averages": {
-        "performance": 34,
+        "performance": 37,
         "accessibility": 87,
-        "best_practices": 70,
+        "best_practices": 72,
         "seo": 87,
         "pwa": 42
       },
@@ -452,10 +452,10 @@
       "industry": "Search Engine",
       "website_count": 5,
       "averages": {
-        "performance": 51,
-        "accessibility": 84,
+        "performance": 47,
+        "accessibility": 83,
         "best_practices": 85,
-        "seo": 83,
+        "seo": 84,
         "pwa": 33
       },
       "api_endpoint": "industries/search-engine.json"
@@ -466,7 +466,7 @@
       "averages": {
         "performance": 51,
         "accessibility": 86,
-        "best_practices": 80,
+        "best_practices": 83,
         "seo": 93,
         "pwa": 62
       },
@@ -476,10 +476,10 @@
       "industry": "Social Media",
       "website_count": 15,
       "averages": {
-        "performance": 42,
+        "performance": 43,
         "accessibility": 80,
-        "best_practices": 67,
-        "seo": 89,
+        "best_practices": 68,
+        "seo": 88,
         "pwa": 49
       },
       "api_endpoint": "industries/social-media.json"
@@ -489,9 +489,9 @@
       "website_count": 10,
       "averages": {
         "performance": 43,
-        "accessibility": 90,
+        "accessibility": 91,
         "best_practices": 83,
-        "seo": 92,
+        "seo": 93,
         "pwa": 43
       },
       "api_endpoint": "industries/software.json"
@@ -501,10 +501,10 @@
       "website_count": 8,
       "averages": {
         "performance": 41,
-        "accessibility": 77,
-        "best_practices": 80,
-        "seo": 84,
-        "pwa": 40
+        "accessibility": 79,
+        "best_practices": 76,
+        "seo": 87,
+        "pwa": 44
       },
       "api_endpoint": "industries/sports.json"
     },
@@ -522,36 +522,36 @@
     },
     {
       "industry": "Technology",
-      "website_count": 31,
+      "website_count": 33,
       "averages": {
         "performance": 40,
         "accessibility": 88,
         "best_practices": 80,
         "seo": 86,
-        "pwa": 36
+        "pwa": 37
       },
       "api_endpoint": "industries/technology.json"
     },
     {
       "industry": "Telecom",
-      "website_count": 42,
+      "website_count": 44,
       "averages": {
-        "performance": 35,
+        "performance": 33,
         "accessibility": 86,
-        "best_practices": 80,
+        "best_practices": 81,
         "seo": 89,
-        "pwa": 38
+        "pwa": 39
       },
       "api_endpoint": "industries/telecom.json"
     },
     {
       "industry": "Transportation",
-      "website_count": 26,
+      "website_count": 27,
       "averages": {
-        "performance": 38,
-        "accessibility": 88,
-        "best_practices": 78,
-        "seo": 90,
+        "performance": 36,
+        "accessibility": 87,
+        "best_practices": 76,
+        "seo": 88,
         "pwa": 41
       },
       "api_endpoint": "industries/transportation.json"
@@ -560,8 +560,8 @@
       "industry": "Travel",
       "website_count": 7,
       "averages": {
-        "performance": 44,
-        "accessibility": 81,
+        "performance": 41,
+        "accessibility": 80,
         "best_practices": 79,
         "seo": 86,
         "pwa": 60
@@ -572,7 +572,7 @@
       "industry": "Video",
       "website_count": 1,
       "averages": {
-        "performance": 38,
+        "performance": 41,
         "accessibility": 91,
         "best_practices": 75,
         "seo": 93,
@@ -584,7 +584,7 @@
       "industry": "Weather",
       "website_count": 2,
       "averages": {
-        "performance": 29,
+        "performance": 35,
         "accessibility": 96,
         "best_practices": 83,
         "seo": 95,
@@ -596,7 +596,7 @@
       "industry": "Website editor",
       "website_count": 5,
       "averages": {
-        "performance": 67,
+        "performance": 65,
         "accessibility": 94,
         "best_practices": 87,
         "seo": 92,

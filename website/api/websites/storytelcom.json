@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.070Z",
+    "generated_at": "2025-11-14T08:39:15.077Z",
     "url": "storytel.com",
     "country": "Sweden",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 44,
+    "performance": 41,
     "accessibility": 97,
     "best_practices": 92,
     "seo": 83,
     "pwa": 44,
-    "test_date": "2025-10-31 10:12:28"
+    "test_date": "2025-11-07 10:15:09"
   },
   "historical_data": [
+    {
+      "performance": 41,
+      "accessibility": 97,
+      "best_practices": 92,
+      "seo": 83,
+      "pwa": 44,
+      "test_date": "2025-11-07 10:15:09"
+    },
     {
       "performance": 44,
       "accessibility": 97,
@@ -23,5 +31,13 @@
       "test_date": "2025-10-31 10:12:28"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-07 10:15:09",
+    "test_date_previous": "2025-10-31 10:12:28"
+  }
 }

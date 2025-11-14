@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.987Z",
+    "generated_at": "2025-11-14T08:39:14.772Z",
     "url": "scotiabank.com",
     "country": "Canada",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 28,
     "accessibility": 100,
     "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-31 03:06:14"
+    "test_date": "2025-11-14 03:07:24"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-14 03:07:24"
+    },
+    {
+      "performance": 35,
+      "accessibility": 100,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-07 03:06:19"
+    },
     {
       "performance": 37,
       "accessibility": 100,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -7,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 03:06:14",
-    "test_date_previous": "2025-10-23 19:33:56"
+    "test_date_current": "2025-11-14 03:07:24",
+    "test_date_previous": "2025-11-07 03:06:19"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.099Z",
+    "generated_at": "2025-11-14T08:39:14.803Z",
     "url": "banknorwegian.fi",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 72,
+    "performance": 62,
     "accessibility": 94,
     "best_practices": 92,
     "seo": 100,
     "pwa": 67,
-    "test_date": "2025-11-02 12:20:44"
+    "test_date": "2025-11-09 12:20:44"
   },
   "historical_data": [
+    {
+      "performance": 62,
+      "accessibility": 94,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 67,
+      "test_date": "2025-11-09 12:20:44"
+    },
     {
       "performance": 72,
       "accessibility": 94,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 31,
+    "performance": -10,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 12:20:44",
-    "test_date_previous": "2025-10-26 15:54:58"
+    "test_date_current": "2025-11-09 12:20:44",
+    "test_date_previous": "2025-11-02 12:20:44"
   }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.401Z",
+    "generated_at": "2025-11-14T08:39:15.163Z",
     "url": "usatoday.com",
     "country": "United States",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 42,
-    "accessibility": 69,
+    "performance": 28,
+    "accessibility": 64,
     "best_practices": 83,
-    "seo": 86,
+    "seo": 92,
     "pwa": 33,
-    "test_date": "2025-11-01 04:25:25"
+    "test_date": "2025-11-08 04:24:51"
   },
   "historical_data": [
+    {
+      "performance": 28,
+      "accessibility": 64,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-08 04:24:51"
+    },
     {
       "performance": 42,
       "accessibility": 69,
@@ -23,5 +31,13 @@
       "test_date": "2025-11-01 04:25:25"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -14,
+    "accessibility": -5,
+    "best_practices": 0,
+    "seo": 6,
+    "pwa": 0,
+    "test_date_current": "2025-11-08 04:24:51",
+    "test_date_previous": "2025-11-01 04:25:25"
+  }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.103Z",
+    "generated_at": "2025-11-14T08:39:15.087Z",
     "url": "rts.ch",
     "country": "Switzerland",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 54,
+    "performance": 55,
     "accessibility": 92,
-    "best_practices": 75,
+    "best_practices": 83,
     "seo": 93,
     "pwa": 33,
-    "test_date": "2025-10-30 22:11:28"
+    "test_date": "2025-11-13 22:12:42"
   },
   "historical_data": [
+    {
+      "performance": 55,
+      "accessibility": 92,
+      "best_practices": 83,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-13 22:12:42"
+    },
+    {
+      "performance": 55,
+      "accessibility": 92,
+      "best_practices": 75,
+      "seo": 93,
+      "pwa": 33,
+      "test_date": "2025-11-06 22:11:28"
+    },
     {
       "performance": 54,
       "accessibility": 92,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -2,
-    "accessibility": -7,
-    "best_practices": -8,
-    "seo": -7,
+    "performance": 0,
+    "accessibility": 0,
+    "best_practices": 8,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 22:11:28",
-    "test_date_previous": "2025-10-23 16:43:05"
+    "test_date_current": "2025-11-13 22:12:42",
+    "test_date_previous": "2025-11-06 22:11:28"
   }
 }

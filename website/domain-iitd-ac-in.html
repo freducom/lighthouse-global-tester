@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:30.712Z",
+          "dateCreated": "2025-11-14T08:39:05.291Z",
           "about": {
             "@type": "WebSite",
             "name": "iitd.ac.in",
@@ -94,10 +94,10 @@
           "name": "iitd.ac.in Performance Metrics",
           "description": "Latest Lighthouse scores for iitd.ac.in",
           "performanceScore": 29,
-          "accessibilityScore": 81,
+          "accessibilityScore": 83,
           "bestPracticesScore": 83,
           "seoScore": 83,
-          "dateRecorded": "2025-10-28 14:19:44"
+          "dateRecorded": "2025-11-11 12:28:24"
         }
       ]
     }
@@ -122,7 +122,7 @@
             </div>
             <div class="stat-card accessibility">
                 <h3>Accessibility</h3>
-                <div class="stat-number good">81%</div>
+                <div class="stat-number good">83%</div>
                 <div class="stat-description">good performance</div>
             </div>
             <div class="stat-card seo">
@@ -139,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -159,8 +159,8 @@
                 <div class="score-item">
                     <span class="score-label">Accessibility:</span>
                     <div class="score-bar">
-                        <div class="score-fill accessibility" style="width: 81%"></div>
-                        <span class="score-text">81%</span>
+                        <div class="score-fill accessibility" style="width: 83%"></div>
+                        <span class="score-text">83%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":1096,"url":"iitd.ac.in","performance":29,"accessibility":81,"best_practices":83,"seo":83,"pwa":22,"test_date":"2025-10-28 14:19:44","country":"India","industry":"Education"},{"id":2105,"url":"iitd.ac.in","performance":10,"accessibility":81,"best_practices":83,"seo":83,"pwa":22,"test_date":"2025-11-04 12:29:13","country":"India","industry":"Education"},{"id":3061,"url":"iitd.ac.in","performance":29,"accessibility":83,"best_practices":83,"seo":83,"pwa":22,"test_date":"2025-11-11 12:28:24","country":"India","industry":"Education"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

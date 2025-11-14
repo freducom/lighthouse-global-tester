@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.038Z",
+    "generated_at": "2025-11-14T08:39:15.068Z",
     "url": "netonnet.se",
     "country": "Sweden",
     "industry": "E-commerce"
   },
   "latest_scores": {
-    "performance": 41,
-    "accessibility": 91,
+    "performance": 36,
+    "accessibility": 93,
     "best_practices": 83,
-    "seo": 91,
+    "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-29 22:20:07"
+    "test_date": "2025-11-12 20:22:17"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 93,
+      "best_practices": 83,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-12 20:22:17"
+    },
+    {
+      "performance": 38,
+      "accessibility": 91,
+      "best_practices": 83,
+      "seo": 91,
+      "pwa": 33,
+      "test_date": "2025-11-05 20:23:40"
+    },
     {
       "performance": 41,
       "accessibility": 91,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-29 22:20:07"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": -2,
+    "accessibility": 2,
+    "best_practices": 0,
+    "seo": 1,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 20:22:17",
+    "test_date_previous": "2025-11-05 20:23:40"
+  }
 }

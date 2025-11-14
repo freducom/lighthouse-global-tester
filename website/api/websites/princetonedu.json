@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.365Z",
+    "generated_at": "2025-11-14T08:39:15.153Z",
     "url": "princeton.edu",
     "country": "United States",
     "industry": "Education"
   },
   "latest_scores": {
-    "performance": 63,
+    "performance": 67,
     "accessibility": 100,
     "best_practices": 92,
     "seo": 92,
     "pwa": 44,
-    "test_date": "2025-10-30 14:10:15"
+    "test_date": "2025-11-13 14:18:50"
   },
   "historical_data": [
+    {
+      "performance": 67,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 44,
+      "test_date": "2025-11-13 14:18:50"
+    },
+    {
+      "performance": 61,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 44,
+      "test_date": "2025-11-06 14:18:33"
+    },
     {
       "performance": 63,
       "accessibility": 100,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 14:10:15"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 6,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 14:18:50",
+    "test_date_previous": "2025-11-06 14:18:33"
+  }
 }

@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.988Z",
+    "generated_at": "2025-11-14T08:39:14.773Z",
     "url": "servicecanada.gc.ca",
     "country": "Canada",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 49,
+    "performance": 48,
     "accessibility": 100,
     "best_practices": 75,
-    "seo": 92,
+    "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-31 03:09:24"
+    "test_date": "2025-11-14 03:10:48"
   },
   "historical_data": [
+    {
+      "performance": 48,
+      "accessibility": 100,
+      "best_practices": 75,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-14 03:10:48"
+    },
     {
       "performance": 49,
       "accessibility": 100,
@@ -40,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 14,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 0,
+    "seo": 7,
     "pwa": 0,
-    "test_date_current": "2025-10-31 03:09:24",
-    "test_date_previous": "2025-10-23 19:35:08"
+    "test_date_current": "2025-11-14 03:10:48",
+    "test_date_previous": "2025-10-31 03:09:24"
   }
 }

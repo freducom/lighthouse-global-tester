@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.215Z",
+    "generated_at": "2025-11-14T08:39:14.843Z",
     "url": "superherocapital.com",
     "country": "Finland",
     "industry": "Finance"
   },
   "latest_scores": {
-    "performance": 75,
+    "performance": 73,
     "accessibility": 90,
     "best_practices": 83,
-    "seo": 79,
+    "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-31 12:19:05"
+    "test_date": "2025-11-07 12:18:03"
   },
   "historical_data": [
+    {
+      "performance": 73,
+      "accessibility": 90,
+      "best_practices": 83,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-07 12:18:03"
+    },
     {
       "performance": 75,
       "accessibility": 90,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": -7,
+    "seo": 7,
     "pwa": 0,
-    "test_date_current": "2025-10-31 12:19:05",
-    "test_date_previous": "2025-10-24 04:12:38"
+    "test_date_current": "2025-11-07 12:18:03",
+    "test_date_previous": "2025-10-31 12:19:05"
   }
 }

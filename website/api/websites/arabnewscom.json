@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.889Z",
+    "generated_at": "2025-11-14T08:39:15.025Z",
     "url": "arabnews.com",
     "country": "Saudi Arabia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 31,
-    "accessibility": 90,
+    "performance": 36,
+    "accessibility": 88,
     "best_practices": 58,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-11-02 08:18:00"
+    "test_date": "2025-11-09 08:18:13"
   },
   "historical_data": [
+    {
+      "performance": 36,
+      "accessibility": 88,
+      "best_practices": 58,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-09 08:18:13"
+    },
     {
       "performance": 31,
       "accessibility": 90,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
-    "accessibility": 2,
+    "performance": 5,
+    "accessibility": -2,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 08:18:00",
-    "test_date_previous": "2025-10-26 10:10:13"
+    "test_date_current": "2025-11-09 08:18:13",
+    "test_date_previous": "2025-11-02 08:18:00"
   }
 }

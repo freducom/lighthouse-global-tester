@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.152Z",
+    "generated_at": "2025-11-14T08:39:14.170Z",
     "industry": "Software",
     "website_count": 10
   },
   "averages": {
     "performance": 43,
-    "accessibility": 90,
+    "accessibility": 91,
     "best_practices": 83,
-    "seo": 92,
+    "seo": 93,
     "pwa": 43
   },
   "websites": [
@@ -16,73 +16,73 @@
       "url": "digia.com",
       "country": "Finland",
       "scores": {
-        "performance": 53,
+        "performance": 51,
         "accessibility": 89,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-03 08:25:57"
+      "test_date": "2025-11-10 08:25:06"
     },
     {
       "url": "frends.com",
       "country": "Finland",
       "scores": {
-        "performance": 70,
+        "performance": 72,
         "accessibility": 84,
         "best_practices": 92,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-04 00:48:21"
+      "test_date": "2025-11-11 00:49:57"
     },
     {
       "url": "freshworks.com",
       "country": "India",
       "scores": {
-        "performance": 32,
+        "performance": 31,
         "accessibility": 96,
         "best_practices": 67,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-04 00:49:23"
+      "test_date": "2025-11-11 00:50:23"
     },
     {
       "url": "greythr.com",
       "country": "India",
       "scores": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 85,
         "best_practices": 75,
         "seo": 86,
         "pwa": 78
       },
-      "test_date": "2025-11-04 06:19:29"
+      "test_date": "2025-11-11 06:19:35"
     },
     {
       "url": "postman.com",
       "country": "India",
       "scores": {
-        "performance": 34,
-        "accessibility": 80,
+        "performance": 36,
+        "accessibility": 87,
         "best_practices": 83,
-        "seo": 86,
+        "seo": 93,
         "pwa": 89
       },
-      "test_date": "2025-10-30 14:06:12"
+      "test_date": "2025-11-13 14:14:25"
     },
     {
       "url": "zoho.com",
       "country": "India",
       "scores": {
-        "performance": 62,
+        "performance": 63,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 18:20:48"
+      "test_date": "2025-11-08 18:24:12"
     },
     {
       "url": "wix.com",
@@ -94,31 +94,31 @@
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 14:12:29"
+      "test_date": "2025-11-08 14:06:37"
     },
     {
       "url": "visma.se",
       "country": "Sweden",
       "scores": {
-        "performance": 47,
+        "performance": 43,
         "accessibility": 93,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 08:20:18"
+      "test_date": "2025-11-08 08:22:03"
     },
     {
       "url": "atlassian.com",
       "country": "United States",
       "scores": {
-        "performance": 26,
-        "accessibility": 85,
+        "performance": 28,
+        "accessibility": 87,
         "best_practices": 75,
-        "seo": 93,
+        "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-26 10:17:12"
+      "test_date": "2025-11-09 10:09:45"
     },
     {
       "url": "notion.so",
@@ -130,7 +130,7 @@
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-30 03:09:13"
+      "test_date": "2025-11-13 00:49:47"
     }
   ],
   "countries": [
@@ -150,9 +150,9 @@
       "website_count": 4,
       "averages": {
         "performance": 40,
-        "accessibility": 89,
+        "accessibility": 91,
         "best_practices": 79,
-        "seo": 88,
+        "seo": 90,
         "pwa": 58
       }
     },
@@ -171,7 +171,7 @@
       "country": "Sweden",
       "website_count": 1,
       "averages": {
-        "performance": 47,
+        "performance": 43,
         "accessibility": 93,
         "best_practices": 92,
         "seo": 86,
@@ -182,10 +182,10 @@
       "country": "United States",
       "website_count": 2,
       "averages": {
-        "performance": 30,
-        "accessibility": 93,
+        "performance": 31,
+        "accessibility": 94,
         "best_practices": 79,
-        "seo": 97,
+        "seo": 100,
         "pwa": 33
       }
     }

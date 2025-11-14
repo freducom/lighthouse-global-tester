@@ -1,41 +1,29 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:41.763Z",
+    "generated_at": "2025-11-14T08:39:13.167Z",
     "country": "India",
     "flag": "🇮🇳",
-    "website_count": 107
+    "website_count": 111
   },
   "averages": {
-    "performance": 47,
+    "performance": 46,
     "accessibility": 82,
     "best_practices": 76,
     "seo": 85,
-    "pwa": 48
+    "pwa": 47
   },
   "websites": [
-    {
-      "url": "myntra.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 100,
-        "accessibility": 86,
-        "best_practices": 92,
-        "seo": 58,
-        "pwa": 0
-      },
-      "test_date": "2025-10-29 20:15:22"
-    },
     {
       "url": "sbi.co.in",
       "industry": "Finance",
       "scores": {
-        "performance": 99,
+        "performance": 100,
         "accessibility": 77,
         "best_practices": 75,
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-10-31 00:50:50"
+      "test_date": "2025-11-14 00:54:15"
     },
     {
       "url": "uidai.gov.in",
@@ -47,31 +35,19 @@
         "seo": 92,
         "pwa": 33
       },
-      "test_date": "2025-11-01 03:16:36"
+      "test_date": "2025-11-08 03:09:20"
     },
     {
-      "url": "mojapp.in",
-      "industry": "Social",
+      "url": "myntra.com",
+      "industry": "E-commerce",
       "scores": {
-        "performance": 96,
-        "accessibility": 79,
+        "performance": 99,
+        "accessibility": 86,
         "best_practices": 92,
-        "seo": 86,
-        "pwa": 78
+        "seo": 58,
+        "pwa": 0
       },
-      "test_date": "2025-10-29 18:23:28"
-    },
-    {
-      "url": "hotstar.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 94,
-        "accessibility": 71,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 78
-      },
-      "test_date": "2025-11-04 10:17:27"
+      "test_date": "2025-11-12 18:19:53"
     },
     {
       "url": "amazon.in",
@@ -79,131 +55,131 @@
       "scores": {
         "performance": 92,
         "accessibility": 100,
-        "best_practices": 92,
+        "best_practices": 100,
         "seo": 85,
         "pwa": 33
       },
-      "test_date": "2025-11-02 06:18:38"
+      "test_date": "2025-11-09 06:18:29"
     },
     {
       "url": "meesho.com",
       "industry": "E-commerce",
       "scores": {
-        "performance": 89,
+        "performance": 90,
         "accessibility": 86,
         "best_practices": 0,
         "seo": 64,
         "pwa": 0
       },
-      "test_date": "2025-10-29 14:33:28"
-    },
-    {
-      "url": "marutisuzuki.com",
-      "industry": "Automotive",
-      "scores": {
-        "performance": 86,
-        "accessibility": 90,
-        "best_practices": 75,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 12:29:16"
+      "test_date": "2025-11-05 12:20:20"
     },
     {
       "url": "hdfcbank.com",
       "industry": "Finance",
       "scores": {
-        "performance": 82,
+        "performance": 90,
         "accessibility": 81,
         "best_practices": 92,
         "seo": 83,
         "pwa": 33
       },
-      "test_date": "2025-11-04 09:09:35"
+      "test_date": "2025-11-11 08:14:25"
     },
     {
-      "url": "mxplayer.in",
-      "industry": "Media",
+      "url": "pgportal.gov.in",
+      "industry": "Government",
       "scores": {
-        "performance": 81,
-        "accessibility": 48,
+        "performance": 89,
+        "accessibility": 66,
         "best_practices": 83,
-        "seo": 85,
-        "pwa": 33
+        "seo": 75,
+        "pwa": 22
       },
-      "test_date": "2025-10-29 20:13:36"
-    },
-    {
-      "url": "voot.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 79,
-        "accessibility": 71,
-        "best_practices": 75,
-        "seo": 93,
-        "pwa": 78
-      },
-      "test_date": "2025-11-01 10:11:01"
-    },
-    {
-      "url": "zerodha.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 77,
-        "accessibility": 82,
-        "best_practices": 100,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 18:19:06"
+      "test_date": "2025-11-13 10:21:19"
     },
     {
       "url": "bankbazaar.com",
       "industry": "Finance",
       "scores": {
-        "performance": 77,
+        "performance": 86,
         "accessibility": 90,
         "best_practices": 83,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-11-02 12:17:20"
+      "test_date": "2025-11-09 12:17:17"
+    },
+    {
+      "url": "mxplayer.in",
+      "industry": "Media",
+      "scores": {
+        "performance": 82,
+        "accessibility": 48,
+        "best_practices": 83,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 18:18:07"
+    },
+    {
+      "url": "marutisuzuki.com",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 79,
+        "accessibility": 90,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 10:22:12"
     },
     {
       "url": "linkedin.com",
       "industry": "Social",
       "scores": {
-        "performance": 75,
+        "performance": 77,
         "accessibility": 100,
         "best_practices": 67,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-29 08:14:32"
+      "test_date": "2025-11-12 06:17:29"
+    },
+    {
+      "url": "voot.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 76,
+        "accessibility": 71,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-11-08 10:10:54"
+    },
+    {
+      "url": "zerodha.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 76,
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 18:22:57"
     },
     {
       "url": "sharechat.com",
       "industry": "Social",
       "scores": {
-        "performance": 74,
+        "performance": 73,
         "accessibility": 90,
-        "best_practices": 83,
+        "best_practices": 100,
         "seo": 100,
         "pwa": 33
       },
-      "test_date": "2025-10-31 03:19:50"
-    },
-    {
-      "url": "nptel.ac.in",
-      "industry": "Education",
-      "scores": {
-        "performance": 70,
-        "accessibility": 82,
-        "best_practices": 92,
-        "seo": 75,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 04:15:36"
+      "test_date": "2025-11-14 03:19:09"
     },
     {
       "url": "ashokleyland.com",
@@ -218,52 +194,88 @@
       "test_date": "2025-11-02 10:08:53"
     },
     {
-      "url": "unacademy.com",
-      "industry": "Edtech",
+      "url": "nptel.ac.in",
+      "industry": "Education",
       "scores": {
-        "performance": 67,
-        "accessibility": 85,
-        "best_practices": 75,
-        "seo": 91,
-        "pwa": 100
-      },
-      "test_date": "2025-11-01 04:12:57"
-    },
-    {
-      "url": "reliance.com",
-      "industry": "Conglomerate",
-      "scores": {
-        "performance": 62,
-        "accessibility": 95,
-        "best_practices": 100,
-        "seo": 98,
+        "performance": 69,
+        "accessibility": 82,
+        "best_practices": 92,
+        "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-30 20:10:40"
+      "test_date": "2025-11-13 03:09:34"
+    },
+    {
+      "url": "mojapp.in",
+      "industry": "Social",
+      "scores": {
+        "performance": 68,
+        "accessibility": 79,
+        "best_practices": 92,
+        "seo": 86,
+        "pwa": 78
+      },
+      "test_date": "2025-11-12 16:16:55"
+    },
+    {
+      "url": "hotstar.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 64,
+        "accessibility": 86,
+        "best_practices": 92,
+        "seo": 69,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 10:16:39"
     },
     {
       "url": "zoho.com",
       "industry": "Software",
       "scores": {
-        "performance": 62,
+        "performance": 63,
         "accessibility": 94,
         "best_practices": 92,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-01 18:20:48"
+      "test_date": "2025-11-08 18:24:12"
     },
     {
-      "url": "pharmeasy.in",
+      "url": "clevertap.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 61,
+        "accessibility": 81,
+        "best_practices": 67,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 00:50:17"
+    },
+    {
+      "url": "practo.com",
       "industry": "Healthcare",
       "scores": {
         "performance": 59,
-        "accessibility": 82,
-        "best_practices": 67,
-        "seo": 82,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 92,
+        "pwa": 78
+      },
+      "test_date": "2025-11-13 14:16:46"
+    },
+    {
+      "url": "browserstack.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 58,
+        "accessibility": 99,
+        "best_practices": 92,
+        "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-10-30 12:27:49"
+      "test_date": "2025-11-09 18:13:53"
     },
     {
       "url": "facebook.com",
@@ -275,7 +287,7 @@
         "seo": 93,
         "pwa": 78
       },
-      "test_date": "2025-11-03 20:11:19"
+      "test_date": "2025-11-10 20:11:37"
     },
     {
       "url": "timesofindia.com",
@@ -290,64 +302,28 @@
       "test_date": "2025-10-19 19:46:30"
     },
     {
-      "url": "clevertap.com",
-      "industry": "Marketing",
-      "scores": {
-        "performance": 57,
-        "accessibility": 81,
-        "best_practices": 67,
-        "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 00:49:59"
-    },
-    {
-      "url": "jiomart.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 56,
-        "accessibility": 81,
-        "best_practices": 83,
-        "seo": 92,
-        "pwa": 78
-      },
-      "test_date": "2025-10-28 22:10:25"
-    },
-    {
-      "url": "iitk.ac.in",
-      "industry": "Education",
-      "scores": {
-        "performance": 55,
-        "accessibility": 84,
-        "best_practices": 83,
-        "seo": 89,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 14:20:16"
-    },
-    {
       "url": "ixigo.com",
       "industry": "Travel",
       "scores": {
-        "performance": 55,
+        "performance": 57,
         "accessibility": 85,
         "best_practices": 83,
         "seo": 91,
         "pwa": 89
       },
-      "test_date": "2025-10-28 20:35:13"
+      "test_date": "2025-11-11 18:30:06"
     },
     {
-      "url": "rapido.bike",
-      "industry": "Transportation",
+      "url": "reliance.com",
+      "industry": "Conglomerate",
       "scores": {
-        "performance": 55,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 88,
+        "performance": 57,
+        "accessibility": 95,
+        "best_practices": 100,
+        "seo": 98,
         "pwa": 33
       },
-      "test_date": "2025-10-30 16:37:03"
+      "test_date": "2025-11-13 20:11:35"
     },
     {
       "url": "byjus.com",
@@ -362,28 +338,64 @@
       "test_date": "2025-11-02 18:32:05"
     },
     {
-      "url": "pgportal.gov.in",
-      "industry": "Government",
+      "url": "du.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 55,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 72,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 10:21:11"
+    },
+    {
+      "url": "jnu.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 55,
+        "accessibility": 74,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 20:12:58"
+    },
+    {
+      "url": "sebi.gov.in",
+      "industry": "Finance",
+      "scores": {
+        "performance": 55,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 73,
+        "pwa": 33
+      },
+      "test_date": "2025-11-14 03:09:12"
+    },
+    {
+      "url": "annauniv.edu",
+      "industry": "Education",
       "scores": {
         "performance": 54,
-        "accessibility": 66,
-        "best_practices": 83,
+        "accessibility": 68,
+        "best_practices": 67,
         "seo": 75,
         "pwa": 22
       },
-      "test_date": "2025-10-30 12:27:21"
+      "test_date": "2025-11-09 08:14:52"
     },
     {
-      "url": "redbus.in",
-      "industry": "Travel",
+      "url": "phonepe.com",
+      "industry": "Finance",
       "scores": {
         "performance": 54,
-        "accessibility": 76,
-        "best_practices": 100,
-        "seo": 93,
-        "pwa": 56
+        "accessibility": 80,
+        "best_practices": 67,
+        "seo": 91,
+        "pwa": 78
       },
-      "test_date": "2025-10-30 18:22:29"
+      "test_date": "2025-11-13 10:25:41"
     },
     {
       "url": "iisc.ac.in",
@@ -395,19 +407,19 @@
         "seo": 84,
         "pwa": 33
       },
-      "test_date": "2025-10-28 14:18:43"
+      "test_date": "2025-11-11 12:27:22"
     },
     {
-      "url": "practo.com",
-      "industry": "Healthcare",
+      "url": "rapido.bike",
+      "industry": "Transportation",
       "scores": {
         "performance": 53,
-        "accessibility": 76,
+        "accessibility": 97,
         "best_practices": 83,
-        "seo": 92,
-        "pwa": 78
+        "seo": 88,
+        "pwa": 33
       },
-      "test_date": "2025-10-30 14:08:25"
+      "test_date": "2025-11-13 16:33:04"
     },
     {
       "url": "rbi.org.in",
@@ -419,67 +431,67 @@
         "seo": 67,
         "pwa": 11
       },
-      "test_date": "2025-10-30 18:19:26"
-    },
-    {
-      "url": "axisbank.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 53,
-        "accessibility": 85,
-        "best_practices": 75,
-        "seo": 84,
-        "pwa": 56
-      },
-      "test_date": "2025-11-02 10:18:22"
-    },
-    {
-      "url": "idfcfirstbank.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 52,
-        "accessibility": 64,
-        "best_practices": 75,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 14:16:40"
-    },
-    {
-      "url": "paytm.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 52,
-        "accessibility": 73,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 12:18:42"
-    },
-    {
-      "url": "icicibank.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 51,
-        "accessibility": 96,
-        "best_practices": 92,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 14:14:19"
+      "test_date": "2025-11-13 18:18:07"
     },
     {
       "url": "instagram.com",
       "industry": "Social",
       "scores": {
-        "performance": 49,
+        "performance": 52,
         "accessibility": 90,
         "best_practices": 75,
         "seo": 94,
         "pwa": 67
       },
-      "test_date": "2025-10-28 18:25:31"
+      "test_date": "2025-11-11 16:24:49"
+    },
+    {
+      "url": "paytm.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 51,
+        "accessibility": 73,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 10:12:49"
+    },
+    {
+      "url": "unacademy.com",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 50,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 91,
+        "pwa": 100
+      },
+      "test_date": "2025-11-08 04:11:44"
+    },
+    {
+      "url": "icicibank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 50,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 12:22:56"
+    },
+    {
+      "url": "cricbuzz.com",
+      "industry": "Sports",
+      "scores": {
+        "performance": 49,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 99,
+        "pwa": 33
+      },
+      "test_date": "2025-11-10 04:22:28"
     },
     {
       "url": "mha.gov.in",
@@ -488,58 +500,10 @@
         "performance": 49,
         "accessibility": 96,
         "best_practices": 75,
-        "seo": 73,
-        "pwa": 33
+        "seo": 82,
+        "pwa": 22
       },
-      "test_date": "2025-10-29 16:16:44"
-    },
-    {
-      "url": "phonepe.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 48,
-        "accessibility": 80,
-        "best_practices": 67,
-        "seo": 91,
-        "pwa": 78
-      },
-      "test_date": "2025-10-30 12:31:47"
-    },
-    {
-      "url": "cricbuzz.com",
-      "industry": "Sports",
-      "scores": {
-        "performance": 48,
-        "accessibility": 86,
-        "best_practices": 75,
-        "seo": 91,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 04:24:06"
-    },
-    {
-      "url": "firstpost.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 48,
-        "accessibility": 91,
-        "best_practices": 67,
-        "seo": 90,
-        "pwa": 78
-      },
-      "test_date": "2025-11-03 22:13:12"
-    },
-    {
-      "url": "inmobi.com",
-      "industry": "Marketing",
-      "scores": {
-        "performance": 47,
-        "accessibility": 85,
-        "best_practices": 67,
-        "seo": 93,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 18:23:27"
+      "test_date": "2025-11-12 14:13:10"
     },
     {
       "url": "epfindia.gov.in",
@@ -551,67 +515,127 @@
         "seo": 62,
         "pwa": 0
       },
-      "test_date": "2025-11-03 16:23:45"
-    },
-    {
-      "url": "mygov.in",
-      "industry": "Government",
-      "scores": {
-        "performance": 45,
-        "accessibility": 84,
-        "best_practices": 92,
-        "seo": 76,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 20:14:36"
-    },
-    {
-      "url": "groww.in",
-      "industry": "Finance",
-      "scores": {
-        "performance": 45,
-        "accessibility": 80,
-        "best_practices": 75,
-        "seo": 95,
-        "pwa": 67
-      },
-      "test_date": "2025-11-04 06:19:46"
+      "test_date": "2025-11-10 16:24:55"
     },
     {
       "url": "iitb.ac.in",
       "industry": "Education",
       "scores": {
-        "performance": 44,
+        "performance": 47,
         "accessibility": 96,
         "best_practices": 100,
         "seo": 86,
         "pwa": 22
       },
-      "test_date": "2025-10-28 14:19:07"
+      "test_date": "2025-11-11 12:27:47"
     },
     {
-      "url": "niti.gov.in",
-      "industry": "Government",
-      "scores": {
-        "performance": 44,
-        "accessibility": 98,
-        "best_practices": 83,
-        "seo": 84,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 01:03:05"
-    },
-    {
-      "url": "browserstack.com",
+      "url": "infosys.com",
       "industry": "Technology",
       "scores": {
-        "performance": 44,
-        "accessibility": 99,
-        "best_practices": 92,
+        "performance": 47,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 16:19:18"
+    },
+    {
+      "url": "snapdeal.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 47,
+        "accessibility": 55,
+        "best_practices": 75,
+        "seo": 93,
+        "pwa": 89
+      },
+      "test_date": "2025-11-14 06:22:47"
+    },
+    {
+      "url": "zomato.com",
+      "industry": "Delivery",
+      "scores": {
+        "performance": 46,
+        "accessibility": 74,
+        "best_practices": 75,
+        "seo": 86,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 20:09:12"
+    },
+    {
+      "url": "iitk.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 46,
+        "accessibility": 84,
+        "best_practices": 83,
         "seo": 89,
         "pwa": 33
       },
-      "test_date": "2025-11-02 18:12:07"
+      "test_date": "2025-11-11 14:11:00"
+    },
+    {
+      "url": "indiatoday.in",
+      "industry": "Media",
+      "scores": {
+        "performance": 46,
+        "accessibility": 92,
+        "best_practices": 83,
+        "seo": 99,
+        "pwa": 78
+      },
+      "test_date": "2025-11-11 14:31:54"
+    },
+    {
+      "url": "nykaa.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 46,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 78
+      },
+      "test_date": "2025-11-13 03:23:11"
+    },
+    {
+      "url": "redbus.in",
+      "industry": "Travel",
+      "scores": {
+        "performance": 46,
+        "accessibility": 68,
+        "best_practices": 100,
+        "seo": 93,
+        "pwa": 56
+      },
+      "test_date": "2025-11-13 18:23:48"
+    },
+    {
+      "url": "inmobi.com",
+      "industry": "Marketing",
+      "scores": {
+        "performance": 44,
+        "accessibility": 85,
+        "best_practices": 67,
+        "seo": 93,
+        "pwa": 33
+      },
+      "test_date": "2025-11-04 16:22:48"
+    },
+    {
+      "url": "scroll.in",
+      "industry": "Media",
+      "scores": {
+        "performance": 44,
+        "accessibility": 47,
+        "best_practices": 83,
+        "seo": 86,
+        "pwa": 89
+      },
+      "test_date": "2025-11-14 03:08:29"
     },
     {
       "url": "makemytrip.com",
@@ -626,136 +650,88 @@
       "test_date": "2025-10-29 10:27:51"
     },
     {
-      "url": "nykaa.com",
-      "industry": "E-commerce",
+      "url": "idfcfirstbank.com",
+      "industry": "Finance",
       "scores": {
         "performance": 43,
+        "accessibility": 64,
+        "best_practices": 58,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 12:25:20"
+    },
+    {
+      "url": "mahindra.com",
+      "industry": "Automotive",
+      "scores": {
+        "performance": 41,
         "accessibility": 90,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 78
-      },
-      "test_date": "2025-10-30 04:29:08"
-    },
-    {
-      "url": "snapdeal.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 43,
-        "accessibility": 55,
         "best_practices": 83,
-        "seo": 93,
-        "pwa": 89
+        "seo": 86,
+        "pwa": 33
       },
-      "test_date": "2025-10-31 06:21:14"
+      "test_date": "2025-11-05 08:25:35"
     },
     {
-      "url": "annauniv.edu",
-      "industry": "Education",
+      "url": "tcs.com",
+      "industry": "Technology",
       "scores": {
-        "performance": 43,
-        "accessibility": 68,
+        "performance": 41,
+        "accessibility": 94,
         "best_practices": 67,
-        "seo": 75,
-        "pwa": 22
+        "seo": 93,
+        "pwa": 67
       },
-      "test_date": "2025-11-02 08:14:46"
+      "test_date": "2025-11-07 14:24:18"
     },
     {
       "url": "bharatpetroleum.in",
       "industry": "Energy",
       "scores": {
-        "performance": 42,
+        "performance": 41,
         "accessibility": 88,
         "best_practices": 58,
         "seo": 72,
         "pwa": 33
       },
-      "test_date": "2025-11-02 14:11:16"
+      "test_date": "2025-11-09 14:05:49"
     },
     {
-      "url": "du.ac.in",
-      "industry": "Education",
+      "url": "groww.in",
+      "industry": "Finance",
       "scores": {
-        "performance": 42,
+        "performance": 40,
+        "accessibility": 80,
+        "best_practices": 75,
+        "seo": 95,
+        "pwa": 67
+      },
+      "test_date": "2025-11-11 06:19:51"
+    },
+    {
+      "url": "pharmeasy.in",
+      "industry": "Healthcare",
+      "scores": {
+        "performance": 40,
+        "accessibility": 82,
+        "best_practices": 75,
+        "seo": 81,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 10:21:49"
+    },
+    {
+      "url": "simplilearn.com",
+      "industry": "Edtech",
+      "scores": {
+        "performance": 40,
         "accessibility": 73,
-        "best_practices": 83,
-        "seo": 72,
-        "pwa": 33
-      },
-      "test_date": "2025-11-03 10:21:50"
-    },
-    {
-      "url": "wipro.com",
-      "industry": "Technology",
-      "scores": {
-        "performance": 41,
-        "accessibility": 64,
         "best_practices": 67,
-        "seo": 79,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 14:08:13"
-    },
-    {
-      "url": "zomato.com",
-      "industry": "Delivery",
-      "scores": {
-        "performance": 41,
-        "accessibility": 74,
-        "best_practices": 75,
         "seo": 86,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 20:08:35"
-    },
-    {
-      "url": "goibibo.com",
-      "industry": "Travel",
-      "scores": {
-        "performance": 41,
-        "accessibility": 97,
-        "best_practices": 83,
-        "seo": 79,
-        "pwa": 89
-      },
-      "test_date": "2025-11-04 04:12:28"
-    },
-    {
-      "url": "mea.gov.in",
-      "industry": "Government",
-      "scores": {
-        "performance": 40,
-        "accessibility": 87,
-        "best_practices": 75,
-        "seo": 89,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 12:33:48"
-    },
-    {
-      "url": "yatra.com",
-      "industry": "Travel",
-      "scores": {
-        "performance": 40,
-        "accessibility": 58,
-        "best_practices": 67,
-        "seo": 75,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 16:17:57"
-    },
-    {
-      "url": "indiatoday.in",
-      "industry": "Media",
-      "scores": {
-        "performance": 39,
-        "accessibility": 84,
-        "best_practices": 67,
-        "seo": 92,
         "pwa": 78
       },
-      "test_date": "2025-10-28 16:47:07"
+      "test_date": "2025-11-14 04:25:00"
     },
     {
       "url": "olacabs.com",
@@ -770,40 +746,52 @@
       "test_date": "2025-10-30 06:28:28"
     },
     {
-      "url": "sebi.gov.in",
-      "industry": "Finance",
+      "url": "yatra.com",
+      "industry": "Travel",
       "scores": {
         "performance": 39,
-        "accessibility": 68,
-        "best_practices": 83,
-        "seo": 73,
+        "accessibility": 58,
+        "best_practices": 67,
+        "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-10-31 03:07:35"
+      "test_date": "2025-11-08 16:18:46"
     },
     {
-      "url": "twitter.com",
-      "industry": "Social",
+      "url": "thehindu.com",
+      "industry": "Media",
       "scores": {
         "performance": 38,
-        "accessibility": 87,
-        "best_practices": 92,
-        "seo": 91,
-        "pwa": 89
+        "accessibility": 75,
+        "best_practices": 83,
+        "seo": 75,
+        "pwa": 22
       },
-      "test_date": "2025-11-01 03:11:20"
+      "test_date": "2025-11-07 18:31:44"
     },
     {
-      "url": "cure.fit",
-      "industry": "Healthtech",
+      "url": "youtube.com",
+      "industry": "Media",
       "scores": {
         "performance": 38,
-        "accessibility": 76,
+        "accessibility": 91,
         "best_practices": 75,
-        "seo": 96,
-        "pwa": 78
+        "seo": 100,
+        "pwa": 33
       },
-      "test_date": "2025-11-03 04:29:00"
+      "test_date": "2025-11-08 18:11:57"
+    },
+    {
+      "url": "policybazaar.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 38,
+        "accessibility": 68,
+        "best_practices": 83,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 12:21:24"
     },
     {
       "url": "zee5.com",
@@ -818,112 +806,148 @@
       "test_date": "2025-10-19 19:49:11"
     },
     {
-      "url": "jnu.ac.in",
-      "industry": "Education",
-      "scores": {
-        "performance": 37,
-        "accessibility": 74,
-        "best_practices": 83,
-        "seo": 79,
-        "pwa": 33
-      },
-      "test_date": "2025-10-28 22:10:50"
-    },
-    {
-      "url": "policybazaar.com",
-      "industry": "Finance",
-      "scores": {
-        "performance": 37,
-        "accessibility": 68,
-        "best_practices": 83,
-        "seo": 76,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 13:36:41"
-    },
-    {
-      "url": "tatacliq.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 37,
-        "accessibility": 91,
-        "best_practices": 67,
-        "seo": 100,
-        "pwa": 100
-      },
-      "test_date": "2025-10-31 14:22:45"
-    },
-    {
-      "url": "tcs.com",
-      "industry": "Technology",
-      "scores": {
-        "performance": 37,
-        "accessibility": 94,
-        "best_practices": 67,
-        "seo": 93,
-        "pwa": 67
-      },
-      "test_date": "2025-10-31 14:23:10"
-    },
-    {
-      "url": "youtube.com",
+      "url": "indiatimes.com",
       "industry": "Media",
       "scores": {
-        "performance": 37,
-        "accessibility": 91,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 18:11:21"
-    },
-    {
-      "url": "flipkart.com",
-      "industry": "E-commerce",
-      "scores": {
-        "performance": 37,
-        "accessibility": 83,
-        "best_practices": 92,
-        "seo": 93,
-        "pwa": 100
-      },
-      "test_date": "2025-11-03 22:14:04"
-    },
-    {
-      "url": "kotak.com",
-      "industry": "Finance",
-      "scores": {
         "performance": 36,
-        "accessibility": 74,
-        "best_practices": 58,
-        "seo": 78,
+        "accessibility": 94,
+        "best_practices": 83,
+        "seo": 91,
         "pwa": 33
       },
-      "test_date": "2025-10-29 03:15:21"
-    },
-    {
-      "url": "simplilearn.com",
-      "industry": "Edtech",
-      "scores": {
-        "performance": 35,
-        "accessibility": 73,
-        "best_practices": 67,
-        "seo": 86,
-        "pwa": 78
-      },
-      "test_date": "2025-10-31 04:22:25"
+      "test_date": "2025-11-04 14:34:39"
     },
     {
       "url": "postman.com",
       "industry": "Software",
       "scores": {
-        "performance": 34,
-        "accessibility": 80,
+        "performance": 36,
+        "accessibility": 87,
         "best_practices": 83,
-        "seo": 86,
+        "seo": 93,
         "pwa": 89
       },
-      "test_date": "2025-10-30 14:06:12"
+      "test_date": "2025-11-13 14:14:25"
+    },
+    {
+      "url": "rediff.com",
+      "industry": "Portal",
+      "scores": {
+        "performance": 36,
+        "accessibility": 83,
+        "best_practices": 75,
+        "seo": 85,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 18:24:48"
+    },
+    {
+      "url": "tatacliq.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 35,
+        "accessibility": 91,
+        "best_practices": 58,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-11-07 14:23:53"
+    },
+    {
+      "url": "uber.com",
+      "industry": "Transportation",
+      "scores": {
+        "performance": 35,
+        "accessibility": 82,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 03:03:52"
+    },
+    {
+      "url": "wipro.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 35,
+        "accessibility": 64,
+        "best_practices": 67,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 14:02:17"
+    },
+    {
+      "url": "business-standard.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 89,
+        "best_practices": 83,
+        "seo": 83,
+        "pwa": 33
+      },
+      "test_date": "2025-11-09 18:18:29"
+    },
+    {
+      "url": "dnaindia.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 35,
+        "accessibility": 87,
+        "best_practices": 75,
+        "seo": 92,
+        "pwa": 22
+      },
+      "test_date": "2025-11-10 10:13:32"
+    },
+    {
+      "url": "flipkart.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 35,
+        "accessibility": 83,
+        "best_practices": 92,
+        "seo": 93,
+        "pwa": 100
+      },
+      "test_date": "2025-11-10 22:12:25"
+    },
+    {
+      "url": "goibibo.com",
+      "industry": "Travel",
+      "scores": {
+        "performance": 35,
+        "accessibility": 97,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 89
+      },
+      "test_date": "2025-11-11 04:15:01"
+    },
+    {
+      "url": "niti.gov.in",
+      "industry": "Government",
+      "scores": {
+        "performance": 35,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 84,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 00:44:24"
+    },
+    {
+      "url": "razorpay.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 35,
+        "accessibility": 84,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 18:14:36"
     },
     {
       "url": "hindustantimes.com",
@@ -938,64 +962,88 @@
       "test_date": "2025-11-04 09:12:32"
     },
     {
-      "url": "indiatimes.com",
-      "industry": "Media",
+      "url": "twitter.com",
+      "industry": "Social",
       "scores": {
-        "performance": 33,
-        "accessibility": 94,
-        "best_practices": 83,
+        "performance": 34,
+        "accessibility": 87,
+        "best_practices": 92,
         "seo": 91,
-        "pwa": 33
+        "pwa": 89
       },
-      "test_date": "2025-10-28 16:46:26"
+      "test_date": "2025-11-08 03:03:19"
     },
     {
-      "url": "infosys.com",
+      "url": "firstpost.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 34,
+        "accessibility": 91,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 78
+      },
+      "test_date": "2025-11-10 22:11:24"
+    },
+    {
+      "url": "vit.ac.in",
+      "industry": "Education",
+      "scores": {
+        "performance": 33,
+        "accessibility": 79,
+        "best_practices": 83,
+        "seo": 90,
+        "pwa": 33
+      },
+      "test_date": "2025-11-08 08:22:40"
+    },
+    {
+      "url": "cure.fit",
+      "industry": "Healthtech",
+      "scores": {
+        "performance": 33,
+        "accessibility": 76,
+        "best_practices": 83,
+        "seo": 96,
+        "pwa": 78
+      },
+      "test_date": "2025-11-10 04:25:21"
+    },
+    {
+      "url": "ltimindtree.com",
       "industry": "Technology",
       "scores": {
         "performance": 33,
-        "accessibility": 94,
-        "best_practices": 67,
-        "seo": 83,
+        "accessibility": 75,
+        "best_practices": 58,
+        "seo": 71,
         "pwa": 33
       },
-      "test_date": "2025-10-28 18:18:32"
+      "test_date": "2025-11-12 06:30:07"
     },
     {
-      "url": "thehindu.com",
+      "url": "oneindia.com",
       "industry": "Media",
       "scores": {
-        "performance": 33,
-        "accessibility": 75,
-        "best_practices": 83,
-        "seo": 74,
-        "pwa": 33
-      },
-      "test_date": "2025-10-31 18:33:55"
-    },
-    {
-      "url": "uber.com",
-      "industry": "Transportation",
-      "scores": {
-        "performance": 33,
+        "performance": 32,
         "accessibility": 83,
-        "best_practices": 100,
-        "seo": 92,
-        "pwa": 33
+        "best_practices": 67,
+        "seo": 85,
+        "pwa": 100
       },
-      "test_date": "2025-11-01 03:11:51"
+      "test_date": "2025-11-06 06:19:45"
     },
     {
       "url": "1mg.com",
       "industry": "Healthcare",
       "scores": {
-        "performance": 33,
+        "performance": 32,
         "accessibility": 97,
         "best_practices": 83,
-        "seo": 92,
+        "seo": 100,
         "pwa": 89
       },
-      "test_date": "2025-11-02 00:49:24"
+      "test_date": "2025-11-09 00:48:19"
     },
     {
       "url": "aiims.edu",
@@ -1007,7 +1055,7 @@
         "seo": 50,
         "pwa": 0
       },
-      "test_date": "2025-11-02 04:15:41"
+      "test_date": "2025-11-09 04:14:17"
     },
     {
       "url": "amrita.edu",
@@ -1019,139 +1067,91 @@
         "seo": 75,
         "pwa": 33
       },
-      "test_date": "2025-11-02 06:21:51"
-    },
-    {
-      "url": "business-standard.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 32,
-        "accessibility": 89,
-        "best_practices": 83,
-        "seo": 83,
-        "pwa": 33
-      },
-      "test_date": "2025-11-02 18:17:59"
-    },
-    {
-      "url": "dnaindia.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 32,
-        "accessibility": 87,
-        "best_practices": 75,
-        "seo": 92,
-        "pwa": 22
-      },
-      "test_date": "2025-11-03 10:13:27"
+      "test_date": "2025-11-09 06:22:57"
     },
     {
       "url": "freshworks.com",
       "industry": "Software",
       "scores": {
-        "performance": 32,
+        "performance": 31,
         "accessibility": 96,
         "best_practices": 67,
         "seo": 93,
         "pwa": 33
       },
-      "test_date": "2025-11-04 00:49:23"
-    },
-    {
-      "url": "news18.com",
-      "industry": "Media",
-      "scores": {
-        "performance": 31,
-        "accessibility": 72,
-        "best_practices": 67,
-        "seo": 76,
-        "pwa": 89
-      },
-      "test_date": "2025-10-30 00:49:46"
-    },
-    {
-      "url": "rediff.com",
-      "industry": "Portal",
-      "scores": {
-        "performance": 31,
-        "accessibility": 83,
-        "best_practices": 67,
-        "seo": 85,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 18:24:00"
-    },
-    {
-      "url": "vit.ac.in",
-      "industry": "Education",
-      "scores": {
-        "performance": 31,
-        "accessibility": 81,
-        "best_practices": 83,
-        "seo": 90,
-        "pwa": 33
-      },
-      "test_date": "2025-11-01 08:20:55"
-    },
-    {
-      "url": "scroll.in",
-      "industry": "Media",
-      "scores": {
-        "performance": 30,
-        "accessibility": 47,
-        "best_practices": 83,
-        "seo": 86,
-        "pwa": 89
-      },
-      "test_date": "2025-10-31 03:06:51"
+      "test_date": "2025-11-11 00:50:23"
     },
     {
       "url": "greythr.com",
       "industry": "Software",
       "scores": {
-        "performance": 30,
+        "performance": 31,
         "accessibility": 85,
         "best_practices": 75,
         "seo": 86,
         "pwa": 78
       },
-      "test_date": "2025-11-04 06:19:29"
+      "test_date": "2025-11-11 06:19:35"
+    },
+    {
+      "url": "mygov.in",
+      "industry": "Government",
+      "scores": {
+        "performance": 31,
+        "accessibility": 84,
+        "best_practices": 92,
+        "seo": 76,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 18:19:12"
+    },
+    {
+      "url": "aha.video",
+      "industry": "Media",
+      "scores": {
+        "performance": 30,
+        "accessibility": 100,
+        "best_practices": 75,
+        "seo": 100,
+        "pwa": 100
+      },
+      "test_date": "2025-11-09 04:13:25"
+    },
+    {
+      "url": "hcltech.com",
+      "industry": "Technology",
+      "scores": {
+        "performance": 30,
+        "accessibility": 98,
+        "best_practices": 83,
+        "seo": 79,
+        "pwa": 33
+      },
+      "test_date": "2025-11-11 08:14:10"
+    },
+    {
+      "url": "axisbank.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 29,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 84,
+        "pwa": 56
+      },
+      "test_date": "2025-11-09 10:18:19"
     },
     {
       "url": "iitd.ac.in",
       "industry": "Education",
       "scores": {
         "performance": 29,
-        "accessibility": 81,
+        "accessibility": 83,
         "best_practices": 83,
         "seo": 83,
         "pwa": 22
       },
-      "test_date": "2025-10-28 14:19:44"
-    },
-    {
-      "url": "ntpc.co.in",
-      "industry": "Energy",
-      "scores": {
-        "performance": 28,
-        "accessibility": 86,
-        "best_practices": 83,
-        "seo": 89,
-        "pwa": 33
-      },
-      "test_date": "2025-10-30 04:22:09"
-    },
-    {
-      "url": "aha.video",
-      "industry": "Media",
-      "scores": {
-        "performance": 28,
-        "accessibility": 100,
-        "best_practices": 75,
-        "seo": 100,
-        "pwa": 100
-      },
-      "test_date": "2025-11-02 04:14:52"
+      "test_date": "2025-11-11 12:28:24"
     },
     {
       "url": "atherenergy.com",
@@ -1163,19 +1163,43 @@
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-02 10:10:01"
+      "test_date": "2025-11-09 10:09:24"
+    },
+    {
+      "url": "jiomart.com",
+      "industry": "E-commerce",
+      "scores": {
+        "performance": 28,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 87,
+        "pwa": 78
+      },
+      "test_date": "2025-11-11 20:12:33"
+    },
+    {
+      "url": "ntpc.co.in",
+      "industry": "Energy",
+      "scores": {
+        "performance": 28,
+        "accessibility": 86,
+        "best_practices": 83,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-11-13 03:18:27"
     },
     {
       "url": "bajajauto.com",
       "industry": "Automotive",
       "scores": {
-        "performance": 26,
+        "performance": 27,
         "accessibility": 69,
         "best_practices": 75,
         "seo": 86,
         "pwa": 33
       },
-      "test_date": "2025-11-02 12:15:26"
+      "test_date": "2025-11-09 12:15:39"
     },
     {
       "url": "ndtv.com",
@@ -1199,7 +1223,31 @@
         "seo": 97,
         "pwa": 33
       },
-      "test_date": "2025-11-02 14:12:00"
+      "test_date": "2025-11-09 14:06:23"
+    },
+    {
+      "url": "manipal.edu",
+      "industry": "Education",
+      "scores": {
+        "performance": 25,
+        "accessibility": 61,
+        "best_practices": 58,
+        "seo": 70,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 10:16:34"
+    },
+    {
+      "url": "news18.com",
+      "industry": "Media",
+      "scores": {
+        "performance": 25,
+        "accessibility": 51,
+        "best_practices": 58,
+        "seo": 69,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 22:14:17"
     },
     {
       "url": "moneycontrol.com",
@@ -1214,18 +1262,6 @@
       "test_date": "2025-10-19 19:47:14"
     },
     {
-      "url": "manipal.edu",
-      "industry": "Education",
-      "scores": {
-        "performance": 24,
-        "accessibility": 61,
-        "best_practices": 58,
-        "seo": 70,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 12:22:52"
-    },
-    {
       "url": "swiggy.com",
       "industry": "Delivery",
       "scores": {
@@ -1235,7 +1271,19 @@
         "seo": 99,
         "pwa": 89
       },
-      "test_date": "2025-10-31 12:22:06"
+      "test_date": "2025-11-07 12:23:15"
+    },
+    {
+      "url": "kotak.com",
+      "industry": "Finance",
+      "scores": {
+        "performance": 24,
+        "accessibility": 75,
+        "best_practices": 58,
+        "seo": 78,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 00:50:58"
     },
     {
       "url": "vedantu.com",
@@ -1247,19 +1295,7 @@
         "seo": 84,
         "pwa": 67
       },
-      "test_date": "2025-11-01 06:21:03"
-    },
-    {
-      "url": "ltimindtree.com",
-      "industry": "Technology",
-      "scores": {
-        "performance": 17,
-        "accessibility": 75,
-        "best_practices": 58,
-        "seo": 71,
-        "pwa": 33
-      },
-      "test_date": "2025-10-29 08:27:12"
+      "test_date": "2025-11-08 06:23:02"
     },
     {
       "url": "rblbank.com",
@@ -1272,6 +1308,18 @@
         "pwa": 33
       },
       "test_date": "2025-10-30 18:20:12"
+    },
+    {
+      "url": "mea.gov.in",
+      "industry": "Government",
+      "scores": {
+        "performance": 16,
+        "accessibility": 87,
+        "best_practices": 58,
+        "seo": 89,
+        "pwa": 33
+      },
+      "test_date": "2025-11-12 12:18:36"
     },
     {
       "url": "altbalaji.com",
@@ -1289,32 +1337,32 @@
       "url": "tcsion.com",
       "industry": "Technology",
       "scores": {
-        "performance": 5,
+        "performance": 3,
         "accessibility": 71,
         "best_practices": 75,
         "seo": 0,
         "pwa": 33
       },
-      "test_date": "2025-10-31 14:23:53"
+      "test_date": "2025-11-07 14:25:05"
     }
   ],
   "industries": [
     {
       "industry": "Automotive",
-      "website_count": 4,
+      "website_count": 5,
       "averages": {
-        "performance": 53,
-        "accessibility": 83,
-        "best_practices": 77,
-        "seo": 88,
-        "pwa": 44
+        "performance": 49,
+        "accessibility": 85,
+        "best_practices": 78,
+        "seo": 87,
+        "pwa": 42
       }
     },
     {
       "industry": "Conglomerate",
       "website_count": 1,
       "averages": {
-        "performance": 62,
+        "performance": 57,
         "accessibility": 95,
         "best_practices": 100,
         "seo": 98,
@@ -1325,7 +1373,7 @@
       "industry": "Delivery",
       "website_count": 2,
       "averages": {
-        "performance": 33,
+        "performance": 35,
         "accessibility": 77,
         "best_practices": 38,
         "seo": 93,
@@ -1336,9 +1384,9 @@
       "industry": "E-commerce",
       "website_count": 9,
       "averages": {
-        "performance": 58,
-        "accessibility": 84,
-        "best_practices": 73,
+        "performance": 55,
+        "accessibility": 85,
+        "best_practices": 71,
         "seo": 86,
         "pwa": 57
       }
@@ -1347,7 +1395,7 @@
       "industry": "Edtech",
       "website_count": 4,
       "averages": {
-        "performance": 45,
+        "performance": 42,
         "accessibility": 73,
         "best_practices": 71,
         "seo": 87,
@@ -1358,7 +1406,7 @@
       "industry": "Education",
       "website_count": 12,
       "averages": {
-        "performance": 41,
+        "performance": 44,
         "accessibility": 77,
         "best_practices": 81,
         "seo": 77,
@@ -1378,11 +1426,11 @@
     },
     {
       "industry": "Finance",
-      "website_count": 16,
+      "website_count": 17,
       "averages": {
-        "performance": 53,
+        "performance": 51,
         "accessibility": 78,
-        "best_practices": 75,
+        "best_practices": 74,
         "seo": 85,
         "pwa": 38
       }
@@ -1391,21 +1439,21 @@
       "industry": "Government",
       "website_count": 7,
       "averages": {
-        "performance": 54,
+        "performance": 52,
         "accessibility": 88,
-        "best_practices": 83,
-        "seo": 79,
-        "pwa": 27
+        "best_practices": 81,
+        "seo": 80,
+        "pwa": 25
       }
     },
     {
       "industry": "Healthcare",
       "website_count": 3,
       "averages": {
-        "performance": 48,
+        "performance": 44,
         "accessibility": 85,
-        "best_practices": 78,
-        "seo": 89,
+        "best_practices": 80,
+        "seo": 91,
         "pwa": 67
       }
     },
@@ -1413,9 +1461,9 @@
       "industry": "Healthtech",
       "website_count": 1,
       "averages": {
-        "performance": 38,
+        "performance": 33,
         "accessibility": 76,
-        "best_practices": 75,
+        "best_practices": 83,
         "seo": 96,
         "pwa": 78
       }
@@ -1424,7 +1472,7 @@
       "industry": "Marketing",
       "website_count": 2,
       "averages": {
-        "performance": 52,
+        "performance": 53,
         "accessibility": 83,
         "best_practices": 67,
         "seo": 90,
@@ -1433,22 +1481,22 @@
     },
     {
       "industry": "Media",
-      "website_count": 17,
+      "website_count": 18,
       "averages": {
-        "performance": 41,
+        "performance": 40,
         "accessibility": 80,
-        "best_practices": 72,
-        "seo": 89,
-        "pwa": 66
+        "best_practices": 74,
+        "seo": 87,
+        "pwa": 62
       }
     },
     {
       "industry": "Portal",
       "website_count": 1,
       "averages": {
-        "performance": 31,
+        "performance": 36,
         "accessibility": 83,
-        "best_practices": 67,
+        "best_practices": 75,
         "seo": 85,
         "pwa": 33
       }
@@ -1457,9 +1505,9 @@
       "industry": "Social",
       "website_count": 6,
       "averages": {
-        "performance": 65,
+        "performance": 60,
         "accessibility": 87,
-        "best_practices": 79,
+        "best_practices": 82,
         "seo": 94,
         "pwa": 63
       }
@@ -1469,9 +1517,9 @@
       "website_count": 4,
       "averages": {
         "performance": 40,
-        "accessibility": 89,
+        "accessibility": 91,
         "best_practices": 79,
-        "seo": 88,
+        "seo": 90,
         "pwa": 58
       }
     },
@@ -1479,10 +1527,10 @@
       "industry": "Sports",
       "website_count": 1,
       "averages": {
-        "performance": 48,
-        "accessibility": 86,
+        "performance": 49,
+        "accessibility": 85,
         "best_practices": 75,
-        "seo": 91,
+        "seo": 99,
         "pwa": 33
       }
     },
@@ -1499,13 +1547,13 @@
     },
     {
       "industry": "Technology",
-      "website_count": 6,
+      "website_count": 7,
       "averages": {
-        "performance": 30,
-        "accessibility": 83,
-        "best_practices": 71,
-        "seo": 69,
-        "pwa": 39
+        "performance": 35,
+        "accessibility": 85,
+        "best_practices": 75,
+        "seo": 71,
+        "pwa": 38
       }
     },
     {
@@ -1523,8 +1571,8 @@
       "industry": "Travel",
       "website_count": 5,
       "averages": {
-        "performance": 47,
-        "accessibility": 78,
+        "performance": 44,
+        "accessibility": 76,
         "best_practices": 80,
         "seo": 83,
         "pwa": 71

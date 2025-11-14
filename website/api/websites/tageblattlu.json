@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.724Z",
+    "generated_at": "2025-11-14T08:39:14.967Z",
     "url": "tageblatt.lu",
     "country": "Luxembourg",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 35,
-    "accessibility": 87,
+    "performance": 51,
+    "accessibility": 81,
     "best_practices": 92,
     "seo": 84,
     "pwa": 33,
-    "test_date": "2025-10-31 14:12:28"
+    "test_date": "2025-11-07 14:13:00"
   },
   "historical_data": [
+    {
+      "performance": 51,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 84,
+      "pwa": 33,
+      "test_date": "2025-11-07 14:13:00"
+    },
     {
       "performance": 35,
       "accessibility": 87,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -4,
-    "accessibility": 0,
+    "performance": 16,
+    "accessibility": -6,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 14:12:28",
-    "test_date_previous": "2025-10-24 06:16:38"
+    "test_date_current": "2025-11-07 14:13:00",
+    "test_date_previous": "2025-10-31 14:12:28"
   }
 }

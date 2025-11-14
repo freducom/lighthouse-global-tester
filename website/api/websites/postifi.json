@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.186Z",
+    "generated_at": "2025-11-14T08:39:14.834Z",
     "url": "posti.fi",
     "country": "Finland",
     "industry": "Government"
   },
   "latest_scores": {
-    "performance": 32,
-    "accessibility": 91,
+    "performance": 35,
+    "accessibility": 90,
     "best_practices": 92,
     "seo": 100,
     "pwa": 33,
-    "test_date": "2025-10-30 14:02:36"
+    "test_date": "2025-11-13 14:10:48"
   },
   "historical_data": [
+    {
+      "performance": 35,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-13 14:10:48"
+    },
+    {
+      "performance": 34,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 100,
+      "pwa": 33,
+      "test_date": "2025-11-06 14:11:10"
+    },
     {
       "performance": 32,
       "accessibility": 91,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 0,
+    "performance": 1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 14:02:36",
-    "test_date_previous": "2025-10-23 08:30:07"
+    "test_date_current": "2025-11-13 14:10:48",
+    "test_date_previous": "2025-11-06 14:11:10"
   }
 }

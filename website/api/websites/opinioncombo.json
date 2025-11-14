@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:43.948Z",
+    "generated_at": "2025-11-14T08:39:14.757Z",
     "url": "opinion.com.bo",
     "country": "Bolivia",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 75,
+    "performance": 74,
     "accessibility": 88,
     "best_practices": 100,
-    "seo": 92,
+    "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-30 08:20:11"
+    "test_date": "2025-11-13 06:25:57"
   },
   "historical_data": [
+    {
+      "performance": 74,
+      "accessibility": 88,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-13 06:25:57"
+    },
+    {
+      "performance": 75,
+      "accessibility": 88,
+      "best_practices": 100,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-06 06:23:05"
+    },
     {
       "performance": 75,
       "accessibility": 88,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-30 08:20:11",
-    "test_date_previous": "2025-10-23 02:59:51"
+    "test_date_current": "2025-11-13 06:25:57",
+    "test_date_previous": "2025-11-06 06:23:05"
   }
 }

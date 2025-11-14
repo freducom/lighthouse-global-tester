@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.950Z",
+    "generated_at": "2025-11-14T08:39:15.038Z",
     "url": "mk.co.kr",
     "country": "South Korea",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 27,
+    "performance": 25,
     "accessibility": 72,
     "best_practices": 83,
     "seo": 99,
     "pwa": 33,
-    "test_date": "2025-10-29 18:16:35"
+    "test_date": "2025-11-12 16:14:27"
   },
   "historical_data": [
+    {
+      "performance": 25,
+      "accessibility": 72,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-12 16:14:27"
+    },
+    {
+      "performance": 26,
+      "accessibility": 72,
+      "best_practices": 83,
+      "seo": 99,
+      "pwa": 33,
+      "test_date": "2025-11-05 16:13:11"
+    },
     {
       "performance": 27,
       "accessibility": 72,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": 1,
+    "performance": -1,
     "accessibility": 0,
-    "best_practices": -9,
-    "seo": 1,
+    "best_practices": 0,
+    "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-29 18:16:35",
-    "test_date_previous": "2025-10-22 14:20:19"
+    "test_date_current": "2025-11-12 16:14:27",
+    "test_date_previous": "2025-11-05 16:13:11"
   }
 }

@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.348Z",
+    "generated_at": "2025-11-14T08:39:15.151Z",
     "url": "oracle.com",
     "country": "United States",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 46,
+    "performance": 53,
     "accessibility": 98,
     "best_practices": 92,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-30 08:21:08"
+    "test_date": "2025-11-13 06:26:55"
   },
   "historical_data": [
+    {
+      "performance": 53,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-13 06:26:55"
+    },
+    {
+      "performance": 50,
+      "accessibility": 98,
+      "best_practices": 92,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-06 06:24:03"
+    },
     {
       "performance": 46,
       "accessibility": 98,
@@ -23,5 +39,13 @@
       "test_date": "2025-10-30 08:21:08"
     }
   ],
-  "trends": null
+  "trends": {
+    "performance": 3,
+    "accessibility": 0,
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-13 06:26:55",
+    "test_date_previous": "2025-11-06 06:24:03"
+  }
 }

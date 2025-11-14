@@ -81,7 +81,7 @@
             "name": "Valmitta",
             "url": "https://cheetahcheck.com"
           },
-          "dateCreated": "2025-11-04T12:50:30.634Z",
+          "dateCreated": "2025-11-14T08:39:05.256Z",
           "about": {
             "@type": "WebSite",
             "name": "hsbc.com.hk",
@@ -93,11 +93,11 @@
           "@id": "https://cheetahcheck.com/domain-hsbc.com.hk.html#metrics",
           "name": "hsbc.com.hk Performance Metrics",
           "description": "Latest Lighthouse scores for hsbc.com.hk",
-          "performanceScore": 10,
+          "performanceScore": 11,
           "accessibilityScore": 90,
           "bestPracticesScore": 67,
           "seoScore": 93,
-          "dateRecorded": "2025-11-04 10:20:39"
+          "dateRecorded": "2025-11-11 10:18:42"
         }
       ]
     }
@@ -117,7 +117,7 @@
         <div class="stats-grid">
             <div class="stat-card performance">
                 <h3>Performance</h3>
-                <div class="stat-number poor">10%</div>
+                <div class="stat-number poor">11%</div>
                 <div class="stat-description">needs improvement</div>
             </div>
             <div class="stat-card accessibility">
@@ -139,9 +139,9 @@
 
         
         <section class="section">
-            <div class="no-history">
-                <h2>📈 Performance History</h2>
-                <p>No historical data available yet. Run more tests to see trends over time.</p>
+            <h2>📈 Performance History</h2>
+            <div class="chart-container">
+                <canvas id="historyChart"></canvas>
             </div>
         </section>
         
@@ -152,8 +152,8 @@
                 <div class="score-item">
                     <span class="score-label">Performance:</span>
                     <div class="score-bar">
-                        <div class="score-fill performance" style="width: 10%"></div>
-                        <span class="score-text">10%</span>
+                        <div class="score-fill performance" style="width: 11%"></div>
+                        <span class="score-text">11%</span>
                     </div>
                 </div>
                 <div class="score-item">
@@ -211,7 +211,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1018 websites.</p>
+            <p>&copy; 2025 CheetahCheck. Google Lighthouse performance monitoring of 1048 websites.</p>
         </div>
     </footer>
 
@@ -357,6 +357,53 @@
         </script>
     </div>
 
+    
+    <script>
+        const historyData = [{"id":2077,"url":"hsbc.com.hk","performance":10,"accessibility":90,"best_practices":67,"seo":93,"pwa":67,"test_date":"2025-11-04 10:20:39","country":"Hong Kong","industry":"Finance"},{"id":3044,"url":"hsbc.com.hk","performance":11,"accessibility":90,"best_practices":67,"seo":93,"pwa":67,"test_date":"2025-11-11 10:18:42","country":"Hong Kong","industry":"Finance"}];
+        
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: historyData.map(d => new Date(d.test_date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Performance',
+                    data: historyData.map(d => d.performance),
+                    borderColor: '#E07A00',
+                    backgroundColor: 'rgba(224, 122, 0, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'Accessibility',
+                    data: historyData.map(d => d.accessibility),
+                    borderColor: '#1E6091',
+                    backgroundColor: 'rgba(30, 96, 145, 0.1)',
+                    tension: 0.1
+                }, {
+                    label: 'SEO',
+                    data: historyData.map(d => d.seo),
+                    borderColor: '#FFB703',
+                    backgroundColor: 'rgba(255, 183, 3, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Lighthouse Scores Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+    </script>
     
 </body>
 </html>

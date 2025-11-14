@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.254Z",
+    "generated_at": "2025-11-14T08:39:15.128Z",
     "url": "clevelandclinic.org",
     "country": "United States",
     "industry": "Healthcare"
   },
   "latest_scores": {
-    "performance": 57,
+    "performance": 56,
     "accessibility": 83,
     "best_practices": 92,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-11-03 00:49:30"
+    "test_date": "2025-11-10 00:49:55"
   },
   "historical_data": [
+    {
+      "performance": 56,
+      "accessibility": 83,
+      "best_practices": 92,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-10 00:49:55"
+    },
     {
       "performance": 57,
       "accessibility": 83,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 8,
+    "performance": -1,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-03 00:49:30",
-    "test_date_previous": "2025-10-27 03:12:48"
+    "test_date_current": "2025-11-10 00:49:55",
+    "test_date_previous": "2025-11-03 00:49:30"
   }
 }

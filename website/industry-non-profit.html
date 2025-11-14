@@ -78,9 +78,9 @@
 
         <section class="stats-grid" aria-labelledby="stats-heading">
             <h2 id="stats-heading" class="sr-only">Performance Statistics for Non-profit Industry</h2>
-            <div class="stat-card" role="img" aria-label="Average performance score: 39 percent">
+            <div class="stat-card" role="img" aria-label="Average performance score: 40 percent">
                 <h3>Average Performance</h3>
-                <div class="stat-value perf-poor" aria-hidden="true">39%</div>
+                <div class="stat-value perf-poor" aria-hidden="true">40%</div>
                 <p class="sr-only">Performance measures loading speed and user experience</p>
             </div>
             <div class="stat-card" role="img" aria-label="Average accessibility score: 85 percent">
@@ -185,8 +185,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-average"
-                                    aria-label="Performance score: 57 percent, average performance">
-                                    57%
+                                    aria-label="Performance score: 52 percent, average performance">
+                                    52%
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 80 percent, good performance">
@@ -204,9 +204,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-29 22:13:05"
-                                    aria-label="Last tested on 10/29/2025">
-                                    <time datetime="2025-10-29 22:13:05">10/29/2025</time>
+                                <td class="date" data-date="2025-11-12 20:13:54"
+                                    aria-label="Last tested on 11/12/2025">
+                                    <time datetime="2025-11-12 20:13:54">11/12/2025</time>
                                 </td>
                             </tr>
                         
@@ -227,8 +227,8 @@
                                     </a>
                                 </td>
                                 <td class="score perf-poor"
-                                    aria-label="Performance score: 20 percent, needs improvement">
-                                    20%
+                                    aria-label="Performance score: 27 percent, needs improvement">
+                                    27%
                                 </td>
                                 <td class="score acc-good"
                                     aria-label="Accessibility score: 89 percent, good performance">
@@ -246,9 +246,9 @@
                                     aria-label="PWA score: 33 percent, needs improvement">
                                     33%
                                 </td>
-                                <td class="date" data-date="2025-10-31 03:19:24"
-                                    aria-label="Last tested on 10/31/2025">
-                                    <time datetime="2025-10-31 03:19:24">10/31/2025</time>
+                                <td class="date" data-date="2025-11-14 03:18:41"
+                                    aria-label="Last tested on 11/14/2025">
+                                    <time datetime="2025-11-14 03:18:41">11/14/2025</time>
                                 </td>
                             </tr>
                         
@@ -416,7 +416,7 @@
     </div>
 
     <script>
-        const industryData = [{"url":"ncci.org.na","country":"Namibia","industry":"Non-profit","performance":57,"accessibility":80,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-29 22:13:05","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sgbic.org","country":"Singapore","industry":"Non-profit","performance":20,"accessibility":89,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-31 03:19:24","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const industryData = [{"url":"ncci.org.na","country":"Namibia","industry":"Non-profit","performance":52,"accessibility":80,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-11-12 20:13:54","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sgbic.org","country":"Singapore","industry":"Non-profit","performance":27,"accessibility":89,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-11-14 03:18:41","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');
@@ -751,7 +751,7 @@
         }
         
         // Data initialization
-        const industryData = [{"url":"ncci.org.na","country":"Namibia","industry":"Non-profit","performance":57,"accessibility":80,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-10-29 22:13:05","performance_trend":"same","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sgbic.org","country":"Singapore","industry":"Non-profit","performance":20,"accessibility":89,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-10-31 03:19:24","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-1,"text":"-1","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
+        const industryData = [{"url":"ncci.org.na","country":"Namibia","industry":"Non-profit","performance":52,"accessibility":80,"best_practices":83,"seo":85,"pwa":33,"test_date":"2025-11-12 20:13:54","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-3,"text":"-3","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}},{"url":"sgbic.org","country":"Singapore","industry":"Non-profit","performance":27,"accessibility":89,"best_practices":83,"seo":86,"pwa":33,"test_date":"2025-11-14 03:18:41","performance_trend":"down","accessibility_trend":"same","best_practices_trend":"same","seo_trend":"same","pwa_trend":"same","performance_delta":{"delta":-2,"text":"-2","class":"delta-negative"},"accessibility_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"best_practices_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"seo_delta":{"delta":0,"text":"±0","class":"delta-neutral"},"pwa_delta":{"delta":0,"text":"±0","class":"delta-neutral"}}];
         const searchInput = document.getElementById('searchInput');
         const tableBody = document.getElementById('tableBody');
         const liveRegion = document.getElementById('search-results-announced');

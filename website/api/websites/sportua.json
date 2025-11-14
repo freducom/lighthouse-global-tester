@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.165Z",
+    "generated_at": "2025-11-14T08:39:15.099Z",
     "url": "sport.ua",
     "country": "Ukraine",
     "industry": "Sports"
   },
   "latest_scores": {
-    "performance": 42,
+    "performance": 44,
     "accessibility": 78,
     "best_practices": 92,
-    "seo": 93,
+    "seo": 92,
     "pwa": 56,
-    "test_date": "2025-10-31 08:15:47"
+    "test_date": "2025-11-07 08:17:29"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 78,
+      "best_practices": 92,
+      "seo": 92,
+      "pwa": 56,
+      "test_date": "2025-11-07 08:17:29"
+    },
     {
       "performance": 42,
       "accessibility": 78,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": -8,
+    "performance": 2,
     "accessibility": 0,
     "best_practices": 0,
-    "seo": 1,
+    "seo": -1,
     "pwa": 0,
-    "test_date_current": "2025-10-31 08:15:47",
-    "test_date_previous": "2025-10-24 00:41:27"
+    "test_date_current": "2025-11-07 08:17:29",
+    "test_date_previous": "2025-10-31 08:15:47"
   }
 }

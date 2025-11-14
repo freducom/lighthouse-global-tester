@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.744Z",
+    "generated_at": "2025-11-14T08:39:14.971Z",
     "url": "amazon.com.mx",
     "country": "Mexico",
     "industry": "E-commerce"
@@ -8,12 +8,20 @@
   "latest_scores": {
     "performance": 94,
     "accessibility": 100,
-    "best_practices": 100,
+    "best_practices": 92,
     "seo": 85,
     "pwa": 33,
-    "test_date": "2025-11-02 06:18:24"
+    "test_date": "2025-11-09 06:18:15"
   },
   "historical_data": [
+    {
+      "performance": 94,
+      "accessibility": 100,
+      "best_practices": 92,
+      "seo": 85,
+      "pwa": 33,
+      "test_date": "2025-11-09 06:18:15"
+    },
     {
       "performance": 94,
       "accessibility": 100,
@@ -42,10 +50,10 @@
   "trends": {
     "performance": 0,
     "accessibility": 0,
-    "best_practices": 0,
+    "best_practices": -8,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 06:18:24",
-    "test_date_previous": "2025-10-26 08:04:10"
+    "test_date_current": "2025-11-09 06:18:15",
+    "test_date_previous": "2025-11-02 06:18:24"
   }
 }

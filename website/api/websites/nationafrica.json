@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.690Z",
+    "generated_at": "2025-11-14T08:39:14.956Z",
     "url": "nation.africa",
     "country": "Kenya",
     "industry": "Media"
@@ -11,9 +11,25 @@
     "best_practices": 75,
     "seo": 86,
     "pwa": 33,
-    "test_date": "2025-10-29 22:11:15"
+    "test_date": "2025-11-12 20:12:13"
   },
   "historical_data": [
+    {
+      "performance": 32,
+      "accessibility": 98,
+      "best_practices": 75,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-12 20:12:13"
+    },
+    {
+      "performance": 41,
+      "accessibility": 98,
+      "best_practices": 75,
+      "seo": 86,
+      "pwa": 33,
+      "test_date": "2025-11-05 20:13:28"
+    },
     {
       "performance": 32,
       "accessibility": 98,
@@ -32,12 +48,12 @@
     }
   ],
   "trends": {
-    "performance": 5,
+    "performance": -9,
     "accessibility": 0,
-    "best_practices": 8,
-    "seo": 5,
-    "pwa": 11,
-    "test_date_current": "2025-10-29 22:11:15",
-    "test_date_previous": "2025-10-22 16:13:48"
+    "best_practices": 0,
+    "seo": 0,
+    "pwa": 0,
+    "test_date_current": "2025-11-12 20:12:13",
+    "test_date_previous": "2025-11-05 20:13:28"
   }
 }

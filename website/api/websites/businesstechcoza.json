@@ -1,19 +1,27 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:44.921Z",
+    "generated_at": "2025-11-14T08:39:15.034Z",
     "url": "businesstech.co.za",
     "country": "South Africa",
     "industry": "Media"
   },
   "latest_scores": {
-    "performance": 89,
+    "performance": 87,
     "accessibility": 81,
     "best_practices": 92,
     "seo": 82,
     "pwa": 33,
-    "test_date": "2025-11-02 18:21:53"
+    "test_date": "2025-11-09 18:22:35"
   },
   "historical_data": [
+    {
+      "performance": 87,
+      "accessibility": 81,
+      "best_practices": 92,
+      "seo": 82,
+      "pwa": 33,
+      "test_date": "2025-11-09 18:22:35"
+    },
     {
       "performance": 89,
       "accessibility": 81,
@@ -32,12 +40,12 @@
     }
   ],
   "trends": {
-    "performance": 2,
+    "performance": -2,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-11-02 18:21:53",
-    "test_date_previous": "2025-10-26 20:16:29"
+    "test_date_current": "2025-11-09 18:22:35",
+    "test_date_previous": "2025-11-02 18:21:53"
   }
 }

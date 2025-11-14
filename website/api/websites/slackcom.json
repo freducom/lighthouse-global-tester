@@ -1,19 +1,35 @@
 {
   "meta": {
-    "generated_at": "2025-11-04T12:50:45.375Z",
+    "generated_at": "2025-11-14T08:39:15.157Z",
     "url": "slack.com",
     "country": "United States",
     "industry": "Technology"
   },
   "latest_scores": {
-    "performance": 37,
+    "performance": 44,
     "accessibility": 89,
     "best_practices": 75,
     "seo": 92,
     "pwa": 33,
-    "test_date": "2025-10-31 06:15:19"
+    "test_date": "2025-11-14 06:16:03"
   },
   "historical_data": [
+    {
+      "performance": 44,
+      "accessibility": 89,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-14 06:16:03"
+    },
+    {
+      "performance": 44,
+      "accessibility": 89,
+      "best_practices": 75,
+      "seo": 92,
+      "pwa": 33,
+      "test_date": "2025-11-07 06:15:53"
+    },
     {
       "performance": 37,
       "accessibility": 89,
@@ -40,12 +56,12 @@
     }
   ],
   "trends": {
-    "performance": -6,
+    "performance": 0,
     "accessibility": 0,
     "best_practices": 0,
     "seo": 0,
     "pwa": 0,
-    "test_date_current": "2025-10-31 06:15:19",
-    "test_date_previous": "2025-10-23 22:10:09"
+    "test_date_current": "2025-11-14 06:16:03",
+    "test_date_previous": "2025-11-07 06:15:53"
   }
 }
